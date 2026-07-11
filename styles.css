@@ -1204,3 +1204,65 @@ a { text-decoration: none; color: inherit; }
   padding: 1px 5px;
   font-weight: 600;
 }
+
+/* --- Pitch (Mint-for-your-things positioning) --- */
+.pitch {
+  background: var(--color-dark);
+  padding: 96px 0;
+}
+.pitch__inner {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pitch__eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary-light);
+  margin-bottom: 18px;
+}
+.pitch__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 4.4vw, 3rem);
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 22px;
+  text-wrap: balance;
+}
+.pitch__title em {
+  font-style: italic;
+  color: var(--color-primary-light);
+}
+.pitch__body {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #b8b0a4;
+  margin-bottom: 40px;
+}
+.pitch__body strong { color: #EDE7DA; font-weight: 600; }
+.pitch__points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.pitch__point {
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-md);
+  padding: 18px 14px;
+  font-size: 0.88rem;
+  color: #b8b0a4;
+  line-height: 1.45;
+}
+.pitch__point-num {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+@media (max-width: 640px) {
+  .pitch__points { grid-template-columns: 1fr; }
+}

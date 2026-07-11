@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '.preview__item',
     '.who__card',
     '.way-card',
+    '.pitch__inner',
     '.how-step',
     '.section-header',
     '.cta__inner'
