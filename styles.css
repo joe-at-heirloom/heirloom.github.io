@@ -905,13 +905,11 @@ a { text-decoration: none; color: inherit; }
   align-items: flex-end;
   justify-content: center;
 }
-.phone__photo-shape {
-  width: 92px;
-  height: 128px;
-  background: linear-gradient(160deg, #B9BEC3 0%, #8E959C 45%, #6E767E 100%);
-  border-radius: 46px 46px 18px 18px;
-  margin-bottom: -10px;
-  box-shadow: inset -8px 0 14px rgba(255,255,255,0.35), 0 18px 24px rgba(0,0,0,0.18);
+.phone__photo-item {
+  width: 116px;
+  height: auto;
+  margin-bottom: -4px;
+  filter: drop-shadow(0 14px 16px rgba(0,0,0,0.22));
 }
 .phone__body {
   padding: 18px 18px 20px;
