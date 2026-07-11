@@ -4,12 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heirloom — Know What You Own</title>
-  <meta name="description" content="Heirloom uses AI to identify, value, and manage your art, antiques, and luxury collections. Coming soon.">
+  <meta name="description" content="Heirloom identifies, values, and catalogues your art, antiques, and collections. Snap a photo and let the Advisor identify it — or catalogue it yourself, no AI unless you ask. Now in beta.">
+  <link rel="canonical" href="https://heirloomapp.io/">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://heirloomapp.io/">
+  <meta property="og:title" content="Heirloom — Know What You Own">
+  <meta property="og:description" content="Identify, value, and catalogue your art, antiques, and collections. AI when you want it — never when you don't.">
+  <meta name="twitter:card" content="summary">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&family=Instrument+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,14 +29,13 @@
         <img src="logo.svg" alt="Heirloom" height="32">
       </a>
       <div class="nav__links" id="navLinks">
+        <a href="#two-ways" class="nav__link">Two Ways In</a>
+        <a href="#how" class="nav__link">How It Works</a>
         <a href="#features" class="nav__link">Features</a>
-        <!-- TODO: uncomment when screenshots are ready
-        <a href="#preview" class="nav__link">Preview</a>
-        -->
         <a href="#who" class="nav__link">Who It's For</a>
       </div>
       <div class="nav__actions">
-        <a href="#waitlist" class="btn btn--primary">Join Waitlist</a>
+        <a href="#waitlist" class="btn btn--primary">Get Early Access</a>
       </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span>
@@ -43,27 +51,134 @@
       <div class="hero__gradient"></div>
       <div class="hero__grid-overlay"></div>
     </div>
-    <div class="container hero__container hero__container--centered">
-      <div class="hero__content hero__content--centered">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <div class="hero__badge"><span class="hero__badge-dot"></span>Now in beta</div>
         <h1 class="hero__title">Know What <br>You Own.</h1>
-        <p class="hero__subtitle">AI-powered identification, valuation, and management for your art, antiques, and luxury collections. Finally understand what your treasures are really worth.</p>
+        <p class="hero__subtitle">The cataloguing platform for art, antiques, and collections. Snap a photo and let the Advisor identify and value it &mdash; or catalogue it yourself, with AI only when you ask. Your collection, documented, valued, and ready for whatever comes next.</p>
         <div class="hero__cta">
           <a href="#waitlist" class="btn btn--primary btn--lg">Get Early Access</a>
-          <a href="#features" class="btn btn--outline btn--lg">Learn More</a>
+          <a href="#two-ways" class="btn btn--outline btn--lg">See How It Works</a>
         </div>
       </div>
 
-      <!-- TODO: uncomment when app dashboard screenshot is ready
-      <div class="hero__visual">
-        SCREENSHOT: Main app dashboard / collection overview screen
-        Replace the placeholder with: <img src="screenshot-dashboard.png" alt="Heirloom app dashboard">
-        <div class="hero__screenshot">
-          <div class="screenshot-placeholder screenshot-placeholder--has-image">
-            <img src="screenshot-dashboard.png" alt="Heirloom app dashboard">
+      <!-- CSS product mockup — mirrors the real item screen -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="phone">
+          <div class="phone__screen">
+            <div class="phone__photo">
+              <div class="phone__photo-shape"></div>
+            </div>
+            <div class="phone__body">
+              <div class="phone__title-row">
+                <span class="phone__item-title">Georg Jensen Acorn Pitcher</span>
+              </div>
+              <div class="phone__badges">
+                <span class="chip chip--doc">✓ Documented</span>
+                <span class="chip chip--muted">Sterling · c. 1935</span>
+              </div>
+              <div class="phone__stages">
+                <span class="stage stage--done">Examine</span>
+                <span class="stage stage--done">Identify</span>
+                <span class="stage stage--done">Comps</span>
+                <span class="stage">Provenance</span>
+              </div>
+              <div class="phone__value">
+                <span class="phone__value-label">Your estimate</span>
+                <span class="phone__value-num">$3,500 – $4,500</span>
+                <div class="phone__value-bar"><span></span></div>
+              </div>
+              <div class="phone__advisor">✦ Ask the Advisor for a second opinion</div>
+            </div>
+          </div>
+        </div>
+        <div class="float-card">
+          <div class="float-card__icon">✦</div>
+          <div>
+            <div class="float-card__title">Advisor</div>
+            <div class="float-card__desc">Maker confirmed: Georg Jensen<br><span>3 comparable sales found</span></div>
           </div>
         </div>
       </div>
-      -->
+    </div>
+  </section>
+
+  <!-- Two Ways In (persona split) -->
+  <section class="ways" id="two-ways">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Two Ways In</p>
+        <h2 class="section-header__title">Whether you're wondering<br>or you already know</h2>
+        <p class="section-header__subtitle">Most apps assume you know nothing about your things. Collectors know better. Heirloom is built for both &mdash; and never makes the expert sit through the beginner flow.</p>
+      </div>
+
+      <div class="ways__grid">
+        <div class="way-card">
+          <div class="way-card__head">
+            <div class="way-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3 class="way-card__title">&ldquo;Identify it for me&rdquo;</h3>
+            <p class="way-card__persona">Found it in the attic. Inherited it. Just curious.</p>
+          </div>
+          <p class="way-card__desc">Snap a few photos and the Advisor identifies the maker, period, and materials, asks the right clarifying questions, and estimates market value from comparable sales &mdash; in about a minute.</p>
+          <ul class="way-card__list">
+            <li>Maker, period &amp; material identification</li>
+            <li>Estimated value range with confidence</li>
+            <li>Clarifying questions when it matters</li>
+          </ul>
+        </div>
+
+        <div class="way-card way-card--collector">
+          <div class="way-card__head">
+            <div class="way-card__icon way-card__icon--ink">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="way-card__title">&ldquo;I know this item&rdquo;</h3>
+            <p class="way-card__persona">You're the collector. You did the research years ago.</p>
+          </div>
+          <p class="way-card__desc">Catalogue it yourself &mdash; maker, provenance, condition, your own valuation. Your word is the record. The Advisor stays quiet unless you ask it for a second opinion or market comparables.</p>
+          <ul class="way-card__list">
+            <li>Full manual cataloguing &mdash; no AI, unless you ask</li>
+            <li>Your estimates are never overwritten</li>
+            <li>On-demand research &amp; comparable sales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">How It Works</p>
+        <h2 class="section-header__title">Four stages to a<br>fully catalogued piece</h2>
+        <p class="section-header__subtitle">Every item moves through the same four stages a professional cataloguer would use &mdash; whether the Advisor does the work or you do.</p>
+      </div>
+
+      <div class="how__grid">
+        <div class="how-step">
+          <div class="how-step__num">1</div>
+          <h3 class="how-step__title">Examine</h3>
+          <p class="how-step__desc">Photograph the piece &mdash; marks, signatures, condition. The record starts with what's physically in front of you.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step__num">2</div>
+          <h3 class="how-step__title">Identify</h3>
+          <p class="how-step__desc">Maker, period, materials, and style &mdash; attributed by the Advisor, or asserted by you.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step__num">3</div>
+          <h3 class="how-step__title">Comparables</h3>
+          <p class="how-step__desc">Real comparable sales from auction records anchor the value &mdash; review them, keep the ones that match.</p>
+        </div>
+        <div class="how-step">
+          <div class="how-step__num">4</div>
+          <h3 class="how-step__title">Provenance</h3>
+          <p class="how-step__desc">Ownership history, documents, and appraisals &mdash; the story that makes a piece an heirloom.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -72,8 +187,7 @@
     <div class="container">
       <div class="section-header">
         <p class="section-header__eyebrow">What Heirloom Does</p>
-        <h2 class="section-header__title">The complete platform for <br>managing physical assets</h2>
-        <p class="section-header__subtitle">From snap-to-value AI identification to expert authentication and insurance-ready reports &mdash; everything collectors need, in one place.</p>
+        <h2 class="section-header__title">Everything a collection needs,<br>in one place</h2>
       </div>
 
       <div class="features__grid">
@@ -81,16 +195,8 @@
           <div class="feature-card__icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           </div>
-          <h3 class="feature-card__title">AI Identification &amp; Valuation</h3>
-          <p class="feature-card__desc">Snap a photo and instantly get maker, medium, period, style, and estimated market value. Trained on millions of auction records.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon feature-card__icon--purple">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3 class="feature-card__title">Expert Network</h3>
-          <p class="feature-card__desc">Connect with verified specialists, authenticators, and appraisers for professional valuations and authentication certificates.</p>
+          <h3 class="feature-card__title">The Advisor</h3>
+          <p class="feature-card__desc">Photo-based identification and valuation with visible confidence levels &mdash; and honest about uncertainty. Estimates are informational, never dressed up as appraisals.</p>
         </div>
 
         <div class="feature-card">
@@ -98,105 +204,50 @@
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
           <h3 class="feature-card__title">Collection Management</h3>
-          <p class="feature-card__desc">Catalog, organize, and track your entire collection. Categories, tags, location tracking, and value history at your fingertips.</p>
+          <p class="feature-card__desc">Catalogue, tag, search, and track value across your whole collection &mdash; with photos, documents, dimensions, serial numbers, and audio notes on every piece.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3 class="feature-card__title">Research &amp; Comparables</h3>
+          <p class="feature-card__desc">Reverse image search across auction records, comparable-sale review, and a research chat that digs into maker histories and market context &mdash; all on demand.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-card__title">Expert Introductions</h3>
+          <p class="feature-card__desc">For pieces that deserve professional eyes: get introduced to specialist appraisers and dealers for authentication, appraisal, or sale &mdash; you control what's shared.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--green">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3 class="feature-card__title">Insurance Integration</h3>
-          <p class="feature-card__desc">Generate insurance-ready valuation reports. Integrations keep your coverage up to date as your collection's value changes.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon feature-card__icon--blue">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <h3 class="feature-card__title">Marketplace</h3>
-          <p class="feature-card__desc">Connect with auction houses, galleries, and fellow collectors. List items, receive offers, and facilitate transactions.</p>
+          <h3 class="feature-card__title">Estate &amp; Insurance Ready</h3>
+          <p class="feature-card__desc">Beneficiary designations, estate sharing with your attorney or executor, and exportable inventory reports for insurance conversations.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--rose">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
-          <h3 class="feature-card__title">Estate Planning</h3>
-          <p class="feature-card__desc">Designate beneficiaries, track ownership transfers, and work with estate professionals to preserve your collection for generations.</p>
+          <h3 class="feature-card__title">Private by Design</h3>
+          <p class="feature-card__desc">Your collection is yours. Every record is isolated to your account, photos live in private storage, sharing is opt-in per item, and you can export or delete everything.</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!--
-  ============================================
-  TODO: PREVIEW SECTION — uncomment when screenshots are ready
-  ============================================
-  You need 3 screenshots. Drop them in this folder and uncomment this block.
-
-  1. screenshot-ai.png        — AI identification screen (photo upload + results: maker, period, value, confidence score)
-  2. screenshot-collection.png — Collection grid/list view (multiple items with thumbnails, values, categories)
-  3. screenshot-detail.png     — Single item detail page (item photo, value history chart, provenance, expert notes)
-
-  Also uncomment the "Preview" nav link above.
-  ============================================
-
-  <section class="preview" id="preview">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-header__eyebrow">Sneak Peek</p>
-        <h2 class="section-header__title">A look inside Heirloom</h2>
-        <p class="section-header__subtitle">Designed for collectors of all levels. Powerful enough for professionals.</p>
-      </div>
-
-      <div class="preview__showcase">
-        <div class="preview__item">
-          <div class="preview__text">
-            <h3 class="preview__title">Snap. Identify. Value.</h3>
-            <p class="preview__desc">Upload a photo and watch our AI analyze every detail &mdash; identifying maker, period, materials, and current market value in seconds.</p>
-          </div>
-          <div class="preview__image">
-            <div class="screenshot-placeholder screenshot-placeholder--has-image">
-              <img src="screenshot-ai.png" alt="Heirloom AI identification screen">
-            </div>
-          </div>
-        </div>
-
-        <div class="preview__item preview__item--reverse">
-          <div class="preview__text">
-            <h3 class="preview__title">Your entire collection, organized.</h3>
-            <p class="preview__desc">Browse, search, filter, and manage every piece you own. Track value over time, add provenance details, and keep everything in one secure place.</p>
-          </div>
-          <div class="preview__image">
-            <div class="screenshot-placeholder screenshot-placeholder--has-image">
-              <img src="screenshot-collection.png" alt="Heirloom collection view">
-            </div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <div class="preview__text">
-            <h3 class="preview__title">Deep detail on every piece.</h3>
-            <p class="preview__desc">Each item gets a rich profile with photos, valuation history, provenance, condition notes, expert assessments, and insurance documentation.</p>
-          </div>
-          <div class="preview__image">
-            <div class="screenshot-placeholder screenshot-placeholder--has-image">
-              <img src="screenshot-detail.png" alt="Heirloom item detail page">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  -->
 
   <!-- Who It's For -->
   <section class="who" id="who">
     <div class="container">
       <div class="section-header">
         <p class="section-header__eyebrow">Who It's For</p>
-        <h2 class="section-header__title">Built for everyone in the <br>world of collecting</h2>
+        <h2 class="section-header__title">Built for the people who<br>care about the objects</h2>
       </div>
 
       <div class="who__grid">
@@ -205,28 +256,28 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </div>
           <h3 class="who__title">Collectors</h3>
-          <p class="who__desc">Identify, value, and manage your art, antiques, and luxury items. Track everything in one place and understand what your collection is really worth.</p>
+          <p class="who__desc">Document the collection you know inside out. Your attributions, your valuations, your provenance &mdash; organized, tracked, and export-ready.</p>
+        </div>
+        <div class="who__card">
+          <div class="who__icon who__icon--gold">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+          </div>
+          <h3 class="who__title">Inheritors &amp; Families</h3>
+          <p class="who__desc">Grandma's china, the painting from the estate, the watch in the drawer. Find out what things are, what they're worth, and what to do next.</p>
+        </div>
+        <div class="who__card">
+          <div class="who__icon who__icon--green">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="who__title">Estate &amp; Insurance Pros</h3>
+          <p class="who__desc">Work from complete, well-documented inventories. Clients share collections with you directly &mdash; values, photos, provenance and all.</p>
         </div>
         <div class="who__card">
           <div class="who__icon who__icon--purple">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
           <h3 class="who__title">Experts &amp; Appraisers</h3>
-          <p class="who__desc">Build your reputation, connect with clients, and deliver authentication and valuation services through a professional platform.</p>
-        </div>
-        <div class="who__card">
-          <div class="who__icon who__icon--gold">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <h3 class="who__title">Auction Houses &amp; Galleries</h3>
-          <p class="who__desc">Discover private collections that match your expertise. Source items, connect with sellers, and access detailed provenance and valuation data.</p>
-        </div>
-        <div class="who__card">
-          <div class="who__icon who__icon--green">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3 class="who__title">Insurance &amp; Estate Professionals</h3>
-          <p class="who__desc">Access accurate valuations, generate insurance documentation, and streamline estate planning with comprehensive asset records.</p>
+          <p class="who__desc">Receive qualified introductions from collectors who need authentication, appraisals, or sale advice in your specialty. No account required to respond.</p>
         </div>
       </div>
     </div>
@@ -237,15 +288,15 @@
     <div class="container">
       <div class="cta__inner">
         <div class="cta__bg-pattern"></div>
-        <div class="cta__badge">Coming Soon</div>
-        <h2 class="cta__title">Be the first to experience Heirloom.</h2>
-        <p class="cta__subtitle">Join the waitlist for early access when we launch.</p>
+        <div class="cta__badge">Beta</div>
+        <h2 class="cta__title">Your collection is waiting.</h2>
+        <p class="cta__subtitle">Heirloom is opening in beta on the web, with iOS and Android to follow. Join the list and be first through the door.</p>
         <form class="cta__form" id="waitlistForm" action="https://formspree.io/f/xgolpdan" method="POST">
           <div class="cta__input-wrap">
             <input type="email" name="email" placeholder="Enter your email address" class="cta__input" required>
-            <button type="submit" class="btn btn--primary btn--lg">Join Waitlist</button>
+            <button type="submit" class="btn btn--primary btn--lg">Get Early Access</button>
           </div>
-          <p class="cta__disclaimer">No spam, ever. We'll only email you about launch updates.</p>
+          <p class="cta__disclaimer">No spam, ever. We'll only email you about access and launch updates.</p>
         </form>
         <div class="cta__success" id="waitlistSuccess" style="display: none;">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E84316" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -264,7 +315,11 @@
           <img src="logo.svg" alt="Heirloom" height="24">
           <p class="footer__tagline">Know what you own.</p>
         </div>
-        <p class="footer__copy">&copy; 2026 Heirloom. All rights reserved.</p>
+        <nav class="footer__links" aria-label="Legal">
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/terms" class="footer__link">Terms of Service</a>
+        </nav>
+        <p class="footer__copy">&copy; 2026 Heirloom. All rights reserved.<br><span class="footer__note">Value estimates are informational only and are not professional appraisals.</span></p>
       </div>
     </div>
   </footer>

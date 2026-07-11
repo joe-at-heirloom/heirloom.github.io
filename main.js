@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     '.feature-card',
     '.preview__item',
     '.who__card',
+    '.way-card',
+    '.how-step',
     '.section-header',
     '.cta__inner'
   ];

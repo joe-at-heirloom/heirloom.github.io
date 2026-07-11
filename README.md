@@ -12,7 +12,7 @@ Pre-launch teaser site for Heirloom — an AI-powered platform for identifying, 
 
 Heirloom helps collectors, appraisers, auction houses, and estate professionals manage physical assets with confidence. The app combines AI identification, expert authentication, insurance-ready reporting, and marketplace tools in one platform.
 
-This repo contains the pre-launch landing page with a waitlist signup.
+This repo contains the launch landing page with a waitlist signup, plus the legal pages the app links to (`/privacy`, `/terms`).
 
 ## Features (on the landing page)
 
