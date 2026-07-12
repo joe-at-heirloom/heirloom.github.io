@@ -34,7 +34,7 @@
 <ul>
 <li>To identify and value your items, **we send your item photos and descriptions to</li>
 </ul>
-<p>third-party artificial-intelligence and image-search providers<strong> (currently OpenAI and, for comparable-price research, Google via ScrapingDog and SerpAPI). AI results are </strong>estimates, not professional appraisals.**</p>
+<p>third-party artificial-intelligence and image-search providers (currently OpenAI, plus reverse-image and market-research search services). <strong>AI results are estimates, not professional appraisals.</strong></p>
 <ul>
 <li>If you ask us to connect you with an expert (an appraiser, dealer, gallery, or auction</li>
 </ul>
@@ -42,7 +42,7 @@
 <ul>
 <li>We use a privacy-friendly analytics tool (TelemetryDeck) and send email and push</li>
 </ul>
-<p>notifications through service providers (Resend and Expo).</p>
+<p>notifications through email and push delivery providers.</p>
 <ul>
 <li>We do <strong>not</strong> sell your personal information, and we do not use it for cross-app</li>
 </ul>
@@ -105,7 +105,7 @@
 <p>publicly available business contact information, some of which is sourced from public directories.</p>
 <p>We do not knowingly collect precise financial account numbers, government identifiers, or special-category data beyond what you voluntarily enter in free-text fields.</p>
 <h2>4. How artificial intelligence and voice features work</h2>
-<p><strong>AI identification and valuation.</strong> To identify and estimate the value of your items, we send the relevant item photos and descriptive text to third-party AI providers. Today we use <strong>OpenAI</strong> (models in the GPT-4o family) for image analysis and for the in-app research/advisor chat. For finding comparable sales, we submit the item's image (through <strong>ScrapingDog</strong> to <strong>Google Lens</strong>) and text queries (through <strong>SerpAPI</strong> to Google Search). We may in the future use additional AI providers (for example Anthropic); if we do, they will receive the same categories of item data for the same purpose, and we will update this Policy.</p>
+<p><strong>AI identification and valuation.</strong> To identify and estimate the value of your items, we send the relevant item photos and descriptive text to third-party AI providers. Today we use <strong>OpenAI</strong> for image analysis and for the in-app research/advisor chat. For finding comparable sales, we submit the item's image (through reverse-image search services) and text queries (through market-research search services to Google Search). We may in the future use additional AI providers (for example Anthropic); if we do, they will receive the same categories of item data for the same purpose, and we will update this Policy.</p>
 <p><strong>Voice capture.</strong> When you dictate a description, your speech is transcribed to text. Depending on your device, transcription happens on the device using the operating system's speech recognition (which, on Apple and Google devices, may transmit audio to Apple or Google for processing under their own privacy policies) and/or through our backend using OpenAI's Whisper transcription service. Where audio is sent for transcription, the audio file is deleted immediately after transcription and only the resulting text is retained.</p>
 <p><strong>Please note:</strong> AI-generated identifications and valuations are <strong>automated estimates for your information only. They are not professional appraisals, authentications, or insurance valuations</strong>, and you should not rely on them for insurance, tax, legal, estate, or sale decisions without independent professional advice.</p>
 <p><strong>AI request logging.</strong> For quality, debugging, and abuse-prevention purposes, our backend temporarily logs the prompts, responses, and image references involved in AI requests. These logs are automatically deleted after a short period (currently about seven days).</p>
@@ -140,12 +140,12 @@
 <p><strong>With service providers ("processors")</strong> who process data on our behalf under contract:</p>
 <table>
 <tr><th>Provider</th><th>What we share</th><th>Why</th></tr>
-<tr><td>Supabase</td><td>All account, item, estate, lead, community, and device data (hosting, database, storage, authentication)</td><td>Core infrastructure</td></tr>
+<tr><td>Cloud hosting &amp; database provider</td><td>All account, item, estate, lead, community, and device data (hosting, database, storage, authentication)</td><td>Core infrastructure</td></tr>
 <tr><td>OpenAI</td><td>Item photos, descriptions, notes, metadata, and (if used) audio</td><td>AI identification, valuation, chat, transcription</td></tr>
-<tr><td>ScrapingDog / Google Lens</td><td>Item photo (image URL)</td><td>Reverse-image comparable search</td></tr>
-<tr><td>SerpAPI / Google Search</td><td>Text queries derived from item details</td><td>Comparable-price research</td></tr>
-<tr><td>Resend</td><td>Email addresses and email content (including lead item snapshots and photos)</td><td>Sending and tracking email</td></tr>
-<tr><td>Expo</td><td>Device push token and notification content</td><td>Push notifications</td></tr>
+<tr><td>Reverse-image search services</td><td>Item photo (image URL)</td><td>Reverse-image comparable search</td></tr>
+<tr><td>Market-research search services</td><td>Text queries derived from item details</td><td>Comparable-price research</td></tr>
+<tr><td>Email delivery provider</td><td>Email addresses and email content (including lead item snapshots and photos)</td><td>Sending and tracking email</td></tr>
+<tr><td>Push-notification delivery provider</td><td>Device push token and notification content</td><td>Push notifications</td></tr>
 <tr><td>TelemetryDeck</td><td>Hashed user identifier and product event names</td><td>Analytics</td></tr>
 <tr><td>Stripe (future)</td><td>Billing information</td><td>Subscription payments</td></tr>
 </table>
