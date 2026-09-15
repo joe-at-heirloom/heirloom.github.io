@@ -71,7 +71,7 @@ npm run legal:build       # regenerate privacy.html and terms.html from ../Heirl
 npm run legal:check       # exit 1 if the committed legal pages differ from their sources
 ```
 
-The claim rules in `scripts/check-copy.mjs` are copied from the app's `src/components/branding/copy.ts`; when one list changes, change the other. The legal pages are never hand-edited: change the Markdown in the app repo, run `npm run legal:build`, commit both. The few deliberate differences from the Markdown (for example the Terms section heading "Expert introductions") are listed in `scripts/build-legal.mjs` as `SOURCE_OVERRIDES`.
+The claim rules in `scripts/check-copy.mjs` are copied from the app's `src/components/branding/copy.ts`; when one list changes, change the other. The legal pages are never hand-edited: change the Markdown in the app repo, run `npm run legal:build`, commit both. Any deliberate difference from the Markdown would be listed in `scripts/build-legal.mjs` as `SOURCE_OVERRIDES`, a safety net that applies only while the source still carries the old phrase; the list has been empty since 2026-09-15, when the last corrections landed in the app repo's `legal/`.
 
 ## Adding App Screenshots
 

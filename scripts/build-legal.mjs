@@ -27,48 +27,16 @@ export const LEGAL_DIR = process.env.LEGAL_DIR || resolve(siteRoot, '..', 'Heirl
 /**
  * Wording that deliberately differs from the Markdown source. Each entry is a
  * safety net: it applies only while the source still carries the old phrase,
- * and is a no-op once the Markdown has followed. Each is reported in the
- * founder's review so the app repo's legal/*.md can be corrected and the entry
- * deleted (note the date here when that lands on main).
- *  - "Expert-lead marketplace": Heirloom is never a marketplace, and the
- *    section describes introductions.
- *  - "an estate-share recipient": the estate list delivers nothing to anyone;
- *    a transfer recipient who accepted a record is the party who holds a copy.
- *  - Terms §4 / Privacy §2 listed "record estate-planning intentions" as
- *    something that grants recipients the ability to view content. It does
- *    not (Terms §6, Privacy §2 itself): the estate list is an intent list and
- *    grants no one access; a transfer the recipient accepts is what delivers
- *    a record. The trigger becomes the transfer, and §4 points at §6.
- * The remaining two entries repair Markdown typos without changing meaning.
- * As of 2026-09-15 the first two and the typo fixes are already applied in the
- * app repo's working tree (uncommitted); the §4 / §2 entries are not.
+ * and is a no-op once the Markdown has followed; report each in the founder's
+ * review so the app repo's legal/*.md is corrected and the entry deleted.
+ *
+ * Empty since 2026-09-15: the last corrections (Terms §7 "Expert
+ * introductions", Terms §4 / Privacy §2 naming a transfer — not the estate
+ * list — as what lets a recipient see a record, Privacy §8 "a transfer
+ * recipient who accepted a record", two Markdown typos) now live in the app
+ * repo's legal/ Markdown, and `--check` passes against it with no override.
  */
-export const SOURCE_OVERRIDES = [
-  { from: '## 7. Expert-lead marketplace', to: '## 7. Expert introductions' },
-  {
-    from: 'or an estate-share recipient)',
-    to: 'or a transfer recipient who accepted a record)',
-  },
-  {
-    from: ', or record estate-planning intentions, you grant',
-    to: ', or offer a transfer of an item record, you grant',
-  },
-  {
-    from: 'it to them. Do not share content',
-    to: 'it to them. Recording estate-planning intentions grants no one access; see Section 6. Do not share content',
-  },
-  {
-    from: 'share it, or record your\nestate-planning intentions, the information you designate',
-    to: 'share it, or offer a transfer of an item record, the information you designate',
-  },
-  { from: 'through service providers .', to: 'through service providers.' },
-  {
-    // Unbalanced bold in the summary bullet: two emphasised clauses share one
-    // opening marker. Close the first before the second opens.
-    from: 'search services). **AI results are',
-    to: 'search services).** **AI results are',
-  },
-];
+export const SOURCE_OVERRIDES = [];
 
 export const PAGES = [
   { source: 'PRIVACY_POLICY.md', output: 'privacy.html', title: 'Privacy Policy — Heirloom' },
