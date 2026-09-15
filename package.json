@@ -1,0 +1,11 @@
+{
+  "name": "heirloom-website",
+  "private": true,
+  "description": "heirloomapp.io — static landing page and legal pages. No build step; the scripts only check copy and regenerate the legal pages.",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/check-copy.mjs",
+    "legal:build": "node scripts/build-legal.mjs",
+    "legal:check": "node scripts/build-legal.mjs --check"
+  }
+}
