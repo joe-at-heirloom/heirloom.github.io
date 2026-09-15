@@ -6,8 +6,12 @@
 // Three checks, all without dependencies:
 //  1. The visible text of index.html and README.md makes none of the promises
 //     the app's own copy rules forbid. The first list below is copied from
-//     src/components/branding/copy.ts (UNSUPPORTED_CLAIM_RULES) in the app repo;
-//     keep the two in step. The second list is website-specific.
+//     src/components/branding/copy.ts (UNSUPPORTED_CLAIM_RULES) in the app repo
+//     with one deliberate difference: the app's bare /\bappraisal\b/ rule is
+//     replaced by the sentence-level APPRAISAL_CONTEXT check, because the site
+//     must be able to say what an estimate is not and to name the independent
+//     professional who provides an appraisal. Keep the rest in step with the
+//     app. The second list is website-specific.
 //  2. The homepage still carries the qualifications the plan asks for
 //     (evidence-conditioned estimates, "cannot tell", estate list grants no
 //     access, transfers need acceptance, nothing for sale).
@@ -23,7 +27,10 @@ import { buildAll, LEGAL_DIR } from './build-legal.mjs';
 const here = dirname(fileURLToPath(import.meta.url));
 const siteRoot = resolve(here, '..');
 
-/** From src/components/branding/copy.ts — promises the shipped product does not keep. */
+/**
+ * From src/components/branding/copy.ts — promises the shipped product does not
+ * keep. All of UNSUPPORTED_CLAIM_RULES except /\bappraisal\b/ (see APPRAISAL_CONTEXT).
+ */
 const APP_CLAIM_RULES = [
   { pattern: /\binstant(ly|aneous)?\b/i, why: 'analysis takes time and can fail' },
   { pattern: /\bevery (item|object|piece)\b/i, why: 'many objects cannot be identified' },
@@ -60,13 +67,24 @@ const SITE_CLAIM_RULES = [
   { pattern: /\bwith confidence\b|\bconfidence levels?\b/i, why: 'confidence labels are not guarantees (AI03)' },
   { pattern: /\b(what|how much) (they|it)'?s? (are )?worth\b/i, why: 'unknown value is never a defect' },
   { pattern: /\bidentified,? (and )?valued\b|\bidentified & valued\b/i, why: 'not every object can be identified or valued' },
+  { pattern: /\bshows each one with\b/i, why: 'comparable display is conditional: the search has not returned anything in production' },
+  { pattern: /\bhow it differs from yours\b/i, why: 'per-comparable differences are not rendered (RES03 Partial)' },
+  { pattern: /\bnothing runs unless\b|\bonly runs when you ask\b/i, why: 'the photo path searches for comparable sales on its own (captureStore.backgroundCrawlDraft)' },
 ];
 
 /**
- * "appraisal" may only appear while saying what Heirloom is not, or while
- * naming the independent professional who provides one.
+ * "appraisal" may only appear in a sentence that denies it ("not", "never",
+ * "no" before the word) or that names the independent professional who
+ * provides one ("appraisal from an independent"). "professional" alone is not
+ * enough: "a professional appraisal for your collection" must fail.
  */
-const APPRAISAL_CONTEXT = /\b(not|never|no|independent|professional)\b/i;
+const APPRAISAL_CONTEXT = /\b(not|never|no)\b[^.!?]*\bappraisals?\b|\bappraisals?\b[^.!?]*\bfrom an independent\b/i;
+const APPRAISAL_FIXTURES = [
+  ['Heirloom provides a professional appraisal for your collection.', false],
+  ['Value estimates are informational only and are not professional appraisals.', true],
+  ['a written appraisal from an independent professional in your specialty.', true],
+  ['It is labelled as an estimate, never dressed up as an appraisal.', true],
+];
 
 /** Sentences the homepage must keep, each the qualification of a former claim. */
 const REQUIRED_ON_HOMEPAGE = [
@@ -79,6 +97,7 @@ const REQUIRED_ON_HOMEPAGE = [
   { pattern: /write it down/i, why: 'manual entry is an equal starting path' },
   { pattern: /not professional appraisals/i, why: 'estimates are not appraisals' },
   { pattern: /\bnow in beta\b/i, why: 'the beta is named as a beta' },
+  { pattern: /\bone photo\b/i, why: 'a transfer carries identification and one photo, not the record' },
 ];
 
 function visibleText(html) {
@@ -95,6 +114,7 @@ function visibleText(html) {
     .replace(/&mdash;/g, '—')
     .replace(/&ldquo;|&rdquo;/g, '"')
     .replace(/&amp;/g, '&')
+    .replace(/&rsquo;|&lsquo;/g, '\u2019')
     .replace(/&copy;/g, '©')
     .replace(/\s+/g, ' ');
 }
@@ -105,6 +125,13 @@ function sentences(text) {
 
 const failures = [];
 const notes = [];
+
+// Self-check: the appraisal context rule must reject the unqualified claim.
+for (const [sentence, allowed] of APPRAISAL_FIXTURES) {
+  if (APPRAISAL_CONTEXT.test(sentence) !== allowed) {
+    failures.push(`APPRAISAL_CONTEXT self-check: expected ${allowed ? 'allowed' : 'rejected'}: ${sentence}`);
+  }
+}
 
 function checkClaims(label, text) {
   for (const { pattern, why } of [...APP_CLAIM_RULES, ...SITE_CLAIM_RULES]) {
@@ -133,8 +160,20 @@ for (const { pattern, why } of REQUIRED_ON_HOMEPAGE) {
 
 // 3. Legal pages: the estate wording is asserted directly; full drift needs the source.
 for (const [file, musts, mustNots] of [
-  ['privacy.html', [/does not grant access/, /no access is granted from this list/], [/grant estate-plan access/, /estate-share recipient/]],
-  ['terms.html', [/does not send an invitation, grant account access, or transfer ownership/, /must accept through their own account/], [/Expert-lead marketplace/, /grant estate-plan access/]],
+  [
+    'privacy.html',
+    [/does not grant access/, /no access is granted from this list/],
+    [/grant estate-plan access/, /estate-share recipient/, /record your estate-planning intentions, the information/],
+  ],
+  [
+    'terms.html',
+    [
+      /does not send an invitation, grant account access, or transfer ownership/,
+      /must accept through their own account/,
+      /Recording estate-planning intentions grants no one access; see Section 6/,
+    ],
+    [/Expert-lead marketplace/, /grant estate-plan access/, /record estate-planning intentions, you grant/],
+  ],
 ]) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');
   for (const p of musts) if (!p.test(html)) failures.push(`${file} is missing ${p}`);

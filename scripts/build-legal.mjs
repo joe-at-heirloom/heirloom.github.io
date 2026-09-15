@@ -25,19 +25,41 @@ const siteRoot = resolve(here, '..');
 export const LEGAL_DIR = process.env.LEGAL_DIR || resolve(siteRoot, '..', 'Heirloom', 'legal');
 
 /**
- * Wording that deliberately differs from the Markdown source. Each entry is
- * reported in the founder's review; the intent is for the source to follow.
+ * Wording that deliberately differs from the Markdown source. Each entry is a
+ * safety net: it applies only while the source still carries the old phrase,
+ * and is a no-op once the Markdown has followed. Each is reported in the
+ * founder's review so the app repo's legal/*.md can be corrected and the entry
+ * deleted (note the date here when that lands on main).
  *  - "Expert-lead marketplace": Heirloom is never a marketplace, and the
  *    section describes introductions.
  *  - "an estate-share recipient": the estate list delivers nothing to anyone;
  *    a transfer recipient who accepted a record is the party who holds a copy.
- * The other two entries repair Markdown typos without changing meaning.
+ *  - Terms §4 / Privacy §2 listed "record estate-planning intentions" as
+ *    something that grants recipients the ability to view content. It does
+ *    not (Terms §6, Privacy §2 itself): the estate list is an intent list and
+ *    grants no one access; a transfer the recipient accepts is what delivers
+ *    a record. The trigger becomes the transfer, and §4 points at §6.
+ * The remaining two entries repair Markdown typos without changing meaning.
+ * As of 2026-09-15 the first two and the typo fixes are already applied in the
+ * app repo's working tree (uncommitted); the §4 / §2 entries are not.
  */
 export const SOURCE_OVERRIDES = [
   { from: '## 7. Expert-lead marketplace', to: '## 7. Expert introductions' },
   {
     from: 'or an estate-share recipient)',
     to: 'or a transfer recipient who accepted a record)',
+  },
+  {
+    from: ', or record estate-planning intentions, you grant',
+    to: ', or offer a transfer of an item record, you grant',
+  },
+  {
+    from: 'it to them. Do not share content',
+    to: 'it to them. Recording estate-planning intentions grants no one access; see Section 6. Do not share content',
+  },
+  {
+    from: 'share it, or record your\nestate-planning intentions, the information you designate',
+    to: 'share it, or offer a transfer of an item record, the information you designate',
   },
   { from: 'through service providers .', to: 'through service providers.' },
   {
@@ -80,6 +102,9 @@ export function markdownToHtml(markdown) {
     .split('\n');
   const html = [];
   let i = 0;
+  // The contact address is one paragraph whose lines are an address, not a
+  // wrapped sentence: recognised by its "Email:" line, its breaks are kept.
+  const isAddressBlock = (para) => para.length > 1 && para.some((l) => /^Email:/.test(l));
 
   const isBullet = (l) => /^- /.test(l);
   const isNumbered = (l) => /^\d+\. /.test(l);
@@ -148,7 +173,7 @@ export function markdownToHtml(markdown) {
       para.push(lines[i].trim());
       i += 1;
     }
-    html.push(`<p>${inline(para.join(' '))}</p>`);
+    html.push(`<p>${isAddressBlock(para) ? para.map(inline).join('<br>') : inline(para.join(' '))}</p>`);
   }
 
   return html.join('\n');
