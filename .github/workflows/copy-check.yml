@@ -1,0 +1,27 @@
+name: Copy check
+
+# The homepage makes promises about a product in another repository, and the
+# rules that keep those promises true (scripts/check-copy.mjs: 31 claim rules,
+# 10 required qualifications) only ever ran when someone typed `npm test`. That
+# is how `main` came to serve "in about a minute" and "Every item" for two
+# months after the app stopped saying either.
+#
+# The legal-drift half compares privacy.html and terms.html against the app
+# repository's legal/ Markdown, which is not checked out here, so on CI it
+# reports "skipped" and the claim rules still run. Rebuild the legal pages
+# locally with `node scripts/build-legal.mjs` beside a checkout of the app.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  copy:
+    name: Copy — claims the product keeps
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/check-copy.mjs
