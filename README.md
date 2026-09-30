@@ -73,6 +73,8 @@ npm run legal:check       # exit 1 if the committed legal pages differ from thei
 
 The claim rules in `scripts/check-copy.mjs` are copied from the app's `src/components/branding/copy.ts`; when one list changes, change the other. The legal pages are never hand-edited: change the Markdown in the app repo, run `npm run legal:build`, commit both. Any deliberate difference from the Markdown would be listed in `scripts/build-legal.mjs` as `SOURCE_OVERRIDES`, a safety net that applies only while the source still carries the old phrase; the list has been empty since 2026-09-15, when the last corrections landed in the app repo's `legal/`.
 
+The company facts in the legal pages (who provides Heirloom, where, which law governs) and the footer's © line are not edited here or in the Markdown. They sit between `pc:` comment markers and come from `scripts/company.json`, which the legal sync in [thepeninsularcompany.github.io](https://github.com/joe-at-heirloom/thepeninsularcompany.github.io/tree/main/legal) writes, rebuilding and pushing this site when those facts change. `build-legal.mjs` fills the markers from it.
+
 ## Adding App Screenshots
 
 When there are real screenshots to show, add them to the project root and reference them from `index.html` in place of the CSS mock-up. Use screens that show an honest state — an open estimate is a normal result, not something to hide.

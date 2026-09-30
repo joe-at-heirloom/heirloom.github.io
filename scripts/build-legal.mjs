@@ -14,7 +14,8 @@
 //
 // No dependencies: the sources use a small, known subset of Markdown
 // (headings, paragraphs, bullet and numbered lists with wrapped lines, one
-// pipe table, **bold**, a closing *italic* line, HTML comments, --- rules).
+// pipe table, **bold**, *italic* lines, HTML comments, --- rules), plus the
+// pc: company-fact markers described at PAGES.
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -38,10 +39,56 @@ export const LEGAL_DIR = process.env.LEGAL_DIR || resolve(siteRoot, '..', 'Heirl
  */
 export const SOURCE_OVERRIDES = [];
 
+/**
+ * The company facts in the sources (who provides Heirloom, where, which law)
+ * sit between pc:KEY comment markers and are filled from scripts/company.json,
+ * which the legal sync in joe-at-heirloom/thepeninsularcompany.github.io
+ * writes. What the Markdown holds between the markers is only a fallback for
+ * reading the source; the pages print company.json's values. A pc:updated
+ * marker ("Last updated") moves to company.json's date, with the page's
+ * `companyNote`, when that date is the later of the two.
+ */
+const COMPANY_PATH = resolve(here, 'company.json');
+export const COMPANY = existsSync(COMPANY_PATH) ? JSON.parse(readFileSync(COMPANY_PATH, 'utf8')) : null;
+
 export const PAGES = [
-  { source: 'PRIVACY_POLICY.md', output: 'privacy.html', title: 'Privacy Policy — Heirloom' },
-  { source: 'TERMS_OF_SERVICE.md', output: 'terms.html', title: 'Terms of Service — Heirloom' },
+  {
+    source: 'PRIVACY_POLICY.md',
+    output: 'privacy.html',
+    title: 'Privacy Policy — Heirloom',
+    companyNote: 'who provides Heirloom — introduction, §1, §15',
+  },
+  {
+    source: 'TERMS_OF_SERVICE.md',
+    output: 'terms.html',
+    title: 'Terms of Service — Heirloom',
+    companyNote: 'who provides Heirloom, and governing law — introduction, §§17, 19',
+  },
 ];
+
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const isoDate = (text) => {
+  const m = /^\s*([A-Z][a-z]+) (\d{1,2}), (\d{4})/.exec(text);
+  const month = m ? MONTHS.indexOf(m[1]) : -1;
+  return month < 0 ? null : `${m[3]}-${String(month + 1).padStart(2, '0')}-${m[2].padStart(2, '0')}`;
+};
+const longDate = (iso) => {
+  const [y, m, d] = iso.split('-').map(Number);
+  return `${MONTHS[m - 1]} ${d}, ${y}`;
+};
+
+/** Fill a source's pc: markers from company.json (a no-op without it). */
+export function applyCompany(markdown, note, company = COMPANY) {
+  if (!company) return markdown;
+  return markdown.replace(/<!--pc:([a-z-]+)-->([\s\S]*?)<!--\/pc:\1-->/g, (whole, key, inner) => {
+    if (key === 'updated') {
+      const own = isoDate(inner);
+      return own && company.updated > own ? `${longDate(company.updated)} (${note})` : inner;
+    }
+    if (typeof company[key] !== 'string') throw new Error(`scripts/company.json has no "${key}" for a pc:${key} marker`);
+    return company[key];
+  });
+}
 
 function escapeHtml(text) {
   return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -50,7 +97,7 @@ function escapeHtml(text) {
 function inline(text) {
   let out = escapeHtml(text);
   out = out.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  // Only the closing "*This document is a draft…*" line uses single-star italics.
+  // A whole line in single-star italics; no source has one at present.
   out = out.replace(/^\*([^*].*?)\*$/g, '<em>$1</em>');
   return out;
 }
@@ -181,7 +228,7 @@ ${body}
           <a href="/privacy" class="footer__link">Privacy Policy</a>
           <a href="/terms" class="footer__link">Terms of Service</a>
         </nav>
-        <p class="footer__copy">&copy; 2026 The Peninsular Company, LLC. All rights reserved.</p>
+        <p class="footer__copy">&copy; <!--pc:year-->2026<!--/pc:year--> <!--pc:name-->The Peninsular Company, LLC<!--/pc:name-->. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -192,10 +239,10 @@ ${body}
 
 /** Build every page; returns [{output, html}]. Throws if a source is missing. */
 export function buildAll(legalDir = LEGAL_DIR) {
-  return PAGES.map(({ source, output, title }) => {
+  return PAGES.map(({ source, output, title, companyNote }) => {
     const path = resolve(legalDir, source);
     if (!existsSync(path)) throw new Error(`Legal source not found: ${path}`);
-    const markdown = readFileSync(path, 'utf8');
+    const markdown = applyCompany(readFileSync(path, 'utf8'), companyNote);
     // The page title comes from the site, the body from the source. The
     // source's own H1 ("# Heirloom Privacy Policy") is replaced by the shorter
     // page heading the site has always used.
