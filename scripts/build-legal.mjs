@@ -181,7 +181,7 @@ ${body}
           <a href="/privacy" class="footer__link">Privacy Policy</a>
           <a href="/terms" class="footer__link">Terms of Service</a>
         </nav>
-        <p class="footer__copy">&copy; 2026 Heirloom. All rights reserved.</p>
+        <p class="footer__copy">&copy; 2026 The Peninsular Company, LLC. All rights reserved.</p>
       </div>
     </div>
   </footer>
