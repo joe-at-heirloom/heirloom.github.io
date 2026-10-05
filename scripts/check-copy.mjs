@@ -4,7 +4,7 @@
 //   node scripts/check-copy.mjs
 //
 // Three checks, all without dependencies:
-//  1. The visible text of index.html and README.md makes none of the promises
+//  1. The visible text of index.html, README.md and support.html makes none of the promises
 //     the app's own copy rules forbid. The first list below is copied from
 //     src/components/branding/copy.ts (UNSUPPORTED_CLAIM_RULES) in the app repo
 //     with one deliberate difference: the app's bare /\bappraisal\b/ rule is
@@ -152,6 +152,9 @@ const indexPath = process.env.COPY_CHECK_INDEX || resolve(siteRoot, 'index.html'
 const indexText = visibleText(readFileSync(indexPath, 'utf8'));
 checkClaims('index.html', indexText);
 checkClaims('README.md', readFileSync(resolve(siteRoot, 'README.md'), 'utf8'));
+// The support page (the App Store's Support URL) answers questions about the
+// app in its own words, so it is held to the same claims.
+checkClaims('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.html'), 'utf8')));
 
 // 2. Qualifications the homepage must keep.
 for (const { pattern, why } of REQUIRED_ON_HOMEPAGE) {

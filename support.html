@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Heirloom</title>
+  <meta name="description" content="Help with Heirloom: deleting your account, two-factor sign-in, what the Advisor sends and to whom, exporting and backing up your records, reporting and blocking, and how to reach us.">
+  <link rel="canonical" href="https://heirloomapp.io/support">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="nav__container">
+      <a href="/" class="nav__logo"><img src="logo.svg" alt="Heirloom" height="32"></a>
+      <div class="nav__actions"><a href="/" class="btn btn--outline">Back to Home</a></div>
+    </div>
+  </nav>
+  <!-- Every answer below was checked against the app's code on 2026-10-03
+       (beta-acceptance, 294f5ae): the menu labels are the screens' own words.
+       When a label or a flow changes in the app, change it here too. -->
+  <main class="legal-page">
+    <h1>Support</h1>
+    <p class="legal-meta">Last updated October 4, 2026. If your question isn&rsquo;t answered here, email <a href="mailto:support@heirloomapp.io">support@heirloomapp.io</a>.</p>
+
+    <h2>Your account</h2>
+
+    <h3 id="delete-account">How do I delete my account?</h3>
+    <p>In the app, open the <strong>You</strong> tab and tap <strong>Settings</strong> (the gear beside the title). Under <strong>Privacy &amp; data</strong>, tap <strong>Delete account</strong>, then <strong>Delete My Account</strong>, and confirm. It works the same way when you sign in at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
+    <p>The deletion is scheduled for 30 days later, and until then you can cancel it on the same screen with <strong>Cancel Deletion</strong>. After that, your records and files are removed, and the screen shows the deletion while it runs. A record someone has already accepted from you stays with them. To keep a copy first, tap <strong>Download my data first</strong> on the same screen.</p>
+    <p>No longer have the app, or can&rsquo;t sign in? <a href="https://web.heirloomapp.io/delete-account">web.heirloomapp.io/delete-account</a> explains what is deleted and what is kept, and how to ask by email from the address you sign in with. The sign-in screen links to it too, as <strong>Delete an account</strong>.</p>
+
+    <h3 id="two-factor">How do I turn on two-factor sign-in?</h3>
+    <p>Go to <strong>Settings</strong> &rarr; <strong>Sign-in &amp; security</strong>. In the two-factor section, tap <strong>Enable MFA</strong>, scan the QR code with the app you use for sign-in codes (or tap <strong>Can&rsquo;t scan?</strong> to see a setup key you can type in instead), and enter the 6-digit code that app shows. From then on, signing in with your password, Apple or Google also asks for a current code from it.</p>
+    <p>To turn it off, tap <strong>Disable MFA</strong> on the same screen and enter a current code. Heirloom doesn&rsquo;t issue backup codes, so keep your code app backed up. If you lose access to it, email us from the address you sign in with.</p>
+
+    <h3 id="password">I forgot my password, or want to change my sign-in email</h3>
+    <p>On the sign-in screen, tap <strong>Forgot password?</strong>, enter your email and tap <strong>Send reset link</strong>. If you signed up with Apple or Google, keep using that button to sign in. The app can&rsquo;t change the email address you sign in with yet: write to us from that address and we&rsquo;ll help.</p>
+
+    <h2>The Advisor and your data</h2>
+
+    <h3 id="advisor-data">What does the Advisor send, and to whom?</h3>
+    <p>Nothing until you allow it. Heirloom asks before the Advisor sends a photo or a note for the first time, and nothing is sent until you choose <strong>Allow</strong>. Choose <strong>Not now</strong> and you can keep every record yourself.</p>
+    <p>Once you allow it, Heirloom&rsquo;s server sends:</p>
+    <ul>
+      <li><strong>To OpenAI:</strong> your photos, the notes and answers you add, and the details on the record, so the Advisor can suggest a name, describe the object, read marks and labels, ask useful questions and answer yours.</li>
+      <li><strong>To SerpAPI, which searches Google Lens:</strong> a temporary link to a photo of the object, to look for similar objects and comparable sales online.</li>
+      <li><strong>To SerpAPI, which searches Google:</strong> the maker, type of object, material and period on the record, only when the maker is known, to look for auction records of similar pieces.</li>
+    </ul>
+    <p>Once you have allowed it, the Advisor&rsquo;s first look and its search for similar objects start on their own when you photograph an object. Each service handles what it receives under its own terms; the <a href="/privacy">Privacy Policy</a> has the details. To change your answer, go to <strong>Settings</strong> &rarr; <strong>Advisor consent</strong>. Choose <strong>Turn off the Advisor&rsquo;s outside services</strong> and nothing new is sent; what is already on your records stays.</p>
+
+    <h3 id="estimate">Why doesn&rsquo;t my record show an estimate?</h3>
+    <p>The Advisor offers an estimate only when it has found a recorded sale of a comparable object, and comparable sales can&rsquo;t always be found. Asking prices and pre-sale estimates it finds are shown with what kind of price they are, and never set a figure on their own. A figure you enter yourself comes first, and the Advisor never replaces it. Many objects have no market value, and a record is complete without one.</p>
+
+    <h3 id="genuine">Does Heirloom tell me whether something is genuine?</h3>
+    <p>No. The Advisor says what the photos show, what you told it, what a source supports and what is still unknown. Whether an object is genuine is a question for a specialist you choose.</p>
+
+    <h2>Your records</h2>
+
+    <h3 id="export">How do I export or back up my records?</h3>
+    <ul>
+      <li><strong>Export your records:</strong> on the <strong>You</strong> tab, open <strong>Family &amp; Records</strong>, then <strong>Export your records</strong>, and choose JSON, CSV or PDF. The PDF is a report with photos. In a JSON file the photos are links that stop working after about a week, not copies.</li>
+      <li><strong>Download my data:</strong> <strong>Settings</strong> &rarr; <strong>Download my data</strong> gives you everything stored under your account as one .json file.</li>
+      <li><strong>Backup:</strong> <strong>Family &amp; Records</strong> &rarr; <strong>Backup</strong> keeps a copy of your item records and collections in your private storage. Make one with <strong>Create Backup Now</strong> or turn on <strong>Automatic backups</strong>, and restore from it later. Photos, attached documents and estate plans are not in a backup.</li>
+      <li><strong>For an insurer or your family:</strong> <strong>Family &amp; Records</strong> also makes an <strong>Inventory and insurance report</strong> and a <strong>Family packet</strong>, and <strong>Past outputs</strong> keeps each version you made, so you can see later exactly what was sent.</li>
+    </ul>
+
+    <h2>Safety</h2>
+
+    <h3 id="report-block">How do I report something or block someone?</h3>
+    <p>Where someone else&rsquo;s words appear in Heirloom (a comment on a shared record, a message from a specialist, or a specialist&rsquo;s request to be introduced), there is a <strong>Report</strong> control. Choose a reason and send the report. We review reports, usually within a day, and the outcome appears in <strong>Settings</strong> &rarr; <strong>Safety and reports</strong>; we also tell you in Notifications.</p>
+    <p>To block a specialist, use <strong>Block this expert</strong> on their page, or block them from their request. They are not told, and they can&rsquo;t contact you through Heirloom. In a shared collection, the owner can remove a member and a member can leave, in <strong>Settings</strong> &rarr; <strong>Collections &amp; sharing</strong>. Your blocked accounts are listed in <strong>Settings</strong> &rarr; <strong>Safety and reports</strong>, where you can unblock them.</p>
+
+    <h2>What Heirloom does not do</h2>
+
+    <h3 id="no-sales">Does Heirloom sell items, take offers or handle money?</h3>
+    <p>No. Heirloom never sells items, takes offers or handles money, and nothing is put up for sale. If you open a record&rsquo;s <strong>Sale conversation</strong> and choose <strong>I&rsquo;d consider selling this</strong>, specialists in that field may see a short card about it (what it is and roughly where you are, never your name, photos, any value or your address) and may ask to be introduced. Nothing more is shared unless you accept. You can <strong>Withdraw</strong> at any time, which stops new specialists seeing it, though a specialist who already saw the card can&rsquo;t unsee it.</p>
+    <p>When you ask a specialist for help yourself, you see exactly what will be shared before it goes. Any conversation after an introduction, and any sale, is between you and the specialist.</p>
+
+    <h2 id="contact">Contact us</h2>
+    <p>Still need help? Email <a href="mailto:support@heirloomapp.io">support@heirloomapp.io</a>. Write from the address you sign in with, so we can find your account.</p>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="logo.svg" alt="Heirloom" height="24">
+          <p class="footer__tagline">Know what you own.</p>
+        </div>
+        <nav class="footer__links" aria-label="Legal">
+          <a href="/privacy" class="footer__link">Privacy Policy</a>
+          <a href="/terms" class="footer__link">Terms of Service</a>
+          <a href="/support" class="footer__link" aria-current="page">Support</a>
+        </nav>
+        <p class="footer__copy">&copy; <!--pc:year-->2026<!--/pc:year--> <!--pc:name-->The Peninsular Company, LLC<!--/pc:name-->. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
