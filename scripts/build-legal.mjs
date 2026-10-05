@@ -227,6 +227,7 @@ ${body}
         <nav class="footer__links" aria-label="Legal">
           <a href="/privacy" class="footer__link">Privacy Policy</a>
           <a href="/terms" class="footer__link">Terms of Service</a>
+          <a href="/support" class="footer__link">Support</a>
         </nav>
         <p class="footer__copy">&copy; <!--pc:year-->2026<!--/pc:year--> <!--pc:name-->The Peninsular Company, LLC<!--/pc:name-->. All rights reserved.</p>
       </div>
