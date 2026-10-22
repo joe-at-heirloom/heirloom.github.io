@@ -3,7 +3,7 @@
 //
 //   node scripts/check-copy.mjs
 //
-// Three checks, all without dependencies:
+// Four checks, all without dependencies:
 //  1. The visible text of index.html, README.md and support.html makes none of the promises
 //     the app's own copy rules forbid. The first list below is copied from
 //     src/components/branding/copy.ts (UNSUPPORTED_CLAIM_RULES) in the app repo
@@ -18,11 +18,17 @@
 //  3. privacy.html and terms.html match the app repo's legal Markdown when it
 //     can be found (LEGAL_DIR, default ../Heirloom/legal); otherwise that check
 //     is reported as skipped by name, never as a pass.
+//  4. The draft guard: build-legal.mjs refuses a source whose header says
+//     DRAFT FOR COUNSEL unless run with --draft (tried on a copy of the
+//     builder in a temporary folder, so a broken guard writes nothing here),
+//     and neither legal page carries a draft's words.
 
-import { readFileSync, existsSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
+import { readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, copyFileSync, rmSync, realpathSync } from 'node:fs';
+import { resolve, dirname, join } from 'node:path';
+import { tmpdir } from 'node:os';
+import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { buildAll, LEGAL_DIR } from './build-legal.mjs';
+import { buildAll, LEGAL_DIR, PAGES, isDraft, draftSources, markdownToHtml } from './build-legal.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const siteRoot = resolve(here, '..');
@@ -184,13 +190,98 @@ for (const [file, musts, mustNots] of [
 }
 
 if (existsSync(LEGAL_DIR)) {
+  const drafts = draftSources(LEGAL_DIR);
   for (const { output, html } of buildAll(LEGAL_DIR)) {
+    const source = PAGES.find((p) => p.output === output).source;
     const current = readFileSync(resolve(siteRoot, output), 'utf8');
+    // The problem line keeps its wording: the app repo's
+    // docs/submission/check-store-copy.mjs reads it as owed to S5-04. Its
+    // hint is safe now, since the builder refuses a draft; the note says why.
     if (current !== html) failures.push(`${output} differs from ${LEGAL_DIR}/… — run node scripts/build-legal.mjs`);
     else notes.push(`${output} matches ${LEGAL_DIR}`);
+    if (current !== html && drafts.includes(source)) {
+      notes.push(
+        `${output}: ${source} in LEGAL_DIR is a DRAFT FOR COUNSEL, which build-legal.mjs refuses; ` +
+          'to rebuild the published page, set LEGAL_DIR to a folder holding the published texts (git show main:legal/… in the app repo)',
+      );
+    }
   }
 } else {
   notes.push(`skipped: legal drift check (LEGAL_DIR not found at ${LEGAL_DIR})`);
+}
+
+// 4. The draft guard (the app repo's docs/submission/legal.md, "Publishing").
+// Kept out of part 3, whose sentence list the app repo's check-legal.mjs reads.
+const DRAFT_HEADER =
+  '<!-- Placeholders completed 2026-07-12 (published at heirloomapp.io). -->\n<!--\nDRAFT FOR COUNSEL, prepared 2026-10-13. NOT PUBLISHED.\n-->\n';
+const PUBLISHED_HEADER =
+  '<!-- Placeholders completed 2026-07-12 (published at heirloomapp.io). -->\n<!--\nThis draft was generated from a code-level data inventory.\n-->\n';
+const DRAFT_FIXTURES = [
+  [`${DRAFT_HEADER}# Heirloom Privacy Policy\n`, true, 'the mark in the second header comment'],
+  ['<!-- draft for counsel -->\n# Heirloom Terms of Service\n', true, 'the mark in lower case'],
+  [`${PUBLISHED_HEADER}# Heirloom Privacy Policy\n`, false, "the published texts' own header (\"This draft was generated\")"],
+  [`${PUBLISHED_HEADER}# Heirloom Privacy Policy\n\nAn old DRAFT FOR COUNSEL is gone.\n`, false, 'the mark in the body, not the header'],
+];
+for (const [text, want, what] of DRAFT_FIXTURES) {
+  if (isDraft(text) !== want) failures.push(`draft guard self-check: ${what} should be ${want ? 'refused' : 'allowed'}`);
+}
+
+// The command itself, on a copy of the builder in a temporary site, so that a
+// guard that failed would overwrite the copy's pages and not this repo's. The
+// real path, because the builder runs only when its own path is the one node
+// was given (macOS's temporary folder is reached through a link).
+const scratch = realpathSync(mkdtempSync(join(tmpdir(), 'heirloom-site-guard-')));
+try {
+  mkdirSync(join(scratch, 'scripts'));
+  mkdirSync(join(scratch, 'legal'));
+  copyFileSync(resolve(here, 'build-legal.mjs'), join(scratch, 'scripts', 'build-legal.mjs'));
+  const companyPath = resolve(here, 'company.json');
+  if (existsSync(companyPath)) copyFileSync(companyPath, join(scratch, 'scripts', 'company.json'));
+  const pages = () => PAGES.map(({ output }) => readFileSync(join(scratch, output), 'utf8'));
+  const run = (...args) =>
+    spawnSync(process.execPath, [join(scratch, 'scripts', 'build-legal.mjs'), ...args], {
+      env: { ...process.env, LEGAL_DIR: join(scratch, 'legal') },
+      encoding: 'utf8',
+    });
+  const sources = (header) => {
+    for (const { source, output } of PAGES) {
+      writeFileSync(join(scratch, 'legal', source), `${header}# Heirloom ${source}\n\nThe text.\n`);
+      writeFileSync(join(scratch, output), 'the page as published\n');
+    }
+  };
+
+  sources(DRAFT_HEADER);
+  const refused = run();
+  if (refused.status !== 2) failures.push(`draft guard: a plain build of a DRAFT FOR COUNSEL exited ${refused.status}, not 2 (refused)`);
+  if (pages().some((p) => p !== 'the page as published\n')) failures.push('draft guard: a plain build of a DRAFT FOR COUNSEL wrote a page');
+  if (!/refused: .*DRAFT FOR COUNSEL/.test(refused.stderr)) failures.push('draft guard: the refusal does not say why');
+  const checked = run('--check');
+  if (checked.status !== 1 || !/is a DRAFT FOR COUNSEL/.test(checked.stderr)) failures.push('draft guard: --check on a draft should report it as a draft and exit 1');
+  const looked = run('--draft');
+  if (looked.status !== 0 || pages().some((p) => !p.includes('The text.'))) failures.push('draft guard: --draft should write the pages');
+
+  sources(PUBLISHED_HEADER);
+  const built = run();
+  if (built.status !== 0 || pages().some((p) => !p.includes('The text.'))) failures.push('draft guard: a published text should build as before');
+  if (!failures.some((f) => f.startsWith('draft guard'))) notes.push('draft guard: a DRAFT FOR COUNSEL is refused (exit 2, nothing written), --draft writes it, a published text builds');
+} finally {
+  rmSync(scratch, { recursive: true, force: true });
+}
+
+// A draft built by mistake shows its own dated line. Neither page may carry it.
+for (const { output } of PAGES) {
+  const html = readFileSync(resolve(siteRoot, output), 'utf8');
+  if (/draft for counsel/i.test(html)) failures.push(`${output} says "draft for counsel": it was built from a draft`);
+  if (/Last updated:<\/strong> pending\b/.test(html)) failures.push(`${output} is dated "pending": it was built from a draft`);
+}
+
+// The Terms sentence part 3 asserts is wrapped across two lines in the app
+// repo's next draft ("does not send an" / "invitation, …"). The builder joins
+// a paragraph's lines with one space, so the sentence still reads whole on the
+// page; this holds the builder to that.
+const wrapped = markdownToHtml('Recording a beneficiary or a bequest does not send an\ninvitation, grant account access, or transfer ownership.\n');
+if (!wrapped.includes('does not send an invitation, grant account access, or transfer ownership')) {
+  failures.push("build-legal.mjs no longer joins a paragraph's wrapped lines, so terms.html's estate sentence would not read whole");
 }
 
 for (const n of notes) console.log(n);
@@ -199,4 +290,7 @@ if (failures.length) {
   for (const f of failures) console.error(`  - ${f}`);
   process.exit(1);
 }
-console.log(`copy check passed: ${APP_CLAIM_RULES.length + SITE_CLAIM_RULES.length} claim rules, ${REQUIRED_ON_HOMEPAGE.length} required qualifications`);
+console.log(
+  `copy check passed: ${APP_CLAIM_RULES.length + SITE_CLAIM_RULES.length} claim rules, ${REQUIRED_ON_HOMEPAGE.length} required qualifications, ` +
+    `the draft guard (${DRAFT_FIXTURES.length} headers and 4 runs of the builder)`,
+);

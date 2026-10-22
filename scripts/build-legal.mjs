@@ -8,9 +8,15 @@
 //
 //   node scripts/build-legal.mjs            # rewrite privacy.html and terms.html
 //   node scripts/build-legal.mjs --check    # exit 1 if the committed pages differ
+//   node scripts/build-legal.mjs --draft    # write them from a draft, to look at only
 //
 // LEGAL_DIR points at the folder holding the two .md files (default:
 // ../Heirloom/legal, i.e. the app repo checked out beside this one).
+//
+// A source whose header says DRAFT FOR COUNSEL is refused: a plain run writes
+// nothing and exits 2, because a push of this repo publishes what it wrote.
+// --draft writes it anyway, for a look on this machine; never commit that.
+// See DRAFT_MARK below.
 //
 // No dependencies: the sources use a small, known subset of Markdown
 // (headings, paragraphs, bullet and numbered lists with wrapped lines, one
@@ -65,6 +71,38 @@ export const PAGES = [
     companyNote: 'who provides Heirloom, and governing law — introduction, §§17, 19',
   },
 ];
+
+/**
+ * The app repo keeps the next policy and terms in legal/ as drafts while
+ * counsel reads them, each with a header comment that says "DRAFT FOR
+ * COUNSEL" (its docs/submission/legal.md, "Publishing"). The site's builder
+ * reads that folder by default, so without this guard a plain run would write
+ * a draft into privacy.html and terms.html and the next push would publish it.
+ *
+ * The header is the run of HTML comments that opens the file, before its
+ * first line of text; the mark is matched there only, so a published text that
+ * names a draft in its body is not refused. The published texts' own header
+ * says "This draft was generated…", which is not the mark.
+ */
+export const DRAFT_MARK = /\bDRAFT FOR COUNSEL\b/i;
+
+/** The HTML comments, and the space between them, that open a source. */
+export function headerOf(markdown) {
+  return /^(?:\s*<!--[\s\S]*?-->)*/.exec(markdown)[0];
+}
+
+/** True when a source's header says DRAFT FOR COUNSEL. */
+export function isDraft(markdown) {
+  return DRAFT_MARK.test(headerOf(markdown));
+}
+
+/** The sources in legalDir whose header says DRAFT FOR COUNSEL (a missing one is not listed). */
+export function draftSources(legalDir = LEGAL_DIR) {
+  return PAGES.filter(({ source }) => {
+    const path = resolve(legalDir, source);
+    return existsSync(path) && isDraft(readFileSync(path, 'utf8'));
+  }).map(({ source }) => source);
+}
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const isoDate = (text) => {
@@ -238,7 +276,12 @@ ${body}
 `;
 }
 
-/** Build every page; returns [{output, html}]. Throws if a source is missing. */
+/**
+ * Build every page; returns [{output, html}]. Throws if a source is missing.
+ * It writes nothing and does not refuse a draft: the app repo's
+ * docs/submission/check-legal.mjs imports it to check that its drafts build.
+ * Only the command below writes, and it is the one that refuses.
+ */
 export function buildAll(legalDir = LEGAL_DIR) {
   return PAGES.map(({ source, output, title, companyNote }) => {
     const path = resolve(legalDir, source);
@@ -255,20 +298,37 @@ export function buildAll(legalDir = LEGAL_DIR) {
 const invokedDirectly = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (invokedDirectly) {
   const check = process.argv.includes('--check');
+  const draft = process.argv.includes('--draft');
+  const drafts = draftSources();
+  if (drafts.length && !check && !draft) {
+    console.error(
+      `refused: ${drafts.join(' and ')} in ${LEGAL_DIR} ${drafts.length > 1 ? 'say' : 'says'} DRAFT FOR COUNSEL in the header, ` +
+        'and this repo publishes what is pushed. Nothing was written.\n' +
+        'To rebuild the published pages, point LEGAL_DIR at the published texts in a scratch folder ' +
+        '(in the app repo: git show main:legal/PRIVACY_POLICY.md and git show main:legal/TERMS_OF_SERVICE.md). ' +
+        'To look at a draft on this machine only, run with --draft, and do not commit what it writes.',
+    );
+    process.exit(2);
+  }
   let drift = 0;
   for (const { output, html } of buildAll()) {
     const target = resolve(siteRoot, output);
+    const source = PAGES.find((p) => p.output === output).source;
     if (check) {
       const current = existsSync(target) ? readFileSync(target, 'utf8') : '';
       if (current !== html) {
         drift += 1;
-        console.error(`${output} differs from ${LEGAL_DIR}: run node scripts/build-legal.mjs`);
+        console.error(
+          drafts.includes(source)
+            ? `${output} differs from ${LEGAL_DIR}, whose ${source} is a DRAFT FOR COUNSEL: the page is not built from a draft; set LEGAL_DIR to the published text`
+            : `${output} differs from ${LEGAL_DIR}: run node scripts/build-legal.mjs`,
+        );
       } else {
         console.log(`${output} matches its source`);
       }
     } else {
       writeFileSync(target, html);
-      console.log(`wrote ${output}`);
+      console.log(drafts.includes(source) ? `wrote ${output} from a DRAFT FOR COUNSEL (--draft): do not commit it` : `wrote ${output}`);
     }
   }
   process.exit(drift ? 1 : 0);
