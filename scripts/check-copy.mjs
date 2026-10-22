@@ -13,8 +13,18 @@
 //     professional who provides an appraisal. Keep the rest in step with the
 //     app. The second list is website-specific.
 //  2. The homepage still carries the qualifications the plan asks for
-//     (evidence-conditioned estimates, "cannot tell", estate list grants no
-//     access, transfers need acceptance, nothing for sale).
+//     (evidence-conditioned estimates, "cannot tell", the wishes list grants
+//     no access, nothing for sale), the home inventory first (D1), the App
+//     Store badge's link and the US-only line (D57); it and this README use
+//     the launch words (no beta or waitlist, nothing passed on or
+//     transferred, D17; "item" and "specialist", D44, D24; American
+//     spelling), and its titles
+//     are in sentence case (the app repo's docs/VOICE.md).
+//     What is owed before the publish fails the check: support.html's old
+//     words (it changes with the release), the placeholder badge, and the
+//     Terms of October 4 beside the insurer's PDF (S5-16). PRE_RELEASE=1
+//     prints them as notes instead, to review the launch branch before
+//     release day; CI, the push and the legal sync run without it.
 //  3. privacy.html and terms.html match the app repo's legal Markdown when it
 //     can be found (LEGAL_DIR, default ../Heirloom/legal); otherwise that check
 //     is reported as skipped by name, never as a pass.
@@ -92,19 +102,126 @@ const APPRAISAL_FIXTURES = [
   ['It is labelled as an estimate, never dressed up as an appraisal.', true],
 ];
 
-/** Sentences the homepage must keep, each the qualification of a former claim. */
+/** Sentences the homepage must keep, each the qualification of a former claim, or a launch promise. */
 const REQUIRED_ON_HOMEPAGE = [
   { pattern: /evidence for one/i, why: 'estimates are conditioned on evidence' },
   { pattern: /no market value/i, why: 'unknown value is normal' },
   { pattern: /cannot tell/i, why: 'the Advisor says what it cannot tell' },
-  { pattern: /grants no one access/i, why: 'the estate list grants nothing' },
-  { pattern: /once they accept/i, why: 'a transfer needs the recipient to accept' },
+  { pattern: /grants no one access/i, why: 'the list of who each item is meant for grants nothing' },
   { pattern: /put up for sale/i, why: 'never a marketplace' },
+  {
+    // Joe's sentence with its scope ("No money for a sale changes hands
+    // through Heirloom"), or the launch draft's.
+    pattern: /\bno money for a sale changes hands through Heirloom\b|\btakes no part in any sale and handles no money for one\b/i,
+    why: "never a marketplace, and no money for a sale; specialists do buy credits from Heirloom (the app repo's legal/TERMS_OF_SERVICE.md §9, counsel's Q8), so the sentence keeps its scope",
+  },
   { pattern: /write it down/i, why: 'manual entry is an equal starting path' },
   { pattern: /not professional appraisals/i, why: 'estimates are not appraisals' },
-  { pattern: /\bnow in beta\b/i, why: 'the beta is named as a beta' },
-  { pattern: /\bone photo\b/i, why: 'a transfer carries identification and one photo, not the record' },
+  { pattern: /room by room/i, why: 'the home inventory comes first (D1)' },
+  { pattern: /\bThe iPhone app is in the US App Store for now\./, why: 'the US-only line (D57)' },
+  // "Works everywhere" holds while web sign-up is open outside the US. If
+  // counsel's answer to Q7 (due Nov 20) brings in D66, web sign-up is limited
+  // to the US: the hero's and the download band's US-only line, the meta
+  // description's "on the web everywhere" and the family card's "can join
+  // from a web browser" are reworded, and this pattern with them (the app
+  // repo's docs/RELEASE.md, "The website on release day").
+  { pattern: /\bHeirloom on the web works everywhere\b/, why: 'the US-only line names the web app (D57)' },
+  { pattern: /\bweb\.heirloomapp\.io\b/, why: 'the US-only line names the web app by its address (D57)' },
 ];
+
+/** What the homepage's markup must carry, read from the HTML itself (a link is not visible text). */
+const REQUIRED_IN_HOMEPAGE_HTML = [
+  { pattern: /<a\b[^>]*\bhref="https:\/\/apps\.apple\.com\/us\/app\/id6754576251"/, why: 'the App Store badge opens the app\'s US App Store page (D31)' },
+  { pattern: /<a\b[^>]*\bhref="https:\/\/web\.heirloomapp\.io\/?"/, why: 'the US-only line links the web app (D57)' },
+];
+
+/**
+ * Words the homepage and this README no longer use (S5-16). The beta and its
+ * waitlist end at launch. Pass it on is hidden until accepting it moves the
+ * whole record (D17), so nothing on the page passes or transfers a record.
+ * "Item" is the thing a person owns, never asset, piece, object, possession
+ * or treasure (D13, D44, the app's src/lib/glossary.ts and docs/VOICE.md);
+ * the professional is a "specialist" (D24, D25). Android has no date (D61).
+ * Heirloom keeps a record of what was sent, not a copy of the file (the app
+ * repo's docs/submission/listing.md, 2026-10-14).
+ * Heirloom takes no part in a sale, but specialists buy credits from it, so
+ * no sentence about money goes without that scope (MONEY_RULE).
+ * Not part of the claim rules above, which the app repo's
+ * docs/submission/check-store-copy.mjs reads and applies to the store copy.
+ */
+const MONEY_RULE = {
+  pattern: /\bno money changes hands\b|\bhandles? (no )?money\b(?! for)/i,
+  why: "specialists buy credits from Heirloom (the app repo's legal/TERMS_OF_SERVICE.md §9): say Heirloom takes no part in any sale and handles no money for one",
+};
+const MONEY_FIXTURES = [
+  ['No money changes hands through Heirloom.', true],
+  ['No money changes hands through Heirloom: any sale is between you and the specialist you chose.', true],
+  ['Heirloom never sells items, takes offers or handles money, and nothing is put up for sale.', true],
+  ['It takes no part in any sale and handles no money for one: any sale is between you and the specialist you chose.', false],
+  ['No money for a sale changes hands through Heirloom: any sale is between you and the specialist you chose.', false],
+];
+const HOMEPAGE_WORD_RULES = [
+  { pattern: /\bbeta\b/i, why: 'the beta ends at launch' },
+  { pattern: /\bearly access\b|\bon the list\b|\ba place for you\b/i, why: 'the waitlist ends at launch: the App Store badge and the web app instead' },
+  { pattern: /\bpass(es|ed|ing)? (it|the record|a record|records|an individual record) on\b|\bpass(es|ed|ing)? (a|an individual|the) record to\b/i, why: 'Pass it on is hidden (D17)' },
+  { pattern: /\btransfer/i, why: 'nothing on the site transfers a record (D17)' },
+  { pattern: /\bonce they accept\b|\bwho accepts it\b/i, why: 'Pass it on is hidden (D17)' },
+  {
+    pattern: /\bkeeps? a copy of (exactly )?what\b/i,
+    why: 'say "keeps a record of what you sent": the app keeps the rows, fields, totals and photo paths, not the file itself (the app repo\'s docs/submission/listing.md, 2026-10-14)',
+  },
+  MONEY_RULE,
+  { pattern: /\b(assets?|pieces?|objects?|possessions?|treasures?)\b/i, why: 'say "item" (D13, D44)' },
+  { pattern: /\bexperts?\b/i, why: 'say "specialist" (D24, D25)' },
+  { pattern: /\bAndroid\b|\bto follow\b/i, why: 'Android has no date (D61)' },
+  {
+    // The same list as the app repo's docs/submission/check-store-copy.mjs (BRITISH), plus "labelled".
+    pattern: /\b(?!catalogu(?:e|er|ers|es|ed|ing)\b)(catalogu\w*|colour\w*|favour\w*|\w*organis\w*|\w*recognis\w*|jewellery|centre|licence|analys(e|ed|ing)|grey|cheque|honour\w*|behaviour\w*|neighbour\w*|travell\w*|\w*labell\w*)\b/i,
+    why: 'American spelling (docs/VOICE.md); "catalogue", "cataloguer" and "cataloguing" are the trade\'s, and Joe\'s (D72)',
+  },
+];
+
+/**
+ * Sentence case for the homepage's titles, eyebrows, navigation and buttons
+ * (docs/VOICE.md, "The sentences"): a capital inside one is a name or it is
+ * wrong. These are the names the page uses.
+ */
+const TITLE_NAMES = new Set(['Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
+const TITLE_FIXTURES = [
+  ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
+  ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
+  ['<h2 class="pitch__title">Your money has an app.<br><em>What about your things?</em></h2>', []],
+  ['<h3 class="feature-card__title">Heirloom Advisor</h3>', []],
+  ['<div class="nav__links"><a class="nav__link">How it works</a><a class="nav__link">What it does</a></div>', []],
+  ['<a class="btn btn--primary">Get Early Access</a>', ['Early', 'Access']],
+];
+
+/** The words in a title-like element that are capitalised and not a name. */
+function titleCaseHits(html) {
+  const pieces = [
+    ...[...html.matchAll(/<(h[1-3])\b[^>]*>([\s\S]*?)<\/\1>/g)].map((m) => m[2]),
+    ...[...html.matchAll(/<(a|p|span|button|div)\b[^>]*\bclass="[^"]*(?:__eyebrow\b|nav__link(?![\w-])|\bbtn(?![\w-])|hero__kicker(?![\w-]))[^"]*"[^>]*>([\s\S]*?)<\/\1>/g)].map((m) => m[2]),
+  ];
+  const hits = [];
+  for (const raw of pieces) {
+    const text = raw
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&rsquo;|&lsquo;/g, '\u2019')
+      .replace(/&ldquo;|&rdquo;|&quot;/g, '"')
+      .replace(/&amp;/g, '&')
+      .replace(/&[a-z]+;/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    for (const sentence of text.split(/(?<=[.!?])\s+/)) {
+      const words = sentence.split(' ').map((w) => w.replace(/^[^A-Za-z]+|[^A-Za-z\u2019']+$/g, ''));
+      for (const w of words.slice(1)) {
+        const bare = w.replace(/[\u2019']s$/, '');
+        if (/^[A-Z]/.test(bare) && !TITLE_NAMES.has(bare)) hits.push({ word: bare, in: text });
+      }
+    }
+  }
+  return hits;
+}
 
 function visibleText(html) {
   const metas = [...html.matchAll(/<meta[^>]+content="([^"]*)"/g)].map((m) => m[1]);
@@ -131,6 +248,12 @@ function sentences(text) {
 
 const failures = [];
 const notes = [];
+// What must change before the homepage is published (S5-16). Each is a
+// failure, so a push to main, CI on a pull request and the legal sync's run
+// of this script cannot be green with one left; PRE_RELEASE=1 (a review of
+// the launch branch before release day) prints them as notes instead.
+const PRE_RELEASE = process.env.PRE_RELEASE === '1';
+const beforePublishing = [];
 
 // Self-check: the appraisal context rule must reject the unqualified claim.
 for (const [sentence, allowed] of APPRAISAL_FIXTURES) {
@@ -165,6 +288,54 @@ checkClaims('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.
 // 2. Qualifications the homepage must keep.
 for (const { pattern, why } of REQUIRED_ON_HOMEPAGE) {
   if (!pattern.test(indexText)) failures.push(`index.html is missing ${pattern} — ${why}`);
+}
+const indexHtml = readFileSync(indexPath, 'utf8');
+for (const { pattern, why } of REQUIRED_IN_HOMEPAGE_HTML) {
+  if (!pattern.test(indexHtml)) failures.push(`index.html is missing ${pattern} — ${why}`);
+}
+// The launch words. A hit reads "index.html says …", not "index.html: …", so
+// the app repo's check-store-copy.mjs, which runs this script with
+// support.html in the homepage's place (COPY_CHECK_INDEX), does not count a
+// word as a broken claim; it reads support.html's words itself (its 5a).
+function checkWords(label, text) {
+  const found = [];
+  for (const { pattern, why } of HOMEPAGE_WORD_RULES) {
+    const g = new RegExp(pattern.source, pattern.flags.includes('g') ? pattern.flags : `${pattern.flags}g`);
+    for (const m of text.matchAll(g)) found.push(`${label} says "${m[0]}" — ${why}`);
+  }
+  return found;
+}
+failures.push(...checkWords('index.html', indexText));
+failures.push(...checkWords('README.md', readFileSync(resolve(siteRoot, 'README.md'), 'utf8')));
+for (const [sentence, hit] of MONEY_FIXTURES) {
+  if (MONEY_RULE.pattern.test(sentence) !== hit) failures.push(`money rule self-check: expected ${hit ? 'caught' : 'allowed'}: ${sentence}`);
+}
+// support.html answers questions about the build that is live, so its words
+// change with the release (S5-16's release-day steps), and are owed before it.
+const supportWords = checkWords('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.html'), 'utf8')));
+if (supportWords.length) {
+  beforePublishing.push(`support.html has ${supportWords.length} word(s) the homepage no longer uses: ${[...new Set(supportWords.map((w) => /says "([^"]+)"/.exec(w)[1].toLowerCase()))].join(', ')}`);
+}
+for (const [html, want] of TITLE_FIXTURES) {
+  const got = titleCaseHits(html).map((h) => h.word);
+  if (got.join() !== want.join()) failures.push(`sentence-case self-check: ${html} gave [${got}], expected [${want}]`);
+}
+for (const { word, in: title } of titleCaseHits(indexHtml)) failures.push(`index.html title case: "${word}" in "${title}" — sentence case (docs/VOICE.md)`);
+// The badge is a stand-in until Apple's artwork is downloaded with Joe's OK.
+// Apple's guidelines allow only its own badge artwork to be published.
+if (/data-badge="placeholder"/.test(indexHtml)) {
+  beforePublishing.push("the App Store badge is the placeholder; put Apple's own artwork in its place");
+}
+// The Terms of October 4 say identifications and valuations "must not be used
+// to obtain, set, or support insurance coverage or claims", and the
+// homepage's bold line is an inventory ready for your insurer. S5-04 republishes the Terms
+// with counsel's answer to Q10; the homepage goes out with them or after.
+const termsHtml = readFileSync(resolve(siteRoot, 'terms.html'), 'utf8');
+if (/must not be used to obtain, set, or support insurance coverage or claims/.test(termsHtml) && /\binsurer\b/i.test(indexText)) {
+  beforePublishing.push(
+    'terms.html is still the Terms of October 4 ("must not be used to obtain, set, or support insurance coverage or claims") ' +
+      "while the homepage offers an inventory ready for your insurer: publish the homepage with or after S5-04's republished Terms (counsel's Q10)",
+  );
 }
 
 // 3. Legal pages: the estate wording is asserted directly; full drift needs the source.
@@ -284,6 +455,11 @@ if (!wrapped.includes('does not send an invitation, grant account access, or tra
   failures.push("build-legal.mjs no longer joins a paragraph's wrapped lines, so terms.html's estate sentence would not read whole");
 }
 
+for (const o of beforePublishing) {
+  if (PRE_RELEASE) notes.push(`owed before publishing (S5-16), a note under PRE_RELEASE=1: ${o}`);
+  else failures.push(`owed before publishing (S5-16): ${o} (PRE_RELEASE=1 reviews the launch branch before release day)`);
+}
+
 for (const n of notes) console.log(n);
 if (failures.length) {
   console.error(`\n${failures.length} problem(s):`);
@@ -291,6 +467,9 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `copy check passed: ${APP_CLAIM_RULES.length + SITE_CLAIM_RULES.length} claim rules, ${REQUIRED_ON_HOMEPAGE.length} required qualifications, ` +
-    `the draft guard (${DRAFT_FIXTURES.length} headers and 4 runs of the builder)`,
+  `copy check passed: ${APP_CLAIM_RULES.length + SITE_CLAIM_RULES.length} claim rules, ` +
+    `${REQUIRED_ON_HOMEPAGE.length + REQUIRED_IN_HOMEPAGE_HTML.length} required on the homepage, ` +
+    `${HOMEPAGE_WORD_RULES.length} word rules, sentence case, ` +
+    `the draft guard (${DRAFT_FIXTURES.length} headers and 4 runs of the builder)` +
+    (PRE_RELEASE ? `; PRE_RELEASE=1: ${beforePublishing.length} owed before publishing, above` : '; nothing owed before publishing'),
 );

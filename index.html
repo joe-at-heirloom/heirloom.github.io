@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heirloom — Know What You Own</title>
-  <meta name="description" content="Know what you own. Photograph a possession, or write down one you already know. Heirloom gathers what is known about it, keeps its story, and passes the record on to the people you trust. Now in beta.">
+  <meta name="description" content="Know what you own. Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
   <link rel="canonical" href="https://heirloomapp.io/">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
 
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://heirloomapp.io/">
   <meta property="og:title" content="Heirloom — Know What You Own">
-  <meta property="og:description" content="Photograph a possession, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
+  <meta property="og:description" content="Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
   <meta name="twitter:card" content="summary">
 
   <!-- Lets the hero hold its drawing back until the 3D watch has had its chance (hero-watch.js). -->
@@ -31,13 +31,13 @@
         <img src="logo.svg" alt="Heirloom" height="32">
       </a>
       <div class="nav__links" id="navLinks">
-        <a href="#two-ways" class="nav__link">Two Ways In</a>
-        <a href="#how" class="nav__link">How It Works</a>
-        <a href="#features" class="nav__link">What It Does</a>
-        <a href="#who" class="nav__link">Who It's For</a>
+        <a href="#two-ways" class="nav__link">Two ways in</a>
+        <a href="#how" class="nav__link">How it works</a>
+        <a href="#features" class="nav__link">What it does</a>
+        <a href="#who" class="nav__link">Who it's for</a>
       </div>
       <div class="nav__actions">
-        <a href="#waitlist" class="btn btn--primary">Get early access</a>
+        <a href="#download" class="btn btn--primary">Get Heirloom</a>
       </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span>
@@ -69,16 +69,25 @@
     </div>
     <div class="container hero__container">
       <div class="hero__content">
-        <p class="hero__kicker"><span class="hero__kicker-dot" aria-hidden="true"></span>Now in beta on the web</p>
+        <p class="hero__kicker"><span class="hero__kicker-dot" aria-hidden="true"></span>Now on iPhone and the web</p>
         <h1 class="hero__title" id="hero-title">
           <span class="hero__line"><span>Know what</span></span>
           <span class="hero__line"><span>you own<span class="hero__stop">.</span></span></span>
         </h1>
-        <p class="hero__lede"><strong>A private record of the art, antiques and keepsakes in your life.</strong> Photograph one, or write down what you already know. Heirloom gathers what is known about it, shows the evidence behind any estimate, and keeps its story for the people you trust.</p>
+        <p class="hero__lede"><strong>Your home&rsquo;s inventory, room by room: the photos, the stories, and what each item&rsquo;s marks say, ready for your insurer or your family.</strong> Photograph one, or write down what you already know. Heirloom gathers what is known about it, shows the evidence behind any estimate, and keeps its story for the people you trust.</p>
         <div class="hero__cta">
-          <a href="#waitlist" class="btn btn--primary btn--lg">Get early access</a>
+          <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251" data-badge="placeholder" aria-label="Download Heirloom on the App Store">
+            <!-- PLACEHOLDER in the shape of Apple's black US-English
+                 "Download on the App Store" badge: swap this span pair for
+                 Apple's own artwork (its marketing resources) before the site
+                 is published (the app repo's docs/RELEASE.md, the website's
+                 release-day steps). -->
+            <span class="store-badge__small">Download on the</span>
+            <span class="store-badge__large">App Store</span>
+          </a>
           <a href="#two-ways" class="hero__link">See how it works <span class="hero__link-arrow" aria-hidden="true">&rarr;</span></a>
         </div>
+        <p class="hero__store-note">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
         <ul class="hero__assurances">
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private by design</li>
           <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9a2.83 2.83 0 0 0-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>Your word is the record</li>
@@ -91,7 +100,7 @@
            is honestly still open, and what one more photograph would add.
            The object is drawn, not photographed, for the app's reason: a
            stock photo would put a real object where a stand-in belongs. -->
-      <figure class="hero__visual" role="img" aria-label="An example record of a made-up object, Grandpa’s pocket watch from around 1920, lying on a counter: its story, a maker still unknown, an estimate that waits on a look inside the case, and what a photograph of the movement would add.">
+      <figure class="hero__visual" role="img" aria-label="An example record of a made-up item, Grandpa’s pocket watch from around 1920, lying on a counter: its story, a maker still unknown, an estimate that waits on a look inside the case, and what a photograph of the movement would add.">
         <div class="specimen" data-hero-scene>
           <!-- Grandpa's watch on the counter, drawn. hero-watch.js replaces
                this with the watch in three dimensions; the drawing stays for
@@ -307,7 +316,7 @@
             </dl>
             <div class="record__evidence">
               <p class="record__evidence-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V6.5A2.5 2.5 0 0 1 6.5 4H9M15 4h2.5A2.5 2.5 0 0 1 20 6.5V9M20 15v2.5a2.5 2.5 0 0 1-2.5 2.5H15M9 20H6.5A2.5 2.5 0 0 1 4 17.5V15"/></svg>Once the movement is photographed</p>
-              <p class="record__evidence-text">A serial number on the movement, matched to its maker&rsquo;s records from 1919.</p>
+              <p class="record__evidence-text">A serial number on the movement, matched to its maker&rsquo;s published serial lists.</p>
               <span class="record__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.8l1.4-2h6.6l1.4 2h1.8A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg>Evidence: photo inside the case back</span>
 
               <!-- The photograph the reading came from: the movement, under a loupe. -->
@@ -416,11 +425,11 @@
     <div class="container">
       <div class="pitch__inner">
         <p class="pitch__eyebrow">Why Heirloom</p>
-        <h2 class="pitch__title">You track your money.<br><em>Who's tracking your things?</em></h2>
+        <h2 class="pitch__title">Your money has an app.<br><em>What about your things?</em></h2>
         <p class="pitch__body">Your accounts have an app &mdash; balances, history, a total that updates itself. Meanwhile the painting over the mantel, your grandfather's watch, the shelf of first editions: no record of what they are, where they came from, or who they are meant for. <strong>Heirloom is that record</strong> &mdash; one place where the things you own are written down, with their photos and their stories, and an estimate where there is evidence for one.</p>
         <div class="pitch__points">
           <div class="pitch__point"><span class="pitch__point-num">One</span>place for everything you own</div>
-          <div class="pitch__point"><span class="pitch__point-num">Each</span>object with its photos, facts &amp; story</div>
+          <div class="pitch__point"><span class="pitch__point-num">Each</span>item with its photos, facts &amp; story</div>
           <div class="pitch__point"><span class="pitch__point-num">Zero</span>spreadsheets or shoeboxes</div>
         </div>
       </div>
@@ -431,9 +440,9 @@
   <section class="ways" id="two-ways">
     <div class="container">
       <div class="section-header">
-        <p class="section-header__eyebrow">Two Ways In</p>
+        <p class="section-header__eyebrow">Two ways in</p>
         <h2 class="section-header__title">Whether you're wondering<br>or you already know</h2>
-        <p class="section-header__subtitle">Most apps assume you know nothing about your things. Collectors know better. Heirloom is built for both, and never makes the expert sit through the beginner flow.</p>
+        <p class="section-header__subtitle">Most apps assume you know nothing about your things. Collectors know better. Heirloom is built for both, and never makes the collector sit through the beginner flow.</p>
       </div>
 
       <div class="ways__grid">
@@ -461,11 +470,11 @@
             <h3 class="way-card__title">&ldquo;Write it down&rdquo;</h3>
             <p class="way-card__persona">You're the collector. You did the research years ago.</p>
           </div>
-          <p class="way-card__desc">Catalogue it yourself &mdash; maker, provenance, condition, your own valuation. Your word is the record, and Heirloom never rewrites it. The Advisor stays out of the way unless you ask for a second look or for comparable sales.</p>
+          <p class="way-card__desc">Catalogue it yourself &mdash; maker, provenance, condition, your own valuation. Your word is the record, and Heirloom never rewrites it. The Advisor stays out of the way unless you add photos, change what the item is, or ask for a second look or for comparable sales.</p>
           <ul class="way-card__list">
             <li>Full manual cataloguing &mdash; add photos any time</li>
             <li>Your words and your estimates are never overwritten</li>
-            <li>Research &amp; comparable sales only when you ask</li>
+            <li>Research &amp; comparable sales when you ask</li>
           </ul>
         </div>
       </div>
@@ -476,7 +485,7 @@
   <section class="how" id="how">
     <div class="container">
       <div class="section-header">
-        <p class="section-header__eyebrow">How It Works</p>
+        <p class="section-header__eyebrow">How it works</p>
         <h2 class="section-header__title">How a record<br>comes together</h2>
         <p class="section-header__subtitle">Take the steps in any order and stop whenever you like. A record is complete when you say it is, and it never needs a price to count.</p>
       </div>
@@ -495,12 +504,12 @@
         <div class="how-step">
           <div class="how-step__num">3</div>
           <h3 class="how-step__title">Keep its story</h3>
-          <p class="how-step__desc">Who it came from and what it meant, saved with the object in your own words. Relatives you invite can add their accounts beside yours.</p>
+          <p class="how-step__desc">Who it came from and what it meant, saved with the item in your own words. Relatives you invite can add their accounts beside yours.</p>
         </div>
         <div class="how-step">
           <div class="how-step__num">4</div>
-          <h3 class="how-step__title">Pass on the record</h3>
-          <p class="how-step__desc">Say what you need it for &mdash; an insurance conversation, a family or executor record, or working with someone else &mdash; and Heirloom prepares it, keeping a copy of what left. Note who each object is meant for, and, when you choose, pass a record to a named person.</p>
+          <h3 class="how-step__title">Prepare the record</h3>
+          <p class="how-step__desc">Say what you need it for &mdash; an insurance conversation, a family or executor record, or working with someone else &mdash; and Heirloom prepares it, keeping a record of what left. Note who each item is meant for.</p>
         </div>
       </div>
     </div>
@@ -510,7 +519,7 @@
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <p class="section-header__eyebrow">What Heirloom Does</p>
+        <p class="section-header__eyebrow">What Heirloom does</p>
         <h2 class="section-header__title">The record, the story<br>and the estimate, in one place</h2>
       </div>
 
@@ -520,55 +529,55 @@
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           </div>
           <h3 class="feature-card__title">The Advisor</h3>
-          <p class="feature-card__desc">Reads what your photos show &mdash; marks, labels, materials, condition &mdash; and says plainly what it cannot tell. It never decides whether an object is genuine; that question belongs to a specialist you choose. An estimate is offered only when there is evidence for one, and it is labelled as an estimate, never dressed up as an appraisal. Between visits it keeps a short review list rather than a growing backlog: work that finished, what is waiting on you, and changes that affect a decision you already made &mdash; each one with a way to deal with it now, later, or not at all.</p>
+          <p class="feature-card__desc">Reads what your photos show &mdash; marks, labels, materials, condition &mdash; and says plainly what it cannot tell. It never decides whether an item is genuine; that question belongs to a specialist you choose. An estimate is offered only when there is evidence for one, and it is labeled as an estimate, never dressed up as an appraisal. Between visits it keeps a short review list rather than a growing backlog: work that finished, what is waiting on you, and changes that affect a decision you already made &mdash; each one with a way to deal with it now, later, or not at all.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--gold">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
           </div>
-          <h3 class="feature-card__title">An Overview That Adds Up</h3>
-          <p class="feature-card__desc">One place that says what you own and what you are tracking: &ldquo;18 of 24 assets included&rdquo;, split into figures backed by recorded sales and figures you entered yourself. Tap any number to see exactly which records are in it. Objects with no established value are counted as unknown, never as zero, and currencies are never added together. When you sell, give away or lose something, say so &mdash; the record and its history stay, and your total stops counting it.</p>
+          <h3 class="feature-card__title">An overview that adds up</h3>
+          <p class="feature-card__desc">One place that says what you own and what is counted: &ldquo;From 18 items&rdquo;, split into figures backed by recorded sales and figures you entered yourself. Tap any number to see exactly which records are in it. Items with no established value are counted as unknown, never as zero, and currencies are never added together. When you sell, give away or lose something, say so &mdash; the record and its history stay, and your total stops counting it.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--gold">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <h3 class="feature-card__title">Your Collection</h3>
-          <p class="feature-card__desc">Catalogue, tag, search and filter across everything you own &mdash; photos, documents, dimensions, serial numbers and your own notes on each record. Filters for room, person, missing story and unvalued objects show what still needs attention, without turning a keepsake into a task.</p>
+          <h3 class="feature-card__title">Your collection</h3>
+          <p class="feature-card__desc">Catalogue, tag, search and filter across everything you own &mdash; photos, documents, dimensions, serial numbers and your own notes on each record. Filters for room, person, missing story and unvalued items show what still needs attention, without turning a keepsake into a task.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--blue">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </div>
-          <h3 class="feature-card__title">Research &amp; Comparables</h3>
-          <p class="feature-card__desc">When you photograph an object, a search for comparable sales is part of how the Advisor reads it; on a record you write down yourself, nothing runs until you ask. When comparable sales can be found, each is shown with its source, its date and whether it sold or was only listed, so you can keep it or set it aside. A research chat covers maker histories and context.</p>
+          <h3 class="feature-card__title">Research &amp; comparables</h3>
+          <p class="feature-card__desc">When you photograph an item, a search for comparable sales is part of how the Advisor reads it; on a record you write down yourself, nothing runs until you change what it is or ask. When comparable sales can be found, each is shown with its source, its date and whether it sold or was only listed, so you can keep it or set it aside. A research chat covers maker histories and context.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--purple">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="feature-card__title">Specialist Help, If You Ask</h3>
-          <p class="feature-card__desc">For a record that deserves professional eyes, ask for an introduction to an independent appraiser or dealer &mdash; for an identification, a valuation, advice on selling, or a written appraisal from an independent professional. You see exactly what will be shared before it goes, and they can reply without an account. The directory is small during beta. Heirloom lists nothing and nothing is put up for sale. No money changes hands through Heirloom: any sale is between you and the specialist you chose.</p>
+          <h3 class="feature-card__title">Specialist help, if you ask</h3>
+          <p class="feature-card__desc">In the US, for a record that deserves professional eyes, ask for an introduction to an independent appraiser or dealer &mdash; for an identification, a valuation, advice on selling, or a written appraisal from an independent professional. You see exactly what will be shared before it goes. Heirloom lists nothing and nothing is put up for sale. No money for a sale changes hands through Heirloom: any sale is between you and the specialist you chose.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--green">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3 class="feature-card__title">Records That Outlast You</h3>
-          <p class="feature-card__desc">Note who each object is meant for and who should receive your records. That list is private and grants no one access to your account. When you are ready, pass an individual record to a named person; once they accept they keep a snapshot &mdash; the object&rsquo;s name, identification and one photo &mdash; while the story, values and documents stay on your record. When you need to do something with the records, start from the objects and say what it is for &mdash; an insurance conversation, a family or executor record, or working with someone else. Heirloom names only what is missing for that purpose, lets you go ahead without it, and keeps a copy of exactly what left the app, so you can see later what was sent and what has changed since.</p>
+          <h3 class="feature-card__title">Records that outlast you</h3>
+          <p class="feature-card__desc">Note who each item is meant for and who should receive your records. That list is private and grants no one access to your account. When you need to do something with the records, start from the items and say what it is for &mdash; an insurance conversation, a family or executor record, or working with someone else. Heirloom names only what is missing for that purpose, lets you go ahead without it, and keeps a record of exactly what left the app, so you can see later what was sent and what has changed since.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-card__icon feature-card__icon--rose">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
-          <h3 class="feature-card__title">Private by Design</h3>
-          <p class="feature-card__desc">Your collection is yours. Records are scoped to your account, photos live in private storage, family sharing is by invitation with a named role, showing an object publicly is a choice you make per item, and you can export or delete everything from Settings.</p>
+          <h3 class="feature-card__title">Private by design</h3>
+          <p class="feature-card__desc">Your collection is yours. Records are scoped to your account, photos live in private storage, family sharing is by invitation with a named role, and you can export or delete everything from Settings.</p>
         </div>
       </div>
     </div>
@@ -578,8 +587,8 @@
   <section class="who" id="who">
     <div class="container">
       <div class="section-header">
-        <p class="section-header__eyebrow">Who It's For</p>
-        <h2 class="section-header__title">Built for the people who<br>care about the objects</h2>
+        <p class="section-header__eyebrow">Who it's for</p>
+        <h2 class="section-header__title">Built for the people who<br>care about the items</h2>
       </div>
 
       <div class="who__grid">
@@ -588,53 +597,49 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </div>
           <h3 class="who__title">Collectors</h3>
-          <p class="who__desc">Document the collection you know inside out. Your attributions, your valuations, your provenance &mdash; organised, searchable and ready to export.</p>
+          <p class="who__desc">Document the collection you know inside out. Your attributions, your valuations, your provenance &mdash; organized, searchable and ready to export.</p>
         </div>
         <div class="who__card">
           <div class="who__icon who__icon--gold">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
           </div>
-          <h3 class="who__title">Inheritors &amp; Families</h3>
+          <h3 class="who__title">Inheritors &amp; families</h3>
           <p class="who__desc">Grandma's china, the painting from the estate, the watch in the drawer. Find out what is known about them, keep the story of who they came from, and share the record with the family &mdash; whether or not any of it has a market value.</p>
         </div>
         <div class="who__card">
           <div class="who__icon who__icon--green">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3 class="who__title">Insurance &amp; Estate Conversations</h3>
-          <p class="who__desc">Bring an inventory, an insurance conversation or a family record to your insurer, attorney or executor. Heirloom prepares it from the objects you pick, tells you what is missing for that purpose, and keeps a copy of what you sent. The files are yours to hand over; Heirloom does not open your account to an executor or an heir.</p>
+          <h3 class="who__title">Insurance &amp; estate conversations</h3>
+          <p class="who__desc">Bring an inventory, an insurance conversation or a family record to your insurer, attorney or executor. Heirloom prepares it from the items you pick, tells you what is missing for that purpose, and keeps a record of what you sent. The files are yours to hand over; Heirloom does not open your account to an executor or an heir.</p>
         </div>
         <div class="who__card">
           <div class="who__icon who__icon--purple">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
-          <h3 class="who__title">Experts &amp; Appraisers</h3>
-          <p class="who__desc">Receive introductions from collectors who want an identification, a valuation or a written appraisal from an independent professional in your specialty. No account is needed to reply.</p>
+          <h3 class="who__title">Specialists &amp; appraisers</h3>
+          <p class="who__desc">Receive introductions from collectors who want an identification, a valuation or a written appraisal from an independent professional in your specialty.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA / Waitlist Section -->
-  <section class="cta" id="waitlist">
+  <!-- CTA / Download Section: the App Store badge and the US-only line (D31, D57) -->
+  <section class="cta" id="download">
     <div class="container">
       <div class="cta__inner">
         <div class="cta__bg-pattern"></div>
-        <div class="cta__badge">Beta</div>
-        <h2 class="cta__title">Start with one object.</h2>
-        <p class="cta__subtitle">Heirloom is in beta on the web, with iOS and Android to follow. Leave your email and we will write when there is a place for you.</p>
-        <form class="cta__form" id="waitlistForm" action="https://formspree.io/f/xgolpdan" method="POST">
-          <div class="cta__input-wrap">
-            <input type="email" name="email" placeholder="Enter your email address" class="cta__input" required>
-            <button type="submit" class="btn btn--primary btn--lg">Get early access</button>
-          </div>
-          <p class="cta__disclaimer">No spam, ever. We'll only email you about access and updates.</p>
-        </form>
-        <div class="cta__success" id="waitlistSuccess" style="display: none;">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E84316" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <h3>You're on the list!</h3>
-          <p>We'll be in touch when there is a place for you.</p>
+        <h2 class="cta__title">Start with one item.</h2>
+        <p class="cta__subtitle">Heirloom is on the web and on iPhone.</p>
+        <div class="cta__store">
+          <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251" data-badge="placeholder" aria-label="Download Heirloom on the App Store">
+            <!-- PLACEHOLDER, as in the hero: swap for Apple's own badge
+                 artwork before the site is published. -->
+            <span class="store-badge__small">Download on the</span>
+            <span class="store-badge__large">App Store</span>
+          </a>
         </div>
+        <p class="cta__store-note">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
       </div>
     </div>
   </section>
@@ -652,7 +657,7 @@
           <a href="/terms" class="footer__link">Terms of Service</a>
           <a href="/support" class="footer__link">Support</a>
         </nav>
-        <p class="footer__copy">&copy; <!--pc:year-->2026<!--/pc:year--> <!--pc:name-->The Peninsular Company, LLC<!--/pc:name-->. All rights reserved.<br><span class="footer__note">Value estimates are informational only and are not professional appraisals. Many objects have no market value, and a record is complete without one.</span></p>
+        <p class="footer__copy">&copy; <!--pc:year-->2026<!--/pc:year--> <!--pc:name-->The Peninsular Company, LLC<!--/pc:name-->. All rights reserved.<br><span class="footer__note">Value estimates are informational only and are not professional appraisals. Many items have no market value, and a record is complete without one.</span></p>
       </div>
     </div>
   </footer>

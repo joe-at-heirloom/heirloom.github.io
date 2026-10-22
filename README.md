@@ -2,7 +2,7 @@
 
 **Know What You Own.**
 
-Landing page for Heirloom — a private record of the art, antiques and keepsakes you own: photograph a possession or write down one you already know, learn what is known about it (with an estimate when there is evidence for one), keep its story, and pass the record on to the people you trust.
+Landing page for Heirloom — a private record of the art, antiques and keepsakes you own: photograph an item or write down one you already know, learn what is known about it (with an estimate when there is evidence for one), and keep its story for the people you trust.
 
 **Live at [heirloomapp.io](https://heirloomapp.io)**
 
@@ -10,11 +10,11 @@ Landing page for Heirloom — a private record of the art, antiques and keepsake
 
 ## About
 
-Heirloom is for collectors and families preserving their possessions. Manual entry and photo-led capture are equal starting paths; the Advisor reads the evidence in the photos and says what it cannot tell; a record is complete without a price; family sharing is by invitation; estate wishes are recorded as intentions, and an individual record can be passed to a named person who accepts it. Nothing is ever put up for sale.
+Heirloom is for collectors and families preserving their items. Manual entry and photo-led capture are equal starting paths; the Advisor reads the evidence in the photos and says what it cannot tell; a record is complete without a price; family sharing is by invitation; estate wishes are recorded as intentions. Nothing is ever put up for sale.
 
 This repo contains the landing page with a waitlist signup, plus the legal pages the app links to (`/privacy`, `/terms`).
 
-**Claims on this site must match shipped behaviour.** `npm test` (no dependencies) holds `index.html` and this README to the app's own copy rules — no universal-valuation, timing, genuineness or estate-access promises — and checks that the legal pages match their sources. See [Keeping the copy honest](#keeping-the-copy-honest).
+**Claims on this site must match shipped behavior.** `npm test` (no dependencies) holds `index.html` and this README to the app's own copy rules — no universal-valuation, timing, genuineness or estate-access promises — and checks that the legal pages match their sources. See [Keeping the copy honest](#keeping-the-copy-honest).
 
 ## Features (on the landing page)
 

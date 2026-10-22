@@ -149,37 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Waitlist form (Formspree) ---
-  const form = document.getElementById('waitlistForm');
-  const success = document.getElementById('waitlistSuccess');
-
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
-
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(res => {
-        if (res.ok) {
-          form.style.display = 'none';
-          success.style.display = 'block';
-          success.classList.add('fade-in', 'visible');
-        } else {
-          btn.textContent = 'Try Again';
-          btn.disabled = false;
-        }
-      }).catch(() => {
-        btn.textContent = 'Try Again';
-        btn.disabled = false;
-      });
-    });
-  }
-
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {

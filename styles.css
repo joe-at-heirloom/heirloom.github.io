@@ -341,6 +341,22 @@ a { text-decoration: none; color: inherit; }
     0 1px 2px rgba(150, 40, 10, 0.25),
     0 16px 30px -12px rgba(232, 68, 25, 0.9);
 }
+/* The US-only line under the hero's App Store badge (D57), from the launch draft. */
+.hero__store-note {
+  margin-top: 18px;
+  max-width: 30rem;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--hero-ink-2);
+  animation: hero-fade-up 0.8s var(--hero-ease) 0.28s both;
+}
+.hero__store-note a {
+  color: var(--hero-ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .hero__link {
   display: inline-flex;
   align-items: center;
@@ -1068,6 +1084,62 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 40px;
   position: relative;
 }
+
+/* The download band's App Store badge and US-only line (D31, D57), from the launch draft. */
+.cta__store {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cta__store-note {
+  position: relative;
+  margin: 20px auto 0;
+  max-width: 30rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.62);
+}
+.cta__store-note a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* The App Store badge. A stand-in in Apple's black-badge shape until Apple's
+   own artwork is downloaded (the badge's comment in index.html); on the dark
+   download band it takes the white keyline Apple's guidelines draw there. */
+.store-badge {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 156px;
+  height: 52px;
+  padding: 0 18px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  line-height: 1.05;
+  text-align: left;
+  box-shadow: 0 0 0 1px #a6a6a6;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.store-badge:hover { transform: translateY(-1px); }
+.store-badge:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+.store-badge__small {
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.store-badge__large {
+  font-size: 1.32rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.cta .store-badge { box-shadow: 0 0 0 1px rgba(255,255,255,0.7); }
 
 .cta__form {
   position: relative;
