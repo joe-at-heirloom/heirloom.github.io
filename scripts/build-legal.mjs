@@ -305,8 +305,11 @@ if (invokedDirectly) {
       `refused: ${drafts.join(' and ')} in ${LEGAL_DIR} ${drafts.length > 1 ? 'say' : 'says'} DRAFT FOR COUNSEL in the header, ` +
         'and this repo publishes what is pushed. Nothing was written.\n' +
         'To rebuild the published pages, point LEGAL_DIR at the published texts in a scratch folder ' +
-        '(in the app repo: git show main:legal/PRIVACY_POLICY.md and git show main:legal/TERMS_OF_SERVICE.md). ' +
-        'To look at a draft on this machine only, run with --draft, and do not commit what it writes.',
+        "(the app repo's docs/submission/legal.md §6 names their commits; while the drafts of October 2026 wait, " +
+        'git show 46347d1e:legal/PRIVACY_POLICY.md and git show d699c2ae:legal/TERMS_OF_SERVICE.md). ' +
+        'To look at a draft on this machine only, run with --draft, and do not commit what it writes.\n' +
+        "The legal sync in thepeninsularcompany.github.io runs this build from the app repo's main: a sync that stops " +
+        'here kept the drafts off the site, and the company facts follow once legal/ there holds published texts again.',
     );
     process.exit(2);
   }

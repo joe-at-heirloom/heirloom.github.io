@@ -202,7 +202,7 @@ if (existsSync(LEGAL_DIR)) {
     if (current !== html && drafts.includes(source)) {
       notes.push(
         `${output}: ${source} in LEGAL_DIR is a DRAFT FOR COUNSEL, which build-legal.mjs refuses; ` +
-          'to rebuild the published page, set LEGAL_DIR to a folder holding the published texts (git show main:legal/… in the app repo)',
+          "to rebuild the published page, set LEGAL_DIR to a folder holding the published texts (the app repo's docs/submission/legal.md §6 names their commits)",
       );
     }
   }
