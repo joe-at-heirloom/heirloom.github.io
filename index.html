@@ -15,10 +15,12 @@
   <meta property="og:description" content="Photograph a possession, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
   <meta name="twitter:card" content="summary">
 
+  <!-- Lets the hero hold its drawing back until the 3D watch has had its chance (hero-watch.js). -->
+  <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -35,7 +37,7 @@
         <a href="#who" class="nav__link">Who It's For</a>
       </div>
       <div class="nav__actions">
-        <a href="#waitlist" class="btn btn--primary">Get Early Access</a>
+        <a href="#waitlist" class="btn btn--primary">Get early access</a>
       </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span>
@@ -46,87 +48,366 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero__bg">
-      <div class="hero__gradient"></div>
-      <div class="hero__grid-overlay"></div>
+  <section class="hero" aria-labelledby="hero-title">
+    <!-- The counter the watch lies on: pale stone, a few soft veins, a lamp. -->
+    <div class="hero__backdrop" aria-hidden="true">
+      <svg class="hero__stone" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="stone-vein" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.011 0.02" numOctaves="3" seed="11" result="warp"/>
+            <feDisplacementMap in="SourceGraphic" in2="warp" scale="26"/>
+            <feGaussianBlur stdDeviation="0.9"/>
+          </filter>
+        </defs>
+        <g fill="none" stroke="#A48F73" stroke-linecap="round" filter="url(#stone-vein)">
+          <path d="M640 -40 C720 110 790 190 930 270 C1060 345 1140 430 1220 610 C1265 715 1335 790 1480 870" stroke-width="1.7" opacity="0.2"/>
+          <path d="M930 270 C985 305 1030 306 1100 290 C1190 270 1270 300 1480 370" stroke-width="1" opacity="0.14"/>
+          <path d="M1220 610 C1180 650 1150 700 1160 780 C1166 830 1150 880 1120 940" stroke-width="0.8" opacity="0.12"/>
+          <path d="M760 940 C830 830 905 770 1010 735 C1110 700 1190 650 1250 540" stroke-width="1.2" opacity="0.12"/>
+        </g>
+      </svg>
     </div>
     <div class="container hero__container">
       <div class="hero__content">
-        <div class="hero__badge"><span class="hero__badge-dot"></span>Now in beta</div>
-        <h1 class="hero__title">Know What <br>You Own.</h1>
-        <p class="hero__subtitle">A private record of the art, antiques and keepsakes in your life. Photograph a possession, or write down one you already know. Heirloom gathers what is known about it &mdash; with an estimate when there is evidence for one &mdash; keeps its story for the people you trust, and shows you what you own in one place that adds up.</p>
+        <p class="hero__kicker"><span class="hero__kicker-dot" aria-hidden="true"></span>Now in beta on the web</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line"><span>Know what</span></span>
+          <span class="hero__line"><span>you own<span class="hero__stop">.</span></span></span>
+        </h1>
+        <p class="hero__lede"><strong>A private record of the art, antiques and keepsakes in your life.</strong> Photograph one, or write down what you already know. Heirloom gathers what is known about it, shows the evidence behind any estimate, and keeps its story for the people you trust.</p>
         <div class="hero__cta">
-          <a href="#waitlist" class="btn btn--primary btn--lg">Get Early Access</a>
-          <a href="#two-ways" class="btn btn--outline btn--lg">See How It Works</a>
+          <a href="#waitlist" class="btn btn--primary btn--lg">Get early access</a>
+          <a href="#two-ways" class="hero__link">See how it works <span class="hero__link-arrow" aria-hidden="true">&rarr;</span></a>
         </div>
+        <ul class="hero__assurances">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private by design</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9a2.83 2.83 0 0 0-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>Your word is the record</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3"/><path d="m7.5 7.5 4.5-4.5 4.5 4.5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Yours to export</li>
+        </ul>
       </div>
 
-      <!-- CSS product mockup — an honest record: dated, storied, estimate still open -->
-      <div class="hero__visual" aria-hidden="true">
-        <div class="phone">
-          <div class="phone__screen">
-            <div class="phone__photo">
-              <svg class="phone__photo-item" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="0.15">
-                    <stop offset="0" stop-color="#D6DADF"/>
-                    <stop offset="0.45" stop-color="#A9B0B7"/>
-                    <stop offset="0.75" stop-color="#818A93"/>
-                    <stop offset="1" stop-color="#6A737C"/>
-                  </linearGradient>
-                </defs>
-                <!-- handle -->
-                <path d="M72 42 C98 46 102 74 84 98" fill="none" stroke="#7A828B" stroke-width="7" stroke-linecap="round"/>
-                <!-- body with spout -->
-                <path d="M45 30
-                         C41 24 38 22 34 20
-                         C40 18 50 17 57 18
-                         C64 19 70 22 72 26
-                         C76 34 74 44 72 52
-                         C70 62 71 74 76 86
-                         C82 100 84 116 74 128
-                         C66 137 52 137 44 128
-                         C34 116 36 100 42 86
-                         C47 74 48 62 46 52
-                         C45 44 44 36 45 30 Z"
-                      fill="url(#silver)"/>
-                <!-- base -->
-                <ellipse cx="59" cy="132" rx="20" ry="5" fill="#5D666F"/>
-                <!-- highlight -->
-                <path d="M52 40 C50 60 52 80 58 100" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
-              </svg>
+      <!-- An example record in the shape of the app's own (SampleResultCard,
+           ExampleRecord): a made-up object, badged "Example", whose estimate
+           is honestly still open, and what one more photograph would add.
+           The object is drawn, not photographed, for the app's reason: a
+           stock photo would put a real object where a stand-in belongs. -->
+      <figure class="hero__visual" role="img" aria-label="An example record of a made-up object, Grandpa’s pocket watch from around 1920, lying on a counter: its story, a maker still unknown, an estimate that waits on a look inside the case, and what a photograph of the movement would add.">
+        <div class="specimen" data-hero-scene>
+          <!-- Grandpa's watch on the counter, drawn. hero-watch.js replaces
+               this with the watch in three dimensions; the drawing stays for
+               anyone without WebGL or script, still, at ten past ten. -->
+          <svg class="specimen__scene" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <radialGradient id="sc-case" cx="0.32" cy="0.26" r="0.95">
+                <stop offset="0" stop-color="#FFFFFF"/>
+                <stop offset="0.35" stop-color="#E9EBEC"/>
+                <stop offset="0.72" stop-color="#C5CACE"/>
+                <stop offset="0.92" stop-color="#9DA4AA"/>
+                <stop offset="1" stop-color="#8A9299"/>
+              </radialGradient>
+              <linearGradient id="sc-bezel" x1="0.15" y1="0.1" x2="0.85" y2="0.92">
+                <stop offset="0" stop-color="#FCFDFD"/>
+                <stop offset="0.5" stop-color="#D4D8DB"/>
+                <stop offset="1" stop-color="#A3AAB0"/>
+              </linearGradient>
+              <radialGradient id="sc-enamel" cx="0.42" cy="0.36" r="0.8">
+                <stop offset="0" stop-color="#FFFFFD"/>
+                <stop offset="0.7" stop-color="#F7F2E9"/>
+                <stop offset="1" stop-color="#ECE4D6"/>
+              </radialGradient>
+              <radialGradient id="sc-subdial" cx="0.5" cy="0.25" r="0.8">
+                <stop offset="0" stop-color="#E7E0D2"/>
+                <stop offset="1" stop-color="#F6F1E8"/>
+              </radialGradient>
+              <!-- a cylinder lit from the left: crown, pendant, hinge, T-bar -->
+              <linearGradient id="sc-cyl" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#7E868D"/>
+                <stop offset="0.32" stop-color="#E6E9EB"/>
+                <stop offset="0.48" stop-color="#FFFFFF"/>
+                <stop offset="0.72" stop-color="#BEC3C8"/>
+                <stop offset="1" stop-color="#737B82"/>
+              </linearGradient>
+              <!-- blued steel, bright along the hand's spine -->
+              <linearGradient id="sc-blued" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#16224A"/>
+                <stop offset="0.5" stop-color="#3D5DB2"/>
+                <stop offset="1" stop-color="#16224A"/>
+              </linearGradient>
+              <radialGradient id="sc-crystal" cx="0.3" cy="0.24" r="0.95">
+                <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/>
+                <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0"/>
+                <stop offset="0.86" stop-color="#2B2724" stop-opacity="0"/>
+                <stop offset="1" stop-color="#2B2724" stop-opacity="0.09"/>
+              </radialGradient>
+              <!-- the counter's warmth, reflected low in the polished case -->
+              <radialGradient id="sc-case-warm" cx="0.56" cy="1" r="0.75">
+                <stop offset="0" stop-color="#C9B28C" stop-opacity="0.42"/>
+                <stop offset="1" stop-color="#C9B28C" stop-opacity="0"/>
+              </radialGradient>
+              <clipPath id="sc-dial-clip"><circle r="111"/></clipPath>
+              <filter id="sc-blur-hand" x="-30%" y="-10%" width="160%" height="120%"><feGaussianBlur stdDeviation="1.1"/></filter>
+              <filter id="sc-blur-soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+              <filter id="sc-blur-wide" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+              <filter id="sc-blur-tight" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.4"/></filter>
+              <filter id="sc-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.7"/></filter>
+            </defs>
+
+            <!-- the shadow the watch lays on the counter -->
+            <g transform="translate(160 215)">
+              <circle cx="13" cy="19" r="133" fill="#3D2E20" opacity="0.22" filter="url(#sc-blur-wide)"/>
+              <circle cx="3" cy="4.5" r="130.5" fill="#2B1F15" opacity="0.34" filter="url(#sc-blur-tight)"/>
+            </g>
+
+            <!-- the chain where it lies at rest; hero-watch.js lays its links
+                 along this same curve -->
+            <g class="scene__chain">
+              <path class="scene__chain-rest" d="M160 25 C210 6 250 48 300 40 C350 32 400 18 450 46 C500 74 548 92 540 140 C532 188 530 214 500 232 C470 250 420 262 380 250 C352 244 330 246 318 234" fill="none" stroke="#2B2724" stroke-width="4.4" stroke-linecap="round" stroke-dasharray="4 7"/>
+              <path class="scene__chain-rest" d="M160 25 C210 6 250 48 300 40 C350 32 400 18 450 46 C500 74 548 92 540 140 C532 188 530 214 500 232 C470 250 420 262 380 250 C352 244 330 246 318 234" fill="none" stroke="#D5D9DD" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="4 7"/>
+            </g>
+
+            <g transform="translate(160 215)">
+              <!-- turns with the watch: bow, crown, pendant, hinge -->
+              <g class="scene__turn">
+                <g transform="translate(4 6)" opacity="0.3" filter="url(#sc-blur-tight)">
+                  <path d="M-12 -144 C-44 -206 44 -206 12 -144" fill="none" stroke="#2B1F15" stroke-width="7"/>
+                  <rect x="-15.5" y="-176" width="31" height="32" rx="5" fill="#2B1F15"/>
+                </g>
+                <path d="M-12 -144 C-44 -206 44 -206 12 -144" fill="none" stroke="#2B2724" stroke-width="8.6" stroke-linecap="round"/>
+                <path d="M-12 -144 C-44 -206 44 -206 12 -144" fill="none" stroke="#D3D7DA" stroke-width="6" stroke-linecap="round"/>
+                <path d="M-12 -144 C-44 -206 44 -206 12 -144" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity="0.85" transform="translate(-1.2 -1.4)"/>
+                <circle cx="-12" cy="-144" r="4.4" fill="url(#sc-cyl)" stroke="#2B2724" stroke-width="1.2"/>
+                <circle cx="12" cy="-144" r="4.4" fill="url(#sc-cyl)" stroke="#2B2724" stroke-width="1.2"/>
+                <rect x="-10" y="-150" width="20" height="24" rx="2.5" fill="url(#sc-cyl)" stroke="#2B2724" stroke-width="1.3"/>
+                <path d="M-10 -142.5 H10 M-10 -136.5 H10" stroke="#5E666D" stroke-width="0.8"/>
+                <rect x="-15.5" y="-176" width="31" height="27" rx="5" fill="url(#sc-cyl)" stroke="#2B2724" stroke-width="1.4"/>
+                <path d="M-13 -162.5 H13" stroke="#2B2724" stroke-opacity="0.36" stroke-width="22" stroke-dasharray="1.3 1.8"/>
+                <path d="M-11 -173 H11" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="1.2" stroke-linecap="round"/>
+                <rect x="-139" y="-13" width="14" height="26" rx="4" fill="url(#sc-cyl)" stroke="#2B2724" stroke-width="1.2"/>
+                <path d="M-139 -4.5 H-125 M-139 4.5 H-125" stroke="#5E666D" stroke-width="0.8"/>
+              </g>
+
+              <!-- holds the light: case, reeded bezel, enamel -->
+              <circle r="130" fill="url(#sc-case)" stroke="#2B2724" stroke-width="1.6"/>
+              <circle r="129" fill="url(#sc-case-warm)"/>
+              <path d="M-121 -40 A127.5 127.5 0 0 1 -40 -121" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.3" filter="url(#sc-blur-tight)"/>
+              <path d="M-119.8 -43.6 A127.5 127.5 0 0 1 -43.6 -119.8" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.95"/>
+              <path d="M120.3 43.8 A128 128 0 0 1 22.2 126.1" fill="none" stroke="#5E666D" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+              <circle r="122" fill="url(#sc-bezel)" stroke="#3A3530" stroke-width="1"/>
+              <circle r="120.3" fill="none" stroke="#59616A" stroke-width="2.6" stroke-opacity="0.45" stroke-dasharray="1.1 2.05"/>
+              <circle r="112.8" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.75"/>
+              <circle r="111" fill="url(#sc-enamel)" stroke="#3A3530" stroke-width="1"/>
+
+              <!-- turns with the watch: the dial's markings and hands -->
+              <g class="scene__turn">
+                <!-- railway track: a tick every 6°, heavier every 30° -->
+                <g fill="none" stroke="#2A2622">
+                  <circle r="104.5" stroke-width="0.9"/>
+                  <circle r="97" stroke-width="0.9"/>
+                  <circle r="100.75" stroke-width="7.5" stroke-dasharray="0.9 9.6505" stroke-dashoffset="0.45"/>
+                  <circle r="100.75" stroke-width="7.5" stroke-dasharray="2.2 50.5525" stroke-dashoffset="1.1"/>
+                </g>
+                <!-- radial Romans, IIII as watchmakers write it, XII in red -->
+                <g font-family="Newsreader, Georgia, serif" font-size="17" font-weight="600" letter-spacing="-0.4" fill="#1F1B18" text-anchor="middle" dominant-baseline="central">
+                  <text transform="translate(0 -82)" fill="#A0281C">XII</text>
+                  <text transform="rotate(30) translate(0 -82)">I</text>
+                  <text transform="rotate(60) translate(0 -82)">II</text>
+                  <text transform="rotate(90) translate(0 -82)">III</text>
+                  <text transform="rotate(120) translate(0 -82)">IIII</text>
+                  <text transform="rotate(150) translate(0 -82)">V</text>
+                  <text transform="rotate(210) translate(0 -82)">VII</text>
+                  <text transform="rotate(240) translate(0 -82)">VIII</text>
+                  <text transform="rotate(270) translate(0 -82)">IX</text>
+                  <text transform="rotate(300) translate(0 -82)">X</text>
+                  <text transform="rotate(330) translate(0 -82)">XI</text>
+                </g>
+                <!-- a hairline in the enamel, by III -->
+                <path d="M107.2 28.7 L102.6 26.6 L99.4 28.1 L95.2 25.2 L91.6 26.1" fill="none" stroke="#8F857B" stroke-width="0.55" opacity="0.6"/>
+                <!-- small seconds, sunk into the dial -->
+                <g transform="translate(0 50)">
+                  <circle r="25" fill="url(#sc-subdial)" stroke="#2A2622" stroke-width="0.8"/>
+                  <circle r="23.6" fill="none" stroke="#3A3530" stroke-opacity="0.16" stroke-width="2.4"/>
+                  <circle r="21" fill="none" stroke="#2A2622" stroke-width="3.6" stroke-dasharray="0.4 1.7991" stroke-dashoffset="0.2"/>
+                  <circle r="21" fill="none" stroke="#2A2622" stroke-width="5" stroke-dasharray="1 9.9956" stroke-dashoffset="0.5"/>
+                  <g class="scene__hand-seconds" transform="rotate(128)">
+                    <path d="M-0.55 7 L-0.3 -17 L0 -19.5 L0.3 -17 L0.55 7 Z" fill="#1A274F"/>
+                    <circle cy="5.5" r="2" fill="#1A274F"/>
+                  </g>
+                  <circle r="1.7" fill="#1A274F"/>
+                </g>
+              </g>
+
+              <!-- the hands' shadows on the enamel: offset toward the lower right
+                   in the counter's frame, whichever way the hands and watch turn -->
+              <g transform="translate(1.6 2.4)" fill="#1B140E" opacity="0.3" filter="url(#sc-blur-hand)">
+                <g class="scene__turn">
+                  <g class="scene__hand-hour" transform="rotate(-56)">
+                    <path d="M-2.2 14 L-1.4 -36 L1.4 -36 L2.2 14 Z"/>
+                    <circle cy="-42.5" r="6.8" fill="none" stroke="#1B140E" stroke-width="2.6"/>
+                    <path d="M-1.8 -49 L0 -64 L1.8 -49 Z"/>
+                  </g>
+                  <g class="scene__hand-minute" transform="rotate(44)">
+                    <path d="M-1.8 16 L-1 -76 L1 -76 L1.8 16 Z"/>
+                    <circle cy="-81" r="5.2" fill="none" stroke="#1B140E" stroke-width="2.2"/>
+                    <path d="M-1.4 -86 L0 -101 L1.4 -86 Z"/>
+                  </g>
+                </g>
+              </g>
+
+              <g class="scene__turn">
+                <!-- Breguet hands, blued -->
+                <g class="scene__hand-hour" transform="rotate(-56)">
+                  <path d="M-2.2 14 L-1.4 -36 L1.4 -36 L2.2 14 Z" fill="url(#sc-blued)"/>
+                  <circle cy="-42.5" r="6.8" fill="none" stroke="url(#sc-blued)" stroke-width="2.6"/>
+                  <path d="M-1.7 -49 L0 -64 L1.7 -49 Z" fill="url(#sc-blued)"/>
+                </g>
+                <g class="scene__hand-minute" transform="rotate(44)">
+                  <path d="M-1.8 16 L-1 -76 L1 -76 L1.8 16 Z" fill="url(#sc-blued)"/>
+                  <circle cy="-81" r="5.2" fill="none" stroke="url(#sc-blued)" stroke-width="2.2"/>
+                  <path d="M-1.3 -86 L0 -101 L1.3 -86 Z" fill="url(#sc-blued)"/>
+                </g>
+                <circle r="5.4" fill="#1A274F"/>
+                <circle r="1.9" fill="#C9CED2"/>
+                <!-- the edge of the case, behind which the movement is: the leader starts here -->
+                <circle class="specimen__target" cy="130" r="1" fill="none"/>
+              </g>
+
+              <!-- holds the light: the crystal, a window in it, the lamp's glint -->
+              <circle r="111" fill="url(#sc-crystal)"/>
+              <g clip-path="url(#sc-dial-clip)">
+                <ellipse cx="-40" cy="-50" rx="50" ry="26" transform="rotate(-40 -40 -50)" fill="#FFFFFF" opacity="0.2" filter="url(#sc-blur-soft)"/>
+                <g transform="rotate(-24) translate(-58 -72)" fill="#FFFFFF" opacity="0.2">
+                  <rect width="17" height="24" rx="3"/>
+                  <rect x="20" width="17" height="24" rx="3"/>
+                </g>
+                <path d="M-96.1 -44.8 A106 106 0 0 1 -44.8 -96.1" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" opacity="0.75" filter="url(#sc-glow)"/>
+              </g>
+              <circle cx="-86" cy="-83" r="1.8" fill="#FFFFFF" filter="url(#sc-glow)"/>
+            </g>
+
+          </svg>
+
+          <!-- From the case to the loupe; main.js draws it from the layout. -->
+          <svg class="specimen__leader" aria-hidden="true">
+            <path/>
+            <circle class="specimen__leader-halo" r="9"/>
+            <circle class="specimen__leader-dot" r="4"/>
+          </svg>
+
+          <div class="record">
+            <div class="record__meta">
+              <span class="record__badge">Example</span>
+              <span class="record__date">Around 1920</span>
             </div>
-            <div class="phone__body">
-              <div class="phone__title-row">
-                <span class="phone__item-title">Grandfather's silver pitcher</span>
+            <p class="record__title">Grandpa&rsquo;s pocket watch</p>
+            <p class="record__story">&ldquo;He wound it each morning before opening the shop. It still runs a minute fast.&rdquo;</p>
+            <dl class="record__fields">
+              <div><dt>Material</dt><dd>Silver, probably</dd></div>
+              <div><dt>Maker</dt><dd class="record__unknown">Unknown</dd></div>
+              <div><dt>Estimate</dt><dd>Not yet &mdash; needs a look inside</dd></div>
+            </dl>
+            <div class="record__evidence">
+              <p class="record__evidence-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V6.5A2.5 2.5 0 0 1 6.5 4H9M15 4h2.5A2.5 2.5 0 0 1 20 6.5V9M20 15v2.5a2.5 2.5 0 0 1-2.5 2.5H15M9 20H6.5A2.5 2.5 0 0 1 4 17.5V15"/></svg>Once the movement is photographed</p>
+              <p class="record__evidence-text">A serial number on the movement, matched to its maker&rsquo;s records from 1919.</p>
+              <span class="record__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.8l1.4-2h6.6l1.4 2h1.8A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg>Evidence: photo inside the case back</span>
+
+              <!-- The photograph the reading came from: the movement, under a loupe. -->
+              <div class="loupe">
+                <div class="loupe__lens">
+                  <svg class="loupe__mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                      <radialGradient id="hm-case" cx="0.38" cy="0.32" r="0.8">
+                        <stop offset="0" stop-color="#FFFFFF"/>
+                        <stop offset="0.6" stop-color="#D9DCDE"/>
+                        <stop offset="1" stop-color="#A4AAB0"/>
+                      </radialGradient>
+                      <radialGradient id="hm-plate" cx="0.4" cy="0.34" r="0.85">
+                        <stop offset="0" stop-color="#F2F3F3"/>
+                        <stop offset="1" stop-color="#BBC0C5"/>
+                      </radialGradient>
+                      <linearGradient id="hm-gold" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#F2DDA6"/>
+                        <stop offset="1" stop-color="#B5873D"/>
+                      </linearGradient>
+                      <radialGradient id="hm-ruby" cx="0.35" cy="0.3" r="0.75">
+                        <stop offset="0" stop-color="#EE7488"/>
+                        <stop offset="0.6" stop-color="#A51D36"/>
+                        <stop offset="1" stop-color="#6A0E20"/>
+                      </radialGradient>
+                      <!-- perlage: the overlapping circles a finisher grains into the plate -->
+                      <pattern id="hm-perlage" width="9" height="9" patternUnits="userSpaceOnUse">
+                        <circle cx="4.5" cy="4.5" r="5.4" fill="none" stroke="#FFFFFF" stroke-width="0.7" stroke-opacity="0.55"/>
+                      </pattern>
+                      <g id="hm-jewel">
+                        <circle r="4.3" fill="url(#hm-gold)" stroke="#6E5A33" stroke-width="0.6"/>
+                        <circle r="2.6" fill="url(#hm-ruby)"/>
+                        <circle cx="-0.8" cy="-0.9" r="0.7" fill="#FFFFFF" opacity="0.85"/>
+                      </g>
+                      <g id="hm-screw">
+                        <circle r="4.4" fill="#2E4277" stroke="#18224A" stroke-width="0.7"/>
+                        <path d="M-3.1 0 H3.1" stroke="#0E1630" stroke-width="1.2"/>
+                        <circle cx="-1.5" cy="-1.6" r="1" fill="#A9BCEB" opacity="0.7"/>
+                      </g>
+                    </defs>
+                    <!-- the inside of the case back, turned on a lathe -->
+                    <rect width="200" height="200" fill="url(#hm-case)"/>
+                    <g fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="0.7">
+                      <circle cx="100" cy="100" r="92"/>
+                      <circle cx="100" cy="100" r="96"/>
+                    </g>
+                    <!-- the movement plate -->
+                    <circle cx="100" cy="100" r="85" fill="url(#hm-plate)" stroke="#7A828A" stroke-width="1.2"/>
+                    <circle cx="100" cy="100" r="85" fill="url(#hm-perlage)"/>
+
+                    <!-- centre wheel: forty teeth from one dashed circle -->
+                    <g transform="translate(138 128)">
+                      <circle r="21" fill="none" stroke="#6E5A33" stroke-width="5.6" stroke-dasharray="1.65 1.6487"/>
+                      <circle r="21" fill="none" stroke="url(#hm-gold)" stroke-width="4" stroke-dasharray="1.65 1.6487"/>
+                      <circle r="16" fill="none" stroke="#6E5A33" stroke-width="5.8"/>
+                      <circle r="16" fill="none" stroke="url(#hm-gold)" stroke-width="4.4"/>
+                      <path d="M-14 0 H14 M0 -14 V14" stroke="#6E5A33" stroke-width="3.4"/>
+                      <path d="M-14 0 H14 M0 -14 V14" stroke="#D9BC7A" stroke-width="2"/>
+                      <use href="#hm-jewel"/>
+                    </g>
+
+                    <!-- balance wheel: rim screws are round-capped dots; the hairspring is chained half-circles -->
+                    <g transform="translate(64 72)">
+                      <circle r="27" fill="none" stroke="#5E4B2A" stroke-width="5.6"/>
+                      <circle r="27" fill="none" stroke="url(#hm-gold)" stroke-width="3.8"/>
+                      <circle r="27" fill="none" stroke="#3B332C" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="0.01 8.4723"/>
+                      <path d="M-25 0 H25 M0 -25 V25" stroke="#5E4B2A" stroke-width="3.6"/>
+                      <path d="M-25 0 H25 M0 -25 V25" stroke="#D9BC7A" stroke-width="2.2"/>
+                      <path d="M0 0 a1.5 1.5 0 0 1 3 0 a3 3 0 0 1 -6 0 a4.5 4.5 0 0 1 9 0 a6 6 0 0 1 -12 0 a7.5 7.5 0 0 1 15 0 a9 9 0 0 1 -18 0 a10.5 10.5 0 0 1 21 0" fill="none" stroke="#5C6470" stroke-width="0.7"/>
+                    </g>
+                    <!-- its cock, and the train bridge -->
+                    <path d="M18 124 C30 106 46 90 58 79 L68 68 C74 70 76 76 72 81 C58 95 44 112 34 132 Z" fill="url(#hm-plate)" stroke="#7A828A" stroke-width="1.1"/>
+                    <path d="M106 22 C142 20 174 44 182 84 L158 94 C152 68 134 52 110 48 Z" fill="url(#hm-plate)" stroke="#7A828A" stroke-width="1.1"/>
+                    <use href="#hm-jewel" x="64" y="72"/>
+                    <use href="#hm-jewel" x="132" y="42"/>
+                    <use href="#hm-jewel" x="164" y="76"/>
+                    <use href="#hm-jewel" x="98" y="112"/>
+                    <use href="#hm-screw" x="26" y="124"/>
+                    <use href="#hm-screw" x="114" y="34"/>
+                    <use href="#hm-screw" x="170" y="84"/>
+                    <use href="#hm-screw" x="146" y="164"/>
+
+                    <!-- the engraving the reading came from: lit from above, so a light edge below each cut -->
+                    <g font-family="Newsreader, Georgia, serif" font-weight="600" text-anchor="middle">
+                      <g fill="#FFFFFF" fill-opacity="0.8" transform="translate(0.6 0.8)">
+                        <text x="80" y="153" font-size="13" letter-spacing="1.2">No 41372</text>
+                        <text x="88" y="169" font-size="8.5" letter-spacing="1.2">17 JEWELS</text>
+                      </g>
+                      <g fill="#4A5056">
+                        <text x="80" y="153" font-size="13" letter-spacing="1.2">No 41372</text>
+                        <text x="88" y="169" font-size="8.5" letter-spacing="1.2">17 JEWELS</text>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
               </div>
-              <div class="phone__badges">
-                <span class="chip chip--doc">✓ Story saved</span>
-                <span class="chip chip--muted">Sterling · c. 1935</span>
-              </div>
-              <div class="phone__stages">
-                <span class="stage stage--done">Examine</span>
-                <span class="stage">Identify</span>
-                <span class="stage">Comparables</span>
-                <span class="stage stage--done">Provenance</span>
-              </div>
-              <div class="phone__value">
-                <span class="phone__value-label">Estimate</span>
-                <span class="phone__value-num phone__value-num--open">Not yet &mdash; needs a maker&rsquo;s mark</span>
-              </div>
-              <div class="phone__advisor">✦ Ask the Advisor what it can tell</div>
             </div>
           </div>
         </div>
-        <div class="float-card">
-          <div class="float-card__icon">✦</div>
-          <div>
-            <div class="float-card__title">Advisor</div>
-            <div class="float-card__desc">Mark on the base is partly worn &mdash; cannot read the maker yet<br><span>A sharper photo of the underside would help</span></div>
-          </div>
-        </div>
-      </div>
+      </figure>
     </div>
   </section>
 
@@ -345,7 +626,7 @@
         <form class="cta__form" id="waitlistForm" action="https://formspree.io/f/xgolpdan" method="POST">
           <div class="cta__input-wrap">
             <input type="email" name="email" placeholder="Enter your email address" class="cta__input" required>
-            <button type="submit" class="btn btn--primary btn--lg">Get Early Access</button>
+            <button type="submit" class="btn btn--primary btn--lg">Get early access</button>
           </div>
           <p class="cta__disclaimer">No spam, ever. We'll only email you about access and updates.</p>
         </form>
@@ -382,5 +663,6 @@
   </div>
 
   <script src="main.js"></script>
+  <script type="module" src="hero-watch.js"></script>
 </body>
 </html>

@@ -18,7 +18,8 @@ This repo contains the landing page with a waitlist signup, plus the legal pages
 
 ## Features (on the landing page)
 
-- Hero with waitlist CTA and an honest mock-up (estimate still open, Advisor naming what it cannot tell)
+- Hero with waitlist CTA and an example record in the shape of the app's own (Grandpa's pocket watch, made up and badged Example): its story, a maker still unknown, an estimate still open, and under a loupe the photograph of the movement that would change that
+- The watch lies on the hero's stone counter in 3D (`hero-watch.js`, three.js): a turned silver case, an enamel dial painted to a canvas, blued hands and a chain of real links. Scrolling turns the watch a little and the bow drags the chain the way a chain moves on a table: links carry almost no momentum, taut ones are pulled along their own line, slack ones stay put. The hands keep the visitor's own time, a minute fast, as the record's story says, and the loupe shows a rendered photograph of the movement. With reduced motion it is still; without WebGL or script the SVG drawing in `index.html` is shown instead
 - Two ways in (photograph it / write it down)
 - How it works, what it does, who it's for
 - Email waitlist capture via [Formspree](https://formspree.io)
@@ -29,7 +30,8 @@ This repo contains the landing page with a waitlist signup, plus the legal pages
 ## Tech Stack
 
 - Static HTML / CSS / JavaScript (no framework, no build step; `package.json` only carries the check scripts)
-- [Inter](https://fonts.google.com/specimen/Inter) + [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) via Google Fonts
+- [three.js](https://threejs.org) 0.186.1 for the hero's watch, imported by `hero-watch.js` from jsDelivr's single-file bundle after the page has painted
+- [Inter](https://fonts.google.com/specimen/Inter) + [Newsreader](https://fonts.google.com/specimen/Newsreader) via Google Fonts
 - [Formspree](https://formspree.io) for waitlist email collection
 - Hosted on [GitHub Pages](https://pages.github.com) with custom domain
 
@@ -41,7 +43,8 @@ This repo contains the landing page with a waitlist signup, plus the legal pages
 ├── privacy.html    # Generated from the app repo's legal/PRIVACY_POLICY.md
 ├── terms.html      # Generated from the app repo's legal/TERMS_OF_SERVICE.md
 ├── styles.css      # All styles (CSS custom properties, responsive breakpoints)
-├── main.js         # Interactions (nav, animations, form submission)
+├── main.js         # Interactions (nav, animations, form submission, the hero's leader line)
+├── hero-watch.js   # The hero's watch and chain in 3D (three.js), with the SVG drawing as its fallback
 ├── logo.svg        # Heirloom wordmark logo
 ├── scripts/        # check-copy.mjs (npm test) and build-legal.mjs (legal page generator)
 ├── CNAME           # Custom domain config (heirloomapp.io)
@@ -81,7 +84,7 @@ The company facts in the legal pages (who provides Heirloom, where, which law go
 
 ## Adding App Screenshots
 
-When there are real screenshots to show, add them to the project root and reference them from `index.html` in place of the CSS mock-up. Use screens that show an honest state — an open estimate is a normal result, not something to hide.
+When there are real screenshots to show, add them to the project root and reference them from `index.html` in place of the hero's drawn example record. Use screens that show an honest state — an open estimate is a normal result, not something to hide.
 
 ## Custom Domain Setup
 
@@ -100,7 +103,7 @@ Then enable "Enforce HTTPS" in repo Settings > Pages.
 ## Brand
 
 - **Primary color:** `#E84316`
-- **Fonts:** Inter (UI/body), Playfair Display (headings)
+- **Fonts:** Inter (UI/body), Newsreader (headings — the app's brand serif, `HEADING_FACES` in its `tamagui.config.ts`)
 - **Logo:** `logo.svg` (wordmark)
 
 ## License
