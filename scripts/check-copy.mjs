@@ -127,6 +127,23 @@ const REQUIRED_ON_HOMEPAGE = [
   // repo's docs/RELEASE.md, "The website on release day").
   { pattern: /\bHeirloom on the web works everywhere\b/, why: 'the US-only line names the web app (D57)' },
   { pattern: /\bweb\.heirloomapp\.io\b/, why: 'the US-only line names the web app by its address (D57)' },
+  // The web works everywhere, but outside the US an account sees no
+  // specialists, sold figures or Heirloom's estimates (the app repo's
+  // src/lib/release-flags.ts US_ONLY_SURFACES; D26, D57, D85, and the Oct 22
+  // answer abroad-total). One sentence scopes the page's estimate, sold-price
+  // and specialist lines: Joe's own, approved Oct 22 for the app's country
+  // question (country-copy), in the footer note beside his value caveats.
+  {
+    pattern: /\bSpecialists, sale conversations, sold prices and Heirloom’s price estimates are offered in the United States only for now\./,
+    why: 'the US-only surfaces (D85), in the sentence Joe approved on Oct 22 (country-copy)',
+  },
+  // While unclaimed_listing_emails_enabled is off (migration 158, until
+  // counsel's Q5) and DuMouchelle's is back to staged (Oct 22,
+  // dumouchelles-listing), no listing in the directory can be asked. If Q5
+  // turns the switch on, this line and the card's "they can reply without an
+  // account" are reworded together (the app repo's docs/RELEASE.md, the
+  // unclaimed-listing switch).
+  { pattern: /\bThe directory is not open to requests yet\./, why: 'no listing can be asked at launch (migration 158, Q5)' },
 ];
 
 /** What the homepage's markup must carry, read from the HTML itself (a link is not visible text). */
