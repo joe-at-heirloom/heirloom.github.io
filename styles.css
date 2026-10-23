@@ -1110,36 +1110,22 @@ a { text-decoration: none; color: inherit; }
    own artwork is downloaded (the badge's comment in index.html); on the dark
    download band it takes the white keyline Apple's guidelines draw there. */
 .store-badge {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 156px;
-  height: 52px;
-  padding: 0 18px;
+  display: inline-block;
+  line-height: 0;
   border-radius: 10px;
-  background: #000;
-  color: #fff;
-  line-height: 1.05;
-  text-align: left;
-  box-shadow: 0 0 0 1px #a6a6a6;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition);
 }
 .store-badge:hover { transform: translateY(-1px); }
 .store-badge:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 4px;
 }
-.store-badge__small {
-  font-size: 0.66rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+/* Apple's artwork as it is: only scaled, never recoloured or redrawn. */
+.store-badge__art {
+  display: block;
+  height: 52px;
+  width: auto;
 }
-.store-badge__large {
-  font-size: 1.32rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-.cta .store-badge { box-shadow: 0 0 0 1px rgba(255,255,255,0.7); }
 
 .cta__form {
   position: relative;
