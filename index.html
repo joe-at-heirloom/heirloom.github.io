@@ -6,20 +6,48 @@
   <title>Heirloom — Know What You Own</title>
   <meta name="description" content="Know what you own. Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
   <link rel="canonical" href="https://heirloomapp.io/">
-  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <!-- The app's own icon: the wordmark is unreadable at a tab's size. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#faf9f7">
+  <!-- Safari on iPhone shows its own banner for the app (US App Store, D57). -->
+  <meta name="apple-itunes-app" content="app-id=6754576251">
 
-  <!-- Open Graph -->
+  <!-- Open Graph: the card a shared link draws (iMessage, Slack, social). JPEG, not WebP: not every reader of og:image takes WebP. -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Heirloom">
   <meta property="og:url" content="https://heirloomapp.io/">
   <meta property="og:title" content="Heirloom — Know What You Own">
   <meta property="og:description" content="Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://heirloomapp.io/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Heirloom: Know what you own. Two iPhone screens: Home with each room's documented count, and a record's value with its source.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://heirloomapp.io/og-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Heirloom",
+    "url": "https://heirloomapp.io/",
+    "description": "Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "installUrl": "https://apps.apple.com/us/app/id6754576251",
+    "image": "https://heirloomapp.io/og-image.jpg",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "The Peninsular Company, LLC" }
+  }
+  </script>
 
   <!-- Lets the hero hold its drawing back until the 3D watch has had its chance (hero-watch.js). -->
   <script>document.documentElement.classList.add('js')</script>
-  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -76,9 +104,9 @@
         </h1>
         <p class="hero__lede"><strong>Your home&rsquo;s inventory, room by room: the photos, the stories, and what each item&rsquo;s marks say, ready for your insurer or your family.</strong> Photograph one, or write down what you already know. Heirloom gathers what is known about it, shows the evidence behind any estimate, and keeps its story for the people you trust.</p>
         <div class="hero__cta">
-          <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251" aria-label="Download Heirloom on the App Store">
+          <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251">
             <!-- Apple's own black US-English "Download on the App Store" badge, unaltered (downloaded 2026-10-22 from Apple's badge service, on Joe's OK). -->
-            <img class="store-badge__art" src="/app-store-badge.svg" alt="" width="156" height="52">
+            <img class="store-badge__art" src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52">
           </a>
           <a href="#two-ways" class="hero__link">See how it works <span class="hero__link-arrow" aria-hidden="true">&rarr;</span></a>
         </div>
@@ -415,6 +443,50 @@
     </div>
   </section>
 
+  <!-- The app itself: six of the App Store screenshots (build 19, the demo
+       account), each under its store caption (D146). The marks shot (05) waits
+       for a retake once the vase is read; the camera shot (02) for the phone. -->
+  <section class="screens" id="screens">
+    <ul class="screens__rail">
+      <li class="screens__item">
+        <figure>
+          <img class="screens__shot" src="screens/01-rooms.webp" srcset="screens/01-rooms-440.webp 440w, screens/01-rooms.webp 660w" sizes="(max-width: 640px) 62vw, 200px" width="660" height="1434" alt="Heirloom's Home screen on iPhone: five rooms, each showing how many of its items are documented, the collection, and the market-estimate and insured-value lines." loading="lazy" decoding="async">
+          <figcaption>Your home, room by room</figcaption>
+        </figure>
+      </li>
+      <li class="screens__item">
+        <figure>
+          <img class="screens__shot" src="screens/03-insurance-pdf.webp" srcset="screens/03-insurance-pdf-440.webp 440w, screens/03-insurance-pdf.webp 660w" sizes="(max-width: 640px) 62vw, 200px" width="660" height="1434" alt="The insurance inventory PDF Heirloom prepares, open on iPhone: a summary of the owner's items, a list by room, and each item with its photos." loading="lazy" decoding="async">
+          <figcaption>A PDF your insurer can read</figcaption>
+        </figure>
+      </li>
+      <li class="screens__item">
+        <figure>
+          <img class="screens__shot" src="screens/04-whats-missing.webp" srcset="screens/04-whats-missing-440.webp 440w, screens/04-whats-missing.webp 660w" sizes="(max-width: 640px) 62vw, 200px" width="660" height="1434" alt="Home on iPhone answering “What isn’t documented yet?”: three items still missing details, listed by name." loading="lazy" decoding="async">
+          <figcaption>See what isn’t documented yet</figcaption>
+        </figure>
+      </li>
+      <li class="screens__item">
+        <figure>
+          <img class="screens__shot" src="screens/06-value.webp" srcset="screens/06-value-440.webp 440w, screens/06-value.webp 660w" sizes="(max-width: 640px) 62vw, 200px" width="660" height="1434" alt="A silver cake basket's record on iPhone: no estimate yet, and an $8,200 insurance appraisal shown with who made it and when." loading="lazy" decoding="async">
+          <figcaption>A value only with its source</figcaption>
+        </figure>
+      </li>
+      <li class="screens__item">
+        <figure>
+          <img class="screens__shot" src="screens/07-search.webp" srcset="screens/07-search-440.webp 440w, screens/07-search.webp 660w" sizes="(max-width: 640px) 62vw, 200px" width="660" height="1434" alt="Search on iPhone for “my mother’s things”: two of eight items found, each matched on its description and the owner's notes." loading="lazy" decoding="async">
+          <figcaption>Find things in your own words</figcaption>
+        </figure>
+      </li>
+      <li class="screens__item">
+        <figure>
+          <img class="screens__shot" src="screens/08-family.webp" srcset="screens/08-family-440.webp 440w, screens/08-family.webp 660w" sizes="(max-width: 640px) 62vw, 200px" width="660" height="1434" alt="The “Who can see this” screen on iPhone: the owner, and a relative invited as a Commenter who sees each item's photos, story and what it is." loading="lazy" decoding="async">
+          <figcaption>Your family sees what you choose</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
+
   <!-- Positioning: you keep track of your money; keep track of your things -->
   <section class="pitch" id="why">
     <div class="container">
@@ -627,8 +699,8 @@
         <h2 class="cta__title">Start with one item.</h2>
         <p class="cta__subtitle">Heirloom is on the web and on iPhone.</p>
         <div class="cta__store">
-          <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251" aria-label="Download Heirloom on the App Store">
-            <img class="store-badge__art" src="/app-store-badge.svg" alt="" width="156" height="52">
+          <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251">
+            <img class="store-badge__art" src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52">
           </a>
         </div>
         <p class="cta__store-note">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>

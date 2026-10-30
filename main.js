@@ -132,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const animateSelectors = [
     '.feature-card',
+    '.screens__item',
     '.preview__item',
     '.who__card',
     '.way-card',
