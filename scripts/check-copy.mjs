@@ -137,13 +137,6 @@ const REQUIRED_ON_HOMEPAGE = [
     pattern: /\bSpecialists, sale conversations, sold prices and Heirloom’s price estimates are offered in the United States only for now\./,
     why: 'the US-only surfaces (D85), in the sentence Joe approved on Oct 22 (country-copy)',
   },
-  // While unclaimed_listing_emails_enabled is off (migration 158, until
-  // counsel's Q5) and DuMouchelle's is back to staged (Oct 22,
-  // dumouchelles-listing), no listing in the directory can be asked. If Q5
-  // turns the switch on, this line and the card's "they can reply without an
-  // account" are reworded together (the app repo's docs/RELEASE.md, the
-  // unclaimed-listing switch).
-  { pattern: /\bThe directory is not open to requests yet\./, why: 'no listing can be asked at launch (migration 158, Q5)' },
 ];
 
 /** What the homepage's markup must carry, read from the HTML itself (a link is not visible text). */
