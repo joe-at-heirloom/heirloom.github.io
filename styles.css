@@ -1328,6 +1328,19 @@ a { text-decoration: none; color: inherit; }
   color: var(--color-primary);
 }
 
+.footer__copy a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.2);
+  text-underline-offset: 2px;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+
+.footer__copy a:hover {
+  color: var(--color-primary);
+  text-decoration-color: currentColor;
+}
+
 .footer__copy {
   font-size: 0.78rem;
   color: var(--color-text-muted);
@@ -1443,34 +1456,6 @@ a { text-decoration: none; color: inherit; }
   .preview__title {
     font-size: 1.4rem;
   }
-}
-
-/* Dev Bar */
-.dev-bar {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 14px 24px;
-    border-top: 1px solid var(--border);
-    background: var(--bg);
-}
-
-.dev-bar-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    color: var(--tertiary);
-    margin-right: 6px;
-}
-
-.dev-bar-name {
-    font-family: 'Instrument Serif', serif;
-    font-size: 14px;
-    color: var(--secondary);
-    transition: color 0.2s;
-}
-
-.dev-bar-name:hover {
-    color: var(--gold-bright);
 }
 
 /* ============================================
