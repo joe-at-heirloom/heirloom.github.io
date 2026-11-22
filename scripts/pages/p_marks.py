@@ -154,6 +154,33 @@ def office_caveats(office):
     return general + specific
 
 
+AUCKLAND = 'Collection of Auckland Museum Tāmaki Paenga Hira, {acc}, <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow">CC BY 4.0</a>, via <a href="{url}" rel="nofollow">Wikimedia Commons</a>; cropped by Heirloom.'
+WIMBLEDON = dict(img="shared-1975", alt="Hallmarks F&S, anchor, lion passant and script capital D: Birmingham, 1978",
+                 caption="A real example of this cycle: Fattorini &amp; Sons, Birmingham anchor, lion passant and script D, on a 1978 Wimbledon medal. From 1975 every office used the same letter, so London and Sheffield struck the same D that year with their own town marks.",
+                 credit='The Portable Antiquities Scheme / Stuart Wyatt, <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Wimbledon_Lawn_Tennis_Championships_Medal_1978_(FindID_1010578-1115310).jpg" rel="nofollow">Wikimedia Commons</a>; cropped by Heirloom.')
+# One real photograph per cycle where Chaffers (1924) can't help: hallmark-sources/cycles/.
+CYCLE_PHOTOS = {
+    ("London", 1936): dict(img="london-1936", alt="Hallmarks SG, lion passant, uncrowned leopard's head and Roman capital K: London, 1945",
+                           caption="A real example of this cycle: maker SG, lion passant, the uncrowned leopard's head and Roman capital K, on a Distinguished Service Cross engraved 1945.",
+                           credit=AUCKLAND.format(acc="2001.25.612.1", url="https://commons.wikimedia.org/wiki/File:Medal,_decoration_(AM_2001.25.612.1-2).jpg")),
+    ("Birmingham", 1925): dict(img="birmingham-1925", alt="Hallmarks H.A.S &amp; Co, anchor, lion passant and Roman capital F: Birmingham, 1930",
+                               caption="A real example of this cycle: maker H.A.S &amp; Co, anchor, lion passant and Roman capital F (1930), on an RAF Rifle Association medal.",
+                               credit=AUCKLAND.format(acc="2001.25.457", url="https://commons.wikimedia.org/wiki/File:Medal,_prize_(AM_2001.25.457-2).jpg")),
+    ("Birmingham", 1950): dict(img="birmingham-1950", alt="Hallmarks F&S, anchor, lion passant and capital C: Birmingham, 1952",
+                               caption="A real example of this cycle: Fattorini &amp; Sons, anchor, lion passant and capital C (1952), on a lodge jubilee badge. The marks are small in this photograph.",
+                               credit=AUCKLAND.format(acc="2001.25.629", url="https://commons.wikimedia.org/wiki/File:Badge,_lodge_(AM_2001.25.629-2).jpg")),
+    ("London", 1975): WIMBLEDON, ("Birmingham", 1975): WIMBLEDON, ("Sheffield", 1975): WIMBLEDON,
+}
+
+
+def cycle_photo(office, start):
+    ph = CYCLE_PHOTOS.get((office, start))
+    if not ph:
+        return ""
+    return (f'<figure class="cycle__photo"><img src="/marks/img/cycles/{ph["img"]}.webp" alt="{ph["alt"]}" loading="lazy" decoding="async">'
+            f'<figcaption>{ph["caption"]} <span class="stamps__credit">{ph["credit"]}</span></figcaption></figure>')
+
+
 def date_letter_page(office, info):
     rows = office_rows(office)
     path = f"/marks/{info['slug']}-date-letters"
@@ -173,7 +200,7 @@ def date_letter_page(office, info):
             + "</li>"
             for r in rs
         )
-        tables.append(f'<section class="cycle" id="cycle-{start}"><h3>{span}</h3><p class="cycle__kind">{e(kind)}</p><ul class="dlg">{cells}</ul></section>')
+        tables.append(f'<section class="cycle" id="cycle-{start}"><h3>{span}</h3><p class="cycle__kind">{e(kind)}</p>{cycle_photo(office, start)}<ul class="dlg">{cells}</ul></section>')
 
     rules = office_rules(office)
     rule_items = "".join(
@@ -248,7 +275,7 @@ def date_letter_page(office, info):
       <ul class="rules">{rule_items}</ul>
       {britannia}
       <h2 id="tables">Every cycle</h2>
-      <p class="note">Letters to 1923 are facsimiles of the punches, printed in W. Chaffers, <cite>Handbook to Hall Marks on Gold and Silver Plate</cite> (1924), public domain, <a href="https://archive.org/details/ChaffersHandbookToHallMarks" rel="nofollow">via the Internet Archive</a>. Later letters, and the few the book doesn\'t show clearly, are set in a similar typeface until a photograph of that cycle is added. A flagged year is one where the sources disagree.</p>
+      <p class="note">Letters to 1923 are facsimiles of the punches, printed in W. Chaffers, <cite>Handbook to Hall Marks on Gold and Silver Plate</cite> (1924), public domain, <a href="https://archive.org/details/ChaffersHandbookToHallMarks" rel="nofollow">via the Internet Archive</a>. Later letters, and the few the book doesn\'t show clearly, are set in a similar typeface. Where an openly licensed photograph of a later cycle exists, it is shown under that cycle\'s heading. A flagged year is one where the sources disagree.</p>
       {''.join(tables)}
       <h2 id="caveats">Read these before you rely on a year</h2>
       <ul>{caveats}</ul>

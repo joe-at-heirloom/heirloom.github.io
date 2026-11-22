@@ -105,3 +105,8 @@
 /* Date-letter facsimiles from Chaffers (1924). */
 .dli { height: 48px; width: auto; max-width: 100%; mix-blend-mode: multiply; }
 .hits .dli { height: 56px; }
+
+/* One real photograph per cycle after 1923. */
+.cycle__photo { margin: 4px 0 14px; }
+.cycle__photo img { width: 100%; max-width: 560px; height: auto; border-radius: var(--radius-md); }
+.cycle__photo figcaption { font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 6px; max-width: 560px; }
