@@ -101,3 +101,25 @@
 .pro-note p { margin: 0; font-size: 0.95rem; color: var(--color-text-secondary); }
 .pro-note strong { color: var(--color-text); }
 .finder [hidden] { display: none !important; }
+
+/* Pottery marks: real photographs (tight crops, not cut out) and marks cropped
+   from public-domain books, ink on transparent. */
+.stamps--photo .stamps__row, .stamps--book .stamps__row { align-items: flex-start; }
+.stamps--photo .stamp { max-width: 200px; }
+.stamps--photo .stamp img { height: 150px; border-radius: 6px; filter: none; box-shadow: 0 1px 3px rgba(0,0,0,0.16); }
+.stamps--book .stamps__row { background: #faf8f4; }
+.stamps--book .stamp img { height: 80px; filter: none; }
+.cyphers .cypher-cell { min-width: 96px; }
+img.cypher { display: block; height: 34px; width: auto; max-width: 110px; object-fit: contain; }
+.cypher-note, .cypher-none { display: block; font-size: 0.74rem; line-height: 1.3; color: var(--color-text-muted); margin-top: 4px; max-width: 150px; }
+@media (max-width: 600px) {
+  .stamps--photo .stamp img { height: 130px; }
+  .stamps--photo .stamp { max-width: 150px; }
+  .stamps--book .stamp img { height: 54px; }
+  img.cypher { height: 28px; max-width: 64px; }
+  .cyphers .cypher-cell { min-width: 0; padding-left: 6px; padding-right: 6px; }
+  .cypher-note, .cypher-none { max-width: 80px; font-size: 0.7rem; }
+}
+.stamps--photo .stamp--wide { max-width: 100%; }
+.stamps--photo .stamp--wide img { height: 96px; max-width: 100%; object-fit: cover; }
+@media (max-width: 600px) { .stamps--photo .stamp--wide img { height: auto; width: 100%; } }
