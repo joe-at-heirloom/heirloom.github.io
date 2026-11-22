@@ -267,14 +267,14 @@ a { text-decoration: none; color: inherit; }
   }
   .nav__toggle span {
     display: block;
-    width: 20px;
-    height: 1.5px;
+    width: 22px;
+    height: 2px;
     border-radius: 2px;
     background: var(--color-text);
     transition: transform 0.25s ease;
   }
-  .nav--open .nav__toggle span:first-child { transform: translateY(3.75px) rotate(45deg); }
-  .nav--open .nav__toggle span:last-child { transform: translateY(-3.75px) rotate(-45deg); }
+  .nav--open .nav__toggle span:first-child { transform: translateY(4px) rotate(45deg); }
+  .nav--open .nav__toggle span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
   .nav__sheet {
     position: fixed;
