@@ -105,3 +105,24 @@
 /* Date-letter facsimiles from Chaffers (1924). */
 .dli { height: 48px; width: auto; max-width: 100%; mix-blend-mode: multiply; }
 .hits .dli { height: 56px; }
+
+/* Ceramics maker's-mark pages: one card per mark, its photographs beside it. */
+.refs { font-size: 0.7em; line-height: 0; margin-left: 1px; }
+.refs a { color: var(--color-text-secondary); text-decoration: none; }
+.refs a:hover { color: var(--color-primary); text-decoration: underline; }
+.mk { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 260px); gap: 18px 24px; padding: 22px 0; border-top: 1px solid var(--color-border); }
+.mk:last-of-type { border-bottom: 1px solid var(--color-border); margin-bottom: 26px; }
+.mk h3 { margin-top: 0; }
+.mk__dates { font-weight: 600; color: var(--color-text-secondary); margin-bottom: 8px !important; }
+.mk__pics { display: grid; gap: 14px; align-content: start; }
+.mk__nophoto { font-size: 0.88rem; color: var(--color-text-muted); padding: 14px; border: 1px dashed var(--color-border); border-radius: var(--radius-md); margin: 0 !important; }
+.mkp { margin: 0; }
+.mkp img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #ebe8e2; }
+.mkp figcaption { font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.4; margin-top: 6px; }
+.mkp__credit { display: block; font-size: 0.76rem; color: var(--color-text-muted); margin-top: 2px; }
+.mkp__credit a { color: inherit !important; }
+.sources--num { padding-left: 1.4em; }
+.sources--num li { scroll-margin-top: 90px; }
+.sources--num li:target { background: var(--color-surface-alt); border-radius: var(--radius-sm); }
+@media (max-width: 640px) { .mk { grid-template-columns: 1fr; } .mkp img { max-height: 420px; width: auto; max-width: 100%; } }
+.mk--words { grid-template-columns: 1fr; }
