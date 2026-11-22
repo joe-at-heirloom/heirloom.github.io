@@ -33,6 +33,8 @@ Built from the same hand-checked tables Heirloom Advisor dates marks with; each 
 - [Singer serial numbers](https://heirloomapp.io/marks/singer-serial-numbers): year, model and factory for a Singer serial, 1850-1971
 - [Pocket watch serial numbers](https://heirloomapp.io/marks/pocket-watch-serial-numbers): Waltham, Elgin, Hamilton, Illinois, South Bend and Hampden
 - [Leica serial numbers](https://heirloomapp.io/marks/leica-serial-numbers): model and year for a Leica body serial
+- [Rolex serial numbers](https://heirloomapp.io/marks/rolex-serial-numbers): year for a Rolex case serial, numeric and letter serials to 2010, with each source's answer
+- [Omega serial numbers](https://heirloomapp.io/marks/omega-serial-numbers): year for an Omega movement serial, 1894-1995, with dated examples
 - Pottery date codes: [Wedgwood](https://heirloomapp.io/marks/wedgwood-date-codes), [Minton](https://heirloomapp.io/marks/minton-date-marks), [Royal Worcester](https://heirloomapp.io/marks/royal-worcester-date-marks), [Rookwood](https://heirloomapp.io/marks/rookwood-pottery-marks), [Sèvres](https://heirloomapp.io/marks/sevres-date-letters)
 
 ## Help and policies

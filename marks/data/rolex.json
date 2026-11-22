@@ -1,0 +1,1848 @@
+{
+ "system": "rolex_case_serial",
+ "title": "Rolex case serial number to approximate year of manufacture",
+ "applies_to": "Serial numbers engraved on Rolex watch cases: numeric serials from about 1928 to 1987 (two numberings, before and after a restart in 1953-54) and letter-prefixed serials (a letter and six digits) from about 1987 to 2010. Not model references (the number between the lugs at 12 o'clock or inside the case back), not movement numbers, not Rolex Prince or other separately numbered series, and not the random eight-character serials used from about 2010.",
+ "sources": [
+  {
+   "key": "DH",
+   "name": "James M. Dowling and Jeffrey P. Hess, The Best of Time: Rolex Wristwatches, An Unauthorized History (Schiffer): serial and dated-watch list",
+   "url": "https://rolexhaven.com/serial-numbers.html",
+   "retrieved": "2026-11-22",
+   "notes": "Seen as a partial image of the book's chart reproduced on RolexHaven (rows from 23,969 (1928) to 4,004,200 (1974); earlier rows cut off). Observations of individual dated watches, many to the quarter. Used for the first numbering, 1928-1953. Its 1966-1974 rows rise by exactly 262,900 a year and equal the interpolated chart (S), so they were not used; its post-restart observations are kept as point checks in the caveats."
+  },
+  {
+   "key": "CP",
+   "name": "Carlo Pergola, Rolex Daytona: A Legend Is Born: case-serial ranges by year, 1952-1971",
+   "url": "https://rolexhaven.com/serial-numbers.html",
+   "retrieved": "2026-11-22",
+   "notes": "Seen as a partial image of the book's table reproduced on RolexHaven. Contiguous from-to ranges with explicit two-year bands (e.g. 1953/1954), from 927,301 to 2,591,204, across the restart. Independent of the online lists. The first post-restart row prints '10001', possibly 100001; recorded as printed."
+  },
+  {
+   "key": "A",
+   "name": "Bob's Watches, Rolex serial numbers (current list)",
+   "url": "https://www.bobswatches.com/rolex-serial-numbers",
+   "retrieved": "2026-11-22",
+   "notes": "One serial per year 1926-1987, then letters to 2010. Swiss Watch Expo, Fratello, King Jewelers, watches.co.uk, Watch Limit, MyWatch, Gray & Sons and Dom's publish copies. Its 1928-1948 rows are mostly identical to Dowling and Hess, so before 1950 it is not independent of them; from 1953 its origin is not stated and it is independent of S. Its 1930 row (23,186, below its own 1928 row) and 1977-78 rows (5,008,000 then 5,000,000) are out of order and were not used. Bob's replaced an earlier copy of S with this list between 2015 and 2017 (Wayback Machine)."
+  },
+  {
+   "key": "S",
+   "name": "The \"Rolex date chart\" (28,000 in 1926; called the Specht Sheet by Alan Furman & Co.): undated PDF on a Shopify file server, and the copies at Watches by Timepiece, Watch Collectors UK, Keep The Time, WatchDoctor and Alan Furman",
+   "url": "https://cdn.shopify.com/s/files/1/0257/0164/6390/files/Rolex-Date-Chart.pdf",
+   "retrieved": "2026-11-22",
+   "notes": "The most-copied list online. Its numeric rows rise in constant yearly steps (interpolated between a few anchor points) and it has no 1950s restart, so it is 2-7 years off dated watches from 1953 to about 1970 and 7 years off a 1933 hallmark. Used only as the second list for 1971-1987 (where it differs from A by about a year) and as one of three letter-era families. Its month-dated variant (Watches by Timepiece, Keep The Time) is the third letter family ('W')."
+  },
+  {
+   "key": "auction",
+   "name": "Auction lots with an independent date: a case-back date stamp, a British import hallmark, or dated Rolex papers (Phillips, Christie's, Bonhams, Antiquorum; each lot named in 'dated_examples')",
+   "url": "https://www.phillips.com/detail/rolex/CH080215/167",
+   "retrieved": "2026-11-22",
+   "notes": "Used to check rows, not to set them. A warranty-card or receipt date is when the watch was sold, so it is the latest the watch can be, not its year of manufacture."
+  },
+  {
+   "key": "not_used",
+   "name": "Not used: Luxury Bazaar and Phigora (rounded splices of Pergola and Bob's with evenly split letter ranges), Amsterdam Vintage Watches, BeckerTime and The Watch Guys (splices of the lists above, with some values of unknown origin), Expert's Watches (Dowling and Hess plus S). Rolex publishes no serial chart, and no chart issued by Rolex to dealers was found.",
+   "url": "",
+   "retrieved": "2026-11-22"
+  }
+ ],
+ "caveats": [
+  "Use the case serial: engraved between the lugs at 6 o'clock (seen with the bracelet or strap removed) until about 2008, and on the inner bezel ring (the rehaut) at 6 o'clock from about 2005. The number between the lugs at 12 o'clock is the model reference, not the serial.",
+  "How to read: numeric serials were used twice. The first numbering ran from 1926 to about 999,999 in 1953-54; numbering then restarted, and the second numbering ran to 9,999,999 in 1987. A serial below 1,000,000 can be either (the model and its style decide); 1,000,000 and above is the second. Then come a letter and six digits (R123456, about 1987-2010), and from about late 2009 or 2010 a random mix of eight letters and digits, which carries no date. Pick the row whose serial_start <= serial <= serial_end in each numbering; 'year' to 'year_end' is the span the sources give together; 'by_source' gives each source's own answer.",
+  "Rolex publishes no serial chart and no dates of manufacture. Every list is compiled by collectors and dealers, and most online lists are copies of two: an interpolated chart with no 1950s restart (S), and Bob's Watches' list (A). The independent sources are two books, Dowling and Hess (dated watches, 1928-1965) and Pergola (ranges, 1952-1971), and dated watches sold at auction.",
+  "Agreement: allowing for the restart, Dowling and Hess, Pergola and Bob's agree with watches dated by a case-back stamp, a hallmark or papers to within about a year from 1933 to 1967. That is the best-supported stretch.",
+  "1928-1948 rests on one underlying list: Bob's repeats most of Dowling and Hess's rows, so the two agree by descent, not independently. Three dated watches (1933, 1943 and 1947) fit it. Before 23,969 (about 1928) the lists disagree and no year is given.",
+  "The restart: Pergola and Bob's put it in 1954, Dowling and Hess late in 1953, and the round-number restart some charts show (999,999 in 1954, then 200,000 in 1955) is made up. Dowling and Hess also date two second-numbering watches, 116,578 and 132,562, to 1953; dated watches near 111,000-113,000 are from 1955-56, so those two rows were not used.",
+  "1971-1987 rests on two dealer lists, Bob's (origin not stated) and the interpolated chart, which differ by one to two years; dated papers fit both. Treat these years as within a year or two.",
+  "Letter era: the three list families start most letters within a year of each other, and the span shown covers all three. A dated warranty card shows when the watch was sold, so it can be a year or more after the letter's year. No dated papers were found for S, A, V or G serials.",
+  "Random serials (from about late 2009 or 2010): the eight-character serial is not in sequence and can't be dated from the number. The warranty card or the retailer's records give the date of sale.",
+  "Some early models, the Rolex Prince among them, were numbered in series of their own and are outside this table.",
+  "A case serial dates the case. It does not show that a watch is genuine or original: serials are copied, and cases, dials, bracelets and movements were replaced in service.",
+  "Nothing was interpolated between rows. Where a list has no entry for a year (Bob's has none for 1929, 1931, 1949 or 1950), its answer is the whole span between its two entries."
+ ],
+ "rows": [
+  {
+   "series": "first",
+   "serial_start": 1,
+   "serial_end": 23968,
+   "year": null,
+   "note": "Before about 1928. The lists disagree (one starts 1927 at 20,190, another puts 28,000 in 1926) and no independent dated example was found, so no year is given."
+  },
+  {
+   "series": "first",
+   "serial_start": 23969,
+   "serial_end": 28289,
+   "year": 1928,
+   "year_end": 1931,
+   "by_source": {
+    "A": [
+     1928,
+     1931
+    ],
+    "DH": [
+     1928,
+     1929
+    ]
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 28290,
+   "serial_end": 29131,
+   "year": 1928,
+   "year_end": 1931,
+   "by_source": {
+    "A": [
+     1928,
+     1931
+    ],
+    "DH": [
+     1930,
+     1931
+    ]
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 29132,
+   "serial_end": 29311,
+   "year": 1930,
+   "year_end": 1932,
+   "by_source": {
+    "A": 1932,
+    "DH": [
+     1930,
+     1931
+    ]
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 29312,
+   "serial_end": 29561,
+   "year": 1932,
+   "by_source": {
+    "A": 1932,
+    "DH": 1932
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 29562,
+   "serial_end": 29932,
+   "year": 1932,
+   "year_end": 1933,
+   "by_source": {
+    "A": 1933,
+    "DH": 1932
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 29933,
+   "serial_end": 30822,
+   "year": 1933,
+   "by_source": {
+    "A": 1933,
+    "DH": 1933
+   },
+   "dated_examples": [
+    {
+     "serial": 29986,
+     "date": "British import hallmark for 1933",
+     "source": "Bonhams, London, 21 February 2024, lot 49"
+    }
+   ]
+  },
+  {
+   "series": "first",
+   "serial_start": 30823,
+   "serial_end": 34335,
+   "year": 1934,
+   "by_source": {
+    "A": 1934,
+    "DH": 1934
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 34336,
+   "serial_end": 35364,
+   "year": 1934,
+   "year_end": 1935,
+   "by_source": {
+    "A": 1935,
+    "DH": 1934
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 35365,
+   "serial_end": 36855,
+   "year": 1935,
+   "by_source": {
+    "A": 1935,
+    "DH": 1935
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 36856,
+   "serial_end": 37595,
+   "year": 1935,
+   "year_end": 1936,
+   "by_source": {
+    "A": 1936,
+    "DH": 1935
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 37596,
+   "serial_end": 40919,
+   "year": 1936,
+   "by_source": {
+    "A": 1936,
+    "DH": 1936
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 40920,
+   "serial_end": 43738,
+   "year": 1937,
+   "by_source": {
+    "A": 1937,
+    "DH": 1937
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 43739,
+   "serial_end": 71223,
+   "year": 1938,
+   "by_source": {
+    "A": 1938,
+    "DH": 1938
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 71224,
+   "serial_end": 99774,
+   "year": 1939,
+   "by_source": {
+    "A": 1939,
+    "DH": 1939
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 99775,
+   "serial_end": 106046,
+   "year": 1940,
+   "by_source": {
+    "A": 1940,
+    "DH": 1940
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 106047,
+   "serial_end": 143508,
+   "year": 1941,
+   "by_source": {
+    "A": 1941,
+    "DH": 1941
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 143509,
+   "serial_end": 230877,
+   "year": 1942,
+   "by_source": {
+    "A": 1942,
+    "DH": 1942
+   },
+   "dated_examples": [
+    {
+     "serial": 185983,
+     "date": "Rolex receipt and warranty card July 1943 (catalogued as made in 1941)",
+     "source": "Antiquorum, Geneva, 13 May 2007, lot 311"
+    }
+   ]
+  },
+  {
+   "series": "first",
+   "serial_start": 230878,
+   "serial_end": 269560,
+   "year": 1943,
+   "by_source": {
+    "A": 1943,
+    "DH": 1943
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 269561,
+   "serial_end": 302458,
+   "year": 1944,
+   "by_source": {
+    "A": 1944,
+    "DH": 1944
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 302459,
+   "serial_end": 367945,
+   "year": 1945,
+   "by_source": {
+    "A": 1945,
+    "DH": 1945
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 367946,
+   "serial_end": 387215,
+   "year": 1945,
+   "year_end": 1946,
+   "by_source": {
+    "A": 1946,
+    "DH": 1945
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 387216,
+   "serial_end": 529162,
+   "year": 1946,
+   "by_source": {
+    "A": 1946,
+    "DH": 1946
+   },
+   "dated_examples": [
+    {
+     "serial": 489161,
+     "date": "sold August 1947",
+     "source": "Antiquorum, Geneva, 9-10 May 2026, lot 191"
+    }
+   ]
+  },
+  {
+   "series": "first",
+   "serial_start": 529163,
+   "serial_end": 628839,
+   "year": 1947,
+   "by_source": {
+    "A": 1947,
+    "DH": 1947
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 628840,
+   "serial_end": 709248,
+   "year": 1948,
+   "year_end": 1950,
+   "by_source": {
+    "A": [
+     1948,
+     1950
+    ],
+    "DH": [
+     1948,
+     1950
+    ]
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 709249,
+   "serial_end": 710775,
+   "year": 1948,
+   "year_end": 1951,
+   "by_source": {
+    "A": 1951,
+    "DH": [
+     1948,
+     1950
+    ]
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 710776,
+   "serial_end": 726638,
+   "year": 1951,
+   "by_source": {
+    "A": 1951,
+    "DH": 1951
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 726639,
+   "serial_end": 840395,
+   "year": 1951,
+   "year_end": 1952,
+   "by_source": {
+    "A": 1952,
+    "DH": 1951
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 840396,
+   "serial_end": 855725,
+   "year": 1952,
+   "by_source": {
+    "A": 1952,
+    "DH": 1952
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 855726,
+   "serial_end": 927300,
+   "year": 1952,
+   "year_end": 1953,
+   "by_source": {
+    "A": 1953,
+    "DH": 1952
+   },
+   "dated_examples": [
+    {
+     "serial": 910861,
+     "date": "British import hallmark for 1952; bought August 1954",
+     "source": "Bonhams, London, 19 June 2025, lot 34"
+    }
+   ]
+  },
+  {
+   "series": "first",
+   "serial_start": 927301,
+   "serial_end": 929261,
+   "year": 1952,
+   "year_end": 1953,
+   "by_source": {
+    "A": 1953,
+    "DH": 1952,
+    "CP": [
+     1952,
+     1953
+    ]
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 929262,
+   "serial_end": 929425,
+   "year": 1952,
+   "year_end": 1953,
+   "by_source": {
+    "A": 1953,
+    "DH": 1952,
+    "CP": 1953
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 929426,
+   "serial_end": 974681,
+   "year": 1953,
+   "by_source": {
+    "A": 1953,
+    "DH": 1953,
+    "CP": 1953
+   },
+   "note": "Dowling and Hess date most watches here to 1953 but two, 937,170 and 952,892, to early 1954: the two numberings overlapped for a while.",
+   "year_end": 1954
+  },
+  {
+   "series": "first",
+   "serial_start": 974682,
+   "serial_end": 982114,
+   "year": 1953,
+   "year_end": 1954,
+   "by_source": {
+    "A": 1953,
+    "DH": 1953,
+    "CP": [
+     1953,
+     1954
+    ]
+   }
+  },
+  {
+   "series": "first",
+   "serial_start": 982115,
+   "serial_end": 999999,
+   "year": 1953,
+   "year_end": 1954,
+   "by_source": {
+    "A": 1953,
+    "DH": 1953,
+    "CP": 1954
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 10001,
+   "serial_end": 22999,
+   "year": 1954,
+   "by_source": {
+    "CP": 1954
+   },
+   "note": "Only Pergola's ranges reach this low after the restart; Bob's list starts 1954 at 23,000, so both put it in 1954 or earlier."
+  },
+  {
+   "series": "second",
+   "serial_start": 23000,
+   "serial_end": 32180,
+   "year": 1954,
+   "by_source": {
+    "A": 1954,
+    "CP": 1954
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 32181,
+   "serial_end": 63424,
+   "year": 1954,
+   "year_end": 1955,
+   "by_source": {
+    "A": 1954,
+    "CP": [
+     1954,
+     1955
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 63425,
+   "serial_end": 96999,
+   "year": 1954,
+   "year_end": 1955,
+   "by_source": {
+    "A": 1954,
+    "CP": 1955
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 97000,
+   "serial_end": 133060,
+   "year": 1955,
+   "by_source": {
+    "A": 1955,
+    "CP": 1955
+   },
+   "dated_examples": [
+    {
+     "serial": 111654,
+     "date": "warranty card May 1957 (catalogued as 1955)",
+     "source": "Phillips, Glamorous Day-Date, lot 40"
+    },
+    {
+     "serial": 113174,
+     "date": "case back stamped I.56; chronometer certificate December 1955",
+     "source": "Phillips, The Watch Auction: One, lot 167"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 133061,
+   "serial_end": 139166,
+   "year": 1955,
+   "year_end": 1956,
+   "by_source": {
+    "A": 1956,
+    "CP": 1955
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 139167,
+   "serial_end": 147690,
+   "year": 1955,
+   "year_end": 1956,
+   "by_source": {
+    "A": 1956,
+    "CP": [
+     1955,
+     1956
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 147691,
+   "serial_end": 223999,
+   "year": 1956,
+   "by_source": {
+    "A": 1956,
+    "CP": 1956
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 224000,
+   "serial_end": 261715,
+   "year": 1956,
+   "year_end": 1957,
+   "by_source": {
+    "A": 1957,
+    "CP": 1956
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 261716,
+   "serial_end": 272288,
+   "year": 1956,
+   "year_end": 1957,
+   "by_source": {
+    "A": 1957,
+    "CP": [
+     1956,
+     1957
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 272289,
+   "serial_end": 327999,
+   "year": 1957,
+   "by_source": {
+    "A": 1957,
+    "CP": 1957
+   },
+   "dated_examples": [
+    {
+     "serial": 307234,
+     "date": "case back stamped III.57",
+     "source": "Phillips, Styled, lot 77"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 328000,
+   "serial_end": 360987,
+   "year": 1957,
+   "year_end": 1958,
+   "by_source": {
+    "A": 1958,
+    "CP": 1957
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 360988,
+   "serial_end": 381922,
+   "year": 1957,
+   "year_end": 1958,
+   "by_source": {
+    "A": 1958,
+    "CP": [
+     1957,
+     1958
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 381923,
+   "serial_end": 399452,
+   "year": 1958,
+   "by_source": {
+    "A": 1958,
+    "CP": 1958
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 399453,
+   "serial_end": 426480,
+   "year": 1958,
+   "year_end": 1959,
+   "by_source": {
+    "A": 1959,
+    "CP": 1958
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 426481,
+   "serial_end": 437254,
+   "year": 1958,
+   "year_end": 1959,
+   "by_source": {
+    "A": 1959,
+    "CP": [
+     1958,
+     1959
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 437255,
+   "serial_end": 515999,
+   "year": 1959,
+   "by_source": {
+    "A": 1959,
+    "CP": 1959
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 516000,
+   "serial_end": 530168,
+   "year": 1959,
+   "year_end": 1960,
+   "by_source": {
+    "A": 1960,
+    "CP": 1959
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 530169,
+   "serial_end": 539968,
+   "year": 1959,
+   "year_end": 1960,
+   "by_source": {
+    "A": 1960,
+    "CP": [
+     1959,
+     1960
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 539969,
+   "serial_end": 643152,
+   "year": 1960,
+   "by_source": {
+    "A": 1960,
+    "CP": 1960
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 643153,
+   "serial_end": 663484,
+   "year": 1960,
+   "year_end": 1961,
+   "by_source": {
+    "A": 1961,
+    "CP": 1960
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 663485,
+   "serial_end": 688766,
+   "year": 1960,
+   "year_end": 1961,
+   "by_source": {
+    "A": 1961,
+    "CP": [
+     1960,
+     1961
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 688767,
+   "serial_end": 743999,
+   "year": 1961,
+   "by_source": {
+    "A": 1961,
+    "CP": 1961
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 744000,
+   "serial_end": 785296,
+   "year": 1961,
+   "year_end": 1962,
+   "by_source": {
+    "A": 1962,
+    "CP": 1961
+   },
+   "dated_examples": [
+    {
+     "serial": 764460,
+     "date": "case back stamped II.62",
+     "source": "Phillips, The Watch Auction: One, lot 73"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 785297,
+   "serial_end": 823999,
+   "year": 1961,
+   "year_end": 1962,
+   "by_source": {
+    "A": 1962,
+    "CP": [
+     1961,
+     1962
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 824000,
+   "serial_end": 840045,
+   "year": 1961,
+   "year_end": 1963,
+   "by_source": {
+    "A": 1963,
+    "CP": [
+     1961,
+     1962
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 840046,
+   "serial_end": 919916,
+   "year": 1962,
+   "year_end": 1963,
+   "by_source": {
+    "A": 1963,
+    "CP": 1962
+   },
+   "dated_examples": [
+    {
+     "serial": 875554,
+     "date": "case back stamped I.63",
+     "source": "Phillips, Geneva Watch Auction: XI, lot 67"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 919917,
+   "serial_end": 950450,
+   "year": 1962,
+   "year_end": 1963,
+   "by_source": {
+    "A": 1963,
+    "CP": [
+     1962,
+     1963
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 950451,
+   "serial_end": 974197,
+   "year": 1963,
+   "by_source": {
+    "A": 1963,
+    "CP": 1963
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 974198,
+   "serial_end": 997135,
+   "year": 1963,
+   "year_end": 1964,
+   "by_source": {
+    "A": 1963,
+    "CP": [
+     1963,
+     1964
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 997136,
+   "serial_end": 1008888,
+   "year": 1963,
+   "year_end": 1964,
+   "by_source": {
+    "A": 1963,
+    "CP": 1964
+   },
+   "dated_examples": [
+    {
+     "serial": 999943,
+     "date": "case back stamped III.63; warranty card July 1964",
+     "source": "Phillips, New York Watch Auction: X, lot 122"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 1008889,
+   "serial_end": 1099999,
+   "year": 1964,
+   "by_source": {
+    "A": 1964,
+    "CP": 1964
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1100000,
+   "serial_end": 1104068,
+   "year": 1964,
+   "year_end": 1965,
+   "by_source": {
+    "A": 1965,
+    "CP": 1964
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1104069,
+   "serial_end": 1141049,
+   "year": 1964,
+   "year_end": 1965,
+   "by_source": {
+    "A": 1965,
+    "CP": [
+     1964,
+     1965
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1141050,
+   "serial_end": 1199999,
+   "year": 1965,
+   "by_source": {
+    "A": 1965,
+    "CP": 1965
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1200000,
+   "serial_end": 1269458,
+   "year": 1965,
+   "year_end": 1966,
+   "by_source": {
+    "A": 1966,
+    "CP": 1965
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1269459,
+   "serial_end": 1284789,
+   "year": 1965,
+   "year_end": 1966,
+   "by_source": {
+    "A": 1966,
+    "CP": [
+     1965,
+     1966
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1284790,
+   "serial_end": 1503591,
+   "year": 1966,
+   "by_source": {
+    "A": 1966,
+    "CP": 1966
+   },
+   "dated_examples": [
+    {
+     "serial": 1380916,
+     "date": "chronometer certificate July 1966; warranty card December 1966",
+     "source": "Phillips, New York Watch Auction: Seven, lot 26"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 1503592,
+   "serial_end": 1534082,
+   "year": 1966,
+   "year_end": 1967,
+   "by_source": {
+    "A": 1966,
+    "CP": [
+     1966,
+     1967
+    ]
+   },
+   "dated_examples": [
+    {
+     "serial": 1533793,
+     "date": "chronometer certificate February 1967",
+     "source": "Phillips, Geneva Watch Auction: XI, lot 160"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 1534083,
+   "serial_end": 1538434,
+   "year": 1966,
+   "year_end": 1967,
+   "by_source": {
+    "A": 1966,
+    "CP": 1967
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1538435,
+   "serial_end": 1695119,
+   "year": 1967,
+   "by_source": {
+    "A": 1967,
+    "CP": 1967
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1695120,
+   "serial_end": 1720976,
+   "year": 1967,
+   "year_end": 1968,
+   "by_source": {
+    "A": 1967,
+    "CP": [
+     1967,
+     1968
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1720977,
+   "serial_end": 1751999,
+   "year": 1967,
+   "year_end": 1968,
+   "by_source": {
+    "A": 1967,
+    "CP": 1968
+   },
+   "dated_examples": [
+    {
+     "serial": 1744965,
+     "date": "case back stamped IV.67",
+     "source": "Phillips, Toki, lot 77"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 1752000,
+   "serial_end": 1899999,
+   "year": 1968,
+   "by_source": {
+    "A": 1968,
+    "CP": 1968
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1900000,
+   "serial_end": 1938064,
+   "year": 1968,
+   "year_end": 1969,
+   "by_source": {
+    "A": 1969,
+    "CP": 1968
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1938065,
+   "serial_end": 1958606,
+   "year": 1968,
+   "year_end": 1969,
+   "by_source": {
+    "A": 1969,
+    "CP": [
+     1968,
+     1969
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 1958607,
+   "serial_end": 2236978,
+   "year": 1969,
+   "by_source": {
+    "A": 1969,
+    "CP": 1969
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 2236979,
+   "serial_end": 2241881,
+   "year": 1969,
+   "year_end": 1970,
+   "by_source": {
+    "A": 1969,
+    "CP": [
+     1969,
+     1970
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 2241882,
+   "serial_end": 2357479,
+   "year": 1969,
+   "year_end": 1970,
+   "by_source": {
+    "A": 1970,
+    "CP": [
+     1969,
+     1970
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 2357480,
+   "serial_end": 2558656,
+   "year": 1970,
+   "by_source": {
+    "A": 1970,
+    "CP": 1970
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 2558657,
+   "serial_end": 2589294,
+   "year": 1970,
+   "year_end": 1971,
+   "by_source": {
+    "A": 1970,
+    "CP": [
+     1970,
+     1971
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 2589295,
+   "serial_end": 2591204,
+   "year": 1970,
+   "year_end": 1971,
+   "by_source": {
+    "A": 1971,
+    "CP": [
+     1970,
+     1971
+    ]
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 2591205,
+   "serial_end": 2890458,
+   "year": 1971,
+   "by_source": {
+    "A": 1971
+   },
+   "note": "Pergola's ranges end at 2,591,204 (1970-71) and the interpolated chart is not used below 3,215,500, so only Bob's list gives a year here; both lists put it after 1970."
+  },
+  {
+   "series": "second",
+   "serial_start": 2890459,
+   "serial_end": 3200267,
+   "year": 1972,
+   "by_source": {
+    "A": 1972
+   },
+   "note": "Pergola's ranges end at 2,591,204 (1970-71) and the interpolated chart is not used below 3,215,500, so only Bob's list gives a year here; both lists put it after 1970."
+  },
+  {
+   "series": "second",
+   "serial_start": 3200268,
+   "serial_end": 3215499,
+   "year": 1973,
+   "by_source": {
+    "A": 1973
+   },
+   "note": "Pergola's ranges end at 2,591,204 (1970-71) and the interpolated chart is not used below 3,215,500, so only Bob's list gives a year here; both lists put it after 1970."
+  },
+  {
+   "series": "second",
+   "serial_start": 3215500,
+   "serial_end": 3478399,
+   "year": 1971,
+   "year_end": 1973,
+   "by_source": {
+    "A": 1973,
+    "S": 1971
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 3478400,
+   "serial_end": 3567926,
+   "year": 1972,
+   "year_end": 1973,
+   "by_source": {
+    "A": 1973,
+    "S": 1972
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 3567927,
+   "serial_end": 3741299,
+   "year": 1972,
+   "year_end": 1974,
+   "by_source": {
+    "A": 1974,
+    "S": 1972
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 3741300,
+   "serial_end": 3862195,
+   "year": 1973,
+   "year_end": 1974,
+   "by_source": {
+    "A": 1974,
+    "S": 1973
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 3862196,
+   "serial_end": 4004199,
+   "year": 1973,
+   "year_end": 1975,
+   "by_source": {
+    "A": 1975,
+    "S": 1973
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 4004200,
+   "serial_end": 4115298,
+   "year": 1974,
+   "year_end": 1975,
+   "by_source": {
+    "A": 1975,
+    "S": 1974
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 4115299,
+   "serial_end": 4267099,
+   "year": 1974,
+   "year_end": 1978,
+   "by_source": {
+    "A": [
+     1976,
+     1978
+    ],
+    "S": 1974
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 4267100,
+   "serial_end": 4538999,
+   "year": 1975,
+   "year_end": 1978,
+   "by_source": {
+    "A": [
+     1976,
+     1978
+    ],
+    "S": 1975
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 4539000,
+   "serial_end": 5005999,
+   "year": 1976,
+   "year_end": 1978,
+   "by_source": {
+    "A": [
+     1976,
+     1978
+    ],
+    "S": 1976
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 5006000,
+   "serial_end": 5481999,
+   "year": 1976,
+   "year_end": 1978,
+   "by_source": {
+    "A": [
+     1976,
+     1978
+    ],
+    "S": 1977
+   },
+   "dated_examples": [
+    {
+     "serial": 5398992,
+     "date": "warranty card June 1979",
+     "source": "Phillips, New York Watch Auction: X, lot 13"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 5482000,
+   "serial_end": 5737029,
+   "year": 1976,
+   "year_end": 1978,
+   "by_source": {
+    "A": [
+     1976,
+     1978
+    ],
+    "S": 1978
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 5737030,
+   "serial_end": 5957999,
+   "year": 1978,
+   "year_end": 1979,
+   "by_source": {
+    "A": 1979,
+    "S": 1978
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 5958000,
+   "serial_end": 6433999,
+   "year": 1979,
+   "by_source": {
+    "A": 1979,
+    "S": 1979
+   },
+   "dated_examples": [
+    {
+     "serial": 6014580,
+     "date": "warranty card 1979",
+     "source": "Phillips, New York, The 1979 Collection, lot 25"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 6434000,
+   "serial_end": 6520869,
+   "year": 1980,
+   "by_source": {
+    "A": 1980,
+    "S": 1980
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 6520870,
+   "serial_end": 6909999,
+   "year": 1980,
+   "year_end": 1981,
+   "by_source": {
+    "A": 1981,
+    "S": 1980
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 6910000,
+   "serial_end": 7099999,
+   "year": 1981,
+   "by_source": {
+    "A": 1981,
+    "S": 1981
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 7100000,
+   "serial_end": 7385999,
+   "year": 1981,
+   "year_end": 1982,
+   "by_source": {
+    "A": 1982,
+    "S": 1981
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 7386000,
+   "serial_end": 7399999,
+   "year": 1982,
+   "by_source": {
+    "A": 1982,
+    "S": 1982
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 7400000,
+   "serial_end": 7861999,
+   "year": 1982,
+   "year_end": 1983,
+   "by_source": {
+    "A": 1983,
+    "S": 1982
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 7862000,
+   "serial_end": 8070021,
+   "year": 1983,
+   "by_source": {
+    "A": 1983,
+    "S": 1983
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 8070022,
+   "serial_end": 8337999,
+   "year": 1983,
+   "year_end": 1984,
+   "by_source": {
+    "A": 1984,
+    "S": 1983
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 8338000,
+   "serial_end": 8613999,
+   "year": 1984,
+   "by_source": {
+    "A": 1984,
+    "S": 1984
+   },
+   "dated_examples": [
+    {
+     "serial": 8414354,
+     "date": "warranty card February 1987",
+     "source": "Phillips, Geneva Watch Auction: XI, lot 170"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 8614000,
+   "serial_end": 8813999,
+   "year": 1984,
+   "year_end": 1985,
+   "by_source": {
+    "A": 1985,
+    "S": 1984
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 8814000,
+   "serial_end": 8899999,
+   "year": 1985,
+   "by_source": {
+    "A": 1985,
+    "S": 1985
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 8900000,
+   "serial_end": 9289999,
+   "year": 1985,
+   "year_end": 1986,
+   "by_source": {
+    "A": 1986,
+    "S": 1985
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 9290000,
+   "serial_end": 9399999,
+   "year": 1986,
+   "by_source": {
+    "A": 1986,
+    "S": 1986
+   }
+  },
+  {
+   "series": "second",
+   "serial_start": 9400000,
+   "serial_end": 9765999,
+   "year": 1986,
+   "year_end": 1987,
+   "by_source": {
+    "A": 1987,
+    "S": 1986
+   },
+   "dated_examples": [
+    {
+     "serial": 9421621,
+     "date": "warranty card December 1986",
+     "source": "Phillips, The Watch Auction: One, lot 166"
+    }
+   ]
+  },
+  {
+   "series": "second",
+   "serial_start": 9766000,
+   "serial_end": 9999999,
+   "year": 1987,
+   "by_source": {
+    "A": 1987,
+    "S": 1987
+   }
+  }
+ ],
+ "prefixes": [
+  {
+   "prefix": "R",
+   "year": 1987,
+   "year_end": 1988,
+   "by_source": {
+    "S": "1987 (mid)",
+    "A": "1987; R598,200 in 1988",
+    "W": "1987 (mid) to 1988"
+   },
+   "dated_examples": [
+    {
+     "serial": "R917314",
+     "date": "imported to the US June 1989",
+     "source": "Phillips, Hong Kong Watch Auction: XXIII, lot 911"
+    }
+   ]
+  },
+  {
+   "prefix": "L",
+   "year": 1989,
+   "year_end": 1990,
+   "by_source": {
+    "S": "1989",
+    "A": "1989",
+    "W": "1989 to 1990"
+   },
+   "dated_examples": [
+    {
+     "serial": "L743719",
+     "date": "warranty card August 1991",
+     "source": "Phillips, Hong Kong Watch Auction: Nine, lot 935"
+    }
+   ]
+  },
+  {
+   "prefix": "E",
+   "year": 1990,
+   "year_end": 1991,
+   "by_source": {
+    "S": "1990 (mid)",
+    "A": "1990",
+    "W": "1990 (mid) to 1991"
+   }
+  },
+  {
+   "prefix": "X",
+   "year": 1991,
+   "by_source": {
+    "S": "1991 (late)",
+    "A": "1991",
+    "W": "1991 (mid)"
+   },
+   "dated_examples": [
+    {
+     "serial": "X903251",
+     "date": "warranty card October 1993",
+     "source": "Phillips, Hong Kong Watch Auction: Eight, lot 936"
+    }
+   ]
+  },
+  {
+   "prefix": "N",
+   "year": 1991,
+   "by_source": {
+    "S": "1991 (late)",
+    "A": "1991",
+    "W": "1991 (late)"
+   },
+   "dated_examples": [
+    {
+     "serial": "N472340",
+     "date": "warranty card February 1993",
+     "source": "Phillips, Geneva Watch Auction: XIX, lot 118"
+    }
+   ]
+  },
+  {
+   "prefix": "C",
+   "year": 1992,
+   "by_source": {
+    "S": "1992 (early)",
+    "A": "1992",
+    "W": "1992 (early)"
+   }
+  },
+  {
+   "prefix": "S",
+   "year": 1993,
+   "year_end": 1994,
+   "by_source": {
+    "S": "1993 (late)",
+    "A": "1993; S860,880 in 1994",
+    "W": "1993 (late)"
+   }
+  },
+  {
+   "prefix": "W",
+   "year": 1995,
+   "by_source": {
+    "S": "1995",
+    "A": "1995",
+    "W": "1995"
+   },
+   "dated_examples": [
+    {
+     "serial": "W702066",
+     "date": "warranty card March 1996",
+     "source": "Phillips, Geneva Watch Auction: XIX, lot 146"
+    },
+    {
+     "serial": "W366151",
+     "date": "warranty card July 1996",
+     "source": "Phillips, Hong Kong Watch Auction: X, lot 850"
+    }
+   ]
+  },
+  {
+   "prefix": "T",
+   "year": 1996,
+   "by_source": {
+    "S": "1996",
+    "A": "1996",
+    "W": "1996"
+   }
+  },
+  {
+   "prefix": "U",
+   "year": 1997,
+   "year_end": 1998,
+   "by_source": {
+    "S": "1997 (late)",
+    "A": "1997; U932,144 in 1998",
+    "W": "1997"
+   },
+   "dated_examples": [
+    {
+     "serial": "U171660",
+     "date": "warranty card November 1997",
+     "source": "Phillips, Geneva Watch Auction: XIX, lot 6"
+    },
+    {
+     "serial": "U336394",
+     "date": "warranty card March 1998",
+     "source": "Phillips, Rolex Intersect, lot 14"
+    }
+   ]
+  },
+  {
+   "prefix": "A",
+   "year": 1998,
+   "year_end": 1999,
+   "by_source": {
+    "S": "1998 (mid)",
+    "A": "1999",
+    "W": "1998 (late)"
+   }
+  },
+  {
+   "prefix": "P",
+   "year": 2000,
+   "by_source": {
+    "S": "2000",
+    "A": "2000",
+    "W": "2000 (April)"
+   },
+   "dated_examples": [
+    {
+     "serial": "P187337",
+     "date": "warranty card October 2000",
+     "source": "Phillips, Geneva Watch Auction: X, lot 271"
+    },
+    {
+     "serial": "P421525",
+     "date": "warranty card September 2001",
+     "source": "Phillips, Hong Kong Watch Auction: XI, lot 866"
+    }
+   ]
+  },
+  {
+   "prefix": "K",
+   "year": 2000,
+   "year_end": 2002,
+   "by_source": {
+    "S": "2001 to 2002",
+    "A": "2000; K or Y in 2001",
+    "W": "2001 (August)"
+   },
+   "dated_examples": [
+    {
+     "serial": "K914765",
+     "date": "warranty card September 2002",
+     "source": "Phillips, Hong Kong Watch Auction: XI, lot 1013"
+    }
+   ]
+  },
+  {
+   "prefix": "Y",
+   "year": 2001,
+   "year_end": 2003,
+   "by_source": {
+    "S": "2002 to 2003",
+    "A": "2002; K or Y in 2001",
+    "W": "2002 (September)"
+   },
+   "dated_examples": [
+    {
+     "serial": "Y596324",
+     "date": "warranty card September 2003",
+     "source": "Phillips, Hong Kong Watches Online I, lot 874"
+    }
+   ]
+  },
+  {
+   "prefix": "F",
+   "year": 2003,
+   "year_end": 2005,
+   "by_source": {
+    "S": "2003 to 2004",
+    "A": "2003 to 2005",
+    "W": "2004 (January)"
+   },
+   "dated_examples": [
+    {
+     "serial": "F050962",
+     "date": "warranty card November 2003",
+     "source": "Phillips, Rolex Game Changers, lot 3"
+    },
+    {
+     "serial": "F248883",
+     "date": "warranty card April 2004",
+     "source": "Phillips, Geneva Watch Auction: XVII, lot 44"
+    },
+    {
+     "serial": "F731092",
+     "date": "warranty card March 2005",
+     "source": "Phillips, Geneva Watch Auction: Nine, lot 12"
+    }
+   ]
+  },
+  {
+   "prefix": "D",
+   "year": 2005,
+   "year_end": 2006,
+   "by_source": {
+    "S": "2005",
+    "A": "2005; D or Z in 2006",
+    "W": "2005 to 2006"
+   }
+  },
+  {
+   "prefix": "Z",
+   "year": 2006,
+   "year_end": 2007,
+   "by_source": {
+    "S": "2006",
+    "A": "2006 to 2007, with D or M",
+    "W": "2006 to 2007"
+   },
+   "dated_examples": [
+    {
+     "serial": "Z247396",
+     "date": "warranty card April 2007",
+     "source": "Christie's, Important Watches, lot 84"
+    }
+   ]
+  },
+  {
+   "prefix": "M",
+   "year": 2007,
+   "year_end": 2008,
+   "by_source": {
+    "S": "2007",
+    "A": "2007 to 2008, with Z or V",
+    "W": "2008"
+   },
+   "dated_examples": [
+    {
+     "serial": "M405604",
+     "date": "warranty card June 2008",
+     "source": "Phillips, Geneva Watch Sessions Spring 2023, lot 18"
+    }
+   ]
+  },
+  {
+   "prefix": "V",
+   "year": 2008,
+   "year_end": 2010,
+   "by_source": {
+    "S": "2008",
+    "A": "2008 to 2009",
+    "W": "2008 (December) to 2010"
+   }
+  },
+  {
+   "prefix": "G",
+   "year": 2009,
+   "year_end": 2010,
+   "by_source": {
+    "S": "2009",
+    "A": "2010",
+    "W": "2010"
+   }
+  }
+ ],
+ "random_from": {
+  "year": 2010,
+  "note": "The sources put the change between late 2009 and late 2010; Bob's gives G for 2010 and random from 2011. No Rolex statement was found."
+ }
+}

@@ -1,0 +1,655 @@
+{
+ "system": "omega_movement_serial",
+ "title": "Omega movement serial number to approximate year of manufacture",
+ "applies_to": "The serial number engraved on the movement of an Omega watch made from about 1894 to 1995 (1,000,000 to 55,999,999). Not the case reference (such as 2915-1, 165.024 or ST 145.022), not the case maker's number stamped inside the case back, not the 7- or 14-character product codes of later watches, and not serials above 56,000,000.",
+ "sources": [
+  {
+   "key": "A",
+   "name": "Chuck Maddox, Omega serial numbers by year (2001, revised 2004)",
+   "url": "https://www.chronomaddox.com/omega_serial_numbers.html",
+   "retrieved": "2026-11-22",
+   "notes": "Year-marker list (one serial per year), compiled by a collector from charts published in various publications; post-1970 rows from a correspondent. Primary 'year'. Brittons Watches and german242 publish copies of it."
+  },
+  {
+   "key": "B",
+   "name": "Bob's Watches, Omega watches serial numbers guide (\"earliest production year\" ranges)",
+   "url": "https://www.bobswatches.com/omega/serial-numbers",
+   "retrieved": "2026-11-22",
+   "notes": "Second list family ('alt_year' where it differs). Watches by Timepiece, Prime SwissTime, H&T, est1897 and Vintage Masters publish copies of it (two with typos at 7,000,000). From 1944 it matches list A at every row but 13M and 17M, so it is NOT independent of A after 1944; before 1944 it differs at five rows. It lists no 51,000,000 row."
+  },
+  {
+   "key": "antiquorum",
+   "name": "Antiquorum, Omegamania (Geneva, Mandarin Oriental Hotel du Rhône, 15 April 2007), online catalogue lot descriptions",
+   "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
+   "retrieved": "2026-11-22",
+   "notes": "Independent point data: about 160 lots with the movement number and an exact made, sold or delivered date. Exact sale dates of this kind come from a maker's registers, but the catalogue does not say where they came from. Used to check rows, not to set them; 'dated_examples' on each row. A sold date can be later than manufacture."
+  },
+  {
+   "key": "extracts",
+   "name": "Auction lots dated by Omega's Extract from the Archives: Phillips (Geneva Three, lot 115; Geneva Eight, lot 33; Geneva XIII, lot 197; New York Six, lot 76; New York Eight, lot 18; Hong Kong Nine, lot 981; Start-Stop-Reset 2016, lot 22), Christie's (online sale 1404, lots 349 and 351), Sotheby's (New York 2018, lot 218), Bonhams (London 22 Sep 2020 lot 53; 13 Nov 2024 lot 37; 22 May 2024 lot 101)",
+   "url": "https://www.phillips.com/detail/omega/167861",
+   "retrieved": "2026-11-22",
+   "notes": "Independent point checks: each lot gives the movement serial and the production date Omega's archive extract states (one Christie's extract gives the date sold)."
+  },
+  {
+   "key": "omega",
+   "name": "Omega, FAQ: find information about the brand and your product",
+   "url": "https://www.omegawatches.com/en-us/customer-service/faq/find-information-about-the-brand-and-your-product",
+   "retrieved": "2026-11-22",
+   "notes": "Where the serial is: on the back or a lug of current watches; inside the case back and on the movement of vintage watches. Omega publishes no serial-to-year table; its Extract from the Archives gives a watch's production date."
+  },
+  {
+   "key": "not_used",
+   "name": "Not used: classicwatch.com (2007) and Gray & Sons serial tables, independent of A and B but contradicted by dated lots by 5-10 years before 1960; Dumarko and Libas Collective tools, which split list B's ranges evenly (interpolation); the 1999-2008 rows of list B and Brittons, which have no stated source and which dated 2000-2005 watches contradict.",
+   "url": "",
+   "retrieved": "2026-11-22"
+  }
+ ],
+ "caveats": [
+  "Use the serial engraved on the movement (on vintage watches, open the case back; usually 7 or 8 digits on a plate or bridge). A number stamped inside the case back is the case maker's number or the model reference and can't be dated with this table.",
+  "How to read: pick the row whose serial_start <= serial <= serial_end. 'year' is list A, 'alt_year' list B where they differ; give both as a range. The year is the first year the list gives for that row's serials, read as 'about'.",
+  "The lists are approximate, to a year or two at best for ordinary movements. Omega numbered movements in blocks and did not always use them in time order, and a watch can have been sold years after its movement was made.",
+  "The two online lists are not independent from 1944 on: one is largely a re-edit of the other. Dated auction lots (Omega Extracts quoted by Phillips, Christie's, Sotheby's and Bonhams, and the made or sold dates in Antiquorum's 2007 Omegamania sale) are the independent check: they agree within a year or two from about 1895 to the mid-1980s, except that serials from about 10.5 to 13.5 million (the late 1940s and early 1950s) were made one to three years later than the lists say.",
+  "Chronograph and other special movements were numbered in separate blocks and can be years off the list: 4,636,204 was sold in 1907, the 9.37-9.39 million chronograph block was used from about 1932 to 1941, and Speedmaster caliber 1861 movements numbered 48 million were sold as late as 1998.",
+  "Omega's 1994 centenary watches, clocks and table chronometers, and prototypes are outside the watch-movement sequence.",
+  "From about 1991 the serial is also engraved on the case back or a lug, and from about 1995 Omega allotted number blocks to particular calibers, so a high number is not a later watch: dated watches made from 2000 to 2005 carry 80.1, 59.6, 58.4, 80.7, 80.8 and 81.1 million. This table stops at 55,999,999; later serials can't be dated from the number alone.",
+  "51,000,000 is dated by one list only, and 52,000,000 was not used; neither is given a year here.",
+  "Nothing was interpolated between rows. Lists that spread the year markers evenly over the years between them (Dumarko, Libas Collective) were not used.",
+  "A serial dates a movement. It does not show that a watch is genuine or original: movements, dials and cases were replaced in service and in later assembly."
+ ],
+ "rows": [
+  {
+   "serial_start": 1000000,
+   "serial_end": 1999999,
+   "year": 1895,
+   "alt_year": 1894,
+   "dated_examples": [
+    {
+     "serial": 1501787,
+     "date": "sold November 1899",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 2000000,
+   "serial_end": 2999999,
+   "year": 1902,
+   "dated_examples": [
+    {
+     "serial": 2868498,
+     "date": "sold April 1907",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 2938433,
+     "date": "sold December 1909",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 3000000,
+   "serial_end": 3999999,
+   "year": 1908,
+   "alt_year": 1906,
+   "dated_examples": [
+    {
+     "serial": 3141809,
+     "date": "made in 1906",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 3999780,
+     "date": "made in 1912",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 4000000,
+   "serial_end": 4999999,
+   "year": 1912,
+   "alt_year": 1910,
+   "note": "Chronograph movements were numbered in blocks of their own: 4,636,204, a chronograph, was sold in 1907.",
+   "dated_examples": [
+    {
+     "serial": 4412049,
+     "date": "made in 1912",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 4431567,
+     "date": "made February 1914",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 4924185,
+     "date": "sold 1917",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 5000000,
+   "serial_end": 5999999,
+   "year": 1916,
+   "alt_year": 1915,
+   "dated_examples": [
+    {
+     "serial": 5200182,
+     "date": "delivered July 1918",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 5667568,
+     "date": "sold October 1924",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 6000000,
+   "serial_end": 6999999,
+   "year": 1923,
+   "dated_examples": [
+    {
+     "serial": 6379488,
+     "date": "sold August 1928",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 6948241,
+     "date": "sold July 1928",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 7000000,
+   "serial_end": 7999999,
+   "year": 1929,
+   "alt_year": 1930,
+   "note": "Some copies of the second list give 1925 or 1920 for this row; dated lots (7,315,908 made in 1929) support 1929-30.",
+   "dated_examples": [
+    {
+     "serial": 7315908,
+     "date": "made in 1929",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 7583637,
+     "date": "sold 1931",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 8000000,
+   "serial_end": 8999999,
+   "year": 1935,
+   "alt_year": 1934,
+   "dated_examples": [
+    {
+     "serial": 8262280,
+     "date": "sold October 1936",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 8969207,
+     "date": "made in 1939",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 9000000,
+   "serial_end": 9999999,
+   "year": 1939,
+   "note": "Chronograph movements 9,368,803-9,393,403 were a separate block, made and sold from about 1932 to 1941.",
+   "dated_examples": [
+    {
+     "serial": 9178460,
+     "date": "sold March 1941",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 9894215,
+     "date": "made in 1944",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 10000000,
+   "serial_end": 10999999,
+   "year": 1944,
+   "note": "Dated lots put 10.5-10.8 million in 1947-48, a year or two after the lists.",
+   "dated_examples": [
+    {
+     "serial": 10199779,
+     "date": "sold August 1945",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 10680640,
+     "date": "sold January 1948",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 11000000,
+   "serial_end": 11999999,
+   "year": 1947,
+   "dated_examples": [
+    {
+     "serial": 11451974,
+     "date": "sold August 1949",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 12000000,
+   "serial_end": 12999999,
+   "year": 1950,
+   "note": "Dated lots, three of them with Omega Extracts, put 12.2-12.9 million in 1952-54, two to three years after both lists.",
+   "dated_examples": [
+    {
+     "serial": 12201622,
+     "date": "made in 1953 (Omega Extract)",
+     "source": "Phillips, Geneva Watch Auction: Three"
+    },
+    {
+     "serial": 12436074,
+     "date": "made in 1952",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 12908567,
+     "date": "made February 1953 (Omega Extract)",
+     "source": "Bonhams, London, 13 November 2024"
+    }
+   ]
+  },
+  {
+   "serial_start": 13000000,
+   "serial_end": 13499999,
+   "year": 1950,
+   "alt_year": 1952,
+   "note": "The first list's next entry is 13,500,000 in 1952, so it places 13.0-13.5 million before 1952; the second list starts 1952 at 13,000,000. Dated lots: 13,073,965 sold April 1954.",
+   "dated_examples": [
+    {
+     "serial": 13073965,
+     "date": "sold April 1954",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 13500000,
+   "serial_end": 13999999,
+   "year": 1952,
+   "note": "Dated lots: 13,496,841 sold September 1954, later than both lists.",
+   "dated_examples": [
+    {
+     "serial": 13496841,
+     "date": "sold September 1954",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 14000000,
+   "serial_end": 14999999,
+   "year": 1954,
+   "dated_examples": [
+    {
+     "serial": 14345774,
+     "date": "sold May 1956",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 15000000,
+   "serial_end": 15999999,
+   "year": 1956,
+   "dated_examples": [
+    {
+     "serial": 15146718,
+     "date": "sold May 1957",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 15996297,
+     "date": "made January 1959 (Omega Extract)",
+     "source": "Phillips, New York Watch Auction: Eight"
+    }
+   ]
+  },
+  {
+   "serial_start": 16000000,
+   "serial_end": 16999999,
+   "year": 1958,
+   "dated_examples": [
+    {
+     "serial": 16719940,
+     "date": "made October 1960 (Omega Extract)",
+     "source": "Phillips, Geneva Watch Auction: XIII"
+    }
+   ]
+  },
+  {
+   "serial_start": 17000000,
+   "serial_end": 17999999,
+   "year": 1960,
+   "alt_year": 1959,
+   "dated_examples": [
+    {
+     "serial": 17301241,
+     "date": "made November 1959 (Omega Extract)",
+     "source": "Phillips, New York Watch Auction: Six"
+    },
+    {
+     "serial": 17302937,
+     "date": "made September 1960 (Omega Extract)",
+     "source": "Phillips, Start-Stop-Reset, 2016"
+    }
+   ]
+  },
+  {
+   "serial_start": 18000000,
+   "serial_end": 18999999,
+   "year": 1961,
+   "dated_examples": [
+    {
+     "serial": 18269640,
+     "date": "made January 1962 (Omega Extract)",
+     "source": "Sotheby's, New York, Important Watches, 2018"
+    }
+   ]
+  },
+  {
+   "serial_start": 19000000,
+   "serial_end": 19999999,
+   "year": 1962,
+   "dated_examples": [
+    {
+     "serial": 19079482,
+     "date": "sold February 1963 (Omega Extract)",
+     "source": "Christie's, online sale 1404"
+    }
+   ]
+  },
+  {
+   "serial_start": 20000000,
+   "serial_end": 20999999,
+   "year": 1963,
+   "note": "Omega's 1994 centenary watches carry numbers around 20.5 and 21.1 million; this table doesn't apply to them."
+  },
+  {
+   "serial_start": 21000000,
+   "serial_end": 21999999,
+   "year": 1964
+  },
+  {
+   "serial_start": 22000000,
+   "serial_end": 22999999,
+   "year": 1965
+  },
+  {
+   "serial_start": 23000000,
+   "serial_end": 24999999,
+   "year": 1966,
+   "dated_examples": [
+    {
+     "serial": 24274443,
+     "date": "made in 1967 (Omega Extract)",
+     "source": "Christie's, online sale 1404"
+    },
+    {
+     "serial": 24733340,
+     "date": "made May 1967 (Omega Extract)",
+     "source": "Bonhams, London, 22 September 2020"
+    }
+   ]
+  },
+  {
+   "serial_start": 25000000,
+   "serial_end": 25999999,
+   "year": 1967
+  },
+  {
+   "serial_start": 26000000,
+   "serial_end": 27999999,
+   "year": 1968,
+   "dated_examples": [
+    {
+     "serial": 26428879,
+     "date": "sold May 1968",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 27281981,
+     "date": "made in 1968",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 28000000,
+   "serial_end": 28999999,
+   "year": 1969,
+   "dated_examples": [
+    {
+     "serial": 28428506,
+     "date": "made February 1970 (Omega Extract)",
+     "source": "Phillips, Hong Kong Watch Auction: Nine"
+    }
+   ]
+  },
+  {
+   "serial_start": 29000000,
+   "serial_end": 31999999,
+   "year": 1970,
+   "alt_year": 1969,
+   "note": "Chronograph-heavy block; dated lots run from October 1969 to 1973.",
+   "dated_examples": [
+    {
+     "serial": 29117240,
+     "date": "made April 1970 (Omega Extract)",
+     "source": "Phillips, Geneva Watch Auction: Eight"
+    },
+    {
+     "serial": 29131189,
+     "date": "sold October 1969",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 29149549,
+     "date": "made January 1971 (Omega Extract)",
+     "source": "Bonhams, London, 22 May 2024"
+    }
+   ]
+  },
+  {
+   "serial_start": 32000000,
+   "serial_end": 32999999,
+   "year": 1970,
+   "note": "Dated lots: 32.0-32.9 million sold 1971-72.",
+   "dated_examples": [
+    {
+     "serial": 32022999,
+     "date": "sold July 1971",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 33000000,
+   "serial_end": 33999999,
+   "year": 1971
+  },
+  {
+   "serial_start": 34000000,
+   "serial_end": 35999999,
+   "year": 1972,
+   "dated_examples": [
+    {
+     "serial": 34689983,
+     "date": "sold August 1973",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 36000000,
+   "serial_end": 37999999,
+   "year": 1973,
+   "dated_examples": [
+    {
+     "serial": 36247099,
+     "date": "made in 1973",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    },
+    {
+     "serial": 37900752,
+     "date": "made in 1973",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 38000000,
+   "serial_end": 38999999,
+   "year": 1974
+  },
+  {
+   "serial_start": 39000000,
+   "serial_end": 39999999,
+   "year": 1975,
+   "dated_examples": [
+    {
+     "serial": 39953505,
+     "date": "delivered April 1977",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 40000000,
+   "serial_end": 40999999,
+   "year": 1977,
+   "dated_examples": [
+    {
+     "serial": 40101511,
+     "date": "sold March 1977",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 41000000,
+   "serial_end": 41999999,
+   "year": 1978
+  },
+  {
+   "serial_start": 42000000,
+   "serial_end": 43999999,
+   "year": 1979
+  },
+  {
+   "serial_start": 44000000,
+   "serial_end": 44999999,
+   "year": 1980,
+   "dated_examples": [
+    {
+     "serial": 44632413,
+     "date": "sold July 1981",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 45000000,
+   "serial_end": 45999999,
+   "year": 1982,
+   "dated_examples": [
+    {
+     "serial": 45924898,
+     "date": "sold January 1983",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 46000000,
+   "serial_end": 47999999,
+   "year": 1984,
+   "dated_examples": [
+    {
+     "serial": 46877891,
+     "date": "sold July 1985",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 48000000,
+   "serial_end": 48999999,
+   "year": 1985,
+   "note": "Speedmaster Professional calibre 1861 movements stayed in a 48 million block into the late 1990s (48,381,432 sold April 1998).",
+   "dated_examples": [
+    {
+     "serial": 48381432,
+     "date": "sold April 1998 (a Speedmaster)",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 49000000,
+   "serial_end": 50999999,
+   "year": 1986
+  },
+  {
+   "serial_start": 51000000,
+   "serial_end": 51999999,
+   "year": null,
+   "note": "Only the first list dates 51,000,000 (to 1989); the second has no row for it, so no year is given here. Both lists put it after 1986 and before 1991."
+  },
+  {
+   "serial_start": 52000000,
+   "serial_end": 52999999,
+   "year": null,
+   "note": "Both lists say 52 million was not used."
+  },
+  {
+   "serial_start": 53000000,
+   "serial_end": 53999999,
+   "year": 1991,
+   "note": "From about 1991 Omega also engraved the serial on the case back or a lug.",
+   "dated_examples": [
+    {
+     "serial": 53071440,
+     "date": "sold May 1991",
+     "source": "Antiquorum, Omegamania, Geneva, 15 April 2007"
+    }
+   ]
+  },
+  {
+   "serial_start": 54000000,
+   "serial_end": 54999999,
+   "year": 1993,
+   "note": "Blocks were increasingly allotted to particular calibers; treat as approximate."
+  },
+  {
+   "serial_start": 55000000,
+   "serial_end": 55999999,
+   "year": 1995,
+   "note": "Blocks were allotted to particular calibers from about 1995; treat as approximate."
+  }
+ ]
+}
