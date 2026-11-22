@@ -93,6 +93,68 @@
     [maker, input].forEach((el) => el.addEventListener('input', run));
   }
 
+  // ── Omega (a site table, marks/data/omega.json; not in the app yet) ───────
+  // Gives both lists' years where they differ, the dated examples in that
+  // block, and no year where the lists don't give one (51M, 52M, 56M on).
+  function omega() {
+    const input = $('om-serial'), out = $('om-results');
+    hint(out);
+    const run = async () => {
+      const digits = input.value.replace(/[^\d]/g, '');
+      if (!digits) return say(out, out.dataset.hint);
+      if (/[a-z]/i.test(input.value)) return say(out, '<p>A movement serial is digits only. Letters and a dot or dash, such as ST 145.022 or 2915-1, are a model reference, not a serial.</p>');
+      if (digits.length < 6) return say(out, '<p>Keep typing: Omega movement serials from 1894 on have seven or eight digits.</p>');
+      if (digits.length > 8) return say(out, '<p>That is longer than an Omega serial. A long code with dots, such as 311.30.42.30.01.005, is the model\'s product code.</p>');
+      const t = await load('omega');
+      const n = Number(digits), rows = t.rows;
+      if (n < rows[0].serial_start) return say(out, `<p>${fmt(n)} is below 1,000,000, the first entry in the lists (about 1894). Omega's earliest movements aren't dated here.</p>`);
+      const row = rows.find((x) => n >= x.serial_start && n <= x.serial_end);
+      if (!row) return say(out, `<p><strong>${fmt(n)} can't be dated from the number alone.</strong> From about 1995 Omega gave blocks of numbers to particular movements, so a higher number isn't a later watch: dated watches made from 2000 to 2005 carry numbers from 58 to 81 million. Omega's Extract from the Archives gives the date from its own records.</p>`);
+      const ex = (row.dated_examples || []).map((x) => `${fmt(x.serial)}: ${esc(x.date)}`).join('; ');
+      if (row.year == null) return say(out, `<p><strong>${fmt(n)}</strong>: ${esc(row.note)}</p>`);
+      const ys = [row.year, row.alt_year || row.year], a = Math.min(...ys), b = Math.max(...ys);
+      say(out, `<ul class="hits"><li><span class="big">${a === b ? `c. ${a}` : `${a}–${b}`}</span><span>Omega movement ${fmt(n)}${a === b ? '' : `<br><small>${row.year} by one list, ${row.alt_year} by the other</small>`}${row.note ? `<br><small>${esc(row.note)}</small>` : ''}${ex ? `<br><small>Dated examples in this block: ${ex}</small>` : ''}</span></li></ul><p class="finder__hint">This dates the movement, to a year or two. It doesn't say the watch is original or genuine.</p>`);
+    };
+    input.addEventListener('input', run);
+  }
+
+  // ── Rolex (a site table, marks/data/rolex.json; not in the app yet) ───────
+  // Numbers below 1,000,000 were used twice (before and after the 1953-54
+  // restart), so both readings are shown; a letter and six digits reads the
+  // letter; eight mixed characters are the random serials, with no year.
+  function rolex() {
+    const input = $('rx-serial'), out = $('rx-results');
+    hint(out);
+    const span = (r) => (r.year_end && r.year_end !== r.year ? `${r.year}–${r.year_end}` : `c. ${r.year}`);
+    const exs = (r) => (r.dated_examples || []).map((x) => `${typeof x.serial === 'number' ? fmt(x.serial) : esc(x.serial)}: ${esc(x.date)}`).join('; ');
+    const SERIES = { first: 'First numbering (to 1953–54)', second: 'Second numbering (from 1954)' };
+    const run = async () => {
+      const raw = input.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+      if (!raw) return say(out, out.dataset.hint);
+      const t = await load('rolex');
+      if (/^[A-Z]\d{6}$/.test(raw)) {
+        const p = t.prefixes.find((x) => x.prefix === raw[0]);
+        if (!p) return say(out, `<p>${esc(raw[0])} isn't one of the letters Rolex used before its six digits (R, L, E, X, N, C, S, W, T, U, A, P, K, Y, F, D, Z, M, V, G). Check the first character; a serial of eight characters is the random kind.</p>`);
+        const ex = exs(p);
+        return say(out, `<ul class="hits"><li><span class="big">${span(p)}</span><span>Rolex ${esc(raw)}: the ${esc(p.prefix)} series<br><small>${Object.entries(p.by_source).map(([k, v]) => `${({ S: 'Date chart', A: 'Bob\'s list', W: 'Month-dated lists' })[k] || k}: ${esc(v)}`).join(' · ')}</small>${ex ? `<br><small>Dated papers: ${ex}</small>` : ''}</span></li></ul><p class="finder__hint">The lists start each letter within a year of each other. A warranty-card date is when the watch was sold, often later.</p>`);
+      }
+      if (raw.length === 8 && /[A-Z]/.test(raw)) return say(out, `<p><strong>${esc(raw)} is a random serial</strong>, used from about late 2009 or 2010. These aren't in sequence, so no year can be read from the number. The warranty card, or the retailer that sold it, has the date of sale.</p>`);
+      if (/[A-Z]/.test(raw)) return say(out, '<p>A Rolex serial is digits only (to 1987), one letter and six digits (about 1987 to 2010), or eight mixed letters and digits (from about 2010). Check the characters again.</p>');
+      if (raw.length > 7) return say(out, '<p>Numeric Rolex serials have at most seven digits. A longer number may be the model reference and a serial read together.</p>');
+      if (raw.length < 4) return say(out, '<p>Keep typing.</p>');
+      const n = Number(raw);
+      const hits = t.rows.filter((r) => n >= r.serial_start && n <= r.serial_end);
+      if (!hits.length) return say(out, `<p>${fmt(n)} isn't covered: the lists don't agree below 23,969 (about 1928), and the second numbering is listed from 10,001.</p>`);
+      const li = (r) => {
+        if (r.year == null) return `<li><span class="big">?</span><span>${SERIES[r.series]}<br><small>${esc(r.note)}</small></span></li>`;
+        const ex = exs(r);
+        return `<li><span class="big">${span(r)}</span><span>${SERIES[r.series]}${r.note ? `<br><small>${esc(r.note)}</small>` : ''}${ex ? `<br><small>Dated watches in this block: ${ex}</small>` : ''}</span></li>`;
+      };
+      say(out, `<p><strong>${fmt(n)}</strong>${hits.length > 1 ? ': Rolex used this number twice, before and after the 1953–54 restart. The model and its style decide which:' : ':'}</p><ul class="hits">${hits.map(li).join('')}</ul><p class="finder__hint">This dates the case, to a year or two. It doesn't say the watch is original or genuine.</p>`);
+    };
+    input.addEventListener('input', run);
+  }
+
   // ── Leica ─────────────────────────────────────────────────────────────────
   function leica() {
     const input = $('l-serial'), out = $('l-results');
@@ -257,6 +319,7 @@
   }
 
   const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres };
+  Object.assign(tools, { omega, rolex });
   const start = () => tools[window.MARKS_TOOL] && tools[window.MARKS_TOOL]();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

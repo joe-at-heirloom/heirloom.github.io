@@ -146,3 +146,11 @@ img.cypher { display: block; height: 34px; width: auto; max-width: 110px; object
 .stamps--photo .stamp--wide { max-width: 100%; }
 .stamps--photo .stamp--wide img { height: 96px; max-width: 100%; object-fit: cover; }
 @media (max-width: 600px) { .stamps--photo .stamp--wide img { height: auto; width: 100%; } }
+
+/* Watch serial pages: a real photograph at its own proportions. */
+.wphoto { margin: 10px 0 30px; }
+.wphoto img { display: block; width: 100%; max-width: 440px; height: auto; border-radius: var(--radius-lg); }
+.wphoto figcaption { font-size: 0.9rem; color: var(--color-text-secondary); margin-top: 8px; max-width: 560px; }
+.hits .big { white-space: nowrap; flex-shrink: 0; }
+.hits li { flex-wrap: wrap; }
+.hits li > span:last-child { flex: 1 1 190px; }

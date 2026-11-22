@@ -197,6 +197,8 @@ const HOMEPAGE_WORD_RULES = [
  * wrong. These are the names the page uses.
  */
 const TITLE_NAMES = new Set(['Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards', 'Oneida', 'Community', 'International', 'Silver', 'Co', 'Plate', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
+
+const TITLE_NAMES = new Set(['Rolex', 'Omega', 'Bend', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
@@ -329,6 +331,9 @@ const GUIDE_PAGES = [
   'marks/german-silver.html',
   'marks/coin-silver.html',
   'marks/britannia-silver.html',
+
+  'marks/rolex-serial-numbers.html',
+  'marks/omega-serial-numbers.html',
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');
