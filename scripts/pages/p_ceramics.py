@@ -40,7 +40,7 @@ def fill(text, srcs, attributed=False):
     is reported (every fact here needs two); `{src:a}` alone is allowed only for
     a sentence that names its source, such as "the RISD Museum gives 1949"."""
     for m in ([] if attributed else re.finditer(r"\{src:([^},]+)\}", text)):
-        if not re.search(r"(gives|says|printed|describes|described|records|calls|dates|shows|reported|reprints|told|lists|counted|notes|decodes|gave)\b[^{]*\{src:" + re.escape(m.group(1)) + r"\}", text):
+        if not re.search(r"(gives|says|printed|describes|described|records|calls|dates|shows|reported|reprints|told|lists|counted|notes|decodes|gave|swore|date|record|reported)\b[^{]*\{src:" + re.escape(m.group(1)) + r"\}", text):
             ONE_SOURCE.append(text[max(0, m.start() - 90):m.end()])
     return re.sub(r"\{src:([^}]+)\}", lambda m: refs([k.strip() for k in m.group(1).split(",")], srcs), text)
 
