@@ -15,13 +15,6 @@ from shell import *
 import tables
 import p_inventory, p_antique, p_checklist, p_silver, p_family, p_marks
 import p_pottery, p_plate, p_basics, p_watches, p_world, p_ceramics
-import p_pottery, p_plate, p_basics, p_watches, p_world, p_ceramics
-import p_pottery, p_plate, p_basics, p_watches, p_world
-import p_pottery, p_plate, p_basics, p_watches, p_world
-import p_pottery, p_plate, p_basics, p_watches
-import p_pottery, p_plate, p_basics, p_watches
-import p_pottery, p_plate, p_basics
-import p_pottery, p_plate, p_basics
 
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 CHECK = "--check" in sys.argv

@@ -196,15 +196,10 @@ const HOMEPAGE_WORD_RULES = [
  * (docs/VOICE.md, "The sentences"): a capital inside one is a name or it is
  * wrong. These are the names the page uses.
  */
-const TITLE_NAMES = new Set(['Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards', 'Oneida', 'Community', 'International', 'Silver', 'Co', 'Plate', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
-
-const TITLE_NAMES = new Set(['Rolex', 'Omega', 'Bend', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
-
-const TITLE_NAMES = new Set(['Bend', 'Christofle', 'French', 'G', 'German', 'Gorham', 'Martelé', 'Mexican', 'Mexico', 'Minerva', 'Russian', 'Soviet', 'Taxco', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
-
-const TITLE_NAMES = new Set(['Bend', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings',
-  // Makers and lines named in the ceramics maker's-mark headings.
-  'Weller', 'Roseville', 'Rozane', 'Sicard', 'Rv', 'U.S.A', 'Nippon', 'Japan', 'M', 'RC', 'Noritake', 'Rose', 'China', 'Made', 'Occupied', 'N', 'Limoges', 'Haviland', 'Theo', 'H', 'Co', 'L', 'France', 'CFH', 'GDM', 'Meissen', 'AR', 'K.P.M', 'K.H.C', 'King', 'Copenhagen', 'Denmark', 'Hummel', 'TMK', 'Goebel', 'U.S', 'RPCo', 'Olympic', 'R.P.Co', 'Donatello', 'McCoy', 'J', 'W', 'Brush-McCoy', 'Brush', 'NM', 'LCC', 'Floraline', 'Hull', 'Art', 'Red', 'Riding', 'Hood', 'Oven', 'Proof', 'Doulton', 'Watts', 'Lambeth', 'Burslem', 'England', 'HN']);
+const TITLE_NAMES = new Set([
+  // Makers, lines and places named in the marks headings (merged from the plate, watch, world-silver and ceramics pages).
+  'Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards', 'Oneida', 'Community', 'International', 'Silver', 'Co', 'Plate', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings', 'Rolex', 'Omega', 'Christofle', 'French', 'G', 'German', 'Gorham', 'Martelé', 'Mexican', 'Mexico', 'Minerva', 'Russian', 'Soviet', 'Taxco', 'Weller', 'Roseville', 'Rozane', 'Sicard', 'Rv', 'U.S.A', 'Nippon', 'Japan', 'M', 'RC', 'Noritake', 'Rose', 'China', 'Made', 'Occupied', 'N', 'Limoges', 'Haviland', 'Theo', 'H', 'L', 'France', 'CFH', 'GDM', 'Meissen', 'AR', 'K.P.M', 'K.H.C', 'King', 'Copenhagen', 'Denmark', 'Hummel', 'TMK', 'Goebel', 'U.S', 'RPCo', 'Olympic', 'R.P.Co', 'Donatello', 'McCoy', 'J', 'W', 'Brush-McCoy', 'Brush', 'NM', 'LCC', 'Floraline', 'Hull', 'Art', 'Red', 'Riding', 'Hood', 'Oven', 'Proof', 'Doulton', 'Watts', 'Lambeth', 'Burslem', 'England', 'HN',
+]);
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
