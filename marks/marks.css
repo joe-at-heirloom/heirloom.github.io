@@ -107,7 +107,7 @@
 .hits .dli { height: 56px; }
 
 /* Ceramics maker's-mark pages: one card per mark, its photographs beside it. */
-.refs { font-size: 0.7em; line-height: 0; margin-left: 1px; }
+.refs { font-size: 0.7em; line-height: 0; margin-left: 1px; white-space: nowrap; }
 .refs a { color: var(--color-text-secondary); text-decoration: none; }
 .refs a:hover { color: var(--color-primary); text-decoration: underline; }
 .mk { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 260px); gap: 18px 24px; padding: 22px 0; border-top: 1px solid var(--color-border); }
