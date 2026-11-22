@@ -4,8 +4,7 @@
 //   - date letters list every year a letter could be, never the nearest one;
 //   - Singer reads "G 7572" and the zero-padded 1923 G series apart;
 //   - Leica refuses a number that starts with 0;
-//   - watches give both years where the published lists disagree;
-//   - Zippo reads one month letter and one year, as decodeZippo does.
+//   - watches give both years where the published lists disagree.
 (() => {
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const fmt = (n) => Number(n).toLocaleString('en-US');
@@ -257,48 +256,7 @@
     });
   }
 
-  // ── Zippo ─────────────────────────────────────────────────────────────────
-  // The app's decodeZippo, line for line: one month letter A–L, and either a
-  // Roman numeral II–XVI (1986–2000) or a two-digit year (2001 on), never both.
-  // The page is about Zippos, so ZIPPO is taken as read.
-  function zippoTokens(s) {
-    return s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toUpperCase()
-      .replace(/º|°/g, 'O').replace(/(\D)(\d)/g, '$1 $2').split(/[^A-Z0-9]+/).filter(Boolean);
-  }
-  function decodeZippo(text) {
-    const joined = `ZIPPO ${text}`.replace(/U\.?\s*S\.?\s*A\.?/gi, ' ').replace(/BRADFORD[,.\s]*PA\.?/gi, 'BRADFORD');
-    const toks = zippoTokens(joined);
-    const letters = toks.filter((t) => /^[A-L]$/.test(t));
-    const romans = toks.map((t) => [t, romanValue(t)]).filter(([, v]) => v !== null && v >= 2 && v <= 16);
-    const twoDigit = toks.filter((t) => /^\d{2}$/.test(t));
-    if (letters.length !== 1) return { letters, romans, twoDigit };
-    const month = letters[0].charCodeAt(0) - 65;
-    if (romans.length === 1 && twoDigit.length === 0) return { letter: letters[0], code: romans[0][0], month, year: 1984 + romans[0][1], era: 'roman' };
-    if (twoDigit.length === 1 && romans.length === 0) {
-      const year = 2000 + Number(twoDigit[0]);
-      if (year >= 2001 && year <= new Date().getFullYear() + 1) return { letter: letters[0], code: twoDigit[0], month, year, era: 'digits' };
-    }
-    return { letters, romans, twoDigit };
-  }
-  function zippo() {
-    const input = $('zp-code'), out = $('zp-results');
-    hint(out);
-    input.addEventListener('input', () => {
-      if (!input.value.trim()) return say(out, out.dataset.hint);
-      const d = decodeZippo(input.value);
-      if (d.year) {
-        return say(out, `<ul class="hits"><li><span class="big">${d.year}</span><span><strong>${MONTHS[d.month]} ${d.year}</strong><br><small>${esc(d.letter)} is the month (A is January, L is December); ${esc(d.code)} is the year${d.era === 'roman' ? ' in Roman numerals, counted from II for 1986' : ', the last two digits'}.</small></span></li></ul><p class="finder__hint">The code is stamped on the bottom of the case, so it dates the case.</p>`);
-      }
-      if (d.letters.length === 0) return say(out, '<p>Add the month letter: a single letter from A to L, on the left of the stamp.</p>');
-      if (d.letters.length > 1) return say(out, `<p>That reads as ${d.letters.length} month letters (${d.letters.map(esc).join(', ')}). The code has exactly one, from A to L; check the stamp again.</p>`);
-      if (d.romans.length > 1 || d.twoDigit.length > 1) return say(out, '<p>That reads as more than one year. The code has one month letter and one year; check the stamp again.</p>');
-      if (d.romans.length && d.twoDigit.length) return say(out, '<p>A Zippo code has a Roman numeral (1986 to 2000) or two digits (2001 on), never both.</p>');
-      if (d.twoDigit.length === 1) return say(out, `<p>${esc(d.twoDigit[0])} isn't a year this code has reached yet. Two-digit years start at 01 for 2001.</p>`);
-      return say(out, '<p>Add the year: a Roman numeral from II to XVI (1986 to 2000), or two digits (01 for 2001), on the right of the stamp. Codes before 1986 used dots and slashes instead.</p>');
-    });
-  }
-
-  const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres, zippo };
+  const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres };
   const start = () => tools[window.MARKS_TOOL] && tools[window.MARKS_TOOL]();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

@@ -1,9 +1,8 @@
-"""Silver basics and Zippo date codes: informational marks pages.
+"""Silver basics: informational marks pages.
 
-Six pages under /marks/: silver or silver plate, what 925 and the other
-numbers mean, German (nickel) silver, coin silver, Britannia silver, and Zippo
-date codes. Unlike the date-letter pages they don't read the app's tables
-(except Zippo, whose lookup in marks.js follows the app's decodeZippo); each
+Five pages under /marks/: silver or silver plate, what 925 and the other
+numbers mean, German (nickel) silver, coin silver and Britannia silver.
+Unlike the date-letter pages they don't read the app's tables; each
 fact on them rests on at least two of the published sources listed on the
 page, and where sources disagree the page says so.
 
@@ -14,10 +13,6 @@ from shell import *
 from p_marks import MID, cta, stamp_row, MET_CREDIT, e
 
 CSS = '<link rel="stylesheet" href="/marks/marks.css">'
-
-
-def tool_script(name):
-    return f'<script src="/marks/marks.js" defer></script>\n  <script>window.MARKS_TOOL = "{name}";</script>'
 
 
 # ── Sources ───────────────────────────────────────────────────────────────────
@@ -45,9 +40,6 @@ S = {
     "currier1938": ("Ernest M. Currier, Marks of Early American Silversmiths (Portland, Maine: Southworth-Anthoensen Press, 1938)", "https://archive.org/details/marksofearlyamer00curr"),
     "bigelow1917": ("Francis Hill Bigelow, Historic Silver of the Colonies and Its Makers (New York: Macmillan, 1917), public domain", "https://archive.org/details/historicsilverof00bige"),
     "cw2008": ("Colonial Williamsburg Journal, \"Stuff and Nonsense\" (Winter 2008)", "https://research.colonialwilliamsburg.org/Foundation/journal/Winter08/stuff.cfm"),
-    "zippo_kb": ("Zippo Manufacturing Company, \"Date codes\" (Zippo knowledge base)", "https://kb.zippo.com/zippo-lighter/date-codes"),
-    "zippo_ca": ("Zippo Canada, \"FAQs\": date codes on the bottom of the case", "https://zippo.ca/pages/faqs"),
-    "zippo_guide": ("Zippo Manufacturing Company, Zippo Collectors Guide (2005), date code chart", "https://s3.us-east-2.amazonaws.com/zippo.lukezilioli.com/catalogs/2005_CollectorsGuide.pdf"),
 }
 
 
@@ -63,7 +55,6 @@ def lic(name, url):
 
 
 BY_SA_4 = lic("CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/")
-BY_SA_2 = lic("CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0/")
 BY_3 = lic("CC BY 3.0", "https://creativecommons.org/licenses/by/3.0/")
 
 PHOTO = {
@@ -85,12 +76,6 @@ PHOTO = {
     "coin_spoon": ("b-coin-huntington-salt-spoon", "The back of a coin silver salt spoon handle with the struck maker's mark W.H.",
                    "The back of a coin silver salt spoon by William Huntington of Hillsborough, North Carolina, about 1820–30. The only struck mark is the maker's.",
                    f'Photograph: {lic("Salt Spoon", "https://dp.la/item/df8314ad158f7825710dabfa33999270")}, Orange County Historical Museum, Hillsborough, through the North Carolina Digital Heritage Center, {lic("no known copyright (US)", "https://rightsstatements.org/vocab/NoC-US/1.0/")}, cropped.'),
-    "zippo_k12": ("b-zippo-k-xii", "The bottom of a brass Zippo lighter stamped K, ZIPPO, XII and BRADFORD.PA. MADE IN U.S.A.",
-                  "K on the left and XII on the right: November 1996.",
-                  f'Photograph: {lic("Zippo Lighter Collection … Date Code K XII (1996)", "https://commons.wikimedia.org/wiki/File:Zippo_Lighter_Collection,_A_Cup_Of_Tea_Surprise_Series_Raised_Hand_And_Tea_Cup,_Made_In_USA,_Date_Code_K_XII_(1996)_(40877298351).jpg")} by Joe Haupt, {BY_SA_2}, cropped.'),
-    "zippo_e12": ("b-zippo-e-12", "The bottom of a black Zippo lighter stamped E, ZIPPO, 12 and BRADFORD.PA. MADE IN U.S.A.",
-                  "E on the left and 12 on the right: May 2012.",
-                  f'Photograph: {lic("Zippo Lighter Collection, Made In USA, Date Code E 12", "https://commons.wikimedia.org/wiki/File:Zippo_Lighter_Collection,_Made_In_USA,_Date_Code_E_12_(Circa_2012)_(40014856265).jpg")} by Joe Haupt, {BY_SA_2}, cropped.'),
 }
 
 
@@ -112,7 +97,7 @@ def table(head, rows):
 SRC_NOTE = "Each fact on this page is supported by at least two of these. Where they disagree, the page gives both."
 
 
-def build_page(path, title, desc, h1, crumb, lede, answer, body, faqs, cta_text, src_keys, tool=None, about=None, src_note=SRC_NOTE):
+def build_page(path, title, desc, h1, crumb, lede, answer, body, faqs, cta_text, src_keys, about=None, src_note=SRC_NOTE):
     html_body = f"""      <p class="guide__lede">{lede}</p>
       {META}
       <div class="answer">
@@ -128,7 +113,7 @@ def build_page(path, title, desc, h1, crumb, lede, answer, body, faqs, cta_text,
 {faq_html(faqs)}
 """
     graph = [article_ld(path, h1, desc, extra={"about": {"@type": "Thing", "name": about or crumb}}), faq_ld(path, faqs)]
-    return path, page(path, title, desc, h1, html_body, graph, mid=MID, crumb_name=crumb, extra_head=CSS, extra_body=tool_script(tool) if tool else "")
+    return path, page(path, title, desc, h1, html_body, graph, mid=MID, crumb_name=crumb, extra_head=CSS)
 
 
 MORE = '<p>More to read: <a href="/silver-hallmarks">how to read silver hallmarks</a>, and the <a href="/marks/london-date-letters">London date letters</a>.</p>'
@@ -388,64 +373,8 @@ def britannia():
     )
 
 
-# ── 6. Zippo date codes ───────────────────────────────────────────────────────
-
-def zippo():
-    tool = """      <h2 id="lookup">Decode a Zippo date code</h2>
-      <div class="finder">
-        <div class="finder__row"><label class="grow">The code on the bottom <input id="zp-code" autocomplete="off" placeholder="e.g. K XII or E 12"></label></div>
-        <div id="zp-results" class="finder__results" aria-live="polite"><p class="finder__hint">Type the letter on the left of the stamp and the numeral or number on the right. ZIPPO and BRADFORD, PA. can be left out.</p></div>
-      </div>"""
-    months = table(["Letter", "Month"], [(l, m) for l, m in zip("ABCDEFGHIJKL", ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])])
-    years = table(["Numeral", "Year"], [(n, 1984 + i) for i, n in enumerate(["II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI"], start=2)])
-    body = f"""{tool}
-      {photos("zippo_k12", "zippo_e12")}
-      <h2 id="read">How to read the code</h2>
-      <p>The code is stamped on the bottom of the lighter's case, around the word ZIPPO. Since July 1986 it has two parts:</p>
-      <ul>
-        <li><strong>On the left, the month:</strong> a letter from A for January to L for December.</li>
-        <li><strong>On the right, the year:</strong> a Roman numeral from 1986 to 2000, counted from II for 1986 to XVI for 2000; from 2001, the last two digits of the year (01 for 2001, 12 for 2012).</li>
-      </ul>
-      <div class="cols">
-        <section><h3>Month letters</h3>{months}</section>
-        <section><h3>Roman numerals, 1986 to 2000</h3>{years}</section>
-      </div>
-      <h2 id="before">Before July 1986: dots and slashes</h2>
-      <p>From the 1950s the bottom stamp carried a year code of dots or lines beside the words, with no month. Zippo's 2005 guide sets the patterns out as dots from 1958 to 1965, vertical lines from 1966 to 1973, forward slashes from 1974 to 1981 and backslashes from 1982 to the middle of 1986. Zippo Canada's list agrees but ends the backslashes in 1985, and Zippo's sources differ on whether the codes began in the mid-1950s or in 1958. Count the marks against Zippo's own chart; this page's lookup reads only the letter codes.</p>
-      <h2 id="limits">What the code can't tell you</h2>
-      <ul>
-        <li><strong>It dates the case.</strong> The code is on the bottom of the case, and that is what it dates.</li>
-        <li><strong>It doesn't prove a lighter is a Zippo.</strong> A stamp can be copied. Heirloom reads the code; it never decides whether an item is genuine.</li>
-      </ul>
-      <p>The lookup above gives the same answer as Heirloom Advisor: it reads exactly one month letter and one year, and gives nothing when the code is incomplete or reads two ways.</p>"""
-    faqs = [
-        ("How do I date a Zippo lighter?",
-         "<p>Turn it over and read the bottom stamp. Since July 1986 the letter on the left is the month (A for January to L for December) and the right side is the year: a Roman numeral from II (1986) to XVI (2000), then two digits from 01 (2001).</p>"),
-        ("What does K XII mean on a Zippo?",
-         "<p>November 1996. K is the eleventh letter, November, and XII is the Roman numeral for 12, counted from II for 1986.</p>"),
-        ("What do the dots or slashes on the bottom of a Zippo mean?",
-         "<p>They are the year code used before July 1986: dots, then vertical lines, then forward and back slashes, each pattern standing for a year. Zippo's own chart lists them.</p>"),
-        ("Does a date code mean my Zippo is genuine?",
-         "<p>No. It tells you when the case says it was made. A code can be copied, and Heirloom never decides whether an item is genuine.</p>"),
-    ]
-    return build_page(
-        "/marks/zippo-date-codes",
-        "Zippo Date Codes: Decode the Bottom Stamp, 1986 to Today | Heirloom",
-        "Decode a Zippo lighter's date code: the month letter A to L, the Roman numeral year from 1986 to 2000 and the two-digit year since 2001, with a lookup and the earlier dot and slash codes.",
-        "Zippo date codes", "Zippo date codes",
-        "The stamp on the bottom of a Zippo dates its case to the month. Type the code to read it.",
-        "A Zippo's date code is stamped on the bottom of the case. Since July 1986 the letter on the left is the month (A is January, L is December) and the right side is the year: Roman numerals from II for 1986 to XVI for 2000, then two digits from 01 for 2001. K XII is November 1996; E 12 is May 2012.",
-        body, faqs,
-        "Photograph the bottom of your lighter. The Advisor reads the letter and the year, dates the case by this same rule, and keeps the date on the item's record with the photo it came from.",
-        ["zippo_kb", "zippo_ca", "zippo_guide"],
-        tool="zippo",
-        about="Zippo lighter date codes",
-        src_note="All three are Zippo's own publications: we found no independent published source for the codes. Each fact here is in at least two of them, and where they disagree the page gives both.",
-    )
-
-
 def build():
-    return [real_silver(), purity(), german_silver(), coin_silver(), britannia(), zippo()]
+    return [real_silver(), purity(), german_silver(), coin_silver(), britannia()]
 
 
 CHILDREN = [
@@ -454,5 +383,4 @@ CHILDREN = [
     ("/marks/german-silver", "German silver and nickel silver", "No silver in it: what it is, its names and how it is marked."),
     ("/marks/coin-silver", "Coin silver", "American silver at the coin standard, and its marks."),
     ("/marks/britannia-silver", "Britannia silver", "The 958 standard of 1697, its marks, and Britannia metal."),
-    ("/marks/zippo-date-codes", "Zippo date codes", "The month letter and the year on the bottom of a Zippo, with a lookup."),
 ]
