@@ -48,7 +48,7 @@ CONTINENTAL = [
 PLATE = [
     ("EPNS, EP, EPBM", "Electroplated nickel silver; electroplate; electroplated Britannia metal. A thin silver coat over base metal."),
     ("Silver plate, quadruple plate, A1", "American and British plate. &ldquo;Quadruple&rdquo; describes the thickness of the coat, not the silver content."),
-    ("Nickel silver, German silver, alpaca", "An alloy of copper, nickel and zinc with no silver in it at all."),
+    ("Nickel silver, German silver, alpaca", "An alloy of copper, nickel and zinc with no silver in it at all. See <a href=\"/marks/german-silver\">German silver</a>."),
     ("1847 Rogers Bros.", "A brand name. 1847 is the year the firm says it began, not the year the item was made."),
     ("Sheffield plate", "Silver fused to copper sheet, made from about the 1740s to the 1840s, before electroplating. Rarely marked with town marks, and collected in its own right."),
 ]
@@ -105,18 +105,18 @@ BODY = f"""      <p class="guide__lede">A row of tiny stamps on the underside of
       <h2 id="american">American silver marks</h2>
       <p>The United States had no national assay system, so American marks are makers&rsquo; and retailers&rsquo; marks rather than hallmarks.</p>
       <ul>
-        <li><strong>Coin silver</strong> (roughly 90% silver), common before the Civil War, is often marked with the maker&rsquo;s name and words such as COIN, PURE COIN, DOLLAR, STANDARD or PREMIUM, or a C or D.</li>
+        <li><strong>Coin silver</strong> (roughly 90% silver), common before the Civil War, is often marked with the maker&rsquo;s name and a word such as COIN, PURE COIN or STANDARD, or with the maker&rsquo;s name alone. See <a href="/marks/coin-silver">coin silver</a>.</li>
         <li><strong>STERLING or 925</strong> became the usual mark as American makers adopted the sterling standard in the second half of the 1800s.</li>
         <li><strong>Pseudo-hallmarks:</strong> some American makers stamped marks that imitate British ones. Gorham&rsquo;s mark, for example, is a lion, an anchor and a G. Gorham also used yearly date symbols from 1868.</li>
         <li><strong>Pattern and model numbers</strong> stamped beside the maker&rsquo;s name can identify the design and narrow the date, from the maker&rsquo;s catalogs.</li>
       </ul>
 
       <h2 id="continental">Continental silver marks</h2>
-      <p>Most of Europe used purity numbers in thousandths, often beside a national or town mark.</p>
+      <p>Most of Europe used purity numbers in thousandths, often beside a national or town mark. See <a href="/marks/silver-purity-marks">what 925, 800 and the other numbers mean</a>.</p>
       {table(["Mark", "What it tells you"], CONTINENTAL)}
 
       <h2 id="plate">Marks that mean silver plate</h2>
-      <p>Plated wares were often stamped to look like sterling. These marks mean plate, or no silver at all:</p>
+      <p>Plated wares were often stamped to look like sterling. These marks mean plate, or no silver at all (more in <a href="/marks/is-it-real-silver">silver or silver plate?</a>):</p>
       {table(["Mark", "What it means"], PLATE)}
 
       <h2 id="limits">What hallmarks cannot tell you</h2>

@@ -34,6 +34,8 @@ Built from the same hand-checked tables Heirloom Advisor dates marks with; each 
 - [Pocket watch serial numbers](https://heirloomapp.io/marks/pocket-watch-serial-numbers): Waltham, Elgin, Hamilton, Illinois, South Bend and Hampden
 - [Leica serial numbers](https://heirloomapp.io/marks/leica-serial-numbers): model and year for a Leica body serial
 - Pottery date codes: [Wedgwood](https://heirloomapp.io/marks/wedgwood-date-codes), [Minton](https://heirloomapp.io/marks/minton-date-marks), [Royal Worcester](https://heirloomapp.io/marks/royal-worcester-date-marks), [Rookwood](https://heirloomapp.io/marks/rookwood-pottery-marks), [Sèvres](https://heirloomapp.io/marks/sevres-date-letters)
+- Silver basics: [silver or silver plate](https://heirloomapp.io/marks/is-it-real-silver), [what 925, 800 and 900 mean](https://heirloomapp.io/marks/silver-purity-marks), [German silver](https://heirloomapp.io/marks/german-silver), [coin silver](https://heirloomapp.io/marks/coin-silver), [Britannia silver](https://heirloomapp.io/marks/britannia-silver); each fact from two published sources
+- [Zippo date codes](https://heirloomapp.io/marks/zippo-date-codes): the month letter and year on a Zippo's bottom stamp, with a lookup
 
 ## Help and policies
 
