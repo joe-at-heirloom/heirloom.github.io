@@ -14,6 +14,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from shell import *
 import tables
 import p_inventory, p_antique, p_checklist, p_silver, p_family, p_marks
+import p_pottery, p_plate, p_basics, p_watches, p_world, p_ceramics
+import p_pottery, p_plate, p_basics, p_watches, p_world, p_ceramics
 import p_pottery, p_plate, p_basics, p_watches, p_world
 import p_pottery, p_plate, p_basics, p_watches, p_world
 import p_pottery, p_plate, p_basics, p_watches
@@ -58,7 +60,7 @@ with open(os.path.join(OUT, "home-inventory-template.csv"), "w", newline="") as 
     f.write(p_checklist.CSV)
 written = []
 os.makedirs(os.path.join(OUT, "marks"), exist_ok=True)
-for path, html_ in p_marks.build(p_pottery.CHILDREN + p_plate.CHILDREN + p_basics.CHILDREN + p_watches.CHILDREN + p_world.CHILDREN) + p_pottery.build() + p_plate.build() + p_basics.build() + p_watches.build() + p_world.build():
+for path, html_ in p_marks.build(p_pottery.CHILDREN + p_plate.CHILDREN + p_basics.CHILDREN + p_watches.CHILDREN + p_world.CHILDREN + p_ceramics.CHILDREN) + p_pottery.build() + p_plate.build() + p_basics.build() + p_watches.build() + p_world.build() + p_ceramics.build():
     rel = "marks/index.html" if path == "/marks/" else path.lstrip("/") + ".html"
     with open(os.path.join(OUT, rel), "w") as f:
         f.write(html_)

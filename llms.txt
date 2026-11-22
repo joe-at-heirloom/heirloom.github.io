@@ -43,6 +43,8 @@ Built from the same hand-checked tables Heirloom Advisor dates marks with; each 
 - [Gold karat marks](https://heirloomapp.io/marks/gold-karat-marks): what 375, 585, 750, 916 and 999 mean, British gold marks, and GF, RGP and HGE
 - Silver marks by country and maker: [Mexican](https://heirloomapp.io/marks/mexican-silver-marks), [French](https://heirloomapp.io/marks/french-silver-marks), [German](https://heirloomapp.io/marks/german-silver-marks), [Russian](https://heirloomapp.io/marks/russian-silver-marks), [Gorham](https://heirloomapp.io/marks/gorham-silver-marks), [Christofle](https://heirloomapp.io/marks/christofle-marks)
 
+- Ceramics maker's marks, each with its sources and the copies to be careful with: [Weller](https://heirloomapp.io/marks/weller-pottery-marks), [Roseville](https://heirloomapp.io/marks/roseville-pottery-marks), [McCoy](https://heirloomapp.io/marks/mccoy-pottery-marks), [Hull](https://heirloomapp.io/marks/hull-pottery-marks), [Meissen](https://heirloomapp.io/marks/meissen-marks), [Hummel](https://heirloomapp.io/marks/hummel-marks), [Limoges and Haviland](https://heirloomapp.io/marks/limoges-haviland-marks), [Royal Doulton](https://heirloomapp.io/marks/royal-doulton-marks), [Royal Copenhagen](https://heirloomapp.io/marks/royal-copenhagen-marks), [Nippon](https://heirloomapp.io/marks/nippon-marks), [Noritake](https://heirloomapp.io/marks/noritake-marks)
+
 ## Help and policies
 
 - [Support](https://heirloomapp.io/support)

@@ -201,6 +201,10 @@ const TITLE_NAMES = new Set(['Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards'
 const TITLE_NAMES = new Set(['Rolex', 'Omega', 'Bend', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
 
 const TITLE_NAMES = new Set(['Bend', 'Christofle', 'French', 'G', 'German', 'Gorham', 'Martelé', 'Mexican', 'Mexico', 'Minerva', 'Russian', 'Soviet', 'Taxco', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
+
+const TITLE_NAMES = new Set(['Bend', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings',
+  // Makers and lines named in the ceramics maker's-mark headings.
+  'Weller', 'Roseville', 'Rozane', 'Sicard', 'Rv', 'U.S.A', 'Nippon', 'Japan', 'M', 'RC', 'Noritake', 'Rose', 'China', 'Made', 'Occupied', 'N', 'Limoges', 'Haviland', 'Theo', 'H', 'Co', 'L', 'France', 'CFH', 'GDM', 'Meissen', 'AR', 'K.P.M', 'K.H.C', 'King', 'Copenhagen', 'Denmark', 'Hummel', 'TMK', 'Goebel', 'U.S', 'RPCo', 'Olympic', 'R.P.Co', 'Donatello', 'McCoy', 'J', 'W', 'Brush-McCoy', 'Brush', 'NM', 'LCC', 'Floraline', 'Hull', 'Art', 'Red', 'Riding', 'Hood', 'Oven', 'Proof', 'Doulton', 'Watts', 'Lambeth', 'Burslem', 'England', 'HN']);
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
@@ -344,6 +348,19 @@ const GUIDE_PAGES = [
   'marks/christofle-marks.html',
   'marks/german-silver-marks.html',
   'marks/russian-silver-marks.html',
+
+  // Ceramics maker's-mark pages (scripts/pages/p_ceramics.py).
+  'marks/weller-pottery-marks.html',
+  'marks/roseville-pottery-marks.html',
+  'marks/mccoy-pottery-marks.html',
+  'marks/hull-pottery-marks.html',
+  'marks/nippon-marks.html',
+  'marks/noritake-marks.html',
+  'marks/limoges-haviland-marks.html',
+  'marks/meissen-marks.html',
+  'marks/royal-doulton-marks.html',
+  'marks/royal-copenhagen-marks.html',
+  'marks/hummel-marks.html',
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');
