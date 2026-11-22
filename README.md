@@ -43,6 +43,7 @@ npm run pages:check     # fail if any committed page differs from a fresh build
 
 - **One template:** `scripts/pages/shell.py` holds the head, menu, footer and structured data every page shares. Each page's words are in its own `p_*.py`.
 - **The marks pages come from the app.** `p_marks.py` and `p_pottery.py` read `backend/src/data/mark-tables/*.json` from the app's `main` branch (`scripts/pages/tables.py`), so the site dates a mark exactly as Heirloom Advisor does. Set `APP_REPO` if the app isn't at `../Heirloom`, `APP_REF` for another branch, or `MARK_TABLES` for a folder of the JSON files.
+- **Marks by country and maker** (`p_world.py`: gold karat marks, Mexican, French, German, Russian, Gorham and Christofle silver) are written by hand, not read from the app: each fact has at least two published sources listed on its page, and each photo is open-license (Commons, Met, Cleveland, Paris Musées, Portable Antiquities Scheme) or a public-domain book facsimile, cropped and credited under it. A mark with no open photo is described in words.
 - **The lookups** (`marks/marks.js`) follow the app's decoders in `backend/src/services/mark-decoders.ts`; change them together.
 - **Stamp photographs** in `marks/img/` are public-domain Met Open Access images (and one CC BY-SA Wikimedia image), cut out along vectorizer.ai traces and toned alike; each page credits its photos.
 - `npm test` holds every generated page to the same copy rules as the homepage.

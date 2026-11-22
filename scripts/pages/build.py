@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from shell import *
 import tables
 import p_inventory, p_antique, p_checklist, p_silver, p_family, p_marks, p_pottery
+import p_world
 
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 CHECK = "--check" in sys.argv
@@ -52,7 +53,7 @@ with open(os.path.join(OUT, "home-inventory-template.csv"), "w", newline="") as 
     f.write(p_checklist.CSV)
 written = []
 os.makedirs(os.path.join(OUT, "marks"), exist_ok=True)
-for path, html_ in p_marks.build(p_pottery.CHILDREN) + p_pottery.build():
+for path, html_ in p_marks.build(p_pottery.CHILDREN + p_world.CHILDREN) + p_pottery.build() + p_world.build():
     rel = "marks/index.html" if path == "/marks/" else path.lstrip("/") + ".html"
     with open(os.path.join(OUT, rel), "w") as f:
         f.write(html_)
