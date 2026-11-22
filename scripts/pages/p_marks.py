@@ -89,8 +89,22 @@ def office_rows(office):
     return [r for r in HALL["rows"] if r["office"] == office]
 
 
+SITE_ROOT = tables.SITE_ROOT
+CASE_NAME = {"upper": "capital", "lower": "small", "either": "capital or small"}
+
+
+def letter_img(r):
+    """The facsimile of this row's letter from Chaffers (1924), when one was cut: marks/img/dl/."""
+    key = f'{r["office"].lower()}-{r["year"]}' + (r["letter"] if (r["office"], r["year"]) == ("London", 1697) else "")
+    return f"/marks/img/dl/{key}.webp" if os.path.exists(os.path.join(SITE_ROOT, "marks", "img", "dl", key + ".webp")) else None
+
+
 def letter_html(r):
-    return f'<span class="dl dl--{e(r["style"])}">{e(r["letter"])}</span>'
+    img = letter_img(r)
+    if img:
+        alt = f'{STYLE_WORD[r["style"]]} {CASE_NAME[r["case"]]} {r["letter"]} in its shield, {r["office"]} {r.get("year_label") or r["year"]}'
+        return f'<img class="dli" src="{img}" alt="{e(alt)}" height="48" loading="lazy" decoding="async">'
+    return f'<span class="dl dl--{e(r["style"])}" title="No facsimile: the letter is set in a similar typeface">{e(r["letter"])}</span>'
 
 
 def cycles(rows):
@@ -210,7 +224,7 @@ def date_letter_page(office, info):
   </div>
   <div id="dl-results" class="finder__results" aria-live="polite"><p class="finder__hint">Type the letter you see. Every {office} year that used it appears here, with its style, so you can match the shape.</p></div>
 </div>
-<script>window.DL_ROWS = {json.dumps([{**{k: r.get(k) for k in ("letter", "case", "style", "year", "year_label", "alt_year", "confidence")}, "note": soften(r["note"]) if r.get("note") else None} for r in rows], separators=(",", ":"), ensure_ascii=False)};</script>"""
+<script>window.DL_ROWS = {json.dumps([{**{k: r.get(k) for k in ("letter", "case", "style", "year", "year_label", "alt_year", "confidence")}, "note": soften(r["note"]) if r.get("note") else None, "img": letter_img(r)} for r in rows], separators=(",", ":"), ensure_ascii=False)};</script>"""
 
     faqs = [
         (f"How do I find the year from a {office} hallmark?",
@@ -234,7 +248,7 @@ def date_letter_page(office, info):
       <ul class="rules">{rule_items}</ul>
       {britannia}
       <h2 id="tables">Every cycle</h2>
-      <p class="note">Letters are set in a matching typeface to help you scan the tables; a real punch differs, and shield shapes are not shown. A flagged year is one where the sources disagree.</p>
+      <p class="note">Letters to 1923 are facsimiles of the punches, printed in W. Chaffers, <cite>Handbook to Hall Marks on Gold and Silver Plate</cite> (1924), public domain, <a href="https://archive.org/details/ChaffersHandbookToHallMarks" rel="nofollow">via the Internet Archive</a>. Later letters, and the few the book doesn\'t show clearly, are set in a similar typeface until a photograph of that cycle is added. A flagged year is one where the sources disagree.</p>
       {''.join(tables)}
       <h2 id="caveats">Read these before you rely on a year</h2>
       <ul>{caveats}</ul>

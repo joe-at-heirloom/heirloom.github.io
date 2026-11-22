@@ -32,7 +32,7 @@
       const alike = rows.filter((r) => match(r, LOOKS[want] || []));
       const li = (r) => {
         const flag = [r.alt_year ? `another source gives ${r.alt_year}` : '', r.confidence ? (r.confidence === 'disputed' ? 'sources disagree' : `${r.confidence} confidence`) : '', r.note || ''].filter(Boolean).join('; ');
-        return `<li><span class="dl dl--${esc(r.style)}">${esc(r.letter)}</span><span><strong>${esc(r.year_label || r.year)}</strong> · ${esc(STYLE[r.style])}, ${r.case === 'upper' ? 'capital' : r.case === 'lower' ? 'small' : 'capital or small'}${flag ? `<br><small>${esc(flag)}</small>` : ''}</span></li>`;
+        return `<li>${r.img ? `<img class="dli" src="${esc(r.img)}" alt="" height="56">` : `<span class="dl dl--${esc(r.style)}">${esc(r.letter)}</span>`}<span><strong>${esc(r.year_label || r.year)}</strong> · ${esc(STYLE[r.style])}, ${r.case === 'upper' ? 'capital' : r.case === 'lower' ? 'small' : 'capital or small'}${flag ? `<br><small>${esc(flag)}</small>` : ''}</span></li>`;
       };
       let html = exact.length
         ? `<p><strong>${exact.length === 1 ? 'One year' : `${exact.length} possible years`}</strong> for “${esc(raw)}”${caseSel || styleSel ? ' with those choices' : ''}. Match the style to your mark:</p><ul class="hits">${exact.map(li).join('')}</ul>`

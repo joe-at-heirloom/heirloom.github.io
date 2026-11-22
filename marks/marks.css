@@ -101,3 +101,7 @@
 .pro-note p { margin: 0; font-size: 0.95rem; color: var(--color-text-secondary); }
 .pro-note strong { color: var(--color-text); }
 .finder [hidden] { display: none !important; }
+
+/* Date-letter facsimiles from Chaffers (1924). */
+.dli { height: 48px; width: auto; max-width: 100%; mix-blend-mode: multiply; }
+.hits .dli { height: 56px; }
