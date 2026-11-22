@@ -199,6 +199,8 @@ const HOMEPAGE_WORD_RULES = [
 const TITLE_NAMES = new Set(['Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards', 'Oneida', 'Community', 'International', 'Silver', 'Co', 'Plate', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
 
 const TITLE_NAMES = new Set(['Rolex', 'Omega', 'Bend', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
+
+const TITLE_NAMES = new Set(['Bend', 'Christofle', 'French', 'G', 'German', 'Gorham', 'Martelé', 'Mexican', 'Mexico', 'Minerva', 'Russian', 'Soviet', 'Taxco', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
@@ -334,6 +336,14 @@ const GUIDE_PAGES = [
 
   'marks/rolex-serial-numbers.html',
   'marks/omega-serial-numbers.html',
+
+  'marks/gold-karat-marks.html',
+  'marks/mexican-silver-marks.html',
+  'marks/french-silver-marks.html',
+  'marks/gorham-silver-marks.html',
+  'marks/christofle-marks.html',
+  'marks/german-silver-marks.html',
+  'marks/russian-silver-marks.html',
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');

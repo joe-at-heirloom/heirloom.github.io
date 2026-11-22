@@ -40,6 +40,9 @@ Built from the same hand-checked tables Heirloom Advisor dates marks with; each 
 
 - Silver basics: [silver or silver plate](https://heirloomapp.io/marks/is-it-real-silver), [what 925, 800 and 900 mean](https://heirloomapp.io/marks/silver-purity-marks), [German silver](https://heirloomapp.io/marks/german-silver), [coin silver](https://heirloomapp.io/marks/coin-silver), [Britannia silver](https://heirloomapp.io/marks/britannia-silver); each fact from two published sources
 
+- [Gold karat marks](https://heirloomapp.io/marks/gold-karat-marks): what 375, 585, 750, 916 and 999 mean, British gold marks, and GF, RGP and HGE
+- Silver marks by country and maker: [Mexican](https://heirloomapp.io/marks/mexican-silver-marks), [French](https://heirloomapp.io/marks/french-silver-marks), [German](https://heirloomapp.io/marks/german-silver-marks), [Russian](https://heirloomapp.io/marks/russian-silver-marks), [Gorham](https://heirloomapp.io/marks/gorham-silver-marks), [Christofle](https://heirloomapp.io/marks/christofle-marks)
+
 ## Help and policies
 
 - [Support](https://heirloomapp.io/support)
