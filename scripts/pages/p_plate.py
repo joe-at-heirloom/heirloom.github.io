@@ -173,7 +173,9 @@ def wm_rogers():
       <h2 id="marks">Which Rogers is yours?</h2>
       <p>Rogers is the most crowded name in American plate. The brothers licensed it, other Rogers families used it in their own right, and the courts of the 1880s and 1890s stopped several firms from borrowing it. Read the whole mark, including stars, anchors, eagles and initials:</p>
       {marks_table(ROGERS_TABLE, head=("The mark", "Who used it, and when", "How it relates"))}
-      <p class="note">The table is from court opinions of 1882, 1887 and 1895, the 1896 trademark directory, Meriden and Hartford histories, and the makers' own trademark registrations. We haven't yet found an openly licensed photograph of a Wm. Rogers mark clear enough to show; the marks are stamped on the back of the handle.</p>
+      <p class="note">The table is from court opinions of 1882, 1887 and 1895, the 1896 trademark directory, Meriden and Hartford histories, and the makers' own trademark registrations. The marks are stamped on the back of the handle.</p>
+      {photo("plate-wm-rogers-and-son", "WM. ROGERS &amp; SON AA stamped along the back of a spoon handle", "WM. ROGERS &amp; SON AA on the back of a silver-plated spoon handle: the Hartford firm's mark.", 'Photograph: <a href="https://www.flickr.com/photos/51035581380@N01/4894854455/" rel="nofollow">wm rogers &amp; son silverplate</a> by Deidre Woollard, <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow">CC BY 2.0</a>, cropped and toned by Heirloom.')}
+      {photo("plate-wm-a-rogers", "WM. A. ROGERS A1 followed by a horseshoe mark, stamped on a ladle handle", "WM. A. ROGERS A1 and a horseshoe on a cream ladle of about 1900: the unrelated New York firm, easy to misread as Wm. Rogers.", 'Photograph: <a href="https://www.europeana.eu/item/1091/item_7EL3HFXD4G632JXSF7TQ4TKGPJLXA7OJ" rel="nofollow">Deutsches Klingenmuseum Solingen</a>, 1990.B.200, <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow">CC BY 4.0</a>, cropped and toned by Heirloom.')}
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
       <p>Plate. Every Wm. Rogers mark was registered and listed for silver-plated ware, and we found no sterling made under the name. Simpson, Hall, Miller did make sterling from 1895, but under its own marks.</p>
 {PLATE_OR_STERLING}
@@ -377,6 +379,7 @@ def international():
       <p class="note">International kept many of its founding firms' names as brands, so much International ware doesn't say International at all: see <a href="/marks/1847-rogers-bros">1847 Rogers Bros.</a>, <a href="/marks/holmes-and-edwards">Holmes &amp; Edwards</a> and <a href="/marks/wm-rogers">Wm. Rogers</a>.</p>
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
       <p>It can be either, which is why the whole mark matters. International made sterling under its own name and some of its brands, and a great deal of plate. A spoon in a Canadian parliamentary collection, for example, is marked INTERNATIONAL S. CO. XII and is electroplated nickel silver. If the mark says STERLING, it is sterling; if not, treat it as plate.</p>
+      {photo("plate-international-sterling", "INTERNATIONAL, a small shield mark, and STERLING stamped along a spoon handle", "INTERNATIONAL and STERLING on a grapefruit spoon, with a small shield mark between them. The rest of this mark reads PAT. 1929.", 'Photograph: <a href="https://www.europeana.eu/item/1091/item_BL6WPXKXYT5XPBQBSR4XHPMDION2CDJC" rel="nofollow">Deutsches Klingenmuseum Solingen</a>, 1995.NRW.005, <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow">CC BY 4.0</a>, cropped and toned by Heirloom.')}
 {PLATE_OR_STERLING}
       <h2 id="dating">How to date International Silver</h2>
 {DATING_RULE}
