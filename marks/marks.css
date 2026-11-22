@@ -126,3 +126,4 @@
 .sources--num li:target { background: var(--color-surface-alt); border-radius: var(--radius-sm); }
 @media (max-width: 640px) { .mk { grid-template-columns: 1fr; } .mkp img { max-height: 420px; width: auto; max-width: 100%; } }
 .mk--words { grid-template-columns: 1fr; }
+.mkp--hero { margin: 4px 0 28px; max-width: 560px; }

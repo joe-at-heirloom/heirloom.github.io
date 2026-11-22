@@ -40,19 +40,19 @@ def fill(text, srcs, attributed=False):
     is reported (every fact here needs two); `{src:a}` alone is allowed only for
     a sentence that names its source, such as "the RISD Museum gives 1949"."""
     for m in ([] if attributed else re.finditer(r"\{src:([^},]+)\}", text)):
-        if not re.search(r"(gives|says|printed|describes|described|records|calls|dates|shows|reported|reprints|told|lists|counted|notes)\b[^{]*\{src:" + re.escape(m.group(1)) + r"\}", text):
+        if not re.search(r"(gives|says|printed|describes|described|records|calls|dates|shows|reported|reprints|told|lists|counted|notes|decodes)\b[^{]*\{src:" + re.escape(m.group(1)) + r"\}", text):
             ONE_SOURCE.append(text[max(0, m.start() - 90):m.end()])
     return re.sub(r"\{src:([^}]+)\}", lambda m: refs([k.strip() for k in m.group(1).split(",")], srcs), text)
 
 
-def photo(img):
+def photo(img, cls="mkp"):
     path = os.path.join(IMG_DIR, img["file"] + ".webp")
     if not os.path.exists(path):
         raise SystemExit(f"missing image {path}")
     from PIL import Image
     w, h = Image.open(path).size
     credit = f'<a href="{e(img["page"])}" rel="nofollow">{e(img["credit"])}</a>, {e(img["licence"])}'
-    return (f'<figure class="mkp"><img src="/marks/img/ceramics/{img["file"]}.webp" alt="{e(img["alt"])}" width="{w}" height="{h}" loading="lazy" decoding="async">'
+    return (f'<figure class="{cls}"><img src="/marks/img/ceramics/{img["file"]}.webp" alt="{e(img["alt"])}" width="{w}" height="{h}" loading="lazy" decoding="async">'
             f'<figcaption>{img["caption"]} <span class="mkp__credit">{credit}</span></figcaption></figure>')
 
 
@@ -104,6 +104,7 @@ def build_page(d):
         <p class="answer__label">In short</p>
         <p>{fill(d['answer'], srcs)}</p>
       </div>
+{('      ' + photo(d['hero'], 'mkp mkp--hero')) if d.get('hero') else ''}
       <h2 id="maker">{d['maker_heading']}</h2>
 {paras}
       <h2 id="marks">{d['marks_heading']}</h2>
