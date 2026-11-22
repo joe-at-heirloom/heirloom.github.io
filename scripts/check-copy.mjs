@@ -196,7 +196,7 @@ const HOMEPAGE_WORD_RULES = [
  * (docs/VOICE.md, "The sentences"): a capital inside one is a name or it is
  * wrong. These are the names the page uses.
  */
-const TITLE_NAMES = new Set(['Bend', 'Britannia', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
+const TITLE_NAMES = new Set(['Bend', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
@@ -313,6 +313,11 @@ const GUIDE_PAGES = [
   'marks/singer-serial-numbers.html',
   'marks/pocket-watch-serial-numbers.html',
   'marks/leica-serial-numbers.html',
+  'marks/wedgwood-date-codes.html',
+  'marks/minton-date-marks.html',
+  'marks/royal-worcester-date-marks.html',
+  'marks/rookwood-pottery-marks.html',
+  'marks/sevres-date-letters.html',
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');

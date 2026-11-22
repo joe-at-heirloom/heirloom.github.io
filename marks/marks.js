@@ -111,7 +111,152 @@
     input.addEventListener('input', run);
   }
 
-  const tools = { dateletters: dateLetters, singer, watch, leica };
+  // ── Pottery ───────────────────────────────────────────────────────────────
+  const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  // Three-letter words read on their own are not codes (the app's WEDGWOOD_NOT_CODES).
+  const NOT_CODES = new Set(['THE', 'AND', 'USA', 'LTD', 'INC', 'PAT', 'NEW', 'OLD', 'FOR', 'ONE', 'TWO', 'SIX', 'TEN', 'ART', 'CUP', 'POT', 'TEA', 'BOX', 'LID', 'MUG', 'JUG', 'WMF', 'EPN', 'GBR', 'MFG']);
+  function wedgwood() {
+    const { rows, months } = window.WG || { rows: [], months: [] };
+    const input = $('wg-code'), eng = $('wg-england'), out = $('wg-results');
+    hint(out);
+    const run = () => {
+      const code = input.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+      if (!code) return say(out, out.dataset.hint);
+      const m = /^([A-Z34])([A-Z])([A-Z])$/.exec(code);
+      if (!m) return say(out, '<p>A Wedgwood date code is exactly three characters: a month letter (or 3 or 4), a potter\'s letter and the year letter, such as TOT or 3KC.</p>');
+      if (NOT_CODES.has(code)) return say(out, `<p>${esc(code)} reads as a word, not a date code. Check the impressed characters again.</p>`);
+      const digitFirst = m[1] === '3' || m[1] === '4';
+      let hits = rows.filter((r) => r.letter === m[3] && (digitFirst ? r.cycle === 3 : r.cycle !== 3));
+      if (eng.checked) hits = hits.filter((r) => r.year >= 1891);
+      if (!hits.length) return say(out, `<p>No year fits ${esc(code)}${eng.checked ? ' with ENGLAND in the mark' : ''}. Check the last character, and whether the first is a letter or the figure 3 or 4.</p>`);
+      const monthFor = (year) => {
+        if (digitFirst) return '';
+        const mm = months.find((x) => { const [a, b] = x.years.split('-').map(Number); return x.first_char === m[1] && year >= a && year <= b; });
+        return mm ? MONTHS[mm.month - 1] + ' ' : '';
+      };
+      const li = (r) => `<li><span class="big">${r.year}</span><span>${esc(monthFor(r.year))}${r.year}<br><small>Year letter ${esc(m[3])}, cycle ${r.cycle}${r.year >= 1891 ? ' · ENGLAND expected in the mark' : ''}</small></span></li>`;
+      say(out, `<p><strong>${esc(code)}</strong>${hits.length > 1 ? ': the year letter was used twice. ENGLAND on the base (from 1891) or other marks decide which.' : ':'}</p><ul class="hits">${hits.map(li).join('')}</ul>`);
+    };
+    [input, eng].forEach((el) => el.addEventListener('input', run));
+  }
+
+  function minton() {
+    const rows = window.MN || [];
+    const input = $('mn-q'), out = $('mn-results');
+    hint(out);
+    input.addEventListener('input', () => {
+      const words = input.value.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 1);
+      if (!words.length) return say(out, out.dataset.hint);
+      const hits = rows.filter((r) => words.every((w) => r.cypher_description.toLowerCase().includes(w)));
+      if (!hits.length) return say(out, '<p>No cypher is described that way. Try one simple word for the shape: triangle, square, circle, cross, star, letter, number.</p>');
+      say(out, `<p><strong>${hits.length}</strong> ${hits.length === 1 ? 'year matches' : 'years match'}:</p><ul class="hits">${hits.map((r) => `<li><span class="big">${r.year}</span><span>${esc(r.cypher_description)}${r.confusable_with ? `<br><small>Easily confused with ${r.confusable_with.join(', ')}</small>` : ''}</span></li>`).join('')}</ul>`);
+    });
+  }
+
+  function worcester() {
+    const type = $('rw-type'), letter = $('rw-letter'), dots = $('rw-dots'), shape = $('rw-shape'), digits = $('rw-digits'), out = $('rw-results');
+    hint(out);
+    const show = { letter: ['letter'], dots: ['dots'], star: ['dots'], shape: ['shape'], circles: ['dots'], w: ['dots'], digits: ['digits'] };
+    const LETTERS = { A: 1867, B: 1868, C: 1869, D: 1870, E: 1871, G: 1872, H: 1873, I: 1874, K: 1875, L: 1876, M: 1877, N: 1878, P: 1879, R: 1880, S: 1881, T: 1882, U: 1883, X: 1886, Y: 1887, Z: 1888, O: 1889 };
+    const res = (items, note) => say(out, `<ul class="hits">${items.map(([y, d]) => `<li><span class="big">${esc(y)}</span><span>${d}</span></li>`).join('')}</ul>${note ? `<p class="finder__hint">${note}</p>` : ''}`);
+    const run = () => {
+      ['letter', 'dots', 'shape', 'digits'].forEach((k) => { $(`rw-${k}-l`).hidden = !show[type.value].includes(k); });
+      const n = dots.value === '' ? null : Number(dots.value);
+      switch (type.value) {
+        case 'letter': {
+          const l = letter.value.trim();
+          if (!l) return say(out, out.dataset.hint);
+          if (l === 'a') return res([[1890, 'Small letter a below the circle']]);
+          const L = l.toUpperCase();
+          if (l !== L) return say(out, '<p>Only one small letter was used: a, for 1890. Every other letter is a capital.</p>');
+          if (L === 'V') return res([[1884, 'V below the circle; crown sits down on the circle'], [1949, 'V below the mark, with ENGLAND']], 'V was used twice. The wording round the mark and the ware itself tell 1884 from 1949.');
+          if (L === 'W') return res([[1885, 'W below the circle'], [1950, 'W with no dots']], 'W was used twice: 1885, and 1950 (with dots from 1951 for each later year).');
+          if (LETTERS[L]) return res([[LETTERS[L], `${esc(L)} below the circle of the standard mark`]], LETTERS[L] < 1876 ? 'Before 1876 the crown sits slightly above the circle; from 1876 it sits down on it.' : '');
+          return say(out, `<p>${esc(L)} isn't a Royal Worcester year letter: F, J and Q were never used.</p>`);
+        }
+        case 'dots':
+          if (n === null) return say(out, out.dataset.hint);
+          if (n === 0) return res([[1891, 'Royal Worcester England round the circle, no dots']], 'A no-dot mark is not always 1891: one documented piece with it carries a design registered in 1913.');
+          if (n <= 24) return res([[1891 + n, `${n} dot${n === 1 ? '' : 's'}`]], 'Count every dot, both sides of the crown and below the circle.');
+          return say(out, '<p>More than 24 dots with no star: some pieces kept the old dot plates after 1916, so this may be 1916 or later.</p>');
+        case 'star':
+          if (n === null || n === 0) return res([[1916, 'A small star or asterisk below the mark, no dots']], 'Smudged dots can look like a star.');
+          if (n <= 11) return res([[1916 + n, `A star and ${n} dot${n === 1 ? '' : 's'}`]]);
+          return say(out, '<p>The star period runs to 11 dots (1927). Count again, or check for three linked circles.</p>');
+        case 'shape':
+          return res([[Number(shape.value), shape.options[shape.selectedIndex].text + ' below the mark']]);
+        case 'circles':
+          if (n === null || n === 0) return res([[1932, 'Three linked circles, no dots']]);
+          if (n < 9) return res([[1932 + n, `Three linked circles and ${n} dot${n === 1 ? '' : 's'}`]]);
+          if (n === 9) return res([['1941–48', 'Three linked circles and 9 dots']], '1941 or later: the sources disagree on whether the mark was left unchanged until 1948.');
+          return res([['1942–48', `Three linked circles and ${n} dots`]], 'Disputed: only one source\'s table uses 10 to 16 dots for 1942–1948; the factory museum says no code was used then.');
+        case 'w':
+          if (n === null || n === 0) return res([[1950, 'W with no dots']]);
+          if (n <= 13) return res([[1950 + n, `W (or, from about 1956, R in a circle) with ${n} dot${n === 1 ? '' : 's'}`]]);
+          return say(out, '<p>The dot code ends in 1963 (13 dots). After that there is no date code.</p>');
+        case 'digits': {
+          const d = digits.value.replace(/\D/g, '');
+          if (d.length < 2) return say(out, out.dataset.hint);
+          const y = 1800 + Number(d);
+          if (y >= 1862 && y <= 1877) return res([[y, `${esc(d)} below the mark`]], 'Two-digit years are rare.');
+          return say(out, '<p>Two-digit years appear only from 1862 to about 1877 (62 to 77).</p>');
+        }
+      }
+    };
+    [type, letter, dots, shape, digits].forEach((el) => el.addEventListener('input', run));
+    run();
+  }
+
+  function romanValue(tok) {
+    if (!/^[IVXLC]+$/.test(tok)) return null;
+    const R = { I: 1, V: 5, X: 10, L: 50, C: 100 };
+    let total = 0;
+    for (let i = 0; i < tok.length; i += 1) { const v = R[tok[i]], nx = R[tok[i + 1]] || 0; total += v < nx ? -v : v; }
+    const map = [[100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+    let s = '', n = total; for (const [v, c] of map) while (n >= v) { s += c; n -= v; }
+    return s === tok ? total : null;
+  }
+  function rookwood() {
+    const flames = $('rk-flames'), numeral = $('rk-numeral'), out = $('rk-results');
+    hint(out);
+    const run = () => {
+      const num = numeral.value.toUpperCase().replace(/[^IVXLCM]/g, '');
+      const f = flames.value === '' ? null : Number(flames.value);
+      if (num.startsWith('MM')) {
+        const v = romanValue(num.slice(2));
+        return say(out, v ? `<ul class="hits"><li><span class="big">${2000 + v}</span><span>${esc(num)}: a modern Rookwood mark, the full year in Roman numerals</span></li></ul>` : '<p>That numeral isn\'t well formed.</p>');
+      }
+      if (num) {
+        const v = romanValue(num);
+        if (v === null) return say(out, '<p>That numeral isn\'t well formed. Check each letter: I, V, X and L.</p>');
+        if (v < 1 || v > 67) return say(out, '<p>Historic Roman numerals run from I (1901) to LXVII (1967).</p>');
+        if (f !== null && f !== 14) return say(out, '<p>The numeral appears only under the full 14-flame mark. Count the flames again.</p>');
+        return say(out, `<ul class="hits"><li><span class="big">${1900 + v}</span><span>14 flames and ${esc(num)} below</span></li></ul><p class="finder__hint">The Arabic number under the numeral is a shape number, not a date.</p>`);
+      }
+      if (f === null) return say(out, out.dataset.hint);
+      if (f < 0 || f > 14) return say(out, '<p>The RP mark has between 0 and 14 flames.</p>');
+      say(out, `<ul class="hits"><li><span class="big">${1886 + f}</span><span>RP monogram with ${f} flame${f === 1 ? '' : 's'}${f === 0 ? ' (unless later flames are blurred away)' : ''}</span></li></ul><p class="finder__hint">The tail of the R is not a flame. A 14-flame mark with a numeral below is 1901 or later.</p>`);
+    };
+    [flames, numeral].forEach((el) => el.addEventListener('input', run));
+  }
+
+  function sevres() {
+    const rows = window.SV || [];
+    const input = $('sv-letter'), out = $('sv-results');
+    hint(out);
+    input.addEventListener('input', () => {
+      const l = input.value.toUpperCase().replace(/[^A-Z]/g, '');
+      if (!l) return say(out, out.dataset.hint);
+      if (l.length === 2 && l[0] !== l[1]) return say(out, '<p>The two letters of a Sèvres double are always the same. Different letters, such as CL, are not a date code, and one source takes them as a sign of a copied mark.</p>');
+      const r = rows.find((x) => x.letter === l);
+      if (!r) return say(out, `<p>${esc(l)} isn't in the date-letter tables, which run from A to QQ.</p>`);
+      if (!r.year) return say(out, '<p>W was never used as a Sèvres date letter. A W inside the Ls is not a date code.</p>');
+      const both = r.alt_year && r.alt_year !== r.year;
+      say(out, `<ul class="hits"><li><span class="big">${both ? `${Math.min(r.year, r.alt_year)}–${Math.max(r.year, r.alt_year)}` : r.year}</span><span>${both ? `${r.year} in the revised table (current scholarship); ${r.alt_year} in the traditional one` : 'The same year in both tables'}</span></li></ul><p class="finder__hint">The mark is widely copied: the letter gives the date it claims, not proof of factory work.</p>`);
+    });
+  }
+
+  const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres };
   const start = () => tools[window.MARKS_TOOL] && tools[window.MARKS_TOOL]();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

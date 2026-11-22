@@ -93,3 +93,11 @@
 .stamps__credit { display: block; font-size: 0.78rem; color: var(--color-text-muted); margin-top: 2px; }
 .stamps__credit a { color: inherit !important; }
 @media (max-width: 600px) { .stamp img { height: 72px; } .stamps__row { gap: 10px 12px; padding: 14px 12px 10px; } }
+.finder label.check { flex-direction: row; align-items: center; gap: 8px; font-weight: 500; color: var(--color-text); padding-bottom: 10px; }
+.finder label.check input { min-width: 0; width: 18px; height: 18px; }
+
+/* The note for auction professionals, under the Heirloom box. */
+.pro-note { margin: -24px 0 40px; padding: 14px 18px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+.pro-note p { margin: 0; font-size: 0.95rem; color: var(--color-text-secondary); }
+.pro-note strong { color: var(--color-text); }
+.finder [hidden] { display: none !important; }
