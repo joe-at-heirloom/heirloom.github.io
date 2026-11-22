@@ -632,4 +632,81 @@ COPENHAGEN = dict(
     ],
 )
 
-MAKERS = [WELLER, ROSEVILLE, MEISSEN, LIMOGES, COPENHAGEN, NIPPON, NORITAKE]
+
+# ── Hummel ────────────────────────────────────────────────────────────────────
+
+HUMMEL = dict(
+    slug="hummel-marks",
+    title="Hummel Marks: Crown, Full Bee, Stylized Bee to Goebel (TMK-1 to TMK-8) | Heirloom",
+    desc="How to date an M. I. Hummel figurine by its Goebel trademark: the crown, the full bee, the stylized bee, the three-line mark, the last bee, the missing bee and the later marks, with the dates each source gives.",
+    h1="Hummel marks",
+    crumb="Hummel marks",
+    card="The Goebel trademarks on M. I. Hummel figurines, from the crown to the millennium bee.",
+    lede="An M. I. Hummel figurine carries a mold number, the M. I. Hummel signature and a Goebel trademark. The trademark is the main clue to when it was made.",
+    answer="Goebel of Rödental, Germany, made M. I. Hummel figurines from 1935 to 2008 {src:off,alb,loc}. Collectors number its trademarks TMK-1 to TMK-8: a crown to about 1950, then a bee in a V that grows simpler, gains the word Goebel in 1972 and disappears in 1979, and returns in 2000 {src:off,luc}. West Germany or W. Germany in the mark points to the years before 1991 {src:alb,luc}.",
+    maker_heading="Who made Hummel figurines",
+    history=[
+        "The porcelain factory W. Goebel was founded in 1871 at Oeslau, now part of Rödental, near Coburg in Bavaria {src:alb,gaa}.",
+        "The figurines are modeled on drawings by Berta Hummel, born in 1909, who became Sister Maria Innocentia of the Franciscan convent at Siessen {src:hot,off}. Goebel showed the first models at the Leipzig trade fair in 1935 {src:off,alb}. After the Second World War sales rose sharply, helped by American soldiers in Germany sending figurines home {src:off,alb}.",
+        "Goebel filed for insolvency in 2006 and stopped making Hummel figurines in 2008; a new firm, Manufaktur Rödental, took up production under license in 2009 {src:loc,off}.",
+    ],
+    marks_heading="Hummel marks, in order",
+    marks_intro="No photograph of a Hummel trademark under an open license was found, so each mark here is described in words. The dates are those of the two reference books that agree with each other; other books give different years for several marks (see below) {src:off,luc}. Hummel is German for bumblebee, hence the bee in the marks {src:off,hot}.",
+    marks=[
+        dict(id="crown", name="The crown (TMK-1)", dates="1934 or 1935 to 1950",
+             body="A crown over interlaced letters WG, for W. Goebel, incised in the base, stamped in ink, or both; often with Germany {src:off,luc,alb}.", images=[]),
+        dict(id="us-zone", name="U.S. zone marks", dates="The later 1940s",
+             body="Wording such as Made in U.S. Zone Germany, alone or with the crown or bee, from the years when Rödental was in the American zone of occupation {src:alb,luc}. Goebel's own US copyright filings of 1951 still gave its address as Oeslau, U.S. zone {src:cce}.", images=[]),
+        dict(id="full-bee", name="The full bee (TMK-2)", dates="1940 to 1959",
+             body="A large, fully drawn bee flying inside a V, incised or stamped, in several versions; the very large bee was drawn smaller from about 1956 {src:off,luc}.", images=[]),
+        dict(id="stylized-bee", name="The stylized bee (TMK-3)", dates="1958 to 1972",
+             body="A simplified, geometric bee inside the V, with W. Germany, in large and small versions {src:off,luc,hot}.", images=[]),
+        dict(id="three-line", name="The three-line mark (TMK-4)", dates="1964 to 1972",
+             body="The stylized bee in the V beside three lines of text: a copyright line for W. Goebel, and W. Germany {src:off,luc,hot}. It overlaps with the stylized bee.", images=[]),
+        dict(id="last-bee", name="The last bee (TMK-5)", dates="1972 to 1979",
+             body="A small bee in a V set over the printed word Goebel, with W. Germany; the first mark to print the name Goebel {src:off,luc,alb}.", images=[]),
+        dict(id="missing-bee", name="The missing bee (TMK-6)", dates="1979 to 1990 or 1991",
+             body="Goebel and W. Germany, with no bee and no V {src:off,luc,alb}.", images=[]),
+        dict(id="tmk7", name="The Hummel mark (TMK-7)", dates="1991 to 1999",
+             body="A new mark with Goebel and Germany, without West, introduced after German reunification {src:off,luc,alb}.", images=[]),
+        dict(id="millennium", name="The millennium bee (TMK-8)", dates="2000 to 2008",
+             body="Goebel with a small bee restored, and Germany: the last figurines Goebel made {src:off,luc}.", images=[]),
+    ],
+    careful_heading="Look-alikes and other marks to be careful with",
+    cautions=[
+        "Goebel put the same crown and bee marks on many figures that are not Hummels. A Hummel also has the M. I. Hummel signature and a Hum mold number {src:luc,hot}.",
+        "Many Hummel-style figurines were made by other firms in Europe, America and Asia, without the Goebel trademark or the M. I. Hummel signature; collectors' books call them copycats or look-alikes {src:won,hot}.",
+        "Old designs were reissued under later trademarks, so the year a design was introduced is not the year a figurine was made {src:off,kov}.",
+        "Figurines made since 2009 carry the marks of the later licensee, not Goebel {src:off,loc}.",
+    ],
+    disagree=[
+        "The full bee: 1940 to 1959 {src:off,luc}, or 1950 to 1959 in the Kovels' price lists {src:kov}.",
+        "The stylized bee: 1958 to 1972 {src:off,luc}, or 1960 to 1972 in the Kovels' lists {src:kov}; Hotchkiss dates early stylized versions from 1956 {src:hot}.",
+        "The three-line mark: 1964 to 1972 {src:off,luc}; 1963 to 1972 in Hotchkiss {src:hot}; 1968 to 1979 or 1968 to 1972 in different Kovels' editions {src:kov}.",
+        "The end of the missing bee: 1991 {src:off,luc}, or 1990 in the M. I. Hummel Album {src:alb}.",
+    ],
+    sources=dict(
+        off={"cite": "Heidi Ann von Recklinghausen, <em>The Official M.I. Hummel Price Guide: Figurines &amp; Plates</em> (Iola: Krause, 2010; 2nd ed. 2013), trademark section", "url": ia("officialmihummel0000reck")},
+        luc={"cite": "Carl F. Luckey, <em>Luckey's Hummel Figurines &amp; Plates</em> (Florence, Ala.: Books Americana, 8th ed. 1990; 12th ed. 2003), trademark chapter", "url": ia("luckeyshummelfig0000luck")},
+        alb={"cite": "<em>The M.I. Hummel Album</em> (New York: Portfolio Press, 1994), company history and trademark chart", "url": ia("mihummelalbum0000ostr")},
+        gaa={"cite": "Robert L. Miller, <em>M.I. Hummel: The Golden Anniversary Album</em> (New York: Portfolio Press, 1984), pp. 18–19", "url": ia("mihummelgoldenan0000mill")},
+        hot={"cite": "John F. Hotchkiss, <em>Hummel Art</em> (Des Moines: Wallace-Homestead, 1978) and <em>Hummel Art II</em> (about 1981)", "url": ia("hummelart00hotc")},
+        kov={"cite": "Ralph and Terry Kovel, <em>The Kovels' Antiques &amp; Collectibles Price List</em> (New York: Crown, 1983, 1996 and 1998 editions), Hummel entry", "url": ia("kovelsantiquescokove00kove")},
+        won={"cite": "Lawrence L. Wonsch, <em>Hummel Copycats with Values</em> (Radnor: Wallace-Homestead, 1987)", "url": ia("isbn_9780964982000")},
+        cce={"cite": "Library of Congress, Copyright Office, <em>Catalog of Copyright Entries</em>, third series, vol. 6, works of art, 1952: W. Goebel, Oeslau bei Coburg (U.S. zone), December 27, 1951", "url": ia("catalogofcopyrig36711libr")},
+        loc={"cite": "“New firm picks up shards of Hummel figurine production,” <em>The Local</em> (Germany), February 5, 2009", "url": "https://www.thelocal.de/20090205/17235"},
+    ),
+    cta="Photograph the base of the figurine, with the mold number and the trademark in focus. The Advisor reads the trademark, gives the years each source assigns to it, and keeps them with the figurine's record.",
+    faqs=[
+        ("How do I date my Hummel figurine?",
+         "By the Goebel trademark on the base: a crown to about 1950, a full bee to 1959, a stylized bee to 1972, the last bee with Goebel 1972 to 1979, no bee 1979 to about 1991, and later marks after that {src:off,luc}."),
+        ("What is TMK?",
+         "Short for trademark. Collectors number the Goebel marks from TMK-1, the crown, to TMK-8, the millennium bee {src:off,luc}."),
+        ("What does West Germany on my Hummel mean?",
+         "That it was made before German reunification; from 1991 the marks say Germany {src:alb,luc}."),
+        ("Is every Goebel figurine a Hummel?",
+         "No. Goebel used the same marks on many other figures; a Hummel also carries the M. I. Hummel signature {src:luc,hot}."),
+    ],
+)
+
+MAKERS = [WELLER, ROSEVILLE, MEISSEN, HUMMEL, LIMOGES, COPENHAGEN, NIPPON, NORITAKE]
