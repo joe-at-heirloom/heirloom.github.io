@@ -1,0 +1,95 @@
+/* The marks reference (/marks/): lookups, date-letter grids and stamp photos.
+   Loaded after styles.css and guide.css. */
+
+.finder {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin: 10px 0 30px;
+  box-shadow: var(--shadow-sm);
+}
+.finder__row { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: flex-end; }
+.finder label { display: flex; flex-direction: column; gap: 6px; font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary); }
+.finder label.grow { flex: 1 1 240px; }
+.finder input, .finder select {
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  min-width: 120px;
+}
+.finder input:focus, .finder select:focus { outline: 2px solid var(--color-primary); outline-offset: 1px; border-color: transparent; }
+.finder__results { margin-top: 16px; }
+.finder__results p { font-size: 0.96rem; margin-bottom: 8px; }
+.finder__hint { color: var(--color-text-secondary); font-size: 0.92rem !important; }
+.hits { list-style: none; margin: 6px 0 10px !important; display: grid; gap: 8px; }
+.hits li {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-alt);
+  margin: 0;
+  font-size: 0.95rem;
+}
+.hits small { color: var(--color-text-secondary); }
+.hits .big { font-family: var(--font-serif); font-size: 1.5rem; min-width: 4.5ch; color: var(--color-text); }
+.hits .dl { font-size: 2rem; min-width: 1.4em; text-align: center; }
+.alike summary { cursor: pointer; font-size: 0.9rem; color: var(--color-text-secondary); margin-top: 6px; }
+
+/* Date letters, set in a matching typeface. */
+.dl { font-family: var(--font-serif); line-height: 1; color: var(--color-text); }
+.dl--gothic, .dl--court_hand { font-family: 'UnifrakturMaguntia', 'Newsreader', serif; }
+.dl--script { font-family: 'Pinyon Script', 'Newsreader', cursive; }
+.dl--italic { font-style: italic; }
+.dl--block { font-family: var(--font-sans); font-weight: 700; }
+
+.cycle { margin: 26px 0 8px; }
+.cycle h3 { font-family: var(--font-serif); font-weight: 500; font-size: 1.25rem; margin: 0 0 10px; }
+.cycle__kind { font-size: 0.85rem; color: var(--color-text-secondary); margin: -6px 0 10px !important; }
+.dlg { list-style: none; margin: 0 !important; display: grid; grid-template-columns: repeat(auto-fill, minmax(78px, 1fr)); gap: 6px; }
+.dlc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 4px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  margin: 0 !important;
+}
+.dlc .dl { font-size: 1.9rem; }
+.dlc__year { font-size: 0.78rem; color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.dlc__note { display: none; }
+.dlc--flag { border-color: #e6b8a6; background: #fdf6f2; }
+.dlc--flag .dlc__year::after { content: " *"; color: #C23610; }
+
+.rules li { margin-bottom: 10px; }
+.rules em { display: block; font-style: normal; color: var(--color-text-secondary); font-size: 0.94rem; margin-top: 2px; }
+.sources li { font-size: 0.92rem; }
+
+/* Stamp photographs: real photos cut along their outline. */
+.stamps { margin: 22px 0 28px; }
+.stamps__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  align-items: flex-end;
+  padding: 20px 18px 14px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, #f3f1ed, #ebe8e2);
+}
+.stamp { display: flex; flex-direction: column; align-items: center; gap: 8px; max-width: 160px; }
+.stamp img { height: 96px; width: auto; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.18)); }
+.stamp figcaption { font-size: 0.78rem; color: var(--color-text-secondary); text-align: center; line-height: 1.3; }
+.stamps__caption { font-size: 0.9rem; color: var(--color-text-secondary); margin: 8px 2px 0 !important; }
+.stamps__credit { display: block; font-size: 0.78rem; color: var(--color-text-muted); margin-top: 2px; }
+.stamps__credit a { color: inherit !important; }
+@media (max-width: 600px) { .stamp img { height: 72px; } .stamps__row { gap: 10px 12px; padding: 14px 12px 10px; } }

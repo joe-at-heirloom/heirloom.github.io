@@ -186,7 +186,7 @@ const HOMEPAGE_WORD_RULES = [
   { pattern: /\bAndroid\b|\bto follow\b/i, why: 'Android has no date (D61)' },
   {
     // The same list as the app repo's docs/submission/check-store-copy.mjs (BRITISH), plus "labelled".
-    pattern: /\b(?!catalogu(?:e|er|ers|es|ed|ing)\b)(catalogu\w*|colour\w*|favour\w*|\w*organis\w*|\w*recognis\w*|jewellery|centre|licence|analys(e|ed|ing)|grey|cheque|honour\w*|behaviour\w*|neighbour\w*|travell\w*|\w*labell\w*)\b/i,
+    pattern: /\b(?!catalogu(?:e|er|ers|es|ed|ing)\b)(catalogu\w*|colour\w*|favour\w*|\w*organis\w*|\w*recognis\w*|jewellery|centre(?! Street)|licence|analys(e|ed|ing)|grey|cheque|honour\w*|behaviour\w*|neighbour\w*|travell\w*|\w*labell\w*)\b/i,
     why: 'American spelling (docs/VOICE.md); "catalogue", "cataloguer" and "cataloguing" are the trade\'s, and Joe\'s (D72)',
   },
 ];
@@ -196,7 +196,7 @@ const HOMEPAGE_WORD_RULES = [
  * (docs/VOICE.md, "The sentences"): a capital inside one is a name or it is
  * wrong. These are the names the page uses.
  */
-const TITLE_NAMES = new Set(['Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
+const TITLE_NAMES = new Set(['Bend', 'Britannia', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings']);
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
@@ -237,6 +237,7 @@ function visibleText(html) {
   const metas = [...html.matchAll(/<meta[^>]+content="([^"]*)"/g)].map((m) => m[1]);
   const title = /<title>([^<]*)<\/title>/.exec(html)?.[1] ?? '';
   const body = html
+    .replace(/<!--copy-check:skip-->[\s\S]*?<!--\/copy-check:skip-->/g, ' ')
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<script[\s\S]*?<\/script>/g, ' ')
     .replace(/<style[\s\S]*?<\/style>/g, ' ')
@@ -304,6 +305,14 @@ const GUIDE_PAGES = [
   'silver-hallmarks.html',
   'family-heirlooms.html',
   'guides.html',
+  'marks/index.html',
+  'marks/london-date-letters.html',
+  'marks/birmingham-date-letters.html',
+  'marks/sheffield-date-letters.html',
+  'marks/chester-date-letters.html',
+  'marks/singer-serial-numbers.html',
+  'marks/pocket-watch-serial-numbers.html',
+  'marks/leica-serial-numbers.html',
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');
