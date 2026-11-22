@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://heirloomapp.io/</loc></url>
-  <url><loc>https://heirloomapp.io/support</loc></url>
+  <url><loc>https://heirloomapp.io/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://heirloomapp.io/home-inventory-app</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://heirloomapp.io/antique-identifier-app</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://heirloomapp.io/guides</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://heirloomapp.io/home-inventory-checklist</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://heirloomapp.io/silver-hallmarks</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://heirloomapp.io/family-heirlooms</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://heirloomapp.io/support</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://heirloomapp.io/privacy</loc></url>
   <url><loc>https://heirloomapp.io/terms</loc></url>
 </urlset>

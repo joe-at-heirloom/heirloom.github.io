@@ -4,26 +4,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- Navbar scroll effect ---
+  // The menu (scroll frosting, phone sheet) lives in nav.js; the anchors below
+  // still measure the bar.
   const nav = document.getElementById('nav');
-  const onScroll = () => {
-    nav.classList.toggle('nav--scrolled', window.scrollY > 40);
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  // --- Mobile nav toggle ---
-  const navToggle = document.getElementById('navToggle');
-  if (navToggle) {
-    navToggle.addEventListener('click', () => {
-      nav.classList.toggle('nav--open');
-    });
-    document.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('nav--open');
-      });
-    });
-  }
 
   // --- Hero: the leader from the watch case to the loupe ---
   // Measured from the layout rather than drawn by hand, so it meets the loupe

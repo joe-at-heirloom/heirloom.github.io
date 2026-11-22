@@ -1,0 +1,31 @@
+# Heirloom
+
+> Heirloom is a free home inventory app for iPhone and the web (heirloomapp.io), made by The Peninsular Company, LLC. It keeps a private record of what you own, room by room: each item's photos, what is known about it from its marks, its story in the owner's own words, and a value only with its source. It prepares a PDF inventory, room by room, for an insurance conversation or a family record.
+
+Key facts:
+
+- Price: free. iPhone app in the US App Store (https://apps.apple.com/us/app/id6754576251); Heirloom on the web works everywhere at https://web.heirloomapp.io.
+- Two ways in: photograph an item, or write down what you already know. Both are full records.
+- Heirloom Advisor (optional, asks first) reads marks, labels, materials and condition in photos, dates some hallmarks, pottery marks and serial numbers from published tables, and says plainly what it cannot tell. It never decides whether an item is genuine.
+- Values: a figure is shown only with its source, and the owner's own figure comes first. Estimates are informational only and are not professional appraisals. Many items have no market value, and a record is complete without one.
+- The insurer PDF is an inventory aid, not an appraisal: replacement figures are the ones the owner recorded, and the document does not confirm coverage.
+- Heirloom is not a marketplace: it lists nothing, and nothing is put up for sale.
+- Privacy: records are scoped to the account, photos are in private storage, family sharing is by invitation with a named role, and everything can be exported (CSV, ZIP, JSON) or deleted.
+- Specialists, sale conversations, sold prices and Heirloom's price estimates are offered in the United States only for now.
+
+## Product pages
+
+- [Home inventory app](https://heirloomapp.io/home-inventory-app): room-by-room inventory and the PDF for an insurer
+- [Antique identifier app](https://heirloomapp.io/antique-identifier-app): what the Advisor reads in a photo of an antique, and what it cannot tell
+
+## Guides
+
+- [Home inventory checklist](https://heirloomapp.io/home-inventory-checklist): room by room, what to record, and a free CSV template
+- [Silver hallmarks](https://heirloomapp.io/silver-hallmarks): reading British, American and continental silver marks, and plate marks
+- [Family heirlooms](https://heirloomapp.io/family-heirlooms): recording an heirloom's story, its paperwork, and who it is meant for
+
+## Help and policies
+
+- [Support](https://heirloomapp.io/support)
+- [Privacy Policy](https://heirloomapp.io/privacy)
+- [Terms of Service](https://heirloomapp.io/terms)

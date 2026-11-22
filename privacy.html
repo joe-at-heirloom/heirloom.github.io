@@ -20,12 +20,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="nav nav--scrolled" id="nav">
+  <header class="nav nav--solid" id="nav">
     <div class="nav__container">
-      <a href="/" class="nav__logo"><img src="logo.svg" alt="Heirloom" height="32"></a>
-      <div class="nav__actions"><a href="/" class="btn btn--outline">Back to Home</a></div>
+      <a href="/" class="nav__logo"><img src="/logo.svg" alt="Heirloom" width="156" height="28"></a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="/#how" class="nav__link">How it works</a>
+        <a href="/home-inventory-app" class="nav__link">Home inventory</a>
+        <a href="/antique-identifier-app" class="nav__link">Antiques</a>
+        <div class="nav__group">
+          <a href="/guides" class="nav__link">Guides<svg class="nav__chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></a>
+          <div class="nav__panel">
+            <a class="nav__panel-item" href="/home-inventory-checklist"><span class="nav__panel-title">Home inventory checklist</span><span class="nav__panel-desc">Room by room, with a free spreadsheet template</span></a>
+            <a class="nav__panel-item" href="/silver-hallmarks"><span class="nav__panel-title">Reading silver hallmarks</span><span class="nav__panel-desc">British, American and continental marks, and plate</span></a>
+            <a class="nav__panel-item" href="/family-heirlooms"><span class="nav__panel-title">Documenting family heirlooms</span><span class="nav__panel-desc">The story, the paperwork, and who each one is for</span></a>
+            <a class="nav__panel-all" href="/guides">All guides &rarr;</a>
+          </div>
+        </div>
+      </nav>
+      <div class="nav__actions">
+        <a href="https://web.heirloomapp.io" class="nav__signin">Sign in</a>
+        <a href="https://apps.apple.com/us/app/id6754576251" class="btn btn--primary nav__cta">Get Heirloom</a>
+      </div>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navSheet" aria-label="Open menu"><span></span><span></span></button>
     </div>
-  </nav>
+    <div class="nav__sheet" id="navSheet" hidden>
+      <nav aria-label="Menu">
+        <ul class="nav__sheet-links">
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/home-inventory-app">Home inventory</a></li>
+          <li><a href="/antique-identifier-app">Antiques</a></li>
+          <li><a href="/guides">Guides</a></li>
+        </ul>
+        <p class="nav__sheet-heading">From the guides</p>
+        <ul class="nav__sheet-guides">
+          <li><a href="/home-inventory-checklist">Home inventory checklist</a></li>
+          <li><a href="/silver-hallmarks">Reading silver hallmarks</a></li>
+          <li><a href="/family-heirlooms">Documenting family heirlooms</a></li>
+        </ul>
+      </nav>
+      <div class="nav__sheet-foot">
+        <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251"><img class="store-badge__art" src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52"></a>
+        <a class="btn btn--outline" href="https://web.heirloomapp.io">Sign in on the web</a>
+      </div>
+    </div>
+  </header>
   <main class="legal-page">
     <h1>Privacy Policy</h1>
     <p><strong>Effective date:</strong> October 30, 2026 · <strong>Last updated:</strong> October 30, 2026</p>
@@ -207,5 +245,6 @@
       </div>
     </div>
   </footer>
+  <script src="/nav.js" defer></script>
 </body>
 </html>

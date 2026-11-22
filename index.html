@@ -11,8 +11,8 @@
     gtag('config', 'G-69Q6D26EG0');
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heirloom — Know What You Own</title>
-  <meta name="description" content="Know what you own. Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
+  <title>Heirloom — Home Inventory App for Art, Antiques &amp; Keepsakes</title>
+  <meta name="description" content="A free home inventory app for iPhone and the web: photograph your home room by room, read what each item’s marks say, and make a PDF for your insurer or family.">
   <link rel="canonical" href="https://heirloomapp.io/">
   <!-- The app's own icon: the wordmark is unreadable at a tab's size. -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -26,8 +26,8 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Heirloom">
   <meta property="og:url" content="https://heirloomapp.io/">
-  <meta property="og:title" content="Heirloom — Know What You Own">
-  <meta property="og:description" content="Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.">
+  <meta property="og:title" content="Heirloom — Know what you own: a home inventory app, room by room">
+  <meta property="og:description" content="A free home inventory app for iPhone and the web: photograph your home room by room, read what each item’s marks say, and make a PDF for your insurer or family.">
   <meta property="og:image" content="https://heirloomapp.io/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -36,19 +36,147 @@
   <meta name="twitter:image" content="https://heirloomapp.io/og-image.jpg">
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "Heirloom",
-    "url": "https://heirloomapp.io/",
-    "description": "Photograph an item, or write down one you already know. Heirloom gathers what is known about it and keeps its story for the people you trust.",
-    "operatingSystem": "iOS",
-    "applicationCategory": "LifestyleApplication",
-    "installUrl": "https://apps.apple.com/us/app/id6754576251",
-    "image": "https://heirloomapp.io/og-image.jpg",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "publisher": { "@type": "Organization", "name": "The Peninsular Company, LLC" }
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://heirloomapp.io/#org",
+      "name": "Heirloom",
+      "legalName": "The Peninsular Company, LLC",
+      "url": "https://heirloomapp.io/",
+      "logo": "https://heirloomapp.io/icon-192.png",
+      "email": "support@heirloomapp.io",
+      "sameAs": [
+        "https://apps.apple.com/us/app/id6754576251"
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "The Peninsular Company, LLC",
+        "url": "https://thepeninsularcompany.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://heirloomapp.io/#website",
+      "name": "Heirloom",
+      "url": "https://heirloomapp.io/",
+      "publisher": {
+        "@id": "https://heirloomapp.io/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://heirloomapp.io/#app",
+      "name": "Heirloom",
+      "alternateName": "Heirloom: Know What You Own",
+      "url": "https://heirloomapp.io/",
+      "description": "A free home inventory app for iPhone and the web: photograph your home room by room, read what each item's marks say, keep its story, and prepare a PDF inventory for an insurer or a family record.",
+      "operatingSystem": "iOS, Web",
+      "applicationCategory": "LifestyleApplication",
+      "installUrl": "https://apps.apple.com/us/app/id6754576251",
+      "image": "https://heirloomapp.io/og-image.jpg",
+      "screenshot": [
+        "https://heirloomapp.io/screens/01-rooms.webp",
+        "https://heirloomapp.io/screens/03-insurance-pdf.webp",
+        "https://heirloomapp.io/screens/06-value.webp"
+      ],
+      "featureList": [
+        "Home inventory, room by room",
+        "PDF inventory for an insurer, with exhibits",
+        "Reads marks, labels and materials in photos",
+        "Dates some hallmarks, pottery marks and serial numbers from published tables",
+        "Values shown only with their source",
+        "Family sharing by invitation",
+        "Export as CSV, ZIP or JSON"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://heirloomapp.io/#org"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://heirloomapp.io/",
+      "url": "https://heirloomapp.io/",
+      "name": "Heirloom — Home Inventory App for Art, Antiques & Keepsakes",
+      "description": "A free home inventory app for iPhone and the web: photograph your home room by room, read what each item’s marks say, and make a PDF for your insurer or family.",
+      "isPartOf": {
+        "@id": "https://heirloomapp.io/#website"
+      },
+      "about": {
+        "@id": "https://heirloomapp.io/#app"
+      },
+      "primaryImageOfPage": "https://heirloomapp.io/og-image.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://heirloomapp.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Heirloom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Heirloom is a free home inventory app for iPhone and the web. It keeps a private record of what you own, room by room: each item’s photos, what is known about it from its marks, its story in your own words, and a value only with its source. It is made by The Peninsular Company, LLC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Heirloom free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Heirloom is free to download from the US App Store and free to use on the web at web.heirloomapp.io."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Heirloom make a home inventory for my insurer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Walk your home room by room, and Heirloom prepares a PDF from the items you choose: photos, serial numbers, measurements, condition, and each replacement value with where it comes from, with receipts numbered as exhibits. It is an inventory aid, not an appraisal. How the home inventory works."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Heirloom tell me what my antique is?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often it can tell you part of it. If you allow it, Heirloom Advisor reads the marks, labels, materials and condition in your photos, and dates some hallmarks, pottery marks and serial numbers from published tables. It says plainly what it cannot tell, and it never decides whether an item is genuine. What the Advisor reads in a photo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Heirloom appraise my items?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Value estimates are informational only and are not professional appraisals. An estimate appears only when there is evidence for one, and many items have no market value. In the United States, Heirloom can introduce you to a specialist you choose, for a written appraisal from an independent professional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can see my records?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only you, and the relatives you invite, in the role you choose. You can note who each item is meant for; that list is private and grants no one access to your account. Heirloom lists nothing, and nothing is put up for sale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Heirloom available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at web.heirloomapp.io."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <!-- Lets the hero hold its drawing back until the 3D watch has had its chance (hero-watch.js). -->
@@ -56,32 +184,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="guide.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
+  <!-- Navigation (nav.js) -->
+  <header class="nav" id="nav">
     <div class="nav__container">
-      <a href="#" class="nav__logo">
-        <img src="logo.svg" alt="Heirloom" height="32">
-      </a>
-      <div class="nav__links" id="navLinks">
-        <a href="#two-ways" class="nav__link">Two ways in</a>
-        <a href="#how" class="nav__link">How it works</a>
-        <a href="#features" class="nav__link">What it does</a>
-        <a href="#who" class="nav__link">Who it's for</a>
-      </div>
+      <a href="/" class="nav__logo"><img src="/logo.svg" alt="Heirloom" width="156" height="28"></a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="/#how" class="nav__link">How it works</a>
+        <a href="/home-inventory-app" class="nav__link">Home inventory</a>
+        <a href="/antique-identifier-app" class="nav__link">Antiques</a>
+        <div class="nav__group">
+          <a href="/guides" class="nav__link">Guides<svg class="nav__chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></a>
+          <div class="nav__panel">
+            <a class="nav__panel-item" href="/home-inventory-checklist"><span class="nav__panel-title">Home inventory checklist</span><span class="nav__panel-desc">Room by room, with a free spreadsheet template</span></a>
+            <a class="nav__panel-item" href="/silver-hallmarks"><span class="nav__panel-title">Reading silver hallmarks</span><span class="nav__panel-desc">British, American and continental marks, and plate</span></a>
+            <a class="nav__panel-item" href="/family-heirlooms"><span class="nav__panel-title">Documenting family heirlooms</span><span class="nav__panel-desc">The story, the paperwork, and who each one is for</span></a>
+            <a class="nav__panel-all" href="/guides">All guides &rarr;</a>
+          </div>
+        </div>
+      </nav>
       <div class="nav__actions">
-        <a href="#download" class="btn btn--primary">Get Heirloom</a>
+        <a href="https://web.heirloomapp.io" class="nav__signin">Sign in</a>
+        <a href="https://apps.apple.com/us/app/id6754576251" class="btn btn--primary nav__cta">Get Heirloom</a>
       </div>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navSheet" aria-label="Open menu"><span></span><span></span></button>
     </div>
-  </nav>
+    <div class="nav__sheet" id="navSheet" hidden>
+      <nav aria-label="Menu">
+        <ul class="nav__sheet-links">
+          <li><a href="/#how">How it works</a></li>
+          <li><a href="/home-inventory-app">Home inventory</a></li>
+          <li><a href="/antique-identifier-app">Antiques</a></li>
+          <li><a href="/guides">Guides</a></li>
+        </ul>
+        <p class="nav__sheet-heading">From the guides</p>
+        <ul class="nav__sheet-guides">
+          <li><a href="/home-inventory-checklist">Home inventory checklist</a></li>
+          <li><a href="/silver-hallmarks">Reading silver hallmarks</a></li>
+          <li><a href="/family-heirlooms">Documenting family heirlooms</a></li>
+        </ul>
+      </nav>
+      <div class="nav__sheet-foot">
+        <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251"><img class="store-badge__art" src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52"></a>
+        <a class="btn btn--outline" href="https://web.heirloomapp.io">Sign in on the web</a>
+      </div>
+    </div>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero" aria-labelledby="hero-title">
@@ -105,7 +257,7 @@
     </div>
     <div class="container hero__container">
       <div class="hero__content">
-        <p class="hero__kicker"><span class="hero__kicker-dot" aria-hidden="true"></span>Now on iPhone and the web</p>
+        <p class="hero__kicker"><span class="hero__kicker-dot" aria-hidden="true"></span>The home inventory app, on iPhone and the web</p>
         <h1 class="hero__title" id="hero-title">
           <span class="hero__line"><span>Know what</span></span>
           <span class="hero__line"><span>you own<span class="hero__stop">.</span></span></span>
@@ -700,6 +852,47 @@
   </section>
 
   <!-- CTA / Download Section: the App Store badge and the US-only line (D31, D57) -->
+  <!-- Questions: the short answers search engines and assistants quote (FAQPage in the head says the same). -->
+  <section class="home-faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Questions</p>
+        <h2 class="section-header__title">Questions people ask</h2>
+      </div>
+      <div class="faq home-faq__list">
+        <details>
+          <summary>What is Heirloom?</summary>
+          <div><p>Heirloom is a free home inventory app for iPhone and the web. It keeps a private record of what you own, room by room: each item&rsquo;s photos, what is known about it from its marks, its story in your own words, and a value only with its source. It is made by The Peninsular Company, LLC.</p></div>
+        </details>
+        <details>
+          <summary>Is Heirloom free?</summary>
+          <div><p>Yes. Heirloom is free to download from the US App Store and free to use on the web at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p></div>
+        </details>
+        <details>
+          <summary>Can Heirloom make a home inventory for my insurer?</summary>
+          <div><p>Yes. Walk your home room by room, and Heirloom prepares a PDF from the items you choose: photos, serial numbers, measurements, condition, and each replacement value with where it comes from, with receipts numbered as exhibits. It is an inventory aid, not an appraisal. <a href="/home-inventory-app">How the home inventory works</a>.</p></div>
+        </details>
+        <details>
+          <summary>Can Heirloom tell me what my antique is?</summary>
+          <div><p>Often it can tell you part of it. If you allow it, Heirloom Advisor reads the marks, labels, materials and condition in your photos, and dates some hallmarks, pottery marks and serial numbers from published tables. It says plainly what it cannot tell, and it never decides whether an item is genuine. <a href="/antique-identifier-app">What the Advisor reads in a photo</a>.</p></div>
+        </details>
+        <details>
+          <summary>Does Heirloom appraise my items?</summary>
+          <div><p>No. Value estimates are informational only and are not professional appraisals. An estimate appears only when there is evidence for one, and many items have no market value. In the United States, Heirloom can introduce you to a specialist you choose, for a written appraisal from an independent professional.</p></div>
+        </details>
+        <details>
+          <summary>Who can see my records?</summary>
+          <div><p>Only you, and the relatives you invite, in the role you choose. You can note who each item is meant for; that list is private and grants no one access to your account. Heirloom lists nothing, and nothing is put up for sale.</p></div>
+        </details>
+        <details>
+          <summary>Where is Heirloom available?</summary>
+          <div><p>The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at web.heirloomapp.io.</p></div>
+        </details>
+      </div>
+      <p class="home-faq__more">More in the guides: <a href="/home-inventory-checklist">a home inventory checklist</a>, <a href="/silver-hallmarks">reading silver hallmarks</a> and <a href="/family-heirlooms">documenting family heirlooms</a>.</p>
+    </div>
+  </section>
+
   <section class="cta" id="download">
     <div class="container">
       <div class="cta__inner">
@@ -729,11 +922,20 @@
           <a href="/terms" class="footer__link">Terms of Service</a>
           <a href="/support" class="footer__link">Support</a>
         </nav>
+        <nav class="footer__guides" aria-label="Guides">
+          <a href="/home-inventory-app" class="footer__link">Home inventory app</a>
+          <a href="/antique-identifier-app" class="footer__link">Antique identifier app</a>
+          <a href="/home-inventory-checklist" class="footer__link">Home inventory checklist</a>
+          <a href="/silver-hallmarks" class="footer__link">Silver hallmarks</a>
+          <a href="/family-heirlooms" class="footer__link">Family heirlooms</a>
+          <a href="/guides" class="footer__link">All guides</a>
+        </nav>
         <p class="footer__copy">&copy; <!--pc:year-->2026<!--/pc:year--> <a href="https://thepeninsularcompany.com"><!--pc:name-->The Peninsular Company, LLC<!--/pc:name--></a>. All rights reserved.<br><span class="footer__note">Value estimates are informational only and are not professional appraisals. Many items have no market value, and a record is complete without one. Specialists, sale conversations, sold prices and Heirloom&rsquo;s price estimates are offered in the United States only for now.</span></p>
       </div>
     </div>
   </footer>
 
+  <script src="nav.js"></script>
   <script src="main.js"></script>
   <script type="module" src="hero-watch.js"></script>
 </body>

@@ -294,6 +294,29 @@ checkClaims('README.md', readFileSync(resolve(siteRoot, 'README.md'), 'utf8'));
 // The support page (the App Store's Support URL) answers questions about the
 // app in its own words, so it is held to the same claims.
 checkClaims('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.html'), 'utf8')));
+// The guide and product pages (search landing pages, Nov 2026) describe the
+// same app, so they are held to the same claims, the homepage's words and its
+// sentence case.
+const GUIDE_PAGES = [
+  'home-inventory-app.html',
+  'antique-identifier-app.html',
+  'home-inventory-checklist.html',
+  'silver-hallmarks.html',
+  'family-heirlooms.html',
+  'guides.html',
+];
+for (const file of GUIDE_PAGES) {
+  const html = readFileSync(resolve(siteRoot, file), 'utf8');
+  const text = visibleText(html);
+  checkClaims(file, text);
+  for (const { pattern, why } of HOMEPAGE_WORD_RULES) {
+    const g = new RegExp(pattern.source, pattern.flags.includes('g') ? pattern.flags : `${pattern.flags}g`);
+    for (const m of text.matchAll(g)) failures.push(`${file} says "${m[0]}" — ${why}`);
+  }
+  for (const { word, in: title } of titleCaseHits(html)) failures.push(`${file} title case: "${word}" in "${title}" — sentence case (docs/VOICE.md)`);
+  if (!/\bThe iPhone app is in the US App Store for now\./.test(text)) failures.push(`${file} is missing the US-only line (D57)`);
+  if (!/not professional appraisals/i.test(text)) failures.push(`${file} is missing the footer's appraisal caveat`);
+}
 
 // 2. Qualifications the homepage must keep.
 for (const { pattern, why } of REQUIRED_ON_HOMEPAGE) {
