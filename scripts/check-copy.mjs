@@ -323,6 +323,12 @@ const GUIDE_PAGES = [
   'marks/community-plate-oneida.html',
   'marks/holmes-and-edwards.html',
   'marks/international-silver-co.html',
+
+  'marks/is-it-real-silver.html',
+  'marks/silver-purity-marks.html',
+  'marks/german-silver.html',
+  'marks/coin-silver.html',
+  'marks/britannia-silver.html',
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');
