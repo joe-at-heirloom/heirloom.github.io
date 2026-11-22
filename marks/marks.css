@@ -101,3 +101,10 @@
 .pro-note p { margin: 0; font-size: 0.95rem; color: var(--color-text-secondary); }
 .pro-note strong { color: var(--color-text); }
 .finder [hidden] { display: none !important; }
+
+/* Silver-plate maker pages: a mark stamped along a handle is a long strip, so it is shown as a photo, not a cut-out stamp. */
+.markphoto { margin: 18px 0 26px; }
+.markphoto img { display: block; width: 100%; max-width: 640px; height: auto; border-radius: var(--radius-md); border: 1px solid var(--color-border); background: #ebe8e2; }
+.markphoto figcaption { font-size: 0.9rem; color: var(--color-text-secondary); margin-top: 8px; max-width: 640px; }
+.markphoto .stamps__credit a { color: inherit !important; }
+.guide table.table--two { min-width: 0; }
