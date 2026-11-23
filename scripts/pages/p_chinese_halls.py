@@ -98,6 +98,10 @@ def one(r, key):
     return " <span class=\"one-src\">(one source)</span>" if key in (r.get("single_source_fields") or []) else ""
 
 
+def has(r, key):
+    return bool(r.get(key)) and key not in (r.get("unsourced_fields") or [])
+
+
 def card(r, refs):
     pics = "".join(img_html(im) for im in images_for(r))
     import unicodedata
@@ -105,15 +109,17 @@ def card(r, refs):
     keys = " ".join(sorted({re.sub(r"[^a-z]", "", flat(r["pinyin"])), r["chars"], *r.get("variants", []),
                             re.sub(r"[^a-z]", "", flat(r.get("wade_giles"))), *[x for x in re.findall(r"[a-z]+", flat(clean(r.get("meaning")))) if len(x) > 3]} - {""}))
     facts = []
-    if r.get("owner"):
-        facts.append(f'<p><strong>Whose:</strong> {e(w(clean(r["owner"])))}{(", " + e(w(r["owner_dates"]))) if r.get("owner_dates") else ""}{refs(pf(r, "owner"))}{one(r, "owner")}</p>')
-    if r.get("periods"):
+    if has(r, "owner"):
+        facts.append(f'<p><strong>Whose:</strong> {e(w(clean(r["owner"])))}{(", " + e(w(r["owner_dates"]))) if has(r, "owner_dates") else ""}{refs(pf(r, "owner"))}{one(r, "owner")}</p>')
+    if has(r, "periods"):
         facts.append(f'<p><strong>On wares of:</strong> {periods(r)}{refs(pf(r, "periods"))}{one(r, "periods")}</p>')
-    if r.get("script") or r.get("placement_colour"):
-        facts.append(f'<p><strong>How it is written:</strong> {e(w(" ".join(x for x in [r.get("script", ""), r.get("placement_colour", "")] if x)))}{refs(pf(r, "script"))}{one(r, "script")}</p>')
-    if r.get("wares"):
+    how = [r[k] for k in ("script", "placement_colour") if has(r, k)]
+    if how:
+        ids = [i for k in ("script", "placement_colour") if has(r, k) for i in pf(r, k)]
+        facts.append(f'<p><strong>How it is written:</strong> {e(w(" ".join(how)))}{refs(ids)}{one(r, "script") if has(r, "script") else one(r, "placement_colour")}</p>')
+    if has(r, "wares"):
         facts.append(f'<p><strong>Found on:</strong> {e(w(r["wares"]))}{refs(pf(r, "wares"))}{one(r, "wares")}</p>')
-    if r.get("later_copies_note") and not r["later_copies_note"].lower().startswith("none"):
+    if has(r, "later_copies_note") and not re.match(r"(none|no source)", r["later_copies_note"].lower()):
         facts.append(f'<p><strong>Later copies:</strong> {e(w(r["later_copies_note"]))}{refs(pf(r, "later_copies_note"))}{one(r, "later_copies_note")}</p>')
     return (f'<section class="mk hall" id="{anchor(r)}" data-hall data-kind="{e(r.get("kind", ""))}" data-keys="{e(keys)}">'
             f'<div class="mk__text"><h3><span lang="zh-Hant" class="hall__chars">{r["chars"]}</span></h3><p class="hall__pinyin">{e(r["pinyin"])}</p>'
@@ -126,6 +132,7 @@ def hub():
     groups = []
     strong = [r for r in ROWS if len(r.get("sources", [])) >= 2]
     weak = [r for r in ROWS if len(r.get("sources", [])) < 2]
+    # A fact with no source recorded is not shown (has()); the meaning is a translation of the characters.
     for k in ORDER:
         rows = [r for r in strong if r.get("kind") == k]
         if rows:
