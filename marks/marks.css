@@ -245,3 +245,11 @@ a.reign-tile:hover { border-color: var(--color-primary); }
 .cm-fig .stamps__credit { font-size: 0.74rem; }
 .hall[hidden] { display: none; }
 .hall__chars { font-family: 'LXGW WenKai TC', 'Noto Serif TC', serif; color: #23468c; margin-right: 6px; }
+.one-src { font-size: 0.82rem; color: var(--color-text-muted); }
+.hall__pinyin { margin: -6px 0 4px !important; font-size: 0.95rem; color: var(--color-text-secondary); font-style: italic; }
+.hall h3 { margin-bottom: 8px; }
+.hall__chars { font-size: 1.5rem; }
+@media (max-width: 640px) { .hall { grid-template-columns: minmax(0, 1fr); } }
+.hall .cm-fig img { max-width: 100%; height: auto; }
+.sources li { overflow-wrap: anywhere; }
+.hall .refs { white-space: normal; overflow-wrap: anywhere; }

@@ -13,7 +13,7 @@ import re
 from shell import *
 import tables
 from p_marks import MID, cta, e
-from p_chinese import Refs, w, font_head, wanted_chars, HUB as REIGN_HUB
+from p_chinese import Refs, w as _w, font_head, wanted_chars, HUB as REIGN_HUB
 
 T = tables.load("chinese")["systems"].get("hall_marks", {"rows": [], "sources": [], "caveats": []})
 ROWS = T["rows"]
@@ -25,9 +25,25 @@ for _f in sorted(os.listdir(IMG_DIR)) if os.path.isdir(IMG_DIR) else []:
         IMAGES += json.load(open(os.path.join(IMG_DIR, _f)))
 
 HUB = "/marks/chinese-hall-marks"
-KIND = {"imperial": "Imperial halls and palaces", "private": "Princes, officials and scholars",
-        "dealer": "Dealers and makers", "republic": "Republic-period halls and studios"}
-ORDER = ["imperial", "private", "dealer", "republic"]
+
+
+def w(text):
+    return us(_w(text or ""))
+KIND = {"imperial": "Emperors, empresses and palace buildings", "private": "Princes, officials, scholars and private studios",
+        "dealer": "Dealers and makers", "republic": "Republic-period halls", "painter": "Jingdezhen painters’ studios, Republic period"}
+ORDER = ["imperial", "private", "dealer", "republic", "painter"]
+
+
+def us(text):
+    """American spelling for the research text."""
+    for a, b in (("colours", "colors"), ("Colours", "Colors"), ("colour", "color"), ("Colour", "Color"), ("favour", "favor"), ("honour", "honor"), ("Honour", "Honor"), ("centre", "center")):
+        text = text.replace(a, b)
+    return re.sub(r"not every item with this mark need be", "items with this mark need not all be", text)
+
+
+def clean(text):
+    """Drop research notes in parentheses that name a source rather than say something."""
+    return re.sub(r"\s*\((?:[^()]*\b(?:translation|per |Sotheby|Christie|Peng|saved source|catalogue|Davison|reported)\b[^()]*)\)", "", text or "").strip()
 
 
 class HallRefs(Refs):
@@ -54,11 +70,14 @@ def pf(r, key):
 
 
 def anchor(r):
-    return re.sub(r"[^a-z0-9]+", "-", r["pinyin"].lower()).strip("-")
+    import unicodedata
+    flat = unicodedata.normalize("NFKD", r["pinyin"]).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", "-", flat.split(";")[0]).strip("-")
 
 
 def images_for(r):
-    return [im for im in IMAGES if im.get("chars") == r["chars"] or im.get("hall") == r["pinyin"]]
+    names = {r["chars"], *r.get("variants", [])}
+    return [im for im in IMAGES if im.get("chars") in names]
 
 
 def img_html(im):
@@ -72,37 +91,47 @@ def img_html(im):
 
 
 def periods(r):
-    return "; ".join(p["period"] + (f" ({e(p['note'])})" if p.get("note") else "") for p in r.get("periods", []))
+    return "; ".join(e(p["period"]) + (f" ({p['start']}" + (f"–{p['end']}" if p.get("end") and p["end"] != p["start"] else "") + ")" if p.get("start") else "") for p in r.get("periods", []))
+
+
+def one(r, key):
+    return " <span class=\"one-src\">(one source)</span>" if key in (r.get("single_source_fields") or []) else ""
 
 
 def card(r, refs):
     pics = "".join(img_html(im) for im in images_for(r))
-    keys = " ".join(sorted({r["pinyin"].lower().replace(" ", ""), r["chars"], (r.get("wade_giles") or "").lower().replace("'", "").replace("-", "").replace(" ", ""),
-                            *[(r.get("meaning") or "").lower().split()]}))
+    import unicodedata
+    flat = lambda t: unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode().lower()
+    keys = " ".join(sorted({re.sub(r"[^a-z]", "", flat(r["pinyin"])), r["chars"], *r.get("variants", []),
+                            re.sub(r"[^a-z]", "", flat(r.get("wade_giles"))), *[x for x in re.findall(r"[a-z]+", flat(clean(r.get("meaning")))) if len(x) > 3]} - {""}))
     facts = []
     if r.get("owner"):
-        facts.append(f'<p><strong>Whose:</strong> {e(w(r["owner"]))}{(", " + e(r["owner_dates"])) if r.get("owner_dates") else ""}{refs(pf(r, "owner"))}</p>')
+        facts.append(f'<p><strong>Whose:</strong> {e(w(clean(r["owner"])))}{(", " + e(w(r["owner_dates"]))) if r.get("owner_dates") else ""}{refs(pf(r, "owner"))}{one(r, "owner")}</p>')
     if r.get("periods"):
-        facts.append(f'<p><strong>On wares of:</strong> {periods(r)}{refs(pf(r, "periods"))}</p>')
+        facts.append(f'<p><strong>On wares of:</strong> {periods(r)}{refs(pf(r, "periods"))}{one(r, "periods")}</p>')
     if r.get("script") or r.get("placement_colour"):
-        facts.append(f'<p><strong>How it is written:</strong> {e(w(" ".join(x for x in [r.get("script", ""), r.get("placement_colour", "")] if x)))}{refs(pf(r, "script"))}</p>')
+        facts.append(f'<p><strong>How it is written:</strong> {e(w(" ".join(x for x in [r.get("script", ""), r.get("placement_colour", "")] if x)))}{refs(pf(r, "script"))}{one(r, "script")}</p>')
     if r.get("wares"):
-        facts.append(f'<p><strong>Found on:</strong> {e(w(r["wares"]))}{refs(pf(r, "wares"))}</p>')
+        facts.append(f'<p><strong>Found on:</strong> {e(w(r["wares"]))}{refs(pf(r, "wares"))}{one(r, "wares")}</p>')
     if r.get("later_copies_note") and not r["later_copies_note"].lower().startswith("none"):
-        facts.append(f'<p><strong>Later copies:</strong> {e(w(r["later_copies_note"]))}{refs(pf(r, "later_copies_note"))}</p>')
+        facts.append(f'<p><strong>Later copies:</strong> {e(w(r["later_copies_note"]))}{refs(pf(r, "later_copies_note"))}{one(r, "later_copies_note")}</p>')
     return (f'<section class="mk hall" id="{anchor(r)}" data-hall data-kind="{e(r.get("kind", ""))}" data-keys="{e(keys)}">'
-            f'<div class="mk__text"><h3><span lang="zh-Hant" class="hall__chars">{r["chars"]}</span> {e(r["pinyin"])}</h3>'
-            f'<p class="mk__dates">{e(w(r.get("meaning") or ""))}</p>{"".join(facts)}</div>'
+            f'<div class="mk__text"><h3><span lang="zh-Hant" class="hall__chars">{r["chars"]}</span></h3><p class="hall__pinyin">{e(r["pinyin"])}</p>'
+            f'<p class="mk__dates">{e(w(clean(r.get("meaning"))))}</p>{"".join(facts)}</div>'
             f'{("<div class=" + chr(34) + "mk__pics" + chr(34) + ">" + pics + "</div>") if pics else ""}</section>')
 
 
 def hub():
     refs = HallRefs()
     groups = []
+    strong = [r for r in ROWS if len(r.get("sources", [])) >= 2]
+    weak = [r for r in ROWS if len(r.get("sources", [])) < 2]
     for k in ORDER:
-        rows = [r for r in ROWS if r.get("kind") == k]
+        rows = [r for r in strong if r.get("kind") == k]
         if rows:
             groups.append(f'<h2 id="{k}">{KIND[k]}</h2>\n' + "\n".join(card(r, refs) for r in rows))
+    if weak:
+        groups.append('<h2 id="one-source">Recorded in one source only</h2>\n<p>These marks are recorded, but only one of the sources read gives them, so what is said here rests on that source alone.</p>\n' + "\n".join(card(r, refs) for r in weak))
     cav = "".join(f"<li>{e(w(c['text']))}{refs(c.get('sources', []))}</li>" for c in T.get("caveats", []))
     path = HUB
     title = "Chinese Hall Marks: Palace, Studio and Hall Marks on Porcelain | Heirloom"
@@ -113,7 +142,7 @@ def hub():
       {META}
       <div class="answer">
         <p class="answer__label">In short</p>
-        <p>A hall mark names the hall or studio a piece was made for, or claims to be. Emperors, empresses, princes, officials and scholars all had them, and so did Republic-period presidents and Jingdezhen painters. Like reign marks, they were copied, so a hall mark names what it claims and does not by itself date the item. Most hall marks end in 堂 (hall), 齋 (studio), 宮 or 殿 (palace hall), 書屋 or 山房 (study); the last character, 製, means “made.”</p>
+        <p>A hall mark names the hall or studio an item was made for, or claims to be. Emperors, empresses, princes, officials and scholars all had them, and so did Republic-period presidents and Jingdezhen painters. Like reign marks, they were copied, so a hall mark names what it claims and does not by itself date the item. Most hall marks end in 堂 (hall), 齋 (studio), 宮 or 殿 (palace hall), 書屋 or 山房 (study); the last character, 製, means “made.”</p>
       </div>
       <h2 id="finder">Find a hall mark</h2>
       <div class="finder" id="hall-finder">
