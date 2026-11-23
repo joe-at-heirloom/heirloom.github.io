@@ -110,3 +110,19 @@
 .cycle__photo { margin: 4px 0 14px; }
 .cycle__photo img { width: 100%; max-width: 560px; height: auto; border-radius: var(--radius-md); }
 .cycle__photo figcaption { font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 6px; max-width: 560px; }
+
+/* Artist signatures: close-ups cut from open-access museum photographs. */
+.sigs { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; margin: 18px 0 30px; }
+.sigs--one { grid-template-columns: minmax(0, 520px); }
+.sigs--two { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.sig { margin: 0 !important; display: flex; flex-direction: column; border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; background: var(--color-surface); }
+.sig__img { background: linear-gradient(180deg, #f3f1ed, #ebe8e2); display: flex; align-items: center; justify-content: center; height: 150px; padding: 10px; }
+.sig__img img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.18); }
+.sigs--one .sig__img, .sigs--two .sig__img { height: 220px; }
+@media (max-width: 600px) { .sigs--one .sig__img, .sigs--two .sig__img { height: 170px; } }
+.sig figcaption { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 3px; font-size: 0.88rem; line-height: 1.35; }
+.sig__who { font-weight: 600; color: var(--color-text); }
+.sig__life { font-weight: 400; color: var(--color-text-secondary); }
+.sig__reads { color: var(--color-text-secondary); }
+.sig__credit { font-size: 0.76rem; color: var(--color-text-muted); }
+.sig__credit a { color: inherit !important; }

@@ -314,6 +314,7 @@ const GUIDE_PAGES = [
   'marks/pocket-watch-serial-numbers.html',
   'marks/leica-serial-numbers.html',
   'marks/wedgwood-date-codes.html',
+  'marks/artist-signatures.html',
   'marks/minton-date-marks.html',
   'marks/royal-worcester-date-marks.html',
   'marks/rookwood-pottery-marks.html',
