@@ -1,0 +1,87 @@
+{
+ "artist": "Paul Cézanne",
+ "slug": "paul-cezanne",
+ "born": 1839,
+ "died": 1906,
+ "nationality": "French",
+ "facts": [
+  {
+   "text": "Cézanne rarely signed or dated his work, so curators date much of it from style and details such as dress and furnishings.",
+   "source": "https://www.theartnewspaper.com/2017/06/11/long-neglected-portraits-by-cezanne-arrive-in-paris",
+   "source_name": "The Art Newspaper (John Elderfield)"
+  },
+  {
+   "text": "He signed his name without an accent: 'Cezanne'.",
+   "source": "https://www.artic.edu/digital-publications/47/cezanne-paintings-and-watercolors-at-the-art-institute-of-chicago/364/note-to-the-reader-364",
+   "source_name": "Art Institute of Chicago"
+  },
+  {
+   "text": "Of the National Gallery of Art's Cézannes, only three paintings carry a signature, all from 1866–c. 1876; the 1873 House of Père Lacroix is signed and dated 'P. Cezanne 73.'",
+   "source": "https://www.nga.gov/collection/art-object-page.46577.html",
+   "source_name": "National Gallery of Art"
+  },
+  {
+   "text": "His sketchbook drawings at the National Gallery of Art are unsigned; the numbers on them were added by later hands.",
+   "source": "https://www.nga.gov/collection/art-object-page.76223.html",
+   "source_name": "National Gallery of Art"
+  }
+ ],
+ "items": [
+  {
+   "file": "/marks/img/sig/paul-cezanne/1866-antony-valabregue.webp",
+   "w": 800,
+   "h": 364,
+   "year": 1866,
+   "year_label": "1866",
+   "age": 27,
+   "reads": "P.Cezanne",
+   "reads_source": "museum",
+   "form": "initial and surname",
+   "position": "lower right",
+   "medium": "oil on canvas",
+   "work": "Antony Valabrègue",
+   "museum": "National Gallery of Art, Washington",
+   "object_url": "https://www.nga.gov/collection/art-object-page.52389.html",
+   "image_url": "https://api.nga.gov/iiif/8d80cc21-6326-4dab-b6c2-4e667a8e4acc/12488,14980,2728,1241/full/0/default.jpg",
+   "licence": "CC0 (NGA open access)",
+   "note": "Final letter runs to the edge of the canvas."
+  },
+  {
+   "file": "/marks/img/sig/paul-cezanne/1873-house-of-pere-lacroix.webp",
+   "w": 800,
+   "h": 390,
+   "year": 1873,
+   "year_label": "1873",
+   "age": 34,
+   "reads": "P. Cezanne 73.",
+   "reads_source": "museum",
+   "form": "initial, surname and date",
+   "position": "lower left",
+   "medium": "oil on canvas",
+   "work": "House of Père Lacroix",
+   "museum": "National Gallery of Art, Washington",
+   "object_url": "https://www.nga.gov/collection/art-object-page.46577.html",
+   "image_url": "https://api.nga.gov/iiif/f787246b-badc-4a5a-90b9-16b727c7fea1/0,10825,2763,1346/full/0/default.jpg",
+   "licence": "CC0 (NGA open access)"
+  },
+  {
+   "file": "/marks/img/sig/paul-cezanne/1876-flowers-in-a-rococo-vase.webp",
+   "w": 800,
+   "h": 438,
+   "year": 1876,
+   "year_label": "c. 1876",
+   "age": 37,
+   "reads": "Cezanne",
+   "reads_source": "museum",
+   "form": "surname",
+   "position": "lower left",
+   "medium": "oil on canvas",
+   "work": "Flowers in a Rococo Vase",
+   "museum": "National Gallery of Art, Washington",
+   "object_url": "https://www.nga.gov/collection/art-object-page.46580.html",
+   "image_url": "https://api.nga.gov/iiif/0aa7a4e2-0231-4bb2-9f8a-90e754c58807/143,13921,1653,906/full/0/default.jpg",
+   "licence": "CC0 (NGA open access)",
+   "note": "Painted in red."
+  }
+ ]
+}

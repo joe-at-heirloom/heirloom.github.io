@@ -1,0 +1,26 @@
+{
+ "artist": "Marc Chagall",
+ "slug": "marc-chagall",
+ "born": 1887,
+ "died": 1985,
+ "nationality": "Russian-born French",
+ "facts": [
+  {
+   "text": "Chagall signed in Latin letters with his surname and the year from his first Paris years, for example 'Chagall / 1910' at lower right on La Sainte Famille.",
+   "source": "https://collection.kunsthaus.ch/en/collection/item/200/",
+   "source_name": "Kunsthaus Zürich"
+  },
+  {
+   "text": "On the 1911 painting To Russia, Asses and Others the signature also names the city: 'Chagall 1911. PARIS'.",
+   "source": "https://www.centrepompidou.fr/en/ressources/oeuvre/6WhG2F1",
+   "source_name": "Centre Pompidou"
+  },
+  {
+   "text": "His 1911 drawing Hommage à Apollinaire is signed and dated in capitals, 'CHAGALL 1911', at lower right.",
+   "source": "https://www.centrepompidou.fr/en/ressources/oeuvre/cknMky",
+   "source_name": "Centre Pompidou"
+  }
+ ],
+ "items": [],
+ "excluded": "No crops: no CC0/open-access museum image of a Chagall work exists in NGA, Cleveland, SMK or Rijksmuseum; the Commons copies of his pre-1931 works rely on PD-RusEmpire or PD-US-expired claims that are doubtful for an artist who died in 1985, so they were left out."
+}

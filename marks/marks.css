@@ -187,3 +187,5 @@ img.cypher { display: block; height: 34px; width: auto; max-width: 110px; object
 .sig__reads { color: var(--color-text-secondary); }
 .sig__credit { font-size: 0.76rem; color: var(--color-text-muted); }
 .sig__credit a { color: inherit !important; }
+.sigs--wide { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.sig__who a { color: inherit; }

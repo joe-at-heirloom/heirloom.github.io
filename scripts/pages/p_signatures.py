@@ -7,6 +7,7 @@ import os
 
 from shell import *
 from p_marks import MID, cta, e
+import p_artist_sigs
 
 PATH = "/marks/artist-signatures"
 HERE = os.path.dirname(__file__)
@@ -34,11 +35,16 @@ def credit(it):
     return f'{e(it["museum"])}, <a href="{e(it["object_url"])}" rel="nofollow">{e(it["work"])}</a>' + (f' ({e(it["work_date"])})' if it.get("work_date") else "") + ", open access (CC0)"
 
 
+def who(it):
+    p = p_artist_sigs.path_by_artist().get(it["artist"])
+    return f'<a href="{p}">{e(it["artist"])}</a>' if p else e(it["artist"])
+
+
 def fig(it, cls="sig"):
     reads = f'<span class="sig__reads">Reads: &ldquo;{e(it["reads"])}&rdquo;' + (f', {e(it["position"])}' if it.get("position") else "") + "</span>"
     alt = f'{it["artist"]}\'s signature, reading "{it["reads"]}", on {it["work"]}'
     return (f'<figure class="{cls}"><div class="sig__img"><img src="{e(it["file"])}" alt="{e(alt)}" width="{it["w"]}" height="{it["h"]}" loading="lazy" decoding="async"></div>'
-            f'<figcaption><span class="sig__who">{e(it["artist"])}' + (f' <span class="sig__life">{e(it["life"])}</span>' if it.get("life") else "") + f'</span>{reads}'
+            f'<figcaption><span class="sig__who">{who(it)}' + (f' <span class="sig__life">{e(it["life"])}</span>' if it.get("life") else "") + f'</span>{reads}'
             f'<span class="sig__credit">{credit(it)}</span></figcaption></figure>')
 
 
@@ -61,6 +67,17 @@ def pair(kind_a, kind_b):
     if not (a and b):
         return kind_fig(kind_a, "") or kind_fig(kind_b, "")
     return f'<div class="sigs sigs--two">{fig(a[0])}{fig(b[0])}</div>'
+
+
+def by_artist_html():
+    cards = p_artist_sigs.index_cards()
+    if not cards:
+        return ""
+    lis = "".join(f'<li><a class="card" href="{p}"><span class="card__title">{e(n)}</span><span class="card__desc">{e(d)}</span></a></li>' for p, n, d in sorted(cards, key=lambda c: c[1].split()[-1]))
+    return f"""      <h2 id="by-artist">Signatures by artist, over the years</h2>
+      <p>For these artists there is a page of their signatures in date order, from early work to late, so you can see how each one changed.</p>
+      <ul class="cards">{lis}</ul>
+"""
 
 
 def build():
@@ -111,6 +128,7 @@ def build():
 
 {gallery_html}
 
+{by_artist_html()}
       <h2 id="read">How to read a signature you can't make out</h2>
       <ol>
         <li><strong>Photograph it close and straight on,</strong> in daylight or with one strong light from the side. Take a second photo with the light from the other side.</li>
