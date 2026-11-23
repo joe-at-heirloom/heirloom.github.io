@@ -49,7 +49,7 @@
   "chars": "友士堂製",
   "hall": "Youshi tang",
   "alt": "Hall mark 友士堂製, printed facsimile",
-  "caption": "友士堂製, as printed in Burton and Hobson (1909).",
+  "caption": "友?堂製, as printed in Burton and Hobson (1909): the second character is printed like 寸 and its reading is uncertain.",
   "credit": "Burton and Hobson (1909), p. 142",
   "licence": "public domain",
   "page": "https://archive.org/details/handbookofmarkso00burt/page/n159"
@@ -332,10 +332,10 @@
  {
   "file": "book-burton-hobson-1909-siyoumeiyu-yazhi.webp",
   "kind": "book",
-  "chars": "思有美玉雅製",
+  "chars": "忠有美玉雅製",
   "hall": "Siyou meiyu yazhi",
-  "alt": "Hall mark 思有美玉雅製, printed facsimile",
-  "caption": "思有美玉雅製, as printed in Burton and Hobson (1909).",
+  "alt": "Hall mark 忠有美玉雅製, printed facsimile",
+  "caption": "忠有美玉雅製, as printed in Burton and Hobson (1909) (its caption misreads the first character as 思).",
   "credit": "Burton and Hobson (1909), p. 144",
   "licence": "public domain",
   "page": "https://archive.org/details/handbookofmarkso00burt/page/n161"
