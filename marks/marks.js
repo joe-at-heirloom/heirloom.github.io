@@ -318,8 +318,40 @@
     });
   }
 
+  // ── Chinese reign marks ───────────────────────────────────────────────────
+  // Narrows the gallery of marks on the page: by the first column (大明 Ming,
+  // 大清 Qing), by script, or by a name typed in pinyin, Wade-Giles or
+  // characters. It names reigns only; a mark never dates the item by itself.
+  function chineseReigns() {
+    const tiles = [...document.querySelectorAll('[data-reign]')];
+    const q = $('cr-q'), out = $('cr-results');
+    const buttons = [...document.querySelectorAll('[data-cr-dyn]')];
+    if (!tiles.length || !q || !out) return;
+    hint(out);
+    let dyn = '';
+    const TRAD = { 乐: '樂', 庆: '慶', 丰: '豐', 绪: '緒', 统: '統', 顺: '順', 万: '萬', 历: '曆', 启: '啟', 祯: '禎', 宪: '憲', 制: '製', 歷: '曆', 啓: '啟' };
+    const key = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z㐀-鿿]/g, '').replace(/./g, (c) => TRAD[c] || c);
+    const run = () => {
+      const k = key(q.value).replace(/^(da)?(ming|qing|ching|tsing)?/, (m) => (m.length < key(q.value).length ? '' : m)).replace(/(nianzhi|nienchih|mark)$/, '');
+      const kk = k.replace(/[大明清年製]/g, '') || k;
+      let n = 0;
+      for (const t of tiles) {
+        const okDyn = !dyn || t.dataset.dyn === dyn;
+        const okQ = !kk || t.dataset.keys.split(' ').some((x) => x.startsWith(kk) || (kk.length >= 2 && x.includes(kk)));
+        t.hidden = !(okDyn && okQ);
+        if (!t.hidden) n += 1;
+      }
+      for (const b of buttons) b.setAttribute('aria-pressed', String(b.dataset.crDyn === dyn));
+      if (!kk && !dyn) return say(out, out.dataset.hint);
+      say(out, n ? `<p><strong>${n === 1 ? 'One reign matches' : `${n} reigns match`}</strong>. Compare the characters with your mark, column by column from the right.</p>`
+        : '<p>No reign matches. Try the pinyin (Qianlong), the older spelling (Ch’ien-lung) or the two reign characters (乾隆). A mark without 年 may be a hall mark or an auspicious mark rather than a reign mark.</p>');
+    };
+    for (const b of buttons) b.addEventListener('click', () => { dyn = dyn === b.dataset.crDyn ? '' : b.dataset.crDyn; run(); });
+    q.addEventListener('input', run);
+  }
+
   const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres };
-  Object.assign(tools, { omega, rolex });
+  Object.assign(tools, { omega, rolex, chinese: chineseReigns });
   const start = () => tools[window.MARKS_TOOL] && tools[window.MARKS_TOOL]();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

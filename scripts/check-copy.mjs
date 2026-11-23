@@ -199,6 +199,8 @@ const HOMEPAGE_WORD_RULES = [
 const TITLE_NAMES = new Set([
   // Makers, lines and places named in the marks headings (merged from the plate, watch, world-silver and ceramics pages).
   'Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards', 'Oneida', 'Community', 'International', 'Silver', 'Co', 'Plate', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings', 'Rolex', 'Omega', 'Christofle', 'French', 'G', 'German', 'Gorham', 'Martelé', 'Mexican', 'Mexico', 'Minerva', 'Russian', 'Soviet', 'Taxco', 'Weller', 'Roseville', 'Rozane', 'Sicard', 'Rv', 'U.S.A', 'Nippon', 'Japan', 'M', 'RC', 'Noritake', 'Rose', 'China', 'Made', 'Occupied', 'N', 'Limoges', 'Haviland', 'Theo', 'H', 'L', 'France', 'CFH', 'GDM', 'Meissen', 'AR', 'K.P.M', 'K.H.C', 'King', 'Copenhagen', 'Denmark', 'Hummel', 'TMK', 'Goebel', 'U.S', 'RPCo', 'Olympic', 'R.P.Co', 'Donatello', 'McCoy', 'J', 'W', 'Brush-McCoy', 'Brush', 'NM', 'LCC', 'Floraline', 'Hull', 'Art', 'Red', 'Riding', 'Hood', 'Oven', 'Proof', 'Doulton', 'Watts', 'Lambeth', 'Burslem', 'England', 'HN',
+  // Chinese dynasties and reigns (the Chinese reign-mark pages).
+  'Ming', 'Qing', 'Republic', 'Hongxian', 'Hongwu', 'Jianwen', 'Yongle', 'Hongxi', 'Xuande', 'Zhengtong', 'Jingtai', 'Tianshun', 'Chenghua', 'Hongzhi', 'Zhengde', 'Jiajing', 'Longqing', 'Wanli', 'Taichang', 'Tianqi', 'Chongzhen', 'Shunzhi', 'Kangxi', 'Yongzheng', 'Qianlong', 'Jiaqing', 'Daoguang', 'Xianfeng', 'Tongzhi', 'Guangxu', 'Xuantong', 'Chinese',
 ]);
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
@@ -346,6 +348,25 @@ const GUIDE_PAGES = [
 
   // Ceramics maker's-mark pages (scripts/pages/p_ceramics.py).
   'marks/weller-pottery-marks.html',
+  'marks/chinese-reign-marks.html',
+  'marks/yongle-mark.html',
+  'marks/xuande-mark.html',
+  'marks/chenghua-mark.html',
+  'marks/hongzhi-mark.html',
+  'marks/zhengde-mark.html',
+  'marks/jiajing-mark.html',
+  'marks/longqing-mark.html',
+  'marks/wanli-mark.html',
+  'marks/kangxi-mark.html',
+  'marks/yongzheng-mark.html',
+  'marks/qianlong-mark.html',
+  'marks/jiaqing-mark.html',
+  'marks/daoguang-mark.html',
+  'marks/xianfeng-mark.html',
+  'marks/tongzhi-mark.html',
+  'marks/guangxu-mark.html',
+  'marks/xuantong-mark.html',
+  'marks/hongxian-mark.html',
   'marks/roseville-pottery-marks.html',
   'marks/mccoy-pottery-marks.html',
   'marks/hull-pottery-marks.html',
