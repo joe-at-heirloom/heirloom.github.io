@@ -12,6 +12,7 @@ from collections import OrderedDict, defaultdict
 from shell import *
 
 import tables
+import marksdb
 
 HALL = tables.load("hallmarks")
 SINGER = tables.load("singer")
@@ -100,11 +101,14 @@ def letter_img(r):
 
 
 def letter_html(r):
-    img = letter_img(r)
+    """The database's image of this letter (photo, Chaffers or Jackson facsimile, or a drawing from its
+    cycle's sourced outline); a typeface stand-in only when the database has none."""
+    img = marksdb.letter(r["office"], r["year"], r["letter"])
     if img:
-        alt = f'{STYLE_WORD[r["style"]]} {CASE_NAME[r["case"]]} {r["letter"]} in its shield, {r["office"]} {r.get("year_label") or r["year"]}'
-        return f'<img class="dli" src="{img}" alt="{e(alt)}" height="48" loading="lazy" decoding="async">'
-    return f'<span class="dl dl--{e(r["style"])}" title="No facsimile: the letter is set in a similar typeface">{e(r["letter"])}</span>'
+        src, _, kind, _ = img
+        alt = f'{STYLE_WORD[r["style"]]} {CASE_NAME[r["case"]]} {r["letter"]} in its shield, {r["office"]} {r.get("year_label") or r["year"]} ({kind.lower()})'
+        return f'<img class="dli dli--{kind.split()[-1].lower()}" src="{src}" alt="{e(alt)}" height="48" loading="lazy" decoding="async">'
+    return f'<span class="dl dl--{e(r["style"])}" title="No image yet: the letter is set in a similar typeface">{e(r["letter"])}</span>'
 
 
 def cycles(rows):
@@ -200,7 +204,7 @@ def date_letter_page(office, info):
             + "</li>"
             for r in rs
         )
-        tables.append(f'<section class="cycle" id="cycle-{start}"><h3>{span}</h3><p class="cycle__kind">{e(kind)}</p>{cycle_photo(office, start)}<ul class="dlg">{cells}</ul></section>')
+        tables.append(f'<section class="cycle" id="cycle-{start}"><h3>{span}</h3><p class="cycle__kind">{e(kind)}</p><ul class="dlg">{cells}</ul></section>')
 
     rules = office_rules(office)
     rule_items = "".join(
@@ -211,37 +215,16 @@ def date_letter_page(office, info):
     )
     caveats = "".join(f"<li>{e(soften(c))}</li>" for c in office_caveats(office))
 
-    photos = ""
-    if office == "London":
-        photos = (
-            stamp_row(
-                ["m14-london-toilet-box-1", "m14-london-toilet-box-2", "m14-london-toilet-box-3", "m14-london-toilet-box-4"],
-                "Marks on a silver toilet box made in London.",
-                MET_CREDIT,
-                ["Date letter", "Leopard's head, crowned: the London town mark before 1821", "Lion passant guardant: sterling", "Maker's mark"],
-            )
-            + stamp_row(
-                ["m00-london-candlestick-IF-1", "m00-london-candlestick-IF-2", "m00-london-candlestick-IF-3", "m00-london-candlestick-IF-4"],
-                "Marks on a London silver candlestick, in the order they were struck.",
-                MET_CREDIT,
-                ["Maker's mark: IF", "Lion passant guardant: sterling", "Leopard's head, crowned: London", "Date letter"],
-            )
-        )
-    if office == "Sheffield":
-        photos = stamp_row(
-            ["02-sheffield-crown-1", "02-sheffield-crown-2"],
-            "Sheffield marks: the crown, the lion passant and a date letter, then the maker's mark.",
-            'Photograph: <a href="https://commons.wikimedia.org/wiki/File:British_hallmarks.jpg" rel="nofollow">British hallmarks</a> by Mrs rockefeller, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow">CC BY-SA 3.0</a>, cut out and toned by Heirloom.',
-            ["Crown, lion passant and date letter n", "Maker's mark: W&H"],
-        )
+    OFFICE_MARKS = {
+        "London": ["leopards-head-crowned", "leopards-head-uncrowned", "lion-passant-guardant", "lion-passant", "sovereigns-head-duty"],
+        "Birmingham": ["birmingham-anchor", "lion-passant", "sovereigns-head-duty"],
+        "Sheffield": ["sheffield-crown", "sheffield-rose", "lion-passant", "sovereigns-head-duty"],
+        "Chester": ["chester-town-mark", "lion-passant-guardant", "lion-passant", "sovereigns-head-duty"],
+    }
+    photos = "<h3>The other marks beside the letter</h3>" + marksdb.grid(OFFICE_MARKS[office])
     britannia = ""
-    if office == "London":
-        britannia = "<h3>The Britannia standard, 1697 to 1720</h3>" + stamp_row(
-            ["m02-london-britannia-chocolate-pot-1", "m02-london-britannia-chocolate-pot-2", "m02-london-britannia-chocolate-pot-3", "m02-london-britannia-chocolate-pot-4"],
-            "Britannia-standard marks on a London silver chocolate pot: in this period the figure of Britannia and a lion's head erased replace the lion passant and the leopard's head.",
-            MET_CREDIT,
-            ["Maker's mark", "Britannia", "Lion's head erased", "Date letter"],
-        )
+    if office in ("London", "Chester"):
+        britannia = "<h3>The Britannia standard, 1697 to 1720</h3>" + marksdb.grid(["britannia-figure", "lions-head-erased"])
 
     finder = f"""<div class="finder" data-office="{e(office)}">
   <div class="finder__row">
@@ -462,10 +445,9 @@ def hub_page(children):
         for p, n, d in children
     )
     body = f"""      <p class="guide__lede">Many things carry a small mark that dates them: a silver hallmark's letter, a sewing machine's serial, a watch movement's number. These pages turn the mark into a year, from the same published tables Heirloom Advisor uses.</p>
-      {stamp_row(["m12-exeter-tankard-1", "m12-exeter-tankard-2", "m12-exeter-tankard-3", "m12-exeter-tankard-4", "m12-exeter-tankard-5"],
-                 "A full set of marks on a silver tankard made in Exeter: maker, leopard's head, lion passant, the Exeter town mark and a date letter.",
-                 MET_CREDIT,
-                 ["Maker's mark: IF", "Leopard's head, crowned", "Lion passant", "Exeter town mark", "Date letter"])}
+      <h2 id="british-marks">The other marks beside the date letter</h2>
+      <p>Besides the date letter, British silver carries a standard mark for its silver, a town mark for its assay office and, from 1784 to 1890, the sovereign's head for the duty paid. Each image below is that one mark.</p>
+      {marksdb.grid(["lion-passant-guardant", "lion-passant", "leopards-head-crowned", "leopards-head-uncrowned", "britannia-figure", "lions-head-erased", "birmingham-anchor", "sheffield-crown", "chester-town-mark", "exeter-town-mark", "sovereigns-head-duty"])}
       <ul class="cards">{cards}</ul>
       <h2 id="how">How these tables were made</h2>
       <p>Every table was compiled from at least two published sources and checked row by row. Where the sources disagree, the page shows both years rather than choosing one. Nothing is filled in between rows. Each page lists its sources and the cautions that come with them.</p>

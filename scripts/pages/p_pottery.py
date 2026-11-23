@@ -12,48 +12,36 @@ CSS = '<link rel="stylesheet" href="/marks/marks.css">'
 
 
 # ── Pictures of the marks ─────────────────────────────────────────────────────
-# Every picture is a real photograph under an open licence or a crop from a
-# public-domain book, credited where it appears. Sources and the checks against
-# the table: scripts/pages/pottery-sources.md.
+# Every picture comes from the marks database (marksdb): one image of one mark,
+# a photograph, a public-domain book facsimile or a drawing built from two
+# sources, credited where it appears. Marks with no image are described in words.
 
-COMMONS = "https://commons.wikimedia.org/wiki/File:"
-LIC = {
-    "met": '<a href="https://www.metmuseum.org/about-the-met/policies-and-documents/open-access" rel="nofollow">The Metropolitan Museum of Art, Open Access</a> (public domain)',
-    "cc0": '<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow">CC0</a>',
-}
-BOOK = {
-    "litchfield": ('Frederick Litchfield, <cite>Pottery and Porcelain: A Guide to Collectors</cite> (1912), p. 289', "https://archive.org/details/potteryporcelain00litc/page/289"),
-    "burton": ('William Burton and R. L. Hobson, <cite>Handbook of Marks on Pottery and Porcelain</cite> (1909), p. 77', "https://archive.org/details/handbookofmarkso00burt/page/77"),
-    "barber": ('Edwin AtLee Barber, <cite>Marks of American Potters</cite> (1904), p. 120', "https://archive.org/details/marksamericanpo00barbgoog/page/n128"),
-}
+import marksdb
 
 
-def commons(file, text):
-    return f'<a href="{COMMONS}{e(file.replace(" ", "_"))}" rel="nofollow">{text}</a>'
+def _img(id_):
+    return marksdb.image(id_) if id_ in marksdb.load() else None
 
 
-def met_credit(*files):
-    links = ", ".join(commons(f, n) for n, f in files)
-    return f"Photograph{'s' if len(files) > 1 else ''}: {LIC['met']}, via Wikimedia Commons ({links}), cropped by Heirloom."
+def db_cell(id_, note="", h=56):
+    """A small image of one mark for a code table, with what kind of image it is."""
+    img = _img(id_)
+    if not img:
+        return '<span class="cypher-none">No image yet</span>'
+    src, alt, kind, _ = img
+    extra = f". {e(note)}" if note else ""
+    return (f'<img class="cypher" src="{src}" alt="{e(alt)}" style="height:{h}px;max-width:{2 * h}px" loading="lazy" decoding="async">'
+            f'<span class="cypher-note">{kind}{extra}</span>')
 
 
-def book_credit(key, what="Printed marks"):
-    title, url = BOOK[key]
-    return f'{what}: {title}, public domain; <a href="{url}" rel="nofollow">scan at the Internet Archive</a>, cropped by Heirloom.'
-
-
-def mark_photos(items, caption, credit, book=False):
-    """A row of mark pictures. items: (file stem, alt text, label under it[, "wide"])."""
-    figs = "".join(
-        f'<figure class="stamp{" stamp--wide" if it[3:] else ""}"><img src="/marks/img/{it[0]}.webp" alt="{e(it[1])}" loading="lazy" decoding="async"><figcaption>{it[2]}</figcaption></figure>'
-        for it in items
-    )
-    kind = "stamps--book" if book else "stamps--photo"
-    return f'<div class="stamps {kind}"><div class="stamps__row">{figs}</div><p class="stamps__caption">{caption} <span class="stamps__credit">{credit}</span></p></div>'
-
-
-def cypher_img(stem, alt):
-    return f'<img class="cypher" src="/marks/img/{stem}.webp" alt="{e(alt)}" loading="lazy" decoding="async">'
+def db_credits(ids):
+    """One line crediting every image the ids use, each credit once."""
+    seen = []
+    for i in ids:
+        img = _img(i)
+        if img and img[3] and img[3] not in seen:
+            seen.append(img[3])
+    return f'<p class="stamps__credit">Pictures: {" ".join(e(c) for c in seen)}</p>' if seen else ""
 
 
 def caveat_list(cavs):
@@ -96,13 +84,21 @@ def wedgwood():
     for r in rows:
         cyc[r["cycle"]].append(r)
     names = {1: "Cycle 1, 1860–1885 (first character a month letter)", 2: "Cycle 2, 1886–1906 (first character a month letter)", 3: "Cycle 3, 1907–1930 (first character 3, then 4 from 1924)"}
+    def year_cell(r):
+        img = _img(f"wedgwood-year-{r['letter'].lower()}-{r['year']}")
+        if not img:
+            return f'<span class="dl">{e(r["letter"])}</span>'
+        return f'<img class="cypher" src="{img[0]}" alt="{e(img[1])}" style="height:48px;max-width:96px;margin:0 auto" loading="lazy" decoding="async">'
     tables = "".join(
         f'<section class="cycle"><h3>{names[c].split(" (")[0]}</h3><p class="cycle__kind">{e(names[c].split(" (")[1].rstrip(")"))}</p><ul class="dlg">'
-        + "".join(f'<li class="dlc"><span class="dl">{e(r["letter"])}</span><span class="dlc__year">{r["year"]}</span></li>' for r in rs)
+        + "".join(f'<li class="dlc">{year_cell(r)}<span class="dlc__year">{r["year"]}</span></li>' for r in rs)
         + "</ul></section>"
         for c, rs in cyc.items()
     )
-    months = "".join(f'<tr><th scope="row">{e(m["first_char"])}</th><td>{["January","February","March","April","May","June","July","August","September","October","November","December"][m["month"]-1]}</td><td>{e(m["years"])}</td></tr>' for m in t["first_char_month_codes"])
+    MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    month_ids = [f"wedgwood-month-{m['first_char'].lower()}-{MONTHS[m['month']-1].lower()}" for m in t["first_char_month_codes"]]
+    months = "".join(f'<tr><th scope="row">{e(m["first_char"])}</th><td class="cypher-cell">{db_cell(i, h=40)}</td><td>{MONTHS[m["month"]-1]}</td><td>{e(m["years"])}</td></tr>' for m, i in zip(t["first_char_month_codes"], month_ids))
+    year_ids = [f"wedgwood-year-{r['letter'].lower()}-{r['year']}" for r in rows]
     tool = """      <h2 id="lookup">Decode a Wedgwood date code</h2>
       <div class="finder">
         <div class="finder__row">
@@ -111,18 +107,16 @@ def wedgwood():
         </div>
         <div id="wg-results" class="finder__results" aria-live="polite"><p class="finder__hint">Type the three impressed characters next to WEDGWOOD, in order.</p></div>
       </div>"""
-    photo = mark_photos(
-        [("p-wedgwood-impressed", "The word WEDGWOOD impressed in cream-colored earthenware", "The impressed WEDGWOOD mark", "wide")],
-        "The impressed WEDGWOOD mark on a cream-colored platter that the Met dates to about 1780, before the date codes began. On wares from 1860 to 1930 the three-letter code is impressed in the same way, in a row beside or below this word. No openly licensed photograph of a dated code has been found yet, so the letters below are set in type.",
-        met_credit(("platter, SF2014.712.9", "Platter MET SF2014 712 9 mark.jpg")),
-    )
+    factory = ["wedgwood-impressed-name", "wedgwood-england", "wedgwood-made-in-england"]
     sections = f"""      <h2 id="read">How the code works</h2>
-      {photo}
       <p>The code is three impressed characters in a row beside the impressed WEDGWOOD mark. The first is the month (from 1907, the figure 3; from 1924, 4), the second identifies the potter, and only the last is the year.</p>
+      {marksdb.grid(factory)}
+      <p class="note">No openly licensed photograph of a dated three-letter code has been found yet. The month and year letters below are drawn one at a time in a plain serif: the real punches' letterforms are not recorded, and the potter's letter between them varies.</p>
       <h3>Month letters, 1860 to 1906</h3>
-      <div class="table-wrap"><table><thead><tr><th scope="col">First character</th><th scope="col">Month</th><th scope="col">Used</th></tr></thead><tbody>{months}</tbody></table></div>
+      <div class="table-wrap"><table class="cyphers"><thead><tr><th scope="col">First character</th><th scope="col">Picture</th><th scope="col">Month</th><th scope="col">Used</th></tr></thead><tbody>{months}</tbody></table></div>
       <h2 id="tables">Year letters</h2>
-      {tables}"""
+      {tables}
+      {db_credits(factory + month_ids + year_ids)}"""
     faqs = [
         ("How do I date Wedgwood by its marks?",
          "<p>Look for the impressed WEDGWOOD mark and a group of three impressed characters beside it. The last character is the year letter; the first gives the month or, from 1907, the period. ENGLAND in the mark means 1891 or later.</p>"),
@@ -164,31 +158,28 @@ def minton():
 
     def pic(r):
         y = r["year"]
-        if y not in book_year:
-            return '<span class="cypher-none">No chart</span>'
-        note = f'<span class="cypher-note">{e(book_note[y])}</span>' if y in book_note else ""
-        return cypher_img(f"f-minton-{book_year[y]}", f"Minton year cypher for {y}, as printed in 1912") + note
+        img = _img(f"minton-cypher-{y}")
+        note = book_note.get(y, "") if img and img[2] == "Book facsimile" else ""
+        return db_cell(f"minton-cypher-{y}", note, h=44)
 
     trs = "".join(
         f'<tr id="y{r["year"]}"><th scope="row">{r["year"]}</th><td class="cypher-cell">{pic(r)}</td><td>{e(soften(r["cypher_description"]))}</td><td>{e(", ".join(str(y) for y in r.get("confusable_with", [])))}</td></tr>'
         for r in rows
     )
-    photo = mark_photos(
-        [("p-minton-1867", "Impressed MINTON with the 1867 year cypher below it, on a black vase", "MINTON, and the 1867 cypher below it")],
-        "An impressed Minton mark on a black-bodied vase that the Met dates to about 1867. The symbol at lower left, an A whose legs cross, is the cypher for 1867. The other small impressed marks beside it are not year marks.",
-        met_credit(("vase, LC-2016.178.1", "Vase MET LC-2016 178 1-marks.jpg")),
-    )
+    factory = ["minton-impressed-minton", "minton-impressed-mintons", "minton-cypher-1867"]
+    cypher_ids = [f"minton-cypher-{r['year']}" for r in rows]
     tool = """      <h2 id="lookup">Find a Minton year cypher</h2>
       <div class="finder">
         <div class="finder__row"><label class="grow">Describe the symbol <input id="mn-q" autocomplete="off" placeholder="e.g. triangle, square, star, cross"></label></div>
         <div id="mn-results" class="finder__results" aria-live="polite"><p class="finder__hint">Type a word for the small impressed symbol near MINTON or MINTONS. Every year whose cypher matches appears here, with the years it's easily confused with.</p></div>
       </div>"""
     sections = f"""      <h2 id="example">What the mark looks like</h2>
-      {photo}
+      <p>The impressed name, and a year cypher beside it. The photograph of the cypher is from a vase the Met dates to about 1867; its symbol, an A whose legs cross, is the cypher for that year.</p>
+      {marksdb.grid(factory, captions={"minton-cypher-1867": "The 1867 cypher, on a vase"})}
       <h2 id="tables">Every Minton year cypher, 1842 to 1942</h2>
-      <p class="note">The descriptions are written from three published charts that agree on every year. The pictures are cropped from the chart Frederick Litchfield printed in 1912, which stops at 1907; where it differs from the table, the note under the picture says how. The symbols are small and often blurred by glaze, so match the overall shape and check the years in the last column.</p>
-      <div class="table-wrap"><table class="cyphers"><thead><tr><th scope="col">Year</th><th scope="col">Printed in 1912</th><th scope="col">The cypher</th><th scope="col">Easily confused with</th></tr></thead><tbody>{trs}</tbody></table></div>
-      <p class="stamps__credit">{book_credit("litchfield", "Cyphers")}</p>"""
+      <p class="note">The descriptions are written from three published charts that agree on every year. Most pictures are cropped from the chart Frederick Litchfield printed in 1912 and again in 1925, which stops at 1907; where it differs from the table, the note under the picture says how. Five later cyphers simple enough to fix exactly are drawn; the rest have no picture yet. The symbols are small and often blurred by glaze, so match the overall shape and check the years in the last column.</p>
+      <div class="table-wrap"><table class="cyphers"><thead><tr><th scope="col">Year</th><th scope="col">Picture</th><th scope="col">The cypher</th><th scope="col">Easily confused with</th></tr></thead><tbody>{trs}</tbody></table></div>
+      {db_credits(factory + cypher_ids)}"""
     faqs = [
         ("How do I read a Minton date mark?",
          "<p>Find the impressed MINTON or MINTONS mark, then the small impressed symbol beside it. Each year from 1842 to 1942 has its own symbol. Match its shape in the table, and check the similar symbols before you settle on a year.</p>"),
@@ -198,7 +189,7 @@ def minton():
          "<p>Often: an impressed month letter and a potter's mark. Neither is a year mark.</p>"),
     ]
     return build_page("/marks/minton-date-marks", "Minton Date Marks: Year Cyphers, 1842–1942 | Heirloom",
-                      "Every Minton impressed year cypher from 1842 to 1942, described and pictured from a 1912 chart, with a finder and the years each symbol is easily confused with.",
+                      "Every Minton impressed year cypher from 1842 to 1942, described and, to 1907, pictured from a period chart, with a finder and the years each symbol is easily confused with.",
                       "Minton date marks, 1842 to 1942", "Minton date marks",
                       "Minton impressed a small symbol beside its name each year from 1842 to 1942. Describe the symbol to find the year.",
                       "A Minton year cypher is a small impressed symbol next to the impressed MINTON or MINTONS mark, a different one for each year from 1842 to 1942: an open triangle is 1843, an open square 1844. Many symbols look alike, so check the near matches before you settle on a year.",
@@ -212,10 +203,22 @@ def minton():
 def worcester():
     t = SYS["royal_worcester_dots"]
     rows = t["rows"]
+    by_year = {}
+    for m in marksdb.group("pottery-codes"):
+        if m["id"].startswith("royal-worcester-") and m.get("date_from") and m.get("date_from") == m.get("date_to"):
+            by_year.setdefault(m["date_from"], m["id"])
+
+    def pic(r):
+        if r["year_end"] != r["year_start"] or r["year_start"] not in by_year:
+            return ""
+        return db_cell(by_year[r["year_start"]], h=44)
+
     trs = "".join(
-        f'<tr><th scope="row">{r["year_start"]}{"–" + str(r["year_end"]) if r["year_end"] != r["year_start"] else ""}</th><td>{e(soften(r["rule"]))}</td></tr>'
+        f'<tr><th scope="row">{r["year_start"]}{"–" + str(r["year_end"]) if r["year_end"] != r["year_start"] else ""}</th><td class="cypher-cell">{pic(r)}</td><td>{e(soften(r["rule"]))}</td></tr>'
         for r in rows
     )
+    table_ids = [by_year[r["year_start"]] for r in rows if r["year_end"] == r["year_start"] and r["year_start"] in by_year]
+    factory = ["royal-worcester-standard-mark", "royal-worcester-letter-n-1878", "royal-worcester-letter-p-1879", "royal-worcester-letter-x-1886"]
     tool = """      <h2 id="lookup">Decode a Royal Worcester date mark</h2>
       <div class="finder">
         <div class="finder__row">
@@ -235,20 +238,13 @@ def worcester():
         </div>
         <div id="rw-results" class="finder__results" aria-live="polite"><p class="finder__hint">Choose what you see under the crowned circle, then type the letter or count the dots. Count every dot, on both sides of the crown and below it.</p></div>
       </div>"""
-    photos = mark_photos(
-        [
-            ("p-worcester-n", "Royal Worcester crowned circle mark in red with the letter N below", "N below the circle: 1878"),
-            ("p-worcester-p", "Royal Worcester crowned circle mark in green with a faint letter P below", "A faint P: 1879"),
-            ("p-worcester-x", "Royal Worcester crowned circle mark in dark green with a small X below", "X below the circle: 1886"),
-        ],
-        "The standard printed mark, a crowned circle with the factory's cypher and 51 in the middle, with the year letter underneath. All three items are in the Met, which dates them 1878, 1879 and about 1886, the years the table gives for N, P and X. On the third, a registered design number printed just below (not shown) is from 1885, which fits.",
-        met_credit(("moon flask, LC-2018.62.72", "Moon flask MET LC-2018 62 72-marks.jpg"), ("vase, LC-2018.62.103", "Orb bottom vase with white and gold crane motif MET LC-2018 62 103-marks.jpg"), ("vase, LC-2018.62.108", "Vase MET LC-2018 62 108-marks.jpg")),
-    )
     sections = f"""      <h2 id="example">What the mark looks like</h2>
-      {photos}
-      <p class="note">No openly licensed photograph of a dated mark from after 1890 (dots, star, shapes or W) has been found yet, so those years have no picture here.</p>
+      <p>The standard printed mark, a crowned circle with the factory's cypher and 51 in the middle, and three photographs of it with the year letter underneath. The Met dates the three items 1878, 1879 and about 1886, the years the table gives for N, P and X.</p>
+      {marksdb.grid(factory)}
       <h2 id="tables">Every Royal Worcester date mark, 1862 to 1963</h2>
-      <div class="table-wrap"><table><thead><tr><th scope="col">Years</th><th scope="col">What the mark shows</th></tr></thead><tbody>{trs}</tbody></table></div>"""
+      <p class="note">Single years show the year letter or symbol on its own: a photograph for N, P and X, a drawing for the rest (the printed mark above it is not drawn). The dot years have no picture yet, because the sources do not fix where each dot sits.</p>
+      <div class="table-wrap"><table class="cyphers"><thead><tr><th scope="col">Years</th><th scope="col">Picture</th><th scope="col">What the mark shows</th></tr></thead><tbody>{trs}</tbody></table></div>
+      {db_credits(factory + table_ids)}"""
     faqs = [
         ("How do I date Royal Worcester by the dots?",
          "<p>From 1892 one dot was added each year, first beside the crown, then below the circle: the year is 1891 plus the total number of dots, up to 1915. From 1916 a star appears, and the year is 1916 plus any dots beside it.</p>"),
@@ -284,26 +280,12 @@ def rookwood():
         </div>
         <div id="rk-results" class="finder__results" aria-live="polite"><p class="finder__hint">Count only the short flames around the RP monogram, not the tail of the R. Leave the numeral empty if there is none.</p></div>
       </div>"""
-    book = mark_photos(
-        [
-            ("f-rookwood-1882", "ROOKWOOD 1882 in block capitals", "ROOKWOOD and the year: 1882 to 1886"),
-            ("f-rp-1886", "The RP monogram with no flames", "No flames: 1886"),
-            ("f-rp-1887", "The RP monogram with one flame above it", "One flame: 1887"),
-            ("f-rp-1900", "The RP monogram ringed by fourteen flames", "Fourteen flames: 1900"),
-            ("f-rp-1901", "The RP monogram with fourteen flames and the numeral I below", "Fourteen flames and I: 1901"),
-        ],
-        "The marks as Edwin AtLee Barber printed them in 1904, with the years he gave, which match the table.",
-        book_credit("barber"),
-        book=True,
-    )
-    photo = mark_photos(
-        [("p-rookwood-xxx", "The impressed RP flame mark with XXX and 80C below, on a vase base", "XXX below the flames: 1930")],
-        "The base of a Rookwood vase decorated by Lorinda Epply: the RP monogram with its fourteen flames, the numeral XXX (1900 plus 30, so 1930), and 80C, the shape number and size letter, which is not a date. The blue painted initials are the decorator's.",
-        f'Photograph: {commons("Rookwood Pottery vase, Lorinda Epply, 1930, Markings.jpg", "Y.paulsen, via Wikimedia Commons")}, {LIC["cc0"]}, cropped by Heirloom.',
-    )
+    key = ["rookwood-name-and-year", "rookwood-rp-0-flames-1886", "rookwood-rp-1-flames-1887", "rookwood-rp-14-flames-1900",
+           "rookwood-numeral-i-1901", "rookwood-numeral-xiv-1914", "rookwood-numeral-xxx-1930"]
     sections = f"""      <h2 id="example">What the mark looks like</h2>
-      {photo}
-      {book}
+      <p>The marks at each stage: the name and year to 1886, the bare RP monogram, one flame, the full ring of fourteen, and the numerals that follow. The 1930 photograph shows XXX under the flames; the shape number below it (not shown) is not a date.</p>
+      {marksdb.grid(key)}
+      {db_credits(key)}
       <h2 id="tables">How Rookwood dated its marks</h2>
       <div class="table-wrap"><table><thead><tr><th scope="col">Years</th><th scope="col">The mark</th><th scope="col">How to read it</th></tr></thead><tbody>{trs}</tbody></table></div>"""
     faqs = [
@@ -329,46 +311,28 @@ def rookwood():
 def sevres():
     t = SYS["sevres_date_letters"]
     rows = t["rows"]
-    # Burton and Hobson (1909) print four marks with letters. They follow the
-    # traditional count without J, so from K on they run a year early: their
-    # AA is 1777 and their U 1772, where both tables here give 1778 and 1773.
-    book = mark_photos(
-        [
-            ("f-sevres-a", "Printed interlaced Ls with A inside", "A, printed with 1753"),
-            ("f-sevres-d", "Printed interlaced Ls with D inside", "D, printed with 1756"),
-            ("f-sevres-u-crown", "Printed crowned interlaced Ls with U inside", "Crowned U, printed with 1772"),
-            ("f-sevres-aa", "Printed interlaced Ls with AA inside", "AA, printed with 1777"),
-        ],
-        "The same mark as a 1909 handbook printed it, with the year it gave each letter. A and D agree with the traditional table. For U and AA the handbook is a year earlier than either table here (1773 and 1778), because it counts the letters without J. The crown over the Ls marks hard paste.",
-        book_credit("burton"),
-        book=True,
-    )
+    def pic(r):
+        i = f"sevres-letter-{r['letter'].lower()}"
+        return db_cell(i, h=52) if i in marksdb.load() else ""
+
     trs = "".join(
-        f'<tr><th scope="row">{e(r["letter"])}</th><td>{e(r["year"]) if r.get("year") else "Never used"}</td><td>{e(r.get("alt_year") or "")}</td></tr>'
+        f'<tr><th scope="row">{e(r["letter"])}</th><td class="cypher-cell">{pic(r)}</td><td>{e(r["year"]) if r.get("year") else "Never used"}</td><td>{e(r.get("alt_year") or "")}</td></tr>'
         for r in rows
     )
-    photos = mark_photos(
-        [
-            ("p-vincennes-dot", "Blue interlaced Ls with a dot in the middle and no letter", "A dot, no letter: before the letters began"),
-            ("p-sevres-h", "Blue interlaced Ls with H inside and a cross below", "H: 1761, or 1760 in the traditional table"),
-            ("p-sevres-s", "Blue interlaced Ls with S inside and the initials LB below", "S: 1771"),
-            ("p-sevres-t", "Blue interlaced Ls with T inside and a small k below", "T: 1772"),
-            ("p-sevres-z", "Blue interlaced Ls with Z inside, the word Dodin and the year 1777 along one stroke", "Z: 1777"),
-        ],
-        "Painted marks on five Vincennes and Sèvres items in the Met. The first, on a wine cooler of about 1751, has a dot and no letter, as marks did before the letters began. The others read H, S, T and Z, and the Met dates the items 1761, 1771, 1772 and 1777, the years in the revised table. The painter Charles-Nicolas Dodin wrote 1777 in full beside his Z. The marks below the Ls (a cross, LB, k) are painters' and gilders' marks, not dates.",
-        met_credit(("wine cooler, LC-1989.351.1", "Wine cooler (seau à demi-bouteille) (one of a pair) MET LC-1989 351 1-marks.jpg"), ("vase, SF2007.90.8a, b", "Vase (Vase hollandois) MET SF2007 90 8a, b mark.jpg"), ("cup, SF64.174.59a", "Cup with cover (pot à jus) MET SF64 174 59a mark.jpg"), ("vase, SF58.75.73ab", "Vase with cover (vase à flacon) (one of a pair) MET SF58 75 73ab marks.jpg"), ("plaque, SF1988.179", "Themire Crowned by Graces MET SF1988 179 mark.jpg")),
-    )
+    letter_ids = [f"sevres-letter-{r['letter'].lower()}" for r in rows if f"sevres-letter-{r['letter'].lower()}" in marksdb.load()]
+    factory = ["vincennes-interlaced-ls-dot"]
     tool = """      <h2 id="lookup">Find a Sèvres date letter</h2>
       <div class="finder">
         <div class="finder__row"><label>Letter or letters inside the Ls <input id="sv-letter" maxlength="2" autocomplete="off" placeholder="e.g. S or DD"></label></div>
         <div id="sv-results" class="finder__results" aria-live="polite"><p class="finder__hint">Type the painted letter inside the interlaced Ls: one letter, or a doubled letter from 1778.</p></div>
       </div>"""
     sections = f"""      <h2 id="example">What the mark looks like</h2>
-      {photos}
-      {book}
+      <p>Two script Ls crossed back to back, painted, usually in blue. Before the letters began the Ls carried a dot or nothing; from 1753 or 1754 a letter inside them gives the year. Marks painted below the Ls are painters' and gilders' marks, not dates.</p>
+      {marksdb.grid(factory)}
       <h2 id="tables">Every Sèvres date letter, 1753 to 1793</h2>
-      <p class="note">Two tables are published. The revised one (the French Porcelain Society, after David Peters, 2014) is used by museums today; the traditional one is a year earlier for A to I and a year later for KK to PP. Both are shown.</p>
-      <div class="table-wrap"><table><thead><tr><th scope="col">Letter</th><th scope="col">Revised table</th><th scope="col">Traditional table</th></tr></thead><tbody>{trs}</tbody></table></div>"""
+      <p class="note">Two tables are published. The revised one (the French Porcelain Society, after David Peters, 2014) is used by museums today; the traditional one is a year earlier for A to I and a year later for KK to PP. Both are shown. Pictures are photographs of real marks where we have them, or the mark as a period book printed it; painted marks vary from hand to hand.</p>
+      <div class="table-wrap"><table class="cyphers"><thead><tr><th scope="col">Letter</th><th scope="col">Picture</th><th scope="col">Revised table</th><th scope="col">Traditional table</th></tr></thead><tbody>{trs}</tbody></table></div>
+      {db_credits(factory + letter_ids)}"""
     faqs = [
         ("How do I date Sèvres porcelain?",
          "<p>Find the painted interlaced Ls and the letter inside or beside them. Single letters run from A (1753 or 1754) to Z (1777), then doubled letters from AA (1778) to the early 1790s. The letter dates the painting of the mark, which is usually the decoration.</p>"),

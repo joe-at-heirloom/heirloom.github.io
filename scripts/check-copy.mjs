@@ -33,7 +33,7 @@
 //     builder in a temporary folder, so a broken guard writes nothing here),
 //     and neither legal page carries a draft's words.
 
-import { readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, copyFileSync, rmSync, realpathSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, copyFileSync, rmSync, realpathSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
@@ -202,6 +202,12 @@ const TITLE_NAMES = new Set([
   // Chinese dynasties and reigns (the Chinese reign-mark pages).
   'Ming', 'Qing', 'Republic', 'Hongxian', 'Hongwu', 'Jianwen', 'Yongle', 'Hongxi', 'Xuande', 'Zhengtong', 'Jingtai', 'Tianshun', 'Chenghua', 'Hongzhi', 'Zhengde', 'Jiajing', 'Longqing', 'Wanli', 'Taichang', 'Tianqi', 'Chongzhen', 'Shunzhi', 'Kangxi', 'Yongzheng', 'Qianlong', 'Jiaqing', 'Daoguang', 'Xianfeng', 'Tongzhi', 'Guangxu', 'Xuantong', 'Chinese',
 ]);
+// Artists' names on the signature pages are names, not title case.
+for (const f of existsSync(resolve(siteRoot, 'scripts/pages/signatures')) ? readdirSync(resolve(siteRoot, 'scripts/pages/signatures')) : []) {
+  if (!f.endsWith('.json')) continue;
+  const { artist } = JSON.parse(readFileSync(resolve(siteRoot, 'scripts/pages/signatures', f), 'utf8'));
+  for (const w of [...artist.split(/\s+/), ...artist.split(/[\s-]+/)]) TITLE_NAMES.add(w.replace(/[\u2019']s$/, ''));
+}
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
@@ -319,6 +325,7 @@ const GUIDE_PAGES = [
   'marks/pocket-watch-serial-numbers.html',
   'marks/leica-serial-numbers.html',
   'marks/wedgwood-date-codes.html',
+  'marks/artist-signatures.html',
   'marks/minton-date-marks.html',
   'marks/royal-worcester-date-marks.html',
   'marks/rookwood-pottery-marks.html',
@@ -388,6 +395,8 @@ const GUIDE_PAGES = [
   'marks/royal-doulton-marks.html',
   'marks/royal-copenhagen-marks.html',
   'marks/hummel-marks.html',
+  // One page per artist (scripts/pages/p_artist_sigs.py), however many there are.
+  ...readdirSync(resolve(siteRoot, 'marks')).filter((f) => f.endsWith('-signature.html')).map((f) => `marks/${f}`),
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');

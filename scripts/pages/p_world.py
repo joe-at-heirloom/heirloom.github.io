@@ -1,53 +1,16 @@
 """Marks from beyond the British date letters: gold karat and fineness marks,
 Mexican, French, Gorham and Christofle silver.
 
-These pages are written by hand, not read from the app's tables: each fact is
-taken from at least two published sources, listed on its page, and every mark
-shown is a real photograph under an open license (or a public-domain book
-facsimile), credited under the photo. A mark with no open photo is described
-in words, never drawn.
+These pages are written by hand: each fact is taken from at least two published
+sources, listed on its page. Every mark shown comes from its marks-database entry
+(marksdb.py): one image of that mark alone, or its description in words.
 """
 from shell import *
 from p_marks import MID, cta, e
+import marksdb
 
 CSS = '<link rel="stylesheet" href="/marks/marks.css">'
 
-LICENSES = {
-    "PD": None,
-    "CC0": ("CC0", "https://creativecommons.org/publicdomain/zero/1.0/"),
-    "CC BY 2.0": ("CC BY 2.0", "https://creativecommons.org/licenses/by/2.0/"),
-    "CC BY 3.0": ("CC BY 3.0", "https://creativecommons.org/licenses/by/3.0/"),
-    "CC BY 4.0": ("CC BY 4.0", "https://creativecommons.org/licenses/by/4.0/"),
-    "CC BY-SA 2.0": ("CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0/"),
-    "CC BY-SA 2.5": ("CC BY-SA 2.5", "https://creativecommons.org/licenses/by-sa/2.5/"),
-    "CC BY-SA 3.0": ("CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0/"),
-    "CC BY-SA 4.0": ("CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/"),
-}
-
-
-def credit(title, page_url, author, lic, note="cropped by Heirloom"):
-    """A credit line as the license asks: the work, its author, the license with a link, and what was changed."""
-    if lic == "PD":
-        l = "public domain"
-    elif lic == "CC0":
-        l = '<a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow">CC0</a>'
-    else:
-        name, url = LICENSES[lic]
-        l = f'<a href="{url}" rel="nofollow">{name}</a>'
-    by = f" by {author}" if author else ""
-    return f'Photograph: <a href="{e(page_url)}" rel="nofollow">{e(title)}</a>{by}, {l}{", " + note if note else ""}.'
-
-
-def photos(items, caption=""):
-    """Real photographs of marks, cropped to the mark. items: (file, alt, label, credit_html[, "wide"]).
-    A wide one (a row of marks) takes the full width."""
-    figs = "".join(
-        f'<figure class="wphoto{" wphoto--wide" if it[4:] == ("wide",) else ""}"><img src="/marks/img/{it[0]}.webp" alt="{e(it[1])}" loading="lazy" decoding="async">'
-        f'<figcaption><span class="wphoto__label">{it[2]}</span><span class="wphoto__credit">{it[3]}</span></figcaption></figure>'
-        for it in items
-    )
-    cap = f'<p class="wphotos__caption">{caption}</p>' if caption else ""
-    return f'<div class="wphotos">{figs}</div>{cap}'
 
 
 def sources(items):
@@ -112,9 +75,6 @@ GOLD_SRC = {
 
 
 def gold():
-    cr_chester = credit("Victorian 18ct mourning ring with hair", "https://commons.wikimedia.org/wiki/File:Victorian_18ct_mourning_ring_with_hair.jpg", "Charles J. Sharp", "CC BY-SA 4.0")
-    cr_exeter = credit("Modern gold ring; Exeter assay office (FindID 855642)", "https://commons.wikimedia.org/wiki/File:Modern_gold_ring;_Exeter_assay_office_oblique_1_(FindID_855642).jpg", "Somerset County Council, Wil Partridge, Portable Antiquities Scheme", "CC BY 2.0")
-    cr_583 = credit("Soviet Union fineness for gold", "https://commons.wikimedia.org/wiki/File:Soviet_Union_fineness_for_gold.jpg", "Star61", "CC BY-SA 4.0")
 
     rows = [
         ("8 karat", "333.3", "333", "Germany allows it on jewelry; often seen on German gold"),
@@ -140,7 +100,7 @@ def gold():
       {table(["Karat", "Exact thousandths", "Usually stamped", "Where you see it"], rows)}
       <h3>Why 585 and not 583</h3>
       <p>14 divided by 24 is 0.5833, so the exact figure for 14 karat is 583. The usual stamp, and the legal 14 karat standard in the UK and India, is 585, slightly above it. Both are 14 karat. 583 appears on some older gold, including gold marked in the Soviet Union:</p>
-{photos([("gold-soviet-583", "A gold mark reading 583 beside a star, struck on the inside of a gold item", "583: the exact figure for 14 karat, with a star containing a hammer and sickle, on gold its photographer describes as Soviet.", cr_583, "wide")])}
+{marksdb.grid(['soviet-gold-star-583'])}
       <h2 id="us">Karat marks in the US</h2>
       <p>American gold is usually marked in karats: 10K, 14K, 18K. Since 1906 the National Gold and Silver Stamping Act has made it an offense to ship gold marked finer than it is. Today a gold item may fall short of its mark by no more than 3 parts per thousand when tested without solder, or 7 parts per thousand tested whole with its solder (3 for watch cases and flatware). Before the law changed in 1976 (in force 1981), the allowance was half a karat, or one karat with solder, so older gold can test a little below its stamp.</p>
       <p>Since 1961, whoever stamps a quality mark such as 14K must also stamp their name or a registered trademark next to it, at least as large. A karat mark with no maker's mark beside it on American gold made after that is a reason to look more closely.</p>
@@ -161,10 +121,7 @@ def gold():
         <li><strong>1975 on:</strong> the Hallmarking Act 1973 replaced carats with parts per thousand: a crown with 375, 585, 750 or 916 on gold made in the UK. Imported gold had the number without the crown.</li>
         <li><strong>1999 on:</strong> the crown and the date letter became optional. 990 and 999 were added. A UK hallmark now needs only the sponsor's (maker's) mark, the number and the assay office mark. Gold under 1 gram need not be hallmarked.</li>
       </ul>
-{photos([
-    ("gold-chester-18-crown", "A row of hallmarks on a gold ring: maker's initials, a crown, the figure 18, the Chester town mark and the letter H", "A crown and 18 on an 18 carat ring, with the maker's mark, the Chester town mark and date letter H, which in Chester's table is 1891.", cr_chester, "wide"),
-    ("gold-exeter-22-crown", "Worn hallmarks on a thin gold band: 22, a crown, the Exeter castle and a letter", "22 and a crown on a gold band assayed at Exeter, 1875 by the Portable Antiquities Scheme's record.", cr_exeter, "wide"),
-])}
+{marksdb.grid(['british-gold-crown', 'british-gold-18-carat', 'british-gold-22-carat', 'british-gold-15-carat-decimal', 'british-gold-12-carat-decimal', 'british-gold-9-carat-decimal', 'british-gold-14-carat-1932'])}
       <p>The convention mark, a balance-scale outline around a number, comes from a treaty signed in Vienna in 1972. Countries that belong to it accept each other's convention-marked gold and silver without marking it again.</p>
       <p>For the date letter itself, see <a href="/marks/london-date-letters">London</a>, <a href="/marks/birmingham-date-letters">Birmingham</a>, <a href="/marks/sheffield-date-letters">Sheffield</a> and <a href="/marks/chester-date-letters">Chester</a>.</p>"""
     srcs = [GOLD_SRC[k] for k in ("hma2", "hma1", "si1998", "bhc", "gov", "aol", "bao", "sao", "chaffers", "jackson", "lbma", "bis", "feingehg", "adin", "usc", "cfr", "cfr2012", "ftc2018", "hmc")]
@@ -237,7 +194,8 @@ def mexico():
       <h2 id="eagle">The eagle mark</h2>
       <p>On Mexican silver of the 1950s and 1960s you often find a small stamp of an eagle with a number in it. Museums call it the eagle assay mark, and date silver with it from about 1948 into the 1960s. It fits the 1947 standard, which asked for each item to be assayed and stamped with the producer's number.</p>
       <p><strong>What the number means is disputed.</strong> Museum records show a different number for each Taxco workshop: 9 on Héctor Aguilar's silver (Art Institute of Chicago), 16 on Margot de Taxco's (Museum of Fine Arts, Boston) and 30 on William Spratling's (Art Institute of Chicago). That points to a number for the maker. Some guides instead read low numbers as a city, such as 3 for Taxco; no official or museum source found for this page supports that reading.</p>
-      <p>The years usually given for the eagle, 1948 to 1980, are not stated in any official text found for this page. What is certain is the frame around them: the duty to stamp a producer's number dates from 1947, and the registration numbers of 1979–1980 replaced the old system. No open-license photograph of the eagle mark was found, so it is described here in words.</p>
+      <p>The years usually given for the eagle, 1948 to 1980, are not stated in any official text found for this page. What is certain is the frame around them: the duty to stamp a producer's number dates from 1947, and the registration numbers of 1979–1980 replaced the old system. No open-license photograph of these marks was found, so the cards below describe them in words.</p>
+      {marksdb.grid(['mexico-eagle-assay-mark', 'mexico-hecho-en-mexico', 'mexico-registration-code', 'mexico-alpaca'])}
       <h2 id="codes">Letter-and-number codes, from 1980</h2>
       <p>From 1980 the law required the producer's government registration number on Mexican silver, and the current standard still does. On Taxco silver these appear as codes of two letters and a number, such as TS-24, often beside 925 and México. Collectors' guides read the first letter as the city (T for Taxco) and the second as the maker's surname; that reading is widely repeated, but no official or museum source found here explains how the codes were built. The code identifies a registered maker, not a year.</p>
       <h2 id="taxco">Taxco and its makers</h2>
@@ -247,7 +205,9 @@ def mexico():
         <li><strong>Héctor Aguilar (Taller Borda, from 1939):</strong> a conjoined HA, with TAXCO and 940.</li>
         <li><strong>Los Castillo:</strong> founded by the Castillo brothers, who trained with Spratling; LACMA dates it to 1939, the Museum of Fine Arts, Boston to 1942.</li>
         <li><strong>Margot de Taxco:</strong> the workshop of Margot van Voorhies Carr, from 1946, known for enamel; marked MARGOT DE TAXCO with a model number.</li>
-      </ul>"""
+      </ul>
+      <p>These are artists' and studio marks: they are shown here only as photographs, never redrawn, and no open-license photograph of them has been found yet.</p>
+      {marksdb.grid(['spratling-ws-mark', 'aguilar-ha-mark', 'margot-de-taxco-mark', 'los-castillo-mark', 'pineda-antonio-crown-mark'])}"""
     cavs = [
         "Mexican marks are widely copied, and Spratling's most of all. A mark gives what the item claims; a specialist can tell more.",
         "The eagle's dates and the meaning of its number, and how the letter codes were built, rest on collectors' guides rather than official sources; the page says so where it matters.",
@@ -284,18 +244,9 @@ DE_SRC = [
 
 
 def germany():
-    cr_925 = credit("Silberpunzierung", "https://commons.wikimedia.org/wiki/File:Silberpunzierung.jpg", "Mario Sarto", "CC BY-SA 3.0")
-    cr_800 = credit("SilberPunze800", "https://commons.wikimedia.org/wiki/File:SilberPunze800.jpg", "Phrontis", "CC BY-SA 3.0")
-    cr_punch = credit("Halbmond reichskrone", "https://commons.wikimedia.org/wiki/File:Halbmond_reichskrone.jpg", "Mario Sarto", "CC BY-SA 3.0")
-    cr_rosen = 'Facsimile: M. Rosenberg, <cite>Der Goldschmiede Merkzeichen</cite> (1922), p. 4, public domain, <a href="https://archive.org/details/dergoldschmiede00rosegoog/page/n44" rel="nofollow">via the Internet Archive</a>.'
     sections = f"""      <h2 id="mark">The crescent and crown</h2>
       <p>A German law of July 16, 1884, in force from January 1, 1888, set one stamp for the whole German Empire. A notice of January 7, 1886 fixed its form: the imperial crown beside a crescent moon for silver, or the crown inside a sun for gold, together with the fineness in thousandths and the name or registered trademark of the firm that had the item stamped.</p>
-{photos([
-    ("de-crescent-crown-925", "German silver marks: a crescent moon and a crown, the number 925, and a round maker's monogram", "Crescent and crown, 925, and a maker's mark in a circle.", cr_925, "wide"),
-    ("de-fork-800", "Marks on a German silver fork: the crescent (partly off the edge), the crown, 800 and a star maker's mark", "On a fork: the crescent and crown, 800 and a star maker's mark.", cr_800),
-    ("de-punch", "A steel punch for the crown and crescent mark, its face cut in reverse", "The steel punch that strikes the mark, cut in reverse. Firms owned their own punches.", cr_punch),
-    ("de-rosenberg-forms", "Printed forms of the German marks: a crown inside a sun for gold, a crown beside a crescent for silver", "The two official forms as printed by Rosenberg in 1922: crown in the sun for gold (Nr. 1), crown beside the crescent for silver (Nr. 2).", cr_rosen, "wide"),
-])}
+{marksdb.grid(['german-crescent-and-crown', 'germany-gold-crown-in-sun'])}
       <h2 id="read">What it tells you, and what it doesn't</h2>
       <ul class="rules">
         <li><strong>800 or more:</strong> if a fineness was stated on silver, it could not be under 800 thousandths (on gold, 585). The law allowed 8 thousandths short on silver. 800 is the commonest; 835 and 925 also occur.</li>
@@ -344,9 +295,6 @@ RU_SRC = [
 
 
 def russia():
-    cr_84 = credit("Candlestick MET SF2004 80 marks", "https://commons.wikimedia.org/wiki/File:Candlestick_MET_SF2004_80_marks.jpg", "The Metropolitan Museum of Art", "CC0")
-    cr_1737 = credit("Standing cup with cover MET SF25 15 32b marks", "https://commons.wikimedia.org/wiki/File:Standing_cup_with_cover_MET_SF25_15_32b_marks.jpg", "The Metropolitan Museum of Art", "CC0")
-    cr_fab = credit("Karl Fabergé silver hallmark 1", "https://commons.wikimedia.org/wiki/File:Karl_Faberg%C3%A9_silver_hallmark_1.jpg", "Charles J. Sharp", "CC BY-SA 4.0")
     rows = [
         ("84", "875", "The commonest Russian silver standard"),
         ("88", "916 (917 rounded)", "A higher standard, often on Fabergé silver"),
@@ -358,22 +306,21 @@ def russia():
       <p>Gold used other numbers: 56 zolotniks is about 14 carat, 72 about 18 carat. Read 72 on a gold item as gold; it was a silver standard only in the 18th century.</p>
       <h2 id="before">Before the kokoshnik: town, year and assay master</h2>
       <p>Russian marking of gold and silver goes back to a decree of Peter the Great in 1700. Through the 18th and 19th centuries an item usually carried the arms of its town (Moscow: Saint George and the dragon; St Petersburg: crossed anchors with a scepter), the initials of the assay master with the year, the standard in zolotniks, and the maker's mark. From the 1770s to 1896 the year on the assay master's mark was compulsory, which makes these marks unusually easy to date.</p>
-{photos([
-    ("ru-moscow-1737", "Three marks on Russian silver: a maker's initials, a cross-shaped punch with the year 1737 over initials, and the Moscow town mark", "Moscow, 1737: the maker's mark, the year over the assay master's initials, and the Moscow town mark with Saint George.", cr_1737, "wide"),
-    ("ru-moscow-84", "Worn marks on a Russian silver candlestick: 84, the Moscow town mark and initials", "84 (875 thousandths), the Moscow town mark and initials, on a candlestick of about 1780.", cr_84, "wide"),
-])}
+{marksdb.grid(['russia-assay-master-year-mark', 'russia-moscow-town-mark', 'russia-st-petersburg-town-mark', 'russia-84-zolotnik', 'russia-88-zolotnik', 'russia-91-zolotnik'])}
+      <h2 id="towns">Town marks before 1896</h2>
+      <p>Moscow and St Petersburg assayed most Russian silver, but provincial towns struck their own arms as a town mark. These are the marks Marc Rosenberg printed in 1928, with the years he gives for each. His book is the only published source found for them, so read the years as his.</p>
+      {marksdb.grid(['russia-astrakhan-town-mark', 'russia-irkutsk-tobolsk-town-mark', 'russia-kaluga-town-mark', 'russia-kamianets-podilskyi-town-mark', 'russia-kazan-town-mark', 'russia-kiev-town-mark-1794', 'russia-kiev-town-mark-19th-century-oval', 'russia-kiev-town-mark-19th-century-t', 'russia-kostroma-town-mark', 'russia-pskov-town-mark', 'russia-tula-town-mark', 'russia-tver-town-mark', 'russia-veliky-ustyug-town-mark', 'russia-vitebsk-town-mark', 'russia-vladimir-town-mark', 'russia-vologda-town-mark', 'russia-yaroslavl-town-mark'])}
       <h2 id="kokoshnik">The kokoshnik, 1896 to 1927</h2>
       <p>A new assay charter of March 11, 1896 brought one state mark for the whole empire: a woman's head in a kokoshnik, the tall traditional headdress, with the standard number beside it. Assay masters' marks no longer carry a year. Sources date the new mark from 1896 (the charter) or from 1899 (when it came into general use); read it as 1896 to 1899 onward.</p>
       <ul class="rules">
         <li><strong>Head facing left:</strong> the first type, with the Cyrillic initials of the district's assay chief. Up to 1908.</li>
         <li><strong>Head facing right:</strong> from 1908, with a Greek letter for the assay district in place of the initials: delta (Δ) for Moscow. Museums date this type 1908 to 1917; Russia's assay chamber shows it in use to 1926, until the Soviet change of 1927.</li>
       </ul>
-      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. No open-license photograph of a legible kokoshnik was found for this page, so it is described here in words.</p>
-{photos([
-    ("ru-faberge-88", "Marks on a Fabergé silver fork: a small rectangular mark with 88, and the name K. FABERZHE in Cyrillic", "The Fabergé firm's name in Cyrillic and a state mark with 88 (916 thousandths) on a silver fork. The worn figure beside the 88 can't be read in this photo.", cr_fab, "wide"),
-])}
+      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. No open-license photograph of a legible kokoshnik was found, so the cards below describe it in words.</p>
+{marksdb.grid(['russia-kokoshnik-left', 'russia-kokoshnik-right', 'russia-district-letter-delta', 'faberge-cyrillic-name-mark'])}
       <h2 id="soviet">Soviet marks, from 1927</h2>
-      <p>In 1927 fineness moved to thousandths (875, 916, 925 on silver), and the state mark became a worker's head with a hammer. From 1958 it was a hammer and sickle inside a five-pointed star, with the fineness and a letter for the assay office, until 1994, when the kokoshnik returned with metric numbers. These dates come from Russia's Federal Assay Chamber; no second published source was found for them. The star with hammer and sickle appears on the <a href="/marks/gold-karat-marks">gold marks page</a>, beside 583.</p>"""
+      <p>In 1927 fineness moved to thousandths (875, 916, 925 on silver), and the state mark became a worker's head with a hammer. From 1958 it was a hammer and sickle inside a five-pointed star, with the fineness and a letter for the assay office, until 1994, when the kokoshnik returned with metric numbers. These dates come from Russia's Federal Assay Chamber; no second published source was found for them. The star with hammer and sickle appears on the <a href="/marks/gold-karat-marks">gold marks page</a>, beside 583.</p>
+      {marksdb.grid(['soviet-worker-hammer', 'soviet-star-silver'])}"""
     cavs = [
         "The kokoshnik's start date (1896 or 1899) and the end of the right-facing type (1917 or 1926–27) differ between sources; both readings are given above.",
         "Alpha for St Petersburg is given by one source only, so it is left out above; delta for Moscow is confirmed by two.",
@@ -419,9 +366,6 @@ GORHAM_SRC = [
 
 
 def gorham():
-    met = lambda title, page_: credit(title, page_, "The Metropolitan Museum of Art", "CC0")
-    cma = lambda acc: f'Photograph: <a href="https://www.clevelandart.org/art/{acc}" rel="nofollow">The Cleveland Museum of Art, {acc}</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow">CC0</a>, cropped by Heirloom.'
-    hb = 'Facsimile: Gorham Company, <cite>Gorham Hand Book of Sterling Silver Spoons and Forks</cite> (1909), p. 15, public domain, <a href="https://archive.org/details/gorhamhandbookst00gorh/page/n18" rel="nofollow">via the Internet Archive</a>.'
     letters = "ABCDEFGHIJKLMNOPQ"
     confirmed = {"C": "Art Institute of Chicago", "G": "Cooper Hewitt; RISD Museum", "H": "RISD Museum", "M": "The Met", "N": "The Met", "O": "The Met", "P": "Minneapolis Institute of Art", "Q": "Cooper Hewitt; Minneapolis Institute of Art"}
     cells = "".join(
@@ -442,11 +386,7 @@ def gorham():
       <p>Jabez Gorham, a Providence jeweler, began making silver spoons in 1831, first as Gorham &amp; Webster. The firm became the Gorham Manufacturing Company in the 1860s, and later the largest silver maker in the US. Before 1868 it worked in coin silver and marked its wares with the firm's name in a rectangle: Gorham &amp; Webster, Gorham &amp; Thurber, Gorham &amp; Co. In 1868 it adopted the sterling standard, 925 thousandths, and the mark it has used since.</p>
       <h2 id="trademark">The lion, anchor and G</h2>
       <p>Gorham sterling carries three small marks in a row: a walking lion, an anchor and a Gothic capital G, usually with STERLING and a model number below. They look like British hallmarks, and are often taken for them, but they are Gorham's trademark: the US had no official assay marks, and the lion and anchor (Birmingham's town mark) were borrowed for the look. The G is for Gorham.</p>
-{photos([
-    ("gorham-1909-trademark", "A printed line reading STERLING .925 FINE, then a lion, an anchor and a G in small shields, then DESIGN COPYRIGHTED", "The trademark as Gorham printed it in its own 1909 handbook.", hb, "wide"),
-    ("gorham-1880-m", "Gorham marks on a hammered silver vase: lion, anchor and G, STERLING, B86, and the letter M", "Lion, anchor, G; STERLING; model B86; date letter M. The Met dates the vase 1880.", met("Vase MET DP161876", "https://commons.wikimedia.org/wiki/File:Vase_MET_DP161876.jpg")),
-    ("gorham-1881-n", "Gorham marks on a coffeepot: lion, anchor and G, STERLING, E36, and the letter N", "The same marks with model E36 and date letter N. The Met dates the coffeepot 1881.", met("Coffeepot MET DP331112", "https://commons.wikimedia.org/wiki/File:Coffeepot_MET_DP331112.jpg")),
-])}
+{marksdb.grid(['gorham-lion-passant', 'gorham-anchor', 'gorham-gothic-g', 'gorham-electroplate-anchor'])}
       <p>Gorham also made electroplate. Museum records of its plated ware show an anchor alone with GORHAM CO., or GORHAM with E.P., rather than the lion, anchor and G with STERLING. Read the lion and G with the word STERLING as sterling, and an anchor with the name but no STERLING as a reason to check for plate.</p>
       <h2 id="dates">Gorham date marks</h2>
       <p>From 1868 Gorham struck a yearly date mark on hollowware and some small wares, on its own line below STERLING and the model number. Most flatware has none. Two systems were used:</p>
@@ -457,16 +397,15 @@ def gorham():
       <h3>The letters, 1868 to 1884</h3>
       <ul class="dlg">{cells}</ul>
       <p class="note">The sequence is from Rainwater's table. Museum records date dated examples of C, G, H, M, N, O, P and Q to these same years. One disagrees: the Minneapolis Institute of Art dates a dish marked K to 1879, where the sequence gives 1878.</p>
+      <p>Three of the letters, struck on silver the Met dates to those years:</p>
+      {marksdb.grid(['gorham-date-letter-m-1880', 'gorham-date-letter-n-1881', 'gorham-date-letter-o-1882'])}
       <h3>The symbols, from 1885</h3>
       <p>Each year from 1885 had its own small symbol. The full chart is printed in Carpenter's <cite>Gorham Silver</cite> and Rainwater's <cite>Encyclopedia</cite>; it could not be checked against a second source year by year, so it is not reproduced here. These are the years museum records tie to a symbol:</p>
       {table(["Year", "The symbol", "Dated by"], sym)}
       <p class="note">Rows dated by one museum only are shown as that museum describes them; check them against a full chart before you rely on them. Later Gorham silver, from 1941, has been said to carry a shape whose number of sides gives the decade; only one museum example (a hexagon on a pitcher of 1960) was found for it.</p>
       <h2 id="martele">Martelé</h2>
       <p>Martelé (French for hammered) was Gorham's hand-raised, hand-hammered Art Nouveau line, designed under William C. Codman and shown at the Paris Exposition of 1900. It was made in silver finer than sterling, and marked differently: the word Martelé in script, a spread eagle, the lion, anchor and G, then <strong>950-1000 FINE</strong> or <strong>.9584</strong>, with a model number and often a letter code. Some carry a retailer's name, such as Spaulding &amp; Co. of Chicago.</p>
-{photos([
-    ("gorham-martele-950", "Martelé marks: an eagle over the lion, anchor and G, 950-1000 FINE, 8991, SPAULDING & CO. CHICAGO, 2½ PINT, STERLING", "Eagle, lion, anchor, G and 950-1000 FINE, with the retailer Spaulding &amp; Co., on a Martelé coffeepot.", cma("2008.164")),
-    ("gorham-martele-9584", "Martelé marks: the word Martelé in script, an eagle, the lion, anchor and G, .9584, FQU, STERLING", "Martelé in script over the eagle, with .9584 and the code FQU, from the same service.", cma("2008.164")),
-])}
+{marksdb.grid(['gorham-martele-script', 'gorham-martele-eagle', 'gorham-martele-950-1000-fine', 'gorham-martele-9584'])}
       <p>A thesis on the line gives 950 from 1898 and .9584 (the old British Britannia standard) from 1905; both marks are confirmed on museum silver, but those years rest on that one study. No source found here explains the letter codes, so they are not decoded here.</p>"""
     cavs = [
         "The lion, anchor and G is a company mark, not a government hallmark: it says Gorham made and sold the item as sterling.",
@@ -513,8 +452,6 @@ FR_SRC = {
 }
 
 def france():
-    cr_min = credit("Poinçon Minerve 1er titre", "https://commons.wikimedia.org/wiki/File:Poicon_Minerve_1er_titre_-_argent_massif_minimum_950_sur_1000.jpg", "Copyleft", "CC BY-SA 4.0")
-    cr_loz = credit("Étui à messages, J581", "https://commons.wikimedia.org/wiki/File:Etui_%C3%A0_messages,_J581(3).jpg", "Paris Musées, Musée Cognacq-Jay", "CC0")
     rows = [
         ("Minerva head, figure 1", "Silver, first standard: 950 at first; 925 today", "An 8-sided frame (a rectangle with cut corners). The 1 is in front of the forehead."),
         ("Minerva head, figure 2", "Silver, second standard: 800", "A barrel-shaped frame. The 2 is under the chin."),
@@ -532,21 +469,22 @@ def france():
       <p>A full set of French marks on silver is two: the state's Minerva head (or a small-item mark), and the maker's lozenge. There is no date letter, so French marks date an item only to a period.</p>
       <h2 id="minerva">The Minerva head</h2>
       <p>The goddess Minerva in a helmet, in profile, in a small frame with a figure: 1 for the first standard, 2 for the second. The figure does not tell Paris from the rest of France. Paris punches carry no office sign; punches from the provincial offices add a small sign, under the chin on the first standard and before the forehead on the second.</p>
-{photos([
-    ("fr-minerva-1", "A Minerva head mark, the helmeted head in a frame with cut corners, struck on a silver ring", "Minerva in the cut-corner frame of the first standard, on a silver ring.", cr_min),
-    ("fr-lozenge-es", "A French maker's lozenge with the letters E and S on either side of a caduceus", "A maker's lozenge: the initials E S with a caduceus as the maker's sign.", cr_loz),
-])}
+{marksdb.grid(['france-minerva-first-standard', 'france-minerva-second-standard'])}
       <p>The first standard was 950 thousandths. Today's official table gives 925 for the Minerva with a 1, and French law has listed 925 and 800 as the silver standards since 1994. The year of the change from 950 to 925 is often given as 1973, but no law or museum record found here confirms it, so a first-standard Minerva means 950 or 925 depending on its date.</p>
       <h2 id="all">French marks at a glance</h2>
       {table(["Mark", "What it means", "How to tell it"], rows)}
       <p>When an item is part gold and part silver, and the second metal is more than 3% of its weight, the Paris eagle's head and boar's head are struck together in one oval.</p>
+      {marksdb.grid(['france-swan', 'france-weevil', 'france-et-mark', 'france-mixed-boar-eagle'])}
       <h2 id="small">The boar's head and the crab</h2>
-      <p>Small silver items, too small to take the Minerva head, were marked with a single small punch: a boar's head in Paris and a crab in the provincial offices. These marks promise only the second standard, 800. The sources agree on their start in 1838, but not on when they stopped: the often-quoted 1961 could not be confirmed, a Senate report of 1983 still names the crab, and today's table shows a Minerva without a frame for small silver. No legible open-license photo of either was found for this page.</p>
+      <p>Small silver items, too small to take the Minerva head, were marked with a single small punch: a boar's head in Paris and a crab in the provincial offices. These marks promise only the second standard, 800. The sources agree on their start in 1838, but not on when they stopped: the often-quoted 1961 could not be confirmed, a Senate report of 1983 still names the crab, and today's table shows a Minerva without a frame for small silver. Chaffers printed both in 1896, engraved from the punches of 1838:</p>
+      {marksdb.grid(['france-boar-head', 'france-crab'])}
       <h2 id="lozenge">The maker's lozenge</h2>
       <p>The maker's mark has been a lozenge, a diamond standing on its point, since 1798. It holds the maker's initials and a sign of the maker's own choosing, such as a star, a key or a caduceus, which no other maker in the same district may use. The punch is registered by striking it on a copper plate at the assay office. An importer uses an oval instead.</p>
+      {marksdb.grid(['france-makers-lozenge', 'france-plate-square-mark'])}
       <p>A perfectly square maker's mark means plated ware, not silver: the law required it of makers of plated goods, and a decree of 1860 extended it to electroplaters. Christofle's marks on silver plate are of this kind; see <a href="/marks/christofle-marks">Christofle marks</a>.</p>
       <h2 id="gold">French gold, in brief</h2>
-      <p>From 1838 to 1919 French gold carried the head of a Greek physician with a figure for its standard, and small items an eagle's head (Paris) or a horse's head (elsewhere). A decree of June 1919 made the eagle's head the mark for all French gold. An eagle's head with a 3 is 18 karat; with a 1, 22 karat. For what the numbers mean, see <a href="/marks/gold-karat-marks">gold karat marks</a>.</p>"""
+      <p>From 1838 to 1919 French gold carried the head of a Greek physician with a figure for its standard, and small items an eagle's head (Paris) or a horse's head (elsewhere). A decree of June 1919 made the eagle's head the mark for all French gold. An eagle's head with a 3 is 18 karat; with a 1, 22 karat. For what the numbers mean, see <a href="/marks/gold-karat-marks">gold karat marks</a>.</p>
+      {marksdb.grid(['france-gold-greek-physician', 'france-gold-eagle-head', 'france-gold-horse-head', 'france-gold-owl'])}"""
     srcs = [FR_SRC[k] for k in ("chaffers96", "chaffers99", "carre", "touzet", "capdevielle", "universalis", "douane09", "douanehist", "douanerules", "senat83", "senat94", "parismusees")]
     cavs = [
         "Minerva heads are small and often worn: the figure 1 or 2 and the frame's shape matter more than the face.",
@@ -571,7 +509,6 @@ def france():
 
 
 def christofle():
-    cr_name = credit("La Moissonneuse, ODUT1827 (6)", "https://commons.wikimedia.org/wiki/File:La_Moissonneuse,_ODUT1827(6).jpg", "Paris Musées, Petit Palais", "CC0")
     sections = f"""      <h2 id="history">The firm</h2>
       <p>Christofle dates itself to 1830. Charles Christofle (1805–1863) had become a partner in his brother-in-law's Paris jewelry firm in 1825 and ran it alone from 1831. From 1842 he bought the French patents for electroplating with silver and gold, first Henri de Ruolz's and then Elkington's, which came earlier, and built the business on silver plate: a thin coat of silver laid by electrolysis on a base metal. The firm also made solid silver, and its large works were at Saint-Denis, north of Paris.</p>
       <h2 id="plate">Christofle silver plate</h2>
@@ -585,10 +522,11 @@ def christofle():
         <li><strong>Name stamps:</strong> CHRISTOFLE in a rectangle, plain or in script, CHRISTOFLE FRANCE, or GALLIA.</li>
         <li><strong>Gallia:</strong> a line of plate Christofle created at the end of the 19th century, marked with a cockerel over the word GALLIA.</li>
       </ul>
-      <p>No open-license photograph of the balance mark or the knight was found, so they are described in words here.</p>
+      <p>No open-license photograph of these marks was found, so the cards below describe them in words. Being pictorial trademarks, they will be shown only as photographs:</p>
+      {marksdb.grid(['christofle-cc-bee-maker-mark', 'christofle-oc-maker-mark', 'christofle-knight-quality-mark', 'gallia-cockerel'])}
       <h2 id="silver">Christofle solid silver</h2>
-      <p>Solid silver by Christofle carries the French state mark, the <a href="/marks/french-silver-marks">Minerva head</a>, with the maker's mark: on the statuette below, Paris Musées records a Minerva and a maker's mark of CC with a bee. Silver of this kind is marked like any French silver, so the Minerva head is what tells it from plate.</p>
-{photos([("christofle-orfevres", "The words CHRISTOFLE ORFÈVRES stamped into the silver base of a statuette", "CHRISTOFLE ORFÈVRES on the base of <cite>La Moissonneuse</cite>, a solid-silver statuette by Christofle after Mathurin Moreau, in the Petit Palais, Paris.", cr_name, "wide")])}"""
+      <p>Solid silver by Christofle carries the French state mark, the <a href="/marks/french-silver-marks">Minerva head</a>, with the maker's mark: on the statuette whose name stamp is shown below, Paris Musées records a Minerva and a maker's mark of CC with a bee. Silver of this kind is marked like any French silver, so the Minerva head is what tells it from plate.</p>
+{marksdb.grid(['christofle-name-stamp'])}"""
     srcs = [FR_SRC[k] for k in ("christofle", "christofle_auth", "mad", "bouilhet", "jury1851", "touzet", "chaffers99", "parismusees")]
     cavs = [
         "The meaning of the balance, the CC to OC change in 1935, the knight quality mark and the Gallia cockerel rest on Christofle's own account; museums and older books found here confirm only the CC with a bee and the name stamps.",
