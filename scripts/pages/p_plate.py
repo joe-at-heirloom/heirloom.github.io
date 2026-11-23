@@ -5,11 +5,12 @@ Unlike the date-letter and pottery pages these don't come from the app's mark
 tables: American plate makers didn't date their marks, so each page is a short
 maker history, the marks and what each tells you, and how to date an item from
 its pattern. Every fact on a page is from at least two of the sources it lists;
-where they disagree the page says so. Mark photos are open-licence photographs
-(credited under each); a mark with no open photograph is described in words.
+where they disagree the page says so. Every mark is shown from its entry in the marks
+database (marksdb.py): one image of that mark alone, credited, or its description in words.
 """
 from shell import *
 from p_marks import MID, cta, e
+import marksdb
 
 CSS = '<link rel="stylesheet" href="/marks/marks.css">'
 
@@ -22,10 +23,6 @@ def src_list(items):
     # Citations, not claims: the copy check skips them, as on the other marks pages.
     return f'<!--copy-check:skip--><ul class="sources">{lis}</ul><!--/copy-check:skip-->'
 
-
-def photo(file, alt, caption, credit):
-    return (f'<figure class="markphoto"><img src="/marks/img/{file}.webp" alt="{e(alt)}" loading="lazy" decoding="async">'
-            f'<figcaption>{caption} <span class="stamps__credit">{credit}</span></figcaption></figure>')
 
 
 def marks_table(rows, head=("The mark", "Who used it, and when", "What it tells you"), cls=""):
@@ -79,7 +76,6 @@ def uspto(reg, what):
     return (f"US trademark registration {reg}: {what}", f"https://tsdr.uspto.gov/#caseNumber={reg}&caseType=US_REGISTRATION_NO&searchType=statusSearch")
 
 
-CH_CREDIT = 'Photograph: <a href="https://collection.cooperhewitt.org/view/objects/asitem/id/202018" rel="nofollow">Cooper Hewitt, Smithsonian Design Museum</a>, Open Access (CC0), cropped and toned by Heirloom.'
 
 PLATE_OR_STERLING = """      <p>Read the whole stamp first. American sterling is marked STERLING. Plate is marked with the maker's name and often a grade word or number, such as A1, XII, XIV, TRIPLE or QUADRUPLE PLATE, and a grade mark appears only on plate.</p>
       <p>Then look at the places that wear. Plate is a thin coat of silver over a base metal, usually nickel silver, so on a well-used spoon the tip of the bowl, the back of the bowl and the ends of fork tines turn yellowish or gray where the silver has worn through to the metal underneath.</p>"""
@@ -103,7 +99,7 @@ def rogers_1847():
       <p>Asa H., Simeon S. and William Rogers were silversmiths in Hartford, Connecticut, who began making silver-plated spoons and forks there in the 1840s. The sources give different starting years: one 1901 county history gives 1844, 1846 and 1847 in three different family sketches, and a 1913 history says &ldquo;about 1847&rdquo;. The company that inherited their name settled on 1847 and put it in the mark.</p>
       <p>In 1862 the brothers closed their Hartford works and the Meriden Britannia Co. of Meriden, Connecticut, took over their tools and dies, with the brothers supervising the work on a royalty. Meriden Britannia made 1847 Rogers Bros. flatware from then on, and in 1898 it was one of the founding companies of the International Silver Co., which kept the brand going well into the 20th century (it registered the name for stainless steel flatware in 1953). The company's own paper said in 1906 that the brothers had discovered electroplating in 1847; that is the maker's advertising, and no independent history says the same.</p>
       <h2 id="marks">The marks, and what each tells you</h2>
-      {photo("plate-1847-rogers-bros-a1", "1847 ROGERS BROS. A1 stamped on the back of a handle, with a small round mark after it", "The mark on the back of a fish server in the Assyrian Head pattern, made by Meriden Britannia Co. in 1885–86: 1847 ROGERS BROS. A1. The small round mark after it is Meriden Britannia's own, a circle around a balance scale.", CH_CREDIT)}
+      {marksdb.grid(["plate-1847-rogers-bros", "plate-meriden-britannia-scale", "plate-grade-a1", "plate-grade-xii", "plate-grade-triple", "plate-rogers-bros-hollowware", "plate-1847-rogers-bros-sterling"])}
       {marks}
       <p class="note">The marks are stamped on the back of the handle, near where it meets the bowl or tines. The trademark registration claims the 1847 ROGERS BROS. mark was first used in 1862, fifteen years after the date it carries.</p>
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
@@ -174,8 +170,7 @@ def wm_rogers():
       <p>Rogers is the most crowded name in American plate. The brothers licensed it, other Rogers families used it in their own right, and the courts of the 1880s and 1890s stopped several firms from borrowing it. Read the whole mark, including stars, anchors, eagles and initials:</p>
       {marks_table(ROGERS_TABLE, head=("The mark", "Who used it, and when", "How it relates"))}
       <p class="note">The table is from court opinions of 1882, 1887 and 1895, the 1896 trademark directory, Meriden and Hartford histories, and the makers' own trademark registrations. The marks are stamped on the back of the handle.</p>
-      {photo("plate-wm-rogers-and-son", "WM. ROGERS &amp; SON AA stamped along the back of a spoon handle", "WM. ROGERS &amp; SON AA on the back of a silver-plated spoon handle: the Hartford firm's mark.", 'Photograph: <a href="https://www.flickr.com/photos/51035581380@N01/4894854455/" rel="nofollow">wm rogers &amp; son silverplate</a> by Deidre Woollard, <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow">CC BY 2.0</a>, cropped and toned by Heirloom.')}
-      {photo("plate-wm-a-rogers", "WM. A. ROGERS A1 followed by a horseshoe mark, stamped on a ladle handle", "WM. A. ROGERS A1 and a horseshoe on a cream ladle of about 1900: the unrelated New York firm, easy to misread as Wm. Rogers.", 'Photograph: <a href="https://www.europeana.eu/item/1091/item_7EL3HFXD4G632JXSF7TQ4TKGPJLXA7OJ" rel="nofollow">Deutsches Klingenmuseum Solingen</a>, 1990.B.200, <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow">CC BY 4.0</a>, cropped and toned by Heirloom.')}
+      {marksdb.grid(["plate-wm-rogers-and-son", "plate-1865-wm-rogers-mfg-co", "plate-rogers-anchors", "plate-wm-rogers-eagle-star", "plate-rogers-and-bro-star", "plate-c-rogers-and-bros", "plate-rogers-smith-and-co", "plate-wm-a-rogers", "plate-wm-a-rogers-horseshoe", "plate-r-w-rogers-co"])}
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
       <p>Plate. Every Wm. Rogers mark was registered and listed for silver-plated ware, and we found no sterling made under the name. Simpson, Hall, Miller did make sterling from 1895, but under its own marks.</p>
 {PLATE_OR_STERLING}
@@ -264,7 +259,8 @@ def holmes_edwards():
       <p>Holmes &amp; Edwards was known for one process. Under patents granted to W. A. Warner in 1884 and 1886, small blocks of solid silver were set into the back of spoon bowls and fork tines, where flatware rubs on the table, before the whole item was plated. Warner later worked for the company, and a 1904 patent improving the method was assigned to it.</p>
       <h2 id="marks">The marks, and what each tells you</h2>
       {marks}
-      <p class="note">We haven't yet found an openly licensed photograph of a Holmes &amp; Edwards mark; it is stamped on the back of the handle. The meaning of other marks seen on this ware, such as INLAID alone, H&amp;E or IS, isn't in the sources we could read, so they aren't explained here.</p>
+      {marksdb.grid(["plate-holmes-and-edwards", "plate-he-sterling-inlaid", "plate-he-xiv", "plate-he-deep-silver"])}
+      <p class="note">The marks are stamped on the back of the handle. The meaning of other marks seen on this ware, such as INLAID alone, H&amp;E or IS, isn't in the sources we could read, so they aren't explained here.</p>
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
       <p>Plate, even when the mark says STERLING INLAID. The sterling is only the small inlay at the wear points; the rest of the item is a base metal under a coat of silver. The company itself sold the line as giving the wear of sterling for less than half its cost. The firm did also make sterling, listed separately in the 1896 directory; an item is sterling only when the mark says STERLING on its own.</p>
 {PLATE_OR_STERLING}
@@ -317,7 +313,8 @@ def community():
       <p>In 1880 the commune became a company, Oneida Community Ltd. (some accounts date the change from January 1, 1881), and the spoon works moved to Niagara Falls. Its first Community Plate pattern, Avalon, was shown at the end of 1901 and went on sale in 1902, in a single heavy grade of plate. The company bought Wm. A. Rogers Ltd. in 1929, took the name Oneida Ltd. on March 1, 1935, and stopped making flatware in the United States in 2005.</p>
       <h2 id="marks">The marks, and what each tells you</h2>
       {marks}
-      <p class="note">We haven't yet found an openly licensed photograph of a Community mark; it is stamped on the back of the handle.</p>
+      {marksdb.grid(["plate-oneida-community", "plate-community-plate", "plate-oneida-reliance", "plate-oneida-tudor-plate", "plate-oneida-par-plate", "plate-oneida-community-sterling", "plate-heirloom-sterling", "plate-oneida-ltd"])}
+      <p class="note">The marks are stamped on the back of the handle.</p>
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
       <p>Community and Community Plate are silver plate: a coat of silver over a base metal. Oneida also made sterling, and those items say STERLING in the mark.</p>
 {PLATE_OR_STERLING}
@@ -353,7 +350,6 @@ def community():
 
 # ── International Silver Co. ──────────────────────────────────────────────────
 
-WILCOX_CREDIT = 'Photograph: <a href="https://commons.wikimedia.org/wiki/File:Wilcox_IS_International_Silver_co.jpg" rel="nofollow">Wilcox IS International Silver co.</a> by Manuelarosi, Wikimedia Commons, CC0, cropped and toned by Heirloom.'
 
 
 def international():
@@ -374,12 +370,11 @@ def international():
       <p>The International Silver Co. was organized on November 19, 1898, under New Jersey law, with its head office in Meriden, Connecticut. It began by buying a dozen New England silver firms: {members}. Simpson, Hall, Miller &amp; Co., the Derby Silver Co. and two others followed in 1899, and C. Rogers &amp; Bros. in 1903.</p>
       <p>It became one of the largest American makers of silverware, in both sterling and plate. The parent company renamed itself Insilco in 1969, the silverware business was sold to Katy Industries in 1983 or 1984 (the sources differ), and the International Silver name reached Lifetime Brands with its purchase of Syratech in 2006.</p>
       <h2 id="marks">The marks, and what each tells you</h2>
-      {photo("plate-international-silver-wilcox", "WILCOX above the letters I and S in two squares, above INTERNATIONAL SILVER CO., stamped into a plated base", "WILCOX, I S and INTERNATIONAL SILVER CO. on a plated condiment holder, dated by the photographer to the 1950s. Wilcox Silver Plate Co. of Meriden was one of International's founding firms, and its name went on being used.", WILCOX_CREDIT)}
+      {marksdb.grid(["plate-international-silver-co", "plate-international-s-co", "plate-international-sterling", "plate-wilcox"])}
       {marks}
       <p class="note">International kept many of its founding firms' names as brands, so much International ware doesn't say International at all: see <a href="/marks/1847-rogers-bros">1847 Rogers Bros.</a>, <a href="/marks/holmes-and-edwards">Holmes &amp; Edwards</a> and <a href="/marks/wm-rogers">Wm. Rogers</a>.</p>
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
       <p>It can be either, which is why the whole mark matters. International made sterling under its own name and some of its brands, and a great deal of plate. A spoon in a Canadian parliamentary collection, for example, is marked INTERNATIONAL S. CO. XII and is electroplated nickel silver. If the mark says STERLING, it is sterling; if not, treat it as plate.</p>
-      {photo("plate-international-sterling", "INTERNATIONAL, a small shield mark, and STERLING stamped along a spoon handle", "INTERNATIONAL and STERLING on a grapefruit spoon, with a small shield mark between them. The rest of this mark reads PAT. 1929.", 'Photograph: <a href="https://www.europeana.eu/item/1091/item_BL6WPXKXYT5XPBQBSR4XHPMDION2CDJC" rel="nofollow">Deutsches Klingenmuseum Solingen</a>, 1995.NRW.005, <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow">CC BY 4.0</a>, cropped and toned by Heirloom.')}
 {PLATE_OR_STERLING}
       <h2 id="dating">How to date International Silver</h2>
 {DATING_RULE}

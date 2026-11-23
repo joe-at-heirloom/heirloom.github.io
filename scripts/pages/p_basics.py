@@ -6,11 +6,12 @@ Unlike the date-letter pages they don't read the app's tables; each
 fact on them rests on at least two of the published sources listed on the
 page, and where sources disagree the page says so.
 
-Every mark photo is a real photograph under an open licence, credited where
-it is shown. A mark with no open photograph is described in words.
+Every mark shown comes from the marks database (marksdb): one image of that
+mark alone, credited, or its description in words when there is none.
 """
 from shell import *
-from p_marks import MID, cta, stamp_row, MET_CREDIT, e
+from p_marks import MID, cta, e
+import marksdb
 
 CSS = '<link rel="stylesheet" href="/marks/marks.css">'
 
@@ -46,46 +47,6 @@ S = {
 def sources(*keys):
     items = "".join(f'<li>{e(S[k][0])} (<a href="{e(S[k][1])}" rel="nofollow">source</a>)</li>' for k in keys)
     return f'<!--copy-check:skip--><ul class="sources">{items}</ul><!--/copy-check:skip-->'
-
-
-# ── Photographs ───────────────────────────────────────────────────────────────
-
-def lic(name, url):
-    return f'<a href="{url}" rel="nofollow">{name}</a>'
-
-
-BY_SA_4 = lic("CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/")
-BY_3 = lic("CC BY 3.0", "https://creativecommons.org/licenses/by/3.0/")
-
-PHOTO = {
-    "storr": ("b-storr-london-1835", "London hallmarks of 1835: maker's mark PS, lion passant, leopard's head, date letter u and the king's head",
-              f'Paul Storr\'s marks on London silver, 1835: maker, lion passant for sterling, London\'s leopard\'s head, the date letter and the duty mark.',
-              f'Photograph: {lic("Paul Storr Hallmark - detail", "https://commons.wikimedia.org/wiki/File:Paul_Storr_Hallmark_-_detail.jpg")} by Rauantiques, {BY_SA_4}, cropped.'),
-    "plate": ("b-plate-dresser-toast-rack", "Marks on an electroplated toast rack: Designed by Dr C. Dresser, the maker's marks and a registration mark",
-              "Marks on a silver-plated toast rack designed by Christopher Dresser for Hukin &amp; Heath: the designer's name, the maker's marks and a design registration mark, and no standard mark.",
-              f'Photograph: {lic("Toast rack MET SF2015 449 marks", "https://commons.wikimedia.org/wiki/File:Toast_rack_MET_SF2015_449_marks.jpg")}, The Metropolitan Museum of Art, Open Access (CC0), cropped.'),
-    "de800": ("b-german-800-crescent-crown", "German silver marks of 1906: a maker's mark, 800, a crescent moon and a crown",
-              "German marks on silver of 1906, from Bremen: the maker's mark, the fineness 800, and the crescent moon and crown the 1884 law called for.",
-              f'Photograph: {lic("SilberstempelK&amp;B", "https://commons.wikimedia.org/wiki/File:SilberstempelK%26B.jpg")} by Alfred Löhr, {BY_3}, cropped.'),
-    "ns_spoon": ("b-nickel-silver-teaspoon", "A teaspoon stamped NICKEL SILVER WEAR-WHITE",
-                 "A teaspoon made in England, stamped NICKEL SILVER: the alloy named outright.",
-                 f'Photograph: {lic("Nickel silver teaspoon marks", "https://commons.wikimedia.org/wiki/File:Nickel_silver_teaspoon_marks.jpg")} by Smirkybec, {BY_SA_4}, cropped.'),
-    "alp": ("b-alp-nickel-silver", "A Finnish trophy plate stamped ALP in an oval, with the maker's name Hopeakeskus Oy",
-            "A Finnish trophy plate stamped ALP in an oval beside the maker's name, Hopeakeskus Oy. The photographer describes ALP as the stamp for nickel silver.",
-            f'Photograph: {lic("Nickel Silver ALP stamp Hopeakeskus", "https://commons.wikimedia.org/wiki/File:Nickel_Silver_ALP_stamp_Hopeakeskus.jpg")} by Subjektivisti, {BY_SA_4}, cropped.'),
-    "coin_spoon": ("b-coin-huntington-salt-spoon", "The back of a coin silver salt spoon handle with the struck maker's mark W.H.",
-                   "The back of a coin silver salt spoon by William Huntington of Hillsborough, North Carolina, about 1820–30. The only struck mark is the maker's.",
-                   f'Photograph: {lic("Salt Spoon", "https://dp.la/item/df8314ad158f7825710dabfa33999270")}, Orange County Historical Museum, Hillsborough, through the North Carolina Digital Heritage Center, {lic("no known copyright (US)", "https://rightsstatements.org/vocab/NoC-US/1.0/")}, cropped.'),
-}
-
-
-def photos(*keys, contain=()):
-    figs = "".join(
-        f'<figure class="photo"><img src="/marks/img/{PHOTO[k][0]}.webp" alt="{e(PHOTO[k][1])}" loading="lazy" decoding="async">'
-        f'<figcaption>{PHOTO[k][2]} <span class="stamps__credit">{PHOTO[k][3]}</span></figcaption></figure>'
-        for k in keys
-    )
-    return f'<div class="photos">{figs}</div>'
 
 
 def table(head, rows):
@@ -136,13 +97,14 @@ def real_silver():
         ("A maker's name and a pattern name only", "Nothing about the metal", "Either. Read the other marks, and see below."),
     ]
     body = f"""      <p>Heirloom doesn't decide whether an item is genuine. What a mark can do is say which kind of metal the maker or an assay office put on record, and that's usually the first question about a spoon, a tray or a candlestick that looks like silver: is it solid silver, or silver plate?</p>
-      {photos("storr", "plate", contain=("storr", "plate"))}
       <h2 id="solid">Marks that say solid silver</h2>
       <p>These marks state a standard: how many parts in 1000 of the metal are silver.</p>
+      {marksdb.grid(["sterling-word-us", "silver-fineness-925", "coin-word-us", "lion-passant", "german-crescent-and-crown"], captions={"lion-passant": "Lion passant: British sterling"})}
       {table(["The mark", "What it states", "What it means"], rows)}
       <p>In Britain those marks are struck by an assay office after it has tested the metal. In the United States the maker stamps them, and the law holds the maker to the standard the mark states: 925 for sterling and 900 for coin, within four parts in 1000.</p>
       <h2 id="plate">Marks that say plate, or no silver at all</h2>
       {table(["The mark", "What it is", "What it means"], plate)}
+      {marksdb.grid(["epns-mark", "nickel-silver-word", "german-silver-word"])}
       <p>Plated wares often carry a row of small marks that look like a hallmark at a glance: the maker's initials in shields, a pattern number, a registration mark. Look for a standard: a lion passant, Britannia, a crescent and crown, or a number such as 925. Without one, read it as plate until something else shows otherwise.</p>
       <h2 id="limits">What marks can't tell you</h2>
       <ul>
@@ -186,13 +148,14 @@ def purity():
         ("800", "80%", "The lowest UK standard, and the lowest fineness German law let a maker state on silver wares from 1888."),
     ]
     body = f"""      <p>A number on silver is its fineness: the parts of pure silver in 1000 parts of the metal. The rest is other metal, which makes it harder: pure silver, and even the Britannia standard, is soft. The same reading works wherever the number comes from.</p>
-      {photos("de800", "storr", contain=("de800", "storr"))}
       <h2 id="table">Common standards</h2>
       {table(["The number", "Silver", "Where you'll see it"], rows)}
+      {marksdb.grid(["silver-fineness-925", "silver-fineness-800", "silver-fineness-900"])}
       <p class="note">This table lists the standards the sources on this page set down in law or record. Other numbers occur on silver from elsewhere; read them the same way, as parts in 1000, alongside the country's other marks.</p>
       <h2 id="old">Before the numbers: ounces and pennyweights</h2>
       <p>Older English law didn't write 925. It set the standard as 11 ounces 2 pennyweights of silver in every pound troy of 12 ounces, which works out to 925 in 1000. The Britannia standard of 1697 was 11 ounces 10 pennyweights, which is 958.3 in 1000; the Hallmarking Act of 1973 states it as 958.4.</p>
       <h2 id="country">How each country marks the number</h2>
+      {marksdb.grid(["lion-passant", "britannia-figure", "sterling-word-us", "german-crescent-and-crown"], captions={"lion-passant": "Lion passant: UK sterling", "britannia-figure": "Britannia: UK 958"})}
       <ul>
         <li><strong>United Kingdom.</strong> Today the compulsory hallmark is the sponsor's (maker's) mark, the fineness as a number in a shield, and the assay office's mark. The lion passant and Britannia are optional symbols beside the number, and the date letter has been optional since 1999. On older British silver the symbols alone carry the standard: a lion passant for sterling, Britannia for the higher standard.</li>
         <li><strong>United States.</strong> STERLING, or a number, stamped by the maker. Federal law requires 925 for STERLING and 900 for COIN, and a stated number must be met within four parts in 1000.</li>
@@ -229,7 +192,7 @@ def purity():
 
 def german_silver():
     body = f"""      <p>German silver has no silver in it. It is an alloy of copper, nickel and zinc, chosen because its color is close to silver's and it takes a fine polish. It was used on its own and, more often, as the base metal under silver plate.</p>
-      {photos("ns_spoon", "alp")}
+      {marksdb.grid(["nickel-silver-word", "german-silver-word", "alp-nickel-silver", "epns-mark"])}
       <h2 id="what">What it is made of</h2>
       <p>The sources agree on the three metals but give different proportions, because makers used many recipes:</p>
       <ul>
@@ -242,11 +205,11 @@ def german_silver():
       <p>The same alloy is sold under many names. German silver and nickel silver are the usual English ones; the Bureau of Standards noted in 1921 that the American trade had moved to "nickel silver" after the war. Neusilber and Argentan are German names, maillechort the French one, and both lists add others such as China silver and new silver. Alpacca (Alpaka) is a name both for the alloy and, in Meyers, for silver-plated nickel silver: the sources differ, so read ALP or ALPACCA as nickel silver that may or may not be plated.</p>
       <h2 id="marks">How it's marked</h2>
       <ul>
-        <li><strong>Named outright,</strong> as on the teaspoon and the trophy plate above: NICKEL SILVER, or a trade name such as ALP, beside the maker's name. Any of the names above may appear.</li>
+        <li><strong>Named outright,</strong> as in the marks above: NICKEL SILVER, GERMAN SILVER, or a trade name such as ALP, often beside the maker's name.</li>
         <li><strong>When plated:</strong> EPNS, electroplated nickel silver, sometimes with a grade or a pattern name. The silver is the thin coat; the body is nickel silver.</li>
         <li><strong>Never sterling or coin.</strong> US law forbids those words on plated wares, and a fineness number on silver states silver content; on nickel silver there is none to state.</li>
       </ul>
-      <p>German silver is not the same as silver made in Germany. German silver wares of solid silver are marked with a number such as 800 and, from 1888, a crescent moon and a crown: see <a href="/marks/silver-purity-marks">what 800 means</a>.</p>
+      <p>German silver is not the same as silver made in Germany. Solid silver wares made in Germany are marked with a number such as 800 and, from 1888, a crescent moon and a crown: see <a href="/marks/silver-purity-marks">what 800 means</a>.</p>
       {MORE}"""
     faqs = [
         ("Does German silver have any silver in it?",
@@ -276,7 +239,7 @@ def german_silver():
 
 def coin_silver():
     body = f"""      <p>Coin silver is American silver made to the standard of the country's silver coin, about 900 parts in 1000. It is solid silver, a little lower than sterling's 925, and it was the usual American standard until the 1850s and 1860s, when makers moved to sterling.</p>
-      {photos("coin_spoon", contain=("coin_spoon",))}
+      {marksdb.grid(["coin-word-us", "pure-coin-word-us", "standard-word-us", "silver-fineness-900"])}
       <h2 id="standard">The coin standard</h2>
       <ul>
         <li><strong>1792 to 1837:</strong> the Coinage Act of 1792 set silver coin at 1485 parts fine to 179 parts alloy, which is 892.4 in 1000.</li>
@@ -288,7 +251,7 @@ def coin_silver():
         <li><strong>COIN,</strong> stamped beside the maker's mark, saying the metal was of the same fineness as silver money.</li>
         <li><strong>PURE COIN,</strong> or PURE SILVER COIN, seen on New England silver.</li>
         <li><strong>STANDARD,</strong> found on silver made around Philadelphia.</li>
-        <li><strong>Only a maker's name or initials,</strong> as on the spoon above. A separate mark for the metal was not the custom, and a maker's mark says nothing about the metal on its own.</li>
+        <li><strong>Only a maker's name or initials.</strong> A separate mark for the metal was not the custom, and a maker's mark says nothing about the metal on its own.</li>
       </ul>
       <p>These words were the maker's own choice, and makers used different terms for their alloys. Since the Stamping Act of 1906 the law has set a standard for the word: an item marked COIN or COIN SILVER must be at least 900 in 1000, within four parts.</p>
       <h2 id="sterling">From coin to sterling</h2>
@@ -327,10 +290,6 @@ def coin_silver():
 
 def britannia():
     body = f"""      <p>Britannia silver is a higher standard than sterling: 958 parts of silver in 1000 against sterling's 925. From 1697 to 1720 it was the only standard English silversmiths could use, and it has been allowed alongside sterling ever since.</p>
-      {stamp_row(["m02-london-britannia-chocolate-pot-1", "m02-london-britannia-chocolate-pot-2", "m02-london-britannia-chocolate-pot-3", "m02-london-britannia-chocolate-pot-4"],
-                 "Britannia-standard marks on a London silver chocolate pot: the maker's mark, the figure of Britannia, the lion's head erased and the date letter.",
-                 MET_CREDIT,
-                 ["Maker's mark", "Britannia", "Lion's head erased", "Date letter"])}
       <h2 id="why">Why it began</h2>
       <p>By the 1690s so much coin was being melted down for plate that silver coin had grown scarce. An Act of 1696 raised the standard for wrought plate above the coinage, so that coin could no longer be turned straight into plate. The new standard was 11 ounces 10 pennyweights of silver in the pound troy, against the sterling coin standard of 11 ounces 2 pennyweights.</p>
       <h2 id="marks">The marks</h2>
@@ -340,6 +299,7 @@ def britannia():
         <li><strong>The maker's mark</strong> as the first two letters of the maker's surname.</li>
         <li><strong>A date letter,</strong> as before. See the <a href="/marks/london-date-letters">London date letters</a>.</li>
       </ul>
+      {marksdb.grid(["britannia-figure", "lions-head-erased", "lion-passant-guardant", "leopards-head-crowned"], captions={"britannia-figure": "Britannia, in place of the lion", "lions-head-erased": "Lion's head erased, in place of the leopard's head", "lion-passant-guardant": "Lion passant guardant: the sterling mark Britannia replaced", "leopards-head-crowned": "Leopard's head crowned: the London mark it replaced"})}
       <h2 id="dates">When it was used</h2>
       <ul>
         <li><strong>1697 to 1720, compulsory.</strong> Jackson gives the new marks as in use from 27 March 1697 until 1 June 1720. The Act restoring sterling was passed in 1719, which is the year Chaffers gives; it took effect in 1720.</li>

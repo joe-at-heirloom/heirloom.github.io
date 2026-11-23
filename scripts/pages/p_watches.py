@@ -5,13 +5,15 @@ in this site, at marks/data/rolex.json and marks/data/omega.json, compiled to
 the app's standard (two independent sources at least, cross-checked row by
 row, both years kept where they disagree, nothing interpolated) with their
 sources and caveats in the files. The lookups are rolex() and omega() in
-marks/marks.js.
+marks/marks.js. Every mark image comes from the marks database (marksdb.py,
+group swiss-watches): one image per mark, or its description in words.
 """
 import json
 import os
 
 from shell import *
 from p_marks import e, MID, cta, sources_list, soften, tables
+import marksdb
 
 DATA = os.path.join(tables.SITE_ROOT, "marks", "data")
 
@@ -29,14 +31,6 @@ CSS = '<link rel="stylesheet" href="/marks/marks.css">'
 
 def tool_script(name):
     return f'<script src="/marks/marks.js" defer></script>\n  <script>window.MARKS_TOOL = "{name}";</script>'
-
-
-def photo(f, alt, caption, credit):
-    """One real photograph, credited, at its own proportions (no cut-out)."""
-    return (
-        f'<figure class="wphoto"><img src="/marks/img/{f}" alt="{e(alt)}" loading="lazy" decoding="async">'
-        f'<figcaption>{caption} <span class="stamps__credit">{credit}</span></figcaption></figure>'
-    )
 
 
 def years(r):
@@ -61,14 +55,6 @@ def sources_of(t):
 
 
 # ── Omega ─────────────────────────────────────────────────────────────────────
-
-OMEGA_PHOTO = photo(
-    "omega-266-movement-serial.webp",
-    "An Omega caliber 266 movement in an open case: OMEGA, SWISS and 17 JEWELS on the bridge, the caliber number 266 by the Omega sign, and the serial 13977738 engraved on the plate below",
-    "An Omega caliber 266 with its case back off. The serial, 13977738, is engraved on the plate below the balance; the lists put 13.5 to 14 million in about 1952, and dated examples near it were sold in 1954.",
-    'Photograph: <a href="https://commons.wikimedia.org/wiki/File:Omega_266,_met%C3%A0_anni_%2750.jpg" rel="nofollow">Omega 266, metà anni \'50</a> by Clyde94, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow">CC BY-SA 4.0</a>, cropped by Heirloom.',
-)
-
 
 def omega_page():
     t = OMEGA
@@ -106,11 +92,15 @@ def omega_page():
         <div class="finder__row"><label class="grow">Movement serial <input id="om-serial" inputmode="numeric" autocomplete="off" placeholder="e.g. 13977738"></label></div>
         <div id="om-results" class="finder__results" aria-live="polite"><p class="finder__hint">Use the number engraved on the movement, not the reference stamped inside the case back.</p></div>
       </div>
-      {OMEGA_PHOTO}
       <h2 id="where">Where the serial is, and how to read it safely</h2>
+{marksdb.grid(["omega-movement-serial", "omega-case-back-serial"])}
       <p>On an Omega made before the 1990s the serial is engraved on the movement, usually on a plate or bridge, and the case back has to come off to see it. Screw-down and snap-on backs need the right tool; a slip scratches the case or the movement, and a water-resistant watch needs its seal checked after. If you aren't used to it, ask a watchmaker to open it and photograph the movement for you.</p>
       <p>From about 1991 Omega also engraved the serial on the outside of the case back or on a lug, so a modern Omega can be read without opening it. Omega's warranty card carries the serial too.</p>
+      <h2 id="movement">The other marks on the movement</h2>
+{marksdb.grid(["omega-name-on-movement", "omega-caliber-number"])}
+      <p>Beside the serial, the movement carries the maker's name and the caliber number, often by the Omega sign. The caliber number names the movement's design and is shared by every movement of that type, so it narrows the years a watch can be from but does not date it.</p>
       <h2 id="reference">Serial or reference?</h2>
+{marksdb.grid(["omega-case-reference", "omega-case-number"])}
       <p>The serial belongs to one movement. The reference names the model: on vintage watches it is stamped inside the case back, in forms such as 2915-1, 165.024 or ST 145.022-69, and later Omega used longer product codes with dots, such as 311.30.42.30.01.005. Inside the case back there may also be the case maker's own number, a separate series. Only the movement serial is dated here.</p>
       <h2 id="read">Read these before you rely on a year</h2>
       {caveats}
@@ -130,13 +120,6 @@ def omega_page():
 
 
 # ── Rolex ─────────────────────────────────────────────────────────────────────
-
-ROLEX_PHOTO = photo(
-    "rolex-datejust-rehaut.webp",
-    "A steel Rolex Datejust with a black dial and fluted bezel, seen from above; the inner ring between the dial and the crystal is engraved with ROLEX repeated all the way round",
-    "A recent Rolex Datejust. The ring between the dial and the crystal, the rehaut, is engraved ROLEX all the way round, and the serial is engraved in it at 6 o'clock; in this photograph a reflection hides it. On watches before about 2008 the serial is between the lugs at 6 o'clock instead, under the bracelet.",
-    'Photograph: <a href="https://commons.wikimedia.org/wiki/File:Rolex_Datejust_36_-_Black_Sunburst_Dial_(50826887656).jpg" rel="nofollow">Rolex Datejust 36, black sunburst dial</a> by ajay_suresh, <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow">CC BY 2.0</a>, cropped by Heirloom.',
-)
 
 SRC_NAME = {"A": "Bob's list", "DH": "Dowling and Hess", "CP": "Pergola", "S": "Interpolated chart", "W": "Month-dated lists"}
 
@@ -194,12 +177,16 @@ def rolex_page():
         <div class="finder__row"><label class="grow">Case serial <input id="rx-serial" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="e.g. 5398992 or U171660"></label></div>
         <div id="rx-results" class="finder__results" aria-live="polite"><p class="finder__hint">Use the number at 6 o'clock, not the model number at 12. Spaces and commas don't matter.</p></div>
       </div>
-      {ROLEX_PHOTO}
       <h2 id="where">Where the serial is, and how to read it safely</h2>
+{marksdb.grid(["rolex-case-serial-between-lugs", "rolex-rehaut-serial"])}
       <p>On a Rolex made before about 2008 the serial is engraved on the case between the lugs at 6 o'clock, where the bracelet or strap hides it. Taking the bracelet off means pushing out its spring bars, and a slipped tool scratches the lugs, so a jeweler or watchmaker is the safer way; they can read the number and fit the bracelet back in a few minutes.</p>
       <p>From about 2005 Rolex also engraved the serial on the rehaut, the ring between the dial and the crystal, at 6 o'clock, and from about 2008 only there. It can be read without opening the watch: tilt it under a bright light and use a magnifier. The warranty card, or the papers that came with the watch, carry the same serial.</p>
       <h2 id="reference">Serial or model number?</h2>
+{marksdb.grid(["rolex-reference-between-lugs"])}
       <p>The serial belongs to one watch. The model number, or reference, names the model, the bezel and the metal; it is engraved between the lugs at 12 o'clock, and on older watches often stamped inside the case back as well. A Datejust 16234 and a Submariner 5513 are references, shared by thousands of watches. Only the serial is dated here.</p>
+      <h2 id="name">The name, the crown and the engraved ring</h2>
+{marksdb.grid(["rolex-name-on-dial", "rolex-coronet", "rolex-rehaut-engraving"])}
+      <p>The name and the crown on the dial say who made the watch, and the ROLEX engraving round the inner ring marks a case of about 2004 or later. None of them dates a watch more closely or shows that it is genuine.</p>
       <h2 id="random">Random serials, from about 2010</h2>
       <p>From about late 2009 or 2010 Rolex replaced the letter series with random serials of eight letters and digits. They aren't issued in order, so no year can be read from one. The warranty card is dated when the watch is sold; for a watch without papers, the date can't be told from the serial.</p>
       <h2 id="read">Read these before you rely on a year</h2>

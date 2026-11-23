@@ -4,9 +4,9 @@ Limoges and Haviland, Royal Doulton, Royal Copenhagen, Nippon and Noritake.
 Unlike p_pottery.py these are not built from the app's mark tables: each page
 is a history of one maker's marks, written from published sources. Every fact
 carries the numbers of at least two sources (listed on the page), and where the
-sources disagree the page says so. Every mark shown is a photograph under an
-open licence or a public-domain book facsimile, credited under it; a mark with
-no open image is described in words.
+sources disagree the page says so. Every mark is shown from its entry in the
+marks database (marksdb.py): one image of that mark alone, credited on its card,
+or its description in words when there is none.
 
 The words for each maker are in ceramics_data.py.
 """
@@ -17,10 +17,10 @@ from shell import *
 import tables
 from p_marks import MID, cta, e
 
-from ceramics_data import MAKERS
+from ceramics_data import MAKERS, CARD_IDS, OTHERS_INTRO
+import marksdb
 
 CSS = '<link rel="stylesheet" href="/marks/marks.css">'
-IMG_DIR = os.path.join(tables.SITE_ROOT, "marks", "img", "ceramics")
 
 
 def refs(nums, srcs):
@@ -45,36 +45,14 @@ def fill(text, srcs, attributed=False):
     return re.sub(r"\{src:([^}]+)\}", lambda m: refs([k.strip() for k in m.group(1).split(",")], srcs), text)
 
 
-def photo(img, cls="mkp"):
-    path = os.path.join(IMG_DIR, img["file"] + ".webp")
-    if not os.path.exists(path):
-        raise SystemExit(f"missing image {path}")
-    from PIL import Image
-    w, h = Image.open(path).size
-    credit = f'<a href="{e(img["page"])}" rel="nofollow">{e(img["credit"])}</a>, {e(img["licence"])}'
-    return (f'<figure class="{cls}"><img src="/marks/img/ceramics/{img["file"]}.webp" alt="{e(img["alt"])}" width="{w}" height="{h}" loading="lazy" decoding="async">'
-            f'<figcaption>{img["caption"]} <span class="mkp__credit">{credit}</span></figcaption></figure>')
-
-
-def mark_card(m, srcs, page_has_photos=True):
-    pics = "".join(photo(i) for i in m.get("images", []))
-    if not pics and not page_has_photos:
-        return f"""<section class="mk mk--words" id="{m['id']}">
-        <div class="mk__text">
-          <h3>{m['name']}</h3>
-          <p class="mk__dates">{m['dates']}</p>
-          <p>{fill(m['body'], srcs)}</p>
-        </div>
-      </section>"""
-    if not pics:
-        pics = '<p class="mk__nophoto">No photograph of this mark under an open license was found, so it is described in words only.</p>'
-    return f"""<section class="mk" id="{m['id']}">
-        <div class="mk__text">
-          <h3>{m['name']}</h3>
-          <p class="mk__dates">{m['dates']}</p>
-          <p>{fill(m['body'], srcs)}</p>
-        </div>
-        <div class="mk__pics">{pics}</div>
+def mark_section(m, srcs, ids):
+    """One mark in the history: its heading, years and text, then the database cards for it."""
+    cards = marksdb.grid(ids) if ids else ""
+    return f"""<section class="mkd" id="{m['id']}">
+        <h3>{m['name']}</h3>
+        <p><strong>{m['dates']}</strong></p>
+        <p>{fill(m['body'], srcs)}</p>
+        {cards}
       </section>"""
 
 
@@ -90,8 +68,16 @@ def build_page(d):
     srcs = list(d["sources"].items())
     path = "/marks/" + d["slug"]
     paras = "\n".join(f"      <p>{fill(p, srcs)}</p>" for p in d["history"])
-    has = any(m.get("images") for m in d["marks"])
-    cards = "\n      ".join(mark_card(m, srcs, has) for m in d["marks"])
+    ids = CARD_IDS[d["slug"]]
+    for k in ids:
+        if not k.startswith("_") and k not in {m["id"] for m in d["marks"]}:
+            raise SystemExit(f"{d['slug']}: CARD_IDS names section {k!r}, which the page doesn't have")
+    cards = "\n      ".join(mark_section(m, srcs, ids.get(m["id"], [])) for m in d["marks"])
+    others = ""
+    if ids.get("_others"):
+        head, intro = OTHERS_INTRO[d["slug"]]
+        others = f'      <h3 id="others">{head}</h3>\n      <p>{fill(intro, srcs)}</p>\n      {marksdb.grid(ids["_others"])}'
+    careful_cards = marksdb.grid(ids["_careful"]) if ids.get("_careful") else ""
     cautions = "".join(f"<li>{fill(c, srcs)}</li>" for c in d["cautions"])
     disagree = ""
     if d.get("disagree"):
@@ -104,18 +90,19 @@ def build_page(d):
         <p class="answer__label">In short</p>
         <p>{fill(d['answer'], srcs)}</p>
       </div>
-{('      ' + photo(d['hero'], 'mkp mkp--hero')) if d.get('hero') else ''}
       <h2 id="maker">{d['maker_heading']}</h2>
 {paras}
       <h2 id="marks">{d['marks_heading']}</h2>
       {d.get('marks_intro', '') and '<p>' + fill(d['marks_intro'], srcs) + '</p>'}
       {cards}
+{others}
       <h2 id="careful">{d['careful_heading']}</h2>
       <ul>{cautions}</ul>
+      {careful_cards}
       <p class="note">Heirloom never decides whether an item is genuine. A mark says what it claims; a specialist who can handle the item is the one to ask.</p>
 {disagree}
       <h2 id="sources">Sources</h2>
-      <p class="note">The small numbers beside each fact point to these sources. Every fact on this page is in at least two of them. Photographs are credited under each one.</p>
+      <p class="note">The small numbers beside each fact point to these sources. Every fact on this page is in at least two of them. Each mark's image is credited on its card.</p>
       {sources_html(srcs)}
 {cta(d['cta'])}
       <h2 id="faq">Questions</h2>
@@ -127,6 +114,10 @@ def build_page(d):
 
 def build():
     out = [build_page(d) for d in MAKERS]
+    placed = {i for v in CARD_IDS.values() for ids in v.values() for i in ids}
+    for e_ in marksdb.group("ceramics-makers"):
+        if e_["id"] not in placed:
+            print("not on a page:", e_["id"])
     for t in ONE_SOURCE:
         print("one source:", t)
     return out

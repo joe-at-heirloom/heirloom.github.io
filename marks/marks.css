@@ -106,16 +106,8 @@
 .dli { height: 48px; width: auto; max-width: 100%; mix-blend-mode: multiply; }
 .hits .dli { height: 56px; }
 
-/* One real photograph per cycle after 1923. */
-.cycle__photo { margin: 4px 0 14px; }
-.cycle__photo img { width: 100%; max-width: 560px; height: auto; border-radius: var(--radius-md); }
-.cycle__photo figcaption { font-size: 0.88rem; color: var(--color-text-secondary); margin-top: 6px; max-width: 560px; }
 
 /* Silver-plate maker pages: a mark stamped along a handle is a long strip, so it is shown as a photo, not a cut-out stamp. */
-.markphoto { margin: 18px 0 26px; }
-.markphoto img { display: block; width: 100%; max-width: 640px; height: auto; border-radius: var(--radius-md); border: 1px solid var(--color-border); background: #ebe8e2; }
-.markphoto figcaption { font-size: 0.9rem; color: var(--color-text-secondary); margin-top: 8px; max-width: 640px; }
-.markphoto .stamps__credit a { color: inherit !important; }
 .guide table.table--two { min-width: 0; }
 
 /* Mark photographs shown whole, uncut (the silver basics pages). */
@@ -147,45 +139,31 @@ img.cypher { display: block; height: 34px; width: auto; max-width: 110px; object
 .stamps--photo .stamp--wide img { height: 96px; max-width: 100%; object-fit: cover; }
 @media (max-width: 600px) { .stamps--photo .stamp--wide img { height: auto; width: 100%; } }
 
-/* Watch serial pages: a real photograph at its own proportions. */
-.wphoto { margin: 10px 0 30px; }
-.wphoto img { display: block; width: 100%; max-width: 440px; height: auto; border-radius: var(--radius-lg); }
-.wphoto figcaption { font-size: 0.9rem; color: var(--color-text-secondary); margin-top: 8px; max-width: 560px; }
 .hits .big { white-space: nowrap; flex-shrink: 0; }
 .hits li { flex-wrap: wrap; }
 .hits li > span:last-child { flex: 1 1 190px; }
 
 /* Photographs of marks, cropped to the mark (p_world.py): gold, Mexican, French, Gorham, Christofle. */
-.wphotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; margin: 18px 0 8px; }
-.wphoto { margin: 0; display: flex; flex-direction: column; gap: 8px; }
-.wphoto--wide { grid-column: 1 / -1; }
-.wphoto img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: var(--color-surface-alt); border: 1px solid var(--color-border); }
-.wphoto--wide img { max-width: 720px; }
-.wphoto figcaption { display: flex; flex-direction: column; gap: 3px; }
-.wphoto__label { font-size: 0.9rem; color: var(--color-text); line-height: 1.35; }
-.wphoto__credit { font-size: 0.75rem; color: var(--color-text-muted); line-height: 1.35; }
-.wphoto__credit a { color: inherit !important; }
-.wphotos__caption { font-size: 0.9rem; color: var(--color-text-secondary); margin: 0 0 26px !important; }
-@media (max-width: 600px) { .wphotos { grid-template-columns: 1fr; gap: 14px; } }
 
-/* Ceramics maker's-mark pages: one card per mark, its photographs beside it. */
+/* Numbered source references (ceramics and other sourced pages). */
 .refs { font-size: 0.7em; line-height: 0; margin-left: 1px; white-space: nowrap; }
 .refs a { color: var(--color-text-secondary); text-decoration: none; }
 .refs a:hover { color: var(--color-primary); text-decoration: underline; }
-.mk { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 260px); gap: 18px 24px; padding: 22px 0; border-top: 1px solid var(--color-border); }
-.mk:last-of-type { border-bottom: 1px solid var(--color-border); margin-bottom: 26px; }
-.mk h3 { margin-top: 0; }
-.mk__dates { font-weight: 600; color: var(--color-text-secondary); margin-bottom: 8px !important; }
-.mk__pics { display: grid; gap: 14px; align-content: start; }
-.mk__nophoto { font-size: 0.88rem; color: var(--color-text-muted); padding: 14px; border: 1px dashed var(--color-border); border-radius: var(--radius-md); margin: 0 !important; }
-.mkp { margin: 0; }
-.mkp img { display: block; width: 100%; height: auto; border-radius: var(--radius-md); background: #ebe8e2; }
-.mkp figcaption { font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.4; margin-top: 6px; }
-.mkp__credit { display: block; font-size: 0.76rem; color: var(--color-text-muted); margin-top: 2px; }
-.mkp__credit a { color: inherit !important; }
 .sources--num { padding-left: 1.4em; }
 .sources--num li { scroll-margin-top: 90px; }
 .sources--num li:target { background: var(--color-surface-alt); border-radius: var(--radius-sm); }
-@media (max-width: 640px) { .mk { grid-template-columns: 1fr; } .mkp img { max-height: 420px; width: auto; max-width: 100%; } }
-.mk--words { grid-template-columns: 1fr; }
-.mkp--hero { margin: 4px 0 28px; max-width: 560px; }
+
+/* One mark from the marks database: its own image, name, years, what kind of image, and credit. */
+.mks { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 14px; margin: 16px 0 24px; }
+.mk { margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.mk__img { height: 140px; display: flex; align-items: center; justify-content: center; background: #f4f1ea; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 10px; }
+.mk__img img { max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+.mk--facsimile .mk__img img, .mk--rendering .mk__img img { mix-blend-mode: multiply; }
+.mk__img--none { background: transparent; border-style: dashed; }
+.mk__img--none p { margin: 0; font-size: 0.82rem; line-height: 1.4; color: var(--color-text-secondary); text-align: center; }
+.mk figcaption { display: flex; flex-direction: column; gap: 2px; font-size: 0.86rem; line-height: 1.35; }
+.mk figcaption b { font-weight: 600; color: var(--color-text); }
+.mk__years { color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.mk__kind { font-size: 0.76rem; color: var(--color-text-muted); }
+.mk__credit { font-size: 0.72rem; color: var(--color-text-muted); }
+.dli--drawing { mix-blend-mode: multiply; opacity: 0.92; }
