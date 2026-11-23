@@ -31,8 +31,7 @@ for _f in sorted(os.listdir(IMG_DIR)) if os.path.isdir(IMG_DIR) else []:
 HUB = "/marks/chinese-reign-marks"
 # Reigns with a page of their own: the marks people actually meet. The rest
 # (no marks, or a handful of pieces) are covered on the hub.
-OWN_PAGE = ["Yongle", "Xuande", "Chenghua", "Hongzhi", "Zhengde", "Jiajing", "Longqing", "Wanli",
-            "Kangxi", "Yongzheng", "Qianlong", "Jiaqing", "Daoguang", "Xianfeng", "Tongzhi", "Guangxu", "Xuantong", "Hongxian"]
+OWN_PAGE = [r["reign_pinyin"] for r in ROWS]
 DYN_HAN = {"Ming": "明", "Qing": "清"}
 
 
@@ -123,13 +122,14 @@ def cmark(chars, script="regular", cls=""):
     return f'<span class="cmark cmark--{size} {cls}" style="--rows:{rows}" lang="zh-Hant" role="img" aria-label="{e(chars)}">{spans}</span>'
 
 
-def img_tag(im):
+def img_tag(im, cls=""):
     from PIL import Image
     path = os.path.join(IMG_DIR, im["file"])
     if not os.path.exists(path):
         raise SystemExit(f"missing image {path}")
     w, h = Image.open(path).size
-    return f'<img src="/marks/img/chinese/{im["file"]}" alt="{e(im["alt"])}" width="{w}" height="{h}" loading="lazy" decoding="async">'
+    c = f' class="{cls}"' if cls else ""
+    return f'<img{c} src="/marks/img/chinese/{im["file"]}" alt="{e(im["alt"])}" width="{w}" height="{h}" loading="lazy" decoding="async">'
 
 
 def figure(im):
@@ -143,14 +143,21 @@ def images_for(reign, kind=None, period=None):
             and (period is None or im.get("period_or_later") == period)]
 
 
+def written(r):
+    """The mark as written: the recorded six-character form, else four, else
+    the reign's name in the standard six-character pattern."""
+    marks = [m for m in r["marks"] if "(" not in m["chars"]]
+    return next((m["chars"] for m in marks if m["chars_count"] == 6 and m["script"] == "regular"), None) \
+        or next((m["chars"] for m in marks if m["chars_count"] in (4, 6)), None) \
+        or (f"大{DYN_HAN[r['dynasty']]}{r['reign_chars']}年製" if r["dynasty"] in DYN_HAN else f"{r['reign_chars']}年製")
+
+
 def tile(r):
-    book = next((im for im in images_for(r["reign_pinyin"], "book") if im.get("form", "").startswith("seal")), None)
-    marks = r["marks"]
-    six = next((m["chars"] for m in marks if m["chars_count"] == 6 and m["script"] == "regular"), None) \
-        or next((m["chars"] for m in marks if m["chars_count"] in (4, 6) and "(" not in m["chars"]), None)
-    inner = cmark(six) if six else '<span class="reign-tile__none">No mark recorded</span>'
-    if book:
-        inner += img_tag(book)
+    p = r["reign_pinyin"]
+    photo = next(iter(images_for(p, "museum", "period") + images_for(p, "museum")), None)
+    book = next((im for im in images_for(p, "book") if im.get("form", "").startswith("seal")), None) or next(iter(images_for(p, "book")), None)
+    six = written(r)
+    inner = (img_tag(photo, "reign-tile__photo") if photo else "") + (img_tag(book) if book and not photo else "") + cmark(six)
     y, alt = years(r)
     keys = " ".join(sorted({r["reign_pinyin"].lower(), r["wade_giles"].lower().replace("'", "").replace("-", "").replace("’", "").replace(" ", ""),
                      r["reign_chars"], *[s.split(" (")[0].lower().replace("'", "").replace("-", "").replace(" ", "") for s in r.get("other_spellings", [])]}))
@@ -238,8 +245,6 @@ def hub():
       <div class="cm-figs">{"".join(figure(im) for im in IMAGES if im.get("hub") == "careful")}</div>
       <ul>{cav}</ul>
       <p class="note">Heirloom never decides whether an item is genuine or of the period its mark names. A specialist who can handle it is the one to ask.</p>
-      <h2 id="few">Reigns with few or no marks</h2>
-{few}
       <h2 id="sources">Sources</h2>
       <p class="note">The small numbers point to these sources: books of marks from 1899 to 1919 (public domain), Christie’s and Gotheborg, Baidu Baike and Chinese museum and archaeology reporting, and reign tables from universities. Each statement has at least two, except where the table says otherwise.</p>
       {refs.html()}
@@ -276,14 +281,17 @@ def reign_page(r, prev, nxt):
     title = f"{p} Mark: {r['reign_chars']} Reign Marks, {y} | Heirloom"
     desc = f"How to recognize a {p} reign mark ({r['reign_chars']}, {r['wade_giles']}, {y}): the characters, the scripts used on imperial wares, the later copies, and photographs from museum collections, with sources."
     h1 = f"{p} mark <span lang=\"zh-Hant\">{r['reign_chars']}</span>"
-    six = next((m["chars"] for m in marks if m["chars_count"] == 6), marks[0]["chars"] if marks else "")
+    six = written(r)
     mark_items = "".join(
         f'<li><span class="mark-chars" lang="zh-Hant">{m["chars"]}</span> · {m["chars_count"]} characters, {m["script"]} script. {e(w(m["note"]))}</li>' for m in r["marks"] if "(" not in m["chars"])
     other = [m for m in r["marks"] if "(" in m["chars"]]
     if other:
         mark_items += "".join(f'<li>{e(w(m["note"]))}</li>' for m in other)
     typeset = "".join(f'<figure class="cm-fig">{cmark(m["chars"])}<figcaption><span lang="zh-Hant">{m["chars"]}</span>, typeset</figcaption></figure>'
-                      for m in {m["chars"]: m for m in marks if m["script"] == "regular"}.values())
+                      for m in {m["chars"]: m for m in marks if m["script"] == "regular"}.values()) or \
+        f'<figure class="cm-fig">{cmark(six)}<figcaption><span lang="zh-Hant">{six}</span>, typeset: the reign’s name in the usual six-character form</figcaption></figure>'
+    if not marks:
+        mark_items = "<li>No mark of this reign is recorded on imperial porcelain; the photographs below show where its name does appear.</li>"
     books = "".join(figure(im) for im in images_for(p, "book"))
     period = "".join(figure(im) for im in images_for(p, "museum", "period"))
     later = "".join(figure(im) for im in images_for(p, "museum", "later")) + "".join(
@@ -292,7 +300,7 @@ def reign_page(r, prev, nxt):
     nav = '<p class="reign-nav">' + (f'<a href="{link(prev)}">← {e(prev["reign_pinyin"])}</a>' if prev else "") + \
           f' · <a href="{HUB}">All reign marks</a> · ' + (f'<a href="{link(nxt)}">{e(nxt["reign_pinyin"])} →</a>' if nxt else "") + "</p>"
     hx = r["dynasty"] == "Hongxian"
-    body = f"""      <p class="guide__lede">The {p} reign of the {dyn} ran {y}{" (" + e(alt) + ")" if alt else ""}. Its mark reads <span lang="zh-Hant">{six}</span>. Here is how it was written on imperial wares, and how often it was copied.</p>
+    body = f"""      <p class="guide__lede">The {p} reign of the {dyn} ran {y}{" (" + e(alt) + ")" if alt else ""}. {("Its mark reads <span lang=" + chr(34) + "zh-Hant" + chr(34) + ">" + six + "</span>. Here is how it was written on imperial wares, and how often it was copied.") if marks else "No reign mark of it is recorded on imperial porcelain. Here is what is known, and where its name does appear."}</p>
       {META}
       <div class="answer">
         <p class="answer__label">In short</p>
@@ -303,7 +311,7 @@ def reign_page(r, prev, nxt):
       <ul>{mark_items}</ul>{refs(pf(r, "marks"))}
       <p>Years: {y}{" (" + e(alt) + ")" if alt else ""}. {e(w(r.get("year_note", "")))}{refs(pf(r, "dates"))}</p>
       <p>Other spellings in older books and catalogs: {e(spellings)}.</p>
-{('      <h2 id="photos">On imperial wares</h2>' + chr(10) + '      <div class="cm-figs">' + period + '</div>') if period else ''}
+{('      <h2 id="photos">' + ("On imperial wares" if marks else "Where the reign’s name appears") + '</h2>' + chr(10) + '      <div class="cm-figs">' + period + '</div>') if period else ''}
       <h2 id="copies">{"Later items with this mark" if not hx else "Hongxian marks are almost always later"}</h2>
       <p>{e(w(r["later_copies_note"]))}{refs(pf(r, "later_copies_note"))}</p>
 {('      <div class="cm-figs">' + later + '</div>') if later else ''}

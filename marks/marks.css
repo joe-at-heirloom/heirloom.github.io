@@ -234,6 +234,7 @@ a.reign-tile:hover { border-color: var(--color-primary); }
 .reign-tile__marks { display: flex; gap: 8px; align-items: center; justify-content: center; min-height: 92px; }
 .reign-tile__marks .cmark { --cm-size: 1.05rem; }
 .reign-tile__marks img { height: 82px; width: auto; mix-blend-mode: multiply; }
+.reign-tile__marks img.reign-tile__photo { mix-blend-mode: normal; width: 92px; height: 92px; object-fit: cover; border-radius: 8px; }
 .reign-tile__name { font-weight: 600; font-size: 0.98rem; }
 .reign-tile__years { font-size: 0.82rem; color: var(--color-text-secondary); font-variant-numeric: tabular-nums; text-align: center; }
 .cm-figs { display: flex; flex-wrap: wrap; gap: 18px 26px; align-items: flex-end; margin: 18px 0 26px; }

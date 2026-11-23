@@ -110,6 +110,17 @@
   "page": "https://archive.org/details/marksmonogra00chaf/page/351"
  },
  {
+  "file": "book-hongxian-kaishu4.webp",
+  "kind": "book",
+  "reign": "Hongxian",
+  "form": "kaishu4",
+  "alt": "Hongxian four-character regular-script mark, 洪憲年製, printed facsimile",
+  "caption": "Four-character regular script, 洪憲年製, from Hobson (1925).",
+  "credit": "Hobson, The Later Ceramic Wares of China (1925), p. 146",
+  "licence": "public domain",
+  "page": "https://archive.org/details/laterceramicware00hobs/page/146"
+ },
+ {
   "file": "book-hongzhi-kaishu6.webp",
   "kind": "book",
   "reign": "Hongzhi",
@@ -220,6 +231,17 @@
   "page": "https://archive.org/details/marksmonogra00chaf/page/353"
  },
  {
+  "file": "book-qianlong-seal6-dusartel-1881.webp",
+  "kind": "book",
+  "reign": "Qianlong",
+  "form": "seal6",
+  "alt": "Qianlong six-character seal-script mark, 大清乾隆年製, printed facsimile",
+  "caption": "Six-character seal script, 大清乾隆年製, engraved from a piece for Du Sartel (1881), independently of the other books.",
+  "credit": "Du Sartel, La Porcelaine de Chine (1881), p. 109",
+  "licence": "public domain",
+  "page": "https://archive.org/details/leporcelainedech00dusa/page/109"
+ },
+ {
   "file": "book-shunzhi-kaishu6.webp",
   "kind": "book",
   "reign": "Shunzhi",
@@ -319,6 +341,17 @@
   "page": "https://archive.org/details/marksmonogra00chaf/page/351"
  },
  {
+  "file": "book-xuande-other-dusartel-1881.webp",
+  "kind": "book",
+  "reign": "Xuande",
+  "form": "other",
+  "alt": "Xuande mark, 大明宣德年, printed facsimile",
+  "caption": "大明宣德年, written around a circle, engraved from a piece for Du Sartel (1881), independently of the other books.",
+  "credit": "Du Sartel, La Porcelaine de Chine (1881), p. 105",
+  "licence": "public domain",
+  "page": "https://archive.org/details/leporcelainedech00dusa/page/105"
+ },
+ {
   "file": "book-xuande-seal6.webp",
   "kind": "book",
   "reign": "Xuande",
@@ -328,6 +361,28 @@
   "credit": "Chaffers, Marks and Monograms (1912), p. 351",
   "licence": "public domain",
   "page": "https://archive.org/details/marksmonogra00chaf/page/351"
+ },
+ {
+  "file": "book-xuande-seal6-dusartel-1881.webp",
+  "kind": "book",
+  "reign": "Xuande",
+  "form": "seal6",
+  "alt": "Xuande six-character seal-script mark, 大明宣德年製, printed facsimile",
+  "caption": "Six-character seal script, 大明宣德年製, engraved from a piece for Du Sartel (1881), independently of the other books. Seal-script Xuande marks are usual on bronze censers; on porcelain they are regarded as later.",
+  "credit": "Du Sartel, La Porcelaine de Chine (1881), p. 104",
+  "licence": "public domain",
+  "page": "https://archive.org/details/leporcelainedech00dusa/page/104"
+ },
+ {
+  "file": "book-xuantong-kaishu4.webp",
+  "kind": "book",
+  "reign": "Xuantong",
+  "form": "kaishu4",
+  "alt": "Xuantong four-character regular-script mark, 宣統年製, printed facsimile",
+  "caption": "Four-character regular script, 宣統年製, from Hobson (1925).",
+  "credit": "Hobson, The Later Ceramic Wares of China (1925), p. 146",
+  "licence": "public domain",
+  "page": "https://archive.org/details/laterceramicware00hobs/page/146"
  },
  {
   "file": "book-yongle-kaishu4.webp",
@@ -352,6 +407,17 @@
   "page": "https://archive.org/details/marksmonogra00chaf/page/351"
  },
  {
+  "file": "book-yongle-seal4-dusartel-1881.webp",
+  "kind": "book",
+  "reign": "Yongle",
+  "form": "seal4",
+  "alt": "Yongle four-character seal-script mark, 永樂年製, printed facsimile",
+  "caption": "Four-character seal script, 永樂年製, engraved from a piece for Du Sartel (1881), independently of the other books.",
+  "credit": "Du Sartel, La Porcelaine de Chine (1881), p. 104",
+  "licence": "public domain",
+  "page": "https://archive.org/details/leporcelainedech00dusa/page/104"
+ },
+ {
   "file": "book-yongzheng-kaishu6.webp",
   "kind": "book",
   "reign": "Yongzheng",
@@ -372,6 +438,17 @@
   "credit": "Chaffers, Marks and Monograms (1912), p. 353",
   "licence": "public domain",
   "page": "https://archive.org/details/marksmonogra00chaf/page/353"
+ },
+ {
+  "file": "book-yongzheng-seal6-dusartel-1881.webp",
+  "kind": "book",
+  "reign": "Yongzheng",
+  "form": "seal6",
+  "alt": "Yongzheng six-character seal-script mark, 大清雍正年製, printed facsimile",
+  "caption": "Six-character seal script, 大清雍正年製, engraved from a piece for Du Sartel (1881), independently of the other books.",
+  "credit": "Du Sartel, La Porcelaine de Chine (1881), p. 108",
+  "licence": "public domain",
+  "page": "https://archive.org/details/leporcelainedech00dusa/page/108"
  },
  {
   "file": "book-zhengde-kaishu6.webp",
