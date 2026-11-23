@@ -30,8 +30,9 @@ HUB = "/marks/chinese-hall-marks"
 def w(text):
     return us(_w(text or ""))
 KIND = {"imperial": "Emperors, empresses and palace buildings", "private": "Princes, officials, scholars and private studios",
-        "dealer": "Dealers and makers", "republic": "Republic-period halls", "painter": "Jingdezhen painters’ studios, Republic period"}
-ORDER = ["imperial", "private", "dealer", "republic", "painter"]
+        "dealer": "Dealers and makers", "republic": "Republic-period halls", "painter": "Jingdezhen painters’ studios, Republic period",
+        "placement": "Palace placement inscriptions (not maker’s marks)"}
+ORDER = ["imperial", "private", "dealer", "republic", "painter", "placement"]
 
 
 def us(text):
