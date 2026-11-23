@@ -243,3 +243,5 @@ a.reign-tile:hover { border-color: var(--color-primary); }
 .cm-fig--book img { mix-blend-mode: multiply; max-height: 130px; }
 .cm-fig figcaption { font-size: 0.82rem; color: var(--color-text-secondary); text-align: center; line-height: 1.35; }
 .cm-fig .stamps__credit { font-size: 0.74rem; }
+.hall[hidden] { display: none; }
+.hall__chars { font-family: 'LXGW WenKai TC', 'Noto Serif TC', serif; color: #23468c; margin-right: 6px; }

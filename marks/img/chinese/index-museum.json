@@ -8,6 +8,7 @@
   "caption": "大明宣德年製, regular script, inside a stem cup, 1426–35.",
   "credit": "Cleveland Museum of Art, 1957.60",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1957.60"
  },
  {
@@ -19,6 +20,7 @@
   "caption": "大明宣德年製, regular script, inside a dice bowl, 1426–35.",
   "credit": "Cleveland Museum of Art, 1989.287",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.287"
  },
  {
@@ -30,10 +32,11 @@
   "caption": "大明宣德年製, regular script, on the rim of a bowl with decoration of the \"Three Friends\", 1426–35.",
   "credit": "Cleveland Museum of Art, 1953.631",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1953.631"
  },
  {
-  "file": "xuande-met-2006.448a, b.webp",
+  "file": "xuande-met-2006.448a.webp",
   "kind": "museum",
   "reign": "Xuande",
   "period_or_later": "later",
@@ -41,6 +44,7 @@
   "caption": "大明宣德年製, regular script, on the base of an incense burner with dragon, phoenix, and sea creatures, which the museum dates 16th–17th century, later than the mark.",
   "credit": "The Metropolitan Museum of Art, 2006.448a, b",
   "licence": "public domain",
+  "object_kind": "bronze",
   "page": "https://www.metmuseum.org/art/collection/search/73380"
  },
  {
@@ -52,6 +56,7 @@
   "caption": "大明成化年製, regular script, on the base of a wine cup with children at play, 1465–87.",
   "credit": "Cleveland Museum of Art, 1957.61",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1957.61"
  },
  {
@@ -63,6 +68,7 @@
   "caption": "大明成化年製, regular script, on the base of a bowl with lily scrolls, 1465–87.",
   "credit": "Cleveland Museum of Art, 1967.64",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1967.64"
  },
  {
@@ -74,6 +80,7 @@
   "caption": "大明成化年製, regular script, on the base of a dish, 1465–87.",
   "credit": "Cleveland Museum of Art, 1989.288",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.288"
  },
  {
@@ -85,6 +92,7 @@
   "caption": "大明成化年製, regular script, on the base of a bowl with Xiwangmu and attendants, which the museum dates 1662–1722, later than the mark.",
   "credit": "Cleveland Museum of Art, 1964.218.1",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.218.1",
   "hub": "careful"
  },
@@ -97,6 +105,7 @@
   "caption": "大明成化年製, regular script, on the base of a dish with Laozi riding a water buffalo, which the museum dates 1723–35, later than the mark.",
   "credit": "Cleveland Museum of Art, 1989.315",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.315"
  },
  {
@@ -108,6 +117,7 @@
   "caption": "大明弘治年製, regular script, on the base of a bowl, 1488–1505.",
   "credit": "Cleveland Museum of Art, 1989.289",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.289"
  },
  {
@@ -119,6 +129,7 @@
   "caption": "大明正德年製, regular script, on the base of a yellow-glazed bowl, 1505–21.",
   "credit": "Cleveland Museum of Art, 2020.180",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/2020.180"
  },
  {
@@ -130,6 +141,7 @@
   "caption": "大明正德年製, regular script, on the base of a bowl with dragons in waves, 1506–21.",
   "credit": "Cleveland Museum of Art, 1989.290",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.290"
  },
  {
@@ -141,6 +153,7 @@
   "caption": "正德年製, regular script, on the base of a bowl (wan) with water plants and arabesques, 1506–21.",
   "credit": "Cleveland Museum of Art, 1957.359",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1957.359"
  },
  {
@@ -152,6 +165,7 @@
   "caption": "大明嘉靖年製, regular script, on the base of a jar with dragons pursuing flaming jewels, 1522–66.",
   "credit": "Cleveland Museum of Art, 1989.291",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.291"
  },
  {
@@ -163,6 +177,7 @@
   "caption": "大明嘉靖年製, regular script, inside a bowl with fish and water plants, 1522–66.",
   "credit": "Cleveland Museum of Art, 1964.173",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.173"
  },
  {
@@ -174,6 +189,7 @@
   "caption": "大明嘉靖年製, regular script, on the base of a bowl, which the museum dates 1662–1722, later than the mark.",
   "credit": "Cleveland Museum of Art, 1940.962",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1940.962",
   "hub": "careful"
  },
@@ -186,6 +202,7 @@
   "caption": "大明嘉靖年製, regular script, on the base of a bowl in form of archaic gui, which the museum dates 1628–61, later than the mark.",
   "credit": "Cleveland Museum of Art, 1964.175",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.175"
  },
  {
@@ -197,6 +214,7 @@
   "caption": "大明萬曆年製, regular script, on the base of a covered jar, 1573–1620.",
   "credit": "Cleveland Museum of Art, 1957.62",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1957.62"
  },
  {
@@ -208,6 +226,7 @@
   "caption": "大明萬曆年製, regular script, on the base of a bowl with bands of Tibetan (Lança) characters, 1572–1620.",
   "credit": "Cleveland Museum of Art, 1989.294",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.294"
  },
  {
@@ -219,6 +238,7 @@
   "caption": "大明隆慶年造, regular script, on the base of a bowl with poem of female weaver, late 16th century.",
   "credit": "The Metropolitan Museum of Art, 2010.59",
   "licence": "public domain",
+  "object_kind": "porcelain",
   "page": "https://www.metmuseum.org/art/collection/search/75721"
  },
  {
@@ -230,6 +250,7 @@
   "caption": "大明永樂年施, “given in the Yongle reign of the Great Ming,” incised on the base of a gilt-bronze Manjushri, 1403–24. No open-license photograph of a Yongle porcelain mark was found.",
   "credit": "The Metropolitan Museum of Art, 2001.59",
   "licence": "public domain",
+  "object_kind": "bronze",
   "page": "https://www.metmuseum.org/art/collection/search/57612"
  },
  {
@@ -241,6 +262,7 @@
   "caption": "大清康熙年製, regular script, on the base of a dish with dragons, pomegranates, and peaches, 1662–1722.",
   "credit": "Cleveland Museum of Art, 1930.313",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1930.313"
  },
  {
@@ -252,6 +274,7 @@
   "caption": "大清康熙年製, regular script, on the base of a dish with bird on fruit tree branch, 1662–1722.",
   "credit": "Cleveland Museum of Art, 1964.213.2",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.213.2"
  },
  {
@@ -263,6 +286,7 @@
   "caption": "大清康熙年製, regular script, on the base of a dish with Zhang Guolao, 1662–1722.",
   "credit": "Cleveland Museum of Art, 1989.306",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1989.306"
  },
  {
@@ -274,6 +298,7 @@
   "caption": "康熙御製, “made by imperial order of Kangxi,” on a bowl the museum dates to the 1800s.",
   "credit": "Cleveland Museum of Art, 1964.215",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.215"
  },
  {
@@ -285,6 +310,7 @@
   "caption": "大清雍正年製, regular script, on the base of a bowl with poppies, tree peony, and flowering mimosa, 1723–35.",
   "credit": "Cleveland Museum of Art, 1964.201",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.201"
  },
  {
@@ -296,6 +322,7 @@
   "caption": "大清雍正年製, regular script, on the base of a plate with Isle of the Immortals, 1723–35.",
   "credit": "Cleveland Museum of Art, 1956.709",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1956.709"
  },
  {
@@ -307,6 +334,7 @@
   "caption": "大清雍正年製, regular script, on the base of a small dish with yellow monochrome glaze, 1723–35.",
   "credit": "Cleveland Museum of Art, 2003.260",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/2003.260"
  },
  {
@@ -318,6 +346,7 @@
   "caption": "大清乾隆年製, seal script, on the base of a bottle vase with dragons and waves, 1736–95.",
   "credit": "Cleveland Museum of Art, 1939.205",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1939.205",
   "hub": "read"
  },
@@ -330,6 +359,7 @@
   "caption": "大清乾隆年製, seal script, on the base of a dish with green glaze and carved floral designs, 1736–95.",
   "credit": "Cleveland Museum of Art, 2003.262",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/2003.262"
  },
  {
@@ -341,6 +371,7 @@
   "caption": "乾隆年製, regular script, on the base of a vase, 1736–95.",
   "credit": "Cleveland Museum of Art, 1963.514",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1963.514"
  },
  {
@@ -352,6 +383,7 @@
   "caption": "大清嘉慶年製, seal script, on the base of a bottle-shaped vase, 1796–1820.",
   "credit": "Cleveland Museum of Art, 1944.151",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1944.151"
  },
  {
@@ -363,6 +395,7 @@
   "caption": "大清道光年製, seal script, on the base of a large bowl with yellow enamel, 1821–50.",
   "credit": "Cleveland Museum of Art, 2003.264",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/2003.264"
  },
  {
@@ -374,10 +407,11 @@
   "caption": "大清道光年製, seal script, on the base of a bowl with yellow glaze, 1821–50.",
   "credit": "Cleveland Museum of Art, 2003.263",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/2003.263"
  },
  {
-  "file": "daoguang-met-14.40.559a, b.webp",
+  "file": "daoguang-met-14.40.559a.webp",
   "kind": "museum",
   "reign": "Daoguang",
   "period_or_later": "period",
@@ -385,6 +419,7 @@
   "caption": "道光年製, seal script, on the base of a snuff bottle with scene of a lotus pond, 1821–50.",
   "credit": "The Metropolitan Museum of Art, 14.40.559a, b",
   "licence": "public domain",
+  "object_kind": "porcelain",
   "page": "https://www.metmuseum.org/art/collection/search/41318"
  },
  {
@@ -396,11 +431,12 @@
   "caption": "洪憲年製 on a vase the Met dates to the 1930s or 1940s, two decades after the Hongxian reign.",
   "credit": "The Metropolitan Museum of Art, 68.4.1",
   "licence": "public domain",
+  "object_kind": "porcelain",
   "page": "https://www.metmuseum.org/art/collection/search/42322",
   "hub": "careful"
  },
  {
-  "file": "ctx-base-cma-1957.62.webp",
+  "file": "ctx-context-cma-1957.62.webp",
   "kind": "museum",
   "reign": "",
   "period_or_later": null,
@@ -408,11 +444,12 @@
   "caption": "Where to look: the covered jar (1573–1620), with its mark in the middle of the base.",
   "credit": "Cleveland Museum of Art, 1957.62",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1957.62",
   "hub": "read"
  },
  {
-  "file": "ctx-base-cma-1964.213.2.webp",
+  "file": "ctx-context-cma-1964.213.2.webp",
   "kind": "museum",
   "reign": "",
   "period_or_later": null,
@@ -420,10 +457,11 @@
   "caption": "Where to look: the dish with bird on fruit tree branch (1662–1722), with its mark in the middle of the base.",
   "credit": "Cleveland Museum of Art, 1964.213.2",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.213.2"
  },
  {
-  "file": "ctx-base-cma-1953.631.webp",
+  "file": "ctx-context-cma-1953.631.webp",
   "kind": "museum",
   "reign": "",
   "period_or_later": null,
@@ -431,10 +469,11 @@
   "caption": "Where to look: the bowl with decoration of the \"Three Friends\" (1426–35), with its mark along the rim.",
   "credit": "Cleveland Museum of Art, 1953.631",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1953.631"
  },
  {
-  "file": "ctx-base-cma-1964.201.webp",
+  "file": "ctx-context-cma-1964.201.webp",
   "kind": "museum",
   "reign": "",
   "period_or_later": null,
@@ -442,6 +481,235 @@
   "caption": "Where to look: the bowl with poppies, tree peony, and flowering mimosa (1723–35), with its mark in the middle of the base.",
   "credit": "Cleveland Museum of Art, 1964.201",
   "licence": "CC0",
+  "object_kind": "porcelain",
   "page": "https://clevelandart.org/art/1964.201"
+ },
+ {
+  "file": "tianqi-met-24.170.6.webp",
+  "kind": "museum",
+  "reign": "Tianqi",
+  "period_or_later": "period",
+  "alt": "Reign mark 天啟年製 on a dish with immortal",
+  "caption": "天啟年製, regular script, on the base of a dish with immortal, 1621–1627.",
+  "credit": "The Metropolitan Museum of Art, 24.170.6",
+  "licence": "public domain",
+  "object_kind": "porcelain",
+  "page": "https://www.metmuseum.org/art/collection/search/50025"
+ },
+ {
+  "file": "guangxu-met-1971.180.273.webp",
+  "kind": "museum",
+  "reign": "Guangxu",
+  "period_or_later": "period",
+  "alt": "Reign mark 大清光緒年製 on a dish",
+  "caption": "大清光緒年製, regular script, on the base of a dish, late 19th century.",
+  "credit": "The Metropolitan Museum of Art, 1971.180.273",
+  "licence": "public domain",
+  "object_kind": "porcelain",
+  "page": "https://www.metmuseum.org/art/collection/search/50558"
+ },
+ {
+  "file": "yongzheng-met-29.100.293.webp",
+  "kind": "museum",
+  "reign": "Yongzheng",
+  "period_or_later": "period",
+  "alt": "Reign mark 大清雍正年製 on a vase with a coiling dragon",
+  "caption": "大清雍正年製, seal script, on the base of a vase with a coiling dragon, 1723–35.",
+  "credit": "The Metropolitan Museum of Art, 29.100.293",
+  "licence": "public domain",
+  "object_kind": "porcelain",
+  "page": "https://www.metmuseum.org/art/collection/search/46137"
+ },
+ {
+  "file": "tianshun-met-1989.235.1.webp",
+  "kind": "museum",
+  "reign": "Tianshun",
+  "period_or_later": "period",
+  "alt": "Reign mark 天順四年春 on a windblown bamboo",
+  "caption": "天順四年春, “spring of the fourth year of Tianshun” (1460), opening the colophon on Xia Chang’s painting Windblown bamboo.",
+  "credit": "The Metropolitan Museum of Art, 1989.235.1",
+  "licence": "public domain",
+  "object_kind": "inscription",
+  "page": "https://www.metmuseum.org/art/collection/search/44590"
+ },
+ {
+  "file": "hongwu-cma-1953.126.webp",
+  "kind": "museum",
+  "reign": "Hongwu",
+  "period_or_later": "period",
+  "alt": "Reign mark 洪武庚申春 八十翁楊懋觀 on a streams and mountains without end",
+  "caption": "洪武庚申春, “spring of the gengshen year of Hongwu” (1380), in a colophon on the Song handscroll Streams and Mountains without End.",
+  "credit": "Cleveland Museum of Art, 1953.126",
+  "licence": "CC0",
+  "object_kind": "inscription",
+  "page": "https://clevelandart.org/art/1953.126"
+ },
+ {
+  "file": "jingtai-cma-1973.70.1.webp",
+  "kind": "museum",
+  "reign": "Jingtai",
+  "period_or_later": "period",
+  "alt": "Reign mark 大明景泰五年 [八月]初三日[施] on a the Bodhisattvas of the ten stages in attaining the most perfect knowledge",
+  "caption": "大明景泰五年, “fifth year of Jingtai of the Great Ming” (1454), in the gold dedication on a Buddhist painting.",
+  "credit": "Cleveland Museum of Art, 1973.70.1",
+  "licence": "CC0",
+  "object_kind": "inscription",
+  "page": "https://clevelandart.org/art/1973.70.1"
+ },
+ {
+  "file": "jingtai-commons-Vmenkov-P1060092-jingtai-tombstone.webp",
+  "kind": "museum",
+  "reign": "Jingtai",
+  "period_or_later": "period",
+  "alt": "Reign mark 景泰五年 on a tombstone of a 56th-generation descendant of confucius",
+  "caption": "景泰五年 (1454), incised on a tombstone in the Kong family cemetery at Qufu.",
+  "credit": "Vmenkov, via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "object_kind": "inscription",
+  "page": "https://commons.wikimedia.org/wiki/File:Kong_Lin_-_Ming_section_-_56th_generation_-_P1060092.JPG"
+ },
+ {
+  "file": "zhengtong-commons-Gisling-zhengtong-plaque.webp",
+  "kind": "museum",
+  "reign": "Zhengtong",
+  "period_or_later": "period",
+  "alt": "Reign mark 大明正統元年歲次丙辰 on a name plaque 釋迦塔 of the yingxian wooden pagoda",
+  "caption": "大明正統元年, “first year of Zhengtong of the Great Ming” (1436), on the side of the name plaque of the Yingxian wooden pagoda.",
+  "credit": "Gisling, via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "object_kind": "inscription",
+  "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%98%8E%E6%AD%A3%E7%BB%9F%E5%85%83%E5%B9%B4%E9%87%8B%E8%BF%A6%E5%A1%94%E5%8C%BE%E9%A1%8D.JPG"
+ },
+ {
+  "file": "chongzhen-cma-1961.89.webp",
+  "kind": "museum",
+  "reign": "Chongzhen",
+  "period_or_later": "period",
+  "alt": "Reign mark 崇禎戊寅八月二日 on a lady xuanwen giving instruction on the rites of zhou",
+  "caption": "崇禎戊寅, the wuyin year of Chongzhen (1638), in the artist’s inscription on a painting.",
+  "credit": "Cleveland Museum of Art, 1961.89",
+  "licence": "CC0",
+  "object_kind": "inscription",
+  "page": "https://clevelandart.org/art/1961.89"
+ },
+ {
+  "file": "hongwu-commons-GLT-281-hongwu-coin.webp",
+  "kind": "museum",
+  "reign": "Hongwu",
+  "period_or_later": "period",
+  "alt": "Reign mark 洪武通寶 on a hongwu tongbao cash coin, 22.5 mm",
+  "caption": "洪武通寶, a Hongwu reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:281_S-1137_Ming,_Taizu_(Hongwu),_1368-1398,_22.5mm.jpg"
+ },
+ {
+  "file": "taichang-commons-GLT-287-taichang-coin.webp",
+  "kind": "museum",
+  "reign": "Taichang",
+  "period_or_later": "period",
+  "alt": "Reign mark 泰昌通寶 on a taichang tongbao cash coin, 25 mm",
+  "caption": "泰昌通寶, a Taichang reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:287_S-1199_Ming,_Guangzong,_1620,_25mm.jpg"
+ },
+ {
+  "file": "tianqi-commons-GLT-290-tianqi-coin.webp",
+  "kind": "museum",
+  "reign": "Tianqi",
+  "period_or_later": "period",
+  "alt": "Reign mark 天啟通寶 on a tianqi tongbao 10-cash coin, 47.5 mm",
+  "caption": "天啟通寶, a Tianqi reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:290_S-1223_Ming,_Xizong,_1620-1627,_47.5mm.jpg"
+ },
+ {
+  "file": "chongzhen-commons-GLT-291-chongzhen-coin.webp",
+  "kind": "museum",
+  "reign": "Chongzhen",
+  "period_or_later": "period",
+  "alt": "Reign mark 崇禎通寶 on a chongzhen tongbao cash coin, 23 mm",
+  "caption": "崇禎通寶, a Chongzhen reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:291_S-1229_Ming,_Sizong,_1627-1644,_23mm.jpg"
+ },
+ {
+  "file": "shunzhi-commons-GLT-334-shunzhi-coin.webp",
+  "kind": "museum",
+  "reign": "Shunzhi",
+  "period_or_later": "period",
+  "alt": "Reign mark 順治通寶 on a shunzhi tongbao cash coin, 28 mm",
+  "caption": "順治通寶, a Shunzhi reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:334_S-1417,_Shunzhi,_1644-1661,_28mm.jpg"
+ },
+ {
+  "file": "xianfeng-commons-GLT-415-xianfeng-coin.webp",
+  "kind": "museum",
+  "reign": "Xianfeng",
+  "period_or_later": "period",
+  "alt": "Reign mark 咸豐通寶 on a xianfeng tongbao cash coin, 22 mm",
+  "caption": "咸豐通寶, a Xianfeng reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:415_S-1535,_Xianfeng,_1851-1861,_22mm.jpg"
+ },
+ {
+  "file": "tongzhi-commons-GLT-463-tongzhi-coin.webp",
+  "kind": "museum",
+  "reign": "Tongzhi",
+  "period_or_later": "period",
+  "alt": "Reign mark 同治通寶 on a tongzhi tongbao cash coin, 21 mm",
+  "caption": "同治通寶, a Tongzhi reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:463_S-1556,_Tongzhi,_1861-1875,_21mm.jpg"
+ },
+ {
+  "file": "guangxu-commons-GLT-481-guangxu-coin.webp",
+  "kind": "museum",
+  "reign": "Guangxu",
+  "period_or_later": "period",
+  "alt": "Reign mark 光緒通寶 on a guangxu tongbao cash coin, 23 mm",
+  "caption": "光緒通寶, a Guangxu reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:481_Guangxu,_1875-1908,_23mm.jpg"
+ },
+ {
+  "file": "xuantong-commons-GLT-497-xuantong-coin.webp",
+  "kind": "museum",
+  "reign": "Xuantong",
+  "period_or_later": "period",
+  "alt": "Reign mark 宣統通寶 on a xuantong tongbao cash coin, 19 mm",
+  "caption": "宣統通寶, a Xuantong reign cash coin: coins carry the reign’s two characters, as its mark does. Date as attributed by the collector.",
+  "credit": "Gary Todd, via Wikimedia Commons",
+  "licence": "CC0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:497_Puyi,_1908-1912,_19mm.jpg"
+ },
+ {
+  "file": "jianwen-commons-Semans-jianwen-coin-01.webp",
+  "kind": "museum",
+  "reign": "Jianwen",
+  "period_or_later": "unclear",
+  "alt": "Reign mark 建文通寶 on a jianwen tongbao cash coin",
+  "caption": "建文通寶, a Jianwen reign cash coin: coins carry the reign’s two characters, as its mark does. Attributed: no Jianwen coinage is recorded, and surviving coins are disputed.",
+  "credit": "Scott Semans, via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "object_kind": "coin",
+  "page": "https://commons.wikimedia.org/wiki/File:Jianwen_Tongbao_(%E5%BB%BA%E6%96%87%E9%80%9A%E5%AF%B6)_-_Scott_Semans_01.jpg"
  }
 ]

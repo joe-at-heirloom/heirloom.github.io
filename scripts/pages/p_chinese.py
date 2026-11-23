@@ -132,8 +132,14 @@ def img_tag(im, cls=""):
     return f'<img{c} src="/marks/img/chinese/{im["file"]}" alt="{e(im["alt"])}" width="{w}" height="{h}" loading="lazy" decoding="async">'
 
 
+LICENCE_URL = {"CC BY-SA 3.0": "https://creativecommons.org/licenses/by-sa/3.0/", "CC BY 3.0": "https://creativecommons.org/licenses/by/3.0/",
+               "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/", "CC BY-SA 4.0": "https://creativecommons.org/licenses/by-sa/4.0/"}
+
+
 def figure(im):
-    credit = f'<a href="{e(im["page"])}" rel="nofollow">{e(im["credit"])}</a>, {e(im["licence"])}'
+    lic = im["licence"]
+    lic_html = f'<a href="{LICENCE_URL[lic]}" rel="nofollow">{e(lic)}</a>' if lic in LICENCE_URL else e(lic)
+    credit = f'<a href="{e(im["page"])}" rel="nofollow">{e(im["credit"])}</a>, {lic_html}'
     cls = "cm-fig cm-fig--book" if im["kind"] == "book" else "cm-fig"
     return f'<figure class="{cls}">{img_tag(im)}<figcaption>{e(w(im["caption"]))} <span class="stamps__credit">{credit}</span></figcaption></figure>'
 
@@ -154,7 +160,9 @@ def written(r):
 
 def tile(r):
     p = r["reign_pinyin"]
-    photo = next(iter(images_for(p, "museum", "period") + images_for(p, "museum")), None)
+    mus = images_for(p, "museum")
+    photo = next(iter([i for i in mus if i.get("object_kind", "porcelain") == "porcelain" and i.get("period_or_later") == "period"]
+                      + [i for i in mus if i.get("object_kind", "porcelain") == "porcelain"] + mus), None)
     book = next((im for im in images_for(p, "book") if im.get("form", "").startswith("seal")), None) or next(iter(images_for(p, "book")), None)
     six = written(r)
     inner = (img_tag(photo, "reign-tile__photo") if photo else "") + (img_tag(book) if book and not photo else "") + cmark(six)
@@ -293,8 +301,9 @@ def reign_page(r, prev, nxt):
     if not marks:
         mark_items = "<li>No mark of this reign is recorded on imperial porcelain; the photographs below show where its name does appear.</li>"
     books = "".join(figure(im) for im in images_for(p, "book"))
-    period = "".join(figure(im) for im in images_for(p, "museum", "period"))
-    later = "".join(figure(im) for im in images_for(p, "museum", "later")) + "".join(
+    period = "".join(figure(im) for im in images_for(p, "museum", "period") if im.get("object_kind", "porcelain") == "porcelain")
+    named = "".join(figure(im) for im in images_for(p, "museum") if im.get("object_kind", "porcelain") != "porcelain")
+    later = "".join(figure(im) for im in images_for(p, "museum", "later") if im.get("object_kind", "porcelain") == "porcelain") + "".join(
         figure(im) for im in IMAGES if im.get("claims") == p and im["reign"] != p)
     spellings = ", ".join([r["wade_giles"], *[s for s in r.get("other_spellings", [])]])
     nav = '<p class="reign-nav">' + (f'<a href="{link(prev)}">← {e(prev["reign_pinyin"])}</a>' if prev else "") + \
@@ -311,7 +320,8 @@ def reign_page(r, prev, nxt):
       <ul>{mark_items}</ul>{refs(pf(r, "marks"))}
       <p>Years: {y}{" (" + e(alt) + ")" if alt else ""}. {e(w(r.get("year_note", "")))}{refs(pf(r, "dates"))}</p>
       <p>Other spellings in older books and catalogs: {e(spellings)}.</p>
-{('      <h2 id="photos">' + ("On imperial wares" if marks else "Where the reign’s name appears") + '</h2>' + chr(10) + '      <div class="cm-figs">' + period + '</div>') if period else ''}
+{('      <h2 id="photos">On imperial wares</h2>' + chr(10) + '      <div class="cm-figs">' + period + '</div>') if period else ''}
+{('      <h2 id="named">Where the reign’s name appears</h2>' + chr(10) + '      <p>' + ("Besides its marks, the reign’s name is written on other dated things: coins, inscriptions and dedications." if marks else "With no reign mark to show, here is the reign’s name on dated things of the period: coins, inscriptions and dedications.") + '</p>' + chr(10) + '      <div class="cm-figs">' + named + '</div>') if named else ''}
       <h2 id="copies">{"Later items with this mark" if not hx else "Hongxian marks are almost always later"}</h2>
       <p>{e(w(r["later_copies_note"]))}{refs(pf(r, "later_copies_note"))}</p>
 {('      <div class="cm-figs">' + later + '</div>') if later else ''}

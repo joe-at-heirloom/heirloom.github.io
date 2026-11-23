@@ -350,8 +350,34 @@
     q.addEventListener('input', run);
   }
 
+  // ── Chinese hall marks ────────────────────────────────────────────────────
+  function halls() {
+    const cards = [...document.querySelectorAll('[data-hall]')];
+    const q = $('hall-q'), out = $('hall-results');
+    const buttons = [...document.querySelectorAll('[data-hall-kind]')];
+    if (!cards.length || !q || !out) return;
+    hint(out);
+    let kind = '';
+    const TRAD = { 斋: '齋', 宫: '宮', 静: '靜', 远: '遠', 体: '體', 储: '儲', 养: '養', 宁: '寧', 颐: '頤', 觯: '觶', 书: '書', 华: '華', 宝: '寶', 长: '長', 寿: '壽', 庆: '慶', 乐: '樂', 制: '製', 听: '聽', 庐: '廬', 楼: '樓', 园: '園', 阁: '閣', 轩: '軒' };
+    const key = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z㐀-鿿]/g, '').replace(/./g, (c) => TRAD[c] || c);
+    const run = () => {
+      const k = key(q.value).replace(/製$/, '');
+      let n = 0;
+      for (const c of cards) {
+        const ok = (!kind || c.dataset.kind === kind) && (!k || c.dataset.keys.split(' ').some((x) => x.includes(k)));
+        c.hidden = !ok;
+        if (ok) n += 1;
+      }
+      for (const b of buttons) b.setAttribute('aria-pressed', String(b.dataset.hallKind === kind));
+      if (!k && !kind) return say(out, out.dataset.hint);
+      say(out, n ? `<p><strong>${n === 1 ? 'One mark matches' : `${n} marks match`}</strong>; the others are hidden below.</p>` : '<p>No hall mark matches. A mark with 年製 is probably a reign mark: try the <a href="/marks/chinese-reign-marks">reign-mark finder</a>.</p>');
+    };
+    for (const b of buttons) b.addEventListener('click', () => { kind = kind === b.dataset.hallKind ? '' : b.dataset.hallKind; run(); });
+    q.addEventListener('input', run);
+  }
+
   const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres };
-  Object.assign(tools, { omega, rolex, chinese: chineseReigns });
+  Object.assign(tools, { omega, rolex, chinese: chineseReigns, halls });
   const start = () => tools[window.MARKS_TOOL] && tools[window.MARKS_TOOL]();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
