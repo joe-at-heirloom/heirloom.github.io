@@ -167,6 +167,7 @@ MX_SRC = [
     ("Art Institute of Chicago: William Spratling (274261, 274262) and Héctor Aguilar (274263–274265), inscriptions fields", "https://www.artic.edu/artworks/274263"),
     ("Los Angeles County Museum of Art: Spratling, Los Castillo, Margot de Taxco and Aguilar records, curatorial notes; and <cite>Modern Mexican Silver</cite>, LACMA Unframed, 2013", "https://unframed.lacma.org/node/1130"),
     ("Newark Museum of Art: Antonio Pineda bracelet, 2017.67.25", "https://collections.newarkmuseumart.org/objects/222307/bracelet"),
+    ("P. C. Morrill and C. A. Berk, <cite>Mexican Silver: 20th Century Handwrought Jewelry &amp; Metalwork</cite> (Atglen: Schiffer, 1994), glossary and pls. VII-27b, XVI-8b", None),
     ("Real Academia Española, <cite>Diccionario de la lengua española</cite>, “alpaca”", "https://dle.rae.es/alpaca"),
     ("<cite>Encyclopaedia Britannica</cite>, “nickel silver”", "https://www.britannica.com/technology/nickel-silver"),
 ]
@@ -194,7 +195,7 @@ def mexico():
       <h2 id="eagle">The eagle mark</h2>
       <p>On Mexican silver of the 1950s and 1960s you often find a small stamp of an eagle with a number in it. Museums call it the eagle assay mark, and date silver with it from about 1948 into the 1960s. It fits the 1947 standard, which asked for each item to be assayed and stamped with the producer's number.</p>
       <p><strong>What the number means is disputed.</strong> Museum records show a different number for each Taxco workshop: 9 on Héctor Aguilar's silver (Art Institute of Chicago), 16 on Margot de Taxco's (Museum of Fine Arts, Boston) and 30 on William Spratling's (Art Institute of Chicago). That points to a number for the maker. Some guides instead read low numbers as a city, such as 3 for Taxco; no official or museum source found for this page supports that reading.</p>
-      <p>The years usually given for the eagle, 1948 to 1980, are not stated in any official text found for this page. What is certain is the frame around them: the duty to stamp a producer's number dates from 1947, and the registration numbers of 1979–1980 replaced the old system. No open-license photograph of these marks was found, so the cards below describe them in words.</p>
+      <p>The years usually given for the eagle, 1948 to 1980, are not stated in any official text found for this page. What is certain is the frame around them: the duty to stamp a producer's number dates from 1947, and the registration numbers of 1979–1980 replaced the old system. Morrill and Berk's <cite>Mexican Silver</cite> (1994) dates the eagle stamp about 1948 to about 1970; the eagle below, with Margot de Taxco's number 16, is from their book. The other cards describe their marks in words.</p>
       {marksdb.grid(['mexico-eagle-assay-mark', 'mexico-hecho-en-mexico', 'mexico-registration-code', 'mexico-alpaca'])}
       <h2 id="codes">Letter-and-number codes, from 1980</h2>
       <p>From 1980 the law required the producer's government registration number on Mexican silver, and the current standard still does. On Taxco silver these appear as codes of two letters and a number, such as TS-24, often beside 925 and México. Collectors' guides read the first letter as the city (T for Taxco) and the second as the maker's surname; that reading is widely repeated, but no official or museum source found here explains how the codes were built. The code identifies a registered maker, not a year.</p>
@@ -206,7 +207,7 @@ def mexico():
         <li><strong>Los Castillo:</strong> founded by the Castillo brothers, who trained with Spratling; LACMA dates it to 1939, the Museum of Fine Arts, Boston to 1942.</li>
         <li><strong>Margot de Taxco:</strong> the workshop of Margot van Voorhies Carr, from 1946, known for enamel; marked MARGOT DE TAXCO with a model number.</li>
       </ul>
-      <p>These are artists' and studio marks: they are shown here only as photographs, never redrawn, and no open-license photograph of them has been found yet.</p>
+      <p>These are artists' and studio marks: they are shown here only as photographs, never redrawn. Aguilar's HA is from Morrill and Berk's book; for the others no usable photograph has been found yet.</p>
       {marksdb.grid(['spratling-ws-mark', 'aguilar-ha-mark', 'margot-de-taxco-mark', 'los-castillo-mark', 'pineda-antonio-crown-mark'])}"""
     cavs = [
         "Mexican marks are widely copied, and Spratling's most of all. A mark gives what the item claims; a specialist can tell more.",
@@ -317,8 +318,10 @@ def russia():
         <li><strong>Head facing left:</strong> the first type, with the Cyrillic initials of the district's assay chief. Up to 1908.</li>
         <li><strong>Head facing right:</strong> from 1908, with a Greek letter for the assay district in place of the initials: delta (Δ) for Moscow. Museums date this type 1908 to 1917; Russia's assay chamber shows it in use to 1926, until the Soviet change of 1927.</li>
       </ul>
-      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. The left-facing kokoshnik below is on a Fabergé fork in the Klingenmuseum Solingen; no open-license photograph of a right-facing one has been found yet, so that card describes it in words.</p>
-{marksdb.grid(['russia-kokoshnik-left', 'russia-kokoshnik-right', 'russia-district-letter-delta', 'faberge-cyrillic-name-mark'])}
+      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. The left-facing kokoshnik below is on a Fabergé fork in the Klingenmuseum Solingen; the other kokoshnik and Soviet marks are the printed drawings in Postnikova-Loseva (1983), official state signs.</p>
+{marksdb.grid(['russia-kokoshnik-left', 'russia-assay-lebedkin-moscow', 'russia-assay-st-petersburg-1899', 'russia-kokoshnik-right', 'russia-district-letter-delta'])}
+      <p>Some makers' marks of the period, as Postnikova-Loseva prints them:</p>
+{marksdb.grid(['faberge-cyrillic-name-mark', 'faberge-kf-mark', 'grachev-mark', 'khlebnikov-mark'])}
       <h2 id="soviet">Soviet marks, from 1927</h2>
       <p>In 1927 fineness moved to thousandths (875, 916, 925 on silver), and the state mark became a worker's head with a hammer. From 1958 it was a hammer and sickle inside a five-pointed star, with the fineness and a letter for the assay office, until 1994, when the kokoshnik returned with metric numbers. These dates come from Russia's Federal Assay Chamber; no second published source was found for them. The star with hammer and sickle appears on the <a href="/marks/gold-karat-marks">gold marks page</a>, beside 583.</p>
       {marksdb.grid(['soviet-worker-hammer', 'soviet-star-silver'])}"""

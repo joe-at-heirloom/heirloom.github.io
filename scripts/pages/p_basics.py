@@ -40,12 +40,14 @@ S = {
     "yale_kossack": ("Yale University Art Gallery, American Silver in the Yale University Art Gallery: the Kossack checklist (1988)", "https://artgallery.yale.edu/sites/default/files/publication/pdfs/0-89467-049-2.pdf"),
     "currier1938": ("Ernest M. Currier, Marks of Early American Silversmiths (Portland, Maine: Southworth-Anthoensen Press, 1938)", "https://archive.org/details/marksofearlyamer00curr"),
     "bigelow1917": ("Francis Hill Bigelow, Historic Silver of the Colonies and Its Makers (New York: Macmillan, 1917), public domain", "https://archive.org/details/historicsilverof00bige"),
+    "kovel1989": ("Ralph and Terry Kovel, Kovels' American Silver Marks, 1650 to the Present (New York: Crown, 1989), p. vii", ""),
+    "rainwater2004": ("Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th edition (Atglen, Pa.: Schiffer, 2004), glossary pp. 305–309 and table p. 311", ""),
     "cw2008": ("Colonial Williamsburg Journal, \"Stuff and Nonsense\" (Winter 2008)", "https://research.colonialwilliamsburg.org/Foundation/journal/Winter08/stuff.cfm"),
 }
 
 
 def sources(*keys):
-    items = "".join(f'<li>{e(S[k][0])} (<a href="{e(S[k][1])}" rel="nofollow">source</a>)</li>' for k in keys)
+    items = "".join(f'<li>{e(S[k][0])}' + (f' (<a href="{e(S[k][1])}" rel="nofollow">source</a>)' if S[k][1] else "") + "</li>" for k in keys)
     return f'<!--copy-check:skip--><ul class="sources">{items}</ul><!--/copy-check:skip-->'
 
 
@@ -251,6 +253,8 @@ def coin_silver():
         <li><strong>COIN,</strong> stamped beside the maker's mark, saying the metal was of the same fineness as silver money.</li>
         <li><strong>PURE COIN,</strong> or PURE SILVER COIN, seen on New England silver.</li>
         <li><strong>STANDARD,</strong> found on silver made around Philadelphia.</li>
+        <li><strong>DOLLAR or PREMIUM,</strong> other words for the same coin standard.</li>
+        <li><strong>C or D,</strong> a single letter for coin or dollar.</li>
         <li><strong>Only a maker's name or initials.</strong> A separate mark for the metal was not the custom, and a maker's mark says nothing about the metal on its own.</li>
       </ul>
       <p>These words were the maker's own choice, and makers used different terms for their alloys. Since the Stamping Act of 1906 the law has set a standard for the word: an item marked COIN or COIN SILVER must be at least 900 in 1000, within four parts.</p>
@@ -278,10 +282,10 @@ def coin_silver():
         "American coin silver: the 892 and 900 coin standards of 1792 and 1837, the COIN, PURE COIN and STANDARD marks, and the move to sterling in the 1850s and 1860s.",
         "Coin silver: what it is and how it's marked", "Coin silver",
         "Before sterling, most American silver was made to the standard of the coin in people's pockets. Here is what that means and how to read the marks.",
-        "Coin silver is American silver made to the standard of US silver coin: 892.4 parts in 1000 under the Coinage Act of 1792, and 900 from 1837. It is marked COIN, PURE COIN or STANDARD beside the maker's mark, or often with the maker's name alone. American makers moved to sterling (925) in the 1850s and 1860s.",
+        "Coin silver is American silver made to the standard of US silver coin: 892.4 parts in 1000 under the Coinage Act of 1792, and 900 from 1837. It is marked COIN, PURE COIN, STANDARD, DOLLAR, PREMIUM, or the letter C or D beside the maker's mark, or often with the maker's name alone. American makers moved to sterling (925) in the 1850s and 1860s.",
         body, faqs,
         "Photograph the marks. The Advisor reads the maker's name and any word such as COIN, keeps them on the item's record with the photo, and says when a mark tells nothing about the metal.",
-        ["coinage1792", "coinage1837", "french1917", "yale_kossack", "currier1938", "bigelow1917", "cw2008", "usc296", "cfr235"],
+        ["coinage1792", "coinage1837", "french1917", "yale_kossack", "currier1938", "kovel1989", "rainwater2004", "bigelow1917", "cw2008", "usc296", "cfr235"],
         about="Coin silver",
     )
 
