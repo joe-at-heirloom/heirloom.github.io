@@ -70,6 +70,7 @@ GOLD_SRC = {
     "cfr": ("Federal Trade Commission, <cite>Guides for the Jewelry, Precious Metals, and Pewter Industries</cite>, 16 CFR 23.3 and 23.4 (current)", "https://www.law.cornell.edu/cfr/text/16/23.3"),
     "cfr2012": ("16 CFR 23.4, 2012 edition (the guides before the 2018 revision)", "https://www.govinfo.gov/content/pkg/CFR-2012-title16-vol1/xml/CFR-2012-title16-vol1-sec23-4.xml"),
     "ftc2018": ("Federal Trade Commission, final revision of the Jewelry Guides, Federal Register 83 (159), August 16, 2018", "https://www.govinfo.gov/content/pkg/FR-2018-08-16/html/2018-17454.htm"),
+    "swisspmc": ("Swiss Federal Precious Metals Control, <cite>Reproduction of the ancient official hallmarks since 1880</cite>", "https://commons.wikimedia.org/wiki/File:Reproduction_of_the_ancient_Swiss_official_hallmarks_since_1880.png"),
     "hmc": ("The Hallmarking Convention, <cite>The Common Control Mark</cite>", "https://www.hallmarkingconvention.org/en/about/the-common-control-mark"),
 }
 
@@ -123,8 +124,11 @@ def gold():
       </ul>
 {marksdb.grid(['british-gold-crown', 'british-gold-18-carat', 'british-gold-22-carat', 'british-gold-15-carat-decimal', 'british-gold-12-carat-decimal', 'british-gold-9-carat-decimal', 'british-gold-14-carat-1932'])}
       <p>The convention mark, a balance-scale outline around a number, comes from a treaty signed in Vienna in 1972. Countries that belong to it accept each other's convention-marked gold and silver without marking it again.</p>
+      <h3>Swiss gold watch cases</h3>
+      <p>Gold and silver watch cases sold in Switzerland must be checked and marked by the Swiss precious metals control. A Swiss gold case of the mid-20th century often shows the fineness as 18K above 0.750, beside the control's own mark: a head of Helvetia for 750, a squirrel for 583. The control lists both among its former official marks, used since 1880; it gives no end year.</p>
+      {marksdb.grid(['gold-fineness-750', 'switzerland-helvetia-gold-750', 'switzerland-squirrel-gold-583'])}
       <p>For the date letter itself, see <a href="/marks/london-date-letters">London</a>, <a href="/marks/birmingham-date-letters">Birmingham</a>, <a href="/marks/sheffield-date-letters">Sheffield</a> and <a href="/marks/chester-date-letters">Chester</a>.</p>"""
-    srcs = [GOLD_SRC[k] for k in ("hma2", "hma1", "si1998", "bhc", "gov", "aol", "bao", "sao", "chaffers", "jackson", "lbma", "bis", "feingehg", "adin", "usc", "cfr", "cfr2012", "ftc2018", "hmc")]
+    srcs = [GOLD_SRC[k] for k in ("hma2", "hma1", "si1998", "bhc", "gov", "aol", "bao", "sao", "chaffers", "jackson", "lbma", "bis", "feingehg", "adin", "usc", "cfr", "cfr2012", "ftc2018", "hmc", "swisspmc")]
     cavs = [
         "A number stamped on gold says what the maker claims. Only a test says what the metal is; stamps are faked and worn, and plated items sometimes carry a bare karat mark they shouldn't.",
         "The karat in a plated or filled mark is the layer's, not the item's.",
