@@ -120,8 +120,7 @@ def _main(path, h1, body, crumb_name, mid, show_related, top, main_attrs, side, 
     attrs = (" " + main_attrs) if main_attrs else ""
     if not side:
         return f"""  <main class="guide"{attrs}>
-{top}
-    <article>
+{(top + chr(10)) if top else ""}    <article>
       {crumbs_html(crumb_name or h1, mid)}
       <h1>{h1}</h1>
 {body}
