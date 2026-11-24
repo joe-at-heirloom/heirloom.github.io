@@ -46,7 +46,6 @@ html:has(main[data-section]) { scroll-behavior: smooth; scroll-padding-top: 140p
   .sec-bar__inner { justify-content: space-between; }
   .sec-bar__menu { display: inline-flex; padding: 8px 14px; min-height: 0; font-size: 0.92rem; }
 }
-.entry-head__mark .cmark { width: 9.6rem; height: 9.6rem; aspect-ratio: auto; }
 
 /* ── Reference layout ─────────────────────────────────────────────────────── */
 main.ref { padding: 64px 0 72px; }

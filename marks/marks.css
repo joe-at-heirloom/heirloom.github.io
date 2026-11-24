@@ -205,13 +205,16 @@ img.cypher { display: block; height: 34px; width: auto; max-width: 110px; object
   place-items: center;
   justify-content: center;
   align-content: center;
-  aspect-ratio: 1;
+  /* A double circle, never an oval: the ring's diameter comes from the tallest
+     side (rows of 1.15em) plus a margin, the same across and down. */
+  --cm-d: calc(var(--rows, 2) * 1.15em + 1.3em);
+  width: var(--cm-d); height: var(--cm-d); flex: none;
   box-sizing: border-box;
   font-family: 'LXGW WenKai TC', 'Noto Serif TC', serif;
   font-size: var(--cm-size);
   line-height: 1;
   color: #23468c;
-  padding: 0.55em 0.5em;
+  padding: 0;
   border: 2px solid currentColor;
   outline: 1px solid currentColor;
   outline-offset: 3px;
