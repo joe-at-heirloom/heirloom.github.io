@@ -12,6 +12,7 @@ public-domain book facsimiles, and open-license museum photographs, listed
 in marks/img/chinese/index.json with their credits.
 """
 import json
+import os
 import re
 import os
 import urllib.parse
@@ -72,6 +73,52 @@ def font_head(chars):
             '  <link rel="stylesheet" href="/marks/marks.css">')
 
 
+KILN = json.load(open(os.path.join(os.path.dirname(__file__), "data", "chinese_kiln.json")))
+for _s in KILN["sources"]:
+    SRC["k:" + _s["id"]] = _s
+KILN_GROUP = {"Zhengtong": "Zhengtong–Jingtai–Tianshun", "Jingtai": "Zhengtong–Jingtai–Tianshun", "Tianshun": "Zhengtong–Jingtai–Tianshun"}
+TOPIC = {"mark": "The mark", "excavation": "What the kiln site shows", "apocryphal": "Marks of other reigns", "body": "Body", "glaze": "Glaze",
+         "decoration": "Decoration", "forms": "Forms"}
+
+
+def exhibit(c):
+    x = c.get("exhibition") or {}
+    d = re.findall(r"\d{4}-\d{2}-\d{2}", str(x.get("dates", "")))
+    n = re.search(r"(\d+)\s*件", str(x.get("pieces", "")))
+    bits = [("shown " + " to ".join(d[:2])) if d else "", (n.group(1) + " items") if n else ""]
+    bits = [b for b in bits if b]
+    return f" ({', '.join(bits)})" if bits else ""
+
+
+def dating_section(p, refs):
+    """How specialists date this reign's imperial wares: the excavated material at
+    the Jingdezhen imperial kiln compared with pieces handed down in the Palace Museum."""
+    group = KILN_GROUP.get(p, p)
+    facts = [f for f in KILN["facts"] if f["reign"] == group]
+    if not facts:
+        return ""
+    cats = [c for c in KILN["catalogues"] if group in c["reign_group"] or c["reign_group"] in group or p in c["reign_group"]]
+    by = {}
+    for f in facts:
+        by.setdefault(f["topic"], []).append(f)
+    items = ""
+    for t in ("mark", "apocryphal", "excavation", "body", "glaze", "decoration", "forms"):
+        for f in by.get(t, []):
+            items += (f'<li><strong>{TOPIC[t]}.</strong> {e(w(f["text"]))}{refs(["k:" + i for i in f["source_ids"]])}'
+                      + (' <span class="one-src">(one source)</span>' if f.get("single_source") else "") + "</li>")
+    cat_html = ""
+    if cats:
+        cat_html = "<p>The catalogue" + ("s" if len(cats) > 1 else "") + " to look in: " + "; ".join(
+            f'{e(c["title"])}, {c["year"]}' + (f', ISBN {c["isbn"]}' if c.get("isbn") else "")
+            + exhibit(c)
+            for c in cats) + ".</p>"
+    return f"""      <h2 id="dating">How specialists date {e(p)} wares</h2>
+      <p>Since 2015 the Palace Museum and the Jingdezhen ceramic archaeologists have shown wares excavated at the imperial kiln site, rejects broken and buried at the time, beside wares handed down in the palace collection. The excavated wares are certainly of their period, so they set the standard for body, glaze, painting and mark, which is how specialists date an item, more than by its mark.</p>
+      <ul>{items}</ul>
+      {cat_html}
+"""
+
+
 class Refs:
     """Numbered sources for one page, in order of first citation."""
     def __init__(self):
@@ -100,6 +147,11 @@ def w(text):
     text = re.sub(r"\bpieces\b", "items", text)
     text = re.sub(r"\bPieces\b", "Items", text)
     text = re.sub(r"\bpiece\b", "item", text)
+    text = re.sub(r"\bobjects\b", "items", text)
+    for a, b in (("greyer", "grayer"), ("grey", "gray"), ("centre", "center"), ("colour", "color"), ("moulded", "molded"), ("mould", "mold"), ("favour", "favor"), ("honour", "honor")):
+        text = re.sub(r"\b" + a, b, text)
+        text = re.sub(r"\b" + a.capitalize(), b.capitalize(), text)
+    text = re.sub(r"\bobject\b", "item", text)
     text = re.sub(r"\bthe object\b", "the item", text)
     text = text.replace("seal marks 'found favour' in Yongzheng", "seal marks were favored under Yongzheng")
     return text
@@ -441,6 +493,7 @@ def reign_page(r, prev, nxt):
       <p>Years: {y}{" (" + e(alt) + ")" if alt else ""}. {e(w(r.get("year_note", "")))}{refs(pf(r, "dates"))}</p>
 {('      <h2 id="photos">On imperial wares</h2>' + chr(10) + '      <div class="cm-figs">' + period + '</div>') if period else ''}
 {('      <h2 id="named">Where the reign’s name appears</h2>' + chr(10) + '      <p>' + ("Besides its marks, the reign’s name is written on other dated things: coins, inscriptions and dedications." if marks else "With no reign mark to show, here is the reign’s name on dated things of the period: coins, inscriptions and dedications.") + '</p>' + chr(10) + '      <div class="cm-figs">' + named + '</div>') if named else ''}
+{dating_section(p, refs)}
       <h2 id="copies">{"Later items with this mark" if not hx else "Hongxian marks are almost always later"}</h2>
       <p>{e(w(r["later_copies_note"]))}{refs(pf(r, "later_copies_note"))}</p>
 {('      <div class="cm-figs">' + later + '</div>') if later else ''}
