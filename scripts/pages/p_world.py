@@ -316,7 +316,7 @@ def russia():
         <li><strong>Head facing left:</strong> the first type, with the Cyrillic initials of the district's assay chief. Up to 1908.</li>
         <li><strong>Head facing right:</strong> from 1908, with a Greek letter for the assay district in place of the initials: delta (Δ) for Moscow. Museums date this type 1908 to 1917; Russia's assay chamber shows it in use to 1926, until the Soviet change of 1927.</li>
       </ul>
-      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. No open-license photograph of a legible kokoshnik was found, so the cards below describe it in words.</p>
+      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. The left-facing kokoshnik below is on a Fabergé fork in the Klingenmuseum Solingen; no open-license photograph of a right-facing one has been found yet, so that card describes it in words.</p>
 {marksdb.grid(['russia-kokoshnik-left', 'russia-kokoshnik-right', 'russia-district-letter-delta', 'faberge-cyrillic-name-mark'])}
       <h2 id="soviet">Soviet marks, from 1927</h2>
       <p>In 1927 fineness moved to thousandths (875, 916, 925 on silver), and the state mark became a worker's head with a hammer. From 1958 it was a hammer and sickle inside a five-pointed star, with the fineness and a letter for the assay office, until 1994, when the kokoshnik returned with metric numbers. These dates come from Russia's Federal Assay Chamber; no second published source was found for them. The star with hammer and sickle appears on the <a href="/marks/gold-karat-marks">gold marks page</a>, beside 583.</p>
