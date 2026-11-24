@@ -114,7 +114,36 @@ def related(path):
     return f'<section class="related" aria-labelledby="related-title"><p class="related__title" id="related-title">More from Heirloom</p><ul class="cards">{cards}</ul></section>'
 
 
-def page(path, title, description, h1, body, graph, og_type="article", show_related=True, crumb_name=None, mid=None, extra_head="", extra_body=""):
+def _main(path, h1, body, crumb_name, mid, show_related, top, main_attrs, side, toc):
+    """The page's <main>: the guide column, or with `side` the reference layout
+    (section sidebar | article | on-this-page)."""
+    attrs = (" " + main_attrs) if main_attrs else ""
+    if not side:
+        return f"""  <main class="guide"{attrs}>
+{(top + chr(10)) if top else ""}    <article>
+      {crumbs_html(crumb_name or h1, mid)}
+      <h1>{h1}</h1>
+{body}
+    </article>
+    {related(path) if show_related else ''}
+  </main>"""
+    return f"""  <main class="ref"{attrs}>
+{top}
+    <div class="ref__grid">
+      <aside class="ref__side" id="ref-side" aria-label="In this section">
+{side}
+      </aside>
+      <article class="ref__main">
+        {crumbs_html(crumb_name or h1, mid)}
+        <h1>{h1}</h1>
+{body}
+      </article>
+      <aside class="ref__toc" aria-label="On this page">{toc}</aside>
+    </div>
+  </main>"""
+
+
+def page(path, title, description, h1, body, graph, og_type="article", show_related=True, crumb_name=None, mid=None, extra_head="", extra_body="", top="", main_attrs="", side="", toc=""):
     url = SITE + path
     title_attr = html.escape(title, quote=True)
     description = html.escape(description, quote=True)
@@ -206,14 +235,7 @@ def page(path, title, description, h1, body, graph, og_type="article", show_rela
     </div>
   </header>
 
-  <main class="guide">
-    <article>
-      {crumbs_html(crumb_name or h1, mid)}
-      <h1>{h1}</h1>
-{body}
-    </article>
-    {related(path) if show_related else ''}
-  </main>
+{_main(path, h1, body, crumb_name, mid, show_related, top, main_attrs, side, toc)}
 
 {FOOTER}
   <script src="/nav.js" defer></script>

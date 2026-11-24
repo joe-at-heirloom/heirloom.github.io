@@ -318,8 +318,86 @@
     });
   }
 
+  // ── Chinese reign marks ───────────────────────────────────────────────────
+  // Narrows the gallery of marks on the page: by the first column (大明 Ming,
+  // 大清 Qing), by script, or by a name typed in pinyin, Wade-Giles or
+  // characters. It names reigns only; a mark never dates the item by itself.
+  function chineseReigns() {
+    const tiles = [...document.querySelectorAll('[data-reign]')];
+    const q = $('cr-q'), out = $('cr-results');
+    const buttons = [...document.querySelectorAll('[data-cr-dyn]')];
+    if (!tiles.length || !q || !out) return;
+    hint(out);
+    let dyn = '';
+    const TRAD = { 乐: '樂', 庆: '慶', 丰: '豐', 绪: '緒', 统: '統', 顺: '順', 万: '萬', 历: '曆', 启: '啟', 祯: '禎', 宪: '憲', 制: '製', 歷: '曆', 啓: '啟' };
+    const key = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z㐀-鿿]/g, '').replace(/./g, (c) => TRAD[c] || c);
+    const run = () => {
+      const k = key(q.value).replace(/^(da)?(ming|qing|ching|tsing)?/, (m) => (m.length < key(q.value).length ? '' : m)).replace(/(nianzhi|nienchih|mark)$/, '');
+      const kk = k.replace(/[大明清年製]/g, '') || k;
+      let n = 0;
+      for (const t of tiles) {
+        const okDyn = !dyn || t.dataset.dyn === dyn;
+        const okQ = !kk || t.dataset.keys.split(' ').some((x) => x.startsWith(kk) || (kk.length >= 2 && x.includes(kk)));
+        t.hidden = !(okDyn && okQ);
+        if (!t.hidden) n += 1;
+      }
+      for (const b of buttons) b.setAttribute('aria-pressed', String(b.dataset.crDyn === dyn));
+      if (!kk && !dyn) return say(out, out.dataset.hint);
+      say(out, n ? `<p><strong>${n === 1 ? 'One reign matches' : `${n} reigns match`}</strong>. Compare the characters with your mark, column by column from the right.</p>`
+        : '<p>No reign matches. Try the pinyin (Qianlong), the older spelling (Ch’ien-lung) or the two reign characters (乾隆). A mark without 年 may be a hall mark or an auspicious mark rather than a reign mark.</p>');
+    };
+    for (const b of buttons) b.addEventListener('click', () => { dyn = dyn === b.dataset.crDyn ? '' : b.dataset.crDyn; run(); });
+    q.addEventListener('input', run);
+  }
+
+  // ── Chinese hall marks ────────────────────────────────────────────────────
+  function halls() {
+    const cards = [...document.querySelectorAll('[data-hall]')];
+    const q = $('hall-q'), out = $('hall-results');
+    const buttons = [...document.querySelectorAll('[data-hall-kind]')];
+    if (!cards.length || !q || !out) return;
+    hint(out);
+    let kind = '';
+    const TRAD = { 斋: '齋', 宫: '宮', 静: '靜', 远: '遠', 体: '體', 储: '儲', 养: '養', 宁: '寧', 颐: '頤', 觯: '觶', 书: '書', 华: '華', 宝: '寶', 长: '長', 寿: '壽', 庆: '慶', 乐: '樂', 制: '製', 听: '聽', 庐: '廬', 楼: '樓', 园: '園', 阁: '閣', 轩: '軒' };
+    const key = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z㐀-鿿]/g, '').replace(/./g, (c) => TRAD[c] || c);
+    const run = () => {
+      const k = key(q.value).replace(/製$/, '');
+      let n = 0;
+      for (const c of cards) {
+        const ok = (!kind || c.dataset.kind === kind) && (!k || c.dataset.keys.split(' ').some((x) => x.includes(k)));
+        c.hidden = !ok;
+        if (ok) n += 1;
+      }
+      for (const b of buttons) b.setAttribute('aria-pressed', String(b.dataset.hallKind === kind));
+      if (!k && !kind) return say(out, out.dataset.hint);
+      say(out, n ? `<p><strong>${n === 1 ? 'One mark matches' : `${n} marks match`}</strong>; the others are hidden below.</p>` : '<p>No hall mark matches. A mark with 年製 is probably a reign mark: try the <a href="/marks/chinese-reign-marks">reign-mark finder</a>.</p>');
+    };
+    for (const b of buttons) b.addEventListener('click', () => { kind = kind === b.dataset.hallKind ? '' : b.dataset.hallKind; run(); });
+    q.addEventListener('input', run);
+  }
+
+  // ── Chinese painters and collectors ───────────────────────────────────────
+  function people() {
+    const rows = [...document.querySelectorAll('.pp-list li')]; const q = $('pp-q'), count = $('pp-count');
+    if (!rows.length || !q) return;
+    const buttons = [...document.querySelectorAll('[data-pp-dyn], [data-pp-col]')];
+    let dyn = '', col = false;
+    const norm = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9㐀-鿿]/g, '');
+    const run = () => {
+      const k = norm(q.value); let n = 0;
+      for (const li of rows) {
+        const ok = (!dyn || li.dataset.dyn === dyn) && (!col || li.dataset.col === '1') && (!k || norm(li.dataset.keys).includes(k));
+        li.hidden = !ok; if (ok) n += 1;
+      }
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.ppDyn ? b.dataset.ppDyn === dyn : col)));
+      count.textContent = n === rows.length ? `${n.toLocaleString()} people` : `${n.toLocaleString()} of ${rows.length.toLocaleString()} people`;
+    };
+    buttons.forEach((b) => b.addEventListener('click', () => { if (b.dataset.ppCol) col = !col; else dyn = dyn === b.dataset.ppDyn ? '' : b.dataset.ppDyn; run(); }));
+    q.addEventListener('input', run);
+  }
+
   const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres };
-  Object.assign(tools, { omega, rolex });
+  Object.assign(tools, { omega, rolex, chinese: chineseReigns, halls, people });
   const start = () => tools[window.MARKS_TOOL] && tools[window.MARKS_TOOL]();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

@@ -1,0 +1,88 @@
+{
+ "artist": "Pablo Picasso",
+ "slug": "pablo-picasso",
+ "born": 1881,
+ "died": 1973,
+ "nationality": "Spanish",
+ "facts": [
+  {
+   "text": "The Saltimbanques prints were etched and drypointed in 1904–05 but printed in an edition in 1913; on several plates the signature and date are part of the plate itself, such as 'Picasso / 1905', 'Picasso / 2-05' and 'P1905 / Picasso'.",
+   "source": "https://www.clevelandart.org/art/1929.893",
+   "source_name": "Cleveland Museum of Art"
+  }
+ ],
+ "items": [
+  {
+   "file": "/marks/img/sig/pablo-picasso/1905-bust-of-a-man.webp",
+   "w": 595,
+   "h": 216,
+   "year": 1905,
+   "year_label": "1905, printed 1913",
+   "age": 24,
+   "reads": "Picasso / 2-05",
+   "reads_source": "museum",
+   "form": "surname and month-year date, in the plate",
+   "position": "upper left",
+   "medium": "drypoint",
+   "work": "Bust of a Man (Saltimbanques series)",
+   "museum": "Cleveland Museum of Art",
+   "object_url": "https://www.clevelandart.org/art/1929.899",
+   "image_url": "https://openaccess-cdn.clevelandart.org/1929.899/1929.899_print.jpg",
+   "licence": "CC0 (Cleveland Museum of Art open access)"
+  },
+  {
+   "file": "/marks/img/sig/pablo-picasso/1905-salome.webp",
+   "w": 377,
+   "h": 291,
+   "year": 1905,
+   "year_label": "1905, printed 1913",
+   "age": 24,
+   "reads": "Picasso / 1905",
+   "reads_source": "museum",
+   "form": "surname and date, in the plate",
+   "position": "upper right",
+   "medium": "etching and drypoint",
+   "work": "Salomé (Saltimbanques series)",
+   "museum": "Cleveland Museum of Art",
+   "object_url": "https://www.clevelandart.org/art/1929.897",
+   "image_url": "https://openaccess-cdn.clevelandart.org/1929.897/1929.897_print.jpg",
+   "licence": "CC0 (Cleveland Museum of Art open access)"
+  },
+  {
+   "file": "/marks/img/sig/pablo-picasso/1905-the-saltimbanques.webp",
+   "w": 308,
+   "h": 190,
+   "year": 1905,
+   "year_label": "1905, printed 1913",
+   "age": 24,
+   "reads": "Picasso / 1905",
+   "reads_source": "museum",
+   "form": "surname and date, in the plate",
+   "position": "lower right",
+   "medium": "drypoint",
+   "work": "The Saltimbanques",
+   "museum": "Cleveland Museum of Art",
+   "object_url": "https://www.clevelandart.org/art/1929.893",
+   "image_url": "https://openaccess-cdn.clevelandart.org/1929.893/1929.893_print.jpg",
+   "licence": "CC0 (Cleveland Museum of Art open access)"
+  },
+  {
+   "file": "/marks/img/sig/pablo-picasso/1905-the-two-saltimbanques.webp",
+   "w": 569,
+   "h": 665,
+   "year": 1905,
+   "year_label": "1905, printed 1913",
+   "age": 24,
+   "reads": "P1905 / Picasso",
+   "reads_source": "museum",
+   "form": "surname, plus a 'P 1905' device in a lozenge, in the plate",
+   "position": "upper left",
+   "medium": "drypoint",
+   "work": "The Two Saltimbanques (Saltimbanques series)",
+   "museum": "Cleveland Museum of Art",
+   "object_url": "https://www.clevelandart.org/art/1929.900",
+   "image_url": "https://openaccess-cdn.clevelandart.org/1929.900/1929.900_print.jpg",
+   "licence": "CC0 (Cleveland Museum of Art open access)"
+  }
+ ]
+}

@@ -33,7 +33,7 @@
 //     builder in a temporary folder, so a broken guard writes nothing here),
 //     and neither legal page carries a draft's words.
 
-import { readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, copyFileSync, rmSync, realpathSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, existsSync, mkdtempSync, mkdirSync, copyFileSync, rmSync, realpathSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
@@ -199,7 +199,15 @@ const HOMEPAGE_WORD_RULES = [
 const TITLE_NAMES = new Set([
   // Makers, lines and places named in the marks headings (merged from the plate, watch, world-silver and ceramics pages).
   'Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards', 'Oneida', 'Community', 'International', 'Silver', 'Co', 'Plate', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings', 'Rolex', 'Omega', 'Christofle', 'French', 'G', 'German', 'Gorham', 'Martelé', 'Mexican', 'Mexico', 'Minerva', 'Russian', 'Soviet', 'Taxco', 'Weller', 'Roseville', 'Rozane', 'Sicard', 'Rv', 'U.S.A', 'Nippon', 'Japan', 'M', 'RC', 'Noritake', 'Rose', 'China', 'Made', 'Occupied', 'N', 'Limoges', 'Haviland', 'Theo', 'H', 'L', 'France', 'CFH', 'GDM', 'Meissen', 'AR', 'K.P.M', 'K.H.C', 'King', 'Copenhagen', 'Denmark', 'Hummel', 'TMK', 'Goebel', 'U.S', 'RPCo', 'Olympic', 'R.P.Co', 'Donatello', 'McCoy', 'J', 'W', 'Brush-McCoy', 'Brush', 'NM', 'LCC', 'Floraline', 'Hull', 'Art', 'Red', 'Riding', 'Hood', 'Oven', 'Proof', 'Doulton', 'Watts', 'Lambeth', 'Burslem', 'England', 'HN',
+  // Chinese dynasties and reigns (the Chinese reign-mark pages).
+  'Ming', 'Qing', 'Republic', 'Hongxian', 'Hongwu', 'Jianwen', 'Yongle', 'Hongxi', 'Xuande', 'Zhengtong', 'Jingtai', 'Tianshun', 'Chenghua', 'Hongzhi', 'Zhengde', 'Jiajing', 'Longqing', 'Wanli', 'Taichang', 'Tianqi', 'Chongzhen', 'Shunzhi', 'Kangxi', 'Yongzheng', 'Qianlong', 'Jiaqing', 'Daoguang', 'Xianfeng', 'Tongzhi', 'Guangxu', 'Xuantong', 'Chinese',
 ]);
+// Artists' names on the signature pages are names, not title case.
+for (const f of existsSync(resolve(siteRoot, 'scripts/pages/signatures')) ? readdirSync(resolve(siteRoot, 'scripts/pages/signatures')) : []) {
+  if (!f.endsWith('.json')) continue;
+  const { artist } = JSON.parse(readFileSync(resolve(siteRoot, 'scripts/pages/signatures', f), 'utf8'));
+  for (const w of [...artist.split(/\s+/), ...artist.split(/[\s-]+/)]) TITLE_NAMES.add(w.replace(/[\u2019']s$/, ''));
+}
 const TITLE_FIXTURES = [
   ['<h3 class="feature-card__title">An Overview That Adds Up</h3>', ['Overview', 'That', 'Adds', 'Up']],
   ['<p class="section-header__eyebrow">Two Ways In</p>', ['Ways', 'In']],
@@ -216,7 +224,9 @@ function titleCaseHits(html) {
     ...[...html.matchAll(/<(a|p|span|button|div)\b[^>]*\bclass="[^"]*(?:__eyebrow\b|nav__link(?![\w-])|\bbtn(?![\w-])|hero__kicker(?![\w-]))[^"]*"[^>]*>([\s\S]*?)<\/\1>/g)].map((m) => m[2]),
   ];
   const hits = [];
-  for (const raw of pieces) {
+  for (const raw0 of pieces) {
+    // A person's name, marked as one, keeps its capitals (the Chinese painters' pages).
+    const raw = raw0.replace(/<span\b[^>]*\bclass="[^"]*\bproper-name\b[^"]*"[^>]*>[\s\S]*?<\/span>/g, ' ');
     const text = raw
       .replace(/<[^>]+>/g, ' ')
       .replace(/&rsquo;|&lsquo;/g, '\u2019')
@@ -347,6 +357,37 @@ const GUIDE_PAGES = [
 
   // Ceramics maker's-mark pages (scripts/pages/p_ceramics.py).
   'marks/weller-pottery-marks.html',
+  'marks/chinese/index.html',
+  'marks/chinese-reign-marks.html',
+  'marks/chinese-hall-marks.html',
+  'marks/hongwu-mark.html',
+  'marks/jianwen-mark.html',
+  'marks/yongle-mark.html',
+  'marks/hongxi-mark.html',
+  'marks/xuande-mark.html',
+  'marks/zhengtong-mark.html',
+  'marks/jingtai-mark.html',
+  'marks/tianshun-mark.html',
+  'marks/chenghua-mark.html',
+  'marks/hongzhi-mark.html',
+  'marks/zhengde-mark.html',
+  'marks/jiajing-mark.html',
+  'marks/longqing-mark.html',
+  'marks/wanli-mark.html',
+  'marks/taichang-mark.html',
+  'marks/tianqi-mark.html',
+  'marks/chongzhen-mark.html',
+  'marks/shunzhi-mark.html',
+  'marks/kangxi-mark.html',
+  'marks/yongzheng-mark.html',
+  'marks/qianlong-mark.html',
+  'marks/jiaqing-mark.html',
+  'marks/daoguang-mark.html',
+  'marks/xianfeng-mark.html',
+  'marks/tongzhi-mark.html',
+  'marks/guangxu-mark.html',
+  'marks/xuantong-mark.html',
+  'marks/hongxian-mark.html',
   'marks/roseville-pottery-marks.html',
   'marks/mccoy-pottery-marks.html',
   'marks/hull-pottery-marks.html',
@@ -357,6 +398,10 @@ const GUIDE_PAGES = [
   'marks/royal-doulton-marks.html',
   'marks/royal-copenhagen-marks.html',
   'marks/hummel-marks.html',
+  // One page per artist (scripts/pages/p_artist_sigs.py), however many there are.
+  ...readdirSync(resolve(siteRoot, 'marks')).filter((f) => f.endsWith('-signature.html')).map((f) => `marks/${f}`),
+  // Chinese painters and collectors (scripts/pages/p_chinese_people.py): one page each.
+  ...(existsSync(resolve(siteRoot, 'marks/chinese/painters')) ? readdirSync(resolve(siteRoot, 'marks/chinese/painters')).filter((f) => f.endsWith('.html')).map((f) => `marks/chinese/painters/${f}`) : []),
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');
