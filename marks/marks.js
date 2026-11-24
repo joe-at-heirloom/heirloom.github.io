@@ -376,8 +376,28 @@
     q.addEventListener('input', run);
   }
 
+  // ── Chinese painters and collectors ───────────────────────────────────────
+  function people() {
+    const rows = [...document.querySelectorAll('.pp-list li')]; const q = $('pp-q'), count = $('pp-count');
+    if (!rows.length || !q) return;
+    const buttons = [...document.querySelectorAll('[data-pp-dyn], [data-pp-col]')];
+    let dyn = '', col = false;
+    const norm = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9㐀-鿿]/g, '');
+    const run = () => {
+      const k = norm(q.value); let n = 0;
+      for (const li of rows) {
+        const ok = (!dyn || li.dataset.dyn === dyn) && (!col || li.dataset.col === '1') && (!k || norm(li.dataset.keys).includes(k));
+        li.hidden = !ok; if (ok) n += 1;
+      }
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.ppDyn ? b.dataset.ppDyn === dyn : col)));
+      count.textContent = n === rows.length ? `${n.toLocaleString()} people` : `${n.toLocaleString()} of ${rows.length.toLocaleString()} people`;
+    };
+    buttons.forEach((b) => b.addEventListener('click', () => { if (b.dataset.ppCol) col = !col; else dyn = dyn === b.dataset.ppDyn ? '' : b.dataset.ppDyn; run(); }));
+    q.addEventListener('input', run);
+  }
+
   const tools = { dateletters: dateLetters, singer, watch, leica, wedgwood, minton, worcester, rookwood, sevres };
-  Object.assign(tools, { omega, rolex, chinese: chineseReigns, halls });
+  Object.assign(tools, { omega, rolex, chinese: chineseReigns, halls, people });
   const start = () => tools[window.MARKS_TOOL] && tools[window.MARKS_TOOL]();
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

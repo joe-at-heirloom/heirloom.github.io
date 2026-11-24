@@ -20,9 +20,10 @@ SECTIONS = {
             ("/marks/chinese/", "Overview"),
             ("/marks/chinese-reign-marks", "Reign marks"),
             ("/marks/chinese-hall-marks", "Hall marks"),
+            ("/marks/chinese/painters/", "Painters and collectors"),
         ],
         # Pages that belong to a tab without being its URL (the reign pages sit under Reign marks).
-        "tab_of": lambda path: "/marks/chinese-reign-marks" if path.endswith("-mark") else None,
+        "tab_of": lambda path: "/marks/chinese/painters/" if path.startswith("/marks/chinese/painters/") else "/marks/chinese-reign-marks" if path.endswith("-mark") else None,
     },
 }
 

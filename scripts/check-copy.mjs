@@ -224,7 +224,9 @@ function titleCaseHits(html) {
     ...[...html.matchAll(/<(a|p|span|button|div)\b[^>]*\bclass="[^"]*(?:__eyebrow\b|nav__link(?![\w-])|\bbtn(?![\w-])|hero__kicker(?![\w-]))[^"]*"[^>]*>([\s\S]*?)<\/\1>/g)].map((m) => m[2]),
   ];
   const hits = [];
-  for (const raw of pieces) {
+  for (const raw0 of pieces) {
+    // A person's name, marked as one, keeps its capitals (the Chinese painters' pages).
+    const raw = raw0.replace(/<span\b[^>]*\bclass="[^"]*\bproper-name\b[^"]*"[^>]*>[\s\S]*?<\/span>/g, ' ');
     const text = raw
       .replace(/<[^>]+>/g, ' ')
       .replace(/&rsquo;|&lsquo;/g, '\u2019')
@@ -398,6 +400,8 @@ const GUIDE_PAGES = [
   'marks/hummel-marks.html',
   // One page per artist (scripts/pages/p_artist_sigs.py), however many there are.
   ...readdirSync(resolve(siteRoot, 'marks')).filter((f) => f.endsWith('-signature.html')).map((f) => `marks/${f}`),
+  // Chinese painters and collectors (scripts/pages/p_chinese_people.py): one page each.
+  ...(existsSync(resolve(siteRoot, 'marks/chinese/painters')) ? readdirSync(resolve(siteRoot, 'marks/chinese/painters')).filter((f) => f.endsWith('.html')).map((f) => `marks/chinese/painters/${f}`) : []),
 ];
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');

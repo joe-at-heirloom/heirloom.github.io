@@ -72,3 +72,25 @@
   const start = () => { sidebar(); toc(); rail(); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
+
+// People: the sidebar search also looks up the 1,220 painters and collectors,
+// from a small index fetched the first time someone types.
+(() => {
+  const list = document.querySelector('.side-people'); const input = document.querySelector('.side-search input');
+  if (!list || !input) return;
+  let data = null, loading = null;
+  const norm = (s) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9㐀-鿿]/g, '');
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const render = () => {
+    const k = norm(input.value);
+    if (!k || !data) { list.innerHTML = ''; return; }
+    const hits = data.filter((p) => norm(p.p).includes(k) || p.n.includes(input.value.trim()) || p.a.some((a) => a.includes(input.value.trim()))).slice(0, 25);
+    list.innerHTML = hits.map((p) => `<li><a href="${esc(p.u)}"><span class="han" lang="zh-Hant">${esc(p.n)}</span><span class="py">${esc(p.p)}</span><span class="yr">${esc(p.d.split('–')[0] || '')}</span></a></li>`).join('');
+    const grp = list.closest('.side-group'); if (grp && hits.length) { grp.hidden = false; grp.open = true; }
+    const empty = document.querySelector('.side-empty'); if (empty && hits.length) empty.style.display = 'none';
+  };
+  input.addEventListener('input', () => {
+    if (!data && !loading) loading = fetch(list.dataset.searchUrl).then((r) => r.json()).then((d) => { data = d; render(); });
+    render();
+  });
+})();

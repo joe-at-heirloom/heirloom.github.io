@@ -206,3 +206,33 @@ main[data-section="china"] .refs a { color: var(--cn-cinnabar) !important; }
 .cn-rail--inline .cn-rail__track { padding: 12px 44px; }
 @media (max-width: 760px) { .cn-rail__btn { display: none; } .cn-rail__track { padding: 10px 12px; } }
 .side-list .py { font-size: 0.82rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Painters and collectors */
+.pp-list { list-style: none; margin: 8px 0 30px !important; padding: 0; border-top: 1px solid var(--sec-line); }
+.pp-list li { margin: 0 !important; border-bottom: 1px solid var(--sec-line); }
+.pp-list li[hidden] { display: none; }
+.pp-list a { display: grid; grid-template-columns: 5.5em minmax(0, 1fr) 9em 7em 5.5em; gap: 12px; align-items: baseline; padding: 9px 6px; text-decoration: none !important; color: var(--sec-ink) !important; transition: background-color .15s; }
+.pp-list a:hover { background: var(--sec-hover); }
+.pp-han { font-size: 1.15rem; color: var(--sec-accent); font-family: 'LXGW WenKai TC', 'Noto Serif TC', serif; }
+.pp-name { font-weight: 600; }
+.pp-dates, .pp-dyn, .pp-n { font-size: 0.88rem; color: var(--sec-ink-soft); font-variant-numeric: tabular-nums; }
+.pp-n { text-align: right; }
+@media (max-width: 640px) { .pp-list a { grid-template-columns: 4.5em minmax(0, 1fr) auto; } .pp-dyn, .pp-n { display: none; } }
+.muted { color: var(--sec-ink-soft, #888); }
+.cn-seal--big { width: 5.5rem !important; height: 5.5rem !important; font-size: 1.55rem !important; border-radius: 6px !important; }
+.seal-table td, .seal-table th { padding: 7px 10px; vertical-align: top; }
+.seal-table .num { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--sec-ink-soft); }
+.seal-read { font-family: 'LXGW WenKai TC', 'Noto Serif TC', serif; font-size: 1.1rem; color: var(--sec-ink); }
+.tag { display: inline-block; font-size: 0.74rem; padding: 1px 7px; border-radius: 999px; background: rgba(163,39,28,.1); color: var(--sec-accent); margin-left: 6px; white-space: nowrap; }
+.tag--soft { background: rgba(0,0,0,.05); color: var(--sec-ink-soft); }
+.survey-list { list-style: none; margin: 10px 0 24px !important; padding: 0; display: grid; gap: 10px; }
+.survey-rec { margin: 0 !important; padding: 14px 16px; border-radius: 10px; background: var(--sec-panel); border: 1px solid var(--sec-line); }
+.survey-rec__head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.survey-rec__title { font-weight: 600; font-size: 1.05rem; }
+.survey-rec__meta { font-size: 0.88rem; color: var(--sec-ink-soft); margin: 4px 0 0 !important; }
+.survey-rec__note { font-size: 0.95rem; margin: 6px 0 0 !important; }
+.survey-rec__ops { margin: 8px 0 0 18px !important; font-size: 0.95rem; }
+.verdict { font-size: 0.82rem; font-weight: 600; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+.verdict--genuine { background: rgba(62,106,90,.12); color: #2f5a4a; }
+.verdict--forgery { background: rgba(163,39,28,.12); color: #8a2218; }
+.verdict--reference { background: rgba(198,154,45,.16); color: #7a5a12; }

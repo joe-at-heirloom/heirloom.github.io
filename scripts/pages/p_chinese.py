@@ -252,7 +252,7 @@ def side(path):
     top_cur = ' aria-current="page"' if path == HOME else ""
     hub_cur = ' aria-current="page"' if path == HUB else ""
     hall_cur = ' aria-current="page"' if path == ph.HUB else ""
-    return f"""        <div class="side-search">{SEARCH_ICON}<input type="search" placeholder="Search reigns and halls" aria-label="Search reigns and halls" autocomplete="off"></div>
+    return f"""        <div class="side-search">{SEARCH_ICON}<input type="search" placeholder="Search reigns, halls and people" aria-label="Search reigns, halls and people" autocomplete="off"></div>
         <div class="side-tree">
           <ul class="side-list"><li><a class="side-link--top" href="{HOME}"{top_cur}>Overview</a></li></ul>
           <details class="side-group"{" open" if on_reign or path == HOME else ""}><summary>Reign marks</summary>
@@ -262,6 +262,10 @@ def side(path):
           <details class="side-group"{" open" if on_hall else ""}><summary>Hall marks</summary>
             <ul class="side-list"><li><a href="{ph.HUB}"{hall_cur}>All hall marks, with a finder</a></li></ul>
             {halls}
+          </details>
+          <details class="side-group"{" open" if path.startswith("/marks/chinese/painters/") else ""}><summary>Painters and collectors</summary>
+            <ul class="side-list"><li><a href="/marks/chinese/painters/"{' aria-current="page"' if path == "/marks/chinese/painters/" else ""}>All 1,220, with a finder</a></li></ul>
+            <ul class="side-list side-people" data-search-url="/marks/chinese/painters/search.json"></ul>
           </details>
           <p class="side-empty">Nothing matches. Try the pinyin, an older spelling, or the characters.</p>
         </div>"""
@@ -283,6 +287,7 @@ def home():
     n_halls = len(p_chinese_halls.ROWS)
     doors = f"""<ul class="sec-doors">
         <li><a class="sec-door" href="{HUB}"><span class="sec-door__han" lang="zh-Hant">年款</span><span class="sec-door__title">Reign marks</span><span class="sec-door__desc">Every reign from 1368 to 1916, with a finder, the seal-script forms and the marks most often copied.</span><span class="sec-door__count">28 reigns</span></a></li>
+        <li><a class="sec-door" href="/marks/chinese/painters/"><span class="sec-door__han" lang="zh-Hant">印鑑款識</span><span class="sec-door__title">Painters and collectors</span><span class="sec-door__desc">1,220 painters, calligraphers and collectors, with their art names, dates and 21,000 recorded seals and signatures.</span><span class="sec-door__count">1,220 people</span></a></li>
         <li><a class="sec-door" href="/marks/chinese-hall-marks"><span class="sec-door__han" lang="zh-Hant">堂名款</span><span class="sec-door__title">Hall marks</span><span class="sec-door__desc">Marks naming a hall, studio or palace building instead of a reign, from the Ming to the Republic.</span><span class="sec-door__count">{n_halls} marks</span></a></li>
       </ul>"""
     body = f"""      <p class="guide__lede">The characters on the base of Chinese porcelain usually name a reign, sometimes a hall or a studio. This reference reads them: every Ming and Qing reign mark and {n_halls} hall marks, each fact with its sources in English and Chinese, and real marks photographed in museums.</p>
