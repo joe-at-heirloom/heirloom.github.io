@@ -1,0 +1,11 @@
+# Headers for heirloomapp.io (Cloudflare Workers static assets).
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+
+/marks/img/*
+  Cache-Control: public, max-age=2592000
+
+/screens/*
+  Cache-Control: public, max-age=2592000

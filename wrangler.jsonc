@@ -1,0 +1,16 @@
+// heirloomapp.io on Cloudflare Workers static assets (moved from GitHub
+// Pages, Nov 2026). No build step: the repository root is the site.
+// Deploy: `npx wrangler deploy` from a clean checkout of main.
+{
+  "$schema": "https://unpkg.com/wrangler@4.152.0/config-schema.json",
+  "name": "heirloom-site",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "preview_urls": true,
+  "assets": {
+    "directory": ".",
+    // /guides serves guides.html, /marks/ serves marks/index.html, as Pages did.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}

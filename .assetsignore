@@ -1,0 +1,17 @@
+# Not part of the published site (wrangler.jsonc serves the repository root).
+.git
+.github
+.claude
+.wrangler
+node_modules
+scripts
+hallmark-sources
+wrangler.jsonc
+package.json
+package-lock.json
+README.md
+CNAME
+.gitignore
+.DS_Store
+__pycache__
+*.py
