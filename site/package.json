@@ -8,7 +8,7 @@
     "build": "node scripts/prebuild.mjs && astro build && node scripts/legacy.mjs && pagefind --site dist",
     "preview": "wrangler dev",
     "data:sync": "node scripts/sync-data.mjs",
-    "deploy:preview": "npm run build && wrangler versions upload",
+    "deploy:preview": "SITE_PREVIEW=1 npm run build && wrangler deploy",
     "check": "astro check"
   },
   "dependencies": {

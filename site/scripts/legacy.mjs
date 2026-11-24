@@ -27,4 +27,10 @@ function walk(dir) {
   }
 }
 walk(repo);
+// A review build (SITE_PREVIEW=1) is never indexed: it is a second copy of the site.
+if (process.env.SITE_PREVIEW) {
+  const { appendFileSync } = await import('node:fs');
+  appendFileSync(join(dist, '_headers'), '\n/*\n  X-Robots-Tag: noindex, nofollow\n');
+  console.log('[legacy] review build: noindex on every path');
+}
 console.log(`[legacy] ${copied} files of the current site carried over; ${kept} already rebuilt`);
