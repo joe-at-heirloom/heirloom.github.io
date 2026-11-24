@@ -1,0 +1,1456 @@
+{
+ "generated": "2026-11-24",
+ "scope": "Ming imperial-kiln (Jingdezhen Zhushan) excavated vs Palace Museum transmitted wares; per-reign dating evidence. Only free, legitimate sources; the catalogues themselves were NOT consulted.",
+ "sources": [
+  {
+   "id": "S01",
+   "name": "故宫博物院展览页《明代御窑瓷器（一）——景德镇御窑遗址出土与故宫博物院藏传世洪武、永乐、宣德瓷器对比展》 (Palace Museum exhibition page, Hongwu/Yongle/Xuande comparison show, 2015)",
+   "url": "https://gugongzhanlan.dpm.org.cn/exhibitShare/4",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_exhibitShare_4.html; official introduction text, venue 延禧宫/斋宫"
+  },
+  {
+   "id": "S02",
+   "name": "故宫博物院展览页《明代御窑瓷器（二）——…成化瓷器对比展》 (Palace Museum exhibition page, Chenghua comparison show, 2016)",
+   "url": "https://gugongzhanlan.dpm.org.cn/exhibitShare/21",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_exhibitShare_21.html"
+  },
+  {
+   "id": "S03",
+   "name": "故宫博物院展览页《明代弘治正德御窑瓷器》院长前言 (Palace Museum exhibition page with director's preface, Hongzhi/Zhengde show, 2017)",
+   "url": "https://gugongzhanlan.dpm.org.cn/exhibitShare/40",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_exhibitShare_40.html; preface signed 故宫博物院院长"
+  },
+  {
+   "id": "S04",
+   "name": "故宫博物院展览页《明代正统、景泰、天顺御窑瓷器展》 (Palace Museum exhibition page, Zhengtong-Jingtai-Tianshun show, May 2018)",
+   "url": "https://gugongzhanlan.dpm.org.cn/exhibitShare/47",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_exhibitShare_47.html; organisers and section titles"
+  },
+  {
+   "id": "S05",
+   "name": "故宫博物院新闻《“明代御窑瓷器——…嘉靖、隆庆、万历瓷器对比展”在故宫景仁宫开幕》 (Palace Museum news release, Jiajing/Longqing/Wanli show, Nov 2018)",
+   "url": "https://www.dpm.org.cn/show/247962.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_show_247962_jiajing_wanli.html; contains per-reign curatorial texts"
+  },
+  {
+   "id": "S06",
+   "name": "故宫博物院新闻《“御瓷新见——景德镇明代御窑遗址出土与故宫博物院藏传世瓷器对比展”故宫博物院景仁宫展出》 (Palace Museum news release, 'New Finds' show, 2020)",
+   "url": "https://www.dpm.org.cn/show/253755.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_show_253755_yucixinjian.html"
+  },
+  {
+   "id": "S07",
+   "name": "故宫博物院新闻《故宫博物院九十周年院庆系列展览发布》 (Palace Museum 90th-anniversary exhibition programme, Feb 2015)",
+   "url": "https://www.dpm.org.cn/show/226207.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_show_226207_90th.html; planning figures (April 2015, 362 objects) superseded by the actual opening"
+  },
+  {
+   "id": "S08",
+   "name": "文化部政府门户网站《明代成化御窑瓷器对比展、明清御窑瓷器考古新成果展在故宫博物院开幕》 2016-10-25 (Ministry of Culture report reproducing the Palace Museum press text)",
+   "url": "https://www.mct.gov.cn/whzx/zsdw/ggbwy/201610/t20161025_775660.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/mct_20161025_chenghua.html"
+  },
+  {
+   "id": "S09",
+   "name": "光明日报《明代御窑瓷器对比展在故宫举办》 2015-06-10, via 人民网 (Guangming Daily report on 2015 opening)",
+   "url": "http://politics.people.com.cn/n/2015/0610/c70731-27129403.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/people_20150610.html"
+  },
+  {
+   "id": "S10",
+   "name": "中国新闻网《明代御窑瓷器大展亮相 景德镇出土VS故宫院藏》 2015-06-02, 记者应妮 (China News Service report; also reprinted by 经济参考报)",
+   "url": "https://www.chinanews.com.cn/cul/2015/06-02/7317674.shtml",
+   "retrieved": "2026-11-24",
+   "notes": "raw/chinanews_20150602.html (GB-encoded; text extracted with replacement), raw/jjckb_20150603.html (reprint)"
+  },
+  {
+   "id": "S11",
+   "name": "雅昌艺术网《故宫博物院明代御窑瓷器展对公众开放三个月》 2015-06-02 (Artron report on 2015 opening)",
+   "url": "https://m-news.artron.net/20150602/n747016.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/artron_20150602.html"
+  },
+  {
+   "id": "S12",
+   "name": "新华网《580年前的景德镇御窑瓷器碎片“复原”陶瓷传奇》 2015-08-08, via 环球网 (Xinhua report, interview with 吕成龙)",
+   "url": "https://china.huanqiu.com/article/9CaKrnJOjEW",
+   "retrieved": "2026-11-24",
+   "notes": "raw/huanqiu_9CaKrnJOjEW.html; about the 2015 show (160 kiln + 137 palace pieces)"
+  },
+  {
+   "id": "S13",
+   "name": "京华时报《成化瓷正品与次品时隔500年再聚首》 2016-10-26, via 人民政协网 (Beijing Times report on Chenghua show)",
+   "url": "https://www.rmzxw.com.cn/c/2016-10-26/1103386.shtml",
+   "retrieved": "2026-11-24",
+   "notes": "raw/rmzxw_2016_chenghua.html"
+  },
+  {
+   "id": "S14",
+   "name": "澎湃新闻《一个有趣的对比展：故宫藏传世瓷器与景德镇御窑出土瓷器》 2017-10-01, 记者高丹 (The Paper report on Hongzhi/Zhengde show; reproduces curatorial texts)",
+   "url": "https://www.thepaper.cn/newsDetail_forward_1812857",
+   "retrieved": "2026-11-24",
+   "notes": "raw/thepaper_1812857_hongzhi_zhengde_2017.html"
+  },
+  {
+   "id": "S15",
+   "name": "北京青年报《故宫首次集中展示“空白期”瓷器》 2018-05, 记者王岩, via 北京旅游网 and 雅昌 (Beijing Youth Daily report on interregnum show)",
+   "url": "https://www.visitbeijing.com.cn/article/47QnnqTyZ0C",
+   "retrieved": "2026-11-24",
+   "notes": "raw/visitbeijing_kongbaiqi.html; identical reprints raw/artron_20180522_kongbaiqi_bjqnb.html, raw/artron_20180525_kongbaiqi.html (not independent)"
+  },
+  {
+   "id": "S16",
+   "name": "澎湃新闻《揭开明代御窑“空白期”的面纱：故宫展正统、景泰、天顺瓷器》 2018-05, 记者高丹, via 人民政协网 (The Paper report on interregnum show)",
+   "url": "http://www.rmzxw.com.cn/c/2018-05-23/2063934.shtml",
+   "retrieved": "2026-11-24",
+   "notes": "raw/rmzxw_20180523_kongbaiqi.html; shares Palace press wording with S15 but adds own detail"
+  },
+  {
+   "id": "S17",
+   "name": "China Daily, Wang Kaihao, 'Imperial Ceramics and Porcelain of the Great Ming' 2018-11-13 (pages 1, 3, 4)",
+   "url": "https://www.chinadaily.com.cn/a/201811/13/WS5bea165ca310eff30328839f.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/chinadaily_20181113_p1.html, _p3.html, _p4.html"
+  },
+  {
+   "id": "S18",
+   "name": "CGTN, 'Porcelains of Ming Dynasty imperial kilns on display at Palace Museum' 2018-11",
+   "url": "https://news.cgtn.com/news/3d3d674d794d444e30457a6333566d54/index.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/cgtn_2018.html"
+  },
+  {
+   "id": "S19",
+   "name": "ART.ZIP, Li Baoping review of the 2018 interregnum and Jiajing-Longqing-Wanli Palace Museum exhibitions (English, c. 2019)",
+   "url": "https://www.artzip.org/?p=2693694",
+   "retrieved": "2026-11-24",
+   "notes": "raw/artzip_2693694_jiajing_wanli.html"
+  },
+  {
+   "id": "S20",
+   "name": "李慧《明早期景德镇御器厂彩瓷的生产——以御窑遗址考古发现及传世品为中心》，《故宫博物院院刊》2018年第5期 (Li Hui, early-Ming overglaze wares from the kiln site; Palace Museum Journal PDF hosted on dpm.org.cn)",
+   "url": "https://www.dpm.org.cn/Uploads/File/2018/10/11/u5bbf0e12d6ade.pdf",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_yuankan_2018-5_u5bbf0e12d6ade.pdf (+.txt); mirrored by 景德镇御窑博物院 at http://jdzyybwy.com/jdzmu/frontend/pg/article/id/I00005167 (raw/jdzyybwy_I00005167_caici.html)"
+  },
+  {
+   "id": "S21",
+   "name": "景德镇市陶瓷考古研究所、江西省文物考古研究所、北京大学考古文博学院、故宫博物院考古研究所《2014年景德镇御窑遗址考古发掘主要收获》，《故宫博物院院刊》2016年第2期 (joint report on the 2014 excavation)",
+   "url": "https://www.dpm.org.cn/Uploads/File/2018/06/01/u5b11228d31aec.pdf",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_yuankan_2016-2_u5b11228d31aec_2014excavation.pdf (+.txt); issue taken from PDF running footer"
+  },
+  {
+   "id": "S22",
+   "name": "江小民《从考古资料谈明成化斗彩瓷器的彩绘工艺》，《故宫博物院院刊》2016年第2期 (Jiang Xiaomin, Jingdezhen institute, Chenghua doucai from excavated material)",
+   "url": "https://www.dpm.org.cn/Uploads/File/2018/06/01/u5b1122eb882ec.pdf",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_yuankan_2016-2_u5b1122eb882ec.pdf (+.txt)"
+  },
+  {
+   "id": "S23",
+   "name": "钟燕娣、秦大树、李慧《明中期景德镇御器厂制瓷作坊布局讨论——以2014年考古发掘资料为中心》，《故宫博物院院刊》2020年第9期",
+   "url": "https://www.dpm.org.cn/Uploads/File/2020/09/25/u5f6d70f920d38.pdf",
+   "retrieved": "2026-11-24",
+   "notes": "raw/dpm_yuankan_2020_u5f6d70f920d38.pdf (+.txt); background only, no facts drawn"
+  },
+  {
+   "id": "S24",
+   "name": "江建新《简论明早期瓷器及相关问题》，景德镇御窑博物院网站“学术研讨”2024-10-30 (Jiang Jianxin, early Ming porcelain, Hongwu-Tianshun; museum-hosted article)",
+   "url": "http://jdzyybwy.com/jdzmu/frontend/pg/article/id/I00004935",
+   "retrieved": "2026-11-24",
+   "notes": "raw/jdzyybwy_I00004935_mingzao.html; original print venue not stated on page"
+  },
+  {
+   "id": "S25",
+   "name": "江建新《谈景德镇明御厂故址出土的宣德瓷器》，景德镇御窑博物院网站“学术研讨”2025-10-14 (Jiang Jianxin, Xuande wares excavated at the imperial factory)",
+   "url": "http://jdzyybwy.com/jdzmu/frontend/pg/article/id/I00005286",
+   "retrieved": "2026-11-24",
+   "notes": "raw/jdzyybwy_I00005286_xuande.html; page text has OCR errors (宜德 for 宣德), quoted as found"
+  },
+  {
+   "id": "S26",
+   "name": "熊喆、江依晗《明代成化官窑款与清代民窑仿款标本的对比初探》，景德镇御窑博物院网站“学术研讨”2024-07-30 (Xiong Zhe & Jiang Yihan, Jingdezhen Imperial Kiln Museum: Chenghua marks from the site vs Qing copies)",
+   "url": "http://jdzyybwy.com/jdzmu/frontend/pg/article/id/I00004860",
+   "retrieved": "2026-11-24",
+   "notes": "raw/jdzyybwy_I00004860.html"
+  },
+  {
+   "id": "S27",
+   "name": "江建新《明代瓷器史上不书年款的“空白期”何以并非空白》 澎湃新闻 2019-06-21 (Jiang Jianxin; originally 《略论景德镇出土明正统、景泰、天顺瓷器及相关问题》 in the Shanghai Museum catalogue 《灼烁重现》)",
+   "url": "https://www.thepaper.cn/newsDetail_forward_3601772",
+   "retrieved": "2026-11-24",
+   "notes": "raw/thepaper_3601772_jiangjianxin_kongbaiqi.html"
+  },
+  {
+   "id": "S28",
+   "name": "光明网《江建新：明清御窑厂的发现》 2025-08-08 (interview with Jiang Jianxin)",
+   "url": "https://difang.gmw.cn/jx/2025-08/08/content_38207911.htm",
+   "retrieved": "2026-11-24",
+   "notes": "raw/gmw_20250808_jiangjianxin.html"
+  },
+  {
+   "id": "S29",
+   "name": "秦大树、钟燕娣、李慧《景德镇御窑厂遗址2014年发掘收获与相关问题研究》 (Qin Dashu et al., results of the 2014 excavation; footnotes say published in 《文物》 alongside the 2014 简报 — issue not shown on the repost), repost on 搜狐 2020-06-16",
+   "url": "https://www.sohu.com/a/402209050_100012543",
+   "retrieved": "2026-11-24",
+   "notes": "raw/sohu_402209050_2014excavation.html; repost by a private museum account; text appears complete with footnotes"
+  },
+  {
+   "id": "S30",
+   "name": "北京大学考古文博学院《北大考古与“百年百大考古发现”——景德镇明清御窑厂遗址》 (PKU School of Archaeology summary; same text on 澎湃 newsDetail_forward_15486294)",
+   "url": "https://archaeology.pku.edu.cn/info/1030/3492.htm",
+   "retrieved": "2026-11-24",
+   "notes": "raw/pku_3492.html, raw/thepaper_15486294_pku.html (same text)"
+  },
+  {
+   "id": "S31",
+   "name": "江建新《景德镇御窑厂遗址考古调查与发掘主要收获》 repost on 搜狐 (Jiang Jianxin, survey of excavations)",
+   "url": "https://www.sohu.com/a/142915474_680746",
+   "retrieved": "2026-11-24",
+   "notes": "raw/sohu_142915474_jiangjianxin_shouhuo.html; same author as S24/S25/S27 (not independent of them). Original on zhongguociwang.com could not be fetched (timeouts)"
+  },
+  {
+   "id": "S32",
+   "name": "《浅谈明代永乐、宣德、成化三朝景德镇御窑瓷器款识》 unattributed repost on 搜狐 2021-08-09 (account 金陵古韵斋)",
+   "url": "https://www.sohu.com/a/482002950_120500588",
+   "retrieved": "2026-11-24",
+   "notes": "raw/sohu_482002950_kuanshi.html; author not named on the repost (text reads like a Palace Museum curator's article written during the 2020 景仁宫 show; do NOT attribute without finding the original). Detailed, cites kiln-site specimens held by 景德镇市陶瓷考古研究所"
+  },
+  {
+   "id": "S33",
+   "name": "黄薇《仿古与创新——明清瓷器中的仿宣德官窑现象考察》，《陶瓷学报》2014年第4期 (Huang Wei, imitation of Xuande wares; Journal of Ceramics, open PDF)",
+   "url": "https://www.sciengine.com/doi/pdf/C36628D7EAC741DEB278136734DD51FE",
+   "retrieved": "2026-11-24",
+   "notes": "raw/sciengine_C36628D7EAC741DEB278136734DD51FE.pdf (+.txt)"
+  },
+  {
+   "id": "S34",
+   "name": "澎湃新闻 评展《“空白期”瓷器感受考古断代》 2019-06-14 (review of Shanghai Museum 灼烁重现 show)",
+   "url": "https://www.thepaper.cn/newsDetail_forward_3673674",
+   "retrieved": "2026-11-24",
+   "notes": "raw/thepaper_3673674.html"
+  },
+  {
+   "id": "S35",
+   "name": "香港中文大学文物馆《填空補白 II：考古新發現明正統、景泰、天順御窯瓷器》 exhibit highlights press PDF (CUHK Art Museum, c. Sept 2018)",
+   "url": "https://cpr.cuhk.edu.hk/resources/press/pdf/5b8a7c35ce196.pdf",
+   "retrieved": "2026-11-24",
+   "notes": "raw/cuhk_press_5b8a7c35ce196.pdf; date inferred from file id, not stated"
+  },
+  {
+   "id": "S36",
+   "name": "University of Pennsylvania Libraries catalogue record: 明代嘉靖隆庆万历御窑瓷器",
+   "url": "https://find.library.upenn.edu/catalog/9978887009403681",
+   "retrieved": "2026-11-24",
+   "notes": "raw/upenn_9978887009403681.html"
+  },
+  {
+   "id": "S37",
+   "name": "PurpleCulture (bookseller) series listing 'Imperial Porcelains in the Ming Dynasty' (6 titles with ISBNs)",
+   "url": "https://www.purpleculture.net/imperial-porcelains-in-the-ming-dynasty-bs-744",
+   "retrieved": "2026-11-24",
+   "notes": "raw/purpleculture_bs744.html; bookseller data: ISBNs plausible, publication months may be wrong (lists the interregnum volume as 05/2015)"
+  },
+  {
+   "id": "S38",
+   "name": "PurpleCulture listing for 'New Perspectives on the Imperial Kilns' (御瓷新见 catalogue)",
+   "url": "https://purpleculture.net/new-perspectives-on-the-imperial-kilns-a-comparison-between-porcelains-from-the-imperial-kiln-of-the-ming-dynasty-in-jingdezhen-and-porcelains-in-the-imperial-collection-of-the-palace-museum-p-34169",
+   "retrieved": "2026-11-24",
+   "notes": "raw/purpleculture_34169.html"
+  },
+  {
+   "id": "S39",
+   "name": "参考消息网 (citing Wall Street Journal)《外媒关注故宫用VR重现考古发掘》 2016-11-02, via 浙江在线",
+   "url": "https://china.zjol.com.cn/gnxw/201611/t20161102_2042046.shtml",
+   "retrieved": "2026-11-24",
+   "notes": "raw/zjol_2016_chenghua.html; gives closing date 2017-02-26 for the 2016 shows"
+  },
+  {
+   "id": "S40",
+   "name": "人民日报《从考古发现看“何以景德镇”（考古中国）》 2026-05-30",
+   "url": "http://paper.people.com.cn/rmrb/pc/content/202605/30/content_30159980.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/rmrb_20260530.html"
+  },
+  {
+   "id": "S41",
+   "name": "文化和旅游部网站《“御瓷新见……对比展”故宫博物院景仁宫展出》 2020-09-21",
+   "url": "https://www.mct.gov.cn/whzx/zsdw/ggbwy/202009/t20200921_875254.html",
+   "retrieved": "2026-11-24",
+   "notes": "raw/mct_20200921.html"
+  }
+ ],
+ "catalogues": [
+  {
+   "reign_group": "Hongwu–Yongle",
+   "title": "《明代洪武永乐御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比》 (Imperial Porcelains from the Reigns of Hongwu and Yongle in the Ming Dynasty)",
+   "year": 2015,
+   "isbn": "9787513407472",
+   "editor": "故宫博物院、景德镇市陶瓷考古研究所 编 (compiled by the Palace Museum and the Jingdezhen Municipal Institute of Ceramic Archaeology) — compiler per library record seen only as a search snippet; not verified",
+   "publisher": "故宫出版社 (Forbidden City Publishing House)",
+   "exhibition": {
+    "title": "明代御窑瓷器——景德镇御窑遗址出土与故宫博物院藏传世洪武、永乐、宣德瓷器对比展",
+    "dates": "2015-06-02 to 2015-09-03 (planned for April 2015 with 362 objects, per S07)",
+    "venue": "故宫博物院 斋宫 and 延禧宫, Beijing",
+    "pieces": "297 件套 (S09, S10, S11); Xinhua (S12) gives 160 kiln-site restored pieces + 137 Palace Museum pieces"
+   },
+   "notes": "One exhibition, two catalogues (Hongwu–Yongle and Xuande). The ISBN comes from a bookseller listing only (single-sourced). The bookseller blurb says the volume's kiln-site material is 'mainly Hongwu, Yongle and Xuande'.",
+   "sources": [
+    "S37",
+    "S01",
+    "S07",
+    "S09",
+    "S10",
+    "S11",
+    "S12"
+   ]
+  },
+  {
+   "reign_group": "Xuande",
+   "title": "《明代宣德御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比》 (Imperial Porcelains from the Reign of Xuande in the Ming Dynasty)",
+   "year": 2015,
+   "isbn": "9787513407489",
+   "editor": "故宫博物院、景德镇市陶瓷考古研究所 编 (compiled by the Palace Museum and the Jingdezhen Municipal Institute of Ceramic Archaeology) — not verified",
+   "publisher": "故宫出版社",
+   "exhibition": {
+    "title": "same 2015 exhibition as the Hongwu–Yongle volume",
+    "dates": "2015-06-02 to 2015-09-03",
+    "venue": "故宫博物院 斋宫 and 延禧宫",
+    "pieces": "297 件套 (whole show)"
+   },
+   "notes": "ISBN matches the one you supplied and the bookseller listing (S37), which gives 05/2015. Page count not verified (DAI Zenon record blocked by a bot-check and not fetched).",
+   "sources": [
+    "S37",
+    "S01",
+    "S09",
+    "S10"
+   ]
+  },
+  {
+   "reign_group": "Zhengtong–Jingtai–Tianshun",
+   "title": "《明代正统、景泰、天顺御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比》 (Imperial Porcelains from the Reigns of Zhengtong, Jingtai and Tianshun in the Ming Dynasty)",
+   "year": "2019? (bookseller says 05/2015, which is impossible; Li Baoping (S19) said 'in press' at the time of writing; a Taiwan NPM library snippet seen in search gave 2019)",
+   "isbn": "9787513412209",
+   "editor": "curated by 王光尧 (Wang Guangyao), Palace Museum, per S19; formal editor line not verified",
+   "publisher": "故宫出版社",
+   "exhibition": {
+    "title": "明代正统、景泰、天顺御窑瓷器展",
+    "dates": "opened May 2018 (page dated 二零一八年五月; press of 2018-05-22/23 says 'recently opened') to 2018-06-17",
+    "venue": "故宫博物院 延禧宫东配殿",
+    "pieces": "215 件(组), of which 138 restored kiln-site pieces, including 100 from the 2014 excavation at the northern foot of Zhushan shown for the first time"
+   },
+   "notes": "Organisers per S04: 故宫博物院 and 景德镇市陶瓷考古研究所, with 武汉博物馆 and 保利艺术博物馆 as co-organisers. This interregnum comparison show exists; it was not part of the original 'five' plan but the Palace counts it in the series. ISBN single-sourced (bookseller).",
+   "sources": [
+    "S37",
+    "S19",
+    "S04",
+    "S15",
+    "S16",
+    "S05"
+   ]
+  },
+  {
+   "reign_group": "Chenghua",
+   "title": "《明代成化御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比》（上下册） (Imperial Porcelains from the Reign of Chenghua in the Ming Dynasty, 2 vols)",
+   "year": 2016,
+   "isbn": "9787513409070",
+   "editor": "吕成龙 主编 (per bookseller blurb, S37)",
+   "publisher": "故宫出版社",
+   "exhibition": {
+    "title": "明代御窑瓷器——景德镇御窑遗址出土与故宫博物院藏传世成化瓷器对比展",
+    "dates": "2016-10-25 to 2017-02-26 (closing date from S39 only)",
+    "venue": "故宫博物院 延禧宫 (the companion archaeology show was in 斋宫)",
+    "pieces": "183 件套: 67 Palace Museum Chenghua pieces + 9 later imitations + 107 kiln-site restored pieces"
+   },
+   "notes": "The essays you named (吕成龙《明代成化御窑瓷器简论》, 江建新《略论宣德官窑对成化官窑的影响》) could not be found in any free copy. Their content is not represented here.",
+   "sources": [
+    "S37",
+    "S02",
+    "S08",
+    "S13",
+    "S39"
+   ]
+  },
+  {
+   "reign_group": "Ming–Qing (archaeology show)",
+   "title": "《明清御窑瓷器：故宫博物院与景德镇陶瓷考古新成果》 (The Porcelain of Imperial Kiln in Ming and Qing Dynasties: New Achievements in Ceramic Archaeology of the Palace Museum and Jingdezhen)",
+   "year": 2016,
+   "isbn": null,
+   "editor": null,
+   "publisher": "(Beijing, 2016 per S19; publisher not verified)",
+   "exhibition": {
+    "title": "明清御窑瓷器——故宫博物院与景德镇陶瓷考古新成果展",
+    "dates": "2016-10-25 to 2017-02-26",
+    "venue": "故宫博物院 斋宫",
+    "pieces": "165 件组"
+   },
+   "notes": "Covers the 2014 excavation finds, including the first public showing of interregnum wares and Zhengde semi-finished overglaze pieces. ISBN not found.",
+   "sources": [
+    "S08",
+    "S13",
+    "S19",
+    "S39"
+   ]
+  },
+  {
+   "reign_group": "Hongzhi–Zhengde",
+   "title": "《明代弘治正德御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比》（套装共2册） (Imperial Porcelains from the Reign of Hongzhi and Zhengde in the Ming Dynasty, 2 vols)",
+   "year": 2017,
+   "isbn": "9787513410199",
+   "editor": "故宫博物院、景德镇市陶瓷考古研究所 编 (compiled by the Palace Museum and the Jingdezhen Municipal Institute of Ceramic Archaeology) — not verified",
+   "publisher": "故宫出版社",
+   "exhibition": {
+    "title": "景德镇御窑遗址出土与故宫博物院藏传世弘治、正德瓷器对比展 (明代御窑瓷器系列展之三)",
+    "dates": "opened 2017-09-29; closing date not found",
+    "venue": "故宫博物院 斋宫展厅",
+    "pieces": "约150多件（套）"
+   },
+   "notes": "ISBN matches yours and the bookseller listing (09/2017).",
+   "sources": [
+    "S37",
+    "S03",
+    "S14"
+   ]
+  },
+  {
+   "reign_group": "Jiajing–Longqing–Wanli",
+   "title": "《明代嘉靖隆庆万历御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比》 (Imperial porcelains from the reign of Jiajing, Longqing and Wanli in the Ming Dynasty)",
+   "year": 2018,
+   "isbn": "9787513411660",
+   "editor": "故宫博物院、景德镇市陶瓷考古研究所 编 (Penn record); chief editors 吕成龙 and 江建新 (S19)",
+   "publisher": "故宫出版社, 2018年11月 (Penn record; partly in English; bibliography p. 770)",
+   "exhibition": {
+    "title": "明代御窑瓷器——景德镇御窑遗址出土与故宫博物院藏传世嘉靖、隆庆、万历瓷器对比展",
+    "dates": "opening ceremony 2018-11-06; open 2018-11-07 to 2019-02-22",
+    "venue": "故宫博物院 景仁宫",
+    "pieces": "298 件套 (S05; same figure in S17 and S18), including a few private-kiln comparison pieces and later copies"
+   },
+   "notes": "ISBN from two sources (Penn catalogue + bookseller).",
+   "sources": [
+    "S36",
+    "S37",
+    "S05",
+    "S17",
+    "S18",
+    "S19"
+   ]
+  },
+  {
+   "reign_group": "All Ming (series close)",
+   "title": "御瓷新见 catalogue: 'New Perspectives on the Imperial Kilns: A Comparison Between Porcelains from the Imperial Kiln of the Ming Dynasty in Jingdezhen and Porcelains in the Imperial Collection of the Palace Museum'",
+   "year": 2020,
+   "isbn": "9787513414487",
+   "editor": null,
+   "publisher": "故宫出版社 (presumed; bookseller)",
+   "exhibition": {
+    "title": "御瓷新见——景德镇明代御窑遗址出土与故宫博物院藏传世瓷器对比展",
+    "dates": "2020-09-22 to 2020-12-20",
+    "venue": "故宫博物院 景仁宫",
+    "pieces": "196 件套"
+   },
+   "notes": "The Palace calls it the closing show of the series (收官展). It adds new finds across Yongle–Jiajing, including a Hongzhi incised seal-mark stem bowl and a Zhengde 'Phags-pa-mark bowl. ISBN single-sourced (bookseller).",
+   "sources": [
+    "S38",
+    "S06",
+    "S41"
+   ]
+  },
+  {
+   "reign_group": "Zhengtong–Jingtai–Tianshun (related, not Palace Museum)",
+   "title": "《灼烁重现：15世纪中期景德镇瓷器特集》 (Shanghai Museum catalogue)",
+   "year": 2019,
+   "isbn": null,
+   "editor": null,
+   "publisher": "上海博物馆 (not verified)",
+   "exhibition": {
+    "title": "灼烁重现：十五世纪中期景德镇瓷器大展",
+    "dates": "2019-05-28 to 2019-09-01",
+    "venue": "上海博物馆",
+    "pieces": "not stated; loans from 24 institutions"
+   },
+   "notes": "Co-organised with the Jingdezhen institute. Jiang Jianxin's interregnum essay (S27) first appeared in this catalogue. Earlier related shows: CUHK Art Museum 'Filling the Interregnum' (2012) and 'Refilling the Interregnum II' (2018, S35).",
+   "sources": [
+    "S34",
+    "S27",
+    "S35",
+    "S19"
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "id": "F001",
+   "reign": "Hongwu",
+   "topic": "mark",
+   "text": "No Hongwu imperial ware with a formal reign mark has been found, at the kiln site or among pieces handed down; reign marks start under Yongle.",
+   "quote_zh": "[S32] 虽然早在洪武二年（1369年）朝廷即在景德镇珠山设陶厂（建文四年更名为“御器厂”，清代更名“御窑厂”）专门烧造宫廷用瓷,但迄今为止，尚未发现署正规年款的洪武朝御窑瓷器。 ／ [S27] 从款式制度上看，洪武时不写年款，永乐才出现刻、印“永乐年制”篆书款，且仅见靶盏一类的制品。",
+   "source_ids": [
+    "S32",
+    "S27"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F002",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "The Palace Museum and Jiang Jianxin (Jingdezhen institute) date the imperial works at Zhushan to Hongwu 2 (1369), on the strength of Hongwu-period finds at the site.",
+   "quote_zh": "[S06] 景德镇是闻名于世的瓷都，自明代洪武二年（1369年）开始，朝廷即在景德镇珠山设陶厂（建文四年更名为“御器厂”、清代更名“御窑厂”）专门烧造宫廷用瓷，直至清代最后一朝宣统止，几乎历朝都沿袭这种制度。 ／ [S24] 于是有关洪武官窑设置之年，学界便根据有关文献持有洪武二年和洪武三十五年(建文四年) 两说，从近年珠山出土洪武官窑纪年遗物及相关考证来看，洪武二年建厂说似较为可靠；",
+   "source_ids": [
+    "S06",
+    "S24"
+   ],
+   "single_source": false,
+   "note": "Contested: see next fact (PKU 2014 excavation argues for late Hongwu)."
+  },
+  {
+   "id": "F003",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "The 2014 Peking University-led excavation found Yuan-to-early-Ming layers in the central site but no official Hongwu workshop deposits there, and concludes the imperial factory was founded only late in the Hongwu reign. This contradicts the 1369 date.",
+   "quote_zh": "[S29] 本次发掘揭露的元末明初地层和以往的其他发掘资料表明，从元末到洪武时期， 在今御窑厂范围内并未建立官方经营的御器厂。 ／ [S30] 发掘中清理的元代和明初的地层，证明了明御器厂的始建年代当在洪武末期，了解了御器厂创建以前这一区域的窑业基础；",
+   "source_ids": [
+    "S29",
+    "S30"
+   ],
+   "single_source": false,
+   "note": "S29 and S30 come from the same PKU team, so they are not independent of each other, but both are published by the excavators."
+  },
+  {
+   "id": "F004",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "Large quantities of Hongwu imperial porcelain were excavated at the Zhushan factory site in 1995; Jiang Jianxin treats this as what clarified the Hongwu type.",
+   "quote_zh": "[S24] 1964年南京明故宫玉带河发现一批洪武瓷片，1984年北京第四中学基建工地也出土了数千片洪武瓷片，随着为数不少的洪武纪年墓瓷器出土和日本学者对传世172件洪武瓷器的统计研究，尤其是1995年珠山明御厂故址洪武官窑瓷器的大量出土，人们对洪武器的认识便日愈清晰了。 ／ [S28] 在御窑厂遗址的考古发掘过程中，我们考古团队已经相继发掘了洪武官窑，永乐官窑、宣德官窑以及成化官窑的非常完整的遗物，而且都是成系列的，在全世界做了很多的展览。",
+   "source_ids": [
+    "S24",
+    "S28"
+   ],
+   "single_source": true,
+   "note": "Both quotes are from Jiang Jianxin (one author)."
+  },
+  {
+   "id": "F005",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "A white roof tile from a Hongwu stratum (1990, east foot of Zhushan) bears a brushed iron inscription naming workmen and supervisors, including a Fuliang county assistant magistrate. This is a production inscription, not a reign mark.",
+   "quote_zh": "[S24] (1) 1990年景德镇明御厂故址珠山东麓洪武地层出土一批白瓷板瓦，据考，该瓦是为洪武十年南京故宫建社稷坛而烧造的。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F006",
+   "reign": "Hongwu",
+   "topic": "glaze",
+   "text": "Hongwu cobalt blue comes in two tones, a dark blue with blurring close to Yuan but greyer, and a dull grey. Copper-red glaze is thin and slightly yellowish, and underglaze red runs greyish. Jiang reports Shanghai Institute of Ceramics tests showing the same high-iron, low-manganese imported cobalt as Yuan.",
+   "quote_zh": "[S24] (二)产品主要特征1、关于青花料，洪武青花色泽总体上看不如元青花浓艳凝重，传世与出土的洪武青花有二种明显的色泽：一种近似元青花，色泽深蓝，有晕散感，但比元青花偏灰；一种呈暗灰色，显一点淡蓝色。 ／ [S24] 洪武釉里红总体来看均偏灰，既不如元代的红色纯正，也没有永乐后期色釉鲜艳，红中偏灰是洪武釉里红的时代特征。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F007",
+   "reign": "Hongwu",
+   "topic": "forms",
+   "text": "Forms Jiang singles out as Hongwu: very large straight-walled bowls about 40 cm across with broad shallow feet and unglazed sand bases, and ewers with three metalwork-style rivets at the lower handle join.",
+   "quote_zh": "[S24] 一为直壁大碗，口径约40厘米左右，圈足大而浅，砂底，此类大碗为洪武时特有。 ／ [S24] 壶身为玉壶春瓶形，弯流细长与壶口平高，足底有釉，流与颈部有一云板饰件相连，有趣的是壶柄下端接头有三个仿金属器皿的铆钉，此为洪武执壶所独有的装饰。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F008",
+   "reign": "Hongwu",
+   "topic": "decoration",
+   "text": "Hongwu patterns, per Jiang: lotus panels share borders, key-fret runs in paired opposing units, and the base centre of white and red wares is incised with one or 'pin'-arranged folded-ribbon clouds, a motif Yongle carried on.",
+   "quote_zh": "[S24] 根据对洪武时代纹饰排比观察可见：第一，莲瓣纹每瓣的边框相互借用连接，大莲瓣内绘小朵宝相团花或如意纹为洪武首创；第二，回纹多数已成正反二回一组的结构，与元代同向回纹相异；",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F009",
+   "reign": "Yongle",
+   "topic": "mark",
+   "text": "Most Yongle imperial wares carry no mark. Where there is one it reads only 永乐年制, in four characters, always in seal script. Six-character 大明永乐年制 marks are later copies.",
+   "quote_zh": "[S32] 永乐朝虽开明代御窑瓷器署帝王“年号款”之先河，但永乐朝御窑瓷器中的绝大多数并不署年款，少数带年款者其款字内容仅见有“永乐年制”四字，不见有“大明永乐年制”六字。 ／ [S32] 目前所见署“大明永乐年制”六字款的陶瓷器，从各方面特征看均为后仿品。 ／ [S27] 从款式制度上看，洪武时不写年款，永乐才出现刻、印“永乐年制”篆书款，且仅见靶盏一类的制品。",
+   "source_ids": [
+    "S32",
+    "S27"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F010",
+   "reign": "Yongle",
+   "topic": "mark",
+   "text": "Yongle marks are executed in three ways: written in cobalt (only on the 'press-hand' cups, 压手杯), incised, or moulded. The incised and moulded marks sit under monochrome white or red glaze in the inside centre of bowls, dishes and stem bowls, so they show only against the light. The 1982 dig found stem cups with an impressed 永乐年制 in the centre.",
+   "quote_zh": "[S32] 按署款方式不同，“永乐年制”四字可分为以青花料书写款、锥拱款和模印款三种。 ／ [S32] 锥拱款和模印款主要见于永乐甜白釉、鲜红釉等单色釉瓷器上，位置多在碗、盘、高足碗等器物的内底中心或内壁，款字均作两行排列于葵花心或单线圈内。 ／ [S31] 第4层为淡红土夹沙层，厚约5~45厘米，其中杂有少量的白瓷残片和青花盘残片，几个高足杯底心印有“永乐年制”四字篆文款；",
+   "source_ids": [
+    "S32",
+    "S31"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F011",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "A red-glazed stem bowl with a moulded Yongle mark was excavated at the northern foot of Zhushan in 2003. On fully red-glazed pieces the moulded mark is usually illegible.",
+   "quote_zh": "[S32] 图五：明代永乐款鲜红釉模印云龙纹高足碗，2003年出土于景德镇市珠山北麓景德镇市陶瓷考古研究所藏 ／ [S32] 其中内、外施鲜红釉者所署年款除了极个别的字迹较清晰外（图五，1、2、3），其余均模糊不清。",
+   "source_ids": [
+    "S32"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F012",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "Underglaze-red sherds inscribed with the dates Yongle 1 and Yongle 4 were found at Zhushan. Jiang uses them to show the official kiln was firing from Yongle 1 and to separate early Yongle red (greyish, Hongwu-like) from later pure red.",
+   "quote_zh": "[S24] 有关永乐官窑始烧之年，根据《江西大志·陶书》:“洪武三十五年开始烧造”(永乐执政尚未改元的特定年代)与珠山发现的一块书“永乐元年”铭 釉里红残片来看，永乐元年已有官窑烧造了。 ／ [S24] 如早期据“永乐元年”与“永乐肆年”铭釉里红标本来看，色调还保留洪武时代红里泛灰的特点； 而后期则色调纯正，如珠山出土的红釉地白龙纹靶盏，釉里红三鱼靶杯等色调均纯正艳丽。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F013",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "Palace Museum 'press-hand' cups (压手杯) had been doubted as Yongle on grounds of mark and thickness. A 压手杯 from a Yongle stratum at the factory site in 2014 confirmed them.",
+   "quote_zh": "[S28] 例如永乐压手杯，虽有传世品，但早期因故宫学者将其定为永乐年间器物时，不少学者仍质疑其款识、厚度与永乐时代风格不符。 ／ [S28] 直至2014 年御窑厂永乐地层出土永乐压手杯，才与传世品相互印证。",
+   "source_ids": [
+    "S28"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F014",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "Stratigraphy has redated transmitted pieces. A large censer Geng Baochang had called Xuande turned up in a Yongle stratum, and a kiln-site blue-and-white tripod censer matches a Palace Museum piece almost exactly.",
+   "quote_zh": "[S28] 过去耿先生把永乐时代的大香炉定为宣德时期，但是我们这个是永乐时期地层，和永乐官窑同时出土，那么就把它的年代厘清了。 ／ [S09] 例如在本次展览中，有一件御窑遗址考古出土的永乐青花海水纹双耳三足炉（图2）。 ／ [S10] 与之同时对比陈列的，是故宫博物院藏的一件传世品，两炉的器型、纹样几乎完全一致。",
+   "source_ids": [
+    "S28",
+    "S09",
+    "S10"
+   ],
+   "single_source": false,
+   "note": "S09/S10 give the censer match; the Geng Baochang redating rests on S28 only."
+  },
+  {
+   "id": "F015",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "Yongle forms modelled on Islamic metalwork are known from the kiln site, including octagonal candlesticks and moon flasks. The site also produced very tall sweet-white (tianbai) vases that are not otherwise known.",
+   "quote_zh": "[S12] 比如３件永乐年间的八方烛台就是模仿伊斯兰风格的黄铜嵌金、银制品烧造而成，另两件用于装水的青花如意耳扁壶，也是永乐时期对同样造型的伊斯兰嵌金、银壶造型的模仿。 ／ [S12] 以一个永乐甜白釉大花瓶为例，他说，如果不发掘出土这件大花瓶，人们永远不可能知道永乐时期的御窑厂还烧造如此高大的器皿。 ／ [S24] 另有双耳三足大香炉、八棱烛台、梵文大杓、笔盒、带盖瓷豆、深腹平底洗、花浇和筒形器座(又称无档尊)等，均为永乐罕见的创新之作。",
+   "source_ids": [
+    "S12",
+    "S24"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F016",
+   "reign": "Yongle",
+   "topic": "glaze",
+   "text": "Yongle copper red is purer than Hongwu's and shows a white 'lamp-wick' rim at mouth and foot. Kingfisher-green (翠青) glaze is a Yongle invention. Low-temperature glazes and overglaze enamels, unknown among transmitted Yongle pieces, have been found in Yongle strata.",
+   "quote_zh": "[S24] 永乐红釉一改洪武器微泛黄的特点，红色调较为纯正，尤其是口足一圈白而肥润的“灯草边”使红釉更显深厚夺目。 ／ [S24] 4、低温釉及釉上彩器无论是低温釉彩；还是釉上彩瓷，过去均不见有传世品，近年珠山明御厂永乐地层有发现。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F017",
+   "reign": "Yongle",
+   "topic": "decoration",
+   "text": "Yongle blue-and-white is deep blue with blurring. Decoration is sparer than Hongwu's, and Yongle first painted the inside of bowl bases.",
+   "quote_zh": "[S24] 永乐青花纹饰一改洪武那种繁缛茂密的元青花遗风而更趋疏朗清丽。 ／ [S24] 永乐首开青花装饰碗底先例，纹饰有龙、凤、菊和龟锦纹(实为唐金银器上的忍冬花结纹)。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F018",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Nearly all Xuande imperial wares are marked. Kiln-site and transmitted pieces show marks in regular script (楷) and seal script (篆), executed in cobalt, incised, in iron-brown or in overglaze red, in four or six characters. They are arranged in one, two or three lines and framed by double rings, single rings or rectangles.",
+   "quote_zh": "[S24] c、关于款识从出土与传世的宣德瓷器来看，其时的制品绝大多数都有年款，并有固定的形式。 ／ [S24] 书体有楷书和篆书二种，从工艺与装饰形式上看有：刻款、青花款、铁绘款与釉上矾红款；字数有四字、六字；排列形式有单行(横 排、竖排)、双行、三行排列；有加双圈、单圈或长方单框之类。 ／ [S32] 从字数来看，可分为“大明宣德年制”和“宣德年制”两种；从书写方式来看，可分为以青花料书写款、以铁红釉书写款、以矾红彩书写款以及锥拱款和模印款等；",
+   "source_ids": [
+    "S24",
+    "S32"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F019",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Xuande mark placement is not fixed ('Xuande marks all over the vessel'). Bowls and dishes are marked on the base, large dishes below the outer rim, and vases and jars on the shoulder. The commonest format is six characters 大明宣德年制 in two lines of regular script within a double ring, a format later reigns adopted as standard.",
+   "quote_zh": "[S24] 宣德碗盘底多施釉，款识流行书于器底，大盘则书于外壁口沿处，瓶罐类则多书于器物之肩部，还有在同一器物上书写二个年款的(如蟋蟀罐和笔盒)故前人有 “宣德款识满器身”之说。 ／ [S32] 其中以青花楷书六字双行排列外围双线圆圈款最为常见。 ／ [S32] 宣德御窑开创的在御窑瓷器上署楷体六字双行外围双圈的款式，成为后来御窑瓷器上使用最多、延续时间最长的款式。",
+   "source_ids": [
+    "S24",
+    "S32"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F020",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Six-character Xuande marks are always in regular script. Four-character 宣德年制 marks occur in both regular and seal script. Cobalt seal-script four-character marks are unknown among transmitted pieces and have been found only on kiln-site stem bowls (1982 onward), double-ringed in the inside centre.",
+   "quote_zh": "[S32] “大明宣德年制”六字款均为楷体，“宣德年制”四字款既有楷体也有篆体。 ／ [S32] 青花篆书四字年款极罕见，迄今为止，传世品中未见一例，景德镇市珠山明代御器厂遗址曾出土宣德仿汝釉高足碗和青花高足碗残片标本，其内底中心署青花篆体四字年款，四字分双行排列，外围青花双线圈（图十四）。 ／ [S25] 天青釉把盏：有四字宜德篆款和无款两种，有款的高11.7厘米，盏心书青花双行双圈四字篆款。",
+   "source_ids": [
+    "S32",
+    "S25"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F021",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "In four-character regular-script Xuande marks, the 心 of 德 has no horizontal stroke above it. In the four-character seal-script marks it does.",
+   "quote_zh": "[S32] 应引起注意的是，宣德御窑瓷器所署楷体四字年款之“德”字“心”上无横画，而所署篆体四字年款之“德”字“心”上有横画。",
+   "source_ids": [
+    "S32"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F022",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Two marks on one vessel: excavated cricket jars carry the mark both inside the cover and on the base, horizontal in one place and vertical in the other or both double-ringed depending on cover type. Covered bowls are marked inside cover and bowl.",
+   "quote_zh": "[S25] 盖中心有一小孔，似作盖纽之用，盖底施白釉，书“大明宜德年制”六字竖款，罐底书“大明宜德年制”六字横款。 ／ [S32] 坐盖式蟋蟀罐的盖内和外底均署青花楷体六字年款，盖内自右向左横写一排、外底竖写一行（图十六，1、2）。",
+   "source_ids": [
+    "S25",
+    "S32"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F023",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Rare mark media found at the site: overglaze alum-red six-character double-ring marks in the centre of red-decorated stem cups, and an iron-red 大明宣德年制 double-ring mark on an iron-red glazed bowl. Jiang says red marks disappear after Xuande and return from Jiajing.",
+   "quote_zh": "[S25] 矾红款为宜德稀有款，宣德之后一度消失，嘉靖以后又出现，如“典膳所用”双圈款回，一直到清雍正后才流行。 ／ [S25] 铁红釉铁红六字款碗：口径15厘米，釉呈赤褐色，底书铁红“大明宜德年制”双圈双行款，为独一无二的宜德款。",
+   "source_ids": [
+    "S25"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F024",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "In the 1982 rescue dig in front of the old factory gate, most Xuande remains carried the cobalt six-character mark 大明宣德年制. Unmarked early-Ming pieces were found with them.",
+   "quote_zh": "[S25] 遗物绝大部分有青花“大明宜德年制”六字款①。 ／ [S25] 当掘至明清御厂仪门故址 (图一：A1、A2) 时，刘新园在距地表0.5米处发现了明宜德官窑青花残片，景德镇考古工作者立即进行了抢救性的清理，在东起御窑厂东墙，西至公馆岭长160米的沟道中，清理出有永乐、宜德年款以及一批无款的明初官窑残器。",
+   "source_ids": [
+    "S25"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F025",
+   "reign": "Xuande",
+   "topic": "decoration",
+   "text": "Doucai began under Xuande, not Chenghua. Xuande-stratum finds include a doucai mandarin-duck lotus dish with a cobalt 大明宣德年制 mark in a double ring on the base (1988) and semi-finished bowls of the same design with no enamels yet (1985, 1988). No identical dish is known among transmitted pieces.",
+   "quote_zh": "[S20] 1984 年在西藏萨迦寺发现宣德款斗彩鸳鸯莲池纹靶杯后，1985年、1988年又先后在景德镇御窑遗址宣德地层发现了斗彩鸳鸯莲池纹碗的半成品（未填釉上彩）及同类题材的盘。 ／ [S20] ”盘心绘红莲三组，并以芦苇、 红蓼、 慈姑、 浮萍等穿插其间，鸳鸯以青料勾勒，再以红、紫、黄三色画羽毛，外壁绘红莲四组并饰以红蓼、慈姑、鸳鸯两对穿插其间，足底双圈内青料书“大明宣德年制”六字楷书款。 ／ [S10] 展品中景德镇市陶瓷考古研究所藏的宣德斗彩鸳鸯莲池纹盘以及永乐红釉点彩碗就是比较典型的例子，这两种器物在传世品中均未曾见到与之相同的。",
+   "source_ids": [
+    "S20",
+    "S10"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F026",
+   "reign": "Xuande",
+   "topic": "glaze",
+   "text": "Jiang reads the Xuande blue as both Yongle-deep and Chenghua-soft. A trial dish from a Xuande stratum inscribed 乐一号 and 乐三号 suggests Leping (domestic) cobalt was being tested.",
+   "quote_zh": "[S24] 这一结论与近年在珠山明御厂宣德地层出土的一块青花书“乐一号”、“乐三号”铭青花试料盘可相印证，该盘青花色调淡雅，所谓“乐一号”、“乐三号”很可能就是乐平青料(即文献记载的所谓陂塘青或平等青)。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F027",
+   "reign": "Xuande",
+   "topic": "glaze",
+   "text": "Sky-blue (天青) cobalt glaze was long thought a Qing invention. A sky-blue stem cup with a seal-script 宣德年制 mark in the centre, from a 1993 Xuande stratum, shows it already existed under Xuande.",
+   "quote_zh": "[S24] 天青釉是以钴为作色剂的高温色釉，过去一直以为天青釉创烧于清初官窑，1993年珠山明御厂宣德地层出土一盏心书“宣德年制”篆款天青釉靶盏，证实早在宣德时天青釉已经发明，并成功地用于装饰瓷器。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F028",
+   "reign": "Xuande",
+   "topic": "forms",
+   "text": "Xuande mostly kept Yongle forms, and unmarked Xuande blue-and-white can be hard to tell from Yongle. On the same form, Yongle tends to be refined, delicate and thin, Xuande large, thick and heavy.",
+   "quote_zh": "[S24] 譬如，一些无款宣德青化瓷与永乐青花瓷便难于区分开来。 ／ [S24] 相同的器型永乐有秀、巧、薄的特点，宣德的则有大、厚、拙的特点。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F029",
+   "reign": "Xuande",
+   "topic": "decoration",
+   "text": "Xuande dragons are more ferocious than Yongle's, with upright, loose or forward-swept manes. Xuande also first combines flowers and fruit of different seasons on one piece, and figure scenes with garden pavilions become common.",
+   "quote_zh": "[S24] b、器型与纹饰：宣德与永乐官窑瓷器， 其胎、釉制作和纹饰没有多少区别，宣德器型也多沿用永乐形制，但也存在差异：宣德官窑器上的龙纹比永乐的画得更为精彩，有竖发、披发及前披发式，均显得较为凶猛。",
+   "source_ids": [
+    "S24"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F030",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "mark",
+   "text": "Imperial wares of the Zhengtong, Jingtai and Tianshun reigns (1436–1464) carry no formal reign marks. That is why the period was called the 'blank' or 'dark' period.",
+   "quote_zh": "[S15] 特别是由于此三朝御窑瓷器均不署正规年款，致使长期以来，人们并不认识这三朝御窑瓷器，称之为“空白期”或“黑暗期”。 ／ [S04] 长期以来大家耳熟能详的明代御窑瓷器名品有永乐、宣德青花、甜白釉、鲜红釉瓷、成化斗彩瓷、弘治浇黄釉瓷、嘉靖、隆庆、万历五彩瓷，而正统、景泰、天顺御窑瓷器却因不署年款和实物证据不足，在古陶瓷研究领域中被称之为“空白期”或“黑暗期”。 ／ [S27] 我国古陶瓷学界普遍认为明代这三朝瓷器陷于衰退期，而三朝官窑瓷器，由于不书年款，其面貌模糊不清，陶瓷史上称其为“空白期”或“黑暗期”。",
+   "source_ids": [
+    "S15",
+    "S04",
+    "S27"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F031",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "excavation",
+   "text": "In 1988 a deposit dominated by large blue-and-white dragon vats was found by the factory's west wall. Stratigraphy and texts date it to Zhengtong, making it the first archaeologically confirmed Zhengtong imperial ware. Jiang notes the sequence: Chenghua deposits above, Xuande-marked material below, and an unmarked layer between.",
+   "quote_zh": "[S15] 第一次是1988年，在御窑遗址西墙、靠近东司岭巷一带发现了以青花云龙纹大缸残片为主要包含物的地层堆积。根据地层叠压关系和文献记载判断，这些青花云龙纹大缸的烧造年代为正统时期。这是首次经考古确认的正统时期御窑瓷器遗存，改写了正统朝御窑已停止烧造的既往认识。 ／ [S28] 虽然是抢救性发掘，但是它的地层信息很清晰，上面有成化官窑的堆积，底下有宣德款识，就是这中间层无款。",
+   "source_ids": [
+    "S15",
+    "S28"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F032",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "excavation",
+   "text": "In 2014 at the northern foot of Zhushan, an unmarked sherd layer was found lying over the Xuande layer and sealed by the Chenghua layer. Part of it is Xuande-like and part Chenghua-like, which dates it to Zhengtong–Tianshun. In Jiang's section this is layer 8, above which layer 7 is dominated by Chenghua-marked sherds.",
+   "quote_zh": "[S15] 第二次是2014年，在御器厂内珠山北麓，发现了从明代宣德至清代的地层堆积，包括叠压在宣德地层之上、又被成化地层叠压的瓷片堆积层。该地层出土的瓷器均不署年款，从一部分瓷器具有宣德御窑瓷器风格、另一部分瓷器具有成化御窑瓷器特征看，其烧造年代应为正统至天顺时期。 ／ [S27] 第⑧层出土遗物较为单纯，瓷器均无款，但种类丰富，出土器物有的与宣德相似，但与宣德和成化相比却又有差异，且均无款，根据地层和类型学分析，可知第⑧层出土瓷器应为明正统至天顺时期遗物。",
+   "source_ids": [
+    "S15",
+    "S27"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F033",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "excavation",
+   "text": "Jiang divides the 2014 layer-8 material into an earlier, Xuande-like phase and a later, Chenghua-like phase. He reads the deposit as a single dump around Tianshun 8 (1464), when imperial firing was ordered to stop. The Palace Museum show text likewise says Zhengtong carries a Xuande legacy and Zhengtong–Tianshun style shaped Chenghua.",
+   "quote_zh": "[S27] 由于该地层出土“空白期”遗物特征明显，根据类型学比较，其遗物似可分为二期：第一期与宣德相近；第二期则与成化相近。 ／ [S27] 因此，我以为此第⑧层的瓷器当包含正统、景泰、天顺时期遗物，而地年代当是空白期后期—即天顺八年左右的堆积。 ／ [S15] 通过对比，观众可以领略到正统朝御窑瓷器风格明显带有宣德遗风，而正统到天顺朝的御窑瓷器风格又明显影响了成化瓷器。",
+   "source_ids": [
+    "S27",
+    "S15"
+   ],
+   "single_source": false,
+   "note": "The Tianshun-8 dumping interpretation is Jiang's alone (single-sourced); the two-phase style reading has two sources."
+  },
+  {
+   "id": "F034",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "apocryphal",
+   "text": "Redating effect: unmarked transmitted pieces in Xuande or Chenghua style, formerly given to those reigns, now have to be reconsidered as interregnum wares. Jiang names the unmarked doucai mandarin-duck lotus bowls and dishes formerly called Chenghua.",
+   "quote_zh": "[S15] 展览对于明代御窑瓷器研究具有重要学术价值，以往人们囿于考古资料限制，将一些不署年款的具有宣德、成化御窑瓷器风格的传世瓷器年代分别定为宣德、成化。 ／ [S27] 从传世的空白期瓷器来看，主要遗物还是在北京和台北故宫博物院，比如，过去一般把无款斗彩鸳鸯莲池纹碗、盘定为成化制品，现在完全可以据出土资料把它确定为空白期官窑遗物。 ／ [S34] 在第一章节“华章再现——皇家气概官用瓷”中，有相当一部分器物过去被定为宣德和成化两朝的瓷器，在有了出土材料作为佐证后，时代被修正为十五世纪中期。",
+   "source_ids": [
+    "S15",
+    "S27",
+    "S34"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F035",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "forms",
+   "text": "The restored blue-and-white cloud-dragon vat is exceptionally large: the Palace show text gives over 70 cm across the mouth and over 80 cm high, Jiang 88 cm across the belly. The texts tie it to the dragon vats the Ming History says were ordered after the three halls were rebuilt in Zhengtong 6 (1441).",
+   "quote_zh": "[S15] 如：一组青花云龙纹大缸残片，修复后龙缸口径70多厘米，高80多厘米，形体之大，在明代绝无仅有。 ／ [S27] （一）、1988年11月珠山明御厂西墙一带发现一正统官窑遗存，（图1）出土瓷器有：青花云龙纹大缸，腹径达88厘米，器型硕大，似为明朝最大的一件瓷器（图2-1）。",
+   "source_ids": [
+    "S15",
+    "S27"
+   ],
+   "single_source": false,
+   "note": "Dimensions differ between sources (mouth vs belly diameter)."
+  },
+  {
+   "id": "F036",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "forms",
+   "text": "New interregnum forms from the 2014 dig include six very large blue-and-white flowerpots and blue-and-white drum stools (garden seats). Before this, Ming porcelain stools were known mostly from Zhengde onward. Ruyi-shaped pillows were also found.",
+   "quote_zh": "[S15] 再如，2014年景德镇明清御窑遗址出土的六件青花大花盆，外壁绘有云龙纹、海兽、麒麟等，体形硕大，颇有气势，即使在明代御窑瓷器烧造取得最高成就的永乐、宣德时期也未见有类似作品。 ／ [S15] 绣墩亦称凉凳，传世品中明代瓷绣墩多为正德、嘉靖、万历朝作品，正德朝以前的非常罕见。 ／ [S06] 展览第一单元展出的明代景德镇御窑遗址出土的永乐朝青花缠枝莲纹压手杯（残）、永乐朝釉里红花卉纹笔盒（修复）、宣德朝青花卷草纹器座（修复）以及正统至天顺朝青花折枝牡丹纹如意头形枕（修复）、青花镂空钱纹大绣墩（修复）等，均属于首次或修复后首次公开展出的重要展品，为研究明代御窑青花和釉里红瓷提供了新的实物资料。",
+   "source_ids": [
+    "S15",
+    "S06"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F037",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "decoration",
+   "text": "Zhengtong-type decoration, per Jiang: surging sea waves, sea monsters, cloud-wreathed figures (the Japanese term 'cloud-hall' 雲堂手), and the fish of the Eight Emblems drawn as a single fish. Doucai mandarin ducks are tiny and bird-like and lotus flowers large with small leaves.",
+   "quote_zh": "[S24] 而八吉祥纹中之“鱼”纹，画成“单鱼”；斗彩莲池鸳鸯纹中的小鸟般鸳鸯和花大而叶小的莲荷纹样均富正统特色。 ／ [S27] 大量的海水纹装饰也是此次出土正统官窑瓷器的一大特色，可视之为正统官窑瓷器典型纹样。",
+   "source_ids": [
+    "S24",
+    "S27"
+   ],
+   "single_source": true,
+   "note": "Both quotes by Jiang Jianxin."
+  },
+  {
+   "id": "F038",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "glaze",
+   "text": "Zhengtong cobalt is close to Xuande's: deep and dense. Material Jiang attributes to Jingtai–Tianshun is greyish-pale, with low, slightly inturned dish feet that are often not cut deeper than the shoulder.",
+   "quote_zh": "[S27] 其青花产品的主要特征：青花色调多偏灰淡，既不如它之前的正统青花厚重浓丽，也没有成化青花纤细淡雅；造型上（主要是靶盏、碗、盘）多承正统形制，但盘圈足矮而微内敛，挖足多不过肩;纹饰上多承正统风格，但花卉纹则较为流行。",
+   "source_ids": [
+    "S27"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F039",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "excavation",
+   "text": "Jingtai–Tianshun candidates come from mixed contexts. A 1993 fill west of the old factory held Xuande-marked, Chenghua-marked and unmarked sherds with no stratigraphic order. In 1995 unmarked Xuande-like but coarser sherds were found in an early-Chenghua layer at Longzhuge.",
+   "quote_zh": "[S27] 图35，明御窑厂遗址出土正统--成化器2、1993年6月，在明御厂故址西侧（老市政府大楼西侧前食堂）基建工地上发现一批宣德、成化纪年官款瓷片和无款青花瓷片，这批遗物无叠压关系，可能是明早中期的扰土和填土，其中无款青花瓷片上的缠枝宝相花极似正统风格，但色泽较正统灰暗，胎、釉亦不如正统精细，盘的圈足比正统圈足大，且低矮微内敛。 ／ [S27] 3、1995年在珠山龙珠阁成化早期地层夹杂着一些无款青花靶盏和碗、盘残片，其造型和纹样与宣德器相近，但胎釉较粗，青花色调略显灰暗，与同时出土的成化青花清幽淡雅色调区别较大，这批遗物可能是正统之后成化之前的景泰或天顺官窑制品。",
+   "source_ids": [
+    "S27"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F040",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "mark",
+   "text": "The only dated inscriptions are informal ones, not reign marks. The Palace show used as a dating standard a blue-and-white dragon bowl inscribed 天顺年置, excavated in 2007 from a Ming princely family cemetery in Jiangxia, Wuhan. The exhibition page also lists a censer with a 天顺年 inscription.",
+   "quote_zh": "[S16] 正统、景泰、天顺三朝瓷器均不署正规年款，这件青花碗出土信息明确，所署纪年款虽非正规年款，但仍可被视作天顺御窑瓷器断代的标准器，具有重要的学术价值。 ／ [S04] “天顺年”铭青花波斯文三足炉",
+   "source_ids": [
+    "S16",
+    "S04"
+   ],
+   "single_source": false,
+   "note": "The bowl is a tomb find, not a kiln find."
+  },
+  {
+   "id": "F041",
+   "reign": "Zhengtong–Jingtai–Tianshun",
+   "topic": "mark",
+   "text": "Jiang's explanation for the absence of marks: Zhengtong-era retrenchment, and the fact that marking was not yet fixed practice (Hongwu unmarked, Yongle marked only rarely), so Zhengtong could follow frugal Hongwu rather than lavish Xuande. This is an interpretation, not a finding.",
+   "quote_zh": "[S27] 关于“空白期”官窑不书年款问题，由于当时书写年款尚未形成定制，正统官窑不效仿奢侈的宣德而追仿简朴的洪武官窑也就非常自然了，而三朝官窑不写年款就使人容易理解了。",
+   "source_ids": [
+    "S27"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F042",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Chenghua imperial marks from the factory site are mostly cobalt six-character 大明成化年製 in regular script, within a double ring or a double square, usually on the base and occasionally written horizontally below the rim. The frame lines hug the characters and vary in thickness and depth of colour.",
+   "quote_zh": "[S26] 御窑出土的成化官款多以青花书双圈或双框“大明成化年製”六字楷书款，其款识大多在器底，少量横书于口沿下方。 ／ [S26] 款外围圆圈或框字都紧束款字，所画线条粗细不等，发色浓淡不一。 ／ [S32] 成化御窑瓷器年款的主要体式为青花楷体“大明成化年制”六字双行外围青花双圆圈或双方框，也有极个别无边栏者。",
+   "source_ids": [
+    "S26",
+    "S32"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F043",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Chenghua marks are always six characters. No four-character 成化年制 mark is known. The double-square frame was new in Chenghua, and kiln-site examples include a cup with a double-square mark.",
+   "quote_zh": "[S32] 一是均为“大明成化年制”六字款（图十八，1、2），不见“成化年制”四字款； ／ [S32] 二是新创一种六字双行排列外围双方框的款式（图十九，1、2、3），为以前所未见； ／ [S26] [1]图1 青花双框双行“大明成化年製”六字楷书款御窑出土的成化官款多以青花书双圈或双框“大明成化年製”六字楷书款，其款识大多在器底，少量横书于口沿下方。",
+   "source_ids": [
+    "S32",
+    "S26"
+   ],
+   "single_source": false,
+   "note": "'No four-character mark' rests on S32 only; double-frame use at the site has two sources."
+  },
+  {
+   "id": "F044",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Placement exceptions: on stem cups the six characters run clockwise around the inside of the foot (a Chenghua innovation). On dishes with unglazed 'burnt-rice' bases the mark is written in one horizontal line at the rim. A rare single-line mark in a double rectangle occurs on a kiln-site bowl base.",
+   "quote_zh": "[S32] 另见有以青花料自右向左横写楷体六字一排年款，落在盘的口边，高足杯则在足内边沿按顺时针方向绕足书写青花楷体六字年款。 ／ [S32] 图二十一：明代成化青花碗（残片）外底署款，景德镇市珠山明代御窑遗址出土景德镇市陶瓷考古研究所藏图二十二：明代成化青花折枝莲托杂宝纹高足杯成化御窑青花、斗彩瓷器上均署青花款；单色釉瓷除署青花款外，还有少量锥拱款。",
+   "source_ids": [
+    "S32"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F045",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Chenghua doucai jars with dragon, heavenly-horse, sea-monster, Eight-Emblem or lotus scroll decoration carry a single cobalt 天 ('heaven') on the base instead of the reign mark. Semi-finished 天-jars outlined in cobalt but not yet enamelled were excavated from Chenghua strata (2002–2004).",
+   "quote_zh": "[S32] 即：凡是以龙（包括海水云龙、应龙、香草龙、瓜地行龙等）、天马（图三十，1、2）、海怪、缠枝莲托八吉祥、缠枝莲纹等主题纹饰装饰的斗彩罐，其外底必署“天”字款；而凡绘其他纹饰者，则必署六字年款（图三十一，1、2）。 ／ [S22] 2002－2004年，珠山御窑联合考古队在珠山御窑遗址成化地层中，发掘出土了许多青花瓷片，其中不‹1›少为青料勾双线留白的残片，经修复所得器形有鸡缸杯〔图一〕、天字罐〔图三〕、缠枝莲纹小靶盏〔图五〕等。",
+   "source_ids": [
+    "S32",
+    "S22"
+   ],
+   "single_source": false,
+   "note": "The jar-motif rule rests on S32; the kiln-site 天-jar semi-finished pieces on S22."
+  },
+  {
+   "id": "F046",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "On Chenghua blue-ground reserved-white wares, a kiln-site bowl carries its mark in raised white slip, six characters in a white-slip double ring, written on the blue-glazed base. This mark type is unique to Chenghua.",
+   "quote_zh": "[S32] 值得一提的是成化祭蓝釉白花瓷所署款识很特别，即在外底祭蓝釉地上以白色泥料书写楷体六字双行外围白泥双圈款（图二十三，1、2），款字笔道凸起，这种蓝釉白泥款为成化朝瓷器上所独有[13]。",
+   "source_ids": [
+    "S32"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F047",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Double rings around Chenghua marks are usually darker on the outer ring, so the outer ring was drawn first. Square frames are irregular and dark at the overlapping corners. The cobalt of the characters sinks into the glaze rather than floating.",
+   "quote_zh": "[S32] 成化御窑瓷器年款中的青花款所围双圆圈或双方栏框的颜色深浅不一，双圈大多外圈色深，内圈色浅，说明当时是先画外圈，后画内圈；双方栏大都不太规整，四角重笔处往往色深。",
+   "source_ids": [
+    "S32"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F048",
+   "reign": "Chenghua",
+   "topic": "excavation",
+   "text": "In 1987 large Chenghua kiln deposits were cleared northeast of Longzhuge. Liu Xinyuan divided them into early, middle and late phases by find-spot and stratum. In Chenghua strata, doucai semi-finished and finished pieces are the largest category.",
+   "quote_zh": "[S22] 1987年景德镇市陶瓷考古研究所为配合龙珠阁的建设，在龙珠阁东北侧发现清理出大量成化时期的窑业堆积，根据出土时间、区域、地层的不同，刘新园先生结合文献，把这些出土的遗物分为早、中、晚三期，‹1›第三期共计出土300余件器物，其中青花斗彩器物约200余件。 ／ [S22] 综合以上两次在珠山的较大规模的考古发掘，成化地层出土数量最多的为斗彩半成品和斗彩成品。",
+   "source_ids": [
+    "S22"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F049",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Chenghua doucai drops the Xuande method of incising reserves in the leather-hard body for enamel. Areas to be enamelled are outlined in cobalt instead. Early-Chenghua iron red follows Xuande practice, shaded first and then outlined. Late Chenghua strata show flat, unshaded iron red.",
+   "quote_zh": "[S22] 经与同品类器物〔图二，图四，图六〕比较得知，这些青花勾线器物都为斗彩半成品，且成化斗彩瓷器制作没有沿用宣德斗彩瓷器在泥坯上暗刻留白填彩的工艺，而是在需要填彩的部位以青料勾画外轮廓线，并按照构图需要局部用画笔或点、或绘单线条，以增加层次感。 ／ [S22] 五结论宣德时期和成化早期矾红彩绘均为渲染后再勾画局部，但到了成化朝后期，由于斗彩瓷器烧造量变大，御器厂工匠开始大量采用平涂无渲染的工艺制作斗彩瓷器。",
+   "source_ids": [
+    "S22"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F050",
+   "reign": "Chenghua",
+   "topic": "excavation",
+   "text": "Rejection criteria visible in excavated rejects: a blue-and-white dragon-and-phoenix dish was smashed because one inside dragon foot was painted with six claws and one outside foot with four. A doucai cup was rejected because its red had gone dark.",
+   "quote_zh": "[S08] 而展出的青花云龙凤纹盘则非常有趣，其内底龙的一足画成六爪、外壁龙的一足画成四爪，不知工匠有意画错还是无意为之，此盘可能即因此而落选。 ／ [S13] 只因为内底所绘本应为五爪龙的一足被粗心的匠人画成了六爪，而外壁所绘龙纹的一足又少一爪，画成了四爪，不细心看不容易发现。 ／ [S13] 但仔细看，会发现当年被砸碎的杯子颜色不及故宫藏品鲜艳，红色发乌，因此惨遭淘汰。",
+   "source_ids": [
+    "S08",
+    "S13"
+   ],
+   "single_source": false,
+   "note": "The six-claw dish has two sources; the dark-red doucai cup rests on S13 only."
+  },
+  {
+   "id": "F051",
+   "reign": "Chenghua",
+   "topic": "body",
+   "text": "The Palace Museum characterises Chenghua imperial ware by a pure white, fine body, an even oily-lustred glaze, varied subjects, balanced composition, and fresh, elegant colour.",
+   "quote_zh": "[S08] 成化御窑瓷器素以胎质洁白细腻、釉质平整油光、装饰题材丰富、构图疏密有致、设色清丽典雅、绘画技艺精湛而闻名于世。 ／ [S13] 成化御窑瓷器素以胎质洁白细腻、釉质平整油光、装饰题材丰富、构图疏密有致、设色清丽典雅、绘画技艺精湛而闻名于世。",
+   "source_ids": [
+    "S08",
+    "S13"
+   ],
+   "single_source": true,
+   "note": "S13 repeats the Palace press text verbatim, so this is effectively one source."
+  },
+  {
+   "id": "F052",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "Excavated Chenghua types not matched by any transmitted piece include a blue-and-white crane-neck vase with dragons among flowers, red- and blue-ground bowls with reserved white dragons or phoenixes, a peacock-green lobed flowerpot, red-ground and white-ground green-enamelled tripod censers, and a sancai duck-shaped incense burner.",
+   "quote_zh": "[S08] 不见于传世品的青花龙穿花纹鹤颈瓶、祭红地抜白云龙纹碗、祭蓝地抜白云凤纹碗、孔雀绿釉菱花口折沿花盆、矾红地绿彩缠枝灵芝纹双耳三足炉、白釉绿彩缠枝灵芝纹双耳三足炉、素三彩鸭形香薰等，则给人耳目一新之感。",
+   "source_ids": [
+    "S08"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F053",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Early Chenghua official ware copied Xuande models closely, for example blue-and-white dragon bowls, but carried the Chenghua mark rather than a Xuande one. The kiln site also produced Chenghua copies of the Xuande doucai mandarin-duck lotus dish.",
+   "quote_zh": "[S33] 从现存的成化官窑瓷器看，成化早期官窑多以模仿宣德官窑制式为主。 ／ [S33] 如英国戴维德基金会收藏成化官窑青花龙纹碗(见图1)，造型、纹饰皆与宣德官窑青花龙纹碗(见图2)相仿，在瓷器设计上二者唯独款识有异，承宣德官窑署款遗制，更之为“大明成化年制”。 ／ [S22] 1、熟褐：颜色失透无光泽，仅见于成化仿宣德莲池鸳鸯纹盘。",
+   "source_ids": [
+    "S33",
+    "S22"
+   ],
+   "single_source": true,
+   "note": "S33 discusses transmitted pieces (e.g. a David Foundation bowl), not stratified finds; S22 gives the kiln-site Chenghua copy of the Xuande dish. Different points, each single-sourced. No free source was found reporting Xuande-MARKED sherds in Chenghua strata."
+  },
+  {
+   "id": "F054",
+   "reign": "Chenghua",
+   "topic": "excavation",
+   "text": "The 2014 excavation's Chenghua–Hongzhi phase (1465–1505) yielded mostly sherds with a cobalt double-ring six-character two-line 大明成化年制 in the foot. Two pieces carried 大明弘治年制.",
+   "quote_zh": "[S29] 外底施白釉，略泛青，足心多有青花双圈“大明成化年制” 六字双行楷书款，有两件带“大明弘治年制” 六字双行楷书款。",
+   "source_ids": [
+    "S29"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F055",
+   "reign": "Hongzhi",
+   "topic": "mark",
+   "text": "Hongzhi imperial wares are mostly marked on the base with cobalt 大明弘治年制, six characters in two lines of regular script within a double ring. Exceptions include a seal-script four-character 弘治年制 incised in the centre of a yellow-ground green-dragon stem bowl. A kiln-site biscuit stem bowl with an incised seal-script 弘治年制 was first shown in 2020.",
+   "quote_zh": "[S14] 弘治朝御窑瓷器大都在外底署年款，款识内容基本都是“大明弘治年制”，以青料书写，楷体六字作双行排列，外围青花双圈。个别器物如黄地绿彩推拱云龙绞高足碗，在内底锥拱篆体“弘治年制”四字双行款。 ／ [S06] 展览第三单元展出的正统至天顺朝青花加矾红彩海水龙纹梨形执壶（修复）、弘治朝白釉黄彩梵文碗（残）、弘治朝涩胎锥拱“弘治年制”篆书款高足碗（残）、正德朝黄地青花八思巴文款花卉纹碗（残）、嘉靖朝矾红地绿彩盘（残）、弘治朝内黄釉外洒蓝地孔雀绿彩云龙纹碗（残）等，虽残尤珍，均属于首次展出或修复后首次公开展出的难得一见的品种，相信展出后一定会丰富人们对明代景德镇御窑彩瓷的认识。 ／ [S29] 外底施白釉，略泛青，足心多有青花双圈“大明成化年制” 六字双行楷书款，有两件带“大明弘治年制” 六字双行楷书款。",
+   "source_ids": [
+    "S14",
+    "S06",
+    "S29"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F056",
+   "reign": "Hongzhi",
+   "topic": "glaze",
+   "text": "Hongzhi white glaze is slightly grey or bluish with a jade-like quality. Hongzhi poured-yellow (浇黄) is rated the best of the Ming and Qing, called 'chicken-fat yellow' and 'delicate yellow' (娇黄). Deep aubergine glaze first appears in Hongzhi.",
+   "quote_zh": "[S14] 其白釉瓷器色白中略泛灰或青，玉质感很强。 ／ [S14] 弘冶朝浇黄釉瓷器不但产置大，而且质置高，堪称明、清两代浇黄釉瓷器之冠，深茄皮紫釉瓷器则为弘治朝首创。 ／ [S03] 尤其是浇黄釉瓷器，温润如鸡油，色泽娇嫩，博得“娇黄”之美称。",
+   "source_ids": [
+    "S14",
+    "S03"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F057",
+   "reign": "Hongzhi",
+   "topic": "decoration",
+   "text": "Hongzhi blue-and-white continues the Chenghua style in finer, more delicate drawing, with soft pale blue from domestic Pingdeng cobalt (Leping, Jiangxi), which is low in iron and high in manganese. Doucai was no longer made under Hongzhi.",
+   "quote_zh": "[S14] 弘治朝御窑青花瓷继承了成化时期的特点，只是纹饰更加纤巧细致、舒展流畅，所用青料仍为产于今江西乐平县的“平等青”，这种颜料中氧化铁含量低，氧化锰含量高，致使图案纹饰呈现出柔和、淡雅、清爽的蓝色。 ／ [S14] 成化朝盛极一时的斗彩瓷器在弘治朝已停止烧造。",
+   "source_ids": [
+    "S14"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F058",
+   "reign": "Hongzhi",
+   "topic": "forms",
+   "text": "About 16 Hongzhi ware types are known, roughly half of Chenghua's 29. Production shrank and decoration was relatively plain.",
+   "quote_zh": "[S03] 目前统计弘治朝景德镇御器厂所烧造瓷器品种大约有16 种，几乎只有前朝成化所烧造约29 个品种的一半。 ／ [S14] 目前统计弘治朝景德镇御器厂所烧造瓷器品种大约有16个，几乎只有前朝成化所烧造约29个品种的一半。",
+   "source_ids": [
+    "S03",
+    "S14"
+   ],
+   "single_source": true,
+   "note": "S14 reprints the Palace text; effectively one source."
+  },
+  {
+   "id": "F059",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "Zhengde marks are cobalt six-character 大明正德年制 or four-character 正德年制, double-ringed, in two lines of regular script. Both appear in the 2014 Zhengde strata. A semi-finished flowerpot from 2014 has 正德年制 written horizontally below the rim, which is very rare, and an incised 正德年制 flowerpot was also found.",
+   "quote_zh": "[S29] 外底均施白釉， 略泛青，部分足心有青花双圈“大明正德年制” 六字双行楷书款或“正德年制”四字双行楷书款。 ／ [S21] 其中出土一件侈口鼓腹花盆半成品，外壁模印龙纹，口沿下以青花横书“正德年制”四字，非常少见。 ／ [S14] 所署年款既有青花楷体 “大明正德年制”六字款，也有“正德年制”四字款和“大明宣德年制”仿款，更有稀见的八思巴文款。",
+   "source_ids": [
+    "S29",
+    "S21",
+    "S14"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F060",
+   "reign": "Zhengde",
+   "topic": "apocryphal",
+   "text": "Zhengde imperial production includes pieces with an apocryphal 大明宣德年制 mark, for example a wucai fish-and-water-weed dish with a Xuande mark shown as Zhengde.",
+   "quote_zh": "[S14] 所署年款既有青花楷体 “大明正德年制”六字款，也有“正德年制”四字款和“大明宣德年制”仿款，更有稀见的八思巴文款。 ／ [S14] 仿宣德款五彩鱼藻纹盘",
+   "source_ids": [
+    "S14"
+   ],
+   "single_source": true,
+   "note": "Single source (Palace show text as reported by The Paper). Not stated to be a kiln-site find."
+  },
+  {
+   "id": "F061",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "Zhengde alone among Ming reigns used a four-character mark in 'Phags-pa script. Kiln-site examples include semi-finished bowls and dishes from the late-Zhengde strata of 2014 and a yellow-ground blue-and-white bowl shown in 2020.",
+   "quote_zh": "[S03] 以八思巴文署四字年款亦为明代各朝御窑瓷器上所仅见，呈现一种非常有趣的现象。 ／ [S29] 另有一类带八思巴文“正德年制”款的彩瓷半成品碗、盘，除内壁刻划纹饰以外，在外壁多以瓷泥沥粉法装饰云龙纹，近足处同样饰一周仰莲瓣； ／ [S06] 展览第三单元展出的正统至天顺朝青花加矾红彩海水龙纹梨形执壶（修复）、弘治朝白釉黄彩梵文碗（残）、弘治朝涩胎锥拱“弘治年制”篆书款高足碗（残）、正德朝黄地青花八思巴文款花卉纹碗（残）、嘉靖朝矾红地绿彩盘（残）、弘治朝内黄釉外洒蓝地孔雀绿彩云龙纹碗（残）等，虽残尤珍，均属于首次展出或修复后首次公开展出的难得一见的品种，相信展出后一定会丰富人们对明代景德镇御窑彩瓷的认识。",
+   "source_ids": [
+    "S03",
+    "S29",
+    "S06"
+   ],
+   "single_source": false,
+   "note": "Reading conflict: The Paper (S14) glosses the 'Phags-pa mark as 至正年制; the excavators (S29) read it as 正德年制. Treat S14's gloss as an error unless confirmed."
+  },
+  {
+   "id": "F062",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "A new mark type appears in late-Zhengde strata: underglaze-cobalt characters inside an overglaze iron-red double ring in place of the usual cobalt ring, a combined over- and underglaze mark found on doucai.",
+   "quote_zh": "[S29] 另还出现了釉上釉下结合的款识[31]，常见的青花双圈被红彩双圈所取代（图一四），形成了釉上双圈和釉下文字的复合彩款识；",
+   "source_ids": [
+    "S29"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F063",
+   "reign": "Zhengde",
+   "topic": "excavation",
+   "text": "The 2014 stratigraphy splits Zhengde into an early phase (1506–1513) and a late phase (1514–1521). The excavated area had many semi-finished overglaze pieces (glazed inside and on the base, biscuit outside), read as an enamelling workshop (色作).",
+   "quote_zh": "[S29] 本次发掘的一个重要收获是通过地层的叠压关系，将正德时期分为前后两段。 ／ [S08] 2014年，在御窑厂西侧、龙珠阁以南的发掘区域，出土了明代正德釉上彩瓷器半成品，包括花盆，渣斗，成摞的碗、盘等。",
+   "source_ids": [
+    "S29",
+    "S08"
+   ],
+   "single_source": false,
+   "note": "Early/late split is S29 only; the semi-finished overglaze finds have two sources (S08, S21)."
+  },
+  {
+   "id": "F064",
+   "reign": "Zhengde",
+   "topic": "body",
+   "text": "Zhengde is a turning point: bodies get heavier, forms more numerous and decoration denser than the light, sparse Chenghua–Hongzhi manner. There are 20+ ware types, with peacock-green and blue-and-white, sancai, and peacock-green glaze the most admired.",
+   "quote_zh": "[S03] 正德朝是明代景德镇御窑瓷器发展史上一个承上启下的转折点，主要表现在逐渐摆脱了成化、弘治朝御窑瓷器胎体轻薄、造型较少、装饰疏朗等特点，器物胎体趋于厚重、造型逐渐增多、装饰偏向繁缛等。 ／ [S14] 正德朝是明代景德镇御窑瓷器发展史上一个承上启下的转折点，主要表现在逐渐摆脱了成化、弘治朝御窑瓷器胎体轻薄、造型较少、装饰疏朗等特点，而变得器物胎体趋于厚重、造型逐渐增多、装饰偏向繁缛等。",
+   "source_ids": [
+    "S03",
+    "S14"
+   ],
+   "single_source": true,
+   "note": "S14 reprints the Palace text; effectively one source."
+  },
+  {
+   "id": "F065",
+   "reign": "Zhengde",
+   "topic": "decoration",
+   "text": "The most distinctive Zhengde decoration is the heavy use of Arabic and Persian script.",
+   "quote_zh": "[S03] 正德御窑瓷器在装饰上的最显著特点是大量使用阿拉伯文、波斯文作为装饰。",
+   "source_ids": [
+    "S03"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F066",
+   "reign": "Jiajing",
+   "topic": "mark",
+   "text": "In the 2014 Jiajing strata most pieces are official wares with a cobalt double-ring six-character two-line 大明嘉靖年制 in regular script on the base, with a small share of private-kiln wares.",
+   "quote_zh": "[S29] 器物大多为外底带有青花双圈 “大明嘉靖年制”六字双行楷书款的官窑器，也有少量民窑器[39]。 ／ [S21] 明嘉靖年制”青花款器物、矾红彩半成品、低温釉半成品、民窑青",
+   "source_ids": [
+    "S29",
+    "S21"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F067",
+   "reign": "Jiajing",
+   "topic": "excavation",
+   "text": "From Jiajing onward private kilns also fired imperial orders ('official orders fired at private kilns', 官搭民烧). Jiajing-marked official wares have been excavated at private kiln sites: Guanyinge (2007) and Luomaqiao.",
+   "quote_zh": "[S29] 2007 年在发掘观音阁窑址时，在地层中出土了带有“大明嘉靖年制”款的官窑瓷器，被认为是御器厂的管理机构委派生产的[52]。 ／ [S40] 从出土的元代高等级建材与元青花、明初皇家用瓷器建材和官式瓷器、明代晚期带嘉靖年款的瓷器均可以看到，落马桥窑场可能和元代浮梁瓷局有关，并参与明代早期官用建材和明代晚期官搭民烧日用瓷器的生产。 ／ [S05] 随着商品经济发展和海外贸易迅速扩大，民营瓷业产量和质量均比以往有很大提高，除大量烧造供国内外各阶层使用的瓷器外，还搭烧御器厂临时交办的御用瓷器，使这一时期御窑瓷器呈现出丰富的面貌。",
+   "source_ids": [
+    "S29",
+    "S40",
+    "S05"
+   ],
+   "single_source": false,
+   "note": "For dating: a genuine Jiajing mark does not by itself mean the piece came from the imperial factory."
+  },
+  {
+   "id": "F068",
+   "reign": "Jiajing",
+   "topic": "glaze",
+   "text": "Typical Jiajing imperial blue mixes imported 'Huiqing' (回青) cobalt with domestic 'stone' blue (石子青), giving a vivid purplish blue. Melon-skin green is purest under Jiajing.",
+   "quote_zh": "[S05] 典型嘉靖御窑青花瓷器以进口“回青”料混以国产“石子青”料描绘纹饰，呈现蓝中泛紫的鲜艳色调，开创了明代御窑青花瓷器发展的新境界。 ／ [S05] 瓜皮绿釉是一种以氧化铜为呈色剂、以氧化铅为主要助熔剂的低温色釉，明代景德镇御器厂自永乐朝开始烧造，以后各朝亦多有烧造，其中以嘉靖朝产品发色最为纯正，本次展出的故宫博物院藏嘉靖瓜皮绿釉锥拱云凤纹尊堪称代表性作品。",
+   "source_ids": [
+    "S05"
+   ],
+   "single_source": true,
+   "note": "China Daily (S17) repeats the melon-green point from the same show."
+  },
+  {
+   "id": "F069",
+   "reign": "Jiajing",
+   "topic": "forms",
+   "text": "Jiajing output rose sharply, with many ritual vessels, large pieces and Daoist-related motifs and objects. Transmitted and excavated pieces show at least 37 ware types.",
+   "quote_zh": "[S05] 嘉靖朝御窑瓷器产量激增，祭祀器、大器品类多样，流行与道教有关的纹饰，而且出现供道教仪式使用的特殊器物，这些都与嘉靖朝特殊的政治、文化氛围和嘉靖皇帝的个人品位有密切关系。 ／ [S05] 从传世品和出土标本看，嘉靖朝景德镇御器厂烧造的瓷器在花色品种上不少于37种，其中最受人称道的是青花、五彩、瓜皮绿釉瓷等。",
+   "source_ids": [
+    "S05"
+   ],
+   "single_source": true,
+   "note": "S17 (China Daily) gives the same '37 kinds' figure from the same show; not independent."
+  },
+  {
+   "id": "F070",
+   "reign": "Jiajing",
+   "topic": "body",
+   "text": "For Jiajing–Wanli as a group, the Palace Museum text describes much higher output, more forms, more large pieces, heavier bodies, somewhat rougher workmanship and denser, brighter decoration.",
+   "quote_zh": "[S05] 受此影响，嘉靖、隆庆、万历三朝御窑瓷器整体呈现产量空前大增、造型更加繁多、大件器物增多、胎体趋于厚重、工艺略显粗糙、装饰愈加繁缛、色彩华丽夺目的风貌。",
+   "source_ids": [
+    "S05"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F071",
+   "reign": "Longqing",
+   "topic": "mark",
+   "text": "Most Longqing imperial wares end the mark with 造 rather than 制: six characters 大明隆庆年造 or four characters 隆庆年造. The Palace text bases this on both transmitted pieces and excavated sherds.",
+   "quote_zh": "[S05] 大部分御窑瓷器采用了区别以往的以“造”代替“制”字结尾的“大明隆庆年造”六字年款或“隆庆年造”四字年款。",
+   "source_ids": [
+    "S05"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F072",
+   "reign": "Longqing",
+   "topic": "forms",
+   "text": "Longqing ware types are fewer than under Jiajing: blue-and-white, blue-and-white with iron red, yellow-ground blue-and-white, wucai, doucai, white and poured yellow. Output was still large.",
+   "quote_zh": "[S05] 从传世品和出土瓷片标本看，隆庆朝御窑瓷器品种较嘉靖朝有所减少，见有青花、青花加矾红彩、黄地青花、五彩、斗彩、白釉、浇黄釉瓷等。",
+   "source_ids": [
+    "S05"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F073",
+   "reign": "Longqing",
+   "topic": "excavation",
+   "text": "The 2014 excavation's phasing runs from a Jiajing phase straight to a Wanli phase. No separate Longqing phase is defined, so there is no published Longqing stratum from that dig.",
+   "quote_zh": "[S29] （一）嘉靖时期第六组地层对应的第五期代表了嘉靖时期（1522～1566 年）遗存。 ／ [S29] ▲图十九 青花敞口曲腹圈足碗（TN33W15⑨：17）内底（二）万历时期第七组地层对应的第六期代表了万历时期（1573～1620年）遗存。",
+   "source_ids": [
+    "S29"
+   ],
+   "single_source": true,
+   "note": "This is an absence in one report, not proof that no Longqing material was excavated."
+  },
+  {
+   "id": "F074",
+   "reign": "Wanli",
+   "topic": "mark",
+   "text": "Few pieces in the 2014 Wanli strata are official wares, marked with a cobalt double-ring six-character two-line 大明万历年制 in regular script. Most are private-kiln wares. An earlier dig near the east gate found a white incised-dragon bowl with a double-line double-ring 大明万历年制 in a Chenghua-to-Wanli fill.",
+   "quote_zh": "[S29] 少部分器物为外底有青花双圈“大明万历年制”六字双行楷书款的官窑器，其余大部分为民窑器。 ／ [S25] （2）距地表1.2～1.4米为万历至成化堆积，出土遗物有青花双行双圈“大明万历年制”款白釉刻龙碗残器，“大明正德年制”款的白釉碗和青花龙穿花纹碗，弘治白釉刻龙纹碗、盘，成化青花残片等。",
+   "source_ids": [
+    "S29",
+    "S25"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F075",
+   "reign": "Wanli",
+   "topic": "excavation",
+   "text": "In the 2014 Wanli strata official products dwindle almost to nothing. The excavators read this as the imperial factory closing and its workshops turning to private production.",
+   "quote_zh": "[S29] 本次发掘万历时期地层中出土的官窑产品减少，接近消失，可印证这一记载。 ／ [S29] 本次发掘清理了原生的嘉靖、万历时期地层，结合此前的一些发掘，可以看到，明中期在今御窑厂范围内普遍分布的官窑生产作坊，在这一时期大大萎缩了，许多官窑作坊，包括本次发掘的地点，都转为生产民窑器物。",
+   "source_ids": [
+    "S29"
+   ],
+   "single_source": true
+  },
+  {
+   "id": "F076",
+   "reign": "Wanli",
+   "topic": "excavation",
+   "text": "End of Ming imperial production: the Palace Museum gives Wanli 36 (1608) for the factory's formal stop. China Daily's report on the same show says work 'was officially halted in 1603'. The sources disagree.",
+   "quote_zh": "[S05] 景德镇御窑瓷器烧造受政治影响，致使量增而质减，御器厂的运行更逐渐陷入窘困之境地，最终导致万历三十六年（1608年）御器厂正式停烧。",
+   "source_ids": [
+    "S05"
+   ],
+   "single_source": true,
+   "note": "Conflict: S17 (China Daily, English) says 1603."
+  },
+  {
+   "id": "F077",
+   "reign": "Wanli",
+   "topic": "glaze",
+   "text": "When imported Huiqing cobalt ran short in later Wanli, domestic cobalt took over, the best being Zhejiang material, which gives a slightly greyish blue. Some 20+ Wanli ware types are known, with blue-and-white, wucai, yellow-ground green and aubergine the most admired.",
+   "quote_zh": "[S05] 万历后期，因进口的“回青”料短缺，青花瓷器逐渐采用“土青”料描绘纹饰，其中以浙江产的“浙料”最好，其图案蓝中略泛灰色，淡雅明快。 ／ [S05] 万历朝御窑瓷器造型、纹饰风格基本延续嘉靖、隆庆朝御窑瓷器特点，从传世品和出土标本看，约有20多个品种，其中最受人称道的是青花、五彩、黄地绿彩和茄皮紫釉瓷等。",
+   "source_ids": [
+    "S05"
+   ],
+   "single_source": true,
+   "note": "Aubergine as the best Wanli monochrome is also stated in S06."
+  },
+  {
+   "id": "F078",
+   "reign": "Wanli",
+   "topic": "forms",
+   "text": "The Palace Museum's very large Wanli-marked blue-and-white dragon meiping were excavated (1956) from the Wanli emperor's Dingling tomb, not handed down. Dingling held six Wanli-marked meiping about 71–75 cm tall and two Jiajing-marked ones about 45 cm.",
+   "quote_zh": "[S05] 本次展出的故宫博物院藏明代定陵出土的青花龙穿缠枝莲纹梅瓶，形体高大，纹饰繁密，制作和烧成工艺难度较高，堪称万历朝御窑青花瓷的代表作。 ／ [S19] The other six meiping, ranging from about 71 to 75 cm in height, bear a mark of the Wanli period and a dragon motif.",
+   "source_ids": [
+    "S05",
+    "S19"
+   ],
+   "single_source": false,
+   "note": "S19 is English; quote_zh field holds its English sentence."
+  },
+  {
+   "id": "F079",
+   "reign": "All Ming (series)",
+   "topic": "excavation",
+   "text": "Since the late 1970s and 1980s, tons of rejected imperial sherds from the Hongwu–Wanli reigns have been recovered at Zhushan, and more than 1,400 pieces restored. Pieces kept in the palace collections are mainly in the Palace Museums in Beijing and Taipei, with some in the Nanjing Museum.",
+   "quote_zh": "[S06] 自20世纪80年代以来，景德镇市陶瓷考古研究所配合以珠山为中心的景德镇市政府大院基本建设工程，先后发现明代洪武至万历朝御窑瓷器落选品、废品和部分窑炉遗迹，经过抢救性发掘，获得数以吨计的御用瓷器落选后被打碎丢弃的残片和窑具标本，粘合复原出1400多件明代御窑瓷器，对深入研究明代御窑产品和生产制度具有非常重要的意义。 ／ [S12] 经抢救发掘，目前已黏合复原出１４００多件。",
+   "source_ids": [
+    "S06",
+    "S12"
+   ],
+   "single_source": false
+  },
+  {
+   "id": "F080",
+   "reign": "All Ming (series)",
+   "topic": "mark",
+   "text": "Lü Chenglong (Palace Museum) says the kiln-site sherds settled the long dispute over when the Ming imperial factory was founded and resolved some problems in the study of Ming imperial marks.",
+   "quote_zh": "[S12] １９８４年从景德镇陶瓷学院工程系毕业后一直在故宫博物院从事古陶瓷研究的吕成龙认为，景德镇出土瓷器残片之所以很受业内关注，是因为它回答了学界长期争论不休的明代御器厂最早设立时间的疑问、解决了明代御窑瓷器款识研究中的一些问题，与大量传世明代御窑瓷器形成相互印证，弥补了传世明代御窑瓷器中的欠缺。",
+   "source_ids": [
+    "S12"
+   ],
+   "single_source": true,
+   "note": "The founding date is in fact still disputed (see Hongwu facts)."
+  },
+  {
+   "id": "F081",
+   "reign": "All Ming (series)",
+   "topic": "mark",
+   "text": "A traditional summary of Ming mark character, quoted as broadly true to the objects: 'Yongle marks few, Xuande marks many, Chenghua marks plump, Hongzhi marks elegant, Zhengde marks respectful, Jiajing marks mixed.'",
+   "quote_zh": "[S32] 而且随着时代发展，明代各朝御窑瓷器上所署年款也呈现各自特色，前人有“永乐款少，宣德款多，成化款肥，弘治款秀，正德款恭，嘉靖款杂”[1]的评价，从实物看，基本符合事实。",
+   "source_ids": [
+    "S32"
+   ],
+   "single_source": true
+  }
+ ]
+}

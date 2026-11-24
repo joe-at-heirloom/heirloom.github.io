@@ -1,0 +1,4473 @@
+{
+ "sources": {
+  "brockhaus-efron-1898-proba": {
+   "kind": "book",
+   "author": "Brockhaus and Efron Encyclopedic Dictionary",
+   "title": "vol. 25, \"Proba i probirnoe delo\"",
+   "year": 1898,
+   "url": "https://ru.wikisource.org/wiki/%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D1%80%D0%BE%D0%B1%D0%B0_%D0%B8_%D0%BF%D1%80%D0%BE%D0%B1%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B4%D0%B5%D0%BB%D0%BE",
+   "public_domain": true
+  },
+  "granat-1916-proba": {
+   "kind": "book",
+   "author": "Granat Encyclopedic Dictionary",
+   "title": "vol. 33, \"Proba\"",
+   "year": 1916,
+   "url": "https://ru.wikisource.org/wiki/%D0%AD%D0%A1%D0%93/%D0%9F%D1%80%D0%BE%D0%B1%D0%B0",
+   "public_domain": true
+  },
+  "ru-federal-assay-chamber-history": {
+   "kind": "official",
+   "author": "Federal Assay Chamber of the Russian Federation",
+   "title": "History of assay marks",
+   "url": "https://probpalata.gov.ru/about/history/"
+  },
+  "maskell-1884": {
+   "kind": "book",
+   "author": "Alfred Maskell",
+   "title": "Russian Art and Art Objects in Russia",
+   "year": 1884,
+   "url": "https://archive.org/details/gri_33125007742394",
+   "public_domain": true
+  },
+  "dubrovin-2018": {
+   "kind": "article",
+   "author": "M. F. Dubrovin",
+   "title": "On Moscow assay masters' marks of the late 19th century, Gramota 2018 no. 3",
+   "year": 2018,
+   "url": "https://doi.org/10.30853/manuscript.2018-3.24"
+  },
+  "faberge-research-site": {
+   "kind": "website",
+   "author": "Fabergé Research Site",
+   "title": "Workmasters and hallmarks (after Lowes and McCanless)",
+   "url": "https://fabergeresearch.com/workmasters/"
+  },
+  "vam-russian-silver-records": {
+   "kind": "museum",
+   "author": "Victoria and Albert Museum",
+   "title": "Russian silver records: ladle 1865 O94664; box O95094; cup 1775 O91386; brooch O299139",
+   "url": "https://collections.vam.ac.uk/item/O94664/"
+  },
+  "hillwood-russian-silver-records": {
+   "kind": "museum",
+   "author": "Hillwood Estate, Museum and Gardens",
+   "title": "Records 12.566.2 (Fabergé coffeepot), 12.163, 12.141, 12.403",
+   "url": "https://hillwoodmuseum.org/collection/item/12.566.2"
+  },
+  "walters-faberge-records": {
+   "kind": "museum",
+   "author": "Walters Art Museum",
+   "title": "Fabergé kovsh 57.1920 and spirit lamp 57.1911 records",
+   "url": "https://art.thewalters.org/"
+  },
+  "met-russian-silver-records": {
+   "kind": "museum",
+   "author": "The Metropolitan Museum of Art",
+   "title": "Candlestick, Moscow, c. 1780 (2004.80); standing cup, Moscow, 1737 (25.15.32)",
+   "url": "https://www.metmuseum.org/art/collection/search/195247"
+  },
+  "chaffers-1896": {
+   "kind": "book",
+   "author": "W. Chaffers",
+   "title": "Hall Marks on Gold and Silver Plate, with a history of l'orfèvrerie française",
+   "year": 1896,
+   "url": "https://archive.org/details/hallmarksongolds00chaf_1",
+   "public_domain": true
+  },
+  "chaffers-1899-french": {
+   "kind": "book",
+   "author": "W. Chaffers",
+   "title": "Hand Book to French Hall Marks on Gold and Silver Plate",
+   "year": 1899,
+   "url": "https://archive.org/details/handbooktofrenc00chafgoog",
+   "public_domain": true
+  },
+  "carre-1922": {
+   "kind": "thesis",
+   "author": "Louis Carré",
+   "title": "De la réglementation des ouvrages en métaux précieux, Rennes",
+   "year": 1922,
+   "url": "https://archive.org/details/IA41543513_0002"
+  },
+  "touzet-1910": {
+   "kind": "thesis",
+   "author": "André Touzet",
+   "title": "Emplois industriels des métaux précieux, Bordeaux",
+   "year": 1910,
+   "url": "https://archive.org/details/IA41523714_0058"
+  },
+  "capdevielle-1928": {
+   "kind": "thesis",
+   "author": "Georges Capdevielle",
+   "title": "Le régime de l'industrie des métaux précieux en France, Paris",
+   "year": 1928,
+   "url": "https://archive.org/details/IA41547905_0048"
+  },
+  "douane-garantie-2009": {
+   "kind": "official",
+   "author": "DGDDI and Monnaie de Paris",
+   "title": "Garantie des métaux précieux (table of current marks)",
+   "year": 2009,
+   "url": "https://www.douane.gouv.fr/sites/default/files/uploads/files/2019-09/garantie-metaux-france.pdf"
+  },
+  "douane-regles-de-marque": {
+   "kind": "official",
+   "author": "French customs (DGDDI)",
+   "title": "Règles de marque pour la garantie des métaux précieux",
+   "url": "https://www.douane.gouv.fr/fiche/regles-de-marque-pour-la-garantie-des-metaux-precieux"
+  },
+  "senat-1983-rapport-348": {
+   "kind": "official",
+   "author": "French Senate",
+   "title": "Rapport no. 348 (1982-1983), André Fosset, on the guarantee of gold, silver and platinum",
+   "year": 1983,
+   "url": "https://www.senat.fr/rap/1982-1983/i1982_1983_0348.pdf"
+  },
+  "senat-1994-cgi-522": {
+   "kind": "official",
+   "author": "French Senate",
+   "title": "1993-1994 bill texts rewriting CGI articles 521-522",
+   "year": 1994,
+   "url": "https://www.senat.fr/leg/1993-1994/ta1993_1994_0064.pdf"
+  },
+  "paris-musees-records": {
+   "kind": "museum",
+   "author": "Paris Musées",
+   "title": "Collection records: La Moissonneuse ODUT1827; Testimonial OGAL583; Coffret OGAL103; message case J581",
+   "url": "https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/la-moissonneuse"
+  },
+  "jury-1851-metaux-precieux": {
+   "kind": "book",
+   "author": "Commission française",
+   "title": "Exposition universelle de 1851, 23rd jury, Industrie des métaux précieux",
+   "year": 1854,
+   "url": "https://archive.org/details/industriedesmta00albegoog",
+   "public_domain": true
+  },
+  "bouilhet-1908": {
+   "kind": "book",
+   "author": "Henri Bouilhet",
+   "title": "L'orfèvrerie française aux XVIIIe et XIXe siècles (Bouilhet was a Christofle partner)",
+   "year": 1908,
+   "url": "https://archive.org/details/lorfevreriefranc02boui",
+   "public_domain": true
+  },
+  "christofle-authentification-2023": {
+   "kind": "company",
+   "author": "Christofle",
+   "title": "Authentification vintage guide",
+   "year": 2023,
+   "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf"
+  },
+  "christofle-history": {
+   "kind": "company",
+   "author": "Christofle",
+   "title": "Charles Christofle, a visionary",
+   "url": "https://www.christofle.com/us_en/our-maison/charles-christofle-a-visionary"
+  },
+  "rainwater-1966": {
+   "kind": "book",
+   "author": "Dorothy T. Rainwater",
+   "title": "American Silver Manufacturers, Gorham entry and date-letter table (read in excerpt)",
+   "year": 1966,
+   "url": "https://archive.org/details/americansilverma0000unse"
+  },
+  "cinamon-2005": {
+   "kind": "book",
+   "author": "Diana Sanders Cinamon",
+   "title": "All About Antique Silver with International Hallmarks (read in excerpt)",
+   "year": 2005,
+   "url": "https://archive.org/details/allaboutantiques0000cina"
+  },
+  "gorham-handbook-1909": {
+   "kind": "book",
+   "author": "Gorham Company",
+   "title": "Gorham Hand Book of Sterling Silver Spoons and Forks",
+   "year": 1909,
+   "url": "https://archive.org/details/gorhamhandbookst00gorh",
+   "public_domain": true
+  },
+  "appleby-1998": {
+   "kind": "thesis",
+   "author": "Mary Elizabeth Appleby",
+   "title": "The Gorham Company's Martelé Line of Silver, MA thesis, University of Delaware",
+   "year": 1998,
+   "url": "https://udspace.udel.edu/server/api/core/bitstreams/d7499c2b-6471-458d-b6cd-a2175286a89e/content"
+  },
+  "met-gorham-records": {
+   "kind": "museum",
+   "author": "The Metropolitan Museum of Art",
+   "title": "Gorham vase 1880 (2008.68), coffeepot 1881 (2014.200.1.1), pitcher 1882 (2013.26)",
+   "url": "https://www.metmuseum.org/art/collection/search/639665"
+  },
+  "cleveland-gorham-records": {
+   "kind": "museum",
+   "author": "The Cleveland Museum of Art",
+   "title": "Martelé coffee service 2008.164; salt and pepper 2009.368",
+   "url": "https://www.clevelandart.org/art/2008.164"
+  },
+  "aic-gorham-records": {
+   "kind": "museum",
+   "author": "Art Institute of Chicago",
+   "title": "Gorham records 121364 (1870), 105799 (1886), 272493 (1897), 57575 and 45480 (Martelé), 260484-260485 (electroplate)",
+   "url": "https://www.artic.edu/artworks/272493"
+  },
+  "risd-gorham-records": {
+   "kind": "museum",
+   "author": "RISD Museum",
+   "title": "Gorham records: mug 1992.087 (1874), cruet stand and toast rack (1875), chatelaine (1897), pin cushion collar (1906), nail buffer (1910), Martelé creamer",
+   "url": "https://risdmuseum.org/art-design/collection/mug-1992087"
+  },
+  "cooper-hewitt-gorham-records": {
+   "kind": "museum",
+   "author": "Cooper Hewitt, Smithsonian Design Museum",
+   "title": "Gorham records: pepper mill 1874; matchsafes 1884-1894; carving set 1900; Martelé bowl; electroplate matchsafe",
+   "url": "https://collection.cooperhewitt.org/"
+  },
+  "mia-gorham-records": {
+   "kind": "museum",
+   "author": "Minneapolis Institute of Art",
+   "title": "Gorham records 24492 (1883), 12989 (1884), 31394 (K), 104827 (1960), Martelé 1912, 90286 (E.P.)",
+   "url": "https://collections.artsmia.org/art/12989"
+  },
+  "mcny-elegant-plate-2000": {
+   "kind": "book",
+   "author": "Museum of the City of New York",
+   "title": "Elegant Plate: Three Centuries of Precious Metals in New York City (read in excerpt)",
+   "year": 2000,
+   "url": "https://archive.org/details/elegantplatethre0002wate"
+  },
+  "dof-1947-nom-plata": {
+   "kind": "official",
+   "author": "Diario Oficial de la Federación",
+   "title": "Norma Oficial de Calidad para objetos de plata labrada, D.G.N. B-23-1947, 16 Aug 1947",
+   "year": 1947,
+   "url": "https://www.dof.gob.mx/index_111.php?year=1947&month=08&day=16"
+  },
+  "dof-1952-decreto-marcas": {
+   "kind": "official",
+   "author": "Diario Oficial de la Federación",
+   "title": "Decreto: marks compulsory on silver, plated and alpaca articles, 29 Nov 1952",
+   "year": 1952,
+   "url": "https://www.dof.gob.mx/index_111.php?year=1952&month=11&day=29"
+  },
+  "dof-1979-1980-acuerdos": {
+   "kind": "official",
+   "author": "Diario Oficial de la Federación",
+   "title": "Acuerdo 7 May 1979, Instructivo 17 Jul 1979, Acuerdo 17 Dec 1980 on marking and producer registration",
+   "year": 1980,
+   "url": "https://www.dof.gob.mx/index_111.php?year=1980&month=12&day=17"
+  },
+  "nom-033-1-se-2020": {
+   "kind": "official",
+   "author": "Secretaría de Economía",
+   "title": "NOM-033/1-SE-2020, Artículos de oro, plata, platino y paladio",
+   "year": 2021,
+   "url": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5638887"
+  },
+  "ceballos-1996": {
+   "kind": "thesis",
+   "author": "Carlos A. Ceballos de la Mora",
+   "title": "Irregularidad jurídica en la comercialización de metales nobles, Universidad La Salle",
+   "year": 1996,
+   "url": "https://ru.dgb.unam.mx/bitstream/20.500.14330/TES01000236559/3/0236559.pdf"
+  },
+  "mfa-boston-mexican-silver": {
+   "kind": "museum",
+   "author": "Museum of Fine Arts, Boston",
+   "title": "Mexican silver records: Margot de Taxco 2014.1785, 2018.4081, 668732; Spratling 2000.793.1, 2016.182, 2016.545; Aguilar candelabra 633166; Los Castillo tray 649424",
+   "url": "https://collections.mfa.org/objects/605869"
+  },
+  "aic-mexican-silver": {
+   "kind": "museum",
+   "author": "Art Institute of Chicago",
+   "title": "Spratling 274261, 274262; Héctor Aguilar 274263-274265",
+   "url": "https://www.artic.edu/artworks/274263"
+  },
+  "lacma-mexican-silver": {
+   "kind": "museum",
+   "author": "Los Angeles County Museum of Art",
+   "title": "Spratling, Los Castillo, Margot de Taxco and Aguilar records (214657 etc.)",
+   "url": "https://collections.lacma.org/node/214657"
+  },
+  "newark-pineda-2017-67-25": {
+   "kind": "museum",
+   "author": "Newark Museum of Art",
+   "title": "Antonio Pineda bracelet, 2017.67.25",
+   "url": "https://collections.newarkmuseumart.org/objects/222307/bracelet"
+  },
+  "rae-alpaca": {
+   "kind": "reference",
+   "author": "Real Academia Española",
+   "title": "Diccionario de la lengua española, \"alpaca\"",
+   "url": "https://dle.rae.es/alpaca"
+  },
+  "britannica-nickel-silver": {
+   "kind": "reference",
+   "author": "Encyclopaedia Britannica",
+   "title": "Nickel silver",
+   "url": "https://www.britannica.com/technology/nickel-silver"
+  },
+  "rosenberg-1890": {
+   "kind": "book",
+   "author": "Marc Rosenberg",
+   "title": "Der Goldschmiede Merkzeichen, 1st ed.",
+   "year": 1890,
+   "url": "https://archive.org/details/dergoldschmiedem00rose",
+   "public_domain": true
+  },
+  "jewelers-circular-1896": {
+   "kind": "book",
+   "author": "The Jewelers' Circular Publishing Co.",
+   "title": "Trade-Marks of the Jewelry and Kindred Trades",
+   "year": 1896,
+   "url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades",
+   "public_domain": true
+  },
+  "rosenberg-1928-v4": {
+   "kind": "book",
+   "author": "Marc Rosenberg",
+   "title": "Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (Ausland und Byzanz)",
+   "year": 1928,
+   "url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=497",
+   "public_domain": true,
+   "note": "HathiTrust mdp.39015016809025 (University of Michigan copy, Google-digitized); Russland pp. 464-468, marks 8104-8162"
+  },
+  "postnikova-loseva-1983": {
+   "kind": "book",
+   "author": "M. M. Postnikova-Loseva, N. G. Platonova, B. L. Ulyanova",
+   "title": "Zolotoe i serebryanoe delo XV–XX vv. (Territoriya SSSR) [Gold and silver work, 15th–20th centuries, territory of the USSR]",
+   "year": 1983,
+   "publisher": "Nauka, Moscow",
+   "note": "In copyright: facts and page citations only; no image may be cropped, traced or published."
+  }
+ },
+ "entries": [
+  {
+   "id": "russia-84-zolotnik",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "84 (Russian silver)",
+   "looks_like": "The figures 84 in a small rectangle, often with the town or kokoshnik mark.",
+   "means": "84 zolotniks of silver in 96: 875 thousandths. The commonest Russian standard, legal from 1847 to 1927.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": 1927,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "brockhaus-efron-1898-proba"
+    },
+    {
+     "id": "granat-1916-proba"
+    },
+    {
+     "id": "vam-russian-silver-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/russia-84-zolotnik.webp",
+    "marks_in_image": 1,
+    "object": "Candlestick, Moscow, about 1780",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "2004.80",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Candlestick_MET_SF2004_80_marks.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Candlestick_MET_SF2004_80_marks.jpg",
+    "crop": [
+     178,
+     224,
+     268,
+     194
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-88-zolotnik",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "88 (Russian silver)",
+   "looks_like": "The figures 88 in a small rectangle, often beside the state mark.",
+   "means": "88 zolotniks in 96: 916 thousandths (917 rounded). Common on Fabergé silver.",
+   "applied": "stamped",
+   "date_from": 1847,
+   "date_to": 1927,
+   "date_note": "The worn figure beside the 88 in this photo is not legible enough to identify.",
+   "sources": [
+    {
+     "id": "brockhaus-efron-1898-proba"
+    },
+    {
+     "id": "granat-1916-proba"
+    },
+    {
+     "id": "hillwood-russian-silver-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/russia-88-zolotnik.webp",
+    "marks_in_image": 1,
+    "object": "Fabergé silver fork",
+    "holder": "Wikimedia Commons (Charles J. Sharp)",
+    "accession": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Karl_Faberg%C3%A9_silver_hallmark_1.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "credit": "Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Karl_Fabergé_silver_hallmark_1.jpg",
+    "crop": [
+     449,
+     1180,
+     406,
+     184
+    ],
+    "rotate_degrees": -16
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-91-zolotnik",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "91 (Russian silver)",
+   "looks_like": "The figures 91 in a small rectangle.",
+   "means": "91 zolotniks in 96: 947 thousandths (by arithmetic), the highest of the three legal silver standards.",
+   "applied": "stamped",
+   "date_from": 1847,
+   "date_to": 1927,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "brockhaus-efron-1898-proba"
+    },
+    {
+     "id": "granat-1916-proba"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of Russia, searches in English, German and Russian for kokoshnik/кокошник/proba",
+     "Walters Art Museum 'Mark A/B' files on Commons (all pre-1896)",
+     "Met Open Access mirrors on Commons",
+     "Hillwood and V&A records (photos not open licensed or marks not shown)",
+     "Public-domain books pass 2026-11-22: Rosenberg's foreign volume (3rd ed. vol. 4, 1928) is not on archive.org; HathiTrust is behind a bot check; the 1890 edition predates the 1896 kokoshnik.",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)",
+     "Postnikova-Loseva 1983 checked 2026-11-24 (standards table p. 148 and assay sections pp. 258–264): no separate example of a 91 punch found."
+    ]
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-assay-master-year-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "date code",
+   "name": "Assay master's mark with the year (Russia, before 1896)",
+   "looks_like": "A shaped punch with the year in figures above the assay master's (or alderman's) initials.",
+   "means": "The assay master and the year of assay. The year was compulsory on these marks from the 1770s to 1896.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": 1896,
+   "date_note": "This example reads 1737.",
+   "sources": [
+    {
+     "id": "maskell-1884"
+    },
+    {
+     "id": "dubrovin-2018"
+    },
+    {
+     "id": "ru-federal-assay-chamber-history"
+    },
+    {
+     "id": "met-russian-silver-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/russia-assay-master-year-mark.webp",
+    "marks_in_image": 1,
+    "object": "Standing cup with cover by Basil Nikiforoff, Moscow, 1737",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "25.15.32a, b",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Standing_cup_with_cover_MET_SF25_15_32b_marks.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Standing_cup_with_cover_MET_SF25_15_32b_marks.jpg",
+    "crop": [
+     389,
+     295,
+     546,
+     540
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-moscow-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Moscow town mark (before 1896)",
+   "looks_like": "Saint George on horseback slaying the dragon, in a shaped punch; on 18th-century Moscow silver often with the word МОСКВА.",
+   "means": "Assayed in Moscow.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": 1896,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "maskell-1884"
+    },
+    {
+     "id": "faberge-research-site"
+    },
+    {
+     "id": "met-russian-silver-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/russia-moscow-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Standing cup with cover by Basil Nikiforoff, Moscow, 1737",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "25.15.32a, b",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Standing_cup_with_cover_MET_SF25_15_32b_marks.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Standing_cup_with_cover_MET_SF25_15_32b_marks.jpg",
+    "crop": [
+     925,
+     264,
+     633,
+     675
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-st-petersburg-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "St Petersburg town mark (before 1896)",
+   "looks_like": "Crossed anchors with a scepter.",
+   "means": "Assayed in St Petersburg.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": 1899,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "maskell-1884"
+    },
+    {
+     "id": "faberge-research-site"
+    },
+    {
+     "id": "vam-russian-silver-records"
+    },
+    {
+     "id": "rosenberg-1890"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-st-petersburg-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1890, no. 2405: St Petersburg town mark, 1829 to 1880 (shown in several sizes)",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/dergoldschmiedem00rose/page/n491",
+    "original": "hallmark-sources/world-books/rosenberg1890_n491.jpg",
+    "crop": [
+     476,
+     3520,
+     208,
+     186
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from M. Rosenberg, Der Goldschmiede Merkzeichen (1890), p. 478, no. 2405, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-kokoshnik-left",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "Kokoshnik, facing left (Russia)",
+   "looks_like": "A woman's head in profile, facing left, in a kokoshnik headdress, with the standard number and the district assay chief's Cyrillic initials.",
+   "means": "The Russian state mark after the assay charter of 11 March 1896, until 1908.",
+   "applied": "stamped",
+   "date_from": 1899,
+   "date_to": 1908,
+   "date_note": "Postnikova-Loseva: a woman's head in a kokoshnik facing left, in a round or oval shield or none, with the initials of the district's manager or assay inspector, 1899–1908. The assay charter itself dates from 1896, so some sources date the mark from 1896.",
+   "sources": [
+    {
+     "id": "ru-federal-assay-chamber-history"
+    },
+    {
+     "id": "faberge-research-site"
+    },
+    {
+     "id": "brockhaus-efron-1898-proba"
+    },
+    {
+     "id": "vam-russian-silver-records"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 258, nos. 3867–3884: district assay marks 1899–1908"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "From 1896",
+     "by": [
+      "brockhaus-efron-1898-proba",
+      "vam-russian-silver-records",
+      "dubrovin-2018"
+     ]
+    },
+    {
+     "claim": "From 1899",
+     "by": [
+      "faberge-research-site",
+      "walters-faberge-records",
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/russia-kokoshnik-left.webp",
+    "marks_in_image": 1,
+    "object": "Fabergé cutlery set (fork), with knife blades marked Made for Fabergé, Sheffield; the record reads the silver mark as 84 with a head facing left",
+    "holder": "Klingenmuseum Solingen",
+    "accession": "1992.NRW.179 a-g",
+    "source_url": "https://klingenmuseum.de/exhibits/908",
+    "licence": "CC-BY-4.0",
+    "credit": "Klingenmuseum Solingen, 1992.NRW.179, CC BY 4.0, via Europeana; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world-open/klingenmuseum-1992-NRW-179-2.jpg",
+    "crop": [
+     1556,
+     1235,
+     435,
+     224
+    ],
+    "rotate_degrees": 0,
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of Russia, searches in English, German and Russian for kokoshnik/кокошник/proba",
+     "Walters Art Museum 'Mark A/B' files on Commons (all pre-1896)",
+     "Met Open Access mirrors on Commons",
+     "Hillwood and V&A records (photos not open licensed or marks not shown)",
+     "Public-domain books pass 2026-11-22: Rosenberg's foreign volume (3rd ed. vol. 4, 1928) is not on archive.org; HathiTrust is behind a bot check; the 1890 edition predates the 1896 kokoshnik."
+    ]
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-kokoshnik-right",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "Kokoshnik, facing right (Russia)",
+   "looks_like": "A woman's head facing right in a kokoshnik, with the standard number and a Greek letter for the assay district.",
+   "means": "The Russian state mark from 1908. One Hillwood record notes a left-facing head after 1908, so direction is a guide, not a rule.",
+   "applied": "stamped",
+   "date_from": 1908,
+   "date_to": 1926,
+   "date_note": "Postnikova-Loseva: district marks 1908–1926, a woman's head in a kokoshnik facing right; on an oval shield with a Greek letter for the district and the standard, on a round shield with one or two dots or a dash placed differently for each district.",
+   "sources": [
+    {
+     "id": "ru-federal-assay-chamber-history"
+    },
+    {
+     "id": "faberge-research-site"
+    },
+    {
+     "id": "hillwood-russian-silver-records"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 259, nos. 3885–3908"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "Used to 1917",
+     "by": [
+      "hillwood-russian-silver-records",
+      "faberge-research-site"
+     ]
+    },
+    {
+     "claim": "Used to 1926-1927",
+     "by": [
+      "ru-federal-assay-chamber-history",
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of Russia, searches in English, German and Russian for kokoshnik/кокошник/proba",
+     "Walters Art Museum 'Mark A/B' files on Commons (all pre-1896)",
+     "Met Open Access mirrors on Commons",
+     "Hillwood and V&A records (photos not open licensed or marks not shown)",
+     "Public-domain books pass 2026-11-22: Rosenberg's foreign volume (3rd ed. vol. 4, 1928) is not on archive.org; HathiTrust is behind a bot check; the 1890 edition predates the 1896 kokoshnik.",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)"
+    ],
+    "photo_only": "A pictorial state mark that forgers copy: shown only as a photograph, never drawn."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-district-letter-delta",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Delta (Δ): Moscow assay district, from 1908",
+   "looks_like": "The Greek letter delta beside the right-facing kokoshnik.",
+   "means": "Assayed in the Moscow district.",
+   "applied": "stamped",
+   "date_from": 1908,
+   "date_to": 1926,
+   "date_note": "Postnikova-Loseva lists the district letters 1908–1926: α St Petersburg, Δ Moscow, ν Kiev, ο Transcaucasia, π Vilna, ς Riga, τ Kostroma, χ Don, and further letters for Odessa and Kazan.",
+   "sources": [
+    {
+     "id": "ru-federal-assay-chamber-history"
+    },
+    {
+     "id": "hillwood-russian-silver-records"
+    },
+    {
+     "id": "faberge-research-site"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 260: Greek letters for assay districts, 1908–1926"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of Russia, searches in English, German and Russian for kokoshnik/кокошник/proba",
+     "Walters Art Museum 'Mark A/B' files on Commons (all pre-1896)",
+     "Met Open Access mirrors on Commons",
+     "Hillwood and V&A records (photos not open licensed or marks not shown)",
+     "Public-domain books pass 2026-11-22: Rosenberg's foreign volume (3rd ed. vol. 4, 1928) is not on archive.org; HathiTrust is behind a bot check; the 1890 edition predates the 1896 kokoshnik.",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)"
+    ],
+    "photo_only": "A state mark that forgers copy: shown only as a photograph, never drawn."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "soviet-worker-hammer",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "Worker's head with a hammer (Soviet)",
+   "looks_like": "A worker's head with a hammer, with a metric fineness.",
+   "means": "Soviet state mark from 1927, when fineness moved to thousandths, until 1958.",
+   "applied": "stamped",
+   "date_from": 1927,
+   "date_to": 1958,
+   "date_note": "Postnikova-Loseva: a worker's head with a hammer, with a Greek-letter cipher for the assay office and a standard or dots and dashes; used 1927–1946, with new ciphers from 1 June 1946 to 1954 and new shields from 7 January 1954 to 1958.",
+   "sources": [
+    {
+     "id": "ru-federal-assay-chamber-history"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "pp. 260–263: marks 1927–1946, ciphers 1946–1954, marks 1954–1958"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of Russia, searches in English, German and Russian for kokoshnik/кокошник/proba",
+     "Walters Art Museum 'Mark A/B' files on Commons (all pre-1896)",
+     "Met Open Access mirrors on Commons",
+     "Hillwood and V&A records (photos not open licensed or marks not shown)",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)"
+    ],
+    "photo_only": "A pictorial state mark that forgers copy: shown only as a photograph, never drawn."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "soviet-star-silver",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "Star with hammer and sickle (Soviet silver)",
+   "looks_like": "A five-pointed star containing a hammer and sickle, with the metric fineness (875, 916, 925) and an assay-office letter.",
+   "means": "Soviet state mark on silver from 1958 to 1994. The gold version is entry soviet-gold-star-583.",
+   "applied": "stamped",
+   "date_from": 1958,
+   "date_to": 1994,
+   "date_note": "Postnikova-Loseva: a hammer and sickle on a five-pointed star, approved 7 May 1958, with a Cyrillic letter for the inspection office (М Moscow, Л Leningrad and others) and the standard; silver standards 750, 800, 875, 916, 960. The 1994 end date is from Russia's Federal Assay Chamber only.",
+   "sources": [
+    {
+     "id": "ru-federal-assay-chamber-history"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "pp. 263–264: marks approved from 7 May 1958"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of Russia, searches in English, German and Russian for kokoshnik/кокошник/proba",
+     "Walters Art Museum 'Mark A/B' files on Commons (all pre-1896)",
+     "Met Open Access mirrors on Commons",
+     "Hillwood and V&A records (photos not open licensed or marks not shown)",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)"
+    ],
+    "photo_only": "A pictorial state mark that forgers copy: shown only as a photograph, never drawn."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ],
+   "single_source": "The 1994 end date is from Russia's Federal Assay Chamber only; Postnikova-Loseva (1983) confirms the mark and its start."
+  },
+  {
+   "id": "faberge-cyrillic-name-mark",
+   "group": "world-silver",
+   "maker": "Fabergé",
+   "country": "RU",
+   "kind": "maker's mark",
+   "name": "К. ФАБЕРЖЕ (Fabergé)",
+   "looks_like": "The name K. FABERZHE in Cyrillic capitals in a long rectangle, sometimes under the Imperial eagle.",
+   "means": "Made by the Fabergé firm. The eagle above it marks the Imperial warrant.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "hillwood-russian-silver-records"
+    },
+    {
+     "id": "walters-faberge-records"
+    },
+    {
+     "id": "faberge-research-site"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/faberge-cyrillic-name-mark.webp",
+    "marks_in_image": 1,
+    "object": "Fabergé silver fork",
+    "holder": "Wikimedia Commons (Charles J. Sharp)",
+    "accession": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Karl_Faberg%C3%A9_silver_hallmark_1.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "credit": "Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Karl_Fabergé_silver_hallmark_1.jpg",
+    "crop": [
+     2093,
+     933,
+     982,
+     297
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "france-minerva-first-standard",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Minerva head with 1 (French silver, first standard)",
+   "looks_like": "A helmeted head of Minerva in profile, in an eight-sided frame (a rectangle with cut corners), the figure 1 in front of the forehead. Provincial punches add an office sign under the chin; Paris punches have none.",
+   "means": "French solid silver of the first standard, from 10 May 1838: 950 at first, 925 today.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": null,
+   "date_note": "The year the first standard moved from 950 to 925 (often given as 1973) is not confirmed; 925 is in the 1994 law.",
+   "sources": [
+    {
+     "id": "chaffers-1896"
+    },
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "touzet-1910"
+    },
+    {
+     "id": "douane-garantie-2009"
+    },
+    {
+     "id": "senat-1994-cgi-522"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "Office sign under the chin on the first standard",
+     "by": [
+      "chaffers-1896",
+      "capdevielle-1928"
+     ]
+    },
+    {
+     "claim": "The reverse placement",
+     "by": "French Wikipedia (not a source; noted only)"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/france-minerva-first-standard.webp",
+    "marks_in_image": 1,
+    "object": "Silver ring",
+    "holder": "Wikimedia Commons (Copyleft)",
+    "accession": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Poicon_Minerve_1er_titre_-_argent_massif_minimum_950_sur_1000.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "credit": "Copyleft, CC BY-SA 4.0, via Wikimedia Commons; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/minerva-first-standard.jpg",
+    "crop": [
+     2240,
+     1219,
+     461,
+     602
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-minerva-second-standard",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Minerva head with 2 (French silver, second standard)",
+   "looks_like": "Minerva's head in a barrel-shaped frame, the figure 2 under the chin.",
+   "means": "French solid silver of the second standard, 800, from 1838.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "chaffers-1896"
+    },
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "touzet-1910"
+    },
+    {
+     "id": "douane-garantie-2009"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/france-minerva-second-standard.webp",
+    "marks_in_image": 1,
+    "object": "Chaffers 1896, plate 10: head of Minerva, silver standard no. 2 (0.800), 1838",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/hallmarksongolds00chaf_1/page/n322",
+    "original": "hallmark-sources/world-books/chaffers1896_n322.jpg",
+    "crop": [
+     262,
+     2921,
+     415,
+     425
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from W. Chaffers, Hall Marks on Gold and Silver Plate (1896), plate 10 (p. 273), public domain."
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-boar-head",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Boar's head (Paris, small silver)",
+   "looks_like": "A wild boar's head, alone, on small items.",
+   "means": "Small silver items assayed in Paris, at least 800. From 1838.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": null,
+   "date_note": "End date not confirmed (the often-quoted 1961 is unsourced).",
+   "sources": [
+    {
+     "id": "chaffers-1896"
+    },
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "paris-musees-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/france-boar-head.webp",
+    "marks_in_image": 1,
+    "object": "Chaffers 1896, plate 10: head of a wild boar, silver assay mark, Paris, 1838",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/hallmarksongolds00chaf_1/page/n322",
+    "original": "hallmark-sources/world-books/chaffers1896_n322.jpg",
+    "crop": [
+     939,
+     1502,
+     349,
+     204
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from W. Chaffers, Hall Marks on Gold and Silver Plate (1896), plate 10 (p. 273), public domain."
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-crab",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Crab (French provinces, small silver)",
+   "looks_like": "A crab with the assay office's sign between its claws.",
+   "means": "Small silver items assayed outside Paris, at least 800. From 1838.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": null,
+   "date_note": "Still named in a 1983 Senate report; end date not confirmed.",
+   "sources": [
+    {
+     "id": "chaffers-1896"
+    },
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "senat-1983-rapport-348"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/france-crab.webp",
+    "marks_in_image": 1,
+    "object": "Chaffers 1896, plate 10: a crab, silver assay mark, departments, 1838",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/hallmarksongolds00chaf_1/page/n322",
+    "original": "hallmark-sources/world-books/chaffers1896_n322.jpg",
+    "crop": [
+     966,
+     1900,
+     308,
+     258
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from W. Chaffers, Hall Marks on Gold and Silver Plate (1896), plate 10 (p. 273), public domain."
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-swan",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "import mark",
+   "name": "Swan in an oval (French silver)",
+   "looks_like": "A swan in an oval.",
+   "means": "Silver from non-treaty countries, imported silver watch cases, and unmarked silver of legal standard sold at public auction or by the pawn office. From the decree of 29 June 1893.",
+   "applied": "stamped",
+   "date_from": 1893,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "douane-garantie-2009"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of France and poinçon/Minerve searches",
+     "Paris Musées CC0 detail photos: Coffret OGAL103, Miroir PPO1081, Pendentif PPO1082, Boucle 1990.148.94, Saucière ODUT1454 (marks named in the records but not legible in the photos)",
+     "Met Open Access API (rate-limited)",
+     "Rijksmuseum API",
+     "Cooper Hewitt (rate-limited, not completed)",
+     "Commons 'Poicon du cygne - argent massif maximum 800 sur 1000.jpg' (CC BY-SA 4.0): taken through a loupe, too blurred to use"
+    ]
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-weevil",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "import mark",
+   "name": "Weevil (charançon), French imports",
+   "looks_like": "A weevil; in an oval from 1864, the silver one in a rectangle from 1893.",
+   "means": "Imported gold and silver, from 1838.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "chaffers-1896"
+    },
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/france-weevil.webp",
+    "marks_in_image": 1,
+    "object": "Chaffers 1896, plate 10: the large weevil, guarantee of standard for foreign gold and silver, 1838 (before the 1864 oval)",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/hallmarksongolds00chaf_1/page/n322",
+    "original": "hallmark-sources/world-books/chaffers1896_n322.jpg",
+    "crop": [
+     796,
+     3010,
+     632,
+     330
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from W. Chaffers, Hall Marks on Gold and Silver Plate (1896), plate 10 (p. 273), public domain."
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-et-mark",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "ET in a rectangle (France)",
+   "looks_like": "The letters ET in a rectangle.",
+   "means": "Old or inherited items below the legal standard: says only that the item is gold or silver.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "douane-garantie-2009"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of France and poinçon/Minerve searches",
+     "Paris Musées CC0 detail photos: Coffret OGAL103, Miroir PPO1081, Pendentif PPO1082, Boucle 1990.148.94, Saucière ODUT1454 (marks named in the records but not legible in the photos)",
+     "Met Open Access API (rate-limited)",
+     "Rijksmuseum API",
+     "Cooper Hewitt (rate-limited, not completed)"
+    ]
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-mixed-boar-eagle",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Boar's head and eagle's head in one oval (France)",
+   "looks_like": "A boar's head and an eagle's head side by side in one oval.",
+   "means": "An item of gold and silver where the second metal is more than 3% of the weight.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "douane-garantie-2009"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of France and poinçon/Minerve searches",
+     "Paris Musées CC0 detail photos: Coffret OGAL103, Miroir PPO1081, Pendentif PPO1082, Boucle 1990.148.94, Saucière ODUT1454 (marks named in the records but not legible in the photos)",
+     "Met Open Access API (rate-limited)",
+     "Rijksmuseum API",
+     "Cooper Hewitt (rate-limited, not completed)"
+    ]
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-makers-lozenge",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "maker's mark",
+   "name": "Maker's lozenge (France)",
+   "looks_like": "A lozenge (a diamond standing on its point) holding the maker's initials and a sign of the maker's choosing.",
+   "means": "The maker of French gold or silver, since an order of January 1798. An importer uses an oval instead.",
+   "applied": "stamped",
+   "date_from": 1798,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "chaffers-1899-french"
+    },
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "senat-1983-rapport-348"
+    },
+    {
+     "id": "douane-regles-de-marque"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/france-makers-lozenge.webp",
+    "marks_in_image": 1,
+    "object": "Message case (étui à messages), 18th century, with 19th-century marks: lozenge E S with a caduceus",
+    "holder": "Paris Musées, Musée Cognacq-Jay",
+    "accession": "J581",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Etui_%C3%A0_messages,_J581(3).jpg",
+    "licence": "CC0",
+    "credit": "Paris Musées / Musée Cognacq-Jay, CC0; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/makers-lozenge-ES-caduceus-J581.jpg",
+    "crop": [
+     1430,
+     573,
+     194,
+     147
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-plate-square-mark",
+   "group": "world-silver",
+   "country": "FR",
+   "kind": "maker's mark",
+   "name": "Square maker's mark (French plate)",
+   "looks_like": "A perfectly square maker's punch with initials and a sign.",
+   "means": "Plated goods (plaqué, doublé), and from a decree of May 1860 electroplate. Not solid silver.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "Today's rule for a square responsibility mark is unverified.",
+   "sources": [
+    {
+     "id": "chaffers-1899-french"
+    },
+    {
+     "id": "touzet-1910"
+    },
+    {
+     "id": "jury-1851-metaux-precieux"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of France and poinçon/Minerve searches",
+     "Paris Musées CC0 detail photos: Coffret OGAL103, Miroir PPO1081, Pendentif PPO1082, Boucle 1990.148.94, Saucière ODUT1454 (marks named in the records but not legible in the photos)",
+     "Met Open Access API (rate-limited)",
+     "Rijksmuseum API",
+     "Cooper Hewitt (rate-limited, not completed)"
+    ]
+   },
+   "pages": [
+    "/marks/french-silver-marks",
+    "/marks/christofle-marks"
+   ]
+  },
+  {
+   "id": "christofle-name-stamp",
+   "group": "world-silver",
+   "maker": "Christofle",
+   "country": "FR",
+   "kind": "maker's mark",
+   "name": "CHRISTOFLE name stamp",
+   "looks_like": "The name CHRISTOFLE struck in capitals (on silver, sometimes CHRISTOFLE ORFÈVRES; on plate, CHRISTOFLE in a rectangle, script, or CHRISTOFLE FRANCE).",
+   "means": "Made and sold by Christofle.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "paris-musees-records"
+    },
+    {
+     "id": "christofle-authentification-2023"
+    },
+    {
+     "id": "bouilhet-1908"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/christofle-name-stamp.webp",
+    "marks_in_image": 1,
+    "object": "La Moissonneuse, silver statuette by Christofle after Mathurin Moreau",
+    "holder": "Paris Musées, Petit Palais",
+    "accession": "ODUT1827",
+    "source_url": "https://commons.wikimedia.org/wiki/File:La_Moissonneuse,_ODUT1827(6).jpg",
+    "licence": "CC0",
+    "credit": "Paris Musées / Petit Palais, musée des Beaux-arts de la Ville de Paris, CC0; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/christofle-orfevres-stamp-ODUT1827.jpg",
+    "crop": [
+     2355,
+     3590,
+     2005,
+     252
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/christofle-marks"
+   ]
+  },
+  {
+   "id": "christofle-cc-bee-maker-mark",
+   "group": "world-silver",
+   "maker": "Christofle",
+   "country": "FR",
+   "kind": "maker's mark",
+   "name": "CC with a bee (Christofle maker's mark)",
+   "looks_like": "Christofle's maker's mark with the letters CC and a bee; Christofle says it also shows a balance, stars and laurels.",
+   "means": "Charles Christofle's mark. On solid silver it is a lozenge beside the Minerva head; on plate a square.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": 1935,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "paris-musees-records"
+    },
+    {
+     "id": "christofle-authentification-2023"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: all Christofle files (~150), categories Christofle & Cie, Christofle logos, Signatures of Christofle",
+     "Paris Musées CC0 sets La Moissonneuse ODUT1827 and Testimonial OGAL583 (no close-up of the maker's mark)",
+     "Met Open Access API (no mark images for its Christofle objects)",
+     "Rijksmuseum API (no Christofle silver)",
+     "Musée d'Orsay (site returned 403)",
+     "Cooper Hewitt (rate-limited)"
+    ],
+    "blocked": [
+     {
+      "what": "Drawings of the CC/OC balance mark, the OC knight quality mark, the Gallia cockerel and name stamps",
+      "holder": "Christofle",
+      "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
+      "licence": "company copyright and trademark (drawings, not photos)",
+      "ask": "Christofle press or heritage office",
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+     }
+    ],
+    "photo_only": "A pictorial trademark (balance, bee, stars, laurels): a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/christofle-marks"
+   ],
+   "single_source": "CC with a bee is confirmed by Paris Musées; the balance, stars and laurels and the 1935 end date come from Christofle only"
+  },
+  {
+   "id": "christofle-oc-maker-mark",
+   "group": "world-silver",
+   "maker": "Christofle",
+   "country": "FR",
+   "kind": "maker's mark",
+   "name": "OC (Christofle maker's mark from 1935)",
+   "looks_like": "The balance mark with the letters OC.",
+   "means": "Orfèvrerie Christofle, from 1935, according to the company.",
+   "applied": "stamped",
+   "date_from": 1935,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "christofle-authentification-2023"
+    },
+    {
+     "id": "christofle-history"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: all Christofle files (~150), categories Christofle & Cie, Christofle logos, Signatures of Christofle",
+     "Paris Musées CC0 sets La Moissonneuse ODUT1827 and Testimonial OGAL583 (no close-up of the maker's mark)",
+     "Met Open Access API (no mark images for its Christofle objects)",
+     "Rijksmuseum API (no Christofle silver)",
+     "Musée d'Orsay (site returned 403)",
+     "Cooper Hewitt (rate-limited)"
+    ],
+    "blocked": [
+     {
+      "what": "Drawings of the CC/OC balance mark, the OC knight quality mark, the Gallia cockerel and name stamps",
+      "holder": "Christofle",
+      "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
+      "licence": "company copyright and trademark (drawings, not photos)",
+      "ask": "Christofle press or heritage office",
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+     }
+    ],
+    "photo_only": "A pictorial trademark (the balance with OC): a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/christofle-marks"
+   ],
+   "single_source": "Company only: Christofle's guide and history; no independent source found"
+  },
+  {
+   "id": "christofle-knight-quality-mark",
+   "group": "world-silver",
+   "maker": "Christofle",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Chess knight with OC (Christofle quality mark)",
+   "looks_like": "A chess knight with OC; from 1983 with a Roman numeral I or II.",
+   "means": "The thickness of Christofle's silver or gold plate, from 1935; I or II for first or second quality from 1983.",
+   "applied": "stamped",
+   "date_from": 1935,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "christofle-authentification-2023"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: all Christofle files (~150), categories Christofle & Cie, Christofle logos, Signatures of Christofle",
+     "Paris Musées CC0 sets La Moissonneuse ODUT1827 and Testimonial OGAL583 (no close-up of the maker's mark)",
+     "Met Open Access API (no mark images for its Christofle objects)",
+     "Rijksmuseum API (no Christofle silver)",
+     "Musée d'Orsay (site returned 403)",
+     "Cooper Hewitt (rate-limited)"
+    ],
+    "blocked": [
+     {
+      "what": "Drawings of the CC/OC balance mark, the OC knight quality mark, the Gallia cockerel and name stamps",
+      "holder": "Christofle",
+      "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
+      "licence": "company copyright and trademark (drawings, not photos)",
+      "ask": "Christofle press or heritage office",
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+     }
+    ],
+    "photo_only": "A pictorial trademark (chess knight with OC): a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/christofle-marks"
+   ],
+   "single_source": "Company only: Christofle's authentication guide"
+  },
+  {
+   "id": "gallia-cockerel",
+   "group": "world-silver",
+   "maker": "Christofle",
+   "country": "FR",
+   "kind": "trademark",
+   "name": "GALLIA with a cockerel",
+   "looks_like": "A cockerel over the word GALLIA, or in a shield with GALLIA, ORFÈVRERIE GALLIA or GALLIA METAL.",
+   "means": "Gallia, a line of plate Christofle says it created at the end of the 19th century.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "christofle-authentification-2023"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: all Christofle files (~150), categories Christofle & Cie, Christofle logos, Signatures of Christofle",
+     "Paris Musées CC0 sets La Moissonneuse ODUT1827 and Testimonial OGAL583 (no close-up of the maker's mark)",
+     "Met Open Access API (no mark images for its Christofle objects)",
+     "Rijksmuseum API (no Christofle silver)",
+     "Musée d'Orsay (site returned 403)",
+     "Cooper Hewitt (rate-limited)",
+     "Commons 'Belier-Poincon-Gallia.jpg' (CC BY-SA 3.0): a ram's-head lozenge captioned Gallia, contradicted by Christofle's own guide; not used"
+    ],
+    "blocked": [
+     {
+      "what": "Drawings of the CC/OC balance mark, the OC knight quality mark, the Gallia cockerel and name stamps",
+      "holder": "Christofle",
+      "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
+      "licence": "company copyright and trademark (drawings, not photos)",
+      "ask": "Christofle press or heritage office",
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+     }
+    ],
+    "photo_only": "A pictorial trademark (the Gallia cockerel): a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/christofle-marks"
+   ],
+   "single_source": "Company only: Christofle's authentication guide"
+  },
+  {
+   "id": "christofle-silver-weight-figures",
+   "group": "world-silver",
+   "maker": "Christofle",
+   "country": "FR",
+   "kind": "other",
+   "name": "Silver weight in figures (early Christofle plate)",
+   "looks_like": "Figures struck with the maker's mark.",
+   "means": "On early Christofle plate, the grams of silver deposited on the item or on a dozen spoons and forks. On later plate a number may mean something else.",
+   "applied": "stamped",
+   "date_from": 1842,
+   "date_to": null,
+   "date_note": "Confirmed for 1849-1851; by 1910 electroplaters generally no longer stated the weight.",
+   "sources": [
+    {
+     "id": "jury-1851-metaux-precieux"
+    },
+    {
+     "id": "bouilhet-1908"
+    },
+    {
+     "id": "touzet-1910"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: all Christofle files (~150), categories Christofle & Cie, Christofle logos, Signatures of Christofle",
+     "Paris Musées CC0 sets La Moissonneuse ODUT1827 and Testimonial OGAL583 (no close-up of the maker's mark)",
+     "Met Open Access API (no mark images for its Christofle objects)",
+     "Rijksmuseum API (no Christofle silver)",
+     "Musée d'Orsay (site returned 403)",
+     "Cooper Hewitt (rate-limited)"
+    ]
+   },
+   "pages": [
+    "/marks/christofle-marks"
+   ]
+  },
+  {
+   "id": "gorham-lion-passant",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "trademark",
+   "name": "Lion (Gorham trademark)",
+   "looks_like": "A walking lion facing left, in a small cut-corner shield; the first of three marks with the anchor and G.",
+   "means": "Part of Gorham's trademark on sterling from 1868. It imitates the English lion passant but is a company mark, not a hallmark.",
+   "applied": "stamped",
+   "date_from": 1868,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "gorham-handbook-1909"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    },
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    },
+    {
+     "id": "mia-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-lion-passant.webp",
+    "marks_in_image": 1,
+    "object": "Coffeepot, Gorham Manufacturing Company, 1881",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "2014.200.1.1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coffeepot_MET_DP331112.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Coffeepot_MET_DP331112.jpg",
+    "crop": [
+     1264,
+     1320,
+     294,
+     294
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-anchor",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "trademark",
+   "name": "Anchor (Gorham trademark)",
+   "looks_like": "An anchor in a pointed shield, between the lion and the G.",
+   "means": "Part of Gorham's trademark. Sources note the lion and anchor recall English marks (the anchor is Birmingham's town mark); a company mark, not a hallmark.",
+   "applied": "stamped",
+   "date_from": 1868,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "gorham-handbook-1909"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    },
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    },
+    {
+     "id": "mia-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-anchor.webp",
+    "marks_in_image": 1,
+    "object": "Coffeepot, Gorham Manufacturing Company, 1881",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "2014.200.1.1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coffeepot_MET_DP331112.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Coffeepot_MET_DP331112.jpg",
+    "crop": [
+     1543,
+     1321,
+     267,
+     373
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-gothic-g",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "trademark",
+   "name": "Gothic G (Gorham trademark)",
+   "looks_like": "A Gothic capital G in a small cut-corner shield, after the lion and anchor.",
+   "means": "Gorham, the last of the three trademark marks.",
+   "applied": "stamped",
+   "date_from": 1868,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "gorham-handbook-1909"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    },
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    },
+    {
+     "id": "mia-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-gothic-g.webp",
+    "marks_in_image": 1,
+    "object": "Coffeepot, Gorham Manufacturing Company, 1881",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "2014.200.1.1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coffeepot_MET_DP331112.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Coffeepot_MET_DP331112.jpg",
+    "crop": [
+     1793,
+     1370,
+     322,
+     329
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-a-1868",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter A (1868)",
+   "looks_like": "A capital A struck on its own line below STERLING and the model number.",
+   "means": "Made in 1868 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1868,
+   "date_to": 1868,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-b-1869",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter B (1869)",
+   "looks_like": "A capital B struck on its own line below STERLING and the model number.",
+   "means": "Made in 1869 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1869,
+   "date_to": 1869,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-c-1870",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter C (1870)",
+   "looks_like": "A capital C struck on its own line below STERLING and the model number.",
+   "means": "Made in 1870 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1870,
+   "date_to": 1870,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "aic-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-d-1871",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter D (1871)",
+   "looks_like": "A capital D struck on its own line below STERLING and the model number.",
+   "means": "Made in 1871 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1871,
+   "date_to": 1871,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-e-1872",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter E (1872)",
+   "looks_like": "A capital E struck on its own line below STERLING and the model number.",
+   "means": "Made in 1872 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1872,
+   "date_to": 1872,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-f-1873",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter F (1873)",
+   "looks_like": "A capital F struck on its own line below STERLING and the model number.",
+   "means": "Made in 1873 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1873,
+   "date_to": 1873,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-g-1874",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter G (1874)",
+   "looks_like": "A capital G struck on its own line below STERLING and the model number.",
+   "means": "Made in 1874 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1874,
+   "date_to": 1874,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-h-1875",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter H (1875)",
+   "looks_like": "A capital H struck on its own line below STERLING and the model number.",
+   "means": "Made in 1875 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1875,
+   "date_to": 1875,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "risd-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-i-1876",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter I (1876)",
+   "looks_like": "A capital I struck on its own line below STERLING and the model number.",
+   "means": "Made in 1876 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1876,
+   "date_to": 1876,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-j-1877",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter J (1877)",
+   "looks_like": "A capital J struck on its own line below STERLING and the model number.",
+   "means": "Made in 1877 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1877,
+   "date_to": 1877,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-k-1878",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter K (1878)",
+   "looks_like": "A capital K struck on its own line below STERLING and the model number.",
+   "means": "Made in 1878 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1878,
+   "date_to": 1878,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "mia-gorham-records"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "K = 1878 (the A-Q sequence)",
+     "by": [
+      "rainwater-1966"
+     ]
+    },
+    {
+     "claim": "A dish marked K dated 1879",
+     "by": [
+      "mia-gorham-records"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-l-1879",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter L (1879)",
+   "looks_like": "A capital L struck on its own line below STERLING and the model number.",
+   "means": "Made in 1879 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1879,
+   "date_to": 1879,
+   "date_note": "Year from the A-Q sequence; no dated museum example found.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-m-1880",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter M (1880)",
+   "looks_like": "A capital M struck on its own line below STERLING and the model number.",
+   "means": "Made in 1880 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1880,
+   "date_to": 1880,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "met-gorham-records"
+    },
+    {
+     "id": "cleveland-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-date-letter-m-1880.webp",
+    "marks_in_image": 1,
+    "object": "Vase, Gorham Manufacturing Company, 1880",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "2008.68",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vase_MET_DP161876.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Vase_MET_DP161876.jpg",
+    "crop": [
+     936,
+     1254,
+     160,
+     142
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-n-1881",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter N (1881)",
+   "looks_like": "A capital N struck on its own line below STERLING and the model number.",
+   "means": "Made in 1881 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1881,
+   "date_to": 1881,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "met-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-date-letter-n-1881.webp",
+    "marks_in_image": 1,
+    "object": "Coffeepot, Gorham Manufacturing Company, 1881",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "2014.200.1.1",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Coffeepot_MET_DP331112.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Coffeepot_MET_DP331112.jpg",
+    "crop": [
+     1459,
+     2585,
+     278,
+     250
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-o-1882",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter O (1882)",
+   "looks_like": "A capital O struck on its own line below STERLING and the model number.",
+   "means": "Made in 1882 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1882,
+   "date_to": 1882,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "met-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-date-letter-o-1882.webp",
+    "marks_in_image": 1,
+    "object": "Pitcher, Gorham Manufacturing Company, 1882",
+    "holder": "The Metropolitan Museum of Art",
+    "accession": "2013.26",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pitcher_MET_DP286976.jpg",
+    "licence": "CC0",
+    "credit": "The Metropolitan Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/Pitcher_MET_DP286976.jpg",
+    "crop": [
+     946,
+     402,
+     138,
+     149
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-p-1883",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter P (1883)",
+   "looks_like": "A capital P struck on its own line below STERLING and the model number.",
+   "means": "Made in 1883 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1883,
+   "date_to": 1883,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "mia-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-letter-q-1884",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date letter",
+   "name": "Gorham date letter Q (1884)",
+   "looks_like": "A capital Q struck on its own line below STERLING and the model number.",
+   "means": "Made in 1884 (Gorham's yearly letters ran A for 1868 to Q for 1884).",
+   "applied": "stamped",
+   "date_from": 1884,
+   "date_to": 1884,
+   "date_note": "Year confirmed by a dated museum example.",
+   "sources": [
+    {
+     "id": "rainwater-1966"
+    },
+    {
+     "id": "cinamon-2005"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    },
+    {
+     "id": "mia-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-symbol-1886-cross-in-square",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1886",
+   "looks_like": "A cross (Maltese type) in a small square with a double border, struck below STERLING and the model number.",
+   "means": "Made in 1886.",
+   "applied": "stamped",
+   "date_from": 1886,
+   "date_to": 1886,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-symbol-1888-star-in-circle",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1888",
+   "looks_like": "A star in a circle, struck below STERLING and the model number.",
+   "means": "Made in 1888.",
+   "applied": "stamped",
+   "date_from": 1888,
+   "date_to": 1888,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "cooper-hewitt-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ],
+   "single_source": "One museum record (Cooper Hewitt) only"
+  },
+  {
+   "id": "gorham-date-symbol-1891-lion-head",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1891",
+   "looks_like": "A lion's head, struck below STERLING and the model number.",
+   "means": "Made in 1891.",
+   "applied": "stamped",
+   "date_from": 1891,
+   "date_to": 1891,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "cooper-hewitt-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ],
+   "single_source": "One museum record (Cooper Hewitt) only"
+  },
+  {
+   "id": "gorham-date-symbol-1894-circle-arrow",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1894",
+   "looks_like": "A circle with an arrow at the upper right, struck below STERLING and the model number.",
+   "means": "Made in 1894.",
+   "applied": "stamped",
+   "date_from": 1894,
+   "date_to": 1894,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "cooper-hewitt-gorham-records"
+    },
+    {
+     "id": "mcny-elegant-plate-2000"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ],
+   "single_source": "The year has two sources; the shape is described by Cooper Hewitt only"
+  },
+  {
+   "id": "gorham-date-symbol-1897-trident",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1897",
+   "looks_like": "A trident, struck below STERLING and the model number.",
+   "means": "Made in 1897.",
+   "applied": "stamped",
+   "date_from": 1897,
+   "date_to": 1897,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-date-symbol-1900-bell",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1900",
+   "looks_like": "A bell-like shape, struck below STERLING and the model number.",
+   "means": "Made in 1900.",
+   "applied": "stamped",
+   "date_from": 1900,
+   "date_to": 1900,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "cooper-hewitt-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ],
+   "single_source": "One museum record (Cooper Hewitt) only; other descriptions of the 1900 mark differ"
+  },
+  {
+   "id": "gorham-date-symbol-1906-key",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1906",
+   "looks_like": "A key, struck below STERLING and the model number.",
+   "means": "Made in 1906.",
+   "applied": "stamped",
+   "date_from": 1906,
+   "date_to": 1906,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "risd-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ],
+   "single_source": "One museum record (RISD) only"
+  },
+  {
+   "id": "gorham-date-symbol-1910-knot",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham date symbol for 1910",
+   "looks_like": "A knot, struck below STERLING and the model number.",
+   "means": "Made in 1910.",
+   "applied": "stamped",
+   "date_from": 1910,
+   "date_to": 1910,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "risd-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ],
+   "single_source": "One museum record (RISD) only"
+  },
+  {
+   "id": "gorham-date-hexagon-1960s",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "date code",
+   "name": "Gorham hexagon (1960s date mark)",
+   "looks_like": "A hexagon struck with the model number.",
+   "means": "Said to mark the 1960s in Gorham's scheme from 1941 (number of sides = decade); a 1960 pitcher carries one.",
+   "applied": "stamped",
+   "date_from": 1960,
+   "date_to": 1969,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "mia-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Met Open Access mirrors on Commons (date letters M, N, O used)",
+     "Cleveland Museum of Art open access",
+     "Cooper Hewitt mirrors on Commons (matchsafes, Raphael spoons, carving set: general views, marks not legible)",
+     "Dallas Museum of Art photos on Commons (gallery views, no marks)",
+     "RISD Museum CC0 images: the 1897 trident (chatelaine-5817212) and 1910 knot (nail-buffer-201312034a) exist under CC0 but refused scripted download; fetch by hand"
+    ]
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ],
+   "single_source": "One museum example (Minneapolis, 1960); the polygon-by-decade rule appears only on hobby sites"
+  },
+  {
+   "id": "gorham-martele-script",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "trademark",
+   "name": "Martelé (script)",
+   "looks_like": "The word Martelé in a Gothic script, above the eagle.",
+   "means": "Gorham's hand-hammered Martelé line, shown at the Paris Exposition of 1900.",
+   "applied": "stamped",
+   "date_from": 1897,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "appleby-1998"
+    },
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    },
+    {
+     "id": "cleveland-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-martele-script.webp",
+    "marks_in_image": 1,
+    "object": "Martelé coffee service, Gorham, c. 1900-1910",
+    "holder": "The Cleveland Museum of Art",
+    "accession": "2008.164",
+    "source_url": "https://www.clevelandart.org/art/2008.164",
+    "licence": "CC0",
+    "credit": "The Cleveland Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/CMA_2008.164_alt2_print.jpg",
+    "crop": [
+     634,
+     573,
+     659,
+     166
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-martele-eagle",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "trademark",
+   "name": "Spread eagle (Gorham Martelé)",
+   "looks_like": "A spread eagle with outstretched wings, above the lion, anchor and G.",
+   "means": "Part of the Martelé mark group.",
+   "applied": "stamped",
+   "date_from": 1897,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "appleby-1998"
+    },
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    },
+    {
+     "id": "cleveland-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-martele-eagle.webp",
+    "marks_in_image": 1,
+    "object": "Martelé coffee service, Gorham, c. 1900-1910",
+    "holder": "The Cleveland Museum of Art",
+    "accession": "2008.164",
+    "source_url": "https://www.clevelandart.org/art/2008.164",
+    "licence": "CC0",
+    "credit": "The Cleveland Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/CMA_2008.164_alt2_print.jpg",
+    "crop": [
+     637,
+     740,
+     611,
+     140
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-martele-950-1000-fine",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "950-1000 FINE (Gorham Martelé)",
+   "looks_like": "The words 950-1000 FINE in capitals below the lion, anchor and G.",
+   "means": "Martelé silver of 950 thousandths, finer than sterling.",
+   "applied": "stamped",
+   "date_from": 1898,
+   "date_to": null,
+   "date_note": "From 1898 per Appleby (1998) only; the mark itself is confirmed on museum silver.",
+   "sources": [
+    {
+     "id": "appleby-1998"
+    },
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "risd-gorham-records"
+    },
+    {
+     "id": "cleveland-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-martele-950-1000-fine.webp",
+    "marks_in_image": 1,
+    "object": "Martelé coffee service, Gorham, c. 1900-1910",
+    "holder": "The Cleveland Museum of Art",
+    "accession": "2008.164",
+    "source_url": "https://www.clevelandart.org/art/2008.164",
+    "licence": "CC0",
+    "credit": "The Cleveland Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/CMA_2008.164_alt0_print.jpg",
+    "crop": [
+     886,
+     1302,
+     720,
+     118
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-martele-9584",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "standard mark",
+   "name": ".9584 (Gorham Martelé)",
+   "looks_like": "The figures .9584 below the lion, anchor and G.",
+   "means": "Martelé at the old British Britannia standard, 958.4 thousandths.",
+   "applied": "stamped",
+   "date_from": 1905,
+   "date_to": null,
+   "date_note": "From 1905 per Appleby (1998) only.",
+   "sources": [
+    {
+     "id": "appleby-1998"
+    },
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "mia-gorham-records"
+    },
+    {
+     "id": "cleveland-gorham-records"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gorham-martele-9584.webp",
+    "marks_in_image": 1,
+    "object": "Martelé coffee service, Gorham, c. 1900-1910",
+    "holder": "The Cleveland Museum of Art",
+    "accession": "2008.164",
+    "source_url": "https://www.clevelandart.org/art/2008.164",
+    "licence": "CC0",
+    "credit": "The Cleveland Museum of Art, Open Access (CC0); cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/CMA_2008.164_alt2_print.jpg",
+    "crop": [
+     775,
+     1095,
+     380,
+     112
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "gorham-electroplate-anchor",
+   "group": "world-silver",
+   "maker": "Gorham Manufacturing Co.",
+   "country": "US",
+   "kind": "trademark",
+   "name": "Anchor with GORHAM CO. (Gorham electroplate)",
+   "looks_like": "An anchor in a cartouche with GORHAM CO., or GORHAM with E.P., and no STERLING.",
+   "means": "Gorham electroplate, not sterling.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "A summary of museum records, not a published rule.",
+   "sources": [
+    {
+     "id": "aic-gorham-records"
+    },
+    {
+     "id": "cooper-hewitt-gorham-records"
+    },
+    {
+     "id": "mia-gorham-records"
+    },
+    {
+     "id": "jewelers-circular-1896"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/gorham-electroplate-anchor.webp",
+    "marks_in_image": 1,
+    "object": "Jewelers' Circular 1896, p. 54, Silver Plated Ware: Gorham Mfg. Co.'s anchor in a shield over GORHAM MFG CO",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n83",
+    "original": "hallmark-sources/world-books/jc1896_n83.jpg",
+    "crop": [
+     1558,
+     2011,
+     374,
+     315
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), p. 54, public domain."
+   },
+   "pages": [
+    "/marks/gorham-silver-marks"
+   ]
+  },
+  {
+   "id": "mexico-eagle-assay-mark",
+   "group": "world-silver",
+   "country": "MX",
+   "kind": "standard mark",
+   "name": "Eagle assay mark (Mexico)",
+   "looks_like": "A small eagle with a number inside or beside it, struck near the fineness and maker's mark.",
+   "means": "Mexican assayed silver of about 1948 into the 1960s. Museum records show a different number for each Taxco workshop (9 Aguilar, 16 Margot de Taxco, 30 Spratling), so the number most likely identifies the maker.",
+   "applied": "stamped",
+   "date_from": 1948,
+   "date_to": null,
+   "date_note": "The often-quoted 1948-1980 span is only on collectors' sites; the 1947 standard and the 1979-80 registration rules frame it.",
+   "sources": [
+    {
+     "id": "dof-1947-nom-plata"
+    },
+    {
+     "id": "mfa-boston-mexican-silver"
+    },
+    {
+     "id": "aic-mexican-silver"
+    },
+    {
+     "id": "newark-pineda-2017-67-25"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "The number identifies the maker or workshop",
+     "by": [
+      "dof-1947-nom-plata",
+      "aic-mexican-silver",
+      "mfa-boston-mexican-silver"
+     ]
+    },
+    {
+     "claim": "The number identifies the city (3 = Taxco)",
+     "by": "collectors' and dealer sites only"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ],
+    "blocked": [
+     {
+      "what": "Spratling marks (WS, eagle 30, TAXCO WS 980), objects 274261-274262",
+      "holder": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/274261",
+      "licence": "all rights reserved (is_public_domain false)",
+      "ask": "AIC image licensing; the Spratling estate may hold design rights",
+      "checked": "checked 2026-11-22: mark shown (alternate views: WS and the eagle with 30, on the clasp and pendant back)",
+      "shows_mark": true
+     },
+     {
+      "what": "Héctor Aguilar marks (TAXCO HA 940, eagle 9), objects 274263-274265",
+      "holder": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/274263",
+      "licence": "all rights reserved (is_public_domain false)",
+      "ask": "AIC image licensing",
+      "checked": "checked 2026-11-22: mark shown (alternate view: TAXCO, HA and the eagle with 9 on the clasp)",
+      "shows_mark": true
+     },
+     {
+      "what": "Margot de Taxco marks with eagle 16 (2014.1785, 2018.4081)",
+      "holder": "Museum of Fine Arts, Boston",
+      "url": "https://collections.mfa.org/objects/605869",
+      "licence": "all rights reserved",
+      "ask": "MFA Boston image licensing",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is the necklace from the front)",
+      "shows_mark": false
+     },
+     {
+      "what": "Antonio Pineda bracelet marks (Antonio in crown, eagle)",
+      "holder": "Newark Museum of Art",
+      "url": "https://collections.newarkmuseumart.org/objects/222307/bracelet",
+      "licence": "not open licensed",
+      "ask": "Newark Museum of Art rights and reproductions",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is the bracelet from the front)",
+      "shows_mark": false
+     }
+    ],
+    "note": "Not drawn: the AIC photos show the eagle, but no official text or published reference describes the eagle's outline, so a drawing would have to be traced from a photo."
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ]
+  },
+  {
+   "id": "mexico-hecho-en-mexico",
+   "group": "world-silver",
+   "country": "MX",
+   "kind": "other",
+   "name": "Hecho en México / México",
+   "looks_like": "The words HECHO EN MEXICO, MEXICO or MADE IN MEXICO.",
+   "means": "Made in Mexico: required from the 1952 decree, again from 1979-80, and in the current standard (country of origin).",
+   "applied": "stamped",
+   "date_from": 1952,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "dof-1952-decreto-marcas"
+    },
+    {
+     "id": "ceballos-1996"
+    },
+    {
+     "id": "nom-033-1-se-2020"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ],
+    "blocked": [
+     {
+      "what": "Margot de Taxco marks with eagle 16 (2014.1785, 2018.4081)",
+      "holder": "Museum of Fine Arts, Boston",
+      "url": "https://collections.mfa.org/objects/605869",
+      "licence": "all rights reserved",
+      "ask": "MFA Boston image licensing",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is the necklace from the front)",
+      "shows_mark": false
+     },
+     {
+      "what": "Spratling marks (2000.793.1, 2016.182, 2016.545)",
+      "holder": "Museum of Fine Arts, Boston",
+      "url": "https://collections.mfa.org/objects/632024",
+      "licence": "all rights reserved",
+      "ask": "MFA Boston image licensing",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is the brooch from the front)",
+      "shows_mark": false
+     }
+    ],
+    "note": "Not drawn: the wording is sourced, but none of the blocked photos shows the stamp, and makers struck it in different layouts and letters, so no fixed form is known."
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ]
+  },
+  {
+   "id": "mexico-registration-code",
+   "group": "world-silver",
+   "country": "MX",
+   "kind": "maker's mark",
+   "name": "Registration code (Mexico, from 1980), as TS-24",
+   "looks_like": "Two letters, a hyphen and a number, such as TS-24, usually beside 925 and MEXICO.",
+   "means": "The maker's government registration number, required on Mexican silver from the Acuerdo of 17 December 1980 and still required. It names the maker, not the year.",
+   "applied": "stamped",
+   "date_from": 1980,
+   "date_to": null,
+   "date_note": "How the letters are built (city, then surname) is collectors' reading only; no official source found.",
+   "sources": [
+    {
+     "id": "dof-1979-1980-acuerdos"
+    },
+    {
+     "id": "ceballos-1996"
+    },
+    {
+     "id": "nom-033-1-se-2020"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ]
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ]
+  },
+  {
+   "id": "mexico-alpaca",
+   "group": "world-silver",
+   "country": "MX",
+   "kind": "standard mark",
+   "name": "ALPACA (Mexico)",
+   "looks_like": "The word ALPACA.",
+   "means": "Nickel silver (copper, nickel and zinc): no silver. The 1952 decree kept it as a class apart from silver.",
+   "applied": "stamped",
+   "date_from": 1952,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "dof-1952-decreto-marcas"
+    },
+    {
+     "id": "rae-alpaca"
+    },
+    {
+     "id": "britannica-nickel-silver"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ]
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ]
+  },
+  {
+   "id": "spratling-ws-mark",
+   "group": "world-silver",
+   "maker": "William Spratling",
+   "country": "MX",
+   "kind": "maker's mark",
+   "name": "WS (William Spratling)",
+   "looks_like": "A conjoined WS monogram, often in a round mark reading SPRATLING and MADE IN MEXICO, with TAXCO and the fineness (980 on early silver, 925 later).",
+   "means": "Made in William Spratling's Taxco workshop, from 1931. His marks changed slightly over time.",
+   "applied": "stamped",
+   "date_from": 1931,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "mfa-boston-mexican-silver"
+    },
+    {
+     "id": "aic-mexican-silver"
+    },
+    {
+     "id": "lacma-mexican-silver"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ],
+    "blocked": [
+     {
+      "what": "Spratling marks (WS, eagle 30, TAXCO WS 980), objects 274261-274262",
+      "holder": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/274261",
+      "licence": "all rights reserved (is_public_domain false)",
+      "ask": "AIC image licensing; the Spratling estate may hold design rights",
+      "checked": "checked 2026-11-22: mark shown (alternate views: WS and the eagle with 30, on the clasp and pendant back)",
+      "shows_mark": true
+     },
+     {
+      "what": "Spratling marks (2000.793.1, 2016.182, 2016.545)",
+      "holder": "Museum of Fine Arts, Boston",
+      "url": "https://collections.mfa.org/objects/632024",
+      "licence": "all rights reserved",
+      "ask": "MFA Boston image licensing",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is the brooch from the front)",
+      "shows_mark": false
+     },
+     {
+      "what": "Spratling and Taxco silver",
+      "holder": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search?q=Spratling",
+      "licence": "not Open Access (rights reserved)",
+      "ask": "The Met image licensing",
+      "checked": "checked 2026-11-22: mark not shown (a search page, not a record; no mark image identified)",
+      "shows_mark": false
+     },
+     {
+      "what": "Spratling cuff M.2012.189.5 (front only; public-domain tag doubtful)",
+      "holder": "Los Angeles County Museum of Art",
+      "url": "https://collections.lacma.org/",
+      "licence": "doubtful public-domain tag",
+      "ask": "LACMA Rights and Reproductions",
+      "checked": "checked 2026-11-22: mark not shown (Spratling cuff M.2012.189.5: front view only)",
+      "shows_mark": false
+     }
+    ],
+    "photo_only": "An artist's mark: a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ]
+  },
+  {
+   "id": "aguilar-ha-mark",
+   "group": "world-silver",
+   "maker": "Héctor Aguilar",
+   "country": "MX",
+   "kind": "maker's mark",
+   "name": "HA (Héctor Aguilar, Taller Borda)",
+   "looks_like": "A conjoined HA in a square or circle, with TAXCO and 940.",
+   "means": "Made at Héctor Aguilar's Taller Borda, Taxco, founded 1939; 940 fineness.",
+   "applied": "stamped",
+   "date_from": 1939,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "aic-mexican-silver"
+    },
+    {
+     "id": "mfa-boston-mexican-silver"
+    },
+    {
+     "id": "lacma-mexican-silver"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ],
+    "blocked": [
+     {
+      "what": "Héctor Aguilar mark close-up (TAXCO / HA / 940)",
+      "holder": "Los Angeles County Museum of Art",
+      "url": "https://collections.lacma.org/object/214657",
+      "licence": "in copyright (artist's estate)",
+      "ask": "LACMA Rights and Reproductions",
+      "checked": "checked 2026-11-22: mark shown (a close-up of 940, the HA maker's mark and TAXCO)",
+      "shows_mark": true
+     },
+     {
+      "what": "Héctor Aguilar marks (TAXCO HA 940, eagle 9), objects 274263-274265",
+      "holder": "Art Institute of Chicago",
+      "url": "https://www.artic.edu/artworks/274263",
+      "licence": "all rights reserved (is_public_domain false)",
+      "ask": "AIC image licensing",
+      "checked": "checked 2026-11-22: mark shown (alternate view: TAXCO, HA and the eagle with 9 on the clasp)",
+      "shows_mark": true
+     },
+     {
+      "what": "Aguilar candelabra marks (633166)",
+      "holder": "Museum of Fine Arts, Boston",
+      "url": "https://collections.mfa.org/objects/633166",
+      "licence": "all rights reserved",
+      "ask": "MFA Boston image licensing",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is a small general view of the candelabra)",
+      "shows_mark": false
+     }
+    ],
+    "photo_only": "An artist's studio mark: a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ]
+  },
+  {
+   "id": "margot-de-taxco-mark",
+   "group": "world-silver",
+   "maker": "Margot de Taxco",
+   "country": "MX",
+   "kind": "maker's mark",
+   "name": "MARGOT DE TAXCO",
+   "looks_like": "MARGOT DE TAXCO with a model number, STERLING or 925, MADE or HECHO EN MEXICO, and an eagle with 16.",
+   "means": "Made in Margot van Voorhies Carr's workshop, from 1946.",
+   "applied": "stamped",
+   "date_from": 1946,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "mfa-boston-mexican-silver"
+    },
+    {
+     "id": "lacma-mexican-silver"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ],
+    "blocked": [
+     {
+      "what": "Margot de Taxco marks with eagle 16 (2014.1785, 2018.4081)",
+      "holder": "Museum of Fine Arts, Boston",
+      "url": "https://collections.mfa.org/objects/605869",
+      "licence": "all rights reserved",
+      "ask": "MFA Boston image licensing",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is the necklace from the front)",
+      "shows_mark": false
+     }
+    ],
+    "photo_only": "An artist's studio mark: a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ],
+   "single_source": "The mark's wording and eagle 16 are recorded by one museum (MFA Boston); LACMA confirms only the workshop and its date"
+  },
+  {
+   "id": "los-castillo-mark",
+   "group": "world-silver",
+   "maker": "Los Castillo",
+   "country": "MX",
+   "kind": "maker's mark",
+   "name": "Los Castillo",
+   "looks_like": "A circular stamp reading LOS CASTILLO, TAXCO and METALES CASTILLO with a number, with HECHO EN MEXICO.",
+   "means": "Made by Los Castillo, Taxco, founded by the Castillo brothers.",
+   "applied": "stamped",
+   "date_from": 1939,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "mfa-boston-mexican-silver"
+    },
+    {
+     "id": "lacma-mexican-silver"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "Founded 1939",
+     "by": [
+      "lacma-mexican-silver"
+     ]
+    },
+    {
+     "claim": "Founded 1942",
+     "by": [
+      "mfa-boston-mexican-silver"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ],
+    "blocked": [
+     {
+      "what": "Los Castillo tray mark (649424)",
+      "holder": "Museum of Fine Arts, Boston",
+      "url": "https://collections.mfa.org/objects/649424",
+      "licence": "all rights reserved",
+      "ask": "MFA Boston image licensing",
+      "checked": "checked 2026-11-22: mark not shown (the record has no image)",
+      "shows_mark": false
+     }
+    ],
+    "photo_only": "A studio mark: a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ],
+   "single_source": "The mark's wording is recorded by one museum (MFA Boston)"
+  },
+  {
+   "id": "pineda-antonio-crown-mark",
+   "group": "world-silver",
+   "maker": "Antonio Pineda",
+   "country": "MX",
+   "kind": "maker's mark",
+   "name": "Antonio in a crown (Antonio Pineda)",
+   "looks_like": "The name Antonio under a crown, with an eagle stamp and registration marks.",
+   "means": "Made in Antonio Pineda's Taxco workshop.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "newark-pineda-2017-67-25"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Spratling, Taxco, Mexican silver/sterling, Hecho en Mexico, Los Castillo, Aguilar, Pineda, Margot, eagle mark, alpaca; categories William Spratling and Silverwork of Taxco",
+     "Cooper Hewitt mirrors (site blocked automated access)",
+     "Met Open Access (Spratling and Taxco entries not public domain)",
+     "Smithsonian Open Access (no results)",
+     "Flickr CC-BY/BY-SA/CC0/PDM searches",
+     "Auckland Museum souvenir spoon 670974 (shows a decorative MEXICO plate, not a mark)"
+    ],
+    "blocked": [
+     {
+      "what": "Antonio Pineda bracelet marks (Antonio in crown, eagle)",
+      "holder": "Newark Museum of Art",
+      "url": "https://collections.newarkmuseumart.org/objects/222307/bracelet",
+      "licence": "not open licensed",
+      "ask": "Newark Museum of Art rights and reproductions",
+      "checked": "checked 2026-11-22: mark not shown (the record's one image is the bracelet from the front)",
+      "shows_mark": false
+     }
+    ],
+    "photo_only": "An artist's mark: a crisp redraw would help forgers; show it only as a photograph."
+   },
+   "pages": [
+    "/marks/mexican-silver-marks"
+   ],
+   "single_source": "One museum record (Newark Museum of Art) only"
+  },
+  {
+   "id": "russia-astrakhan-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Astrakhan town mark",
+   "looks_like": "A crown above a curved sword, in a rectangle.",
+   "means": "Assayed in Astrakhan.",
+   "applied": "stamped",
+   "date_from": 1771,
+   "date_to": 1771,
+   "date_note": "Rosenberg: Beschauzeichen 1771. Rosenberg's spelling: Astrachan. Postnikova-Loseva: the arms of Astrakhan, a crown and a sword, used from the second half of the 18th century to 1884.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 465, no. 8129"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 150, nos. 86–90"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-astrakhan-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8129: Astrachan, Beschauzeichen 1771",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=497",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0497.png",
+    "crop": [
+     629,
+     2599,
+     215,
+     205
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 465, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-irkutsk-tobolsk-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Irkutsk or Tobolsk town mark",
+   "looks_like": "Two upright animals facing each other under a crown, in a rectangle.",
+   "means": "Assayed in Tobolsk (1765–1780) or Irkutsk (1777–1799); the Irkutsk mark adds the letters ГИ.",
+   "applied": "stamped",
+   "date_from": 1765,
+   "date_to": 1799,
+   "date_note": "Rosenberg: Beschauzeichen 1774, 1776. Rosenberg's spelling: Irkutsk oder Tobolsk. Postnikova-Loseva: the arms of Siberia, two sables holding a bow and arrows under a crown, were struck in Tobolsk 1765–1780 and, with the letters ГИ, in Irkutsk 1777–1799. So both readings are right; Irkutsk marks carry ГИ.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 465, no. 8130"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 160, no. 442 (Irkutsk); p. 253, no. 3715 (Tobolsk)"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "1774, 1776",
+     "by": [
+      "rosenberg-1928-v4"
+     ]
+    },
+    {
+     "claim": "Tobolsk 1765–1780; Irkutsk (with ГИ) 1777–1799",
+     "by": [
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-irkutsk-tobolsk-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8130: Irkutsk oder Tobolsk, Beschauzeichen 1774, 1776",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=497",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0497.png",
+    "crop": [
+     592,
+     3140,
+     289,
+     321
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 465, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-yaroslavl-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Yaroslavl town mark",
+   "looks_like": "An upright bear carrying an axe, in a rounded punch.",
+   "means": "Assayed in Yaroslavl.",
+   "applied": "stamped",
+   "date_from": 1756,
+   "date_to": 1767,
+   "date_note": "Rosenberg: Beschauzeichen 1756, 1767. Rosenberg's spelling: Jarosslawl. Postnikova-Loseva: a bear standing on its hind legs holding an axe, from the second quarter of the 18th century to 1885; nos. 3787–3788 are dated 1755–1760 and 1761–1770.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 465, no. 8131"
+    },
+    {
+     "id": "rosenberg-1890",
+     "where": "p. 477, no. 2385 (1767)"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 256, nos. 3785–3799"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-yaroslavl-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8131: Jarosslawl, Beschauzeichen 1756, 1767",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=497",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0497.png",
+    "crop": [
+     643,
+     3599,
+     200,
+     291
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 465, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-kaluga-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Kaluga town mark",
+   "looks_like": "A shield with a small crown above wavy lines of water.",
+   "means": "Assayed in Kaluga.",
+   "applied": "stamped",
+   "date_from": 1797,
+   "date_to": 1799,
+   "date_note": "Rosenberg: Beschauzeichen 1797, 1799. Rosenberg's spelling: Kaluga. Postnikova-Loseva: the arms approved in 1777, an imperial crown over two wavy lines for the river Oka; no. 516 is dated end of the 18th to early 19th century. The earliest Kaluga mark (1772–1786) was a double-headed eagle with ГК.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 465, no. 8132"
+    },
+    {
+     "id": "rosenberg-1890",
+     "where": "p. 477, no. 2386 (end of the 18th century)"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 163, nos. 515–522"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-kaluga-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8132: Kaluga, Beschauzeichen 1797, 1799",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=497",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0497.png",
+    "crop": [
+     605,
+     4032,
+     259,
+     274
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 465, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-kamianets-podilskyi-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Kamianets-Podilskyi town mark",
+   "looks_like": "A gateway with three small stars above it, in a shield.",
+   "means": "Assayed in Kamianets-Podilskyi.",
+   "applied": "stamped",
+   "date_from": 1857,
+   "date_to": 1861,
+   "date_note": "Rosenberg: Beschauzeichen 1857-61. Rosenberg's spelling: Kamjenez-Podolsk. Postnikova-Loseva gives Kamianets-Podilskyi only a double-headed eagle with КП (1758–1764), and shows a gateway with three towers as the mark of Zhitomir (1823–1857, 1875).",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 466, no. 8133"
+    },
+    {
+     "id": "rosenberg-1890",
+     "where": "p. 477, no. 2387 (1858)"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 164, no. 556; p. 160, nos. 423–424 (Zhitomir)"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "Kamianets-Podilskyi, 1857–61",
+     "by": [
+      "rosenberg-1928-v4",
+      "rosenberg-1890"
+     ]
+    },
+    {
+     "claim": "A gateway with three towers is Zhitomir's mark, 1823–1857; Kamianets-Podilskyi used an eagle with КП, 1758–1764",
+     "by": [
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-kamianets-podilskyi-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8133: Kamjenez-Podolsk, Beschauzeichen 1857-61",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=498",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0498.jpg",
+    "crop": [
+     374,
+     308,
+     94,
+     115
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 466, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ],
+   "single_source": "Only Rosenberg (1890, 1928) gives this mark to Kamianets-Podilskyi; Postnikova-Loseva (1983) shows a gateway mark as Zhitomir's."
+  },
+  {
+   "id": "russia-kazan-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Kazan town mark",
+   "looks_like": "A crowned winged dragon, in a rectangle.",
+   "means": "Assayed in Kazan.",
+   "applied": "stamped",
+   "date_from": 1763,
+   "date_to": 1797,
+   "date_note": "Rosenberg: Beschauzeichen 1763, 1797. Rosenberg's spelling: Kasan. Postnikova-Loseva: the winged dragon Zilant, used from 1742 to 1894; no. 452 is dated 1755–1824.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 466, no. 8134"
+    },
+    {
+     "id": "rosenberg-1890",
+     "where": "p. 477, no. 2388 (1797)"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 161, nos. 451–460"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-kazan-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8134: Kasan, Beschauzeichen 1763, 1797",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=498",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0498.jpg",
+    "crop": [
+     351,
+     493,
+     136,
+     149
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 466, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-kiev-town-mark-1794",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Kiev town mark",
+   "looks_like": "The archangel Michael, a winged figure, in a tall rectangle.",
+   "means": "Assayed in Kiev.",
+   "applied": "stamped",
+   "date_from": 1778,
+   "date_to": 1810,
+   "date_note": "Rosenberg: Beschauzeichen um 1794. Rosenberg's spelling: Kiew. Postnikova-Loseva: the arms of Kiev, the archangel Michael with a sword and shield, no. 573, dated 1778 to the early 19th century.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 466, no. 8135"
+    },
+    {
+     "id": "rosenberg-1890",
+     "where": "p. 477, no. 2389 (about 1794)"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 165, no. 573"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "about 1794",
+     "by": [
+      "rosenberg-1928-v4",
+      "rosenberg-1890"
+     ]
+    },
+    {
+     "claim": "1778 to the early 19th century",
+     "by": [
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-kiev-town-mark-1794.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8135: Kiew, Beschauzeichen um 1794",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=498",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0498.jpg",
+    "crop": [
+     361,
+     721,
+     119,
+     161
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 466, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-kiev-town-mark-19th-century-t",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Kiev (19th century, shield) town mark",
+   "looks_like": "A small shield with a T-shaped figure.",
+   "means": "Assayed in Kiev.",
+   "applied": "stamped",
+   "date_from": 1801,
+   "date_to": 1900,
+   "date_note": "Rosenberg: Beschauzeichen 19. Jahrhundert. Rosenberg's spelling: Kiew. Postnikova-Loseva (1983, p. 165, nos. 574–577) shows the archangel arms in shields of several shapes, 1828–1896; Rosenberg's small shield may be one of them, but the match is not certain, so it is not cited.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 466, no. 8136"
+    },
+    {
+     "id": "rosenberg-1890",
+     "where": "p. 477 (19th century)"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Rosenberg 1928, vol. 4, p. 466, no. 8136 (https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=498): Rosenberg's mark is under 90 px tall at the scan's own size (HathiTrust saved this page at half resolution), so it is not cropped; not enlarged.",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)"
+    ]
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ],
+   "single_source": "Rosenberg (1890, 1928) is the only published source found for this town's mark and dates."
+  },
+  {
+   "id": "russia-kiev-town-mark-19th-century-oval",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Kiev town mark (KIOV in an oval)",
+   "looks_like": "An oval with the letters KIOV.",
+   "means": "Assayed in Kiev.",
+   "applied": "stamped",
+   "date_from": 1735,
+   "date_to": 1774,
+   "date_note": "Rosenberg: Beschauzeichen 19. Jahrhundert. Rosenberg's spelling: Kiew. Postnikova-Loseva: KIOV in shields of several shapes, 18th century, an oval one dated 1735–1774, replaced by the archangel arms from 1778.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 466, no. 8137"
+    },
+    {
+     "id": "rosenberg-1890",
+     "where": "p. 477 (19th century)"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 165, nos. 571–572"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "19th century",
+     "by": [
+      "rosenberg-1928-v4"
+     ]
+    },
+    {
+     "claim": "18th century; oval form 1735–1774",
+     "by": [
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Rosenberg 1928, vol. 4, p. 466, no. 8137 (https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=498): Rosenberg's mark is under 90 px tall at the scan's own size (HathiTrust saved this page at half resolution), so it is not cropped; not enlarged.",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)"
+    ]
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-kostroma-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Kostroma town mark",
+   "looks_like": "A shield divided in four, with a cross and a crescent.",
+   "means": "Assayed in Kostroma.",
+   "applied": "stamped",
+   "date_from": 1834,
+   "date_to": 1878,
+   "date_note": "Rosenberg: Beschauzeichen 1834-1878. Rosenberg's spelling: Kostroma. The 1890 edition prints a Kostroma (or Lomsha) mark dated 1781; it is not certain to be the same punch, so it is not cited. Postnikova-Loseva: the shield quartered with a cross and a crescent was introduced in 1797, dropped, restored in 1834 and dropped again in 1878, alternating with the galley arms; examples dated 1813–1831 and 1851–1874.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 466, no. 8138"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 168, nos. 702–703"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-kostroma-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8138: Kostroma, Beschauzeichen 1834-1878",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=498",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0498.jpg",
+    "crop": [
+     349,
+     1123,
+     146,
+     167
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 466, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-pskov-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Pskov town mark",
+   "looks_like": "A spotted leopard walking under a cloud from which a hand reaches down, in a rectangle.",
+   "means": "Assayed in Pskov.",
+   "applied": "stamped",
+   "date_from": 1774,
+   "date_to": 1791,
+   "date_note": "Rosenberg: Beschauzeichen 1774, 1791. Rosenberg's spelling: Pskow (Pleskau). Postnikova-Loseva: a leopard walking left with a hand reaching from a cloud above; no. 3244 is dated 1768–1840.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 467, no. 8156"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 238, nos. 3244–3247"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-pskov-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8156: Pskow (Pleskau), Beschauzeichen 1774, 1791",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=499",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0499.jpg",
+    "crop": [
+     304,
+     1348,
+     148,
+     183
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 467, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-tula-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Tula town mark",
+   "looks_like": "The standard 84 in an oval beside a small sign Rosenberg reads, and Postnikova-Loseva shows, as the arms of Tula: crossed cannons and two hammers.",
+   "means": "Russian silver of 84 zolotniks, assayed in Tula.",
+   "applied": "stamped",
+   "date_from": 1876,
+   "date_to": 1900,
+   "date_note": "Rosenberg: Beschauzeichen 19. Jahrhundert. Rosenberg's spelling: Tula. Postnikova-Loseva: 84 with the Tula arms (crossed cannons and two hammers), last quarter of the 19th century.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 467, no. 8157"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 254, no. 3737"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "19th century",
+     "by": [
+      "rosenberg-1928-v4"
+     ]
+    },
+    {
+     "claim": "1876–1900",
+     "by": [
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Rosenberg 1928, vol. 4, p. 467, no. 8157 (https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=499): Rosenberg's mark is under 90 px tall at the scan's own size (HathiTrust saved this page at half resolution), so it is not cropped; not enlarged.",
+     "Open-collections pass 2026-11-24: Finna.fi (site and api.finna.fi behind a Cloudflare bot check; needs Joe); DigitaltMuseum (site behind a Cloudflare bot check, API needs a registered key; needs Joe); SMK Denmark API (no Russian silver); Rijksmuseum search API (no Fabergé or kokoshnik matches); Nationalmuseum Sweden API (server error); Europeana with reusable filter (searched kokoshnik/Kokoschnik/kokosjnik, Silberpunze Russland, Fabergé, venäläinen hopea, hopealeima, leima hopea, Pietari/Moskova hopea, proovimärk, hõbe Peterburi/Moskva, ryskt silver stämpel, russisk sølv stempel, Russisch zilver keur): one left-facing kokoshnik found (Klingenmuseum Solingen 1992.NRW.179); Finnish Heritage Agency and Helsinki City Museum images behind an authenticated repository (HTTP 401) even where CC BY 4.0, e.g. HKM caviar spoon with assay marks (hkm.CB79AAFA)"
+    ]
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-tver-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Tver town mark",
+   "looks_like": "A domed crown resting on a cushion, in a double-framed rectangle.",
+   "means": "Assayed in Tver.",
+   "applied": "stamped",
+   "date_from": 1767,
+   "date_to": 1812,
+   "date_note": "Rosenberg: Beschauzeichen 18.? Jahrh.. Rosenberg's spelling: Twer. Postnikova-Loseva: the arms of the Tver governorship, a crown on a pedestal; no. 496 is dated 1767–1812, later variants to 1867.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 468, no. 8158"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 162, nos. 496–500 (under Kalinin)"
+    }
+   ],
+   "disagreements": [
+    {
+     "claim": "18th century (Rosenberg queries it)",
+     "by": [
+      "rosenberg-1928-v4"
+     ]
+    },
+    {
+     "claim": "1767–1812",
+     "by": [
+      "postnikova-loseva-1983"
+     ]
+    }
+   ],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-tver-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8158: Twer, Beschauzeichen 18.? Jahrh.",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=500",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0500.png",
+    "crop": [
+     680,
+     768,
+     302,
+     263
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 468, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-veliky-ustyug-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Veliky Ustyug town mark",
+   "looks_like": "A shield with a scalloped base and the figure of a water-bearer, part worn.",
+   "means": "Assayed in Veliky Ustyug.",
+   "applied": "stamped",
+   "date_from": 1801,
+   "date_to": null,
+   "date_note": "Rosenberg: Beschauzeichen Anfang des 19. Jahrh.. Rosenberg's spelling: Weliki-Ustjug. Postnikova-Loseva: the town arms, a water-bearer (river god), seated from 1755 and standing in 18th-century dress from 1783, in shields of several shapes until 1896; shield variants 1815–1827 and 1828–1836.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 468, no. 8159"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 151, nos. 117–124"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-veliky-ustyug-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8159: Weliki-Ustjug, Beschauzeichen Anfang des 19. Jahrh.",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=500",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0500.png",
+    "crop": [
+     680,
+     1505,
+     287,
+     334
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 468, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-vitebsk-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Vitebsk town mark",
+   "looks_like": "A small round mark with a figure.",
+   "means": "Assayed in Vitebsk.",
+   "applied": "stamped",
+   "date_from": 1873,
+   "date_to": 1873,
+   "date_note": "Rosenberg: Beschauzeichen 1873. Rosenberg's spelling: Witebsk.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 468, no. 8160"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-vitebsk-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8160: Witebsk, Beschauzeichen 1873",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=500",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0500.png",
+    "crop": [
+     774,
+     2309,
+     130,
+     128
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 468, public domain.",
+    "searched": []
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ],
+   "single_source": "Rosenberg (1890, 1928) is the only published source found for this town's mark and dates; Postnikova-Loseva (1983) has no Vitebsk town mark in its index."
+  },
+  {
+   "id": "russia-vladimir-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Vladimir town mark",
+   "looks_like": "An upright lion, in a rectangle.",
+   "means": "Assayed in Vladimir.",
+   "applied": "stamped",
+   "date_from": 1763,
+   "date_to": 1763,
+   "date_note": "Rosenberg: Beschauzeichen 1763. Rosenberg's spelling: Wladimir. Postnikova-Loseva: a lion standing on its hind legs holding a cross; no. 282 is dated 1763–1778, later variants to 1866.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 468, no. 8161"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 155, nos. 282–287"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-vladimir-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8161: Wladimir, Beschauzeichen 1763",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=500",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0500.png",
+    "crop": [
+     720,
+     3000,
+     231,
+     271
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 468, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  },
+  {
+   "id": "russia-vologda-town-mark",
+   "group": "world-silver",
+   "country": "RU",
+   "kind": "town mark",
+   "name": "Vologda town mark",
+   "looks_like": "A pointed shield with a hand reaching from a cloud, holding an orb and a sword.",
+   "means": "Assayed in Vologda.",
+   "applied": "stamped",
+   "date_from": 1701,
+   "date_to": 1900,
+   "date_note": "Rosenberg: Beschauzeichen 18. u. 19. Jahrh.. Rosenberg's spelling: Wologda. Postnikova-Loseva: a hand reaching from a cloud holding an orb and a sword, 1751–1871; the pointed-shield variants date from 1816–1871.",
+   "sources": [
+    {
+     "id": "rosenberg-1928-v4",
+     "where": "p. 468, no. 8162"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "p. 156, nos. 297–305"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/russia-vologda-town-mark.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg 1928, vol. 4, no. 8162: Wologda, Beschauzeichen 18. u. 19. Jahrh.",
+    "holder": "HathiTrust (University of Michigan copy, Google-digitized)",
+    "licence": "public-domain",
+    "source_url": "https://babel.hathitrust.org/cgi/pt?id=mdp.39015016809025&seq=500",
+    "original": "hallmark-sources/hathitrust/rosenberg-1928-v4/seq0500.png",
+    "crop": [
+     766,
+     3753,
+     149,
+     181
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from Marc Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed., vol. 4 (1928), p. 468, public domain."
+   },
+   "pages": [
+    "/marks/russian-silver-marks"
+   ]
+  }
+ ]
+}

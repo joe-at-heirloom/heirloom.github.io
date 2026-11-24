@@ -1,0 +1,25 @@
+---
+// Questions, as native disclosure: answers are in the page for search
+// engines and screen readers, closed until asked.
+const { faqs } = Astro.props as { faqs: [string, string][] };
+---
+<section class="faq" aria-labelledby="faq">
+  <h2 id="faq">Questions</h2>
+  {faqs.map(([q, a]) => (
+    <details>
+      <summary><span>{q}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+      <div class="faq__a" set:html={a} />
+    </details>
+  ))}
+</section>
+<style>
+  .faq { margin-top: 72px; max-width: var(--read); }
+  .faq h2 { margin-bottom: 12px; }
+  details { border-bottom: 1px solid var(--rule); }
+  summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; cursor: pointer; font: 500 1.15rem/1.35 var(--serif); }
+  summary::-webkit-details-marker { display: none; }
+  summary svg { flex: none; width: 20px; height: 20px; fill: none; stroke: var(--ink-3); stroke-width: 2; transition: rotate 0.25s var(--ease); }
+  details[open] summary svg { rotate: 180deg; }
+  .faq__a { padding: 0 0 18px; color: var(--ink-2); }
+  .faq__a :global(p) { margin: 0; }
+</style>

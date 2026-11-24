@@ -1,0 +1,67 @@
+---
+// Every page: head (title, description, canonical, structured data), the
+// header and footer, view transitions between pages, and the theme.
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { ORG, WEBSITE } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+  jsonld?: object[];
+  han?: string; // Chinese characters the page sets in the han face (subset request)
+}
+const { title, description, path, image = '/og-image.jpg', jsonld = [], han } = Astro.props;
+const canonical = new URL(path, Astro.site).toString();
+const fonts =
+  'https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..650&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap';
+const hanFont = han ? `https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap&text=${encodeURIComponent(han)}` : null;
+const graph = [ORG, WEBSITE, ...jsonld];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(image, Astro.site).toString()} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#13120f" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-itunes-app" content="app-id=6754576251" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={fonts} />
+    {hanFont && <link rel="stylesheet" href={hanFont} />}
+    <script is:inline>
+      try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+    </script>
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
+    <ClientRouter />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <Header path={path} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .skip { position: absolute; left: -9999px; top: 8px; z-index: 100; padding: 10px 14px; background: var(--ink); color: var(--paper); border-radius: 8px; }
+  .skip:focus { left: 12px; }
+</style>

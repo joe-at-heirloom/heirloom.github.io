@@ -1,0 +1,728 @@
+{
+  "sources": {
+    "us-stamping-act-1906": {
+      "kind": "law",
+      "author": "United States Congress",
+      "title": "National Gold and Silver Stamping Act of 1906, 15 U.S.C. § 296 (standard of fineness of silver articles)",
+      "year": 1906,
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap8-sec296.htm",
+      "public_domain": true
+    },
+    "ftc-16cfr-23-5": {
+      "kind": "official",
+      "author": "US Federal Trade Commission",
+      "title": "Guides for the Jewelry, Precious Metals, and Pewter Industries, 16 CFR § 23.5 (misrepresentation as to silver content)",
+      "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.5",
+      "public_domain": true
+    },
+    "uk-hallmarking-act-1973": {
+      "kind": "law",
+      "author": "UK Parliament",
+      "title": "Hallmarking Act 1973, Schedule 2 (approved hallmarks and standards of fineness), as amended",
+      "year": 1973,
+      "url": "https://www.legislation.gov.uk/ukpga/1973/43/schedule/2"
+    },
+    "uk-hallmarking-guidance-2022": {
+      "kind": "official",
+      "author": "UK Assay Offices and the Office for Product Safety and Standards",
+      "title": "Hallmarking: practical guidance",
+      "year": 2022,
+      "url": "https://www.gov.uk/government/publications/hallmarking-guidance-notes"
+    },
+    "de-feingehalt-1884": {
+      "kind": "law",
+      "author": "Deutsches Reich",
+      "title": "Gesetz über den Feingehalt der Gold- und Silberwaaren, 16 July 1884, Reichsgesetzblatt 1884, pp. 120–122 (in force 1 January 1888)",
+      "year": 1884,
+      "url": "https://de.wikisource.org/wiki/Gesetz_%C3%BCber_den_Feingehalt_der_Gold-_und_Silberwaaren",
+      "public_domain": true
+    },
+    "de-stempelzeichen-1886": {
+      "kind": "law",
+      "author": "Bundesrath des Deutschen Reichs",
+      "title": "Bekanntmachung über die Form des Stempelzeichens, 7 January 1886, Reichsgesetzblatt 1886, p. 1",
+      "year": 1886,
+      "url": "https://de.wikisource.org/wiki/Bekanntmachung,_betreffend_die_Bestimmung_der_Form_des_Stempelzeichens_zur_Angabe_des_Feingehalts_auf_goldenen_und_silbernen_Ger%C3%A4then",
+      "public_domain": true
+    },
+    "vam-o136991": {
+      "kind": "museum",
+      "author": "Victoria and Albert Museum",
+      "title": "Cup, Germany, about 1900, museum no. O136991 (marks: a crescent moon and crown beneath the base)",
+      "url": "https://collections.vam.ac.uk/item/O136991/"
+    },
+    "nbs-circular-100-1921": {
+      "kind": "official",
+      "author": "US Bureau of Standards",
+      "title": "Circular 100: Nickel, section 3, copper-nickel-zinc alloys; nickel silver",
+      "year": 1921,
+      "url": "https://archive.org/details/circularofbureau100unse",
+      "public_domain": true
+    },
+    "eb1911-german-silver": {
+      "kind": "book",
+      "author": "Encyclopaedia Britannica, 11th ed.",
+      "title": "German Silver",
+      "year": 1911,
+      "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/German_Silver",
+      "public_domain": true
+    },
+    "meyers-1908-neusilber": {
+      "kind": "book",
+      "author": "Meyers Großes Konversations-Lexikon, 6th ed., vol. 14",
+      "title": "Neusilber",
+      "year": 1908,
+      "url": "http://www.zeno.org/Meyers-1905/A/Neusilber",
+      "public_domain": true
+    },
+    "french-1917": {
+      "kind": "book",
+      "author": "Hollis French",
+      "title": "A List of Early American Silversmiths and Their Marks (Walpole Society)",
+      "year": 1917,
+      "url": "https://archive.org/details/listofearlyameri00fren",
+      "public_domain": true
+    },
+    "yale-kossack-1988": {
+      "kind": "museum",
+      "author": "Yale University Art Gallery",
+      "title": "American Silver in the Yale University Art Gallery: the Kossack checklist",
+      "year": 1988,
+      "url": "https://artgallery.yale.edu/sites/default/files/publication/pdfs/0-89467-049-2.pdf"
+    },
+    "currier-1938": {
+      "kind": "book",
+      "author": "Ernest M. Currier",
+      "title": "Marks of Early American Silversmiths",
+      "year": 1938,
+      "url": "https://archive.org/details/marksofearlyamer00curr"
+    },
+    "cw-journal-2008": {
+      "kind": "museum",
+      "author": "Colonial Williamsburg Journal",
+      "title": "Stuff and Nonsense (Winter 2008)",
+      "year": 2008,
+      "url": "https://research.colonialwilliamsburg.org/Foundation/journal/Winter08/stuff.cfm",
+      "note": "Read only as a search excerpt; the site refused automated fetching."
+    },
+    "jewelers-circular-1896": {
+      "kind": "book",
+      "author": "The Jewelers' Circular Publishing Co.",
+      "title": "Trade-Marks of the Jewelry and Kindred Trades",
+      "year": 1896,
+      "url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades",
+      "public_domain": true
+    }
+  },
+  "entries": [
+    {
+      "id": "silver-fineness-925",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "international",
+      "kind": "standard mark",
+      "name": "925",
+      "looks_like": "The figures 925 struck in a small oblong punch, beside a maker's mark and, depending on the country, other marks.",
+      "means": "The metal is stated to be 925 parts silver in 1000: sterling. Struck by an assay office in the UK (where the number sits in a shield); stamped by the maker in the US and in Germany, where the law holds the maker to it.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "No single start date: each country's law sets when the number could be used (Germany from 1888; the UK number-in-shield mark is in british-hallmarks.json).",
+      "sources": [
+        {
+          "id": "uk-hallmarking-act-1973",
+          "where": "Sched. 2: silver 925, standard mark the figures 925"
+        },
+        {
+          "id": "ftc-16cfr-23-5",
+          "where": "(b)(1)–(2): fineness in parts per thousand; sterling at least 925/1000"
+        },
+        {
+          "id": "de-feingehalt-1884",
+          "where": "§§ 2–3: fineness stated in thousandths, 800 or more"
+        },
+        {
+          "id": "jackson-1921",
+          "where": "p. 19: the old standard of 11 oz 2 dwt in the pound troy (= 925/1000)"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/silver-fineness-925.webp",
+        "marks_in_image": 1,
+        "object": "Silver ware, Germany (date not given by the photographer)",
+        "holder": "Wikimedia Commons (photographer Mario Sarto Masa)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Silberpunzierung.jpg",
+        "licence": "CC-BY-SA-3.0",
+        "credit": "Photograph: Mario Sarto Masa, Silberpunzierung.jpg, Wikimedia Commons, CC BY-SA 3.0; cropped and toned by Heirloom.",
+        "original": "hallmark-sources/silver-standards/silberpunzierung.jpg",
+        "crop": [
+          264,
+          113,
+          197,
+          123
+        ],
+        "note": "German example: the 925 beside the crescent and crown and a maker's mark, each cropped to its own entry."
+      },
+      "pages": [
+        "/marks/silver-purity-marks",
+        "/marks/is-it-real-silver"
+      ]
+    },
+    {
+      "id": "silver-fineness-800",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "international",
+      "kind": "standard mark",
+      "name": "800",
+      "looks_like": "The figures 800 struck in a small punch; in Germany from 1888 beside a crescent moon and a crown.",
+      "means": "The metal is stated to be 800 parts silver in 1000. It is the lowest UK standard for silver and the lowest fineness German law let a maker state on silver wares from 1888.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Germany: stated fineness on silver wares only at 800 or more, from 1 January 1888.",
+      "sources": [
+        {
+          "id": "uk-hallmarking-act-1973",
+          "where": "Sched. 2: silver 800, the figures 800"
+        },
+        {
+          "id": "uk-hallmarking-guidance-2022",
+          "where": "standards table: silver 800, 925, 958, 999"
+        },
+        {
+          "id": "de-feingehalt-1884",
+          "where": "§ 2: silver fineness only 800 or more; § 10: in force 1 January 1888"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/silver-fineness-800.webp",
+        "marks_in_image": 1,
+        "object": "Silver fork, Germany",
+        "holder": "Wikimedia Commons (photographer Phrontis)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:SilberPunze800.jpg",
+        "licence": "CC-BY-SA-3.0",
+        "credit": "Photograph: Phrontis, SilberPunze800.jpg, Wikimedia Commons, CC BY-SA 3.0; cropped and toned by Heirloom.",
+        "original": "hallmark-sources/silver-standards/silberpunze800.jpg",
+        "crop": [
+          178,
+          22,
+          162,
+          96
+        ],
+        "note": "On this fork the crescent, crown and 800 share one punch outline; the crop takes only the 800 part. The maker's star is left out."
+      },
+      "pages": [
+        "/marks/silver-purity-marks",
+        "/marks/is-it-real-silver"
+      ]
+    },
+    {
+      "id": "silver-fineness-900",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "international",
+      "kind": "standard mark",
+      "name": "900",
+      "looks_like": "The figures 900 struck in a small punch.",
+      "means": "The metal is stated to be 900 parts silver in 1000, the US coin standard from 1837; in the US an item marked COIN must meet it.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "us-stamping-act-1906",
+          "where": "§ 296: coin, 900/1000, four parts' tolerance"
+        },
+        {
+          "id": "ftc-16cfr-23-5",
+          "where": "(b)(3): coin, at least 900/1000"
+        },
+        {
+          "id": "yale-kossack-1988",
+          "where": "introduction: 89.2% before 1837, 90% thereafter"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "none",
+        "searched": [
+          "Wikimedia Commons: Category:Hallmarks and its country subcategories, Category:Nickel silver, Category:Silver plating hallmarks, and keyword searches (2026-11-22); searches for '900' silver marks returned only coins.",
+          "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: read all 220 pages' OCR and checked candidates on the page images: no 900 mark; the fineness numbers shown are 925 with STERLING.",
+          "Not reached: the 1904 and 1915 editions (not found on archive.org; HathiTrust not tried) and Rosenberg, Der Goldschmiede Merkzeichen (1911, 1922), which covers European goldsmiths' marks before about 1850 and isn't likely to show these American words.",
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: no 900 mark; the numbers shown are 925 and 925/1000 with STERLING."
+        ],
+        "blocked": []
+      },
+      "pages": [
+        "/marks/silver-purity-marks",
+        "/marks/coin-silver"
+      ]
+    },
+    {
+      "id": "sterling-word-us",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "US",
+      "kind": "standard mark",
+      "name": "STERLING",
+      "looks_like": "The word STERLING (sometimes STER.) stamped in capitals, usually beside the maker's mark.",
+      "means": "The maker states the metal is at least 925 parts silver in 1000. Since 1906 US law forbids the word on anything below 925, and on plate.",
+      "applied": "stamped",
+      "date_from": 1857,
+      "date_to": null,
+      "date_note": "Sources differ on the start: French (1917) gives about 1857; Yale gives the change to sterling as by the 1860s.",
+      "sources": [
+        {
+          "id": "us-stamping-act-1906",
+          "where": "§ 296"
+        },
+        {
+          "id": "ftc-16cfr-23-5",
+          "where": "(b)(2) and note 1 (15 U.S.C. 297(a): not on plated wares)"
+        },
+        {
+          "id": "french-1917",
+          "where": "glossary: 'About 1857 the word Sterling was stamped on silver articles'"
+        },
+        {
+          "id": "yale-kossack-1988",
+          "where": "introduction: sterling standard by the 1860s"
+        }
+      ],
+      "disagreements": [
+        {
+          "source": "french-1917",
+          "date_from": 1857
+        },
+        {
+          "source": "yale-kossack-1988",
+          "date_from": 1860,
+          "note": "'by the 1860s'"
+        }
+      ],
+      "visual": {
+        "status": "none",
+        "blocked": [],
+        "searched": [
+          "Wikimedia Commons: Category:Hallmarks and its country subcategories, Category:Nickel silver, Category:Silver plating hallmarks, and keyword searches (2026-11-22). Not checked: 'Arthur & Bond sterling silver wood tray mark.png' (CC BY-SA 4.0) is credited to The St. James's Collection, a dealer, which the database's rules exclude, so it was not considered.",
+          "Cooper Hewitt via Commons (CH files): American spoons and boxes found, front views only, no view of the mark",
+          "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
+          "Yale University Art Gallery pitcher retailed by Tiffany, marked ENGLISH STERLING 925-1000 (https://artgallery.yale.edu/collections/objects/64195): mark image and its licence not checked; Yale's open-access images are worth a second look.",
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: STERLING appears as typeset capitals under the trade-mark cuts or joined to a device (Lenau Co.'s L, p. 44; Meriden Britannia's phoenix, p. 45); none shows STERLING alone unambiguously.",
+          "1922 Jewelers' Circular (HathiTrust hvd.hb9jsx, scans 146–220; all 44 stand-alone STERLING hits checked by eye): only typeset, device-joined or one firm's script forms. Closest: Attleboro Mfg. Co.'s boxed STERLING (seq 150) shares its top edge with the triangles; Watrous Mfg. Co.'s STERLING (seq 180) is joined to an arrow; Frank Kursh & Son's script Sterling (p. 133, seq 162) is one firm's lettering, not the usual plain capitals."
+        ]
+      },
+      "pages": [
+        "/marks/is-it-real-silver",
+        "/marks/silver-purity-marks",
+        "/marks/coin-silver"
+      ]
+    },
+    {
+      "id": "coin-word-us",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "US",
+      "kind": "standard mark",
+      "name": "COIN",
+      "looks_like": "The word COIN in plain capitals, unframed, struck beside an early American maker's mark.",
+      "means": "The maker states the metal is of the standard of US silver coin: 892.4/1000 before 1837, 900/1000 after. Since 1906 US law requires 900 for the word.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Mostly before the 1860s; French dates the word's use to after 1837.",
+      "sources": [
+        {
+          "id": "french-1917",
+          "where": "glossary: 'Coin — This word stamped by a die on silver after 1837 designated that the metal was of the same fineness as silver money'"
+        },
+        {
+          "id": "cw-journal-2008",
+          "where": "objects stamped 'coin'"
+        },
+        {
+          "id": "us-stamping-act-1906",
+          "where": "§ 296"
+        },
+        {
+          "id": "ftc-16cfr-23-5",
+          "where": "(b)(3)"
+        },
+        {
+          "id": "jewelers-circular-1896",
+          "where": "p. 28, 'Examples of maker's marks': COIN beside a maker's punch"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/coin-word-us.webp",
+        "marks_in_image": 1,
+        "holder": "Internet Archive",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/28/mode/1up",
+        "original": "hallmark-sources/jewelers-circular-1896/leaf0057-p28.jpg",
+        "crop": [
+          1046,
+          2219,
+          134,
+          90
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), p. 28, public domain.",
+        "note": "The page shows COIN with the neighbouring maker's punch; the crop takes the word alone. The book doesn't name the maker. The word mark is about 33 px tall on the 2338 px page scan."
+      },
+      "pages": [
+        "/marks/coin-silver",
+        "/marks/is-it-real-silver"
+      ]
+    },
+    {
+      "id": "pure-coin-word-us",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "US",
+      "kind": "standard mark",
+      "name": "PURE COIN",
+      "looks_like": "The words PURE COIN (or PURE SILVER COIN) stamped beside an American maker's mark.",
+      "means": "As COIN: the maker states the metal is of the US silver coin standard. Seen on New England silver.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Before the 1860s.",
+      "sources": [
+        {
+          "id": "french-1917",
+          "where": "mark entries, e.g. 'rectangle with pure coin, boston'"
+        },
+        {
+          "id": "yale-kossack-1988",
+          "where": "introduction: 'Pure Silver Coin' in New England"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "none",
+        "searched": [
+          "Wikimedia Commons: Category:Hallmarks and its country subcategories, Category:Nickel silver, Category:Silver plating hallmarks, and keyword searches (2026-11-22)",
+          "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
+          "Winterthur Museum teaspoon by N. Matson stamped PURE COIN: seen only as a search excerpt, object page and image licence not checked.",
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: read all 220 pages' OCR and checked candidates on the page images: no PURE COIN mark in the OCR (PURE appears only in the text).",
+          "Not reached: the 1904 and 1915 editions (not found on archive.org; HathiTrust not tried) and Rosenberg, Der Goldschmiede Merkzeichen (1911, 1922), which covers European goldsmiths' marks before about 1850 and isn't likely to show these American words.",
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: no PURE COIN mark."
+        ],
+        "blocked": []
+      },
+      "pages": [
+        "/marks/coin-silver"
+      ]
+    },
+    {
+      "id": "standard-word-us",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "US",
+      "kind": "standard mark",
+      "name": "STANDARD",
+      "looks_like": "The word STANDARD stamped beside an American maker's mark, sometimes in a scroll.",
+      "means": "The maker states the metal is of the coin (dollar) standard. Found on silver made around Philadelphia.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Before the 1860s.",
+      "sources": [
+        {
+          "id": "yale-kossack-1988",
+          "where": "introduction: 'STANDARD' on forms produced around Philadelphia"
+        },
+        {
+          "id": "currier-1938",
+          "where": "mark entry with 'standard' in a scroll"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "none",
+        "searched": [
+          "Wikimedia Commons: Category:Hallmarks and its country subcategories, Category:Nickel silver, Category:Silver plating hallmarks, and keyword searches (2026-11-22)",
+          "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: read all 220 pages' OCR and checked candidates on the page images: STANDARD appears only in plate trade names (STANDARD PLATE) and firm names, not as the coin-standard mark.",
+          "Not reached: the 1904 and 1915 editions (not found on archive.org; HathiTrust not tried) and Rosenberg, Der Goldschmiede Merkzeichen (1911, 1922), which covers European goldsmiths' marks before about 1850 and isn't likely to show these American words.",
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: STANDARD appears only in plate names (STANDARD PLATE), a firm name (Standard Silver Co.) and watch grades, not as the coin-standard mark."
+        ],
+        "blocked": []
+      },
+      "pages": [
+        "/marks/coin-silver"
+      ]
+    },
+    {
+      "id": "german-crescent-and-crown",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "DE",
+      "kind": "standard mark",
+      "name": "Crescent moon and crown",
+      "looks_like": "A crescent moon with a crown to its right, often in one shaped punch, struck beside the fineness number (800 or more) and the maker's mark.",
+      "means": "German silver ware of the stated fineness (at least 800), marked under the German Empire's law of 1884. The crescent stands for silver, the crown for the Reich. Not used on jewelry.",
+      "applied": "stamped",
+      "date_from": 1888,
+      "date_to": null,
+      "date_note": "From 1 January 1888; the end date isn't in these sources.",
+      "sources": [
+        {
+          "id": "de-stempelzeichen-1886",
+          "where": "the mark: Reichskrone, Mondsichel for silver, fineness in thousandths, the firm's mark; crown to the right of the crescent"
+        },
+        {
+          "id": "de-feingehalt-1884",
+          "where": "§§ 2, 3, 5, 10"
+        },
+        {
+          "id": "vam-o136991",
+          "where": "marks: 'A crescent moon and crown are stamped beneath the base'"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/german-crescent-and-crown.webp",
+        "marks_in_image": 1,
+        "object": "Silver ware, Germany (date not given by the photographer)",
+        "holder": "Wikimedia Commons (photographer Mario Sarto Masa)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Silberpunzierung.jpg",
+        "licence": "CC-BY-SA-3.0",
+        "credit": "Photograph: Mario Sarto Masa, Silberpunzierung.jpg, Wikimedia Commons, CC BY-SA 3.0; cropped and toned by Heirloom.",
+        "original": "hallmark-sources/silver-standards/silberpunzierung.jpg",
+        "crop": [
+          37,
+          84,
+          242,
+          156
+        ],
+        "note": ""
+      },
+      "pages": [
+        "/marks/silver-purity-marks",
+        "/marks/is-it-real-silver"
+      ]
+    },
+    {
+      "id": "nickel-silver-word",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "GB",
+      "kind": "other",
+      "name": "NICKEL SILVER",
+      "looks_like": "The words NICKEL SILVER stamped in capitals, here over a second line, WEAR-WHITE, in the same punch.",
+      "means": "The item is nickel silver (German silver): an alloy of copper, nickel and zinc with no silver in it.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "The US Bureau of Standards noted in 1921 that the trade had moved from 'German silver' to 'nickel silver' after the war.",
+      "sources": [
+        {
+          "id": "nbs-circular-100-1921",
+          "where": "pp. 55–58"
+        },
+        {
+          "id": "eb1911-german-silver",
+          "where": "whole entry"
+        },
+        {
+          "id": "meyers-1908-neusilber",
+          "where": "pp. 577–578"
+        }
+      ],
+      "disagreements": [
+        {
+          "note": "Composition: Bureau of Standards, copper 52–80%, zinc 10–35%, nickel 5–30%; Meyers, brass with 16–33% nickel (usually 25%)."
+        }
+      ],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/nickel-silver-word.webp",
+        "marks_in_image": 1,
+        "object": "Teaspoon, made in England",
+        "holder": "Wikimedia Commons (photographer Smirkybec)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nickel_silver_teaspoon_marks.jpg",
+        "licence": "CC-BY-SA-4.0",
+        "credit": "Photograph: Smirkybec, Nickel silver teaspoon marks.jpg, Wikimedia Commons, CC BY-SA 4.0; cropped and toned by Heirloom.",
+        "original": "hallmark-sources/silver-standards/nickel-silver-teaspoon-marks.jpg",
+        "crop": [
+          560,
+          513,
+          446,
+          150
+        ],
+        "note": "WEAR-WHITE is the second line of the same punch, read as a trade name; the number 12 and the maker's oval are left out."
+      },
+      "pages": [
+        "/marks/german-silver",
+        "/marks/is-it-real-silver"
+      ]
+    },
+    {
+      "id": "alp-nickel-silver",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "FI",
+      "kind": "other",
+      "name": "ALP in an oval (alpacca)",
+      "looks_like": "The letters ALP in a stretched hexagonal oval, beside the maker's name.",
+      "means": "Alpacca (Alpaka): nickel silver, by the photographer's description; Meyers gives Alpaka as a name for silver-plated nickel silver. Either way the body has no silver.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "meyers-1908-neusilber",
+          "where": "p. 577: Alpaka among names for silvered Neusilber"
+        }
+      ],
+      "single_source": "Only Meyers names Alpaka in a published source; that ALP marks nickel silver comes from the photographer's Commons description, not a published reference.",
+      "disagreements": [
+        {
+          "source": "meyers-1908-neusilber",
+          "note": "Alpaka = silver-plated nickel silver"
+        },
+        {
+          "note": "Commons description (Subjektivisti): the ALP stamp shows the item is nickel silver"
+        }
+      ],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/alp-nickel-silver.webp",
+        "marks_in_image": 1,
+        "object": "Trophy plate by Hopeakeskus Oy, Finland",
+        "holder": "Wikimedia Commons (photographer Subjektivisti)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nickel_Silver_ALP_stamp_Hopeakeskus.jpg",
+        "licence": "CC-BY-SA-4.0",
+        "credit": "Photograph: Subjektivisti, Nickel Silver ALP stamp Hopeakeskus.jpg, Wikimedia Commons, CC BY-SA 4.0; cropped and toned by Heirloom.",
+        "original": "hallmark-sources/silver-standards/nickel-silver-alp-hopeakeskus.jpg",
+        "crop": [
+          273,
+          388,
+          142,
+          90
+        ],
+        "note": "The mark is about 65 px tall in the original; cut at native size; the 90 px floor gives it more than 15% above and below. The maker's name is left out."
+      },
+      "pages": [
+        "/marks/german-silver"
+      ]
+    },
+    {
+      "id": "german-silver-word",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "international",
+      "kind": "other",
+      "name": "GERMAN SILVER",
+      "looks_like": "The words GERMAN SILVER in hand-lettered capitals inside a rounded oblong outline, struck as its own punch.",
+      "means": "The item is German silver (nickel silver): copper, nickel and zinc, with no silver in it.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Bureau of Standards (1921): the usual name until the trade moved to 'nickel silver' after the war.",
+      "sources": [
+        {
+          "id": "nbs-circular-100-1921",
+          "where": "pp. 55–58"
+        },
+        {
+          "id": "eb1911-german-silver",
+          "where": "whole entry"
+        },
+        {
+          "id": "meyers-1908-neusilber",
+          "where": "p. 577: German silver among its names"
+        },
+        {
+          "id": "jewelers-circular-1896",
+          "where": "p. 55, Holmes & Edwards Silver Co., Bridgeport: GERMAN SILVER between their HE mark and a 24"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/german-silver-word.webp",
+        "marks_in_image": 1,
+        "holder": "Internet Archive",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/55/mode/1up",
+        "original": "hallmark-sources/jewelers-circular-1896/leaf0084-p55.jpg",
+        "crop": [
+          405,
+          1336,
+          306,
+          90
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), p. 55, public domain.",
+        "note": "One punch from Holmes & Edwards' row (HE, GERMAN SILVER, 24); the HE and 24 sit close, so the sides have less than 15%."
+      },
+      "pages": [
+        "/marks/german-silver",
+        "/marks/is-it-real-silver"
+      ]
+    },
+    {
+      "id": "epns-mark",
+      "group": "silver-standards",
+      "maker": null,
+      "country": "GB",
+      "kind": "other",
+      "name": "EPNS",
+      "looks_like": "The letters EPNS (sometimes E.P.N.S.) stamped in capitals, often with the maker's mark and a pattern or quality mark.",
+      "means": "Electroplated nickel silver: a nickel silver body with a thin coat of silver laid on by electroplating. The silver is only on the surface.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "meyers-1908-neusilber",
+          "where": "p. 577: Neusilber 'meist versilbert' and sold as Elektroplate"
+        },
+        {
+          "id": "nbs-circular-100-1921",
+          "where": "pp. 56–58: 'Electroplate' among nickel silver names; base metal for plated silverware"
+        },
+        {
+          "id": "ftc-16cfr-23-5",
+          "where": "(b)(4)–(5): coated silver must be qualified as coated"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/epns-mark.webp",
+        "marks_in_image": 1,
+        "object": "Teaspoon by J.R.S., electroplated nickel silver",
+        "holder": "Wikimedia Commons (photographer Smirkybec)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:J.R.S._EPNS_spoon_reverse.jpg",
+        "licence": "CC-BY-SA-4.0",
+        "credit": "Photograph: Smirkybec, J.R.S. EPNS spoon reverse.jpg, Wikimedia Commons, CC BY-SA 4.0; cropped and toned by Heirloom.",
+        "original": "hallmark-sources/silver-standards/jrs-epns-spoon-reverse.jpg",
+        "crop": [
+          2170,
+          1011,
+          244,
+          90
+        ],
+        "note": "The mark is about 42 px tall in the original; cut at native size, with less than 15% at the sides because J.R.S and the letter A sit close. The maker's J.R.S and the letter A beside it are left out."
+      },
+      "pages": [
+        "/marks/is-it-real-silver",
+        "/marks/german-silver"
+      ]
+    }
+  ]
+}

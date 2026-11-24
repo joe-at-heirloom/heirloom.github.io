@@ -1,0 +1,19 @@
+---
+// One mark from the database: its single image on a plate, what it looks
+// like, what it means, its years and the image's source.
+import { img, VISUAL_LABEL, type MarkEntry } from '../lib/marks';
+const { entry: e } = Astro.props as { entry: MarkEntry };
+const src = img(e);
+const years = e.date_from ? (e.date_to ? `${e.date_from}–${e.date_to}` : `from ${e.date_from}`) : '';
+---
+<figure class="spec">
+  <div class="plate plate--print spec__plate">
+    {src ? <img src={src} alt={e.looks_like ?? e.name} loading="lazy" decoding="async" /> : <span class="spec__none">{e.looks_like ?? 'No image yet'}</span>}
+  </div>
+  <figcaption>
+    <span class="spec__name">{e.name}</span>
+    {years && <span class="num faint spec__years">{years}</span>}
+    {e.means && <span class="spec__means">{e.means}</span>}
+    {src && <span class="spec__credit">{VISUAL_LABEL[e.visual.status]}. {e.visual.credit}</span>}
+  </figcaption>
+</figure>

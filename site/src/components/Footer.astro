@@ -1,0 +1,49 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div class="ftr__brand">
+      <img src="/logo.svg" alt="Heirloom" width="96" height="17" />
+      <p class="muted">Know what you own. A home inventory for the things that matter, and a reference for reading the marks on them.</p>
+    </div>
+    <nav class="ftr__cols" aria-label="Footer">
+      <div>
+        <h2>Marks</h2>
+        <a href="/marks/">All marks</a>
+        <a href="/marks/london-date-letters">British date letters</a>
+        <a href="/marks/chinese-reign-marks">Chinese reign marks</a>
+        <a href="/marks/artist-signatures">Artist signatures</a>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <a href="/home-inventory-app">Home inventory app</a>
+        <a href="/home-inventory-checklist">Home inventory checklist</a>
+        <a href="/silver-hallmarks">Silver hallmarks</a>
+        <a href="/family-heirlooms">Family heirlooms</a>
+      </div>
+      <div>
+        <h2>Heirloom</h2>
+        <a href="https://apps.apple.com/us/app/id6754576251">App Store</a>
+        <a href="https://web.heirloomapp.io">Web app</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </nav>
+  </div>
+  <div class="wrap ftr__base faint">© {year} The Peninsular Company, LLC</div>
+</footer>
+
+<style>
+  .ftr { margin-top: clamp(80px, 10vw, 140px); border-top: 1px solid var(--rule); background: var(--paper-2); }
+  .ftr__in { display: grid; grid-template-columns: 1.2fr 2fr; gap: 48px; padding-block: 56px 32px; }
+  .ftr__brand img { height: 17px; width: auto; margin-bottom: 14px; }
+  .ftr__brand p { max-width: 34ch; font-size: 15px; }
+  .ftr__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .ftr__cols h2 { font: 600 14px/1.4 var(--sans); letter-spacing: 0; margin-bottom: 10px; color: var(--ink); }
+  .ftr__cols a { display: block; padding: 5px 0; font-size: 15px; color: var(--ink-2); text-decoration: none; }
+  .ftr__cols a:hover { color: var(--accent-ink); }
+  .ftr__base { padding-block: 0 32px; font-size: 13px; }
+  @media (max-width: 760px) { .ftr__in { grid-template-columns: 1fr; } .ftr__cols { grid-template-columns: 1fr 1fr; } }
+</style>

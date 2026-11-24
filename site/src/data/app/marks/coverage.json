@@ -1,0 +1,26 @@
+{
+  "note": "Groups Heirloom means to cover. status: done (every mark has an entry), partial (pages exist, entries incomplete), not started. Keep 'why' to one line.",
+  "groups": [
+    { "id": "british-hallmarks", "name": "British date letters: London, Birmingham, Sheffield, Chester", "status": "partial", "why": "Letters to 1923 have Chaffers facsimiles; 1924-2000 mostly typeface renderings, four cycles photographed" },
+    { "id": "british-hallmarks-scotland-ireland", "name": "Edinburgh, Glasgow and Dublin date letters", "status": "not started", "why": "The app's table skipped them: cycles not yet cross-checked against two sources" },
+    { "id": "british-hallmarks-closed", "name": "Exeter, Newcastle, York, Norwich date letters (closed offices)", "status": "not started", "why": "Not in the app's table; Chaffers 1924 has them" },
+    { "id": "british-makers", "name": "British makers' marks directory", "status": "not started", "why": "Thousands of marks; needs our own open-licence images first" },
+    { "id": "silver-plate", "name": "American silver-plate makers", "status": "partial", "why": "Five pages written; marks need one crop each" },
+    { "id": "silver-standards", "name": "Silver standards: 925, 800, coin, Britannia, German silver", "status": "partial", "why": "Five pages written; marks need one crop each" },
+    { "id": "world-silver", "name": "Mexican, French, German, Russian, Gorham, Christofle", "status": "partial", "why": "Seven pages written; several marks described in words only" },
+    { "id": "us-makers-dates", "name": "Tiffany, Reed & Barton, Towle, Wallace, Whiting, Kirk date marks", "status": "not started", "why": "Planned after Gorham" },
+    { "id": "continental-silver", "name": "Dutch, Italian, Austro-Hungarian, Scandinavian, Swiss silver marks", "status": "not started", "why": "" },
+    { "id": "asian-silver", "name": "Chinese export, Indian and Japanese silver marks", "status": "not started", "why": "" },
+    { "id": "gold", "name": "Gold karat and plated-gold marks", "status": "partial", "why": "One page written" },
+    { "id": "pottery-codes", "name": "Wedgwood, Minton, Royal Worcester, Rookwood, Sevres date codes", "status": "partial", "why": "Codes tabled; Wedgwood dated code and Worcester after 1890 have no photo" },
+    { "id": "ceramics-makers", "name": "Weller, Roseville, McCoy, Hull, Meissen, Hummel, Limoges, Haviland, Royal Doulton, Royal Copenhagen, Nippon, Noritake", "status": "partial", "why": "Eleven pages; many marks described in words only" },
+    { "id": "staffordshire", "name": "Staffordshire potters and backstamps (Meakin, Johnson Brothers, Wood & Sons, Spode, Royal Crown Derby)", "status": "not started", "why": "" },
+    { "id": "more-porcelain", "name": "Belleek, Herend, KPM Berlin, Rosenthal, Lladro, Capodimonte", "status": "not started", "why": "" },
+    { "id": "american-art-pottery", "name": "Van Briggle, Newcomb, Grueby, Fulper, Teco, Homer Laughlin", "status": "not started", "why": "" },
+    { "id": "glass", "name": "Glass marks (Steuben, Fenton, Lalique, Baccarat, Waterford)", "status": "not started", "why": "" },
+    { "id": "pewter", "name": "Pewter touchmarks", "status": "not started", "why": "" },
+    { "id": "swiss-watches", "name": "Rolex and Omega serials", "status": "partial", "why": "Serial tables done; case and movement marks need one image each" },
+    { "id": "american-watches", "name": "Waltham, Elgin, Hamilton, Illinois, South Bend, Hampden serials", "status": "partial", "why": "Serial tables done; movement marks have no per-mark images" },
+    { "id": "zippo", "name": "Zippo date codes", "status": "not started", "why": "Page dropped by the silver-basics session; see its note" }
+  ]
+}

@@ -1,0 +1,180 @@
+---
+// /marks/<office>-date-letters: the four British assay offices. The facts are
+// the app's hallmark table (src/data/app/hallmarks.json) and the marks
+// database; the words are the generated page's (scripts/pages/p_marks.py
+// date_letter_page), carried over so nothing a reader or a search engine had
+// is lost.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Specimen from '../../components/Specimen.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import Related from '../../components/Related.astro';
+import DateLetterSheet, { type Cycle } from '../../islands/DateLetterSheet';
+import { OFFICES, HALLMARKS, BY_ID, cyclesOf, letterEntry, STYLE_WORD, CASE_WORD, VISUAL_LABEL, img, sourceName, type Office, type DLRow } from '../../lib/marks';
+import { soften, articleLd, faqLd, crumbsLd, longDate } from '../../lib/site';
+import editorial from '../../data/site/date-letters.json';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+
+export function getStaticPaths() {
+  return OFFICES.map((o) => ({ params: { office: o.slug }, props: { office: o.office } }));
+}
+const { office } = Astro.props as { office: Office };
+const meta = OFFICES.find((o) => o.office === office)!;
+const span = meta.span.replace('–', ' to ');
+const town = (editorial.intro as Record<string, string>)[office];
+const path = `/marks/${meta.slug}-date-letters`;
+const updated = [synced.changed.hallmarks, synced.changed.marks].sort().at(-1)!;
+
+const title = `${office} Hallmark Date Letters, ${meta.span} | Heirloom`;
+const description = `Every ${office} assay office date letter from ${span}, with a letter finder, the ${office} town mark, duty and standard marks, and the sources for each year.`;
+const h1 = `${office} hallmark date letters, ${span}`;
+
+// What the table says a mark beside the letter narrows, for one office and year.
+const MARK_RULES = ['britannia_standard', 'london_makers_mark_form', 'duty_mark_sovereigns_head', 'duty_drawback_mark', 'double_duty_1797', 'watch_cases_duty_exempt', 'london_leopard_crowned', 'london_lion_guardant', 'provincial_lion_forms', 'sheffield_crown_letter_one_punch', 'sheffield_crown_inverted', 'changes_1999'];
+const officeRules = HALLMARKS.rules.filter((r) => r.applies_to.includes(office) || r.applies_to.includes('all'));
+const dialogRules = officeRules.filter((r) => MARK_RULES.includes(r.id));
+const dialogText = dialogRules.map((r) => soften(r.narrows ? `${r.narrows}` : r.fact));
+
+function rowNote(r: DLRow) {
+  const bits: string[] = [];
+  if (r.alt_year) bits.push(`another source gives ${r.alt_year}`);
+  if (r.confidence) bits.push(r.confidence === 'disputed' ? 'sources disagree' : `${r.confidence} confidence`);
+  if (r.note) bits.push(soften(r.note));
+  if (!bits.length) return null;
+  const s = bits.join('; ');
+  return s[0].toUpperCase() + s.slice(1);
+}
+
+const raw = cyclesOf(office);
+const counts: Record<string, number> = { photo: 0, facsimile: 0, rendering: 0, none: 0 };
+const cycles: Cycle[] = raw.map((c) => ({
+  start: c.start,
+  end: c.end,
+  label: c.label,
+  tiles: c.rows.map((r) => {
+    const e = letterEntry(r);
+    const src = img(e);
+    counts[src && e ? e.visual.status : 'none']++;
+    return {
+      id: `${r.year}-${r.letter}`,
+      letter: r.letter,
+      case: r.case,
+      style: r.style,
+      styleWord: STYLE_WORD[r.style],
+      year: r.year,
+      label: r.year_label ? r.year_label.replace(/(\d)-(\d)/, '$1–$2') : String(r.year),
+      img: src,
+      kind: src && e ? VISUAL_LABEL[e.visual.status] : null,
+      credit: src && e ? e.visual.credit ?? null : null,
+      sourceUrl: src && e ? e.visual.source_url ?? null : null,
+      alt: `${STYLE_WORD[r.style]} ${CASE_WORD[r.case]} ${r.letter} in its shield, ${office} ${r.year_label ?? r.year}`,
+      note: rowNote(r),
+      flagged: !!(r.alt_year || r.confidence),
+      rules: dialogRules.map((x, i) => (x.from_year <= r.year && (x.to_year == null || x.to_year >= r.year) ? i : -1)).filter((i) => i >= 0),
+      sources: r.sources.map(sourceName),
+    };
+  }),
+}));
+const ORDER = Object.keys(STYLE_WORD);
+const styles = [...new Set(raw.flatMap((c) => c.rows.map((r) => r.style)))].sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b)).map((k) => ({ key: k, word: STYLE_WORD[k] }));
+const total = cycles.reduce((n, c) => n + c.tiles.length, 0);
+
+const besides = ((editorial.office_marks as Record<string, string[]>)[office] ?? []).map((id) => BY_ID.get(id)).filter(Boolean);
+const britannia = office === 'London' || office === 'Chester' ? editorial.britannia.map((id) => BY_ID.get(id)).filter(Boolean) : [];
+const caveats = [...HALLMARKS.caveats.slice(0, 3), ...HALLMARKS.caveats.slice(3).filter((c) => c.includes(office))].map(soften);
+const range = (r: { from_year: number; to_year: number | null }) => (r.to_year ? `${r.from_year}–${r.to_year}` : `${r.from_year} on`);
+
+const faqs: [string, string][] = [
+  [`How do I find the year from a ${office} hallmark?`, `<p>Check the town mark first: ${office} used ${town}. Then find the date letter, note whether it is a capital or a small letter and its style, and match all three to one cycle above. A letter usually covers an assay year that straddles two calendar years, so most entries read like 1753-54.</p>`],
+  ['Why does the same letter appear in more than one cycle?', '<p>Each office ran through the alphabet again and again, changing the letter style and usually the shield shape each time. The same small Roman letter can mean four different years, so the style, the case and the other marks have to agree before a year is certain.</p>'],
+  ["What if my letter doesn't match any style exactly?", '<p>Then the year is uncertain, and the honest answer is a range. Worn punches make letters look alike: a long s can read as f, I or l. Heirloom Advisor reports every year a letter could be rather than picking the nearest one.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, updated, { about: { '@type': 'Thing', name: `${office} hallmark date letters` } }),
+  faqLd(path, faqs),
+  crumbsLd(path, `${office} date letters`, ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name={`${office} date letters`} mid={['/marks/', 'Marks']} />
+
+    <header class="hero">
+      <div class="hero__text">
+        <h1>{h1}</h1>
+        <p class="lede">Every date letter the {office} assay office used from {span}, from the same table Heirloom Advisor dates silver with. Type a letter to see every year it could be.</p>
+        <p class="byline">By Heirloom · Updated <time datetime={updated}>{longDate(updated)}</time></p>
+      </div>
+      <nav class="offices" aria-label="Assay offices">
+        <p class="offices__label">Assay offices</p>
+        {OFFICES.map((o) => (
+          <a href={`/marks/${o.slug}-date-letters`} aria-current={o.office === office ? 'page' : undefined}>
+            <span>{o.office}</span><span class="num">{o.span}</span>
+          </a>
+        ))}
+      </nav>
+    </header>
+
+    <div class="answer">
+      <p class="answer__label">In short</p>
+      <p>A {office} hallmark has {town} as its town mark. To date it, match the date letter's case and style to one of the cycles below; a single letter appears in several cycles, so all three have to agree. Until 1974 each letter covers an assay year, not a calendar year.</p>
+    </div>
+
+    <h2 id="finder" class="section-title">Find a letter</h2>
+    <DateLetterSheet client:visible office={office} cycles={cycles} rules={dialogText} styles={styles} />
+    <p class="coverage faint">
+      Of these {total} letters, {counts.facsimile} are facsimiles of the punches printed in W. Chaffers, <cite>Handbook to Hall Marks on Gold and Silver Plate</cite> (1924) or Jackson (1921), public domain{counts.rendering > 0 && <>; {counts.rendering} are drawn by Heirloom from the published descriptions of the letter and its shield</>}{counts.photo > 0 && <>; {counts.photo} are photographs</>}{counts.none > 0 && <>; {counts.none} {counts.none === 1 ? 'is' : 'are'} set in a similar typeface for now</>}. Open a letter to see which, and its credit. A year marked with a dot is one where the sources disagree.
+    </p>
+
+    {besides.length > 0 && (
+      <section class="block" aria-labelledby="besides">
+        <h2 id="besides">The other marks beside the letter</h2>
+        <div class="specimens">{besides.map((e) => <Specimen entry={e!} />)}</div>
+      </section>
+    )}
+
+    <section class="block prose" aria-labelledby="marks">
+      <h2 id="marks">{office}'s marks, and what they narrow</h2>
+      <ul class="rules">
+        {officeRules.map((r) => (
+          <li><span class="rules__years num">{range(r)}</span><span>{soften(r.fact)}{r.narrows && <> <em>{soften(r.narrows)}</em></>}</span></li>
+        ))}
+      </ul>
+    </section>
+
+    {britannia.length > 0 && (
+      <section class="block" aria-labelledby="britannia">
+        <h2 id="britannia">The Britannia standard, 1697 to 1720</h2>
+        <div class="specimens">{britannia.map((e) => <Specimen entry={e!} />)}</div>
+      </section>
+    )}
+
+    <section class="block prose" aria-labelledby="caveats">
+      <h2 id="caveats">Read these before you rely on a year</h2>
+      <ul>{caveats.map((c) => <li>{c}</li>)}</ul>
+      <h2 id="sources">Sources</h2>
+      <p>Each year here is supported by at least two of these, cross-checked letter by letter:</p>
+      <Fragment set:html="<!--copy-check:skip-->" />
+      <ul class="sources">
+        {HALLMARKS.sources.filter((s) => s.key !== 'not_used').map((s) => <li>{s.name}{s.url && <> (<a href={s.url} rel="nofollow">source</a>)</>}</li>)}
+      </ul>
+      <Fragment set:html="<!--/copy-check:skip-->" />
+    </section>
+
+    <AppBox text="Photograph the marks on your silver. The Advisor reads the letter and the town mark and dates them from this same table, and when a letter could be more than one year, it says so." />
+    <Faq {faqs} />
+
+    <nav class="next" aria-label="The other assay offices">
+      {OFFICES.filter((o) => o.office !== office).map((o) => (
+        <a class="next__card" href={`/marks/${o.slug}-date-letters`}>
+          <span class="next__k">Date letters</span>
+          <span class="next__title">{o.office}</span>
+          <span class="num next__k">{o.span}</span>
+        </a>
+      ))}
+    </nav>
+    <Related {path} />
+  </div>
+</Base>

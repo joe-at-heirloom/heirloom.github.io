@@ -1,0 +1,39 @@
+{
+  "_about": "Editorial choices for the date-letter pages, ported from scripts/pages/p_marks.py: the marks shown beside each office's letters and on the Britannia section (marks-database ids), and the town mark in words for the summary. No context photographs: one image per mark (marks DB rule 1, commit c749979).",
+  "office_marks": {
+    "London": [
+      "leopards-head-crowned",
+      "leopards-head-uncrowned",
+      "lion-passant-guardant",
+      "lion-passant",
+      "sovereigns-head-duty"
+    ],
+    "Birmingham": [
+      "birmingham-anchor",
+      "lion-passant",
+      "sovereigns-head-duty"
+    ],
+    "Sheffield": [
+      "sheffield-crown",
+      "sheffield-rose",
+      "lion-passant",
+      "sovereigns-head-duty"
+    ],
+    "Chester": [
+      "chester-town-mark",
+      "lion-passant-guardant",
+      "lion-passant",
+      "sovereigns-head-duty"
+    ]
+  },
+  "britannia": [
+    "britannia-figure",
+    "lions-head-erased"
+  ],
+  "intro": {
+    "London": "a leopard's head",
+    "Birmingham": "an anchor",
+    "Sheffield": "a crown (a rose from 1975)",
+    "Chester": "three wheatsheaves and a sword"
+  }
+}
