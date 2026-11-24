@@ -351,6 +351,7 @@ def russia():
 GORHAM_SRC = [
     ("D. T. Rainwater, <cite>American Silver Manufacturers</cite> (1966), p. 60, Gorham entry and date-letter table (read in excerpt)", "https://archive.org/details/americansilverma0000unse"),
     ("D. T. Rainwater, <cite>Encyclopedia of American Silver Manufacturers</cite> (1975; 4th ed. 1998)", "https://archive.org/details/encyclopediaofam0000rain"),
+    ("R. and T. Kovel, <cite>Kovels' American Silver Marks, 1650 to the Present</cite> (New York: Crown, 1989), pp. 153–154, Gorham chronology and date-mark chart", None),
     ("C. H. Carpenter Jr., <cite>Gorham Silver 1831–1981</cite> (New York: Dodd, Mead, 1982), the standard history, with the full date-mark chart", "https://archive.org/details/gorhamsilver18310000carp"),
     ("D. S. Cinamon, <cite>All About Antique Silver with International Hallmarks</cite> (2005), Gorham section (read in excerpt)", "https://archive.org/details/allaboutantiques0000cina"),
     ("N. D. Turner, <cite>American Silver Flatware, 1837–1910</cite> (1972), on Gorham's adoption of sterling in 1868 (read in excerpt)", "https://archive.org/details/americansilverfl0000unse"),
@@ -369,23 +370,10 @@ GORHAM_SRC = [
 ]
 
 
+GORHAM_SYMBOLS = [(1885, 'boar'), (1886, 'cross-in-square'), (1887, 'fleur-de-lis'), (1888, 'star-in-circle'), (1889, 'oval'), (1890, 'cockerel'), (1891, 'lion-head'), (1892, 'sea-creature'), (1893, 'two-globes'), (1894, 'circle-arrow'), (1895, 'crescent'), (1896, 'shell'), (1897, 'trident'), (1898, 'three-arrows'), (1899, 'hook'), (1900, 'bell'), (1901, 'hourglass'), (1902, 'lamp'), (1903, 'pitcher'), (1904, 'lyre'), (1905, 'horseshoe'), (1906, 'key'), (1907, 'scissors'), (1908, 'compasses'), (1909, 'arrow'), (1910, 'knot'), (1911, 'pipe'), (1912, 'fish'), (1913, 'shamrock'), (1914, 'small-figure'), (1915, 'dagger'), (1916, 'halberd'), (1917, 'curved-sword'), (1918, 'pickaxe'), (1919, 'horn'), (1920, 'spoon'), (1921, 'anvil'), (1922, 'bird'), (1923, 'trowel'), (1924, 'acorn'), (1925, 'winged-foot'), (1926, 'sailing-ship'), (1927, 'biplane'), (1928, 'tree'), (1929, 'airship'), (1930, 'elephant'), (1931, 'winged-wheel'), (1932, 'pointing-hand'), (1933, 'parachute')]
+
+
 def gorham():
-    letters = "ABCDEFGHIJKLMNOPQ"
-    confirmed = {"C": "Art Institute of Chicago", "G": "Cooper Hewitt; RISD Museum", "H": "RISD Museum", "M": "The Met", "N": "The Met", "O": "The Met", "P": "Minneapolis Institute of Art", "Q": "Cooper Hewitt; Minneapolis Institute of Art"}
-    cells = "".join(
-        f'<li class="dlc" title="{e(("Dated example: " + confirmed[l]) if l in confirmed else "By the sequence")}"><span class="dl">{l}</span><span class="dlc__year">{1868 + n}</span></li>'
-        for n, l in enumerate(letters)
-    )
-    sym = [
-        ("1886", "A cross in a small square with a double border", "Art Institute of Chicago; Cooper Hewitt (as possible)"),
-        ("1888", "A star in a circle", "Cooper Hewitt only"),
-        ("1891", "A lion's head", "Cooper Hewitt only"),
-        ("1894", "A circle with an arrow at the upper right", "The year: Cooper Hewitt and the Museum of the City of New York; the shape: Cooper Hewitt only"),
-        ("1897", "A trident", "Art Institute of Chicago; RISD Museum"),
-        ("1900", "A bell-like shape", "Cooper Hewitt only"),
-        ("1906", "A key", "RISD Museum only"),
-        ("1910", "A knot", "RISD Museum only"),
-    ]
     sections = f"""      <h2 id="history">Gorham, in brief</h2>
       <p>Jabez Gorham, a Providence jeweler, began making silver spoons in 1831, first as Gorham &amp; Webster. The firm became the Gorham Manufacturing Company in the 1860s, and later the largest silver maker in the US. Before 1868 it worked in coin silver and marked its wares with the firm's name in a rectangle: Gorham &amp; Webster, Gorham &amp; Thurber, Gorham &amp; Co. In 1868 it adopted the sterling standard, 925 thousandths, and the mark it has used since.</p>
       <h2 id="trademark">The lion, anchor and G</h2>
@@ -399,14 +387,14 @@ def gorham():
         <li><strong>From 1885: a small picture symbol</strong> for each year, such as a trident or a key.</li>
       </ul>
       <h3>The letters, 1868 to 1884</h3>
-      <ul class="dlg">{cells}</ul>
-      <p class="note">The sequence is from Rainwater's table. Museum records date dated examples of C, G, H, M, N, O, P and Q to these same years. One disagrees: the Minneapolis Institute of Art dates a dish marked K to 1879, where the sequence gives 1878.</p>
-      <p>Three of the letters, struck on silver the Met dates to those years:</p>
-      {marksdb.grid(['gorham-date-letter-m-1880', 'gorham-date-letter-n-1881', 'gorham-date-letter-o-1882'])}
-      <h3>The symbols, from 1885</h3>
-      <p>Each year from 1885 had its own small symbol. The full chart is printed in Carpenter's <cite>Gorham Silver</cite> and Rainwater's <cite>Encyclopedia</cite>; it could not be checked against a second source year by year, so it is not reproduced here. These are the years museum records tie to a symbol:</p>
-      {table(["Year", "The symbol", "Dated by"], sym)}
-      <p class="note">Rows dated by one museum only are shown as that museum describes them; check them against a full chart before you rely on them. Later Gorham silver, from 1941, has been said to carry a shape whose number of sides gives the decade; only one museum example (a hexagon on a pitcher of 1960) was found for it.</p>
+      <p>Rainwater's <cite>American Silver Manufacturers</cite> (1966) and Kovels' <cite>American Silver Marks</cite> (1989) both print the same chart. The letters below are as Rainwater sets them in type; three are photographs of the real punches, on silver the Met dates to those years. Museum records confirm C, G, H, M, N, O, P and Q; the Minneapolis Institute of Art dates a dish marked K to 1879, where the chart gives 1878.</p>
+      {marksdb.grid(["gorham-date-letter-" + l.lower() + "-" + str(1868 + n) for n, l in enumerate("ABCDEFGHIJKLMNOPQ")])}
+      <h3>The symbols, 1885 to 1933</h3>
+      <p>From 1885 each year had its own small symbol, as both charts print them. Year marks stopped in 1933.</p>
+      {marksdb.grid(["gorham-date-symbol-" + str(y) + "-" + n for y, n in GORHAM_SYMBOLS])}
+      <h3>The decade frames, from 1941</h3>
+      <p>Year marking resumed in January 1941 on sterling hollowware: a frame whose shape gives the decade, with a numeral for the year inside. A square is the 1940s, a pentagon the 1950s, a hexagon the 1960s; Kovels adds a heptagon for the 1970s and an octagon for the 1980s.</p>
+      {marksdb.grid(['gorham-date-square-1940s', 'gorham-date-pentagon-1950s', 'gorham-date-hexagon-1960s'])}
       <h2 id="martele">Martelé</h2>
       <p>Martelé (French for hammered) was Gorham's hand-raised, hand-hammered Art Nouveau line, designed under William C. Codman and shown at the Paris Exposition of 1900. It was made in silver finer than sterling, and marked differently: the word Martelé in script, a spread eagle, the lion, anchor and G, then <strong>950-1000 FINE</strong> or <strong>.9584</strong>, with a model number and often a letter code. Some carry a retailer's name, such as Spaulding &amp; Co. of Chicago.</p>
 {marksdb.grid(['gorham-martele-script', 'gorham-martele-eagle', 'gorham-martele-950-1000-fine', 'gorham-martele-9584'])}
@@ -414,7 +402,7 @@ def gorham():
     cavs = [
         "The lion, anchor and G is a company mark, not a government hallmark: it says Gorham made and sold the item as sterling.",
         "A date mark dates the making of the item, not its engraving or later repair.",
-        "Many Gorham symbols after 1885 are small and alike. Where this page gives only one museum for a year, check a full chart before you rely on it.",
+        "Many Gorham symbols after 1885 are small and alike, and the chart prints them small; match the shape carefully, and check the other marks agree.",
     ]
     faqs = [
         ("What is the Gorham silver mark?", "<p>A walking lion, an anchor and a Gothic G in a row, usually with STERLING and a model number. Gorham has used it on sterling since 1868. It imitates British hallmarks but is Gorham's own trademark.</p>"),
