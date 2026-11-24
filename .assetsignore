@@ -15,3 +15,4 @@ CNAME
 .DS_Store
 __pycache__
 *.py
+worker.js

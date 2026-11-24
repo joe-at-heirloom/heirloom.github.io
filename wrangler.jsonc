@@ -4,10 +4,18 @@
 {
   "$schema": "https://unpkg.com/wrangler@4.152.0/config-schema.json",
   "name": "heirloom-site",
+  "main": "worker.js",
   "compatibility_date": "2026-11-01",
   "workers_dev": true,
   "preview_urls": true,
+  "routes": [
+    { "pattern": "heirloomapp.io", "custom_domain": true },
+    { "pattern": "www.heirloomapp.io", "custom_domain": true }
+  ],
   "assets": {
+    "binding": "ASSETS",
+    // www is answered by worker.js before any file.
+    "run_worker_first": true,
     "directory": ".",
     // /guides serves guides.html, /marks/ serves marks/index.html, as Pages did.
     "html_handling": "auto-trailing-slash",
