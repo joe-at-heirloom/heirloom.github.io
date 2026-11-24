@@ -12,12 +12,14 @@ public-domain book facsimiles, and open-license museum photographs, listed
 in marks/img/chinese/index.json with their credits.
 """
 import json
+import re
 import os
 import urllib.parse
 
 from shell import *
 import tables
 from p_marks import MID, cta, e
+from sections import section_page, seal_chars, CSS as SEC_CSS, JS as SEC_JS
 
 T = tables.load("chinese")["systems"]["reign_marks"]
 ROWS = T["rows"]
@@ -200,6 +202,105 @@ def marks_summary(r):
     return ", ".join(kinds).replace("regular", "regular script").replace("seal", "seal script")
 
 
+# ── The reign rail: every reign, in order, the current one marked ─────────────
+HOME = "/marks/chinese/"
+CMID = (HOME, "Chinese marks")
+
+
+def rail(current=None):
+    groups = []
+    for dyn, label_zh, label in (("Ming", "明", "Ming"), ("Qing", "清", "Qing"), ("Hongxian", "洪憲", "1916")):
+        rs = [r for r in ROWS if r["dynasty"] == dyn]
+        chips = "".join(
+            f'<a class="cn-rail__r" href="{link(r)}"{" aria-current=" + chr(34) + "page" + chr(34) if current and r["reign_pinyin"] == current else ""}>'
+            f'<span class="cn-rail__han" lang="zh-Hant">{r["reign_chars"]}</span><span class="cn-rail__py">{e(r["reign_pinyin"])}</span>'
+            f'<span class="cn-rail__yr">{r["start"]}</span></a>'
+            for r in rs)
+        groups.append(f'<div class="cn-rail__dyn"><span class="cn-rail__dynlabel"><span lang="zh-Hant">{label_zh}</span> {label}</span><div class="cn-rail__chips">{chips}</div></div>')
+    return f"""    <nav class="cn-rail" aria-label="Reigns, 1368 to 1916">
+      <button class="cn-rail__btn cn-rail__btn--prev" type="button" aria-label="Earlier reigns">‹</button>
+      <div class="cn-rail__track">{"".join(groups)}</div>
+      <button class="cn-rail__btn cn-rail__btn--next" type="button" aria-label="Later reigns">›</button>
+    </nav>"""
+
+
+SEARCH_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
+
+
+def side(path):
+    """The section's contents: every reign and every hall, with a search."""
+    import p_chinese_halls as ph
+    on_reign = path == HUB or path.endswith("-mark")
+    on_hall = path == ph.HUB
+
+    def reign_li(r):
+        cur = ' aria-current="page"' if link(r) == path else ""
+        keys = " ".join([r["reign_pinyin"], r["wade_giles"], r["reign_chars"], *r.get("other_spellings", [])])
+        return (f'<li data-keys="{e(keys)}"><a href="{link(r)}"{cur}><span class="han" lang="zh-Hant">{r["reign_chars"]}</span>'
+                f'{e(r["reign_pinyin"])}<span class="yr">{r["start"]}</span></a></li>')
+    reigns = ""
+    for dyn, label in (("Ming", "Ming, 1368–1644"), ("Qing", "Qing, 1644–1912"), ("Hongxian", "After the Qing")):
+        reigns += f'<div class="side-sub">{label}</div><ul class="side-list">' + "".join(reign_li(r) for r in ROWS if r["dynasty"] == dyn) + "</ul>"
+    halls = ""
+    for k in ph.ORDER:
+        rs = [r for r in ph.ROWS if r.get("kind") == k]
+        if not rs:
+            continue
+        halls += f'<div class="side-sub">{e(ph.KIND[k])}</div><ul class="side-list">' + "".join(
+            f'<li data-keys="{e(r["chars"] + " " + r["pinyin"] + " " + " ".join(r.get("variants", [])))}"><a href="{ph.HUB}#{ph.anchor(r)}">'
+            f'<span class="han" lang="zh-Hant">{r["chars"]}</span><span class="py">{e(re.sub(r"[;/].*", "", r["pinyin"]).strip())}</span></a></li>' for r in rs) + "</ul>"
+    top_cur = ' aria-current="page"' if path == HOME else ""
+    hub_cur = ' aria-current="page"' if path == HUB else ""
+    hall_cur = ' aria-current="page"' if path == ph.HUB else ""
+    return f"""        <div class="side-search">{SEARCH_ICON}<input type="search" placeholder="Search reigns and halls" aria-label="Search reigns and halls" autocomplete="off"></div>
+        <div class="side-tree">
+          <ul class="side-list"><li><a class="side-link--top" href="{HOME}"{top_cur}>Overview</a></li></ul>
+          <details class="side-group"{" open" if on_reign or path == HOME else ""}><summary>Reign marks</summary>
+            <ul class="side-list"><li><a href="{HUB}"{hub_cur}>All reign marks, with a finder</a></li></ul>
+            {reigns}
+          </details>
+          <details class="side-group"{" open" if on_hall else ""}><summary>Hall marks</summary>
+            <ul class="side-list"><li><a href="{ph.HUB}"{hall_cur}>All hall marks, with a finder</a></li></ul>
+            {halls}
+          </details>
+          <p class="side-empty">Nothing matches. Try the pinyin, an older spelling, or the characters.</p>
+        </div>"""
+
+
+def section_kw(path, current=None, with_rail=False):
+    kw = section_page("china", path, rail(current) if with_rail else "")
+    kw["side"] = side(path)
+    return kw
+
+
+# ── The section home ─────────────────────────────────────────────────────────
+def home():
+    path = HOME
+    title = "Chinese Marks: Reign Marks, Hall Marks and Seals | Heirloom"
+    desc = "A sourced reference to the marks on Chinese porcelain and works of art: every Ming and Qing reign mark, 126 hall and studio marks, and how to read them, with sources in English and Chinese."
+    h1 = "Chinese marks"
+    import p_chinese_halls
+    n_halls = len(p_chinese_halls.ROWS)
+    doors = f"""<ul class="sec-doors">
+        <li><a class="sec-door" href="{HUB}"><span class="sec-door__han" lang="zh-Hant">年款</span><span class="sec-door__title">Reign marks</span><span class="sec-door__desc">Every reign from 1368 to 1916, with a finder, the seal-script forms and the marks most often copied.</span><span class="sec-door__count">28 reigns</span></a></li>
+        <li><a class="sec-door" href="/marks/chinese-hall-marks"><span class="sec-door__han" lang="zh-Hant">堂名款</span><span class="sec-door__title">Hall marks</span><span class="sec-door__desc">Marks naming a hall, studio or palace building instead of a reign, from the Ming to the Republic.</span><span class="sec-door__count">{n_halls} marks</span></a></li>
+      </ul>"""
+    body = f"""      <p class="guide__lede">The characters on the base of Chinese porcelain usually name a reign, sometimes a hall or a studio. This reference reads them: every Ming and Qing reign mark and {n_halls} hall marks, each fact with its sources in English and Chinese, and real marks photographed in museums.</p>
+      {META}
+      {doors}
+      <h2 id="reigns">The reigns, 1368 to 1916</h2>
+      <p>Pick a reign to see its mark, how it was written on imperial wares, and how often it was copied.</p>
+{rail().replace('class="cn-rail"', 'class="cn-rail cn-rail--inline"')}
+      <h2 id="rule">One rule throughout</h2>
+      <p>A mark names the reign or the hall it claims. Marks of admired reigns were copied for centuries, so a mark never dates an item by itself, and Heirloom never says whether an item is genuine.</p>
+{cta("Photograph the base. The Advisor reads the characters, names the reign or hall the mark claims, and keeps the reading with the photo it came from.")}
+"""
+    chars = wanted_chars(body + seal_chars())
+    graph = [article_ld(path, h1, desc, extra={"about": {"@type": "Thing", "name": "Chinese porcelain marks"}})]
+    return path, page(path, title, desc, h1, body, graph, mid=MID, crumb_name="Chinese marks",
+                      extra_head=font_head(chars) + "\n  " + SEC_CSS, extra_body=SEC_JS, **section_kw(path))
+
+
 # ── The hub ──────────────────────────────────────────────────────────────────
 def hub():
     refs = Refs()
@@ -260,10 +361,11 @@ def hub():
       <h2 id="faq">Questions</h2>
 {faq_html(HUB_FAQ)}
 """
-    chars = wanted_chars(body)
+    kw = section_kw(path)
+    chars = wanted_chars(body + kw["top"] + seal_chars())
     graph = [article_ld(path, h1, desc, extra={"about": {"@type": "Thing", "name": "Chinese reign marks"}}), faq_ld(path, HUB_FAQ)]
-    return path, page(path, title, desc, h1, body, graph, mid=MID, crumb_name="Chinese reign marks",
-                      extra_head=font_head(chars), extra_body='<script src="/marks/marks.js" defer></script>\n  <script>window.MARKS_TOOL = "chinese";</script>')
+    return path, page(path, title, desc, h1, body, graph, mid=CMID, crumb_name="Reign marks",
+                      extra_head=font_head(chars) + "\n  " + SEC_CSS, extra_body='<script src="/marks/marks.js" defer></script>\n  <script>window.MARKS_TOOL = "chinese";</script>\n  ' + SEC_JS, **kw)
 
 
 HUB_FAQ = [
@@ -309,7 +411,20 @@ def reign_page(r, prev, nxt):
     nav = '<p class="reign-nav">' + (f'<a href="{link(prev)}">← {e(prev["reign_pinyin"])}</a>' if prev else "") + \
           f' · <a href="{HUB}">All reign marks</a> · ' + (f'<a href="{link(nxt)}">{e(nxt["reign_pinyin"])} →</a>' if nxt else "") + "</p>"
     hx = r["dynasty"] == "Hongxian"
-    body = f"""      <p class="guide__lede">The {p} reign of the {dyn} ran {y}{" (" + e(alt) + ")" if alt else ""}. {("Its mark reads <span lang=" + chr(34) + "zh-Hant" + chr(34) + ">" + six + "</span>. Here is how it was written on imperial wares, and how often it was copied.") if marks else "No reign mark of it is recorded on imperial porcelain. Here is what is known, and where its name does appear."}</p>
+    first_copy = re.split(r"(?<=[.;])\s", w(r["later_copies_note"]).strip())[0] if r.get("later_copies_note") else ""
+    at_a_glance = f"""      <header class="entry-head">
+        <div class="entry-head__mark">{cmark(six, cls="cmark--big")}</div>
+        <dl class="facts">
+          <dt>Reign</dt><dd>{e(p)} <span lang="zh-Hant">{r['reign_chars']}</span>, {e(dyn)}</dd>
+          <dt>Years</dt><dd>{y}{(" (" + e(alt) + ")") if alt else ""}</dd>
+          <dt>Older spellings</dt><dd>{e(spellings)}</dd>
+          {('<dt>Emperor</dt><dd>' + e(r['emperor_name']) + '</dd>') if r.get('emperor_name') else ''}
+          <dt>Marks recorded</dt><dd>{e(marks_summary(r))}</dd>
+          <dt>Later copies</dt><dd>{e(first_copy) if first_copy and not first_copy.startswith("None") else "None documented as common"}</dd>
+        </dl>
+      </header>
+"""
+    body = at_a_glance + f"""      <p class="guide__lede">The {p} reign of the {dyn} ran {y}{" (" + e(alt) + ")" if alt else ""}. {("Its mark reads <span lang=" + chr(34) + "zh-Hant" + chr(34) + ">" + six + "</span>. Here is how it was written on imperial wares, and how often it was copied.") if marks else "No reign mark of it is recorded on imperial porcelain. Here is what is known, and where its name does appear."}</p>
       {META}
       <div class="answer">
         <p class="answer__label">In short</p>
@@ -319,7 +434,6 @@ def reign_page(r, prev, nxt):
       <div class="cm-figs">{typeset}{books}</div>
       <ul>{mark_items}</ul>{refs(pf(r, "marks"))}
       <p>Years: {y}{" (" + e(alt) + ")" if alt else ""}. {e(w(r.get("year_note", "")))}{refs(pf(r, "dates"))}</p>
-      <p>Other spellings in older books and catalogs: {e(spellings)}.</p>
 {('      <h2 id="photos">On imperial wares</h2>' + chr(10) + '      <div class="cm-figs">' + period + '</div>') if period else ''}
 {('      <h2 id="named">Where the reign’s name appears</h2>' + chr(10) + '      <p>' + ("Besides its marks, the reign’s name is written on other dated things: coins, inscriptions and dedications." if marks else "With no reign mark to show, here is the reign’s name on dated things of the period: coins, inscriptions and dedications.") + '</p>' + chr(10) + '      <div class="cm-figs">' + named + '</div>') if named else ''}
       <h2 id="copies">{"Later items with this mark" if not hx else "Hongxian marks are almost always later"}</h2>
@@ -331,17 +445,19 @@ def reign_page(r, prev, nxt):
       {refs.html()}
 {cta(f"Photograph the base. The Advisor reads the characters, names the reign the mark claims ({p}, {y}), and keeps the reading with the photo it came from.")}
 """
-    chars = wanted_chars(body)
+    kw = section_kw(path, p, with_rail=True)
+    chars = wanted_chars(body + kw["top"] + seal_chars())
     graph = [article_ld(path, f"{p} mark ({r['reign_chars']})", desc, extra={"about": {"@type": "Thing", "name": f"{p} reign mark"}})]
-    return path, page(path, title, desc, h1, body, graph, mid=(HUB, "Chinese reign marks"), crumb_name=f"{p} mark", extra_head=font_head(chars))
+    return path, page(path, title, desc, h1, body, graph, mid=(HUB, "Reign marks"), crumb_name=f"{p} mark",
+                      extra_head=font_head(chars) + "\n  " + SEC_CSS, extra_body=SEC_JS, **kw)
 
 
 def build():
-    out = [hub()]
+    out = [home(), hub()]
     own = [r for r in ROWS if r["reign_pinyin"] in OWN_PAGE]
     for i, r in enumerate(own):
         out.append(reign_page(r, own[i - 1] if i else None, own[i + 1] if i + 1 < len(own) else None))
     return out
 
 
-CHILDREN = [(HUB, "Chinese reign marks", "Every Ming and Qing reign mark, 1368–1916, with a finder, seal-script forms and the marks most often copied.")]
+CHILDREN = [(HOME, "Chinese marks", "Every Ming and Qing reign mark, 1368–1916, and the hall and studio marks, with finders and sources in English and Chinese.")]

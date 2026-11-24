@@ -355,6 +355,7 @@ const GUIDE_PAGES = [
 
   // Ceramics maker's-mark pages (scripts/pages/p_ceramics.py).
   'marks/weller-pottery-marks.html',
+  'marks/chinese/index.html',
   'marks/chinese-reign-marks.html',
   'marks/chinese-hall-marks.html',
   'marks/hongwu-mark.html',

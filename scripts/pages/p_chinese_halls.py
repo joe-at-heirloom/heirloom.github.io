@@ -14,6 +14,7 @@ from shell import *
 import tables
 from p_marks import MID, cta, e
 from p_chinese import Refs, w as _w, font_head, wanted_chars, HUB as REIGN_HUB
+from sections import section_page, seal_chars, CSS as SEC_CSS, JS as SEC_JS
 
 T = tables.load("chinese")["systems"].get("hall_marks", {"rows": [], "sources": [], "caveats": []})
 ROWS = T["rows"]
@@ -169,12 +170,16 @@ def hub():
 {cta("Photograph the base. The Advisor reads the characters, names the hall the mark claims, and keeps the reading with the photo it came from.")}
 """
     graph = [article_ld(path, h1, desc, extra={"about": {"@type": "Thing", "name": "Chinese hall marks"}})]
-    return path, page(path, title, desc, h1, body, graph, mid=MID, crumb_name="Chinese hall marks",
-                      extra_head=font_head(wanted_chars(body)), extra_body='<script src="/marks/marks.js" defer></script>\n  <script>window.MARKS_TOOL = "halls";</script>')
+    kw = section_page("china", path)
+    import p_chinese
+    kw["side"] = p_chinese.side(path)
+    return path, page(path, title, desc, h1, body, graph, mid=("/marks/chinese/", "Chinese marks"), crumb_name="Hall marks",
+                      extra_head=font_head(wanted_chars(body + kw["top"] + seal_chars())) + "\n  " + SEC_CSS,
+                      extra_body='<script src="/marks/marks.js" defer></script>\n  <script>window.MARKS_TOOL = "halls";</script>\n  ' + SEC_JS, **kw)
 
 
 def build():
     return [hub()] if ROWS else []
 
 
-CHILDREN = [(HUB, "Chinese hall marks", "Palace, hall and studio marks on Chinese porcelain, Ming to Republic: whose hall each was, with a finder.")] if ROWS else []
+CHILDREN = []  # reached through the Chinese marks section home

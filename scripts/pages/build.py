@@ -54,7 +54,8 @@ with open(os.path.join(OUT, "home-inventory-template.csv"), "w", newline="") as 
 written = []
 os.makedirs(os.path.join(OUT, "marks"), exist_ok=True)
 for path, html_ in p_marks.build(p_pottery.CHILDREN + p_plate.CHILDREN + p_basics.CHILDREN + p_watches.CHILDREN + p_world.CHILDREN + p_ceramics.CHILDREN + [p_signatures.CHILD] + p_chinese.CHILDREN + p_chinese_halls.CHILDREN) + p_pottery.build() + p_plate.build() + p_basics.build() + p_watches.build() + p_world.build() + p_ceramics.build() + [p_signatures.build()] + p_artist_sigs.build() + p_chinese.build() + p_chinese_halls.build():
-    rel = "marks/index.html" if path == "/marks/" else path.lstrip("/") + ".html"
+    rel = path.lstrip("/") + "index.html" if path.endswith("/") else path.lstrip("/") + ".html"
+    os.makedirs(os.path.dirname(os.path.join(OUT, rel)), exist_ok=True)
     with open(os.path.join(OUT, rel), "w") as f:
         f.write(html_)
     written.append(rel)
