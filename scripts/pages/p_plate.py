@@ -67,6 +67,7 @@ S = {
     "case1895a": ("<em>William Rogers Mfg. Co. v. R. W. Rogers Co.</em>, 66 F. 56 (C.C.S.D.N.Y. 1895)", "https://law.resource.org/pub/us/case/reporter/F/0066/0066.f1.0056.pdf"),
     "case1895b": ("<em>R. W. Rogers Co. v. Wm. Rogers Mfg. Co.</em>, 70 F. 1017 (2d Cir. 1895)", "https://law.resource.org/pub/us/case/reporter/F/0070/0070.f1.1017.pdf"),
     "pat1904": ("US design patent D37,059, Samuel Stohr for International Silver Co., granted August 2, 1904 (the Vintage handle)", "https://patents.google.com/patent/USD37059S/en"),
+    "rainwater2004": ("Dorothy T. Rainwater, with Martin and Colette Fuller, <em>Encyclopedia of American Silver Manufacturers</em>, 5th ed., Schiffer, 2004", ""),
     "rainwater": ("Point Ellice House collection, Simpson, Hall, Miller &amp; Co., citing Rainwater, <em>Encyclopedia of American Silver Manufacturers</em> (Library and Archives Canada web archive)", "https://epe.lac-bac.gc.ca/100/205/301/ic/cdc/peh/objects/manufacturers/pmanu29.html"),
     "ch_fish": ("Cooper Hewitt, Smithsonian Design Museum: Assyrian Head pattern fish server, Meriden Britannia Co., 1885–86, marks recorded by the museum", "https://collection.cooperhewitt.org/view/objects/asitem/id/202018"),
 }
@@ -91,8 +92,9 @@ def rogers_1847():
         ("1847 ROGERS BROS.", "Meriden Britannia Co., Meriden, Connecticut, from about 1862; International Silver Co. from 1898", "The flatware brand. 1847 is the year the business counted from, not the year the item was made."),
         ("ROGERS BROS. (no 1847)", "Meriden Britannia Co. and International Silver Co.", "The same company's mark on hollowware: tea sets, trays and dishes."),
         ("A1 after the name", "On 1847 Rogers Bros. flatware from at least the 1880s", "Standard first-quality plate, sold as &ldquo;extra plate&rdquo;."),
-        ("XII", "1847 Rogers Bros. flatware in the 1880s and 1890s", "&ldquo;Sectional&rdquo; plate: extra silver laid on the parts that wear (the back of the bowl, the heel, the tips) before the whole item was plated."),
-        ("TRIPLE", "Sold beside A1 in the period catalogs", "The heaviest regular grade of plate."),
+        ("XS TRIPLE", "1847 Rogers Bros. flatware to 1917", "The grade ordinarily sold, according to an International Silver pamphlet of the early 1900s."),
+        ("XII, or XII TRIPLE", "1847 Rogers Bros. flatware from the 1880s to 1917", "&ldquo;Sectional&rdquo; plate: extra silver laid on the parts that wear (the back of the bowl, the heel, the tips) before the whole item was plated."),
+        ("TRIPLE", "Sold beside A1 in the period catalogs", "The heaviest regular grade of plate in the catalogs of the 1880s and 1890s."),
         ("1847 ROGERS BROS. STERLING, or 1847 STERLING", "International Silver Co., from May 15, 1940", "Sterling silver, not plate. Only an item stamped STERLING is solid silver."),
     ])
     body = f"""      <h2 id="maker">Who made it</h2>
@@ -101,7 +103,7 @@ def rogers_1847():
       <h2 id="marks">The marks, and what each tells you</h2>
       {marksdb.grid(["plate-1847-rogers-bros", "plate-meriden-britannia-scale", "plate-grade-a1", "plate-grade-xii", "plate-grade-triple", "plate-rogers-bros-hollowware", "plate-1847-rogers-bros-sterling"])}
       {marks}
-      <p class="note">The marks are stamped on the back of the handle, near where it meets the bowl or tines. The trademark registration claims the 1847 ROGERS BROS. mark was first used in 1862, fifteen years after the date it carries.</p>
+      <p class="note">After 1917, 1847 Rogers Bros. was made in one quality only and the grade marks were dropped, so a grade mark on this line means 1917 or earlier. The marks are stamped on the back of the handle, near where it meets the bowl or tines. The trademark registration claims the 1847 ROGERS BROS. mark was first used in 1862, fifteen years after the date it carries.</p>
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
       <p>Almost always plate: the period catalogs and the 1896 trademark directory list 1847 Rogers Bros. as plated ware, silver over a nickel-silver base. From 1940 International Silver also sold sterling under the name, and those items say STERLING beside it.</p>
 {PLATE_OR_STERLING}
@@ -135,7 +137,7 @@ def rogers_1847():
         lede="The most common name on old American silverware. Here is who made it, what each part of the mark means, and why 1847 isn't the year your spoon was made.",
         answer="1847 Rogers Bros. is silver-plated flatware made by the Meriden Britannia Co. of Meriden, Connecticut, from about 1862, and by the International Silver Co. from 1898. 1847 is the year the Rogers brothers' business counted from, not the date of manufacture. Unless the mark also says STERLING, the item is plate; date it from its pattern.",
         body=body, faqs=faqs,
-        sources=[S["cbr1901"], S["curtis1913"], S["meriden150"], S["curtis1906"], S["silverstd"], S["jc1896"], S["busiest1889"], S["rb1892"], S["sears1897"], S["case1882"],
+        sources=[S["cbr1901"], S["curtis1913"], S["meriden150"], S["curtis1906"], S["rainwater2004"], S["silverstd"], S["jc1896"], S["busiest1889"], S["rb1892"], S["sears1897"], S["case1882"],
                  uspto(329758, "1847 ROGERS BROS, silver-plated flatware, first use claimed 1862"), uspto(385300, "1847 ROGERS BROS. STERLING, first use May 15, 1940"), uspto(734880, "1847 ROGERS BROS, stainless steel flatware, first use 1953"), S["pat1904"], S["ch_fish"]],
         cta="Photograph the back of the handle. The Advisor reads the mark and the pattern, keeps what it read on the item's record with the photo, and says plainly that 1847 is a brand date, not the year it was made.",
     ))
@@ -148,9 +150,9 @@ ROGERS_TABLE = [
     ("WM. ROGERS &amp; SON, often with an anchor", "Wm. Rogers Mfg. Co., Hartford, from 1865 or 1866; International Silver Co. from 1898", "William Rogers's later firm, run by partners who used his name"),
     ("1865 WM. ROGERS MFG. CO.", "Wm. Rogers Mfg. Co., Hartford, from 1865", "The same firm; 1865 is its founding year, not a date of making"),
     ("ROGERS between two anchors", "Wm. Rogers Mfg. Co., from 1887", "The same firm"),
-    ("WM. ROGERS between an eagle and a star (&#9733;Wm. Rogers&#9733;)", "Simpson, Hall, Miller &amp; Co., Wallingford, Connecticut, from 1878; International Silver Co. later", "Made under a contract with William Rogers Jr., who lent his name and oversaw the work"),
+    ("WM. ROGERS between an eagle and a star (&#9733;Wm. Rogers&#9733;)", "William Rogers himself, on coin silver spoons, 1825–1841; Simpson, Hall, Miller &amp; Co., Wallingford, Connecticut, on plate from 1878; International Silver Co. later", "On coin silver, William Rogers's own mark; on plate, made under a contract with William Rogers Jr., who lent his name and oversaw the work"),
     ("&#9733;ROGERS &amp; BRO. A1 (a star before the name)", "Rogers &amp; Brother, Waterbury, Connecticut, from 1858; International Silver Co. from 1898", "A separate firm, not the 1847 brothers"),
-    ("C. ROGERS &amp; BROS. A1", "Cephas, Gilbert and Wilbur Rogers, Meriden, from about 1866; International Silver Co. from 1903", "A different Rogers family"),
+    ("C. ROGERS &amp; BROS. A1", "Cephas, Gilbert and Wilbur Rogers, Meriden, from 1866 to 1903, when International Silver Co. bought the firm; International never used its marks", "A different Rogers family"),
     ("ROGERS, SMITH &amp; CO.", "Hartford, then New Haven, later owned by Meriden Britannia Co.", "Linked to the Meriden Britannia group; the sources disagree on when it moved to Meriden"),
     ("WM. A. ROGERS, or WM. A. ROGERS A1R in a horseshoe", "Wm. A. Rogers Ltd., New York, from 1895–96; later Oneida", "Unrelated to the Hartford Rogers family"),
     ("R. W. ROGERS CO.", "New York, 1894–95", "A short-lived imitation that a court stopped in 1895"),
@@ -172,12 +174,12 @@ def wm_rogers():
       <p class="note">The table is from court opinions of 1882, 1887 and 1895, the 1896 trademark directory, Meriden and Hartford histories, and the makers' own trademark registrations. The marks are stamped on the back of the handle.</p>
       {marksdb.grid(["plate-wm-rogers-and-son", "plate-1865-wm-rogers-mfg-co", "plate-rogers-anchors", "plate-wm-rogers-eagle-star", "plate-rogers-and-bro-star", "plate-c-rogers-and-bros", "plate-rogers-smith-and-co", "plate-wm-a-rogers", "plate-wm-a-rogers-horseshoe", "plate-r-w-rogers-co"])}
       <h2 id="plate-or-sterling">Is it plate or sterling?</h2>
-      <p>Plate. Every Wm. Rogers mark was registered and listed for silver-plated ware, and we found no sterling made under the name. Simpson, Hall, Miller did make sterling from 1895, but under its own marks.</p>
+      <p>Almost always plate: every Wm. Rogers mark registered or listed from 1865 on is for silver-plated ware, and Simpson, Hall, Miller's sterling, from 1895, carried its own marks. The exception is older. Before plating, William Rogers was a Hartford silversmith, and from 1825 to 1841 he stamped his own coin silver spoons WM. ROGERS between an eagle and a star, from 1841 WM. ROGERS &amp; CO. A spoon with that mark and no grade mark may be coin silver, made long before the plated ware; the style of the spoon and wear through to a base metal tell them apart.</p>
 {PLATE_OR_STERLING}
       <h2 id="dating">How to date Wm. Rogers</h2>
 {DATING_RULE}
       <ul>
-        <li>An eagle and star around WM. ROGERS: 1878 or later.</li>
+        <li>An eagle and star around WM. ROGERS: on plate, 1878 or later; on coin silver, William Rogers's own spoons of 1825 to 1841.</li>
         <li>ROGERS between two anchors: 1887 or later.</li>
         <li>WM. A. ROGERS, in any form: 1895 or later, and a different firm.</li>
         <li>1865 in the mark is the firm's founding year, like 1847 on 1847 Rogers Bros.</li>
@@ -188,9 +190,9 @@ def wm_rogers():
         ("Is Wm. Rogers the same as 1847 Rogers Bros.?",
          "<p>Related, not the same. William Rogers was one of the 1847 brothers, but Wm. Rogers marks are from firms formed after 1865 that used his name. Both lines ended up with International Silver.</p>"),
         ("Is Wm. Rogers silverware real silver?",
-         "<p>It is silver plate, a coat of silver over a base metal. We found no sterling made under the Wm. Rogers name.</p>"),
+         "<p>Almost always it is silver plate, a coat of silver over a base metal. The exception is William Rogers's own coin silver spoons of 1825 to 1841, which carry WM. ROGERS between an eagle and a star.</p>"),
         ("What do the star and eagle in the mark mean?",
-         "<p>They are the brand of Simpson, Hall, Miller &amp; Co. of Wallingford, Connecticut, used from 1878 under a contract with William Rogers Jr. An item with them was made in 1878 or later.</p>"),
+         "<p>On silver plate they are the brand of Simpson, Hall, Miller &amp; Co. of Wallingford, Connecticut, used from 1878 under a contract with William Rogers Jr., so a plated item with them was made in 1878 or later. William Rogers had used the same eagle and star on his own coin silver spoons from 1825 to 1841.</p>"),
         ("Does 1865 in the mark mean it was made in 1865?",
          "<p>No. 1865 is the year Wm. Rogers Mfg. Co. was formed, and it stayed in the mark for years.</p>"),
     ]
@@ -200,9 +202,9 @@ def wm_rogers():
         desc="Wm. Rogers marks explained: Wm. Rogers & Son, the eagle-and-star mark, 1865 Wm. Rogers Mfg. Co., and how they differ from 1847 Rogers Bros., Rogers & Bro. and Wm. A. Rogers, with sources.",
         h1="Wm. Rogers marks, and the other Rogers names", crumb="Wm. Rogers",
         lede="Half a dozen firms stamped Rogers on silver plate. Here is which one made yours, and what the stars, anchors and eagles in the mark tell you.",
-        answer="Wm. Rogers marks are on silver-plated flatware from two Connecticut makers that used William Rogers's name: Wm. Rogers Mfg. Co. of Hartford (Wm. Rogers &amp; Son, from 1865) and Simpson, Hall, Miller &amp; Co. of Wallingford (Wm. Rogers between an eagle and a star, from 1878). Both became part of International Silver. Wm. A. Rogers is a different, unrelated firm.",
+        answer="Wm. Rogers marks are on silver-plated flatware from two Connecticut makers that used William Rogers's name: Wm. Rogers Mfg. Co. of Hartford (Wm. Rogers &amp; Son, from 1865) and Simpson, Hall, Miller &amp; Co. of Wallingford (Wm. Rogers between an eagle and a star, from 1878). Both became part of International Silver. Wm. A. Rogers is a different, unrelated firm. The eagle and star also appear on William Rogers's own coin silver spoons of 1825 to 1841.",
         body=body, faqs=faqs,
-        sources=[S["curtis1913"], S["cbr1901"], S["case1882"], S["case1887"], S["case1895a"], S["case1895b"], S["jc1896"], S["curtis1906"], S["meriden150"], S["rb1892"], S["rainwater"],
+        sources=[S["curtis1913"], S["cbr1901"], S["case1882"], S["case1887"], S["case1895a"], S["case1895b"], S["jc1896"], S["curtis1906"], S["meriden150"], S["rb1892"], S["rainwater2004"],
                  uspto(329754, "WM. ROGERS &amp; SON, first use claimed 1866"), uspto(329757, "1865 WM. ROGERS MFG. CO."), uspto(329755, "WM ROGERS with eagle and star, first use claimed 1878"),
                  uspto(503060, "WM ROGERS with eagle and star, hollowware, from 1919"), uspto(147780, "ROGERS &amp; BRO. with star, first use claimed 1858"), uspto(805168, "WM. A. ROGERS, first use claimed 1895, owner Oneida Ltd.")],
         cta="Photograph the back of the handle. The Advisor reads which Rogers mark it is and keeps it on the item's record, with the photo it read it from.",
@@ -358,7 +360,7 @@ def international():
                "Norwich Cutlery Co., Wm. Rogers Mfg. Co., Rogers Cutlery Co., Rogers &amp; Bro., Rogers &amp; Hamilton Co., Wilcox Silver Plate Co., "
                "Watrous Mfg. Co. and Standard Silver Co. of Toronto")
     marks = marks_table([
-        ("INTERNATIONAL SILVER CO., or INTERNATIONAL S. CO.", "International Silver Co., from 1898", "The company's name. Read the next word: a grade mark such as XII means plate."),
+        ("INTERNATIONAL SILVER CO., or INTERNATIONAL S. CO.", "International Silver Co., formed in 1898; on flatware only after 1928, when it began to put its own name on flatware", "The company's name. Read the next word: a grade mark such as XII means plate. Flatware made before 1929 carries the brand of one of the founding firms instead."),
         ("INTERNATIONAL STERLING", "International Silver Co.", "Sterling silver."),
         ("A founding firm's name: 1847 ROGERS BROS., HOLMES &amp; EDWARDS, WM. ROGERS, WILCOX and others", "Used by International for decades after 1898", "Made by International, under the old firm's brand."),
     ])
@@ -401,7 +403,7 @@ def international():
         lede="International Silver made both sterling and plate, under its own name and a dozen older ones. Here is how to tell which you have, and how to date it.",
         answer="The International Silver Co. was formed in Meriden, Connecticut, on November 19, 1898, from a dozen silver firms, and kept many of their names, including 1847 Rogers Bros., Holmes &amp; Edwards and Wm. Rogers. It made both sterling and plate: only a mark that says STERLING is sterling. Date flatware from its pattern; we found no year code on its hollowware.",
         body=body, faqs=faqs,
-        sources=[S["curtis1906"], S["iastate"], S["meriden150"], S["hagan_sp"], S["hagan_st"], S["dolan"], S["commons_spoon"], S["insilco"], S["lifetime2006"], S["silverstd"]],
+        sources=[S["curtis1906"], S["iastate"], S["meriden150"], S["rainwater2004"], S["hagan_sp"], S["hagan_st"], S["dolan"], S["commons_spoon"], S["insilco"], S["lifetime2006"], S["silverstd"]],
         cta="Photograph the mark. The Advisor reads the name and the grade or STERLING beside it, and keeps what it read on the item's record with the photo.",
     ))
 
