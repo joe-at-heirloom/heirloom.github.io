@@ -1,0 +1,83 @@
+---
+// /marks/staffordshire-pottery-marks/<firm>: one firm's marks (lib/staffordshire.ts):
+// the firm under each name it traded as, its marks on one time line, and the
+// catalogue of marks, each opening into its sheet.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { firms, markGroups, bars, thumbUrl, HUB, REG, type Firm } from '../../../lib/staffordshire';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+export function getStaticPaths() {
+  return firms().map((f) => ({ params: { firm: f.slug }, props: { f } }));
+}
+const { f } = Astro.props as { f: Firm };
+const path = f.page;
+const groups = markGroups(f);
+const key = bars(f);
+const A = Math.max(1740, Math.floor(((key[0]?.from ?? 1800) - 5) / 10) * 10), B = 1970;
+const pct = (y: number) => `${(((Math.min(Math.max(y, A), B) - A) / (B - A)) * 100).toFixed(2)}%`;
+const step = B - A > 120 ? 40 : 20;
+const ticks: number[] = []; for (let y = Math.ceil(A / step) * step; y <= B; y += step) ticks.push(y);
+const span = (b: { from: number; to: number; open: boolean; circa: boolean }) => `${b.circa ? 'c. ' : ''}${b.open ? `${b.from} on` : b.from === b.to ? `${b.from}` : `${b.from}–${b.to}`}`;
+const names = f.entries.map((e) => e.name);
+const title = `${f.title} Marks: Dating ${f.title.replace(/ \(.*\)$/, '')} by Its Backstamps | Heirloom`;
+const description = `${f.marks.length} marks of ${names.slice(0, 3).join(', ')}${names.length > 3 ? ' and related firms' : ''} (${f.where}), with the years each was used${f.pictured ? ` and ${f.pictured} pictured` : ''}. From Godden's Encyclopaedia, with the rules that date any English backstamp.`;
+const graph = [articleLd(path, `${f.title} marks`, description, '2026-11-25', { about: { '@type': 'Organization', name: names[0] ?? f.title, location: f.where } })];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>{f.title} marks</h1>
+    <p class="rhead__lede">{f.entries.length > 1 ? `The marks of ${names.join('; ')}, in ${f.where}.` : `The marks of ${names[0]}, ${f.where}.`} Find the mark on your piece below: the years it was used date the piece, and the words around it (ENGLAND, MADE IN ENGLAND, an Rd number) can narrow it further.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{f.marks.length}</strong> marks</li>
+      <li><strong class="num">{f.pictured}</strong> pictured</li>
+      <li><a href={`${HUB}#rules`}>Dating any English mark</a></li>
+      <li><a href={REG}>Read an Rd number</a></li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="firm">
+    <h2 id="firm">{f.entries.length > 1 ? 'The firms' : 'The firm'}</h2>
+    <ul class="st-entries">
+      {f.entries.map((e) => (
+        <li class="st-entry">
+          <h3>{e.name} {e.dates && <span class="y">{e.dates.replace(/–\s*\.?$/, ' on')}</span>}</h3>
+          {(e.works || e.town) && <p>{[e.works, e.town && !String(e.works ?? '').includes(e.town) ? e.town : null].filter(Boolean).join(', ')}</p>}
+          {e.wares && <p>{e.wares}</p>}
+          {e.notes && <p>{e.notes}</p>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {key.length > 1 && (
+    <section class="st-section" aria-labelledby="key">
+      <h2 id="key">The marks by date</h2>
+      <p>Each bar runs over the years Godden gives for the mark. A bar fading at its right end was still in use when he wrote (1964). Tap a mark to read it in full.</p>
+      <div class="stkey" role="list">
+        <div class="stkey__axis" aria-hidden="true">
+          <span>Mark</span>
+          <div class="stkey__ticks">{ticks.map((t) => <span style={`left:${pct(t)}`}>{t}</span>)}</div>
+        </div>
+        {key.map((b) => (
+          <a class="stkey__row" href={`#${b.id}`} role="listitem" data-open={b.id}>
+            <span class="stkey__label">
+              {b.img ? <span class="stkey__thumb"><img src={thumbUrl(b.img)!} alt="" loading="lazy" decoding="async" /></span> : <span class="stkey__thumb stkey__thumb--none" aria-hidden="true"></span>}
+              <span class="stkey__name">{b.name}</span>
+            </span>
+            <span class="stkey__track" style={`--a:${pct(b.from)};--b:${pct(b.to)}`}>
+              <span class:list={['stkey__bar', { 'stkey__bar--open': b.open }]}></span>
+              <span class:list={['stkey__years', { 'stkey__years--end': b.from > B - 25 }]}>{span(b)}</span>
+            </span>
+          </a>
+        ))}
+        <p class="stkey__note">“c.” means about: Godden’s dates for most marks are approximate.</p>
+      </div>
+    </section>
+  )}
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="Words in the mark: ENGLAND, a pattern name, IRONSTONE, a crown" label="Words in the mark" />
+
+  <p class="st-credit">Firms, marks and dates from Geoffrey A. Godden, <cite>Encyclopaedia of British Pottery and Porcelain Marks</cite> (London, 1964); the drawings are reproduced from it, credited page by page. Marks Godden sets in type are given in words. Each mark rests on Godden alone until a second source is matched. <a href={HUB}>Every firm</a></p>
+</Reference>

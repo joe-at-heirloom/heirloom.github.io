@@ -1,0 +1,97 @@
+---
+// /marks/british-registration-marks: the diamond registration mark (1842-1883)
+// and the Rd number (1884-1991) on British ceramics, glass and metalwork.
+// The reader (islands/RegistrationReader) reads the app's registration.json
+// through /marks/data/registration.json; this page sets out the code tables
+// and the January numbers, and where the sources differ.
+import { readFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+import Reference from '../../layouts/Reference.astro';
+import RegistrationReader from '../../islands/RegistrationReader';
+import { articleLd, faqLd } from '../../lib/site';
+import { HUB } from '../../lib/staffordshire';
+import '../../styles/staffordshire.css';
+
+const path = '/marks/british-registration-marks';
+const f = join(process.cwd(), 'src', 'data', 'app', 'registration.json');
+const t = existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : { pieces: [], january: [], diamond: { month: {}, year_1842_67: {}, year_1868_83: {} }, sources: [], caveats: [] };
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const byYear = (o: Record<string, number>) => Object.entries(o).sort((a, b) => a[1] - b[1]);
+const monthRows = Object.entries(t.diamond.month as Record<string, number>).sort((a, b) => a[1] - b[1]);
+const day = (s: string) => `${Number(s.slice(6, 8))} ${MONTHS[Number(s.slice(4, 6)) - 1].slice(0, 3)} ${s.slice(0, 4)}`;
+const jan = (t.january ?? []) as { year: number; number: number; approximate: boolean; archives_from: string; archives_to: string; archives_refs: string[]; agrees: boolean }[];
+const books = (t.pieces ?? []).length;
+
+const title = 'British Registration Marks: Read an Rd Number or Diamond Mark | Heirloom';
+const description = `Type the Rd number from British china, glass or silver plate and get the date the design was registered, from The National Archives' ${books.toLocaleString('en-US')} design books (1884 to 1991). Or read a diamond registration mark (1842 to 1883) letter by letter.`;
+const faqs: [string, string][] = [
+  ['What does Rd No mean on china?', '<p>Registered design number. From January 1884 every design registered with the Patent Office got the next number in one run, and makers printed or impressed it on the piece as “Rd” or “Rd No” followed by the number. The number dates the registration of the design or shape, so the piece is that old or younger.</p>'],
+  ['Does an Rd number tell me who made it?', '<p>Not by itself. The register names whoever registered the design, often the maker, but sometimes a retailer, a designer or an agent. The Archives at Kew hold the registers; the reader above names the volume that holds your number.</p>'],
+  ['How do I read a diamond registration mark?', '<p>Find which corner holds a letter. If a letter sits in the top corner, under the Roman numeral, the mark is from 1842 to 1867: top is the year, left the month, right the day. If the letter is in the right corner, it is 1868 to 1883: right is the year, bottom the month, top the day. The numeral is the material (IV is pottery and porcelain) and the remaining number is the parcel.</p>'],
+  ['My piece has an Rd number from 1890. Is it from 1890?', '<p>It is from 1890 or later. Popular patterns and shapes stayed in production for decades after their registration, and the number stayed on the mark.</p>'],
+];
+const graph = [articleLd(path, 'British registration marks', description, '2026-11-25'), faqLd(path, faqs)];
+const src = (t.sources ?? []) as { id: string; name: string; url?: string; licence?: string }[];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>British registration marks</h1>
+    <p class="rhead__lede">A diamond-shaped mark, or “Rd No” and a number, on British china, glass or metalwork means the design was registered with the Patent Office. Either one gives the date of registration: the earliest the piece can be. Type the number or set the diamond’s letters.</p>
+    <ul class="rhead__meta">
+      <li>Diamond marks <strong class="num">1842–1883</strong></li>
+      <li>Rd numbers <strong class="num">1884–1991</strong></li>
+      <li><strong class="num">{books.toLocaleString('en-US')}</strong> National Archives design books</li>
+      <li><a href={HUB}>Staffordshire pottery marks</a></li>
+    </ul>
+  </header>
+
+  <RegistrationReader client:load />
+
+  <section class="st-section" aria-labelledby="codes">
+    <h2 id="codes">The diamond’s letters</h2>
+    <p>The year letters changed in 1868, when the year moved from the top corner to the right; the month letters stayed the same. The Archives’ guide, Godden (1964) and Cushion and Honey (1956) give the same letters.</p>
+    <div class="rg-codes">
+      <div class="rg-wrap"><table class="rg-table"><caption class="visually-hidden">Year letters 1842 to 1867</caption><thead><tr><th>Top letter</th><th>Year</th></tr></thead><tbody>{byYear(t.diamond.year_1842_67).map(([l, y]) => <tr><td>{l}</td><td>{y}</td></tr>)}</tbody></table></div>
+      <div class="rg-wrap"><table class="rg-table"><caption class="visually-hidden">Year letters 1868 to 1883</caption><thead><tr><th>Right letter</th><th>Year</th></tr></thead><tbody>{byYear(t.diamond.year_1868_83).map(([l, y]) => <tr><td>{l}</td><td>{y}{l === 'W' ? ' (1–6 March only)' : ''}</td></tr>)}</tbody></table></div>
+      <div class="rg-wrap"><table class="rg-table"><caption class="visually-hidden">Month letters</caption><thead><tr><th>Month letter</th><th>Month</th></tr></thead><tbody>{monthRows.map(([l, m]) => <tr><td>{l}</td><td>{MONTHS[m - 1]}</td></tr>)}</tbody></table></div>
+    </div>
+    <ul class="st-rules">
+      {(t.diamond.quirks ?? []).map((q: string) => <li class="st-rule"><p class="st-rule__why">{q}</p></li>)}
+    </ul>
+  </section>
+
+  <section class="st-section" aria-labelledby="numbers">
+    <h2 id="numbers">Rd numbers by year</h2>
+    <p>Godden (1964) printed the first number registered each January to 1909, marking those from 1902 on as approximate. The Archives’ books put each of his numbers in the window below. They agree to within days until 1902; after that his figures run early, and the books are the ones to trust.</p>
+    <div class="rg-wrap">
+      <table class="rg-table">
+        <thead><tr><th>January</th><th>Godden’s number</th><th>Registered, by the Archives’ books</th><th>Book</th></tr></thead>
+        <tbody>
+          {jan.map((j) => (
+            <tr>
+              <td>{j.year}</td>
+              <td>{j.number.toLocaleString('en-GB')}{j.approximate ? ' (approx.)' : ''}</td>
+              <td class={j.agrees ? '' : 'off'}>{day(j.archives_from)} to {day(j.archives_to)}</td>
+              <td>{j.archives_refs[0]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="st-section" aria-labelledby="careful">
+    <h2 id="careful">Before you date a piece by it</h2>
+    <ul class="st-rules">{(t.caveats ?? []).map((c: string) => <li class="st-rule"><p class="st-rule__why">{c}</p></li>)}</ul>
+  </section>
+
+  <section class="st-section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {faqs.map(([q, a]) => (<><h3>{q}</h3><Fragment set:html={a} /></>))}
+  </section>
+
+  <section class="st-section" aria-labelledby="src">
+    <h2 id="src">Sources</h2>
+    <ol class="st-credit">{src.map((s) => <li>{s.url ? <a href={s.url} rel="noopener">{s.name}</a> : s.name}{s.licence ? ` (${s.licence})` : ''}</li>)}</ol>
+  </section>
+</Reference>

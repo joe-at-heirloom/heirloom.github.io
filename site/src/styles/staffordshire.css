@@ -1,0 +1,99 @@
+/* Staffordshire and other English potters: the dating rules, the firm grid,
+   each firm's dating key, and the registration reader. Heads, catalogues and
+   sheets are the reference's (reference.css). */
+
+.st-section { margin-top: 56px; }
+.st-section > h2 { margin-bottom: 6px; }
+.st-section > p { color: var(--ink-2); max-width: 66ch; }
+
+/* ── Dating rules: what a word on the base says about the date ─────────── */
+.st-rules { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.st-rule { padding: 16px 18px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); display: grid; gap: 6px; align-content: start; }
+.st-rule__mark { font: 600 0.95rem/1.3 var(--mono, ui-monospace, monospace); letter-spacing: 0.02em; color: var(--ink); }
+.st-rule__says { font-weight: 600; font-size: 15.5px; }
+.st-rule__why { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+.st-rule a { font-weight: 600; font-size: 14.5px; }
+
+/* ── Firms ──────────────────────────────────────────────────────────────── */
+.st-firms { list-style: none; margin: 20px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.st-firm { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; align-items: center; padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); color: inherit; text-decoration: none; }
+.st-firm:hover { background: var(--paper-2); color: inherit; }
+.st-firm:hover .st-firm__name { color: var(--accent-ink); }
+.st-firm__pic { width: 64px; height: 64px; border-radius: var(--r-sm); border: 1px solid var(--plate-edge); background: #f6f4ef; display: grid; place-items: center; overflow: hidden; }
+.st-firm__pic img { width: 90%; height: 90%; object-fit: contain; }
+.st-firm__name { display: block; font-weight: 600; font-size: 15.5px; line-height: 1.25; }
+.st-firm__meta { display: block; font-size: 13.5px; color: var(--ink-3); margin-top: 2px; }
+.st-groups h3 { margin: 30px 0 4px; font-size: 1.05rem; }
+.st-groups h3 + p { margin: 0; font-size: 14.5px; color: var(--ink-3); max-width: 70ch; }
+
+/* ── A firm's Godden entries ───────────────────────────────────────────── */
+.st-entries { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 10px; }
+.st-entry { padding: 14px 18px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); }
+.st-entry h3 { margin: 0; font-size: 1.05rem; }
+.st-entry p { margin: 4px 0 0; font-size: 14.5px; color: var(--ink-2); }
+.st-entry .y { font-variant-numeric: tabular-nums; color: var(--ink-3); font-weight: 500; }
+
+/* ── The dating key (as Pewabic's) ─────────────────────────────────────── */
+.stkey { margin-top: 24px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); overflow: hidden; }
+.stkey__axis, .stkey__row { display: grid; grid-template-columns: minmax(150px, 36%) minmax(0, 1fr); align-items: center; }
+.stkey__axis { border-bottom: 1px solid var(--rule); background: var(--paper-2); font-size: 12.5px; color: var(--ink-3); }
+.stkey__axis > span:first-child { padding: 8px 14px; }
+.stkey__ticks { position: relative; height: 32px; }
+.stkey__ticks span { position: absolute; top: 8px; translate: -50% 0; font-variant-numeric: tabular-nums; }
+.stkey__row { text-decoration: none; color: inherit; min-height: 40px; border-top: 1px solid color-mix(in srgb, var(--rule) 50%, transparent); }
+.stkey__row:hover { background: var(--paper-2); color: inherit; }
+.stkey__row:hover .stkey__name { color: var(--accent-ink); }
+.stkey__label { display: flex; align-items: center; gap: 10px; padding: 4px 14px; min-width: 0; }
+.stkey__thumb { flex: none; width: 30px; height: 30px; border-radius: var(--r-sm); border: 1px solid var(--plate-edge); background: #f6f4ef; display: grid; place-items: center; overflow: hidden; }
+.stkey__thumb img { width: 88%; height: 88%; object-fit: contain; }
+.stkey__thumb--none { background: transparent; border-style: dashed; }
+.stkey__name { font-size: 14px; line-height: 1.25; font-weight: 500; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.stkey__track { position: relative; height: 40px; }
+.stkey__bar { position: absolute; top: 15px; height: 10px; left: var(--a); width: max(6px, calc(var(--b) - var(--a))); border-radius: 99px; background: var(--ink-2); opacity: 0.8; }
+.stkey__bar--open { border-top-right-radius: 0; border-bottom-right-radius: 0; background-image: linear-gradient(90deg, transparent 70%, rgb(255 255 255 / 0.55)); }
+.stkey__years { position: absolute; top: 0; left: var(--a); font-size: 11.5px; color: var(--ink-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.stkey__years--end { left: auto; right: calc(100% - var(--b)); }
+.stkey__note { margin: 0; padding: 10px 14px 12px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-3); }
+@media (max-width: 640px) {
+  .stkey__axis, .stkey__row { grid-template-columns: minmax(0, 1fr); }
+  .stkey__axis > span:first-child { display: none; }
+  .stkey__label { padding-top: 8px; }
+  .stkey__track { height: 30px; margin: 0 14px; }
+  .stkey__ticks { margin: 0 14px; }
+  .stkey__bar { top: 14px; }
+}
+
+.st-credit { margin-top: 18px; font-size: 13.5px; color: var(--ink-3); max-width: 80ch; }
+
+/* ── Registration reader ───────────────────────────────────────────────── */
+.rg { margin-top: 26px; display: grid; gap: 18px; }
+.rg__card { padding: 20px 22px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); scroll-margin-top: 90px; }
+.rg__card h2 { margin: 0 0 6px; font-size: 1.3rem; }
+.rg__card > p { margin: 0 0 14px; color: var(--ink-2); max-width: 66ch; }
+.rg__row { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+.rg__field { display: grid; gap: 4px; font-size: 14px; color: var(--ink-3); }
+.rg__field input, .rg__field select { font: inherit; font-size: 18px; padding: 10px 12px; min-height: 46px; border: 1px solid var(--rule-2, var(--rule)); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); }
+.rg__field input { width: 13ch; font-variant-numeric: tabular-nums; }
+.rg__tabs { display: inline-flex; gap: 4px; padding: 4px; border-radius: 99px; background: var(--paper-2); border: 1px solid var(--rule); margin-bottom: 14px; }
+.rg__tabs button { font: inherit; font-size: 14.5px; min-height: 36px; padding: 0 14px; border-radius: 99px; border: 0; background: transparent; color: var(--ink-2); cursor: pointer; }
+.rg__tabs button[aria-pressed='true'] { background: var(--paper); color: var(--ink); font-weight: 600; box-shadow: 0 1px 2px rgb(0 0 0 / 0.08); }
+.rg__answer { margin-top: 16px; padding: 16px 18px; border-radius: var(--r-md, var(--r-lg)); background: var(--paper-2); border: 1px solid var(--rule); }
+.rg__answer strong.big { display: block; font: 650 1.5rem/1.2 var(--display); font-stretch: 105%; margin-bottom: 6px; }
+.rg__answer p { margin: 6px 0 0; font-size: 15px; color: var(--ink-2); }
+.rg__answer--none strong.big { font-size: 1.15rem; }
+.rg__diamond { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 22px; align-items: center; }
+.rg__diamond svg { width: 100%; max-width: 220px; height: auto; }
+.rg__diamond svg text { font: 600 15px/1 var(--sans, system-ui); fill: var(--ink); }
+.rg__diamond svg .lab { font-size: 10.5px; font-weight: 500; fill: var(--ink-3); }
+.rg__diamond svg .hit { fill: var(--accent); }
+.rg__selects { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+.rg__selects .rg__field select { width: 100%; font-size: 16px; }
+@media (max-width: 640px) { .rg__diamond { grid-template-columns: 1fr; } .rg__diamond svg { max-width: 180px; margin: 0 auto; } }
+
+.rg-table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+.rg-table th, .rg-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.rg-table th { font-weight: 600; color: var(--ink-3); font-size: 13.5px; }
+.rg-table td.off { color: var(--accent-ink); }
+.rg-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.rg-codes { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 14px; }
+.rg-codes .rg-table { margin-top: 6px; }

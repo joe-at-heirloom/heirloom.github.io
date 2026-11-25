@@ -1,0 +1,93 @@
+---
+// /marks/staffordshire-pottery-marks: Staffordshire and other English potters'
+// marks. The rules that date any English backstamp, then every firm with its
+// own page of marks (lib/staffordshire.ts; the app's marks/staffordshire.json,
+// read from Godden 1964).
+import Reference from '../../../layouts/Reference.astro';
+import { firms, RULES, REG, thumbUrl } from '../../../lib/staffordshire';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+const path = '/marks/staffordshire-pottery-marks/';
+const all = firms();
+const total = all.reduce((n, f) => n + f.marks.length, 0);
+const pictured = all.reduce((n, f) => n + f.pictured, 0);
+const GROUPS: { label: string; blurb: string; keys: string[] }[] = [
+  { label: 'Dinnerware and ironstone', blurb: 'The everyday tableware, much of it made for export to America, that turns up most often in kitchens and estate sales.', keys: ['johnson-bros', 'meakin', 'grindley', 'myott', 'booths', 'furnivals', 'maddock', 'wood-and-sons', 'mason', 'ridgway', 'adams', 'burgess-and-leigh', 'midwinter'] },
+  { label: 'The great names', blurb: 'The firms whose marks are most often copied or misread, and whose histories run longest.', keys: ['wedgwood', 'wedgwood-and-co', 'enoch-wedgwood', 'spode', 'copeland', 'minton', 'royal-crown-derby', 'coalport'] },
+  { label: 'Bone china and tea sets', blurb: 'The Longton china makers whose floral tea cups and figures fill display cabinets.', keys: ['royal-albert', 'aynsley', 'shelley', 'paragon', 'grimwades', 'wilkinson', 'susie-cooper'] },
+  { label: 'Early blue printed wares', blurb: 'The firms behind the blue transfer-printed plates of the 1810s to 1840s, many with American views.', keys: ['enoch-wood', 'clews', 'stevenson', 'mayer', 'davenport'] },
+];
+const byKey = new Map(all.map((f) => [f.key, f]));
+const groups = GROUPS.map((g) => ({ ...g, firms: g.keys.map((k) => byKey.get(k)).filter((f): f is NonNullable<typeof f> => !!f) }));
+const years = (f: { from: number | null; to: number | null }) => (f.from ? `${f.from}${f.to ? `–${f.to}` : ' on'}` : '');
+
+const title = 'Staffordshire Pottery Marks: Dating English Backstamps, Firm by Firm | Heirloom';
+const description = `${total} marks of ${all.length} Staffordshire and English potters, from Johnson Bros., Meakin and Mason's to Wedgwood, Spode, Royal Albert and Shelley, each with the years it was used. How to date any English backstamp: ENGLAND, MADE IN ENGLAND, Rd No, Ltd., Trade Mark.`;
+const faqs: [string, string][] = [
+  ['How do I date a Staffordshire backstamp?', '<p>Read the words around the maker’s name. ENGLAND points to 1891 or later and MADE IN ENGLAND to the 20th century; an Rd number dates the registration of the design (1884 on); Ltd. usually means after about 1880; BONE CHINA is 20th century. Then find the firm’s own marks below: most firms changed their mark every few decades, and the shape of the mark narrows the date further.</p>'],
+  ['What does Rd No mean on English china?', `<p>A registered design number: the design or shape was registered with the Patent Office, which dates the registration from 1884 on. <a href="${REG}">Type the number</a> to read the date from the National Archives’ books. The piece was made then or later, sometimes decades later.</p>`],
+  ['Is a mark with ESTD. 1770 from 1770?', '<p>No. A founding date in a printed mark is the year the firm, or its earliest predecessor, claims as its beginning. Copeland’s “Estd. 1770” is the date of the Spode business it took over in 1847.</p>'],
+];
+const graph = [articleLd(path, 'Staffordshire pottery marks', description, '2026-11-25'), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>Staffordshire pottery marks</h1>
+    <p class="rhead__lede">Most English pottery and china in American and British homes came from the six towns of the Staffordshire Potteries. Their backstamps changed every few decades, so the words and shape of the mark on a plate usually date it to within a generation. First, the rules that apply to any English mark; then each firm and every mark it used.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{all.length}</strong> firms</li>
+      <li><strong class="num">{total}</strong> marks</li>
+      <li><strong class="num">{pictured}</strong> pictured</li>
+      <li><a href={REG}>Read an Rd number or a diamond mark</a></li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="rules">
+    <h2 id="rules">What the words on the base tell you</h2>
+    <p>Each of these gives a date the piece is no older than, or usually younger than. Read them together with the firm’s own marks below.</p>
+    <ul class="st-rules">
+      {RULES.map((r) => (
+        <li class="st-rule">
+          <span class="st-rule__mark">{r.mark}</span>
+          <span class="st-rule__says">{r.says}</span>
+          <p class="st-rule__why">{r.why}</p>
+          {r.link && <a href={r.link[1]}>{r.link[0]}</a>}
+        </li>
+      ))}
+    </ul>
+    <p class="st-credit">From Geoffrey A. Godden, <cite>Encyclopaedia of British Pottery and Porcelain Marks</cite> (1964), pp. 1–2, and The National Archives’ guide to registered designs.</p>
+  </section>
+
+  <section class="st-section st-groups" aria-labelledby="firms">
+    <h2 id="firms">The firms</h2>
+    <p>Each page lists the firm’s marks in date order, with a picture where the book draws the mark, and the years each mark was used.</p>
+    {groups.map((g) => (
+      <>
+        <h3>{g.label}</h3>
+        <p>{g.blurb}</p>
+        <ul class="st-firms">
+          {g.firms.map((f) => (
+            <li>
+              <a class="st-firm" href={f.page}>
+                <span class="st-firm__pic">{f.thumb ? <img src={thumbUrl(f.thumb)!} alt="" loading="lazy" decoding="async" /> : null}</span>
+                <span>
+                  <span class="st-firm__name">{f.title}</span>
+                  <span class="st-firm__meta">{[f.where, years(f)].filter(Boolean).join(' · ')}</span>
+                  <span class="st-firm__meta">{f.marks.length} marks</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </section>
+
+  <section class="st-section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {faqs.map(([q, a]) => (<><h3>{q}</h3><Fragment set:html={a} /></>))}
+  </section>
+
+  <p class="st-credit">Firms, marks and dates from Geoffrey A. Godden, <cite>Encyclopaedia of British Pottery and Porcelain Marks</cite> (London, 1964), the standard reference; the mark drawings are reproduced from it, credited page by page. Each mark rests on Godden alone until a second source is matched.</p>
+</Reference>

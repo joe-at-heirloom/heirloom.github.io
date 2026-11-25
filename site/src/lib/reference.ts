@@ -17,6 +17,7 @@ import { OFFICES, HALLMARKS } from './marks';
 import { makers } from './makers';
 import { artists } from './artists';
 import { places, allPlaces, DIRS, isSplit, letterPath, makerGroups } from './makers-dir';
+import { firms as staffsFirms } from './staffordshire';
 import { places as tiffanyPlaces } from './tiffany';
 
 export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'india' | 'signatures' | 'serials' | 'glass' | 'rugs';
@@ -80,6 +81,8 @@ export function astroRoutes(): Set<string> {
   for (const p of allPlaces()) { out.add(p.path); if (isSplit(p)) for (const g of makerGroups(p)) out.add(letterPath(p, g.key)); }
   // Korean painters, calligraphers and collectors (pages/marks/korean/painters/[slug].astro).
   for (const r of collection().records) if (r.family === 'korean-people' && !r.parent_id) out.add(norm(r.page_path));
+  // Staffordshire and English potters, a page per firm (pages/marks/staffordshire-pottery-marks/[firm].astro).
+  for (const f of staffsFirms()) out.add(norm(f.page));
   // Tiffany windows, a page per state (pages/marks/tiffany-windows/[place].astro).
   for (const p of tiffanyPlaces()) out.add(p.path);
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
@@ -130,6 +133,9 @@ function makerLinks(): RefLink[] {
   return makers()
     .map((m) => ({ href: `/marks/${m.slug}`, label: MAKER_LABEL[m.slug] ?? m.crumb }))
     .sort((a, b) => a.label.localeCompare(b.label));
+}
+function staffsLinks(): RefLink[] {
+  return staffsFirms().map((f) => ({ href: f.page, label: f.title, note: f.where }));
 }
 function artistLinks(): RefLink[] {
   return artists()
@@ -213,6 +219,11 @@ function build(): Area[] {
           { href: '/marks/pottery-date-codes', label: 'Pottery date codes', note: 'Wedgwood, Minton, Worcester, Rookwood, Sèvres' },
         ] },
         { label: 'Makers', links: makerLinks() },
+        { label: 'Staffordshire and English potters', links: [
+          { href: '/marks/staffordshire-pottery-marks/', label: 'Staffordshire pottery marks', note: 'Dating an English backstamp, firm by firm' },
+          { href: '/marks/british-registration-marks', label: 'British registration marks', note: 'Read an Rd number or a diamond mark' },
+          ...staffsLinks(),
+        ], fold: true },
         { label: 'Pewabic Pottery, Detroit', links: [
           { href: '/marks/pewabic-pottery/', label: 'Pewabic Pottery', note: 'Detroit, 1903 to today' },
           { href: '/marks/pewabic-pottery-marks', label: 'Pewabic marks', note: 'Dating a piece by its mark' },
