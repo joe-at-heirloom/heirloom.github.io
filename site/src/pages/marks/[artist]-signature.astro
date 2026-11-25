@@ -1,0 +1,99 @@
+---
+// /marks/<artist>-signature: one artist's signature across their working
+// life, from real close-ups cut from open-licence museum photographs. Built
+// from the collection's signature records (src/lib/artists.ts); the wording
+// and the markup are the generated pages' (scripts/pages/p_artist_sigs.py), in
+// their own article look (styles/article.css, carried from their stylesheets),
+// and title, description and h1 come from page-meta.json, so each page reads,
+// looks and ranks as it did.
+import Base from '../../layouts/Base.astro';
+import { artists, type Artist } from '../../lib/artists';
+import { media } from '../../lib/media';
+import { articleLd, crumbsLd, faqLd, longDate, SITE } from '../../lib/site';
+import meta from '../../data/site/page-meta.json';
+import '../../styles/article.css';
+import GuideAppBox from '../../components/GuideAppBox.astro';
+import GuideRelated from '../../components/GuideRelated.astro';
+
+export function getStaticPaths() {
+  return artists().map((a) => ({ params: { artist: a.slug }, props: { a } }));
+}
+const { a } = Astro.props as { a: Artist };
+const path = `/marks/${a.slug}-signature`;
+const m = (meta as Record<string, { title: string | null; description: string | null; h1: string | null }>)[path] ?? null;
+const items = a.examples;
+const y0 = items[0].year, y1 = items[items.length - 1].year;
+const span = y0 !== y1 ? `${y0}–${y1}` : String(y0);
+const poss = `${a.name}'s`;
+const title = m?.title ?? `${poss} Signature: ${items.length} Real Examples, ${span} | Heirloom`;
+const description = m?.description ?? `${items.length} close-ups of ${poss} signature from works dated ${span}, cut from museum photographs, with how the signature changed and what each one reads.`;
+const h1 = m?.h1 ?? (y0 !== y1 ? `${poss} signature, ${y0} to ${y1}` : `${poss} signature`);
+const forms = [...new Set(items.map((i) => i.form).filter(Boolean))].sort();
+const short = a.facts[0]?.text ?? `${a.name} signed in more than one way over a working life.`;
+const decades = [...new Set(items.map((i) => Math.floor(i.year / 10) * 10))].map((d) => [d, items.filter((i) => Math.floor(i.year / 10) * 10 === d)] as const);
+const museums = [...new Set(items.map((i) => i.museum).filter(Boolean))].sort();
+const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const faqs: [string, string][] = [
+  [`How did ${a.name} sign paintings?`, `<p>${esc(short)}</p>`],
+  [`Did ${a.name} always sign the same way?`, `<p>No. The ${items.length} examples on this page, from ${span}, show ${forms.length ? esc(forms.slice(0, 4).join(', ')) : 'several forms'}. Signatures change with age, medium and the size of the work.</p>`],
+  [`Does a matching signature mean a work is by ${a.name}?`, `<p>No. A signature is the easiest part of a work to copy or add. Whether a work is by ${esc(a.name)} is a question for a specialist in the artist's work and, where one exists, the catalogue raisonné.</p>`],
+];
+const updated = '2026-11-22';
+const images = items.map((i) => ({ '@type': 'ImageObject', contentUrl: SITE + media(i.file), caption: `${poss} signature, ${i.label}: "${i.reads}"`, creditText: i.museum,
+  license: i.cc0 ? 'https://creativecommons.org/publicdomain/zero/1.0/' : 'https://creativecommons.org/publicdomain/mark/1.0/', acquireLicensePage: i.url }));
+const graph = [
+  articleLd(path, h1, description, updated, { about: { '@type': 'Person', name: a.name, birthDate: String(a.born), deathDate: String(a.died) }, image: images }),
+  faqLd(path, faqs),
+  crumbsLd(path, `${a.name} signature`, ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="guide">
+    <article>
+      <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Heirloom</a></li><li><a href="/marks/">Marks</a></li><li aria-current="page">{a.name} signature</li></ol>
+      <h1>{h1}</h1>
+      <p class="guide__lede">{items.length} close-ups of {poss} signature ({a.nationality}, {a.born}–{a.died}), from works dated {span}, in date order. Each is cut from a museum photograph of the work and links to the museum's record.</p>
+      <p class="guide__meta">By Heirloom · Updated <time datetime={updated}>{longDate(updated)}</time></p>
+      <div class="answer">
+        <p class="answer__label">In short</p>
+        <p>{short}</p>
+      </div>
+      <h2 id="how">How {a.name} signed</h2>
+      <ul>{a.facts.slice(1).map((f) => <li>{f.text}</li>)}</ul>
+      <h2 id="timeline">The signature over the years</h2>
+      <p class="note">Ages are approximate: the year of the work minus the year of birth.</p>
+      {decades.map(([d, its]) => (
+        <>
+          <h3 id={`d${d}`}>{d}s</h3>
+          <div class="sigs sigs--wide">
+            {its.map((i) => (
+              <figure class="sig">
+                <div class="sig__img"><img src={media(i.file)} alt={`Signature reading "${i.reads}" on ${i.work} (${i.label})`} width={i.w ?? undefined} height={i.h ?? undefined} loading="lazy" decoding="async" /></div>
+                <figcaption>
+                  <span class="sig__who">{i.label}{i.age && <> <span class="sig__life">aged about {i.age}</span></>}</span>
+                  <span class="sig__reads">Reads: “{i.reads}”{i.position && `, ${i.position}`}</span>
+                  {i.form && <span class="sig__reads">{i.form.charAt(0).toUpperCase() + i.form.slice(1)}{i.medium && ` · ${i.medium}`}</span>}
+                  {i.note && <span class="sig__reads">{i.note}</span>}
+                  <Fragment set:html={'<!--copy-check:skip-->'} /><span class="sig__credit">{i.url ? <a href={i.url} rel="nofollow">{i.work}</a> : i.work}, {i.museum}, {i.cc0 ? 'open access (CC0)' : 'public domain'}</span><Fragment set:html={'<!--/copy-check:skip-->'} />
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </>
+      ))}
+      <h2 id="caution">What a signature can't tell you</h2>
+      <p>Signatures were copied, added to unsigned works and printed onto reproductions. A signature that looks like these is a lead, not an answer, and Heirloom never decides whether a work is genuine. For how to read a signature and where to look one up, see <a href="/marks/artist-signatures">artist signatures</a>.</p>
+      <GuideAppBox text="Photograph the signature close up, and the back of the work. The Advisor writes down what it can read, letter by letter, marks the letters it can't, and keeps the reading on the item's record beside the photo it came from. It never says whether a signature is genuine." />
+      <h2 id="faq">Questions</h2>
+      <div class="faq">
+        {faqs.map(([q, ans]) => <details><summary>{q}</summary><div set:html={ans} /></details>)}
+      </div>
+      <h2 id="sources">Sources</h2>
+      <Fragment set:html={'<!--copy-check:skip-->'} /><ul class="sources">
+        {a.facts.map((f) => <li>{f.source_name || f.source} (<a href={f.source} rel="nofollow">source</a>)</li>)}
+        {museums.map((mu) => <li>{mu}: photographs of the works, open access or public domain</li>)}
+      </ul><Fragment set:html={'<!--/copy-check:skip-->'} />
+    </article>
+    <GuideRelated />
+  </div>
+</Base>

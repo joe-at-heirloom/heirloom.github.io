@@ -1,0 +1,162 @@
+/* The generated pages' article look, carried onto the templates that replace
+   them. Built by site/scripts/article-css.py from the old guide.css,
+   marks/marks.css and styles.css (their rules for an article, every one
+   scoped to .guide; a rule they had without .guide is scoped with
+   :where(.guide), so it keeps its specificity and the old cascade holds),
+   with the bridge the redesign gives the old pages (site/src/styles/shell.css):
+   the old variables pointed at the new fonts and colors. Rebuild it rather
+   than editing it. */
+.guide {
+  --color-primary: var(--accent); --color-primary-dark: var(--accent-ink); --color-primary-light: var(--accent);
+  --color-bg: var(--paper); --color-surface: var(--paper); --color-surface-alt: var(--paper-2);
+  --color-text: var(--ink); --color-text-secondary: var(--ink-2); --color-text-muted: var(--ink-3); --color-border: var(--rule);
+  --font-sans: var(--text); --font-serif: var(--display);
+  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 10px; --radius-xl: 12px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06); --shadow-md: 0 4px 16px rgba(0,0,0,0.08); --shadow-lg: 0 12px 40px rgba(0,0,0,0.1);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --color-dark: #0f0f0f;
+  /* The old pages' fixed text and link colors, which the dark theme they never had needs to change. */
+  --guide-text: #2b2b2b; --guide-link: #C23610;
+  font-family: var(--font-sans); font-size: 16px; line-height: 1.6; color: var(--color-text);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .guide { --guide-text: var(--ink); --guide-link: var(--accent-ink); --color-dark: #26272b; } }
+:root[data-theme='dark'] .guide { --guide-text: var(--ink); --guide-link: var(--accent-ink); --color-dark: #26272b; }
+/* styles.css begins with a reset every generated page relies on. */
+:where(.guide) *, :where(.guide) *::before, :where(.guide) *::after { margin: 0; padding: 0; box-sizing: border-box; }
+/* What the site's global.css would otherwise add to these headings and links. */
+.guide h1, .guide h2, .guide h3 { font-stretch: 100%; text-wrap: wrap; letter-spacing: normal; }
+.guide h3 { font-family: var(--font-sans); font-weight: 700; letter-spacing: normal; line-height: 1.6; }
+.guide a { text-decoration: none; }
+/* global.css's .btn sets a minimum height and a line height of 1; the old .btn set neither. */
+:where(.guide) .btn { min-height: 0; line-height: inherit; }
+/* guide.css */
+.guide { max-width: 760px; margin: 0 auto; padding: 120px 24px 72px; }
+@media (max-width: 600px) {
+  .guide { padding: 100px 16px 56px; }
+}
+:where(.guide) .crumbs { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 20px; }
+:where(.guide) .crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--color-border); }
+:where(.guide) .crumbs a { color: var(--color-text-secondary); }
+:where(.guide) .crumbs a:hover { color: var(--color-primary); }
+.guide h1 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.12; letter-spacing: -0.01em; margin-bottom: 18px; }
+.guide__lede { font-size: 1.15rem; line-height: 1.6; color: var(--color-text); margin-bottom: 14px; }
+.guide__meta { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 32px; }
+:where(.guide) .answer { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary); border-radius: var(--radius-md); padding: 20px 22px; margin: 0 0 36px; }
+:where(.guide) .answer__label { font-family: var(--font-serif); font-style: italic; font-size: 1.05rem; color: var(--guide-link); margin-bottom: 4px; }
+:where(.guide) .answer p { margin: 0; }
+.guide h2 { font-family: var(--font-serif); font-weight: 500; font-size: 1.65rem; line-height: 1.25; margin: 48px 0 14px; scroll-margin-top: 90px; }
+.guide h3 { font-size: 1.08rem; margin: 28px 0 8px; scroll-margin-top: 90px; }
+.guide p, .guide li { font-size: 1.02rem; color: var(--guide-text); }
+.guide p { margin-bottom: 14px; }
+.guide ul, .guide ol { margin: 0 0 18px 22px; }
+.guide li { margin-bottom: 6px; }
+.guide a:not(.btn):not(.store-badge) { color: var(--guide-link); text-decoration: underline; text-decoration-color: rgba(194, 54, 16, 0.3); text-underline-offset: 2px; }
+.guide a:not(.btn):not(.store-badge):hover { text-decoration-color: currentColor; }
+:where(.guide) .toc { background: var(--color-surface-alt); border-radius: var(--radius-md); padding: 18px 22px; margin-bottom: 8px; }
+:where(.guide) .toc__title { font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; }
+:where(.guide) .toc ol { margin-bottom: 0; }
+:where(.guide) .toc li { font-size: 0.95rem; margin-bottom: 2px; }
+:where(.guide) .table-wrap { overflow-x: auto; margin: 8px 0 22px; -webkit-overflow-scrolling: touch; }
+.guide table { width: 100%; border-collapse: collapse; font-size: 0.94rem; min-width: 480px; }
+.guide th, .guide td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--color-border); }
+.guide th { font-weight: 600; background: var(--color-surface-alt); }
+.guide caption { text-align: left; font-size: 0.85rem; color: var(--color-text-muted); padding-bottom: 8px; }
+:where(.guide) .note { font-size: 0.92rem; color: var(--color-text-secondary); background: var(--color-surface-alt); border-radius: var(--radius-sm); padding: 12px 16px; }
+.guide__shots { display: grid; grid-template-columns: repeat(2, minmax(0, 220px)); justify-content: center; gap: 24px; margin: 28px 0 32px; }
+.guide__shots figure { text-align: center; }
+.guide__shots img { width: 100%; height: auto; border-radius: 26px; box-shadow: var(--shadow-lg); border: 1px solid var(--color-border); }
+.guide__shots figcaption { font-size: 0.85rem; color: var(--color-text-secondary); margin-top: 10px; }
+@media (max-width: 480px) {
+  .guide__shots { gap: 14px; }
+}
+:where(.guide) .app-box { margin: 44px 0; padding: 28px; border-radius: var(--radius-lg); background: var(--color-dark); color: #fff; }
+:where(.guide) .app-box h2 { color: #fff; margin-top: 0; }
+:where(.guide) .app-box p { color: rgba(255,255,255,0.78); }
+:where(.guide) .app-box a:not(.store-badge) { color: #fff !important; text-decoration-color: rgba(255,255,255,0.4) !important; }
+:where(.guide) .app-box__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin: 18px 0 10px; }
+:where(.guide) .app-box__note { font-size: 0.85rem; margin: 0; }
+:where(.guide) .app-box .btn--outline { color: #fff; border-color: rgba(255,255,255,0.5); }
+:where(.guide) .faq { margin-top: 8px; }
+:where(.guide) .faq details { border-bottom: 1px solid var(--color-border); padding: 4px 0; }
+:where(.guide) .faq summary { cursor: pointer; list-style: none; font-weight: 600; font-size: 1.02rem; padding: 14px 28px 14px 0; position: relative; }
+:where(.guide) .faq summary::-webkit-details-marker { display: none; }
+:where(.guide) .faq summary::after { content: "+"; position: absolute; right: 4px; top: 12px; font-weight: 400; font-size: 1.3rem; color: var(--color-text-muted); }
+:where(.guide) .faq details[open] summary::after { content: "\2212"; }
+:where(.guide) .faq details > div { padding: 0 0 12px; }
+:where(.guide) .related { margin-top: 52px; padding-top: 28px; border-top: 1px solid var(--color-border); }
+:where(.guide) .related__title { font-weight: 600; margin-bottom: 14px; }
+:where(.guide) .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; list-style: none; margin: 0 !important; }
+:where(.guide) .cards li { margin: 0; }
+:where(.guide) .card { display: block; height: 100%; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 18px 20px; transition: var(--transition); text-decoration: none !important; }
+:where(.guide) .card:hover { border-color: var(--color-primary); box-shadow: var(--shadow-md); }
+:where(.guide) .card__title { display: block; font-family: var(--font-serif); font-size: 1.15rem; color: var(--color-text); margin-bottom: 6px; }
+:where(.guide) .card__desc { display: block; font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.5; }
+:where(.guide) .footer__guides { display: flex; flex-wrap: wrap; gap: 8px 20px; width: 100%; }
+:where(.guide) .footer__guides .footer__link { font-size: 0.85rem; }
+:where(.guide) .home-faq { padding: 96px 0 64px; }
+:where(.guide) .home-faq__list { max-width: 760px; margin: 0 auto; }
+:where(.guide) .home-faq__list a, :where(.guide) .home-faq__more a { color: var(--guide-link); text-decoration: underline; text-underline-offset: 2px; }
+:where(.guide) .home-faq__list p { color: var(--color-text-secondary); }
+:where(.guide) .home-faq__more { max-width: 760px; margin: 24px auto 0; font-size: 0.95rem; color: var(--color-text-secondary); }
+@media (max-width: 600px) {
+  :where(.guide) .home-faq { padding: 64px 0 40px; }
+}
+/* marks/marks.css */
+:where(.guide) .sources li { font-size: 0.92rem; }
+:where(.guide) .pro-note { margin: -24px 0 40px; padding: 14px 18px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+:where(.guide) .pro-note p { margin: 0; font-size: 0.95rem; color: var(--color-text-secondary); }
+:where(.guide) .pro-note strong { color: var(--color-text); }
+:where(.guide) .refs { font-size: 0.7em; line-height: 0; margin-left: 1px; white-space: nowrap; }
+:where(.guide) .refs a { color: var(--color-text-secondary); text-decoration: none; }
+:where(.guide) .refs a:hover { color: var(--color-primary); text-decoration: underline; }
+:where(.guide) .sources--num { padding-left: 1.4em; }
+:where(.guide) .sources--num li { scroll-margin-top: 90px; }
+:where(.guide) .sources--num li:target { background: var(--color-surface-alt); border-radius: var(--radius-sm); }
+:where(.guide) .mks { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 14px; margin: 16px 0 24px; }
+:where(.guide) .mk { margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+:where(.guide) .mk__img { height: 140px; display: flex; align-items: center; justify-content: center; background: #f4f1ea; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 10px; }
+:where(.guide) .mk__img img { max-height: 100%; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+:where(.guide) .mk--facsimile .mk__img img, :where(.guide) .mk--rendering .mk__img img { mix-blend-mode: multiply; }
+:where(.guide) .mk__img--none { background: transparent; border-style: dashed; }
+:where(.guide) .mk__img--none p { margin: 0; font-size: 0.82rem; line-height: 1.4; color: var(--color-text-secondary); text-align: center; }
+:where(.guide) .mk figcaption { display: flex; flex-direction: column; gap: 2px; font-size: 0.86rem; line-height: 1.35; }
+:where(.guide) .mk figcaption b { font-weight: 600; color: var(--color-text); }
+:where(.guide) .mk__years { color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+:where(.guide) .mk__kind { font-size: 0.76rem; color: var(--color-text-muted); }
+:where(.guide) .mk__credit { font-size: 0.72rem; color: var(--color-text-muted); }
+:where(.guide) .sigs { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; margin: 18px 0 30px; }
+:where(.guide) .sigs--one { grid-template-columns: minmax(0, 520px); }
+:where(.guide) .sigs--two { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+:where(.guide) .sig { margin: 0 !important; display: flex; flex-direction: column; border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; background: var(--color-surface); }
+:where(.guide) .sig__img { background: linear-gradient(180deg, #f3f1ed, #ebe8e2); display: flex; align-items: center; justify-content: center; height: 150px; padding: 10px; }
+:where(.guide) .sig__img img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.18); }
+:where(.guide) .sigs--one .sig__img, :where(.guide) .sigs--two .sig__img { height: 220px; }
+@media (max-width: 600px) {
+  :where(.guide) .sigs--one .sig__img, :where(.guide) .sigs--two .sig__img { height: 170px; }
+}
+:where(.guide) .sig figcaption { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 3px; font-size: 0.88rem; line-height: 1.35; }
+:where(.guide) .sig__who { font-weight: 600; color: var(--color-text); }
+:where(.guide) .sig__life { font-weight: 400; color: var(--color-text-secondary); }
+:where(.guide) .sig__reads { color: var(--color-text-secondary); }
+:where(.guide) .sig__credit { font-size: 0.76rem; color: var(--color-text-muted); }
+:where(.guide) .sig__credit a { color: inherit !important; }
+:where(.guide) .sigs--wide { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+:where(.guide) .sig__who a { color: inherit; }
+@media (max-width: 640px) {
+  :where(.guide) .mk { grid-template-columns: 1fr; }
+}
+:where(.guide) .sources li { overflow-wrap: anywhere; }
+:where(.guide) .hall .refs { white-space: normal; overflow-wrap: anywhere; }
+/* styles.css */
+:where(.guide) .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 28px; border-radius: 100px; font-family: var(--font-sans); font-size: 0.95rem; font-weight: 600; border: none; cursor: pointer; transition: var(--transition); white-space: nowrap; }
+:where(.guide) .btn--outline { background: transparent; color: var(--color-text); border: 1.5px solid var(--color-border); }
+:where(.guide) .btn--outline:hover { border-color: var(--color-text); background: rgba(0,0,0,0.02); }
+:where(.guide) .btn:focus-visible, :where(.guide) .hero__link:focus-visible { outline: 2px solid var(--hero-accent-text, var(--color-primary-dark)); outline-offset: 4px; }
+:where(.guide) .store-badge { display: inline-block; line-height: 0; border-radius: 10px; transition: transform var(--transition); }
+:where(.guide) .store-badge:hover { transform: translateY(-1px); }
+:where(.guide) .store-badge:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 4px; }
+:where(.guide) .store-badge__art { display: block; height: 52px; width: auto; }
+
+/* The redesign's header sits in the flow, not fixed (shell.css: html.legacy .guide). */
+.guide { padding-top: 52px; }
+@media (max-width: 600px) { .guide { padding-top: 36px; } }

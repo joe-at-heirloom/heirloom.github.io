@@ -1,0 +1,81 @@
+---
+// /marks/<maker>: one pottery or porcelain maker's marks (Weller, Roseville,
+// McCoy, Hull, Meissen, Hummel, Limoges and Haviland, Royal Doulton, Royal
+// Copenhagen, Nippon, Noritake), built from the collection: the page as
+// ceramics_data.py writes it, carried on the maker's history record, and the
+// marks database's cards. The markup is the generated pages'
+// (scripts/pages/p_ceramics.py), in their article look (styles/article.css).
+import Base from '../../layouts/Base.astro';
+import GuideAppBox from '../../components/GuideAppBox.astro';
+import GuideRelated from '../../components/GuideRelated.astro';
+import { makers, fill, plainFaq, grid, type MakerPage } from '../../lib/makers';
+import { articleLd, faqLd, longDate } from '../../lib/site';
+import '../../styles/article.css';
+
+export function getStaticPaths() {
+  return makers().map((d) => ({ params: { maker: d.slug }, props: { d } }));
+}
+const { d } = Astro.props as { d: MakerPage };
+const path = `/marks/${d.slug}`;
+const keys = d.sources.map((s) => s.key);
+const f = (t: string) => fill(t, keys);
+const updated = '2026-11-22';
+const faqs: [string, string][] = d.faqs.map(([q, a]) => [q, `<p>${f(a)}</p>`]);
+const graph = [
+  articleLd(path, d.h1, d.desc, updated, { about: { '@type': 'Thing', name: d.crumb } }),
+  faqLd(path, d.faqs.map(([q, a]) => [q, `<p>${plainFaq(a)}</p>`])),
+];
+const cardIds = (k: string) => d.cards[k] ?? [];
+---
+<Base title={d.title} description={d.desc} {path} jsonld={graph}>
+  <div class="guide">
+    <article>
+      <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Heirloom</a></li><li><a href="/marks/">Marks</a></li><li aria-current="page">{d.crumb}</li></ol>
+      <h1>{d.h1}</h1>
+      <p class="guide__lede" set:html={d.lede} />
+      <p class="guide__meta">By Heirloom · Updated <time datetime={updated}>{longDate(updated)}</time></p>
+      <div class="answer">
+        <p class="answer__label">In short</p>
+        <p set:html={f(d.answer)} />
+      </div>
+      <h2 id="maker">{d.maker_heading}</h2>
+      {d.history.map((p) => <p set:html={f(p)} />)}
+      <h2 id="marks">{d.marks_heading}</h2>
+      {d.marks_intro && <p set:html={f(d.marks_intro)} />}
+      {d.marks.map((m) => (
+        <section class="mkd" id={m.id}>
+          <h3 set:html={m.name} />
+          <p><strong set:html={m.dates} /></p>
+          <p set:html={f(m.body)} />
+          {cardIds(m.id).length > 0 && <Fragment set:html={grid(cardIds(m.id))} />}
+        </section>
+      ))}
+      {d.cards._others && d.others && (
+        <>
+          <h3 id="others" set:html={d.others[0]} />
+          <p set:html={f(d.others[1])} />
+          <Fragment set:html={grid(d.cards._others)} />
+        </>
+      )}
+      <h2 id="careful">{d.careful_heading}</h2>
+      <ul>{d.cautions.map((c) => <li set:html={f(c)} />)}</ul>
+      {d.cards._careful && <Fragment set:html={grid(d.cards._careful)} />}
+      <p class="note">Heirloom never decides whether an item is genuine. A mark says what it claims; a specialist who can handle the item is the one to ask.</p>
+      {d.disagree.length > 0 && (
+        <>
+          <h2 id="disagree">Where the sources disagree</h2>
+          <ul>{d.disagree.map((x) => <li set:html={f(x)} />)}</ul>
+        </>
+      )}
+      <h2 id="sources">Sources</h2>
+      <p class="note">The small numbers beside each fact point to these sources. Every fact on this page is in at least two of them. Each mark's image is credited on its card.</p>
+      <Fragment set:html={'<!--copy-check:skip--><ol class="sources sources--num">' + d.sources.map((s, i) => `<li id="src-${i + 1}">${s.cite}${s.url ? ` (<a href="${s.url.replace(/"/g, '&quot;')}" rel="nofollow">link</a>)` : ''}</li>`).join('') + '</ol><!--/copy-check:skip-->'} />
+      <GuideAppBox text={d.cta} />
+      <h2 id="faq">Questions</h2>
+      <div class="faq">
+        {faqs.map(([q, a]) => <details><summary>{q}</summary><div set:html={a} /></details>)}
+      </div>
+    </article>
+    <GuideRelated />
+  </div>
+</Base>

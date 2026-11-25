@@ -1,0 +1,13 @@
+---
+// The generated pages' "More from Heirloom" cards, as they were, for the
+// templates in the old article look (styles/article.css).
+const RELATED: [string, string, string][] = [
+  ['/marks/', 'Marks and serial numbers', 'Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.'],
+  ['/home-inventory-app', 'Home inventory app', 'Walk your home room by room and make a PDF inventory your insurer can read.'],
+  ['/antique-identifier-app', 'Antique identifier app', 'What an app can read in a photo of an antique, and what it cannot tell.'],
+  ['/home-inventory-checklist', 'Home inventory checklist', 'Room by room, what to record for each item, and a free spreadsheet template.'],
+  ['/silver-hallmarks', 'Silver hallmarks', 'How to read British, American and continental silver marks, and the marks that mean plate.'],
+  ['/family-heirlooms', 'Family heirlooms', "How to record an heirloom's story, keep its paperwork and decide who it is meant for."],
+];
+---
+<section class="related" aria-labelledby="related-title"><p class="related__title" id="related-title">More from Heirloom</p><ul class="cards">{RELATED.map(([h, t, d]) => <li><a class="card" href={h}><span class="card__title">{t}</span><span class="card__desc">{d}</span></a></li>)}</ul></section>

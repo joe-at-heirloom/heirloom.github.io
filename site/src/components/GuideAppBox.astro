@@ -1,0 +1,19 @@
+---
+// The generated pages' "Let Heirloom read the marks for you" box and the note
+// for auction professionals, as they were (scripts/pages/p_marks.py cta), for
+// the templates in the old article look (styles/article.css).
+import { APP_URL, WEB_APP } from '../lib/site';
+const { text } = Astro.props as { text: string };
+---
+<aside class="app-box" aria-labelledby="app-box-title">
+  <h2 id="app-box-title">Let Heirloom read the marks for you</h2>
+  <p>{text}</p>
+  <div class="app-box__actions">
+    <a class="store-badge" href={APP_URL}><img class="store-badge__art" src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52" /></a>
+    <a class="btn btn--outline" href={WEB_APP}>Open Heirloom on the web</a>
+  </div>
+  <p class="app-box__note">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href={WEB_APP}>web.heirloomapp.io</a>.</p>
+</aside>
+<aside class="pro-note" aria-label="For auction professionals">
+  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href="https://theca.auction">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>
+</aside>
