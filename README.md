@@ -39,7 +39,7 @@ heirloomapp.io is a Cloudflare Worker (`heirloom-site`, `wrangler.jsonc`) servin
   app's tables synced from the app's `main`, runs the copy check, refuses a
   build that lost more than a tenth of its pages, uploads it as a version
   that takes no traffic, smoke-tests that version at its own address, and
-  only then sends heirloomapp.io to it. Anything that fails leaves the live
+  only then sends heirloomapp.io to it. A step that fails leaves the live
   site as it was and puts up a notification; the log is
   `~/Library/Logs/Heirloom/site-deploy.log`. It runs while the Mac is awake.
   So: push to `main`, and it is live within about 15 minutes.
