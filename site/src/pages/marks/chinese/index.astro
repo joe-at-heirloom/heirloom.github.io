@@ -1,0 +1,67 @@
+---
+// /marks/chinese/: the Chinese marks overview, built from the collection
+// (reign records, hall marks, painters and collectors) in the shared look.
+// Title, description and h1 are the generated page's (page-meta.json).
+import Base from '../../../layouts/Base.astro';
+import Crumbs from '../../../components/Crumbs.astro';
+import SectionNav from '../../../components/SectionNav.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { reigns } from '../../../lib/reigns';
+import { PEOPLE, NAV } from '../../../lib/chinese';
+import { collection } from '../../../lib/portal';
+import { articleLd, crumbsLd } from '../../../lib/site';
+import meta from '../../../data/site/page-meta.json';
+import '../../../styles/marks.css';
+import '../../../styles/portal.css';
+import '../../../styles/chinese.css';
+
+const path = '/marks/chinese/';
+const m = (meta as Record<string, { title: string | null; description: string | null; h1: string | null }>)[path];
+const rs = reigns();
+const halls = collection().records.filter((r) => r.kind === 'hall mark').length;
+const seals = PEOPLE.reduce((n, p) => n + p.items.length, 0);
+const title = m?.title ?? 'Chinese Marks | Heirloom';
+const description = m?.description ?? 'Chinese reign marks, hall marks, painters and collectors.';
+const families = [
+  { href: '/marks/chinese-reign-marks', zh: '年款', label: 'Reign marks', text: 'Every reign from 1368 to 1916, with a finder, the seal-script forms and the marks most often copied.', n: `${rs.length} reigns` },
+  { href: '/marks/chinese/painters/', zh: '印鑑款識', label: 'Painters and collectors', text: `${PEOPLE.length.toLocaleString('en-US')} painters, calligraphers and collectors, with their names, dates and ${seals.toLocaleString('en-US')} recorded seals and signatures.`, n: `${PEOPLE.length.toLocaleString('en-US')} people` },
+  { href: '/marks/chinese-hall-marks', zh: '堂名款', label: 'Hall marks', text: 'Marks naming a hall, studio or palace building instead of a reign, from the Ming to the Republic.', n: `${halls} marks` },
+];
+const byDyn = ['Ming', 'Qing', 'Hongxian'].map((d) => [d, rs.filter((r) => r.dynasty === d)] as const).filter(([, l]) => l.length);
+const han = [...new Set([...rs.map((r) => r.chars).join(''), ...families.map((f) => f.zh).join(''), '明清'])].join('');
+const graph = [articleLd(path, 'Chinese marks', description, '2026-11-25'), crumbsLd(path, 'Chinese marks', ['/marks/', 'Marks'])];
+---
+<Base {title} {description} {path} jsonld={graph} {han}>
+  <div class="wrap cn">
+    <Crumbs name="Chinese marks" mid={['/marks/', 'Marks']} />
+    <SectionNav {path} label="Chinese marks" items={NAV} />
+    <header class="phead">
+      <h1>{m?.h1 ?? 'Chinese marks'}</h1>
+      <p class="phead__sub">The characters on the base of Chinese porcelain usually name a reign, sometimes a hall or a studio. This reference reads them: every Ming and Qing reign mark and {halls} hall marks, each fact with its sources in English and Chinese, and real marks photographed in museums.</p>
+    </header>
+
+    <ul class="cn-fams">
+      {families.map((f) => (
+        <li><a href={f.href}><span class="han cn-fams__zh">{f.zh}</span><span class="cn-fams__label">{f.label}</span><span class="cn-fams__text">{f.text}</span><span class="label">{f.n}</span></a></li>
+      ))}
+    </ul>
+
+    <section class="cn-block" aria-labelledby="reigns">
+      <h2 id="reigns">The reigns, 1368 to 1916</h2>
+      <p class="cn-note">Pick a reign to see its mark, how it was written on imperial wares, and how often it was copied.</p>
+      {byDyn.map(([d, list]) => (
+        <div class="cn-reignrow">
+          <h3>{d === 'Hongxian' ? 'After the Qing' : `${d} dynasty`}</h3>
+          <ul class="cn-reigns">{list.map((r) => <li><a href={`/marks/${r.id.replace(/^reign-/, '')}-mark`}><span class="han">{r.chars}</span><span>{r.pinyin}</span><span class="label">{r.start}</span></a></li>)}</ul>
+        </div>
+      ))}
+    </section>
+
+    <section class="cn-block read" aria-labelledby="rule">
+      <h2 id="rule">One rule throughout</h2>
+      <p>A mark names the reign or the hall it claims. Marks of admired reigns were copied for centuries, so a mark never dates an item by itself, and Heirloom never says whether an item is genuine.</p>
+    </section>
+
+    <AppBox text="Photograph the base. The Advisor reads the characters, names the reign or hall the mark claims, and keeps the reading with the photo it came from." />
+  </div>
+</Base>

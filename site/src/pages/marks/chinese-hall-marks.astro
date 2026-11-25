@@ -1,0 +1,139 @@
+---
+// /marks/chinese-hall-marks: the 126 hall and studio marks, built from the
+// collection's hall-mark records (family chinese-marks) and their book and
+// museum examples, in the shared look. A finder filters the list as you type
+// (characters, pinyin or meaning) or pick a group. Title, description and h1
+// are the generated page's (page-meta.json).
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import SectionNav from '../../components/SectionNav.astro';
+import AppBox from '../../components/AppBox.astro';
+import { collection, type Rec } from '../../lib/portal';
+import { NAV } from '../../lib/chinese';
+import { media } from '../../lib/media';
+import { articleLd, crumbsLd, soften } from '../../lib/site';
+import meta from '../../data/site/page-meta.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/pottery.css';
+import '../../styles/chinese.css';
+
+const path = '/marks/chinese-hall-marks';
+const m = (meta as Record<string, { title: string | null; description: string | null; h1: string | null }>)[path];
+const c = collection();
+const img = new Map(c.images.map((i) => [i.id, i]));
+const src = new Map(c.sources.map((s) => [s.id, s]));
+const halls = c.records.filter((r) => r.kind === 'hall mark');
+const kids = new Map<string, Rec[]>();
+for (const r of c.records) if (r.parent_id && r.family === 'chinese-marks' && r.image_id) (kids.get(r.parent_id) ?? kids.set(r.parent_id, []).get(r.parent_id)!).push(r);
+const HAN = /[㐀-鿿豈-﫿]/;
+const GROUPS: [string, string][] = [
+  ['imperial', 'Emperors, empresses and palace buildings'],
+  ['private', 'Princes, officials, scholars and private studios'],
+  ['republic', 'Republic-period halls'],
+  ['painter', 'Jingdezhen painters’ studios, Republic period'],
+  ['placement', 'Palace placement inscriptions (not maker’s marks)'],
+];
+const tidy = (s: unknown) => soften(String(s ?? '').replace(/\s+([.,;:)])/g, '$1').trim());
+const cards = halls.map((r) => {
+  const [chars, ...rest] = r.name.split(' ');
+  const a = r.attributes;
+  const periods = (Array.isArray(a.periods) ? a.periods : []).map((p: any) => `${p.period}${p.start ? ` (${p.start === p.end || !p.end ? p.start : `${p.start}–${p.end}`})` : ''}`).join('; ');
+  return {
+    id: r.anchor ?? r.id, kind: String(a.hall_kind ?? 'private'), chars, pinyin: rest.join(' '), means: tidy(r.summary),
+    variants: r.keys.filter((k) => HAN.test(k) && k !== chars),
+    facts: [
+      ['Whose', [tidy(a.owner), tidy(a.owner_dates)].filter(Boolean).join(' ')],
+      ['On wares of', periods],
+      ['How it is written', tidy(a.script)],
+      ['Where and in what color', tidy(a.placement_colour)],
+      ['Found on', tidy(a.wares)],
+      ['Later copies', tidy(a.later_copies_note)],
+    ].filter(([, v]) => v) as [string, string][],
+    imgs: (kids.get(r.id) ?? []).map((k) => ({ file: img.get(k.image_id!)!.file, alt: k.name, credit: img.get(k.image_id!)!.credit ?? '' })),
+    single: r.single_source,
+    sources: r.sources.map((s) => src.get(s.id)).filter(Boolean).map((s) => ({ citation: s!.citation, url: s!.url ?? null })),
+    keys: [...new Set([chars, ...r.keys, rest.join(' '), tidy(r.summary)])].join(' ').toLowerCase(),
+  };
+});
+const title = m?.title ?? 'Chinese Hall Marks | Heirloom';
+const description = m?.description ?? `${halls.length} Chinese hall and studio marks.`;
+const han = [...new Set(cards.flatMap((h) => [...h.chars, ...h.variants.join(''), ...h.facts.map(([, v]) => v).join('')]).filter((ch) => HAN.test(ch)))].join('') + '慎德堂製居仁';
+const graph = [articleLd(path, 'Chinese hall marks', description, '2026-11-25'), crumbsLd(path, 'Chinese hall marks', ['/marks/chinese/', 'Chinese marks'])];
+---
+<Base {title} {description} {path} jsonld={graph} {han}>
+  <div class="wrap cn">
+    <Crumbs name="Chinese hall marks" mid={['/marks/chinese/', 'Chinese marks']} />
+    <SectionNav {path} label="Chinese marks" items={NAV} />
+    <header class="phead">
+      <h1>{m?.h1 ?? 'Chinese hall marks'}</h1>
+      <p class="phead__sub">Instead of a reign, some Chinese porcelain is marked with the name of a hall, a studio or a palace building: <span class="han">慎德堂製</span>, “made for the Hall of Cautious Virtue.” Here are {halls.length} of them, whose each was, and the wares they appear on.</p>
+    </header>
+
+    <div class="hallfind" role="search">
+      <label class="px__q">
+        <span class="visually-hidden">Characters, pinyin or meaning</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+        <input id="hall-q" type="search" autocomplete="off" spellcheck="false" placeholder="Characters, pinyin or meaning: 慎德堂, shende, harmony" />
+      </label>
+      <div class="px__makers" role="group" aria-label="Group">
+        <button type="button" data-kind="" aria-pressed="true">Every hall</button>
+        {GROUPS.map(([k, l]) => <button type="button" data-kind={k} aria-pressed="false">{l} <span class="num">{cards.filter((h) => h.kind === k).length}</span></button>)}
+      </div>
+      <p id="hall-sum" class="px__sum" aria-live="polite">{halls.length} hall marks.</p>
+    </div>
+
+    {GROUPS.map(([k, label]) => {
+      const list = cards.filter((h) => h.kind === k);
+      return list.length > 0 && (
+        <section class="cn-block hallgroup" data-group={k} aria-labelledby={`g-${k}`}>
+          <h2 id={`g-${k}`}>{label} <span class="label">{list.length}</span></h2>
+          <ul class="halls">
+            {list.map((h) => (
+              <li class="hall" id={h.id} data-hall data-kind={h.kind} data-keys={h.keys}>
+                {h.imgs.length > 0 && <span class="hall__imgs">{h.imgs.map((i) => <span class="plate plate--print hall__img"><img src={media(i.file)} alt={i.alt} title={i.credit} loading="lazy" decoding="async" /></span>)}</span>}
+                <div class="hall__text">
+                  <h3><span class="han hall__chars">{h.chars}</span> <span class="hall__py">{h.pinyin}</span>{h.single && <span class="cn-tag cn-tag--soft">one source</span>}</h3>
+                  {h.means && <p class="hall__means">{h.means}</p>}
+                  {h.variants.length > 0 && <p class="hall__variants">Also written <span class="han">{h.variants.join('、')}</span></p>}
+                  <dl class="cn-facts">{h.facts.map(([t, v]) => <><dt>{t}</dt><dd>{v}</dd></>)}</dl>
+                  {h.sources.length > 0 && (
+                    <details class="rsources"><summary>Sources <span class="muted num">{h.sources.length}</span></summary>
+                      <!--copy-check:skip--><ol>{h.sources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}</li>)}</ol><!--/copy-check:skip-->
+                    </details>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+    })}
+
+    <section class="cn-block read" aria-labelledby="rely">
+      <h2 id="rely">Before you rely on a hall mark</h2>
+      <p>A hall mark names the hall, studio or palace building an item was made for, or claims to be. Hall marks were copied too (<span class="han">慎德堂製</span> under Guangxu and in the Republic; <span class="han">居仁堂製</span> after 1916), so the mark alone does not date the item or show that it is genuine.</p>
+      <p>Many hall names were used by more than one owner, and many private hall marks cannot be tied to a person: the same characters can belong to different households in different centuries.</p>
+      <p>Heirloom never decides whether an item is genuine or made for the hall its mark names. A specialist who can handle it is the one to ask. For reign marks, see <a href="/marks/chinese-reign-marks">Chinese reign marks</a>.</p>
+    </section>
+
+    <AppBox text="Photograph the base. The Advisor reads the characters, names the reign or hall the mark claims, and keeps the reading with the photo it came from." />
+  </div>
+</Base>
+
+<script is:inline>
+  (() => {
+    const q = document.getElementById('hall-q'), sum = document.getElementById('hall-sum');
+    const cards = [...document.querySelectorAll('[data-hall]')], groups = [...document.querySelectorAll('[data-group]')];
+    const btns = [...document.querySelectorAll('.hallfind [data-kind]')];
+    let kind = '';
+    const run = () => {
+      const t = q.value.trim().toLowerCase(); let n = 0;
+      for (const c of cards) { const ok = (!kind || c.dataset.kind === kind) && (!t || c.dataset.keys.includes(t)); c.hidden = !ok; if (ok) n++; }
+      for (const g of groups) g.hidden = !g.querySelector('[data-hall]:not([hidden])');
+      sum.textContent = n === cards.length ? `${n} hall marks.` : n ? `${n} of ${cards.length} hall marks.` : 'Nothing matches. Try the pinyin, the meaning, or fewer characters.';
+    };
+    q.addEventListener('input', run);
+    for (const b of btns) b.addEventListener('click', () => { kind = b.dataset.kind; for (const x of btns) x.setAttribute('aria-pressed', String(x === b)); run(); });
+  })();
+</script>

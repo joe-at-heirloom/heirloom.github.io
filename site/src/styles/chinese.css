@@ -134,3 +134,34 @@
 .cn-pager a { text-decoration: none; }
 .cn-search { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 8px 0 8px; }
 .cn-period h2 { display: flex; align-items: baseline; gap: 10px; }
+
+/* Hall marks: the finder and each hall. */
+.hallfind { display: grid; gap: 6px; margin-top: 8px; }
+.halls { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.hall { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; padding: 16px 18px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); scroll-margin-top: 90px; }
+.hall:not(:has(.hall__imgs)) { grid-template-columns: 1fr; }
+.hall__imgs { display: flex; flex-direction: column; gap: 8px; }
+.hall__img { width: 112px; height: 112px; border: 1px solid var(--plate-edge); }
+.hall__img img { width: 86%; height: 86%; object-fit: contain; }
+.hall h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin: 0 0 6px; }
+.hall__chars { font-size: 1.6rem; }
+.hall__py { font-weight: 500; color: var(--ink-2); }
+.hall__means { margin: 0 0 8px; }
+.hall__variants { margin: 0 0 8px; font-size: 15px; color: var(--ink-2); }
+.hall .cn-facts { font-size: 15px; }
+.hall [hidden], [data-hall][hidden], [data-group][hidden] { display: none; }
+@media (max-width: 640px) { .hall { grid-template-columns: 1fr; } .hall__imgs { flex-direction: row; } .hall__img { width: 88px; height: 88px; } }
+
+/* The overview: the three families, and every reign. */
+.cn-fams { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 12px; }
+.cn-fams a { display: grid; gap: 6px; height: 100%; padding: 18px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); text-decoration: none; color: inherit; }
+.cn-fams a:hover { border-color: var(--ink-3); }
+.cn-fams__zh { font-size: 1.5rem; }
+.cn-fams__label { font-weight: 600; font-size: 1.15rem; }
+.cn-fams__text { color: var(--ink-2); font-size: 15px; }
+.cn-reignrow { margin-top: 16px; }
+.cn-reignrow h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.cn-reigns { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 8px; }
+.cn-reigns a { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--rule); border-radius: var(--r); background: var(--paper); text-decoration: none; color: inherit; }
+.cn-reigns a:hover { border-color: var(--ink-3); }
+.cn-reigns .han { font-size: 1.3rem; }
