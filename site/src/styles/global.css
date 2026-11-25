@@ -1,67 +1,77 @@
-/* Heirloom site: one set of tokens, light and dark. A museum catalogue:
-   paper, ink, plates for specimens, the brand orange kept for what you can
-   press. No small capitals and no tiny uppercase labels (Joe's rule). */
+/* Heirloom site: the architect's model. A studio table, museum board and
+   basswood; graphite for text; the logo's orange only for what you press and
+   for what has been found. Headings in Archivo stretched wide, labels in
+   IBM Plex Mono, in sentence case. No small capitals and no tiny uppercase
+   labels (Joe's rule). Letterforms shown as specimens keep a serif (--glyph). */
 
 :root {
-  --paper: #faf8f5;
-  --paper-2: #f3f0eb;
-  --plate: #ece8e1;
-  --plate-edge: #e0dbd2;
-  --ink: #1b1916;
-  --ink-2: #57524b;
-  --ink-3: #8a847b;
-  --rule: #e4dfd7;
-  --accent: #e84316;
+  --paper: #f6f5f1;        /* museum board */
+  --paper-2: #edebe6;      /* studio */
+  --plate: #e6e3dc;        /* the ground a specimen sits on */
+  --plate-edge: #d9d5cc;
+  --wood: #d8be96;         /* basswood */
+  --ink: #1f2124;          /* graphite */
+  --ink-2: #55575c;
+  --ink-3: #85868a;
+  --rule: #dcd9d1;
+  --accent: #e84316;       /* the logo's orange */
   --accent-ink: #c2370e;
-  --accent-wash: #fdeee8;
+  --accent-wash: #fbe9e2;
   --focus: #e84316;
-  --shadow: 0 1px 2px rgb(27 25 22 / 0.04), 0 8px 24px rgb(27 25 22 / 0.06);
-  --shadow-lift: 0 2px 4px rgb(27 25 22 / 0.06), 0 18px 48px rgb(27 25 22 / 0.12);
+  --shadow: 0 1px 2px rgb(31 33 36 / 0.05), 0 8px 24px rgb(31 33 36 / 0.07);
+  --shadow-lift: 0 2px 4px rgb(31 33 36 / 0.07), 0 18px 48px rgb(31 33 36 / 0.14);
 
-  --serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
-  --sans: 'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --display: 'Archivo', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text: 'Archivo', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --glyph: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  /* older names, kept so every page and island picks the system up */
+  --serif: var(--display);
+  --sans: var(--text);
   --han: 'LXGW WenKai TC', 'Noto Serif TC', 'Songti TC', serif;
 
   --wide: 1240px;
   --read: 680px;
   --gutter: clamp(16px, 4vw, 40px);
-  --r-sm: 6px;
-  --r: 10px;
-  --r-lg: 16px;
+  --r-sm: 4px;
+  --r: 6px;
+  --r-lg: 10px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --paper: #13120f;
-    --paper-2: #1b1a16;
-    --plate: #23211c;
-    --plate-edge: #2e2b25;
-    --ink: #f1ede6;
-    --ink-2: #b9b2a7;
-    --ink-3: #847d72;
-    --rule: #2c2924;
+    --paper: #161719;
+    --paper-2: #1d1e21;
+    --plate: #25262a;
+    --plate-edge: #303136;
+    --wood: #b99a6c;
+    --ink: #eeece7;
+    --ink-2: #b4b3ae;
+    --ink-3: #85857f;
+    --rule: #2c2d31;
     --accent: #ff6a3d;
     --accent-ink: #ff8a64;
-    --accent-wash: #2a1810;
+    --accent-wash: #2b1811;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
     --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 18px 48px rgb(0 0 0 / 0.45);
     color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --paper: #13120f;
-  --paper-2: #1b1a16;
-  --plate: #23211c;
-  --plate-edge: #2e2b25;
-  --ink: #f1ede6;
-  --ink-2: #b9b2a7;
-  --ink-3: #847d72;
-  --rule: #2c2924;
+  --paper: #161719;
+  --paper-2: #1d1e21;
+  --plate: #25262a;
+  --plate-edge: #303136;
+  --wood: #b99a6c;
+  --ink: #eeece7;
+  --ink-2: #b4b3ae;
+  --ink-3: #85857f;
+  --rule: #2c2d31;
   --accent: #ff6a3d;
   --accent-ink: #ff8a64;
-  --accent-wash: #2a1810;
+  --accent-wash: #2b1811;
   --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
   --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 18px 48px rgb(0 0 0 / 0.45);
   color-scheme: dark;
@@ -73,8 +83,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 400 17px/1.6 var(--sans);
-  font-feature-settings: 'cv11', 'ss01';
+  font: 400 17px/1.6 var(--text);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -84,10 +93,11 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
 ::selection { background: var(--accent-wash); color: var(--ink); }
 
-h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.015em; line-height: 1.1; margin: 0; text-wrap: balance; }
-h1 { font-size: clamp(2.4rem, 1.6rem + 3.6vw, 4.6rem); font-weight: 400; letter-spacing: -0.025em; }
-h2 { font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem); }
-h3 { font-size: 1.3rem; }
+h1, h2, h3 { font-family: var(--display); font-weight: 650; font-stretch: 108%; letter-spacing: -0.015em; line-height: 1.08; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.3rem, 1.5rem + 3.4vw, 4.4rem); font-weight: 720; font-stretch: 116%; letter-spacing: -0.025em; line-height: 1; }
+h2 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.15rem); font-stretch: 112%; }
+h3 { font-size: 1.2rem; }
+.label { font: 400 13px/1.4 var(--mono); color: var(--ink-3); letter-spacing: 0; }
 p { margin: 0 0 1em; text-wrap: pretty; }
 .num { font-variant-numeric: tabular-nums lining-nums; }
 .han { font-family: var(--han); font-weight: 400; }
@@ -102,16 +112,18 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 /* Buttons and fields */
 .btn {
   display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px;
-  border-radius: 999px; border: 1px solid var(--rule); background: var(--paper);
-  font: 500 15px/1 var(--sans); color: var(--ink); text-decoration: none; cursor: pointer;
+  border-radius: var(--r-sm); border: 1px solid var(--rule); background: var(--paper);
+  font: 500 15px/1 var(--text); color: var(--ink); text-decoration: none; cursor: pointer;
   transition: background 0.2s var(--ease), border-color 0.2s var(--ease), transform 0.2s var(--ease);
 }
 .btn:hover { border-color: var(--ink-3); color: var(--ink); }
-.btn--primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.btn--primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); color: #fff; }
+.btn--primary { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.btn--primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn--accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn--accent:hover { background: var(--accent-ink); border-color: var(--accent-ink); color: #fff; }
 .field {
-  width: 100%; min-height: 52px; padding: 0 18px; border-radius: 14px; border: 1px solid var(--rule);
-  background: var(--paper); color: var(--ink); font: 400 18px/1 var(--sans);
+  width: 100%; min-height: 52px; padding: 0 18px; border-radius: var(--r); border: 1px solid var(--rule);
+  background: var(--paper); color: var(--ink); font: 400 18px/1 var(--text);
   transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
 }
 .field::placeholder { color: var(--ink-3); }

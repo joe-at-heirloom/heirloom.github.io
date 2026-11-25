@@ -4,13 +4,14 @@ const year = new Date().getFullYear();
 <footer class="ftr">
   <div class="wrap ftr__in">
     <div class="ftr__brand">
-      <img src="/logo.svg" alt="Heirloom" width="96" height="17" />
-      <p class="muted">Know what you own. A home inventory for the things that matter, and a reference for reading the marks on them.</p>
+      <img src="/logo.svg" alt="Heirloom" width="112" height="20" />
+      <p>Know what you own. A home inventory for the things that matter, and a reference for reading the marks on them.</p>
+      <a class="btn btn--primary" href="https://apps.apple.com/us/app/id6754576251">Get Heirloom for iPhone</a>
     </div>
     <nav class="ftr__cols" aria-label="Footer">
       <div>
-        <h2>Reference</h2>
-        <a href="/marks/">Marks</a>
+        <h2>Marks and serials</h2>
+        <a href="/marks/">Search the reference</a>
         <a href="/marks/london-date-letters">British date letters</a>
         <a href="/marks/silver-marks">Silver marks</a>
         <a href="/marks/pottery-marks">Pottery and porcelain marks</a>
@@ -23,29 +24,30 @@ const year = new Date().getFullYear();
         <a href="/home-inventory-checklist">Home inventory checklist</a>
         <a href="/silver-hallmarks">Silver hallmarks</a>
         <a href="/family-heirlooms">Family heirlooms</a>
+        <a href="/guides">All guides</a>
       </div>
       <div>
         <h2>Heirloom</h2>
-        <a href="https://apps.apple.com/us/app/id6754576251">App Store</a>
-        <a href="https://web.heirloomapp.io">Web app</a>
+        <a href="/app">The app</a>
+        <a href="https://web.heirloomapp.io">Sign in on the web</a>
         <a href="/support">Support</a>
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
       </div>
     </nav>
   </div>
-  <div class="wrap ftr__base faint">© {year} The Peninsular Company, LLC</div>
+  <div class="wrap ftr__base"><span class="label">© {year} The Peninsular Company, LLC</span></div>
 </footer>
 
 <style>
   .ftr { margin-top: clamp(80px, 10vw, 140px); border-top: 1px solid var(--rule); background: var(--paper-2); }
-  .ftr__in { display: grid; grid-template-columns: 1.2fr 2fr; gap: 48px; padding-block: 56px 32px; }
-  .ftr__brand img { height: 17px; width: auto; margin-bottom: 14px; }
-  .ftr__brand p { max-width: 34ch; font-size: 15px; }
-  .ftr__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .ftr__cols h2 { font: 600 14px/1.4 var(--sans); letter-spacing: 0; margin-bottom: 10px; color: var(--ink); }
-  .ftr__cols a { display: block; padding: 5px 0; font-size: 15px; color: var(--ink-2); text-decoration: none; }
+  .ftr__in { display: grid; grid-template-columns: 1.1fr 2fr; gap: 48px; padding-block: 56px 36px; }
+  .ftr__brand img { height: 20px; width: auto; margin-bottom: 16px; }
+  .ftr__brand p { max-width: 34ch; font-size: 15px; color: var(--ink-2); margin-bottom: 18px; }
+  .ftr__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .ftr__cols h2 { font: 400 13px/1.4 var(--mono); letter-spacing: 0; margin-bottom: 12px; color: var(--ink-3); }
+  .ftr__cols a { display: block; padding: 5px 0; font-size: 15px; color: var(--ink); text-decoration: none; }
   .ftr__cols a:hover { color: var(--accent-ink); }
-  .ftr__base { padding-block: 0 32px; font-size: 13px; }
+  .ftr__base { padding-block: 0 32px; }
   @media (max-width: 760px) { .ftr__in { grid-template-columns: 1fr; } .ftr__cols { grid-template-columns: 1fr 1fr; } }
 </style>

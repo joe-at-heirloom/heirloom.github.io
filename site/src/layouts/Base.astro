@@ -18,7 +18,7 @@ interface Props {
 const { title, description, path, image = '/og-image.jpg', jsonld = [], han } = Astro.props;
 const canonical = new URL(path, Astro.site).toString();
 const fonts =
-  'https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..650&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap';
+  'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap';
 const hanFont = han ? `https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap&text=${encodeURIComponent(han)}` : null;
 const graph = [ORG, WEBSITE, ...jsonld];
 ---
@@ -36,8 +36,8 @@ const graph = [ORG, WEBSITE, ...jsonld];
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={new URL(image, Astro.site).toString()} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#13120f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#161719" media="(prefers-color-scheme: dark)" />
     <meta name="apple-itunes-app" content="app-id=6754576251" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

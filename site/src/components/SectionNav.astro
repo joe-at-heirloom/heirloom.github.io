@@ -1,0 +1,24 @@
+---
+// A family's own navigation (e.g. Chinese marks: Overview, Reign marks, Hall
+// marks, Dating, Painters and collectors). Sits under the crumbs, above the
+// page title. One row of text tabs, the current one underlined in the logo's
+// orange; on a phone the row scrolls sideways instead of wrapping.
+interface Item { href: string; label: string; match?: string }
+const { items, path, label = 'Section' } = Astro.props as { items: Item[]; path: string; label?: string };
+const isCurrent = (i: Item) => (i.match ? path.startsWith(i.match) : path.replace(/\/$/, '') === i.href.replace(/\/$/, ''));
+---
+<nav class="secnav" aria-label={label}>
+  <div class="secnav__row">
+    {items.map((i) => <a href={i.href} aria-current={isCurrent(i) ? 'page' : undefined}>{i.label}</a>)}
+  </div>
+</nav>
+
+<style>
+  .secnav { border-bottom: 1px solid var(--rule); margin: 8px 0 28px; }
+  .secnav__row { display: flex; gap: 24px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .secnav__row::-webkit-scrollbar { display: none; }
+  .secnav a { position: relative; flex: none; padding: 10px 0 12px; font-size: 15px; font-weight: 500; color: var(--ink-2); text-decoration: none; white-space: nowrap; }
+  .secnav a:hover { color: var(--ink); }
+  .secnav a[aria-current='page'] { color: var(--ink); }
+  .secnav a[aria-current='page']::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent); }
+</style>

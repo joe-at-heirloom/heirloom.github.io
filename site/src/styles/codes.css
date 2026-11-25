@@ -37,7 +37,7 @@
 .ctile.is-dim { opacity: 0.18; }
 .ctile.is-lit .ctile__img { box-shadow: 0 0 0 3px var(--accent); }
 .ctile.is-lit .ctile__cap { color: var(--ink); font-weight: 600; }
-.cx__key { font: 600 1.6rem/1 var(--serif); color: #1b1916; }
+.cx__key { font: 600 1.6rem/1 var(--glyph); color: #1b1916; }
 .cx__twins { margin: 6px 0 14px; }
 .cx__twins h3 { font: 600 15px/1.4 var(--sans); margin-bottom: 8px; }
 .cx__twins ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 84px); gap: 10px; }
