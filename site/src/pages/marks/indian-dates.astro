@@ -1,0 +1,153 @@
+---
+// /marks/indian-dates: how dates are written on Indian, Burmese and Ceylonese
+// items, with a reader (src/islands/IndianDateReader) and the tables it uses:
+// the eras, the digits of every script, the Mughal emperors whose regnal
+// years are written, and dated items in museums worked through. All from the
+// app's table (indian.json `dates`), which the Advisor's decoder reads.
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import IndianDateReader, { type ReaderEra, type Keypad } from '../../islands/IndianDateReader';
+import { dateTables, indicChars } from '../../lib/indian';
+import { SCRIPTS, indicFace } from '../../lib/scripts';
+import { clean } from '../../lib/records';
+import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/korean.css';
+import '../../styles/indian.css';
+
+const path = '/marks/indian-dates';
+const d = dateTables();
+const src = new Map<string, any>((d.sources ?? []).map((s: any) => [s.id, s]));
+const cite = (ids: string[] = []) => ids.map((i) => src.get(i)).filter(Boolean);
+const eras: any[] = d.eras ?? [];
+const readerEras: ReaderEra[] = eras.filter((e) => e.reader !== false && (e.words?.length || e.after_words?.length))
+  .map((e) => ({ id: e.id, label: e.label, rule: e.rule, words: e.words, after_words: e.after_words, add: e.add, alt_add: e.alt_add, min: e.min, max: e.max, why_two: e.why_two, note: clean(e.note) }));
+const rulers: any[] = d.rulers ?? [];
+const readerRulers = rulers.filter((r) => r.reader !== false && r.accession).map((r) => ({ id: r.id, name: r.name, names: r.names, accession: r.accession, end: r.end, years: r.years }));
+
+// A keypad per script: its digits, and the era words written in it.
+const wordsIn = (name: string) => {
+  const s = SCRIPTS.find((x) => x.name === name);
+  if (!s) return [];
+  const re = new RegExp(`[${s.range}]`);
+  return [...new Set(readerEras.flatMap((e) => [...e.words, ...(e.after_words ?? [])]).filter((w) => re.test(w)))].slice(0, 12);
+};
+const scriptName = (n: string) => (/Persian|Urdu/.test(n) ? 'Persian/Urdu' : /Burmese|Myanmar/.test(n) ? 'Burmese' : n.split(' ')[0]);
+const keypads: Keypad[] = (d.numerals ?? [])
+  .filter((n: any) => Array.isArray(n.digits) && n.digits.length === 10 && !/^Arabic/.test(n.script))
+  .map((n: any) => {
+    const name = scriptName(String(n.script));
+    const s = SCRIPTS.find((x) => x.name === name);
+    return { script: name, lang: s?.lang ?? 'und', rtl: !!s?.rtl, digits: n.digits, words: wordsIn(name) };
+  });
+const examples = ['सं० १९५५', 'शके १८२०', '۱۳۱۵ھ', 'সন ১৩০৫ সাল', 'A.H. 1126', 'Samvat 1806'];
+
+const rule = (e: any) => e.rule === 'hijri' ? 'The Hijri year is lunar, 354 or 355 days: each one runs across two Western years (rarely it falls inside one).'
+  : e.rule === 'regnal' ? 'Counted from the emperor’s accession: the year of the reign needs the emperor’s name.'
+  : e.add == null ? '' : `Western year = ${e.label.replace(/^the /, '')} year ${e.add < 0 ? '−' : '+'} ${Math.abs(e.add)}${e.alt_add != null && e.alt_add !== e.add ? ` or ${e.alt_add < 0 ? '−' : '+'} ${Math.abs(e.alt_add)}` : ''}${e.why_two ? `: ${e.why_two}` : ''}.`;
+const written = (e: any) => [...new Set((e.as_written ?? []).map((w: any) => String(w.native ?? '').trim()).filter((w: string) => w && !/…/.test(w)))].slice(0, 10) as string[];
+const shownEras = eras.filter((e) => e.id !== 'christian-era');
+const western = eras.find((e) => e.id === 'christian-era');
+const museumExamples: any[] = (d.examples ?? []).filter((x: any) => x.url && x.years?.length);
+const eraLabel = (id: string) => eras.find((e) => e.id === id)?.label ?? id;
+const yearsText = (ys: number[]) => (ys.length > 1 ? `${ys[0]} or ${ys[ys.length - 1]}` : String(ys[0]));
+
+const title = 'Indian Dates on Art and Antiques: Samvat, Shaka, Hijri, Regnal Years | Heirloom';
+const description = 'Read a date written on an Indian, Burmese or Ceylonese item: Vikram Samvat, Shaka, Hijri, Bengali San, Faslī, Kollam, the Burmese and Buddhist eras and the Mughal emperors’ regnal years, in the digits of every Indian script, with a reader that works out the Western year.';
+const h1 = 'Reading a date on an Indian item';
+const faqs: [string, string][] = [
+  ['What does संवत् (Samvat) mean on an Indian item?', '<p>Samvat (संवत्, often shortened to सं.) introduces a year of the Vikram Samvat era, the usual era of north and west India. It runs 56 or 57 years ahead of the Western year: Samvat 1955 is 1898 or 1899, depending on the month. Type it into the reader above.</p>'],
+  ['How do I convert a Hijri date to a Western year?', '<p>A Hijri year is lunar, about eleven days shorter than a Western year, so there is no fixed difference: it has to be worked out. Each Hijri year runs across two Western years, so the reader gives both: A.H. 1315, for example, ran from June 1897 to May 1898.</p>'],
+  ['Why does the reader give two years?', '<p>Most Indian years do not begin on 1 January. The Samvat year begins in March or April in the north and in October or November in Gujarat; the Bengali year in April; the Hijri year at any time of year. A year written alone falls in two Western years, and only the month, if it is written, settles which.</p>'],
+  ['What is a regnal year on a Mughal coin?', '<p>“San … julūs” is a year of the emperor’s reign, counted from his accession. To turn it into a Western year you need the emperor’s name, which is usually on the other face of the coin. The table below gives each emperor’s accession and whether his regnal years were lunar or solar.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).indian ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Indian calendars and dating' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/indian/', 'Indian marks']),
+];
+const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written]), d.numerals, rulers.map((r) => r.native), examples, keypads.map((k) => [k.digits, k.words]), museumExamples.map((x) => x.written_date));
+---
+<Reference {title} {description} {path} jsonld={graph} {indic}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Type the date as it is written, tap it in from the digits of its script, or pick the era and type the year. The reader gives the Western year, or both years when the era’s year begins partway through ours. A number with no era word beside it is not read: it could be any era, or not a year at all.</p>
+    </header>
+
+    <IndianDateReader client:load eras={readerEras} rulers={readerRulers} {keypads} {examples} />
+
+    <section class="block prose" aria-labelledby="eras">
+      <h2 id="eras">The eras</h2>
+      <p>Each era’s name as it is written on items, how its years turn into Western years, and where it was used. Indian writers also wrote the Western year in their own scripts: {western && written(western).slice(0, 8).map((w, i) => { const f = indicFace(w); return <>{i > 0 && ', '}<span class={f?.cls} lang={f?.lang} dir={f?.dir}>{w}</span></>; })}.</p>
+      <div class="ietable">
+        {shownEras.map((e) => (
+          <div class="iera" id={`era-${e.id}`}>
+            <h3>{e.label}{e.single_source && <span class="muted"> · one source so far</span>}</h3>
+            {written(e).length > 0 && <p class="iera__written">{written(e).map((w) => { const f = indicFace(w); return <span class={f?.cls ?? ''} lang={f?.lang} dir={f?.dir}>{w}</span>; })}</p>}
+            {rule(e) && <p><strong>{rule(e)}</strong></p>}
+            {e.where_used && <p class="muted">{clean(e.where_used)}</p>}
+            {e.note && <p>{clean(e.note)}</p>}
+            {cite(e.sources).length > 0 && <p class="faint iera__src">Sources: {cite(e.sources).slice(0, 4).map((s: any, i: number) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}</p>}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="digits">
+      <h2 id="digits">Digits in every script</h2>
+      <p class="muted">The same ten digits, 0 to 9, as each script writes them. Find the shapes on your item in a row, and read the number across. Some look alike across scripts: Bengali ৪ (4) looks like an 8, and Persian ۰ (0) is a dot.</p>
+      <div class="idigits" role="table" aria-label="Digits by script">
+        <div class="idigits__row idigits__head" role="row"><span role="columnheader">Script</span>{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => <span role="columnheader" class="num">{i}</span>)}</div>
+        {(d.numerals ?? []).filter((n: any) => Array.isArray(n.digits) && n.digits.length === 10).map((n: any) => { const f = indicFace(n.digits.join('')); return (
+          <div class="idigits__row" role="row">
+            <span role="rowheader">{scriptName(String(n.script))}</span>
+            {n.digits.map((g: string) => <span role="cell" class={f?.cls} lang={f?.lang}>{g}</span>)}
+          </div>
+        ); })}
+      </div>
+      <p class="muted">Tamil and old Malayalam also wrote numbers with signs for ten (௰), a hundred (௱) and a thousand (௲): ௲௮௱௯௰௮ is 1000 + 8 × 100 + 9 × 10 + 8 = 1898. The reader reads them.</p>
+    </section>
+
+    <section class="block" aria-labelledby="rulers">
+      <h2 id="rulers">The Mughal emperors and their regnal years</h2>
+      <p class="muted">A coin or seal dated “san … julūs” counts the years of the emperor’s reign from his accession. From Aurangzeb on, the years were lunar (Hijri) years; Akbar’s and Jahangir’s were solar.</p>
+      <div class="itable" role="table">
+        <div class="itable__row itable__head" role="row"><span>Emperor</span><span>Accession</span><span>Reign ended</span><span>Regnal years</span></div>
+        {rulers.map((r) => (
+          <div class="itable__row" role="row" id={`ruler-${r.id}`}>
+            <span><strong>{r.name}</strong>{r.native && <> <span class="nastaliq" lang="fa" dir="rtl">{r.native.split(' / ')[0]}</span></>}</span>
+            <span class="num">{r.accession ?? '—'}{r.accession_note && <small class="muted"> {r.accession_note}</small>}</span>
+            <span class="num">{r.end ?? '—'}</span>
+            <span>{r.julus_rule ? clean(r.julus_rule) : r.years}</span>
+          </div>
+        ))}
+      </div>
+      {d.rulers_note && <p class="faint">{clean(d.rulers_note)}</p>}
+    </section>
+
+    {museumExamples.length > 0 && (
+      <section class="block" aria-labelledby="museums">
+        <h2 id="museums">Dated items in museums, worked through</h2>
+        <p class="muted">Items whose museums publish their written dates, with the year the reader’s rules give. Where they differ from the museum’s own date, the note says why.</p>
+        <ul class="iex">
+          {museumExamples.map((x) => (
+            <li>
+              <a href={x.url} rel="nofollow noopener">{soften(String(x.object ?? 'Item'))}</a>, <span class="muted">{x.holder}{x.accession ? ` ${x.accession}` : ''}</span>
+              <br /><span class="iex__date" dir="auto">{String(x.written_date).slice(0, 140)}</span>
+              <br />{eraLabel(x.era)}: <strong class="num">{yearsText(x.years)}</strong>{x.agrees === false ? <span class="iex__differ"> · the museum gives {String(x.date_as_catalogued).slice(0, 80)}</span> : <span class="muted"> · agrees with the museum</span>}
+              {x.agrees === false && x.notes && <><br /><span class="faint">{clean(String(x.notes).slice(0, 260))}</span></>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <AppBox text="Photograph the date. The Advisor reads the digits in any Indian script, finds the era word beside them, and works out the Western year with these same rules, saying when it could be two." />
+    <Faq {faqs} />
+  </div>
+</Reference>

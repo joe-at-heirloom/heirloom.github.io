@@ -1,0 +1,54 @@
+/* The Indian section: the date reader's keypad, the eras, the digits chart,
+   the emperors' table, museum examples, and the hallmark periods. */
+.dr__pad { border: 1px solid var(--rule); border-radius: var(--r); padding: 10px 14px; background: var(--paper); }
+.dr__pad > summary { cursor: pointer; font-size: 15px; color: var(--ink-2); }
+.dr__pad[open] > summary { margin-bottom: 10px; }
+.dr__keys { display: grid; gap: 8px; margin-top: 10px; }
+.dr__row { display: flex; flex-wrap: wrap; gap: 6px; }
+.dr__row button { min-width: 44px; min-height: 44px; border: 1px solid var(--rule); background: var(--paper-2, var(--paper)); border-radius: 8px; padding: 4px 10px; font-size: 1.25rem; color: var(--ink); cursor: pointer; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1; }
+.dr__row button small { font: 400 11px/1 var(--mono); color: var(--ink-3); margin-top: 2px; }
+.dr__row button.nastaliq { line-height: 1.6; }
+.dr__hand { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: end; }
+.dr__hand label { display: grid; gap: 4px; font-size: 14px; color: var(--ink-2); }
+.dr__hand select, .dr__hand input { min-height: 44px; border: 1px solid var(--rule); border-radius: 8px; padding: 0 10px; font-size: 16px; background: var(--paper); color: var(--ink); }
+.dr__hand button { min-height: 44px; border: 1px solid var(--ink); border-radius: 8px; padding: 0 16px; background: var(--ink); color: var(--paper); font-size: 15px; cursor: pointer; }
+
+.ietable { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
+.iera { border-top: 1px solid var(--rule); padding-top: 10px; }
+.iera h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.iera p { margin: 0 0 6px; }
+.iera__written { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 1.15rem; color: var(--ink); }
+.iera__written .nastaliq { font-size: 1.05rem; line-height: 1.8; }
+.iera__src { font-size: 13px; }
+
+.idigits { display: grid; gap: 0; overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--r); margin: 10px 0; }
+.idigits__row { display: grid; grid-template-columns: minmax(7.5em, 1.4fr) repeat(10, minmax(2em, 1fr)); align-items: center; border-top: 1px solid var(--rule); min-width: 34em; }
+.idigits__row:first-child { border-top: 0; }
+.idigits__row > span { padding: 6px 8px; text-align: center; font-size: 1.3rem; }
+.idigits__row > span:first-child { text-align: left; font-size: 14px; color: var(--ink-2); }
+.idigits__head > span { font: 500 13px/1.4 var(--mono); color: var(--ink-3); }
+.idigits__row .nastaliq { line-height: 1.6; }
+
+.itable { display: grid; border: 1px solid var(--rule); border-radius: var(--r); margin: 10px 0; overflow-x: auto; }
+.itable__row { display: grid; grid-template-columns: minmax(10em, 1.3fr) minmax(7em, 0.8fr) minmax(7em, 0.8fr) minmax(12em, 2fr); gap: 10px; padding: 8px 10px; border-top: 1px solid var(--rule); font-size: 15px; align-items: start; min-width: 40em; }
+.itable__row:first-child { border-top: 0; }
+.itable__head { font: 500 13px/1.4 var(--mono); color: var(--ink-3); }
+.itable__row .nastaliq { font-size: 1rem; line-height: 1.7; }
+.itable__row small { display: block; font-size: 12.5px; }
+
+.iex { list-style: none; padding: 0; display: grid; gap: 12px; }
+.iex li { border-top: 1px solid var(--rule); padding-top: 10px; font-size: 15px; line-height: 1.5; }
+.iex__date { color: var(--ink-2); font-size: 14px; }
+.iex__differ { color: var(--accent-ink); }
+
+.ihm { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); margin: 12px 0 6px; }
+.ihm__card { border: 1px solid var(--rule); border-radius: var(--r); padding: 12px 14px; background: var(--paper); }
+.ihm__card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.ihm__card p { margin: 0 0 6px; font-size: 15px; }
+.ihm__set { font: 500 14px/1.5 var(--mono); color: var(--ink); }
+
+.iletters { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; padding: 0; list-style: none; }
+.iletters li { border: 1px solid var(--rule); border-radius: 8px; padding: 6px 10px; min-width: 4.2em; text-align: center; }
+.iletters strong { display: block; font-size: 1.3rem; }
+.iletters .num { font-size: 14px; color: var(--ink-2); }
+.iletters li.is-disputed { border-style: dashed; }

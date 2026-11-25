@@ -4,7 +4,7 @@
 // the mark's pictures, each with its credit.
 import Spec from './Spec.astro';
 import { SeeAt } from '../SeeAt';
-import { statusWord, withNames, type Sheet } from '../../lib/records';
+import { statusWord, withNames, faceOf, type Sheet } from '../../lib/records';
 const { s } = Astro.props as { s: Sheet };
 const [lead, ...more] = s.pics;
 // A fact that only repeats the headline (the meaning, or the reading) is left out.
@@ -16,7 +16,7 @@ const facts = s.facts.filter((f) => !same(s.means, f.text) && !same(s.reading, f
     {s.means && <p class="sheet2__means">{s.meansTr ? <span class="tr">{s.means}</span> : s.means}</p>}
     {facts.length > 0 && (
       <dl class="facts2">
-        {facts.map((f) => <><dt>{f.label}</dt><dd lang={f.label === 'Also written' ? (s.lang === 'ja' ? 'ja' : s.lang === 'ko' ? 'ko' : 'zh-Hant') : undefined} class:list={[{ han: f.label === 'Also written' }]} set:html={withNames(f.text)} /></>)}
+        {facts.map((f) => { const face = f.label === 'Also written' || f.label === 'In its own script' ? (s.lang === 'in' ? faceOf(f.text, s.lang) : { cls: 'han', lang: s.lang === 'ja' ? 'ja' : s.lang === 'ko' ? 'ko' : 'zh-Hant' }) : null; return <><dt>{f.label}</dt><dd lang={face?.lang} class:list={[face?.cls]} set:html={withNames(f.text)} /></>; })}
       </dl>
     )}
     {s.caution && <p class="caution"><strong>Careful: </strong><Fragment set:html={withNames(s.caution)} /></p>}

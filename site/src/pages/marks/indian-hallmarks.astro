@@ -1,0 +1,88 @@
+---
+// /marks/indian-hallmarks: the Bureau of Indian Standards hallmark on gold and
+// silver since 2000: which marks were struck together in each period, the
+// purity grades, the year letters of 2000–2016, the HUID, and the marks that
+// look like a hallmark and are not (916 alone, KDM). From the app's table
+// (indian.json, family hallmarks), as record sheets (components/ref/Catalogue).
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import Catalogue from '../../components/ref/Catalogue.astro';
+import { inSheet, clean } from '../../lib/records';
+import { marks } from '../../lib/indian';
+import { articleLd, faqLd, crumbsLd } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/indian.css';
+
+const path = '/marks/indian-hallmarks';
+const rows = marks().filter((m) => m.family === 'hallmarks');
+const byId = new Map(rows.map((r) => [r.id.replace(/^in-hm-/, ''), r]));
+const logo = byId.get('bis-hallmark-logo-gold');
+// The marks struck together in each period, as the BIS texts give them.
+const periods = String(logo?.punchSet ?? '').split(/\s*\|\s*/).filter(Boolean).map((p) => {
+  const m = /^(.*?\(gold\)|[^:]+):\s*(.*)$/.exec(p);
+  return { when: (m ? m[1] : p).replace(/\s*\(gold\)/, ''), set: m ? m[2] : '' };
+});
+const letters = rows.filter((r) => r.kind === 'year letter').map((r) => ({ id: r.slug, letter: r.markText ?? '', year: r.from, disputed: /disputed/i.test(r.meaning) }));
+const group = (key: string, label: string, test: (r: (typeof rows)[number]) => boolean, blurb?: string) => ({ key, label, blurb, sheets: rows.filter(test).map(inSheet) });
+const groups = [
+  group('marks', 'The BIS mark, the centers’ and jewelers’ marks, the HUID', (r) => /logo|ahc|identification|huid|metal-word|filled/.test(r.id)),
+  group('gold', 'Gold purity grades', (r) => r.kind.startsWith('purity') && /gold-/.test(r.id), 'With the BIS mark: what the assaying center found. Written as a bare number (916) to 2016, and as carats and parts per thousand (22K916) since 2017.'),
+  group('silver', 'Silver purity grades', (r) => r.kind.startsWith('purity') && /silver-/.test(r.id), 'Indian silver hallmarking began in 2005 and is voluntary: most Indian silver carries no hallmark at all.'),
+  group('letters', 'Year letters, 2000–2016', (r) => r.kind === 'year letter'),
+  group('not', 'Marks that look like a hallmark, and the rules', (r) => /trade-|kdm|tola|touch|misuse|order/.test(r.id)),
+].filter((g) => g.sheets.length);
+
+const title = 'Indian Gold Hallmarks: BIS Mark, 916, 22K916 and HUID Explained | Heirloom';
+const description = 'Read the hallmark on Indian gold and silver: the BIS mark, purity grades such as 916 and 22K916, the year letters of 2000 to 2016, the six-character HUID since 2021, and the marks that look like a hallmark and are not, such as 916 alone and KDM.';
+const h1 = 'Indian hallmarks on gold and silver';
+const faqs: [string, string][] = [
+  ['What does 916 mean on Indian gold?', '<p>916 means 916 parts of gold in 1,000: 22-carat gold. With the Bureau of Indian Standards (BIS) mark beside it, an assaying center tested the item and found it. On its own, without the BIS mark, 916 is only the jeweler’s claim, and Indian gold sold as 22 carat has often tested lower.</p>'],
+  ['What is a HUID on Indian jewelry?', '<p>A six-character code of letters and numbers, struck with the BIS mark and the purity on every gold item hallmarked from 1 July 2021, and on hallmarked silver from 1 September 2025. Each code belongs to one item. The BIS CARE app, under “Verify HUID”, shows the kind of item, the purity and the jeweler it was issued for. BIS describes the code only as system-generated: nothing it has published says the letters encode a date or a place.</p>'],
+  ['Is old Indian gold hallmarked?', '<p>Usually not. Hallmarking began in 2000 and was voluntary until June 2021, and even now some pieces are exempt. Gold made before then carries no hallmark, or only a jeweler’s own stamp, and that says nothing about its purity either way. Only a test does.</p>'],
+  ['What does KDM mean?', '<p>KDM is a trade word for gold jewelry soldered with a cadmium alloy. It is not a hallmark or a purity grade, and it says nothing anyone has tested about the gold.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).indian ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Indian gold hallmarking' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/indian/', 'Indian marks']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">Since 2000 an Indian hallmark has been struck by an assaying center recognized by the Bureau of Indian Standards (BIS), with the BIS mark first. Which marks stand beside it tells you when the item was hallmarked. A hallmark says what the center found, not when the item was made.</p>
+    </header>
+
+    {periods.length > 0 && (
+      <section class="block" aria-labelledby="periods">
+        <h2 id="periods">Which period is your hallmark from?</h2>
+        <div class="ihm">
+          {periods.map((p) => (
+            <div class="ihm__card">
+              <h3>{p.when}</h3>
+              <p class="ihm__set">{p.set}</p>
+            </div>
+          ))}
+        </div>
+        {logo?.tells && <p class="muted">{clean(logo.tells)}</p>}
+      </section>
+    )}
+
+    {letters.length > 0 && (
+      <section class="block" aria-labelledby="letters">
+        <h2 id="letters">Year letters, 2000 to 2016</h2>
+        <p class="muted">Before 2017 the hallmark carried a letter for the year the center marked the item. No BIS document listing every letter was found: the letters after 2009 rest on a 2012 government advertisement and BIS’s own examples, which disagree for 2012, and the letters for 2014 to 2016 were not found. A dashed letter is one the sources dispute. It is not a British date letter.</p>
+        <ul class="iletters">
+          {letters.map((l) => <li class:list={[{ 'is-disputed': l.disputed }]}><a href={`#${l.id}`}><strong>{l.letter}</strong></a><span class="num">{l.year}</span></li>)}
+        </ul>
+      </section>
+    )}
+
+    <Catalogue {groups} noun={['mark', 'marks and grades']} placeholder="What is stamped: 916, 22K916, 750, HUID, KDM, 925" label="What is stamped" />
+
+    <AppBox text="Photograph the hallmark. The Advisor reads the BIS mark, the purity and any HUID, says which period the marks are from, and tells a jeweler’s own 916 from a hallmark." />
+    <Faq {faqs} />
+  </div>
+</Reference>

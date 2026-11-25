@@ -19,6 +19,8 @@ interface Props {
   han?: string;
   hangul?: string;
   ja?: string;
+  /** Indian, Burmese, Sinhala and Persian/Urdu characters the page sets (Base's indic face request). */
+  indic?: string;
   image?: string;
   /** The page's own name in the crumbs when the map has none for it (a reign, a painter). */
   crumb?: string;
@@ -29,7 +31,7 @@ interface Props {
   /** false: arriving here is a full page load (see Base). */
   transitions?: boolean;
 }
-const { title, description, path, jsonld = [], han, hangul, ja, image, crumb, via, bare = false, transitions = true } = Astro.props;
+const { title, description, path, jsonld = [], han, hangul, ja, indic, image, crumb, via, bare = false, transitions = true } = Astro.props;
 const { area, link } = placeOf(path);
 const isHome = !!area && area.href.replace(/\/$/, '') === path.replace(/\/$/, '');
 const here = crumb ?? link?.label ?? title.replace(/ \| Heirloom$/, '').split(':')[0];
@@ -58,7 +60,7 @@ const others = AREAS().filter((a) => a.key !== area?.key);
 const railHan = area ? area.groups.flatMap((g) => g.links.map((l) => l.glyph ?? '')).join('') : '';
 const hanAll = han || railHan ? [...new Set([...(han ?? ''), ...railHan])].join('') : undefined;
 ---
-<Base {title} {description} {path} jsonld={graph} han={hanAll} {hangul} {ja} {image} {transitions}>
+<Base {title} {description} {path} jsonld={graph} han={hanAll} {hangul} {ja} {indic} {image} {transitions}>
   <div class:list={['wrap', 'ref', { 'ref--bare': bare || !area }]} data-area={area?.key}>
     <nav class="ref__crumbs" aria-label="Breadcrumb">
       <ol>

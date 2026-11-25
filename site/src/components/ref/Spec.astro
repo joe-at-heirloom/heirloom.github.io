@@ -5,7 +5,8 @@
 // the right-hand column as a mark on a base is, and labelled as set in type.
 // With neither, a plain outline: never a drawn stand-in.
 import { statusWord, CJK, faceOf, type Pic } from '../../lib/records';
-interface Props { pic?: Pic | null; glyphs?: string | null; lang?: 'zh' | 'ja' | 'ko' | null; px?: number; label?: boolean; alt?: string }
+import { INDIC, indicFace } from '../../lib/scripts';
+interface Props { pic?: Pic | null; glyphs?: string | null; lang?: 'zh' | 'ja' | 'ko' | 'in' | null; px?: number; label?: boolean; alt?: string }
 const { pic = null, glyphs = null, lang = null, px = 64, label = false, alt } = Astro.props;
 
 // The characters only (a mark written "丸に松 / 角松" shows its first form).
@@ -17,6 +18,10 @@ const per = n <= 3 ? Math.max(n, 1) : n === 4 ? 2 : n <= 6 ? 3 : n <= 8 ? 2 : 3;
 const cols = Math.ceil(n / per);
 const size = Math.max(10, Math.floor((px * 0.72) / Math.max(per, cols) / 1.08));
 const { cls, lang: langAttr } = faceOf(chars.join(''), lang);
+// An Indian, Burmese or Persian mark is written in a line (Persian right to left), never in columns.
+const line = !n && INDIC.test(String(glyphs ?? '')) ? String(glyphs).split(/\s*\/\s*/)[0].trim() : '';
+const lineFace = line ? indicFace(line) : null;
+const lineSize = line ? Math.max(10, Math.min(Math.floor(px * 0.36), Math.floor((px * 0.84) / Math.max(2, [...line].length * 0.55)))) : 0;
 ---
 {pic ? (
   <span class="spec plate plate--print spec--print">
@@ -26,6 +31,11 @@ const { cls, lang: langAttr } = faceOf(chars.join(''), lang);
 ) : n > 0 ? (
   <span class="spec spec--type" title="Set in type: not a picture of the mark">
     <span class:list={['spec__cols', cls]} lang={langAttr} style={`--spec-size:${size}px; inline-size:${(per * 1.1).toFixed(2)}em`} aria-label={chars.join('')}>{chars.join('')}</span>
+    {label && <span class="spec__how">Set in type</span>}
+  </span>
+) : line && lineFace ? (
+  <span class="spec spec--type" title="Set in type: not a picture of the mark">
+    <span class:list={['spec__row', lineFace.cls]} lang={lineFace.lang} dir={lineFace.dir} style={`--spec-size:${lineSize}px`}>{line}</span>
     {label && <span class="spec__how">Set in type</span>}
   </span>
 ) : (

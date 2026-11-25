@@ -26,7 +26,7 @@ const seals = c.records.filter((r) => SEAL_KINDS.has(r.kind) || r.kind === 'sign
 const areas = AREAS().map((a) => ({ ...a, h: holdings(a), pics: pictures(a, 4), top: order(a).filter((l) => l.href !== a.href).slice(0, 5) }));
 const n = (x: number) => x.toLocaleString('en-US');
 // An area's name inside a sentence: countries keep their capital.
-const inWords = (a: { key: string; short: string }) => (['china', 'japan', 'korea'].includes(a.key) ? a.short : a.short.charAt(0).toLowerCase() + a.short.slice(1));
+const inWords = (a: { key: string; short: string }) => (['china', 'japan', 'korea', 'india'].includes(a.key) ? a.short : a.short.charAt(0).toLowerCase() + a.short.slice(1));
 const graph = [
   {
     '@type': 'CollectionPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description,

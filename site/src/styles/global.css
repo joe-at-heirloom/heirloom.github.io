@@ -31,6 +31,9 @@ h3 { font-size: 1.2rem; }
 p { margin: 0 0 1em; text-wrap: pretty; }
 .num { font-variant-numeric: tabular-nums lining-nums; }
 .han { font-family: var(--han); font-weight: 400; }
+/* Indian, Burmese and Sinhala scripts (lib/scripts.ts), each in its Noto serif; Persian and Urdu in Nastaliq, right to left. */
+.indic { font-family: 'Noto Serif Devanagari', 'Noto Serif Gujarati', 'Noto Serif Bengali', 'Noto Serif Gurmukhi', 'Noto Serif Oriya', 'Noto Serif Tamil', 'Noto Serif Telugu', 'Noto Serif Kannada', 'Noto Serif Malayalam', 'Noto Serif Sinhala', 'Noto Serif Myanmar', serif; font-weight: 400; letter-spacing: 0; }
+.nastaliq { font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif; font-weight: 400; letter-spacing: 0; line-height: 2.1; direction: rtl; unicode-bidi: isolate; }
 
 .wrap { width: min(100% - 2 * var(--gutter), var(--wide)); margin-inline: auto; }
 .read { max-width: var(--read); }

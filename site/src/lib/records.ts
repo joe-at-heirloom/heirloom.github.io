@@ -11,6 +11,7 @@
 import { collection, SEAL_KINDS, urlOf, type Rec, type Img } from './portal';
 import { soften } from './site';
 import { media } from './media';
+import { indicFace } from './scripts';
 
 export type Pic = { file: string; status: string; credit: string; url: string | null; alt: string };
 export type Fact = { label: string; text: string };
@@ -24,7 +25,7 @@ export type Sheet = {
   glyphs: string | null;
   /** false: the glyphs name the mark but are not what is written (a crest, a seal described as a pattern), so no specimen is set in type. */
   typeset?: boolean;
-  lang: 'zh' | 'ja' | 'ko' | null;
+  lang: 'zh' | 'ja' | 'ko' | 'in' | null;
   /** How it is read aloud (pinyin, romaji, Revised Romanization), or its English name. */
   reading: string;
   means: string | null;
@@ -235,7 +236,11 @@ export function sheet(r: Rec, group = ''): Sheet {
 const HANGUL = /[가-힯ᄀ-ᇿ]/;
 const KANA = /[぀-ヿ]/;
 /** The site's class for a run of characters (its font), and its lang attribute. */
-export function faceOf(text: string, lang: Sheet['lang']): { cls: 'han' | 'ja' | 'hangul'; lang: string } {
+export function faceOf(text: string, lang: Sheet['lang']): { cls: 'han' | 'ja' | 'hangul' | 'indic' | 'nastaliq' | ''; lang: string } {
+  const ind = indicFace(text);
+  if (ind) return { cls: ind.cls, lang: ind.lang };
+  // An Indian record's Latin letters (P. ORR & SONS) are set like the page's own text.
+  if (lang === 'in') return { cls: '', lang: 'en' };
   if (HANGUL.test(text)) return { cls: 'hangul', lang: 'ko' };
   if (KANA.test(text) || lang === 'ja') return { cls: 'ja', lang: 'ja' };
   return { cls: 'han', lang: lang === 'ko' ? 'ko' : 'zh-Hant' };
@@ -330,6 +335,47 @@ export function koSheet(m: Insc): Sheet {
     pics: [...shows, ...rest].map((p) => ({ file: media(p.file), status: 'photo', credit: p.credit, url: p.url, alt: p.caption || p.label })), seeAt: seeAtOf(m.id),
     sources: m.sources.map((s) => ({ citation: s.citation, url: s.url, where: null })), single: m.singleSource,
     keys: keysOf(m.keys, m.chars, m.variants, m.hangul, m.rr, m.mr, m.meaning, m.maker, m.place),
+  };
+}
+
+// ── Indian marks (lib/indian.ts) ────────────────────────────────────────────
+import type { InMark } from './indian';
+/**
+ * A mark from India, Burma or Ceylon. A mark in Latin letters (P. ORR & SONS)
+ * is its own reading and is never set in type: struck letters in a punch are
+ * not a typeface. A mark in an Indian script (or Burmese, or Persian) is set in
+ * type in a line, labelled so, with its transliteration as the reading.
+ */
+export function inSheet(m: InMark): Sheet {
+  const shows = m.photos.filter((p) => p.visible === 'yes');
+  const rest = m.photos.filter((p) => p.visible !== 'yes');
+  const hall = m.id.startsWith('in-hm-');
+  const flat = (x: string) => x.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]/g, '');
+  const reading = m.native ? (m.translit || m.plain) : (m.markText || m.plain);
+  const others = m.spellings.filter((x) => flat(x) !== flat(reading) && flat(x) !== flat(m.plain));
+  return {
+    id: m.id, anchor: m.slug, url: `${hall ? '/marks/indian-hallmarks' : '/marks/indian/'}#${m.slug}`, kind: m.kind.charAt(0).toUpperCase() + m.kind.slice(1), group: m.group,
+    glyphs: m.native || null, lang: 'in', reading, means: clean(m.meaning),
+    years: yearsOf(m.from, m.to),
+    facts: [
+      ['Struck as', m.native && m.markText ? m.markText : null],
+      ['Read as', m.native && m.plain && flat(m.plain) !== flat(reading) ? m.plain : null],
+      ['Also written', m.variants.join(' · ')],
+      ['Other spellings', others.join(', ')],
+      ['What it looks like', clean(m.device)],
+      ['Struck with it', clean(m.punchSet)],
+      ['How it was applied', clean(m.technique)],
+      ['Where on the item', clean(m.where)],
+      ['Standard', clean(m.fineness)],
+      ['Found on', m.wares.map((w) => clean(w)).filter(Boolean).join('; ')],
+      ['Maker', m.maker ? clean([m.maker, m.place, m.makerYears].filter(Boolean).join(', ')) : null],
+      ['Dates', clean(m.dateNote)],
+      ['What it tells you', clean(m.tells)],
+    ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ: [], caution: clean(m.cautions),
+    pics: [...shows, ...rest].map((p) => ({ file: media(p.file), status: p.status, credit: p.credit, url: p.url, alt: p.caption || p.label })),
+    sources: m.sources.map((s) => ({ citation: s.citation, url: s.url, where: null })), single: m.singleSource,
+    keys: keysOf(m.keys, m.markText, m.native, m.translit, m.plain, m.variants, m.spellings, m.meaning, m.maker, m.place),
   };
 }
 

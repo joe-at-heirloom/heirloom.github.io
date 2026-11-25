@@ -18,7 +18,7 @@ import { makers } from './makers';
 import { artists } from './artists';
 import { places, allPlaces, DIRS, isSplit, letterPath, makerGroups } from './makers-dir';
 
-export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'signatures' | 'serials';
+export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'india' | 'signatures' | 'serials';
 export type RefLink = {
   href: string;
   label: string;
@@ -46,7 +46,7 @@ export type Area = {
   /** The reference search this area's records belong to. */
   scope: 'marks' | 'signatures';
   /** The face its own characters are set in. */
-  script?: 'han' | 'ja' | 'hangul';
+  script?: 'han' | 'ja' | 'hangul' | 'indic';
   groups: RefGroup[];
 };
 
@@ -180,6 +180,8 @@ function build(): Area[] {
           { href: '/marks/german-silver-marks', label: 'Germany', note: 'The crescent and crown' },
           { href: '/marks/russian-silver-marks', label: 'Russia', note: 'Zolotnik standards and town marks' },
           { href: '/marks/mexican-silver-marks', label: 'Mexico', note: 'The eagle and Taxco' },
+          { href: '/marks/indian/', label: 'India, Burma and Ceylon', note: 'Calcutta, Madras, Kutch and Rangoon makers', away: 'india' },
+          { href: '/marks/indian-hallmarks', label: 'Indian hallmarks', note: 'The BIS mark, 916 and HUID', away: 'india' },
         ] },
         { label: 'American silver plate', links: [
           { href: '/marks/1847-rogers-bros', label: '1847 Rogers Bros.' },
@@ -293,6 +295,19 @@ function build(): Area[] {
       ],
     },
     {
+      key: 'india', label: 'Indian marks and dates', short: 'India', href: '/marks/indian/', scope: 'marks', script: 'indic',
+      families: ['indian-marks'],
+      lede: 'Silver makers’ marks from Calcutta, Bombay, Madras, Kutch, Burma and Ceylon, Indian hallmarks on gold and silver since 2000, origin stamps, and the ways an Indian date is written.',
+      cue: 'Devanagari, Gujarati or Persian writing, or a maker’s name and an elephant struck into silver',
+      groups: [
+        { label: 'Marks and dates', links: [
+          { href: '/marks/indian/', label: 'Silver marks and stamps', note: 'Makers, retailers and origin stamps, 1770s to today' },
+          { href: '/marks/indian-hallmarks', label: 'Indian hallmarks', note: 'The BIS mark, 22K916, year letters, HUID' },
+          { href: '/marks/indian-dates', label: 'Reading an Indian date', note: 'Samvat, Shaka, Hijri and regnal years' },
+        ] },
+      ],
+    },
+    {
       key: 'signatures', label: 'Artists’ signatures', short: 'Signatures', href: '/signatures', scope: 'signatures',
       families: ['signatures', 'chinese-people', 'korean-people'],
       lede: 'How painters signed over their careers, from dated examples in museum collections, and the seals of Chinese painters and collectors.',
@@ -347,6 +362,7 @@ const HOMES: [RegExp, AreaKey][] = [
   [/^\/marks\/japanese/, 'japan'],
   [/^\/marks\/korean/, 'korea'],
   [/^\/marks\/pewabic-pottery/, 'pottery'],
+  [/^\/marks\/indian/, 'india'],
   [/-signature$|^\/signatures/, 'signatures'],
   [/^\/marks\/(british|american)-silver-makers\/|^\/marks\/american-silver-date-marks\/|^\/marks\/continental-silver-marks\//, 'silver'],
   [/-date-letters$/, 'silver'],

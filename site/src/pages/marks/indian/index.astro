@@ -1,0 +1,83 @@
+---
+// /marks/indian/: the Indian section's home, its catalogue. Every silver
+// maker's, retailer's and pseudo-hallmark from India, Burma and Ceylon, and
+// the origin stamps on export goods, from the app's table
+// (backend/src/data/mark-tables/indian.json, via the reference collection),
+// by region, each a row that opens into its sheet (components/ref/Catalogue).
+// The Indian hallmarks since 2000 have their own page (/marks/indian-hallmarks).
+// #<slug> opens one.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { inSheet } from '../../../lib/records';
+import { marks, readingNotes, GROUPS, indicChars, stampRules } from '../../../lib/indian';
+import '../../../styles/indian.css';
+import { articleLd, faqLd, crumbsLd } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+
+const path = '/marks/indian/';
+const rows = marks().filter((m) => m.family !== 'hallmarks');
+const notes = readingNotes();
+const count = (g: string) => rows.filter((r) => r.group === g).length;
+const silver = rows.filter((r) => r.family === 'silver').length;
+const stamps = rows.filter((r) => r.family === 'stamps').length;
+const title = 'Indian Silver Marks: Calcutta, Madras, Kutch, Burma and Ceylon Makers | Heirloom';
+const description = `${silver} silver makers’ and retailers’ marks from Calcutta, Bombay, Madras, Kutch, Karachi, Lucknow, Cuttack, Burma and Ceylon, the marks that imitate English hallmarks, and ${stamps} origin stamps such as MADE IN INDIA and BENARES: what each names and when it was used, with sources.`;
+const h1 = 'Indian silver marks and stamps';
+const faqs: [string, string][] = [
+  ['Is Indian silver hallmarked?', '<p>Not by an assay office before the 2000s. Under British rule there was no Indian assay office: silversmiths and retailers in Calcutta, Bombay and Madras struck their own marks, often a name or initials with punches that imitate London’s hallmarks (a lion, a head, a letter). Regional silver from Kutch, Lucknow or Kashmir is often marked only with a maker’s or seller’s name, or not at all. Hallmarking by the Bureau of Indian Standards began for gold in 2000; see <a href="/marks/indian-hallmarks">Indian hallmarks</a>.</p>'],
+  ['What is a pseudo-hallmark?', '<p>A set of marks struck to look like an English hallmark without being one. Colonial firms in India, and in China and elsewhere, used them on silver sold to European customers. The letters and animals can look like a London date letter and lion, but no assay office tested the silver and the letter is not a date. The sheets here say which firm used which set.</p>'],
+  ['Is my item Indian, Burmese or Chinese?', '<p>Sellers in the West often call all of them “Anglo-Indian” or “Asian export”. Burmese silver usually has deep repoussé scenes and may carry a peacock mark; Chinese export silver often carries a retailer’s initials with Chinese characters; Indian colonial silver often follows English shapes. The marks help, and the sheets say how sources tell them apart, but the style and construction of the item matter as much as the mark.</p>'],
+  ['Does a mark mean my item is old?', '<p>No. A mark names the maker, retailer or place it claims. Firms kept their marks for decades and successors continued them; the dates on each sheet are when the mark was in use, not when your item was made. The item itself has to be judged too, and only someone who can handle it can do that.</p>'],
+];
+const sheets = rows.map(inSheet);
+const groups = GROUPS.filter((g) => g.family !== 'hallmarks').map((g) => ({ key: g.id, label: g.name, blurb: g.blurb, sheets: sheets.filter((x) => x.group === g.id) })).filter((g) => g.sheets.length);
+const pictured = rows.filter((r) => r.photos.length).length;
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).indian ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Indian colonial silver marks' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/', 'Marks']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph} indic={indicChars(rows.map((r) => [r.native, r.variants]))}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">The marks struck on silver made or sold in India, Burma and Ceylon from the 1770s, and the stamps on goods made for export: {count('calcutta_bombay')} from Calcutta and Bombay, {count('madras_south')} from Madras and Bangalore, {count('kutch_north')} from Kutch, Sind, Lucknow and Cuttack, {count('burma_ceylon')} from Burma and Ceylon (with the Chinese and Thai marks taken for them), and {stamps} origin stamps and sellers’ labels. Type what is struck on your item. A mark names what it claims, not when the item was made.</p>
+      <ul class="rhead__meta">
+        <li><strong class="num">{rows.length}</strong> marks and stamps</li>
+        {pictured > 0 && <li><strong class="num">{pictured}</strong> with a picture</li>}
+      </ul>
+    </header>
+
+    <Catalogue {groups} noun={['mark', 'marks and stamps']} placeholder="A name, initials or a place: ORR, Hamilton, Oomersi, KASHMIR, MADE IN INDIA" label="A name, initials or a place" />
+
+    {(notes.reading.length > 0 || notes.caveats.length > 0) && (
+      <section class="ahome__block prose" aria-labelledby="read">
+        {notes.reading.length > 0 && <><h2 id="read">How to read the marks on Indian silver</h2><ul>{notes.reading.map((t) => <li set:html={t} />)}</ul></>}
+        {notes.caveats.length > 0 && <><h2 id="copies">A mark is not a date</h2><ul>{notes.caveats.map((t) => <li set:html={t} />)}</ul></>}
+      </section>
+    )}
+
+    {stampRules().length > 0 && (
+      <section class="ahome__block" aria-labelledby="rules">
+        <h2 id="rules">The rules behind the origin stamps</h2>
+        <p class="muted">Why goods made for export carry a country’s name, and what the rules can and cannot say about the date. The dates often repeated for “Made in” are not in any statute the research found.</p>
+        <ul class="iex">
+          {stampRules().map((r) => (
+            <li id={r.id}>
+              <strong>{r.name}</strong>{r.years && <span class="num muted"> · {r.years}</span>}
+              {r.meaning && r.meaning !== r.name && <><br />{r.meaning}</>}
+              {r.tells && <><br /><span class="muted">{r.tells}</span></>}
+              {r.cautions && <><br /><span class="faint">{r.cautions}</span></>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <AppBox text="Photograph the marks. The Advisor reads them, names the maker or retailer from this same table, reads a date written in any Indian script, and says plainly what a mark does not prove." />
+    <Faq {faqs} />
+  </div>
+</Reference>
