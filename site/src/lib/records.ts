@@ -73,9 +73,9 @@ const SPELL: [RegExp, string][] = [
   [/\bcolour/g, 'color'], [/\bColour/g, 'Color'], [/\bfavour/g, 'favor'], [/\bFavour/g, 'Favor'], [/\bhonour/g, 'honor'], [/\bHonour/g, 'Honor'],
   [/\bneighbour/g, 'neighbor'], [/\bNeighbour/g, 'Neighbor'], [/\brecognis/g, 'recogniz'], [/\breorganis/g, 'reorganiz'], [/\borganis/g, 'organiz'],
   [/\bCentre\b/g, 'Center'], [/\blicence\b/g, 'license'],
-  [/\bobjects\b/g, 'items'], [/\bObjects\b/g, 'Items'], [/\bobject\b/g, 'item'], [/\bObject\b/g, 'Item'],
+  [/\bobjects\b(?! \d)/g, 'items'], [/\bObjects\b(?! \d)/g, 'Items'], [/\bobject\b(?! \d)/g, 'item'], [/\bObject\b(?! \d)/g, 'Item'],
   [/\bnot every item\b/g, 'not all items'], [/\bNot every item\b/g, 'Not all items'],
-  [/\bexperts\b/g, 'specialists'], [/\bexpert\b/g, 'specialist'], [/\bfor sale to\b/g, 'to be sold to'],
+  [/(\d)-piece\b/g, '$1-item'], [/\bexperts\b/g, 'specialists'], [/\bexpert\b/g, 'specialist'], [/\bfor sale to\b/g, 'to be sold to'],
 ];
 export function voice(t: string) {
   let out = t;

@@ -11,6 +11,7 @@ import {
 } from '../../../../lib/chinese';
 import { SITE, articleLd, crumbsLd } from '../../../../lib/site';
 import { media } from '../../../../lib/media';
+import { voice } from '../../../../lib/records';
 import '../../../../styles/chinese.css';
 
 export function getStaticPaths() {
@@ -149,7 +150,7 @@ const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${
                   ].filter(Boolean).map((x, i) => <>{i > 0 && ' · '}{x}</>)}
                 </p>
                 {r.note_en ? (
-                  <p class="cn-rec__note">Lao’s note: <span class="tr">{r.note_en}</span> <span class="han faint">按：{r.note}</span>{r.note_doubt && <span class="cn-doubt"> Translator’s note: {r.note_doubt}</span>}</p>
+                  <p class="cn-rec__note">Lao’s note: <span class="tr">{r.note_en}</span> <span class="han faint">按：{r.note}</span>{r.note_doubt && <span class="cn-doubt"> Translator’s note: {voice(r.note_doubt)}</span>}</p>
                 ) : r.note ? <p class="cn-rec__note han">按：{r.note}</p> : null}
                 {r.opinions.length > 0 && (
                   <ul class="cn-rec__ops">
@@ -157,7 +158,7 @@ const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${
                       <li>
                         <strong>{EXPERT_EN[o.expert] ?? ''} <span class="han">{o.expert}</span></strong>:{' '}
                         {o.text_en ? <>“<span class="tr">{o.text_en}</span>” <span class="han faint">{o.text}</span></> : <span class="han">{o.text}</span>}
-                        {o.doubt && <span class="cn-doubt"> Translator’s note: {o.doubt}</span>}
+                        {o.doubt && <span class="cn-doubt"> Translator’s note: {voice(o.doubt)}</span>}
                       </li>
                     ))}
                   </ul>

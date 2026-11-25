@@ -7,6 +7,7 @@ import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
 import ReignExplorer from '../../islands/ReignExplorer';
 import { reigns, readingNotes } from '../../lib/reigns';
+import { voice } from '../../lib/records';
 import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
 import synced from '../../data/app/SOURCE.json';
 import '../../styles/marks.css';
@@ -43,9 +44,9 @@ const graph = [
 
     <section class="block prose" aria-labelledby="read">
       <h2 id="read">How to read a reign mark</h2>
-      <ul>{notes.reading.map((t) => <li>{soften(t)}</li>)}</ul>
+      <ul>{notes.reading.map((t) => <li>{voice(soften(t))}</li>)}</ul>
       <h2 id="date">A mark is not a date</h2>
-      <ul>{notes.caveats.slice(0, 4).map((t) => <li>{soften(t)}</li>)}</ul>
+      <ul>{notes.caveats.slice(0, 4).map((t) => <li>{voice(soften(t))}</li>)}</ul>
     </section>
 
     <AppBox text="Photograph the base. The Advisor reads the characters, names the reign they claim from this same table, and says plainly that the mark does not date the item." />

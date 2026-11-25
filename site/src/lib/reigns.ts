@@ -3,6 +3,9 @@
 // and museum photographs, its kiln-site dating facts and its sources.
 import { collection, type Rec } from './portal';
 import { soften } from './site';
+import { voice } from './records';
+// The site's words for record text: soften, then voice (item, specialist, American spelling).
+const say = (t: string) => voice(soften(t));
 import chineseTable from '../data/app/chinese.json';
 
 export type Fax = { file: string; script: 'regular' | 'seal' | 'other'; count: number; label: string; credit: string };
@@ -54,17 +57,17 @@ export function reigns(): Reign[] {
         .map((k) => {
           const i = img.get(k.image_id!)!;
           const when = k.attributes.period_or_later === 'period' ? 'period' : k.attributes.period_or_later === 'later' ? 'later' : null;
-          return { file: i.file, label: k.name, caption: soften(k.summary ?? ''), when, credit: i.credit ?? '', url: i.source_url ?? null };
+          return { file: i.file, label: k.name, caption: say(k.summary ?? ''), when, credit: i.credit ?? '', url: i.source_url ?? null };
         })
         .sort((x, y) => (x.when === y.when ? 0 : x.when === 'period' ? -1 : 1));
       const own = children.filter((k) => k.kind === 'dating evidence');
       const group = groupFacts.filter((f) => String(f.attributes.reign).split('–').map((x: string) => x.toLowerCase()).includes(pinyin) && f.parent_id !== r.id);
       const facts: Fact[] = [...own, ...group].map((f) => ({
         topic: TOPIC[String(f.attributes.topic)] ?? String(f.attributes.topic),
-        text: soften(f.summary ?? ''),
+        text: say(f.summary ?? ''),
         sources: f.sources.map((s) => src.get(s.id)?.citation ?? '').filter(Boolean),
       }));
-      const marks = (Array.isArray(a.marks) ? a.marks : []).map((m: any) => ({ chars: String(m.chars), count: Number(m.chars_count ?? 0), script: String(m.script ?? ''), note: soften(String(m.note ?? '')) }));
+      const marks = (Array.isArray(a.marks) ? a.marks : []).map((m: any) => ({ chars: String(m.chars), count: Number(m.chars_count ?? 0), script: String(m.script ?? ''), note: say(String(m.note ?? '')) }));
       const reignChars0 = String(r.name).match(/[\u3400-\u9fff]+/)?.[0] ?? '';
       // A reign's own two characters always count, even where no mark of it is recorded.
       const glyphs = [...new Set([...marks.flatMap((m: { chars: string }) => [...m.chars].filter((ch) => HAN.test(ch))), ...reignChars0])] as string[];
@@ -73,7 +76,7 @@ export function reigns(): Reign[] {
       return {
         id: r.id, pinyin: name, chars: reignChars, dynasty: String(a.dynasty ?? ''), start: r.date_from ?? 0, end: r.date_to ?? 0, alt,
         yearNote: r.date_note ?? null, emperor: a.emperor_name ?? null, spellings: r.keys.filter((k) => !HAN.test(k)),
-        marks, summary: soften(r.summary ?? ''), copies: a.later_copies_note ? soften(String(a.later_copies_note)) : null, singleSource: r.single_source, fax, photos, facts,
+        marks, summary: say(r.summary ?? ''), copies: a.later_copies_note ? say(String(a.later_copies_note)) : null, singleSource: r.single_source, fax, photos, facts,
         sources: r.sources.map((s) => src.get(s.id)).filter(Boolean).map((s) => ({ citation: s!.citation, url: s!.url ?? null })),
         glyphs,
       };
