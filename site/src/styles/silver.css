@@ -48,3 +48,16 @@
   .sread__line { grid-template-columns: 76px minmax(0, 1fr); font-size: 14.5px; }
   .sx__grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
 }
+.metal--gold { background: #f3e6c0; color: #6b4d06; }
+.metal--filled { background: #efe4d3; color: #6e4f2a; }
+.metal--vermeil { background: #f0e0d8; color: #7a3f22; }
+:root[data-theme='dark'] .metal--gold { background: #4d3d12; color: #f5e2a8; }
+:root[data-theme='dark'] .metal--filled { background: #43372a; color: #ecd9bd; }
+:root[data-theme='dark'] .metal--vermeil { background: #4a3027; color: #f1d4c6; }
+.sread__line.is-gold dd { font-weight: 600; color: #6b4d06; }
+.sread__line.is-filled dd, .sread__line.is-vermeil dd { font-weight: 600; color: #8a5a12; }
+:root[data-theme='dark'] .sread__line.is-gold dd { color: #f0d488; }
+:root[data-theme='dark'] .sread__line.is-filled dd, :root[data-theme='dark'] .sread__line.is-vermeil dd { color: #e0b46a; }
+
+.scard__glyph { display: grid; justify-items: center; gap: 8px; font: 600 clamp(1.6rem, 1.2rem + 1.4vw, 2.3rem)/1 var(--sans); letter-spacing: 0.04em; color: #2b2723; }
+.scard__glyph small { font: 400 11.5px/1 var(--sans); letter-spacing: 0; color: #8a8378; }

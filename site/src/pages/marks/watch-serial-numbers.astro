@@ -1,0 +1,50 @@
+---
+// /marks/watch-serial-numbers: the watch serial reader (src/islands/WatchReader).
+// The tables are the site's own (marks/data/rolex.json, omega.json,
+// watches.json), fetched by the page; the places on the watch are the
+// reference collection's swiss-watches records.
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import WatchReader from '../../islands/WatchReader';
+import { collection } from '../../lib/portal';
+import { crumbsLd, soften } from '../../lib/site';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/pottery.css';
+import '../../styles/watches.css';
+
+const path = '/marks/watch-serial-numbers';
+const c = collection();
+const img = new Map(c.images.map((i) => [i.id, i.file]));
+const yrs = (a?: number | null, b?: number | null) => (a && b ? `${a}–${b}` : a ? `${a} on` : b ? `to ${b}` : '');
+const places = c.records.filter((r) => r.family === 'swiss-watches').map((r) => ({
+  id: r.id, maker: /^rolex/.test(r.id) ? 'Rolex' : 'Omega', name: r.name, means: soften(String(r.summary ?? '').replace(/\s+([.,;:)])/g, '$1')),
+  serial: /reference|caliber|case maker/i.test(r.name) ? false : r.kind === 'serial' ? true : null,
+  img: r.image_id ? img.get(r.image_id) ?? null : null, years: yrs(r.date_from, r.date_to),
+})).sort((a, b) => a.maker.localeCompare(b.maker) || Number(b.serial === true) - Number(a.serial === true));
+const pocket = JSON.parse(readFileSync(join(process.cwd(), '..', 'marks', 'data', 'watches.json'), 'utf8')) as { maker: string }[];
+const pocketMakers = [...new Set(pocket.map((r) => r.maker))];
+const title = 'Watch Serial Numbers: Rolex, Omega and American Pocket Watches | Heirloom';
+const description = `Type the serial from a Rolex case, an Omega movement or a ${pocketMakers.join(', ')} pocket watch and every table that can read it gives the year. Shows which number on the watch is the serial.`;
+const pages = [['Rolex serial numbers', '/marks/rolex-serial-numbers'], ['Omega serial numbers', '/marks/omega-serial-numbers'], ['Pocket-watch serial numbers', '/marks/pocket-watch-serial-numbers'], ['Gold marks on cases', '/marks/gold-marks']];
+const graph = [
+  { '@type': 'WebPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' } },
+  crumbsLd(path, 'Watch serial numbers', ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name="Watch serial numbers" mid={['/marks/', 'Marks']} />
+    <header class="phead">
+      <h1>Watch serial numbers</h1>
+      <p class="phead__sub">Type the number you found on a watch. Every table that can read it gives the year: Rolex case serials, Omega movement serials, and {pocketMakers.join(', ')} pocket-watch movements. Name the maker to settle it. A serial dates the case or the movement; it doesn’t say the watch is original or genuine.</p>
+    </header>
+    <WatchReader client:load places={places} pocketMakers={pocketMakers} />
+    <section class="ptools" aria-labelledby="more">
+      <h2 id="more">The full pages</h2>
+      <ul class="tools-list">{pages.map(([l, h]) => <li><a href={h}><span>{l}</span><span class="muted">Sources and how the tables were made</span></a></li>)}</ul>
+    </section>
+  </div>
+</Base>

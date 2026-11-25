@@ -1,0 +1,53 @@
+---
+// /marks/gold-marks: the metal explorer (src/islands/MetalExplorer) for gold.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import MetalExplorer from '../../islands/MetalExplorer';
+import { gold } from '../../lib/gold';
+import { crumbsLd } from '../../lib/site';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/pottery.css';
+import '../../styles/codes.css';
+import '../../styles/silver.css';
+
+const path = '/marks/gold-marks';
+const { groups, marks } = gold();
+const title = 'Gold Marks: Karat, Fineness, Gold Filled or Plated | Heirloom';
+const description = `${marks.length} gold marks: 375, 585, 750 and the other fineness numbers, 10K to 18K, GF, RGP, HGE and vermeil, and British, French, German, Russian and Swiss gold marks. Tap the marks on an item to read them together.`;
+const graph = [
+  { '@type': 'WebPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' } },
+  crumbsLd(path, 'Gold marks', ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name="Gold marks" mid={['/marks/', 'Marks']} />
+    <header class="phead">
+      <h1>Gold marks</h1>
+      <p class="phead__sub">Tap each mark you find on the item: a number such as 585, a karat such as 14K, letters such as GF, or a country’s gold mark. Read together, the marks say whether it is solid gold and of what standard, or a layer of gold over another metal, and the years in which they were in use.</p>
+    </header>
+    <MetalExplorer client:load groups={groups} marks={marks} words={{
+      labels: { gold: 'Solid gold', filled: 'Gold filled', plate: 'Gold plate', vermeil: 'Gold on silver' },
+      says: {
+        gold: 'Solid gold, of the standard the mark states.',
+        filled: 'Gold filled or rolled gold: a layer of gold bonded to base metal.',
+        plate: 'Gold plate: gold put on by electrolysis, over another metal.',
+        vermeil: 'Vermeil: sterling silver coated with gold.',
+      },
+      unknown: 'None of these marks says what the metal is. Look for a number, a karat or letters such as GF.',
+      placeholder: 'What a mark says or shows: 585, 14K, 18, GF, crown, eagle, Helvetia',
+      empty: 'Read together, they say whether it is solid gold, of what standard, and when.',
+      searchLabel: 'What a gold mark says or shows',
+    }} />
+    <section class="ptools" aria-labelledby="more">
+      <h2 id="more">More on gold</h2>
+      <ul class="tools-list">
+        <li><a href="/marks/gold-karat-marks"><span>Gold karat marks</span><span class="muted">The full page</span></a></li>
+        <li><a href="/marks/watch-serial-numbers"><span>Watch serial numbers</span><span class="muted">Rolex, Omega and pocket watches</span></a></li>
+        <li><a href="/marks/silver-marks"><span>Silver marks</span><span class="muted">Solid or plate, maker and years</span></a></li>
+      </ul>
+    </section>
+  </div>
+</Base>

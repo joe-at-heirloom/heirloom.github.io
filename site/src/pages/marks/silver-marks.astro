@@ -1,9 +1,9 @@
 ---
-// /marks/silver-marks: the silver explorer (src/islands/SilverExplorer). The
+// /marks/silver-marks: the metal explorer (src/islands/MetalExplorer) for silver. The
 // marks on an item read together: the metal, the maker, the years.
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
-import SilverExplorer from '../../islands/SilverExplorer';
+import MetalExplorer from '../../islands/MetalExplorer';
 import { silver } from '../../lib/silver';
 import { crumbsLd } from '../../lib/site';
 import '../../styles/marks.css';
@@ -31,7 +31,14 @@ const graph = [
       <h1>Silver marks</h1>
       <p class="phead__sub">Tap each mark you find on the item: a number or a word such as STERLING, a maker’s name, a lion, a year sign. Read together, the marks say whether it is solid silver or plate, who made it, and the years in which they were all in use.</p>
     </header>
-    <SilverExplorer client:load groups={groups} marks={marks} />
+    <MetalExplorer client:load groups={groups} marks={marks} words={{
+      labels: { silver: 'Solid silver', plate: 'Plate', none: 'No silver' },
+      says: { silver: 'Solid silver, by the standard mark.', plate: 'Silver plate: the silver is a coat on another metal.', none: 'No silver in the metal: it is nickel silver.' },
+      unknown: 'None of these marks says what the metal is. Look for a number, a word such as STERLING, or a plate grade.',
+      placeholder: 'What a mark says or shows: 925, STERLING, 1847 Rogers, lion, Minerva, 84, EPNS',
+      empty: 'Read together, they say what the metal is, who made it and when.',
+      searchLabel: 'What a mark says or shows',
+    }} />
     <section class="ptools" aria-labelledby="letters">
       <h2 id="letters">British date letters</h2>
       <ul class="tools-list">{sheets.map(([l, h]) => <li><a href={h}><span>{l}</span><span class="muted">Every letter, with a finder</span></a></li>)}</ul>

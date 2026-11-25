@@ -1,30 +1,36 @@
 /** @jsxImportSource preact */
-// The silver explorer: tap each mark you find on an item, and the marks are
-// read together the way a specialist reads them: what the metal is (solid
-// silver, plate, or no silver at all), who made it, and the years in which all
-// of them were in use. Search by what a mark says or shows; any mark opens in
-// place with its sources. Gorham's year marks are a palette of their own, and a
-// British town mark points to its date-letter sheet.
+// The metal explorer (silver at /marks/silver-marks, gold at /marks/gold-marks):
+// tap each mark you find on an item, and the marks are read together the way a
+// specialist reads them: what the metal is (solid, plated, filled or none), the
+// standard it states, who made it, and the years in which all of them were in
+// use. Search by what a mark says or shows; any mark opens in place with its
+// sources. Year marks (Gorham's) are a palette of their own, and a British town
+// mark points to its date-letter sheet. The page passes the words for its metal.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
-import type { SMark, SGroup, Metal } from '../lib/silver';
+import type { SMark, SGroup } from '../lib/silver';
 
-type Props = { groups: SGroup[]; marks: SMark[] };
+/** The words a page gives for its metal: badge labels, what each metal reading says, and the prompts. */
+export type MetalWords = { labels: Record<string, string>; says: Record<string, string>; unknown: string; placeholder: string; empty: string; searchLabel: string };
+type Props = { groups: SGroup[]; marks: SMark[]; words: MetalWords };
 const NOW = new Date().getFullYear();
 const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/\./g, '');
 const years = (m: { from: number | null; to: number | null }) =>
   m.from && m.to ? (m.from === m.to ? `${m.from}` : `${m.from}–${m.to}`) : m.from ? `${m.from} on` : m.to ? `to ${m.to}` : '';
 const STATUS: Record<string, string> = { photo: 'Photograph', facsimile: 'Book facsimile', rendering: 'Drawing' };
-const METAL: Record<Metal, string> = { silver: 'Solid silver', plate: 'Plate', none: 'No silver' };
+// A mark with no picture yet that is only letters and figures (585, 14K, GF) is shown as its text, set in
+// type and labelled so; a picture mark (an owl, a crown) without a picture stays "No image yet".
+const glyph = (name: string) => { const g = /\(([A-Z][A-Z, ]{1,7})\)/.exec(name)?.[1] ?? name.split(/ on | \(/)[0]; return g.length <= 8 && /^[A-Z0-9][A-Z0-9 ,.]*$/.test(g) ? g : null; };
+const firstSentence = (s: string) => (/^(.*?\.)(\s|$)/.exec(s)?.[1] ?? s);
 
 /** The marks read together. */
-function reading(sel: SMark[]) {
-  const metals = new Set(sel.map((m) => m.metal).filter(Boolean) as Metal[]);
+function reading(sel: SMark[], w: MetalWords) {
+  const metals = new Set(sel.map((m) => m.metal).filter(Boolean) as string[]);
   let metal: { tone: string; text: string } | null = null;
-  if (metals.size > 1) metal = { tone: 'warn', text: `The marks disagree about the metal (${[...metals].map((x) => METAL[x].toLowerCase()).join(' and ')}). Look at each one again.` };
-  else if (metals.has('silver')) metal = { tone: 'silver', text: 'Solid silver, by the standard mark.' };
-  else if (metals.has('plate')) metal = { tone: 'plate', text: 'Silver plate: the silver is a coat on another metal.' };
-  else if (metals.has('none')) metal = { tone: 'none', text: 'No silver in the metal: it is nickel silver.' };
-  else if (sel.length) metal = { tone: 'muted', text: 'None of these marks says what the metal is. Look for a number, a word such as STERLING, or a plate grade.' };
+  if (metals.size > 1) metal = { tone: 'warn', text: `The marks disagree about the metal (${[...metals].map((x) => (w.labels[x] ?? x).toLowerCase()).join(' and ')}). Look at each one again.` };
+  else if (metals.size === 1) { const k = [...metals][0]; metal = { tone: k, text: w.says[k] ?? w.labels[k] ?? k }; }
+  else if (sel.length) metal = { tone: 'muted', text: w.unknown };
+  // The standard each mark states, in its own first sentence ("585 parts of pure gold per 1,000: 14 karat").
+  const standard = [...new Set(sel.filter((m) => m.metal && m.kind === 'standard mark').map((m) => firstSentence(m.means)))];
   const makers = [...new Set(sel.map((m) => m.maker).filter(Boolean) as string[])];
   const dated = sel.filter((m) => m.from || m.to);
   const lo = dated.length ? Math.max(...dated.map((m) => m.from ?? -Infinity)) : null;
@@ -39,10 +45,10 @@ function reading(sel: SMark[]) {
     }
   }
   const sheets = [...new Set(sel.map((m) => m.sheet).filter(Boolean) as string[])];
-  return { metal, makers, when, sheets };
+  return { metal, standard, makers, when, sheets };
 }
 
-export default function SilverExplorer({ groups, marks }: Props) {
+export default function MetalExplorer({ groups, marks, words }: Props) {
   const [q, setQ] = useState('');
   const [group, setGroup] = useState('');
   const [picked, setPicked] = useState<string[]>([]);
@@ -79,7 +85,7 @@ export default function SilverExplorer({ groups, marks }: Props) {
       .map((m, i) => ({ m, i, s: score(m) })).sort((a, b) => b.s - a.s || a.i - b.i).map((x) => x.m);
   }, [prepared, q]);
   const sel = picked.map((id) => marks.find((m) => m.id === id)!).filter(Boolean);
-  const r = reading(sel);
+  const r = reading(sel, words);
   const toggle = (id: string) => setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : [...p, id]));
   const shownGroups = group ? groups.filter((g) => g.key === group) : groups;
 
@@ -87,9 +93,9 @@ export default function SilverExplorer({ groups, marks }: Props) {
     <div class="sx">
       <div class="sx__bar" role="search">
         <label class="px__q">
-          <span class="visually-hidden">What a mark says or shows</span>
+          <span class="visually-hidden">{words.searchLabel}</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-          <input type="search" autoComplete="off" spellcheck={false} placeholder="What a mark says or shows: 925, STERLING, 1847 Rogers, lion, Minerva, 84, EPNS" value={q} onInput={(e) => setQ((e.target as HTMLInputElement).value)} />
+          <input type="search" autoComplete="off" spellcheck={false} placeholder={words.placeholder} value={q} onInput={(e) => setQ((e.target as HTMLInputElement).value)} />
           {q && <button type="button" class="px__clear" aria-label="Clear the search" onClick={() => setQ('')}>×</button>}
         </label>
         <div class="px__makers" role="group" aria-label="Where the marks come from">
@@ -100,7 +106,7 @@ export default function SilverExplorer({ groups, marks }: Props) {
 
       <section class={`sread${sel.length ? ' has-marks' : ''}`} aria-live="polite" aria-label="Your marks, read together">
         {!sel.length ? (
-          <p class="sread__empty"><strong>Tap each mark you find on the item.</strong> Read together, they say what the metal is, who made it and when.</p>
+          <p class="sread__empty"><strong>Tap each mark you find on the item.</strong> {words.empty}</p>
         ) : (
           <>
             <ul class="sread__chips">
@@ -113,6 +119,7 @@ export default function SilverExplorer({ groups, marks }: Props) {
             </ul>
             <dl class="sread__lines">
               {r.metal && <div class={`sread__line is-${r.metal.tone}`}><dt>Metal</dt><dd>{r.metal.text}</dd></div>}
+              {r.standard.length > 0 && <div class="sread__line"><dt>Standard</dt><dd>{r.standard.join(' ')}</dd></div>}
               {r.makers.length > 0 && <div class="sread__line"><dt>Maker</dt><dd>{r.makers.join('; ')}</dd></div>}
               {r.when?.text && <div class={`sread__line is-${r.when.tone}`}><dt>When</dt><dd>{r.when.text}</dd></div>}
               {r.sheets.length > 0 && <div class="sread__line"><dt>Date letter</dt><dd>{r.sheets.map((s, i) => <>{i > 0 && ' · '}<a href={s}>Find the letter on the {s.replace(/^\/marks\//, '').replace(/-date-letters$/, '').replace(/^./, (c) => c.toUpperCase())} sheet</a></>)}</dd></div>}
@@ -124,7 +131,7 @@ export default function SilverExplorer({ groups, marks }: Props) {
       {hits ? (
         <section class="sx__group" aria-label="Marks that match">
           <h2 class="px__groupname">{hits.length === 0 ? 'Nothing matches. Try fewer words.' : `${hits.length} ${hits.length === 1 ? 'mark matches' : 'marks match'}`}</h2>
-          <ol class="sx__grid">{hits.filter((m) => !group || m.group === group).map((m) => <li><Card m={m} on={picked.includes(m.id)} onToggle={toggle} onOpen={setOpen} groups={groups} /></li>)}</ol>
+          <ol class="sx__grid">{hits.filter((m) => !group || m.group === group).map((m) => <li><Card m={m} on={picked.includes(m.id)} onToggle={toggle} onOpen={setOpen} groups={groups} words={words} /></li>)}</ol>
         </section>
       ) : shownGroups.map((g) => {
         const list = marks.filter((m) => m.group === g.key && !m.year);
@@ -132,7 +139,7 @@ export default function SilverExplorer({ groups, marks }: Props) {
         return (
           <section class="sx__group" aria-label={g.label}>
             <h2 class="px__groupname">{g.label} {g.page && <a class="sx__page" href={g.page}>The full page</a>}</h2>
-            <ol class="sx__grid">{list.map((m) => <li><Card m={m} on={picked.includes(m.id)} onToggle={toggle} onOpen={setOpen} groups={groups} /></li>)}</ol>
+            <ol class="sx__grid">{list.map((m) => <li><Card m={m} on={picked.includes(m.id)} onToggle={toggle} onOpen={setOpen} groups={groups} words={words} /></li>)}</ol>
             {yrs.length > 0 && (
               <details class="sx__years" open={yearsOpen || group === g.key} onToggle={(e) => setYearsOpen((e.target as HTMLDetailsElement).open)}>
                 <summary>{g.label === 'Gorham' ? 'Gorham’s year marks' : 'Year marks'} <span class="num muted">{yrs.length}, {Math.min(...yrs.map((m) => m.from ?? NOW))}–{Math.max(...yrs.map((m) => m.to ?? m.from ?? NOW))}</span></summary>
@@ -150,19 +157,19 @@ export default function SilverExplorer({ groups, marks }: Props) {
         );
       })}
 
-      <SilverPanel marks={marks} id={open} picked={picked} onToggle={toggle} onOpen={setOpen} onClose={() => setOpen('')} groups={groups} />
+      <MetalPanel marks={marks} id={open} picked={picked} onToggle={toggle} onOpen={setOpen} onClose={() => setOpen('')} groups={groups} words={words} />
     </div>
   );
 }
 
-function Card({ m, on, onToggle, onOpen, groups }: { m: SMark; on: boolean; onToggle: (id: string) => void; onOpen: (id: string) => void; groups: SGroup[] }) {
+function Card({ m, on, onToggle, onOpen, groups, words }: { m: SMark; on: boolean; onToggle: (id: string) => void; onOpen: (id: string) => void; groups: SGroup[]; words: MetalWords }) {
   return (
     <div class={`scard${on ? ' is-on' : ''}`}>
       <button type="button" class="scard__pick" aria-pressed={on} onClick={() => onToggle(m.id)}>
-        <span class="plate plate--print scard__img">{m.img ? <img src={`/${m.img.file}`} alt={m.looks || m.name} loading="lazy" decoding="async" /> : <span class="pcard__none">No image yet</span>}{on && <span class="scard__tick" aria-hidden="true">✓</span>}</span>
+        <span class="plate plate--print scard__img">{m.img ? <img src={`/${m.img.file}`} alt={m.looks || m.name} loading="lazy" decoding="async" /> : glyph(m.name) ? <span class="scard__glyph" aria-hidden="true">{glyph(m.name)}<small>the text, set in type</small></span> : <span class="pcard__none">No image yet</span>}{on && <span class="scard__tick" aria-hidden="true">✓</span>}</span>
         <span class="scard__name">{m.name}</span>
         <span class="scard__meta">
-          {m.metal && <span class={`metal metal--${m.metal}`}>{METAL[m.metal]}</span>}
+          {m.metal && <span class={`metal metal--${m.metal}`}>{words.labels[m.metal]}</span>}
           {years(m) && <span class="num">{years(m)}</span>}
           {m.year && <span>{groups.find((g) => g.key === m.group)?.label}</span>}
         </span>
@@ -172,8 +179,8 @@ function Card({ m, on, onToggle, onOpen, groups }: { m: SMark; on: boolean; onTo
   );
 }
 
-function SilverPanel({ marks, id, picked, onToggle, onOpen, onClose, groups }: {
-  marks: SMark[]; id: string; picked: string[]; onToggle: (id: string) => void; onOpen: (id: string) => void; onClose: () => void; groups: SGroup[];
+function MetalPanel({ marks, id, picked, onToggle, onOpen, onClose, groups, words }: {
+  marks: SMark[]; id: string; picked: string[]; onToggle: (id: string) => void; onOpen: (id: string) => void; onClose: () => void; groups: SGroup[]; words: MetalWords;
 }) {
   const dlg = useRef<HTMLDialogElement>(null);
   const m = marks.find((x) => x.id === id) ?? null;
@@ -210,7 +217,7 @@ function SilverPanel({ marks, id, picked, onToggle, onOpen, onClose, groups }: {
           </div>
           <p class="panel__kind">{m.kind} · {g?.label}</p>
           <h2 class="panel__name">{m.name}</h2>
-          {(years(m) || m.metal) && <p class="panel__years num">{m.metal && <span class={`metal metal--${m.metal}`}>{METAL[m.metal]}</span>} {years(m)}{m.note && <span class="muted"> · {m.note}</span>}</p>}
+          {(years(m) || m.metal) && <p class="panel__years num">{m.metal && <span class={`metal metal--${m.metal}`}>{words.labels[m.metal]}</span>} {years(m)}{m.note && <span class="muted"> · {m.note}</span>}</p>}
           <p><button type="button" class={`btn${on ? '' : ' btn--primary'}`} onClick={() => onToggle(m.id)}>{on ? 'Remove from my marks' : 'I see this mark'}</button></p>
           {m.img ? (
             <figure class="panel__fig">

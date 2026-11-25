@@ -6,7 +6,7 @@
 import { collection } from './portal';
 import { soften } from './site';
 
-export type Metal = 'silver' | 'plate' | 'none';
+export type Metal = string;
 export type SMark = {
   id: string; group: string; kind: string; name: string; looks: string; means: string; applied: string; maker: string | null;
   from: number | null; to: number | null; note: string | null; metal: Metal | null; year: boolean; sheet: string | null;
@@ -20,7 +20,7 @@ export type SGroup = { key: string; label: string; page: string | null; count: n
 // plate = it says plated, plate grade or electroplate, or "not sterling";
 // none = it says the alloy has no silver in it. Marks that only name a maker,
 // a town or a year are left out: they say nothing about the metal.
-const METAL: Record<string, Metal> = {
+const METAL: Record<string, 'silver' | 'plate' | 'none'> = {
   'lion-passant-guardant': 'silver', 'lion-passant': 'silver', 'britannia-figure': 'silver', 'lions-head-erased': 'silver',
   'silver-fineness-925': 'silver', 'silver-fineness-800': 'silver', 'silver-fineness-900': 'silver', 'sterling-word-us': 'silver',
   'coin-word-us': 'silver', 'pure-coin-word-us': 'silver', 'standard-word-us': 'silver', 'german-crescent-and-crown': 'silver',
@@ -61,6 +61,28 @@ const short = (citation: string) => {
 };
 export const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/\./g, '');
 
+type Rec = ReturnType<typeof collection>['records'][number];
+type Img = ReturnType<typeof collection>['images'][number];
+type Src = ReturnType<typeof collection>['sources'][number];
+/** One record as the metal explorer shows it. */
+export function toMark(r: Rec, group: string, metal: string | null, img: Map<string, Img>, src: Map<string, Src>): SMark {
+  const i = r.image_id ? img.get(r.image_id) : null;
+  const looks = tidy(r.looks_like), means = tidy(r.summary);
+  return {
+    id: r.id, group, kind: r.kind, name: r.name, looks, means, applied: String(r.attributes.applied ?? ''),
+    maker: r.maker && /maker|trademark/.test(r.kind) ? r.maker : null,
+    from: r.date_from ?? null, to: r.date_to ?? null, note: r.date_note ? tidy(r.date_note) : null,
+    metal, year: /date (letter|code)/.test(r.kind), sheet: SHEET.find(([re]) => re.test(r.id))?.[1] ?? null,
+    img: i && i.file ? { file: i.file, status: i.status, credit: i.credit ?? '', url: i.source_url ?? null } : null,
+    sources: r.sources.map((s) => { const x = src.get(s.id); return x ? { citation: x.citation, url: x.url ?? null, where: s.where ?? null } : null; }).filter((x): x is NonNullable<typeof x> => !!x),
+    disagree: (Array.isArray(r.attributes.disagreements) ? r.attributes.disagreements : [])
+      .map((d: any) => ({ says: tidy(d.says), who: src.get(d.source) ? short(src.get(d.source)!.citation) : '' }))
+      .filter((d: { says: string }) => d.says),
+    single: !!r.single_source,
+    words: norm([r.name, looks, means, r.maker ?? '', ...r.keys].join(' ')),
+  };
+}
+
 export function silver(): { groups: SGroup[]; marks: SMark[] } {
   const c = collection();
   const img = new Map(c.images.map((i) => [i.id, i]));
@@ -71,21 +93,7 @@ export function silver(): { groups: SGroup[]; marks: SMark[] } {
     if (r.family === 'british-hallmarks' && (r.kind === 'date letter' || r.kind === 'dating rule')) continue;
     const g = GROUPS.find(([, , test]) => test(r));
     if (!g) continue;
-    const i = r.image_id ? img.get(r.image_id) : null;
-    const looks = tidy(r.looks_like), means = tidy(r.summary);
-    marks.push({
-      id: r.id, group: g[0], kind: r.kind, name: r.name, looks, means, applied: String(r.attributes.applied ?? ''),
-      maker: r.maker && /maker|trademark/.test(r.kind) ? r.maker : null,
-      from: r.date_from ?? null, to: r.date_to ?? null, note: r.date_note ? tidy(r.date_note) : null,
-      metal: METAL[r.id] ?? null, year: /date (letter|code)/.test(r.kind), sheet: SHEET.find(([re]) => re.test(r.id))?.[1] ?? null,
-      img: i && i.file ? { file: i.file, status: i.status, credit: i.credit ?? '', url: i.source_url ?? null } : null,
-      sources: r.sources.map((s) => { const x = src.get(s.id); return x ? { citation: x.citation, url: x.url ?? null, where: s.where ?? null } : null; }).filter((x): x is NonNullable<typeof x> => !!x),
-      disagree: (Array.isArray(r.attributes.disagreements) ? r.attributes.disagreements : [])
-        .map((d: any) => ({ says: tidy(d.says), who: src.get(d.source) ? short(src.get(d.source)!.citation) : '' }))
-        .filter((d: { says: string }) => d.says),
-      single: !!r.single_source,
-      words: norm([r.name, looks, means, r.maker ?? '', ...r.keys].join(' ')),
-    });
+    marks.push(toMark(r, g[0], METAL[r.id] ?? null, img, src));
   }
   const order = new Map(GROUPS.map(([k], i) => [k, i]));
   marks.sort((a, b) => order.get(a.group)! - order.get(b.group)! || Number(a.year) - Number(b.year) || (a.from ?? 0) - (b.from ?? 0) || a.name.localeCompare(b.name));
