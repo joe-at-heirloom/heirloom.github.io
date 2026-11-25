@@ -6,13 +6,13 @@
 .portal__bar { position: sticky; top: 68px; z-index: 20; background: var(--paper); padding: 14px 0 10px; border-bottom: 1px solid var(--rule); display: grid; gap: 10px; }
 .portal__q { position: relative; display: block; }
 .portal__q svg { position: absolute; left: 18px; top: 50%; translate: 0 -50%; width: 20px; height: 20px; fill: none; stroke: var(--ink-3); stroke-width: 2; pointer-events: none; }
-.portal__q input { width: 100%; min-height: 60px; padding: 0 52px; border-radius: 16px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 400 19px/1 var(--sans); box-shadow: var(--shadow); }
+.portal__q input { width: 100%; min-height: 60px; padding: 0 52px; border-radius: var(--r); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 400 19px/1 var(--sans); box-shadow: var(--shadow); }
 .portal__q input::placeholder { color: var(--ink-3); }
 .portal__q input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-wash), var(--shadow); }
 .portal__q input::-webkit-search-cancel-button { display: none; }
 .portal__clear { position: absolute; right: 10px; top: 50%; translate: 0 -50%; width: 38px; height: 38px; border-radius: 999px; border: 0; background: var(--paper-2); color: var(--ink-2); font-size: 22px; line-height: 1; cursor: pointer; }
 .portal__chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-.portal__chips button { flex: none; border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); border-radius: 999px; padding: 7px 12px; font: 500 13.5px/1 var(--sans); cursor: pointer; white-space: nowrap; }
+.portal__chips button { flex: none; border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); border-radius: var(--r-sm); padding: 7px 12px; font: 500 13.5px/1 var(--sans); cursor: pointer; white-space: nowrap; }
 .portal__chips button[aria-pressed='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .portal__sum { margin: 0; font-size: 14px; color: var(--ink-2); }
 .portal__more { margin: 16px 0 0; }

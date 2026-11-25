@@ -4,7 +4,7 @@
 .sread__empty { margin: 0; color: var(--ink-2); }
 .sread__empty strong { color: var(--ink); }
 .sread__chips { list-style: none; margin: 0 0 10px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
-.schip { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px 4px 4px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper-2); color: var(--ink); font: 500 13.5px/1.2 var(--sans); cursor: pointer; }
+.schip { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px 4px 4px; border: 1px solid var(--rule); border-radius: var(--r-sm); background: var(--paper-2); color: var(--ink); font: 500 13.5px/1.2 var(--sans); cursor: pointer; }
 .schip img { width: 28px; height: 28px; object-fit: contain; border-radius: 999px; background: var(--plate, #ece7df); }
 .schip span:last-child { color: var(--ink-3); font-size: 16px; }
 .sread__lines { margin: 0; display: grid; gap: 4px; }
@@ -31,7 +31,7 @@
 .scard__name { font-weight: 500; font-size: 15px; line-height: 1.3; }
 .scard__meta { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; font-size: 12.5px; color: var(--ink-3); }
 .scard__about { justify-self: start; padding: 0; border: 0; background: none; color: var(--accent-ink); font: 500 13px/1.3 var(--sans); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
-.metal { display: inline-block; padding: 2px 7px; border-radius: 999px; font: 600 11.5px/1.4 var(--sans); }
+.metal { display: inline-block; padding: 2px 7px; border-radius: var(--r-sm); font: 600 11.5px/1.4 var(--sans); }
 .metal--silver { background: #e4ebf1; color: #2a4a63; }
 .metal--plate { background: #f6e9cf; color: #7a4f0e; }
 .metal--none { background: #ebe6e0; color: #5c5249; }

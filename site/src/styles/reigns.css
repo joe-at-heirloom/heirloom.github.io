@@ -2,11 +2,11 @@
 .rx__bar { position: sticky; top: 68px; z-index: 20; background: var(--paper); padding: 14px 0 10px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; align-items: center; }
 .rx__q { position: relative; display: block; }
 .rx__q svg { position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 18px; height: 18px; fill: none; stroke: var(--ink-3); stroke-width: 2; pointer-events: none; }
-.rx__q input { width: 100%; min-height: 52px; padding: 0 16px 0 44px; border-radius: 14px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 400 17px/1 var(--sans); }
+.rx__q input { width: 100%; min-height: 52px; padding: 0 16px 0 44px; border-radius: var(--r); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 400 17px/1 var(--sans); }
 .rx__q input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-wash); }
 .rx__pick.is-on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.rx__dyn { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: var(--paper-2); border: 1px solid var(--rule); }
-.rx__dyn button { border: 0; background: transparent; color: var(--ink-2); font: 500 14px/1 var(--sans); padding: 9px 12px; border-radius: 999px; cursor: pointer; }
+.rx__dyn { display: inline-flex; gap: 2px; padding: 3px; border-radius: var(--r); background: var(--paper-2); border: 1px solid var(--rule); }
+.rx__dyn button { border: 0; background: transparent; color: var(--ink-2); font: 500 14px/1 var(--sans); padding: 9px 12px; border-radius: var(--r-sm); cursor: pointer; }
 .rx__dyn button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
 .rx__sum { grid-column: 1 / -1; margin: 0; font-size: 14px; color: var(--ink-2); }
 .rx__palette { display: grid; gap: 12px; padding: 16px 0 4px; border-bottom: 1px solid var(--rule); }
@@ -14,7 +14,7 @@
 .rx__pairs { display: flex; flex-wrap: wrap; gap: 8px 10px; }
 .pair { display: inline-grid; grid-template-columns: auto auto; gap: 3px; justify-items: center; }
 .pair__name { grid-column: 1 / -1; font-size: 11.5px; color: var(--ink-3); }
-.glyph { display: grid; place-items: center; gap: 0; min-width: 46px; height: 50px; padding: 2px 6px; border-radius: 10px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; }
+.glyph { display: grid; place-items: center; gap: 0; min-width: 46px; height: 50px; padding: 2px 6px; border-radius: var(--r); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; }
 .glyph .han { font-size: 24px; line-height: 1.1; }
 .glyph__m { font-size: 10.5px; color: var(--ink-3); }
 .glyph[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: #fff; }
@@ -73,7 +73,7 @@
 .rphotos .plate { aspect-ratio: 1; border: 1px solid var(--plate-edge); }
 .rphotos img { width: 86%; height: 86%; object-fit: contain; }
 .rphotos figcaption { display: grid; gap: 3px; font-size: 12.5px; color: var(--ink-2); }
-.when { justify-self: start; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.when { justify-self: start; padding: 2px 8px; border-radius: var(--r-sm); font-size: 12px; font-weight: 600; }
 .when--period { background: #e3efe3; color: #22582a; }
 .when--later { background: var(--accent-wash); color: var(--accent-ink); }
 .rfactsx li { font-size: 14.5px; color: var(--ink-2); }

@@ -2,22 +2,22 @@
 .px__bar { position: sticky; top: 68px; z-index: 20; background: var(--paper); padding: 14px 0 10px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; }
 .px__q { position: relative; display: block; }
 .px__q svg { position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 18px; height: 18px; fill: none; stroke: var(--ink-3); stroke-width: 2; pointer-events: none; }
-.px__q input { width: 100%; min-height: 52px; padding: 0 44px; border-radius: 14px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 400 17px/1 var(--sans); }
+.px__q input { width: 100%; min-height: 52px; padding: 0 44px; border-radius: var(--r); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 400 17px/1 var(--sans); }
 .px__q input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-wash); }
 .px__q input::-webkit-search-cancel-button { display: none; }
 .px__clear { position: absolute; right: 8px; top: 50%; translate: 0 -50%; width: 34px; height: 34px; border: 0; border-radius: 999px; background: var(--paper-2); color: var(--ink-2); font-size: 20px; line-height: 1; cursor: pointer; }
-.px__how { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; border-radius: 16px; background: var(--paper-2); border: 1px solid var(--rule); }
-.px__how button { border: 0; background: transparent; color: var(--ink-2); font: 500 14px/1.2 var(--sans); padding: 9px 12px; border-radius: 999px; cursor: pointer; }
+.px__how { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; border-radius: var(--r); background: var(--paper-2); border: 1px solid var(--rule); }
+.px__how button { border: 0; background: transparent; color: var(--ink-2); font: 500 14px/1.2 var(--sans); padding: 9px 12px; border-radius: var(--r-sm); cursor: pointer; }
 .px__how button[aria-pressed='true'] { background: var(--ink); color: var(--paper); }
 .px__sum { grid-column: 1 / -1; margin: 0; font-size: 14px; color: var(--ink-2); }
 
 .px__words { display: flex; flex-wrap: wrap; gap: 6px; padding: 14px 0 0; }
-.chip { border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); font: 500 13.5px/1 var(--sans); padding: 8px 11px; border-radius: 999px; cursor: pointer; }
+.chip { border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); font: 500 13.5px/1 var(--sans); padding: 8px 11px; border-radius: var(--r-sm); cursor: pointer; }
 .chip:hover { border-color: var(--ink-3); color: var(--ink); }
 .chip[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 .px__makers { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 0 0; }
-.px__makers button { border: 1px solid var(--rule); background: var(--paper-2); color: var(--ink); font: 500 14px/1 var(--sans); padding: 9px 12px; border-radius: 10px; cursor: pointer; }
+.px__makers button { border: 1px solid var(--rule); background: var(--paper-2); color: var(--ink); font: 500 14px/1 var(--sans); padding: 9px 12px; border-radius: var(--r-sm); cursor: pointer; }
 .px__makers button .num { color: var(--ink-3); font-weight: 400; margin-left: 2px; }
 .px__makers button[aria-pressed='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .px__makers button[aria-pressed='true'] .num { color: inherit; opacity: 0.7; }

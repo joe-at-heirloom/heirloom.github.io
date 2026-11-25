@@ -29,9 +29,9 @@
 .dls__filters { display: contents; }
 .dls__q svg { position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 18px; height: 18px; fill: none; stroke: var(--ink-3); stroke-width: 2; pointer-events: none; }
 .dls__q .field { padding-left: 44px; }
-.dls__seg { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: var(--paper-2); border: 1px solid var(--rule); }
+.dls__seg { display: inline-flex; gap: 2px; padding: 3px; border-radius: var(--r); background: var(--paper-2); border: 1px solid var(--rule); }
 .dls__seg--scroll { overflow-x: auto; scrollbar-width: none; max-width: 100%; justify-self: start; }
-.dls__seg button { border: 0; background: transparent; color: var(--ink-2); font: 500 14px/1 var(--sans); padding: 10px 14px; border-radius: 999px; cursor: pointer; white-space: nowrap; min-height: 38px; }
+.dls__seg button { border: 0; background: transparent; color: var(--ink-2); font: 500 14px/1 var(--sans); padding: 10px 14px; border-radius: var(--r-sm); cursor: pointer; white-space: nowrap; min-height: 38px; }
 .dls__seg button[aria-checked='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
 .dls__clear { border: 0; background: none; padding: 0; font: inherit; color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .dls__sum { grid-column: 1 / -1; margin: 0; font-size: 14px; color: var(--ink-2); min-height: 1.4em; }
@@ -99,9 +99,9 @@
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 24px; }
-  .offices { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding: 5px; border-radius: 999px; }
+  .offices { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding: 5px; border-radius: var(--r); }
   .offices__label { display: none; }
-  .offices a { flex: none; gap: 8px; padding: 9px 14px; border-radius: 999px; font-size: 15px; }
+  .offices a { flex: none; gap: 8px; padding: 9px 14px; border-radius: var(--r-sm); font-size: 15px; }
   .band { grid-template-columns: 1fr; gap: 14px; padding: 22px 0; }
   .band__head { position: static; }
   .band__head h3 { font-size: 1.3rem; }

@@ -2,7 +2,7 @@
 .wx__reader { display: grid; gap: 4px; padding: 18px 20px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); }
 .wx__field { display: grid; gap: 8px; }
 .wx__label { font-weight: 600; }
-.wx__field input { min-height: 56px; width: min(460px, 100%); padding: 0 16px; border-radius: 12px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 500 24px/1 var(--sans); letter-spacing: 0.04em; font-variant-numeric: tabular-nums; }
+.wx__field input { min-height: 56px; width: min(460px, 100%); padding: 0 16px; border-radius: var(--r); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 500 24px/1 var(--sans); letter-spacing: 0.04em; font-variant-numeric: tabular-nums; }
 .wx__field input::placeholder { font-size: 17px; letter-spacing: 0; font-weight: 400; }
 .wx__field input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-wash); }
 .wx__out { margin-top: 18px; min-height: 40px; }
@@ -22,7 +22,7 @@
 .wplace__img { aspect-ratio: 4 / 3; border: 1px solid var(--plate-edge); }
 .wplace__img img { width: 92%; height: 92%; object-fit: contain; }
 .wplace.is-serial .wplace__img { box-shadow: 0 0 0 3px var(--accent); }
-.wplace__tag { justify-self: start; padding: 2px 8px; border-radius: 999px; font: 600 12px/1.4 var(--sans); background: var(--paper-2); color: var(--ink-2); }
+.wplace__tag { justify-self: start; padding: 2px 8px; border-radius: var(--r-sm); font: 600 12px/1.4 var(--sans); background: var(--paper-2); color: var(--ink-2); }
 .wplace.is-serial .wplace__tag { background: var(--accent); color: #fff; }
 .wplace__name { font-weight: 600; line-height: 1.3; }
 .wplace__years { font-size: 13px; color: var(--ink-3); }

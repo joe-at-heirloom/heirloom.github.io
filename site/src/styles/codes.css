@@ -1,13 +1,13 @@
 /* The pottery date-code reader. */
-.cx__makers { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; padding: 4px; border-radius: 16px; background: var(--paper-2); border: 1px solid var(--rule); }
-.cx__makers button { display: grid; gap: 2px; justify-items: start; padding: 10px 14px; border: 0; border-radius: 12px; background: transparent; color: var(--ink-2); font: 500 15px/1.2 var(--sans); text-align: left; cursor: pointer; }
+.cx__makers { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; padding: 4px; border-radius: var(--r); background: var(--paper-2); border: 1px solid var(--rule); }
+.cx__makers button { display: grid; gap: 2px; justify-items: start; padding: 10px 14px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); font: 500 15px/1.2 var(--sans); text-align: left; cursor: pointer; }
 .cx__makers button .num { font-size: 12.5px; font-weight: 400; }
 .cx__makers button[aria-selected='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
 .cx__reader { margin-top: 16px; padding: 18px 20px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); }
 .cx__hint { margin: 0 0 12px; color: var(--ink-2); max-width: 72ch; }
 .cx__inputs { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
 .cx__inputs--col { display: grid; gap: 12px; }
-.cx__field input { min-height: 52px; width: min(320px, 100%); padding: 0 16px; border-radius: 12px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 500 20px/1 var(--sans); letter-spacing: 0.06em; }
+.cx__field input { min-height: 52px; width: min(320px, 100%); padding: 0 16px; border-radius: var(--r); border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 500 20px/1 var(--sans); letter-spacing: 0.06em; }
 .cx__field input::placeholder { font-size: 15px; letter-spacing: 0; font-weight: 400; }
 .cx__field input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-wash); }
 .cx__check { display: inline-flex; gap: 8px; align-items: center; font-size: 15px; cursor: pointer; }
@@ -17,7 +17,7 @@
 .cx__count button:disabled { opacity: 0.35; cursor: default; }
 .cx__count output { min-width: 2ch; text-align: center; font-size: 22px; font-weight: 600; }
 .cx__signs { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 8px; }
-.csign { display: grid; gap: 6px; justify-items: center; padding: 8px; border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); color: var(--ink-2); font: 500 13px/1.25 var(--sans); text-align: center; cursor: pointer; }
+.csign { display: grid; gap: 6px; justify-items: center; padding: 8px; border: 1px solid var(--rule); border-radius: var(--r); background: var(--paper); color: var(--ink-2); font: 500 13px/1.25 var(--sans); text-align: center; cursor: pointer; }
 .csign__img { width: 64px; height: 64px; border: 1px solid var(--plate-edge); }
 .csign__img img { width: 86%; height: 86%; object-fit: contain; }
 .csign[aria-pressed='true'] { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); color: var(--ink); }
