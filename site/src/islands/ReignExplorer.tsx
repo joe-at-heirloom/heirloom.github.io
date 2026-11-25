@@ -8,6 +8,7 @@
 // facts, the copies, its sources; arrows step to the next reign.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { Reign } from '../lib/reigns';
+import { media } from '../lib/media';
 
 type Props = { reigns: Reign[] };
 const HAN = /[㐀-鿿豈-﫿]/;
@@ -132,7 +133,7 @@ export default function ReignExplorer({ reigns }: Props) {
               return (
                 <li>
                   <button type="button" class="fit" onClick={() => setOpen(r.id)}>
-                    <span class="plate plate--print fit__mark">{im ? <img src={`/${im.file}`} alt={`${r.pinyin} mark`} /> : <MarkSet chars={r.marks.find((m) => m.count >= 4 && HAN.test(m.chars))?.chars ?? r.chars} size="lg" />}</span>
+                    <span class="plate plate--print fit__mark">{im ? <img src={media(im.file)} alt={`${r.pinyin} mark`} /> : <MarkSet chars={r.marks.find((m) => m.count >= 4 && HAN.test(m.chars))?.chars ?? r.chars} size="lg" />}</span>
                     <span class="fit__text">
                       <span class="fit__name">{r.pinyin} <span class="han">{r.chars}</span></span>
                       <span class="num muted">{r.start === r.end ? r.start : `${r.start}–${r.end}`} · {r.dynasty === 'Hongxian' ? 'Hongxian empire' : `${r.dynasty} dynasty`}</span>
@@ -170,7 +171,7 @@ export default function ReignExplorer({ reigns }: Props) {
                   <li id={r.id.replace(/^reign-/, '')}>
                     <button type="button" class={`rcard${active && !lit.has(r.id) ? ' is-dim' : ''}${active && lit.has(r.id) ? ' is-lit' : ''}`} onClick={() => setOpen(r.id)}>
                       <span class="plate plate--print rcard__mark">
-                        {im ? <img src={`/${im.file}`} alt={`${r.pinyin} mark`} loading="lazy" decoding="async" /> : <MarkSet chars={r.marks.find((m) => m.count >= 4 && HAN.test(m.chars))?.chars ?? r.chars} />}
+                        {im ? <img src={media(im.file)} alt={`${r.pinyin} mark`} loading="lazy" decoding="async" /> : <MarkSet chars={r.marks.find((m) => m.count >= 4 && HAN.test(m.chars))?.chars ?? r.chars} />}
                       </span>
                       <span class="rcard__name">{r.pinyin} <span class="han">{r.chars}</span></span>
                       <span class="rcard__years num">{r.start === r.end ? r.start : `${r.start}–${r.end}`}</span>
@@ -233,7 +234,7 @@ function ReignPanel({ reigns, id, onOpen, onClose }: { reigns: Reign[]; id: stri
                 const fax = r.fax.find((f) => f.count === m.count && f.script === (m.script === 'seal' ? 'seal' : 'regular'));
                 return (
                   <li>
-                    <span class="plate plate--print rmarks__img">{fax ? <img src={`/${fax.file}`} alt={`${m.chars}, ${m.script} script`} loading="lazy" /> : HAN.test(m.chars) ? <MarkSet chars={m.chars} size="sm" /> : <span class="muted">{m.chars}</span>}</span>
+                    <span class="plate plate--print rmarks__img">{fax ? <img src={media(fax.file)} alt={`${m.chars}, ${m.script} script`} loading="lazy" /> : HAN.test(m.chars) ? <MarkSet chars={m.chars} size="sm" /> : <span class="muted">{m.chars}</span>}</span>
                     <span class="rmarks__text">
                       <span class="han rmarks__chars">{HAN.test(m.chars) ? m.chars : ''}</span>
                       <span class="rmarks__kind">{m.count ? `${m.count} ${m.count === 1 ? 'character' : 'characters'}, ` : ''}{m.script} script{fax ? ' · book facsimile' : HAN.test(m.chars) ? ' · set in type' : ''}</span>
@@ -255,7 +256,7 @@ function ReignPanel({ reigns, id, onOpen, onClose }: { reigns: Reign[]; id: stri
                 {r.photos.map((p) => (
                   <li>
                     <figure>
-                      <span class="plate plate--print"><img src={`/${p.file}`} alt={p.label} loading="lazy" /></span>
+                      <span class="plate plate--print"><img src={media(p.file)} alt={p.label} loading="lazy" /></span>
                       <figcaption>
                         {p.when && <span class={`when when--${p.when}`}>{p.when === 'period' ? 'Of the period' : 'Later than the mark'}</span>}
                         <span>{p.caption || p.label}</span>

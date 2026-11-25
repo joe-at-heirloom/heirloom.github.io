@@ -4,6 +4,7 @@
 // marks page linked (so search engines and readers still reach each one).
 // Signatures and seals are their own reference, at /signatures.
 // The address, title and description are the old hub's, kept as they were.
+import { media } from '../../lib/media';
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Portal from '../../islands/Portal';
@@ -66,7 +67,7 @@ const graph = [
         {fams.map((f) => (
           <li>
             <a href={`/marks/?f=${f.family}`} class="fam">
-              <span class="fam__imgs">{(thumbs.get(f.family) ?? []).map((t) => <span class="plate plate--print"><img src={`/${t}`} alt="" loading="lazy" decoding="async" /></span>)}</span>
+              <span class="fam__imgs">{(thumbs.get(f.family) ?? []).map((t) => <span class="plate plate--print"><img src={media(t)} alt="" loading="lazy" decoding="async" /></span>)}</span>
               <span class="fam__label">{f.label}</span>
               <span class="fam__n num">{f.count.toLocaleString('en-US')}</span>
             </a>

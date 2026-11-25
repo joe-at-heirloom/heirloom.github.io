@@ -8,6 +8,7 @@
 // mark points to its date-letter sheet. The page passes the words for its metal.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { SMark, SGroup } from '../lib/silver';
+import { media } from '../lib/media';
 
 /** The words a page gives for its metal: badge labels, what each metal reading says, and the prompts. */
 export type MetalWords = { labels: Record<string, string>; says: Record<string, string>; unknown: string; placeholder: string; empty: string; searchLabel: string };
@@ -112,7 +113,7 @@ export default function MetalExplorer({ groups, marks, words }: Props) {
             <ul class="sread__chips">
               {sel.map((m) => (
                 <li><button type="button" class="schip" onClick={() => toggle(m.id)} aria-label={`Remove ${m.name}`}>
-                  {m.img && <img src={`/${m.img.file}`} alt="" />}<span>{m.name}</span><span aria-hidden="true">×</span>
+                  {m.img && <img src={media(m.img.file)} alt="" />}<span>{m.name}</span><span aria-hidden="true">×</span>
                 </button></li>
               ))}
               <li><button type="button" class="link" onClick={() => setPicked([])}>Start again</button></li>
@@ -146,7 +147,7 @@ export default function MetalExplorer({ groups, marks, words }: Props) {
                 <ol class="cx__grid">
                   {yrs.map((m) => (
                     <li><button type="button" class={`ctile${picked.includes(m.id) ? ' is-lit' : ''}`} aria-pressed={picked.includes(m.id)} onClick={() => toggle(m.id)} title={m.name}>
-                      <span class="plate plate--print ctile__img">{m.img ? <img src={`/${m.img.file}`} alt={m.looks || m.name} loading="lazy" decoding="async" /> : null}</span>
+                      <span class="plate plate--print ctile__img">{m.img ? <img src={media(m.img.file)} alt={m.looks || m.name} loading="lazy" decoding="async" /> : null}</span>
                       <span class="ctile__cap num">{years(m)}</span>
                     </button></li>
                   ))}
@@ -166,7 +167,7 @@ function Card({ m, on, onToggle, onOpen, groups, words }: { m: SMark; on: boolea
   return (
     <div class={`scard${on ? ' is-on' : ''}`}>
       <button type="button" class="scard__pick" aria-pressed={on} onClick={() => onToggle(m.id)}>
-        <span class="plate plate--print scard__img">{m.img ? <img src={`/${m.img.file}`} alt={m.looks || m.name} loading="lazy" decoding="async" /> : glyph(m.name) ? <span class="scard__glyph" aria-hidden="true">{glyph(m.name)}<small>the text, set in type</small></span> : <span class="pcard__none">No image yet</span>}{on && <span class="scard__tick" aria-hidden="true">✓</span>}</span>
+        <span class="plate plate--print scard__img">{m.img ? <img src={media(m.img.file)} alt={m.looks || m.name} loading="lazy" decoding="async" /> : glyph(m.name) ? <span class="scard__glyph" aria-hidden="true">{glyph(m.name)}<small>the text, set in type</small></span> : <span class="pcard__none">No image yet</span>}{on && <span class="scard__tick" aria-hidden="true">✓</span>}</span>
         <span class="scard__name">{m.name}</span>
         <span class="scard__meta">
           {m.metal && <span class={`metal metal--${m.metal}`}>{words.labels[m.metal]}</span>}
@@ -221,7 +222,7 @@ function MetalPanel({ marks, id, picked, onToggle, onOpen, onClose, groups, word
           <p><button type="button" class={`btn${on ? '' : ' btn--primary'}`} onClick={() => onToggle(m.id)}>{on ? 'Remove from my marks' : 'I see this mark'}</button></p>
           {m.img ? (
             <figure class="panel__fig">
-              <div class="plate plate--print panel__plate"><img src={`/${m.img.file}`} alt={m.looks || m.name} /></div>
+              <div class="plate plate--print panel__plate"><img src={media(m.img.file)} alt={m.looks || m.name} /></div>
               <figcaption>{STATUS[m.img.status] ?? ''}{m.img.credit ? `. ${m.img.credit}` : ''}{m.img.url && <> <a href={m.img.url} rel="noopener">Source</a></>}</figcaption>
             </figure>
           ) : <p class="muted">No image of this mark yet.</p>}

@@ -2,6 +2,7 @@
 // /signatures: artists' signatures and Chinese painters' and collectors' seals,
 // a reference of its own (kept apart from the marks at /marks/). One search
 // (src/islands/Portal.tsx), every artist at a glance, and every signatures page.
+import { media } from '../lib/media';
 import Base from '../layouts/Base.astro';
 import Crumbs from '../components/Crumbs.astro';
 import Portal from '../islands/Portal';
@@ -60,7 +61,7 @@ const graph = [
         {artists.map((a) => (
           <li>
             <a href={`/signatures?r=${a.id}`} class="artist">
-              <span class="artist__sig plate plate--print">{a.img ? <img src={`/${a.img}`} alt={a.reads ? `Signature reading ${a.reads}` : ''} loading="lazy" decoding="async" /> : null}</span>
+              <span class="artist__sig plate plate--print">{a.img ? <img src={media(a.img)} alt={a.reads ? `Signature reading ${a.reads}` : ''} loading="lazy" decoding="async" /> : null}</span>
               <span class="artist__name">{a.name}</span>
               <span class="muted artist__n"><span class="num">{a.n}</span> {a.n === 1 ? 'signature' : 'signatures'}{a.from && <>, <span class="num">{a.from === a.to ? a.from : `${a.from}–${a.to}`}</span></>}</span>
             </a>

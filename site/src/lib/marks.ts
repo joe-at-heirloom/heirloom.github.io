@@ -2,6 +2,7 @@
 // Everything here is read at build time from src/data (npm run data:sync).
 import hallmarks from '../data/app/hallmarks.json';
 import sourcesFile from '../data/app/marks/sources.json';
+import { media } from './media';
 
 export type Visual = {
   status: 'photo' | 'facsimile' | 'rendering' | 'none';
@@ -46,7 +47,7 @@ for (const [path, file] of Object.entries(groupFiles)) {
 export const BY_ID = new Map(ENTRIES.map((e) => [e.id, e]));
 
 export const VISUAL_LABEL: Record<string, string> = { photo: 'Photograph', facsimile: 'Book facsimile', rendering: 'Drawing' };
-export const img = (e?: MarkEntry) => (e && e.visual.status !== 'none' && e.visual.file ? '/' + e.visual.file : null);
+export const img = (e?: MarkEntry) => (e && e.visual.status !== 'none' && e.visual.file ? media(e.visual.file) : null);
 
 // ── British date letters ─────────────────────────────────────────────────────
 export type Office = 'London' | 'Birmingham' | 'Sheffield' | 'Chester';

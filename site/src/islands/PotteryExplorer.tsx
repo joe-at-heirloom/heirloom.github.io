@@ -8,6 +8,7 @@
 // through the maker's marks in order.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { PMark, PMaker, How } from '../lib/pottery';
+import { media } from '../lib/media';
 
 type Props = { makers: PMaker[]; marks: PMark[]; how: [How, string, string][]; words: string[] };
 const NOW = new Date().getFullYear();
@@ -159,7 +160,7 @@ export default function PotteryExplorer({ makers, marks, how, words }: Props) {
 function MarkCard({ m, big, dim, lit, onOpen }: { m: PMark; big?: boolean; dim?: boolean; lit?: boolean; onOpen: (id: string) => void }) {
   return (
     <button type="button" class={`pcard${big ? ' pcard--big' : ''}${dim ? ' is-dim' : ''}${lit ? ' is-lit' : ''}`} onClick={() => onOpen(m.id)}>
-      <span class="plate plate--print pcard__img">{m.img ? <img src={`/${m.img.file}`} alt={m.looks || m.name} loading="lazy" decoding="async" /> : <span class="pcard__none">No image yet</span>}</span>
+      <span class="plate plate--print pcard__img">{m.img ? <img src={media(m.img.file)} alt={m.looks || m.name} loading="lazy" decoding="async" /> : <span class="pcard__none">No image yet</span>}</span>
       <span class="pcard__text">
         <span class="pcard__name">{m.name}</span>
         <span class="pcard__years num">{years(m)}{big && <span class="muted"> · {m.maker}</span>}</span>
@@ -264,7 +265,7 @@ function MarkPanel({ marks, makers, id, onOpen, onClose, onMaker }: { marks: PMa
           )}
           {m.img ? (
             <figure class="panel__fig">
-              <div class="plate plate--print panel__plate"><img src={`/${m.img.file}`} alt={m.looks || m.name} /></div>
+              <div class="plate plate--print panel__plate"><img src={media(m.img.file)} alt={m.looks || m.name} /></div>
               <figcaption>{STATUS[m.img.status] ?? ''}{m.img.credit ? `. ${m.img.credit}` : ''}{m.img.url && <> <a href={m.img.url} rel="noopener">Source</a></>}</figcaption>
             </figure>
           ) : <p class="muted">No image of this mark yet.</p>}

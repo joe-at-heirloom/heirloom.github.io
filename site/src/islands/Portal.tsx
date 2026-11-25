@@ -10,6 +10,7 @@
 // when it is opened).
 // The address keeps the state: ?q= the search, ?f= the family, ?r= the record.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { media } from '../lib/media';
 
 type Row = [string, string, string, string, number | null, number | null, string | null, string, string, string];
 type Seal = [string, string, string, string, string, string];
@@ -172,7 +173,7 @@ export default function Portal({ scope, families, perRecord, sealCount, placehol
           {shown.slice(0, more).map((h) => (
             <li key={h.id}>
               <button type="button" class="result" onClick={() => setOpen(h.id)}>
-                <span class="result__img plate plate--print">{h.thumb ? <img src={`/${h.thumb}`} alt="" loading="lazy" decoding="async" /> : <span class="result__glyph">{h.seal ? '印' : h.name.slice(0, 1)}</span>}</span>
+                <span class="result__img plate plate--print">{h.thumb ? <img src={media(h.thumb)} alt="" loading="lazy" decoding="async" /> : <span class="result__glyph">{h.seal ? '印' : h.name.slice(0, 1)}</span>}</span>
                 <span class="result__text">
                   <span class="result__name">{h.name}</span>
                   <span class="result__meta">{h.seal ? 'Seal or signature' : h.kind}{years(h.from, h.to) && <> · <span class="num">{years(h.from, h.to)}</span></>}{!fam && <> · {h.seal ? SEAL_LABEL : labelOf(h.family)}</>}</span>
@@ -288,7 +289,7 @@ function RecordPanel({ id, rows, seals, perRecord, onOpen, onClose, labelOf, nee
           <article>
             {rec.image && (
               <figure class="panel__fig">
-                <div class="plate plate--print panel__plate"><img src={`/${rec.image.file}`} alt={rec.looks_like ?? rec.name} /></div>
+                <div class="plate plate--print panel__plate"><img src={media(rec.image.file)} alt={rec.looks_like ?? rec.name} /></div>
                 <figcaption>{STATUS[rec.image.status] ?? ''}{rec.image.credit ? `. ${rec.image.credit}` : ''}{rec.image.source_url && <> <a href={rec.image.source_url} rel="noopener">Source</a></>}</figcaption>
               </figure>
             )}
@@ -313,7 +314,7 @@ function RecordPanel({ id, rows, seals, perRecord, onOpen, onClose, labelOf, nee
                 <ul>
                   {kids.slice(0, 60).map((k) => (
                     <li><button type="button" class="kid" onClick={() => onOpen(k.id)}>
-                      {k.image ? <span class="plate plate--print kid__img"><img src={`/${k.image.file}`} alt="" loading="lazy" /></span> : null}
+                      {k.image ? <span class="plate plate--print kid__img"><img src={media(k.image.file)} alt="" loading="lazy" /></span> : null}
                       <span><span class="kid__name">{k.name}</span><span class="muted">{k.kind}{(k.date_from || k.date_to) ? ` · ${years(k.date_from ?? null, k.date_to ?? null)}` : ''}</span>{!k.image && k.summary && <span class="kid__line">{k.summary.slice(0, 160)}{k.summary.length > 160 ? '…' : ''}</span>}</span>
                     </button></li>
                   ))}

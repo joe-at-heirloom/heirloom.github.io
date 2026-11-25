@@ -8,6 +8,7 @@
 // open beside the ones they are mistaken for.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { Code, CodeMaker } from '../lib/codes';
+import { media } from '../lib/media';
 
 type Props = { makers: CodeMaker[] };
 const years = (c: { from: number | null; to: number | null }) =>
@@ -165,7 +166,7 @@ export default function CodeReader({ makers }: Props) {
             {dated.map((c) => (
               <li>
                 <button type="button" class="pcard pcard--big" onClick={() => setOpen(c.id)}>
-                  <span class="plate plate--print pcard__img">{c.img ? <img src={`/${c.img.file}`} alt={c.looks || c.name} /> : <span class="cx__key">{c.key ?? ''}</span>}</span>
+                  <span class="plate plate--print pcard__img">{c.img ? <img src={media(c.img.file)} alt={c.looks || c.name} /> : <span class="cx__key">{c.key ?? ''}</span>}</span>
                   <span class="pcard__text">
                     <span class="pcard__name">{years(c) || c.name}</span>
                     <span class="pcard__years">{c.name}</span>
@@ -190,7 +191,7 @@ export default function CodeReader({ makers }: Props) {
               {list.map((c) => (
                 <li>
                   <button type="button" class={`ctile${active && !litIds.has(c.id) ? ' is-dim' : ''}${active && litIds.has(c.id) ? ' is-lit' : ''}`} onClick={() => setOpen(c.id)} title={c.name}>
-                    <span class="plate plate--print ctile__img">{c.img ? <img src={`/${c.img.file}`} alt={c.looks || c.name} loading="lazy" decoding="async" /> : <span class="cx__key">{c.key ?? '—'}</span>}</span>
+                    <span class="plate plate--print ctile__img">{c.img ? <img src={media(c.img.file)} alt={c.looks || c.name} loading="lazy" decoding="async" /> : <span class="cx__key">{c.key ?? '—'}</span>}</span>
                     <span class="ctile__cap num">{mk.key === 'wedgwood' && sr === 'month' ? `${c.key}: ${c.name.split(': ')[1] ?? years(c)}` : sr === 'mark' ? c.name : years(c)}</span>
                   </button>
                 </li>
@@ -251,7 +252,7 @@ function Inputs({ mk, s, set }: { mk: CodeMaker; s: State; set: (p: Partial<Stat
             const f = icon(k);
             return (
               <button type="button" class="csign" aria-pressed={s.sign === k} onClick={() => set({ sign: s.sign === k ? '' : k, dots: null, code: '' })}>
-                <span class="plate plate--print csign__img">{f ? <img src={`/${f}`} alt="" loading="lazy" /> : null}</span>
+                <span class="plate plate--print csign__img">{f ? <img src={media(f)} alt="" loading="lazy" /> : null}</span>
                 <span>{l}</span>
               </button>
             );
@@ -311,7 +312,7 @@ function CodePanel({ mk, id, onOpen, onClose }: { mk: CodeMaker; id: string; onO
           {years(c) && <p class="panel__years num">{years(c)}{c.note && <span class="muted"> · {c.note}</span>}</p>}
           {c.img ? (
             <figure class="panel__fig">
-              <div class="plate plate--print panel__plate"><img src={`/${c.img.file}`} alt={c.looks || c.name} /></div>
+              <div class="plate plate--print panel__plate"><img src={media(c.img.file)} alt={c.looks || c.name} /></div>
               <figcaption>{STATUS[c.img.status] ?? ''}{c.img.credit ? `. ${c.img.credit}` : ''}{c.img.url && <> <a href={c.img.url} rel="noopener">Source</a></>}</figcaption>
             </figure>
           ) : <p class="muted">No image of this code yet.</p>}
@@ -321,7 +322,7 @@ function CodePanel({ mk, id, onOpen, onClose }: { mk: CodeMaker; id: string; onO
               <ul>
                 {twins.map((t) => (
                   <li><button type="button" class="ctile" onClick={() => onOpen(t.id)}>
-                    <span class="plate plate--print ctile__img">{t.img ? <img src={`/${t.img.file}`} alt={t.looks || t.name} /> : null}</span>
+                    <span class="plate plate--print ctile__img">{t.img ? <img src={media(t.img.file)} alt={t.looks || t.name} /> : null}</span>
                     <span class="ctile__cap num">{years(t)}</span>
                   </button></li>
                 ))}

@@ -7,6 +7,7 @@
 // Omega, pictures show which number on the watch is the serial and which only
 // names the model.
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { media } from '../lib/media';
 
 type Place = { id: string; maker: string; name: string; means: string; serial: boolean | null; img: string | null; years: string };
 type Props = { places: Place[]; pocketMakers: string[] };
@@ -148,7 +149,7 @@ export default function WatchReader({ places, pocketMakers }: Props) {
           <ol class="wx__grid">
             {showPlaces.map((p) => (
               <li class={`wplace${p.serial === true ? ' is-serial' : p.serial === false ? ' is-not' : ''}`}>
-                <span class="plate plate--print wplace__img">{p.img ? <img src={`/${p.img}`} alt={p.name} loading="lazy" decoding="async" /> : null}</span>
+                <span class="plate plate--print wplace__img">{p.img ? <img src={media(p.img)} alt={p.name} loading="lazy" decoding="async" /> : null}</span>
                 <span class="wplace__tag">{p.serial === true ? 'Serial: dates it' : p.serial === false ? 'Not a serial' : p.maker}</span>
                 <span class="wplace__name">{p.name}</span>
                 {p.years && <span class="wplace__years num">{p.years}</span>}
