@@ -27,7 +27,7 @@ const han = [...new Set([...JSON.stringify(groups)].filter((ch) => CJK.test(ch))
 <Reference {title} {description} {path} jsonld={[articleLd(path, 'Chinese imperial collection seals', description, '2026-11-25')]} {han}>
   <header class="rhead">
     <h1>Imperial collection seals</h1>
-    <p class="rhead__lede">Emperors stamped the paintings and calligraphy of the palace with their seals: <span class="han" lang="zh-Hant">乾隆御覽之寶</span>, “treasure seen by the Qianlong emperor.” Each seal below says whose it was, what kind of seal it is, where on a work it is found, and works it is on.</p>
+    <p class="rhead__lede">Emperors stamped the paintings and calligraphy of the palace with their seals: <span class="han" lang="zh-Hant">乾隆御覽之寶</span>, <span class="tr">“treasure seen by the Qianlong emperor.”</span> Each seal below says whose it was, what kind of seal it is, where on a work it is found, and works it is on.</p>
     <ul class="rhead__meta">
       <li><strong class="num">{seals.length}</strong> seals</li>
       <li><strong class="num">{pictured}</strong> with a picture</li>

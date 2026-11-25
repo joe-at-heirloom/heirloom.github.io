@@ -134,7 +134,18 @@ function build(): Area[] {
     const y = years.get(o.office);
     return { href: `/marks/${o.slug}-date-letters`, label: o.office, note: o.town, years: y ? span(y[0], y[1]) : undefined };
   });
-  const makerOffices: RefLink[] = OFFICES.map((o) => ({ href: `/marks/british-silver-makers/${o.slug}`, label: o.office }));
+  // Every place Jackson lists makers for (41 of them, with the unascribed groups), as the records name their pages.
+  const makerPlaces = new Map<string, number>();
+  for (const r of collection().records) if (r.family === 'british-makers') {
+    const p = String(r.attributes?.intended_page ?? r.page_path);
+    if (p.startsWith('/marks/british-silver-makers/')) makerPlaces.set(p, (makerPlaces.get(p) ?? 0) + 1);
+  }
+  const placeName = (slug: string) => slug === 'king-s-lynn' ? 'King’s Lynn' : slug.startsWith('unascribed-')
+    ? `Unascribed, ${slug.slice(11).charAt(0).toUpperCase()}${slug.slice(12)}`
+    : slug.split('-').map((w) => (w === 'and' ? w : w.charAt(0).toUpperCase() + w.slice(1))).join(' ');
+  const makerOffices: RefLink[] = [...makerPlaces.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([href, n]) => ({ href, label: placeName(href.split('/').pop()!), note: `${n.toLocaleString('en-US')} marks` }));
 
   return [
     {

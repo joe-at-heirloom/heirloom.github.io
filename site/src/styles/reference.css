@@ -54,7 +54,8 @@
 .ref__mnav-area { font-weight: 650; }
 .ref__mnav-hint { font-size: 14px; color: var(--ink-3); }
 .ref__mnav .rail { padding: 4px 6px 16px; border-top: 1px solid var(--rule); }
-.ref__mnav .rail__group { margin-top: 12px; }
+.ref__mnav .rail { gap: 10px; }
+.ref__mnav .rail__group { margin-top: 4px; }
 
 /* Next and previous, then the other areas */
 .ref__seq { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 72px; }

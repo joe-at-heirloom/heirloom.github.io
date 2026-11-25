@@ -45,7 +45,7 @@ const kindWord = (kind: string, count: number) => {
 
 {rest.map((g) => (
   <section class="ahome__block" aria-label={g.label}>
-    <h2>{g.label}</h2>
+    <h2><span class="proper-name">{g.label}</span></h2>
     <ul class="linklist">
       {g.links.map((l) => (
         <li>

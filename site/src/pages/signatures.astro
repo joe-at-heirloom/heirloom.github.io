@@ -4,6 +4,7 @@
 // (src/islands/Portal.tsx), every artist at a glance, and every signatures page.
 import { media } from '../lib/media';
 import Reference from '../layouts/Reference.astro';
+import { isBuilt } from '../lib/reference';
 import Portal from '../islands/Portal';
 import { collection, families, PER_RECORD, SEAL_KINDS } from '../lib/portal';
 import { referencePages, isSignaturePage } from '../lib/pages';
@@ -34,8 +35,10 @@ const artists = c.records
     const pool = shots.filter((e) => plain(String(e.attributes.form ?? '')) === best);
     const shot = pool[Math.floor(pool.length / 2)];
     const yrs = mine.map((e) => e.date_from).filter((y): y is number => !!y);
-    return { id: a.id, name: a.name, n: mine.length, from: yrs[0] ?? null, to: yrs[yrs.length - 1] ?? null, img: shot?.image_id ? imgOf.get(shot.image_id) ?? null : null, reads: shot ? String(shot.attributes.reads ?? '') : '' };
+    return { id: a.id, name: a.name, page: isBuilt(a.page_path) ? a.page_path : null, n: mine.length, from: yrs[0] ?? null, to: yrs[yrs.length - 1] ?? null, img: shot?.image_id ? imgOf.get(shot.image_id) ?? null : null, reads: shot ? String(shot.attributes.reads ?? '') : '' };
   })
+  // An artist with no dated signature yet has nothing to show here.
+  .filter((a) => a.n > 0)
   .sort((x, y) => x.name.split(' ').slice(-1)[0].localeCompare(y.name.split(' ').slice(-1)[0]));
 
 const pages = referencePages().filter((p) => isSignaturePage(p.href));
@@ -58,7 +61,7 @@ const graph = [
       <ul class="artists">
         {artists.map((a) => (
           <li>
-            <a href={`/signatures?r=${a.id}`} class="artist">
+            <a href={a.page ?? `/signatures?r=${a.id}`} class="artist">
               <span class="artist__sig plate plate--print">{a.img ? <img src={media(a.img)} alt={a.reads ? `Signature reading ${a.reads}` : ''} loading="lazy" decoding="async" /> : null}</span>
               <span class="artist__name">{a.name}</span>
               <span class="muted artist__n"><span class="num">{a.n}</span> {a.n === 1 ? 'signature' : 'signatures'}{a.from && <>, <span class="num">{a.from === a.to ? a.from : `${a.from}–${a.to}`}</span></>}</span>

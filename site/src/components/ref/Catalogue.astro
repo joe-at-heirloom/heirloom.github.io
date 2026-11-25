@@ -41,7 +41,7 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
 
   {groups.map((g) => g.sheets.length > 0 && (
     <section class="cat__group" data-group={g.key} aria-labelledby={`cg-${g.key}`}>
-      <h2 id={`cg-${g.key}`}>{g.label} <span class="num">{g.sheets.length}</span></h2>
+      <h2 id={`cg-${g.key}`}><span class="proper-name">{g.label}</span> <span class="num">{g.sheets.length}</span></h2>
       {g.blurb && <p>{g.blurb}</p>}
       <ul class="cat__list">
         {g.sheets.map((s) => (
@@ -54,7 +54,7 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
                     {s.glyphs && <span class={nameCls(s)} lang={langOf(s)}>{s.glyphs}</span>}
                     <span>{s.reading}</span>
                   </span>
-                  {s.means && <span class="rec__means">{s.means}</span>}
+                  {s.means && <span class="rec__means">{s.meansTr ? <span class="tr">{s.means}</span> : s.means}</span>}
                 </span>
                 <span class="rec__y num">{s.years ?? ''}</span>
               </summary>
@@ -108,7 +108,10 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
           r.open = true;
           // Below the site header and this catalogue's sticky bar.
           const bar = cat.querySelector<HTMLElement>('.cat__bar')!.getBoundingClientRect().height;
-          window.scrollTo({ top: r.getBoundingClientRect().top + scrollY - 68 - bar - 12 });
+          const go = () => window.scrollTo({ top: r.getBoundingClientRect().top + scrollY - 68 - bar - 12 });
+          go();
+          // Again once pictures and fonts have settled the layout above it.
+          setTimeout(go, 400);
         }
       };
       for (const r of recs) r.addEventListener('toggle', () => { if (r.open && location.hash.slice(1) !== r.id) history.replaceState(null, '', `#${r.id}`); });

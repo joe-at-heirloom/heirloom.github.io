@@ -3,19 +3,19 @@
 // facts, where the sources differ, a caution, the sources numbered; beside it
 // the mark's pictures, each with its credit.
 import Spec from './Spec.astro';
-import { statusWord, type Sheet } from '../../lib/records';
+import { statusWord, withNames, type Sheet } from '../../lib/records';
 const { s } = Astro.props as { s: Sheet };
 const [lead, ...more] = s.pics;
 ---
 <div class="sheet2">
   <div class="sheet2__body">
-    {s.means && <p class="sheet2__means">{s.means}</p>}
+    {s.means && <p class="sheet2__means">{s.meansTr ? <span class="tr">{s.means}</span> : s.means}</p>}
     {s.facts.length > 0 && (
       <dl class="facts2">
-        {s.facts.map((f) => <><dt>{f.label}</dt><dd lang={f.label === 'Also written' ? (s.lang === 'ja' ? 'ja' : s.lang === 'ko' ? 'ko' : 'zh-Hant') : undefined} class:list={[{ han: f.label === 'Also written' }]}>{f.text}</dd></>)}
+        {s.facts.map((f) => <><dt>{f.label}</dt><dd lang={f.label === 'Also written' ? (s.lang === 'ja' ? 'ja' : s.lang === 'ko' ? 'ko' : 'zh-Hant') : undefined} class:list={[{ han: f.label === 'Also written' }]} set:html={withNames(f.text)} /></>)}
       </dl>
     )}
-    {s.caution && <p class="caution"><strong>Careful: </strong>{s.caution}</p>}
+    {s.caution && <p class="caution"><strong>Careful: </strong><Fragment set:html={withNames(s.caution)} /></p>}
     {s.differ.length > 0 && (
       <div class="differ">
         <h4>Where the sources differ</h4>

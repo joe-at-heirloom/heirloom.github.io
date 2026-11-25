@@ -26,6 +26,8 @@ export type Sheet = {
   /** How it is read aloud (pinyin, romaji, Revised Romanization), or its English name. */
   reading: string;
   means: string | null;
+  /** The meaning is Heirloom's English for the mark's own words (a translation): the voice rules leave it alone. */
+  meansTr?: boolean;
   years: string | null;
   facts: Fact[];
   differ: Differ[];
@@ -59,7 +61,23 @@ export function clean(s: unknown): string | null {
     .replace(/^[\s;,.:]+|[\s;,:]+$/g, '')
     .trim();
   if (!t || /^(unknown|none|n\/a|-|—)$/i.test(t)) return null;
-  return soften(t.charAt(0).toUpperCase() + t.slice(1));
+  return voice(soften(t.charAt(0).toUpperCase() + t.slice(1)));
+}
+
+// The site's words (docs/VOICE.md, the copy check): American spelling, "item"
+// for an owner's thing, "specialist" for an expert, nothing "for sale".
+// "Catalogue" stays: it is the trade's word, and Joe's (D72).
+const SPELL: [RegExp, string][] = [
+  [/\bcolour/g, 'color'], [/\bColour/g, 'Color'], [/\bfavour/g, 'favor'], [/\bFavour/g, 'Favor'], [/\bhonour/g, 'honor'], [/\bHonour/g, 'Honor'],
+  [/\bneighbour/g, 'neighbor'], [/\bNeighbour/g, 'Neighbor'], [/\brecognis/g, 'recogniz'], [/\breorganis/g, 'reorganiz'], [/\borganis/g, 'organiz'],
+  [/\bCentre\b/g, 'Center'], [/\blicence\b/g, 'license'],
+  [/\bobjects\b/g, 'items'], [/\bObjects\b/g, 'Items'], [/\bobject\b/g, 'item'], [/\bObject\b/g, 'Item'],
+  [/\bexperts\b/g, 'specialists'], [/\bexpert\b/g, 'specialist'], [/\bfor sale to\b/g, 'to be sold to'],
+];
+export function voice(t: string) {
+  let out = t;
+  for (const [re, to] of SPELL) out = out.replace(re, to);
+  return out;
 }
 
 export function yearsOf(a?: number | null, b?: number | null): string | null {
@@ -153,7 +171,7 @@ export function hallSheet(r: Rec): Sheet {
   const owner = [clean(a.owner), clean(a.owner_dates)].filter(Boolean).join(' ');
   return {
     id: r.id, anchor: r.anchor ?? r.id, url: urlOf(r), kind: 'Hall mark', group: String(a.hall_kind ?? 'private'),
-    glyphs: chars, lang: 'zh', reading: tidyReading(rest.join(' ')), means: clean(r.summary),
+    glyphs: chars, lang: 'zh', reading: tidyReading(rest.join(' ')), means: clean(r.summary), meansTr: true,
     years: yearsOf(r.date_from, r.date_to),
     facts: [
       ['Whose hall', owner],
@@ -224,7 +242,7 @@ export function jaSheet(m: JaMark): Sheet {
   const others = m.spellings.filter((x) => flat(x) !== flat(m.romaji) && flat(x) !== flat(m.romajiPlain ?? ''));
   return {
     id: m.id, anchor: m.slug, url: `/marks/japanese/#${m.slug}`, kind: m.kind, group: m.group,
-    glyphs: m.chars || null, lang: 'ja', reading: m.romaji, means: clean(m.meaning),
+    glyphs: m.chars || null, lang: 'ja', reading: m.romaji, means: clean(m.meaning), meansTr: true,
     years: yearsOf(m.from, m.to),
     facts: [
       ['Read as', m.kana],
@@ -253,7 +271,7 @@ export function koSheet(m: Insc): Sheet {
   const rest = m.photos.filter((p) => p.visible !== 'yes');
   return {
     id: m.id, anchor: m.slug, url: `/marks/korean/#${m.slug}`, kind: m.kind, group: m.group,
-    glyphs: m.chars || m.hangul || null, lang: 'ko', reading: m.rr, means: clean(m.meaning),
+    glyphs: m.chars || m.hangul || null, lang: 'ko', reading: m.rr, means: clean(m.meaning), meansTr: true,
     years: yearsOf(m.from, m.to),
     facts: [
       ['In hangul', m.hangul && m.hangul !== m.chars ? m.hangul : null],
@@ -298,7 +316,7 @@ export function imperialSheet(r: Rec): Sheet {
     .map((m: any) => `${String(m.object ?? '').replace(/\u3000/g, ' ').trim()}${m.npm_no ? ' (National Palace Museum, Taipei)' : ''}`).filter(Boolean);
   return {
     id: r.id, anchor: r.anchor ?? r.id.replace(/^imperial-seal-/, ''), url: urlOf(r), kind: 'Imperial collection seal', group: dynKey(String(a.dynasty ?? '')),
-    glyphs: String(a.characters ?? chars), lang: 'zh', reading: tidyReading(rest.join(' ')), means: clean(a.english),
+    glyphs: String(a.characters ?? chars), lang: 'zh', reading: tidyReading(rest.join(' ')), means: clean(a.english), meansTr: true,
     years: clean(a.reign),
     facts: [
       ['Whose seal', [clean(a.emperor), clean(a.dynasty)].filter(Boolean).join(', ')],
@@ -385,4 +403,10 @@ export function tabooSheet(r: Rec): Sheet {
     differ: [], caution: null, pics: [], sources: list, single: r.single_source,
     keys: keysOf(r.name, r.summary, a.personal_name, a.dynasty, a.emperor, tabooed),
   };
+}
+
+const escHtml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+/** A sheet's text as HTML, with official designations (Korea's National Treasure) marked as names, not Heirloom's words. */
+export function withNames(t: string) {
+  return escHtml(t).replace(/\b(National Treasure|Important Cultural Property|Treasure No\. ?\d+)\b/g, '<span class="tr">$1</span>');
 }
