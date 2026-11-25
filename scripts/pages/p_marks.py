@@ -198,7 +198,9 @@ def date_letter_page(office, info):
     for start, rs in cyc.items():
         span, kind = cycle_label(rs)
         cells = "".join(
-            f'<li class="dlc{" dlc--flag" if (r.get("alt_year") or r.get("confidence")) else ""}"'
+            # Each letter's id is its reference record's (the app's lib/reference-ids.ts):
+            # the Advisor links a decoded letter to /marks/<office>-date-letters#<id>.
+            f'<li class="dlc{" dlc--flag" if (r.get("alt_year") or r.get("confidence")) else ""}" id="{e(r["office"].lower())}-{r["year"]}-{e(r["letter"].lower())}"'
             f' title="{e(row_note(r))}">{letter_html(r)}<span class="dlc__year">{e(r.get("year_label") or r["year"])}</span>'
             + (f'<span class="dlc__note">{e(row_note(r))}</span>' if row_note(r) else "")
             + "</li>"
