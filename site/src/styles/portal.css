@@ -105,3 +105,14 @@
   .rfacts div { grid-template-columns: 120px minmax(0, 1fr); }
   .panel__name { font-size: 1.6rem; }
 }
+
+/* /signatures: every artist, with one of their signatures */
+.artists { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.artist { display: grid; gap: 4px; padding: 10px 10px 12px; border: 1px solid var(--rule); border-radius: var(--r); text-decoration: none; color: inherit; height: 100%; }
+.artist:hover { border-color: var(--ink-3); color: inherit; }
+.artist__sig { display: grid; place-items: center; aspect-ratio: 5 / 2; overflow: hidden; border-radius: calc(var(--r) - 4px); margin-bottom: 6px; }
+.artist__sig img { width: 100%; height: 100%; object-fit: contain; }
+.artist__name { font-weight: 500; }
+.artist__n { font-size: 14px; }
+.artist__n .num { white-space: nowrap; }
+@media (max-width: 520px) { .artists { grid-template-columns: 1fr 1fr; gap: 8px; } }

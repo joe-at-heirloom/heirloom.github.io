@@ -1,0 +1,56 @@
+---
+// /marks/chinese-reign-marks: the reign-mark explorer (src/islands/ReignExplorer).
+// The address, title, description, h1 and questions are the generated page's
+// (scripts/pages/p_chinese.py), kept so its standing in search carries over.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import ReignExplorer from '../../islands/ReignExplorer';
+import { reigns, readingNotes } from '../../lib/reigns';
+import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+
+const path = '/marks/chinese-reign-marks';
+const title = 'Chinese Reign Marks: Ming and Qing Marks, With a Finder | Heirloom';
+const description = 'Every Ming and Qing reign mark, 1368–1916: the characters, how to read them, which reigns used seal script, the marks most often copied, and a finder, with sources in English and Chinese.';
+const h1 = 'Chinese reign marks';
+const rs = reigns();
+const notes = readingNotes();
+const han = [...new Set([...rs.flatMap((r) => [...r.glyphs, ...r.chars]), ...'大明清年製御造'])].join('');
+const faqs: [string, string][] = [
+  ['How do I read the characters on the bottom of a Chinese vase?', '<p>Start at the top of the right-hand column and read down, then move one column to the left. A six-character reign mark reads dynasty, reign, then 年製 “made in the period”: 大明宣德年製 is “made in the Xuande reign of the Great Ming.” A four-character mark leaves out the dynasty.</p>'],
+  ['Does a Qianlong mark mean my item is from the Qianlong period?', '<p>No. Qianlong marks were put on a great many later items, especially in the Republic period (1912–1949) and since. A mark tells you the reign it claims; the body, glaze, painting and form decide the date, and only someone who can handle the item can judge those.</p>'],
+  ['What is seal script?', '<p>An older, squarer style of the characters, used on seals. Seal-script reign marks are rare before the Yongzheng reign (1723–1735) and usual under Qianlong, Jiaqing and Daoguang; from Xianfeng (1851) the regular script returns.</p>'],
+  ['Why does some Chinese porcelain have no mark, or an empty double ring?', '<p>Most porcelain made for everyday use was never marked. Under Kangxi a local ban on writing the reign name led potters to paint an empty double ring or a small symbol instead; such rings were also used later, so they do not date an item either.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, synced.changed.chinese, { about: { '@type': 'Thing', name: 'Chinese reign marks' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, 'Chinese reign marks', ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph} han={han}>
+  <div class="wrap">
+    <Crumbs name="Chinese reign marks" mid={['/marks/', 'Marks']} />
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Every Ming and Qing reign’s mark, 1368 to 1916. Pick or type the characters on the base and the reigns that fit stay lit. A mark names the reign it claims, not when the item was made.</p>
+    </header>
+
+    <ReignExplorer client:load reigns={rs} />
+
+    <section class="block prose" aria-labelledby="read">
+      <h2 id="read">How to read a reign mark</h2>
+      <ul>{notes.reading.map((t) => <li>{soften(t)}</li>)}</ul>
+      <h2 id="date">A mark is not a date</h2>
+      <ul>{notes.caveats.slice(0, 4).map((t) => <li>{soften(t)}</li>)}</ul>
+    </section>
+
+    <AppBox text="Photograph the base. The Advisor reads the characters, names the reign they claim from this same table, and says plainly that the mark does not date the item." />
+    <Faq {faqs} />
+  </div>
+</Base>

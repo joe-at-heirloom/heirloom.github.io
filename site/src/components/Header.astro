@@ -2,6 +2,7 @@
 const { path } = Astro.props as { path: string };
 const links = [
   { href: '/marks/', label: 'Marks', match: '/marks' },
+  { href: '/signatures', label: 'Signatures', match: '/signatures' },
   { href: '/guides', label: 'Guides', match: '/guides' },
   { href: '/home-inventory-app', label: 'Home inventory', match: '/home-inventory' },
 ];
@@ -60,7 +61,7 @@ const links = [
     .hdr__in { gap: 12px; height: 60px; }
     .hdr__nav { gap: 0; overflow-x: auto; scrollbar-width: none; }
     .hdr__nav a { padding: 8px 9px; font-size: 14px; white-space: nowrap; }
-    .hdr__nav a:not([href='/marks/']):not([href='/guides']) { display: none; }
+    .hdr__nav a:not([href='/marks/']):not([href='/signatures']):not([href='/guides']) { display: none; }
     .hdr__cta { display: none; }
     .logo img { height: 17px; }
   }

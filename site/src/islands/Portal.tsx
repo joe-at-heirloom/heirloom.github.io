@@ -1,24 +1,30 @@
 /** @jsxImportSource preact */
-// The marks portal: one search over Heirloom's whole reference collection (the
-// records the Advisor reads), answers as you type, any record opened in place.
-// Data: /marks/data/index.json (every record but the seals, loaded at once),
-// /marks/data/seals.json (the seals and signatures, loaded when a search has
-// Chinese characters or asks for them), /marks/data/f/<family>.json and
-// /marks/data/r/<id>.json (a record in full, when it is opened).
+// One search over a part of Heirloom's reference collection (the records the
+// Advisor reads), answering as you type, any record opened in place. Two pages
+// use it, kept apart: /marks/ (marks on objects) and /signatures (who signed or
+// sealed a painting).
+// Data: the page's index (/marks/data/index.json or /marks/data/signatures.json,
+// loaded at once), /marks/data/seals.json (the Chinese seals, signatures page
+// only, loaded when a search has Chinese characters or asks for them),
+// /marks/data/f/<family>.json and /marks/data/r/<id>.json (a record in full,
+// when it is opened).
 // The address keeps the state: ?q= the search, ?f= the family, ?r= the record.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 
 type Row = [string, string, string, string, number | null, number | null, string | null, string, string, string];
 type Seal = [string, string, string, string, string, string];
 type Family = { family: string; label: string; count: number };
-type Props = { families: Family[]; perRecord: string[]; sealCount: number };
+type Props = { scope: 'marks' | 'signatures'; families: Family[]; perRecord: string[]; sealCount: number; placeholder: string; searchLabel: string };
 
 type Hit = { id: string; name: string; kind: string; family: string; from: number | null; to: number | null; thumb: string | null; line: string; url: string; score: number; seal?: Seal };
 
 const HAN = /[㐀-鿿豈-﫿]/;
 const fold = (s: string) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const years = (a: number | null, b: number | null) => (a && b && a !== b ? `${a}–${b}` : a ? String(a) : b ? `to ${b}` : '');
-const SEAL_LABEL = 'Seals and signatures';
+const SEAL_LABEL = 'Chinese seals and signatures';
+const INDEX = { marks: '/marks/data/index.json', signatures: '/marks/data/signatures.json' };
+// Records that live in the other search (an old /marks/?r= link to a signature).
+const SIGNATURE_ID = /^(artist-|sig-|cn-person-)/;
 // Kinds a name search is usually after: the mark that names the maker, the reign, the artist.
 const PRIMARY = /maker's mark|trademark|maker history|artist$|reign mark|hall mark|town mark|standard mark|painter|collector$|lookup table/;
 
@@ -35,7 +41,7 @@ function writeUrl(q: string, f: string, r: string) {
   history.replaceState(null, '', `${location.pathname}${s ? `?${s}` : ''}`);
 }
 
-export default function Portal({ families, perRecord, sealCount }: Props) {
+export default function Portal({ scope, families, perRecord, sealCount, placeholder, searchLabel }: Props) {
   const [rows, setRows] = useState<Row[] | null>(null);
   const [seals, setSeals] = useState<Seal[] | null>(null);
   const [q, setQ] = useState('');
@@ -46,8 +52,9 @@ export default function Portal({ families, perRecord, sealCount }: Props) {
 
   useEffect(() => {
     const u = readUrl();
+    if (scope === 'marks' && SIGNATURE_ID.test(u.r)) { location.replace(`/signatures?r=${encodeURIComponent(u.r)}`); return; }
     setQ(u.q); setFam(u.f); setOpen(u.r);
-    fetch('/marks/data/index.json').then((r) => r.json()).then(setRows).catch(() => setRows([]));
+    fetch(INDEX[scope]).then((r) => r.json()).then(setRows).catch(() => setRows([]));
     if (!u.q && !u.r) input.current?.focus({ preventScroll: true });
   }, []);
   useEffect(() => { writeUrl(q, fam, open); }, [q, fam, open]);
@@ -55,7 +62,7 @@ export default function Portal({ families, perRecord, sealCount }: Props) {
 
   const qn = q.trim().normalize('NFKC');
   const han = HAN.test(qn);
-  const wantSeals = han || fam === 'seals';
+  const wantSeals = sealCount > 0 && (han || fam === 'seals');
   useEffect(() => {
     if (wantSeals && !seals) fetch('/marks/data/seals.json').then((r) => r.json()).then(setSeals).catch(() => setSeals([]));
   }, [wantSeals]);
@@ -127,7 +134,7 @@ export default function Portal({ families, perRecord, sealCount }: Props) {
     <div class="portal">
       <div class="portal__bar" role="search">
         <label class="portal__q">
-          <span class="visually-hidden">Search every mark, maker, reign, artist and seal</span>
+          <span class="visually-hidden">{searchLabel}</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
           <input
             ref={input}
@@ -135,7 +142,7 @@ export default function Portal({ families, perRecord, sealCount }: Props) {
             autoComplete="off"
             autoCapitalize="off"
             spellcheck={false}
-            placeholder="A letter, a year, 925, 大明成化年製, Gorham, Monet…"
+            placeholder={placeholder}
             value={q}
             onInput={(e) => setQ((e.target as HTMLInputElement).value)}
           />
@@ -144,7 +151,7 @@ export default function Portal({ families, perRecord, sealCount }: Props) {
         {(searching || fam) && (
           <div class="portal__chips" role="group" aria-label="Narrow by family">
             <button type="button" aria-pressed={!fam} onClick={() => setFam('')}>All{searching ? ` ${hits.length}` : ''}</button>
-            {[...families.map((f) => f.family), ...(han || fam === 'seals' ? ['seals'] : [])]
+            {[...families.map((f) => f.family), ...(wantSeals ? ['seals'] : [])]
               .filter((f) => !searching || counts.get(f) || f === fam)
               .map((f) => (
                 <button type="button" aria-pressed={fam === f} onClick={() => setFam(fam === f ? '' : f)}>
@@ -155,8 +162,8 @@ export default function Portal({ families, perRecord, sealCount }: Props) {
         )}
         <p class="portal__sum" aria-live="polite">
           {!rows ? 'Loading the reference…'
-            : searching ? (shown.length ? `${shown.length} ${shown.length === 1 ? 'record' : 'records'}${fam ? ` in ${labelOf(fam)}` : ''}` : (han && !seals ? 'Looking in the seals too…' : 'Nothing matches. Try fewer words, or the characters alone.'))
-            : fam ? `${shown.length} records in ${labelOf(fam)}` : `${rows.length.toLocaleString('en-US')} records, ${sealCount.toLocaleString('en-US')} seals and signatures`}
+            : searching ? (shown.length ? `${shown.length} ${shown.length === 1 ? 'record' : 'records'}${fam ? ` in ${labelOf(fam)}` : ''}` : (wantSeals && !seals ? 'Looking in the seals too…' : 'Nothing matches. Try fewer words, or the characters alone.'))
+            : fam ? `${shown.length} records in ${labelOf(fam)}` : `${rows.length.toLocaleString('en-US')} records${sealCount ? `, ${sealCount.toLocaleString('en-US')} Chinese seals and signatures` : ''}`}
         </p>
       </div>
 
@@ -208,7 +215,7 @@ const STATUS: Record<string, string> = { photo: 'Photograph', facsimile: 'Book f
 const FACTS: [string, string][] = [
   ['letter', 'Letter'], ['case', 'Case'], ['style', 'Style'], ['year_label', 'Assay year'], ['alt_year', 'Another source gives'], ['confidence', 'Confidence'],
   ['dynasty', 'Dynasty'], ['emperor_name', 'Emperor'], ['hall_kind', 'Kind'], ['owner', 'Owner'], ['owner_dates', 'Owner’s dates'], ['script', 'Script'],
-  ['placement_colour', 'Where and in what colour'], ['wares', 'Wares'], ['reign', 'Reign'], ['topic', 'Topic'], ['place_zh', 'Native place'],
+  ['placement_colour', 'Where and in what color'], ['wares', 'Wares'], ['reign', 'Reign'], ['topic', 'Topic'], ['place_zh', 'Native place'],
   ['skills', 'Skills'], ['seal_count', 'Seals and signatures recorded'], ['nationality', 'Nationality'], ['reads', 'Reads'], ['position', 'Where'],
   ['form', 'Form'], ['medium', 'Medium'], ['age', 'Age'], ['work', 'Work'], ['date_text', 'Date'], ['dates', 'Dates'], ['applied', 'Applied'],
   ['series', 'Series'], ['rows', 'Rows'], ['note', 'Note'], ['later_copies_note', 'Later copies'], ['caution', 'Caution'], ['quote_zh', 'Source text'],
@@ -326,8 +333,9 @@ function RecordPanel({ id, rows, seals, perRecord, onOpen, onClose, labelOf, nee
               </section>
             )}
             <p class="panel__actions">
+              {rec.kind === 'reign mark' && <a class="btn btn--primary" href={`/marks/chinese-reign-marks?reign=${rec.id.replace(/^reign-/, '')}`}>Compare with every reign</a>}
               <a class="btn" href={rec.url}>Open its page</a>
-              <button type="button" class="btn" onClick={() => navigator.clipboard?.writeText(`${location.origin}/marks/?r=${rec.id}`)}>Copy link</button>
+              <button type="button" class="btn" onClick={() => navigator.clipboard?.writeText(`${location.origin}${location.pathname}?r=${rec.id}`)}>Copy link</button>
             </p>
           </article>
         )}

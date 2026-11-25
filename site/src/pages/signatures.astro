@@ -1,0 +1,86 @@
+---
+// /signatures: artists' signatures and Chinese painters' and collectors' seals,
+// a reference of its own (kept apart from the marks at /marks/). One search
+// (src/islands/Portal.tsx), every artist at a glance, and every signatures page.
+import Base from '../layouts/Base.astro';
+import Crumbs from '../components/Crumbs.astro';
+import Portal from '../islands/Portal';
+import { collection, families, PER_RECORD, SEAL_KINDS } from '../lib/portal';
+import { referencePages, isSignaturePage } from '../lib/pages';
+import { crumbsLd } from '../lib/site';
+import '../styles/marks.css';
+import '../styles/portal.css';
+
+const path = '/signatures';
+const title = 'Artist Signatures and Chinese Painters’ Seals: Search Them | Heirloom';
+const c = collection();
+const fams = families('signatures');
+const seals = c.records.filter((r) => SEAL_KINDS.has(r.kind)).length;
+const imgOf = new Map(c.images.map((i) => [i.id, i.file]));
+const examples = c.records.filter((r) => r.kind === 'signature example');
+const people = c.records.filter((r) => r.family === 'chinese-people' && !SEAL_KINDS.has(r.kind)).length;
+const artistCount = c.records.filter((r) => r.kind === 'artist').length;
+const description = `Dated signatures of Monet, Degas, Renoir, Van Gogh, Rembrandt and ${artistCount - 5} more artists, and ${people.toLocaleString('en-US')} Chinese painters and collectors with their seals. Search by what it reads.`;
+
+// Each artist with one of their signatures: their name written out (not a stamp,
+// a dedication or a monogram) where there is one, from the middle of their dated run.
+const plain = (form: string) => (/stamp|inscribed|dedicat|copyright|reversed|no signature|thumbprint|edition|cartouche|seal/.test(form) ? 0 : /full name/.test(form) ? 3 : /surname|first name/.test(form) ? 2 : 1);
+const artists = c.records
+  .filter((r) => r.kind === 'artist')
+  .map((a) => {
+    const mine = examples.filter((e) => e.parent_id === a.id).sort((x, y) => (x.date_from ?? 0) - (y.date_from ?? 0));
+    const shots = mine.filter((e) => e.image_id);
+    const best = Math.max(0, ...shots.map((e) => plain(String(e.attributes.form ?? ''))));
+    const pool = shots.filter((e) => plain(String(e.attributes.form ?? '')) === best);
+    const shot = pool[Math.floor(pool.length / 2)];
+    const yrs = mine.map((e) => e.date_from).filter((y): y is number => !!y);
+    return { id: a.id, name: a.name, n: mine.length, from: yrs[0] ?? null, to: yrs[yrs.length - 1] ?? null, img: shot?.image_id ? imgOf.get(shot.image_id) ?? null : null, reads: shot ? String(shot.attributes.reads ?? '') : '' };
+  })
+  .sort((x, y) => x.name.split(' ').slice(-1)[0].localeCompare(y.name.split(' ').slice(-1)[0]));
+
+const pages = referencePages().filter((p) => isSignaturePage(p.href));
+const graph = [
+  { '@type': 'CollectionPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' }, hasPart: pages.map((p) => ({ '@type': 'WebPage', url: `https://heirloomapp.io${p.href}`, name: p.title })) },
+  crumbsLd(path, 'Signatures'),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name="Signatures" />
+    <header class="phead">
+      <h1>Signatures</h1>
+      <p class="phead__sub">Search {examples.length} dated signatures by {artists.length} artists, and {people.toLocaleString('en-US')} Chinese painters and collectors with {seals.toLocaleString('en-US')} of their seals and signatures. Type what a signature reads, a name, a year, or the characters of a seal. Every record names its sources.</p>
+    </header>
+
+    <Portal client:load scope="signatures" families={fams} perRecord={[...PER_RECORD]} sealCount={seals} placeholder="Monet, Renoir 1876, Vincent, 石濤, 乾隆御覽之寶…" searchLabel="Search every signature, artist, painter, collector and seal" />
+
+    <section class="browse" aria-labelledby="artists">
+      <h2 id="artists">Artists</h2>
+      <ul class="artists">
+        {artists.map((a) => (
+          <li>
+            <a href={`/signatures?r=${a.id}`} class="artist">
+              <span class="artist__sig plate plate--print">{a.img ? <img src={`/${a.img}`} alt={a.reads ? `Signature reading ${a.reads}` : ''} loading="lazy" decoding="async" /> : null}</span>
+              <span class="artist__name">{a.name}</span>
+              <span class="muted artist__n"><span class="num">{a.n}</span> {a.n === 1 ? 'signature' : 'signatures'}{a.from && <>, <span class="num">{a.from === a.to ? a.from : `${a.from}–${a.to}`}</span></>}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="tools" aria-labelledby="cn">
+      <h2 id="cn">Chinese painters and collectors</h2>
+      <ul>
+        <li><a href="/signatures?f=chinese-people"><span>Every painter and collector</span><span class="muted">{people.toLocaleString('en-US')} people, from the Shanghai Museum’s seal book</span></a></li>
+        <li><a href="/marks/chinese/painters/"><span>Painters by name and dynasty</span><span class="muted">Their seals, works and collections</span></a></li>
+        <li><a href="/marks/artist-signatures"><span>How to read a signature</span><span class="muted">Where to look, and what a signature cannot prove</span></a></li>
+      </ul>
+    </section>
+
+    <details class="allpages">
+      <summary><h2>Every signatures page <span class="num muted">{pages.length}</span></h2></summary>
+      <ul>{pages.map((p) => <li><a href={p.href}>{p.title}</a></li>)}</ul>
+    </details>
+  </div>
+</Base>
