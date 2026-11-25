@@ -32197,5 +32197,2238 @@
   },
   "zhwiki": "明孝宗",
   "enwiki": "https://en.wikipedia.org/wiki/Hongzhi_Emperor"
+ },
+ {
+  "qid": "Q1036784",
+  "slug": "yelu-bei",
+  "name": "耶律倍",
+  "name_wikidata": "耶律倍",
+  "pinyin": "Yelü Bei",
+  "dynasty": null,
+  "polity": [
+   "Liao dynasty"
+  ],
+  "dates": {
+   "born": 899,
+   "died": 937,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "樂地",
+    "樂天"
+   ],
+   "art_names": [
+    "義宗"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "耶律倍",
+  "enwiki": "https://en.wikipedia.org/wiki/Yel%C3%BC_Bei",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q10901307",
+  "slug": "le-fangyi",
+  "name": "勒方錡",
+  "name_wikidata": "勒方錡",
+  "pinyin": "Le Fangyi",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1816,
+   "died": 1882,
+   "two_sources": false
+  },
+  "courtesy": [
+   {
+    "name": "悟九",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "太素齋",
+    "two_sources": false
+   },
+   {
+    "name": "少仲",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "勒方锜",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q109176540",
+  "slug": "q109176540",
+  "name": "滕固",
+  "name_wikidata": "滕固",
+  "pinyin": null,
+  "dynasty": "Republic",
+  "polity": [],
+  "dates": {
+   "born": 1901,
+   "died": 1941,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "若渠"
+   ],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "滕固",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q10921143",
+  "slug": "zhou-shunchang",
+  "name": "周順昌",
+  "name_wikidata": "周順昌",
+  "pinyin": "Zhou Shunchang",
+  "dynasty": "Ming",
+  "polity": [
+   "Ming dynasty"
+  ],
+  "dates": {
+   "born": 1584,
+   "died": 1626,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "景文",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "蓼洲",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "苏州市",
+   "en": "Suzhou"
+  },
+  "zhwiki": "周順昌",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q10945497",
+  "slug": "sun-chia-chin",
+  "name": "孫家勤",
+  "name_wikidata": "孫家勤",
+  "pinyin": "Sun Chia-chin",
+  "dynasty": "Republic",
+  "polity": [
+   "Republic of China",
+   "Taiwan"
+  ],
+  "dates": {
+   "born": 1930,
+   "died": 2010,
+   "two_sources": false
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "野耘"
+   ],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "大連市",
+   "en": "Dalian"
+  },
+  "zhwiki": "孫家勤",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q10947759",
+  "slug": "song-xiang",
+  "name": "宋湘",
+  "name_wikidata": "宋湘",
+  "pinyin": "Song Xiang",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1756,
+   "died": 1826,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "煥襄",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "不易居齋",
+    "two_sources": false
+   },
+   {
+    "name": "宋公布",
+    "two_sources": false
+   },
+   {
+    "name": "紅杏山房",
+    "two_sources": false
+   },
+   {
+    "name": "芷灣",
+    "two_sources": true
+   },
+   {
+    "name": "蓬之",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "宋湘",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11065147",
+  "slug": "jueluo-tingyong",
+  "name": "廷雍",
+  "name_wikidata": "廷雍",
+  "pinyin": "Jueluo Tingyong",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1853,
+   "died": 1900,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "紹民",
+    "two_sources": true
+   },
+   {
+    "name": "邵民",
+    "two_sources": false
+   }
+  ],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "廷雍",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11069920",
+  "slug": "peng-yulin",
+  "name": "彭玉麟",
+  "name_wikidata": "彭玉麟",
+  "pinyin": "Peng Yulin",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1816,
+   "died": 1890,
+   "two_sources": false
+  },
+  "courtesy": [
+   {
+    "name": "雪琴",
+    "two_sources": false
+   }
+  ],
+  "art_names": [
+   {
+    "name": "南嶽山樵",
+    "two_sources": false
+   },
+   {
+    "name": "吟香外史",
+    "two_sources": false
+   },
+   {
+    "name": "吟香館",
+    "two_sources": false
+   },
+   {
+    "name": "梅花外子",
+    "two_sources": false
+   },
+   {
+    "name": "梅雪山房",
+    "two_sources": false
+   },
+   {
+    "name": "退省庵主人",
+    "two_sources": false
+   },
+   {
+    "name": "退省散人",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "退省庵"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "彭玉麟",
+  "enwiki": "https://en.wikipedia.org/wiki/Peng_Yulin",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11136379",
+  "slug": "wang-zhong",
+  "name": "汪中",
+  "name_wikidata": "汪中",
+  "pinyin": "Wang Zhong",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1744,
+   "died": 1794,
+   "two_sources": false
+  },
+  "courtesy": [
+   {
+    "name": "容夫",
+    "two_sources": false
+   },
+   {
+    "name": "容甫",
+    "two_sources": true
+   },
+   {
+    "name": "庸夫",
+    "two_sources": false
+   }
+  ],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "頌父"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "汪中",
+  "enwiki": "https://en.wikipedia.org/wiki/Wang_Zhong_(Qing_dynasty)",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11136914",
+  "slug": "wang-meiding",
+  "name": "汪梅鼎",
+  "name_wikidata": "汪梅鼎",
+  "pinyin": "Wang Meiding",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": [
+    1754,
+    1755
+   ],
+   "died": 1815,
+   "two_sources": false
+  },
+  "courtesy": [],
+  "art_names": [
+   {
+    "name": "映琴",
+    "two_sources": false
+   },
+   {
+    "name": "映雪",
+    "two_sources": false,
+    "wikipedia_says": "courtesy"
+   },
+   {
+    "name": "浣雲",
+    "two_sources": true
+   },
+   {
+    "name": "澣雲",
+    "two_sources": true
+   },
+   {
+    "name": "畹雲",
+    "two_sources": false
+   },
+   {
+    "name": "蓼塘",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "又號蓼塘"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "汪梅鼎",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11176308",
+  "slug": "huang-tinggui",
+  "name": "黃廷桂",
+  "name_wikidata": "黃廷桂",
+  "pinyin": "Huang Tinggui",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1691,
+   "died": 1759,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "丹崖",
+    "two_sources": true
+   }
+  ],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "黃廷桂",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11180138",
+  "slug": "qi-xueqiu",
+  "name": "齊學裘",
+  "name_wikidata": "齊學裘",
+  "pinyin": "Qi Xueqiu",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1803,
+   "died": null,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "玉溪",
+    "two_sources": false,
+    "wikipedia_says": "art_names"
+   }
+  ],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "子治",
+    "子貞"
+   ],
+   "art_names": [
+    "老顛"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "齊學裘",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q112966851",
+  "slug": "hsieh-guan-chiao",
+  "name": "謝琯樵",
+  "name_wikidata": "謝琯樵",
+  "pinyin": "Hsieh Guan-chiao",
+  "dynasty": "Qing",
+  "polity": [],
+  "dates": {
+   "born": 1811,
+   "died": 1864,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "穎蘇"
+   ],
+   "art_names": [
+    "懶雲"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "謝琯樵",
+  "enwiki": "https://en.wikipedia.org/wiki/Hsieh_Guan-chiao",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q114669850",
+  "slug": "chang-ku-nien",
+  "name": "張穀年",
+  "name_wikidata": "張穀年",
+  "pinyin": "Chang Ku-nien",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty",
+   "Republic of China",
+   "Taiwan"
+  ],
+  "dates": {
+   "born": 1905,
+   "died": 1987,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "懷椿"
+   ]
+  },
+  "birthplace": {
+   "zh": "武進縣",
+   "en": "Wujin County"
+  },
+  "zhwiki": "張穀年",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11528107",
+  "slug": "shin-etsu",
+  "name": "東皋心越",
+  "name_wikidata": "東皋心越",
+  "pinyin": "Shin'etsu",
+  "dynasty": "Qing",
+  "polity": [
+   "Tokugawa shogunate"
+  ],
+  "dates": {
+   "born": 1639,
+   "died": 1696,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "心越"
+   ],
+   "art_names": [
+    "東皋",
+    "樵雲",
+    "越道人",
+    "鶩峰野樵"
+   ]
+  },
+  "birthplace": {
+   "zh": "浦江县",
+   "en": "Pujiang County"
+  },
+  "zhwiki": "東皋心越",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11599492",
+  "slug": "jikusen-bonsen",
+  "name": "竺仙梵仙",
+  "name_wikidata": "竺仙梵仙",
+  "pinyin": "Jikusen Bonsen",
+  "dynasty": null,
+  "polity": [],
+  "dates": {
+   "born": 1292,
+   "died": 1348,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "竺仙梵仙",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q116227209",
+  "slug": "q116227209",
+  "name": "周肇祥",
+  "name_wikidata": "周肇祥",
+  "pinyin": null,
+  "dynasty": "Modern",
+  "polity": [],
+  "dates": {
+   "born": 1880,
+   "died": 1954,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "嵩靈"
+   ],
+   "art_names": [
+    "寶觚樓",
+    "無畏",
+    "退翁",
+    "養庵"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "周肇祥",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q11658307",
+  "slug": "chen-yuanyun",
+  "name": "陳元贇",
+  "name_wikidata": "陈元赟",
+  "pinyin": "Chen Yuanyun",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1587,
+   "died": 1671,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "義都",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "升庵",
+    "two_sources": true
+   },
+   {
+    "name": "既白山人",
+    "two_sources": true
+   },
+   {
+    "name": "芝山",
+    "two_sources": true
+   },
+   {
+    "name": "菊秀軒",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [
+    "士升"
+   ],
+   "art_names": [
+    "瀛壺逸史",
+    "玄香齋逸叟等",
+    "羲都甫",
+    "虎魄道人"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "陈元赟",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q1388937",
+  "slug": "huang-yongyu",
+  "name": "黃永玉",
+  "name_wikidata": "黃永玉",
+  "pinyin": "Huang Yongyu",
+  "dynasty": "Modern",
+  "polity": [
+   "People's Republic of China"
+  ],
+  "dates": {
+   "born": 1924,
+   "died": 2023,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "凤凰县",
+   "en": "Fenghuang County"
+  },
+  "zhwiki": "黃永玉",
+  "enwiki": "https://en.wikipedia.org/wiki/Huang_Yongyu",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q15918220",
+  "slug": "zhong-xing",
+  "name": "鍾惺",
+  "name_wikidata": "鍾惺",
+  "pinyin": "Zhong Xing",
+  "dynasty": "Ming",
+  "polity": [
+   "Ming dynasty"
+  ],
+  "dates": {
+   "born": 1574,
+   "died": [
+    1624,
+    1625
+   ],
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "伯敬",
+    "two_sources": true
+   },
+   {
+    "name": "景伯",
+    "two_sources": false
+   }
+  ],
+  "art_names": [
+   {
+    "name": "退公",
+    "two_sources": true
+   },
+   {
+    "name": "退谷",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "晚知居士",
+    "退庵"
+   ]
+  },
+  "birthplace": {
+   "zh": "湖北省",
+   "en": "Hubei"
+  },
+  "zhwiki": "鍾惺",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhong_Xing",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q15928785",
+  "slug": "shi-lu",
+  "name": "石魯",
+  "name_wikidata": "石鲁",
+  "pinyin": "Shi Lu",
+  "dynasty": "Modern",
+  "polity": [
+   "People's Republic of China"
+  ],
+  "dates": {
+   "born": 1919,
+   "died": 1982,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "石鲁",
+  "enwiki": "https://en.wikipedia.org/wiki/Shi_Lu",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q15933289",
+  "slug": "qian-yi",
+  "name": "錢易",
+  "name_wikidata": "錢易",
+  "pinyin": "Qian Yi",
+  "dynasty": "Song",
+  "polity": [
+   "Song dynasty"
+  ],
+  "dates": {
+   "born": 968,
+   "died": 1026,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "寶月",
+    "two_sources": false
+   },
+   {
+    "name": "希白",
+    "two_sources": true
+   }
+  ],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "慧照大師"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "钱易 (宋朝)",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q15946531",
+  "slug": "yu-feng",
+  "name": "郁風",
+  "name_wikidata": "郁风",
+  "pinyin": "Yu Feng",
+  "dynasty": "Republic",
+  "polity": [
+   "Australia",
+   "People's Republic of China",
+   "Republic of China"
+  ],
+  "dates": {
+   "born": 1916,
+   "died": 2007,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "北京市",
+   "en": "Beijing"
+  },
+  "zhwiki": "郁风",
+  "enwiki": "https://en.wikipedia.org/wiki/Yu_Feng",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q16075740",
+  "slug": "fang-bing-cai",
+  "name": "蔡方炳",
+  "name_wikidata": "蔡方炳",
+  "pinyin": "Fang-bing Cai",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1626,
+   "died": 1709,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "九霞"
+   ],
+   "art_names": [
+    "息關"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "蔡方炳",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q16923068",
+  "slug": "wang-kui",
+  "name": "王揆",
+  "name_wikidata": "王揆",
+  "pinyin": "Wang Kui",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1619,
+   "died": 1696,
+   "two_sources": false
+  },
+  "courtesy": [
+   {
+    "name": "端士",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "芝厂",
+    "two_sources": false
+   },
+   {
+    "name": "芝廛",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "王揆 (清朝)",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q16924912",
+  "slug": "sun-chaorang",
+  "name": "孫朝讓",
+  "name_wikidata": "孙朝让",
+  "pinyin": "Sun Chaorang",
+  "dynasty": "Ming",
+  "polity": [
+   "Ming dynasty",
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1593,
+   "died": 1682,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "光甫"
+   ],
+   "art_names": [
+    "九芝"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "孫朝讓",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q185152",
+  "slug": "puyi",
+  "name": "溥仪",
+  "name_wikidata": "溥仪",
+  "pinyin": "Puyi",
+  "dynasty": "Qing",
+  "polity": [
+   "Manchukuo",
+   "People's Republic of China",
+   "Qing dynasty",
+   "Republic of China"
+  ],
+  "dates": {
+   "born": 1906,
+   "died": 1967,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "耀之",
+    "two_sources": false
+   }
+  ],
+  "art_names": [
+   {
+    "name": "宣統",
+    "two_sources": false
+   },
+   {
+    "name": "浩然",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "西城区",
+   "en": "Xicheng District"
+  },
+  "zhwiki": "溥仪",
+  "enwiki": "https://en.wikipedia.org/wiki/Puyi",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q18669344",
+  "slug": "shou-hua-ma",
+  "name": "馬壽華",
+  "name_wikidata": "馬壽華",
+  "pinyin": "Shou-hua Ma",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty",
+   "Republic of China",
+   "Taiwan"
+  ],
+  "dates": {
+   "born": 1893,
+   "died": 1977,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "木軒"
+   ],
+   "art_names": [
+    "小靜"
+   ]
+  },
+  "birthplace": {
+   "zh": "涡阳县",
+   "en": "Guoyang County"
+  },
+  "zhwiki": "馬壽華",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q197342",
+  "slug": "zhang-zeduan",
+  "name": "張擇端",
+  "name_wikidata": "张择端",
+  "pinyin": "Zhang Zeduan",
+  "dynasty": null,
+  "polity": [
+   "Chinese Empire"
+  ],
+  "dates": {
+   "born": 1085,
+   "died": 1145,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "正道"
+   ],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "诸城市",
+   "en": "Zhucheng"
+  },
+  "zhwiki": "张择端",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhang_Zeduan",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q22078666",
+  "slug": "q22078666",
+  "name": "廉布",
+  "name_wikidata": "廉布",
+  "pinyin": null,
+  "dynasty": null,
+  "polity": [
+   "Northern Song dynasty"
+  ],
+  "dates": {
+   "born": 1092,
+   "died": null,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "宣仲"
+   ],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "廉布",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q28355101",
+  "slug": "chang-chieh",
+  "name": "張杰",
+  "name_wikidata": "張杰",
+  "pinyin": "Chang Chieh",
+  "dynasty": "Republic",
+  "polity": [
+   "Republic of China",
+   "Taiwan"
+  ],
+  "dates": {
+   "born": 1921,
+   "died": 2016,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "上海县",
+   "en": "Shanghai County"
+  },
+  "zhwiki": "張杰 (畫家)",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q3082375",
+  "slug": "zhu-shuzhen",
+  "name": "朱淑真",
+  "name_wikidata": "朱淑真",
+  "pinyin": "Zhu Shuzhen",
+  "dynasty": "Song",
+  "polity": [
+   "Song dynasty"
+  ],
+  "dates": {
+   "born": null,
+   "died": 1131,
+   "two_sources": false
+  },
+  "courtesy": [],
+  "art_names": [
+   {
+    "name": "幽栖居士",
+    "two_sources": true
+   },
+   {
+    "name": "幽棲居士",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "杭州市",
+   "en": "Hangzhou"
+  },
+  "zhwiki": "朱淑真",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhu_Shuzhen",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q3179306",
+  "slug": "li-song-2",
+  "name": "李嵩",
+  "name_wikidata": "李嵩",
+  "pinyin": "Li Song",
+  "dynasty": null,
+  "polity": [
+   "Southern Song dynasty"
+  ],
+  "dates": {
+   "born": 1190,
+   "died": 1264,
+   "two_sources": false
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "李嵩 (南宋画家)",
+  "enwiki": "https://en.wikipedia.org/wiki/Li_Song_(painter)",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q360135",
+  "slug": "kang-youwei-2",
+  "name": "康有為",
+  "name_wikidata": "康有为",
+  "pinyin": "Kang Youwei",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty",
+   "Republic of China"
+  ],
+  "dates": {
+   "born": 1858,
+   "died": 1927,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "广厦",
+    "two_sources": true
+   },
+   {
+    "name": "廣廈",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "一天園",
+    "two_sources": false
+   },
+   {
+    "name": "不忍",
+    "two_sources": false
+   },
+   {
+    "name": "人天廬",
+    "two_sources": false
+   },
+   {
+    "name": "勞念劬",
+    "two_sources": false
+   },
+   {
+    "name": "勞我廬",
+    "two_sources": false
+   },
+   {
+    "name": "南海先生",
+    "two_sources": false
+   },
+   {
+    "name": "南海老人",
+    "two_sources": false
+   },
+   {
+    "name": "南華",
+    "two_sources": false
+   },
+   {
+    "name": "南蘭堂",
+    "two_sources": false
+   },
+   {
+    "name": "大庇閣",
+    "two_sources": false
+   },
+   {
+    "name": "天孝堂",
+    "two_sources": false
+   },
+   {
+    "name": "天游化人",
+    "two_sources": true
+   },
+   {
+    "name": "天游閣",
+    "two_sources": false
+   },
+   {
+    "name": "天風海濤樓",
+    "two_sources": false
+   },
+   {
+    "name": "奮務閣",
+    "two_sources": false
+   },
+   {
+    "name": "寥天室",
+    "two_sources": false
+   },
+   {
+    "name": "幽飲亭",
+    "two_sources": false
+   },
+   {
+    "name": "康聖人",
+    "two_sources": false
+   },
+   {
+    "name": "明夷",
+    "two_sources": true
+   },
+   {
+    "name": "明夷子",
+    "two_sources": false
+   },
+   {
+    "name": "明夷閣",
+    "two_sources": false
+   },
+   {
+    "name": "明瑟亭",
+    "two_sources": false
+   },
+   {
+    "name": "更生",
+    "two_sources": true
+   },
+   {
+    "name": "更甡",
+    "two_sources": false
+   },
+   {
+    "name": "游存叟",
+    "two_sources": true
+   },
+   {
+    "name": "甦生",
+    "two_sources": false
+   },
+   {
+    "name": "硓雲荒館",
+    "two_sources": false
+   },
+   {
+    "name": "納東海亭",
+    "two_sources": false
+   },
+   {
+    "name": "素廣",
+    "two_sources": false
+   },
+   {
+    "name": "萬木樓",
+    "two_sources": false
+   },
+   {
+    "name": "萬木草堂",
+    "two_sources": false
+   },
+   {
+    "name": "西樵山人",
+    "two_sources": true
+   },
+   {
+    "name": "逍遙遊齋",
+    "two_sources": false
+   },
+   {
+    "name": "長孺",
+    "two_sources": false
+   },
+   {
+    "name": "長懶別莊",
+    "two_sources": false
+   },
+   {
+    "name": "長素",
+    "two_sources": true
+   },
+   {
+    "name": "長興學舍",
+    "two_sources": false
+   },
+   {
+    "name": "雲衢書屋",
+    "two_sources": false
+   },
+   {
+    "name": "須彌雪亭",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "南海区",
+   "en": "Nanhai District"
+  },
+  "zhwiki": "康有为",
+  "enwiki": "https://en.wikipedia.org/wiki/Kang_Youwei",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q4271309",
+  "slug": "liu-kang",
+  "name": "刘抗",
+  "name_wikidata": "刘抗",
+  "pinyin": "Liu Kang",
+  "dynasty": "Modern",
+  "polity": [
+   "Singapore"
+  ],
+  "dates": {
+   "born": 1911,
+   "died": 2004,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "永春县",
+   "en": "Yongchun County"
+  },
+  "zhwiki": "刘抗",
+  "enwiki": "https://en.wikipedia.org/wiki/Liu_Kang_(artist)",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q45450405",
+  "slug": "ma-ruwei",
+  "name": "馬汝為",
+  "name_wikidata": "馬汝為",
+  "pinyin": "Ma Ruwei",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1667,
+   "died": null,
+   "two_sources": false
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "宣臣"
+   ],
+   "art_names": [
+    "悔齋"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "馬汝為",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q45467165",
+  "slug": "ma-yilong",
+  "name": "馬一龍",
+  "name_wikidata": "馬一龍",
+  "pinyin": "Ma Yilong",
+  "dynasty": "Ming",
+  "polity": [
+   "Ming dynasty"
+  ],
+  "dates": {
+   "born": 1490,
+   "died": 1562,
+   "two_sources": false
+  },
+  "courtesy": [
+   {
+    "name": "應圖",
+    "two_sources": true
+   },
+   {
+    "name": "負圖",
+    "two_sources": false
+   }
+  ],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "孟河",
+    "玉華子"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "馬一龍",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q45556049",
+  "slug": "yin-yuanjin",
+  "name": "尹源進",
+  "name_wikidata": "尹源进",
+  "pinyin": "Yin Yuanjin",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1628,
+   "died": 1686,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "振民"
+   ],
+   "art_names": [
+    "瀾柱"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "尹源進",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q5072748",
+  "slug": "chao-shao-an",
+  "name": "趙少昂",
+  "name_wikidata": "趙少昂",
+  "pinyin": "Chao Shao-an",
+  "dynasty": "Modern",
+  "polity": [],
+  "dates": {
+   "born": 1905,
+   "died": 1998,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "叔儀"
+   ],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "番禺县",
+   "en": "Panyu County"
+  },
+  "zhwiki": "趙少昂",
+  "enwiki": "https://en.wikipedia.org/wiki/Chao_Shao-an",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q5615339",
+  "slug": "gui-youguang",
+  "name": "歸有光",
+  "name_wikidata": "归有光",
+  "pinyin": "Gui Youguang",
+  "dynasty": "Ming",
+  "polity": [
+   "Ming dynasty"
+  ],
+  "dates": {
+   "born": 1506,
+   "died": 1571,
+   "two_sources": false
+  },
+  "courtesy": [
+   {
+    "name": "熙甫",
+    "two_sources": true
+   },
+   {
+    "name": "開甫",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "震川",
+    "two_sources": false
+   },
+   {
+    "name": "震川先生",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "項脊生"
+   ]
+  },
+  "birthplace": {
+   "zh": "昆山市",
+   "en": "Kunshan"
+  },
+  "zhwiki": "归有光",
+  "enwiki": "https://en.wikipedia.org/wiki/Gui_Youguang",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q6756220",
+  "slug": "xiong-wenju",
+  "name": "熊文舉",
+  "name_wikidata": "熊文举",
+  "pinyin": "Xiong Wenju",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": [
+    1595,
+    1599
+   ],
+   "died": 1669,
+   "two_sources": false
+  },
+  "courtesy": [
+   {
+    "name": "公遠",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "香雪堂",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "雪堂"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "熊文舉",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q702428",
+  "slug": "hsu-shih-chang",
+  "name": "徐世昌",
+  "name_wikidata": "徐世昌",
+  "pinyin": "Hsu Shih-chang",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty",
+   "Republic of China"
+  ],
+  "dates": {
+   "born": 1855,
+   "died": 1939,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "卜五",
+    "two_sources": true
+   },
+   {
+    "name": "菊人",
+    "two_sources": false,
+    "wikipedia_says": "art_names"
+   }
+  ],
+  "art_names": [
+   {
+    "name": "半日讀書半日靜坐之齋",
+    "two_sources": false
+   },
+   {
+    "name": "弢齋",
+    "two_sources": true
+   },
+   {
+    "name": "晚晴簃",
+    "two_sources": false
+   },
+   {
+    "name": "書髓樓",
+    "two_sources": false
+   },
+   {
+    "name": "東海",
+    "two_sources": true
+   },
+   {
+    "name": "歸雲樓",
+    "two_sources": false
+   },
+   {
+    "name": "水竹村人",
+    "two_sources": false
+   },
+   {
+    "name": "談風月館",
+    "two_sources": false
+   },
+   {
+    "name": "退耕堂",
+    "two_sources": false
+   },
+   {
+    "name": "退耕老人",
+    "two_sources": false
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "水竹邨人",
+    "菊存",
+    "鞠人"
+   ]
+  },
+  "birthplace": {
+   "zh": "卫辉市",
+   "en": "Weihui"
+  },
+  "zhwiki": "徐世昌",
+  "enwiki": "https://en.wikipedia.org/wiki/Xu_Shichang",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q707376",
+  "slug": "wang-guowei",
+  "name": "王國維",
+  "name_wikidata": "王国维",
+  "pinyin": "Wang Guowei",
+  "dynasty": "Republic",
+  "polity": [
+   "China",
+   "Republic of China"
+  ],
+  "dates": {
+   "born": 1877,
+   "died": 1927,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "人間",
+    "two_sources": false,
+    "wikipedia_says": "art_names"
+   },
+   {
+    "name": "伯隅",
+    "two_sources": true
+   },
+   {
+    "name": "禮堂",
+    "two_sources": false,
+    "wikipedia_says": "art_names"
+   },
+   {
+    "name": "靜安",
+    "two_sources": true
+   },
+   {
+    "name": "靜庵",
+    "two_sources": false
+   }
+  ],
+  "art_names": [
+   {
+    "name": "永堂",
+    "two_sources": false
+   },
+   {
+    "name": "永觀",
+    "two_sources": true
+   },
+   {
+    "name": "觀堂",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "海宁市",
+   "en": "Haining"
+  },
+  "zhwiki": "王国维",
+  "enwiki": "https://en.wikipedia.org/wiki/Wang_Guowei",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q707875",
+  "slug": "fang-xiaoru",
+  "name": "方孝孺",
+  "name_wikidata": "方孝孺",
+  "pinyin": "Fang Xiaoru",
+  "dynasty": "Ming",
+  "polity": [
+   "China",
+   "Ming dynasty"
+  ],
+  "dates": {
+   "born": 1357,
+   "died": 1402,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "希古",
+    "two_sources": true
+   },
+   {
+    "name": "希直",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "正學",
+    "two_sources": false
+   },
+   {
+    "name": "正學先生",
+    "two_sources": false
+   },
+   {
+    "name": "遜志",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "宁海县",
+   "en": "Ninghai County"
+  },
+  "zhwiki": "方孝孺",
+  "enwiki": "https://en.wikipedia.org/wiki/Fang_Xiaoru",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q716405",
+  "slug": "luo-zhenyu",
+  "name": "羅振玉",
+  "name_wikidata": "罗振玉",
+  "pinyin": "Luo Zhenyu",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty",
+   "Republic of China"
+  ],
+  "dates": {
+   "born": 1866,
+   "died": 1940,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "叔蘊",
+    "two_sources": false
+   },
+   {
+    "name": "叔言",
+    "two_sources": false
+   },
+   {
+    "name": "式如",
+    "two_sources": true
+   }
+  ],
+  "art_names": [
+   {
+    "name": "松翁",
+    "two_sources": false
+   },
+   {
+    "name": "貞松老人",
+    "two_sources": false
+   },
+   {
+    "name": "雪堂",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "商遺先生"
+   ]
+  },
+  "birthplace": {
+   "zh": "淮安区",
+   "en": "Huai'an District"
+  },
+  "zhwiki": "罗振玉",
+  "enwiki": "https://en.wikipedia.org/wiki/Luo_Zhenyu",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q7251134",
+  "slug": "zhou-zhikui",
+  "name": "周之夔",
+  "name_wikidata": "周之夔",
+  "pinyin": "Zhou Zhikui",
+  "dynasty": "Qing",
+  "polity": [
+   "Qing dynasty"
+  ],
+  "dates": {
+   "born": 1586,
+   "died": null,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [
+    "章甫"
+   ],
+   "art_names": [
+    "五茂"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "周之夔",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q7497",
+  "slug": "emperor-lizong-of-song",
+  "name": "宋理宗趙昀",
+  "name_wikidata": "宋理宗",
+  "pinyin": "Emperor Lizong of Song",
+  "dynasty": "Song",
+  "polity": [
+   "Song dynasty"
+  ],
+  "dates": {
+   "born": 1205,
+   "died": 1264,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "杭州市",
+   "en": "Hangzhou"
+  },
+  "zhwiki": "宋理宗",
+  "enwiki": "https://en.wikipedia.org/wiki/Emperor_Lizong",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q8070439",
+  "slug": "zhang-zhihe",
+  "name": "張志和",
+  "name_wikidata": "张志和",
+  "pinyin": "Zhang Zhihe",
+  "dynasty": "Tang",
+  "polity": [
+   "Tang dynasty"
+  ],
+  "dates": {
+   "born": 730,
+   "died": 810,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "子同",
+    "two_sources": true
+   }
+  ],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": [
+    "煙波釣徒",
+    "玄真子"
+   ]
+  },
+  "birthplace": {
+   "zh": null,
+   "en": null
+  },
+  "zhwiki": "張志和 (唐朝)",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhang_Zhihe",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q835918",
+  "slug": "zhang-sengyou",
+  "name": "張僧繇",
+  "name_wikidata": "张僧繇",
+  "pinyin": "Zhang Sengyou",
+  "dynasty": null,
+  "polity": [],
+  "dates": {
+   "born": 550,
+   "died": null,
+   "two_sources": false
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "苏州市",
+   "en": "Suzhou"
+  },
+  "zhwiki": "张僧繇",
+  "enwiki": "https://en.wikipedia.org/wiki/Zhang_Sengyou",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q94128694",
+  "slug": "wenfang-wang",
+  "name": "王文芳",
+  "name_wikidata": "王文芳",
+  "pinyin": "Wenfang Wang",
+  "dynasty": "Modern",
+  "polity": [
+   "People's Republic of China"
+  ],
+  "dates": {
+   "born": 1938,
+   "died": 2020,
+   "two_sources": true
+  },
+  "courtesy": [],
+  "art_names": [],
+  "wikipedia_only": {
+   "courtesy": [],
+   "art_names": []
+  },
+  "birthplace": {
+   "zh": "招远市",
+   "en": "Zhaoyuan"
+  },
+  "zhwiki": "王文芳",
+  "enwiki": null,
+  "round": 2,
+  "found_by": "Suzuki catalogue"
+ },
+ {
+  "qid": "Q957734",
+  "slug": "du-jin-2",
+  "name": "杜菫",
+  "name_wikidata": "杜堇",
+  "pinyin": "Du Jin",
+  "dynasty": "Ming",
+  "polity": [
+   "Ming dynasty"
+  ],
+  "dates": {
+   "born": 1465,
+   "died": 1509,
+   "two_sources": true
+  },
+  "courtesy": [
+   {
+    "name": "燿南",
+    "two_sources": false
+   }
+  ],
+  "art_names": [
+   {
+    "name": "檉居古狂",
+    "two_sources": false
+   },
+   {
+    "name": "青霞亭長",
+    "two_sources": true
+   }
+  ],
+  "wikipedia_only": {
+   "courtesy": [
+    "懼男"
+   ],
+   "art_names": [
+    "古狂",
+    "檉居"
+   ]
+  },
+  "birthplace": {
+   "zh": "鎮江市",
+   "en": "Zhenjiang"
+  },
+  "zhwiki": "杜菫",
+  "enwiki": "https://en.wikipedia.org/wiki/Du_Jin",
+  "round": 2,
+  "found_by": "Suzuki catalogue"
  }
 ]
