@@ -39,7 +39,10 @@ const year = new Date().getFullYear();
       </div>
     </nav>
   </div>
-  <div class="wrap ftr__base"><span class="label">© {year} The Peninsular Company, LLC</span></div>
+  <div class="wrap ftr__base">
+    <p class="ftr__note">Value estimates are informational only and are not professional appraisals. Many items have no market value, and a record is complete without one. Specialists, sale conversations, sold prices and Heirloom’s price estimates are offered in the United States only for now.</p>
+    <p class="label">© {year} <a href="https://thepeninsularcompany.com">The Peninsular Company, LLC</a>. All rights reserved.</p>
+  </div>
 </footer>
 
 <style>
@@ -51,6 +54,8 @@ const year = new Date().getFullYear();
   .ftr__cols h2 { font: 500 13px/1.4 var(--mono); letter-spacing: 0; margin-bottom: 12px; color: var(--accent-ink); }
   .ftr__cols a { display: block; padding: 5px 0; font-size: 15px; color: var(--ink); text-decoration: none; }
   .ftr__cols a:hover { color: var(--accent-ink); }
-  .ftr__base { padding-block: 0 32px; }
+  .ftr__base { padding-block: 0 32px; display: grid; gap: 10px; }
+  .ftr__note { margin: 0; max-width: 92ch; font-size: 13.5px; color: var(--ink-2); }
+  .ftr__base a { color: inherit; }
   @media (max-width: 760px) { .ftr__in { grid-template-columns: 1fr; } .ftr__cols { grid-template-columns: 1fr 1fr; } }
 </style>
