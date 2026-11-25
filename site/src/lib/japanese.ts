@@ -27,6 +27,8 @@ export type Group = { id: string; family: string; name: string; short: string; s
 export const JA = /[぀-ヿ㐀-鿿豈-﫿]/;
 const T = (jaTable as any).systems;
 
+const SPELLINGS = new Map<string, string[]>((T.marks.rows ?? []).map((r: any) => [String(r.id), (r.other_spellings ?? []).map(String)]));
+
 export const FAMILIES: Family[] = (T.marks.families ?? []).map((f: any) => ({ id: String(f.id), name: String(f.name) }));
 // The years each group's lane shows on the timeline.
 const SPAN: Record<string, [number, number]> = {
@@ -76,7 +78,8 @@ export function marks(): JaMark[] {
       return {
         id: r.id, slug, group: String(a.group ?? ''), family: String(a.group ? GROUPS.find((g) => g.id === a.group)?.family ?? '' : ''), kind: String(a.kind ?? r.kind),
         chars, charsNote: a.chars_note ?? null, variants, kana: a.kana ?? null, romaji: String(a.romaji ?? ''), romajiPlain: a.romaji_plain ?? null,
-        spellings: (r.keys ?? []).filter((k) => !JA.test(k)),
+        // Other spellings as the sources write them (the record's keys are lower-cased for search).
+        spellings: [...new Set([...(SPELLINGS.get(slug) ?? []), ...(r.keys ?? []).filter((k) => !JA.test(k))])],
         meaning: soften(String(a.meaning ?? '')), device: a.device ? soften(String(a.device)) : null,
         wares: Array.isArray(a.wares) ? a.wares.map(String) : [], technique: a.technique ? soften(String(a.technique)) : null, where: a.where_on_object ? soften(String(a.where_on_object)) : null,
         from: r.date_from ?? null, to: r.date_to ?? null, dateNote: r.date_note ? soften(r.date_note) : null,

@@ -95,3 +95,9 @@
   .ps__animals { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 .jx__datenote { font-size: 14px; margin: -4px 0 8px; }
+
+/* The explorer's bar: the search and the picker on the first row, the kinds of object below
+   (their names are long; side by side they squeezed the search to a sliver). */
+.jx .rx__bar { grid-template-columns: minmax(0, 1fr) auto; }
+.jx .rx__bar > .jx__groups, .jx .rx__bar > .rx__sum { grid-column: 1 / -1; justify-self: start; }
+@media (max-width: 760px) { .jx .rx__bar { grid-template-columns: 1fr; } }

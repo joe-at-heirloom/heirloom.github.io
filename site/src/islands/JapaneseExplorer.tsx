@@ -279,7 +279,12 @@ function Panel({ rows, groups, id, onOpen, onClose, order }: { rows: JaMark[]; g
             {r.charsNote && <span class="muted"> · {r.charsNote}</span>}
           </p>
           {r.variants.length > 0 && <p class="jx__variants">Also written <span class="han ja" lang="ja">{r.variants.join('、')}</span></p>}
-          {r.spellings.filter((s) => s !== r.romaji && s !== r.romajiPlain).length > 0 && <p class="jx__variants">Also spelled {r.spellings.filter((s) => s !== r.romaji && s !== r.romajiPlain).slice(0, 6).join(', ')}</p>}
+          {(() => {
+            // Spellings as written, skipping the name above and the search keys that only differ in case or long marks.
+            const seen = new Set([latin(r.romaji), latin(r.romajiPlain ?? '')]);
+            const more = r.spellings.filter((s) => { const k = latin(s); if (!k || seen.has(k)) return false; seen.add(k); return /[A-Z]/.test(s); });
+            return more.length > 0 && <p class="jx__variants">Also spelled {more.slice(0, 6).join(', ')}</p>;
+          })()}
           <p class="panel__summary">{r.meaning}</p>
           {yearsOf(r) && <p class="panel__years num">{yearsOf(r)}</p>}
           {!det && !failed && <p class="muted">Loading the evidence…</p>}
