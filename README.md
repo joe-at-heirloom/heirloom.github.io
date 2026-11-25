@@ -41,8 +41,9 @@ heirloomapp.io is a Cloudflare Worker (`heirloom-site`, `wrangler.jsonc`) servin
   `scripts/deploy/install-auto-deploy.sh`) checks every 15 minutes. When
   `main` or the app data the rebuilt pages use has changed, it builds from a
   kept checkout of `main` (`.claude/worktrees/_keep/site-deployer`) with the
-  app's tables synced from the app's `main`, runs the copy check, refuses a
-  build that lost more than a tenth of its pages, uploads it as a version
+  app's tables synced from the app's `main`, runs the copy check on the
+  built home page (`site/dist/index.html`), refuses a build that lost more
+  than a tenth of its pages, uploads it as a version
   that takes no traffic, smoke-tests that version at its own address, and
   only then sends heirloomapp.io to it. A step that fails leaves the live
   site as it was and puts up a notification; the log is

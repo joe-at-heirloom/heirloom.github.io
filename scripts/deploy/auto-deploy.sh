@@ -13,6 +13,16 @@
 set -uo pipefail
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin
 
+# launchd runs this file from inside the deploy checkout, which each run moves
+# to origin/main. Bash reads a script as it goes, so a run that pulls a new
+# version of this file would go on reading the new bytes. Run from a copy.
+if [ -z "${HEIRLOOM_DEPLOY_COPY:-}" ]; then
+  COPY="${TMPDIR:-/tmp}/heirloom-site-deploy.$$.sh"
+  cp "$0" "$COPY" && HEIRLOOM_DEPLOY_COPY="$COPY" exec /bin/bash "$COPY" "$@"
+  echo "could not copy $0; running it in place" >&2
+fi
+[ -n "${HEIRLOOM_DEPLOY_COPY:-}" ] && trap 'rm -f "$HEIRLOOM_DEPLOY_COPY"' EXIT
+
 SITE="${HEIRLOOM_SITE_REPO:-$HOME/Apps/Heirloom - Website}"
 APP="${HEIRLOOM_APP_REPO:-$HOME/Apps/Heirloom}"
 KEPT="$SITE/.claude/worktrees/_keep/site-deployer"
@@ -32,7 +42,7 @@ fail() { echo "FAILED: $1; the live site is unchanged"; notify "Not deployed: $1
 
 if [ -d "$LOCK" ] && [ -n "$(find "$LOCK" -maxdepth 0 -mmin +45 2>/dev/null)" ]; then rmdir "$LOCK"; fi
 if ! mkdir "$LOCK" 2>/dev/null; then echo "another run is deploying; skipped"; exit 0; fi
-trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+trap 'rmdir "$LOCK" 2>/dev/null; [ -n "${HEIRLOOM_DEPLOY_COPY:-}" ] && rm -f "$HEIRLOOM_DEPLOY_COPY"' EXIT
 
 if ! git -C "$SITE" fetch -q origin main || ! git -C "$APP" fetch -q origin main; then echo "could not fetch (offline?); skipped"; exit 0; fi
 if [ ! -d "$KEPT" ]; then git -C "$SITE" worktree add -q --detach "$KEPT" origin/main || fail "the deploy checkout could not be made"; fi
@@ -57,14 +67,16 @@ if [ ! -d site/node_modules ] || [ "$(cat site/node_modules/.lockhash 2>/dev/nul
   echo "$LOCKHASH" > site/node_modules/.lockhash
 fi
 
-# The copy check, as the old CI ran it (with the app's legal texts from its main).
-LEGAL_DIR="$APP/.claude/worktrees/_keep/reference-publisher/legal" node scripts/check-copy.mjs >/dev/null 2>"$LOGS/site-deploy.copy-check.txt" \
-  || { cat "$LOGS/site-deploy.copy-check.txt"; fail "the copy check failed on main ($COMMIT)"; }
-
 (cd site && npm run build >/dev/null 2>&1) || fail "the build failed ($COMMIT)"
 for f in index.html 404.html marks/index.html marks/london-date-letters.html sitemap.xml robots.txt _headers; do
   [ -s "site/dist/$f" ] || fail "the build has no $f"
 done
+
+# The copy check, as the old CI ran it (with the app's legal texts from its
+# main), on the home page the build will serve: the built site/dist/index.html,
+# whether it is the carried-over root page or the site's own.
+COPY_CHECK_INDEX="$KEPT/site/dist/index.html" LEGAL_DIR="$APP/.claude/worktrees/_keep/reference-publisher/legal" node scripts/check-copy.mjs >/dev/null 2>"$LOGS/site-deploy.copy-check.txt" \
+  || { cat "$LOGS/site-deploy.copy-check.txt"; fail "the copy check failed on main ($COMMIT)"; }
 grep -q "X-Robots-Tag: noindex" site/dist/_headers && fail "the build carries noindex (a review build)"
 # A build that lost more than a tenth of its pages since the last deploy is a mistake until a person says otherwise.
 PAGES=$(find site/dist -name '*.html' | wc -l | tr -d ' ')
