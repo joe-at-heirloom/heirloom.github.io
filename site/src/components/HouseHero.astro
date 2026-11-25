@@ -92,7 +92,7 @@ const priced = data.items.filter((i) => !i.unknown);
       const src = data.draft ? 'draft figure' : it.sales && it.sales.length ? `${it.sales[0].house}, ${it.sales[0].date.slice(0, 4)}${it.sales.length > 1 ? ` and ${it.sales.length - 1} more` : ''}` : '';
       const ev = it.unknown
         ? `<div class="hh__ev"><b>No price</b><span class="label">counted as unknown, never $0</span></div>`
-        : `<div class="hh__ev"><b>Similar ones sold for ${fmt(it.low!)}–${fmt(it.high!)}</b><span class="label">${src}</span></div>`;
+        : `<div class="hh__ev"><b>Similar ones sold for ${fmt(it.low!)}–${fmt(it.high!)}</b><span class="label">${esc(src)}</span></div>`;
       c.innerHTML = `${ph}<div class="hh__bd"><p class="label">${it.room} · ${it.at}</p><h2>${esc(it.name)}</h2><p class="hh__when">${esc(it.when)}</p><p class="hh__marks">${esc(it.marks)}</p>${ev}${it.link ? `<a class="hh__go" href="${it.link[1]}">${esc(it.link[0])} →</a>` : ''}</div>`;
       void c.offsetWidth;
       c.classList.add('hh__card--in');
@@ -195,7 +195,7 @@ const priced = data.items.filter((i) => !i.unknown);
       pinEls[id] = el;
       placePins();
       placeLooks();
-      if (found.length === data.items.length) toast(`Everything found: at least ${fmt(found.reduce((s, i) => s + (ITEMS[i].low || 0), 0))}, and one thing no sale can price.`);
+      if (found.length === data.items.length) { const u = found.filter((i) => ITEMS[i].unknown).length; toast(`Everything found: at least ${fmt(found.reduce((s, i) => s + (ITEMS[i].low || 0), 0))}, and ${u} with no price.`); }
     });
 
     stage.querySelectorAll<HTMLButtonElement>('[data-floor]').forEach((b) => (b.onclick = () => house.setFloor(b.dataset.floor)));

@@ -1,0 +1,415 @@
+{
+  "meta": {
+    "compiled": "2026-11-24",
+    "rates": "Conversions appear only in 'suggested'. GBP 1 = USD 1.34 (approx. mid-market, mid/late Nov 2026, Revolut/Wise converter snapshots via search; not a live quote). CAD 1 = USD 0.70 (mid-market reference observed 16 Nov 2026).",
+    "method": "Every price below was read on the lot page itself ('page') or in a search-result snippet that states the realized price ('snippet'). Sotheby's (login wall), Christie's, LiveAuctioneers, Hindman/Freeman's and Lyon & Turnbull (bot checkpoints) could not be read directly, so many relevant lots there are missing."
+  },
+  "objects": [
+    {
+      "id": "basket",
+      "sales": [
+        {
+          "title": "A George II silver swing-handled basket, John Le Sage, London 1742, arms of Edwin Lascelles (later Baron Harewood)",
+          "house": "Woolley & Wallis",
+          "date": "2025-10-21",
+          "lot": "357",
+          "price": 5080,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=520294",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "36 cm, about 65 oz, pierced, armorial. Earlier (1742) and much heavier than a typical 1750s basket; the notable arms push it up. Page reads 'Hammer £5080 / Inc. Buyers Premium'."
+        },
+        {
+          "title": "A George II silver swing handled cake basket, Edward Aldridge, London 1752",
+          "house": "Great Western Auctions (Glasgow)",
+          "date": "2022-12-09",
+          "lot": "2475",
+          "price": 1000,
+          "currency": "GBP",
+          "premium": "excluded",
+          "url": "https://greatwesternauctions.com/catalogue/lot/2aa48934ee2d196a5c4555cc4dc1956f/ac869eb6fd0ab6f5ae3773f46ee09093/winter-two-day-fine-art-antiques-auction-lot-2475/",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "33 cm wide, 1181 g (38 oz), shaped oval, pierced lattice body, engraved cartouche. Hammer price; the house adds 28.8-31.8% fees incl. VAT."
+        },
+        {
+          "title": "A late George II silver cake basket of oval form, maker's mark S.H B. (Samuel Herbert & Co.), London 1753",
+          "house": "Bellmans",
+          "date": "2021-04",
+          "lot": "1437",
+          "price": 500,
+          "currency": "GBP",
+          "premium": "unknown",
+          "url": "https://app.bellmans.co.uk/en/auction/april-interiors-2021-interiors-including-european-ceramics-and-works-of-art/1437-a-late-george-ii-silver-cake-basket-of-oval-form",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Same year as the demo basket. 32 cm, 777 g (25 oz), light gauge; bent rim and old solder repairs. Sale was 'April Interiors 2021'; the exact day was not shown. Estimate £350-450."
+        },
+        {
+          "title": "George II Silver Pierced Cake Basket, Edward Aldridge & John Stamper, London 1755",
+          "house": "Waddington's (Toronto)",
+          "date": "2019-06-13",
+          "lot": "51",
+          "price": 2400,
+          "currency": "CAD",
+          "premium": "included",
+          "url": "https://www.waddingtons.ca/auction/decorative-arts-and-design-jun-13-2019/gallery/lot/51/",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "14 in (35.5 cm), 42.8 oz, pierced sides, gadroon rim, scroll swing handle, engraved armorials. Realised CAD 2,400 including buyer's premium."
+        },
+        {
+          "title": "A swing-handled silver basket, S. Herbert & Co., London 1756 (catalogued as George III)",
+          "house": "Woolley & Wallis",
+          "date": "2019-01-23",
+          "lot": "926",
+          "price": 300,
+          "currency": "GBP",
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=369751",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "33 cm, about 22.5 oz, pierced lattice and slats, swing handle. A light Herbert basket and the low end of the market. The 1756 date mark is George II, although the page title says George III."
+        },
+        {
+          "title": "A George II oval silver cake basket, Samuel Herbert & Co., London 1751, arms for Fleetwood",
+          "house": "Woolley & Wallis",
+          "date": "2018-04-25",
+          "lot": "864",
+          "price": 2400,
+          "currency": "GBP",
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=349487",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "35.8 cm, about 53.7 oz, pierced quatrefoil and scroll, crested swing handle, armorial. Hammer + buyer's premium. Sold before 2019."
+        }
+      ],
+      "suggested": {
+        "low": 1700,
+        "high": 6800,
+        "why": "Mid-weight 33-38 cm London baskets of 1751-56 made about USD 1,700 (Waddington's CAD 2,400 incl. BP; Great Western £1,000 hammer plus fees). The heavy armorial Le Sage basket made £5,080 incl. BP (about USD 6,800). Converted at GBP 1 = USD 1.34 and CAD 1 = USD 0.70, Nov 2026. Light or damaged Herbert baskets sell lower (£300-500 hammer)."
+      },
+      "gaps": "I found several Sotheby's 1750s London baskets (John Jacobs 1753 in 2018 and 2019, William Cripps 1755 in 2020, Aldridge & Stamper 1753 in 2009) but could see only their estimates, because results sit behind a login. Lyon & Turnbull lot 148 (Samuel Herbert & Co. 1756, 16 Sep 2025) was blocked by a bot checkpoint, and Christie's pages could not be fetched. No US-house (Heritage, Doyle, Hindman) result was visible."
+    },
+    {
+      "id": "teapot",
+      "sales": [
+        {
+          "title": "A Staffordshire solid agate teapot and cover, circa 1750, moulded as a pecten shell, lion finial",
+          "house": "Bonhams (London, New Bond Street), A Life in Ceramics: The Peter and Mary White Collection",
+          "date": "2025-12-01",
+          "lot": "20",
+          "price": 4864,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/31538/lot/20/a-staffordshire-solid-agate-teapot-and-cover-circa-1750/",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "Shell-moulded with a lion finial, bird's-head spout, 13.3 cm. Essentially the demo form. The named-collection provenance may add a premium. Estimate £2,000-3,000."
+        },
+        {
+          "title": "A Staffordshire solid agate teapot and cover, circa 1750-60, lion finial",
+          "house": "Bonhams (London, Knightsbridge), Fine Glass and British Ceramics",
+          "date": "2020-09-29",
+          "lot": "108",
+          "price": 3812.5,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/26314/lot/108/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Compressed globular body on three paw feet with lion-mask terminals, lion finial, 10.5 cm. Globular rather than shell-moulded."
+        },
+        {
+          "title": "A Staffordshire agateware teapot and cover, c.1755, recumbent lion-dog finial",
+          "house": "Woolley & Wallis",
+          "date": "2021-06-16",
+          "lot": "166",
+          "price": 2200,
+          "currency": "GBP",
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=407194",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Squat globular body with blue and manganese striations, paw feet with lion masks, 19.5 cm across; large chip to the cover's flange. Hammer + BP. Estimate £600-1,000."
+        },
+        {
+          "title": "A Staffordshire solid agate teapot and cover, circa 1750-60, lion finial (Leo Kaplan Collection)",
+          "house": "Bonhams (London, Knightsbridge), Transatlantic Taste",
+          "date": "2018-07-11",
+          "lot": "43",
+          "price": 3125,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/25085/lot/43/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Globular on three paw feet with lion-mask terminals, lion finial, 11.5 cm. Sold before 2019; named collection."
+        },
+        {
+          "title": "A Staffordshire solid agate teapot and cover, circa 1750-60, faceted spout, lion finial (Leo Kaplan Collection)",
+          "house": "Bonhams (London, Knightsbridge), Transatlantic Taste",
+          "date": "2018-07-11",
+          "lot": "45",
+          "price": 2500,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/25085/lot/45/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Globular, faceted spout, lion finial, 11.2 cm. Sold before 2019."
+        },
+        {
+          "title": "A Staffordshire solid agate teapot and cover, circa 1750-60 (Leo Kaplan Collection)",
+          "house": "Bonhams (London, Knightsbridge), Transatlantic Taste",
+          "date": "2018-07-11",
+          "lot": "47",
+          "price": 4000,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/25085/lot/47/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Globular on paw feet with lion masks, faceted spout, 13 cm; the page does not describe the finial. Sold before 2019."
+        }
+      ],
+      "suggested": {
+        "low": 3000,
+        "high": 6500,
+        "why": "Solid-agate teapots of 1750-60 made £2,200 hammer (chipped, W&W 2021) up to £4,864 incl. BP (shell-moulded, lion finial, Bonhams 2025), about USD 2,950-6,500 at GBP 1 = USD 1.34, Nov 2026."
+      },
+      "gaps": "There was no US-house result with a visible price after 2019. A Skinner 'solid agate' teapot ($948) and a W&W 2005 small teapot (£580 hammer) turned up, but both are old or undated sales, so they are left out. Sotheby's Schorsch (2016) and Americana (2012) agate teapots showed estimates only."
+    },
+    {
+      "id": "imari",
+      "sales": [
+        {
+          "title": "A Japanese Imari dish, Edo period, 18th century (vase of peonies, chrysanthemum and prunus; bird panels)",
+          "house": "Woolley & Wallis",
+          "date": "2020-07-01",
+          "lot": "216",
+          "price": 120,
+          "currency": "GBP",
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=393837",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "25 cm, slightly larger than the demo dish. Underglaze blue, iron-red and gilt, with a flower vase rather than a garden scene. No mark noted. Hammer + BP; estimate £100-200."
+        },
+        {
+          "title": "A Japanese Imari decorated porcelain dish, probably Edo period, late 17th century, on a later bronze foot",
+          "house": "Bonhams (online, London Knightsbridge), Home & Interiors",
+          "date": "2025-04-15",
+          "lot": "106",
+          "price": 358.4,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://bonhams.com/auction/30582/lot/106/a-japanese-imari-decorated-porcelain-dish-the-dish-probably-edo-period-late-17th-century/",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "22.9 cm, a size match. Floral sprays and phoenixes, later bronze mount, a little earlier than the demo dish. The online sale ran 4-15 April 2025."
+        },
+        {
+          "title": "A Japanese Arita Imari porcelain dish, 18th century, pomegranate branch, underglaze blue four-character mark",
+          "house": "Toovey's",
+          "date": "2024-06-27",
+          "lot": "1004",
+          "price": 420,
+          "currency": "GBP",
+          "premium": "excluded",
+          "url": "https://tooveys.com/lots/574280/a-japanese-arita-imari-porcelain-dish",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "18th-century Arita Imari with a four-character mark (not called apocryphal on the page). At 32.5 cm it is much larger than the demo dish; hairline crack and small rim chip. Hammer only."
+        },
+        {
+          "title": "A Japanese Arita blue and white dish, 18th century, Three Friends of Winter, four-character Chenghua mark (ex Soame Jenyns)",
+          "house": "Woolley & Wallis",
+          "date": "2019-05-21",
+          "lot": "335",
+          "price": 280,
+          "currency": "GBP",
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=375465",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "Has an apocryphal Chinese reign mark, as the demo dish does, but it is blue and white rather than Imari palette, and smaller (18.3 cm). Hammer + BP; estimate £300-500."
+        },
+        {
+          "title": "A rare Arita circular dish, Edo period, circa 1720 (pavilions and peony; zodiac creatures on gilt-edged rim)",
+          "house": "Bonhams (London, New Bond Street), A Life in Ceramics: The Peter and Mary White Collection",
+          "date": "2025-12-01",
+          "lot": "84",
+          "price": 2560,
+          "currency": "GBP",
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/31538/lot/84/a-rare-arita-circular-dish-edo-period-1615-1868-circa-1720/",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "The size (21.8 cm), date and palette (underglaze blue, enamels, gold) all match, but the decoration is called rare and the named-collection provenance is strong. Treat it as an outlier above the ordinary market."
+        }
+      ],
+      "suggested": {
+        "low": 200,
+        "high": 600,
+        "why": "Ordinary 18th-century Arita/Imari dishes made £120-420 hammer and £358 incl. BP (about USD 200-600 incl. premium at GBP 1 = USD 1.34, Nov 2026). The rare-decoration Bonhams dish (£2,560) is excluded as an outlier."
+      },
+      "gaps": "I found no auction sale of an 18th-century Arita dish with a Jiajing mark specifically; every apocryphal-mark example was Chenghua. No 8-9 in Imari-palette Chinese-garden-scene dish showed a visible price. US results (Freeman's/Hindman, LiveAuctioneers) could not be read. Dealer 'sold' pages (Oriental Ceramics) give no prices and are not auctions."
+    },
+    {
+      "id": "bronze",
+      "sales": [
+        {
+          "title": "J.Q.A. Ward, Henry Ward Beecher, c.1888-89, painted plaster (sketch model), unsigned",
+          "house": "Skinner",
+          "date": "2009-05-15",
+          "lot": "unknown",
+          "price": 1778,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://archivedauctions.com/s/1712018/john-quincy-adams-ward-american",
+          "seen": "snippet",
+          "closeness": "same model",
+          "note": "Same model, but plaster, not a Gorham bronze. 14 3/4 in. Old (2009) sale. Known only from aggregators: an archivedauctions.com search snippet (medium, height, price) and the appraisily.com Ward results page (date, house, price). The Skinner page itself was not seen."
+        },
+        {
+          "title": "J.Q.A. Ward, Henry B. Hyde (founder of The Equitable), bronze portrait statuette",
+          "house": "Rago Arts and Auction Center",
+          "date": "2012-05-12",
+          "lot": "unknown",
+          "price": 500,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://appraisily.com/api/scraper-search/artists/john-quincy-adams-ward/llm.md",
+          "seen": "snippet",
+          "closeness": "loose",
+          "note": "A Ward portrait statuette of a contemporary New Yorker (about 20 in), the closest type I found. Taken from an aggregator listing, and one search summary called its layout ambiguous, so this is weak. Old sale."
+        },
+        {
+          "title": "J.Q.A. Ward, The Indian Hunter, bronze, 16 in",
+          "house": "Christie's (New York), American Art",
+          "date": "2022-05-17",
+          "lot": "36",
+          "price": 75600,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://veryimportantlot.com/en/lot/view/john-quincy-adams-ward-1830-1910-751325",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "Read on an aggregator page (veryimportantlot), not on christies.com. A different and far more sought-after model (Ward's best-known reduction), so this is not a price guide for a Beecher."
+        },
+        {
+          "title": "J.Q.A. Ward, The Indian Hunter, bronze, 16 in overall",
+          "house": "Scottsdale Art Auction",
+          "date": "2023-04",
+          "lot": "290",
+          "price": 58500,
+          "currency": "USD",
+          "premium": "included",
+          "url": "https://scottsdaleartauction.com/artwork/the-indian-hunter/",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "Different, premium model. 'SOLD FOR $58,500 Including Buyers Premium'. The page gives only 'April 2023', not the exact day."
+        },
+        {
+          "title": "J.Q.A. Ward, Indian Hunter, signed and dated 1860, cast by Henry-Bonnard Bronze Co. 1894",
+          "house": "Auction Gallery of the Palm Beaches",
+          "date": "2024-05-25",
+          "lot": "unknown",
+          "price": 35000,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://appraisily.com/api/scraper-search/artists/john-quincy-adams-ward/llm.md",
+          "seen": "snippet",
+          "closeness": "loose",
+          "note": "Different, premium model, known from an aggregator listing only."
+        }
+      ],
+      "suggested": {
+        "low": 0,
+        "high": 0,
+        "why": "Not enough evidence: I found no recorded sale of a Gorham-cast Beecher statuette, the only same-model sale is a 2009 plaster at $1,778, and Ward's Indian Hunter ($35k-76k) is not comparable, so no sold range should be shown."
+      },
+      "gaps": "There is no visible auction record of a Gorham (post-1910) bronze Beecher statuette; the Met's cast (17.90.4) is the only one I could document. A Freeman's lot (sale 1720, Peltz collection, 5 Dec 2021, lot 13, estimate $3,000-5,000, realized $3,780) came up in searches for this object, but its page is behind a bot checkpoint and no snippet named the artist or subject, so it is NOT recorded. It is worth checking by hand. Sotheby's Wolf Family sales (Apr 2023) offered a Gorham-cast Ward George Washington, 15 in (lot 847, estimate $12,000-18,000) and a Henry Baldwin Hyde, 20.5 in (lot 1098, estimate $3,000-5,000), but results need a login."
+    },
+    {
+      "id": "print",
+      "sales": [
+        {
+          "title": "Currier & Ives, Winter Morning in the Country, 1873, small folio hand-coloured lithograph",
+          "house": "Pook & Pook",
+          "date": "2012-04-20",
+          "lot": "930",
+          "price": 350,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://live.pookandpook.com/online-auctions/pook/currier-ives-small-folio-lithograph-titled-wint-5143046",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "Same title, 8 1/2 x 12 1/4 in, two small foxing spots and light toning, framed. The page shows $350 'excludes BP'; a search snippet gave $414.75 incl. BP. Old (2012) sale; estimate $200-300."
+        },
+        {
+          "title": "[Winter scenes] Currier & Ives: Winter Pastime (1855, G.7281), Winter Morning in the Country (1873, G.7280), Trotters on the Snow (G.6648), 3 prints",
+          "house": "Hindman (Chicago), Fine Printed Books & Manuscripts Including Americana (sale 1097)",
+          "date": "2022-11-08",
+          "lot": "586",
+          "price": 1500,
+          "currency": "USD",
+          "premium": "included",
+          "url": "https://freemansauction.com/auctions/1097-Fine-Printed-Books-Manuscripts-Including-Americana/lot/586",
+          "seen": "snippet",
+          "closeness": "same model",
+          "note": "Includes this exact title, but the $1,500 covers three prints (one described elsewhere as medium format, two small), about $500 a print on average. Sale ran 8-9 Nov 2022; estimate $400-600. The page is behind a bot checkpoint, so the price comes from search snippets only."
+        },
+        {
+          "title": "Currier & Ives, 4 small-format lithographs incl. American Homestead Winter (1868, G.0185)",
+          "house": "Hindman (Chicago), Fine Books & Manuscripts (sale 873)",
+          "date": "2021-05-12",
+          "lot": "unknown",
+          "price": 625,
+          "currency": "USD",
+          "premium": "included",
+          "url": "https://issuu.com/lesliehindman/docs/sale_873_books_issuu/s/12065120",
+          "seen": "snippet",
+          "closeness": "loose",
+          "note": "A group of four small folios, one of them a winter scene, so about $156 a print. Estimate $600-800. Lot number not confirmed (possibly lot 278). Price from a search snippet; the URL is the sale catalogue."
+        },
+        {
+          "title": "Currier & Ives, Woodlands in Winter, small folio colour lithograph",
+          "house": "Pook & Pook",
+          "date": "2013-09-24",
+          "lot": "840",
+          "price": 175,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://live.pookandpook.com/online-auctions/pook/currier-and-ives-color-lithograph-titled-woodland-5119830",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Small folio winter scene, 8 x 12 1/4 in, minor light staining and foxing. Old (2013) sale; estimate $400-700."
+        },
+        {
+          "title": "Currier & Ives, Central Park in Winter, colour lithograph",
+          "house": "Pook & Pook",
+          "date": "2014-09-10",
+          "lot": "605",
+          "price": 100,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://live.pookandpook.com/online-auctions/pook/currier-ives-color-lithograph-central-park-in-51510",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "Small folio size (8 1/2 x 12 1/2 in), winter scene. Old (2014) sale; estimate $300-500."
+        }
+      ],
+      "suggested": {
+        "low": 150,
+        "high": 500,
+        "why": "Single small-folio winter scenes made $100-350 hammer at Pook & Pook. Group lots that include this title worked out to about $150-500 a print incl. BP at Hindman in 2021-22."
+      },
+      "gaps": "I found no single-lot sale of 'Winter Morning in the Country' after 2019 with a visible price; recent appearances are in group lots. The 1stDibs ($5,700) and Old Print Shop listings are dealer asking prices, not sales. Large-folio Durrie winter scenes ($2,800-5,000 at Freeman's/Hindman) are not comparable and are left out."
+    }
+  ]
+}

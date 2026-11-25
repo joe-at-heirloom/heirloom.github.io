@@ -1,50 +1,591 @@
 {
   "_about": "The home page's house: the items in it, what their marks say, and sales of similar items (each with its source). low/high are filled from the sales Joe has checked; until then draft is true and the page says so.",
   "draft": true,
-  "rooms": ["Living room", "Dining room", "Bedroom", "Study", "Attic"],
+  "rooms": [
+    "Living room",
+    "Dining room",
+    "Bedroom",
+    "Study",
+    "Attic"
+  ],
   "items": [
-    { "id": "basket", "name": "Silver cake basket", "when": "London, 1753", "room": "Dining room", "at": "on the sideboard",
-      "photo": "/home/CD-06-front.jpg", "mark": "/home/CD-06-hallmarks.jpg",
+    {
+      "id": "basket",
+      "name": "Silver cake basket",
+      "when": "London, 1753",
+      "room": "Dining room",
+      "at": "on the sideboard",
+      "photo": "/home/CD-06-front.jpg",
+      "mark": "/home/CD-06-hallmarks.jpg",
       "marks": "A lion for sterling, the crowned leopard’s head for London, the maker’s mark, and a long s: the London letter for 1753–54.",
-      "low": 3200, "high": 6500, "sales": [], "link": ["London date letters", "/marks/london-date-letters#london-1753-s"],
-      "credit": "Cleveland Museum of Art, open access" },
-    { "id": "teapot", "name": "Agateware teapot", "when": "Staffordshire, 1750–65", "room": "Dining room", "at": "beside it on the sideboard",
+      "low": 1340,
+      "high": 6807,
+      "sales": [
+        {
+          "house": "Woolley & Wallis",
+          "date": "2025-10-21",
+          "lot": "357",
+          "price": 5080,
+          "currency": "GBP",
+          "usd": 6807,
+          "premium": "included",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=520294"
+        },
+        {
+          "house": "Great Western Auctions",
+          "date": "2022-12-09",
+          "lot": "2475",
+          "price": 1000,
+          "currency": "GBP",
+          "usd": 1340,
+          "premium": "excluded",
+          "url": "https://greatwesternauctions.com/catalogue/lot/2aa48934ee2d196a5c4555cc4dc1956f/ac869eb6fd0ab6f5ae3773f46ee09093/winter-two-day-fine-art-antiques-auction-lot-2475/"
+        },
+        {
+          "house": "Waddington's",
+          "date": "2019-06-13",
+          "lot": "51",
+          "price": 2400,
+          "currency": "CAD",
+          "usd": 1680,
+          "premium": "included",
+          "url": "https://www.waddingtons.ca/auction/decorative-arts-and-design-jun-13-2019/gallery/lot/51/"
+        },
+        {
+          "house": "Woolley & Wallis",
+          "date": "2018-04-25",
+          "lot": "864",
+          "price": 2400,
+          "currency": "GBP",
+          "usd": 3216,
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=349487"
+        }
+      ],
+      "link": [
+        "London date letters",
+        "/marks/london-date-letters#london-1753-s"
+      ],
+      "credit": "Cleveland Museum of Art, open access"
+    },
+    {
+      "id": "teapot",
+      "name": "Agateware teapot",
+      "when": "Staffordshire, 1750–65",
+      "room": "Dining room",
+      "at": "beside it on the sideboard",
       "photo": "/home/CD-07-front.jpg",
       "marks": "No mark. Staffordshire potters rarely marked these; the marbled clay, the molding and the lion on the lid date it.",
-      "low": 1800, "high": 4500, "sales": [], "credit": "The Metropolitan Museum of Art, open access" },
-    { "id": "imari", "name": "Arita dish", "when": "Japan, 1700s", "room": "Dining room", "at": "in the china cabinet",
-      "photo": "/home/CD-08-front.jpg", "mark": "/home/CD-08-mark.jpg",
+      "low": 2948,
+      "high": 6518,
+      "sales": [
+        {
+          "house": "Bonhams",
+          "date": "2025-12-01",
+          "lot": "20",
+          "price": 4864,
+          "currency": "GBP",
+          "usd": 6518,
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/31538/lot/20/a-staffordshire-solid-agate-teapot-and-cover-circa-1750/"
+        },
+        {
+          "house": "Woolley & Wallis",
+          "date": "2021-06-16",
+          "lot": "166",
+          "price": 2200,
+          "currency": "GBP",
+          "usd": 2948,
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=407194"
+        },
+        {
+          "house": "Bonhams",
+          "date": "2020-09-29",
+          "lot": "108",
+          "price": 3812.5,
+          "currency": "GBP",
+          "usd": 5109,
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/26314/lot/108/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/"
+        },
+        {
+          "house": "Bonhams",
+          "date": "2018-07-11",
+          "lot": "43",
+          "price": 3125,
+          "currency": "GBP",
+          "usd": 4188,
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/25085/lot/43/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/"
+        },
+        {
+          "house": "Bonhams",
+          "date": "2018-07-11",
+          "lot": "45",
+          "price": 2500,
+          "currency": "GBP",
+          "usd": 3350,
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/25085/lot/45/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/"
+        },
+        {
+          "house": "Bonhams",
+          "date": "2018-07-11",
+          "lot": "47",
+          "price": 4000,
+          "currency": "GBP",
+          "usd": 5360,
+          "premium": "included",
+          "url": "https://www.bonhams.com/auction/25085/lot/47/a-staffordshire-solid-agate-teapot-and-cover-circa-1750-60/"
+        }
+      ],
+      "credit": "The Metropolitan Museum of Art, open access"
+    },
+    {
+      "id": "imari",
+      "name": "Arita dish",
+      "when": "Japan, 1700s",
+      "room": "Dining room",
+      "at": "in the china cabinet",
+      "photo": "/home/CD-08-front.jpg",
+      "mark": "/home/CD-08-mark.jpg",
       "marks": "The base reads Da Ming Jiajing nian zhi, the mark of a Chinese emperor who reigned 1522–66. The dish is Japanese and later: the mark was borrowed, as was common.",
-      "low": 350, "high": 900, "sales": [], "link": ["Jiajing reign mark", "/marks/jiajing-mark"], "credit": "Cleveland Museum of Art, open access" },
-    { "id": "rookwood", "name": "Rookwood vase", "when": "Cincinnati, 1890", "room": "Living room", "at": "on the mantelpiece",
-      "photo": "/home/CD-01-front.jpg", "mark": "/home/CD-01-base.jpg",
+      "low": 161,
+      "high": 563,
+      "sales": [
+        {
+          "house": "Bonhams",
+          "date": "2025-04-15",
+          "lot": "106",
+          "price": 358.4,
+          "currency": "GBP",
+          "usd": 480,
+          "premium": "included",
+          "url": "https://bonhams.com/auction/30582/lot/106/a-japanese-imari-decorated-porcelain-dish-the-dish-probably-edo-period-late-17th-century/"
+        },
+        {
+          "house": "Toovey's",
+          "date": "2024-06-27",
+          "lot": "1004",
+          "price": 420,
+          "currency": "GBP",
+          "usd": 563,
+          "premium": "excluded",
+          "url": "https://tooveys.com/lots/574280/a-japanese-arita-imari-porcelain-dish"
+        },
+        {
+          "house": "Woolley & Wallis",
+          "date": "2020-07-01",
+          "lot": "216",
+          "price": 120,
+          "currency": "GBP",
+          "usd": 161,
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=393837"
+        },
+        {
+          "house": "Woolley & Wallis",
+          "date": "2019-05-21",
+          "lot": "335",
+          "price": 280,
+          "currency": "GBP",
+          "usd": 375,
+          "premium": "excluded",
+          "url": "https://www.woolleyandwallis.co.uk/print-lot/?id=375465"
+        }
+      ],
+      "link": [
+        "Jiajing reign mark",
+        "/marks/jiajing-mark"
+      ],
+      "credit": "Cleveland Museum of Art, open access"
+    },
+    {
+      "id": "rookwood",
+      "name": "Rookwood vase",
+      "when": "Cincinnati, 1890",
+      "room": "Living room",
+      "at": "on the mantelpiece",
+      "photo": "/home/CD-01-front.jpg",
+      "mark": "/home/CD-01-base.jpg",
       "marks": "The RP monogram with four flames: 1890. The incised initials are the decorator’s.",
-      "low": 400, "high": 1200, "sales": [], "link": ["Rookwood marks", "/marks/rookwood-pottery-marks"], "credit": "Cleveland Museum of Art, open access" },
-    { "id": "tiffany", "name": "Tiffany Favrile vase", "when": "New York, 1895–1900", "room": "Living room", "at": "on the coffee table",
-      "photo": "/home/CD-09-front.jpg", "mark": "/home/CD-09-base.jpg",
+      "low": 325,
+      "high": 1050,
+      "sales": [
+        {
+          "house": "Everything But The House",
+          "date": "2026-04-05",
+          "lot": "Item ITMGS74041",
+          "price": 525,
+          "currency": "USD",
+          "usd": 525,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14429285-artus-van-briggle-for-rookwood-pottery-standard-glaze-vase-1890"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2022-09-04",
+          "lot": "Item ITMGF34047",
+          "price": 400,
+          "currency": "USD",
+          "usd": 400,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/13108593-sallie-toohey-for-rookwood-pottery-standard-glaze-berry-branch-vase-1895"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2021-06-19",
+          "lot": "Item ITMG925283",
+          "price": 325,
+          "currency": "USD",
+          "usd": 325,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/12595383-howard-altman-rookwood-pottery-standard-glaze-vase-1900"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2019-07-21",
+          "lot": "Item ITMG207282",
+          "price": 1050,
+          "currency": "USD",
+          "usd": 1050,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/10718443-emma-foertmeyer-rookwood-vase-in-standard-glaze-1890"
+        }
+      ],
+      "link": [
+        "Rookwood marks",
+        "/marks/rookwood-pottery-marks"
+      ],
+      "credit": "Cleveland Museum of Art, open access"
+    },
+    {
+      "id": "tiffany",
+      "name": "Tiffany Favrile vase",
+      "when": "New York, 1895–1900",
+      "room": "Living room",
+      "at": "on the coffee table",
+      "photo": "/home/CD-09-front.jpg",
+      "mark": "/home/CD-09-base.jpg",
       "marks": "Engraved L.C.T. with a number under the foot. The pitted “Cypriote” surface imitates excavated ancient glass.",
-      "low": 6000, "high": 15000, "sales": [], "credit": "Cleveland Museum of Art, open access" },
-    { "id": "bronze", "name": "Bronze of Henry Ward Beecher", "when": "Gorham cast, after 1910", "room": "Living room", "at": "on the bookcase",
+      "low": 5016,
+      "high": 7560,
+      "sales": [
+        {
+          "house": "Rago",
+          "date": "2025-04-10",
+          "lot": "129",
+          "price": 5016,
+          "currency": "USD",
+          "usd": 5016,
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2025/04/art-nouveau-art-deco-glass-lighting/129"
+        },
+        {
+          "house": "Rago",
+          "date": "2024-10-31",
+          "lot": "130",
+          "price": 7560,
+          "currency": "USD",
+          "usd": 7560,
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2024/10/art-nouveau-art-deco-glass-lighting/130"
+        },
+        {
+          "house": "Rago",
+          "date": "2024-03-21",
+          "lot": "121",
+          "price": 5040,
+          "currency": "USD",
+          "usd": 5040,
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2024/03/art-nouveau-art-deco-glass-lighting/121"
+        },
+        {
+          "house": "Rago",
+          "date": "2022-09-22",
+          "lot": "296",
+          "price": 5250,
+          "currency": "USD",
+          "usd": 5250,
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2022/09/early-20th-century-design/296"
+        },
+        {
+          "house": "Rago",
+          "date": "2022-09-22",
+          "lot": "274",
+          "price": 7500,
+          "currency": "USD",
+          "usd": 7500,
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2022/09/early-20th-century-design/274"
+        }
+      ],
+      "credit": "Cleveland Museum of Art, open access"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze of Henry Ward Beecher",
+      "when": "Gorham cast, after 1910",
+      "room": "Living room",
+      "at": "on the bookcase",
       "photo": "/home/CD-10-front.jpg",
-      "marks": "Signed J.Q.A. Ward, with the Gorham foundry mark on the base.",
-      "low": 1500, "high": 4000, "sales": [], "link": ["Gorham marks", "/marks/gorham-silver-marks"], "credit": "The Metropolitan Museum of Art, open access" },
-    { "id": "print", "name": "Currier & Ives, Winter Morning in the Country", "when": "1873", "room": "Living room", "at": "on the wall by the fireplace",
+      "marks": "Signed J.Q.A. Ward, with the Gorham foundry mark on the base. No recorded sale of this cast turned up, so Heirloom counts it as unknown until one does.",
+      "sales": [],
+      "link": [
+        "Gorham marks",
+        "/marks/gorham-silver-marks"
+      ],
+      "credit": "The Metropolitan Museum of Art, open access",
+      "unknown": true
+    },
+    {
+      "id": "print",
+      "name": "Currier & Ives, Winter Morning in the Country",
+      "when": "1873",
+      "room": "Living room",
+      "at": "on the wall by the fireplace",
       "photo": "/home/PP-02-front.jpg",
       "marks": "Hand-colored lithograph. The title and the publisher are printed under the image.",
-      "low": 250, "high": 600, "sales": [], "credit": "Library of Congress" },
-    { "id": "singer", "name": "Singer treadle", "when": "Model 27, 1910", "room": "Study", "at": "by the study window",
-      "photo": "/home/EV-03-front.jpg", "mark": "/home/EV-03-serial.jpg",
+      "low": 100,
+      "high": 350,
+      "sales": [
+        {
+          "house": "Pook & Pook",
+          "date": "2014-09-10",
+          "lot": "605",
+          "price": 100,
+          "currency": "USD",
+          "usd": 100,
+          "premium": "excluded",
+          "url": "https://live.pookandpook.com/online-auctions/pook/currier-ives-color-lithograph-central-park-in-51510"
+        },
+        {
+          "house": "Pook & Pook",
+          "date": "2013-09-24",
+          "lot": "840",
+          "price": 175,
+          "currency": "USD",
+          "usd": 175,
+          "premium": "excluded",
+          "url": "https://live.pookandpook.com/online-auctions/pook/currier-and-ives-color-lithograph-titled-woodland-5119830"
+        },
+        {
+          "house": "Pook & Pook",
+          "date": "2012-04-20",
+          "lot": "930",
+          "price": 350,
+          "currency": "USD",
+          "usd": 350,
+          "premium": "excluded",
+          "url": "https://live.pookandpook.com/online-auctions/pook/currier-ives-small-folio-lithograph-titled-wint-5143046"
+        }
+      ],
+      "credit": "Library of Congress"
+    },
+    {
+      "id": "singer",
+      "name": "Singer treadle",
+      "when": "Model 27, 1910",
+      "room": "Study",
+      "at": "by the study window",
+      "photo": "/home/EV-03-front.jpg",
+      "mark": "/home/EV-03-serial.jpg",
       "marks": "Serial G 7572 is in the block Singer gave the Model 27 on January 1, 1910. Singers were made by the million, and most sell for less than a new machine.",
-      "low": 50, "high": 150, "sales": [], "link": ["Singer serial numbers", "/marks/singer-serial-numbers"], "credit": "Cephas, Wikimedia Commons" },
-    { "id": "leica", "name": "Leica III", "when": "1934", "room": "Study", "at": "on the desk",
-      "photo": "/home/EV-04-front.jpg", "mark": "/home/EV-04-serial.jpg",
+      "low": 26,
+      "high": 120,
+      "sales": [
+        {
+          "house": "Everything But The House",
+          "date": "2026-04-10",
+          "lot": "Item ITMGT33159",
+          "price": 75,
+          "currency": "USD",
+          "usd": 75,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14443512-singer-sewing-machine-model-27-with-treadle-and-oak-cabinet-1903"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2026-01-12",
+          "lot": "Item ITMGS48728",
+          "price": 40,
+          "currency": "USD",
+          "usd": 40,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14352998-singer-model-27-sewing-machine-with-oak-five-drawer-treadle-table-c-1909"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2025-12-21",
+          "lot": "Item ITMGR76213",
+          "price": 26,
+          "currency": "USD",
+          "usd": 26,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14334481-singer-model-27-treadle-sewing-machine-with-oak-treadle-table-c-1911"
+        },
+        {
+          "house": "Mesilla Valley Estate Sales",
+          "date": "2025-12-17",
+          "lot": "L231",
+          "price": 120,
+          "currency": "USD",
+          "usd": 120,
+          "premium": "excluded",
+          "url": "https://www.nmestateauctions.com/Event/LotDetails/25399066/Singer-Model-271-Treadle-Machine-in-Cabinet-No-5-1900"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2023-05-07",
+          "lot": "Item ITMGH52078",
+          "price": 75,
+          "currency": "USD",
+          "usd": 75,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/13412194-singer-model-27-4-treadle-sewing-machine-in-oak-and-iron-cabinet-circa-1906"
+        }
+      ],
+      "link": [
+        "Singer serial numbers",
+        "/marks/singer-serial-numbers"
+      ],
+      "credit": "Cephas, Wikimedia Commons"
+    },
+    {
+      "id": "leica",
+      "name": "Leica III",
+      "when": "1934",
+      "room": "Study",
+      "at": "on the desk",
+      "photo": "/home/EV-04-front.jpg",
+      "mark": "/home/EV-04-serial.jpg",
       "marks": "No. 140890 on the top plate dates the body to 1934.",
-      "low": 300, "high": 650, "sales": [], "link": ["Leica serial numbers", "/marks/leica-serial-numbers"], "credit": "sébastien amiet, Wikimedia Commons" },
-    { "id": "watch", "name": "Waltham pocket watch", "when": "About 1903", "room": "Bedroom", "at": "in the jewelry box on the dresser",
-      "photo": "/home/EV-05-movement.jpg", "mark": "/home/EV-05-serial.jpg",
+      "low": 507,
+      "high": 1602,
+      "sales": [
+        {
+          "house": "Leitz Photographica Auction 44",
+          "date": "2024-06-08",
+          "lot": "33",
+          "price": 1440,
+          "currency": "EUR",
+          "usd": 1602,
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome-James-A.-Sinclair-London/A00815"
+        },
+        {
+          "house": "Leitz Photographica Auction 44",
+          "date": "2024-06-08",
+          "lot": "32",
+          "price": 1020,
+          "currency": "EUR",
+          "usd": 1135,
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome/A00712"
+        },
+        {
+          "house": "Leitz Photographica Auction 40",
+          "date": "2022-06-11",
+          "lot": "30",
+          "price": 456,
+          "currency": "EUR",
+          "usd": 507,
+          "premium": "included",
+          "url": "https://leitz-auction.com/en/Leica-III-Mod.-F-chrome-No-dot/AI-40-40256"
+        },
+        {
+          "house": "Leitz Photographica Auction 39",
+          "date": "2021-11-20",
+          "lot": "23",
+          "price": 840,
+          "currency": "EUR",
+          "usd": 935,
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome-Elmar-3-5-5/AI-39-39616"
+        },
+        {
+          "house": "WestLicht",
+          "date": "2018-11-24",
+          "lot": "32",
+          "price": 456,
+          "currency": "EUR",
+          "usd": 507,
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome/AI-33-36645"
+        }
+      ],
+      "link": [
+        "Leica serial numbers",
+        "/marks/leica-serial-numbers"
+      ],
+      "credit": "sébastien amiet, Wikimedia Commons"
+    },
+    {
+      "id": "watch",
+      "name": "Waltham pocket watch",
+      "when": "About 1903",
+      "room": "Bedroom",
+      "at": "in the jewelry box on the dresser",
+      "photo": "/home/EV-05-movement.jpg",
+      "mark": "/home/EV-05-serial.jpg",
       "marks": "Serial 13477185 on the movement: about 1903, 15 jewels. The case metal decides most of the price.",
-      "low": 80, "high": 250, "sales": [], "link": ["Pocket watch serial numbers", "/marks/pocket-watch-serial-numbers"], "credit": "Outwatcher, Wikimedia Commons" },
-    { "id": "letters", "name": "Letters home", "when": "A bundle, tied with ribbon", "room": "Attic", "at": "in the trunk",
-      "marks": "No sale can price these. Heirloom counts them as unknown, never as zero.", "unknown": true }
-  ]
+      "low": 76,
+      "high": 241,
+      "sales": [
+        {
+          "house": "Everything But The House",
+          "date": "2021-04-19",
+          "lot": "Item ITMG930985",
+          "price": 76,
+          "currency": "USD",
+          "usd": 76,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/12467830-1906-waltham-gold-filled-open-face-pocket-watch"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2020-10-31",
+          "lot": "Item ITMG571176",
+          "price": 160,
+          "currency": "USD",
+          "usd": 160,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/11944213-1903-waltham-nickel-open-face-pocket-watch-with-braided-leather-fob"
+        },
+        {
+          "house": "Everything But The House",
+          "date": "2020-10-26",
+          "lot": "Item ITMG571311",
+          "price": 241,
+          "currency": "USD",
+          "usd": 241,
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/11922385-1908-waltham-gold-filled-pocket-watch-and-fob"
+        }
+      ],
+      "link": [
+        "Pocket watch serial numbers",
+        "/marks/pocket-watch-serial-numbers"
+      ],
+      "credit": "Outwatcher, Wikimedia Commons"
+    },
+    {
+      "id": "letters",
+      "name": "Letters home",
+      "when": "A bundle, tied with ribbon",
+      "room": "Attic",
+      "at": "in the trunk",
+      "marks": "No sale can price these. Heirloom counts them as unknown, never as zero.",
+      "unknown": true
+    }
+  ],
+  "fx": {
+    "GBP": 1.34,
+    "CAD": 0.7,
+    "EUR": 1.1127,
+    "note": "EUR: ECB reference rate, 11 Nov 2026 (Banca d’Italia). GBP and CAD: the researcher’s Nov 2026 snapshot."
+  }
 }

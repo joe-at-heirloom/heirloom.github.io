@@ -30,7 +30,7 @@ const jsonld = [{
   <section class="wrap hs" aria-labelledby="in-house">
     <div class="hs__head">
       <h2 id="in-house">In this house</h2>
-      <p class="muted">Eleven items an ordinary house might hold. Some are worth more than people expect, some much less, and one has no price at all. The figures are sales of similar items, not appraisals of yours.</p>
+      <p class="muted">Eleven items an ordinary house might hold. Some are worth more than people expect, some much less, and two have no price: one because no sale can price it, one because no sale of it has been recorded. The figures are sales of similar items, not appraisals of yours.</p>
     </div>
     <div class="rooms">
       {data.rooms.map((room) => (
@@ -42,7 +42,7 @@ const jsonld = [{
                 <p class="room__name"><strong>{i.name}</strong> <span class="muted">{i.when}</span></p>
                 <p class="room__marks">{i.marks}</p>
                 <p class="room__v">
-                  {i.unknown ? <span>No price: counted as unknown, never $0</span> : <span class="num">Similar ones sold for {fmt(i.low!)}–{fmt(i.high!)}</span>}
+                  {i.unknown ? <span>No price: counted as unknown, never $0</span> : <span class="num">Similar ones sold for {fmt(i.low!)}–{fmt(i.high!)} ({i.sales.length} {i.sales.length === 1 ? 'sale' : 'sales'})</span>}
                   <a href="#house" data-look={i.id}>Look at it</a>
                   {i.link && <a href={i.link[1]}>{i.link[0]}</a>}
                 </p>

@@ -1,0 +1,411 @@
+{
+  "objects": [
+    {
+      "id": "rookwood",
+      "sales": [
+        {
+          "title": "Emma Foertmeyer for Rookwood, Standard Glaze vase, 1890 (yellow florals, shape 415C)",
+          "house": "EBTH (Everything But The House) online auction, Cincinnati Premier Sale",
+          "date": "2019-07-21",
+          "lot": "Item ITMG207282",
+          "price": 1050,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/10718443-emma-foertmeyer-rookwood-vase-in-standard-glaze-1890",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "6.5 in tall, four-flame 1890 mark, staff decorator, floral. Crazing; as-fired stress cracks and kiln-shelf chips to base. 45 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Artus Van Briggle for Rookwood, Standard Glaze vase, 1890 (shape 542)",
+          "house": "EBTH (Everything But The House) online auction",
+          "date": "2026-04-05",
+          "lot": "Item ITMGS74041",
+          "price": 525,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14429285-artus-van-briggle-for-rookwood-pottery-standard-glaze-vase-1890",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "9 in tall, 1890. Crazing, scratches, shelf wear. Van Briggle is a well-known name, which can lift price. 42 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Sallie Toohey for Rookwood, Standard Glaze berry branch vase, 1895",
+          "house": "EBTH (Everything But The House) online auction, September Remarkable Finds",
+          "date": "2022-09-04",
+          "lot": "Item ITMGF34047",
+          "price": 400,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/13108593-sallie-toohey-for-rookwood-pottery-standard-glaze-berry-branch-vase-1895",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "6 in tall. Glaze pits and irregularities, crazing, light scratches. 38 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Howard Altman for Rookwood, Standard Glaze vase, 1900",
+          "house": "EBTH (Everything But The House) online auction, College Hill, Ohio sale",
+          "date": "2021-06-19",
+          "lot": "Item ITMG925283",
+          "price": 325,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/12595383-howard-altman-rookwood-pottery-standard-glaze-vase-1900",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "7 in tall, 1900 (end of the date window). Minor scratches, crazing. 15 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Lenore Asbury for Rookwood, Standard Glaze vase, 1899 (shape 556 C)",
+          "house": "Freeman's | Hindman (Cincinnati), Early 20th Century Design, sale 1033",
+          "date": "2022-05-24",
+          "lot": "77",
+          "price": 563,
+          "currency": "USD",
+          "premium": "included",
+          "url": "https://freemansauction.com/auction/1033-early-20th-century-design/lot/77",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "11 1/4 in tall, so larger than the 6-9 in target. Estimate $300-500. Page says result is inclusive of buyer's premium."
+        },
+        {
+          "title": "Robert Bruce Horsfall for Rookwood, Standard Glaze vase with lions, 1894",
+          "house": "Rago, Object & Home",
+          "date": "2021-11-18",
+          "lot": "210",
+          "price": 1040,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2021/11/object-home/210",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "8 in tall, but lions rather than blossoms; animal subjects usually bring more. Estimate $600-900. Rago lot page shows 'result' with no premium wording; the figure matches hammer plus Rago's buyer's premium, so it is probably premium-inclusive."
+        }
+      ],
+      "suggested": {
+        "low": 325,
+        "high": 1050,
+        "why": "Four EBTH sales of 6-9 in staff-decorated Standard Glaze vases dated 1890-1900 ran $325-$1,050, with most between $325 and $525; the $1,050 is an 1890 floral vase almost identical in size and date."
+      },
+      "gaps": "No Humler & Nolan or Toomey prices: their results sit on LiveAuctioneers behind a login. A DuMouchelle's 1898 Caroline Steinle 7.5 in vase (Feb 2020) exists but its price is locked on lot-art. Also seen: EBTH 2020-08-04 Sarah Toohey 1894 7.5 in brown Standard Glaze vase with a 1 in hairline, $305 (item ITMG598534), not used because of the crack."
+    },
+    {
+      "id": "tiffany",
+      "sales": [
+        {
+          "title": "Tiffany Studios, Early Cypriote Lava vase, c. 1895-96, etched 'L.C.T D1947 Louis C. Tiffany', original paper label",
+          "house": "Rago, Art Nouveau | Art Deco Glass & Lighting",
+          "date": "2025-04-10",
+          "lot": "129",
+          "price": 5016,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2025/04/art-nouveau-art-deco-glass-lighting/129",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "7 1/2 in tall, L.C.T. mark with number, same early period. Called 'Cypriote Lava'. Estimate $2,000-3,500. Rago lot page shows 'result' with no premium wording; the figure matches hammer plus Rago's buyer's premium, so it is probably premium-inclusive."
+        },
+        {
+          "title": "Tiffany Studios, Cypriote vase, c. 1902, etched 'L.C.T. R1706'",
+          "house": "Rago, Early 20th Century Design",
+          "date": "2022-09-22",
+          "lot": "296",
+          "price": 5250,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2022/09/early-20th-century-design/296",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "3 1/2 in tall, so smaller; L.C.T. mark, near the same date. Jory Collection. Estimate $2,000-3,000. Rago lot page shows 'result' with no premium wording; the figure matches hammer plus Rago's buyer's premium, so it is probably premium-inclusive."
+        },
+        {
+          "title": "Tiffany Studios, Cypriote vase, c. 1915, etched '8369 J L.C.Tiffany-Favrile', paper label",
+          "house": "Rago, Early 20th Century Design",
+          "date": "2022-09-22",
+          "lot": "274",
+          "price": 7500,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2022/09/early-20th-century-design/274",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "8 in tall, same size, but about 15 years later (L.C. Tiffany-Favrile mark, not L.C.T.). Jory Collection. Estimate $3,000-5,000. Rago lot page shows 'result' with no premium wording; the figure matches hammer plus Rago's buyer's premium, so it is probably premium-inclusive."
+        },
+        {
+          "title": "Tiffany Studios, Cypriote vase, c. 1919, etched '6256N L.C.Tiffany Inc. Favrile'",
+          "house": "Rago, Art Nouveau | Art Deco Glass & Lighting",
+          "date": "2024-03-21",
+          "lot": "121",
+          "price": 5040,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2024/03/art-nouveau-art-deco-glass-lighting/121",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "9 3/8 in tall, later (c. 1919). Estimate $1,500-2,000. Rago lot page shows 'result' with no premium wording; the figure matches hammer plus Rago's buyer's premium, so it is probably premium-inclusive."
+        },
+        {
+          "title": "Tiffany Studios, Cypriote vase, c. 1914-15, etched '974J L.C.Tiffany - Favrile'",
+          "house": "Rago, Art Nouveau | Art Deco Glass & Lighting",
+          "date": "2024-10-31",
+          "lot": "130",
+          "price": 7560,
+          "currency": "USD",
+          "premium": "unknown",
+          "url": "https://www.ragoarts.com/auctions/2024/10/art-nouveau-art-deco-glass-lighting/130",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "4 1/2 in tall, later (c. 1914-15). Estimate $4,000-6,000. Rago lot page shows 'result' with no premium wording; the figure matches hammer plus Rago's buyer's premium, so it is probably premium-inclusive."
+        }
+      ],
+      "suggested": {
+        "low": 5016,
+        "high": 7560,
+        "why": "Five Rago sales of Tiffany Cypriote vases from 2022-2025 ran $5,016-$7,560; the closest, an 1895-96 L.C.T. 7.5 in example, brought $5,016."
+      },
+      "gaps": "Only one sale is from the same 1895-1900 L.C.T. period and size; the rest are later or smaller Cypriote pieces. All five are from one house (Rago). Sotheby's (incl. the 2022-2024 Doros Collection sales) hides results behind a login; Christie's could not be searched; Bonhams' Cypriote lots found were 2011-2012 and unsold. Left out as outliers: Rago 2024-07-11 lot 116 (c. 1926, 5.5 in, Rosenberg provenance) $21,420; Rago 2024-07-11 lot 106 (c. 1907-10, 5 in, Rosenberg) $8,190; Rago 2026-03-19 lot 104 'Early and Monumental Damascene Cypriote vase' $61,440."
+    },
+    {
+      "id": "singer",
+      "sales": [
+        {
+          "title": "Singer Model 27 treadle sewing machine with oak cabinet, 1903 (serial K991713)",
+          "house": "EBTH (Everything But The House) online auction, Classic Interiors",
+          "date": "2026-04-10",
+          "lot": "Item ITMGT33159",
+          "price": 75,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14443512-singer-sewing-machine-model-27-with-treadle-and-oak-cabinet-1903",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "Untested. Lacquer alligatoring, some decal loss, chips and cracked veneer. 14 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Singer Model 27 with oak five-drawer treadle table, c. 1909",
+          "house": "EBTH (Everything But The House) online auction, Enduring Classics",
+          "date": "2026-01-12",
+          "lot": "Item ITMGS48728",
+          "price": 40,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14352998-singer-model-27-sewing-machine-with-oak-five-drawer-treadle-table-c-1909",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "Pitting, rust, decal loss; gouged work surface; peeling veneer on cover. 13 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Singer Model 27 treadle with oak treadle table, c. 1911 (serial G1626395)",
+          "house": "EBTH (Everything But The House) online auction, Elegant Collections",
+          "date": "2025-12-21",
+          "lot": "Item ITMGR76213",
+          "price": 26,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14334481-singer-model-27-treadle-sewing-machine-with-oak-treadle-table-c-1911",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "Untested; finish wear and losses throughout, oxidation. Only 6 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Singer Model 27-1 treadle in ornate Cabinet No. 5, 1900 (serial 16670553)",
+          "house": "Mesilla Valley Estate Sales (Las Cruces, NM), weekly online auction",
+          "date": "2025-12-17",
+          "lot": "L231",
+          "price": 120,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.nmestateauctions.com/Event/LotDetails/25399066/Singer-Model-271-Treadle-Machine-in-Cabinet-No-5-1900",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "Carved-oak Cabinet No. 5 with attachments. Fair: heavy finish wear, damaged/missing drawer parts, machine partly functional. Winning bid, 35 bids; buyer fees not shown."
+        },
+        {
+          "title": "Singer Model 27-4 treadle in oak and iron cabinet, c. 1906 (serial B1243986)",
+          "house": "EBTH (Everything But The House) online auction",
+          "date": "2023-05-07",
+          "lot": "Item ITMGH52078",
+          "price": 75,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/13412194-singer-model-27-4-treadle-sewing-machine-in-oak-and-iron-cabinet-circa-1906",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "Untested; with Jan 1906 instruction pamphlet. Oxidation, small decal losses, crack near one hinge. 24 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Singer treadle sewing machine in quartersawn oak cabinet, 1909-1913",
+          "house": "EBTH (Everything But The House) online auction",
+          "date": "2021-06-25",
+          "lot": "Item ITMG706319",
+          "price": 425,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/12543412-singer-treadle-sewing-machine-with-quartersawn-oak-cabinet-1909-1913",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "Model not stated (could be a 27 or a 66). Wear, finish loss, pitting. 35 bids. Shows what a better cabinet can bring. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        }
+      ],
+      "suggested": {
+        "low": 40,
+        "high": 120,
+        "why": "Five sales of Singer 27 treadles in oak cabinets (2023-2026) ran $26-$120, clustered at $40-$75; $120 bought one in the fancier Cabinet No. 5."
+      },
+      "gaps": "No traditional auction-house (catalogue) results found; these are online estate auctions. eBay sold listings could not be read (eBay blocks fetching and its sold search requires sign-in), so none are recorded. MaxSold shows a 'Singer No. 27-4 w/ Cabinet & Manual' at $21 (May 2026) in search snippets, but the page was blocked, so it is not recorded. No Model 127 treadle sale fit cleanly (the EBTH 127s found had cords/motors or were pre-2019)."
+    },
+    {
+      "id": "leica",
+      "sales": [
+        {
+          "title": "Leica III Mod. F chrome, 1934, engraved 'Sold by James A. Sinclair & Co. Ltd.' London, with matching Summar 2/5cm (serial 135710)",
+          "house": "Leitz Photographica Auction 44 (Wetzlar)",
+          "date": "2024-06-08",
+          "lot": "33",
+          "price": 1440,
+          "currency": "EUR",
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome-James-A.-Sinclair-London/A00815",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "WITH lens (Summar 2/5cm). Condition A/B. Dealer engraving adds collector interest. Estimate EUR 1,200-1,400. Page shows 'Leitz Auction 44'; date taken from Leica's press release for auction 44."
+        },
+        {
+          "title": "Leica III Mod. F chrome, 1939, with coated Elmar 3.5/5cm (serial 340372)",
+          "house": "Leitz Photographica Auction 44 (Wetzlar)",
+          "date": "2024-06-08",
+          "lot": "32",
+          "price": 1020,
+          "currency": "EUR",
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome/A00712",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "WITH lens (Elmar 3.5/5cm). Condition A-. Estimate EUR 800-1,000. Date from Leica's press release for auction 44."
+        },
+        {
+          "title": "Leica III Mod. F chrome, 1935, with uncoated Elmar 3.5/5cm (serial 173685)",
+          "house": "Leitz Photographica Auction 39 (Vienna)",
+          "date": "2021-11-20",
+          "lot": "23",
+          "price": 840,
+          "currency": "EUR",
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome-Elmar-3-5-5/AI-39-39616",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "WITH lens. Condition B/A; small Swiss-customs cross stamped near serial. Estimate EUR 600-700."
+        },
+        {
+          "title": "Leica III Mod. F chrome 'no dot', 1936, with coated Elmar 3.5/5cm (serial 210192)",
+          "house": "Leitz Photographica Auction 40 (Wetzlar)",
+          "date": "2022-06-11",
+          "lot": "30",
+          "price": 456,
+          "currency": "EUR",
+          "premium": "included",
+          "url": "https://leitz-auction.com/en/Leica-III-Mod.-F-chrome-No-dot/AI-40-40256",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "WITH lens. Condition B/A. Estimate EUR 600-700; sold below estimate."
+        },
+        {
+          "title": "Leica III Mod. F chrome, 1939, with Summitar 2/5cm (serial 340370)",
+          "house": "WestLicht (now Leitz) Photographica Auction 33 (Vienna)",
+          "date": "2018-11-24",
+          "lot": "32",
+          "price": 456,
+          "currency": "EUR",
+          "premium": "included",
+          "url": "https://www.leitz-auction.com/en/Leica-III-Mod.-F-chrome/AI-33-36645",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "WITH lens. Condition B+. Estimate EUR 600-700. Just before the 2019 window."
+        }
+      ],
+      "suggested": {
+        "low": 456,
+        "high": 1440,
+        "currency": "EUR",
+        "why": "Five Leitz/WestLicht results for chrome Leica III (Mod. F) bodies with a 5cm lens ran EUR 456-1,440 including premium; plain examples sit at EUR 456-1,020."
+      },
+      "gaps": "Prices are in EUR (Leitz sells in euros); no USD auction result for a chrome III was readable (LiveAuctioneers hides prices, Heritage blocks fetching, Leski is AUD and blocked). Every sale includes a lens; no body-only sale from 2019-2026 was found. A Heritage body-only 1934 III (slow speeds not working) sold for $53 on 2016-10-27 (search snippet only, not recorded). Recent Leitz sales (44-48) mostly offer black/chrome or black/nickel Mod. F bodies, which are pricier variants, not comparable."
+    },
+    {
+      "id": "watch",
+      "sales": [
+        {
+          "title": "Waltham No. 81, Model 1883, 18 size, 15 jewels, open face, 1903, nickel case, with braided leather fob",
+          "house": "EBTH (Everything But The House) online auction, Art, Antiques, Vintage Jewelry & Timepieces",
+          "date": "2020-10-31",
+          "lot": "Item ITMG571176",
+          "price": 160,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/11944213-1903-waltham-nickel-open-face-pocket-watch-with-braided-leather-fob",
+          "seen": "page",
+          "closeness": "same model",
+          "note": "CASE: nickel silver (base metal), Illinois Watch Case Co. Running at evaluation. 25 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Waltham No. 620, 16 size, 15 jewels, open face, 1906, gold-filled",
+          "house": "EBTH (Everything But The House) online auction, Fine Art, Decor & Vintage Jewelry",
+          "date": "2021-04-19",
+          "lot": "Item ITMG930985",
+          "price": 76,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/12467830-1906-waltham-gold-filled-open-face-pocket-watch",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "CASE: gold-filled (Philadelphia Watch Case Co., 20-year). NOT running; scratched crystal, plating wear; 1909 inscription. 16 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Waltham No. 620, Model 1908, 16 size, 15 jewels, 1908, gold-filled, with gold-filled fob chain",
+          "house": "EBTH (Everything But The House) online auction, Decor, Fine Art, First Edition Books & Vintage Jewelry",
+          "date": "2020-10-26",
+          "lot": "Item ITMG571311",
+          "price": 241,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/11922385-1908-waltham-gold-filled-pocket-watch-and-fob",
+          "seen": "page",
+          "closeness": "very close",
+          "note": "CASE: gold-filled (20-year). Running. Includes a gold-filled chain, which adds value; listing does not say open face. 30 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "American Waltham 15 jewels, gold-filled Dueber Special case, with gemstone/enamel fobs (serial 15835070)",
+          "house": "EBTH (Everything But The House) online auction, Vintage Fashion & Jewelry",
+          "date": "2025-11-19",
+          "lot": "Item ITMGR43929",
+          "price": 231,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://www.ebth.com/items/14269169-itmgr43929",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "CASE: gold-filled (Dueber 25-year). NOT running. EBTH gives no year (serial suggests about 1907) or case style; sold with decorative fobs. 20 bids. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        },
+        {
+          "title": "Appleton, Tracy & Co. (Waltham) Model 1857, 18 size, 15 jewels, key wind, 1869-70, coin silver",
+          "house": "EBTH (Everything But The House) online auction, Fine Art, Antiques, Vintage Jewelry & Timepieces",
+          "date": "2019-10-24",
+          "lot": "Item ITMG460144",
+          "price": 166,
+          "currency": "USD",
+          "premium": "excluded",
+          "url": "https://ebth.com/items/11009542-antique-waltham-coin-silver-key-wind-set-pocket-watch",
+          "seen": "page",
+          "closeness": "loose",
+          "note": "CASE: 900 (coin) silver. Running. About 30 years older and key wind, so only a guide for a silver case. Price is EBTH's winning (high) bid; any buyer fees on top are not shown."
+        }
+      ],
+      "suggested": {
+        "low": 76,
+        "high": 241,
+        "why": "Waltham 15-jewel watches of 1903-1908 sold for $76 (gold-filled, not running) to $241 (gold-filled, running, with chain); a 1903 base-metal open-face example brought $160."
+      },
+      "gaps": "No 1895-1910 Waltham 15-jewel open-face in a SILVER case with a readable price was found; the only silver-cased 15-jewel sale is an 1869-70 key wind. Heritage, LiveAuctioneers, eBay and Freeman's watch lots could not be read. Also seen but not used: EBTH 2020-06-15 1896 Waltham Seaside 15J size 0 (ladies' size) gold-filled open face with chain, $100 (item ITMG349106); EBTH 2023-01-30 1891 Waltham coin silver 14 size, 7 jewels, missing hands, $56."
+    }
+  ]
+}
