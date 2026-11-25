@@ -142,6 +142,7 @@ function build(): Area[] {
   // Every town Jackson lists makers for (lib/makers-dir.ts), most marks first, after the directory itself.
   const makerOffices: RefLink[] = [
     { href: '/marks/british-silver-makers/', label: 'Every town', note: 'The directory, by country' },
+    { href: '/marks/old-sheffield-plate-makers', label: 'Old Sheffield plate makers', note: 'Fused plate, 1743 to the 1860s' },
     ...places(DIRS.british).map((p) => ({ href: p.path, label: p.name, note: `${p.n.toLocaleString('en-US')} marks` })),
   ];
   // The other directories (lib/makers-dir.ts): each one's hub, then its pages.

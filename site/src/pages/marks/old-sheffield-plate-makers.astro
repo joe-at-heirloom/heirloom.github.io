@@ -1,0 +1,45 @@
+---
+// /marks/old-sheffield-plate-makers: the makers of Old Sheffield (fused)
+// plate, 1743 to the 1860s, from Okie's Old Silver and Old Sheffield Plate
+// (1928): family sheffield-plate, one catalogue by town, each mark opening
+// into its sheet (what it reads, the maker and their trade and address,
+// Okie's date). Every row's id is its record's id.
+import Reference from '../../layouts/Reference.astro';
+import Catalogue from '../../components/ref/Catalogue.astro';
+import AppBox from '../../components/AppBox.astro';
+import { collection } from '../../lib/portal';
+import { sheffieldPlateSheet } from '../../lib/makers-dir';
+import { articleLd } from '../../lib/site';
+
+const path = '/marks/old-sheffield-plate-makers';
+const sheets = collection().records.filter((r) => r.family === 'sheffield-plate').map(sheffieldPlateSheet);
+const towns = [...new Set(sheets.map((s) => s.group))].sort((a, b) => (a === 'Town not recorded' ? 1 : b === 'Town not recorded' ? -1 : sheets.filter((s) => s.group === b).length - sheets.filter((s) => s.group === a).length));
+const surname = (s: { means: string | null }) => (s.means ?? '').split(',')[0].split(' ').at(-1) ?? '';
+const groups = towns.map((t) => ({ key: t.toLowerCase().replace(/\W+/g, '-'), label: t, sheets: sheets.filter((s) => s.group === t).sort((a, b) => surname(a).localeCompare(surname(b)) || (parseInt(a.years ?? '0') - parseInt(b.years ?? '0'))) }));
+const named = sheets.filter((s) => s.means !== 'Maker not traced').length;
+const pictured = sheets.filter((s) => s.pics.length).length;
+const n = (x: number) => x.toLocaleString('en-US');
+const title = 'Old Sheffield Plate Makers’ Marks, 1743 to the 1860s | Heirloom';
+const description = `${n(sheets.length)} makers’ marks on Old Sheffield (fused) plate from Sheffield, Birmingham and London, from Okie’s Old Silver and Old Sheffield Plate (1928): what each mark reads, the maker, their trade and address, and the year.`;
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Old Sheffield plate makers’ marks', description, '2026-11-25')]} crumb="Old Sheffield plate makers">
+  <header class="rhead">
+    <h1>Old Sheffield plate makers’ marks</h1>
+    <p class="rhead__lede">Old Sheffield plate is copper with a sheet of silver fused to it, made from the 1740s until electroplating replaced it in the mid-19th century. It carries no hallmarks, only the maker’s name or mark. These are the marks Howard Pitcher Okie recorded in <cite>Old Silver and Old Sheffield Plate</cite> (1928), town by town.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{n(sheets.length)}</strong> marks</li>
+      <li><strong class="num">{n(named)}</strong> with the maker named</li>
+      <li><strong class="num">{n(pictured)}</strong> with Okie’s facsimile</li>
+    </ul>
+  </header>
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="What the mark reads, a maker or a year: Hancock, Boulton, 1784" label="What the mark reads, a maker or a year" />
+
+  <section class="ahome__block read" aria-labelledby="read">
+    <h2 id="read">Fused plate, electroplate or silver?</h2>
+    <p>Old Sheffield plate was made by fusing silver to copper before the metal was worked, so the copper can show through at worn edges and the seams are often hidden with silver solder or a silver wire. Electroplate, from the 1840s, is coated with silver after it is made, and is usually marked EP or EPNS. Solid silver carries hallmarks.</p>
+    <p>A maker’s name or mark on plate was struck to look like a hallmark, sometimes closely enough to be mistaken for one. Okie’s year is when the mark was entered or first known, not the year an item was made. Heirloom never decides whether an item is genuine; a specialist who can handle it is the one to ask.</p>
+  </section>
+
+  <AppBox text="Photograph the marks. The Advisor reads the maker’s name or mark, tells plate from silver where the marks say so, and keeps the reading with the photo." />
+</Reference>

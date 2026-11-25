@@ -50,6 +50,8 @@ const SILENT = [
   /;?\s*\b(script|colou?r|mark colou?r|placement)?\s*not (explicitly )?stated in (the )?sources? read\b[^.;]*[.;]?/gi,
   /;?\s*\bgap\.?\s*$/gi,
   /^\s*\(literal\)\s*/i,
+  // A transcriber speaking for themself ("I cannot read letters").
+  /;?\s*\bI (cannot|can't|could not|can not) (read|make out)[^.;]*[.;]?/gi,
   // A researcher's "(per <source>)": the sheet lists its sources, numbered.
   /\s*\(per [^()]*\)/gi,
 ];

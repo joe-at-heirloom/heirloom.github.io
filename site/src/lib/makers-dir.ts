@@ -62,7 +62,7 @@ function picOf(r: Rec): Pic | null {
   const img = r.image_id ? imgs.get(r.image_id) : undefined;
   if (!img?.file) return null;
   // A crop from a book still in copyright says so, beside its credit.
-  const credit = `${img.credit ?? ''}${img.licence === 'in-copyright-reference' ? ' Shown for reference; the book is in copyright.' : ''}`.trim();
+  const credit = `${img.credit ?? ''}${img.licence === 'in-copyright-reference' ? ' Shown for reference; the original is in copyright.' : ''}`.trim();
   return { file: media(img.file), status: img.status, credit, url: img.source_url ?? null, alt: clean(r.looks_like) ?? r.name };
 }
 function sourcesOf(r: Rec) {
@@ -72,11 +72,16 @@ function sourcesOf(r: Rec) {
 const facts = (list: [string, string | null | undefined][]) => list.filter(([, v]) => v).map(([label, text]) => ({ label, text: text as string }));
 const keys = (...parts: unknown[]) => parts.flat().filter(Boolean).map(String).join(' ').toLowerCase();
 /** A transcriber's note on the book's layout (columns, ditto marks, boxes), not something said about the mark. */
-const layoutNote = (t: string) => /\b(column|ditto|row|box(es)?\b|footnote|dagger|printed (twice|with)|OCR|zoom|my reading|page says|asterisk|straddl|alignment|typeset|read from)\b/i.test(t);
+const layoutNote = (t: string) => /\b(column|ditto|row|box(es)?\b|footnote|printed (twice|with)|OCR|zoom|my reading|page says|straddl|alignment|typeset|read from)\b/i.test(t);
 const bookNote = (n: unknown) => {
-  const t = String(n ?? '').trim();
-  if (!t || layoutNote(t)) return null;
-  return clean(t);
+  let t = String(n ?? '').trim()
+    .replace(/\s*\([^()]*\bbox(es)?\b[^()]*\)/gi, '')
+    // "Asterisk:" or "Dagger sign beside the marks:" introduces what the sign means: keep the meaning.
+    .replace(/^(\*|asterisk|dagger(?: sign)?(?: beside the marks?)?)\s*[:,]?\s*/i, '')
+    .replace(/^single source\.\s*/i, '');
+  if (!t || /^(unboxed|brace|the (two )?marks are joined|trade given as|period (as printed|not printed)|letters hard|cannot read|last two)/i.test(t)) return null;
+  if (layoutNote(t) || /\b(text layer|cropped|crop(s)? for this entry|image reads)\b/i.test(t)) return null;
+  return clean(t.charAt(0).toUpperCase() + t.slice(1));
 };
 
 // ── British makers (Jackson, 1921) ──────────────────────────────────────────
@@ -217,7 +222,7 @@ function continentalSheet(r: Rec, place: Place): Sheet {
   return {
     id: r.id, anchor: r.id, url: `${place.path}#${r.id}`, kind, group: firstLetter(r.place),
     glyphs: null, lang: null,
-    reading: `${r.place ?? place.name}, ${kind.charAt(0).toLowerCase()}${kind.slice(1)}`,
+    reading: r.place ? `${r.place}, ${kind.charAt(0).toLowerCase()}${kind.slice(1)}` : r.name,
     means: clean(r.looks_like),
     years: yearsOf(r.date_from, r.date_to),
     facts: facts([
@@ -226,12 +231,13 @@ function continentalSheet(r: Rec, place: Place): Sheet {
       ['Town', r.place],
       ['Dates', clean(r.date_note)],
       ['Okie’s note', bookNote(a.okie_note)],
+      ['Note', bookNote(a.eu20_note)],
     ]),
     differ: [], caution: null, pics: pic ? [pic] : [], sources: sourcesOf(r), single: r.single_source,
-    keys: keys(r.place, kind, a.reads, r.looks_like, r.date_from),
+    keys: keys(r.place, r.name, kind, a.reads, r.looks_like, r.date_from),
   };
 }
-const COUNTRY_NAME: Record<string, string> = { netherlands: 'The Netherlands' };
+const COUNTRY_NAME: Record<string, string> = { netherlands: 'The Netherlands', 'austria-hungary': 'Austria-Hungary' };
 const NORTH = new Set(['denmark', 'norway', 'sweden', 'finland']);
 const WEST = new Set(['france', 'belgium', 'netherlands', 'switzerland']);
 const SOUTH = new Set(['italy', 'spain', 'portugal']);
@@ -266,7 +272,7 @@ export const DIRS: Record<string, Dir> = {
     name: (slug) => COUNTRY_NAME[slug] ?? titleCase(slug),
     regions: ['Western Europe', 'Central Europe', 'Northern Europe', 'Southern Europe', 'Eastern Europe'],
     regionOf: (slug) => (WEST.has(slug) ? 'Western Europe' : NORTH.has(slug) ? 'Northern Europe' : SOUTH.has(slug) ? 'Southern Europe' : slug === 'russia' ? 'Eastern Europe' : 'Central Europe'),
-    order: 'size', groupOf: (r) => firstLetter(r.place), groupLabel: letterLabel, sheet: continentalSheet,
+    order: 'size', groupOf: (r) => (r.place ? firstLetter(r.place) : 'national'), groupLabel: (k) => (k === 'national' ? 'National marks' : letterLabel(k)), sheet: continentalSheet,
     sort: (a, b) => a.reading.localeCompare(b.reading) || byYear(a, b), placeholder: 'A town, a mark or a year: Augsburg, pine cone, 1750',
   },
 };
@@ -306,7 +312,9 @@ export const recordsOf = (place: Place) => {
 export function makerGroups(place: Place) {
   const dir = DIRS[place.dir];
   const sheets = recordsOf(place).map((r) => ({ ...dir.sheet(r, place), group: dir.groupOf(r) }));
-  const order = [...new Set(sheets.map((s) => s.group))].sort((a, b) => (a === '0' ? 1 : b === '0' ? -1 : a.localeCompare(b, 'en', { numeric: true })));
+  // National marks first, marks without letters last, the rest in order.
+  const rank = (k: string) => (k === 'national' ? -1 : k === '0' ? 1 : 0);
+  const order = [...new Set(sheets.map((s) => s.group))].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b, 'en', { numeric: true }));
   return order.map((k) => ({ key: k, label: dir.groupLabel(k), sheets: sheets.filter((s) => s.group === k).sort(dir.sort) }));
 }
 
@@ -321,4 +329,33 @@ export function letterFromId(id: string) {
   const part = /^mm-[a-z-]+?-\d{4}-([a-z0-9]+)/.exec(id)?.[1] ?? '';
   if (!part || /^device$/.test(part)) return '0';
   return /^[a-z]/.test(part) ? part.charAt(0).toUpperCase() : '0';
+}
+
+// ── Old Sheffield plate (Okie, 1928): one page, by town ─────────────────────
+/** "Hancock, Joseph" → "Joseph Hancock"; a firm's name stays as printed. */
+const natural = (m: string) => (/^[^,]+,\s*[A-Z][a-z]+(\s[A-Z][a-z.]+)?$/.test(m) ? m.replace(/^([^,]+),\s*(.+)$/, '$2 $1') : m);
+export function sheffieldPlateSheet(r: Rec): Sheet {
+  const a = r.attributes ?? {};
+  const pic = picOf(r);
+  const maker = r.maker ? natural(String(r.maker)) : null;
+  const reads = String(a.reads ?? '').trim();
+  const readsWords = reads && !/^(no letters read|unclear)/i.test(reads) ? reads : null;
+  return {
+    id: r.id, anchor: r.id, url: `/marks/old-sheffield-plate-makers#${r.id}`, kind: 'Maker’s mark', group: r.place ? String(r.place) : 'Town not recorded',
+    glyphs: null, lang: null,
+    reading: (readsWords ? readsWords.charAt(0).toUpperCase() + readsWords.slice(1) : null) ?? clean(r.looks_like) ?? 'A mark without letters',
+    means: maker ? `${maker}${a.trade ? `, ${String(a.trade).replace(/\.$/, '').toLowerCase()}` : ''}` : 'Maker not traced',
+    years: yearsOf(r.date_from, r.date_to),
+    facts: facts([
+      ['The mark', clean(r.looks_like)],
+      ['It reads', readsWords],
+      ['Maker', maker],
+      ['Trade', clean(a.trade)],
+      ['Address', clean(a.location)],
+      ['Date', clean(r.date_note)],
+      ['Okie’s note', bookNote(a.okie_note)],
+    ]),
+    differ: [], caution: null, pics: pic ? [pic] : [], sources: sourcesOf(r), single: r.single_source,
+    keys: keys(reads, r.maker, maker, a.trade, a.location, r.place, r.date_from),
+  };
 }
