@@ -24,7 +24,7 @@ const rows = marks();
 const types: SealType[] = t.dateSeals.map((x: any) => {
   const ys = Object.values(x.years ?? {}).filter((v) => v != null);
   return {
-    id: String(x.seal_type), period: String(x.period).replace(/-/g, '–'), form: soften(String(x.form ?? '')), reads: soften(String(x.reads ?? '')),
+    id: String(x.seal_type), period: String(x.period).replace(/-/g, '–'), form: soften(String(x.form ?? '').replace(/\bONE\b/g, 'one').replace(/^./, (c) => c.toUpperCase())), reads: soften(String(x.reads ?? '')),
     howToRead: soften(String(x.how_to_read ?? '')), ambiguity: soften(String(x.ambiguity ?? '')),
     years: x.years ?? {}, intercalary: x.intercalary_months ?? {}, animalAndMonth: ys.length > 0, nanushi: /nanushi/.test(String(x.seal_type)),
   };
