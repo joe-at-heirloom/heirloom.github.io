@@ -43,15 +43,31 @@ export default function DateLetterSheet({ office, cycles, rules, styles }: Props
   const [kase, setKase] = useState('any');
   const [style, setStyle] = useState('any');
   const [open, setOpen] = useState<Tile | null>(null);
+  // A link from the Advisor names the letters a mark could be (?show=id,id):
+  // the sheet opens showing just those. #<id> opens one letter.
+  const [shown, setShown] = useState<Set<string> | null>(null);
   const dlg = useRef<HTMLDialogElement>(null);
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const ids = (params.get('show') ?? '').split(',').map((x) => x.trim()).filter(Boolean);
+    const all = new Map(cycles.flatMap((c) => c.tiles.map((t) => [t.id, t] as const)));
+    const known = ids.filter((id) => all.has(id));
+    if (known.length) setShown(new Set(known));
+    const hash = decodeURIComponent(location.hash.slice(1));
+    if (all.has(hash)) {
+      document.getElementById(hash)?.scrollIntoView({ block: 'center' });
+      setOpen(all.get(hash)!);
+    }
+  }, []);
 
   const typed = q.trim();
   const yearQ = /^\d{3,4}$/.test(typed) ? Number(typed) : null;
   const letter = yearQ == null ? typed.replace(/[^a-z]/gi, '').slice(0, 1) : '';
-  const active = !!letter || yearQ != null || kase !== 'any' || style !== 'any';
+  const active = !!letter || yearQ != null || kase !== 'any' || style !== 'any' || !!shown;
 
   const lettersIn = useMemo(() => new Map(cycles.map((c) => [c.start, new Set(c.tiles.map((t) => t.letter.toLowerCase()))])), [cycles]);
   const match = (t: Tile, cycle: number) => {
+    if (shown && !shown.has(t.id)) return false;
     if (yearQ != null) {
       if (yearQ < 1000) return String(t.year).startsWith(String(yearQ));
       // Until 1975 a letter's assay year began in late spring or summer, so a
@@ -66,18 +82,22 @@ export default function DateLetterSheet({ office, cycles, rules, styles }: Props
     if (style !== 'any' && t.style !== style) return false;
     return true;
   };
-  const hits = useMemo(() => (active ? cycles.flatMap((c) => c.tiles.filter((t) => match(t, c.start))) : []), [q, kase, style]);
+  const hits = useMemo(() => (active ? cycles.flatMap((c) => c.tiles.filter((t) => match(t, c.start))) : []), [q, kase, style, shown]);
 
   useEffect(() => {
     const d = dlg.current;
     if (!d) return;
     if (open && !d.open) d.showModal();
     if (!open && d.open) d.close();
+    const want = open ? `#${open.id}` : '';
+    if (location.hash !== want) history.replaceState(null, '', location.pathname + location.search + want);
   }, [open]);
 
   const total = cycles.reduce((n, c) => n + c.tiles.length, 0);
   let summary = `${total} letters in ${cycles.length} cycles. Type the letter on your silver, or a year.`;
-  if (active) {
+  if (shown && !letter && yearQ == null) {
+    summary = `The ${hits.length} ${hits.length === 1 ? 'letter' : 'letters'} Heirloom matched to the mark on your item. The style, the case and the other marks decide between them.`;
+  } else if (active) {
     if (hits.length === 0) summary = 'No letter matches. Try either case and any style: worn punches hide the difference.';
     else if (hits.length === 1) summary = `One match: ${hits[0].label}. Check that the style and the other marks agree.`;
     else summary = `${hits.length} possible years. The style, the case and the other marks have to agree before one is certain.`;
@@ -114,7 +134,7 @@ export default function DateLetterSheet({ office, cycles, rules, styles }: Props
           ))}
         </div>
         </div>
-        <p class="dls__sum" aria-live="polite">{summary}</p>
+        <p class="dls__sum" aria-live="polite">{summary}{shown && <> <button type="button" class="dls__clear" onClick={() => { setShown(null); history.replaceState(null, '', location.pathname); }}>Show every letter</button></>}</p>
       </div>
 
       {cycles.map((c) => {
@@ -130,7 +150,7 @@ export default function DateLetterSheet({ office, cycles, rules, styles }: Props
             <div class="band__body">
               <ol class="band__grid">
                 {shown.map((t) => (
-                  <li key={t.id}>
+                  <li key={t.id} id={t.id}>
                     <button type="button" class={`tile${t.flagged ? ' tile--flag' : ''}${t.note ? ' tile--note' : ''}`} onClick={() => setOpen(t)} aria-label={`${t.label}, ${t.styleWord} ${caseWord(t.case)} ${t.letter}${t.flagged ? ', the sources disagree' : ''}`}>
                       <span class="plate plate--print tile__plate">
                         {t.img ? <img src={t.img} alt="" loading="lazy" decoding="async" /> : <span class={`tile__type tile__type--${t.style}`}>{t.letter}</span>}

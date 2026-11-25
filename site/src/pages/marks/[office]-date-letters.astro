@@ -58,7 +58,7 @@ const cycles: Cycle[] = raw.map((c) => ({
     const src = img(e);
     counts[src && e ? e.visual.status : 'none']++;
     return {
-      id: `${r.year}-${r.letter}`,
+      id: e?.id ?? `${r.office.toLowerCase()}-${r.year}-${r.letter.toLowerCase()}`,
       letter: r.letter,
       case: r.case,
       style: r.style,
@@ -123,7 +123,7 @@ const graph = [
     </div>
 
     <h2 id="finder" class="section-title">Find a letter</h2>
-    <DateLetterSheet client:visible office={office} cycles={cycles} rules={dialogText} styles={styles} />
+    <DateLetterSheet client:load office={office} cycles={cycles} rules={dialogText} styles={styles} />
     <p class="coverage faint">
       Of these {total} letters, {counts.facsimile} are facsimiles of the punches printed in W. Chaffers, <cite>Handbook to Hall Marks on Gold and Silver Plate</cite> (1924) or Jackson (1921), public domain{counts.rendering > 0 && <>; {counts.rendering} are drawn by Heirloom from the published descriptions of the letter and its shield</>}{counts.photo > 0 && <>; {counts.photo} are photographs</>}{counts.none > 0 && <>; {counts.none} {counts.none === 1 ? 'is' : 'are'} set in a similar typeface for now</>}. Open a letter to see which, and its credit. A year marked with a dot is one where the sources disagree.
     </p>
