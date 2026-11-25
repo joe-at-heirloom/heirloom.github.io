@@ -21,11 +21,15 @@ const fonts =
   'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap';
 const hanFont = han ? `https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap&text=${encodeURIComponent(han)}` : null;
 const graph = [ORG, WEBSITE, ...jsonld];
+const preview = !!process.env.SITE_PREVIEW;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- Google tag (gtag.js), the same as the carried-over pages; skipped on review builds -->
+    {!preview && <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-69Q6D26EG0"></script>}
+    {!preview && <script is:inline set:html={"window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-69Q6D26EG0');"} />}
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{title}</title>
     <meta name="description" content={description} />

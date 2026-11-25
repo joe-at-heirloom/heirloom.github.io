@@ -1,0 +1,312 @@
+---
+// The home page's opening: an architect's model of an ordinary house under a
+// loupe (src/lib/house.js, loaded after the page paints). The intro, counter
+// and card are ordinary HTML; without WebGL or script the list further down
+// the page carries the same items.
+import data from '../data/home/house.json';
+const priced = data.items.filter((i) => !i.unknown);
+---
+<section class="hh" id="house" aria-label="An ordinary house">
+  <div class="hh__gl" id="hh-gl">
+    <div class="hh__looks" id="hh-looks" aria-hidden="true"></div>
+    <div class="hh__pins" id="hh-pins" aria-hidden="true"></div>
+    <div class="hh__loupe" id="hh-loupe" aria-hidden="true" hidden>
+      <div class="hh__rim"></div>
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+        <g class="hh__ticks" id="hh-ticks"></g>
+        <circle class="hh__prog" id="hh-prog" cx="50" cy="50" r="49" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"></circle>
+      </svg>
+      <span class="hh__zoom">×2.6</span>
+    </div>
+  </div>
+  <div class="hh__lead">
+    <div class="hh__copy">
+      <p class="label hh__fig">Fig. 1. An ordinary house, scale 1:24</p>
+      <h1>Know what you own.</h1>
+      <p class="hh__sub" id="hh-sub">Move the glass over the house. Under it, the items worth a look show their color. Rest it on one to see what it is, what its marks say, and what similar ones have sold for.</p>
+    </div>
+    <div class="hh__count" aria-live="polite">
+      <p class="label">Found so far, at least{data.draft && <span class="hh__draft">draft figures</span>}</p>
+      <p class="hh__amt"><span id="hh-amt">$0</span><span class="hh__unk" id="hh-unk"></span></p>
+      <p class="label" id="hh-n">0 of {data.items.length} items</p>
+    </div>
+    <aside class="hh__card hh__card--hint" id="hh-card" aria-live="polite">
+      <div class="hh__bd">
+        <p class="label">Start anywhere</p>
+        <h2>Rest the glass on something.</h2>
+        <p class="hh__marks">Watch for something catching the light. Under the glass the items worth a look show their color, and a box or a trunk opens if you hold the glass there a little longer.</p>
+      </div>
+    </aside>
+  </div>
+  <div class="hh__floors" aria-label="Floors">
+    <button type="button" data-floor="attic">Attic</button>
+    <button type="button" data-floor="upstairs">Upstairs</button>
+    <button type="button" data-floor="downstairs">Down</button>
+  </div>
+  <button class="hh__reset" type="button" id="hh-reset">Put everything back</button>
+  <div class="hh__toast" id="hh-toast" role="status"></div>
+  <script type="application/json" id="hh-data" set:html={JSON.stringify(data)} />
+  <noscript><style>.hh__gl, .hh__count, .hh__reset { display: none; }</style></noscript>
+</section>
+
+<script>
+  type Item = { id: string; name: string; when: string; room: string; at: string; photo?: string; mark?: string; marks: string; low?: number; high?: number; unknown?: boolean; link?: [string, string]; sales?: { house: string; date: string }[] };
+  type Data = { draft: boolean; items: Item[] };
+
+  let teardown: (() => void) | null = null;
+
+  function webgl() {
+    try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch { return false; }
+  }
+
+  async function init() {
+    const stage = document.getElementById('house');
+    if (!stage || stage.dataset.ready) return;
+    stage.dataset.ready = '1';
+    const data: Data = JSON.parse(document.getElementById('hh-data')!.textContent || '{}');
+    const ITEMS = Object.fromEntries(data.items.map((i) => [i.id, i]));
+    const $ = (id: string) => document.getElementById(id)!;
+    const fmt = (n: number) => '$' + n.toLocaleString('en-US');
+    const found: string[] = [];
+    let shown = 0;
+
+    const updateCounter = () => {
+      const total = found.reduce((s, id) => s + (ITEMS[id].low || 0), 0);
+      const unk = found.filter((id) => ITEMS[id].unknown).length;
+      const from = shown, t0 = performance.now();
+      const step = (t: number) => {
+        const k = Math.min(1, (t - t0) / 900), e = 1 - Math.pow(1 - k, 3);
+        shown = Math.round(from + (total - from) * e);
+        $('hh-amt').textContent = fmt(shown);
+        if (k < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+      $('hh-unk').textContent = unk ? `+ ${unk} unknown` : '';
+      $('hh-n').textContent = `${found.length} of ${data.items.length} items`;
+    };
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const showCard = (id: string) => {
+      const it = ITEMS[id], c = $('hh-card');
+      c.className = 'hh__card' + (it.photo ? '' : ' hh__card--hint');
+      const ph = it.photo ? `<div class="hh__ph"><img src="${it.photo}" alt="${esc(it.name)}" />${it.mark ? `<span class="hh__mk"><img src="${it.mark}" alt="The mark, close up" /></span>` : ''}</div>` : '';
+      const src = data.draft ? 'draft figure' : it.sales && it.sales.length ? `${it.sales[0].house}, ${it.sales[0].date.slice(0, 4)}${it.sales.length > 1 ? ` and ${it.sales.length - 1} more` : ''}` : '';
+      const ev = it.unknown
+        ? `<div class="hh__ev"><b>No price</b><span class="label">counted as unknown, never $0</span></div>`
+        : `<div class="hh__ev"><b>Similar ones sold for ${fmt(it.low!)}–${fmt(it.high!)}</b><span class="label">${src}</span></div>`;
+      c.innerHTML = `${ph}<div class="hh__bd"><p class="label">${it.room} · ${it.at}</p><h2>${esc(it.name)}</h2><p class="hh__when">${esc(it.when)}</p><p class="hh__marks">${esc(it.marks)}</p>${ev}${it.link ? `<a class="hh__go" href="${it.link[1]}">${esc(it.link[0])} →</a>` : ''}</div>`;
+      void c.offsetWidth;
+      c.classList.add('hh__card--in');
+    };
+    const toast = (msg: string) => {
+      const t = $('hh-toast'); t.textContent = msg; t.classList.add('on');
+      setTimeout(() => t.classList.remove('on'), 2200);
+    };
+
+    if (!webgl()) { stage.classList.add('hh--flat'); return; }
+    const { createHouse } = await import('../lib/house.js');
+    const house = createHouse($('hh-gl'));
+    const loupeEl = $('hh-loupe'), prog = $('hh-prog'), pins = $('hh-pins'), looksEl = $('hh-looks');
+    loupeEl.hidden = false;
+    stage.classList.add('hh--live');
+    if (house.coarse) $('hh-sub').textContent = 'Drag the house under the glass. The items worth a look show their color there; hold on one to read it.';
+
+    // the loupe's scale: 60 ticks, the nearest unfound item lights a few of them
+    const ticks = $('hh-ticks');
+    for (let i = 0; i < 60; i++) {
+      const a = (i / 60) * Math.PI * 2, r2 = i % 5 === 0 ? 45 : 47;
+      const l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      l.setAttribute('x1', String(50 + Math.cos(a) * 49)); l.setAttribute('y1', String(50 + Math.sin(a) * 49));
+      l.setAttribute('x2', String(50 + Math.cos(a) * r2)); l.setAttribute('y2', String(50 + Math.sin(a) * r2));
+      l.setAttribute('vector-effect', 'non-scaling-stroke');
+      ticks.appendChild(l);
+    }
+    const tickEls = [...ticks.querySelectorAll('line')];
+
+    const layout = () => {
+      const w = stage.clientWidth;
+      if (w < 760) house.setLayout({ x0: 0.02, x1: 0.98, y0: 0.02, y1: 0.6, zoom: house.coarse ? 1.5 : 1 });
+      else if (w < 1100) house.setLayout({ x0: 0.42, x1: 0.99, y0: 0.06, y1: 0.97, zoom: 1 });
+      else house.setLayout({ x0: 0.38, x1: 0.985, y0: 0.06, y1: 0.975, zoom: 1 });
+    };
+    const ro = new ResizeObserver(layout);
+    ro.observe(stage);
+    layout();
+
+    const pinEls: Record<string, HTMLElement> = {};
+    const lookEls: Record<string, HTMLElement> = {};
+    let lastLoupe = { x: 0, y: 0, r: 90 };
+    const placePins = () => {
+      for (const id in pinEls) {
+        const p = house.project(id);
+        if (p) { pinEls[id].style.left = p.x + 'px'; pinEls[id].style.top = p.y - 4 + 'px'; }
+      }
+    };
+    const placeLooks = () => {
+      const t = house.targets();
+      const live = new Set(t.map((x: any) => x.id));
+      for (const id in lookEls) if (!live.has(id)) { lookEls[id].remove(); delete lookEls[id]; }
+      let best: any = null, bestD = Infinity;
+      t.forEach((x: any, i: number) => {
+        let el = lookEls[x.id];
+        if (!el) {
+          el = document.createElement('span');
+          el.className = 'hh__look';
+          el.style.setProperty('--d', ((i * 0.83) % 7).toFixed(2) + 's');
+          el.innerHTML = '<b></b>';
+          looksEl.appendChild(el);
+          lookEls[x.id] = el;
+        }
+        el.style.left = x.x + 'px';
+        el.style.top = x.y + 7 + 'px';
+        const d = Math.hypot(x.x - lastLoupe.x, x.y - lastLoupe.y);
+        el.classList.toggle('off', d < lastLoupe.r + 10);
+        if (d > lastLoupe.r * 0.55 && d < bestD) { bestD = d; best = x; }
+      });
+      tickEls.forEach((l) => l.classList.remove('hot'));
+      if (best) {
+        const a = Math.atan2(best.y - lastLoupe.y, best.x - lastLoupe.x);
+        const n = tickEls.length, c = Math.round((((a + Math.PI * 2) % (Math.PI * 2)) / (Math.PI * 2)) * n);
+        for (let k = -2; k <= 2; k++) tickEls[(c + k + n) % n].classList.add('hot');
+      }
+    };
+
+    house.on('loupe', (x: number, y: number, r: number, vis: boolean) => {
+      loupeEl.style.width = loupeEl.style.height = r * 2 + 'px';
+      loupeEl.style.transform = `translate(${x - r}px, ${y - r}px)`;
+      loupeEl.style.display = vis ? '' : 'none';
+      lastLoupe = { x, y, r };
+      placeLooks();
+    });
+    house.on('render', () => { placePins(); placeLooks(); });
+    house.on('progress', (_id: string, p: number) => { prog.style.strokeDashoffset = String(100 - p * 100); });
+    house.on('hover', (id: string | null, done: boolean) => { if (id && done && ITEMS[id]) showCard(id); if (!id) prog.style.strokeDashoffset = '100'; });
+    house.on('open', (cid: string) => { toast(cid === 'trunk' ? 'The trunk opens.' : 'The jewelry box opens.'); setTimeout(placeLooks, 50); });
+    house.on('found', (id: string) => {
+      if (!ITEMS[id] || found.includes(id)) return;
+      found.push(id);
+      stage.classList.add('hh--explored');
+      updateCounter();
+      showCard(id);
+      document.querySelectorAll(`[data-house-item="${id}"]`).forEach((el) => el.classList.add('is-found'));
+      const el = document.createElement('div');
+      el.className = 'hh__pin';
+      el.innerHTML = `<b>${ITEMS[id].unknown ? '?' : fmt(ITEMS[id].low!)}</b><i></i>`;
+      pins.appendChild(el);
+      pinEls[id] = el;
+      placePins();
+      placeLooks();
+      if (found.length === data.items.length) toast(`Everything found: at least ${fmt(found.reduce((s, i) => s + (ITEMS[i].low || 0), 0))}, and one thing no sale can price.`);
+    });
+
+    stage.querySelectorAll<HTMLButtonElement>('[data-floor]').forEach((b) => (b.onclick = () => house.setFloor(b.dataset.floor)));
+    $('hh-reset').onclick = () => {
+      found.length = 0; shown = 0; stage.classList.remove('hh--explored');
+      for (const id in pinEls) { pinEls[id].remove(); delete pinEls[id]; }
+      document.querySelectorAll('[data-house-item]').forEach((el) => el.classList.remove('is-found'));
+      house.reset(); updateCounter(); placeLooks();
+      const c = $('hh-card'); c.className = 'hh__card hh__card--hint';
+      c.innerHTML = '<div class="hh__bd"><p class="label">Start anywhere</p><h2>Rest the glass on something.</h2><p class="hh__marks">Watch for something catching the light. Under the glass the items worth a look show their color, and a box or a trunk opens if you hold the glass there a little longer.</p></div>';
+    };
+    // the list further down the page can send the glass to an item
+    const onLook = (e: Event) => {
+      const b = (e.target as HTMLElement).closest<HTMLElement>('[data-look]');
+      if (!b) return;
+      e.preventDefault();
+      stage.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+      house.focus(b.dataset.look);
+      if (found.includes(b.dataset.look!)) showCard(b.dataset.look!);
+    };
+    document.addEventListener('click', onLook);
+    // the first find happens by itself, so the page at rest shows how it works
+    const first = setTimeout(() => (house.coarse ? house.focus('basket') : house.parkAt('basket')), 450);
+
+    teardown = () => { clearTimeout(first); ro.disconnect(); document.removeEventListener('click', onLook); house.destroy(); };
+  }
+
+  document.addEventListener('astro:page-load', init);
+  document.addEventListener('astro:before-swap', () => { teardown?.(); teardown = null; });
+</script>
+
+<style is:global>
+  .hh { position: relative; height: clamp(640px, calc(100svh - 68px), 860px); overflow: hidden; background: var(--paper-2); border-bottom: 1px solid var(--rule); isolation: isolate; }
+  .hh__gl { position: absolute; inset: 0; z-index: 1; }
+  .hh__gl canvas { position: relative; z-index: 1; cursor: none; }
+  @media (pointer: coarse) { .hh__gl canvas { cursor: auto; } }
+  .hh__lead { position: absolute; top: 44px; bottom: 24px; left: max(var(--gutter), calc((100% - var(--wide)) / 2)); width: min(34vw, 440px); display: flex; flex-direction: column; gap: 28px; pointer-events: none; }
+  .hh__copy, .hh__count { position: relative; z-index: 0; }
+  .hh__fig { margin: 0 0 14px; }
+  .hh h1 { font-size: clamp(2.6rem, 1.4rem + 3.6vw, 4.4rem); margin: 0 0 16px; }
+  .hh__sub { margin: 0; font-size: 17px; color: var(--ink-2); max-width: 36ch; }
+  .hh--explored .hh__fig, .hh--explored .hh__sub { display: none; }
+  .hh--explored .hh__lead { gap: 18px; }
+  .hh__count p { margin: 0; }
+  .hh__draft { margin-left: 10px; border: 1px solid var(--rule); border-radius: 99px; padding: 1px 7px; }
+  .hh__amt { font: 500 clamp(32px, 3.6vw, 48px)/1.1 var(--mono); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--ink); }
+  .hh__unk { font: 500 16px var(--text); letter-spacing: 0; color: var(--ink-2); margin-left: 10px; }
+  .hh__card { position: relative; z-index: 4; pointer-events: auto; margin-top: auto; width: 100%; max-width: 420px; display: grid; grid-template-columns: 128px minmax(0, 1fr); background: var(--paper); border: 1px solid var(--rule); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-lift); }
+  .hh__card--hint { grid-template-columns: minmax(0, 1fr); }
+  .hh__card--in { animation: hhIn 0.45s var(--ease); }
+  @keyframes hhIn { from { transform: translateY(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+  .hh__ph { position: relative; background: #111; min-height: 100%; }
+  .hh__ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hh__mk { position: absolute; left: 8px; bottom: 8px; width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 2px solid var(--paper); box-shadow: 0 2px 10px rgb(0 0 0 / 0.35); }
+  .hh__mk img { width: 100%; height: 100%; object-fit: cover; }
+  .hh__bd { padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+  .hh__bd p { margin: 0; }
+  .hh__card h2 { font-size: 19px; font-stretch: 106%; line-height: 1.15; }
+  .hh__when { font-size: 14px; color: var(--ink-2); }
+  .hh__marks { font-size: 14px; line-height: 1.45; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .hh__ev { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; padding-top: 8px; border-top: 1px solid var(--rule); }
+  .hh__ev b { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .hh__go { font-size: 14px; text-decoration: none; border-bottom: 1px solid var(--accent); align-self: flex-start; }
+
+  .hh__loupe { position: absolute; z-index: 3; left: 0; top: 0; pointer-events: none; will-change: transform; }
+  .hh__rim { position: absolute; inset: -7px; border-radius: 50%; border: 1.5px solid var(--ink); box-shadow: 0 10px 30px -8px rgb(0 0 0 / 0.35), inset 0 0 0 5px rgb(255 255 255 / 0.35); }
+  .hh__loupe svg { position: absolute; inset: -7px; width: calc(100% + 14px); height: calc(100% + 14px); overflow: visible; }
+  .hh__ticks line { stroke: var(--ink); stroke-width: 1; opacity: 0.5; }
+  .hh__ticks line.hot { stroke: var(--accent); opacity: 1; stroke-width: 2.5; }
+  .hh__prog { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; transform: rotate(-90deg); transform-origin: 50% 50%; transition: stroke-dashoffset 0.06s linear; }
+  .hh__zoom { position: absolute; right: -6px; bottom: 2px; font: 400 11px/1.4 var(--mono); background: var(--paper); border: 1px solid var(--rule); padding: 0 5px; border-radius: 99px; color: var(--ink-3); }
+
+  .hh__pins, .hh__looks { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+  .hh__pin { position: absolute; transform: translate(-50%, -100%); display: flex; flex-direction: column; align-items: center; }
+  .hh__pin b { font: 600 11px/1 var(--mono); padding: 4px 6px; border-radius: 99px; background: var(--accent); color: #fff; white-space: nowrap; animation: hhPop 0.5s cubic-bezier(0.2, 1.6, 0.4, 1); }
+  .hh__pin i { width: 1px; height: 12px; background: var(--accent); }
+  @keyframes hhPop { from { transform: scale(0.3); } to { transform: none; } }
+  .hh__look { position: absolute; width: 18px; height: 18px; transform: translate(-50%, -50%); transition: opacity 0.25s ease; }
+  .hh__look b { position: absolute; inset: 0; opacity: 0; background: radial-gradient(circle, #fffaf0 0 22%, rgb(255 240 215 / 0.9) 34%, rgb(255 255 255 / 0) 62%);
+    clip-path: polygon(50% 0, 57% 43%, 100% 50%, 57% 57%, 50% 100%, 43% 57%, 0 50%, 43% 43%);
+    filter: drop-shadow(0 0 2px rgb(232 67 22 / 0.55)); animation: hhGlint 7s ease-in-out infinite; animation-delay: var(--d, 0s); }
+  @keyframes hhGlint { 0%, 84%, 100% { opacity: 0; transform: scale(0.2) rotate(0deg); } 89% { opacity: 1; transform: scale(1) rotate(40deg); } 95% { opacity: 0; transform: scale(0.35) rotate(80deg); } }
+  .hh__look.off { opacity: 0; }
+
+  .hh__floors { display: none; position: absolute; z-index: 3; right: var(--gutter); top: 42%; flex-direction: column; gap: 6px; }
+  .hh__floors button, .hh__reset { border: 1px solid var(--rule); background: var(--paper); border-radius: var(--r-sm); padding: 6px 10px; font: 500 13px var(--text); color: var(--ink-2); cursor: pointer; }
+  .hh__reset { position: absolute; z-index: 3; right: var(--gutter); bottom: 22px; }
+  .hh:not(.hh--explored) .hh__reset { display: none; }
+  .hh__toast { position: absolute; z-index: 5; left: 50%; top: 20px; transform: translateX(-50%); background: var(--ink); color: var(--paper); padding: 7px 14px; border-radius: 99px; font-size: 14px; opacity: 0; transition: opacity 0.3s; pointer-events: none; white-space: nowrap; }
+  .hh__toast.on { opacity: 1; }
+  .hh--flat { height: auto; padding-block: 56px 40px; }
+  .hh--flat .hh__gl, .hh--flat .hh__count, .hh--flat .hh__card { display: none; }
+  .hh--flat .hh__lead { position: static; width: auto; padding-inline: var(--gutter); }
+
+  @media (max-width: 1100px) { .hh__lead { width: 40vw; } }
+  @media (max-width: 760px) {
+    .hh { height: 720px; }
+    .hh__gl { top: 206px; }
+    .hh__lead { display: contents; }
+    .hh__copy { position: absolute; z-index: 2; left: var(--gutter); right: var(--gutter); top: 24px; }
+    .hh__fig { display: none; }
+    .hh h1 { font-size: 34px; margin-bottom: 8px; white-space: nowrap; }
+    .hh__sub, .hh--explored .hh__sub { display: block; font-size: 14.5px; line-height: 1.45; }
+    .hh__count { position: absolute; z-index: 2; left: var(--gutter); right: var(--gutter); top: 150px; display: flex; flex-wrap: wrap; gap: 2px 12px; align-items: baseline; }
+    .hh__amt { font-size: 24px; }
+    .hh__draft { display: none; }
+    .hh__card { position: absolute; left: 10px; right: 10px; bottom: 10px; width: auto; max-width: none; margin: 0; grid-template-columns: 108px minmax(0, 1fr); max-height: 200px; }
+    .hh__mk { width: 44px; height: 44px; }
+    .hh__card h2 { font-size: 17px; }
+    .hh__reset { display: none; }
+  }
+  @media (max-width: 760px) and (pointer: coarse) { .hh__floors { display: flex; } }
+  @media (prefers-reduced-motion: reduce) { .hh__look b { animation: none; opacity: 0.55; transform: scale(0.6); } }
+</style>

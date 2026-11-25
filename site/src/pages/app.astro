@@ -1,0 +1,114 @@
+---
+// The app, in a page or two: what the old home page said in 2,000 words,
+// kept to what a person needs to decide. Same qualifications as the home page.
+import Base from '../layouts/Base.astro';
+const shots = [
+  { f: '01-rooms', c: 'Your home, room by room', alt: 'Heirloom’s Home screen on iPhone: five rooms, each showing how many of its items are documented, the collection, and the market-estimate and insured-value lines.' },
+  { f: '03-insurance-pdf', c: 'A PDF your insurer can read', alt: 'The insurance inventory PDF Heirloom prepares, open on iPhone: a summary of the owner’s items, a list by room, and each item with its photos.' },
+  { f: '04-whats-missing', c: 'See what isn’t documented yet', alt: 'Home on iPhone answering “What isn’t documented yet?”: three items still missing details, listed by name.' },
+  { f: '06-value', c: 'A value only with its source', alt: 'A silver cake basket’s record on iPhone: no estimate yet, and an insurance figure shown with who made it and when.' },
+  { f: '07-search', c: 'Find things in your own words', alt: 'Search on iPhone for “my mother’s things”: two of eight items found, each matched on its description and the owner’s notes.' },
+  { f: '08-family', c: 'Your family sees what you choose', alt: 'The “Who can see this” screen on iPhone: the owner, and a relative invited as a Commenter.' },
+];
+const steps = [
+  { t: 'Photograph it, or write it down', d: 'A few photos, or what you already know. Either is a real start, and you can add the other later.' },
+  { t: 'Learn what is known', d: 'Maker, period and materials where the evidence shows them, an estimate when there is evidence for one, and a plain note of what cannot be told from the photos.' },
+  { t: 'Keep its story', d: 'Who it came from and what it meant, in your own words. Relatives you invite can add their accounts beside yours.' },
+  { t: 'Use the record', d: 'Prepare it for an insurance conversation or for your family, and note who each item is meant for. The list grants no one access.' },
+];
+const parts = [
+  { t: 'The Advisor', d: 'Reads what your photos show (marks, labels, materials, condition) and says plainly what it cannot tell. It never decides whether an item is genuine; that belongs to a specialist you choose.' },
+  { t: 'An overview that adds up', d: 'What you own and what you are counting, split into figures backed by recorded sales and figures you entered yourself. Items with no established value count as unknown, never as zero.' },
+  { t: 'Research, when you want it', d: 'Sales of similar items with their source, date and whether they sold or were only listed, so you can keep them or set them aside, and a research chat for maker histories.' },
+  { t: 'Specialist help, if you ask', d: 'Ask for an introduction to an independent appraiser or dealer, for an identification, a valuation or a written appraisal from an independent professional. You see exactly what will be shared first.' },
+  { t: 'Private by design', d: 'Your collection is yours: shared only with people you invite, and yours to export.' },
+];
+---
+<Base
+  title="The Heirloom app: your home’s inventory, room by room"
+  description="Photograph an item or write down what you know. Heirloom keeps your home’s inventory room by room, reads the marks in your photos, and shows the evidence behind any estimate."
+  path="/app"
+>
+  <section class="wrap ap">
+    <p class="label">The app</p>
+    <h1>Your home’s inventory, room by room.</h1>
+    <p class="lede">The photos, the stories, and what each item’s marks say, ready for your insurer or your family. Photograph one, or write down what you already know.</p>
+    <div class="ap__cta">
+      <a class="btn btn--primary" href="https://apps.apple.com/us/app/id6754576251">Get Heirloom for iPhone</a>
+      <a class="btn" href="https://web.heirloomapp.io">Use it on the web</a>
+    </div>
+    <p class="muted ap__us">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
+  </section>
+
+  <section class="shots" aria-label="The app on iPhone">
+    <ul class="wrap shots__row">
+      {shots.map((s) => (
+        <li>
+          <img src={`/screens/${s.f}-440.webp`} srcset={`/screens/${s.f}-440.webp 440w, /screens/${s.f}.webp 660w`} sizes="220px" alt={s.alt} width="220" height="476" loading="lazy" />
+          <p class="label">{s.c}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap ap2">
+    <h2>How a record comes together</h2>
+    <p class="muted">Take the steps in any order and stop whenever you like. A record is complete when you say it is, and it never needs a price to count.</p>
+    <ol class="steps">
+      {steps.map((s) => <li><strong>{s.t}</strong><span>{s.d}</span></li>)}
+    </ol>
+  </section>
+
+  <section class="wrap ap2">
+    <h2>Two ways in</h2>
+    <div class="ways">
+      <div>
+        <p class="label">Photograph it</p>
+        <p>Found it in the attic, inherited it, or just curious. Take a few photos. The Advisor reads the marks, labels and details it can see, says plainly what it cannot tell, and asks a question only when the answer would change something. Many keepsakes have no market value, and that is fine.</p>
+      </div>
+      <div>
+        <p class="label">Write it down</p>
+        <p>You’re the collector and you did the research years ago. Catalogue it yourself: maker, provenance, condition, your own valuation. Your words and your estimates are never overwritten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap ap2">
+    <h2>What it does</h2>
+    <dl class="parts">
+      {parts.map((p) => <div><dt>{p.t}</dt><dd>{p.d}</dd></div>)}
+    </dl>
+    <p class="muted ap__fine">Estimates are labeled as estimates and are not professional appraisals. Heirloom lists nothing, and nothing is put up for sale. No money for a sale changes hands through Heirloom. Specialists, sale conversations, sold prices and Heirloom’s price estimates are offered in the United States only for now.</p>
+  </section>
+</Base>
+
+<style>
+  .ap { padding-block: 72px 40px; }
+  .ap h1 { margin: 12px 0 18px; max-width: 16ch; }
+  .ap__cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 14px; }
+  .ap__us { font-size: 14.5px; }
+  .shots { background: var(--paper-2); border-block: 1px solid var(--rule); overflow-x: auto; }
+  .shots__row { list-style: none; display: flex; gap: 22px; padding-block: 40px; margin: 0 auto; }
+  .shots li { flex: none; width: 220px; }
+  .shots img { width: 220px; height: auto; border-radius: 22px; box-shadow: var(--shadow-lift); }
+  .shots p { margin: 12px 0 0; }
+  .ap2 { padding-top: 72px; }
+  .ap2 h2 { margin-bottom: 10px; }
+  .ap2 > p { max-width: 62ch; }
+  .steps { list-style: none; counter-reset: s; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .steps li { counter-increment: s; border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 6px; color: var(--ink-2); font-size: 15px; }
+  .steps li::before { content: counter(s); font: 400 13px var(--mono); color: var(--ink-3); }
+  .steps strong { color: var(--ink); font-weight: 600; font-size: 16px; }
+  .ways { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; margin-top: 18px; }
+  .ways p:not(.label) { color: var(--ink-2); }
+  .parts { margin: 18px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+  .parts div { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .parts dt { font-weight: 600; margin-bottom: 4px; }
+  .parts dd { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+  .ap__fine { margin-top: 28px; font-size: 14.5px; max-width: 70ch; }
+  @media (max-width: 860px) {
+    .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ways, .parts { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 520px) { .steps { grid-template-columns: minmax(0, 1fr); } }
+</style>

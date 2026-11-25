@@ -1,0 +1,132 @@
+---
+// heirloomapp.io: an ordinary house under a loupe, the same items as a list,
+// the way into the reference, and the app in a few lines. The sentences in
+// the app band are the ones scripts/check-copy.mjs requires on the home page.
+import Base from '../layouts/Base.astro';
+import HouseHero from '../components/HouseHero.astro';
+import data from '../data/home/house.json';
+const fmt = (n: number) => '$' + n.toLocaleString('en-US');
+const families = [
+  { href: '/marks/london-date-letters', t: 'British date letters', d: 'London, Birmingham, Sheffield and Chester, by year' },
+  { href: '/marks/silver-marks', t: 'Silver marks', d: 'Sterling, coin, plate and the world’s standards' },
+  { href: '/marks/pottery-marks', t: 'Pottery and porcelain', d: 'Every maker’s marks on one timeline' },
+  { href: '/marks/chinese-reign-marks', t: 'Chinese reign marks', d: 'Match the six characters on the base' },
+  { href: '/signatures', t: 'Artists’ signatures', d: 'Dated examples from museum collections' },
+  { href: '/marks/singer-serial-numbers', t: 'Serial numbers', d: 'Singer, Leica, Rolex, Omega and pocket watches' },
+];
+const jsonld = [{
+  '@type': 'MobileApplication', name: 'Heirloom: Know What You Own', operatingSystem: 'iOS', applicationCategory: 'LifestyleApplication',
+  url: 'https://apps.apple.com/us/app/id6754576251', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+}];
+---
+<Base
+  title="Heirloom: a home inventory, and a reference for the marks on what you own"
+  description="Your home’s inventory, room by room, ready for your insurer or your family, and a reference for reading the marks on silver, pottery, watches and art."
+  path="/"
+  jsonld={jsonld}
+>
+  <HouseHero />
+
+  <section class="wrap hs" aria-labelledby="in-house">
+    <div class="hs__head">
+      <h2 id="in-house">In this house</h2>
+      <p class="muted">Eleven items an ordinary house might hold. Some are worth more than people expect, some much less, and one has no price at all. The figures are sales of similar items, not appraisals of yours.</p>
+    </div>
+    <div class="rooms">
+      {data.rooms.map((room) => (
+        <div class="room">
+          <p class="label">{room}</p>
+          <ul>
+            {data.items.filter((i) => i.room === room).map((i) => (
+              <li data-house-item={i.id}>
+                <p class="room__name"><strong>{i.name}</strong> <span class="muted">{i.when}</span></p>
+                <p class="room__marks">{i.marks}</p>
+                <p class="room__v">
+                  {i.unknown ? <span>No price: counted as unknown, never $0</span> : <span class="num">Similar ones sold for {fmt(i.low!)}–{fmt(i.high!)}</span>}
+                  <a href="#house" data-look={i.id}>Look at it</a>
+                  {i.link && <a href={i.link[1]}>{i.link[0]}</a>}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <p class="label hs__credit">Photographs: {[...new Set(data.items.filter((i) => i.credit).map((i) => i.credit))].join(' · ')}</p>
+  </section>
+
+  <section class="band" aria-labelledby="look-up">
+    <div class="wrap band__in">
+      <div>
+        <h2 id="look-up">Look something up</h2>
+        <p class="muted">Type what you can see on the item: a letter, a year, a maker, a number, or the characters on a base.</p>
+        <form class="look" action="/marks/" method="get" role="search">
+          <label class="visually-hidden" for="q">Search the marks reference</label>
+          <input class="field" id="q" name="q" type="search" placeholder="A letter, a year, 925, Gorham, 大明成化年製…" autocomplete="off" />
+          <button class="btn btn--primary" type="submit">Search</button>
+        </form>
+      </div>
+      <ul class="fams">
+        {families.map((f) => <li><a href={f.href}><strong>{f.t}</strong><span>{f.d}</span></a></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap app" aria-labelledby="keep">
+    <div class="app__head">
+      <h2 id="keep">Keep a record of yours</h2>
+      <p class="lede">Heirloom is your home’s inventory, room by room: the photos, the stories, and what each item’s marks say, ready for your insurer or your family.</p>
+      <div class="app__cta">
+        <a class="btn btn--primary" href="https://apps.apple.com/us/app/id6754576251">Get Heirloom for iPhone</a>
+        <a class="btn" href="/app">How it works</a>
+      </div>
+      <p class="muted app__us">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
+    </div>
+    <ul class="app__points">
+      <li><strong>Photograph it, or write it down.</strong> Either is a real start, and your words are the record.</li>
+      <li><strong>The Advisor reads the evidence.</strong> It reads the marks, labels and details in your photos and says plainly what it cannot tell.</li>
+      <li><strong>An estimate only with evidence.</strong> One appears when there is evidence for one, with its sources. Many keepsakes have no market value, and that is fine. Estimates are not professional appraisals.</li>
+      <li><strong>Who it’s meant for.</strong> Note who each item is meant for; the list grants no one access.</li>
+      <li><strong>Never a shop.</strong> Heirloom lists nothing, and nothing is put up for sale. No money for a sale changes hands through Heirloom.</li>
+    </ul>
+    <p class="label app__fine">Specialists, sale conversations, sold prices and Heirloom’s price estimates are offered in the United States only for now.</p>
+  </section>
+</Base>
+
+<style>
+  .hs { padding-block: 72px 24px; }
+  .hs__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px 48px; align-items: end; margin-bottom: 28px; }
+  .hs__head p { margin: 0; max-width: 60ch; }
+  .rooms { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .room { border-top: 2px solid var(--ink); padding-top: 12px; min-width: 0; }
+  .room ul { list-style: none; margin: 8px 0 0; padding: 0; }
+  .room li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .room li p { margin: 0; }
+  .room__name { font-size: 16px; }
+  .room__marks { font-size: 14.5px; color: var(--ink-2); margin-top: 4px !important; }
+  .room__v { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px !important; font-size: 14px; }
+  .room__v a { color: var(--ink-2); }
+  .room li.is-found .room__v span { color: var(--accent-ink); font-weight: 600; }
+  .hs__credit { margin-top: 20px; }
+  .band { background: var(--paper-2); border-block: 1px solid var(--rule); margin-top: 64px; }
+  .band__in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 40px 56px; padding-block: 64px; align-items: start; }
+  .band h2 { margin-bottom: 10px; }
+  .look { display: flex; gap: 10px; margin-top: 18px; }
+  .look .btn { min-height: 52px; }
+  .fams { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+  .fams a { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .fams a:hover strong { color: var(--accent-ink); }
+  .fams span { font-size: 14px; color: var(--ink-2); }
+  .app { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px 64px; padding-block: 80px 0; }
+  .app h2 { margin-bottom: 14px; }
+  .app__cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 14px; }
+  .app__us { font-size: 14.5px; }
+  .app__points { list-style: none; margin: 0; padding: 0; }
+  .app__points li { padding: 14px 0; border-bottom: 1px solid var(--rule); color: var(--ink-2); }
+  .app__points strong { display: block; color: var(--ink); font-weight: 600; }
+  .app__fine { grid-column: 1 / -1; margin: 0; }
+  @media (max-width: 860px) {
+    .hs__head, .band__in, .app { grid-template-columns: minmax(0, 1fr); }
+    .fams { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>
