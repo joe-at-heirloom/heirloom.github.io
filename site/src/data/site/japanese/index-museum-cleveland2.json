@@ -1,0 +1,642 @@
+[
+ {
+  "file": "cleveland-1985-360.webp",
+  "row_id": "nishimuraya-yohachi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.360",
+  "title": "Act VII from the series The Storehouse of Loyal Retainers",
+  "date": "c. 1801–2",
+  "object_url": "https://clevelandart.org/art/1985.360",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.360/1985.360_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Act VII from the series The Storehouse of Loyal Retainers: full view of the print. Colour woodblock print, full view; the seal for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1098,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1985-360-mark.webp",
+  "row_id": "nishimuraya-yohachi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.360",
+  "title": "Act VII from the series The Storehouse of Loyal Retainers",
+  "date": "c. 1801–2",
+  "object_url": "https://clevelandart.org/art/1985.360",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.360/1985.360_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "seal",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1985-360.webp",
+  "caption": "Publisher's imprint in the lower margin: the Nishimuraya mitsudomoe emblem under a roof and the rectangular Eijudo (Nishimuraya Yohachi) seal. Cleveland's inscription field names the publisher as Nishimuraya Yohachi (Eiju han, emblem).",
+  "pixels": [
+   390,
+   590
+  ]
+ },
+ {
+  "file": "cleveland-1948-306.webp",
+  "row_id": "hoeido-takenouchi-magohachi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1948.306",
+  "title": "Driving Rain at Shōno, from Fifty-Three Stations of the Tokaidō",
+  "date": "1833",
+  "object_url": "https://clevelandart.org/art/1948.306",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1948.306/1948.306_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. T. Wingate Todd from the Collection of Dr. T. Wingate Todd, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Driving Rain at Shōno, from Fifty-Three Stations of the Tokaidō: full view of the print. Colour woodblock print, full view; the seal for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1600,
+   1068
+  ]
+ },
+ {
+  "file": "cleveland-1948-306-mark.webp",
+  "row_id": "hoeido-takenouchi-magohachi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1948.306",
+  "title": "Driving Rain at Shōno, from Fifty-Three Stations of the Tokaidō",
+  "date": "1833",
+  "object_url": "https://clevelandart.org/art/1948.306",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1948.306/1948.306_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. T. Wingate Todd from the Collection of Dr. T. Wingate Todd, CC0",
+  "view": "seal",
+  "inscription_visible": "partly",
+  "crop_of": "cleveland-1948-306.webp",
+  "caption": "Red Hoeido (Takenouchi Magohachi) publisher's seal below the Hiroshige signature. The tail of the last signature stroke overlaps the top edge of the seal.",
+  "pixels": [
+   971,
+   873
+  ]
+ },
+ {
+  "file": "cleveland-1985-316.webp",
+  "row_id": "sakanaya-eikichi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.316",
+  "title": "Evening Glow at Seta, from the series Eight Views of Ōmi",
+  "date": "1857",
+  "object_url": "https://clevelandart.org/art/1985.316",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.316/1985.316_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Evening Glow at Seta, from the series Eight Views of Ōmi: full view of the print. Colour woodblock print, full view; the seal for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1095,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1985-316-mark.webp",
+  "row_id": "sakanaya-eikichi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.316",
+  "title": "Evening Glow at Seta, from the series Eight Views of Ōmi",
+  "date": "1857",
+  "object_url": "https://clevelandart.org/art/1985.316",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.316/1985.316_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "seal",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1985-316.webp",
+  "caption": "Publisher's cartouche Shitaya Shinkuro Uoei (Uoya or Sakanaya Eikichi) in the left margin. Cleveland names the publisher as Uoya Eikichi, Shitaya Shinkuro.",
+  "pixels": [
+   299,
+   521
+  ]
+ },
+ {
+  "file": "cleveland-1930-211-b.webp",
+  "row_id": "izumiya-ichibei",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1930.211.b",
+  "title": "Courtesans Promenading on the Nakanochō",
+  "date": "c. 1790",
+  "object_url": "https://clevelandart.org/art/1930.211.b",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1930.211.b/1930.211.b_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Bequest of Edward L. Whittemore, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Courtesans Promenading on the Nakanochō: full view of the print. Colour woodblock print, full view; the seal for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1106,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1930-211-b-mark.webp",
+  "row_id": "izumiya-ichibei",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1930.211.b",
+  "title": "Courtesans Promenading on the Nakanochō",
+  "date": "c. 1790",
+  "object_url": "https://clevelandart.org/art/1930.211.b",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1930.211.b/1930.211.b_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Bequest of Edward L. Whittemore, CC0",
+  "view": "seal",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1930-211-b.webp",
+  "caption": "Izumi-ichi han (Izumiya Ichibei, published by) cartouche in the lower-left margin of one sheet of a triptych.",
+  "pixels": [
+   313,
+   546
+  ]
+ },
+ {
+  "file": "cleveland-1985-312.webp",
+  "row_id": "yamamotoya-heikichi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.312",
+  "title": "Night Rain at Karasaki, from Eight Views of Ōmi",
+  "date": "c. 1835",
+  "object_url": "https://clevelandart.org/art/1985.312",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.312/1985.312_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Night Rain at Karasaki, from Eight Views of Ōmi: full view of the print. Colour woodblock print, full view; the seal for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1600,
+   1077
+  ]
+ },
+ {
+  "file": "cleveland-1985-312-mark.webp",
+  "row_id": "yamamotoya-heikichi",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.312",
+  "title": "Night Rain at Karasaki, from Eight Views of Ōmi",
+  "date": "c. 1835",
+  "object_url": "https://clevelandart.org/art/1985.312",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.312/1985.312_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "seal",
+  "inscription_visible": "partly",
+  "crop_of": "cleveland-1985-312.webp",
+  "caption": "Red rounded-rectangle publisher's seal in the right margin; Cleveland names the publisher as Yamamoto Heikichi (Eikyudo). The seal script is hard to read and the tail of the signature's last stroke touches its top edge.",
+  "pixels": [
+   797,
+   725
+  ]
+ },
+ {
+  "file": "cleveland-1985-332.webp",
+  "row_id": "kawaguchiya-uhei",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.332",
+  "title": "Nakamura Utaemon III as the Monkey Trainer Yojiro (from the series Famous Kabuki Plays)",
+  "date": "mid-1810s",
+  "object_url": "https://clevelandart.org/art/1985.332",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.332/1985.332_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Nakamura Utaemon III as the Monkey Trainer Yojiro (from the series Famous Kabuki Plays): full view of the print. Colour woodblock print, full view; the seal for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1128,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1985-332-mark.webp",
+  "row_id": "kawaguchiya-uhei",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.332",
+  "title": "Nakamura Utaemon III as the Monkey Trainer Yojiro (from the series Famous Kabuki Plays)",
+  "date": "mid-1810s",
+  "object_url": "https://clevelandart.org/art/1985.332",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.332/1985.332_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "seal",
+  "inscription_visible": "partly",
+  "crop_of": "cleveland-1985-332.webp",
+  "caption": "Boxed Kawaguchi publisher's mark under the signature and round kiwame seal. Cleveland names the publisher as Kawaguchi Uhei (Kawaguchi, emblem); the lower character is Kawa (river), the rest is a stylised mark.",
+  "pixels": [
+   255,
+   403
+  ]
+ },
+ {
+  "file": "cleveland-1916-1172.webp",
+  "row_id": "nanushi-magome",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1916.1172",
+  "title": "Woman Standing Beside a Plum Tree",
+  "date": "c. 1850",
+  "object_url": "https://clevelandart.org/art/1916.1172",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1916.1172/1916.1172_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mr. and Mrs. J. H. Wade, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Woman Standing Beside a Plum Tree: full view of the print. Colour woodblock print, full view; the seal for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1113,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1916-1172-mark.webp",
+  "row_id": "nanushi-magome",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1916.1172",
+  "title": "Woman Standing Beside a Plum Tree",
+  "date": "c. 1850",
+  "object_url": "https://clevelandart.org/art/1916.1172",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1916.1172/1916.1172_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mr. and Mrs. J. H. Wade, CC0",
+  "view": "seal",
+  "inscription_visible": "partly",
+  "crop_of": "cleveland-1916-1172.webp",
+  "caption": "Left of the two round censor seals Hama and Magome (read right to left, as in Cleveland's inscription Hama, Magomi); the lower-left stroke reads as the radical of the kome character. Seal-script reading is uncertain.",
+  "pixels": [
+   96,
+   96
+  ]
+ },
+ {
+  "file": "cleveland-1943-2.webp",
+  "row_id": "hokusai-hokusai-gakyojin",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1943.2",
+  "title": "Women and Children Walking Along the Sumida River",
+  "date": "early 1800s",
+  "object_url": "https://clevelandart.org/art/1943.2",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1943.2/1943.2_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. Ralph King, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Women and Children Walking Along the Sumida River: full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1600,
+   1043
+  ]
+ },
+ {
+  "file": "cleveland-1943-2-mark.webp",
+  "row_id": "hokusai-hokusai-gakyojin",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1943.2",
+  "title": "Women and Children Walking Along the Sumida River",
+  "date": "early 1800s",
+  "object_url": "https://clevelandart.org/art/1943.2",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1943.2/1943.2_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. Ralph King, CC0",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1943-2.webp",
+  "caption": "Signature Gakyojin Hokusai ga (drawn by Hokusai, the man mad about painting) in the lower-left margin.",
+  "pixels": [
+   495,
+   657
+  ]
+ },
+ {
+  "file": "cleveland-1943-5.webp",
+  "row_id": "hokusai-aratame-taito",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1943.5",
+  "title": "Basket of Peonies",
+  "date": "1810 or 1814",
+  "object_url": "https://clevelandart.org/art/1943.5",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1943.5/1943.5_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. Ralph King, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Basket of Peonies: full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1600,
+   1198
+  ]
+ },
+ {
+  "file": "cleveland-1943-5-mark.webp",
+  "row_id": "hokusai-aratame-taito",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1943.5",
+  "title": "Basket of Peonies",
+  "date": "1810 or 1814",
+  "object_url": "https://clevelandart.org/art/1943.5",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1943.5/1943.5_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. Ralph King, CC0",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1943-5.webp",
+  "caption": "Signature column Katsushika Hokusai aratame Taito gasan (Hokusai, changing name to Taito). Cleveland's inscription: Signature: Katsushika Hokusai aratame Taito gasan.",
+  "pixels": [
+   487,
+   1339
+  ]
+ },
+ {
+  "file": "cleveland-1985-330.webp",
+  "row_id": "kiyonaga-ga",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.330",
+  "title": "Women Watching a Girl Dance on Shells (From the series Fashionable Presentations of Three Horses)",
+  "date": "1784",
+  "object_url": "https://clevelandart.org/art/1985.330",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.330/1985.330_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Women Watching a Girl Dance on Shells (From the series Fashionable Presentations of Three Horses): full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1110,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1985-330-mark.webp",
+  "row_id": "kiyonaga-ga",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1985.330",
+  "title": "Women Watching a Girl Dance on Shells (From the series Fashionable Presentations of Three Horses)",
+  "date": "1784",
+  "object_url": "https://clevelandart.org/art/1985.330",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.330/1985.330_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, The Kelvin Smith Collection, given by Mrs. Kelvin Smith, CC0",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1985-330.webp",
+  "caption": "Signature Kiyonaga ga (drawn by Kiyonaga) in the left margin.",
+  "pixels": [
+   489,
+   823
+  ]
+ },
+ {
+  "file": "cleveland-1921-1271.webp",
+  "row_id": "shunsho-ga",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1921.1271",
+  "title": "Ichikawa Danjuro V as a Traveller Beside a Clump of Iris",
+  "date": "c. 1780",
+  "object_url": "https://clevelandart.org/art/1921.1271",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1921.1271/1921.1271_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift from J. H. Wade, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Ichikawa Danjuro V as a Traveller Beside a Clump of Iris: full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   783,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1921-1271-mark.webp",
+  "row_id": "shunsho-ga",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1921.1271",
+  "title": "Ichikawa Danjuro V as a Traveller Beside a Clump of Iris",
+  "date": "c. 1780",
+  "object_url": "https://clevelandart.org/art/1921.1271",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1921.1271/1921.1271_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift from J. H. Wade, CC0",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1921-1271.webp",
+  "caption": "Signature Shunsho ga (drawn by Shunsho) at upper right.",
+  "pixels": [
+   454,
+   897
+  ]
+ },
+ {
+  "file": "cleveland-2016-546.webp",
+  "row_id": "koson",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2016.546",
+  "title": "Dancing Fox",
+  "date": "1900–1910s",
+  "object_url": "https://clevelandart.org/art/2016.546",
+  "image_url": "https://openaccess-cdn.clevelandart.org/2016.546/2016.546_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift in honor of Delbert Gutridge, CMA Registrar 1968-1996, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Dancing Fox: full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   834,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-2016-546-mark.webp",
+  "row_id": "koson",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2016.546",
+  "title": "Dancing Fox",
+  "date": "1900–1910s",
+  "object_url": "https://clevelandart.org/art/2016.546",
+  "image_url": "https://openaccess-cdn.clevelandart.org/2016.546/2016.546_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift in honor of Delbert Gutridge, CMA Registrar 1968-1996, CC0",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-2016-546.webp",
+  "caption": "Signature Koson with red seal at lower right of a Koson (Ohara) print.",
+  "pixels": [
+   658,
+   1455
+  ]
+ },
+ {
+  "file": "cleveland-1997-121.webp",
+  "row_id": "shoson",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1997.121",
+  "title": "Umbrellas in Snow",
+  "date": "1931",
+  "object_url": "https://clevelandart.org/art/1997.121",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1997.121/1997.121_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Bequest of Mrs. A. Dean Perry, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Umbrellas in Snow: full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1077,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1997-121-mark.webp",
+  "row_id": "shoson",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1997.121",
+  "title": "Umbrellas in Snow",
+  "date": "1931",
+  "object_url": "https://clevelandart.org/art/1997.121",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1997.121/1997.121_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Bequest of Mrs. A. Dean Perry, CC0",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1997-121.webp",
+  "caption": "Signature Shoson with red seal at lower left of an Ohara Shoson print.",
+  "pixels": [
+   354,
+   616
+  ]
+ },
+ {
+  "file": "cleveland-1920-163.webp",
+  "row_id": "hiroshige-hiroshige-hitsu",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1920.163",
+  "title": "Grosbeak and Clematis",
+  "date": "mid-1830s",
+  "object_url": "https://clevelandart.org/art/1920.163",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1920.163/1920.163_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Purchase from the J. H. Wade Fund, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Grosbeak and Clematis: full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   811,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1920-163-mark.webp",
+  "row_id": "hiroshige-hiroshige-hitsu",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1920.163",
+  "title": "Grosbeak and Clematis",
+  "date": "mid-1830s",
+  "object_url": "https://clevelandart.org/art/1920.163",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1920.163/1920.163_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Purchase from the J. H. Wade Fund, CC0",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "cleveland-1920-163.webp",
+  "caption": "Signature Hiroshige hitsu (from the brush of Hiroshige) in the lower margin. Cleveland's inscription: Signature: Hiroshige hitsu.",
+  "pixels": [
+   507,
+   1497
+  ]
+ },
+ {
+  "file": "cleveland-1930-178.webp",
+  "row_id": "hiroshige-ryusai",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1930.178",
+  "title": "Cuckoo",
+  "date": "1840s or later",
+  "object_url": "https://clevelandart.org/art/1930.178",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1930.178/1930.178_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Bequest of Edward L. Whittemore, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Cuckoo: full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   737,
+   1600
+  ]
+ },
+ {
+  "file": "cleveland-1930-178-mark.webp",
+  "row_id": "hiroshige-ryusai",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1930.178",
+  "title": "Cuckoo",
+  "date": "1840s or later",
+  "object_url": "https://clevelandart.org/art/1930.178",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1930.178/1930.178_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Bequest of Edward L. Whittemore, CC0",
+  "view": "signature",
+  "inscription_visible": "partly",
+  "crop_of": "cleveland-1930-178.webp",
+  "caption": "Signature Hiroshige with the small tall Ryusai seal below it (Cleveland: Artist Seal: Ryusai); the seal characters are small and partly obscured by the blue ground.",
+  "pixels": [
+   504,
+   1599
+  ]
+ },
+ {
+  "file": "cleveland-1942-146.webp",
+  "row_id": "hiroshige2-hiroshige",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1942.146",
+  "title": "Shinagawa (from the series Fifty-three Stations of the Tokaido)",
+  "date": "1797–1858",
+  "object_url": "https://clevelandart.org/art/1942.146",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1942.146/1942.146_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. Henry S. Upson, CC0",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Shinagawa (from the series Fifty-three Stations of the Tokaido): full view of the print. Colour woodblock print, full view; the signature for this row is a small detail in the margin (see the crop).",
+  "pixels": [
+   1600,
+   1045
+  ]
+ },
+ {
+  "file": "cleveland-1942-146-mark.webp",
+  "row_id": "hiroshige2-hiroshige",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1942.146",
+  "title": "Shinagawa (from the series Fifty-three Stations of the Tokaido)",
+  "date": "1797–1858",
+  "object_url": "https://clevelandart.org/art/1942.146",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1942.146/1942.146_print.jpg",
+  "licence": "CC0 (verified via Cleveland API share_license_status)",
+  "credit": "Cleveland Museum of Art, Gift of Mrs. Henry S. Upson, CC0",
+  "view": "signature",
+  "inscription_visible": "partly",
+  "crop_of": "cleveland-1942-146.webp",
+  "caption": "Signature Hiroshige ga as written by Hiroshige II (Cleveland attributes this Fifty-three Stations print to Hiroshige II; inscription Hiroshige Gwa). The first character is written in a loose cursive form.",
+  "pixels": [
+   261,
+   752
+  ]
+ }
+]

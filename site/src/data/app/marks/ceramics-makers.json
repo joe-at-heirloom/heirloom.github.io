@@ -9335,6 +9335,10 @@
         {
           "source": "murphy-noritake-europe-2001",
           "says": "registered in Japan 1908; items seem earlier"
+        },
+        {
+          "source": "van-patten-nippon-4th-1997",
+          "says": "p. 82, no. 52: dates back to 1891; names no maker"
         }
       ],
       "visual": {
@@ -9481,7 +9485,7 @@
       "applied": "printed",
       "date_from": 1906,
       "date_to": 1921,
-      "date_note": "",
+      "date_note": "Van Patten (4th series, p. 85) dates the hand-painted RC Nippon mark shown (no. 80) from 1911, the RC Noritake Nippon form (no. 81) from 1906, and an RC Noritake Nippon mark for Japan's own market (no. 82) from 1902.",
       "sources": [
         {
           "id": "van-patten-nippon",
@@ -9497,12 +9501,12 @@
       ],
       "disagreements": [
         {
-          "source": "van-patten-nippon",
-          "says": "made from 1906, registered 1911"
-        },
-        {
           "source": "alden-richardson-noritake-1987",
           "says": "reads RC as Royal Ceramic"
+        },
+        {
+          "source": "van-patten-nippon-4th-1997",
+          "says": "p. 85: no. 80 used since 1911, no. 81 since 1906; RC stands for Royal Crockery (fine china)"
         }
       ],
       "visual": {
