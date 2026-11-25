@@ -224,6 +224,8 @@ function Pic({ r, size = 'md' }: { r: JaMark; size?: 'md' | 'lg' }) {
   const p = r.photo;
   if (p) return <img src={`/${p.file}`} alt={`${nameOf(r)}: ${p.label}`} loading="lazy" decoding="async" />;
   const cs = [...r.chars].filter((c) => JA.test(c));
+  // A seal described as a pattern (極 + 子丑寅… + 月) or a list of forms is not one mark to set in type.
+  if (/[+/／]/.test(r.chars)) return <span class="jx__noc ja" lang="ja">{r.chars}</span>;
   if (!cs.length || r.family === 'crests') return <span class="muted jx__noc">{r.family === 'crests' ? r.chars : r.chars || nameOf(r)}</span>;
   return <span class={`jx__chars jx__chars--${size}${cs.length > 4 ? ' is-long' : ''}`} lang="ja" aria-label={r.chars}>{cs.join('')}</span>;
 }
