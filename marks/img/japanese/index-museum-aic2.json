@@ -1,0 +1,382 @@
+[
+ {
+  "row_id": "nishimuraya-yohachi",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.3373",
+  "title": "Chrysanthemum and Horsefly, from an untitled series of Large Flowers",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/25110",
+  "image_url": "https://www.artic.edu/iiif/2/e81e632c-2e27-d79c-527d-365519796f9f/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-3373.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; square Eijudo (永寿堂) seal of the publisher Nishimuraya Yohachi, below Hokusai's signature.",
+  "pixels": [
+   1600,
+   1100
+  ]
+ },
+ {
+  "row_id": "nishimuraya-yohachi",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.3373",
+  "title": "Chrysanthemum and Horsefly, from an untitled series of Large Flowers",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/25110",
+  "image_url": "https://www.artic.edu/iiif/2/e81e632c-2e27-d79c-527d-365519796f9f/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-3373-mark.webp",
+  "view": "seal",
+  "inscription_visible": "yes",
+  "crop_of": "aic-1925-3373.webp",
+  "caption": "Square Eijudo (永寿堂) seal of the publisher Nishimuraya Yohachi, below Hokusai's signature.",
+  "pixels": [
+   148,
+   150
+  ]
+ },
+ {
+  "row_id": "izumiya-ichibei",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.2291",
+  "title": "Women Walking by a Moat",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/21582",
+  "image_url": "https://www.artic.edu/iiif/2/94c83ff2-84f3-f673-54c9-c449fe28373f/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-2291.webp",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Full view of the print; small oblong publisher seal 泉市版 (Izumiya Ichibei, Kansendo) in the bottom margin of the left sheet.",
+  "pixels": [
+   1600,
+   1175
+  ]
+ },
+ {
+  "row_id": "izumiya-ichibei",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.2291",
+  "title": "Women Walking by a Moat",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/21582",
+  "image_url": "https://www.artic.edu/iiif/2/94c83ff2-84f3-f673-54c9-c449fe28373f/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-2291-mark.webp",
+  "view": "seal",
+  "inscription_visible": "partly",
+  "crop_of": "aic-1925-2291.webp",
+  "caption": "Small oblong publisher seal 泉市版 (Izumiya Ichibei, Kansendo) in the bottom margin of the left sheet.",
+  "pixels": [
+   78,
+   102
+  ]
+ },
+ {
+  "row_id": "wakasaya-yoichi",
+  "holder": "Art Institute of Chicago",
+  "accession": "1959.121",
+  "title": "Meng Zong (Moso), from the series \"Twenty-four Paragons of Filial Piety as a Mirror for Children (Nijushiko doji kagami)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/9866",
+  "image_url": "https://www.artic.edu/iiif/2/fafa55c0-3227-2ff6-abb7-eac55740790a/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1959-121.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; square red publisher seal 若狭屋 / 芝神明前 of Wakasaya Yoichi (Jakurindo), lower left margin.",
+  "pixels": [
+   1600,
+   1075
+  ]
+ },
+ {
+  "row_id": "wakasaya-yoichi",
+  "holder": "Art Institute of Chicago",
+  "accession": "1959.121",
+  "title": "Meng Zong (Moso), from the series \"Twenty-four Paragons of Filial Piety as a Mirror for Children (Nijushiko doji kagami)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/9866",
+  "image_url": "https://www.artic.edu/iiif/2/fafa55c0-3227-2ff6-abb7-eac55740790a/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1959-121-mark.webp",
+  "view": "seal",
+  "inscription_visible": "yes",
+  "crop_of": "aic-1959-121.webp",
+  "caption": "Square red publisher seal 若狭屋 / 芝神明前 of Wakasaya Yoichi (Jakurindo), lower left margin.",
+  "pixels": [
+   150,
+   170
+  ]
+ },
+ {
+  "row_id": "kagaya-kichiemon",
+  "holder": "Art Institute of Chicago",
+  "accession": "1959.120",
+  "title": "Kasumigaseki, from the series \"Famous Places in the Eastern Capital (Toto meisho)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/9861",
+  "image_url": "https://www.artic.edu/iiif/2/cec2e437-603d-fd23-9c0c-4c6b85bc003d/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1959-120.webp",
+  "view": "full",
+  "inscription_visible": "partly",
+  "crop_of": null,
+  "caption": "Full view of the print; oblong publisher seal in the lower right margin, catalogued as the mark of Kagaya Kichiemon; the characters are small and only partly legible.",
+  "pixels": [
+   1600,
+   1095
+  ]
+ },
+ {
+  "row_id": "kagaya-kichiemon",
+  "holder": "Art Institute of Chicago",
+  "accession": "1959.120",
+  "title": "Kasumigaseki, from the series \"Famous Places in the Eastern Capital (Toto meisho)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/9861",
+  "image_url": "https://www.artic.edu/iiif/2/cec2e437-603d-fd23-9c0c-4c6b85bc003d/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1959-120-mark.webp",
+  "view": "seal",
+  "inscription_visible": "partly",
+  "crop_of": "aic-1959-120.webp",
+  "caption": "Oblong publisher seal in the lower right margin, catalogued as the mark of Kagaya Kichiemon; the characters are small and only partly legible.",
+  "pixels": [
+   86,
+   109
+  ]
+ },
+ {
+  "row_id": "hokusai-shunro",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.3197",
+  "title": "The Sumo Wrestlers Uzugafuchi Kandayu and Takasaki Ichijuro",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/24443",
+  "image_url": "https://www.artic.edu/iiif/2/cfd56452-9807-2427-0226-4f725c22b190/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-3197.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; signature 勝春朗画 (Katsu Shunro ga) in the upper right of the sheet.",
+  "pixels": [
+   1108,
+   1600
+  ]
+ },
+ {
+  "row_id": "hokusai-shunro",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.3197",
+  "title": "The Sumo Wrestlers Uzugafuchi Kandayu and Takasaki Ichijuro",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/24443",
+  "image_url": "https://www.artic.edu/iiif/2/cfd56452-9807-2427-0226-4f725c22b190/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-3197-mark.webp",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "aic-1925-3197.webp",
+  "caption": "Signature 勝春朗画 (Katsu Shunro ga) in the upper right of the sheet.",
+  "pixels": [
+   150,
+   345
+  ]
+ },
+ {
+  "row_id": "hokusai-hokusai-gakyojin",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.3224",
+  "title": "The Swordsmith Munechika and the God of Inari",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/24549",
+  "image_url": "https://www.artic.edu/iiif/2/634a1919-5e51-eaec-5259-24ce82a216c7/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-3224.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; signature 画狂人 北斎画 (Gakyojin Hokusai ga), lower left.",
+  "pixels": [
+   1600,
+   590
+  ]
+ },
+ {
+  "row_id": "hokusai-hokusai-gakyojin",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.3224",
+  "title": "The Swordsmith Munechika and the God of Inari",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/24549",
+  "image_url": "https://www.artic.edu/iiif/2/634a1919-5e51-eaec-5259-24ce82a216c7/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-3224-mark.webp",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "aic-1925-3224.webp",
+  "caption": "Signature 画狂人 北斎画 (Gakyojin Hokusai ga), lower left.",
+  "pixels": [
+   170,
+   210
+  ]
+ },
+ {
+  "row_id": "hiroshige-ichiyusai-hiroshige-ga",
+  "holder": "Art Institute of Chicago",
+  "accession": "1943.718",
+  "title": "Twilight Moon at the Ryogoku Bridge (Ryogoku no yoizuki), from the series \"Famous Views of the Eastern Capital (Toto meisho)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/47845",
+  "image_url": "https://www.artic.edu/iiif/2/9798767c-329e-c14a-ec60-45ba86d1d06a/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1943-718.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; signature 一幽斎廣重画 (Ichiyusai Hiroshige ga), right margin.",
+  "pixels": [
+   1600,
+   997
+  ]
+ },
+ {
+  "row_id": "hiroshige-ichiyusai-hiroshige-ga",
+  "holder": "Art Institute of Chicago",
+  "accession": "1943.718",
+  "title": "Twilight Moon at the Ryogoku Bridge (Ryogoku no yoizuki), from the series \"Famous Views of the Eastern Capital (Toto meisho)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/47845",
+  "image_url": "https://www.artic.edu/iiif/2/9798767c-329e-c14a-ec60-45ba86d1d06a/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1943-718-mark.webp",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "aic-1943-718.webp",
+  "caption": "Signature 一幽斎廣重画 (Ichiyusai Hiroshige ga), right margin.",
+  "pixels": [
+   130,
+   405
+  ]
+ },
+ {
+  "row_id": "hiroshige-hiroshige-hitsu",
+  "holder": "Art Institute of Chicago",
+  "accession": "1943.634",
+  "title": "A Golden Pheasant Perched on a Steep Snowy Hillside amid Small Pine Saplings",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/47522",
+  "image_url": "https://www.artic.edu/iiif/2/6a34d2b6-b178-9dd5-653d-bb934c6fadf3/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1943-634.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; signature 廣重筆 (Hiroshige hitsu), lower left; the two seals below it are left out.",
+  "pixels": [
+   723,
+   1600
+  ]
+ },
+ {
+  "row_id": "kiyonaga-ga",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.2606",
+  "title": "A Lady with Three Servants, from the series \"A Brocade of Eastern Manners (Fuzoku Azuma no nishiki)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/22573",
+  "image_url": "https://www.artic.edu/iiif/2/1148c7e8-ce91-b854-9006-6daf427b0087/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-2606.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; signature 清長画 (Kiyonaga ga), right margin below the title cartouche.",
+  "pixels": [
+   1103,
+   1600
+  ]
+ },
+ {
+  "row_id": "kiyonaga-ga",
+  "holder": "Art Institute of Chicago",
+  "accession": "1925.2606",
+  "title": "A Lady with Three Servants, from the series \"A Brocade of Eastern Manners (Fuzoku Azuma no nishiki)\"",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/22573",
+  "image_url": "https://www.artic.edu/iiif/2/1148c7e8-ce91-b854-9006-6daf427b0087/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1925-2606-mark.webp",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "aic-1925-2606.webp",
+  "caption": "Signature 清長画 (Kiyonaga ga), right margin below the title cartouche.",
+  "pixels": [
+   140,
+   325
+  ]
+ },
+ {
+  "row_id": "shunsho-ga",
+  "holder": "Art Institute of Chicago",
+  "accession": "1938.491",
+  "title": "Ichikawa Danjūrō V as a Skeleton, Spirit of the Renegade Monk Seigen, and Iwai Hanshirō IV as the Cherry Princess, in “Flower of Edo: An Ichikawa Saga” (Edo no Hana Mimasu Soga)",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/88304",
+  "image_url": "https://www.artic.edu/iiif/2/024f0f43-1b4c-a7c4-0a88-33d158edd844/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1938-491.webp",
+  "view": "full",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Full view of the print; signature 春章画 (Shunsho ga), lower right.",
+  "pixels": [
+   1478,
+   1600
+  ]
+ },
+ {
+  "row_id": "shunsho-ga",
+  "holder": "Art Institute of Chicago",
+  "accession": "1938.491",
+  "title": "Ichikawa Danjūrō V as a Skeleton, Spirit of the Renegade Monk Seigen, and Iwai Hanshirō IV as the Cherry Princess, in “Flower of Edo: An Ichikawa Saga” (Edo no Hana Mimasu Soga)",
+  "date": null,
+  "object_url": "https://www.artic.edu/artworks/88304",
+  "image_url": "https://www.artic.edu/iiif/2/024f0f43-1b4c-a7c4-0a88-33d158edd844/full/full/0/default.jpg",
+  "licence": "CC0 (public domain per AIC API is_public_domain = true)",
+  "credit": "Art Institute of Chicago, CC0 (public domain)",
+  "file": "aic-1938-491-mark.webp",
+  "view": "signature",
+  "inscription_visible": "yes",
+  "crop_of": "aic-1938-491.webp",
+  "caption": "Signature 春章画 (Shunsho ga), lower right.",
+  "pixels": [
+   150,
+   240
+  ]
+ }
+]
