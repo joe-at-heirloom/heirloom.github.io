@@ -1,0 +1,36 @@
+---
+// /marks/rugs/: the rugs area's home (lib/reference.ts): the tools that read
+// a rug (turn it over, hand-made or machine-made, a woven date, knot counts)
+// as cards, the reference pages, where to start, and what the collection
+// holds here.
+import Reference from '../../../layouts/Reference.astro';
+import AreaHome from '../../../components/ref/AreaHome.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import { articleLd, faqLd } from '../../../lib/site';
+import { types, GROUPS } from '../../../lib/rugs';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/';
+const n = types().length;
+const title = 'Oriental Rug Identification: Types, Knots, Woven Dates and Labels | Heirloom';
+const description = `Identify an oriental rug from its back, sides and ends: ${n} rug types with their structure, a check for hand-knotted or machine-made, a reader for dates woven in Persian, Arabic and Armenian numbers, knot counts as printed on tags, labels and import rules, and what dyes say about age.`;
+const faqs: [string, string][] = [
+  ['How can I tell if my oriental rug is handmade?', '<p>Turn it over. On a hand-knotted rug the pattern shows on the back as clearly as on the front, in small knots that are never quite even, and the fringe is the ends of the threads the rug was woven on. A hand-tufted rug has a cloth or latex backing glued over the back; a machine-made rug has a perfectly even back and a fringe sewn on. The <a href="/marks/rugs/handmade-or-machine-made">checks</a> go one by one.</p>'],
+  ['What do the numbers woven into my rug mean?', '<p>A three- or four-figure number in Persian or Arabic digits, often in a small panel in the field or border, is usually a year. It may be a lunar Hijri year or, on a Persian rug woven after 1925, an Iranian solar year, so one number can mean two different dates. The <a href="/marks/rugs/dates">woven-date reader</a> gives both, with the arithmetic.</p>'],
+  ['What does “Made in Persia” on a rug mean?', '<p>The country was called Persia abroad until 1935, when it asked other countries to use Iran. A label naming Persia points to a rug exported before then, or one labeled from old stock. The <a href="/marks/rugs/labels">labels</a> page has this and the years the United States banned Iranian imports.</p>'],
+];
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Oriental rugs', description, (synced.changed as any).rugs ?? '2026-11-25'), faqLd(path, faqs)]}>
+  <AreaHome k="rugs" h1="Oriental rugs">
+    <section class="ahome__block read" aria-labelledby="order">
+      <h2 id="order">Where to start</h2>
+      <p>Turn the rug over. The back says more than the front: patterns were copied everywhere, but how a rug was knotted, what it was woven on and how its edges were finished changed from place to place.</p>
+      <p>First check that it was <a href="/marks/rugs/handmade-or-machine-made">knotted by hand</a>. Then answer what you see in <a href="/marks/rugs/identify">turn it over</a>: the knot, the knots to the inch, the warps and wefts, the sides and the ends. It lists the types that fit, and each <a href="/marks/rugs/types">type’s sheet</a> says what it is mistaken for. A number woven into the pile is often a year: read it in the <a href="/marks/rugs/dates">woven-date reader</a>.</p>
+      <p class="muted">The {n} types come from {GROUPS.length} regions: {GROUPS.map((g) => g.name).join(', ')}.</p>
+    </section>
+  </AreaHome>
+  <AppBox text="Photograph the front, the back, a corner and anything woven or sewn on. The Advisor reads woven dates and labels, and is given the sheet of the type the record names." />
+  <Faq {faqs} />
+</Reference>

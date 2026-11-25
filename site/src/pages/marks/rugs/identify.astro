@@ -1,0 +1,109 @@
+---
+// /marks/rugs/identify: "turn it over", the structure reader
+// (src/islands/RugReader). The questions are fixed here; how to look at each
+// feature, and what each answer looks like, come from the app's table
+// (rugs.json `dyes.features`, the structure research); the types and their
+// structure from `types` (lib/rugs.ts). Below the reader, each feature in
+// full: what to look for and what each answer points to.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import RugReader, { type ReaderType, type Question, type Key } from '../../../islands/RugReader';
+import { types, GROUPS, dyes, cite, clean, yearsOf } from '../../../lib/rugs';
+import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/portal.css';
+import '../../../styles/silver.css';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/identify';
+const feats: any[] = dyes().features ?? [];
+const feat = (...ids: string[]) => feats.find((f) => ids.includes(String(f.id)));
+const steps = (x: unknown): string[] => (Array.isArray(x) ? x : x ? [x] : []).map((t) => clean(t) ?? '').filter(Boolean);
+const how = (...ids: string[]) => steps(feat(...ids)?.how_to_look);
+const look = (fid: string[], re: RegExp) => { const v = (feat(...fid)?.values ?? []).find((x: any) => re.test(String(x.value).toLowerCase())); return v ? clean(v.looks_like) : null; };
+
+const questions: Question[] = [
+  { id: 'knot', label: 'The knot', how: how('knot', 'knot_type'), options: [
+    { value: 'symmetric', label: 'Symmetric (Turkish)', note: look(['knot', 'knot_type'], /^symmetric/) },
+    { value: 'asymmetric', label: 'Asymmetric (Persian)', note: look(['knot', 'knot_type'], /^asymmetric/) },
+    { value: 'jufti', label: 'Jufti (over four warps)', note: look(['knot', 'knot_type'], /jufti/) },
+  ] },
+  { id: 'kpsi', label: 'Knots to the square inch', how: how('knot_count', 'kpsi'), options: [
+    { value: 'coarse', label: 'Under 60' }, { value: 'medium', label: '60 to 150' }, { value: 'fine', label: '150 to 300' }, { value: 'very-fine', label: 'Over 300' },
+  ] },
+  { id: 'warp', label: 'The warps (the threads the fringe is made of)', how: how('warp_material', 'warp'), options: [
+    { value: 'wool', label: 'Wool' }, { value: 'cotton', label: 'Cotton' }, { value: 'silk', label: 'Silk' }, { value: 'hair', label: 'Goat or camel hair' },
+  ] },
+  { id: 'offset', label: 'Do the warps lie level?', how: how('warp_offset', 'warp_depression'), options: [
+    { value: 'level', label: 'Level: both loops of each knot show on the back', note: look(['warp_offset', 'warp_depression'], /level/) },
+    { value: 'offset', label: 'Partly offset', note: look(['warp_offset', 'warp_depression'], /offset|half|slight/) },
+    { value: 'depressed', label: 'One sinks under the other: the back looks ribbed', note: look(['warp_offset', 'warp_depression'], /deep|depress/) },
+  ] },
+  { id: 'wefts', label: 'Wefts between each row of knots', how: how('wefts_per_row', 'wefts'), options: [
+    { value: '1', label: 'One' }, { value: '2', label: 'Two' }, { value: '3', label: 'Three or more' },
+  ] },
+  { id: 'weft', label: 'The wefts (the crosswise threads)', how: how('weft_material', 'weft'), options: [
+    { value: 'wool', label: 'Wool' }, { value: 'cotton', label: 'Cotton' }, { value: 'silk', label: 'Silk' }, { value: 'hair', label: 'Goat or camel hair' },
+  ] },
+  { id: 'pile', label: 'The pile', how: how('pile_material', 'pile'), options: [
+    { value: 'wool', label: 'Wool' }, { value: 'silk', label: 'Silk' }, { value: 'art silk', label: 'Art silk (viscose) or mercerized cotton' }, { value: 'hair', label: 'Camel or goat hair' },
+  ] },
+];
+
+const rows = types();
+// Designs that modern rugs copy (the classical court carpets) and machine-made rugs have no structure of their own to match.
+const readerTypes: ReaderType[] = rows.filter((t) => t.kind !== 'machine-made' && t.kind !== 'court or classical').map((t) => ({
+  slug: t.slug, name: t.name, native: t.native, group: t.group, region: GROUPS.find((g) => g.id === t.group)?.name ?? null, years: yearsOf(t.from, t.to),
+  knot: t.st.knot, kpsi: t.st.kpsi, warp: t.st.warp, weft: t.st.weft, wefts: t.st.wefts, offset: t.st.warpOffset, pile: t.st.pile,
+  img: t.photos[0]?.file ?? null,
+}));
+const shownFeats = feats.filter((f) => f.how_to_look);
+
+const title = 'Identify an Oriental Rug from the Back: Knots, Warps, Wefts | Heirloom';
+const description = `Turn the rug over and answer what you see: the knot, the knots to the inch, the warps, the wefts, the pile. ${readerTypes.length} Persian, Caucasian, Turkish, Turkmen, Chinese and Indian types are matched against their structure, with how to look at each feature.`;
+const h1 = 'Turn it over: identify a rug from its back';
+const faqs: [string, string][] = [
+  ['How do I tell a Persian knot from a Turkish knot?', '<p>Part the pile along a row of knots and look at the base of the tufts, or look at the back with a magnifier. The symmetric (Turkish) knot wraps two warps and both ends come up between them; the asymmetric (Persian) knot wraps one warp and passes under the other, so one end comes up beside it. The guide below says what each looks like.</p>'],
+  ['Why does the back of a rug matter more than the pattern?', '<p>Patterns traveled: Persian designs were woven in India, China and Turkey, and Caucasian ones in Iran and Turkey. How a rug is built (the knot, the foundation, the wefts, the edges) changed less, because weavers kept their own way of working.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Oriental rug structure' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Lay the rug face down in good light. Answer what you can see; skip what you can’t. The types whose sources describe the same structure appear as you go, with a link to each sheet. First make sure it was <a href="/marks/rugs/handmade-or-machine-made">knotted by hand</a>: a machine-made or tufted rug has no knots to read.</p>
+    </header>
+
+    <RugReader client:load types={readerTypes} {questions} groups={GROUPS.filter((g) => readerTypes.some((t) => t.group === g.id)).map((g) => ({ id: g.id, name: g.name }))} />
+
+    {shownFeats.length > 0 && (
+      <section class="block prose" aria-labelledby="guide">
+        <h2 id="guide">What to look for, feature by feature</h2>
+        {shownFeats.map((f) => (
+          <div class="rfeat" id={`feature-${f.id}`}>
+            <h3>{soften(String(f.name ?? f.id))}</h3>
+            {steps(f.how_to_look).length > 1 ? <ol>{steps(f.how_to_look).map((t) => <li>{t}</li>)}</ol> : <p>{steps(f.how_to_look)[0]}</p>}
+            {(f.values ?? []).length > 0 && (
+              <dl class="rfeat__vals">
+                {(f.values ?? []).map((v: any) => (
+                  <div><dt>{soften(String(v.value))}{v.other_names && <span class="muted"> ({Array.isArray(v.other_names) ? v.other_names.join(', ') : v.other_names})</span>}</dt><dd>{clean(v.looks_like)}{v.points_to && <> <span class="muted">{clean(Array.isArray(v.points_to) ? v.points_to.join('; ') : v.points_to)}</span></>}</dd></div>
+                ))}
+              </dl>
+            )}
+            {steps(f.pitfalls).length > 0 && <p class="faint">{steps(f.pitfalls).join(' ')}</p>}
+            {cite(f.sources).length > 0 && <p class="faint">Sources: {cite(f.sources).slice(0, 4).map((s, i) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}</p>}
+          </div>
+        ))}
+      </section>
+    )}
+
+    <AppBox text="Photograph the back and a corner as well as the front. The Advisor looks at the knots and wefts the way this page does, and is given the sheet of the type the record names." />
+    <Faq {faqs} />
+  </div>
+</Reference>

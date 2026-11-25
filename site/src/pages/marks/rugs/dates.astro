@@ -1,0 +1,177 @@
+---
+// /marks/rugs/dates: dates, names and words woven into rugs. The reader
+// (src/islands/RugDateReader, lib/rug-dates.ts, the Advisor's own rules), the
+// calendars (#cal-<id>), the digits and the shapes they take when woven, the
+// words and the signatures of workshops and masters (#sig-<id>), how dates are
+// laid out, dated rugs in museums worked through, and the cautions. All from
+// the app's table (rugs.json `dates`).
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import RugDateReader, { type ReaderCalendar, type Pad } from '../../../islands/RugDateReader';
+import { dates, cite, clean, rugChars } from '../../../lib/rugs';
+import { indicFace } from '../../../lib/scripts';
+import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/portal.css';
+import '../../../styles/reigns.css';
+import '../../../styles/indian.css';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/dates';
+const d = dates();
+const cals: any[] = d.calendars ?? [];
+const calendars: ReaderCalendar[] = cals.map((c) => ({ id: String(c.id), label: soften(String(c.label ?? c.id)).split(/[:;]/)[0], note: null, tells: null }));
+const pads: Pad[] = [
+  { name: 'Persian digits', lang: 'fa', rtl: true, keys: ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'], hint: 'Persian ۴, ۵ and ۶ differ from the Arabic forms; ۰ (zero) is a dot.' },
+  { name: 'Arabic digits', lang: 'ar', rtl: true, keys: ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'] },
+  { name: 'Armenian letters', lang: 'hy', keys: ['Ռ', 'Ջ', 'Պ', 'Չ', 'Ո', 'Շ', 'Ն', 'Յ', 'Մ', 'Ճ', 'Ղ', 'Ձ', 'Հ', 'Կ', 'Ծ', 'Խ', 'Լ', 'Ի', 'Ժ', 'Թ', 'Ը', 'Է', 'Զ', 'Ե', 'Դ', 'Գ', 'Բ', 'Ա'], hint: 'Ռ = 1000, Պ = 800, Ձ = 80, Ե = 5: ՌՊՁԵ is 1885. Թվ or Թ. before a date means “in the year”.' },
+];
+const numerals: any[] = d.numerals ?? [];
+const words: any[] = d.words ?? [];
+const sigs: any[] = (d.signatures ?? []).slice().sort((a: any, b: any) => String(a.plain ?? a.id).localeCompare(String(b.plain ?? b.id)));
+const formats: any[] = d.formats ?? [];
+const examples: any[] = (d.examples ?? []).filter((x: any) => x.url && x.holder && (x.years?.length || x.read_as));
+const cautions: any[] = d.cautions ?? [];
+const readerExamples = ['۱۳۲۴', '١٣٠٥', '1885', 'ՌՊՁԵ', '۴۲۳۱'];
+const yearsText = (ys: unknown) => (Array.isArray(ys) ? (ys.length > 1 ? `${ys[0]} or ${ys[ys.length - 1]}` : String(ys[0] ?? '')) : String(ys ?? ''));
+// Research fields come as text, lists or digit-by-digit maps: one line of text either way.
+const textOf = (x: unknown): string | null => x == null ? null : typeof x === 'string' ? clean(x) : Array.isArray(x) ? clean(x.map((y) => textOf(y)).filter(Boolean).join('; ')) : typeof x === 'object' ? clean(Object.entries(x as Record<string, unknown>).map(([k, v]) => `${k}: ${textOf(v)}`).join('; ')) : String(x);
+const face = (s: string) => indicFace(s);
+
+const title = 'Dates and Signatures Woven into Rugs: Persian, Arabic and Armenian Numbers | Heirloom';
+const description = 'Read a date woven into an oriental rug: Persian and Arabic digits as lunar Hijri or Iranian solar years, Ottoman Rumi years, Armenian letters as numbers, with a reader that works out the Western year, the words woven beside them, and workshops’ signatures.';
+const h1 = 'Dates and names woven into rugs';
+const faqs: [string, string][] = [
+  ['How do I read the date on a Persian rug?', '<p>Find the small panel with a number in it, usually near one end or in the border. Persian digits read left to right, like ours. Type them into the reader above: it gives the lunar Hijri year and, for numbers that can be one, the Iranian solar year, each as Western years.</p>'],
+  ['Why does the reader give two dates?', '<p>A number such as ۱۳۲۴ can be a lunar Hijri year (1906–07) or an Iranian solar year (1945–46): the solar year was in official use from 1911 and became Iran’s calendar by law in 1925, and both are still written. Each kind of year also begins partway through ours, so even one calendar gives two Western years.</p>'],
+  ['Does a woven date prove how old my rug is?', '<p>No. Weavers copied dates along with the design from the rug they worked from, and dates were sometimes added to make a rug look older. A date is one clue among the dyes, the wear and the materials.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Dates woven into oriental rugs' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+const indic = rugChars(pads.map((p) => p.keys), numerals, words.map((w) => w.native), sigs.map((s) => s.native), formats.map((f) => f.example), readerExamples);
+---
+<Reference {title} {description} {path} jsonld={graph} {indic}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Type the number as it is woven, or tap it in. The reader gives every year it can be, in every calendar used on rugs, with the arithmetic. If the number makes no sense, it may be woven back to front: the reader can turn it round.</p>
+    </header>
+
+    <RugDateReader client:load {calendars} {pads} examples={readerExamples} />
+
+    {cals.length > 0 && (
+      <section class="block prose" aria-labelledby="calendars">
+        <h2 id="calendars">The calendars</h2>
+        <div class="ietable">
+          {cals.map((c) => (
+            <div class="iera" id={`cal-${c.id}`}>
+              <h3>{soften(String(c.label ?? c.id))}{c.single_source && <span class="muted"> · one source so far</span>}</h3>
+              {c.how_to_convert && <p><strong>{textOf(c.how_to_convert)}</strong></p>}
+              {c.when_used && <p>{textOf(c.when_used)}</p>}
+              {c.tells_apart && <p class="muted">{textOf(c.tells_apart)}</p>}
+              {cite(c.sources).length > 0 && <p class="faint iera__src">Sources: {cite(c.sources).slice(0, 4).map((s, i) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {numerals.length > 0 && (
+      <section class="block" aria-labelledby="digits">
+        <h2 id="digits">The digits, and how they look when woven</h2>
+        <div class="idigits" role="table" aria-label="Digits">
+          <div class="idigits__row idigits__head" role="row"><span role="columnheader">Digits</span>{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => <span role="columnheader" class="num">{i}</span>)}</div>
+          {numerals.filter((n) => Array.isArray(n.digits) && n.digits.length === 10).map((n) => { const f = face(n.digits.join('')); return (
+            <div class="idigits__row" role="row"><span role="rowheader">{soften(String(n.name ?? n.id))}</span>{n.digits.map((g: string) => <span role="cell" class={f?.cls} lang={f?.lang}>{g}</span>)}</div>
+          ); })}
+        </div>
+        {numerals.map((n) => (n.woven_forms || n.confusions || n.mirrored) && (
+          <div class="rbox">
+            <h3>{soften(String(n.name ?? n.id))}</h3>
+            {n.woven_forms && <p>{textOf(n.woven_forms)}</p>}
+            {n.confusions && <p><strong>Easily mixed up:</strong> {textOf(n.confusions)}</p>}
+            {n.mirrored && <p class="muted">{textOf(n.mirrored)}</p>}
+          </div>
+        ))}
+      </section>
+    )}
+
+    {formats.length > 0 && (
+      <section class="block" aria-labelledby="formats">
+        <h2 id="formats">How a date is laid out</h2>
+        <ul class="iex">
+          {formats.map((f) => (
+            <li>
+              <strong>{clean(f.pattern)}</strong>{f.example && <> · <span dir="auto" class={face(String(f.example))?.cls} lang={face(String(f.example))?.lang}>{f.example}</span></>}
+              {f.how_to_read && <><br />{clean(f.how_to_read)}</>}
+              {f.worked && <><br /><span class="muted">{clean(f.worked)}</span></>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {words.length > 0 && (
+      <section class="block" aria-labelledby="words">
+        <h2 id="words">Words woven beside a date or name</h2>
+        <div class="rtable" role="table">
+          <div class="rtable__row rtable__head" role="row"><span>As woven</span><span>Meaning</span><span>Where on the rug</span></div>
+          {words.map((w) => { const f = face(String(w.native ?? '')); return (
+            <div class="rtable__row" role="row">
+              <span><span class={f?.cls} lang={f?.lang} dir={f?.dir}>{w.native}</span>{w.translit && <><br /><span class="muted">{w.translit}</span></>}</span>
+              <span>{clean(w.meaning)}</span>
+              <span class="muted">{clean(w.where_on_rug)}</span>
+            </div>
+          ); })}
+        </div>
+      </section>
+    )}
+
+    {sigs.length > 0 && (
+      <section class="block" aria-labelledby="signatures">
+        <h2 id="signatures">Workshops’ and weavers’ signatures</h2>
+        <p class="muted">Names woven into a small panel, usually at one end. A signature says whose work or commission the rug claims; the names of well-known workshops were woven into other weavers’ rugs too.</p>
+        <div class="rgrid">
+          {sigs.map((g) => { const f = face(String(g.native ?? '')); return (
+            <div class="rbox" id={`sig-${g.id}`}>
+              <h3>{g.plain ?? g.translit ?? g.id}{g.native && <> <span class={f?.cls} lang={f?.lang} dir={f?.dir}>{g.native}</span></>}</h3>
+              <p class="muted">{[clean(g.who), clean(g.place), g.active_from ? `${g.active_from}${g.active_to ? `–${g.active_to}` : ' on'}` : null].filter(Boolean).join(' · ')}</p>
+              {g.what_it_tells && <p>{clean(g.what_it_tells)}</p>}
+              {g.cautions && <p class="faint">{clean(g.cautions)}</p>}
+              {g.single_source && <p class="faint">One source so far.</p>}
+            </div>
+          ); })}
+        </div>
+      </section>
+    )}
+
+    {examples.length > 0 && (
+      <section class="block" aria-labelledby="museums">
+        <h2 id="museums">Dated rugs in museums, worked through</h2>
+        <ul class="iex">
+          {examples.map((x) => (
+            <li>
+              <a href={x.url} rel="nofollow noopener">{soften(String(x.title ?? 'Rug'))}</a>, <span class="muted">{x.holder}{x.accession ? ` ${x.accession}` : ''}</span>
+              <br /><span class="iex__date" dir="auto">{String(x.written_date ?? '').slice(0, 160)}</span>
+              <br />{clean(x.read_as)}{x.years?.length ? <>: <strong class="num">{yearsText(x.years)}</strong></> : null}{x.open_image === false ? null : null}{x.agrees === false ? <span class="iex__differ"> · the museum gives {String(x.date_as_catalogued ?? '').slice(0, 80)}</span> : x.agrees ? <span class="muted"> · agrees with the museum</span> : null}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {cautions.length > 0 && (
+      <section class="block prose" aria-labelledby="cautions">
+        <h2 id="cautions">What a woven date can and cannot say</h2>
+        <ul>{cautions.map((c) => <li>{clean(typeof c === 'string' ? c : c.text)}</li>)}</ul>
+      </section>
+    )}
+
+    <AppBox text="Photograph the woven date or name close up. The Advisor reads the digits in their own script and works out the years with these same rules, saying when the number could be more than one." />
+    <Faq {faqs} />
+  </div>
+</Reference>

@@ -1,0 +1,84 @@
+---
+// /marks/rugs/handmade-or-machine-made: the checks that tell a hand-knotted
+// rug from a hand-tufted, machine-made, hooked, flatwoven or printed one, each
+// with what each answer points to (rugs.json `checks`), and the materials and
+// what they are sold as (#mat-<id>, rugs.json `dyes.materials`).
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import { checks, dyes, cite, clean } from '../../../lib/rugs';
+import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/handmade-or-machine-made';
+const rows: any[] = checks().rows ?? [];
+const materials: any[] = dyes().materials ?? [];
+const LABEL: Record<string, string> = { 'hand-knotted': 'Hand-knotted', 'hand-tufted': 'Hand-tufted', 'machine-made': 'Machine-made', hooked: 'Hooked', flatweave: 'Flatwoven', printed: 'Printed' };
+const tags = (xs: unknown) => (Array.isArray(xs) ? xs : xs ? [xs] : []).map(String);
+
+const title = 'Is My Rug Hand-Knotted or Machine-Made? How to Tell | Heirloom';
+const description = 'How to tell a hand-knotted rug from a hand-tufted, machine-made (Wilton, Axminster, power-loomed), hooked, flatwoven or printed one: the back, the fringe, the sides, the pile and the label, check by check, and what the fibers are sold as.';
+const h1 = 'Hand-knotted, hand-tufted or machine-made?';
+const faqs: [string, string][] = [
+  ['Is the fringe on my rug a sign it is handmade?', '<p>On a hand-knotted rug the fringe is the ends of the warps, the threads the rug was knotted on: they run through the whole rug. On many machine-made and tufted rugs the fringe is a strip sewn or glued on at the ends. Fold back the end and look at where the fringe meets the rug.</p>'],
+  ['My rug has a cloth or rubbery backing. What does that mean?', '<p>A cloth glued over the back, often with a latex layer under it, is the mark of a hand-tufted rug: the pile was shot through a backing cloth with a tufting gun and held in with glue, not knotted. It is still made by hand, but it is not a knotted rug.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Hand-knotted and machine-made rugs' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Turn the rug over and go through the checks. One answer can mislead; three or four that agree rarely do.</p>
+    </header>
+
+    {rows.length > 0 && (
+      <section class="block" aria-labelledby="checks">
+        <h2 id="checks" class="visually-hidden">The checks</h2>
+        <ol class="rr__qs">
+          {rows.map((c, i) => (
+            <li class="rcheck" id={`check-${c.id}`}>
+              <h3>{i + 1}. {soften(String(c.question ?? c.look_at ?? c.id))}</h3>
+              {c.look_at && c.question && <p class="muted">Look at: {clean(Array.isArray(c.look_at) ? c.look_at.join(', ') : c.look_at)}</p>}
+              <ul class="rcheck__ans">
+                {(c.answers ?? []).map((a: any) => (
+                  <li class={tags(a.points_to).includes('hand-knotted') ? 'is-hand' : ''}>
+                    <span>{clean(a.what_you_see)}</span>
+                    <span>{tags(a.points_to).map((t) => <span class="rtag">{LABEL[t] ?? t}</span>)}{a.note && <span class="muted"> {clean(a.note)}</span>}</span>
+                  </li>
+                ))}
+              </ul>
+              {c.cautions && <p class="faint">{clean(Array.isArray(c.cautions) ? c.cautions.join(' ') : c.cautions)}</p>}
+              {cite(c.sources).length > 0 && <p class="faint">Sources: {cite(c.sources).slice(0, 3).map((s, i) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}</p>}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {materials.length > 0 && (
+      <section class="block" aria-labelledby="materials">
+        <h2 id="materials">What it is made of</h2>
+        <div class="rgrid">
+          {materials.map((m) => (
+            <div class="rbox" id={`mat-${m.id}`}>
+              <h3>{soften(String(m.name ?? m.id))}</h3>
+              {m.how_to_tell && <p>{clean(m.how_to_tell)}</p>}
+              {m.where_used && <p class="muted">{clean(m.where_used)}</p>}
+              {m.what_it_tells && <p>{clean(m.what_it_tells)}</p>}
+              {m.cautions && <p class="faint">{clean(m.cautions)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <AppBox text="Photograph the back, a corner and the fringe where it meets the rug. The Advisor looks at the same things and says how the rug was made." />
+    <Faq {faqs} />
+  </div>
+</Reference>

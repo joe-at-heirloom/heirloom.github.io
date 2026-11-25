@@ -1,0 +1,72 @@
+---
+// /marks/rugs/knot-count: knot counts as rugs are labeled and sold. The
+// converter (src/islands/KnotCounter) runs each notation's rule from the
+// app's table (rugs.json `knots`, `formula`); below it, each notation
+// (#knot-<id>): where it is used, what the number counts, worked examples,
+// where the sources differ.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import KnotCounter, { type Notation } from '../../../islands/KnotCounter';
+import { knots, cite, clean } from '../../../lib/rugs';
+import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/knot-count';
+const rows = knots();
+const base: Notation[] = [
+  { id: 'kpsi', name: 'Knots per square inch', kind: 'kpsi', placeholder: '150' },
+  { id: 'dm2', name: 'Knots per square decimeter', kind: 'area', per: 15.5, placeholder: '2,300' },
+  { id: 'm2', name: 'Knots per square meter', kind: 'area', per: 1550, placeholder: '250,000' },
+];
+const fromTable: Notation[] = rows.filter((r) => r.formula && ['square', 'pair', 'area', 'kpsi'].includes(r.formula.kind) && !base.some((b) => b.id === r.id)).map((r) => ({
+  id: String(r.id), name: soften(String(r.name)), kind: r.formula.kind, per: r.formula.per, L: r.formula.L, x: r.formula.x, y: r.formula.y,
+  placeholder: String(r.formula.placeholder ?? (r.as_written ?? [])[0] ?? ''), note: clean(r.formula.note ?? r.unit_meaning), written: r.as_written ?? [],
+}));
+const notations = [...base, ...fromTable];
+
+const title = 'Rug Knot Count Converter: KPSI, Raj, Line, 16/18, 9/60 | Heirloom';
+const description = 'Convert a rug’s knot count between knots per square inch, per square decimeter and per square meter, the Iranian raj, the Chinese line count, Pakistani 16/18 and Indian 9/60 notations, and Tibetan knots, with what each number actually counts.';
+const h1 = 'Knot counts, as tags write them';
+const faqs: [string, string][] = [
+  ['How do I count the knots in my rug?', '<p>Turn the rug over and lay a ruler along a row of knots. Count the knots in one inch across the rug and in one inch along it (each knot is one small bump or pair of bumps on the back), and multiply the two: that is knots per square inch. Count in several places: hand-knotted rugs vary.</p>'],
+  ['Does a higher knot count mean a better rug?', '<p>No. A fine count means the design could be drawn in finer detail, and the rug took longer to knot. Many tribal and village rugs prized by collectors are coarse; a finely knotted rug can still have poor wool or harsh dyes.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Rug knot density' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Pick the notation on the tag or in the listing, type the number as written, and read it in every other. Each notation counts something different: the notes below say what.</p>
+    </header>
+
+    <KnotCounter client:load {notations} />
+
+    {rows.length > 0 && (
+      <section class="block prose" aria-labelledby="notations">
+        <h2 id="notations">The notations</h2>
+        {rows.map((r) => (
+          <div class="rbox" id={`knot-${r.id}`}>
+            <h3>{soften(String(r.name))}{(r.as_written ?? []).length > 0 && <span class="muted"> · {(r.as_written ?? []).slice(0, 4).join(', ')}</span>}</h3>
+            {r.unit_meaning && <p>{clean(r.unit_meaning)}</p>}
+            {r.where_used && <p class="muted">{clean(r.where_used)}</p>}
+            {r.to_kpsi && <p><strong>{clean(typeof r.to_kpsi === 'string' ? r.to_kpsi : r.to_kpsi.words)}</strong></p>}
+            {(r.examples ?? []).length > 0 && <p class="muted">{(r.examples ?? []).slice(0, 4).map((e: any) => `${e.as_written} ≈ ${e.kpsi} knots per square inch`).join('; ')}</p>}
+            {(r.disagreements ?? []).map((x: any) => <p class="faint">Sources differ{ x.about ? ` on ${String(x.about).replace(/_/g, ' ')}` : ''}: {(x.says ?? []).map((y: any) => clean(y.text)).join(' / ')}</p>)}
+            {r.cautions && <p class="faint">{clean(r.cautions)}</p>}
+            {cite(r.sources).length > 0 && <p class="faint">Sources: {cite(r.sources).slice(0, 4).map((s, i) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}</p>}
+          </div>
+        ))}
+      </section>
+    )}
+
+    <AppBox text="Photograph the tag and the back with a ruler laid on it. The Advisor reads the count as written and says what it means." />
+    <Faq {faqs} />
+  </div>
+</Reference>

@@ -1,0 +1,61 @@
+---
+// /marks/rugs/types: every rug type in the reference, by where it was woven,
+// each a row that opens into its sheet (components/ref/Catalogue): names in
+// every spelling, where and by whom it was woven, its structure (knot, knots
+// per inch, warps, wefts, pile, sides, ends), designs, look-alikes, where the
+// sources differ, and museum photographs. From the app's table
+// (backend/src/data/mark-tables/rugs.json, `types`). #<slug> opens one.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { types, rugSheet, GROUPS, caveats, rugChars } from '../../../lib/rugs';
+import { articleLd, faqLd, crumbsLd } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/types';
+const rows = types();
+const sheets = rows.map(rugSheet);
+const groups = GROUPS.map((g) => ({ key: g.id, label: g.name, blurb: g.blurb ?? undefined, sheets: sheets.filter((s) => s.group === g.id) })).filter((g) => g.sheets.length);
+const pictured = rows.filter((r) => r.photos.length).length;
+const count = (g: string) => rows.filter((r) => r.group === g).length;
+const title = 'Oriental Rug Types: Persian, Caucasian, Turkish, Turkmen, Chinese and Indian Rugs | Heirloom';
+const description = `${rows.length} types of oriental rug, from Heriz, Kashan and Kazak to Tekke, Ningxia and Agra: where each was woven, its knot, knot count, warps, wefts, sides and ends, its designs, what it is mistaken for, and museum photographs, with sources.`;
+const h1 = 'Oriental rug types';
+const faqs: [string, string][] = [
+  ['How do I find out what kind of oriental rug I have?', '<p>Start from the back. The knot, the number of knots to the inch, what the warps and wefts are made of and how many wefts run between each row of knots narrow it down more than the pattern does, because patterns were copied everywhere. The <a href="/marks/rugs/identify">turn it over</a> reader takes what you see and lists the types that fit. Then read the sheets here: each says what the type is mistaken for and how to tell them apart.</p>'],
+  ['Does the name on the tag tell me where my rug was made?', '<p>Not always. Many names are names of a look as much as of a place: a “Heriz” or a “Kashan” design is woven in India, Pakistan and China too, and the trade names them “Indo-Heriz” or simply “Heriz”. A “Bokhara” is usually a Pakistani rug in Turkmen designs. The sheets say how each name is used in the trade.</p>'],
+  ['Is my rug antique?', '<p>The type says when rugs like it were woven, not when yours was. Dyes, wear, materials and repairs tell more, and only someone who can handle the rug can judge it. See <a href="/marks/rugs/dyes">dyes, washes and age</a>.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Oriental rugs' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+const notes = caveats();
+---
+<Reference {title} {description} {path} jsonld={graph} indic={rugChars(rows.map((r) => r.native))}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">Where each kind of rug was woven, by whom, and how it is made: {GROUPS.filter((g) => count(g.id)).map((g, i, a) => <>{i > 0 && (i === a.length - 1 ? ' and ' : ', ')}{count(g.id)} {g.name}</>)}. Type a name in any spelling, a town or a design. A type names where rugs with these features were made; the same names are woven elsewhere.</p>
+      <ul class="rhead__meta">
+        <li><strong class="num">{rows.length}</strong> types</li>
+        {pictured > 0 && <li><strong class="num">{pictured}</strong> with a museum photograph</li>}
+      </ul>
+    </header>
+
+    <Catalogue {groups} noun={['type', 'types']} placeholder="A name, a town or a design: Heriz, Kazak, Bokhara, Kerman, herati" label="A name, a town or a design" />
+
+    {notes.length > 0 && (
+      <section class="ahome__block prose" aria-labelledby="read">
+        <h2 id="read">Reading these sheets</h2>
+        <ul>{notes.map((t) => <li set:html={t} />)}</ul>
+      </section>
+    )}
+
+    <AppBox text="Photograph the front, the back and a corner. The Advisor looks at the knots, the wefts and the ends, compares them with these sheets, and says which types fit and why." />
+    <Faq {faqs} />
+  </div>
+</Reference>

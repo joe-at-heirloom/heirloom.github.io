@@ -132,3 +132,20 @@ Both are built from the research in `hallmark-sources/pewabic/`
 Anchors match the app's collect.ts (tiles `#<id>`, glazes `#<id>` and
 `#ware-<id>`, history `#ev-nnn` and `#person-<id>`, marks `#era-<id>` and
 `#lookalike-<id>`).
+
+## Oriental rugs (Nov 25, 2026)
+
+An area of its own (map key `rugs`, `/marks/rugs/`): the area home, `identify`
+("turn it over": the RugReader island matches answered structure features
+against every type), `handmade-or-machine-made` (the checks, materials
+`#mat-<id>`), `dates` (RugDateReader island on `lib/rug-dates.ts`, a copy of
+the app's `backend/src/lib/rug-dates.ts`, the Advisor's own rules; calendars
+`#cal-<id>`, signatures `#sig-<id>`), `knot-count` (KnotCounter island, each
+notation's `formula` from the table, `#knot-<id>`), `types` (catalogue, `#<id>`),
+`labels` (`#label-<id>`) and `dyes` (`#dye-<id>`, `#treat-<id>`, rules
+`#dye-rule-<id>`). Data: the app's `rugs.json`, read by `lib/rugs.ts` from
+`src/data/app/` (synced) and, as family `rugs` records, by the Advisor. It is
+built from the research in `hallmark-sources/rugs/` (`build_table.py`,
+`edits.json`); change those, not the JSON. Pictures of types:
+`marks/img/rugs/` (`images_to_web.py`), museum photographs under open
+licences only. Anchors match the app's `reference-ids.ts`.

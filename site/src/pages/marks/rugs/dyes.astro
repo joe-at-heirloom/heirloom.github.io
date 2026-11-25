@@ -1,0 +1,165 @@
+---
+// /marks/rugs/dyes: dyes (#dye-<id>), treatments (#treat-<id>: chemical
+// washes, painted rugs), age and wear, repairs, and the dating rules that come
+// from them (#dye-rule-<id>): what each says, and only ever a "not before" or
+// "not after". From the app's table (rugs.json `dyes`).
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import { dyes, cite, clean } from '../../../lib/rugs';
+import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/dyes';
+const d = dyes();
+const all: any[] = d.dyes ?? [];
+// The first year a dye's date text names, for the order of the list (its own text says the rest).
+const year = (x: any) => Number(/\b(1[5-9]\d\d|20\d\d)\b/.exec(String(x.date_from ?? ''))?.[1] ?? 9999);
+const nat = all.filter((x) => x.kind === 'natural');
+const syn = all.filter((x) => x.kind === 'synthetic').sort((a, b) => year(a) - year(b));
+const rules2 = all.filter((x) => x.kind !== 'natural' && x.kind !== 'synthetic');
+const treatments: any[] = d.treatments ?? [];
+const age: any[] = d.age_and_wear ?? [];
+const repairs: any[] = d.repairs ?? [];
+const rules: any[] = d.dating_rules ?? [];
+const Src = (x: any) => cite(x.sources).slice(0, 3);
+
+const title = 'Rug Dyes and Age: Natural and Synthetic Dyes, Washed and Painted Rugs | Heirloom';
+const description = 'What a rug’s colors say about its age: natural dyes (madder, indigo, cochineal), the first synthetic dyes and when they reached rug weaving, chemically washed and painted rugs, signs of age and wear, repairs, and the dating rules that follow.';
+const h1 = 'Dyes, washes and age';
+const faqs: [string, string][] = [
+  ['How can I tell if my rug has natural dyes?', '<p>Part the pile and compare the color at the base of the tufts with the tips. Natural dyes usually fade evenly and soften; some early synthetic dyes faded to a different color or ran into neighboring areas. Natural dyes also vary in shade along a color (abrash), though weavers with synthetic dyes vary too. No single check settles it without testing.</p>'],
+  ['What is a painted or washed rug?', '<p>Many rugs were chemically washed in New York and London to soften bright colors, and some, the “American Sarouks” best known, had their bleached field painted back to a deep red. Look for dye that sits on the tips of the pile and not in its roots.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Rug dyes and dating' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Colors, treatments, wear and repairs, and what each says about when a rug was made. None of them dates a rug alone: each gives a “not before” or a “not after”, and the clues have to agree.</p>
+    </header>
+
+    {rules.length > 0 && (
+      <section class="block" aria-labelledby="rules">
+        <h2 id="rules">The dating rules</h2>
+        <div class="rgrid">
+          {rules.map((r) => (
+            <div class="rbox" id={`dye-rule-${r.id}`}>
+              <h3>{clean(r.rule)}</h3>
+              {r.years && <p class="num muted">{r.years}</p>}
+              {r.what_it_tells && <p>{clean(r.what_it_tells)}</p>}
+              {r.cautions && <p class="faint">{clean(r.cautions)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {syn.length > 0 && (
+      <section class="block" aria-labelledby="synthetic">
+        <h2 id="synthetic">Synthetic dyes, in the order they came</h2>
+        <ol class="rtimeline">
+          {syn.map((x) => (
+            <li id={`dye-${x.id}`}><span class="num">{year(x) < 9999 ? year(x) : ''}</span><strong>{soften(String(x.name))}</strong>{x.colors && <span class="muted"> · {Array.isArray(x.colors) ? x.colors.join(', ') : x.colors}</span>}
+              {x.date_from && <><br /><span class="muted">{clean(x.date_from)}</span></>}
+              {x.date_in_rugs && <><br />In rugs: {clean(x.date_in_rugs)}</>}
+              {x.how_to_spot && <><br /><span class="muted">{clean(x.how_to_spot)}</span></>}
+              {x.what_it_tells && <><br />{clean(x.what_it_tells)}</>}
+              {(x.disagreements ?? []).length > 0 && <><br /><span class="faint">Sources differ: {(x.disagreements ?? []).map((y: any) => (y.says ?? []).map((z: any) => clean(z.text)).join(' / ')).join('; ')}</span></>}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {rules2.length > 0 && (
+      <section class="block" aria-labelledby="bans">
+        <h2 id="bans">Bans and revivals</h2>
+        <div class="rgrid">
+          {rules2.map((x) => (
+            <div class="rbox" id={`dye-${x.id}`}>
+              <h3>{soften(String(x.name))}</h3>
+              {x.date_from && <p class="muted">{clean(x.date_from)}</p>}
+              {x.date_in_rugs && <p>{clean(x.date_in_rugs)}</p>}
+              {x.what_it_tells && <p>{clean(x.what_it_tells)}</p>}
+              {(x.disagreements ?? []).length > 0 && <p class="faint">Sources differ: {(x.disagreements ?? []).map((y: any) => (y.says ?? []).map((z: any) => clean(z.text)).join(' / ')).join('; ')}</p>}
+              {x.cautions && <p class="faint">{clean(x.cautions)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {nat.length > 0 && (
+      <section class="block" aria-labelledby="natural">
+        <h2 id="natural">Natural dyes</h2>
+        <div class="rgrid">
+          {nat.map((x) => (
+            <div class="rbox" id={`dye-${x.id}`}>
+              <h3>{soften(String(x.name))}{x.colors && <span class="muted"> · {Array.isArray(x.colors) ? x.colors.join(', ') : x.colors}</span>}</h3>
+              {x.from && <p class="muted">{clean(x.from)}</p>}
+              {x.date_in_rugs && <p>{clean(x.date_in_rugs)}</p>}
+              {x.how_to_spot && <p>{clean(x.how_to_spot)}</p>}
+              {x.cautions && <p class="faint">{clean(x.cautions)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {treatments.length > 0 && (
+      <section class="block" aria-labelledby="treatments">
+        <h2 id="treatments">Washed, painted and faded</h2>
+        <div class="rgrid">
+          {treatments.map((x) => (
+            <div class="rbox" id={`treat-${x.id}`}>
+              <h3>{soften(String(x.name))}</h3>
+              {x.date_from && <p class="muted">{clean(x.date_from)}</p>}
+              {x.where && <p class="muted">{clean(x.where)}</p>}
+              {x.how_to_spot && <p>{clean(x.how_to_spot)}</p>}
+              {x.what_it_tells && <p>{clean(x.what_it_tells)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {age.length > 0 && (
+      <section class="block" aria-labelledby="age">
+        <h2 id="age">Signs of age and wear</h2>
+        <div class="rgrid">
+          {age.map((x) => (
+            <div class="rbox" id={`age-${x.id}`}>
+              <h3>{clean(x.clue ?? x.name)}</h3>
+              {x.what_it_tells && <p>{clean(x.what_it_tells)}</p>}
+              {x.cautions && <p class="faint">{clean(x.cautions)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {repairs.length > 0 && (
+      <section class="block" aria-labelledby="repairs">
+        <h2 id="repairs">Repairs</h2>
+        <div class="rgrid">
+          {repairs.map((x) => (
+            <div class="rbox" id={`repair-${x.id}`}>
+              <h3>{soften(String(x.name))}</h3>
+              {x.how_to_spot && <p>{clean(x.how_to_spot)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <AppBox text="Photograph the back and the pile parted to its roots in a few colors. The Advisor looks for the signs on this page and says which way each one points." />
+    <Faq {faqs} />
+  </div>
+</Reference>

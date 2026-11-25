@@ -30,9 +30,9 @@ const PREFIX = 'backend/src/data/mark-tables';
 const out = join(site, 'src', 'data', 'app');
 mkdirSync(join(out, 'marks'), { recursive: true });
 
-// pewabic.json and indian.json join when the app has them (their pages read them beside the collection).
+// pewabic.json, indian.json and rugs.json join when the app has them (their pages read them beside the collection).
 const have = new Set(git('ls-tree', '--name-only', `${APP_REF}:${PREFIX}`).split('\n'));
-const tables = ['hallmarks', 'chinese', 'korean', 'japanese', 'pewabic', 'indian'].filter((t) => have.has(`${t}.json`));
+const tables = ['hallmarks', 'chinese', 'korean', 'japanese', 'pewabic', 'indian', 'rugs'].filter((t) => have.has(`${t}.json`));
 for (const t of tables) writeFileSync(join(out, `${t}.json`), git('show', `${APP_REF}:${PREFIX}/${t}.json`));
 const dbFiles = git('ls-tree', '--name-only', `${APP_REF}:${PREFIX}/marks`).split('\n').filter((n) => n.endsWith('.json'));
 for (const n of dbFiles) writeFileSync(join(out, 'marks', n), git('show', `${APP_REF}:${PREFIX}/marks/${n}`));

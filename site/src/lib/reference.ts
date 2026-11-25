@@ -19,7 +19,7 @@ import { artists } from './artists';
 import { places, allPlaces, DIRS, isSplit, letterPath, makerGroups } from './makers-dir';
 import { places as tiffanyPlaces } from './tiffany';
 
-export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'india' | 'signatures' | 'serials' | 'glass';
+export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'india' | 'signatures' | 'serials' | 'glass' | 'rugs';
 export type RefLink = {
   href: string;
   label: string;
@@ -340,6 +340,25 @@ function build(): Area[] {
       ],
     },
     {
+      key: 'rugs', label: 'Oriental rugs', short: 'Rugs', href: '/marks/rugs/', scope: 'marks',
+      families: ['rugs'],
+      lede: 'What a rug’s back, sides and ends say about where it was made, whether it was knotted by hand, how to read a date or a name woven into it, the knot counts and labels on its tags, and what its dyes say about its age.',
+      cue: 'A rug or carpet with a pattern, a woven date, or a label on the back',
+      groups: [
+        { label: 'Read your rug', links: [
+          { href: '/marks/rugs/identify', label: 'Turn it over', note: 'What the back, sides and ends point to' },
+          { href: '/marks/rugs/handmade-or-machine-made', label: 'Hand-knotted or machine-made?', note: 'The checks, and what each answer means' },
+          { href: '/marks/rugs/dates', label: 'A date or a name woven in', note: 'Persian, Arabic and Armenian numbers' },
+          { href: '/marks/rugs/knot-count', label: 'Knot counts', note: 'Raj, line, 16/18, 9/9 and knots per inch' },
+        ] },
+        { label: 'Reference', links: [
+          { href: '/marks/rugs/types', label: 'Rug types', note: 'Persian, Caucasian, Turkish, Turkmen, Chinese, Indian and more' },
+          { href: '/marks/rugs/labels', label: 'Labels and import rules', note: 'Made in Persia, Made in Iran, brands, embargo years' },
+          { href: '/marks/rugs/dyes', label: 'Dyes, washes and age', note: 'Natural and synthetic dyes, painted and washed rugs' },
+        ] },
+      ],
+    },
+    {
       key: 'serials', label: 'Watches and serial numbers', short: 'Serial numbers', href: '/marks/serial-numbers/', scope: 'marks',
       families: ['swiss-watches', 'serial-numbers'],
       lede: 'Serial numbers that date a watch, a sewing machine or a camera, from the makers’ own tables.',
@@ -382,6 +401,7 @@ const HOMES: [RegExp, AreaKey][] = [
   [/^\/marks\/(british|american)-silver-makers\/|^\/marks\/american-silver-date-marks\/|^\/marks\/continental-silver-marks\//, 'silver'],
   [/-date-letters$/, 'silver'],
   [/^\/marks\/tiffany-windows(\/|$)/, 'glass'],
+  [/^\/marks\/rugs(\/|$)/, 'rugs'],
 ];
 
 /** The area a page belongs to, and the link that names it there. */

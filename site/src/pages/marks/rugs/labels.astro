@@ -1,0 +1,81 @@
+---
+// /marks/rugs/labels: words and labels on rugs (#label-<id>): country names
+// (Made in Persia, Made in Iran), brands of machine-made rugs, fiber content,
+// certification labels, trade grades, and the rules that turn a label into a
+// date (the 1935 change from Persia to Iran, US marking laws, the years the
+// United States banned Iranian imports). From the app's table (rugs.json `labels`).
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import { labels, cite, clean, yearsOf } from '../../../lib/rugs';
+import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/labels';
+const rows = labels();
+const KINDS: [string, string, string][] = [
+  ['import rule', 'Rules that date a label', 'Laws and bans that say when a label could have been put on.'],
+  ['country of origin', 'Country names', 'Where the rug says it was made, and what the name says about when.'],
+  ['maker or brand', 'Makers and brands', 'Mostly machine-made rugs in oriental designs, and the firms that made them.'],
+  ['fiber content', 'Fiber content', 'What the pile is said to be, and what those words hide.'],
+  ['certification', 'Certification labels', 'Labels about how the rug was made, not where or when.'],
+  ['trade grade', 'Trade grades and names', 'Words the trade uses for quality or style.'],
+];
+const known = new Set(KINDS.map((k) => k[0]));
+const groups = [...KINDS, ['other', 'Other labels', '']].map(([k, label, blurb]) => ({ k, label, blurb, rows: rows.filter((r) => (known.has(r.kind) ? r.kind : 'other') === k) })).filter((g) => g.rows.length);
+const rules = rows.filter((r) => r.kind === 'import rule' && (r.date_from || r.date_to)).sort((a, b) => (a.date_from ?? 0) - (b.date_from ?? 0));
+
+const title = 'Rug Labels and Tags: Made in Persia, Made in Iran, Karastan, Import Bans | Heirloom';
+const description = 'What the labels on a rug say: Made in Persia (before 1935) and Made in Iran, the years the United States banned Iranian rugs, machine-made brands such as Karastan and Gulistan, fiber labels like art silk, and certification labels.';
+const h1 = 'Labels and tags on rugs';
+const faqs: [string, string][] = [
+  ['Is a rug labeled “Made in Persia” older than one labeled “Made in Iran”?', '<p>Usually. Persia asked other countries to call it Iran from 1935, so “Persia” on an export label points to before then, although old labels and stock lingered. The label dates the label, not the weaving.</p>'],
+  ['Could a Persian rug have come into the United States during the embargo?', '<p>Not legally as a new import in the years the bans were in force; rugs already in the country could be sold. The dates are listed above, each with its order or law.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Rug labels' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Look on the back near a corner for a sewn-on cloth label, a printed stamp or a paper tag. What a label says, and the years each rule puts around it.</p>
+    </header>
+
+    {rules.length > 0 && (
+      <section class="block" aria-labelledby="timeline">
+        <h2 id="timeline">The rules, in order</h2>
+        <ol class="rtimeline">
+          {rules.map((r) => <li><span class="num">{yearsOf(r.date_from, r.date_to)}</span><a href={`#label-${r.id}`}>{soften(String(r.text))}</a>{r.meaning && <span class="muted"> · {clean(r.meaning)}</span>}</li>)}
+        </ol>
+      </section>
+    )}
+
+    {groups.map((g) => (
+      <section class="block" aria-label={g.label}>
+        <h2>{g.label}</h2>
+        {g.blurb && <p class="muted">{g.blurb}</p>}
+        <div class="rgrid">
+          {g.rows.map((r) => (
+            <div class="rbox" id={`label-${r.id}`}>
+              <h3><span class="rlabel__text">{r.text}</span></h3>
+              {yearsOf(r.date_from, r.date_to) && <p class="num muted">{yearsOf(r.date_from, r.date_to)}</p>}
+              {r.meaning && <p>{clean(r.meaning)}</p>}
+              {r.what_it_tells && <p>{clean(r.what_it_tells)}</p>}
+              {r.date_note && <p class="muted">{clean(r.date_note)}</p>}
+              {r.cautions && <p class="faint">{clean(r.cautions)}</p>}
+              {cite(r.sources).length > 0 && <p class="faint">Sources: {cite(r.sources).slice(0, 3).map((s, i) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <AppBox text="Photograph any label or stamp on the back. The Advisor reads it as written and says what it means for where and when." />
+    <Faq {faqs} />
+  </div>
+</Reference>
