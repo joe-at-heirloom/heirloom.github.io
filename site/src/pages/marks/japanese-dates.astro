@@ -1,0 +1,159 @@
+---
+// /marks/japanese-dates: how dates are written on Japanese things, with a
+// reader (src/islands/JapaneseDateReader) and the tables it uses: every era
+// name from 645 (both courts of 1331–1392), the imperial count, the sixty-year
+// cycle, the months, and the museum examples the reader was checked against.
+// All from the app's table (japanese.json `dates`), which the Advisor's
+// decoder reads.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import JapaneseTabs from '../../components/JapaneseTabs.astro';
+import JapaneseDateReader, { type ReaderEra, type Period } from '../../islands/JapaneseDateReader';
+import { dateTables, sourceNames, pageChars } from '../../lib/japanese';
+import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/japanese.css';
+
+const path = '/marks/japanese-dates';
+const d = dateTables();
+const names = sourceNames();
+const eras: ReaderEra[] = (d.eras ?? []).map((e: any) => ({ id: e.id, chars: e.chars, variants: e.variants ?? [], year1: e.year1, start: e.start, end: e.end, court: e.court ?? null, romaji: e.romaji, anchor: e.id }));
+const periods: Period[] = [
+  { id: 'edo', name: 'Edo, 1603–1868', from: 1603, to: 1868 },
+  { id: 'meiji', name: 'Meiji, 1868–1912', from: 1868, to: 1912 },
+  { id: 'since1912', name: 'Since 1912', from: 1912, to: 2043 },
+];
+const cycleNames = Object.fromEntries((d.kanshi?.cycle ?? []).map((g: any) => [g.chars, { kana: g.kana, romaji: g.romaji }]));
+const examples = ['明治十五年', '天保十三壬寅', '慶應四年', '紀元二千六百年', '大日本明治年製', '壬寅'];
+// The era table in sections of Japanese history (by each era's first year).
+const sections: [string, (e: any) => boolean][] = [
+  ['645 to 1330', (e) => !e.court && e.year1 < 1331],
+  ['1331 to 1392: the two courts', (e) => !!e.court],
+  ['1393 to 1602', (e) => !e.court && e.year1 >= 1393 && e.year1 < 1603],
+  ['The Edo period, 1603 to 1868', (e) => !e.court && e.year1 >= 1603 && e.year1 < 1868],
+  ['Since 1868', (e) => e.year1 >= 1868],
+];
+const k = d.imperial_count ?? {};
+const cc = d.calendar_change ?? {};
+const months = (d.months ?? []) as any[];
+const exs = (d.examples ?? []) as any[];
+
+const title = 'Japanese Era Dates: Meiji, Taishō, Shōwa and Every Nengō, With a Reader | Heirloom';
+const description = 'Read a date written on a Japanese item: every era name (nengō) from 645 to today, the imperial year count, the sixty-year cycle and the old month names, with a reader that works out the Western year.';
+const h1 = 'Reading a date on a Japanese item';
+const faqs: [string, string][] = [
+  ['How do I convert a Japanese era year to a Western year?', '<p>Add the year to the year before the era began: Meiji began in 1868, so Meiji 15 (明治十五年) is 1867 + 15 = 1882. The first year of an era is written 元年 (gannen): 明治元年 is 1868. Type the date into the reader above.</p>'],
+  ['What years are Meiji, Taishō and Shōwa?', '<p>Meiji 1868–1912, Taishō 1912–1926, Shōwa 1926–1989, Heisei 1989–2019 and Reiwa since 2019. A year in which the era changed has two names: 1912 is both Meiji 45 and Taishō 1.</p>'],
+  ['What does 紀元二千六百年 mean?', '<p>The year 2600 of the imperial count, which counts from 660 BC, the traditional date of the first emperor’s accession: 2600 − 660 = 1940.</p>'],
+  ['Why can a Japanese date be a year off?', '<p>Before 1873 Japan used a lunar calendar, whose year began in late January or February, so a date in the 11th or 12th month usually fell early in the next Western year. And an inscription is only when the writing says the thing was made.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).japanese ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Japanese calendar and era names' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/japanese/', 'Japanese marks']),
+];
+const ja = pageChars([d.eras, d.kanshi, d.zodiac, months, d.days, d.numerals, d.formats, exs, examples, k.chars]);
+const cite = (ids: string[] = []) => ids.map((i) => names.get(i)).filter(Boolean) as { name: string; url: string | null }[];
+const allSources = [...new Set((d.source_ids ?? []) as string[])].map((i) => names.get(i)).filter(Boolean) as { name: string; url: string | null }[];
+---
+<Base {title} {description} {path} jsonld={graph} ja={ja}>
+  <div class="wrap">
+    <Crumbs name={h1} mid={['/marks/japanese/', 'Japanese marks']} />
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Type the date as it is written and the reader works out the year: every Japanese era name since 645, the imperial year count, and the sixty-year cycle. An era mark with no number names only the era.</p>
+      <JapaneseTabs {path} />
+    </header>
+
+    <JapaneseDateReader client:load {eras} {periods} {examples} {cycleNames} />
+
+    <section class="block prose" aria-labelledby="ways">
+      <h2 id="ways">The ways a Japanese date is written</h2>
+      <div class="jtable-wrap">
+        <table class="jtable">
+          <thead><tr><th>Written</th><th>Pattern</th><th>How to read it</th></tr></thead>
+          <tbody>{(d.formats ?? []).map((f: any) => <tr><td><span class="han ja" lang="ja">{f.example}</span></td><td>{soften(String(f.pattern ?? ''))}</td><td>{soften(String(f.how_to_read ?? ''))}</td></tr>)}</tbody>
+        </table>
+      </div>
+      <h3 id="count-koki"><span class="han ja" lang="ja">皇紀 · 紀元</span> The imperial count</h3>
+      <p>{soften(String(k.rule ?? ''))}</p>
+      <h3 id="calendar">The calendar change of 1873</h3>
+      <p>{soften(String(cc.summary ?? ''))}</p>
+      {d.age_signatures?.rule && <><h3 id="age">Signed with an age</h3><p>{soften(String(d.age_signatures.rule))}</p></>}
+    </section>
+
+    <section class="block" aria-labelledby="eras">
+      <h2 id="eras">Every era name, 645 to today <span class="muted num">{eras.length}</span></h2>
+      <p class="jx__blurb">Year 1 (元年) is the Western year the era began in; year n is year 1 + n − 1. From 1331 to 1392 two courts each named their own eras. Years before 1873 are lunar years.</p>
+      {sections.map(([name, test]) => {
+        const es = (d.eras ?? []).filter(test);
+        return es.length > 0 && (
+          <>
+            <h3>{name}</h3>
+            <div class="jtable-wrap">
+              <table class="jtable">
+                <thead><tr><th>Era</th><th>Years</th><th>Year 1</th><th>Began</th></tr></thead>
+                <tbody>{es.map((e: any) => (
+                  <tr id={`era-${e.id}`}>
+                    <td><span class="han ja" lang="ja">{e.chars}</span> {e.romaji}{e.court && e.court !== 'both' && <span class="muted"> ({e.court} court)</span>}{e.variants?.length > 0 && <span class="muted ja" lang="ja"> {e.variants.join('、')}</span>}</td>
+                    <td class="num">{e.start}–{e.end ?? 'today'}</td>
+                    <td class="num">{e.year1}</td>
+                    <td class="muted">{soften(String(e.start_date ?? '').split(' (')[0])}{e.single_source && <span class="faint"> · one source</span>}</td>
+                  </tr>
+                ))}</tbody>
+              </table>
+            </div>
+          </>
+        );
+      })}
+    </section>
+
+    {(d.kanshi?.cycle ?? []).length > 0 && (
+      <section class="block" aria-labelledby="cycle">
+        <h2 id="cycle">The sixty-year cycle</h2>
+        <p class="jx__blurb">Each year has a two-character name: a stem and one of the twelve zodiac animals. The cycle last began in 1984 (甲子, kinoe-ne). Prints of 1805–1875 date themselves by the animal alone.</p>
+        <ol class="cycle">{d.kanshi.cycle.map((g: any, i: number) => <li><span class="han ja" lang="ja">{g.chars}</span><span>{g.romaji} · <span lang="ja" class="ja">{g.kana}</span></span><span class="num">{1864 + i}, {1924 + i}, {1984 + i}</span></li>)}</ol>
+      </section>
+    )}
+
+    {months.length > 0 && (
+      <section class="block" aria-labelledby="months">
+        <h2 id="months">The months</h2>
+        <div class="jtable-wrap">
+          <table class="jtable">
+            <thead><tr><th>Month</th><th>Written</th><th>Old name</th><th>Also</th></tr></thead>
+            <tbody>{months.map((m: any) => <tr><td class="num">{m.month === 0 ? '閏' : m.month}</td><td><span class="han ja" lang="ja">{m.numeral}</span></td><td><span class="han ja" lang="ja">{m.wafu_name}</span> {m.romaji}</td><td class="ja" lang="ja">{m.alt_names}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {exs.length > 0 && (
+      <section class="block" aria-labelledby="checked">
+        <h2 id="checked">Checked against museum records</h2>
+        <p class="jx__blurb">The reader’s rules, tried on dated things in museum collections. Where the result differs from the museum’s date, the written date and the making date are not the same thing.</p>
+        <div class="jtable-wrap">
+          <table class="jtable">
+            <thead><tr><th>Object</th><th>Written</th><th>Worked out</th><th>Museum</th></tr></thead>
+            <tbody>{exs.map((x: any) => <tr><td>{x.url ? <a href={x.url} rel="nofollow noopener">{x.object}</a> : x.object}<span class="faint"> · {x.holder}</span></td><td class="ja" lang="ja">{String(x.written_date).split(' (')[0]}</td><td class="num">{x.computed_year}</td><td class="num">{x.date_as_catalogued}{!x.agrees && <span class="faint"> · differs</span>}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {allSources.length > 0 && (
+      <details class="block rsources">
+        <summary>Sources <span class="muted num">{allSources.length}</span></summary>
+        <ol>{allSources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</li>)}</ol>
+      </details>
+    )}
+
+    <AppBox text="Photograph the writing. The Advisor reads the characters and works out a written date from this same table, and says when a cyclical year alone could be several." />
+    <Faq {faqs} />
+  </div>
+</Base>

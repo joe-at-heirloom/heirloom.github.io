@@ -1,0 +1,106 @@
+---
+// /marks/japanese-print-seals: dating a Japanese woodblock print by its censor
+// and date seals (src/islands/PrintSealReader), from the app's table
+// (japanese.json `marks`: the censor-seal rows, `date_seal_rules`, and
+// Watanabe Shōzaburō's seal series, `watanabe_seal_rules`).
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import JapaneseTabs from '../../components/JapaneseTabs.astro';
+import PrintSealReader, { type SealType, type Nanushi } from '../../islands/PrintSealReader';
+import { marks, printSealTables, sourceNames, pageChars } from '../../lib/japanese';
+import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/japanese.css';
+
+const path = '/marks/japanese-print-seals';
+const t = printSealTables();
+const names = sourceNames();
+const rows = marks();
+const types: SealType[] = t.dateSeals.map((x: any) => {
+  const ys = Object.values(x.years ?? {}).filter((v) => v != null);
+  return {
+    id: String(x.seal_type), period: String(x.period).replace(/-/g, '–'), form: soften(String(x.form ?? '')), reads: soften(String(x.reads ?? '')),
+    howToRead: soften(String(x.how_to_read ?? '')), ambiguity: soften(String(x.ambiguity ?? '')),
+    years: x.years ?? {}, intercalary: x.intercalary_months ?? {}, animalAndMonth: ys.length > 0, nanushi: /nanushi/.test(String(x.seal_type)),
+  };
+});
+const nanushi: Nanushi[] = rows
+  .filter((r) => r.group === 'prints_censor' && r.slug.startsWith('nanushi-') && r.kind === 'censor seal' && !/^名主/.test(r.chars))
+  .map((r) => ({ id: r.slug, chars: r.chars, name: r.romaji || r.meaning, from: r.from, to: r.to }))
+  .sort((a, b) => (a.from ?? 0) - (b.from ?? 0) || a.name.localeCompare(b.name));
+const seals = rows.filter((r) => r.group === 'prints_censor' && !r.slug.startsWith('nanushi-'));
+const watanabe = t.watanabe;
+const cite = (ids: string[] = []) => ids.map((i) => names.get(i)).filter(Boolean) as { name: string; url: string | null }[];
+
+const title = 'Dating Japanese Woodblock Prints by Censor and Date Seals | Heirloom';
+const description = 'Read the censor and date seals on a Japanese woodblock print, 1790 to 1876: the kiwame seal, the censors’ names of 1842–1853, the aratame and zodiac date seals, the Meiji notices, and Watanabe’s seals on shin-hanga.';
+const h1 = 'Dating a Japanese print by its seals';
+const faqs: [string, string][] = [
+  ['How do I date a Japanese woodblock print?', '<p>From about 1790 to 1876 every print sold in Edo (Tokyo) had to be approved, and the approval was cut into the block as small seals near the title or signature. Each kind of seal was used in its own years, and in many of them a date seal gives the year by its zodiac animal and the month by a number. Pick the seals you see above.</p>'],
+  ['Does a censor seal mean my print was printed in that year?', '<p>No. The seals were cut on the block, so a print made later from the same blocks carries the same seals, and reproductions copy them. The seals date when the design was approved, not the sheet in your hand. Paper, colour, sharpness and wear decide the rest.</p>'],
+  ['What does 極 mean on a Japanese print?', '<p>極 (kiwame, “approved”) is the censor seal used from about 1791 to 1842. On its own it gives no year; a print with only a 極 seal was approved within those fifty years.</p>'],
+  ['What do the seals on a shin-hanga print by Hasui or Koson tell me?', '<p>Twentieth-century publishers such as Watanabe Shōzaburō stamped their own seals, and Watanabe changed his over the years, so the seal helps date an impression. The table below gives each seal and its years as the sources give them.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).japanese ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Japanese woodblock print censor seals' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/japanese/', 'Japanese marks']),
+];
+const ja = pageChars([types, nanushi, seals.map((s) => s.chars), watanabe], '子丑寅卯辰巳午未申酉戌亥一二三四五六七八九十閏極改名主御届');
+---
+<Base {title} {description} {path} jsonld={graph} ja={ja}>
+  <div class="wrap">
+    <Crumbs name={h1} mid={['/marks/japanese/', 'Japanese marks']} />
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">From about 1790 to 1876 a print’s approval was cut into its block as small seals, each kind used in its own years. Pick the seals you see and the reader gives the year and month the design was approved.</p>
+      <JapaneseTabs {path} />
+    </header>
+
+    <PrintSealReader client:load {types} {nanushi} />
+
+    <section class="block" aria-labelledby="kinds">
+      <h2 id="kinds">Every kind of seal</h2>
+      <div class="jtable-wrap">
+        <table class="jtable">
+          <thead><tr><th>Seal</th><th>Years</th><th>What it tells</th></tr></thead>
+          <tbody>{seals.map((s) => (
+            <tr id={s.slug}>
+              <td><a href={`/marks/japanese/?mark=${s.slug}`}><span class="han ja" lang="ja">{s.chars}</span></a>{s.romaji && s.romaji !== s.chars && <span> {s.romaji}</span>}</td>
+              <td class="num">{s.from ?? ''}{s.to ? `–${s.to}` : s.from ? ' on' : ''}</td>
+              <td>{s.meaning}{s.cautions && <span class="faint"> {s.cautions}</span>}</td>
+            </tr>
+          ))}</tbody>
+        </table>
+      </div>
+    </section>
+
+    {watanabe.length > 0 && (
+      <section class="block" aria-labelledby="watanabe">
+        <h2 id="watanabe">Watanabe Shōzaburō’s seals, 1909 on</h2>
+        <p class="jx__blurb">The publisher of much shin-hanga (Hasui, Shinsui, Koson’s later prints) stamped his own seal on each print and changed it over the years. Where the sources disagree on the years, both are given.</p>
+        <div class="jtable-wrap">
+          <table class="jtable">
+            <thead><tr><th>Seal</th><th>Size</th><th>Years</th><th>Notes</th></tr></thead>
+            <tbody>{watanabe.map((w: any) => (
+              <tr>
+                <td>{soften(String(w.form ?? ''))}</td>
+                <td class="num">{w.size ?? ''}</td>
+                <td class="num">{w.years ?? ''}</td>
+                <td>{soften(String(w.what ?? ''))}{w.agree === false && <span class="faint"> · sources differ</span>}{cite(w.sources).length > 0 && <span class="faint"> · {cite(w.sources).map((s) => s.name).join('; ')}</span>}</td>
+              </tr>
+            ))}</tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <AppBox text="Photograph the seals and the signature. The Advisor reads them, names the artist, publisher and censors from this same table, and says what years the seals allow." />
+    <Faq {faqs} />
+  </div>
+</Base>

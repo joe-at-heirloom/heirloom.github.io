@@ -1,0 +1,14 @@
+---
+// The Japanese section's pages, as tabs under the page title.
+const { path } = Astro.props as { path: string };
+const TABS: [string, string][] = [
+  ['/marks/japanese/', 'Marks, seals and signatures'],
+  ['/marks/japanese-dates', 'Reading a date'],
+  ['/marks/japanese-print-seals', 'Dating a print by its seals'],
+];
+---
+<nav aria-label="Japanese marks">
+  <ul class="jtabs">
+    {TABS.map(([href, label]) => <li><a href={href} aria-current={href === path ? 'page' : undefined}>{label}</a></li>)}
+  </ul>
+</nav>

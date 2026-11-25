@@ -41,6 +41,7 @@ export const FAMILY: Record<string, { label: string; order: number }> = {
   'chinese-marks': { label: 'Chinese marks', order: 8 },
   'chinese-people': { label: 'Chinese painters and collectors', order: 9 },
   'korean-marks': { label: 'Korean marks and dates', order: 9.5 },
+  'japanese-marks': { label: 'Japanese marks, seals and dates', order: 9.7 },
   signatures: { label: 'Artist signatures', order: 10 },
   'swiss-watches': { label: 'Watches', order: 11 },
   'serial-numbers': { label: 'Serial numbers', order: 12 },
