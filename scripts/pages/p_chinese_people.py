@@ -93,7 +93,11 @@ def person_page(p):
     aliases = "、".join(p["aliases"])
     facts = [("Name", name_html), ("Dates", (e(dates(p)) + (f' <span class="muted" lang="zh-Hant">{e(p["dates_text"])}</span>' if p["dates_text"] else "")) or "Not recorded")]
     if aliases:
-        facts.append(("Other names", f'<span lang="zh-Hant">{e(aliases)}</span>'))
+        def alias_html(a):
+            g = (p.get("aliases_en") or {}).get(a) or {}
+            extra = " ".join(x for x in [f'<em>{e(g.get("pinyin") or "")}</em>' if g.get("pinyin") else "", f'<span class="tr">({e(g["gloss"])})</span>' if g.get("gloss") else ""] if x)
+            return f'<span lang="zh-Hant">{e(a)}</span>' + (" " + extra if extra else "")
+        facts.append(("Other names", "; ".join(alias_html(a) for a in p["aliases"])))
     if p["place_zh"]:
         facts.append(("Native place", f'<span lang="zh-Hant">{e(p["place_zh"])}</span> {e(p["place_en"])}'))
     if p["ethnicity"]:
@@ -101,7 +105,7 @@ def person_page(p):
     if p["skills"]:
         facts.append(("Known for", skills_en(p["skills"])))
     if p["writings"]:
-        facts.append(("Writings", f'<span lang="zh-Hant">{e(p["writings"])}</span>'))
+        facts.append(("Writings", (f'<span class="tr">{e(p["writings_en"])}</span> ' if p.get("writings_en") else "") + f'<span lang="zh-Hant"{" class=muted" if p.get("writings_en") else ""}>{e(p["writings"])}</span>'))
     facts.append(("Role", e(role(p))))
     head = '<header class="entry-head entry-head--person"><div class="entry-head__mark"><span class="cn-seal cn-seal--big" lang="zh-Hant" aria-hidden="true">' + p["name"][:4] + '</span></div><dl class="facts">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts) + "</dl></header>"
     def seal_img(i):
@@ -117,7 +121,8 @@ def person_page(p):
         + (f' <span class="seal-py">{e(i["pinyin"])}</span>' if i.get("pinyin") else "")
         + (f'<span class="seal-gloss tr">{e(i["gloss"])}</span>' if i.get("gloss") and i.get("kind") not in ("name", "signature") else "")
         + (' <span class="tag">collector’s seal</span>' if i["collector_seal"] else "") + (' <span class="tag tag--soft">from a book</span>' if i["rephotographed"] else "")
-        + f'</td><td lang="zh-Hant">{e(i["source"])}</td><td class="num">{e(i["date_text"])}</td></tr>'
+        + '</td><td>' + (f'<span class="tr">{e(i["source_en"])}</span> <span lang="zh-Hant" class="muted">{e(i["source"])}</span>' if i.get("source_en") else f'<span lang="zh-Hant">{e(i["source"])}</span>')
+        + f'</td><td class="num">{e(i["date_text"])}</td></tr>'
         for i in sorted(p["items"], key=lambda i: i["n"]))     # the book prints captions in two columns; show them in number order
     seals = (f'<div class="table-wrap"><table class="seal-table"><thead><tr><th>No.</th><th>Image</th><th>Reads</th><th>On the work</th><th>Date</th></tr></thead><tbody>{rows}</tbody></table></div>'
              if rows else "<p>No seals or signatures could be read from this entry yet.</p>")
@@ -132,8 +137,10 @@ def person_page(p):
             items.append(f'<li class="survey-rec"><div class="survey-rec__head"><span class="survey-rec__title">'
                          + (f'<span class="tr">{e(r["title_en"])}</span> <span lang="zh-Hant" class="muted">{e(r["title"])}</span>' if r.get("title_en") else f'<span lang="zh-Hant">{e(r["title"])}</span>') + '</span>'
                          f'<span class="verdict verdict--{r["verdict"]}"><span lang="zh-Hant">{zh}</span> {en}</span></div>'
-                         f'<p class="survey-rec__meta">{" · ".join(x for x in [(e(r["museum_en"]) + f' <span lang="zh-Hant" class="muted">{e(r["museum"])}</span>') if r.get("museum_en") else e(r["museum"] or ""), e(r.get("medium_en") or r["medium"] or ""), ("inscribed " + f'<span lang="zh-Hant">{e(r["inscription"])}</span>') if r["inscription"] else ""] if x)}</p>'
-                         + (f'<p class="survey-rec__note" lang="zh-Hant">按：{e(r["note"])}</p>' if r["note"] else "")
+                         f'<p class="survey-rec__meta">{" · ".join(x for x in [(e(r["museum_en"]) + f' <span lang="zh-Hant" class="muted">{e(r["museum"])}</span>') if r.get("museum_en") else e(r["museum"] or ""), e(r.get("medium_en") or r["medium"] or ""), (("inscribed " + (f'<span class="tr">{e(r["inscription_en"])}</span> ' if r.get("inscription_en") else "") + f'<span lang="zh-Hant"{" class=muted" if r.get("inscription_en") else ""}>{e(r["inscription"])}</span>') if r["inscription"] else "")] if x)}</p>'
+                         + ((f'<p class="survey-rec__note">Lao’s note: <span class="tr">{e(r["note_en"])}</span> <span lang="zh-Hant" class="muted">按：{e(r["note"])}</span>'
+                             + (f' <span class="tr-doubt">Translator’s note: {e(r["note_doubt"])}</span>' if r.get("note_doubt") else "") + '</p>')
+                            if r.get("note_en") else (f'<p class="survey-rec__note" lang="zh-Hant">按：{e(r["note"])}</p>' if r["note"] else ""))
                          + (f'<ul class="survey-rec__ops">{ops}</ul>' if ops else "") + "</li>")
         surv = f"""      <h2 id="survey">In the national survey, 1983 to 1990</h2>
       <p>From 1983 to 1990 a group of China’s leading connoisseurs examined the painting and calligraphy in the country’s public collections; their secretary, Lao Jixiong, recorded each work and what was said about it. These are the works by {e(p["pinyin"])} in Lao’s record, with the collection that held each, the group’s verdict and the remarks of named members. The verdicts are theirs; Heirloom repeats them and does not judge any item. Titles and remarks are translated by Heirloom, with the original Chinese beside each; where the source text is unclear, a translator’s note says so.</p>
