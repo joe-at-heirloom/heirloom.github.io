@@ -1,0 +1,16 @@
+---
+// /guides, the five guides, /privacy, /terms and /support, in the site's own
+// layout. Words, titles and structured data come from the root pages (see
+// src/lib/rootpage.ts), so the copy check still reads what is served.
+import Base from '../layouts/Base.astro';
+import { ROOT_PAGES, rootPage } from '../lib/rootpage';
+import '../styles/guides.css';
+export function getStaticPaths() {
+  return ROOT_PAGES.map((page) => ({ params: { page } }));
+}
+const { page } = Astro.params as { page: string };
+const p = rootPage(page);
+---
+<Base title={p.title} description={p.description} path={`/${page}`} jsonld={p.jsonld}>
+  <div class={`wrap rp rp--${p.kind}`} set:html={p.main} />
+</Base>

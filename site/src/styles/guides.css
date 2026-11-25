@@ -1,0 +1,94 @@
+/* Guides, legal and support pages (src/pages/[page].astro) in the site's own
+   system. The markup comes from the root pages; these rules give its classes
+   the architect's-model look: Archivo headings, mono labels in sentence case,
+   the logo's orange for labels and rules, plates for boxes. */
+
+.rp { padding-block: 8px 24px; }
+.rp article, .rp--legal > * { max-width: 760px; }
+.rp--legal > table { max-width: 100%; }
+
+/* crumbs */
+.rp .crumbs { list-style: none; margin: 0; padding: 28px 0 0; display: flex; flex-wrap: wrap; gap: 6px; font: 400 13px/1.4 var(--mono); color: var(--ink-3); }
+.rp .crumbs li + li::before { content: '/'; margin-right: 6px; opacity: 0.5; }
+.rp .crumbs a { color: var(--ink-2); text-decoration: none; }
+.rp .crumbs a:hover { color: var(--accent-ink); }
+
+/* headings and text */
+.rp h1 { font-size: clamp(2.1rem, 1.4rem + 2.8vw, 3.5rem); margin: 22px 0 18px; }
+.rp--legal h1 { margin-top: 48px; }
+.rp h2 { font-size: clamp(1.4rem, 1.15rem + 0.9vw, 1.85rem); margin: 2.2em 0 0.55em; scroll-margin-top: 90px; }
+.rp h3 { font-size: 1.12rem; margin: 1.8em 0 0.4em; scroll-margin-top: 90px; }
+.rp p, .rp li { font-size: 17px; line-height: 1.65; }
+.rp ul, .rp ol { padding-left: 1.25em; margin: 0 0 1.2em; }
+.rp li { margin: 0.4em 0; }
+.rp li::marker { color: var(--accent); }
+.rp strong { font-weight: 600; }
+.rp .guide__lede { font-size: clamp(1.12rem, 1rem + 0.45vw, 1.3rem); line-height: 1.55; color: var(--ink-2); margin: 0 0 14px; max-width: 62ch; }
+.rp .guide__meta, .rp .legal-meta { font: 400 13px/1.5 var(--mono); color: var(--ink-3); margin: 0 0 28px; }
+.rp .legal-meta a { color: var(--ink-2); }
+
+/* the short answer */
+.rp .answer { margin: 8px 0 32px; padding: 18px 22px; background: var(--paper-2); border-left: 3px solid var(--accent); border-radius: 0 var(--r) var(--r) 0; }
+.rp .answer__label { font: 500 13px/1.4 var(--mono); color: var(--accent-ink); margin: 0 0 6px; }
+.rp .answer p:last-child { margin-bottom: 0; }
+
+/* contents */
+.rp .toc { margin: 0 0 12px; padding: 16px 0; border-block: 1px solid var(--rule); }
+.rp .toc__title { font: 500 13px/1.4 var(--mono); color: var(--accent-ink); margin: 0 0 8px; }
+.rp .toc ol { margin: 0; padding-left: 1.3em; columns: 2; column-gap: 32px; }
+.rp .toc li { margin: 0.2em 0; font-size: 15.5px; break-inside: avoid; }
+.rp .toc a { text-decoration: none; color: var(--ink); }
+.rp .toc a:hover { color: var(--accent-ink); }
+
+/* notes, tables, figures */
+.rp .note { margin: 20px 0; padding: 14px 18px; background: var(--paper-2); border: 1px solid var(--rule); border-radius: var(--r); font-size: 15.5px; }
+.rp .note p { font-size: 15.5px; margin: 0 0 0.6em; }
+.rp .note p:last-child { margin: 0; }
+.rp .table-wrap { overflow-x: auto; margin: 18px 0 24px; border: 1px solid var(--rule); border-radius: var(--r); }
+.rp table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.rp th { text-align: left; font: 500 13px/1.4 var(--mono); color: var(--ink-2); background: var(--paper-2); }
+.rp th, .rp td { padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.rp tr:last-child td { border-bottom: 0; }
+.rp--legal table { border: 1px solid var(--rule); margin: 18px 0; display: block; overflow-x: auto; }
+.rp .guide__shots { display: flex; gap: 20px; margin: 24px 0 8px; overflow-x: auto; padding-bottom: 6px; }
+.rp .guide__shots figure { flex: none; width: 200px; margin: 0; }
+.rp .guide__shots img { width: 200px; height: auto; border-radius: 20px; box-shadow: var(--shadow-lift); }
+.rp .guide__shots figcaption { font: 400 13px/1.4 var(--mono); color: var(--ink-3); margin-top: 10px; }
+.rp img { max-width: 100%; height: auto; }
+
+/* questions */
+.rp .faq { margin: 12px 0 0; border-top: 1px solid var(--rule); }
+.rp .faq details { border-bottom: 1px solid var(--rule); }
+.rp .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; font: 600 17px/1.35 var(--text); }
+.rp .faq summary::-webkit-details-marker { display: none; }
+.rp .faq summary::after { content: '+'; font: 400 22px/1 var(--mono); color: var(--accent); flex: none; transition: transform 0.2s var(--ease); }
+.rp .faq details[open] summary::after { transform: rotate(45deg); }
+.rp .faq details > div { padding: 0 0 12px; color: var(--ink-2); }
+
+/* the app box */
+.rp .app-box { margin: 56px 0 0; padding: clamp(22px, 4vw, 36px); background: var(--paper-2); border: 1px solid var(--rule); border-top: 3px solid var(--accent); border-radius: var(--r-lg); }
+.rp .app-box h2 { margin: 0 0 8px; font-size: 1.4rem; }
+.rp .app-box p { margin: 0 0 14px; color: var(--ink-2); max-width: 60ch; }
+.rp .app-box__note { font-size: 14px !important; color: var(--ink-3) !important; margin: 0 !important; }
+.rp .app-box__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 4px 0 14px; }
+.rp .store-badge { display: inline-flex; }
+.rp .store-badge__art { height: 48px; width: auto; }
+.rp .btn--outline { background: var(--paper); }
+
+/* more from Heirloom */
+.rp .related { margin-top: 64px; padding-top: 18px; border-top: 2px solid var(--accent); }
+.rp .related__title { font: 500 13px/1.4 var(--mono); color: var(--accent-ink); margin: 0 0 12px; }
+.rp .cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.rp .cards li { margin: 0; }
+.rp .card { display: grid; gap: 4px; height: 100%; padding: 16px 18px; background: var(--paper); border: 1px solid var(--rule); border-radius: var(--r); text-decoration: none; transition: border-color 0.2s var(--ease); }
+.rp .card:hover { border-color: var(--accent); }
+.rp .card__title { font-weight: 600; color: var(--ink); }
+.rp .card__desc { font-size: 14.5px; color: var(--ink-2); }
+
+/* /guides: the hub's cards sit in the article */
+.rp article > .cards { margin-top: 24px; }
+
+@media (max-width: 720px) {
+  .rp .toc ol { columns: 1; }
+  .rp p, .rp li { font-size: 16.5px; }
+}
