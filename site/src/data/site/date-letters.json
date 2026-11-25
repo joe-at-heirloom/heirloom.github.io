@@ -24,6 +24,46 @@
       "lion-passant-guardant",
       "lion-passant",
       "sovereigns-head-duty"
+    ],
+    "Edinburgh": [
+      "edinburgh-castle",
+      "edinburgh-thistle",
+      "lion-passant",
+      "sovereigns-head-duty"
+    ],
+    "Glasgow": [
+      "glasgow-town-mark",
+      "glasgow-lion-rampant",
+      "sovereigns-head-duty"
+    ],
+    "Dublin": [
+      "dublin-harp-crowned",
+      "dublin-hibernia",
+      "sovereigns-head-duty"
+    ],
+    "Exeter": [
+      "exeter-x-crowned",
+      "exeter-town-mark",
+      "lion-passant-guardant",
+      "lion-passant",
+      "sovereigns-head-duty"
+    ],
+    "Newcastle": [
+      "newcastle-three-castles",
+      "leopards-head-crowned",
+      "lion-passant-guardant",
+      "lion-passant",
+      "sovereigns-head-duty"
+    ],
+    "York": [
+      "york-town-mark",
+      "leopards-head-crowned",
+      "lion-passant-guardant",
+      "lion-passant"
+    ],
+    "Norwich": [
+      "norwich-castle-over-lion",
+      "norwich-rose-crowned"
     ]
   },
   "britannia": [
@@ -34,6 +74,13 @@
     "London": "a leopard's head",
     "Birmingham": "an anchor",
     "Sheffield": "a crown (a rose from 1975)",
-    "Chester": "three wheatsheaves and a sword"
+    "Chester": "three wheatsheaves and a sword",
+    "Edinburgh": "a castle (with a thistle from 1759, a lion rampant from 1975)",
+    "Glasgow": "a tree with a bird, a fish and a bell (with a lion rampant from 1819)",
+    "Dublin": "a crowned harp, with Hibernia from 1731",
+    "Exeter": "a castle of three towers (a crowned X before 1701)",
+    "Newcastle": "three castles",
+    "York": "half a leopard's head joined to half a fleur-de-lys (a cross with five lions after 1700)",
+    "Norwich": "a castle over a lion, with a crowned rose"
   }
 }

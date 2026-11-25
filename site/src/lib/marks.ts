@@ -50,7 +50,7 @@ export const VISUAL_LABEL: Record<string, string> = { photo: 'Photograph', facsi
 export const img = (e?: MarkEntry) => (e && e.visual.status !== 'none' && e.visual.file ? media(e.visual.file) : null);
 
 // ── British date letters ─────────────────────────────────────────────────────
-export type Office = 'London' | 'Birmingham' | 'Sheffield' | 'Chester';
+export type Office = 'London' | 'Birmingham' | 'Sheffield' | 'Chester' | 'Edinburgh' | 'Glasgow' | 'Dublin' | 'Exeter' | 'Newcastle' | 'York' | 'Norwich';
 export type DLRow = {
   office: Office;
   letter: string;
@@ -74,10 +74,17 @@ export const HALLMARKS = hallmarks as unknown as {
 };
 
 export const OFFICES: { office: Office; slug: string; town: string; span: string }[] = [
-  { office: 'London', slug: 'london', town: "Leopard's head", span: '1678–2000' },
-  { office: 'Birmingham', slug: 'birmingham', town: 'Anchor', span: '1773–2000' },
-  { office: 'Sheffield', slug: 'sheffield', town: 'Crown, then rose', span: '1773–2000' },
+  { office: 'London', slug: 'london', town: "Leopard's head", span: '1479–2026' },
+  { office: 'Birmingham', slug: 'birmingham', town: 'Anchor', span: '1773–2026' },
+  { office: 'Sheffield', slug: 'sheffield', town: 'Crown, then rose', span: '1773–2026' },
   { office: 'Chester', slug: 'chester', town: 'Three wheatsheaves and a sword', span: '1701–1962' },
+  { office: 'Edinburgh', slug: 'edinburgh', town: 'Castle', span: '1681–2026' },
+  { office: 'Glasgow', slug: 'glasgow', town: 'Tree, bird, fish and bell', span: '1681–1963' },
+  { office: 'Dublin', slug: 'dublin', town: 'Crowned harp and Hibernia', span: '1638–1991' },
+  { office: 'Exeter', slug: 'exeter', town: 'Castle (crowned X before 1701)', span: '1701–1882' },
+  { office: 'Newcastle', slug: 'newcastle', town: 'Three castles', span: '1702–1883' },
+  { office: 'York', slug: 'york', town: "Half leopard's head, half fleur-de-lys", span: '1559–1856' },
+  { office: 'Norwich', slug: 'norwich', town: 'Castle over a lion; crowned rose', span: '1565–1701' },
 ];
 
 export const STYLE_WORD: Record<string, string> = {
