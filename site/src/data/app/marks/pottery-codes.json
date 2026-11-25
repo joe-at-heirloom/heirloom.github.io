@@ -277,6 +277,29 @@
    "title": "The Wallace Collection: Sèvres Porcelain, 2nd ed.",
    "year": 1980,
    "note": "Introduction: interlaced Ls with a date letter from 1753 (A-Z 1753-77, AA-PP 1778-93). In copyright: cited for facts only."
+  },
+  "ellis-rookwood-glaze-lines-1995": {
+   "kind": "book",
+   "author": "Anita J. Ellis",
+   "title": "Rookwood Pottery: The Glaze Lines",
+   "year": 1995,
+   "note": "Marks, p. 215: one flame added each year from 1887 to 14 in 1900; prints the 1887, 1895, 1900 and 1901 marks. In copyright."
+  },
+  "reilly-wedgwood-dictionary-1995": {
+   "kind": "book",
+   "author": "Robin Reilly",
+   "title": "Wedgwood: The New Illustrated Dictionary",
+   "year": 1995,
+   "note": "Marks, p. 505: three-letter codes, 3 from 1907, 4 from 1924, with worked examples 3BS and 4BD; from 1930 the actual year is impressed. In copyright."
+  },
+  "rookwood-catalogue-c1900": {
+   "kind": "book",
+   "author": "Rookwood Pottery Company",
+   "title": "[Catalog] (trade catalogue, about 1895-1900)",
+   "year": 1900,
+   "url": "https://archive.org/details/catalog00rook",
+   "public_domain": true,
+   "note": "p. 25: the 1886 RP, the 1887 single flame at the top, and 'the addition of a flame each year makes the 1895 mark', printed with nine flames."
   }
  },
  "entries": [
@@ -1091,7 +1114,7 @@
    "kind": "date code",
    "name": "Code beginning with 3",
    "applied": "impressed",
-   "looks_like": "Three impressed characters beside WEDGWOOD whose first character is the figure 3.",
+   "looks_like": "Three impressed characters beside WEDGWOOD whose first character is the figure 3; the picture is Reilly's printed example '3BS', set in type, not an impressed mark.",
    "means": "The 1907-1923 cycle (the last character is the year letter, J = 1907 to Z = 1923).",
    "date_from": 1907,
    "date_to": 1924,
@@ -1108,6 +1131,10 @@
     {
      "id": "godden-encyclopaedia-marks-1964",
      "where": "p. 659"
+    },
+    {
+     "id": "reilly-wedgwood-dictionary-1995",
+     "where": "p. 505"
     }
    ],
    "disagreements": [
@@ -1129,17 +1156,26 @@
    "maker": "Josiah Wedgwood & Sons",
    "country": "GB",
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912), Litchfield (1912) and Jewitt (1878) give no printed facsimile of this code form or wording.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the second and third characters of these codes vary (potter's letter, year letter), so no single drawing shows the mark."
+    "status": "facsimile",
+    "file": "marks/img/db/wedgwood-code-prefix-3.webp",
+    "marks_in_image": 1,
+    "holder": "Reilly, Wedgwood: The New Illustrated Dictionary",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Robin Reilly, Wedgwood: The New Illustrated Dictionary (Antique Collectors' Club, Woodbridge, 1995), p. 505, worked example '3BS'",
+    "source_url": "",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/ref-reilly-509.png",
+    "crop": [
+     373,
+     160,
+     90,
+     49
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "From Robin Reilly, Wedgwood: The New Illustrated Dictionary (1995), p. 505.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     90,
+     49
+    ]
    },
    "pages": [
     "/marks/wedgwood-date-codes"
@@ -1150,7 +1186,7 @@
    "kind": "date code",
    "name": "Code beginning with 4",
    "applied": "impressed",
-   "looks_like": "Three impressed characters beside WEDGWOOD whose first character is the figure 4.",
+   "looks_like": "Three impressed characters beside WEDGWOOD whose first character is the figure 4; the picture is Reilly's printed example '4BD', set in type, not an impressed mark.",
    "means": "The years from 1924 (A = 1924) to the end of the letter system about 1929-1930.",
    "date_from": 1924,
    "date_to": 1930,
@@ -1166,6 +1202,10 @@
     {
      "id": "godden-encyclopaedia-marks-1964",
      "where": "p. 659"
+    },
+    {
+     "id": "reilly-wedgwood-dictionary-1995",
+     "where": "p. 505"
     }
    ],
    "disagreements": [
@@ -1187,17 +1227,26 @@
    "maker": "Josiah Wedgwood & Sons",
    "country": "GB",
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912), Litchfield (1912) and Jewitt (1878) give no printed facsimile of this code form or wording.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the second and third characters of these codes vary (potter's letter, year letter), so no single drawing shows the mark."
+    "status": "facsimile",
+    "file": "marks/img/db/wedgwood-code-prefix-4.webp",
+    "marks_in_image": 1,
+    "holder": "Reilly, Wedgwood: The New Illustrated Dictionary",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Robin Reilly, Wedgwood: The New Illustrated Dictionary (Antique Collectors' Club, Woodbridge, 1995), p. 505, worked example '4BD'",
+    "source_url": "",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/ref-reilly-509.png",
+    "crop": [
+     370,
+     209,
+     102,
+     51
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "From Robin Reilly, Wedgwood: The New Illustrated Dictionary (1995), p. 505.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     102,
+     51
+    ]
    },
    "pages": [
     "/marks/wedgwood-date-codes"
@@ -4483,6 +4532,10 @@
     {
      "id": "godden-encyclopaedia-marks-1964",
      "where": "p. 659 (3 from 1907, 4 from 1924)"
+    },
+    {
+     "id": "reilly-wedgwood-dictionary-1995",
+     "where": "p. 505"
     }
    ],
    "group": "pottery-codes",
@@ -4496,7 +4549,9 @@
      "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
      "Public-domain books pass, 2026-11-22: Chaffers (1912), Litchfield (1912) and Jewitt (1878) give no printed facsimile of this code form or wording.",
      "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: only one source gives this year letter."
+     "Not drawn: only one source gives this year letter.",
+     "Reilly (1995) p. 505 gives no G = 1930: from 1930 the year itself was impressed, so there is no mark to cut.",
+     "Final push, 2026-11-24: Reilly (1995) p. 505 and Godden (1964) p. 659 both say the letters stop in 1929 or 1930 and the year itself was impressed from 1930, and Commons has no photograph of a G-coded piece of that year; with two of three sources saying the code was not used, nothing is drawn."
     ],
     "blocked": [],
     "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
@@ -4518,6 +4573,11 @@
      "source": "godden-encyclopaedia-marks-1964",
      "years": "after 1930 numbers replace the letters",
      "note": "does not list G = 1930"
+    },
+    {
+     "source": "reilly-wedgwood-dictionary-1995",
+     "years": "letters end with F = 1929",
+     "note": "from 1930 the actual year was impressed instead of a letter"
     }
    ]
   },
@@ -17474,6 +17534,10 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
     }
    ],
    "group": "pottery-codes",
@@ -17535,6 +17599,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -17544,18 +17616,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-2-flames-1888.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 2 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 2 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     185,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 2-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -17593,6 +17664,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -17602,18 +17681,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-3-flames-1889.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 3 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 3 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     183,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 3-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -17651,6 +17729,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -17660,18 +17746,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-4-flames-1890.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 4 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 4 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     208,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 4-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -17709,6 +17794,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -17718,18 +17811,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-5-flames-1891.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 5 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 5 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     248,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 5-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -17767,6 +17859,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -17776,18 +17876,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-6-flames-1892.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 6 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 6 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     283,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 6-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -17825,6 +17924,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -17834,18 +17941,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-7-flames-1893.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 7 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 7 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     305,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 7-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -17883,6 +17989,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -17892,18 +18006,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-8-flames-1894.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 8 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 8 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     323,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 8-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -17913,7 +18026,7 @@
    "kind": "date code",
    "name": "RP with 9 flames: 1895",
    "applied": "impressed",
-   "looks_like": "The RP monogram impressed with 9 short flames around it, and no numeral below.",
+   "looks_like": "The RP monogram impressed with 9 short flames around it, and no numeral below; the picture is the 1895 mark as Ellis prints it, with nine flames.",
    "means": "1895 (1886 plus the number of flames).",
    "date_from": 1895,
    "date_to": 1895,
@@ -17941,6 +18054,10 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
     }
    ],
    "group": "pottery-codes",
@@ -17950,18 +18067,27 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "facsimile",
+    "file": "marks/img/db/rookwood-rp-9-flames-1895.webp",
+    "marks_in_image": 1,
+    "holder": "Ellis, Rookwood Pottery: The Glaze Lines",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Anita J. Ellis, Rookwood Pottery: The Glaze Lines (Schiffer Publishing, Atglen, Pennsylvania, 1995), p. 215, mark for 1895",
+    "source_url": "",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/ref-ellis-219.png",
+    "crop": [
+     1836,
+     3355,
+     332,
+     306
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "From Anita J. Ellis, Rookwood Pottery: The Glaze Lines (1995), p. 215.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     332,
+     306
+    ],
+    "note": "Ellis (1995) p. 215 prints the mark as a solid black silhouette, not an outline; the crop shows it as printed, with nothing filled in or traced."
    },
    "disagreements": [],
    "date_note": ""
@@ -17999,6 +18125,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -18008,18 +18142,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-10-flames-1896.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 10 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 10 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     329,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 10-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -18057,6 +18190,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -18066,18 +18207,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-11-flames-1897.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 11 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 11 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     327,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 11-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -18115,6 +18255,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -18124,18 +18272,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-12-flames-1898.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 12 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 12 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     303,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 12-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -18173,6 +18320,14 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
+    },
+    {
+     "id": "rookwood-catalogue-c1900",
+     "where": "p. 25"
     }
    ],
    "group": "pottery-codes",
@@ -18182,18 +18337,17 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the number of flames but not the shape of the RP monogram or where each added flame sits.",
-     "Peck (1968) p. 136 and Barber (1904) p. 120 say only that one flame was added each year (the first above the monogram) and print the 1-flame and 14-flame marks; neither says where the 2nd to 13th flames sit, so these counts are not drawn."
+    "status": "rendering",
+    "file": "marks/img/db/rookwood-rp-13-flames-1899.webp",
+    "marks_in_image": 1,
+    "method": "The RP monogram (a reversed R sharing its upright with a P) with 13 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 13 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
+    "confidence": "high",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "size": [
+     280,
+     240
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "note": "Drawn, not copied: no book or open photograph of the 13-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
    },
    "disagreements": [],
    "date_note": ""
@@ -18235,6 +18389,10 @@
     {
      "id": "peck-book-of-rookwood-1968",
      "where": "p. 136"
+    },
+    {
+     "id": "ellis-rookwood-glaze-lines-1995",
+     "where": "p. 215"
     }
    ],
    "group": "pottery-codes",
@@ -18669,7 +18827,8 @@
     "size": [
      160,
      193
-    ]
+    ],
+    "note": "Peck (1968) p. 136 prints the mark as a solid black silhouette, not an outline; the crop shows it as printed, with nothing filled in or traced."
    },
    "disagreements": [],
    "date_note": ""
@@ -21945,7 +22104,8 @@
     "size": [
      182,
      160
-    ]
+    ],
+    "note": "Peck (1968) p. 136 prints the mark as a solid black silhouette, not an outline; the crop shows it as printed, with nothing filled in or traced."
    },
    "disagreements": [],
    "date_note": ""
@@ -22089,7 +22249,9 @@
      "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
      "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
      "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the system, not the mark's layout (and only one source describes it)."
+     "Not drawn: the sources give the system, not the mark's layout (and only one source describes it).",
+     "Ellis (1995) p. 215-216 covers marks to the 1967 closing only; nothing on the later Townley or revived-factory marks.",
+     "Final push, 2026-11-24: Lehner (1988) p. 382-383 describes the Townley revival (from 1982; pieces block-ink marked underglaze; Townley held the RP, RP-and-flames and ROOKWOOD marks) but prints no mark; Kovel's Dictionary of Marks prints none after 1967; Commons has no photograph of a Townley-era base. Not drawn: only one source gives the Arabic year and none says where it sits or what the ink mark looks like."
     ],
     "blocked": [],
     "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
@@ -22140,7 +22302,9 @@
      "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
      "Public-domain books pass, 2026-11-22: Barber, Pottery and Porcelain of the United States (1893, 1901) p. 409 and Marks of American Potters (1904) p. 120 print only the 0-, 1- and 14-flame marks; the later marks post-date 1929.",
      "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources give the system, not the mark's layout."
+     "Not drawn: the sources give the system, not the mark's layout.",
+     "Ellis (1995) p. 215-216 covers marks to the 1967 closing only; nothing on the later Townley or revived-factory marks.",
+     "2026-11-24: a drawing with an example numeral (MMXII) was made and withdrawn on Joe's call; no printed or photographed revived-factory mark was found"
     ],
     "blocked": [],
     "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
@@ -22369,7 +22533,7 @@
    "kind": "date letter",
    "name": "Date letter C in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter C inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter C inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1756, traditional 1755.",
    "date_from": 1755,
    "date_to": 1756,
@@ -22423,18 +22587,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-c.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     366,
+     1346,
+     32,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     32,
+     40
+    ]
    }
   },
   {
@@ -22607,7 +22778,7 @@
    "kind": "date letter",
    "name": "Date letter F in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter F inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter F inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1759, traditional 1758.",
    "date_from": 1758,
    "date_to": 1759,
@@ -22661,18 +22832,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-f.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     371,
+     1492,
+     27,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     27,
+     40
+    ]
    }
   },
   {
@@ -22680,7 +22858,7 @@
    "kind": "date letter",
    "name": "Date letter G in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter G inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter G inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1760, traditional 1759.",
    "date_from": 1759,
    "date_to": 1760,
@@ -22734,18 +22912,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-g.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     365,
+     1540,
+     35,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     35,
+     40
+    ]
    }
   },
   {
@@ -22847,7 +23032,7 @@
    "kind": "date letter",
    "name": "Date letter I in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter I inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter I inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1762, traditional 1761.",
    "date_from": 1761,
    "date_to": 1762,
@@ -22901,18 +23086,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-i.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     370,
+     1638,
+     16,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     16,
+     40
+    ]
    }
   },
   {
@@ -22920,7 +23112,7 @@
    "kind": "date letter",
    "name": "Date letter J in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter J inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter J inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1762, both tables.",
    "date_from": 1762,
    "date_to": 1762,
@@ -22959,18 +23151,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-j.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     364,
+     1688,
+     24,
+     44
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     24,
+     44
+    ]
    }
   },
   {
@@ -22978,7 +23177,7 @@
    "kind": "date letter",
    "name": "Date letter K in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter K inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter K inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1763, both tables.",
    "date_from": 1763,
    "date_to": 1763,
@@ -23027,18 +23226,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-k.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     369,
+     1737,
+     35,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     35,
+     40
+    ]
    }
   },
   {
@@ -23121,7 +23327,7 @@
    "kind": "date letter",
    "name": "Date letter M in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter M inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter M inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1765, both tables.",
    "date_from": 1765,
    "date_to": 1765,
@@ -23170,18 +23376,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-m.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     371,
+     1834,
+     37,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     37,
+     40
+    ]
    }
   },
   {
@@ -23189,7 +23402,7 @@
    "kind": "date letter",
    "name": "Date letter N in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter N inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter N inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1766, both tables.",
    "date_from": 1766,
    "date_to": 1766,
@@ -23238,18 +23451,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-n.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     369,
+     1883,
+     36,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     36,
+     40
+    ]
    }
   },
   {
@@ -23341,7 +23561,7 @@
    "kind": "date letter",
    "name": "Date letter P in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter P inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter P inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1768, both tables.",
    "date_from": 1768,
    "date_to": 1768,
@@ -23390,18 +23610,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-p.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     939,
+     1296,
+     29,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     29,
+     40
+    ]
    }
   },
   {
@@ -23409,7 +23636,7 @@
    "kind": "date letter",
    "name": "Date letter Q in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter Q inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter Q inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1769, both tables.",
    "date_from": 1769,
    "date_to": 1769,
@@ -23458,18 +23685,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-q.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     938,
+     1347,
+     37,
+     42
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     37,
+     42
+    ]
    }
   },
   {
@@ -23798,7 +24032,7 @@
    "kind": "date letter",
    "name": "Date letter V in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter V inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter V inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1774, both tables.",
    "date_from": 1774,
    "date_to": 1774,
@@ -23847,18 +24081,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-v.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     940,
+     1589,
+     33,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     33,
+     40
+    ]
    }
   },
   {
@@ -23866,7 +24107,7 @@
    "kind": "date letter",
    "name": "Date letter X in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter X inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter X inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1775, both tables.",
    "date_from": 1775,
    "date_to": 1775,
@@ -23915,18 +24156,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-x.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     940,
+     1638,
+     33,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     33,
+     40
+    ]
    }
   },
   {
@@ -23934,7 +24182,7 @@
    "kind": "date letter",
    "name": "Date letter Y in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter Y inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the letter Y inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1776, both tables.",
    "date_from": 1776,
    "date_to": 1776,
@@ -23983,18 +24231,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-y.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     941,
+     1687,
+     32,
+     40
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     32,
+     40
+    ]
    }
   },
   {
@@ -24158,7 +24413,7 @@
    "kind": "date letter",
    "name": "Date letter BB in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter BB inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter BB inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1779, both tables.",
    "date_from": 1779,
    "date_to": 1779,
@@ -24207,18 +24462,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-bb.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     936,
+     1833,
+     71,
+     43
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     71,
+     43
+    ]
    }
   },
   {
@@ -24226,7 +24488,7 @@
    "kind": "date letter",
    "name": "Date letter CC in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter CC inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter CC inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1780, both tables.",
    "date_from": 1780,
    "date_to": 1780,
@@ -24275,18 +24537,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-cc.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     935,
+     1882,
+     70,
+     43
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     70,
+     43
+    ]
    }
   },
   {
@@ -24294,7 +24563,7 @@
    "kind": "date letter",
    "name": "Date letter DD in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter DD inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter DD inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1781, both tables.",
    "date_from": 1781,
    "date_to": 1781,
@@ -24343,18 +24612,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-dd.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1488,
+     1246,
+     85,
+     45
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     85,
+     45
+    ]
    }
   },
   {
@@ -24362,7 +24638,7 @@
    "kind": "date letter",
    "name": "Date letter EE in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter EE inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter EE inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1782, both tables.",
    "date_from": 1782,
    "date_to": 1782,
@@ -24411,18 +24687,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-ee.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1489,
+     1295,
+     77,
+     45
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     77,
+     45
+    ]
    }
   },
   {
@@ -24430,7 +24713,7 @@
    "kind": "date letter",
    "name": "Date letter FF in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter FF inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter FF inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1783, both tables.",
    "date_from": 1783,
    "date_to": 1783,
@@ -24479,18 +24762,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-ff.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1491,
+     1345,
+     70,
+     44
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     70,
+     44
+    ]
    }
   },
   {
@@ -24498,7 +24788,7 @@
    "kind": "date letter",
    "name": "Date letter GG in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter GG inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter GG inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1784, both tables.",
    "date_from": 1784,
    "date_to": 1784,
@@ -24547,18 +24837,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-gg.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1489,
+     1392,
+     77,
+     45
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     77,
+     45
+    ]
    }
   },
   {
@@ -24566,7 +24863,7 @@
    "kind": "date letter",
    "name": "Date letter HH in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter HH inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter HH inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1785, both tables.",
    "date_from": 1785,
    "date_to": 1785,
@@ -24615,18 +24912,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-hh.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1490,
+     1441,
+     86,
+     46
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     86,
+     46
+    ]
    }
   },
   {
@@ -24718,7 +25022,7 @@
    "kind": "date letter",
    "name": "Date letter JJ in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter JJ inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter JJ inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1786, traditional 1787.",
    "date_from": 1786,
    "date_to": 1787,
@@ -24764,18 +25068,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-jj.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1492,
+     1541,
+     43,
+     44
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     43,
+     44
+    ]
    }
   },
   {
@@ -24783,7 +25094,7 @@
    "kind": "date letter",
    "name": "Date letter KK in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter KK inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter KK inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1787, traditional 1788.",
    "date_from": 1787,
    "date_to": 1788,
@@ -24842,18 +25153,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-kk.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1494,
+     1588,
+     76,
+     45
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     76,
+     45
+    ]
    }
   },
   {
@@ -24861,7 +25179,7 @@
    "kind": "date letter",
    "name": "Date letter LL in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter LL inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter LL inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1788, traditional 1789.",
    "date_from": 1788,
    "date_to": 1789,
@@ -24920,18 +25238,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-ll.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1492,
+     1637,
+     69,
+     43
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     69,
+     43
+    ]
    }
   },
   {
@@ -24939,7 +25264,7 @@
    "kind": "date letter",
    "name": "Date letter MM in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter MM inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter MM inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1789, traditional 1790.",
    "date_from": 1789,
    "date_to": 1790,
@@ -24998,18 +25323,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-mm.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1492,
+     1686,
+     89,
+     46
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     89,
+     46
+    ]
    }
   },
   {
@@ -25111,7 +25443,7 @@
    "kind": "date letter",
    "name": "Date letter OO in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter OO inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter OO inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1791, traditional 1792.",
    "date_from": 1791,
    "date_to": 1792,
@@ -25170,18 +25502,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-oo.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1492,
+     1784,
+     78,
+     46
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     78,
+     46
+    ]
    }
   },
   {
@@ -25189,7 +25528,7 @@
    "kind": "date letter",
    "name": "Date letter PP in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter PP inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter PP inside or beside them; the picture is the letter as Chaffers prints it, alone in type in his date table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1792, traditional 1793.",
    "date_from": 1792,
    "date_to": 1793,
@@ -25248,18 +25587,25 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-pp.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/marksmonogra00chaf/page/604",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/chaffers-1912-p604.jpg",
+    "crop": [
+     1493,
+     1833,
+     66,
+     43
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Chaffers (ed. Frederick Litchfield), Marks and Monograms on European and Oriental Pottery and Porcelain, 13th ed. (1912), p. 604, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     66,
+     43
+    ]
    }
   },
   {
@@ -25267,7 +25613,7 @@
    "kind": "date letter",
    "name": "Date letter QQ in the interlaced Ls",
    "applied": "painted",
-   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter QQ inside or beside them.",
+   "looks_like": "Two script Ls crossed back to back, painted (usually in blue), with the doubled letter QQ inside or beside them; the picture is the letters as Burton and Hobson print them, alone in type in their year table, not inside the interlaced Ls; painted versions vary by hand.",
    "means": "Revised table 1793, both tables.",
    "date_from": 1793,
    "date_to": 1793,
@@ -25308,18 +25654,26 @@
     "/marks/sevres-date-letters"
    ],
    "visual": {
-    "status": "none",
-    "searched": [
-     "Wikimedia Commons: the Met's Open Access mark photos (searches by factory, place and 'MET … mark'), Cooper Hewitt and Auckland Museum uploads, backstamp categories (Porcelain marks of the United Kingdom, Sèvres porcelain marks, Pottery marks of the United States), 2026-11-22",
-     "Smithsonian Open Access API (Cooper Hewitt records): marks described in words, front views only, 2026-11-22",
-     "Internet Archive, pre-1929 books: Chaffers, Marks and Monograms (1912); Litchfield, Pottery and Porcelain (1912 and 1925); Burton and Hobson, Handbook of Marks (1909); Barber, Marks of American Potters (1904)",
-     "Public-domain books pass, 2026-11-22: Chaffers (1912) pp. 559-582, Garnier (1892) pp. 24-26, Lechevallier-Chevignard (1908) p. 117 and Burton and Hobson (1909) pp. 77-78 print drawn marks only for A, B, D, E, L, R, U, AA (and HH, too close to a painter's mark to crop); the rest appear only as type in date tables, which is not a picture of the painted mark.",
-     "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
-     "Not drawn: the sources fix the letter but say it was painted in upper or lower case, in each painter's hand, inside interlaced Ls whose form varies; a drawing would invent one version.",
-     "Chaffers (1912) p. 604, 'Chronological table of signs': the letter is printed only as ordinary type in a table, about 25 px tall at the scan's own resolution with rows 45 px apart, so it cannot be cut at 90 px without its neighbours; Burton and Hobson (1909) p. 78 and Lechevallier-Chevignard (1908) p. 117 are the same."
+    "status": "facsimile",
+    "file": "marks/img/db/sevres-letter-qq.webp",
+    "marks_in_image": 1,
+    "holder": "Internet Archive (scan)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/handbookofmarkso00burt/page/78",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/books/burton-hobson-1909-p78.jpg",
+    "crop": [
+     788,
+     2131,
+     112,
+     72
     ],
-    "blocked": [],
-    "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
+    "credit": "Facsimile from William Burton and R. L. Hobson, Handbook of Marks on Pottery and Porcelain (1909), p. 78, public domain.",
+    "grade": "greyscale, autocontrast only",
+    "size": [
+     112,
+     72
+    ],
+    "note": "Burton and Hobson print the letters in their year table in a plain sans-serif type, not as painted; their table dates QQ to 1792."
    }
   }
  ]

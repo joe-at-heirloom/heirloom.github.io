@@ -124,6 +124,44 @@
    "title": "Omega",
    "url": "https://hls-dhs-dss.ch/articles/041991",
    "retrieved": "2026-11-22"
+  },
+  "duf-museum-digital": {
+   "kind": "museum",
+   "author": "Deutsches Uhrenmuseum Furtwangen",
+   "title": "Object records and photographs on museum-digital (Baden-Wurttemberg), CC BY-SA",
+   "url": "https://bawue.museum-digital.de/institution/97",
+   "retrieved": "2026-11-24"
+  },
+  "amsterdam-rolex-serials": {
+   "kind": "website",
+   "author": "Amsterdam Vintage Watches",
+   "title": "Dating your Rolex by serial number: a comprehensive guide",
+   "url": "https://amsterdamvintagewatches.com/watch-guide/dating-your-rolex-by-serial-number-a-comprehensive-guide/",
+   "retrieved": "2026-11-22",
+   "note": "Dealer page; facts only"
+  },
+  "boettcher-oyster-case-serials": {
+   "kind": "website",
+   "author": "David Boettcher, Vintage Watch Straps",
+   "title": "Oyster case serial numbers (blog, updated 2025)",
+   "url": "https://vintagewatchstraps.com/blogoystercaseserials.php",
+   "retrieved": "2026-11-24",
+   "note": "Collector's research from British hallmark dates; facts only"
+  },
+  "antiquorum-2018-lot-151": {
+   "kind": "auction",
+   "author": "Antiquorum",
+   "title": "Omega ref. 105.012-66 'CB' Speedmaster, Geneva, 11 November 2018, lot 151 (catalogue note on HF and CB case makers)",
+   "url": "https://catalog.antiquorum.swiss/en/lots/omega-ref-105-012-66-cb-speedmaster-lot-317-151",
+   "retrieved": "2026-11-24"
+  },
+  "hairspring-cb-case": {
+   "kind": "website",
+   "author": "Hairspring",
+   "title": "CB case 105.012-66 Omega Speedmaster",
+   "url": "https://hairspring.com/finds/cb-case-105-012-66-omega-speedmaster/",
+   "retrieved": "2026-11-24",
+   "note": "Dealer article; facts only"
   }
  },
  "entries": [
@@ -166,8 +204,7 @@
       "url": "https://www.phillips.com/detail/rolex/CH080215/167",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Phillips image and rights department",
-      "checked": "checked 2026-11-22: mark not shown (lot 167's only image shows the watch on its bracelet with its papers)",
-      "shows_mark": false
+      "checked": "checked 2026-11-22: mark not shown (lot 167's only image shows the watch on its bracelet with its papers)"
      }
     ]
    },
@@ -216,8 +253,7 @@
       "url": "https://phillips.com/detail/rolex/HK080624/77",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Phillips image and rights department",
-      "checked": "checked 2026-11-22: mark not shown (Toki lot 77's four images show the dial, the closed case back and the sides, bracelet on)",
-      "shows_mark": false
+      "checked": "checked 2026-11-22: mark not shown (Toki lot 77's four images show the dial, the closed case back and the sides, bracelet on)"
      }
     ]
    },
@@ -259,7 +295,10 @@
     "status": "none",
     "searched": [
      "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
-     "Commons: Rolex Datejust 36 and Datejust 126234 photographs by ajay_suresh (CC BY 2.0): the rehaut is visible but a reflection covers the serial at 6 o'clock"
+     "Commons: Rolex Datejust 36 and Datejust 126234 photographs by ajay_suresh (CC BY 2.0): the rehaut is visible but a reflection covers the serial at 6 o'clock",
+     "2026-11-24: Wikimedia Commons searches 'Rolex rehaut', 'Rolex inner bezel', 'Rolex serial', 'Rolex lugs', 'Rolex Submariner rehaut': only Rolex-GMT-Master-II-Batgirl.jpg (CC0, Brattyq, 1200 x 1200) shows the rehaut; its serial at 6 o'clock and the ROLEX engraving are visible but about 8-10 px tall at native size, too small to read without enlarging",
+     "2026-11-24: Europeana (reusable only) 'rolex': German Clock Museum Rolex watches of about 1927, 1935 and 1960 (CC BY-SA 4.0) predate the rehaut engraving",
+     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed"
     ],
     "blocked": [],
     "note": "The two Commons photos that show a rehaut have the serial hidden by a reflection."
@@ -307,7 +346,10 @@
     "status": "none",
     "searched": [
      "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
-     "Commons: Rolex Datejust 36 (ajay_suresh, CC BY 2.0) shows the engraving, but its letters are about 25 px tall; its letters are about 25 px on a curve, and any crop of 90 px or more takes in the minute track"
+     "Commons: Rolex Datejust 36 (ajay_suresh, CC BY 2.0) shows the engraving, but its letters are about 25 px tall; its letters are about 25 px on a curve, and any crop of 90 px or more takes in the minute track",
+     "2026-11-24: Wikimedia Commons searches 'Rolex rehaut', 'Rolex inner bezel', 'Rolex serial', 'Rolex lugs', 'Rolex Submariner rehaut': only Rolex-GMT-Master-II-Batgirl.jpg (CC0, Brattyq, 1200 x 1200) shows the rehaut; its serial at 6 o'clock and the ROLEX engraving are visible but about 8-10 px tall at native size, too small to read without enlarging",
+     "2026-11-24: Europeana (reusable only) 'rolex': German Clock Museum Rolex watches of about 1927, 1935 and 1960 (CC BY-SA 4.0) predate the rehaut engraving",
+     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed"
     ],
     "blocked": [],
     "note": "Usable source photo exists at too low a resolution for a single-mark crop."
@@ -650,8 +692,38 @@
     }
    ],
    "visual": {
-    "status": "none",
-    "searched": [
+    "status": "photo",
+    "file": "marks/img/db/omega-case-back-serial.webp",
+    "marks_in_image": 1,
+    "object": "Omega Seamaster chronograph on its bracelet, seen from the back (2000s)",
+    "holder": "Wikimedia Commons (Rama)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Omega-Seamaster-p1020461.jpg",
+    "licence": "CC-BY-SA-2.0",
+    "original": "hallmark-sources/swiss-watches/omega-seamaster-rama-p1020461.jpg",
+    "credit": "Photograph: \"Omega-Seamaster-p1020461\" by Rama, Wikimedia Commons, CC BY-SA 2.0 France; cropped, levelled and toned by Heirloom.",
+    "crop": [
+     788,
+     801,
+     96,
+     24
+    ],
+    "crop_frame": "after rotating the original by angle about center",
+    "rotation": {
+     "center": [
+      830,
+      813
+     ],
+     "angle": -18
+    },
+    "margins": {
+     "l": 11,
+     "r": 11,
+     "t": 3,
+     "b": 3
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-back-serial.png",
+    "note": "The serial engraved on the side of a lug, the place Omega names for current watches. Small and only partly legible: 96 x 24 px at the photo's native size, never enlarged.",
+    "searched_before": [
      "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22) (Speedmaster case backs on Commons show only the outside engraving, no serial)",
      "A drawing would only repeat the number; needs a photo."
     ],
@@ -662,11 +734,9 @@
       "url": "https://commons.wikimedia.org/wiki/File:Omega_Speedmaster_Rueckseite.jpg",
       "licence": "GPL-3.0",
       "ask": "The uploader, via their Commons talk page",
-      "checked": "checked 2026-11-22: mark not shown (a display back with an Apollo XI inscription and a limited-edition number, A 3764, not the eight-digit serial; the file page calls it a caliber 864 movement)",
-      "shows_mark": false
+      "checked": "checked 2026-11-22: mark not shown (a display back with an Apollo XI inscription and a limited-edition number, A 3764, not the eight-digit serial; the file page calls it a caliber 864 movement)"
      }
-    ],
-    "note": "A drawing would only repeat the number; needs a photo."
+    ]
    },
    "pages": [
     "/marks/omega-serial-numbers"
@@ -700,8 +770,31 @@
     }
    ],
    "visual": {
-    "status": "none",
-    "searched": [
+    "status": "photo",
+    "file": "marks/img/db/omega-case-reference.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the case back of an Omega Speedmaster Professional, 1967 (Deutsches Uhrenmuseum Furtwangen, inv. 2003-110)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "2003-110",
+    "source_url": "https://bawue.museum-digital.de/object/57964",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-speedmaster-1967-caseback-inside-duf-2003-110.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     522,
+     874,
+     280,
+     54
+    ],
+    "margins": {
+     "l": 32,
+     "r": 32,
+     "t": 6,
+     "b": 6
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-reference.png",
+    "note": "Reference 105 012-66 (the Speedmaster Professional's ST 105.012-66) stamped inside the case back. Small crop at the photo's native size (280 x 54 px). The case maker's HF sign below it is left out, and the museum's inventory number (on the outside of the back) is not in the crop.",
+    "searched_before": [
      "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
      "Met Open Access API (no Rolex or Omega watches); Smithsonian NMAH Omega records (usage conditions apply, not CC0); Auckland War Memorial Museum, Hillary's Rolex AM 2014.7.70 (CC BY 4.0; no serial or reference visible)",
      "A drawing would only repeat the number; needs a photo."
@@ -713,11 +806,9 @@
       "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Antiquorum or Phillips image departments",
-      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)",
-      "shows_mark": false
+      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)"
      }
-    ],
-    "note": "A drawing would only repeat the number; needs a photo."
+    ]
    },
    "pages": [
     "/marks/omega-serial-numbers"
@@ -749,8 +840,31 @@
     }
    ],
    "visual": {
-    "status": "none",
-    "searched": [
+    "status": "photo",
+    "file": "marks/img/db/omega-case-number.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the gold case back of a small Omega ladies' wristwatch, about 1960 (Deutsches Uhrenmuseum Furtwangen, inv. 47-2966-2)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "47-2966-2",
+    "source_url": "https://bawue.museum-digital.de/object/58034",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-ladies-1960-caseback-inside-duf-47-2966-2.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     918,
+     906,
+     506,
+     80
+    ],
+    "margins": {
+     "l": 58,
+     "r": 58,
+     "t": 7,
+     "b": 4
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-number.png",
+    "note": "512056 stamped below the Swiss gold marks. The museum record does not label either number; 512056 is taken as the case number and 7112, below it, as the reference by their position only. Native size (506 x 80 px); no museum inventory number in the crop.",
+    "searched_before": [
      "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
      "Met Open Access API (no Rolex or Omega watches); Smithsonian NMAH Omega records (usage conditions apply, not CC0); Auckland War Memorial Museum, Hillary's Rolex AM 2014.7.70 (CC BY 4.0; no serial or reference visible)",
      "A drawing would only repeat the number; needs a photo."
@@ -762,11 +876,121 @@
       "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Antiquorum image department",
-      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)",
-      "shows_mark": false
+      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)"
      }
+    ]
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "rolex-early-case-serial-inside-back",
+   "maker": "Rolex SA",
+   "kind": "serial",
+   "name": "Early case serial stamped inside the case back",
+   "looks_like": "A number of about five digits stamped inside the case back of a 1920s Rolex, below the maker's and patent stamps (21491 on a gold Oyster of about 1927).",
+   "means": "The case's serial number on an early Rolex. Gold Oyster cases of the late 1920s appear to have their own series, starting at about 20,000, apart from silver ones; the published serial lists disagree this early, so the British hallmark in the same back dates the case better.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "Seen on 1920s cases; when the serial moved between the lugs is not settled by these sources.",
+   "sources": [
+    {
+     "id": "boettcher-oyster-case-serials",
+     "where": "gold and silver case series"
+    },
+    {
+     "id": "amsterdam-rolex-serials",
+     "where": "serial stamped inside the case back on some vintage models"
+    },
+    {
+     "id": "duf-museum-digital",
+     "where": "object 2004-080, Rolex Oyster about 1927"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/rolex-early-case-serial-inside-back.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the gold case back of a Rolex Oyster, about 1927 (Deutsches Uhrenmuseum Furtwangen, inv. 2004-080)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "2004-080",
+    "source_url": "https://bawue.museum-digital.de/object/57974",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/rolex-oyster-1927-caseback-inside-duf-2004-080.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     958,
+     1026,
+     444,
+     86
     ],
-    "note": "A drawing would only repeat the number; needs a photo."
+    "margins": {
+     "l": 51,
+     "r": 51,
+     "t": 10,
+     "b": 10
+    },
+    "raw": "hallmark-sources/db-raw/rolex-early-case-serial-inside-back.png",
+    "note": "21491 below GENEVA-SUISSE. Small crop at the photo's native size (444 x 86 px); no museum inventory number in the crop."
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "omega-case-maker-hf",
+   "maker": "Huguenin Frères & Co. (for Omega)",
+   "kind": "maker's mark",
+   "name": "HF case maker's sign inside a Speedmaster case back",
+   "looks_like": "The letters HF joined in a small circle, stamped inside the case back below the reference.",
+   "means": "The case was made by Huguenin Frères & Co. of Le Locle, which made nearly all Speedmaster cases with the caliber 321; from 1966 some 105.012 cases came from La Centrale Boîtes and are signed CB instead. It names the case maker, not the watch's date.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "On Speedmaster cases of the caliber 321 era (to about 1968).",
+   "sources": [
+    {
+     "id": "antiquorum-2018-lot-151",
+     "where": "catalogue note"
+    },
+    {
+     "id": "hairspring-cb-case",
+     "where": "HF and CB cases"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-case-maker-hf.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the case back of an Omega Speedmaster Professional, 1967 (Deutsches Uhrenmuseum Furtwangen, inv. 2003-110)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "2003-110",
+    "source_url": "https://bawue.museum-digital.de/object/57964",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-speedmaster-1967-caseback-inside-duf-2003-110.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     623,
+     960,
+     88,
+     90
+    ],
+    "margins": {
+     "l": 10,
+     "r": 10,
+     "t": 10,
+     "b": 10
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-maker-hf.png",
+    "note": "The HF sign below reference 105 012-66 on the same case back. Small crop at the photo's native size (88 x 90 px)."
    },
    "pages": [
     "/marks/omega-serial-numbers"

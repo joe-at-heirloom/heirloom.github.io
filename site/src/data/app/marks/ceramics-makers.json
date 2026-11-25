@@ -568,6 +568,22 @@
       "year": 1953,
       "public_domain": false,
       "note": "Pages checked in Joe's copy, 2026-11-24. Same authors as the Kovels' 1986 dictionary and 1993 book: not independent of them."
+    },
+    "van-patten-nippon-4th-1997": {
+      "kind": "book",
+      "author": "Joan F. Van Patten",
+      "title": "The Collector's Encyclopedia of Nippon Porcelain, Fourth Series",
+      "year": 1997,
+      "public_domain": false,
+      "note": "Joe's copy, pages checked 2026-11-24; marks pp. 82-102; reproductions pp. 63-65. Same author as van-patten-nippon."
+    },
+    "van-patten-noritake-1984": {
+      "kind": "book",
+      "author": "Joan F. Van Patten",
+      "title": "The Collector's Encyclopedia of Noritake",
+      "year": 1984,
+      "public_domain": false,
+      "note": "Joe's copy, pages checked 2026-11-24; backstamps text pp. 90-94, plates pp. 95-104. Same author as van-patten-nippon."
     }
   },
   "entries": [
@@ -1353,7 +1369,22 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/weller-paper-label.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 509, no. 37",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-513.png",
+        "crop": [
+          1850,
+          1690,
+          310,
+          285
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 509, no. 37.",
+        "note": "Lehner's mark 37, which she says is found as an ink stamp or a paper label; printed as a dark silhouette.",
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -1390,8 +1421,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "A printed label with its own artwork; not a fixed lettered mark."
+        ]
       },
       "pages": [
         "/marks/weller-pottery-marks"
@@ -1517,7 +1547,22 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/weller-molded-script.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 509, no. 12",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-513.png",
+        "crop": [
+          90,
+          1355,
+          510,
+          285
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 509, no. 12.",
+        "note": "Lehner prints the script with the incidental letters and numbers (F, 68) that come with it on the item.",
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -1554,8 +1599,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "The maker's own script lettering; no stock face matches it and a crisp redraw would copy the trademark."
+        ]
       },
       "pages": [
         "/marks/weller-pottery-marks"
@@ -3212,7 +3256,36 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/nelson-mccoy-name.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 288, no. 33",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-292.png",
+        "crop": [
+          2150,
+          1530,
+          210,
+          125
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 288, no. 33.",
+        "note": "The book's plate number (33.) beside the mark is painted out with the paper colour; the mark is untouched.",
+        "painted_out": [
+          [
+            2105,
+            1596,
+            60,
+            60
+          ],
+          [
+            2165,
+            1615,
+            22,
+            45
+          ]
+        ],
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -3284,8 +3357,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "The firm's stylized McCoy logo (ZMA calls it a stylized logo)."
+        ]
       },
       "pages": [
         "/marks/mccoy-pottery-marks"
@@ -3716,7 +3788,21 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/mccoy-jensen-registration.webp",
+        "marks_in_image": 1,
+        "holder": "United States Patent and Trademark Office (registration drawing)",
+        "licence": "in-copyright-reference",
+        "licence_note": "Trademark registration drawing from the USPTO record, reproduced by Heirloom on its own decision (Joe, 2026-11-24) to identify the mark; the mark belongs to its registrant. Source: USPTO serial 74309516.",
+        "source_url": "https://tsdr.uspto.gov/img/74309516/large ; https://tsdr.uspto.gov/statusview/sn74309516",
+        "original": "hallmark-sources/ceramics/uspto/us74309516.png",
+        "crop": [
+          0,
+          0,
+          260,
+          136
+        ],
+        "credit": "From the USPTO registration record, serial 74309516.",
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -3788,8 +3874,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "A registered stylized trademark."
+        ]
       },
       "pages": [
         "/marks/mccoy-pottery-marks"
@@ -3816,7 +3901,21 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/mccoy-rhyne-registration.webp",
+        "marks_in_image": 1,
+        "holder": "United States Patent and Trademark Office (registration drawing)",
+        "licence": "in-copyright-reference",
+        "licence_note": "Trademark registration drawing from the USPTO record, reproduced by Heirloom on its own decision (Joe, 2026-11-24) to identify the mark; the mark belongs to its registrant. Source: USPTO serial 78542543.",
+        "source_url": "https://tsdr.uspto.gov/img/78542543/large ; https://tsdr.uspto.gov/statusview/sn78542543",
+        "original": "hallmark-sources/ceramics/uspto/us78542543.png",
+        "crop": [
+          0,
+          0,
+          260,
+          137
+        ],
+        "credit": "From the USPTO registration record, serial 78542543.",
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -3888,8 +3987,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "A registered stylized trademark in current use."
+        ]
       },
       "pages": [
         "/marks/mccoy-pottery-marks"
@@ -4014,7 +4112,21 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/hull-a-e-hull-name.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 215, no. 19",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-219.png",
+        "crop": [
+          540,
+          1845,
+          480,
+          295
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 215, no. 19.",
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -4392,7 +4504,30 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/hull-script-usa.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 215, no. 16",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-219.png",
+        "crop": [
+          850,
+          1345,
+          320,
+          235
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 215, no. 16.",
+        "note": "The book's plate number (16.) beside the mark is painted out with the paper colour; the mark is untouched.",
+        "painted_out": [
+          [
+            1095,
+            1518,
+            70,
+            47
+          ]
+        ],
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -4436,8 +4571,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "Hull in the maker's script."
+        ]
       },
       "pages": [
         "/marks/hull-pottery-marks"
@@ -4561,7 +4695,21 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/hull-oven-proof.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 215, no. 21",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-219.png",
+        "crop": [
+          720,
+          2195,
+          460,
+          248
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 215, no. 21.",
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -4614,8 +4762,7 @@
             "checked": "checked 2026-11-22: The ZMA base photos of 2006.36.4ab do not show the mark legibly.",
             "shows_mark": false
           }
-        ],
-        "photo_only": "Oven Proof in script with hull (Lehner p. 215, nos. 20-23): the maker's lettering."
+        ]
       },
       "pages": [
         "/marks/hull-pottery-marks"
@@ -4824,7 +4971,30 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/hull-imperial-usa.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 215, no. 11",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-219.png",
+        "crop": [
+          40,
+          955,
+          630,
+          305
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 215, no. 11.",
+        "note": "The book's plate number (11.) above the mark is painted out with the paper colour; the mark is untouched.",
+        "painted_out": [
+          [
+            285,
+            955,
+            55,
+            48
+          ]
+        ],
         "searched": [
           "Wikimedia Commons (file search and maker categories)",
           "The Met Open Access (v1.1 search)",
@@ -4877,8 +5047,7 @@
             "checked": "checked 2026-11-22: No photo of this mark was found.",
             "shows_mark": false
           }
-        ],
-        "photo_only": "Imperial in the maker's script (Lehner p. 215, no. 11)."
+        ]
       },
       "pages": [
         "/marks/hull-pottery-marks"
@@ -6074,7 +6243,8 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ]
+        ],
+        "note": "The book prints the full bee as a solid dark silhouette; shown as printed."
       },
       "pages": [
         "/marks/hummel-marks"
@@ -6471,7 +6641,21 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/hummel-tmk7.webp",
+        "marks_in_image": 1,
+        "holder": "Luckey's Hummel Figurines & Plates",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Carl F. Luckey and Dean A. Genth, Luckey's Hummel Figurines & Plates: Identification and Price Guide (Iola: Krause Publications, 2003), p. 29, the Hummel Mark (TMK-7)",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/luckey-pdf-031.png",
+        "crop": [
+          1451,
+          761,
+          570,
+          428
+        ],
+        "credit": "From Carl F. Luckey and Dean A. Genth, Luckey's Hummel Figurines & Plates: Identification and Price Guide (2003), p. 29, the Hummel Mark (TMK-7).",
         "searched": [
           "Wikimedia Commons (Hummel figurine, Hummelfigur, M.I. Hummel, Goebel bee, W. Goebel; categories Maria Innocentia Hummel, Hummel-Manufaktur Rödental, Porzellanfabrik W. Goebel)",
           "Smithsonian Open Access (library records only)",
@@ -6500,8 +6684,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "A Goebel / M.I. Hummel trademark with crown or bee artwork; redrawing it would copy the trademark."
+        ]
       },
       "pages": [
         "/marks/hummel-marks"
@@ -6532,7 +6715,21 @@
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/hummel-tmk8-millennium-bee.webp",
+        "marks_in_image": 1,
+        "holder": "Luckey's Hummel Figurines & Plates",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Carl F. Luckey and Dean A. Genth, Luckey's Hummel Figurines & Plates: Identification and Price Guide (Iola: Krause Publications, 2003), p. 29, the Millennium Bee (TMK-8)",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/luckey-pdf-031.png",
+        "crop": [
+          1453,
+          1792,
+          458,
+          311
+        ],
+        "credit": "From Carl F. Luckey and Dean A. Genth, Luckey's Hummel Figurines & Plates: Identification and Price Guide (2003), p. 29, the Millennium Bee (TMK-8).",
         "searched": [
           "Wikimedia Commons (Hummel figurine, Hummelfigur, M.I. Hummel, Goebel bee, W. Goebel; categories Maria Innocentia Hummel, Hummel-Manufaktur Rödental, Porzellanfabrik W. Goebel)",
           "Smithsonian Open Access (library records only)",
@@ -6561,8 +6758,7 @@
             "licence": "in copyright (borrow-only on archive.org)",
             "ask": "the publishers"
           }
-        ],
-        "photo_only": "A Goebel / M.I. Hummel trademark with crown or bee artwork; redrawing it would copy the trademark."
+        ]
       },
       "pages": [
         "/marks/hummel-marks"
@@ -7587,7 +7783,30 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/american-limoges-sebring.webp",
+        "marks_in_image": 1,
+        "holder": "Lehner's Encyclopedia",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 262, no. 5",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/lehner-pdf-266.png",
+        "crop": [
+          2060,
+          3360,
+          663,
+          311
+        ],
+        "credit": "From Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 262, no. 5.",
+        "note": "The label runs to the scan's right edge, so its last few pixels may be cut. The book's plate number (5.) is painted out with the paper colour.",
+        "painted_out": [
+          [
+            2078,
+            3578,
+            44,
+            44
+          ]
+        ],
         "searched": [
           "Wikimedia Commons (keyword and Haviland category)",
           "The Met (Haviland holdings with open images are 1875-1886 only)",
@@ -8977,11 +9196,30 @@
         },
         {
           "id": "spain-noritake-1999"
+        },
+        {
+          "id": "van-patten-nippon-4th-1997",
+          "where": "p. 82, mark 51"
         }
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/nippon-country-mark.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Nippon Porcelain, 4th series",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (Paducah: Collector Books, 1997), p. 82, mark 51",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnippon-pdf-086.png",
+        "crop": [
+          1990,
+          1040,
+          360,
+          190
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (1997), p. 82, mark 51.",
+        "note": "Made in Nippon as Van Patten prints it, one of many layouts of the country mark.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9008,8 +9246,7 @@
             "licence": "public domain, but drawings (excluded by rule)",
             "ask": "not needed; a photograph is wanted"
           }
-        ],
-        "photo_only": "Nippon appears with many makers' own symbols; no single layout to draw."
+        ]
       },
       "pages": [
         "/marks/nippon-marks"
@@ -9035,6 +9272,10 @@
         },
         {
           "id": "murphy-noritake-europe-2001"
+        },
+        {
+          "id": "van-patten-nippon-4th-1997",
+          "where": "p. 82, mark 52"
         }
       ],
       "disagreements": [
@@ -9048,7 +9289,21 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/nippon-maple-leaf.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Nippon Porcelain, 4th series",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (Paducah: Collector Books, 1997), p. 82, mark 52",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnippon-pdf-086.png",
+        "crop": [
+          1973,
+          1820,
+          526,
+          187
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (1997), p. 82, mark 52.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9075,8 +9330,7 @@
             "licence": "public domain, but drawings (excluded by rule)",
             "ask": "not needed; a photograph is wanted"
           }
-        ],
-        "photo_only": "A pictorial leaf device; fakes copy it."
+        ]
       },
       "pages": [
         "/marks/nippon-marks"
@@ -9102,6 +9356,10 @@
         {
           "id": "van-patten-nippon",
           "where": "ABC's 2005"
+        },
+        {
+          "id": "van-patten-nippon-4th-1997",
+          "where": "p. 82, mark 47"
         }
       ],
       "disagreements": [
@@ -9115,7 +9373,21 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/nippon-m-in-wreath.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Nippon Porcelain, 4th series",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (Paducah: Collector Books, 1997), p. 82, mark 47",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnippon-pdf-086.png",
+        "crop": [
+          541,
+          709,
+          406,
+          388
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (1997), p. 82, mark 47.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9142,8 +9414,7 @@
             "licence": "public domain, but drawings (excluded by rule)",
             "ask": "not needed; a photograph is wanted"
           }
-        ],
-        "photo_only": "A wreath device; fakes copy it."
+        ]
       },
       "pages": [
         "/marks/nippon-marks"
@@ -9169,6 +9440,10 @@
         },
         {
           "id": "alden-richardson-noritake-1987"
+        },
+        {
+          "id": "van-patten-nippon-4th-1997",
+          "where": "p. 85, mark 80"
         }
       ],
       "disagreements": [
@@ -9182,7 +9457,21 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/nippon-rc.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Nippon Porcelain, 4th series",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (Paducah: Collector Books, 1997), p. 85, mark 80",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnippon-pdf-089.png",
+        "crop": [
+          1850,
+          1376,
+          395,
+          500
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (1997), p. 85, mark 80.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9210,7 +9499,7 @@
             "ask": "not needed; a photograph is wanted"
           }
         ],
-        "photo_only": "A pictorial balancing-toy device."
+        "note": "The book's caption to the neighbouring mark (\"…china).\") ends 15 px above Hand Painted and overlaps its left side, so its last letters show in the top-left corner; cropping it out would clip the mark's own wording."
       },
       "pages": [
         "/marks/nippon-marks"
@@ -9239,6 +9528,10 @@
         },
         {
           "id": "spain-noritake-1999"
+        },
+        {
+          "id": "van-patten-nippon-4th-1997",
+          "where": "p. 97, mark 180"
         }
       ],
       "disagreements": [
@@ -9252,7 +9545,21 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/nippon-komaru.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Nippon Porcelain, 4th series",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (Paducah: Collector Books, 1997), p. 97, mark 180",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnippon-pdf-101.png",
+        "crop": [
+          1118,
+          269,
+          638,
+          585
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (1997), p. 97, mark 180.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9280,7 +9587,7 @@
             "ask": "not needed; a photograph is wanted"
           }
         ],
-        "photo_only": "A pictorial emblem."
+        "note": "The book prints this mark as a halftone photograph; shown as printed."
       },
       "pages": [
         "/marks/nippon-marks"
@@ -9306,11 +9613,29 @@
         },
         {
           "id": "chervenka-fakes-2001"
+        },
+        {
+          "id": "van-patten-nippon-4th-1997",
+          "where": "p. 86, mark 84"
         }
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/nippon-rising-sun.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Nippon Porcelain, 4th series",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (Paducah: Collector Books, 1997), p. 86, mark 84",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnippon-pdf-090.png",
+        "crop": [
+          330,
+          1300,
+          330,
+          230
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Nippon Porcelain, Fourth Series (1997), p. 86, mark 84.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9337,8 +9662,7 @@
             "licence": "public domain, but drawings (excluded by rule)",
             "ask": "not needed; a photograph is wanted"
           }
-        ],
-        "photo_only": "A pictorial sun device; fakes copy it."
+        ]
       },
       "pages": [
         "/marks/nippon-marks"
@@ -9444,6 +9768,10 @@
         },
         {
           "id": "spain-noritake-1999"
+        },
+        {
+          "id": "van-patten-noritake-1984",
+          "where": "p. 100, backstamp 52"
         }
       ],
       "disagreements": [
@@ -9457,7 +9785,21 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/noritake-m-in-wreath.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Noritake",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Noritake (Paducah: Collector Books, 1984), p. 100, backstamp 52",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnoritake-pdf-104.png",
+        "crop": [
+          1241,
+          2956,
+          395,
+          503
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Noritake (1984), p. 100, backstamp 52.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9500,8 +9842,7 @@
             "licence": "not public domain",
             "ask": "The Met"
           }
-        ],
-        "photo_only": "A wreath device and trademark."
+        ]
       },
       "pages": [
         "/marks/noritake-marks"
@@ -9526,11 +9867,29 @@
         },
         {
           "id": "murphy-noritake-europe-2001"
+        },
+        {
+          "id": "van-patten-noritake-1984",
+          "where": "p. 100, backstamp 53"
         }
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/noritake-komaru-made-in-japan.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Noritake",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Noritake (Paducah: Collector Books, 1984), p. 100, backstamp 53",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnoritake-pdf-104.png",
+        "crop": [
+          2109,
+          324,
+          596,
+          429
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Noritake (1984), p. 100, backstamp 53.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9572,8 +9931,7 @@
             "licence": "not public domain",
             "ask": "The Met"
           }
-        ],
-        "photo_only": "A pictorial emblem and trademark."
+        ]
       },
       "pages": [
         "/marks/noritake-marks"
@@ -9606,6 +9964,10 @@
         },
         {
           "id": "klamkin-occupied-japan-1976"
+        },
+        {
+          "id": "van-patten-noritake-1984",
+          "where": "p. 103, backstamp 84"
         }
       ],
       "disagreements": [
@@ -9619,7 +9981,21 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/noritake-rose-china.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Noritake",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Noritake (Paducah: Collector Books, 1984), p. 103, backstamp 84",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnoritake-pdf-107.png",
+        "crop": [
+          120,
+          2900,
+          820,
+          620
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Noritake (1984), p. 103, backstamp 84.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9662,7 +10038,7 @@
             "ask": "The Met"
           }
         ],
-        "photo_only": "Printed with the komaru emblem; a trademark backstamp."
+        "note": "The book prints this mark as a faint, coarse halftone photograph; shown as printed."
       },
       "pages": [
         "/marks/noritake-marks"
@@ -9694,11 +10070,29 @@
         },
         {
           "id": "klamkin-occupied-japan-1976"
+        },
+        {
+          "id": "van-patten-noritake-1984",
+          "where": "p. 103, backstamp 87"
         }
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/noritake-occupied-japan.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Noritake",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Noritake (Paducah: Collector Books, 1984), p. 103, backstamp 87",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnoritake-pdf-107.png",
+        "crop": [
+          1140,
+          1988,
+          806,
+          699
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Noritake (1984), p. 103, backstamp 87.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9740,8 +10134,7 @@
             "licence": "not public domain",
             "ask": "The Met"
           }
-        ],
-        "photo_only": "Printed with the Noritake symbol; a trademark backstamp."
+        ]
       },
       "pages": [
         "/marks/noritake-marks"
@@ -9773,6 +10166,10 @@
         },
         {
           "id": "noritake-australia"
+        },
+        {
+          "id": "van-patten-noritake-1984",
+          "where": "p. 104, backstamp 95"
         }
       ],
       "disagreements": [
@@ -9786,7 +10183,21 @@
         }
       ],
       "visual": {
-        "status": "none",
+        "status": "facsimile",
+        "file": "marks/img/db/noritake-n-in-wreath.webp",
+        "marks_in_image": 1,
+        "holder": "Van Patten, Noritake",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Joan F. Van Patten, The Collector's Encyclopedia of Noritake (Paducah: Collector Books, 1984), p. 104, backstamp 95",
+        "source_url": "",
+        "original": "hallmark-sources/ceramics/books/vpnoritake-pdf-108.png",
+        "crop": [
+          1857,
+          265,
+          628,
+          606
+        ],
+        "credit": "From Joan F. Van Patten, The Collector's Encyclopedia of Noritake (1984), p. 104, backstamp 95.",
         "searched": [
           "Wikimedia Commons (full text, Noritake and Old Noritake categories, Japanese porcelain marks)",
           "The Met",
@@ -9828,8 +10239,7 @@
             "licence": "not public domain",
             "ask": "The Met"
           }
-        ],
-        "photo_only": "A wreath device and current trademark."
+        ]
       },
       "pages": [
         "/marks/noritake-marks"

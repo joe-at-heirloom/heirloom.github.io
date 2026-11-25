@@ -112,6 +112,36 @@
       "year": 1896,
       "url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades",
       "public_domain": true
+    },
+    "kovel-1989": {
+      "kind": "book",
+      "author": "Ralph and Terry Kovel",
+      "title": "Kovels' American Silver Marks, 1650 to the Present",
+      "year": 1989,
+      "note": "Crown Publishers; in copyright. Cited for facts only; no images reproduced."
+    },
+    "rainwater-2004": {
+      "kind": "book",
+      "author": "Dorothy T. Rainwater",
+      "title": "Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer)",
+      "year": 2004,
+      "note": "In copyright. Cited for facts only; no images reproduced."
+    },
+    "ensko-1915": {
+      "kind": "book",
+      "author": "Robert Ensko (publisher; compiled by Stephen G. C. Ensko)",
+      "title": "Makers of Early American Silver",
+      "year": 1915,
+      "url": "https://archive.org/details/makersofearlyame00ensk",
+      "public_domain": true
+    },
+    "jewelers-circular-1922": {
+      "kind": "book",
+      "author": "The Jewelers' Circular Publishing Co.",
+      "title": "Trade-Marks of the Jewelry and Kindred Trades",
+      "year": 1922,
+      "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx",
+      "public_domain": true
     }
   },
   "entries": [
@@ -228,7 +258,7 @@
       "country": "international",
       "kind": "standard mark",
       "name": "900",
-      "looks_like": "The figures 900 struck in a small punch.",
+      "looks_like": "The figures 900 struck in a small punch, sometimes written as a fraction, 900 over 1000. Shown here as set in type in Ensko's 1915 list of marks, beside F. W. Cooper's name mark (W. Cooper).",
       "means": "The metal is stated to be 900 parts silver in 1000, the US coin standard from 1837; in the US an item marked COIN must meet it.",
       "applied": "stamped",
       "date_from": null,
@@ -246,19 +276,37 @@
         {
           "id": "yale-kossack-1988",
           "where": "introduction: 89.2% before 1837, 90% thereafter"
+        },
+        {
+          "id": "kovel-1989",
+          "where": "p. vii: by 1830 COIN, PURE COIN, DOLLAR, STANDARD, PREMIUM, C or D were placed on silver to indicate 900 out of 1000 parts silver"
+        },
+        {
+          "id": "rainwater-2004",
+          "where": "pp. 305–306, glossary 'Coin': by 1830 COIN, PURE COIN, DOLLAR, STANDARD, PREMIUM or C or D indicated 900/1000; p. 311, silver standards table: .892 for US coins 1792–1837, .900 after 1837"
+        },
+        {
+          "id": "ensko-1915",
+          "where": "p. 19: marks column, 'W. Cooper 900/1000' for Cooper, F. W."
         }
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
-        "searched": [
-          "Wikimedia Commons: Category:Hallmarks and its country subcategories, Category:Nickel silver, Category:Silver plating hallmarks, and keyword searches (2026-11-22); searches for '900' silver marks returned only coins.",
-          "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
-          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: read all 220 pages' OCR and checked candidates on the page images: no 900 mark; the fineness numbers shown are 925 with STERLING.",
-          "Not reached: the 1904 and 1915 editions (not found on archive.org; HathiTrust not tried) and Rosenberg, Der Goldschmiede Merkzeichen (1911, 1922), which covers European goldsmiths' marks before about 1850 and isn't likely to show these American words.",
-          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: no 900 mark; the numbers shown are 925 and 925/1000 with STERLING."
+        "status": "facsimile",
+        "file": "marks/img/db/silver-fineness-900.webp",
+        "marks_in_image": 1,
+        "holder": "Internet Archive (Smithsonian Libraries copy)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/makersofearlyame00ensk/page/19/mode/1up",
+        "original": "hallmark-sources/ensko-1915/leaf0023-p19.jpg",
+        "crop": [
+          310,
+          2328,
+          117,
+          138
         ],
-        "blocked": []
+        "credit": "As set in type in Ensko, Makers of Early American Silver (1915), p. 19, public domain.",
+        "note": "Type, not a cut of the punch. The fraction 900/1000 alone; Cooper's name mark (W. Cooper) to its left is left out."
       },
       "pages": [
         "/marks/silver-purity-marks",
@@ -272,12 +320,12 @@
       "country": "US",
       "kind": "standard mark",
       "name": "STERLING",
-      "looks_like": "The word STERLING (sometimes STER.) stamped in capitals, usually beside the maker's mark.",
+      "looks_like": "The word STERLING (sometimes STER.) stamped in plain capitals, usually beside the maker's mark. Shown here as set in type in the 1922 Jewelers' Circular trade-marks book, above D. D. Codding's D. D. C. mark.",
       "means": "The maker states the metal is at least 925 parts silver in 1000. Since 1906 US law forbids the word on anything below 925, and on plate.",
       "applied": "stamped",
       "date_from": 1857,
       "date_to": null,
-      "date_note": "Sources differ on the start: French (1917) gives about 1857; Yale gives the change to sterling as by the 1860s.",
+      "date_note": "Sources differ on the start: French (1917) about 1857; Kovels (1989) frequently used by 1860; Yale and Rainwater (2004) the 1860s, Rainwater 'not used consistently' until about 1865.",
       "sources": [
         {
           "id": "us-stamping-act-1906",
@@ -294,6 +342,18 @@
         {
           "id": "yale-kossack-1988",
           "where": "introduction: sterling standard by the 1860s"
+        },
+        {
+          "id": "kovel-1989",
+          "where": "p. vii: the word STERLING was frequently used by 1860; STERLING means 925 out of 1000 parts silver"
+        },
+        {
+          "id": "rainwater-2004",
+          "where": "p. 309, glossary 'Sterling Silver: 925/1000 fine'; p. 311, table: .925 not used consistently in the US (outside Baltimore) until c. 1865"
+        },
+        {
+          "id": "jewelers-circular-1922",
+          "where": "p. 125: D. D. Codding, North Attleboro: STERLING over D. D. C."
         }
       ],
       "disagreements": [
@@ -302,22 +362,37 @@
           "date_from": 1857
         },
         {
+          "source": "kovel-1989",
+          "date_from": 1860,
+          "note": "'frequently used by 1860'"
+        },
+        {
           "source": "yale-kossack-1988",
           "date_from": 1860,
           "note": "'by the 1860s'"
+        },
+        {
+          "source": "rainwater-2004",
+          "date_from": 1865,
+          "note": "'not used consistently elsewhere in the U.S. until c. 1865'"
         }
       ],
       "visual": {
-        "status": "none",
-        "blocked": [],
-        "searched": [
-          "Wikimedia Commons: Category:Hallmarks and its country subcategories, Category:Nickel silver, Category:Silver plating hallmarks, and keyword searches (2026-11-22). Not checked: 'Arthur & Bond sterling silver wood tray mark.png' (CC BY-SA 4.0) is credited to The St. James's Collection, a dealer, which the database's rules exclude, so it was not considered.",
-          "Cooper Hewitt via Commons (CH files): American spoons and boxes found, front views only, no view of the mark",
-          "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
-          "Yale University Art Gallery pitcher retailed by Tiffany, marked ENGLISH STERLING 925-1000 (https://artgallery.yale.edu/collections/objects/64195): mark image and its licence not checked; Yale's open-access images are worth a second look.",
-          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: STERLING appears as typeset capitals under the trade-mark cuts or joined to a device (Lenau Co.'s L, p. 44; Meriden Britannia's phoenix, p. 45); none shows STERLING alone unambiguously.",
-          "1922 Jewelers' Circular (HathiTrust hvd.hb9jsx, scans 146–220; all 44 stand-alone STERLING hits checked by eye): only typeset, device-joined or one firm's script forms. Closest: Attleboro Mfg. Co.'s boxed STERLING (seq 150) shares its top edge with the triangles; Watrous Mfg. Co.'s STERLING (seq 180) is joined to an arrow; Frank Kursh & Son's script Sterling (p. 133, seq 162) is one firm's lettering, not the usual plain capitals."
-        ]
+        "status": "facsimile",
+        "file": "marks/img/db/sterling-word-us.webp",
+        "marks_in_image": 1,
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=153",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0153.png",
+        "crop": [
+          2520,
+          3440,
+          420,
+          90
+        ],
+        "credit": "As set in type in The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 125, public domain.",
+        "note": "Type, not a cut of the punch: plain capitals, as the word is usually struck. The D. D. C. line below is left out."
       },
       "pages": [
         "/marks/is-it-real-silver",
@@ -358,6 +433,14 @@
         {
           "id": "jewelers-circular-1896",
           "where": "p. 28, 'Examples of maker's marks': COIN beside a maker's punch"
+        },
+        {
+          "id": "kovel-1989",
+          "where": "p. vii: by 1830 COIN, PURE COIN, DOLLAR, STANDARD, PREMIUM, C or D were placed on silver to indicate 900 out of 1000 parts silver"
+        },
+        {
+          "id": "rainwater-2004",
+          "where": "pp. 305–306, glossary 'Coin': by 1830 COIN, PURE COIN, DOLLAR, STANDARD, PREMIUM or C or D indicated 900/1000; p. 311, silver standards table: .892 for US coins 1792–1837, .900 after 1837"
         }
       ],
       "disagreements": [],
@@ -390,12 +473,12 @@
       "country": "US",
       "kind": "standard mark",
       "name": "PURE COIN",
-      "looks_like": "The words PURE COIN (or PURE SILVER COIN) stamped beside an American maker's mark.",
+      "looks_like": "The words PURE COIN (or PURE SILVER COIN) beside an American maker's mark. Shown here as set in type in Ensko's 1915 list of marks, for Vincent Laforme & Brother of Boston (Pure Coin / V. L. & B. / Boston).",
       "means": "As COIN: the maker states the metal is of the US silver coin standard. Seen on New England silver.",
       "applied": "stamped",
       "date_from": null,
       "date_to": null,
-      "date_note": "Before the 1860s.",
+      "date_note": "By 1830 (Kovels; Rainwater) until the move to sterling in the 1860s.",
       "sources": [
         {
           "id": "french-1917",
@@ -404,20 +487,37 @@
         {
           "id": "yale-kossack-1988",
           "where": "introduction: 'Pure Silver Coin' in New England"
+        },
+        {
+          "id": "kovel-1989",
+          "where": "p. vii: by 1830 COIN, PURE COIN, DOLLAR, STANDARD, PREMIUM, C or D were placed on silver to indicate 900 out of 1000 parts silver"
+        },
+        {
+          "id": "rainwater-2004",
+          "where": "p. 306, glossary 'Pure Coin: (See Coin.)', and pp. 305–306 'Coin'"
+        },
+        {
+          "id": "ensko-1915",
+          "where": "p. 13: marks column, 'Pure Coin / V. L. & B. / Boston' (Laforme) and 'Lincoln & Reed / Boston / Pure Silver Coin'"
         }
       ],
       "disagreements": [],
       "visual": {
-        "status": "none",
-        "searched": [
-          "Wikimedia Commons: Category:Hallmarks and its country subcategories, Category:Nickel silver, Category:Silver plating hallmarks, and keyword searches (2026-11-22)",
-          "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
-          "Winterthur Museum teaspoon by N. Matson stamped PURE COIN: seen only as a search excerpt, object page and image licence not checked.",
-          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: read all 220 pages' OCR and checked candidates on the page images: no PURE COIN mark in the OCR (PURE appears only in the text).",
-          "Not reached: the 1904 and 1915 editions (not found on archive.org; HathiTrust not tried) and Rosenberg, Der Goldschmiede Merkzeichen (1911, 1922), which covers European goldsmiths' marks before about 1850 and isn't likely to show these American words.",
-          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: no PURE COIN mark."
+        "status": "facsimile",
+        "file": "marks/img/db/pure-coin-word-us.webp",
+        "marks_in_image": 1,
+        "holder": "Internet Archive (Smithsonian Libraries copy)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/makersofearlyame00ensk/page/13/mode/1up",
+        "original": "hallmark-sources/ensko-1915/leaf0017-p13.jpg",
+        "crop": [
+          1120,
+          1484,
+          220,
+          55
         ],
-        "blocked": []
+        "credit": "As set in type in Ensko, Makers of Early American Silver (1915), p. 13, public domain.",
+        "note": "Type, not a cut of the punch: the book prints each mark's wording. The crop takes the 'Pure Coin' line of the Laforme mark alone; the next line (V. L. & B.) sits close below, so the crop is 55 px tall at native size."
       },
       "pages": [
         "/marks/coin-silver"
@@ -435,7 +535,7 @@
       "applied": "stamped",
       "date_from": null,
       "date_to": null,
-      "date_note": "Before the 1860s.",
+      "date_note": "By 1830 (Kovels; Rainwater) until the move to sterling in the 1860s.",
       "sources": [
         {
           "id": "yale-kossack-1988",
@@ -444,6 +544,14 @@
         {
           "id": "currier-1938",
           "where": "mark entry with 'standard' in a scroll"
+        },
+        {
+          "id": "kovel-1989",
+          "where": "p. vii: by 1830 COIN, PURE COIN, DOLLAR, STANDARD, PREMIUM, C or D were placed on silver to indicate 900 out of 1000 parts silver"
+        },
+        {
+          "id": "rainwater-2004",
+          "where": "p. 309, glossary 'Standard: (See Coin.)', and pp. 305–306 'Coin'"
         }
       ],
       "disagreements": [],
@@ -454,7 +562,9 @@
           "The Met Open Access: collection API returned 410 Gone and the website refused automated fetching (2026-11-22), so Met mark images could not be searched",
           "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), archive.org: read all 220 pages' OCR and checked candidates on the page images: STANDARD appears only in plate trade names (STANDARD PLATE) and firm names, not as the coin-standard mark.",
           "Not reached: the 1904 and 1915 editions (not found on archive.org; HathiTrust not tried) and Rosenberg, Der Goldschmiede Merkzeichen (1911, 1922), which covers European goldsmiths' marks before about 1850 and isn't likely to show these American words.",
-          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: STANDARD appears only in plate names (STANDARD PLATE), a firm name (Standard Silver Co.) and watch grades, not as the coin-standard mark."
+          "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: STANDARD appears only in plate names (STANDARD PLATE), a firm name (Standard Silver Co.) and watch grades, not as the coin-standard mark.",
+          "Kovels' American Silver Marks (1989) and Rainwater's Encyclopedia (2004) are in copyright: cited for facts only, images not reproduced.",
+          "Ensko, Makers of Early American Silver (1915) and American Silversmiths and Their Marks (1927); French (1917); archive.org full-text search of pre-1929 texts for 'stamped standard' and 'marked standard': no STANDARD mark set in type or drawn."
         ],
         "blocked": []
       },

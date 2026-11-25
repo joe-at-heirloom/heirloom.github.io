@@ -1,6 +1,10 @@
 // heirloomapp.io on Cloudflare Workers static assets (moved from GitHub
-// Pages, Nov 2026). No build step: the repository root is the site.
-// Deploy: `npx wrangler deploy` from a clean checkout of main.
+// Pages, Nov 2026). Since 2026-11-24 the site is site/'s Astro build: the
+// rebuilt pages, plus every page of the repository root not rebuilt yet,
+// carried over unchanged (site/scripts/legacy.mjs).
+// Deploy from a clean checkout of main: `npm run deploy` (builds site/, then
+// `wrangler deploy`). A generated page under the root still goes live this
+// way; one Astro rebuilt (site/src/pages) is shadowed by the Astro page.
 {
   "$schema": "https://unpkg.com/wrangler@4.152.0/config-schema.json",
   "name": "heirloom-site",
@@ -16,9 +20,9 @@
     "binding": "ASSETS",
     // www is answered by worker.js before any file.
     "run_worker_first": true,
-    "directory": ".",
+    "directory": "./site/dist",
     // /guides serves guides.html, /marks/ serves marks/index.html, as Pages did.
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "none"
+    "not_found_handling": "404-page"
   }
 }
