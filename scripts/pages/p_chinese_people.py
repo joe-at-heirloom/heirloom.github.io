@@ -33,6 +33,8 @@ SKILL = {"山水": "landscape", "人物": "figures", "花卉": "flowers", "花�
          "楷書": "regular script", "行書": "running script", "草書": "cursive script", "篆書": "seal script", "詩": "poetry", "鑑賞": "connoisseurship",
          "收藏": "collecting", "鑑藏": "collecting", "肖像": "portraits", "畫": "painting", "書": "calligraphy", "石": "rocks", "松": "pines",
          "雜畫": "miscellaneous subjects", "寫真": "portraits", "白描": "line drawing", "水墨": "ink painting", "工筆": "fine-line painting"}
+EXPERT_EN = {"徐邦達": "Xu Bangda", "謝稚柳": "Xie Zhiliu", "啟功": "Qi Gong", "啓功": "Qi Gong", "劉九庵": "Liu Jiu’an", "劉九菴": "Liu Jiu’an",
+             "楊仁愷": "Yang Renkai", "傅熹年": "Fu Xinian", "謝辰生": "Xie Chensheng"}
 VERDICT = {"genuine": ("真迹", "genuine"), "forgery": ("僞迹", "a forgery"), "reference": ("資料", "for reference only")}
 DYN_ORDER = ["Tang", "Five Dynasties", "Song", "Northern Song", "Southern Song", "Jin", "Yuan", "Ming", "Qing", "Republic", "Modern", ""]
 
@@ -112,6 +114,8 @@ def person_page(p):
                 f'alt="Seal or signature {i["n"]} of {e(p["pinyin"])}{(", reading " + e(i["reading"])) if i["reading"] else ""}" title="{e(credit)}">')
     rows = "".join(
         f'<tr><td class="num">{i["n"]}</td><td class="seal-cell">{seal_img(i)}</td><td><span class="seal-read" lang="zh-Hant">{e(i["reading"]) or "<span class=muted>unread</span>"}</span>'
+        + (f' <span class="seal-py">{e(i["pinyin"])}</span>' if i.get("pinyin") else "")
+        + (f'<span class="seal-gloss">{e(i["gloss"])}</span>' if i.get("gloss") and i.get("kind") not in ("name", "signature") else "")
         + (' <span class="tag">collector’s seal</span>' if i["collector_seal"] else "") + (' <span class="tag tag--soft">from a book</span>' if i["rephotographed"] else "")
         + f'</td><td lang="zh-Hant">{e(i["source"])}</td><td class="num">{e(i["date_text"])}</td></tr>'
         for i in sorted(p["items"], key=lambda i: i["n"]))     # the book prints captions in two columns; show them in number order
@@ -122,14 +126,17 @@ def person_page(p):
         items = []
         for r in p["survey"]:
             zh, en = VERDICT.get(r["verdict"], ("", ""))
-            ops = "".join(f'<li><strong>{e(o["expert"])}</strong>: <span lang="zh-Hant">{e(o["text"])}</span></li>' for o in r["opinions"])
-            items.append(f'<li class="survey-rec"><div class="survey-rec__head"><span lang="zh-Hant" class="survey-rec__title">{e(r["title"])}</span>'
+            ops = "".join(f'<li><strong>{e(EXPERT_EN.get(o["expert"], ""))} <span lang="zh-Hant">{e(o["expert"])}</span></strong>: '
+                          + (f'“{e(o["text_en"])}” <span lang="zh-Hant" class="muted">{e(o["text"])}</span>' if o.get("text_en") else f'<span lang="zh-Hant">{e(o["text"])}</span>')
+                          + (f' <span class="tr-doubt">Translator’s note: {e(o["doubt"])}</span>' if o.get("doubt") else "") + '</li>' for o in r["opinions"])
+            items.append(f'<li class="survey-rec"><div class="survey-rec__head"><span class="survey-rec__title">'
+                         + (f'{e(r["title_en"])} <span lang="zh-Hant" class="muted">{e(r["title"])}</span>' if r.get("title_en") else f'<span lang="zh-Hant">{e(r["title"])}</span>') + '</span>'
                          f'<span class="verdict verdict--{r["verdict"]}"><span lang="zh-Hant">{zh}</span> {en}</span></div>'
-                         f'<p class="survey-rec__meta">{" · ".join(x for x in [e(r["museum"] or ""), e(r["medium"] or ""), ("inscribed " + e(r["inscription"])) if r["inscription"] else ""] if x)}</p>'
+                         f'<p class="survey-rec__meta">{" · ".join(x for x in [(e(r["museum_en"]) + f' <span lang="zh-Hant" class="muted">{e(r["museum"])}</span>') if r.get("museum_en") else e(r["museum"] or ""), e(r.get("medium_en") or r["medium"] or ""), ("inscribed " + f'<span lang="zh-Hant">{e(r["inscription"])}</span>') if r["inscription"] else ""] if x)}</p>'
                          + (f'<p class="survey-rec__note" lang="zh-Hant">按：{e(r["note"])}</p>' if r["note"] else "")
                          + (f'<ul class="survey-rec__ops">{ops}</ul>' if ops else "") + "</li>")
         surv = f"""      <h2 id="survey">In the national survey, 1983 to 1990</h2>
-      <p>From 1983 to 1990 a group of China’s leading connoisseurs examined the painting and calligraphy in the country’s public collections; their secretary, Lao Jixiong, recorded each work and what was said about it. These are the works by {e(p["pinyin"])} in Lao’s record, with the collection that held each, the group’s verdict and the remarks of named members. The verdicts are theirs; Heirloom repeats them and does not judge any item.</p>
+      <p>From 1983 to 1990 a group of China’s leading connoisseurs examined the painting and calligraphy in the country’s public collections; their secretary, Lao Jixiong, recorded each work and what was said about it. These are the works by {e(p["pinyin"])} in Lao’s record, with the collection that held each, the group’s verdict and the remarks of named members. The verdicts are theirs; Heirloom repeats them and does not judge any item. Titles and remarks are translated by Heirloom, with the original Chinese beside each; where the source text is unclear, a translator’s note says so.</p>
       <ul class="survey-list">{"".join(items)}</ul>"""
     shiqu = ""
     if p.get("shiqu"):
@@ -141,7 +148,7 @@ def person_page(p):
             return f'<a href="{e(link)}" rel="nofollow">{t}</a>' if link else t
         rows_s = "".join(
             f'<tr><td><span lang="zh-Hant">{e(x["edition"])}</span> {SHIQU_EN.get(x["year"], "")}, {x["year"]}</td>'
-            f'<td><span lang="zh-Hant">{e(x["title"])}</span> <span class="muted" lang="zh-Hant">{e((x["count"] or "") + (x["format"] or ""))}</span></td>'
+            f'<td>{(e(x["title_en"]) + " ") if x.get("title_en") else ""}<span lang="zh-Hant"{" class=muted" if x.get("title_en") else ""}>{e(x["title"])}</span> <span class="muted" lang="zh-Hant">{e((x["count"] or "") + (x["format"] or ""))}</span></td>'
             f'<td>{("<span lang=zh-Hant>" + e(x["hall"]) + "</span> " + e(HALL_EN.get(re.sub(r"[一二三四五六七八九十]+$", "", x["hall"]).replace("宫", "宮"), ""))) if x["hall"] else "<span class=muted>not stated</span>"}</td>'
             f'<td>{("<span lang=zh-Hant>" + e(x["grade"]) + "</span> " + ("upper" if x["grade"] == "上等" else "lower")) if x.get("grade") else ""}</td>'
             f'<td>{cite(x["cite"])}</td></tr>'
@@ -162,7 +169,7 @@ def person_page(p):
       <!--copy-check:skip--><ol class="sources sources--num">
         <li>{e(SEAL_BOOK)}, entry {p["book"]["no"]}, p. {p["book"]["page"]}.</li>
         {"<li>" + e(SURVEY) + ", " + e("; ".join(f"vol. {v}, pp. " + ", ".join(str(x) for x in sorted({int(r["page"][3:]) for r in p["survey"] if r["page"][1] == v})) for v in sorted({r["page"][1] for r in p["survey"]}))) + " (PDF pages).</li>" if p["survey"] else ""}
-        {"<li>Seal and signature images: facsimiles from the book above, each credited with its volume, page and seal number; reproduced as reference by Heirloom, which holds no licence from the publisher.</li>" if any(i.get("img") for i in p["items"]) else ""}
+        {"<li>Seal and signature images: facsimiles from the book above, each credited with its volume, page and seal number; reproduced as reference by Heirloom, which holds no license from the publisher.</li>" if any(i.get("img") for i in p["items"]) else ""}
         {"<li>Qing imperial catalogs: 石渠寶笈 and 祕殿珠林, first series (1744–45) from the Siku quanshu text (Kanripo), second (1793) and third (1816) series from the contents volumes of the Peking University manuscript copies (Internet Archive); each entry above gives its place in the source.</li>" if p.get("shiqu") else ""}
         {f'<li>Wikidata, <a href="https://www.wikidata.org/wiki/{p["wikidata"]["qid"]}" rel="nofollow">{p["wikidata"]["qid"]}</a>.</li>' if (p.get("wikidata") or {}).get("qid") else ""}
       </ol><!--/copy-check:skip-->
