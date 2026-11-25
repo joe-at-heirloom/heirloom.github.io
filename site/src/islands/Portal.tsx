@@ -334,6 +334,7 @@ function RecordPanel({ id, rows, seals, perRecord, onOpen, onClose, labelOf, nee
             )}
             <p class="panel__actions">
               {rec.kind === 'reign mark' && <a class="btn btn--primary" href={`/marks/chinese-reign-marks?reign=${rec.id.replace(/^reign-/, '')}`}>Compare with every reign</a>}
+              {['silver-standards', 'silver-plate', 'world-silver'].includes(rec.family) && <a class="btn btn--primary" href={`/marks/silver-marks?m=${rec.id}`}>Read it with the other marks</a>}
               {rec.family === 'ceramics-makers' && rec.kind !== 'maker history' && !rec.kind.includes('(described)') && <a class="btn btn--primary" href={`/marks/pottery-marks?mark=${rec.id}`}>See it among the maker’s marks</a>}
               {rec.family === 'ceramics-makers' && rec.kind === 'maker history' && <a class="btn btn--primary" href={`/marks/pottery-marks?maker=${rec.url.replace(/^\/marks\//, '').replace(/#.*$/, '').replace(/-(pottery-)?marks$/, '')}`}>Every mark on a timeline</a>}
               <a class="btn" href={rec.url}>Open its page</a>

@@ -1,0 +1,40 @@
+---
+// /marks/silver-marks: the silver explorer (src/islands/SilverExplorer). The
+// marks on an item read together: the metal, the maker, the years.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import SilverExplorer from '../../islands/SilverExplorer';
+import { silver } from '../../lib/silver';
+import { crumbsLd } from '../../lib/site';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/pottery.css';
+import '../../styles/codes.css';
+import '../../styles/silver.css';
+
+const path = '/marks/silver-marks';
+const { groups, marks } = silver();
+const n = marks.filter((m) => !m.year).length;
+const title = 'Silver Marks: Solid or Plate, Who Made It and When | Heirloom';
+const description = `${n} silver and plate marks from America, Britain, France, Russia and Mexico, and Gorham’s year marks. Tap the marks on an item to read the metal, the maker and the years together.`;
+const sheets = [['London', '/marks/london-date-letters'], ['Birmingham', '/marks/birmingham-date-letters'], ['Sheffield', '/marks/sheffield-date-letters'], ['Chester', '/marks/chester-date-letters']];
+const graph = [
+  { '@type': 'WebPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' } },
+  crumbsLd(path, 'Silver marks', ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name="Silver marks" mid={['/marks/', 'Marks']} />
+    <header class="phead">
+      <h1>Silver marks</h1>
+      <p class="phead__sub">Tap each mark you find on the item: a number or a word such as STERLING, a maker’s name, a lion, a year sign. Read together, the marks say whether it is solid silver or plate, who made it, and the years in which they were all in use.</p>
+    </header>
+    <SilverExplorer client:load groups={groups} marks={marks} />
+    <section class="ptools" aria-labelledby="letters">
+      <h2 id="letters">British date letters</h2>
+      <ul class="tools-list">{sheets.map(([l, h]) => <li><a href={h}><span>{l}</span><span class="muted">Every letter, with a finder</span></a></li>)}</ul>
+    </section>
+  </div>
+</Base>
