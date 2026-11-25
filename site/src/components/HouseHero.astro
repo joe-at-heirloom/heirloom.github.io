@@ -297,13 +297,14 @@ const priced = data.items.filter((i) => !i.unknown);
     .hh__lead { display: contents; }
     .hh__copy { position: absolute; z-index: 2; left: var(--gutter); right: var(--gutter); top: 24px; }
     .hh__fig { display: none; }
-    .hh h1 { font-size: 34px; margin-bottom: 8px; white-space: nowrap; }
+    .hh h1 { font-size: min(34px, 7.4vw); margin-bottom: 8px; white-space: nowrap; }
     .hh__sub, .hh--explored .hh__sub { display: block; font-size: 14.5px; line-height: 1.45; }
     .hh__count { position: absolute; z-index: 2; left: var(--gutter); right: var(--gutter); top: 150px; display: flex; flex-wrap: wrap; gap: 2px 12px; align-items: baseline; }
     .hh__amt { font-size: 24px; }
     .hh__draft { display: none; }
     .hh__card { position: absolute; left: 10px; right: 10px; bottom: 10px; width: auto; max-width: none; margin: 0; grid-template-columns: 108px minmax(0, 1fr); max-height: 200px; }
     .hh__mk { width: 44px; height: 44px; }
+    .hh__card--hint { grid-template-columns: minmax(0, 1fr); }
     .hh__card h2 { font-size: 17px; }
     .hh__reset { display: none; }
   }

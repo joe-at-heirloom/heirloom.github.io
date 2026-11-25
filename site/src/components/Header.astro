@@ -1,14 +1,12 @@
 ---
-// One header for every page: the logo as it is, three sections, sign in and
-// the app. On a phone the menu is a full-height sheet, not a squeezed row.
+// One header for every page. The site is two things: a reference you look
+// things up in, and an app you keep a record of yours in. The header says so:
+// two doors, each opening a panel with everything behind it, plus search,
+// sign in and the app. On a phone the same two halves fill a full-height sheet.
+import { reference, signatures, referenceGuides, app, APP_STORE, WEB_APP } from '../lib/nav';
 const { path } = Astro.props as { path: string };
-const links = [
-  { href: '/marks/', label: 'Marks and serials', note: 'Read the marks on silver, pottery, watches and more', match: ['/marks'] },
-  { href: '/signatures', label: 'Signatures', note: 'Artists’ signatures, dated', match: ['/signatures'] },
-  { href: '/app', label: 'The app', note: 'Your home’s inventory, ready for your insurer or your family', match: ['/app', '/home-inventory', '/antique-identifier'] },
-  { href: '/guides', label: 'Guides', note: 'Inventories, hallmarks, heirlooms', match: ['/guides', '/silver-hallmarks', '/family-heirlooms'] },
-];
-const current = (l: (typeof links)[number]) => l.match.some((m) => path.startsWith(m));
+const inRef = path.startsWith('/marks') || path.startsWith('/signatures') || path.startsWith('/silver-hallmarks');
+const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href));
 ---
 <header class="hdr" transition:persist>
   <div class="wrap hdr__in">
@@ -16,34 +14,105 @@ const current = (l: (typeof links)[number]) => l.match.some((m) => path.startsWi
       <img src="/logo.svg" alt="" width="128" height="23" />
     </a>
     <nav class="hdr__nav" aria-label="Main">
-      {links.map((l) => <a href={l.href} aria-current={current(l) ? 'page' : undefined}>{l.label}</a>)}
+      <button type="button" class="hdr__door" aria-expanded="false" aria-controls="p-ref" data-door="p-ref" aria-current={inRef ? 'page' : undefined}>
+        Reference <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>
+      </button>
+      <button type="button" class="hdr__door" aria-expanded="false" aria-controls="p-app" data-door="p-app" aria-current={inApp ? 'page' : undefined}>
+        The app <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>
+      </button>
     </nav>
     <div class="hdr__end">
-      <button class="icon" type="button" aria-label="Switch light or dark" data-theme-toggle>
+      <form class="hdr__search" action="/marks/" method="get" role="search">
+        <label class="visually-hidden" for="hdr-q">Search the reference</label>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" /><path d="m13 13 4 4" /></svg>
+        <input id="hdr-q" name="q" type="search" placeholder="A mark, a maker, a serial…" autocomplete="off" />
+      </form>
+      <button class="hdr__icon" type="button" aria-label="Switch light or dark" data-theme-toggle>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" /></svg>
       </button>
-      <a class="hdr__signin" href="https://web.heirloomapp.io">Sign in</a>
-      <a class="btn btn--primary hdr__cta" href="https://apps.apple.com/us/app/id6754576251">Get Heirloom</a>
+      <a class="hdr__signin" href={WEB_APP}>Sign in</a>
+      <a class="btn btn--primary hdr__cta" href={APP_STORE}>Get Heirloom</a>
       <button class="hdr__menu" type="button" aria-expanded="false" aria-controls="sheet" data-menu>
         <span>Menu</span>
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" /></svg>
       </button>
     </div>
   </div>
-  <div class="sheet" id="sheet" hidden>
-    <nav class="wrap sheet__in" aria-label="Menu">
-      {links.map((l) => (
-        <a class="sheet__link" href={l.href} aria-current={current(l) ? 'page' : undefined}>
-          <span class="sheet__t">{l.label}</span>
-          <span class="sheet__n">{l.note}</span>
-        </a>
-      ))}
-      <div class="sheet__end">
-        <a class="btn btn--primary" href="https://apps.apple.com/us/app/id6754576251">Get Heirloom for iPhone</a>
-        <a class="btn" href="https://web.heirloomapp.io">Sign in on the web</a>
+
+  <!-- Reference panel -->
+  <div class="hp" id="p-ref" hidden>
+    <div class="wrap hp__in">
+      <div class="hp__lead">
+        <p class="label">Reference</p>
+        <p class="hp__t">Read the marks on what you own.</p>
+        <p class="hp__d">Hallmarks, makers’ marks, reign marks, date codes, serial numbers and signatures, each with its sources.</p>
+        <a class="hp__all" href="/marks/">Search the whole reference →</a>
       </div>
-    </nav>
+      <div class="hp__cols">
+        <div>
+          <p class="label">Marks and serial numbers</p>
+          <ul class="hp__grid">
+            {reference.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
+          </ul>
+        </div>
+        <div>
+          <p class="label">Signatures and seals</p>
+          <ul class="hp__list">
+            {signatures.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
+          </ul>
+          <p class="label hp__sub">Guides</p>
+          <ul class="hp__list hp__list--plain">
+            {referenceGuides.map((r) => <li><a href={r.href}>{r.label}</a></li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- App panel -->
+  <div class="hp" id="p-app" hidden>
+    <div class="wrap hp__in">
+      <div class="hp__lead">
+        <p class="label">The app</p>
+        <p class="hp__t">Your home’s inventory, room by room.</p>
+        <p class="hp__d">The photos, the stories, and what each item’s marks say, ready for your insurer or your family.</p>
+        <div class="hp__cta">
+          <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
+          <a class="btn" href={WEB_APP}>Sign in on the web</a>
+        </div>
+      </div>
+      <div class="hp__cols hp__cols--app">
+        <ul class="hp__list">
+          {app.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
+        </ul>
+        <img class="hp__shot" src="/screens/01-rooms-440.webp" alt="Heirloom’s Home screen on iPhone: five rooms, each showing how many of its items are documented." width="180" height="390" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Phone sheet -->
+  <div class="hs" id="sheet" hidden>
+    <div class="wrap hs__in">
+      <form class="hs__search" action="/marks/" method="get" role="search">
+        <label class="visually-hidden" for="sheet-q">Search the reference</label>
+        <input class="field" id="sheet-q" name="q" type="search" placeholder="A mark, a maker, a serial…" autocomplete="off" />
+      </form>
+      <section>
+        <p class="label">Reference</p>
+        <a class="hs__big" href="/marks/">Search the whole reference</a>
+        {[...reference, ...signatures].map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
+      </section>
+      <section>
+        <p class="label">The app</p>
+        {app.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
+      </section>
+      <div class="hs__end">
+        <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
+        <a class="btn" href={WEB_APP}>Sign in on the web</a>
+      </div>
+    </div>
+  </div>
+  <div class="hdr__scrim" hidden></div>
 </header>
 
 <script>
@@ -56,19 +125,52 @@ const current = (l: (typeof links)[number]) => l.match.some((m) => path.startsWi
         try { localStorage.setItem('theme', root.dataset.theme); } catch {}
       };
     });
+    const doors = [...document.querySelectorAll<HTMLButtonElement>('[data-door]')];
+    const scrim = document.querySelector<HTMLElement>('.hdr .hdr__scrim');
+    let timer = 0;
+    const show = (id: string | null) => {
+      doors.forEach((d) => {
+        const on = d.dataset.door === id;
+        d.setAttribute('aria-expanded', String(on));
+        const p = document.getElementById(d.dataset.door!);
+        if (p) p.hidden = !on;
+      });
+      if (scrim) scrim.hidden = !id;
+    };
+    const canHover = matchMedia('(hover: hover) and (pointer: fine)').matches;
+    doors.forEach((d) => {
+      d.onclick = () => show(d.getAttribute('aria-expanded') === 'true' ? null : d.dataset.door!);
+      if (canHover) {
+        d.onmouseenter = () => { clearTimeout(timer); timer = window.setTimeout(() => show(d.dataset.door!), 90); };
+        d.onmouseleave = () => { clearTimeout(timer); };
+      }
+    });
+    document.querySelectorAll<HTMLElement>('.hdr .hp').forEach((p) => {
+      if (canHover) {
+        p.onmouseenter = () => clearTimeout(timer);
+        p.onmouseleave = () => { timer = window.setTimeout(() => show(null), 200); };
+      }
+      p.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => show(null)));
+    });
+    const hdr = document.querySelector<HTMLElement>('.hdr');
+    if (hdr && canHover) hdr.onmouseleave = () => { timer = window.setTimeout(() => show(null), 250); };
+    if (scrim) scrim.onclick = () => show(null);
+
     const btn = document.querySelector<HTMLButtonElement>('[data-menu]');
     const sheet = document.getElementById('sheet');
-    if (!btn || !sheet) return;
-    const set = (open: boolean) => {
+    const setSheet = (open: boolean) => {
+      if (!btn || !sheet) return;
       btn.setAttribute('aria-expanded', String(open));
       sheet.hidden = !open;
       document.documentElement.classList.toggle('menu-open', open);
       const label = btn.querySelector('span');
       if (label) label.textContent = open ? 'Close' : 'Menu';
     };
-    btn.onclick = () => set(btn.getAttribute('aria-expanded') !== 'true');
-    sheet.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => set(false)));
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
+    if (btn && sheet) {
+      btn.onclick = () => setSheet(btn.getAttribute('aria-expanded') !== 'true');
+      sheet.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setSheet(false)));
+    }
+    document.onkeydown = (e) => { if (e.key === 'Escape') { show(null); setSheet(false); } };
   }
   wire();
   document.addEventListener('astro:after-swap', () => {
@@ -79,40 +181,72 @@ const current = (l: (typeof links)[number]) => l.match.some((m) => path.startsWi
 </script>
 
 <style>
-  .hdr { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: color-mix(in oklab, var(--paper) 94%, transparent); backdrop-filter: saturate(1.3) blur(14px); -webkit-backdrop-filter: saturate(1.3) blur(14px); border-bottom: 1px solid var(--rule); }
-  .hdr__in { display: flex; align-items: center; gap: 36px; height: 68px; }
+  /* No backdrop-filter here: it would make the header the containing block of the fixed phone menu and scrim. */
+  .hdr { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--paper); border-bottom: 1px solid var(--rule); }
+  .hdr__in { display: flex; align-items: center; gap: 32px; height: 68px; }
   .logo { display: block; flex: none; }
   .logo img { height: 22px; width: auto; }
-  .hdr__nav { display: flex; gap: 26px; }
-  .hdr__nav a { position: relative; padding: 6px 0; text-decoration: none; color: var(--ink-2); font-size: 15px; font-weight: 500; }
-  .hdr__nav a:hover { color: var(--ink); }
-  .hdr__nav a[aria-current='page'] { color: var(--ink); }
-  .hdr__nav a[aria-current='page']::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent); }
-  .hdr__end { margin-left: auto; display: flex; align-items: center; gap: 16px; }
-  .icon { width: 38px; height: 38px; border-radius: var(--r-sm); border: 0; background: transparent; color: var(--ink-2); display: grid; place-items: center; cursor: pointer; }
-  .icon:hover { background: var(--paper-2); color: var(--ink); }
-  .icon svg { width: 17px; height: 17px; fill: currentColor; }
-  .hdr__signin { font-size: 15px; font-weight: 500; color: var(--ink-2); text-decoration: none; }
+  .hdr__nav { display: flex; gap: 6px; }
+  .hdr__door { position: relative; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); font: 500 15px/1 var(--text); cursor: pointer; }
+  .hdr__door svg { width: 12px; height: 12px; stroke: currentColor; stroke-width: 1.6; fill: none; transition: transform 0.2s var(--ease); }
+  .hdr__door:hover, .hdr__door[aria-expanded='true'] { color: var(--ink); background: var(--paper-2); }
+  .hdr__door[aria-expanded='true'] svg { transform: rotate(180deg); }
+  .hdr__door[aria-current='page'] { color: var(--ink); }
+  .hdr__door[aria-current='page']::after { content: ''; position: absolute; left: 12px; right: 12px; bottom: -14px; height: 2px; background: var(--accent); }
+  .hdr__end { margin-left: auto; display: flex; align-items: center; gap: 14px; }
+  .hdr__search { position: relative; display: flex; align-items: center; }
+  .hdr__search svg { position: absolute; left: 11px; width: 16px; height: 16px; stroke: var(--ink-3); stroke-width: 1.6; fill: none; pointer-events: none; }
+  .hdr__search input { width: 230px; height: 40px; padding: 0 12px 0 34px; border: 1px solid var(--rule); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); font: 400 14.5px var(--text); }
+  .hdr__search input::placeholder { color: var(--ink-3); }
+  .hdr__search input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-wash); }
+  .hdr__icon { width: 38px; height: 38px; border-radius: var(--r-sm); border: 0; background: transparent; color: var(--ink-2); display: grid; place-items: center; cursor: pointer; }
+  .hdr__icon:hover { background: var(--paper-2); color: var(--ink); }
+  .hdr__icon svg { width: 17px; height: 17px; fill: currentColor; }
+  .hdr__signin { font-size: 15px; font-weight: 500; color: var(--ink-2); text-decoration: none; white-space: nowrap; }
   .hdr__signin:hover { color: var(--ink); }
-  .hdr__cta { min-height: 40px; padding: 0 16px; font-size: 14.5px; }
+  .hdr__cta { min-height: 40px; padding: 0 16px; font-size: 14.5px; white-space: nowrap; }
   .hdr__menu { display: none; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border: 1px solid var(--rule); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); font: 500 14px/1 var(--text); cursor: pointer; }
   .hdr__menu svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 1.6; fill: none; }
-  .sheet { position: fixed; inset: 68px 0 0 0; background: var(--paper); overflow-y: auto; border-top: 1px solid var(--rule); }
-  .sheet__in { display: flex; flex-direction: column; padding-block: 12px calc(32px + env(safe-area-inset-bottom, 0px)); }
-  .sheet__link { display: grid; gap: 4px; padding: 18px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
-  .sheet__t { font: 680 26px/1.1 var(--display); font-stretch: 112%; letter-spacing: -0.015em; }
-  .sheet__n { color: var(--ink-2); font-size: 15px; }
-  .sheet__link[aria-current='page'] .sheet__t { color: var(--accent-ink); }
-  .sheet__end { display: grid; gap: 10px; margin-top: 24px; }
-  .sheet__end .btn { justify-content: center; min-height: 50px; }
+
+  .hp { position: absolute; left: 0; right: 0; top: 100%; z-index: 2; background: var(--paper); border-bottom: 1px solid var(--rule); box-shadow: 0 24px 48px -24px rgb(31 33 36 / 0.25); }
+  .hp__in { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr); gap: 48px; padding-block: 32px 36px; }
+  .hp__lead { border-right: 1px solid var(--rule); padding-right: 32px; }
+  .hp__t { font: 680 26px/1.12 var(--display); font-stretch: 112%; letter-spacing: -0.015em; margin: 10px 0 10px; }
+  .hp__d { color: var(--ink-2); font-size: 15px; margin: 0 0 18px; }
+  .hp__all { font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent); }
+  .hp__cta { display: grid; gap: 8px; justify-items: start; }
+  .hp__cols { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 40px; }
+  .hp__cols--app { grid-template-columns: minmax(0, 1fr) 180px; align-items: start; }
+  .hp__grid { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
+  .hp__list { list-style: none; margin: 10px 0 0; padding: 0; }
+  .hp__grid a, .hp__list a { display: grid; gap: 1px; padding: 9px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .hp__grid strong, .hp__list strong { font-weight: 600; font-size: 15px; }
+  .hp__grid span, .hp__list span { font-size: 13.5px; color: var(--ink-2); }
+  .hp__grid a:hover strong, .hp__list a:hover strong, .hp__list--plain a:hover { color: var(--accent-ink); }
+  .hp__list--plain a { font-size: 15px; }
+  .hp__sub { margin-top: 22px; }
+  .hp__shot { width: 180px; height: auto; border-radius: 20px; box-shadow: var(--shadow-lift); }
+  .hdr__scrim { position: fixed; inset: 68px 0 0 0; background: rgb(31 33 36 / 0.18); z-index: 1; }
+
+  .hs { position: fixed; inset: 60px 0 0 0; background: var(--paper); overflow-y: auto; border-top: 1px solid var(--rule); z-index: 3; }
+  .hs__in { display: grid; gap: 28px; padding-block: 16px calc(32px + env(safe-area-inset-bottom, 0px)); }
+  .hs section { display: grid; }
+  .hs .label { margin: 0 0 4px; }
+  .hs__big { font: 680 24px/1.15 var(--display); font-stretch: 112%; text-decoration: none; padding: 10px 0 12px; border-bottom: 1px solid var(--rule); }
+  .hs__link { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .hs__link strong { font-weight: 600; font-size: 16.5px; }
+  .hs__link span { font-size: 14px; color: var(--ink-2); }
+  .hs__end { display: grid; gap: 10px; }
+  .hs__end .btn { justify-content: center; min-height: 50px; }
   :global(html.menu-open) { overflow: hidden; }
-  @media (max-width: 980px) { .hdr__nav { gap: 18px; } .hdr__signin { display: none; } }
+
+  @media (max-width: 1180px) { .hdr__search input { width: 170px; } }
+  @media (max-width: 1040px) { .hdr__search { display: none; } .hdr__in { gap: 20px; } }
   @media (max-width: 860px) {
     .hdr__in { height: 60px; gap: 12px; }
-    .sheet { inset: 60px 0 0 0; }
-    .hdr__nav, .hdr__cta, .hdr__signin { display: none; }
+    .hdr__nav, .hdr__cta, .hdr__signin, .hp, .hdr__scrim { display: none !important; }
     .hdr__menu { display: inline-flex; }
     .logo img { height: 19px; }
   }
-  @media (min-width: 861px) { .sheet { display: none; } }
+  @media (min-width: 861px) { .hs { display: none !important; } }
 </style>
