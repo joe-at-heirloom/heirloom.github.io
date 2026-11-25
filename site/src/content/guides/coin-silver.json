@@ -1,0 +1,122 @@
+{
+ "path": "/marks/coin-silver",
+ "title": "Coin Silver: What It Is and How It's Marked | Heirloom",
+ "description": "American coin silver: the 892 and 900 coin standards of 1792 and 1837, the COIN, PURE COIN and STANDARD marks, and the move to sterling in the 1850s and 1860s.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/coin-silver#article",
+   "headline": "Coin silver: what it is and how it's marked",
+   "description": "American coin silver: the 892 and 900 coin standards of 1792 and 1837, the COIN, PURE COIN and STANDARD marks, and the move to sterling in the 1850s and 1860s.",
+   "url": "https://heirloomapp.io/marks/coin-silver",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/coin-silver",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Coin silver"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/coin-silver#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is coin silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "American silver made to the standard of US silver coin: 892.4 parts in 1000 before 1837 and 900 after. It is solid silver, slightly below sterling, and was usual until the 1850s and 1860s."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is coin silver real silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. It is solid silver at about 90%, a little less than sterling's 92.5%. It is not plate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was coin silver made from melted coins?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The name refers to the standard: the metal was of the same fineness as silver money. It does not mean an item was made from coins."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between coin silver and sterling?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sterling is 925 parts silver in 1000; coin silver is 900, or 892.4 before 1837. American makers moved from coin to sterling in the 1850s and 1860s."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/coin-silver#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Coin silver",
+     "item": "https://heirloomapp.io/marks/coin-silver"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Coin silver</li></ol>\n      <h1>Coin silver: what it is and how it's marked</h1>\n      <p class=\"guide__lede\">Before sterling, most American silver was made to the standard of the coin in people's pockets. Here is what that means and how to read the marks.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>Coin silver is American silver made to the standard of US silver coin: 892.4 parts in 1000 under the Coinage Act of 1792, and 900 from 1837. It is marked COIN, PURE COIN, STANDARD, DOLLAR, PREMIUM, or the letter C or D beside the maker's mark, or often with the maker's name alone. American makers moved to sterling (925) in the 1850s and 1860s.</p>\n      </div>\n      <p>Coin silver is American silver made to the standard of the country's silver coin, about 900 parts in 1000. It is solid silver, a little lower than sterling's 925, and it was the usual American standard until the 1850s and 1860s, when makers moved to sterling.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "coin-word-us"
+    },
+    {
+     "id": "pure-coin-word-us"
+    },
+    {
+     "id": "standard-word-us"
+    },
+    {
+     "id": "silver-fineness-900"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"standard\">The coin standard</h2>\n      <ul>\n        <li><strong>1792 to 1837:</strong> the Coinage Act of 1792 set silver coin at 1485 parts fine to 179 parts alloy, which is 892.4 in 1000.</li>\n        <li><strong>From 1837:</strong> an Act of that year changed it to 900 in 1000.</li>\n      </ul>\n      <p>Coin silver followed the coin of its day, so silver marked COIN before 1837 may be at the lower standard. The name is about the standard: it doesn't mean the item was made from melted coins.</p>\n      <h2 id=\"marks\">How coin silver is marked</h2>\n      <ul>\n        <li><strong>COIN,</strong> stamped beside the maker's mark, saying the metal was of the same fineness as silver money.</li>\n        <li><strong>PURE COIN,</strong> or PURE SILVER COIN, seen on New England silver.</li>\n        <li><strong>STANDARD,</strong> found on silver made around Philadelphia.</li>\n        <li><strong>DOLLAR or PREMIUM,</strong> other words for the same coin standard.</li>\n        <li><strong>C or D,</strong> a single letter for coin or dollar.</li>\n        <li><strong>Only a maker's name or initials.</strong> A separate mark for the metal was not the custom, and a maker's mark says nothing about the metal on its own.</li>\n      </ul>\n      <p>These words were the maker's own choice, and makers used different terms for their alloys. Since the Stamping Act of 1906 the law has set a standard for the word: an item marked COIN or COIN SILVER must be at least 900 in 1000, within four parts.</p>\n      <h2 id=\"sterling\">From coin to sterling</h2>\n      <p>American makers began stamping STERLING in the late 1850s, and by the 1860s most had moved to the sterling standard of 925. See <a href=\"/marks/silver-purity-marks\">what 925 and 900 mean</a>.</p>\n      <h2 id=\"limits\">What the marks can't tell you</h2>\n      <ul>\n        <li><strong>A maker's name doesn't make silver coin silver,</strong> and plenty of American silver of the period carries no word about the metal. Only a test of the metal settles the standard.</li>\n        <li><strong>A mark is a claim,</strong> about the maker and the metal alike. Heirloom never decides whether an item is genuine.</li>\n      </ul>\n      <p>More to read: <a href=\"/silver-hallmarks\">how to read silver hallmarks</a>, and the <a href=\"/marks/london-date-letters\">London date letters</a>.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Coinage Act of 1792, § 13 (silver coin: 1485 parts fine to 179 parts alloy) (<a href=\"https://en.wikisource.org/wiki/Coinage_Act_of_1792\" rel=\"nofollow\">source</a>)</li><li>Act of January 18, 1837, § 8 (silver coin: 900 parts pure metal, 100 alloy), 5 Stat. 136 (<a href=\"https://en.wikisource.org/wiki/United_States_Statutes_at_Large/Volume_5/24th_Congress/2nd_Session/Chapter_3\" rel=\"nofollow\">source</a>)</li><li>Hollis French, A List of Early American Silversmiths and Their Marks (New York: Walpole Society, 1917), glossary, public domain (<a href=\"https://archive.org/details/listofearlyameri00fren\" rel=\"nofollow\">source</a>)</li><li>Yale University Art Gallery, American Silver in the Yale University Art Gallery: the Kossack checklist (1988) (<a href=\"https://artgallery.yale.edu/sites/default/files/publication/pdfs/0-89467-049-2.pdf\" rel=\"nofollow\">source</a>)</li><li>Ernest M. Currier, Marks of Early American Silversmiths (Portland, Maine: Southworth-Anthoensen Press, 1938) (<a href=\"https://archive.org/details/marksofearlyamer00curr\" rel=\"nofollow\">source</a>)</li><li>Ralph and Terry Kovel, Kovels&#x27; American Silver Marks, 1650 to the Present (New York: Crown, 1989), p. vii</li><li>Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th edition (Atglen, Pa.: Schiffer, 2004), glossary pp. 305–309 and table p. 311</li><li>Francis Hill Bigelow, Historic Silver of the Colonies and Its Makers (New York: Macmillan, 1917), public domain (<a href=\"https://archive.org/details/historicsilverof00bige\" rel=\"nofollow\">source</a>)</li><li>Colonial Williamsburg Journal, &quot;Stuff and Nonsense&quot; (Winter 2008) (<a href=\"https://research.colonialwilliamsburg.org/Foundation/journal/Winter08/stuff.cfm\" rel=\"nofollow\">source</a>)</li><li>National Gold and Silver Stamping Act of 1906, 15 U.S.C. § 296 (standard of fineness of silver articles) (<a href=\"https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap8-sec296.htm\" rel=\"nofollow\">source</a>)</li><li>Federal Trade Commission, Guides for the Jewelry, Precious Metals, and Pewter Industries, 16 CFR § 23.5 (misrepresentation as to silver content) (<a href=\"https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.5\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks. The Advisor reads the maker's name and any word such as COIN, keeps them on the item's record with the photo, and says when a mark tells nothing about the metal.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What is coin silver?</summary>\n  <div><p>American silver made to the standard of US silver coin: 892.4 parts in 1000 before 1837 and 900 after. It is solid silver, slightly below sterling, and was usual until the 1850s and 1860s.</p></div>\n</details>\n<details>\n  <summary>Is coin silver real silver?</summary>\n  <div><p>Yes. It is solid silver at about 90%, a little less than sterling's 92.5%. It is not plate.</p></div>\n</details>\n<details>\n  <summary>Was coin silver made from melted coins?</summary>\n  <div><p>The name refers to the standard: the metal was of the same fineness as silver money. It does not mean an item was made from coins.</p></div>\n</details>\n<details>\n  <summary>What is the difference between coin silver and sterling?</summary>\n  <div><p>Sterling is 925 parts silver in 1000; coin silver is 900, or 892.4 before 1837. American makers moved from coin to sterling in the 1850s and 1860s.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

@@ -1,0 +1,130 @@
+{
+ "path": "/marks/international-silver-co",
+ "title": "International Silver Co. Marks: Sterling or Plate, and How Old? | Heirloom",
+ "description": "International Silver Co. marks explained: the 1898 merger, the brands it kept (1847 Rogers Bros., Holmes & Edwards, Wm. Rogers), how to tell its sterling from plate, and sterling pattern dates.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/international-silver-co#article",
+   "headline": "International Silver Co. marks",
+   "description": "International Silver Co. marks explained: the 1898 merger, the brands it kept (1847 Rogers Bros., Holmes & Edwards, Wm. Rogers), how to tell its sterling from plate, and sterling pattern dates.",
+   "url": "https://heirloomapp.io/marks/international-silver-co",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/international-silver-co",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Organization",
+    "name": "International Silver Co."
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/international-silver-co#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is International Silver sterling?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sometimes. International made both sterling and silver plate. An item marked STERLING, such as INTERNATIONAL STERLING, is sterling; one with a grade mark, or with no STERLING in the mark, is plate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When was International Silver founded?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On November 19, 1898, in Meriden, Connecticut, by buying a dozen New England silver companies, with more added in 1899 and 1903."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is 1847 Rogers Bros. International Silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "From 1898, yes. Meriden Britannia, which made 1847 Rogers Bros., was one of International's founding firms, and International kept the brand. Holmes & Edwards and Wm. Rogers came in the same way."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a number on International hollowware date it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We found no published year code for International hollowware. A number on the base is most often a catalog or pattern number."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who owns International Silver now?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The name passed through Katy Industries, Wallace International and Syratech to Lifetime Brands, which bought Syratech in 2006."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/international-silver-co#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "International Silver Co.",
+     "item": "https://heirloomapp.io/marks/international-silver-co"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">International Silver Co.</li></ol>\n      <h1>International Silver Co. marks</h1>\n      <p class=\"guide__lede\">International Silver made both sterling and plate, under its own name and a dozen older ones. Here is how to tell which you have, and how to date it.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>The International Silver Co. was formed in Meriden, Connecticut, on November 19, 1898, from a dozen silver firms, and kept many of their names, including 1847 Rogers Bros., Holmes &amp; Edwards and Wm. Rogers. It made both sterling and plate: only a mark that says STERLING is sterling. Date flatware from its pattern; we found no year code on its hollowware.</p>\n      </div>\n      <h2 id=\"maker\">Who made it</h2>\n      <p>The International Silver Co. was organized on November 19, 1898, under New Jersey law, with its head office in Meriden, Connecticut. It began by buying a dozen New England silver firms: Barbour Silver Co., Holmes &amp; Edwards Silver Co., Manhattan Silver Plate Co., Meriden Britannia Co., Meriden Silver Plate Co., Norwich Cutlery Co., Wm. Rogers Mfg. Co., Rogers Cutlery Co., Rogers &amp; Bro., Rogers &amp; Hamilton Co., Wilcox Silver Plate Co., Watrous Mfg. Co. and Standard Silver Co. of Toronto. Simpson, Hall, Miller &amp; Co., the Derby Silver Co. and two others followed in 1899, and C. Rogers &amp; Bros. in 1903.</p>\n      <p>It became one of the largest American makers of silverware, in both sterling and plate. The parent company renamed itself Insilco in 1969, the silverware business was sold to Katy Industries in 1983 or 1984 (the sources differ), and the International Silver name reached Lifetime Brands with its purchase of Syratech in 2006.</p>\n      <h2 id=\"marks\">The marks, and what each tells you</h2>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "plate-international-silver-co"
+    },
+    {
+     "id": "plate-international-s-co"
+    },
+    {
+     "id": "plate-international-sterling"
+    },
+    {
+     "id": "plate-wilcox"
+    }
+   ]
+  },
+  {
+   "html": "\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">The mark</th><th scope=\"col\">Who used it, and when</th><th scope=\"col\">What it tells you</th></tr></thead><tbody><tr><th scope=\"row\">INTERNATIONAL SILVER CO., or INTERNATIONAL S. CO.</th><td>International Silver Co., formed in 1898; on flatware only after 1928, when it began to put its own name on flatware</td><td>The company's name. Read the next word: a grade mark such as XII means plate. Flatware made before 1929 carries the brand of one of the founding firms instead.</td></tr><tr><th scope=\"row\">INTERNATIONAL STERLING</th><td>International Silver Co.</td><td>Sterling silver.</td></tr><tr><th scope=\"row\">A founding firm's name: 1847 ROGERS BROS., HOLMES &amp; EDWARDS, WM. ROGERS, WILCOX and others</th><td>Used by International for decades after 1898</td><td>Made by International, under the old firm's brand.</td></tr></tbody></table></div>\n      <p class=\"note\">International kept many of its founding firms' names as brands, so much International ware doesn't say International at all: see <a href=\"/marks/1847-rogers-bros\">1847 Rogers Bros.</a>, <a href=\"/marks/holmes-and-edwards\">Holmes &amp; Edwards</a> and <a href=\"/marks/wm-rogers\">Wm. Rogers</a>.</p>\n      <h2 id=\"plate-or-sterling\">Is it plate or sterling?</h2>\n      <p>It can be either, which is why the whole mark matters. International made sterling under its own name and some of its brands, and a great deal of plate. A spoon in a Canadian parliamentary collection, for example, is marked INTERNATIONAL S. CO. XII and is electroplated nickel silver. If the mark says STERLING, it is sterling; if not, treat it as plate.</p>\n      <p>Read the whole stamp first. American sterling is marked STERLING. Plate is marked with the maker's name and often a grade word or number, such as A1, XII, XIV, TRIPLE or QUADRUPLE PLATE, and a grade mark appears only on plate.</p>\n      <p>Then look at the places that wear. Plate is a thin coat of silver over a base metal, usually nickel silver, so on a well-used spoon the tip of the bowl, the back of the bowl and the ends of fork tines turn yellowish or gray where the silver has worn through to the metal underneath.</p>\n      <h2 id=\"dating\">How to date International Silver</h2>\n      <p>American plate makers didn't stamp a year. A number in the mark, such as 1847 or 1865, is the year a firm said it was founded and stayed on the ware for decades. To date an item, name its pattern (the design of the handle) and find when that pattern was introduced. A patent date stamped on a handle (PAT. followed by a date) is the earliest the design can be, not the year the item was made, and makers kept producing a popular pattern for decades.</p>\n      <p>We found no published year-code system for International's hollowware, so don't read a number on the base of a tray or teapot as a date; it is usually a catalog or pattern number. For flatware, these sterling patterns have introduction years that two published guides agree on (Hagan, 1991, and Dolan, 1993):</p>\n      <div class=\"table-wrap\"><table class=\"table--two\"><thead><tr><th scope=\"col\">Sterling pattern</th><th scope=\"col\">Introduced</th></tr></thead><tbody><tr><th scope=\"row\">Trianon</th><td>1921</td></tr><tr><th scope=\"row\">Fontaine</th><td>1924</td></tr><tr><th scope=\"row\">Minuet</th><td>1925</td></tr><tr><th scope=\"row\">Enchantress</th><td>1937</td></tr><tr><th scope=\"row\">Joan of Arc</th><td>1940</td></tr><tr><th scope=\"row\">Wild Rose</th><td>1948</td></tr><tr><th scope=\"row\">Brocade</th><td>1950</td></tr><tr><th scope=\"row\">Angelique</th><td>1959</td></tr><tr><th scope=\"row\">Swan Lake</th><td>1960</td></tr><tr><th scope=\"row\">Valencia</th><td>1965</td></tr></tbody></table></div>\n      <p class=\"note\">Royal Danish is usually given as 1939 and Prelude as 1939, but we couldn't confirm either in two sources, so they aren't listed. International's plated patterns are on the pages for its brands.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is from at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Gillespie and Curtis, <em>A Century of Meriden</em>, 1906, part II, pp. 35–48 (<a href=\"https://archive.org/details/bub_gb_-zQWAAAAYAAJ/page/n1093\" rel=\"nofollow\">source</a>)</li><li>Iowa State University Museums, International Silver Co. biography (<a href=\"https://emuseum.its.iastate.edu/people/3148/international-silver-co/objects\" rel=\"nofollow\">source</a>)</li><li><em>150 Years of Meriden</em>, Meriden sesquicentennial committee, 1956 (<a href=\"https://archive.org/details/150yearsofmeride00meri/page/n121\" rel=\"nofollow\">source</a>)</li><li>Dorothy T. Rainwater, with Martin and Colette Fuller, <em>Encyclopedia of American Silver Manufacturers</em>, 5th ed., Schiffer, 2004</li><li>Tere Hagan, <em>Silverplated Flatware: An Identification &amp; Value Guide</em>, revised 4th ed., Collector Books, 1990 (<a href=\"https://archive.org/details/silverplatedflat00haga\" rel=\"nofollow\">source</a>)</li><li>Tere Hagan, <em>Sterling Flatware: An Identification and Value Guide</em>, Collector Books, 1991 (<a href=\"https://archive.org/details/sterlingflatware0000haga\" rel=\"nofollow\">source</a>)</li><li>Maryanne Dolan, <em>1830's–1990's American Sterling Silver Flatware</em>, Books Americana, 1993 (<a href=\"https://archive.org/details/1830s1990sameric0000dola\" rel=\"nofollow\">source</a>)</li><li>House of Commons Heritage Collection (Canada), O-7647.9, soup spoon marked INTERNATIONAL S. CO. XII, electroplated nickel silver (<a href=\"https://ourcommons.ca/heritage/en/collection/2244\" rel=\"nofollow\">source</a>)</li><li>&ldquo;Insilco Corporation History&rdquo;, <em>International Directory of Company Histories</em>, St. James Press (<a href=\"https://www.fundinguniverse.com/company-histories/insilco-corporation-history/\" rel=\"nofollow\">source</a>)</li><li>Lifetime Brands, &ldquo;Lifetime Brands Completes Syratech Acquisition&rdquo;, April 28, 2006, and its 10-Q for the first quarter of 2007 (<a href=\"https://www.sec.gov/Archives/edgar/data/874396/000091068007000366/f10q03312007.htm\" rel=\"nofollow\">source</a>)</li><li><em>The Silver Standard</em>, Meriden Britannia Co. (International Silver Co., successor), 1906–07: the maker's own paper, used for what the company said of itself (<a href=\"https://archive.org/details/silverstandardpe00meri\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the mark. The Advisor reads the name and the grade or STERLING beside it, and keeps what it read on the item's record with the photo.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>Is International Silver sterling?</summary>\n  <div><p>Sometimes. International made both sterling and silver plate. An item marked STERLING, such as INTERNATIONAL STERLING, is sterling; one with a grade mark, or with no STERLING in the mark, is plate.</p></div>\n</details>\n<details>\n  <summary>When was International Silver founded?</summary>\n  <div><p>On November 19, 1898, in Meriden, Connecticut, by buying a dozen New England silver companies, with more added in 1899 and 1903.</p></div>\n</details>\n<details>\n  <summary>Is 1847 Rogers Bros. International Silver?</summary>\n  <div><p>From 1898, yes. Meriden Britannia, which made 1847 Rogers Bros., was one of International's founding firms, and International kept the brand. Holmes &amp; Edwards and Wm. Rogers came in the same way.</p></div>\n</details>\n<details>\n  <summary>Does a number on International hollowware date it?</summary>\n  <div><p>We found no published year code for International hollowware. A number on the base is most often a catalog or pattern number.</p></div>\n</details>\n<details>\n  <summary>Who owns International Silver now?</summary>\n  <div><p>The name passed through Katy Industries, Wallace International and Syratech to Lifetime Brands, which bought Syratech in 2006.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

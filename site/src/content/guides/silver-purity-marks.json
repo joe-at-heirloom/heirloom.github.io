@@ -1,0 +1,148 @@
+{
+ "path": "/marks/silver-purity-marks",
+ "title": "What 925 Means on Silver: 925, 800, 900 and Other Purity Marks | Heirloom",
+ "description": "What 925, 800, 900, 958 and 999 mean on silver, with a table of the standards by country, the old English ounce standards, and how the UK, US and Germany mark them.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/silver-purity-marks#article",
+   "headline": "What 925, 800 and other numbers on silver mean",
+   "description": "What 925, 800, 900, 958 and 999 mean on silver, with a table of the standards by country, the old English ounce standards, and how the UK, US and Germany mark them.",
+   "url": "https://heirloomapp.io/marks/silver-purity-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/silver-purity-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Silver fineness marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/silver-purity-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does 925 mean on silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "925 means 925 parts in 1000 of the metal are silver: 92.5%. That is sterling, the standard of the British lion passant and of STERLING on American silver."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does 800 mean on silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "800 means 80% silver. It is the lowest standard the UK hallmarks, and the lowest fineness German law let a maker state on silver wares from 1888, beside a crescent moon and a crown."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is 800 silver real silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes: it is solid silver at a lower standard than sterling, 800 parts in 1000 rather than 925. It is not plate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between 925 and 999 silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "999 is fine silver, 99.9% pure; 925 is sterling, 92.5% silver. Pure silver is soft, so most tableware and jewelry is made at a lower standard such as 925."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a 925 stamp prove an item is silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It is a statement of the standard, made by an assay office in Britain and by the maker in the United States. A test of the metal is the only proof."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/silver-purity-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Silver purity marks",
+     "item": "https://heirloomapp.io/marks/silver-purity-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Silver purity marks</li></ol>\n      <h1>What 925, 800 and other numbers on silver mean</h1>\n      <p class=\"guide__lede\">925, 800, 900, 958, 999: the number on silver is how much of it is silver. Here is each common standard and where it comes from.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>A number on silver is its fineness in parts per 1000. 925 is sterling (92.5% silver), 800 is 80%, 900 is American coin silver, 958 is Britannia silver and 999 is fine silver. In Britain an assay office strikes the number after testing; in the United States the maker stamps it, and the law holds the maker to it.</p>\n      </div>\n      <p>A number on silver is its fineness: the parts of pure silver in 1000 parts of the metal. The rest is other metal, which makes it harder: pure silver, and even the Britannia standard, is soft. The same reading works wherever the number comes from.</p>\n      <h2 id=\"table\">Common standards</h2>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">The number</th><th scope=\"col\">Silver</th><th scope=\"col\">Where you'll see it</th></tr></thead><tbody><tr><th scope=\"row\">999</th><td>99.9%</td><td>Fine silver, one of the four UK standards for silver.</td></tr><tr><th scope=\"row\">958</th><td>95.84%</td><td>Britannia silver, England's compulsory standard from 1697 to 1720 and optional since. See <a href=\"/marks/britannia-silver\">Britannia silver</a>.</td></tr><tr><th scope=\"row\">925</th><td>92.5%</td><td>Sterling: the British standard, marked with the lion passant, and the US standard for STERLING.</td></tr><tr><th scope=\"row\">900</th><td>90%</td><td>Coin silver: in the US, the least an item marked COIN may contain.</td></tr><tr><th scope=\"row\">800</th><td>80%</td><td>The lowest UK standard, and the lowest fineness German law let a maker state on silver wares from 1888.</td></tr></tbody></table></div>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "silver-fineness-925"
+    },
+    {
+     "id": "silver-fineness-800"
+    },
+    {
+     "id": "silver-fineness-900"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p class=\"note\">This table lists the standards the sources on this page set down in law or record. Other numbers occur on silver from elsewhere; read them the same way, as parts in 1000, alongside the country's other marks.</p>\n      <h2 id=\"old\">Before the numbers: ounces and pennyweights</h2>\n      <p>Older English law didn't write 925. It set the standard as 11 ounces 2 pennyweights of silver in every pound troy of 12 ounces, which works out to 925 in 1000. The Britannia standard of 1697 was 11 ounces 10 pennyweights, which is 958.3 in 1000; the Hallmarking Act of 1973 states it as 958.4.</p>\n      <h2 id=\"country\">How each country marks the number</h2>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "lion-passant",
+     "caption": "Lion passant: UK sterling"
+    },
+    {
+     "id": "britannia-figure",
+     "caption": "Britannia: UK 958"
+    },
+    {
+     "id": "sterling-word-us"
+    },
+    {
+     "id": "german-crescent-and-crown"
+    }
+   ]
+  },
+  {
+   "html": "\n      <ul>\n        <li><strong>United Kingdom.</strong> Today the compulsory hallmark is the sponsor's (maker's) mark, the fineness as a number in a shield, and the assay office's mark. The lion passant and Britannia are optional symbols beside the number, and the date letter has been optional since 1999. On older British silver the symbols alone carry the standard: a lion passant for sterling, Britannia for the higher standard.</li>\n        <li><strong>United States.</strong> STERLING, or a number, stamped by the maker. Federal law requires 925 for STERLING and 900 for COIN, and a stated number must be met within four parts in 1000.</li>\n        <li><strong>Germany, from 1888.</strong> The law of 1884 let makers state a fineness on silver wares only at 800 or more, with a crown and a crescent moon beside the number and the firm's mark. It allowed eight parts in 1000 below the stated number.</li>\n      </ul>\n      <p>More to read: <a href=\"/silver-hallmarks\">how to read silver hallmarks</a>, and the <a href=\"/marks/london-date-letters\">London date letters</a>.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Hallmarking Act 1973, Schedule 2 (approved hallmarks and standards of fineness), as amended (<a href=\"https://www.legislation.gov.uk/ukpga/1973/43/schedule/2\" rel=\"nofollow\">source</a>)</li><li>UK Assay Offices and the Office for Product Safety and Standards, Hallmarking: practical guidance (2022) (<a href=\"https://www.gov.uk/government/publications/hallmarking-guidance-notes\" rel=\"nofollow\">source</a>)</li><li>National Gold and Silver Stamping Act of 1906, 15 U.S.C. § 296 (standard of fineness of silver articles) (<a href=\"https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap8-sec296.htm\" rel=\"nofollow\">source</a>)</li><li>Federal Trade Commission, Guides for the Jewelry, Precious Metals, and Pewter Industries, 16 CFR § 23.5 (misrepresentation as to silver content) (<a href=\"https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.5\" rel=\"nofollow\">source</a>)</li><li>Sir Charles James Jackson, English Goldsmiths and Their Marks, 2nd edition (London: Macmillan, 1921), public domain (<a href=\"https://archive.org/details/englishgoldsmith00jack\" rel=\"nofollow\">source</a>)</li><li>William Chaffers, Hall Marks on Gold and Silver Plate, edited by C. A. Markham (London: Reeves, 1922), public domain (<a href=\"https://archive.org/details/hallmarksongolds00chafrich\" rel=\"nofollow\">source</a>)</li><li>Gesetz über den Feingehalt der Gold- und Silberwaaren, 16 July 1884, Reichsgesetzblatt 1884, pp. 120–122 (Germany&#x27;s fineness law, in force 1 January 1888) (<a href=\"https://de.wikisource.org/wiki/Gesetz_%C3%BCber_den_Feingehalt_der_Gold-_und_Silberwaaren\" rel=\"nofollow\">source</a>)</li><li>Bekanntmachung über die Form des Stempelzeichens, 7 January 1886, Reichsgesetzblatt 1886, p. 1 (the crown and crescent mark) (<a href=\"https://de.wikisource.org/wiki/Bekanntmachung,_betreffend_die_Bestimmung_der_Form_des_Stempelzeichens_zur_Angabe_des_Feingehalts_auf_goldenen_und_silbernen_Ger%C3%A4then\" rel=\"nofollow\">source</a>)</li><li>Victoria and Albert Museum, cup, Germany, about 1900, museum no. O136991: &quot;A crescent moon and crown are stamped beneath the base&quot; (<a href=\"https://collections.vam.ac.uk/item/O136991/\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks. The Advisor reads the number and the marks around it, says which standard they state and keeps it on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What does 925 mean on silver?</summary>\n  <div><p>925 means 925 parts in 1000 of the metal are silver: 92.5%. That is sterling, the standard of the British lion passant and of STERLING on American silver.</p></div>\n</details>\n<details>\n  <summary>What does 800 mean on silver?</summary>\n  <div><p>800 means 80% silver. It is the lowest standard the UK hallmarks, and the lowest fineness German law let a maker state on silver wares from 1888, beside a crescent moon and a crown.</p></div>\n</details>\n<details>\n  <summary>Is 800 silver real silver?</summary>\n  <div><p>Yes: it is solid silver at a lower standard than sterling, 800 parts in 1000 rather than 925. It is not plate.</p></div>\n</details>\n<details>\n  <summary>What is the difference between 925 and 999 silver?</summary>\n  <div><p>999 is fine silver, 99.9% pure; 925 is sterling, 92.5% silver. Pure silver is soft, so most tableware and jewelry is made at a lower standard such as 925.</p></div>\n</details>\n<details>\n  <summary>Does a 925 stamp prove an item is silver?</summary>\n  <div><p>No. It is a statement of the standard, made by an assay office in Britain and by the maker in the United States. A test of the metal is the only proof.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

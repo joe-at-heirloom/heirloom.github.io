@@ -1,0 +1,173 @@
+{
+ "path": "/marks/gold-karat-marks",
+ "title": "Gold Karat Marks: What 585, 750, 375 and 916 Mean | Heirloom",
+ "description": "What the numbers on gold mean: 375, 585, 750, 916 and 999 in karats, US 10K and 14K stamps, British crown marks, and the plated and filled marks GF, RGP and HGE.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/gold-karat-marks#article",
+   "headline": "Gold karat marks: what 585, 750 and 375 mean",
+   "description": "What the numbers on gold mean: 375, 585, 750, 916 and 999 in karats, US 10K and 14K stamps, British crown marks, and the plated and filled marks GF, RGP and HGE.",
+   "url": "https://heirloomapp.io/marks/gold-karat-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/gold-karat-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Gold karat marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/gold-karat-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does 585 mean on gold?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "585 means 585 parts of pure gold in every 1,000 parts of the metal: 58.5% gold, which is 14 karat. The exact figure for 14 karat is 583, and some gold is marked that way; both mean 14 karat."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does 750 mean on gold?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "750 means 75% pure gold by weight: 18 karat. It is a legal standard in Britain (since 1975 written 750; before that, 18 with a crown) and in many other countries."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is 375 gold real gold?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes: 375 is 9 karat, 37.5% gold. It has been a legal standard in Britain since 1854."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does 916 mean on gold?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "916 is 22 karat: 91.6% gold. British law writes the standard as 916.6. It is common on gold from India and the Middle East."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is 1/20 12K GF real gold?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It has real gold on it, but it is not solid gold. GF means gold filled: a 12 karat gold layer bonded over a base metal, making up a twentieth of the metal's weight, so about 2.5% of the metal is pure gold."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does HGE mean on jewelry?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Heavy gold electroplate: a layer of at least 10 karat gold put on by electroplating, at least 2.5 microns thick, over another metal."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/gold-karat-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Gold karat marks",
+     "item": "https://heirloomapp.io/marks/gold-karat-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Gold karat marks</li></ol>\n      <h1>Gold karat marks: what 585, 750 and 375 mean</h1>\n      <p class=\"guide__lede\">The numbers stamped on gold give its fineness, in karats or in parts per thousand. Here is how to read them, and the marks that mean plated or filled.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>585 on gold means 585 parts of pure gold per thousand: 14 karat. 750 is 18 karat, 375 is 9 karat, 916 is 22 karat and 999 is pure gold. A karat is one 24th; parts per thousand say the same thing in thousandths. GF, RGP, HGE and a fraction such as 1/20 mean a gold layer over another metal.</p>\n      </div>\n      <h2 id=\"numbers\">What the numbers on gold mean</h2>\n      <p>A karat counts parts of pure gold out of 24, by weight: 24 karat is pure gold, 18 karat is 18 parts gold in 24. A three-figure number counts the same thing in parts per thousand: 750 is 750 parts gold in 1,000, which is 18 karat. To turn karats into thousandths, divide by 24 and multiply by 1,000.</p>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">Karat</th><th scope=\"col\">Exact thousandths</th><th scope=\"col\">Usually stamped</th><th scope=\"col\">Where you see it</th></tr></thead><tbody><tr><th scope=\"row\">8 karat</th><td>333.3</td><td>333</td><td>Germany allows it on jewelry; often seen on German gold</td></tr><tr><th scope=\"row\">9 karat</th><td>375</td><td>375</td><td>A UK legal standard since 1854 (as 9 and .375 until 1975)</td></tr><tr><th scope=\"row\">10 karat</th><td>416.7</td><td>417 or 10K</td><td>Common in the US, where marks are usually in karats</td></tr><tr><th scope=\"row\">14 karat</th><td>583.3</td><td>585 (sometimes 583)</td><td>A UK legal standard since 1932; India's 14K585 grade</td></tr><tr><th scope=\"row\">18 karat</th><td>750</td><td>750</td><td>A UK legal standard since 1798; India's 18K750 grade</td></tr><tr><th scope=\"row\">20 karat</th><td>833.3</td><td>833</td><td>India's 20K833 grade</td></tr><tr><th scope=\"row\">22 karat</th><td>916.7</td><td>916 (UK law writes 916.6)</td><td>A UK legal standard; India's 22K916 grade</td></tr><tr><th scope=\"row\">23 karat</th><td>958.3</td><td>958</td><td>India's 23K958 grade</td></tr><tr><th scope=\"row\">24 karat</th><td>1000</td><td>999, 995 or 990</td><td>Fine gold; no stamped item is quite pure, so 999 is the usual top</td></tr></tbody></table></div>\n      <h3>Why 585 and not 583</h3>\n      <p>14 divided by 24 is 0.5833, so the exact figure for 14 karat is 583. The usual stamp, and the legal 14 karat standard in the UK and India, is 585, slightly above it. Both are 14 karat. 583 appears on some older gold, including gold marked in the Soviet Union:</p>\n"
+  },
+  {
+   "cards": [
+    {
+     "id": "soviet-gold-star-583"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"us\">Karat marks in the US</h2>\n      <p>American gold is usually marked in karats: 10K, 14K, 18K. Since 1906 the National Gold and Silver Stamping Act has made it an offense to ship gold marked finer than it is. Today a gold item may fall short of its mark by no more than 3 parts per thousand when tested without solder, or 7 parts per thousand tested whole with its solder (3 for watch cases and flatware). Before the law changed in 1976 (in force 1981), the allowance was half a karat, or one karat with solder, so older gold can test a little below its stamp.</p>\n      <p>Since 1961, whoever stamps a quality mark such as 14K must also stamp their name or a registered trademark next to it, at least as large. A karat mark with no maker's mark beside it on American gold made after that is a reason to look more closely.</p>\n      <p>The Federal Trade Commission's guides say the word gold alone means pure gold; an alloy must give its karat right beside the word, as in 14K or 14 karat gold. Until 2018 the guides also said gold under 10 karat should not be called gold at all. The 2018 revision dropped that floor, as long as the karat is shown, but kept a 10 karat minimum for the gold layer on filled, plated and vermeil items.</p>\n      <h2 id=\"plated\">Plated and filled gold marks</h2>\n      <p>These marks mean a thin layer of gold over another metal, not gold through and through. The karat in them describes the layer only.</p>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">Mark</th><th scope=\"col\">What it means (FTC guides)</th><th scope=\"col\">How it is stamped</th></tr></thead><tbody><tr><th scope=\"row\">Gold filled, GF, gold overlay</th><td>A layer of gold alloy of at least 10 karat bonded to a base metal by heat and pressure, making up at least 1/20 of the weight of all the metal</td><td>1/20 12K GF: the layer is 12 karat and is 1/20 of the metal's weight</td></tr><tr><th scope=\"row\">Rolled gold plate, RGP</th><td>The same bonded layer, but thinner: at least 1/40 of the weight</td><td>1/40 10K RGP; the old guides give 14K. R.G.P. as an example</td></tr><tr><th scope=\"row\">Gold electroplate</th><td>A layer of at least 10 karat gold put on by electrolysis, at least 0.175 microns of fine gold thick (about 7 millionths of an inch)</td><td>Often stamped GE or GEP; the abbreviation is trade usage, not in the guides</td></tr><tr><th scope=\"row\">Heavy gold electroplate</th><td>The same, at least 2.5 microns of fine gold (about 100 millionths of an inch)</td><td>Often stamped HGE</td></tr><tr><th scope=\"row\">Vermeil</th><td>Sterling silver coated with gold of at least 10 karat, at least 2.5 microns thick</td><td>925 with a gold surface</td></tr><tr><th scope=\"row\">Gold flashed, gold washed</th><td>Thinner than electroplate. The FTC allowed these words for very thin plating until 2018, and no longer does</td><td>A karat mark on a thin plated item says nothing about its body</td></tr></tbody></table></div>\n      <p>Reading <strong>1/20 12K GF</strong>: the item is gold filled, the gold layer is 12 karat, and the layer makes up one twentieth of the weight of the metal. Since 12 karat is half gold, pure gold is about 2.5% of the metal's weight.</p>\n      <p>Under British law, gold below a legal standard may be called gold only with the word plated or rolled, in letters at least as large. In the UK a carat description is taken to mean gold of that fineness, unless it is the weight of a stone.</p>\n      <h2 id=\"british\">British gold hallmarks, in brief</h2>\n      <p>British gold is hallmarked like silver, with a maker's mark, a fineness mark and an assay office mark, and usually a date letter. The fineness mark changed over time, which dates the gold roughly before you read the letter:</p>\n      <ul class=\"rules\">\n        <li><strong>To 1798:</strong> gold was 22 carat and carried the lion passant, the same mark as sterling silver.</li>\n        <li><strong>1798 on:</strong> 18 carat gold, marked with a crown and the figure 18.</li>\n        <li><strong>1844 on:</strong> 22 carat gold, marked with a crown and 22; the lion was no longer used on gold.</li>\n        <li><strong>1854 on:</strong> three lower standards, 15, 12 and 9 carat, marked with the carat and its decimal (15 and .625, 12 and .5, 9 and .375) and no crown.</li>\n        <li><strong>1932:</strong> 15 and 12 carat ended and 14 carat began.</li>\n        <li><strong>1975 on:</strong> the Hallmarking Act 1973 replaced carats with parts per thousand: a crown with 375, 585, 750 or 916 on gold made in the UK. Imported gold had the number without the crown.</li>\n        <li><strong>1999 on:</strong> the crown and the date letter became optional. 990 and 999 were added. A UK hallmark now needs only the sponsor's (maker's) mark, the number and the assay office mark. Gold under 1 gram need not be hallmarked.</li>\n      </ul>\n"
+  },
+  {
+   "cards": [
+    {
+     "id": "british-gold-crown"
+    },
+    {
+     "id": "british-gold-18-carat"
+    },
+    {
+     "id": "british-gold-22-carat"
+    },
+    {
+     "id": "british-gold-15-carat-decimal"
+    },
+    {
+     "id": "british-gold-12-carat-decimal"
+    },
+    {
+     "id": "british-gold-9-carat-decimal"
+    },
+    {
+     "id": "british-gold-14-carat-1932"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p>The convention mark, a balance-scale outline around a number, comes from a treaty signed in Vienna in 1972. Countries that belong to it accept each other's convention-marked gold and silver without marking it again.</p>\n      <h3>Swiss gold watch cases</h3>\n      <p>Gold and silver watch cases sold in Switzerland must be checked and marked by the Swiss precious metals control. A Swiss gold case of the mid-20th century often shows the fineness as 18K above 0.750, beside the control's own mark: a head of Helvetia for 750, a squirrel for 583. The control lists both among its former official marks, used since 1880; it gives no end year.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "gold-fineness-750"
+    },
+    {
+     "id": "switzerland-helvetia-gold-750"
+    },
+    {
+     "id": "switzerland-squirrel-gold-583"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p>For the date letter itself, see <a href=\"/marks/london-date-letters\">London</a>, <a href=\"/marks/birmingham-date-letters\">Birmingham</a>, <a href=\"/marks/sheffield-date-letters\">Sheffield</a> and <a href=\"/marks/chester-date-letters\">Chester</a>.</p>\n      <h2 id=\"caveats\">Read these before you rely on a mark</h2>\n      <ul><li>A number stamped on gold says what the maker claims. Only a test says what the metal is; stamps are faked and worn, and plated items sometimes carry a bare karat mark they shouldn't.</li><li>The karat in a plated or filled mark is the layer's, not the item's.</li><li>Tolerances differ by country and period: older American gold could legally test half a karat under its stamp.</li></ul>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both readings.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Hallmarking Act 1973, Schedule 2 (current text and as enacted), legislation.gov.uk (<a href=\"https://www.legislation.gov.uk/ukpga/1973/43/schedule/2\" rel=\"nofollow\">source</a>)</li><li>Hallmarking Act 1973, Schedule 1, legislation.gov.uk (<a href=\"https://www.legislation.gov.uk/ukpga/1973/43/schedule/1\" rel=\"nofollow\">source</a>)</li><li>The Hallmarking (Hallmarking Act Amendment) Regulations 1998, SI 1998/2978, in force January 1, 1999 (<a href=\"https://www.legislation.gov.uk/uksi/1998/2978/made\" rel=\"nofollow\">source</a>)</li><li>British Hallmarking Council, <cite>Guidance on Fineness Description</cite> (2014) (<a href=\"https://assets.publishing.service.gov.uk/media/5a7f05baed915d74e6227f54/bhc-guidance-on-fineness-april-2014.pdf\" rel=\"nofollow\">source</a>)</li><li>UK Government, <cite>Hallmarking is the law: guidance summary</cite> (<a href=\"https://www.gov.uk/government/publications/hallmarking-guidance-notes/hallmarking-is-the-law-guidance-summary\" rel=\"nofollow\">source</a>)</li><li>The Goldsmiths' Company Assay Office, London, <cite>History of hallmarking</cite> (<a href=\"https://www.assayofficelondon.co.uk/about-us/history-of-hallmarking\" rel=\"nofollow\">source</a>)</li><li>Birmingham Assay Office, timeline: 1932 (<a href=\"https://www.theassayoffice.co.uk/timeline-post/1932/\" rel=\"nofollow\">source</a>)</li><li>Sheffield Assay Office, <cite>History</cite> (<a href=\"https://www.assayoffice.co.uk/about-us/history\" rel=\"nofollow\">source</a>)</li><li>W. Chaffers, <cite>Handbook to Hall Marks on Gold and Silver Plate</cite> (London, 1924), public domain (<a href=\"https://archive.org/details/ChaffersHandbookToHallMarks\" rel=\"nofollow\">source</a>)</li><li>C. J. Jackson, <cite>English Goldsmiths and Their Marks</cite> (London: Macmillan, 1905), public domain (<a href=\"https://archive.org/details/englishgoldsmith00jack\" rel=\"nofollow\">source</a>)</li><li>London Bullion Market Association, <cite>Purity of gold</cite> (<a href=\"https://www.lbma.org.uk/wonders-of-gold/items/purity-of-gold\" rel=\"nofollow\">source</a>)</li><li>Bureau of Indian Standards, <cite>Hallmarking FAQs</cite> (IS 1417 grades) (<a href=\"https://www.bis.gov.in/hallmarking-overview/hallmarking-faqs/hallmarking-faq/?lang=en\" rel=\"nofollow\">source</a>)</li><li>Gesetz über den Feingehalt der Gold- und Silberwaren (Germany, 1884, as amended) (<a href=\"https://www.gesetze-im-internet.de/feingehg/BJNR001200884.html\" rel=\"nofollow\">source</a>)</li><li>Adin Antique Jewelry, <cite>Alloys and metal standards</cite> (<a href=\"https://www.antiquejewel.com/jewellery-studies/006-alloys-and-metal-standards\" rel=\"nofollow\">source</a>)</li><li>National Gold and Silver Stamping Act, 15 U.S.C. 291–300 (sections 294, 295, 297), Cornell Legal Information Institute and govinfo.gov (<a href=\"https://www.law.cornell.edu/uscode/text/15/295\" rel=\"nofollow\">source</a>)</li><li>Federal Trade Commission, <cite>Guides for the Jewelry, Precious Metals, and Pewter Industries</cite>, 16 CFR 23.3 and 23.4 (current) (<a href=\"https://www.law.cornell.edu/cfr/text/16/23.3\" rel=\"nofollow\">source</a>)</li><li>16 CFR 23.4, 2012 edition (the guides before the 2018 revision) (<a href=\"https://www.govinfo.gov/content/pkg/CFR-2012-title16-vol1/xml/CFR-2012-title16-vol1-sec23-4.xml\" rel=\"nofollow\">source</a>)</li><li>Federal Trade Commission, final revision of the Jewelry Guides, Federal Register 83 (159), August 16, 2018 (<a href=\"https://www.govinfo.gov/content/pkg/FR-2018-08-16/html/2018-17454.htm\" rel=\"nofollow\">source</a>)</li><li>The Hallmarking Convention, <cite>The Common Control Mark</cite> (<a href=\"https://www.hallmarkingconvention.org/en/about/the-common-control-mark\" rel=\"nofollow\">source</a>)</li><li>Swiss Federal Precious Metals Control, <cite>Reproduction of the ancient official hallmarks since 1880</cite> (<a href=\"https://commons.wikimedia.org/wiki/File:Reproduction_of_the_ancient_Swiss_official_hallmarks_since_1880.png\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the stamp on your gold. The Advisor reads the karat or fineness mark and any hallmarks beside it, and keeps what they say on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What does 585 mean on gold?</summary>\n  <div><p>585 means 585 parts of pure gold in every 1,000 parts of the metal: 58.5% gold, which is 14 karat. The exact figure for 14 karat is 583, and some gold is marked that way; both mean 14 karat.</p></div>\n</details>\n<details>\n  <summary>What does 750 mean on gold?</summary>\n  <div><p>750 means 75% pure gold by weight: 18 karat. It is a legal standard in Britain (since 1975 written 750; before that, 18 with a crown) and in many other countries.</p></div>\n</details>\n<details>\n  <summary>Is 375 gold real gold?</summary>\n  <div><p>Yes: 375 is 9 karat, 37.5% gold. It has been a legal standard in Britain since 1854.</p></div>\n</details>\n<details>\n  <summary>What does 916 mean on gold?</summary>\n  <div><p>916 is 22 karat: 91.6% gold. British law writes the standard as 916.6. It is common on gold from India and the Middle East.</p></div>\n</details>\n<details>\n  <summary>Is 1/20 12K GF real gold?</summary>\n  <div><p>It has real gold on it, but it is not solid gold. GF means gold filled: a 12 karat gold layer bonded over a base metal, making up a twentieth of the metal's weight, so about 2.5% of the metal is pure gold.</p></div>\n</details>\n<details>\n  <summary>What does HGE mean on jewelry?</summary>\n  <div><p>Heavy gold electroplate: a layer of at least 10 karat gold put on by electroplating, at least 2.5 microns thick, over another metal.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

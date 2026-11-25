@@ -1,0 +1,142 @@
+{
+ "path": "/marks/community-plate-oneida",
+ "title": "Oneida Community Plate Marks: Is It Silver, and How Old Is It? | Heirloom",
+ "description": "Oneida Community Plate marks explained: Community, Tudor Plate, Reliance and Oneida's sterling, when Community Plate began, and how to date it from its pattern, with sources.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/community-plate-oneida#article",
+   "headline": "Community Plate and Oneida marks",
+   "description": "Oneida Community Plate marks explained: Community, Tudor Plate, Reliance and Oneida's sterling, when Community Plate began, and how to date it from its pattern, with sources.",
+   "url": "https://heirloomapp.io/marks/community-plate-oneida",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/community-plate-oneida",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Organization",
+    "name": "Oneida Community Ltd."
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/community-plate-oneida#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Community Plate real silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is silver plate: a coat of real silver over a base-metal blank. It is not sterling. Oneida sold it as heavier than ordinary triple plate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How old is my Oneida Community silverware?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Community Plate began with the Avalon pattern in 1901–02, so it is no older than that. Find the pattern and its introduction year; ONEIDA LTD. in the mark means 1935 or later."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between Community, Tudor Plate, Reliance and Par Plate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "All are Oneida silver plate. Community was the top grade; Reliance, Tudor Plate and Par Plate were cheaper lines."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Did Oneida make sterling?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, marked Oneida Community Sterling and later Heirloom Sterling. An item is sterling only if the mark says STERLING."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Heirloom Sterling connected with the Heirloom app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Heirloom Sterling is Oneida's sterling flatware line, a brand Oneida acquired in 1929. Heirloom, the app, has no connection with it."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/community-plate-oneida#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Community Plate (Oneida)",
+     "item": "https://heirloomapp.io/marks/community-plate-oneida"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Community Plate (Oneida)</li></ol>\n      <h1>Community Plate and Oneida marks</h1>\n      <p class=\"guide__lede\">Community Plate was Oneida's best silver plate from 1901–02. Here is what each Oneida mark tells you, and how to date yours.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>Community and Community Plate are silver-plated flatware made by Oneida Community Ltd. (Oneida Ltd. from 1935), starting with the Avalon pattern in 1901–02. It is plate, not sterling; Oneida's sterling says STERLING. Date it from its pattern: Morning Star is 1948, Evening Star 1950.</p>\n      </div>\n      <h2 id=\"maker\">Who made it</h2>\n      <p>The Oneida Community was a religious commune founded by John Humphrey Noyes at Oneida, New York, in 1848. Its branch at Wallingford, Connecticut, began making spoons in 1877; the company's 1901 booklet calls them silver plate, while its 1948 history and a Connecticut history say they were tinned iron.</p>\n      <p>In 1880 the commune became a company, Oneida Community Ltd. (some accounts date the change from January 1, 1881), and the spoon works moved to Niagara Falls. Its first Community Plate pattern, Avalon, was shown at the end of 1901 and went on sale in 1902, in a single heavy grade of plate. The company bought Wm. A. Rogers Ltd. in 1929, took the name Oneida Ltd. on March 1, 1935, and stopped making flatware in the United States in 2005.</p>\n      <h2 id=\"marks\">The marks, and what each tells you</h2>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">The mark</th><th scope=\"col\">Who used it, and when</th><th scope=\"col\">What it tells you</th></tr></thead><tbody><tr><th scope=\"row\">ONEIDA COMMUNITY</th><td>Oneida Community Ltd., from the 1890s</td><td>In 1896 it appears on nickel-silver flatware; by 1901 the company says it stamped the name only on its triple-plate grade. Read the rest of the mark.</td></tr><tr><th scope=\"row\">COMMUNITY, or COMMUNITY PLATE</th><td>Oneida Community Ltd. and Oneida Ltd., from 1901–02</td><td>The company's top grade of silver plate, sold at first as heavier than triple plate.</td></tr><tr><th scope=\"row\">RELIANCE, TUDOR PLATE, PAR PLATE</th><td>Lines sold under the Oneida Community name</td><td>Cheaper grades of silver plate than Community.</td></tr><tr><th scope=\"row\">ONEIDA COMMUNITY STERLING, or HEIRLOOM STERLING</th><td>Oneida's sterling lines</td><td>Sterling silver. Heirloom was a brand Oneida bought in 1929; it has no connection with Heirloom, the app.</td></tr><tr><th scope=\"row\">ONEIDA LTD.</th><td>From March 1, 1935</td><td>The company's name from that date, so the item was made in 1935 or later.</td></tr></tbody></table></div>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "plate-oneida-community"
+    },
+    {
+     "id": "plate-community-plate"
+    },
+    {
+     "id": "plate-oneida-reliance"
+    },
+    {
+     "id": "plate-oneida-tudor-plate"
+    },
+    {
+     "id": "plate-oneida-par-plate"
+    },
+    {
+     "id": "plate-oneida-community-sterling"
+    },
+    {
+     "id": "plate-heirloom-sterling"
+    },
+    {
+     "id": "plate-oneida-ltd"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p class=\"note\">The marks are stamped on the back of the handle.</p>\n      <h2 id=\"plate-or-sterling\">Is it plate or sterling?</h2>\n      <p>Community and Community Plate are silver plate: a coat of silver over a base metal. Oneida also made sterling, and those items say STERLING in the mark.</p>\n      <p>Read the whole stamp first. American sterling is marked STERLING. Plate is marked with the maker's name and often a grade word or number, such as A1, XII, XIV, TRIPLE or QUADRUPLE PLATE, and a grade mark appears only on plate.</p>\n      <p>Then look at the places that wear. Plate is a thin coat of silver over a base metal, usually nickel silver, so on a well-used spoon the tip of the bowl, the back of the bowl and the ends of fork tines turn yellowish or gray where the silver has worn through to the metal underneath.</p>\n      <h2 id=\"dating\">How to date Community Plate</h2>\n      <p>American plate makers didn't stamp a year. A number in the mark, such as 1847 or 1865, is the year a firm said it was founded and stayed on the ware for decades. To date an item, name its pattern (the design of the handle) and find when that pattern was introduced. A patent date stamped on a handle (PAT. followed by a date) is the earliest the design can be, not the year the item was made, and makers kept producing a popular pattern for decades.</p>\n      <p>The Community line runs from 1901–02, so no Community Plate is older than that, and ONEIDA LTD. in the mark means 1935 or later. These introduction years are the ones two published sources agree on:</p>\n      <div class=\"table-wrap\"><table class=\"table--two\"><thead><tr><th scope=\"col\">Pattern</th><th scope=\"col\">Introduced</th></tr></thead><tbody><tr><th scope=\"row\">Avalon</th><td>Shown 1901, on sale 1902 (one guide says about 1903)</td></tr><tr><th scope=\"row\">Classic</th><td>1911</td></tr><tr><th scope=\"row\">Paul Revere</th><td>1927</td></tr><tr><th scope=\"row\">Morning Star</th><td>1948</td></tr><tr><th scope=\"row\">Evening Star</th><td>1950</td></tr></tbody></table></div>\n      <p class=\"note\">Years for many other Community patterns (Patrician, Adam, Bird of Paradise, Coronation, White Orchid and more) are in one published guide and on collectors' sites, but we haven't found a second independent source, so they aren't listed. For South Seas the sources disagree: 1955 in one guide, 1953 on collectors' sites.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is from at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li><em>Oneida Community: 1848–1901</em>, company booklet, 1901 (<a href=\"https://archive.org/details/oneidacommunity100onei\" rel=\"nofollow\">source</a>)</li><li><em>Oneida Community Quality Silverware, Catalog No. 25</em>, Oneida Community Ltd., 1903 (Winterthur Library copy) (<a href=\"https://archive.org/details/oneidacommunityq00onei\" rel=\"nofollow\">source</a>)</li><li>Walter D. Edmonds, <em>The First Hundred Years, 1848–1948</em>, Oneida Ltd., 1948 (Syracuse University Libraries digital edition) (<a href=\"https://library.syracuse.edu/digital/collections/f/FirstHundredYears,1848-1948/\" rel=\"nofollow\">source</a>)</li><li>Syracuse University Special Collections, <em>Oneida Community Collection, 1811–1997</em>, biographical history (<a href=\"https://findingaids.syr.edu/catalog/oneida_comm\" rel=\"nofollow\">source</a>)</li><li>Edward T. Howe, &ldquo;The Wallingford Oneida Community&rdquo;, ConnecticutHistory.org, 2020 (<a href=\"https://connecticuthistory.org/the-wallingford-oneida-community/\" rel=\"nofollow\">source</a>)</li><li><em>Trade-Marks of the Jewelry and Kindred Trades</em>, Jewelers' Circular Publishing Co., 1896 (<a href=\"https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n85\" rel=\"nofollow\">source</a>)</li><li>Tere Hagan, <em>Silverplated Flatware: An Identification &amp; Value Guide</em>, revised 4th ed., Collector Books, 1990 (<a href=\"https://archive.org/details/silverplatedflat00haga\" rel=\"nofollow\">source</a>)</li><li>Doris Jean Snell, <em>American Silverplated Flatware Patterns</em>, Wallace-Homestead, 1980 (<a href=\"https://archive.org/details/americansilverpl0000snel\" rel=\"nofollow\">source</a>)</li><li>Maryanne Dolan, <em>1830's–1990's American Sterling Silver Flatware</em>, Books Americana, 1993 (<a href=\"https://archive.org/details/1830s1990sameric0000dola\" rel=\"nofollow\">source</a>)</li><li>Oneida Ltd., &ldquo;Oneida Heirloom Sterling&rdquo; brochures, 1965 and 1967 (<a href=\"https://archive.org/details/oneida-heirloom-sterling-1965\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the back of the handle. The Advisor reads the mark and the pattern and keeps both on the item's record, with the photo it read them from.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>Is Community Plate real silver?</summary>\n  <div><p>It is silver plate: a coat of real silver over a base-metal blank. It is not sterling. Oneida sold it as heavier than ordinary triple plate.</p></div>\n</details>\n<details>\n  <summary>How old is my Oneida Community silverware?</summary>\n  <div><p>Community Plate began with the Avalon pattern in 1901–02, so it is no older than that. Find the pattern and its introduction year; ONEIDA LTD. in the mark means 1935 or later.</p></div>\n</details>\n<details>\n  <summary>What is the difference between Community, Tudor Plate, Reliance and Par Plate?</summary>\n  <div><p>All are Oneida silver plate. Community was the top grade; Reliance, Tudor Plate and Par Plate were cheaper lines.</p></div>\n</details>\n<details>\n  <summary>Did Oneida make sterling?</summary>\n  <div><p>Yes, marked Oneida Community Sterling and later Heirloom Sterling. An item is sterling only if the mark says STERLING.</p></div>\n</details>\n<details>\n  <summary>Is Heirloom Sterling connected with the Heirloom app?</summary>\n  <div><p>No. Heirloom Sterling is Oneida's sterling flatware line, a brand Oneida acquired in 1929. Heirloom, the app, has no connection with it.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

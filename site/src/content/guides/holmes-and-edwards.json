@@ -1,0 +1,122 @@
+{
+ "path": "/marks/holmes-and-edwards",
+ "title": "Holmes & Edwards Silverware Marks: Sterling Inlaid, XIV and Pattern Dates | Heirloom",
+ "description": "Holmes & Edwards marks explained: what Sterling Inlaid and XIV mean (it is silver plate, not sterling), who made it, and introduction years for its patterns, with sources.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/holmes-and-edwards#article",
+   "headline": "Holmes &amp; Edwards marks",
+   "description": "Holmes & Edwards marks explained: what Sterling Inlaid and XIV mean (it is silver plate, not sterling), who made it, and introduction years for its patterns, with sources.",
+   "url": "https://heirloomapp.io/marks/holmes-and-edwards",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/holmes-and-edwards",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Organization",
+    "name": "The Holmes & Edwards Silver Co."
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/holmes-and-edwards#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Holmes & Edwards Sterling Inlaid real sterling?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It is silver plate with small blocks of solid silver set into the backs of the bowls and tines, where they wear, before plating. The rest is base metal under a coat of silver."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does XIV mean on Holmes & Edwards?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It marked the firm's extra-sectional grade: an extra coat of silver plate on the back of the bowl and the handle. It is still plate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When was Holmes & Edwards made?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Bridgeport firm dates from 1882 or a little earlier. It joined International Silver in 1898, and International used the name into at least the late 1950s. Date an item from its pattern."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How old is my Lovely Lady or May Queen silverware?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Lovely Lady was introduced in 1937 and May Queen in 1951. Patterns stayed in production for years, so the item may be later than that."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/holmes-and-edwards#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Holmes &amp; Edwards",
+     "item": "https://heirloomapp.io/marks/holmes-and-edwards"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Holmes &amp; Edwards</li></ol>\n      <h1>Holmes &amp; Edwards marks</h1>\n      <p class=\"guide__lede\">Holmes &amp; Edwards flatware often says STERLING INLAID, which leads many people to think it is solid silver. Here is what the marks mean, and how to date it from the pattern.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>Holmes &amp; Edwards is silver-plated flatware made in Bridgeport, Connecticut, from 1882 and by the International Silver Co. from 1898. STERLING INLAID means small blocks of solid silver were set into the wear points before plating; the item is plate, not sterling. Date it from its pattern: Lovely Lady is 1937, May Queen 1951.</p>\n      </div>\n      <h2 id=\"maker\">Who made it</h2>\n      <p>The Holmes &amp; Edwards Silver Co. made plated flatware in Bridgeport, Connecticut. An 1897 history of the city traces its works back to 1882 and names George C. Edwards as president; the sources don't agree on which Holmes was his partner, so we don't name him. The company joined the International Silver Co. when it was formed in 1898, and International kept Holmes &amp; Edwards as a brand: its patterns run to at least 1958.</p>\n      <p>Holmes &amp; Edwards was known for one process. Under patents granted to W. A. Warner in 1884 and 1886, small blocks of solid silver were set into the back of spoon bowls and fork tines, where flatware rubs on the table, before the whole item was plated. Warner later worked for the company, and a 1904 patent improving the method was assigned to it.</p>\n      <h2 id=\"marks\">The marks, and what each tells you</h2>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">The mark</th><th scope=\"col\">Who used it, and when</th><th scope=\"col\">What it tells you</th></tr></thead><tbody><tr><th scope=\"row\">HOLMES &amp; EDWARDS</th><td>The Holmes &amp; Edwards Silver Co., Bridgeport, Connecticut; International Silver Co. from 1898</td><td>The maker's name. On its own it says nothing about the grade.</td></tr><tr><th scope=\"row\">STERLING INLAID</th><td>Holmes &amp; Edwards, listed in the 1896 trademark directory under plated ware</td><td>Silver plate with small blocks of solid silver set in at the points that wear. It is not sterling.</td></tr><tr><th scope=\"row\">XIV</th><td>Holmes &amp; Edwards, described in an 1897 Bridgeport history</td><td>The firm's &ldquo;extra sectional&rdquo; grade: an extra coat of plate on the back of the bowl and the handle. Still plate, and not inlaid.</td></tr><tr><th scope=\"row\">DEEP SILVER</th><td>International Silver Co., on Holmes &amp; Edwards patterns in the 1950s</td><td>International's later name for the inlaid line; still plate.</td></tr></tbody></table></div>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "plate-holmes-and-edwards"
+    },
+    {
+     "id": "plate-he-sterling-inlaid"
+    },
+    {
+     "id": "plate-he-xiv"
+    },
+    {
+     "id": "plate-he-deep-silver"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p class=\"note\">The marks are stamped on the back of the handle. The meaning of other marks seen on this ware, such as INLAID alone, H&amp;E or IS, isn't in the sources we could read, so they aren't explained here.</p>\n      <h2 id=\"plate-or-sterling\">Is it plate or sterling?</h2>\n      <p>Plate, even when the mark says STERLING INLAID. The sterling is only the small inlay at the wear points; the rest of the item is a base metal under a coat of silver. The company itself sold the line as giving the wear of sterling for less than half its cost. The firm did also make sterling, listed separately in the 1896 directory; an item is sterling only when the mark says STERLING on its own.</p>\n      <p>Read the whole stamp first. American sterling is marked STERLING. Plate is marked with the maker's name and often a grade word or number, such as A1, XII, XIV, TRIPLE or QUADRUPLE PLATE, and a grade mark appears only on plate.</p>\n      <p>Then look at the places that wear. Plate is a thin coat of silver over a base metal, usually nickel silver, so on a well-used spoon the tip of the bowl, the back of the bowl and the ends of fork tines turn yellowish or gray where the silver has worn through to the metal underneath.</p>\n      <h2 id=\"dating\">How to date Holmes &amp; Edwards</h2>\n      <p>American plate makers didn't stamp a year. A number in the mark, such as 1847 or 1865, is the year a firm said it was founded and stayed on the ware for decades. To date an item, name its pattern (the design of the handle) and find when that pattern was introduced. A patent date stamped on a handle (PAT. followed by a date) is the earliest the design can be, not the year the item was made, and makers kept producing a popular pattern for decades.</p>\n      <p>These introduction years are the ones two published pattern guides agree on (Hagan, 1990, and Snell, 1980):</p>\n      <div class=\"table-wrap\"><table class=\"table--two\"><thead><tr><th scope=\"col\">Pattern</th><th scope=\"col\">Introduced</th></tr></thead><tbody><tr><th scope=\"row\">Carolina</th><td>1914</td></tr><tr><th scope=\"row\">Jamestown</th><td>1916</td></tr><tr><th scope=\"row\">Hostess</th><td>1921</td></tr><tr><th scope=\"row\">Romance</th><td>1925</td></tr><tr><th scope=\"row\">Pageant</th><td>1927</td></tr><tr><th scope=\"row\">Napoleon</th><td>1929</td></tr><tr><th scope=\"row\">Masterpiece</th><td>1932</td></tr><tr><th scope=\"row\">Guest of Honor</th><td>1935</td></tr><tr><th scope=\"row\">Lovely Lady</th><td>1937</td></tr><tr><th scope=\"row\">Danish Princess</th><td>1938 or 1939 (the two books differ)</td></tr><tr><th scope=\"row\">Youth</th><td>1940</td></tr><tr><th scope=\"row\">Spring Garden</th><td>1949</td></tr><tr><th scope=\"row\">May Queen</th><td>1951</td></tr><tr><th scope=\"row\">Bright Future</th><td>1954</td></tr><tr><th scope=\"row\">Silver Fashion</th><td>1957</td></tr><tr><th scope=\"row\">Rhythmic</th><td>1957</td></tr><tr><th scope=\"row\">Woodsong</th><td>1958</td></tr></tbody></table></div>\n      <p class=\"note\">An item made in 1898 or later may also carry International Silver's name. Rhythmic's 1957 date is also given by International's own brochure of that year.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is from at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>George C. Waldo, <em>The Standard's History of Bridgeport</em>, 1897, p. 189 (<a href=\"https://archive.org/details/standardshistory00wald\" rel=\"nofollow\">source</a>)</li><li><em>Trade-Marks of the Jewelry and Kindred Trades</em>, Jewelers' Circular Publishing Co., 1896 (<a href=\"https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n85\" rel=\"nofollow\">source</a>)</li><li>Gillespie and Curtis, <em>A Century of Meriden</em>, 1906, part II, pp. 35–48 (<a href=\"https://archive.org/details/bub_gb_-zQWAAAAYAAJ/page/n1093\" rel=\"nofollow\">source</a>)</li><li>US patent 309,013, W. A. Warner, &ldquo;Plated Ware&rdquo;, December 9, 1884 (<a href=\"https://patents.google.com/patent/US309013\" rel=\"nofollow\">source</a>)</li><li>US patent 337,099, W. A. Warner, &ldquo;Manufacture of Spoons&rdquo;, March 2, 1886 (<a href=\"https://patents.google.com/patent/US337099\" rel=\"nofollow\">source</a>)</li><li>US patent 755,727, W. A. Warner, assigned to The Holmes and Edwards Silver Company, March 29, 1904 (<a href=\"https://patents.google.com/patent/US755727A/en\" rel=\"nofollow\">source</a>)</li><li>Tere Hagan, <em>Silverplated Flatware: An Identification &amp; Value Guide</em>, revised 4th ed., Collector Books, 1990 (<a href=\"https://archive.org/details/silverplatedflat00haga\" rel=\"nofollow\">source</a>)</li><li>Doris Jean Snell, <em>American Silverplated Flatware Patterns</em>, Wallace-Homestead, 1980 (<a href=\"https://archive.org/details/americansilverpl0000snel\" rel=\"nofollow\">source</a>)</li><li>International Silver Co., &ldquo;New Rhythmic … in Holmes &amp; Edwards Deep Silver&rdquo;, March 1, 1957 (<a href=\"https://archive.org/details/holmes-edwards-rhythmic-silverware-1957\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the back of the handle. The Advisor reads the mark and the pattern, notes that Sterling Inlaid is plate, and keeps both on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>Is Holmes &amp; Edwards Sterling Inlaid real sterling?</summary>\n  <div><p>No. It is silver plate with small blocks of solid silver set into the backs of the bowls and tines, where they wear, before plating. The rest is base metal under a coat of silver.</p></div>\n</details>\n<details>\n  <summary>What does XIV mean on Holmes &amp; Edwards?</summary>\n  <div><p>It marked the firm's extra-sectional grade: an extra coat of silver plate on the back of the bowl and the handle. It is still plate.</p></div>\n</details>\n<details>\n  <summary>When was Holmes &amp; Edwards made?</summary>\n  <div><p>The Bridgeport firm dates from 1882 or a little earlier. It joined International Silver in 1898, and International used the name into at least the late 1950s. Date an item from its pattern.</p></div>\n</details>\n<details>\n  <summary>How old is my Lovely Lady or May Queen silverware?</summary>\n  <div><p>Lovely Lady was introduced in 1937 and May Queen in 1951. Patterns stayed in production for years, so the item may be later than that.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

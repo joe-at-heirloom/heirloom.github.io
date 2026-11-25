@@ -1,0 +1,180 @@
+{
+ "path": "/marks/french-silver-marks",
+ "title": "French Silver Marks: The Minerva Head, Boar and Crab | Heirloom",
+ "description": "Read French silver marks from 1838: the Minerva head with 1 or 2, the boar's head and crab on small items, the maker's lozenge, the swan, and the square mark of plate.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/french-silver-marks#article",
+   "headline": "French silver marks: the Minerva head and the maker's lozenge",
+   "description": "Read French silver marks from 1838: the Minerva head with 1 or 2, the boar's head and crab on small items, the maker's lozenge, the swan, and the square mark of plate.",
+   "url": "https://heirloomapp.io/marks/french-silver-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/french-silver-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "French silver marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/french-silver-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does the Minerva head mean on French silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the French state mark for solid silver, used since 1838. With a 1 it is the first standard (950, now 925); with a 2, the second standard (800). Silver plate never carries it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does a boar's head mean on silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the Paris mark for small silver items, used from 1838 on things too small for the Minerva head. It means silver of at least 800 thousandths. Outside Paris the same job was done by a crab."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is French silver with a square mark solid silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A square maker's mark is the French mark for plated goods, including electroplate from 1860. Solid silver has a diamond-shaped lozenge and a Minerva head or a small-item mark."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I date French silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only roughly. French marks have no date letter. A Minerva head means 1838 or later; marks before it are older. The maker's lozenge can narrow the date once the maker is known, since makers' working years are recorded."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/french-silver-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "French silver marks",
+     "item": "https://heirloomapp.io/marks/french-silver-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">French silver marks</li></ol>\n      <h1>French silver marks: the Minerva head and the maker's lozenge</h1>\n      <p class=\"guide__lede\">Since 1838 French silver has carried two marks: the state's Minerva head and the maker's lozenge. Here is how to read them, and the small marks that stand in for them.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>A helmeted head of Minerva is the French mark for solid silver, used since 1838: with a 1 it is the first standard (950, today 925), with a 2 the second (800). Small items carry a boar's head (Paris) or a crab (elsewhere) instead. Beside it is the maker's lozenge, a diamond with initials and a sign. A square maker's mark means silver plate.</p>\n      </div>\n      <h2 id=\"system\">The system of 1838</h2>\n      <p>French marks rest on a law of 1797, and the set still in use was introduced on May 10, 1838. From then on one punch showed both the standard and the assay office: the head of Minerva for silver. All gold and silver already on sale was re-marked for free, so French silver with only older marks was, by law, unmarked after 1838.</p>\n      <p>A full set of French marks on silver is two: the state's Minerva head (or a small-item mark), and the maker's lozenge. There is no date letter, so French marks date an item only to a period.</p>\n      <h2 id=\"minerva\">The Minerva head</h2>\n      <p>The goddess Minerva in a helmet, in profile, in a small frame with a figure: 1 for the first standard, 2 for the second. The figure does not tell Paris from the rest of France. Paris punches carry no office sign; punches from the provincial offices add a small sign, under the chin on the first standard and before the forehead on the second.</p>\n"
+  },
+  {
+   "cards": [
+    {
+     "id": "france-minerva-first-standard"
+    },
+    {
+     "id": "france-minerva-second-standard"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p>The first standard was 950 thousandths. Today's official table gives 925 for the Minerva with a 1, and French law has listed 925 and 800 as the silver standards since 1994. The year of the change from 950 to 925 is often given as 1973, but no law or museum record found here confirms it, so a first-standard Minerva means 950 or 925 depending on its date.</p>\n      <h2 id=\"all\">French marks at a glance</h2>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">Mark</th><th scope=\"col\">What it means</th><th scope=\"col\">How to tell it</th></tr></thead><tbody><tr><th scope=\"row\">Minerva head, figure 1</th><td>Silver, first standard: 950 at first; 925 today</td><td>An 8-sided frame (a rectangle with cut corners). The 1 is in front of the forehead.</td></tr><tr><th scope=\"row\">Minerva head, figure 2</th><td>Silver, second standard: 800</td><td>A barrel-shaped frame. The 2 is under the chin.</td></tr><tr><th scope=\"row\">Boar's head</th><td>Small silver items, Paris: at least 800</td><td>For items too small for the Minerva. Struck alone.</td></tr><tr><th scope=\"row\">Crab</th><td>Small silver items, outside Paris: at least 800</td><td>The office's sign between the claws.</td></tr><tr><th scope=\"row\">Swan in an oval</th><td>Silver from abroad or of unknown origin, from 1893</td><td>Struck on silver from countries without a treaty, and on unmarked silver sold at public auction or by the pawn office.</td></tr><tr><th scope=\"row\">Weevil</th><td>Imported gold and silver, from 1838</td><td>Put in an oval in 1864; the silver one in a rectangle from 1893.</td></tr><tr><th scope=\"row\">Head of a Greek physician</th><td>Gold, 1838 to 1919</td><td>Figures 1, 2 and 3 for 920, 840 and 750.</td></tr><tr><th scope=\"row\">Eagle's head</th><td>Gold: small Paris items 1838 to 1919; all French gold from 1919</td><td>18 karat (750) is the eagle's head with a 3, in a six-sided frame.</td></tr><tr><th scope=\"row\">Horse's head</th><td>Small gold items outside Paris, 1838 to 1919</td><td></td></tr><tr><th scope=\"row\">ET in a rectangle</th><td>Old or inherited items below the legal standard</td><td>Says only that the item is gold or silver; it promises no standard.</td></tr></tbody></table></div>\n      <p>When an item is part gold and part silver, and the second metal is more than 3% of its weight, the Paris eagle's head and boar's head are struck together in one oval.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "france-swan"
+    },
+    {
+     "id": "france-weevil"
+    },
+    {
+     "id": "france-et-mark"
+    },
+    {
+     "id": "france-mixed-boar-eagle"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"small\">The boar's head and the crab</h2>\n      <p>Small silver items, too small to take the Minerva head, were marked with a single small punch: a boar's head in Paris and a crab in the provincial offices. These marks promise only the second standard, 800. The sources agree on their start in 1838, but not on when they stopped: the often-quoted 1961 could not be confirmed, a Senate report of 1983 still names the crab, and today's table shows a Minerva without a frame for small silver. Chaffers printed both in 1896, engraved from the punches of 1838:</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "france-boar-head"
+    },
+    {
+     "id": "france-crab"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"lozenge\">The maker's lozenge</h2>\n      <p>The maker's mark has been a lozenge, a diamond standing on its point, since 1798. It holds the maker's initials and a sign of the maker's own choosing, such as a star, a key or a caduceus, which no other maker in the same district may use. The punch is registered by striking it on a copper plate at the assay office. An importer uses an oval instead.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "france-makers-lozenge"
+    },
+    {
+     "id": "france-plate-square-mark"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p>A perfectly square maker's mark means plated ware, not silver: the law required it of makers of plated goods, and a decree of 1860 extended it to electroplaters. Christofle's marks on silver plate are of this kind; see <a href=\"/marks/christofle-marks\">Christofle marks</a>.</p>\n      <h2 id=\"gold\">French gold, in brief</h2>\n      <p>From 1838 to 1919 French gold carried the head of a Greek physician with a figure for its standard, and small items an eagle's head (Paris) or a horse's head (elsewhere). A decree of June 1919 made the eagle's head the mark for all French gold. An eagle's head with a 3 is 18 karat; with a 1, 22 karat. For what the numbers mean, see <a href=\"/marks/gold-karat-marks\">gold karat marks</a>.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "france-gold-greek-physician"
+    },
+    {
+     "id": "france-gold-eagle-head"
+    },
+    {
+     "id": "france-gold-horse-head"
+    },
+    {
+     "id": "france-gold-owl"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"caveats\">Read these before you rely on a mark</h2>\n      <ul><li>Minerva heads are small and often worn: the figure 1 or 2 and the frame's shape matter more than the face.</li><li>The end of the boar's head and crab, and the year the first standard moved from 950 to 925, are not settled by the sources found here.</li><li>A mark says what the item claims. Old French marks have been copied; a specialist can tell a struck mark from a cast or added one.</li></ul>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both readings.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>W. Chaffers, <cite>Hall Marks on Gold and Silver Plate</cite>, with a history of French goldsmiths' work (London: Reeves and Turner, 1896), pp. 270–274 and plate 10, public domain (<a href=\"https://archive.org/details/hallmarksongolds00chaf_1\" rel=\"nofollow\">source</a>)</li><li>W. Chaffers, <cite>Hand Book to French Hall Marks on Gold and Silver Plate</cite> (1899), pp. 16–18, public domain (<a href=\"https://archive.org/details/handbooktofrenc00chafgoog\" rel=\"nofollow\">source</a>)</li><li>L. Carré, <cite>De la réglementation des ouvrages en métaux précieux</cite>, thesis, Rennes, 1922, pp. 184–190 (<a href=\"https://archive.org/details/IA41543513_0002\" rel=\"nofollow\">source</a>)</li><li>A. Touzet, <cite>Emplois industriels des métaux précieux</cite>, thesis, Bordeaux, 1910 (<a href=\"https://archive.org/details/IA41523714_0058\" rel=\"nofollow\">source</a>)</li><li>G. Capdevielle, <cite>Le régime de l'industrie des métaux précieux en France</cite>, thesis, Paris, 1928 (<a href=\"https://archive.org/details/IA41547905_0048\" rel=\"nofollow\">source</a>)</li><li>C. Arminjon, “Titres et garanties, métaux précieux”, <cite>Encyclopædia Universalis</cite> (<a href=\"https://www.universalis.fr/encyclopedie/titres-et-garanties-metaux-precieux/\" rel=\"nofollow\">source</a>)</li><li>French customs (DGDDI) and Monnaie de Paris, <cite>Garantie des métaux précieux</cite>, table of current marks, October 2009 (<a href=\"https://www.douane.gouv.fr/sites/default/files/uploads/files/2019-09/garantie-metaux-france.pdf\" rel=\"nofollow\">source</a>)</li><li>French customs, <cite>Garantie des métaux précieux à travers l'histoire</cite> (<a href=\"https://www.douane.gouv.fr/fiche/garantie-des-metaux-precieux-travers-lhistoire-de-1260-nos-jours\" rel=\"nofollow\">source</a>)</li><li>French customs, <cite>Règles de marque pour la garantie des métaux précieux</cite> (<a href=\"https://www.douane.gouv.fr/fiche/regles-de-marque-pour-la-garantie-des-metaux-precieux\" rel=\"nofollow\">source</a>)</li><li>French Senate, report no. 348 (1982–1983) by André Fosset on the guarantee of gold, silver and platinum (<a href=\"https://www.senat.fr/rap/1982-1983/i1982_1983_0348.pdf\" rel=\"nofollow\">source</a>)</li><li>French Senate, 1993–1994 bill texts rewriting articles 521–522 of the Code général des impôts (<a href=\"https://www.senat.fr/leg/1993-1994/ta1993_1994_0064.pdf\" rel=\"nofollow\">source</a>)</li><li>Paris Musées collection records (open access): <cite>La Moissonneuse</cite>, Petit Palais ODUT1827; <cite>Testimonial</cite>, OGAL583; <cite>Coffret</cite> by Falize, OGAL103; message case, Musée Cognacq-Jay J581 (<a href=\"https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/la-moissonneuse\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks on your silver. The Advisor reads the Minerva head, the small marks and the maker's lozenge, and keeps what they say on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What does the Minerva head mean on French silver?</summary>\n  <div><p>It is the French state mark for solid silver, used since 1838. With a 1 it is the first standard (950, now 925); with a 2, the second standard (800). Silver plate never carries it.</p></div>\n</details>\n<details>\n  <summary>What does a boar's head mean on silver?</summary>\n  <div><p>It is the Paris mark for small silver items, used from 1838 on things too small for the Minerva head. It means silver of at least 800 thousandths. Outside Paris the same job was done by a crab.</p></div>\n</details>\n<details>\n  <summary>Is French silver with a square mark solid silver?</summary>\n  <div><p>No. A square maker's mark is the French mark for plated goods, including electroplate from 1860. Solid silver has a diamond-shaped lozenge and a Minerva head or a small-item mark.</p></div>\n</details>\n<details>\n  <summary>How do I date French silver?</summary>\n  <div><p>Only roughly. French marks have no date letter. A Minerva head means 1838 or later; marks before it are older. The maker's lozenge can narrow the date once the maker is known, since makers' working years are recorded.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

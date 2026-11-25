@@ -1,0 +1,144 @@
+{
+ "path": "/marks/mexican-silver-marks",
+ "title": "Mexican Silver Marks: Taxco, 925 Mexico and the Eagle | Heirloom",
+ "description": "Read Mexican and Taxco silver marks: 925 and Sterling, Hecho en México, the eagle assay mark and its number, TS-24 style registration codes from 1980, and alpaca.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/mexican-silver-marks#article",
+   "headline": "Mexican silver marks: Taxco, 925 Mexico and the eagle",
+   "description": "Read Mexican and Taxco silver marks: 925 and Sterling, Hecho en México, the eagle assay mark and its number, TS-24 style registration codes from 1980, and alpaca.",
+   "url": "https://heirloomapp.io/marks/mexican-silver-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/mexican-silver-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Mexican silver marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/mexican-silver-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does 925 Mexico mean on silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It means sterling silver, at least 925 thousandths, made in Mexico. Mexican law has required the fineness and the country on silver since the 1950s, and from 1980 a maker's registration number beside them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the eagle mark on Mexican silver mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is an assay mark used on Mexican silver from about 1948, with a number inside. Museum records show a different number for each Taxco workshop, so the number most likely identifies the maker. Many guides date it 1948 to 1980."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does TM or TS with a number mean on Mexican silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A maker's government registration code, required on Mexican silver from 1980. The T is usually read as Taxco. It identifies the registered maker, not the year."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Mexican alpaca silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Alpaca is nickel silver: copper, nickel and zinc, with no silver in it. Mexican law has kept it separate from silver since 1952."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/mexican-silver-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Mexican silver marks",
+     "item": "https://heirloomapp.io/marks/mexican-silver-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Mexican silver marks</li></ol>\n      <h1>Mexican silver marks: Taxco, 925 Mexico and the eagle</h1>\n      <p class=\"guide__lede\">Mexican silver marks follow a run of laws from 1947 to today. Here is what each word, number and code means, from the laws themselves and museum records.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>925 or Sterling with México means Mexican sterling silver, at least 925 thousandths. An eagle with a number is the assay mark of about 1948 into the 1960s; museum records tie its number to the maker. From 1980 Mexican silver carries a registration code such as TS-24, which names the maker, not the year. Alpaca is not silver.</p>\n      </div>\n      <h2 id=\"law\">Mexico's marking laws, in order</h2>\n      <p>Mexican silver marks follow a string of laws published in the government's <cite>Diario Oficial</cite>. Each one added to what a maker had to stamp, which is why the marks help date an item:</p>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">Year</th><th scope=\"col\">What it required</th></tr></thead><tbody><tr><th scope=\"row\">1947</th><td>The first official silver standard: 925 minimum for jewelry and hollowware (900 allowed for flatware). Silver made to be sold had to be assayed and stamped with its fineness and the producer's number or registered mark.</td></tr><tr><th scope=\"row\">1952</th><td>A decree made marks compulsory on silver, silver plate and alpaca: the maker's name, the fineness (or the word plateado or alpaca), the workshop's town, and Hecho en México on Mexican work.</td></tr><tr><th scope=\"row\">1979–1980</th><td>Each producer registered with the government's standards office and received a number. From 1980 each item had to show its fineness, that registration number, and Hecho en México or México.</td></tr><tr><th scope=\"row\">1991</th><td>The 1952 decree was repealed.</td></tr><tr><th scope=\"row\">1994 on</th><td>The official standard NOM-033 (reissued 1995; replaced by NOM-033/1-SE-2020): 925, Sterling or Ag with the number, the producer's registration number or logo, and the country of origin.</td></tr></tbody></table></div>\n      <h2 id=\"words\">What the words mean</h2>\n      <ul class=\"rules\">\n        <li><strong>925 or Sterling:</strong> at least 925 thousandths silver, the legal minimum for Mexican silver jewelry and hollowware since 1947. The two words mean the same.</li>\n        <li><strong>A higher number, such as 940 or 980:</strong> some Taxco workshops worked above the minimum. Héctor Aguilar's marks read 940, and early Spratling silver 980.</li>\n        <li><strong>Hecho en México, México, Made in Mexico:</strong> the country of origin, required on Mexican work from 1952 and again from 1979–1980.</li>\n        <li><strong>Taxco:</strong> the town of the workshop. The 1952 decree asked for the workshop's location, and Taxco makers stamped it.</li>\n        <li><strong>Alpaca:</strong> not silver. Alpaca is nickel silver, an alloy of copper, nickel and zinc that looks like silver and contains none. The 1952 decree treated it as a class of its own.</li>\n      </ul>\n      <h2 id=\"eagle\">The eagle mark</h2>\n      <p>On Mexican silver of the 1950s and 1960s you often find a small stamp of an eagle with a number in it. Museums call it the eagle assay mark, and date silver with it from about 1948 into the 1960s. It fits the 1947 standard, which asked for each item to be assayed and stamped with the producer's number.</p>\n      <p><strong>What the number means is disputed.</strong> Museum records show a different number for each Taxco workshop: 9 on Héctor Aguilar's silver (Art Institute of Chicago), 16 on Margot de Taxco's (Museum of Fine Arts, Boston) and 30 on William Spratling's (Art Institute of Chicago). That points to a number for the maker. Some guides instead read low numbers as a city, such as 3 for Taxco; no official or museum source found for this page supports that reading.</p>\n      <p>The years usually given for the eagle, 1948 to 1980, are not stated in any official text found for this page. What is certain is the frame around them: the duty to stamp a producer's number dates from 1947, and the registration numbers of 1979–1980 replaced the old system. Morrill and Berk's <cite>Mexican Silver</cite> (1994) dates the eagle stamp about 1948 to about 1970; the eagle below, with Margot de Taxco's number 16, is from their book. The other cards describe their marks in words.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "mexico-eagle-assay-mark"
+    },
+    {
+     "id": "mexico-hecho-en-mexico"
+    },
+    {
+     "id": "mexico-registration-code"
+    },
+    {
+     "id": "mexico-alpaca"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"codes\">Letter-and-number codes, from 1980</h2>\n      <p>From 1980 the law required the producer's government registration number on Mexican silver, and the current standard still does. On Taxco silver these appear as codes of two letters and a number, such as TS-24, often beside 925 and México. Collectors' guides read the first letter as the city (T for Taxco) and the second as the maker's surname; that reading is widely repeated, but no official or museum source found here explains how the codes were built. The code identifies a registered maker, not a year.</p>\n      <h2 id=\"taxco\">Taxco and its makers</h2>\n      <p>Taxco's silver revival began with William Spratling (1900–1967), an American architect who settled there in 1929 and began making silver in 1931. Many of his craftsmen later opened their own workshops. A few makers' marks are recorded by more than one museum:</p>\n      <ul class=\"rules\">\n        <li><strong>William Spratling:</strong> a conjoined WS monogram, often in a round mark reading SPRATLING and MADE IN MEXICO, with TAXCO and the fineness. Museums note that his marks changed slightly over time, which helps date his silver.</li>\n        <li><strong>Héctor Aguilar (Taller Borda, from 1939):</strong> a conjoined HA, with TAXCO and 940.</li>\n        <li><strong>Los Castillo:</strong> founded by the Castillo brothers, who trained with Spratling; LACMA dates it to 1939, the Museum of Fine Arts, Boston to 1942.</li>\n        <li><strong>Margot de Taxco:</strong> the workshop of Margot van Voorhies Carr, from 1946, known for enamel; marked MARGOT DE TAXCO with a model number.</li>\n      </ul>\n      <p>These are artists' and studio marks: they are shown here only as photographs, never redrawn. Aguilar's HA is from Morrill and Berk's book; for the others no usable photograph has been found yet.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "spratling-ws-mark"
+    },
+    {
+     "id": "aguilar-ha-mark"
+    },
+    {
+     "id": "margot-de-taxco-mark"
+    },
+    {
+     "id": "los-castillo-mark"
+    },
+    {
+     "id": "pineda-antonio-crown-mark"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"caveats\">Read these before you rely on a mark</h2>\n      <ul><li>Mexican marks are widely copied, and Spratling's most of all. A mark gives what the item claims; a specialist can tell more.</li><li>The eagle's dates and the meaning of its number, and how the letter codes were built, rest on collectors' guides rather than official sources; the page says so where it matters.</li><li>925 and México stamped on an item say it was sold as Mexican sterling. Only a test says what the metal is.</li></ul>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both readings.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li><cite>Diario Oficial de la Federación</cite>, August 16, 1947: Norma Oficial de Calidad para objetos de plata labrada, D.G.N. B-23-1947, pp. 6–8 (<a href=\"https://www.dof.gob.mx/index_111.php?year=1947&amp;month=08&amp;day=16\" rel=\"nofollow\">source</a>)</li><li><cite>Diario Oficial de la Federación</cite>, November 29, 1952: decree making marks compulsory on silver, silver-plated and alpaca articles, p. 2 (<a href=\"https://www.dof.gob.mx/index_111.php?year=1952&amp;month=11&amp;day=29\" rel=\"nofollow\">source</a>)</li><li><cite>Diario Oficial de la Federación</cite>, May 7, 1979, July 17, 1979 and December 17, 1980: the Acuerdos and Instructivo on marking gold, silver, platinum and palladium and registering producers (<a href=\"https://www.dof.gob.mx/index_111.php?year=1980&amp;month=12&amp;day=17\" rel=\"nofollow\">source</a>)</li><li><cite>Diario Oficial de la Federación</cite>, September 17, 1991: decree repealing the compulsory-marks decrees (<a href=\"https://www.dof.gob.mx/index_111.php?year=1991&amp;month=09&amp;day=17\" rel=\"nofollow\">source</a>)</li><li>NOM-033-SCFI-1994 (July 12, 1994; reissued December 21, 1995), as summarized in the theses below</li><li>NOM-033/1-SE-2020, <cite>Artículos de oro, plata, platino y paladio</cite>, Diario Oficial de la Federación (<a href=\"https://dof.gob.mx/nota_detalle_popup.php?codigo=5638887\" rel=\"nofollow\">source</a>)</li><li>Secretaría de Economía, form SE-FO-04-013: application for a contraste registration number (2018) (<a href=\"https://www.gob.mx/cms/uploads/attachment/file/425880/SE-FO-04-013_17102018_editable.pdf\" rel=\"nofollow\">source</a>)</li><li>C. A. Ceballos de la Mora, <cite>Irregularidad jurídica en la comercialización de metales nobles</cite>, law thesis, Universidad La Salle, 1996, pp. 112–145 (<a href=\"https://ru.dgb.unam.mx/bitstream/20.500.14330/TES01000236559/3/0236559.pdf\" rel=\"nofollow\">source</a>)</li><li>A. C. Hurtado Alcaraz, master's thesis on quality certification in Taxco silver, UNAM, 2018 (<a href=\"https://ru.dgb.unam.mx/bitstream/20.500.14330/TES01000769259/3/0769259.pdf\" rel=\"nofollow\">source</a>)</li><li>S. A. Martínez Hernández, <cite>Caracterización geoeconómica de la actividad artesanal platera en Taxco de Alarcón</cite>, UNAM thesis, 2015, pp. 126–139 (<a href=\"https://ru.dgb.unam.mx/bitstream/20.500.14330/TES01000736198/3/0736198.pdf\" rel=\"nofollow\">source</a>)</li><li><cite>Revista 925 Artes y Diseño</cite> (UNAM, Taxco), no. 29, 2021, including P. C. Morrill on Margot de Taxco (<a href=\"https://revista925taxco.fad.unam.mx/pdf/925artesydiseno_08_29.pdf\" rel=\"nofollow\">source</a>)</li><li>Museum of Fine Arts, Boston: records for Margot de Taxco (2014.1785, 2018.4081), William Spratling (2000.793.1, 2016.182, 2016.545, 2016.177) and Héctor Aguilar (candelabra), marks fields (<a href=\"https://collections.mfa.org/objects/605869\" rel=\"nofollow\">source</a>)</li><li>Art Institute of Chicago: William Spratling (274261, 274262) and Héctor Aguilar (274263–274265), inscriptions fields (<a href=\"https://www.artic.edu/artworks/274263\" rel=\"nofollow\">source</a>)</li><li>Los Angeles County Museum of Art: Spratling, Los Castillo, Margot de Taxco and Aguilar records, curatorial notes; and <cite>Modern Mexican Silver</cite>, LACMA Unframed, 2013 (<a href=\"https://unframed.lacma.org/node/1130\" rel=\"nofollow\">source</a>)</li><li>Newark Museum of Art: Antonio Pineda bracelet, 2017.67.25 (<a href=\"https://collections.newarkmuseumart.org/objects/222307/bracelet\" rel=\"nofollow\">source</a>)</li><li>P. C. Morrill and C. A. Berk, <cite>Mexican Silver: 20th Century Handwrought Jewelry &amp; Metalwork</cite> (Atglen: Schiffer, 1994), glossary and pls. VII-27b, XVI-8b</li><li>Real Academia Española, <cite>Diccionario de la lengua española</cite>, “alpaca” (<a href=\"https://dle.rae.es/alpaca\" rel=\"nofollow\">source</a>)</li><li><cite>Encyclopaedia Britannica</cite>, “nickel silver” (<a href=\"https://www.britannica.com/technology/nickel-silver\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks on your Mexican silver. The Advisor reads the fineness, the eagle, any registration code and the maker's mark, and keeps what they say on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What does 925 Mexico mean on silver?</summary>\n  <div><p>It means sterling silver, at least 925 thousandths, made in Mexico. Mexican law has required the fineness and the country on silver since the 1950s, and from 1980 a maker's registration number beside them.</p></div>\n</details>\n<details>\n  <summary>What does the eagle mark on Mexican silver mean?</summary>\n  <div><p>It is an assay mark used on Mexican silver from about 1948, with a number inside. Museum records show a different number for each Taxco workshop, so the number most likely identifies the maker. Many guides date it 1948 to 1980.</p></div>\n</details>\n<details>\n  <summary>What does TM or TS with a number mean on Mexican silver?</summary>\n  <div><p>A maker's government registration code, required on Mexican silver from 1980. The T is usually read as Taxco. It identifies the registered maker, not the year.</p></div>\n</details>\n<details>\n  <summary>Is Mexican alpaca silver?</summary>\n  <div><p>No. Alpaca is nickel silver: copper, nickel and zinc, with no silver in it. Mexican law has kept it separate from silver since 1952.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

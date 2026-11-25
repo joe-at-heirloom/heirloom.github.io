@@ -1,0 +1,139 @@
+{
+ "path": "/marks/1847-rogers-bros",
+ "title": "1847 Rogers Bros. Marks: Is It Silver, and How Old Is It? | Heirloom",
+ "description": "What the 1847 Rogers Bros. mark means (1847 is not the date it was made), who made it, what A1, XII and TRIPLE mean, how to tell plate from sterling, and how to date it.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/1847-rogers-bros#article",
+   "headline": "1847 Rogers Bros. marks",
+   "description": "What the 1847 Rogers Bros. mark means (1847 is not the date it was made), who made it, what A1, XII and TRIPLE mean, how to tell plate from sterling, and how to date it.",
+   "url": "https://heirloomapp.io/marks/1847-rogers-bros",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/1847-rogers-bros",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Organization",
+    "name": "Meriden Britannia Co. (1847 Rogers Bros.)"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/1847-rogers-bros#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does 1847 mean my spoon was made in 1847?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. 1847 is the year the business counted as its founding, and it stayed in the mark for about a century. The mark itself was first used around 1862, and the maker said in 1906 that the number was a trademark, not a date. Date the item from its pattern instead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is 1847 Rogers Bros. real silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is silver plate: a coat of pure silver over a nickel-silver base. Only items stamped STERLING beside the name, made by International Silver from 1940, are solid silver."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do A1, XII and TRIPLE mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "They are grades of plate. A1 is standard first-quality plate, XII is plate with extra silver on the parts that wear, and TRIPLE is the heaviest regular grade."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who made 1847 Rogers Bros. silverware?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Meriden Britannia Co. of Meriden, Connecticut, from 1862, and the International Silver Co. from 1898. The Rogers brothers of Hartford started the business and supervised the work in Meriden for some years after 1862."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is 1847 Rogers Bros. the same as Wm. Rogers or Wm. A. Rogers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Wm. Rogers marks come from William Rogers's later Hartford firm and from a Wallingford licensee; Wm. A. Rogers was an unrelated New York firm. See the Wm. Rogers page."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/1847-rogers-bros#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "1847 Rogers Bros.",
+     "item": "https://heirloomapp.io/marks/1847-rogers-bros"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">1847 Rogers Bros.</li></ol>\n      <h1>1847 Rogers Bros. marks</h1>\n      <p class=\"guide__lede\">The most common name on old American silverware. Here is who made it, what each part of the mark means, and why 1847 isn't the year your spoon was made.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>1847 Rogers Bros. is silver-plated flatware made by the Meriden Britannia Co. of Meriden, Connecticut, from about 1862, and by the International Silver Co. from 1898. 1847 is the year the Rogers brothers' business counted from, not the date of manufacture. Unless the mark also says STERLING, the item is plate; date it from its pattern.</p>\n      </div>\n      <h2 id=\"maker\">Who made it</h2>\n      <p>Asa H., Simeon S. and William Rogers were silversmiths in Hartford, Connecticut, who began making silver-plated spoons and forks there in the 1840s. The sources give different starting years: one 1901 county history gives 1844, 1846 and 1847 in three different family sketches, and a 1913 history says &ldquo;about 1847&rdquo;. The company that inherited their name settled on 1847 and put it in the mark.</p>\n      <p>In 1862 the brothers closed their Hartford works and the Meriden Britannia Co. of Meriden, Connecticut, took over their tools and dies, with the brothers supervising the work on a royalty. Meriden Britannia made 1847 Rogers Bros. flatware from then on, and in 1898 it was one of the founding companies of the International Silver Co., which kept the brand going well into the 20th century (it registered the name for stainless steel flatware in 1953). The company's own paper said in 1906 that the brothers had discovered electroplating in 1847; that is the maker's advertising, and no independent history says the same.</p>\n      <h2 id=\"marks\">The marks, and what each tells you</h2>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "plate-1847-rogers-bros"
+    },
+    {
+     "id": "plate-meriden-britannia-scale"
+    },
+    {
+     "id": "plate-grade-a1"
+    },
+    {
+     "id": "plate-grade-xii"
+    },
+    {
+     "id": "plate-grade-triple"
+    },
+    {
+     "id": "plate-rogers-bros-hollowware"
+    },
+    {
+     "id": "plate-1847-rogers-bros-sterling"
+    }
+   ]
+  },
+  {
+   "html": "\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">The mark</th><th scope=\"col\">Who used it, and when</th><th scope=\"col\">What it tells you</th></tr></thead><tbody><tr><th scope=\"row\">1847 ROGERS BROS.</th><td>Meriden Britannia Co., Meriden, Connecticut, from about 1862; International Silver Co. from 1898</td><td>The flatware brand. 1847 is the year the business counted from, not the year the item was made.</td></tr><tr><th scope=\"row\">ROGERS BROS. (no 1847)</th><td>Meriden Britannia Co. and International Silver Co.</td><td>The same company's mark on hollowware: tea sets, trays and dishes.</td></tr><tr><th scope=\"row\">A1 after the name</th><td>On 1847 Rogers Bros. flatware from at least the 1880s</td><td>Standard first-quality plate, sold as &ldquo;extra plate&rdquo;.</td></tr><tr><th scope=\"row\">XS TRIPLE</th><td>1847 Rogers Bros. flatware to 1917</td><td>The grade ordinarily sold, according to an International Silver pamphlet of the early 1900s.</td></tr><tr><th scope=\"row\">XII, or XII TRIPLE</th><td>1847 Rogers Bros. flatware from the 1880s to 1917</td><td>&ldquo;Sectional&rdquo; plate: extra silver laid on the parts that wear (the back of the bowl, the heel, the tips) before the whole item was plated.</td></tr><tr><th scope=\"row\">TRIPLE</th><td>Sold beside A1 in the period catalogs</td><td>The heaviest regular grade of plate in the catalogs of the 1880s and 1890s.</td></tr><tr><th scope=\"row\">1847 ROGERS BROS. STERLING, or 1847 STERLING</th><td>International Silver Co., from May 15, 1940</td><td>Sterling silver, not plate. Only an item stamped STERLING is solid silver.</td></tr></tbody></table></div>\n      <p class=\"note\">After 1917, 1847 Rogers Bros. was made in one quality only and the grade marks were dropped, so a grade mark on this line means 1917 or earlier. The marks are stamped on the back of the handle, near where it meets the bowl or tines. The trademark registration claims the 1847 ROGERS BROS. mark was first used in 1862, fifteen years after the date it carries.</p>\n      <h2 id=\"plate-or-sterling\">Is it plate or sterling?</h2>\n      <p>Almost always plate: the period catalogs and the 1896 trademark directory list 1847 Rogers Bros. as plated ware, silver over a nickel-silver base. From 1940 International Silver also sold sterling under the name, and those items say STERLING beside it.</p>\n      <p>Read the whole stamp first. American sterling is marked STERLING. Plate is marked with the maker's name and often a grade word or number, such as A1, XII, XIV, TRIPLE or QUADRUPLE PLATE, and a grade mark appears only on plate.</p>\n      <p>Then look at the places that wear. Plate is a thin coat of silver over a base metal, usually nickel silver, so on a well-used spoon the tip of the bowl, the back of the bowl and the ends of fork tines turn yellowish or gray where the silver has worn through to the metal underneath.</p>\n      <h2 id=\"dating\">How to date 1847 Rogers Bros.</h2>\n      <p>American plate makers didn't stamp a year. A number in the mark, such as 1847 or 1865, is the year a firm said it was founded and stayed on the ware for decades. To date an item, name its pattern (the design of the handle) and find when that pattern was introduced. A patent date stamped on a handle (PAT. followed by a date) is the earliest the design can be, not the year the item was made, and makers kept producing a popular pattern for decades.</p>\n      <ul>\n        <li><strong>Vintage</strong>, the grape-and-vine handle, is US design patent D37,059 of August 2, 1904, granted to Samuel Stohr for International Silver. The maker advertised it as new and patented in 1906.</li>\n        <li><strong>Charter Oak</strong> was introduced in 1907 according to the maker's own paper of that year, which calls it the pattern for the business's 60th anniversary. Collectors' lists give 1906.</li>\n        <li><strong>Before 1890</strong>: a jeweler's catalog of 1889 already sold 1847 Rogers Bros. flatware in the Arcadian, Assyrian, Crown, Lorne, Newport, Laurel, Embossed, Florentine, Daisy and Fairie patterns, so an item in one of those was made in 1889 or earlier, or is a later reissue.</li>\n      </ul>\n      <p class=\"note\">Introduction years for the later patterns (First Love, Adoration, Eternally Yours, Remembrance, Heritage and others) are given on collectors' sites, but we haven't found two independent published sources for any of them, so they aren't listed here.</p>\n      <h2 id=\"other-rogers\">Not every Rogers is 1847 Rogers Bros.</h2>\n      <p>The brothers licensed their name, and other firms used the surname on their own: Rogers &amp; Bro. of Waterbury (a star before the name), C. Rogers &amp; Bros. of Meriden (a different family), Wm. Rogers and Wm. A. Rogers. Courts stopped several imitators in the 1880s and 1890s. <a href=\"/marks/wm-rogers\">The Wm. Rogers page</a> sets out which firm used which Rogers mark.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is from at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li><em>Commemorative Biographical Record of Hartford County, Connecticut</em>, J. H. Beers &amp; Co., 1901, pp. 248 and 880 (<a href=\"https://archive.org/details/commemorativebio01beer/page/n677\" rel=\"nofollow\">source</a>)</li><li>George Munson Curtis, <em>Early Silver of Connecticut and its Makers</em>, International Silver Co., 1913, p. 109 (<a href=\"https://archive.org/details/earlysilverofcon00curt/page/n151\" rel=\"nofollow\">source</a>)</li><li><em>150 Years of Meriden</em>, Meriden sesquicentennial committee, 1956 (<a href=\"https://archive.org/details/150yearsofmeride00meri/page/n121\" rel=\"nofollow\">source</a>)</li><li>Gillespie and Curtis, <em>A Century of Meriden</em>, 1906, part II, pp. 35–48 (<a href=\"https://archive.org/details/bub_gb_-zQWAAAAYAAJ/page/n1093\" rel=\"nofollow\">source</a>)</li><li>Dorothy T. Rainwater, with Martin and Colette Fuller, <em>Encyclopedia of American Silver Manufacturers</em>, 5th ed., Schiffer, 2004</li><li><em>The Silver Standard</em>, Meriden Britannia Co. (International Silver Co., successor), 1906–07: the maker's own paper, used for what the company said of itself (<a href=\"https://archive.org/details/silverstandardpe00meri\" rel=\"nofollow\">source</a>)</li><li><em>Trade-Marks of the Jewelry and Kindred Trades</em>, Jewelers' Circular Publishing Co., 1896 (<a href=\"https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n85\" rel=\"nofollow\">source</a>)</li><li><em>13th Annual Illustrated Catalog</em>, The Busiest House in America, 1889, pp. 115–135 (<a href=\"https://archive.org/details/13thannualillust00busi/page/n121\" rel=\"nofollow\">source</a>)</li><li><em>Price List of the Celebrated Rogers &amp; Bro. A-1 Electro Silver Plated Spoons, Forks, Knives</em>, Rogers &amp; Brother, 1892 (<a href=\"https://archive.org/details/pricelistofceleb00roge/page/n10\" rel=\"nofollow\">source</a>)</li><li><em>Sears, Roebuck &amp; Co. Catalogue No. 104</em>, spring 1897 (<a href=\"https://archive.org/details/sears-roebuck-catalog-104-spring-1897\" rel=\"nofollow\">source</a>)</li><li><em>William Rogers Mfg. Co. v. Rogers &amp; Spurr Mfg. Co.</em>, 11 F. 495 (C.C.D. Mass. 1882) (<a href=\"https://law.resource.org/pub/us/case/reporter/F/0011/0011.f.0495.pdf\" rel=\"nofollow\">source</a>)</li><li>US trademark registration 329758: 1847 ROGERS BROS, silver-plated flatware, first use claimed 1862 (<a href=\"https://tsdr.uspto.gov/#caseNumber=329758&amp;caseType=US_REGISTRATION_NO&amp;searchType=statusSearch\" rel=\"nofollow\">source</a>)</li><li>US trademark registration 385300: 1847 ROGERS BROS. STERLING, first use May 15, 1940 (<a href=\"https://tsdr.uspto.gov/#caseNumber=385300&amp;caseType=US_REGISTRATION_NO&amp;searchType=statusSearch\" rel=\"nofollow\">source</a>)</li><li>US trademark registration 734880: 1847 ROGERS BROS, stainless steel flatware, first use 1953 (<a href=\"https://tsdr.uspto.gov/#caseNumber=734880&amp;caseType=US_REGISTRATION_NO&amp;searchType=statusSearch\" rel=\"nofollow\">source</a>)</li><li>US design patent D37,059, Samuel Stohr for International Silver Co., granted August 2, 1904 (the Vintage handle) (<a href=\"https://patents.google.com/patent/USD37059S/en\" rel=\"nofollow\">source</a>)</li><li>Cooper Hewitt, Smithsonian Design Museum: Assyrian Head pattern fish server, Meriden Britannia Co., 1885–86, marks recorded by the museum (<a href=\"https://collection.cooperhewitt.org/view/objects/asitem/id/202018\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the back of the handle. The Advisor reads the mark and the pattern, keeps what it read on the item's record with the photo, and says plainly that 1847 is a brand date, not the year it was made.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>Does 1847 mean my spoon was made in 1847?</summary>\n  <div><p>No. 1847 is the year the business counted as its founding, and it stayed in the mark for about a century. The mark itself was first used around 1862, and the maker said in 1906 that the number was a trademark, not a date. Date the item from its pattern instead.</p></div>\n</details>\n<details>\n  <summary>Is 1847 Rogers Bros. real silver?</summary>\n  <div><p>It is silver plate: a coat of pure silver over a nickel-silver base. Only items stamped STERLING beside the name, made by International Silver from 1940, are solid silver.</p></div>\n</details>\n<details>\n  <summary>What do A1, XII and TRIPLE mean?</summary>\n  <div><p>They are grades of plate. A1 is standard first-quality plate, XII is plate with extra silver on the parts that wear, and TRIPLE is the heaviest regular grade.</p></div>\n</details>\n<details>\n  <summary>Who made 1847 Rogers Bros. silverware?</summary>\n  <div><p>The Meriden Britannia Co. of Meriden, Connecticut, from 1862, and the International Silver Co. from 1898. The Rogers brothers of Hartford started the business and supervised the work in Meriden for some years after 1862.</p></div>\n</details>\n<details>\n  <summary>Is 1847 Rogers Bros. the same as Wm. Rogers or Wm. A. Rogers?</summary>\n  <div><p>No. Wm. Rogers marks come from William Rogers's later Hartford firm and from a Wallingford licensee; Wm. A. Rogers was an unrelated New York firm. See the <a href=\"/marks/wm-rogers\">Wm. Rogers page</a>.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

@@ -1,0 +1,108 @@
+{
+ "path": "/marks/german-silver-marks",
+ "title": "German Silver Marks: The Crescent and Crown with 800 | Heirloom",
+ "description": "The German crescent moon and crown mark on silver from 1888: what the 800 or 925 beside it means, who struck it, and why much German silver has no such mark.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/german-silver-marks#article",
+   "headline": "German silver marks: the crescent and crown",
+   "description": "The German crescent moon and crown mark on silver from 1888: what the 800 or 925 beside it means, who struck it, and why much German silver has no such mark.",
+   "url": "https://heirloomapp.io/marks/german-silver-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/german-silver-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "German silver marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/german-silver-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does a crescent moon and crown mean on silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is the German mark for silver of a stated fineness, used from 1888: the crescent and the imperial crown, beside a number such as 800 or 925 and the maker's mark. It means German silver of at least 800 thousandths, stamped by the maker."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is 800 German silver real silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. 800 means 80% silver. With the crescent and crown beside it, the maker was stating at least 800 thousandths. “German silver” with no number is nickel silver and has no silver in it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How old is silver with the crescent and crown?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It was made on or after January 1, 1888, when the mark came into use. The mark alone doesn't narrow it further; the maker's mark and the style of the item do."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/german-silver-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "German silver marks",
+     "item": "https://heirloomapp.io/marks/german-silver-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">German silver marks</li></ol>\n      <h1>German silver marks: the crescent and crown</h1>\n      <p class=\"guide__lede\">From 1888, German silver that stated its fineness carried a crescent moon and a crown beside the number. Here is what the mark tells you, from the law that created it.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>A crescent moon beside a crown, with a number such as 800 or 925, is the German mark for silver, used from January 1, 1888 under a law of 1884. The number is the fineness in thousandths and was never under 800. The maker stamped it, not an assay office, and it was required only on silver that stated its fineness.</p>\n      </div>\n      <h2 id=\"mark\">The crescent and crown</h2>\n      <p>A German law of July 16, 1884, in force from January 1, 1888, set one stamp for the whole German Empire. A notice of January 7, 1886 fixed its form: the imperial crown beside a crescent moon for silver, or the crown inside a sun for gold, together with the fineness in thousandths and the name or registered trademark of the firm that had the item stamped.</p>\n"
+  },
+  {
+   "cards": [
+    {
+     "id": "german-crescent-and-crown"
+    },
+    {
+     "id": "germany-gold-crown-in-sun"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"read\">What it tells you, and what it doesn't</h2>\n      <ul class=\"rules\">\n        <li><strong>800 or more:</strong> if a fineness was stated on silver, it could not be under 800 thousandths (on gold, 585). The law allowed 8 thousandths short on silver. 800 is the commonest; 835 and 925 also occur.</li>\n        <li><strong>Made in 1888 or later:</strong> the mark was not in use before January 1, 1888. Before that, German silver carried its town's mark and its maker's mark under each state's own rules.</li>\n        <li><strong>Marked by the maker, not an assay office:</strong> the law named no office to test or stamp silver. The firm stamped it and answered for it, and firms made their own punches, so the crescent and crown vary a little in shape.</li>\n        <li><strong>Optional:</strong> the law let silver be made at any fineness and sold unmarked. The stamp was required only on silver that stated its fineness. So German silver without the mark is common.</li>\n        <li><strong>Not on jewelry:</strong> jewelry could be stamped with its fineness in thousandths, but not with the crescent and crown. The mark means a silver item for the table or home: tableware, a cup, a box, a watch case.</li>\n        <li><strong>Still law:</strong> the 1884 law and the 1886 notice are still on Germany's statute book, last amended in 2015.</li>\n      </ul>\n      <p>“German silver” on its own, without a number, is a different thing: nickel silver, a copper, nickel and zinc alloy with no silver in it. It never carries the crescent and crown.</p>\n      <h2 id=\"caveats\">Read these before you rely on a mark</h2>\n      <ul><li>The mark was struck by the firm that sold the silver, not tested by an assay office, so the number is the maker's claim.</li><li>Many common sources say the mark was compulsory from 1888. The law's text says it was required only on silver marked with its fineness.</li><li>The sources found do not say when German firms stopped using the mark in practice.</li></ul>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both readings.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Gesetz über den Feingehalt der Gold- und Silberwaaren, July 16, 1884, <cite>Reichsgesetzblatt</cite> 1884 no. 21, pp. 120–122, transcribed on German Wikisource (<a href=\"https://de.wikisource.org/wiki/Gesetz_%C3%BCber_den_Feingehalt_der_Gold-_und_Silberwaaren\" rel=\"nofollow\">source</a>)</li><li>The same law as now in force (FeinGehG), Federal Ministry of Justice, gesetze-im-internet.de (<a href=\"https://www.gesetze-im-internet.de/feingehg/BJNR001200884.html\" rel=\"nofollow\">source</a>)</li><li>Bekanntmachung on the form of the fineness stamp, January 7, 1886 (FeinGehStempG), gesetze-im-internet.de (<a href=\"https://www.gesetze-im-internet.de/feingehstempg/BJNR000010886.html\" rel=\"nofollow\">source</a>)</li><li>M. Rosenberg, <cite>Der Goldschmiede Merkzeichen</cite>, 3rd ed., vol. 1 (Frankfurt, 1922), pp. 3–5, public domain (<a href=\"https://archive.org/details/dergoldschmiede00rosegoog\" rel=\"nofollow\">source</a>)</li><li><cite>Meyers Konversations-Lexikon</cite>, 4th ed., vol. 6 (1887), p. 104, “Feingehalt” (<a href=\"https://de.wikisource.org/wiki/MKL1888:Feingehalt\" rel=\"nofollow\">source</a>)</li><li><cite>Brockhaus and Efron Encyclopedic Dictionary</cite>, vol. 25 (St Petersburg, 1898), “Proba”, its note on Germany (<a href=\"https://ru.wikisource.org/wiki/%D0%AD%D0%A1%D0%91%D0%95/%D0%9F%D1%80%D0%BE%D0%B1%D0%B0_%D0%B8_%D0%BF%D1%80%D0%BE%D0%B1%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B4%D0%B5%D0%BB%D0%BE\" rel=\"nofollow\">source</a>)</li><li>Victoria and Albert Museum, cup designed by Peter Behrens, about 1900, O136991 (crescent moon and crown under the base) (<a href=\"https://collections.vam.ac.uk/item/O136991/\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks on your silver. The Advisor reads the crescent, the crown, the number and the maker's mark, and keeps what they say on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What does a crescent moon and crown mean on silver?</summary>\n  <div><p>It is the German mark for silver of a stated fineness, used from 1888: the crescent and the imperial crown, beside a number such as 800 or 925 and the maker's mark. It means German silver of at least 800 thousandths, stamped by the maker.</p></div>\n</details>\n<details>\n  <summary>Is 800 German silver real silver?</summary>\n  <div><p>Yes. 800 means 80% silver. With the crescent and crown beside it, the maker was stating at least 800 thousandths. “German silver” with no number is nickel silver and has no silver in it.</p></div>\n</details>\n<details>\n  <summary>How old is silver with the crescent and crown?</summary>\n  <div><p>It was made on or after January 1, 1888, when the mark came into use. The mark alone doesn't narrow it further; the maker's mark and the style of the item do.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

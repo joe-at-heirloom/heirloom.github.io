@@ -1,0 +1,132 @@
+{
+ "path": "/marks/christofle-marks",
+ "title": "Christofle Marks: Silver Plate, Sterling and Dates | Heirloom",
+ "description": "How to read Christofle marks: the square maker's mark of silver plate, CC and OC, the name stamps and Gallia, and the Minerva head on Christofle solid silver.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/christofle-marks#article",
+   "headline": "Christofle marks",
+   "description": "How to read Christofle marks: the square maker's mark of silver plate, CC and OC, the name stamps and Gallia, and the Minerva head on Christofle solid silver.",
+   "url": "https://heirloomapp.io/marks/christofle-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/christofle-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Christofle marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/christofle-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Christofle real silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Most Christofle is silver plate: silver laid by electrolysis on a base metal, marked with a square maker's mark and the name. Christofle solid silver also carries the French Minerva head. If there is no Minerva head, it is plate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do the letters CC and OC mean on Christofle?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "According to Christofle, CC (Charles Christofle) appears in its maker's mark until 1935, and OC (Orfèvrerie Christofle) from then on. That gives a rough date: OC means 1935 or later."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is Gallia?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A line of silver plate made by Christofle from the end of the 19th century, marked GALLIA, with a cockerel in later marks, according to the company."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the number on old Christofle mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On early Christofle plate, the punch gave in figures the grams of silver deposited, on each item or on each dozen spoons and forks, as the 1851 exhibition jury reported. On later plate the number may be something else, such as a model number."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/christofle-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Christofle marks",
+     "item": "https://heirloomapp.io/marks/christofle-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Christofle marks</li></ol>\n      <h1>Christofle marks</h1>\n      <p class=\"guide__lede\">Christofle made silver plate from 1842 and solid silver beside it. Its marks tell the two apart, and roughly date them.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>Most Christofle is silver plate, marked with a square maker's mark and the name CHRISTOFLE; solid silver also carries the French Minerva head. Christofle says its maker's mark shows a balance with CC until 1935 and OC after, and that a knight with OC marks the quality of plate from 1935.</p>\n      </div>\n      <h2 id=\"history\">The firm</h2>\n      <p>Christofle dates itself to 1830. Charles Christofle (1805–1863) had become a partner in his brother-in-law's Paris jewelry firm in 1825 and ran it alone from 1831. From 1842 he bought the French patents for electroplating with silver and gold, first Henri de Ruolz's and then Elkington's, which came earlier, and built the business on silver plate: a thin coat of silver laid by electrolysis on a base metal. The firm also made solid silver, and its large works were at Saint-Denis, north of Paris.</p>\n      <h2 id=\"plate\">Christofle silver plate</h2>\n      <p>Most Christofle is silver plate. Under French law, makers of plated goods had to strike a <strong>square</strong> maker's mark, not the diamond-shaped lozenge of solid silver; a decree of 1860 extended this to electroplate. So Christofle plate has a square maker's mark, the name, and no Minerva head.</p>\n      <p>Christofle also promised the weight of silver it put on. In his note to the jury of the 1849 exhibition, Charles Christofle wrote that the firm stood behind the amount of silver deposited, with its mark and name struck on all its wares, and the 1851 jury reported that his punch gave in figures the grams of silver on each item, or on each dozen spoons and forks. By 1910, a legal writer noted, electroplaters in general no longer stated the weight, so a number on later Christofle should not be read as grams.</p>\n      <h3>What Christofle says its marks show</h3>\n      <p>The details below come from Christofle's own guide and history. No independent source confirming them was found, so take them as the company's account:</p>\n      <ul class=\"rules\">\n        <li><strong>The maker's mark:</strong> a balance (a pair of scales), a bee, stars, laurel branches and two letters: CC for Charles Christofle, then OC for Orfèvrerie Christofle from 1935.</li>\n        <li><strong>The quality mark, from 1935:</strong> a chess knight with OC, for the thickness of the silver or gold plate; from 1983 with a Roman numeral, I or II, for first or second quality of plate.</li>\n        <li><strong>Name stamps:</strong> CHRISTOFLE in a rectangle, plain or in script, CHRISTOFLE FRANCE, or GALLIA.</li>\n        <li><strong>Gallia:</strong> a line of plate Christofle created at the end of the 19th century, marked with a cockerel over the word GALLIA.</li>\n      </ul>\n      <p>No open-license photograph of these marks was found, so the cards below describe them in words. Being pictorial trademarks, they will be shown only as photographs:</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "christofle-cc-bee-maker-mark"
+    },
+    {
+     "id": "christofle-oc-maker-mark"
+    },
+    {
+     "id": "christofle-knight-quality-mark"
+    },
+    {
+     "id": "gallia-cockerel"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"silver\">Christofle solid silver</h2>\n      <p>Solid silver by Christofle carries the French state mark, the <a href=\"/marks/french-silver-marks\">Minerva head</a>, with the maker's mark: on the statuette whose name stamp is shown below, Paris Musées records a Minerva and a maker's mark of CC with a bee. Silver of this kind is marked like any French silver, so the Minerva head is what tells it from plate.</p>\n"
+  },
+  {
+   "cards": [
+    {
+     "id": "christofle-name-stamp"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"caveats\">Read these before you rely on a mark</h2>\n      <ul><li>The meaning of the balance, the CC to OC change in 1935, the knight quality mark and the Gallia cockerel rest on Christofle's own account; museums and older books found here confirm only the CC with a bee and the name stamps.</li><li>A number on Christofle plate was a weight of silver in the firm's early years; on later plate it may not be.</li><li>Christofle is widely copied and its name is often used loosely. The marks tell you what the item claims; for more, ask the company or a specialist.</li></ul>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both readings.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Christofle, <cite>Charles Christofle, a visionary</cite> (company history) (<a href=\"https://www.christofle.com/us_en/our-maison/charles-christofle-a-visionary\" rel=\"nofollow\">source</a>)</li><li>Christofle, <cite>Authentification vintage</cite> guide (2023), the company's own account of its marks (<a href=\"https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf\" rel=\"nofollow\">source</a>)</li><li>Musée des Arts Décoratifs, press kit for <cite>Christofle, une brillante histoire</cite> (2024) (<a href=\"https://madparis.fr/IMG/pdf/dp-christofle-fr_10.pdf\" rel=\"nofollow\">source</a>)</li><li>H. Bouilhet, <cite>L'orfèvrerie française aux XVIIIe et XIXe siècles</cite>, vols. 2–3 (Paris: Laurens, 1908–1912), public domain; Bouilhet was a Christofle partner (<a href=\"https://archive.org/details/lorfevreriefranc02boui\" rel=\"nofollow\">source</a>)</li><li><cite>Exposition universelle de 1851, travaux de la Commission française</cite>, 23rd jury, “Industrie des métaux précieux” (Paris, 1854), pp. 123–128, public domain (<a href=\"https://archive.org/details/industriedesmta00albegoog\" rel=\"nofollow\">source</a>)</li><li>A. Touzet, <cite>Emplois industriels des métaux précieux</cite>, thesis, Bordeaux, 1910 (<a href=\"https://archive.org/details/IA41523714_0058\" rel=\"nofollow\">source</a>)</li><li>W. Chaffers, <cite>Hand Book to French Hall Marks on Gold and Silver Plate</cite> (1899), pp. 16–18, public domain (<a href=\"https://archive.org/details/handbooktofrenc00chafgoog\" rel=\"nofollow\">source</a>)</li><li>Paris Musées collection records (open access): <cite>La Moissonneuse</cite>, Petit Palais ODUT1827; <cite>Testimonial</cite>, OGAL583; <cite>Coffret</cite> by Falize, OGAL103; message case, Musée Cognacq-Jay J581 (<a href=\"https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/la-moissonneuse\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks on your Christofle. The Advisor reads the name, the maker's mark and any Minerva head, and keeps what they say on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>Is Christofle real silver?</summary>\n  <div><p>Most Christofle is silver plate: silver laid by electrolysis on a base metal, marked with a square maker's mark and the name. Christofle solid silver also carries the French Minerva head. If there is no Minerva head, it is plate.</p></div>\n</details>\n<details>\n  <summary>What do the letters CC and OC mean on Christofle?</summary>\n  <div><p>According to Christofle, CC (Charles Christofle) appears in its maker's mark until 1935, and OC (Orfèvrerie Christofle) from then on. That gives a rough date: OC means 1935 or later.</p></div>\n</details>\n<details>\n  <summary>What is Gallia?</summary>\n  <div><p>A line of silver plate made by Christofle from the end of the 19th century, marked GALLIA, with a cockerel in later marks, according to the company.</p></div>\n</details>\n<details>\n  <summary>What does the number on old Christofle mean?</summary>\n  <div><p>On early Christofle plate, the punch gave in figures the grams of silver deposited, on each item or on each dozen spoons and forks, as the 1851 exhibition jury reported. On later plate the number may be something else, such as a model number.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

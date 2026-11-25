@@ -1,0 +1,369 @@
+{
+ "path": "/marks/gorham-silver-marks",
+ "title": "Gorham Silver Marks and Date Symbols, from 1868 | Heirloom",
+ "description": "Read Gorham silver marks: the lion, anchor and G, the date letters A to Q for 1868 to 1884, the yearly symbols from 1885, Martelé's 950 and .9584 marks, and plate.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/gorham-silver-marks#article",
+   "headline": "Gorham silver marks and date symbols",
+   "description": "Read Gorham silver marks: the lion, anchor and G, the date letters A to Q for 1868 to 1884, the yearly symbols from 1885, Martelé's 950 and .9584 marks, and plate.",
+   "url": "https://heirloomapp.io/marks/gorham-silver-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/gorham-silver-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Gorham silver marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/gorham-silver-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the Gorham silver mark?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A walking lion, an anchor and a Gothic G in a row, usually with STERLING and a model number. Gorham has used it on sterling since 1868. It imitates British hallmarks but is Gorham's own trademark."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I read Gorham date marks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Look below STERLING and the model number for a single letter or a small symbol. A capital letter from A to Q is a year from 1868 (A) to 1884 (Q). From 1885 each year has a picture symbol, such as a trident for 1897."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is all Gorham silver sterling?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Gorham made electroplate too, marked with an anchor and the name, or with E.P., and no STERLING. Before 1868 it made coin silver, marked with the firm's name."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does 950-1000 FINE mean on Gorham?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It marks Gorham's Martelé line, made in silver of 950 thousandths, finer than sterling. Later Martelé is marked .9584."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/gorham-silver-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Gorham silver marks",
+     "item": "https://heirloomapp.io/marks/gorham-silver-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Gorham silver marks</li></ol>\n      <h1>Gorham silver marks and date symbols</h1>\n      <p class=\"guide__lede\">Gorham's lion, anchor and G marks its sterling from 1868, and a letter or symbol below it gives the year. Here is how to read both, with real marks from museum silver.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>Gorham sterling is marked with a lion, an anchor and a Gothic G, usually with STERLING and a model number. Below them, a capital letter gives the year from 1868 (A) to 1884 (Q); from 1885 a small picture symbol does, such as a trident for 1897. Martelé, Gorham's hand-hammered line, is marked 950-1000 FINE or .9584.</p>\n      </div>\n      <h2 id=\"history\">Gorham, in brief</h2>\n      <p>Jabez Gorham, a Providence jeweler, began making silver spoons in 1831, first as Gorham &amp; Webster. The firm became the Gorham Manufacturing Company in the 1860s, and later the largest silver maker in the US. Before 1868 it worked in coin silver and marked its wares with the firm's name in a rectangle: Gorham &amp; Webster, Gorham &amp; Thurber, Gorham &amp; Co. In 1868 it adopted the sterling standard, 925 thousandths, and the mark it has used since.</p>\n      <h2 id=\"trademark\">The lion, anchor and G</h2>\n      <p>Gorham sterling carries three small marks in a row: a walking lion, an anchor and a Gothic capital G, usually with STERLING and a model number below. They look like British hallmarks, and are often taken for them, but they are Gorham's trademark: the US had no official assay marks, and the lion and anchor (Birmingham's town mark) were borrowed for the look. The G is for Gorham.</p>\n"
+  },
+  {
+   "cards": [
+    {
+     "id": "gorham-lion-passant"
+    },
+    {
+     "id": "gorham-anchor"
+    },
+    {
+     "id": "gorham-gothic-g"
+    },
+    {
+     "id": "gorham-electroplate-anchor"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p>Gorham also made electroplate. Museum records of its plated ware show an anchor alone with GORHAM CO., or GORHAM with E.P., rather than the lion, anchor and G with STERLING. Read the lion and G with the word STERLING as sterling, and an anchor with the name but no STERLING as a reason to check for plate.</p>\n      <h2 id=\"dates\">Gorham date marks</h2>\n      <p>From 1868 Gorham struck a yearly date mark on hollowware and some small wares, on its own line below STERLING and the model number. Most flatware has none. Two systems were used:</p>\n      <ul class=\"rules\">\n        <li><strong>1868 to 1884: a capital letter,</strong> A for 1868 through Q for 1884.</li>\n        <li><strong>From 1885: a small picture symbol</strong> for each year, such as a trident or a key.</li>\n      </ul>\n      <h3>The letters, 1868 to 1884</h3>\n      <p>Rainwater's <cite>American Silver Manufacturers</cite> (1966) and Kovels' <cite>American Silver Marks</cite> (1989) both print the same chart. The letters below are as Rainwater sets them in type; three are photographs of the real punches, on silver the Met dates to those years. Museum records confirm C, G, H, M, N, O, P and Q; the Minneapolis Institute of Art dates a dish marked K to 1879, where the chart gives 1878.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "gorham-date-letter-a-1868"
+    },
+    {
+     "id": "gorham-date-letter-b-1869"
+    },
+    {
+     "id": "gorham-date-letter-c-1870"
+    },
+    {
+     "id": "gorham-date-letter-d-1871"
+    },
+    {
+     "id": "gorham-date-letter-e-1872"
+    },
+    {
+     "id": "gorham-date-letter-f-1873"
+    },
+    {
+     "id": "gorham-date-letter-g-1874"
+    },
+    {
+     "id": "gorham-date-letter-h-1875"
+    },
+    {
+     "id": "gorham-date-letter-i-1876"
+    },
+    {
+     "id": "gorham-date-letter-j-1877"
+    },
+    {
+     "id": "gorham-date-letter-k-1878"
+    },
+    {
+     "id": "gorham-date-letter-l-1879"
+    },
+    {
+     "id": "gorham-date-letter-m-1880"
+    },
+    {
+     "id": "gorham-date-letter-n-1881"
+    },
+    {
+     "id": "gorham-date-letter-o-1882"
+    },
+    {
+     "id": "gorham-date-letter-p-1883"
+    },
+    {
+     "id": "gorham-date-letter-q-1884"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h3>The symbols, 1885 to 1933</h3>\n      <p>From 1885 each year had its own small symbol, as both charts print them. Year marks stopped in 1933.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "gorham-date-symbol-1885-boar"
+    },
+    {
+     "id": "gorham-date-symbol-1886-cross-in-square"
+    },
+    {
+     "id": "gorham-date-symbol-1887-fleur-de-lis"
+    },
+    {
+     "id": "gorham-date-symbol-1888-star-in-circle"
+    },
+    {
+     "id": "gorham-date-symbol-1889-oval"
+    },
+    {
+     "id": "gorham-date-symbol-1890-cockerel"
+    },
+    {
+     "id": "gorham-date-symbol-1891-lion-head"
+    },
+    {
+     "id": "gorham-date-symbol-1892-sea-creature"
+    },
+    {
+     "id": "gorham-date-symbol-1893-two-globes"
+    },
+    {
+     "id": "gorham-date-symbol-1894-circle-arrow"
+    },
+    {
+     "id": "gorham-date-symbol-1895-crescent"
+    },
+    {
+     "id": "gorham-date-symbol-1896-shell"
+    },
+    {
+     "id": "gorham-date-symbol-1897-trident"
+    },
+    {
+     "id": "gorham-date-symbol-1898-three-arrows"
+    },
+    {
+     "id": "gorham-date-symbol-1899-hook"
+    },
+    {
+     "id": "gorham-date-symbol-1900-bell"
+    },
+    {
+     "id": "gorham-date-symbol-1901-hourglass"
+    },
+    {
+     "id": "gorham-date-symbol-1902-lamp"
+    },
+    {
+     "id": "gorham-date-symbol-1903-pitcher"
+    },
+    {
+     "id": "gorham-date-symbol-1904-lyre"
+    },
+    {
+     "id": "gorham-date-symbol-1905-horseshoe"
+    },
+    {
+     "id": "gorham-date-symbol-1906-key"
+    },
+    {
+     "id": "gorham-date-symbol-1907-scissors"
+    },
+    {
+     "id": "gorham-date-symbol-1908-compasses"
+    },
+    {
+     "id": "gorham-date-symbol-1909-arrow"
+    },
+    {
+     "id": "gorham-date-symbol-1910-knot"
+    },
+    {
+     "id": "gorham-date-symbol-1911-pipe"
+    },
+    {
+     "id": "gorham-date-symbol-1912-fish"
+    },
+    {
+     "id": "gorham-date-symbol-1913-shamrock"
+    },
+    {
+     "id": "gorham-date-symbol-1914-small-figure"
+    },
+    {
+     "id": "gorham-date-symbol-1915-dagger"
+    },
+    {
+     "id": "gorham-date-symbol-1916-halberd"
+    },
+    {
+     "id": "gorham-date-symbol-1917-curved-sword"
+    },
+    {
+     "id": "gorham-date-symbol-1918-pickaxe"
+    },
+    {
+     "id": "gorham-date-symbol-1919-horn"
+    },
+    {
+     "id": "gorham-date-symbol-1920-spoon"
+    },
+    {
+     "id": "gorham-date-symbol-1921-anvil"
+    },
+    {
+     "id": "gorham-date-symbol-1922-bird"
+    },
+    {
+     "id": "gorham-date-symbol-1923-trowel"
+    },
+    {
+     "id": "gorham-date-symbol-1924-acorn"
+    },
+    {
+     "id": "gorham-date-symbol-1925-winged-foot"
+    },
+    {
+     "id": "gorham-date-symbol-1926-sailing-ship"
+    },
+    {
+     "id": "gorham-date-symbol-1927-biplane"
+    },
+    {
+     "id": "gorham-date-symbol-1928-tree"
+    },
+    {
+     "id": "gorham-date-symbol-1929-airship"
+    },
+    {
+     "id": "gorham-date-symbol-1930-elephant"
+    },
+    {
+     "id": "gorham-date-symbol-1931-winged-wheel"
+    },
+    {
+     "id": "gorham-date-symbol-1932-pointing-hand"
+    },
+    {
+     "id": "gorham-date-symbol-1933-parachute"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h3>The decade frames, from 1941</h3>\n      <p>Year marking resumed in January 1941 on sterling hollowware: a frame whose shape gives the decade, with a numeral for the year inside. A square is the 1940s, a pentagon the 1950s, a hexagon the 1960s; Kovels adds a heptagon for the 1970s and an octagon for the 1980s.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "gorham-date-square-1940s"
+    },
+    {
+     "id": "gorham-date-pentagon-1950s"
+    },
+    {
+     "id": "gorham-date-hexagon-1960s"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"martele\">Martelé</h2>\n      <p>Martelé (French for hammered) was Gorham's hand-raised, hand-hammered Art Nouveau line, designed under William C. Codman and shown at the Paris Exposition of 1900. It was made in silver finer than sterling, and marked differently: the word Martelé in script, a spread eagle, the lion, anchor and G, then <strong>950-1000 FINE</strong> or <strong>.9584</strong>, with a model number and often a letter code. Some carry a retailer's name, such as Spaulding &amp; Co. of Chicago.</p>\n"
+  },
+  {
+   "cards": [
+    {
+     "id": "gorham-martele-script"
+    },
+    {
+     "id": "gorham-martele-eagle"
+    },
+    {
+     "id": "gorham-martele-950-1000-fine"
+    },
+    {
+     "id": "gorham-martele-9584"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p>A thesis on the line gives 950 from 1898 and .9584 (the old British Britannia standard) from 1905; both marks are confirmed on museum silver, but those years rest on that one study. No source found here explains the letter codes, so they are not decoded here.</p>\n      <h2 id=\"caveats\">Read these before you rely on a mark</h2>\n      <ul><li>The lion, anchor and G is a company mark, not a government hallmark: it says Gorham made and sold the item as sterling.</li><li>A date mark dates the making of the item, not its engraving or later repair.</li><li>Many Gorham symbols after 1885 are small and alike, and the chart prints them small; match the shape carefully, and check the other marks agree.</li></ul>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both readings.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>D. T. Rainwater, <cite>American Silver Manufacturers</cite> (1966), p. 60, Gorham entry and date-letter table (read in excerpt) (<a href=\"https://archive.org/details/americansilverma0000unse\" rel=\"nofollow\">source</a>)</li><li>D. T. Rainwater, <cite>Encyclopedia of American Silver Manufacturers</cite> (1975; 4th ed. 1998) (<a href=\"https://archive.org/details/encyclopediaofam0000rain\" rel=\"nofollow\">source</a>)</li><li>R. and T. Kovel, <cite>Kovels' American Silver Marks, 1650 to the Present</cite> (New York: Crown, 1989), pp. 153–154, Gorham chronology and date-mark chart</li><li>C. H. Carpenter Jr., <cite>Gorham Silver 1831–1981</cite> (New York: Dodd, Mead, 1982), the standard history, with the full date-mark chart (<a href=\"https://archive.org/details/gorhamsilver18310000carp\" rel=\"nofollow\">source</a>)</li><li>D. S. Cinamon, <cite>All About Antique Silver with International Hallmarks</cite> (2005), Gorham section (read in excerpt) (<a href=\"https://archive.org/details/allaboutantiques0000cina\" rel=\"nofollow\">source</a>)</li><li>N. D. Turner, <cite>American Silver Flatware, 1837–1910</cite> (1972), on Gorham's adoption of sterling in 1868 (read in excerpt) (<a href=\"https://archive.org/details/americansilverfl0000unse\" rel=\"nofollow\">source</a>)</li><li>Gorham Company, <cite>Gorham Hand Book of Sterling Silver Spoons and Forks</cite> (1909), public domain, Winterthur Library copy (<a href=\"https://archive.org/details/gorhamhandbookst00gorh\" rel=\"nofollow\">source</a>)</li><li>J. D. Hall, ed., <cite>Biographical History of the Manufacturers and Business Men of Rhode Island</cite> (Providence, 1901), “The Gorham Manufacturing Company”, public domain (<a href=\"https://archive.org/details/biographicalhist00hall\" rel=\"nofollow\">source</a>)</li><li>H. P. Okie, <cite>Old Silver and Old Sheffield Plate</cite> (1928), American silversmiths and their marks (<a href=\"https://archive.org/details/oldsilveroldshef00okie\" rel=\"nofollow\">source</a>)</li><li>E. Woodhead, <cite>Trademarks on Base-Metal Tableware</cite> (Parks Canada, 1991), p. 87 (<a href=\"https://archive.org/details/micro_IA40242804_0029\" rel=\"nofollow\">source</a>)</li><li>M. E. Appleby, <cite>The Gorham Company's Martelé Line of Silver</cite>, MA thesis, University of Delaware, 1998 (<a href=\"https://udspace.udel.edu/server/api/core/bitstreams/d7499c2b-6471-458d-b6cd-a2175286a89e/content\" rel=\"nofollow\">source</a>)</li><li>The Metropolitan Museum of Art: vase, 1880 (2008.68); coffeepot, 1881 (2014.200.1.1); pitcher, 1882 (2013.26) (<a href=\"https://www.metmuseum.org/art/collection/search/639665\" rel=\"nofollow\">source</a>)</li><li>The Cleveland Museum of Art: Martelé coffee service (2008.164); salt and pepper shakers (2009.368) (<a href=\"https://www.clevelandart.org/art/2008.164\" rel=\"nofollow\">source</a>)</li><li>Art Institute of Chicago records: castor, 1870 (121364); bowl, 1886 (105799); coffee pot, 1897 (272493); Martelé (57575, 45480) (<a href=\"https://www.artic.edu/artworks/272493\" rel=\"nofollow\">source</a>)</li><li>RISD Museum records: mug, 1874 (1992.087); cruet stand and toast rack, 1875; chatelaine, 1897; Martelé creamer (<a href=\"https://risdmuseum.org/art-design/collection/mug-1992087\" rel=\"nofollow\">source</a>)</li><li>Cooper Hewitt, Smithsonian Design Museum records: pepper mill, 1874; matchsafes of 1884–1894 (<a href=\"https://collection.cooperhewitt.org/\" rel=\"nofollow\">source</a>)</li><li>Minneapolis Institute of Art records: tea service, 1883 (24492); coffee pot, 1884 (12989); vegetable dish (31394); Martelé, 1912 (<a href=\"https://collections.artsmia.org/art/12989\" rel=\"nofollow\">source</a>)</li><li>High Museum of Art, <cite>Martelé wine pitcher</cite>, 1900 (<a href=\"https://high.org/collection/martele-wine-pitcher/\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks on your Gorham silver. The Advisor reads the trademark, the model number and the date mark, and keeps what they say on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What is the Gorham silver mark?</summary>\n  <div><p>A walking lion, an anchor and a Gothic G in a row, usually with STERLING and a model number. Gorham has used it on sterling since 1868. It imitates British hallmarks but is Gorham's own trademark.</p></div>\n</details>\n<details>\n  <summary>How do I read Gorham date marks?</summary>\n  <div><p>Look below STERLING and the model number for a single letter or a small symbol. A capital letter from A to Q is a year from 1868 (A) to 1884 (Q). From 1885 each year has a picture symbol, such as a trident for 1897.</p></div>\n</details>\n<details>\n  <summary>Is all Gorham silver sterling?</summary>\n  <div><p>No. Gorham made electroplate too, marked with an anchor and the name, or with E.P., and no STERLING. Before 1868 it made coin silver, marked with the firm's name.</p></div>\n</details>\n<details>\n  <summary>What does 950-1000 FINE mean on Gorham?</summary>\n  <div><p>It marks Gorham's Martelé line, made in silver of 950 thousandths, finer than sterling. Later Martelé is marked .9584.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

@@ -9,7 +9,7 @@ import re
 
 MARKS_CLASSES = ['.sigs', '.sig', '.sigs--wide', '.sigs--one', '.sigs--two', '.sig__img', '.sig__who', '.sig__life', '.sig__reads', '.sig__credit',
                  '.sources', '.sources--num', '.pro-note', '.mks', '.mk', '.mk__img', '.mk__img--none', '.mk__years', '.mk__kind', '.mk__credit',
-                 '.mk--photo', '.mk--facsimile', '.mk--rendering', '.mk--none', '.mkd', '.refs']
+                 '.mk--photo', '.mk--facsimile', '.mk--rendering', '.mk--none', '.mkd', '.refs', '.rules', '.table--two']
 STYLES_CLASSES = ['.btn', '.btn--outline', '.store-badge', '.store-badge__art']
 
 
@@ -31,7 +31,8 @@ def rules(css):
 
 
 def want(sel, keys):
-    return any(re.search(r'(^|[\s>+~,(])' + re.escape(k) + r'(?![\w-])', sel) for k in keys)
+    # A class anywhere in the selector, also joined to an element (table.table--two).
+    return any(re.search(re.escape(k) + r'(?![\w-])', sel) for k in keys)
 
 
 def scope(sel):

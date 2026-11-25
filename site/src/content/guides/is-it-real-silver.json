@@ -1,0 +1,142 @@
+{
+ "path": "/marks/is-it-real-silver",
+ "title": "How to Tell if Silver Is Real: Sterling, Coin or Plate Marks | Heirloom",
+ "description": "Silver or silver plate? What sterling, 925, coin, EPNS, nickel silver and British hallmarks say about the metal, and what no mark can tell you.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/is-it-real-silver#article",
+   "headline": "Silver or silver plate? What the marks say",
+   "description": "Silver or silver plate? What sterling, 925, coin, EPNS, nickel silver and British hallmarks say about the metal, and what no mark can tell you.",
+   "url": "https://heirloomapp.io/marks/is-it-real-silver",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/is-it-real-silver",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Silver and silver plate marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/is-it-real-silver#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How can I tell if silver is real from the marks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Look for a mark that states a standard: STERLING, 925, COIN, a number such as 800, or a British lion passant. Those mean solid silver at that standard. EP, EPNS, plate, nickel silver and German silver mean plate or no silver. A maker's name alone says nothing about the metal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does 925 mean real silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "925 means the metal is stated to be 925 parts silver in 1000: sterling. In Britain an assay office strikes it after testing; in the United States the maker stamps it, and the law holds the maker to it. A stamp is still a claim, and only a test of the metal settles it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is silver plate worth keeping a record of?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. A record is about what an item is and where it came from, not its price. Plated tableware often carries a maker's mark, a pattern and a family story worth writing down."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "My silver has no marks. Is it plate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not necessarily. Much early American silver carries only the maker's name, and light items are exempt from hallmarking in Britain. Without a standard mark the metal is simply unknown until it is tested."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/is-it-real-silver#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Silver or silver plate",
+     "item": "https://heirloomapp.io/marks/is-it-real-silver"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Silver or silver plate</li></ol>\n      <h1>Silver or silver plate? What the marks say</h1>\n      <p class=\"guide__lede\">Most of the answer is in the small stamps. Here is which marks say solid silver, which say plate, and what no mark can tell you.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>A mark that states a standard means solid silver at that standard: STERLING or 925, COIN or 900, a number such as 800, or a British hallmark with a lion passant. EP, EPNS, silver plate, nickel silver and German silver mean plate or no silver at all. A maker's name on its own says nothing about the metal, and no mark is proof: only a test of the metal settles it.</p>\n      </div>\n      <p>Heirloom doesn't decide whether an item is genuine. What a mark can do is say which kind of metal the maker or an assay office put on record, and that's usually the first question about a spoon, a tray or a candlestick that looks like silver: is it solid silver, or silver plate?</p>\n      <h2 id=\"solid\">Marks that say solid silver</h2>\n      <p>These marks state a standard: how many parts in 1000 of the metal are silver.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "sterling-word-us"
+    },
+    {
+     "id": "silver-fineness-925"
+    },
+    {
+     "id": "coin-word-us"
+    },
+    {
+     "id": "lion-passant",
+     "caption": "Lion passant: British sterling"
+    },
+    {
+     "id": "german-crescent-and-crown"
+    }
+   ]
+  },
+  {
+   "html": "\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">The mark</th><th scope=\"col\">What it states</th><th scope=\"col\">What it means</th></tr></thead><tbody><tr><th scope=\"row\">STERLING, STER. or 925</th><td>Silver of at least 925 parts in 1000</td><td>Solid silver. In the US the word may be used only at 925 or better, and never on plate.</td></tr><tr><th scope=\"row\">COIN or COIN SILVER</th><td>At least 900 in 1000</td><td>Solid silver, the American coin standard. See <a href=\"/marks/coin-silver\">coin silver</a>.</td></tr><tr><th scope=\"row\">A number: 800, 900, 925, 958, 999</th><td>That many parts of silver in 1000</td><td>Solid silver at that standard. See <a href=\"/marks/silver-purity-marks\">what the numbers mean</a>.</td></tr><tr><th scope=\"row\">A British hallmark with a lion passant</th><td>Sterling, 925</td><td>Solid silver, tested and marked by an assay office. A figure of Britannia instead means the higher Britannia standard, 958.</td></tr><tr><th scope=\"row\">A crescent moon and a crown, with a number</th><td>German silver wares from 1888 at the fineness shown</td><td>Solid silver, 800 or better.</td></tr></tbody></table></div>\n      <p>In Britain those marks are struck by an assay office after it has tested the metal. In the United States the maker stamps them, and the law holds the maker to the standard the mark states: 925 for sterling and 900 for coin, within four parts in 1000.</p>\n      <h2 id=\"plate\">Marks that say plate, or no silver at all</h2>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">The mark</th><th scope=\"col\">What it is</th><th scope=\"col\">What it means</th></tr></thead><tbody><tr><th scope=\"row\">EP, EPNS, silver plate, silver plated</th><td>A coat of silver over another metal</td><td>Plate. US law forbids STERLING or COIN on plated wares.</td></tr><tr><th scope=\"row\">NICKEL SILVER, GERMAN SILVER, ALPACCA, ARGENTAN</th><td>An alloy of copper, nickel and zinc</td><td>No silver in the metal itself. See <a href=\"/marks/german-silver\">German silver</a>.</td></tr><tr><th scope=\"row\">Britannia metal (not Britannia silver)</th><td>A tin alloy</td><td>No silver: a pewter-like metal, often plated.</td></tr><tr><th scope=\"row\">A maker's name and a pattern name only</th><td>Nothing about the metal</td><td>Either. Read the other marks, and see below.</td></tr></tbody></table></div>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "epns-mark"
+    },
+    {
+     "id": "nickel-silver-word"
+    },
+    {
+     "id": "german-silver-word"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p>Plated wares often carry a row of small marks that look like a hallmark at a glance: the maker's initials in shields, a pattern number, a registration mark. Look for a standard: a lion passant, Britannia, a crescent and crown, or a number such as 925. Without one, read it as plate until something else shows otherwise.</p>\n      <h2 id=\"limits\">What marks can't tell you</h2>\n      <ul>\n        <li><strong>No mark is not the same as no silver.</strong> Much early American silver carries only a maker's name, light items are exempt from hallmarking in Britain, and Germany's law of 1884 made a fineness mark optional.</li>\n        <li><strong>A mark is a claim.</strong> Marks can be struck lightly, worn away, faked or set into a later item; Jackson and Chaffers both record frauds of this kind. A strong set of marks is good evidence, not proof.</li>\n        <li><strong>Only a test of the metal settles it.</strong> An assay office, or a specialist with the right equipment, can test the metal. Heirloom reads marks; it doesn't test metal.</li>\n      </ul>\n      <p>More to read: <a href=\"/silver-hallmarks\">how to read silver hallmarks</a>, and the <a href=\"/marks/london-date-letters\">London date letters</a>.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>National Gold and Silver Stamping Act of 1906, 15 U.S.C. § 296 (standard of fineness of silver articles) (<a href=\"https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap8-sec296.htm\" rel=\"nofollow\">source</a>)</li><li>Federal Trade Commission, Guides for the Jewelry, Precious Metals, and Pewter Industries, 16 CFR § 23.5 (misrepresentation as to silver content) (<a href=\"https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-23/section-23.5\" rel=\"nofollow\">source</a>)</li><li>Hallmarking Act 1973, Schedule 2 (approved hallmarks and standards of fineness), as amended (<a href=\"https://www.legislation.gov.uk/ukpga/1973/43/schedule/2\" rel=\"nofollow\">source</a>)</li><li>UK Assay Offices and the Office for Product Safety and Standards, Hallmarking: practical guidance (2022) (<a href=\"https://www.gov.uk/government/publications/hallmarking-guidance-notes\" rel=\"nofollow\">source</a>)</li><li>Sir Charles James Jackson, English Goldsmiths and Their Marks, 2nd edition (London: Macmillan, 1921), public domain (<a href=\"https://archive.org/details/englishgoldsmith00jack\" rel=\"nofollow\">source</a>)</li><li>William Chaffers, Hall Marks on Gold and Silver Plate, edited by C. A. Markham (London: Reeves, 1922), public domain (<a href=\"https://archive.org/details/hallmarksongolds00chafrich\" rel=\"nofollow\">source</a>)</li><li>Gesetz über den Feingehalt der Gold- und Silberwaaren, 16 July 1884, Reichsgesetzblatt 1884, pp. 120–122 (Germany&#x27;s fineness law, in force 1 January 1888) (<a href=\"https://de.wikisource.org/wiki/Gesetz_%C3%BCber_den_Feingehalt_der_Gold-_und_Silberwaaren\" rel=\"nofollow\">source</a>)</li><li>Bekanntmachung über die Form des Stempelzeichens, 7 January 1886, Reichsgesetzblatt 1886, p. 1 (the crown and crescent mark) (<a href=\"https://de.wikisource.org/wiki/Bekanntmachung,_betreffend_die_Bestimmung_der_Form_des_Stempelzeichens_zur_Angabe_des_Feingehalts_auf_goldenen_und_silbernen_Ger%C3%A4then\" rel=\"nofollow\">source</a>)</li><li>Francis Hill Bigelow, Historic Silver of the Colonies and Its Makers (New York: Macmillan, 1917), public domain (<a href=\"https://archive.org/details/historicsilverof00bige\" rel=\"nofollow\">source</a>)</li><li>Hollis French, A List of Early American Silversmiths and Their Marks (New York: Walpole Society, 1917), glossary, public domain (<a href=\"https://archive.org/details/listofearlyameri00fren\" rel=\"nofollow\">source</a>)</li><li>US Bureau of Standards, Circular 100: Nickel (Washington, 1921), section 3, &quot;Copper-nickel-zinc alloys; nickel silver&quot; (<a href=\"https://archive.org/details/circularofbureau100unse\" rel=\"nofollow\">source</a>)</li><li>Encyclopaedia Britannica, 11th edition (1911), &quot;German Silver&quot;, public domain (<a href=\"https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/German_Silver\" rel=\"nofollow\">source</a>)</li><li>Meyers Großes Konversations-Lexikon, 6th edition, vol. 14 (Leipzig, 1908), &quot;Neusilber&quot;, public domain (<a href=\"http://www.zeno.org/Meyers-1905/A/Neusilber\" rel=\"nofollow\">source</a>)</li><li>Encyclopaedia Britannica, 11th edition (1911), &quot;Antimony&quot; (Britannia metal), public domain (<a href=\"https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Antimony\" rel=\"nofollow\">source</a>)</li><li>Meyers Großes Konversations-Lexikon, 6th edition (Leipzig, 1905–1909), &quot;Britanniametall&quot;, public domain (<a href=\"http://www.zeno.org/Meyers-1905/A/Britanniametall\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks on your silver. The Advisor reads what each one says, sterling, plate or a maker's name, and keeps it on the item's record with the photo it came from. It never decides whether an item is genuine.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>How can I tell if silver is real from the marks?</summary>\n  <div><p>Look for a mark that states a standard: STERLING, 925, COIN, a number such as 800, or a British lion passant. Those mean solid silver at that standard. EP, EPNS, plate, nickel silver and German silver mean plate or no silver. A maker's name alone says nothing about the metal.</p></div>\n</details>\n<details>\n  <summary>Does 925 mean real silver?</summary>\n  <div><p>925 means the metal is stated to be 925 parts silver in 1000: sterling. In Britain an assay office strikes it after testing; in the United States the maker stamps it, and the law holds the maker to it. A stamp is still a claim, and only a test of the metal settles it.</p></div>\n</details>\n<details>\n  <summary>Is silver plate worth keeping a record of?</summary>\n  <div><p>Yes. A record is about what an item is and where it came from, not its price. Plated tableware often carries a maker's mark, a pattern and a family story worth writing down.</p></div>\n</details>\n<details>\n  <summary>My silver has no marks. Is it plate?</summary>\n  <div><p>Not necessarily. Much early American silver carries only the maker's name, and light items are exempt from hallmarking in Britain. Without a standard mark the metal is simply unknown until it is tested.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}

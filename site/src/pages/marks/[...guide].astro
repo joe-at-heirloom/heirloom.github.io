@@ -1,0 +1,13 @@
+---
+// /marks/<page>: the editorial mark pages (silver plate makers, silver by
+// country, Gorham, Christofle, silver and gold standards), each from its
+// content file and the reference collection (components/GuidePage.astro).
+import GuidePage, { type Guide } from '../../components/GuidePage.astro';
+
+export function getStaticPaths() {
+  const files = import.meta.glob<Guide>('../../content/guides/*.json', { eager: true, import: 'default' });
+  return Object.values(files).filter((g) => g.path.startsWith('/marks/')).map((g) => ({ params: { guide: g.path.replace(/^\/marks\//, '') }, props: { g } }));
+}
+const { g } = Astro.props as { g: Guide };
+---
+<GuidePage {g} />

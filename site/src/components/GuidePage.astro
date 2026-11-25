@@ -1,0 +1,23 @@
+---
+// A mark page in the old article look (styles/article.css), from its content
+// file (src/content/guides/<slug>.json, moved word for word from the page
+// scripts by site/scripts/extract-guides.py): the page's written blocks, and
+// between them its grids of mark cards, drawn from the reference collection.
+import Base from '../layouts/Base.astro';
+import { grid } from '../lib/makers';
+import '../styles/article.css';
+
+export type Guide = {
+  path: string; title: string; description: string; jsonld: object[]; after: string;
+  blocks: ({ html: string } | { cards: { id: string; caption?: string }[] })[];
+};
+const { g } = Astro.props as { g: Guide };
+---
+<Base title={g.title} description={g.description} path={g.path} jsonld={g.jsonld}>
+  <div class="guide">
+    <article>
+      {g.blocks.map((b) => ('cards' in b ? <Fragment set:html={grid(b.cards)} /> : <Fragment set:html={b.html} />))}
+    </article>
+    <Fragment set:html={g.after} />
+  </div>
+</Base>

@@ -1,0 +1,126 @@
+{
+ "path": "/marks/britannia-silver",
+ "title": "Britannia Silver: The 958 Standard and Its Marks, 1697 to Today | Heirloom",
+ "description": "Britannia silver is 958 silver, a higher standard than sterling: why it began in 1697, its marks (Britannia and the lion's head erased), and how it differs from Britannia metal.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/britannia-silver#article",
+   "headline": "Britannia silver: the 958 standard and its marks",
+   "description": "Britannia silver is 958 silver, a higher standard than sterling: why it began in 1697, its marks (Britannia and the lion's head erased), and how it differs from Britannia metal.",
+   "url": "https://heirloomapp.io/marks/britannia-silver",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/britannia-silver",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Britannia silver"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/britannia-silver#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Britannia silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Silver of at least 958 parts in 1000, a higher standard than sterling (925). It was compulsory in England from 1697 to 1720 and has been an optional standard since."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the Britannia mark on silver mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The figure of Britannia means the silver is of the Britannia standard, 958. Between 1697 and 1720 it appears with a lion's head erased in place of the leopard's head."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Britannia silver better than sterling?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It has more silver in it, which also makes it softer. That softness is why sterling was restored as the usual standard in 1720."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Britannia metal silver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Britannia metal is a tin alloy, close to pewter, with no silver in it."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/britannia-silver#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Britannia silver",
+     "item": "https://heirloomapp.io/marks/britannia-silver"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Britannia silver</li></ol>\n      <h1>Britannia silver: the 958 standard and its marks</h1>\n      <p class=\"guide__lede\">Britannia silver has more silver in it than sterling. Here is why it began, how it is marked, and how to tell it from Britannia metal.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>Britannia silver is 958 parts silver in 1000, against sterling's 925. It was the compulsory standard for English silver from 1697 to 1720, marked with a seated figure of Britannia and a lion's head erased, and has been an optional standard since. Britannia metal is something else: a tin alloy with no silver.</p>\n      </div>\n      <p>Britannia silver is a higher standard than sterling: 958 parts of silver in 1000 against sterling's 925. From 1697 to 1720 it was the only standard English silversmiths could use, and it has been allowed alongside sterling ever since.</p>\n      <h2 id=\"why\">Why it began</h2>\n      <p>By the 1690s so much coin was being melted down for plate that silver coin had grown scarce. An Act of 1696 raised the standard for wrought plate above the coinage, so that coin could no longer be turned straight into plate. The new standard was 11 ounces 10 pennyweights of silver in the pound troy, against the sterling coin standard of 11 ounces 2 pennyweights.</p>\n      <h2 id=\"marks\">The marks</h2>\n      <ul>\n        <li><strong>The figure of Britannia</strong> in place of the lion passant.</li>\n        <li><strong>A lion's head erased</strong> in place of London's leopard's head.</li>\n        <li><strong>The maker's mark</strong> as the first two letters of the maker's surname.</li>\n        <li><strong>A date letter,</strong> as before. See the <a href=\"/marks/london-date-letters\">London date letters</a>.</li>\n      </ul>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "britannia-figure",
+     "caption": "Britannia, in place of the lion"
+    },
+    {
+     "id": "lions-head-erased",
+     "caption": "Lion's head erased, in place of the leopard's head"
+    },
+    {
+     "id": "lion-passant-guardant",
+     "caption": "Lion passant guardant: the sterling mark Britannia replaced"
+    },
+    {
+     "id": "leopards-head-crowned",
+     "caption": "Leopard's head crowned: the London mark it replaced"
+    }
+   ]
+  },
+  {
+   "html": "\n      <h2 id=\"dates\">When it was used</h2>\n      <ul>\n        <li><strong>1697 to 1720, compulsory.</strong> Jackson gives the new marks as in use from 27 March 1697 until 1 June 1720. The Act restoring sterling was passed in 1719, which is the year Chaffers gives; it took effect in 1720.</li>\n        <li><strong>1720 on, optional.</strong> Sterling came back because the higher standard was too soft for hard wear, but makers kept the choice of Britannia, and still have it.</li>\n        <li><strong>Today.</strong> The UK standard is written 958 (958.4 in the Act), and the figure of Britannia is an optional mark beside the number.</li>\n      </ul>\n      <h2 id=\"metal\">Britannia silver is not Britannia metal</h2>\n      <p>Britannia metal is an alloy of tin with antimony and a little copper, close to pewter, with no silver in it. It was used for spoons, forks and other tableware. The shared name causes confusion: Britannia silver is marked with the figure of Britannia or 958, and Britannia metal carries neither.</p>\n      <p>More to read: <a href=\"/silver-hallmarks\">how to read silver hallmarks</a>, and the <a href=\"/marks/london-date-letters\">London date letters</a>.</p>\n      <h2 id=\"sources\">Sources</h2>\n      <p>Each fact on this page is supported by at least two of these. Where they disagree, the page gives both.</p>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Sir Charles James Jackson, English Goldsmiths and Their Marks, 2nd edition (London: Macmillan, 1921), public domain (<a href=\"https://archive.org/details/englishgoldsmith00jack\" rel=\"nofollow\">source</a>)</li><li>William Chaffers, Hall Marks on Gold and Silver Plate, edited by C. A. Markham (London: Reeves, 1922), public domain (<a href=\"https://archive.org/details/hallmarksongolds00chafrich\" rel=\"nofollow\">source</a>)</li><li>Hallmarking Act 1973, Schedule 2 (approved hallmarks and standards of fineness), as amended (<a href=\"https://www.legislation.gov.uk/ukpga/1973/43/schedule/2\" rel=\"nofollow\">source</a>)</li><li>UK Assay Offices and the Office for Product Safety and Standards, Hallmarking: practical guidance (2022) (<a href=\"https://www.gov.uk/government/publications/hallmarking-guidance-notes\" rel=\"nofollow\">source</a>)</li><li>Encyclopaedia Britannica, 11th edition (1911), &quot;Antimony&quot; (Britannia metal), public domain (<a href=\"https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Antimony\" rel=\"nofollow\">source</a>)</li><li>Meyers Großes Konversations-Lexikon, 6th edition (Leipzig, 1905–1909), &quot;Britanniametall&quot;, public domain (<a href=\"http://www.zeno.org/Meyers-1905/A/Britanniametall\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the marks. The Advisor reads the Britannia figure, the town mark and the date letter, dates them from the same tables as these pages, and keeps the date on the item's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>What is Britannia silver?</summary>\n  <div><p>Silver of at least 958 parts in 1000, a higher standard than sterling (925). It was compulsory in England from 1697 to 1720 and has been an optional standard since.</p></div>\n</details>\n<details>\n  <summary>What does the Britannia mark on silver mean?</summary>\n  <div><p>The figure of Britannia means the silver is of the Britannia standard, 958. Between 1697 and 1720 it appears with a lion's head erased in place of the leopard's head.</p></div>\n</details>\n<details>\n  <summary>Is Britannia silver better than sterling?</summary>\n  <div><p>It has more silver in it, which also makes it softer. That softness is why sterling was restored as the usual standard in 1720.</p></div>\n</details>\n<details>\n  <summary>Is Britannia metal silver?</summary>\n  <div><p>No. Britannia metal is a tin alloy, close to pewter, with no silver in it.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>"
+}
