@@ -11,6 +11,7 @@ import Faq from '../../../components/Faq.astro';
 import Catalogue from '../../../components/ref/Catalogue.astro';
 import { jaSheet, CJK } from '../../../lib/records';
 import { marks, GROUPS, pageChars } from '../../../lib/japanese';
+import { KYU_SHIN } from '../../../lib/japanese-dates';
 import { articleLd, faqLd, crumbsLd } from '../../../lib/site';
 import synced from '../../../data/app/SOURCE.json';
 
@@ -29,8 +30,8 @@ const description = `${rows.length} marks, seals, signatures and crests on Japan
 const h1 = 'Japanese marks, seals and signatures';
 const faqs: [string, string][] = [
   ['How do I read the mark on the bottom of a Japanese vase?', '<p>Most marks are in kanji, read top to bottom and right to left when there are several columns. A mark usually names a kiln, a maker or a decorating studio (錦光山, Kinkōzan; 深川製, made by Fukagawa), sometimes with a place (大日本, Great Japan; 京都, Kyoto). Type the characters into the search above, or pick the ones you see, and only the marks that fit stay listed.</p>'],
-  ['Does a Chinese reign mark mean my porcelain is Chinese?', '<p>Not on its own. Japanese kilns in Arita wrote Chinese reign marks such as 大明成化年製 on their porcelain from the 17th century on, sometimes with the 大 written 太. A reign mark names the era it claims; the body, glaze and painting decide where and when a piece was made.</p>'],
-  ['Is a Satsuma vase with the cross in a circle old?', '<p>Not necessarily. The cross in a circle is the crest of the Shimazu family, lords of Satsuma, and it was painted on export Satsuma of the Meiji period and on a great many later pieces too. The mark tells you the piece claims to be Satsuma; it does not date it.</p>'],
+  ['Does a Chinese reign mark mean my porcelain is Chinese?', '<p>Not on its own. Japanese kilns in Arita wrote Chinese reign marks such as 大明成化年製 on their porcelain from the 17th century on, sometimes with the 大 written 太. A reign mark names the era it claims; the body, glaze and painting decide where and when an item was made.</p>'],
+  ['Is a Satsuma vase with the cross in a circle old?', '<p>Not necessarily. The cross in a circle is the crest of the Shimazu family, lords of Satsuma, and it was painted on export Satsuma of the Meiji period and on a great many later items too. The mark tells you the item claims to be Satsuma; it does not date it.</p>'],
   ['What does NIPPON or OCCUPIED JAPAN on porcelain mean?', '<p>Both are country-of-origin marks required on goods sold in the United States. NIPPON appears from 1891, after the 1890 tariff act; collectors date the change to JAPAN to 1921. MADE IN OCCUPIED JAPAN was used on exports during the Allied occupation, which ended on 28 April 1952. Reproductions carry these marks too.</p>'],
   ['Can a mark prove my Japanese item is genuine?', '<p>No. Japanese marks were passed down through generations of the same family, used by pupils, copied by other workshops and put on reproductions. A mark names who it claims; only someone who can handle the item can judge the rest.</p>'],
 ];
@@ -52,7 +53,7 @@ const ja = pageChars(rows.map((r) => r.chars + r.variants.join('') + (r.kana ?? 
       </ul>
     </header>
 
-    <Catalogue {groups} {picker} noun={['mark', 'marks, seals, signatures and crests']} placeholder="Characters, a reading or a name: 錦光山, Kinkozan, Fukagawa, Watanabe" label="Characters, a reading or a name" />
+    <Catalogue {groups} {picker} fold={KYU_SHIN} noun={['mark', 'marks, seals, signatures and crests']} placeholder="Characters, a reading or a name: 錦光山, Kinkozan, Fukagawa, Watanabe" label="Characters, a reading or a name" />
 
     <section class="ahome__block prose" aria-labelledby="read">
       <h2 id="read">How to read a Japanese mark</h2>

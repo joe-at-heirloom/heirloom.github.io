@@ -5,7 +5,11 @@
 // between them its grids of mark cards, drawn from the reference collection.
 // A page with a lookup (the date-code and serial-number pages) names it as
 // `tool`, which the old marks/marks.js runs, as it did on the old page.
-import Base from '../layouts/Base.astro';
+// Each sits in the reference's frame (layouts/Reference.astro): its crumbs,
+// the area's rail and next/previous replace the page's own crumbs and its
+// "More from Heirloom" list. A page with a lookup is reached by a full page
+// load, so marks.js runs as it did.
+import Reference from '../layouts/Reference.astro';
 import { grid } from '../lib/makers';
 import '../styles/article.css';
 
@@ -14,14 +18,15 @@ export type Guide = {
   blocks: ({ html: string } | { cards: { id: string; caption?: string }[] })[];
 };
 const { g } = Astro.props as { g: Guide };
+const noCrumbs = (html: string) => html.replace(/<ol class="crumbs"[\s\S]*?<\/ol>/, '');
+const crumb = (/<h1[^>]*>([\s\S]*?)<\/h1>/.exec(g.blocks.map((b) => ('html' in b ? b.html : '')).join('')) ?? [])[1]?.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#x27;|&#39;|&rsquo;/g, '’').replace(/&quot;/g, '"').trim();
 ---
-<Base title={g.title} description={g.description} path={g.path} jsonld={g.jsonld}>
+<Reference title={g.title} description={g.description} path={g.path} jsonld={g.jsonld} {crumb} transitions={!g.tool}>
   <div class="guide">
     <article>
-      {g.blocks.map((b) => ('cards' in b ? <Fragment set:html={grid(b.cards)} /> : <Fragment set:html={b.html} />))}
+      {g.blocks.map((b) => ('cards' in b ? <Fragment set:html={grid(b.cards)} /> : <Fragment set:html={noCrumbs(b.html)} />))}
     </article>
-    <Fragment set:html={g.after} />
   </div>
   {g.tool && <script is:inline src="/marks/marks.js" defer></script>}
   {g.tool && <script is:inline set:html={`window.MARKS_TOOL = ${JSON.stringify(g.tool)};`} />}
-</Base>
+</Reference>

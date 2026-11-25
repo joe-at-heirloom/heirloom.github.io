@@ -8,13 +8,18 @@ import Spec from './Spec.astro';
 import RecordSheet from './RecordSheet.astro';
 import { faceOf, type Sheet } from '../../lib/records';
 interface Group { key: string; label: string; blurb?: string; sheets: Sheet[] }
-interface Props { groups: Group[]; noun: [string, string]; placeholder: string; label?: string; picker?: string[] }
-const { groups, noun, placeholder, label = 'Find', picker = [] } = Astro.props;
+interface Props {
+  groups: Group[]; noun: [string, string]; placeholder: string; label?: string; picker?: string[];
+  /** Characters read as the same (old forms to new, 寶 → 宝): the search folds both what is typed and the keys. */
+  fold?: Record<string, string>;
+}
+const { groups, noun, placeholder, label = 'Find', picker = [], fold } = Astro.props;
+const folded = (t: string) => (fold ? [...t].map((c) => fold[c] ?? c).join('') : t);
 const total = groups.reduce((n, g) => n + g.sheets.length, 0);
 const nameCls = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).cls;
 const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
 ---
-<div class="cat" data-cat data-one={noun[0]} data-many={noun[1]}>
+<div class="cat" data-cat data-one={noun[0]} data-many={noun[1]} data-fold={fold ? JSON.stringify(fold) : undefined}>
   <div class="cat__bar" role="search">
     <label class="cat__q">
       <span class="visually-hidden">{label}</span>
@@ -46,9 +51,9 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
       <ul class="cat__list">
         {g.sheets.map((s) => (
           <li>
-            <details class="rec" id={s.anchor} data-rec data-g={g.key} data-keys={s.keys}>
+            <details class="rec" id={s.anchor} data-rec data-g={g.key} data-keys={folded(s.keys)}>
               <summary>
-                <Spec pic={s.pics[0]} glyphs={s.glyphs} lang={s.lang} px={64} />
+                <Spec pic={s.pics[0]} glyphs={s.typeset === false ? null : s.glyphs} lang={s.lang} px={64} />
                 <span class="rec__id">
                   <span class="rec__name">
                     {s.glyphs && <span class={nameCls(s)} lang={langOf(s)}>{s.glyphs}</span>}
@@ -79,7 +84,8 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
       const chips = [...cat.querySelectorAll<HTMLButtonElement>('[data-g]')].filter((b) => b.tagName === 'BUTTON');
       const one = cat.dataset.one!, many = cat.dataset.many!;
       let g = '';
-      const fold = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
+      const forms: Record<string, string> = cat.dataset.fold ? JSON.parse(cat.dataset.fold) : {};
+      const fold = (s: string) => [...s.normalize('NFC')].map((c) => forms[c] ?? c).join('').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
       const run = () => {
         const words = fold(q.value.trim()).split(/\s+/).filter(Boolean);
         let n = 0;

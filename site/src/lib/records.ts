@@ -22,6 +22,8 @@ export type Sheet = {
   kind: string;
   /** The characters of the mark, when it is written in them. */
   glyphs: string | null;
+  /** false: the glyphs name the mark but are not what is written (a crest, a seal described as a pattern), so no specimen is set in type. */
+  typeset?: boolean;
   lang: 'zh' | 'ja' | 'ko' | null;
   /** How it is read aloud (pinyin, romaji, Revised Romanization), or its English name. */
   reading: string;
@@ -72,6 +74,7 @@ const SPELL: [RegExp, string][] = [
   [/\bneighbour/g, 'neighbor'], [/\bNeighbour/g, 'Neighbor'], [/\brecognis/g, 'recogniz'], [/\breorganis/g, 'reorganiz'], [/\borganis/g, 'organiz'],
   [/\bCentre\b/g, 'Center'], [/\blicence\b/g, 'license'],
   [/\bobjects\b/g, 'items'], [/\bObjects\b/g, 'Items'], [/\bobject\b/g, 'item'], [/\bObject\b/g, 'Item'],
+  [/\bnot every item\b/g, 'not all items'], [/\bNot every item\b/g, 'Not all items'],
   [/\bexperts\b/g, 'specialists'], [/\bexpert\b/g, 'specialist'], [/\bfor sale to\b/g, 'to be sold to'],
 ];
 export function voice(t: string) {
@@ -242,7 +245,9 @@ export function jaSheet(m: JaMark): Sheet {
   const others = m.spellings.filter((x) => flat(x) !== flat(m.romaji) && flat(x) !== flat(m.romajiPlain ?? ''));
   return {
     id: m.id, anchor: m.slug, url: `/marks/japanese/#${m.slug}`, kind: m.kind, group: m.group,
-    glyphs: m.chars || null, lang: 'ja', reading: m.romaji, means: clean(m.meaning), meansTr: true,
+    glyphs: m.chars || null, lang: 'ja', reading: m.romaji,
+    // A crest is a picture, and a seal described as a pattern (極 + 子丑寅… + 月) is not one mark (main 0ab5985).
+    typeset: m.family !== 'crests' && !/[+＋／]/.test(m.chars), means: clean(m.meaning), meansTr: true,
     years: yearsOf(m.from, m.to),
     facts: [
       ['Read as', m.kana],

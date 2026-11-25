@@ -49,7 +49,7 @@ they show up everywhere the day their route exists.
 | Catalogue | `components/ref/Catalogue.astro` | every record of a kind, grouped; each row opens into its sheet in place; search, group chips, a character picker; `#anchor` and the old `?mark=` open a record |
 | Record sheet | `components/ref/RecordSheet.astro`, `lib/records.ts` | the mark (photo, book cut, drawing, or characters set in type in columns, labeled as such); facts in plain words; where the sources differ; a caution; sources numbered |
 | Tools and readers | the islands | kept as they were (silver, gold, pottery, date codes, reigns, date letters, watches, Japanese and Korean dates, print seals), now inside the frame |
-| Older generated pages | `pages/marks/[...legacy].astro` | the remaining `marks/*.html` pages framed with their own words, structured data and lookups (`styles/lookups.css`); reached by a full page load so `marks.js` runs |
+| Guide pages | `components/GuidePage.astro` (main's `[...guide].astro`, `content/guides`) | the article pages (plate makers, silver by country, standards, date codes, serial lookups) inside the frame; a page with a lookup is reached by a full page load so `marks.js` runs |
 
 ## Adding a collection (what is still coming)
 
@@ -69,8 +69,8 @@ they show up everywhere the day their route exists.
   cyclical year alone; era names Song to Yuan, the sixty-year cycle, taboo
   characters) and `/marks/chinese/imperial-seals` (69 seals by dynasty, the
   catalogue seal sets).
-- Every other reference page inside the frame; the 28 older generated pages
-  framed; the seven new assay offices (cherry-picked from `marks/more-offices`).
+- Every other reference page inside the frame, the guide pages included;
+  the seven new assay offices (cherry-picked from `marks/more-offices`).
 - Record text in the site's voice (`clean`, `voice` in `lib/records.ts`);
   translations marked `class="tr"`, designations as names. Checked against
   the live build with the copy rules: nothing new, about 190 fewer findings.
@@ -85,16 +85,14 @@ they show up everywhere the day their route exists.
   ("Disputed: princely (饮流斋…) vs. a Forbidden City hall"). The templates
   tidy what they safely can; an editorial pass on the data, like the Japanese
   one, is the real fix.
-- Guides at the site's root (`/silver-hallmarks`) open outside the frame.
 - Per-record pages (one address per hall, maker or seal) are not made; records
   keep their anchors on their catalogue page.
 
 ## Landing
 
-Rebase on main once the imports stop. Expect conflicts in `Header.astro` and
-`Base.astro` (the site-identity branch), the pages other sessions converted
-since (e.g. main 1fcb878, the silver, plate and gold guides: if they become a
-dynamic route, add its pages to `astroRoutes()` or `[...legacy]` will make
-them twice), and the Japanese and Korean pages. Build with
+Merged to main on Nov 25, 2026 (Joe: "merge to main"). A new dynamic route
+must add its pages to `astroRoutes()` in `lib/reference.ts`, or the map will
+not link them. The site-identity branch (header, Base) will need a rebase
+over this. Build with
 `APP_REPO=… APP_REF=origin/main node scripts/sync-data.mjs` first, then
 `npm run build`.

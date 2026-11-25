@@ -75,6 +75,9 @@ export function astroRoutes(): Set<string> {
   for (const m of makers()) out.add(`/marks/${m.slug}`);
   for (const a of artists()) out.add(`/marks/${a.slug}-signature`);
   for (const r of collection().records) if (r.kind === 'reign mark') out.add(`/marks/${r.id.replace(/^reign-/, '')}-mark`);
+  // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
+  const guides = join(process.cwd(), 'src', 'content', 'guides');
+  if (existsSync(guides)) for (const f of readdirSync(guides)) if (f.endsWith('.json')) out.add(norm(JSON.parse(readFileSync(join(guides, f), 'utf8')).path));
   return (made = out);
 }
 export function routes(): Set<string> {
