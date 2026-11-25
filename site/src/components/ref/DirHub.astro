@@ -1,0 +1,41 @@
+---
+// A directory's hub (lib/makers-dir.ts): every place it has, by region, with
+// how many marks each holds and their years. The page brings its own words
+// (the default slot, after the places) and its AppBox.
+import Reference from '../../layouts/Reference.astro';
+import { DIRS, places } from '../../lib/makers-dir';
+import { articleLd } from '../../lib/site';
+interface Props { k: string; title: string; description: string; h1: string; lede: string; crumb: string; named?: boolean }
+const { k, title, description, h1, lede, crumb, named = false } = Astro.props;
+const dir = DIRS[k];
+const all = places(dir);
+const total = all.reduce((n, p) => n + p.n, 0);
+const namedN = all.reduce((n, p) => n + p.named, 0);
+const n = (x: number) => x.toLocaleString('en-US');
+const path = dir.base;
+const regions = dir.regions.filter((r) => all.some((p) => p.region === r));
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, h1, description, '2026-11-25')]} {crumb}>
+  <header class="rhead">
+    <h1>{h1}</h1>
+    <p class="rhead__lede" set:html={lede} />
+    <ul class="rhead__meta">
+      <li><strong class="num">{n(total)}</strong> {dir.noun[1]}</li>
+      {named && <li><strong class="num">{n(namedN)}</strong> with the maker named</li>}
+      <li><strong class="num">{all.length}</strong> {all.length === 1 ? dir.places[0] : dir.places[1]}</li>
+    </ul>
+  </header>
+
+  {regions.map((r) => (
+    <section class="ahome__block" aria-labelledby={`r-${r.replace(/\W+/g, '-')}`}>
+      {regions.length > 1 && <h2 id={`r-${r.replace(/\W+/g, '-')}`}><span class="proper-name">{r}</span></h2>}
+      <ul class="places">
+        {all.filter((p) => p.region === r).map((p) => (
+          <li><a href={p.path}><strong>{p.name}</strong><span class="n num">{n(p.n)}</span>{p.from && <span class="y num">{p.from === p.to ? p.from : `${p.from}–${p.to}`}{named && p.named > 0 && <>, {n(p.named)} {p.named === 1 ? 'maker' : 'makers'} named</>}</span>}</a></li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <slot />
+</Reference>

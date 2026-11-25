@@ -16,7 +16,7 @@ import { collection, SEAL_KINDS } from './portal';
 import { OFFICES, HALLMARKS } from './marks';
 import { makers } from './makers';
 import { artists } from './artists';
-import { places, isSplit, letterPath, makerGroups } from './makers-dir';
+import { places, allPlaces, DIRS, isSplit, letterPath, makerGroups } from './makers-dir';
 
 export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'signatures' | 'serials';
 export type RefLink = {
@@ -76,7 +76,7 @@ export function astroRoutes(): Set<string> {
   for (const m of makers()) out.add(`/marks/${m.slug}`);
   for (const a of artists()) out.add(`/marks/${a.slug}-signature`);
   for (const r of collection().records) if (r.kind === 'reign mark') out.add(`/marks/${r.id.replace(/^reign-/, '')}-mark`);
-  for (const p of places()) { out.add(p.path); if (isSplit(p)) for (const g of makerGroups(p)) out.add(letterPath(p, g.key)); }
+  for (const p of allPlaces()) { out.add(p.path); if (isSplit(p)) for (const g of makerGroups(p)) out.add(letterPath(p, g.key)); }
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
   const guides = join(process.cwd(), 'src', 'content', 'guides');
   if (existsSync(guides)) for (const f of readdirSync(guides)) if (f.endsWith('.json')) out.add(norm(JSON.parse(readFileSync(join(guides, f), 'utf8')).path));
@@ -142,7 +142,12 @@ function build(): Area[] {
   // Every town Jackson lists makers for (lib/makers-dir.ts), most marks first, after the directory itself.
   const makerOffices: RefLink[] = [
     { href: '/marks/british-silver-makers/', label: 'Every town', note: 'The directory, by country' },
-    ...places().map((p) => ({ href: p.path, label: p.name, note: `${p.n.toLocaleString('en-US')} marks` })),
+    ...places(DIRS.british).map((p) => ({ href: p.path, label: p.name, note: `${p.n.toLocaleString('en-US')} marks` })),
+  ];
+  // The other directories (lib/makers-dir.ts): each one's hub, then its pages.
+  const dirLinks = (k: string, hub: string, note: string): RefLink[] => [
+    { href: DIRS[k].base, label: hub, note },
+    ...places(DIRS[k]).map((p) => ({ href: p.path, label: p.name, note: `${p.n.toLocaleString('en-US')} ${p.n === 1 ? DIRS[k].noun[0] : DIRS[k].noun[1]}` })),
   ];
 
   return [
@@ -160,6 +165,11 @@ function build(): Area[] {
         ] },
         { label: 'British date letters', fold: true, links: offices },
         { label: 'British makers’ marks', fold: true, links: makerOffices },
+        { label: 'American makers’ marks', fold: true, links: [
+          ...dirLinks('american', 'Every section', 'Trademarks in 1896, and the early silversmiths'),
+          ...dirLinks('yearmarks', 'Year marks', 'The firms that marked the year').map((l, i) => (i === 0 ? l : { ...l, label: `${l.label} year marks` })),
+        ] },
+        { label: 'Continental marks', fold: true, links: dirLinks('continental', 'Every country', 'Town, standard and duty marks') },
         { label: 'Silver from other countries', links: [
           { href: '/marks/gorham-silver-marks', label: 'Gorham', note: 'American, with year marks' },
           { href: '/marks/french-silver-marks', label: 'France', note: 'Minerva, the boar’s head, makers’ lozenges' },
@@ -318,7 +328,7 @@ const HOMES: [RegExp, AreaKey][] = [
   [/^\/marks\/japanese/, 'japan'],
   [/^\/marks\/korean/, 'korea'],
   [/-signature$|^\/signatures/, 'signatures'],
-  [/^\/marks\/british-silver-makers\//, 'silver'],
+  [/^\/marks\/(british|american)-silver-makers\/|^\/marks\/american-silver-date-marks\/|^\/marks\/continental-silver-marks\//, 'silver'],
   [/-date-letters$/, 'silver'],
 ];
 

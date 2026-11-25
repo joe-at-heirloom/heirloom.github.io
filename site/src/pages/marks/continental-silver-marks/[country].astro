@@ -1,0 +1,10 @@
+---
+// /marks/continental-silver-marks/<country>: a country's marks, town by town.
+import DirPlace from '../../../components/ref/DirPlace.astro';
+import { places, DIRS, type Place } from '../../../lib/makers-dir';
+export function getStaticPaths() {
+  return places(DIRS.continental).map((p) => ({ params: { country: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Place };
+---
+<DirPlace {p} />

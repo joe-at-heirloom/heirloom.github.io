@@ -7,7 +7,7 @@
 import { marks, GROUPS as JA_GROUPS } from './japanese';
 import { inscriptions, GROUPS as KO_GROUPS } from './korean';
 import { jaSheet, koSheet, type Sheet } from './records';
-import { places, makerGroups } from './makers-dir';
+import { allPlaces, makerGroups, type Place } from './makers-dir';
 
 export type Group = { key: string; label: string; blurb?: string; sheets: Sheet[] };
 
@@ -23,13 +23,14 @@ export function koreanGroups(): Group[] {
   const sheets = inscriptions().map(koSheet);
   return (ko = KO_GROUPS.map((g) => ({ key: g.id, label: g.name, blurb: g.blurb, sheets: sheets.filter((x) => x.group === g.id) })).filter((g) => g.sheets.length));
 }
-const makers = new Map<string, Group[]>();
-export function makerPlaceGroups(slug: string): Group[] {
-  const got = makers.get(slug);
+const places = new Map<string, Group[]>();
+/** One directory place's groups (lib/makers-dir.ts), built once for the page and its companion files. */
+export function placeGroups(p: Place): Group[] {
+  const k = `${p.dir}-${p.slug}`;
+  const got = places.get(k);
   if (got) return got;
-  const p = places().find((x) => x.slug === slug)!;
   const g = makerGroups(p);
-  makers.set(slug, g);
+  places.set(k, g);
   return g;
 }
 
@@ -38,6 +39,6 @@ export function sheetChunks(): { chunk: string; sheets: Sheet[] }[] {
   const out: { chunk: string; sheets: Sheet[] }[] = [];
   for (const g of japaneseGroups()) out.push({ chunk: `japanese--${g.key}`, sheets: g.sheets });
   for (const g of koreanGroups()) out.push({ chunk: `korean--${g.key}`, sheets: g.sheets });
-  for (const p of places()) for (const g of makerPlaceGroups(p.slug)) out.push({ chunk: `makers-${p.slug}--${g.key}`, sheets: g.sheets });
+  for (const p of allPlaces()) for (const g of placeGroups(p)) out.push({ chunk: `${p.dir}-${p.slug}--${g.key}`, sheets: g.sheets });
   return out;
 }

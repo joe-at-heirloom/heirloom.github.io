@@ -6,13 +6,16 @@ import Spec from './Spec.astro';
 import { statusWord, withNames, type Sheet } from '../../lib/records';
 const { s } = Astro.props as { s: Sheet };
 const [lead, ...more] = s.pics;
+// A fact that only repeats the headline (the meaning, or the reading) is left out.
+const same = (a: string | null | undefined, b: string) => !!a && a.replace(/[.\s]+$/, '').toLowerCase() === b.replace(/[.\s]+$/, '').toLowerCase();
+const facts = s.facts.filter((f) => !same(s.means, f.text) && !same(s.reading, f.text));
 ---
 <div class="sheet2">
   <div class="sheet2__body">
     {s.means && <p class="sheet2__means">{s.meansTr ? <span class="tr">{s.means}</span> : s.means}</p>}
-    {s.facts.length > 0 && (
+    {facts.length > 0 && (
       <dl class="facts2">
-        {s.facts.map((f) => <><dt>{f.label}</dt><dd lang={f.label === 'Also written' ? (s.lang === 'ja' ? 'ja' : s.lang === 'ko' ? 'ko' : 'zh-Hant') : undefined} class:list={[{ han: f.label === 'Also written' }]} set:html={withNames(f.text)} /></>)}
+        {facts.map((f) => <><dt>{f.label}</dt><dd lang={f.label === 'Also written' ? (s.lang === 'ja' ? 'ja' : s.lang === 'ko' ? 'ko' : 'zh-Hant') : undefined} class:list={[{ han: f.label === 'Also written' }]} set:html={withNames(f.text)} /></>)}
       </dl>
     )}
     {s.caution && <p class="caution"><strong>Careful: </strong><Fragment set:html={withNames(s.caution)} /></p>}

@@ -1,51 +1,24 @@
 ---
 // /marks/british-silver-makers/: the makers' marks of Jackson's English
-// Goldsmiths and Their Marks (1921), place by place (lib/makers-dir.ts):
-// every town the records name, by country, with how many marks and makers.
-import Reference from '../../../layouts/Reference.astro';
+// Goldsmiths and Their Marks (1921), town by town (components/ref/DirHub.astro).
+import DirHub from '../../../components/ref/DirHub.astro';
 import AppBox from '../../../components/AppBox.astro';
-import { places, COUNTRY_ORDER } from '../../../lib/makers-dir';
-import { articleLd } from '../../../lib/site';
-
-const path = '/marks/british-silver-makers/';
-const all = places();
+import { places, DIRS } from '../../../lib/makers-dir';
+const all = places(DIRS.british);
 const total = all.reduce((n, p) => n + p.n, 0);
 const named = all.reduce((n, p) => n + p.named, 0);
 const n = (x: number) => x.toLocaleString('en-US');
-const title = 'British Silver Makers’ Marks: London, Edinburgh, Dublin and 38 More Towns | Heirloom';
-const description = `${n(total)} makers’ marks on British and Irish silver from Jackson’s English Goldsmiths and Their Marks (1921), town by town: the initials, who made it, the item Jackson saw it on and its year.`;
 ---
-<Reference {title} {description} {path} jsonld={[articleLd(path, 'British silver makers’ marks', description, '2026-11-25')]} crumb="British makers’ marks">
-  <header class="rhead">
-    <h1>British silver makers’ marks</h1>
-    <p class="rhead__lede">Beside the hallmarks, a maker struck their own mark: usually their initials in a shaped punch. These are the marks Sir Charles Jackson recorded in <cite>English Goldsmiths and Their Marks</cite> (1921), each with the item he saw it on and the year of its hallmark. Pick the town whose mark is on your silver, then the first letter of the initials.</p>
-    <ul class="rhead__meta">
-      <li><strong class="num">{n(total)}</strong> makers’ marks</li>
-      <li><strong class="num">{n(named)}</strong> with the maker named</li>
-      <li><strong class="num">{all.length}</strong> towns and groups</li>
-    </ul>
-  </header>
-
-  {COUNTRY_ORDER.map((c) => {
-    const list = all.filter((p) => p.country === c);
-    return list.length > 0 && (
-      <section class="ahome__block" aria-labelledby={`c-${c}`}>
-        <h2 id={`c-${c}`}><span class="proper-name">{c}</span></h2>
-        <ul class="places">
-          {list.map((p) => (
-            <li><a href={p.path}><strong>{p.name}</strong><span class="n num">{n(p.n)}</span>{p.from && <span class="y num">{p.from === p.to ? p.from : `${p.from}–${p.to}`}{p.named > 0 && <>, {n(p.named)} {p.named === 1 ? 'maker' : 'makers'} named</>}</span>}</a></li>
-          ))}
-        </ul>
-      </section>
-    );
-  })}
-
+<DirHub k="british" crumb="British makers’ marks" named
+  title="British Silver Makers’ Marks: London, Edinburgh, Dublin and More Towns | Heirloom"
+  description={`${n(total)} makers’ marks on British and Irish silver from Jackson’s English Goldsmiths and Their Marks (1921), town by town: the initials, who made it, the item Jackson saw it on and its year.`}
+  h1="British silver makers’ marks"
+  lede="Beside the hallmarks, a maker struck their own mark: usually their initials in a shaped punch. These are the marks Sir Charles Jackson recorded in <cite>English Goldsmiths and Their Marks</cite> (1921), each with the item he saw it on and the year of its hallmark. Pick the town whose mark is on your silver, then the first letter of the initials.">
   <section class="ahome__block read" aria-labelledby="read">
     <h2 id="read">Reading a maker’s mark</h2>
     <p>Find the town mark first: a leopard’s head for London, an anchor for Birmingham, a castle for Edinburgh, a crowned harp for Dublin. The <a href="/marks/silver/">silver and gold</a> pages and the date-letter sheets name each one. The maker’s mark is the punch that is not the town, the standard, the date letter or the duty mark.</p>
     <p>Jackson lists a mark under the year of the hallmark on the item he saw it on. A maker used the same punch for years, often decades, either side, and many punches were close copies of one another: match the letters, their style and the shape of the punch together, and read the year as a year the mark was in use, not the year your item was made.</p>
     <p>Jackson names the maker of {n(named)} of these {n(total)} marks. Where he hedges (“probably”, or a question mark), the sheet says so. His book is in the public domain, and each mark’s picture is cut from its printed facsimile, with the page it is on.</p>
   </section>
-
   <AppBox text="Photograph the marks. The Advisor reads the town mark, the date letter and the maker’s initials together, finds the year, and names the maker when Jackson does." />
-</Reference>
+</DirHub>

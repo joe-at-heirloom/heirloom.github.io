@@ -1,80 +1,10 @@
 ---
-// /marks/british-silver-makers/<place>: one town's makers' marks from Jackson
-// (1921), by the first letter of the initials, each a row that opens into its
-// sheet (loaded on demand: lib/catalogues.ts). Every row's id is its record's
-// id, the anchor the Advisor's links carry.
-import Reference from '../../../layouts/Reference.astro';
-import Catalogue from '../../../components/ref/Catalogue.astro';
-import AppBox from '../../../components/AppBox.astro';
-import { places, isSplit, letterPath, letterFromId, type Place } from '../../../lib/makers-dir';
-import { media } from '../../../lib/media';
-import { makerPlaceGroups } from '../../../lib/catalogues';
-import { OFFICES } from '../../../lib/marks';
-import { articleLd } from '../../../lib/site';
-
+// /marks/british-silver-makers/<town>: one town's makers' marks (components/ref/DirPlace.astro).
+import DirPlace from '../../../components/ref/DirPlace.astro';
+import { places, DIRS, type Place } from '../../../lib/makers-dir';
 export function getStaticPaths() {
-  return places().map((p) => ({ params: { place: p.slug }, props: { p } }));
+  return places(DIRS.british).map((p) => ({ params: { place: p.slug }, props: { p } }));
 }
 const { p } = Astro.props as { p: Place };
-const groups = makerPlaceGroups(p.slug);
-const n = (x: number) => x.toLocaleString('en-US');
-const office = OFFICES.find((o) => o.office.toLowerCase() === p.name.toLowerCase());
-const span = p.from ? (p.from === p.to ? `${p.from}` : `${p.from} to ${p.to}`) : '';
-const unascribed = p.slug.startsWith('unascribed-');
-const title = unascribed ? `${p.name}: British Silver Makers’ Marks | Heirloom` : `${p.name} Silver Makers’ Marks${span ? `, ${span.replace(' to ', '–')}` : ''} | Heirloom`;
-const description = `${n(p.n)} makers’ marks ${unascribed ? 'Jackson could not tie to a town' : `struck at ${p.name}`}${span ? `, ${span}` : ''}, from Jackson’s English Goldsmiths and Their Marks (1921): the initials, the maker where known, the item and its year.`;
-const h1 = unascribed ? `Makers’ marks ${p.name.replace(/^Not tied to a town/, 'not tied to a town')}` : `${p.name} makers’ marks`;
-const path = p.path;
-// A big town's page is a hub of letters: a row of the first marks of each, and its count.
-const split = isSplit(p);
-const hub = split ? groups.map((g) => ({ key: g.key, label: g.key === '0' ? 'Without letters' : g.key, href: letterPath(p, g.key), n: g.sheets.length, pics: g.sheets.filter((s) => s.pics[0]).slice(0, 4).map((s) => s.pics[0]!.file) })) : [];
-// Links made before the split name a mark on this page (#mm-london-1712-ra): send them to its letter.
-const moved = split ? Object.fromEntries(groups.flatMap((g) => g.sheets.filter((s) => letterFromId(s.anchor) !== g.key).map((s) => [s.anchor, g.key]))) : {};
 ---
-<Reference {title} {description} {path} jsonld={[articleLd(path, h1, description, '2026-11-25')]} crumb={p.name} via={['/marks/british-silver-makers/', 'British makers’ marks']}>
-  <header class="rhead">
-    <h1>{h1}</h1>
-    <p class="rhead__lede">{n(p.n)} makers’ marks {unascribed ? 'that Jackson recorded without a town' : <>on silver assayed at {p.name}</>}{span && <>, {span}</>}, from Jackson’s <cite>English Goldsmiths and Their Marks</cite> (1921). Find the first letter of the initials on your silver; each mark opens to say who made it, what Jackson saw it on, and its year.</p>
-    <ul class="rhead__meta">
-      <li><strong class="num">{n(p.n)}</strong> marks</li>
-      <li><strong class="num">{n(p.named)}</strong> with the maker named</li>
-      {office && <li><a href={`/marks/${office.slug}-date-letters`}>{p.name} date letters →</a></li>}
-    </ul>
-  </header>
-
-  {split ? (
-    <section class="ahome__block" aria-labelledby="letters">
-      <h2 id="letters">By the first letter of the initials</h2>
-      <p>Find the mark’s first letter. To search every {p.name} mark at once, use the <a href={`/marks/?f=british-makers&q=${encodeURIComponent(p.name)}`}>reference search</a>.</p>
-      <ul class="lettergrid">
-        {hub.map((h) => (
-          <li><a href={h.href}>
-            <span class="lettergrid__l">{h.key === '0' ? '—' : h.label}</span>
-            <span class="lettergrid__pics">{h.pics.map((f) => <span class="plate plate--print"><img src={f} alt="" loading="lazy" decoding="async" /></span>)}</span>
-            <span class="lettergrid__n num">{n(h.n)} marks{h.key === '0' && ', without letters'}</span>
-          </a></li>
-        ))}
-      </ul>
-      <script is:inline define:vars={{ moved, base: p.path, letters: Object.fromEntries(hub.map((h) => [h.key, h.href])) }}>
-        (() => {
-          const id = decodeURIComponent(location.hash.slice(1));
-          if (!/^mm-/.test(id)) return;
-          const m = /^mm-[a-z-]+?-\d{4}-([a-z0-9]+)/.exec(id);
-          const part = m ? m[1] : '';
-          const key = moved[id] || (!part || part === 'device' || !/^[a-z]/.test(part) ? '0' : part[0].toUpperCase());
-          if (letters[key]) location.replace(`${letters[key]}#${id}`);
-        })();
-      </script>
-    </section>
-  ) : (
-    <Catalogue {groups} lazy={`makers-${p.slug}`} letters noun={['mark', 'marks']} placeholder="Initials, a maker or a year: RA, Rand, 1712" label="Initials, a maker or a year" />
-  )}
-
-  <section class="ahome__block read" aria-labelledby="read">
-    <h2 id="read">A year here is a year the mark was used</h2>
-    <p>Jackson lists each mark under the hallmark year of the item he saw it on. The maker used the punch for years either side, and other makers had punches very like it. Read the town mark and the date letter on your item to date it, and match the maker’s initials, their style and the punch’s shape together.</p>
-    <p>Heirloom never decides whether an item is genuine or by the maker its mark names. A specialist who can handle it is the one to ask.</p>
-  </section>
-
-  <AppBox text="Photograph the marks. The Advisor reads the town mark, the date letter and the maker’s initials together, finds the year, and names the maker when Jackson does." />
-</Reference>
+<DirPlace {p} />

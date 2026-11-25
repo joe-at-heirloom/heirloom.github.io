@@ -1,0 +1,122 @@
+---
+// One place of a directory (lib/makers-dir.ts): a town's makers' marks, a
+// section of the 1896 trade-mark book, a firm's year marks, a country's
+// marks. Its marks in groups, each a row that opens into its sheet (loaded on
+// demand); a place too big for one page (more than SPLIT marks) is instead a
+// hub of its groups, each a page, and sends an old #id link to its group.
+import Reference from '../../layouts/Reference.astro';
+import Catalogue from './Catalogue.astro';
+import AppBox from '../AppBox.astro';
+import { DIRS, isSplit, letterPath, letterFromId, type Place } from '../../lib/makers-dir';
+import { placeGroups } from '../../lib/catalogues';
+import { OFFICES } from '../../lib/marks';
+import { articleLd } from '../../lib/site';
+import { collection } from '../../lib/portal';
+
+const { p } = Astro.props as { p: Place };
+const dir = DIRS[p.dir];
+const groups = placeGroups(p);
+const n = (x: number) => x.toLocaleString('en-US');
+const span = p.from ? (p.from === p.to ? `${p.from}` : `${p.from} to ${p.to}`) : '';
+const dash = span.replace(' to ', '–');
+const hubPath = dir.base;
+
+// What each directory says about a place.
+const office = OFFICES.find((o) => o.office.toLowerCase() === p.name.toLowerCase());
+const unascribed = p.slug.startsWith('unascribed-');
+const records = dir.key === 'yearmarks' ? collection().records.filter((r) => r.family === dir.family && String(r.attributes?.intended_page ?? '').replace(/\/$/, '') === p.path) : [];
+const system = records[0]?.attributes?.system ? String(records[0].attributes.system) : null;
+const T = {
+  british: {
+    title: unascribed ? `${p.name}: British Silver Makers’ Marks | Heirloom` : `${p.name} Silver Makers’ Marks${dash ? `, ${dash}` : ''} | Heirloom`,
+    h1: unascribed ? `Makers’ marks ${p.name.replace(/^Not tied to a town/, 'not tied to a town')}` : `${p.name} makers’ marks`,
+    lede: `${n(p.n)} makers’ marks ${unascribed ? 'that Jackson recorded without a town' : `on silver assayed at ${p.name}`}${span ? `, ${span}` : ''}, from Jackson’s English Goldsmiths and Their Marks (1921). Find the first letter of the initials on your silver; each mark opens to say who made it, what Jackson saw it on, and its year.`,
+    desc: `${n(p.n)} makers’ marks ${unascribed ? 'Jackson could not tie to a town' : `struck at ${p.name}`}${span ? `, ${span}` : ''}, from Jackson’s English Goldsmiths and Their Marks (1921): the initials, the maker where known, the item and its year.`,
+    read: ['A year here is a year the mark was used', 'Jackson lists each mark under the hallmark year of the item he saw it on. The maker used the punch for years either side, and other makers had punches very like it. Read the town mark and the date letter on your item to date it, and match the maker’s initials, their style and the punch’s shape together.'],
+    app: 'Photograph the marks. The Advisor reads the town mark, the date letter and the maker’s initials together, finds the year, and names the maker when Jackson does.',
+  },
+  american: p.slug === 'early' ? {
+    title: 'Early American Silversmiths’ Marks, Before 1850 | Heirloom',
+    h1: 'Early American silversmiths’ marks',
+    lede: `${n(p.n)} American silversmiths and their marks, from Howard Pitcher Okie’s Old Silver and Old Sheffield Plate (1928), by surname. Most marks are a name or initials in a shaped punch; where Okie printed no picture, the sheet gives his description.`,
+    desc: `${n(p.n)} early American silversmiths’ marks from Okie (1928): the maker, the town, the working date and the mark, by surname.`,
+    read: ['A working date, not a range', 'Okie gives each maker one year, a date the maker is known to have worked, not the years of the business. Many silversmiths used several punches, and the same initials belonged to more than one maker: match the whole mark, its shape and the town together.'],
+    app: 'Photograph the marks. The Advisor reads the maker’s name or initials, finds the silversmiths whose marks fit, and keeps the reading with the photo.',
+  } : {
+    title: `${p.name} Trademarks, 1896: American Makers’ Marks | Heirloom`,
+    h1: `${p.name} trademarks, 1896`,
+    lede: `${n(p.n)} American makers’ trademarks for ${p.name.toLowerCase()}, as The Jewelers’ Circular printed them in its trade-mark book of 1896, by the maker’s name. Each opens to say what the mark shows, the words in it, and the firm’s address that year.`,
+    desc: `${n(p.n)} American ${p.name.toLowerCase()} trademarks from The Jewelers’ Circular (1896): the mark, the words in it, the maker and their address.`,
+    read: ['A mark in use in 1896', 'The book shows the marks in use in 1896, and some older ones beside them. It rarely says when a mark began, so a mark here dates an item to the years around 1896 only when nothing else on it does.'],
+    app: 'Photograph the mark. The Advisor reads it, finds the maker’s trademark, and keeps the reading with the photo.',
+  },
+  yearmarks: {
+    title: `${p.name} Year Marks${dash ? `, ${dash}` : ''}: Date ${p.name} Silver | Heirloom`,
+    h1: `${p.name} year marks`,
+    lede: system ?? `${n(p.n)} year marks of ${p.name}.`,
+    desc: `Date ${p.name} silver by its year mark: ${n(p.n)} marks${span ? `, ${span}` : ''}, from Rainwater’s Encyclopedia of American Silver Manufacturers and Kovels.`,
+    read: ['A year mark dates the making', 'A year mark is struck when the item is made, beside the maker’s trademark. It is small and often worn: compare its outline with the pictures, and read it together with the rest of the marks.'],
+    app: 'Photograph the marks. The Advisor reads the trademark and the year mark together and keeps the reading with the photo.',
+  },
+  continental: {
+    title: `${p.name} Silver Marks: Town, Standard and Duty Marks${dash ? `, ${dash}` : ''} | Heirloom`,
+    h1: `${p.name}: silver marks`,
+    lede: `${n(p.n)} town marks, standard marks, duty marks and date letters ${p.name === 'The Netherlands' ? 'of the Netherlands' : `of ${p.name}`}${span ? `, ${span}` : ''}, from Okie’s Old Silver and Old Sheffield Plate (1928), by town. Each opens to say what the mark shows and the years Okie gives it.`,
+    desc: `${n(p.n)} ${p.name} silver marks from Okie (1928): town marks, standards, duty marks and date letters, town by town.`,
+    read: ['Several marks, read together', 'Continental silver usually carries a town mark, a maker’s mark and often a standard or a date letter. Find the town by its mark, then read the others with it. Okie prints many marks without their exact years; the sheet gives what he gives.'],
+    app: 'Photograph the marks. The Advisor reads them together, names the town and standard they claim, and keeps the reading with the photo.',
+  },
+}[dir.key]!;
+
+const split = isSplit(p);
+const hub = split ? groups.map((g) => ({ key: g.key, label: g.label, href: letterPath(p, g.key), n: g.sheets.length, pics: g.sheets.filter((s) => s.pics[0]).slice(0, 4).map((s) => s.pics[0]!.file) })) : [];
+const moved = split ? Object.fromEntries(groups.flatMap((g) => g.sheets.filter((s) => letterFromId(s.anchor) !== g.key).map((s) => [s.anchor, g.key]))) : {};
+const path = p.path;
+---
+<Reference title={T.title} description={T.desc} {path} jsonld={[articleLd(path, T.h1, T.desc, '2026-11-25')]} crumb={p.name} via={[hubPath, dir.title.charAt(0).toUpperCase() + dir.title.slice(1)]}>
+  <header class="rhead">
+    <h1>{T.h1}</h1>
+    <p class="rhead__lede">{T.lede}</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{n(p.n)}</strong> {p.n === 1 ? dir.noun[0] : dir.noun[1]}</li>
+      {dir.key === 'british' && <li><strong class="num">{n(p.named)}</strong> with the maker named</li>}
+      {office && <li><a href={`/marks/${office.slug}-date-letters`}>{p.name} date letters →</a></li>}
+    </ul>
+  </header>
+
+  {split ? (
+    <section class="ahome__block" aria-labelledby="letters">
+      <h2 id="letters">By letter</h2>
+      <p>Pick the first letter. To search them all at once, use the <a href={`/marks/?q=${encodeURIComponent(p.name)}`}>reference search</a>.</p>
+      <ul class="lettergrid">
+        {hub.map((h) => (
+          <li><a href={h.href}>
+            <span class="lettergrid__l">{h.key === '0' ? '—' : h.label}</span>
+            {h.pics.length > 0 && <span class="lettergrid__pics">{h.pics.map((f) => <span class="plate plate--print"><img src={f} alt="" loading="lazy" decoding="async" /></span>)}</span>}
+            <span class="lettergrid__n num">{n(h.n)} {dir.noun[1]}{h.key === '0' && ', without letters'}</span>
+          </a></li>
+        ))}
+      </ul>
+      <script is:inline define:vars={{ moved, letters: Object.fromEntries(hub.map((h) => [h.key, h.href])) }}>
+        (() => {
+          const id = decodeURIComponent(location.hash.slice(1)) || new URLSearchParams(location.search).get('mark') || '';
+          if (!id) return;
+          const m = /^mm-[a-z-]+?-\d{4}-([a-z0-9]+)/.exec(id);
+          const part = m ? m[1] : '';
+          const key = moved[id] || (!part || part === 'device' || !/^[a-z]/.test(part) ? '0' : part[0].toUpperCase());
+          if (letters[key]) location.replace(`${letters[key]}#${id}`);
+        })();
+      </script>
+    </section>
+  ) : (
+    <Catalogue {groups} lazy={`${p.dir}-${p.slug}`} letters={groups.length > 6} noun={dir.noun} placeholder={dir.placeholder} label={dir.placeholder.split(':')[0]} />
+  )}
+
+  <section class="ahome__block read" aria-labelledby="read">
+    <h2 id="read">{T.read[0]}</h2>
+    <p>{T.read[1]}</p>
+    <p>Heirloom never decides whether an item is genuine or by the maker its mark names. A specialist who can handle it is the one to ask.</p>
+  </section>
+
+  <AppBox text={T.app} />
+</Reference>

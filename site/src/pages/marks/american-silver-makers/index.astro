@@ -1,0 +1,21 @@
+---
+// /marks/american-silver-makers/: American makers' marks: the 1896 trade-mark
+// book by section, and Okie's early silversmiths (components/ref/DirHub.astro).
+import DirHub from '../../../components/ref/DirHub.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { places, DIRS } from '../../../lib/makers-dir';
+const total = places(DIRS.american).reduce((n, p) => n + p.n, 0);
+const n = (x: number) => x.toLocaleString('en-US');
+---
+<DirHub k="american" crumb="American makers’ marks"
+  title="American Silver Makers’ Marks and Trademarks | Heirloom"
+  description={`${n(total)} American makers’ marks: the trademarks in The Jewelers’ Circular’s 1896 book (sterling, silver plate, watch cases, jewelry) and Okie’s early American silversmiths (1928).`}
+  h1="American silver makers’ marks"
+  lede="Two books, two kinds of mark. <cite>The Jewelers’ Circular</cite> printed the trademarks American firms used in 1896, from sterling and plate to watch cases and jewelry. Howard Pitcher Okie’s <cite>Old Silver and Old Sheffield Plate</cite> (1928) lists the early silversmiths who struck their name or initials, before the factories.">
+  <section class="ahome__block read" aria-labelledby="read">
+    <h2 id="read">Which list to look in</h2>
+    <p>A pictorial mark, a firm’s name or the word STERLING with an emblem belongs to a manufacturer: look in the 1896 trademarks. A surname or initials in a small punch, with no hallmarks beside it, is usually an earlier silversmith’s mark: look in the early silversmiths. American silver has no date letters, so a maker’s mark is often the best clue to when an item was made; for a few firms, a <a href="/marks/american-silver-date-marks/">year mark</a> dates it to the year.</p>
+    <p>For the silver-plate names most often found on flatware, see <a href="/marks/1847-rogers-bros">1847 Rogers Bros.</a>, <a href="/marks/wm-rogers">Wm. Rogers</a> and <a href="/marks/international-silver-co">International Silver</a>.</p>
+  </section>
+  <AppBox text="Photograph the mark. The Advisor reads it, finds the maker in these lists, and keeps the reading with the photo." />
+</DirHub>

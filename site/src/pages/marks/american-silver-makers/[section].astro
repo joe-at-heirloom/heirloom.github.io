@@ -1,0 +1,11 @@
+---
+// /marks/american-silver-makers/<section>: the 1896 trade-mark book's sterling,
+// silver plate, watch cases and jewelry, and Okie's early silversmiths.
+import DirPlace from '../../../components/ref/DirPlace.astro';
+import { places, DIRS, type Place } from '../../../lib/makers-dir';
+export function getStaticPaths() {
+  return places(DIRS.american).map((p) => ({ params: { section: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Place };
+---
+<DirPlace {p} />

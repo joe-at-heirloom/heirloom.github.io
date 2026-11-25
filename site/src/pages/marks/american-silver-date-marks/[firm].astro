@@ -1,0 +1,10 @@
+---
+// /marks/american-silver-date-marks/<firm>: one firm's year marks.
+import DirPlace from '../../../components/ref/DirPlace.astro';
+import { places, DIRS, type Place } from '../../../lib/makers-dir';
+export function getStaticPaths() {
+  return places(DIRS.yearmarks).map((p) => ({ params: { firm: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Place };
+---
+<DirPlace {p} />

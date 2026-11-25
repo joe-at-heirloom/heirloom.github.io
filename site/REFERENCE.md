@@ -59,10 +59,21 @@ are one companion file, `/marks/data/sheets/<name>--<group>.html`
 that group opens. Pages and companion files build from the same functions
 (`lib/catalogues.ts`); add a new lazy catalogue to `sheetChunks()` there.
 
-The British makers directory (`/marks/british-silver-makers/`, lib/makers-dir.ts)
-is one page per town; a town with more than 1,500 marks (London) is a hub of
-letters with a page per letter, and the hub sends an old `#mm-…` link to its
-letter. The same template takes the next makers' families (DIRS).
+Directories (`lib/makers-dir.ts`, DIRS) are one page per place under one
+address, with a hub (`components/ref/DirHub.astro`), place pages
+(`DirPlace.astro`) and, for a place over 1,500 marks, a page per letter
+(`DirLetter.astro`; the place page becomes a hub of letters and sends an old
+`#id` link to its letter):
+
+- `british`: Jackson's makers' marks by town, `/marks/british-silver-makers/`
+- `american`: the 1896 trademarks by section and Okie's early silversmiths,
+  `/marks/american-silver-makers/`
+- `yearmarks`: American firms' year marks, `/marks/american-silver-date-marks/`
+- `continental`: Okie's continental marks by country, `/marks/continental-silver-marks/`
+
+A new directory is one DIRS entry (family, address, how places are named and
+grouped, a sheet), a hub page, thin route files like the others, its links in
+the map, and its route in the app's collect.ts BUILDS_EVERY.
 
 ## Adding a collection (what is still coming)
 

@@ -1,0 +1,22 @@
+---
+// /marks/continental-silver-marks/: Okie's continental marks (1928), country
+// by country (components/ref/DirHub.astro).
+import DirHub from '../../../components/ref/DirHub.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { places, DIRS } from '../../../lib/makers-dir';
+const all = places(DIRS.continental);
+const total = all.reduce((n, p) => n + p.n, 0);
+const n = (x: number) => x.toLocaleString('en-US');
+---
+<DirHub k="continental" crumb="Continental marks"
+  title="Continental European Silver Marks: Town, Standard and Duty Marks by Country | Heirloom"
+  description={`${n(total)} silver marks from ${all.length} European countries, from Okie’s Old Silver and Old Sheffield Plate (1928): town marks, standards, duty marks and date letters, country by country and town by town.`}
+  h1="Continental European silver marks"
+  lede="Town marks, standard marks, duty marks and date letters from across Europe, as Howard Pitcher Okie printed them in <cite>Old Silver and Old Sheffield Plate</cite> (1928). Pick the country, then the town.">
+  <section class="ahome__block read" aria-labelledby="read">
+    <h2 id="read">Reading continental marks</h2>
+    <p>Most continental silver carries a town mark, a maker’s mark and often a mark for the standard of silver or a date letter. A town mark is usually the town’s arms or its initial: Augsburg’s pyr, Nuremberg’s N. Find the town by its mark, then read the others with it.</p>
+    <p>For the later national marks, see <a href="/marks/french-silver-marks">French silver marks</a>, <a href="/marks/german-silver-marks">German silver marks</a> and <a href="/marks/russian-silver-marks">Russian silver marks</a>.</p>
+  </section>
+  <AppBox text="Photograph the marks. The Advisor reads them together, names the town and standard they claim, and keeps the reading with the photo." />
+</DirHub>

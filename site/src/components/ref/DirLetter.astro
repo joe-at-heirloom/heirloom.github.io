@@ -1,0 +1,39 @@
+---
+// One letter of a big place (lib/makers-dir.ts SPLIT): London's makers' marks
+// under R, Okie's early silversmiths under B. A catalogue whose sheets load
+// on demand; the place's own page is the hub of letters.
+import Reference from '../../layouts/Reference.astro';
+import Catalogue from './Catalogue.astro';
+import { DIRS, letterPath, type Place } from '../../lib/makers-dir';
+import { placeGroups } from '../../lib/catalogues';
+import { articleLd } from '../../lib/site';
+
+const { p, key } = Astro.props as { p: Place; key: string };
+const dir = DIRS[p.dir];
+const all = placeGroups(p);
+const g = all.find((x) => x.key === key)!;
+const n = (x: number) => x.toLocaleString('en-US');
+const what = dir.key === 'british' ? `${p.name} makers’ marks` : p.slug === 'early' ? 'Early American silversmiths' : `${p.name}: ${dir.noun[1]}`;
+const by = dir.key === 'british' ? 'with initials beginning' : 'beginning';
+const h1 = key === '0' ? `${what} without letters` : `${what}, ${key}`;
+const path = letterPath(p, key);
+const title = `${what} ${key === '0' ? '(without letters)' : `${by} ${key}`} | Heirloom`.replace(/’/g, '’');
+const description = `${n(g.sheets.length)} ${what.toLowerCase().startsWith('early') ? 'early American silversmiths’ marks' : `${p.name} ${dir.noun[1]}`} ${key === '0' ? 'without letters' : `${by} ${key}`}: who made each, and when.`;
+const i = all.indexOf(g);
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, h1, description, '2026-11-25')]} crumb={key === '0' ? 'Without letters' : key} via={[[dir.base, dir.title.charAt(0).toUpperCase() + dir.title.slice(1)], [p.path, p.name]]}>
+  <header class="rhead">
+    <h1>{h1}</h1>
+    <p class="rhead__lede">{n(g.sheets.length)} {dir.noun[1]}. Each opens to say who made it, and when.</p>
+    <nav class="letters" aria-label={`${p.name} by letter`}>
+      {all.map((x) => <a href={letterPath(p, x.key)} aria-current={x.key === key ? 'page' : undefined}>{x.key === '0' ? 'No letters' : x.key}</a>)}
+    </nav>
+  </header>
+
+  <Catalogue groups={[g]} lazy={`${p.dir}-${p.slug}`} noun={dir.noun} placeholder={dir.placeholder} label={dir.placeholder.split(':')[0]} />
+
+  <nav class="ref__seq" aria-label="More letters">
+    {i > 0 ? <a class="ref__seq-prev" href={letterPath(p, all[i - 1].key)}><span>Previous letter</span><strong>{all[i - 1].label}</strong></a> : <span />}
+    {i < all.length - 1 && <a class="ref__seq-next" href={letterPath(p, all[i + 1].key)}><span>Next letter</span><strong>{all[i + 1].label}</strong></a>}
+  </nav>
+</Reference>

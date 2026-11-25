@@ -1,41 +1,11 @@
 ---
-// /marks/british-silver-makers/<town>/<letter>: one letter of a big town's
-// makers' marks (London: lib/makers-dir.ts SPLIT), as a catalogue whose
-// sheets load on demand. The town's own page is the hub of letters.
-import Reference from '../../../../layouts/Reference.astro';
-import Catalogue from '../../../../components/ref/Catalogue.astro';
-import { places, isSplit, letterSlug, letterPath, type Place } from '../../../../lib/makers-dir';
-import { makerPlaceGroups } from '../../../../lib/catalogues';
-import { articleLd } from '../../../../lib/site';
-
+// /marks/british-silver-makers/<town>/<letter>: one letter of a big town (London).
+import DirLetter from '../../../../components/ref/DirLetter.astro';
+import { places, DIRS, isSplit, letterSlug, type Place } from '../../../../lib/makers-dir';
+import { placeGroups } from '../../../../lib/catalogues';
 export function getStaticPaths() {
-  return places().filter(isSplit).flatMap((p) => makerPlaceGroups(p.slug).map((g) => ({ params: { place: p.slug, letter: letterSlug(g.key) }, props: { p, key: g.key } })));
+  return places(DIRS.british).filter(isSplit).flatMap((p) => placeGroups(p).map((g) => ({ params: { place: p.slug, letter: letterSlug(g.key) }, props: { p, key: g.key } })));
 }
 const { p, key } = Astro.props as { p: Place; key: string };
-const all = makerPlaceGroups(p.slug);
-const g = all.find((x) => x.key === key)!;
-const n = (x: number) => x.toLocaleString('en-US');
-const named = g.sheets.filter((s) => s.means !== 'Maker not identified').length;
-const label = key === '0' ? 'without letters' : `under ${key}`;
-const path = letterPath(p, key);
-const title = `${p.name} Silver Makers’ Marks ${key === '0' ? 'Without Letters' : `Beginning ${key}`} | Heirloom`;
-const description = `${n(g.sheets.length)} ${p.name} makers’ marks ${key === '0' ? 'without letters (devices only)' : `with initials beginning ${key}`}, from Jackson’s English Goldsmiths and Their Marks (1921): who made each, the item and its year.`;
-const h1 = `${p.name} makers’ marks ${label}`;
-const i = all.indexOf(g);
 ---
-<Reference {title} {description} {path} jsonld={[articleLd(path, h1, description, '2026-11-25')]} crumb={key === '0' ? 'Without letters' : key} via={[['/marks/british-silver-makers/', 'British makers’ marks'], [p.path, p.name]]}>
-  <header class="rhead">
-    <h1>{h1}</h1>
-    <p class="rhead__lede">{n(g.sheets.length)} marks, {n(named)} with the maker named, from Jackson’s <cite>English Goldsmiths and Their Marks</cite> (1921). Each opens to say who made it, what Jackson saw it on, and its year.</p>
-    <nav class="letters" aria-label={`${p.name} marks by letter`}>
-      {all.map((x) => <a href={letterPath(p, x.key)} aria-current={x.key === key ? 'page' : undefined}>{x.key === '0' ? 'No letters' : x.key}</a>)}
-    </nav>
-  </header>
-
-  <Catalogue groups={[g]} lazy={`makers-${p.slug}`} noun={['mark', 'marks']} placeholder={key === '0' ? 'A maker, a device or a year' : `Initials, a maker or a year: ${key}…`} label="Initials, a maker or a year" />
-
-  <nav class="ref__seq" aria-label="More letters">
-    {i > 0 ? <a class="ref__seq-prev" href={letterPath(p, all[i - 1].key)}><span>Previous letter</span><strong>{all[i - 1].label}</strong></a> : <span />}
-    {i < all.length - 1 && <a class="ref__seq-next" href={letterPath(p, all[i + 1].key)}><span>Next letter</span><strong>{all[i + 1].label}</strong></a>}
-  </nav>
-</Reference>
+<DirLetter {p} {key} />

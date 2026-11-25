@@ -1,0 +1,11 @@
+---
+// /marks/continental-silver-marks/<country>/<letter>: one letter of a country too big for one page.
+import DirLetter from '../../../../components/ref/DirLetter.astro';
+import { places, DIRS, isSplit, letterSlug, type Place } from '../../../../lib/makers-dir';
+import { placeGroups } from '../../../../lib/catalogues';
+export function getStaticPaths() {
+  return places(DIRS.continental).filter(isSplit).flatMap((p) => placeGroups(p).map((g) => ({ params: { country: p.slug, letter: letterSlug(g.key) }, props: { p, key: g.key } })));
+}
+const { p, key } = Astro.props as { p: Place; key: string };
+---
+<DirLetter {p} {key} />
