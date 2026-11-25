@@ -1,22 +1,24 @@
 ---
 // One header for every page. The site is part app, part reference: the app
-// comes first, then the two halves of the reference (marks, signatures), then
-// guides. Each door opens a panel with everything behind it; search, sign in
-// and Get Heirloom sit at the right. On a phone the same order fills a sheet.
-import { app, marks, signatures, artists, guides, APP_STORE, WEB_APP } from '../lib/nav';
+// comes first, then the reference (marks, signatures and serial numbers, by
+// what you are holding: lib/reference.ts), then guides. Each door opens a
+// panel with everything behind it; search, sign in and Get Heirloom sit at
+// the right. On a phone the same order fills a sheet.
+import { app, guides, APP_STORE, WEB_APP } from '../lib/nav';
+import { AREAS, order } from '../lib/reference';
 const { path } = Astro.props as { path: string };
 const on = {
   app: path.startsWith('/app') || ['/home-inventory-app', '/antique-identifier-app'].some((h) => path.startsWith(h)),
-  marks: path.startsWith('/marks') && !path.includes('-signature') && !path.startsWith('/marks/chinese/painters'),
-  sigs: path.startsWith('/signatures') || path.includes('-signature') || path.startsWith('/marks/chinese/painters'),
+  ref: path.startsWith('/marks') || path.startsWith('/signatures'),
   guides: ['/guides', '/home-inventory-checklist', '/silver-hallmarks', '/family-heirlooms'].some((h) => path.startsWith(h)),
 };
 const doors = [
   { id: 'p-app', label: 'The app', current: on.app },
-  { id: 'p-marks', label: 'Marks', current: on.marks },
-  { id: 'p-sigs', label: 'Signatures', current: on.sigs },
+  { id: 'p-ref', label: 'Reference', current: on.ref },
   { id: 'p-guides', label: 'Guides', current: on.guides },
 ];
+// Each area with its first pages (its own, not those it lists from elsewhere).
+const areas = AREAS().map((a) => ({ ...a, top: order(a).filter((l) => l.href !== a.href).slice(0, 3) }));
 const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>';
 ---
 <header class="hdr" transition:persist>
@@ -70,41 +72,24 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
     </div>
   </div>
 
-  <!-- Marks -->
-  <div class="hp" id="p-marks" hidden>
+  <!-- Reference -->
+  <div class="hp" id="p-ref" hidden>
     <div class="wrap hp__in">
       <div class="hp__lead">
-        <p class="eyebrow">Marks</p>
+        <p class="eyebrow">Reference</p>
         <p class="hp__t">Read the marks on what you own.</p>
-        <p class="hp__d">Hallmarks, makers’ marks, reign marks, date codes and serial numbers, each with its sources.</p>
-        <a class="hp__all" href="/marks/">Search every mark →</a>
+        <p class="hp__d">Hallmarks, makers’ marks, reign marks, signatures and serial numbers, each with its sources. Start from what you are holding.</p>
+        <a class="hp__all" href="/marks/">The whole reference →</a>
+        <p class="hp__search"><a href="/marks/">Search marks</a> · <a href="/signatures">Search signatures</a></p>
       </div>
-      <ul class="hp__grid hp__grid--3">
-        {marks.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
+      <ul class="hp__areas">
+        {areas.map((a) => (
+          <li>
+            <a class="hp__area" href={a.href}><strong>{a.short}</strong><span>{a.cue}</span></a>
+            <ul>{a.top.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+          </li>
+        ))}
       </ul>
-    </div>
-  </div>
-
-  <!-- Signatures -->
-  <div class="hp" id="p-sigs" hidden>
-    <div class="wrap hp__in">
-      <div class="hp__lead">
-        <p class="eyebrow">Signatures</p>
-        <p class="hp__t">Who signed it, and when.</p>
-        <p class="hp__d">Dated signatures from museum collections, and the seals of Chinese painters and collectors.</p>
-        <a class="hp__all" href="/signatures">Search every signature →</a>
-      </div>
-      <div class="hp__cols">
-        <ul class="hp__list">
-          {signatures.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
-        </ul>
-        <div>
-          <p class="eyebrow">Artists</p>
-          <ul class="hp__names">
-            {artists.map((r) => <li><a href={r.href}>{r.label}</a></li>)}
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -134,16 +119,12 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
         </div>
       </section>
       <section>
-        <p class="eyebrow">Marks</p>
+        <p class="eyebrow">Reference</p>
         <form class="hs__search" action="/marks/" method="get" role="search">
           <label class="visually-hidden" for="sheet-q">Search the marks</label>
           <input class="field" id="sheet-q" name="q" type="search" placeholder="A mark, a maker, a serial…" autocomplete="off" />
         </form>
-        {marks.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
-      </section>
-      <section>
-        <p class="eyebrow">Signatures</p>
-        {signatures.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
+        {areas.map((a) => <a class="hs__link" href={a.href}><strong>{a.short}</strong><span>{a.cue}</span></a>)}
       </section>
       <section>
         <p class="eyebrow">Guides</p>
@@ -267,6 +248,17 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   .hp__names a { display: block; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-size: 15px; }
   .hp__names a:hover { color: var(--accent-ink); }
   .hp__sub { margin-top: 22px; }
+  .hp__search { margin: 14px 0 0; font-size: 14px; color: var(--ink-3); }
+  .hp__search a { color: var(--ink-2); }
+  .hp__areas { list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px 26px; }
+  .hp__area { display: grid; gap: 2px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); text-decoration: none; }
+  .hp__area strong { font-weight: 650; font-size: 15.5px; }
+  .hp__area span { font-size: 13px; color: var(--ink-3); line-height: 1.35; }
+  .hp__area:hover strong { color: var(--accent-ink); }
+  .hp__areas ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; }
+  .hp__areas ul a { display: block; padding: 4px 0; font-size: 14px; color: var(--ink-2); text-decoration: none; }
+  .hp__areas ul a:hover { color: var(--accent-ink); }
+  @media (max-width: 1180px) { .hp__areas { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   .hp__shot { width: 180px; height: auto; border-radius: 20px; box-shadow: var(--shadow-lift); }
   .hdr__scrim { position: fixed; inset: 68px 0 0 0; background: rgb(31 33 36 / 0.18); z-index: 1; }
 

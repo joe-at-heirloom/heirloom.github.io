@@ -4,11 +4,9 @@
 // Korea's own era names, the Chongzhen count, Dangi years, the Chinese and
 // Japanese eras used in Korea, and the kings of Goryeo and Joseon. All from
 // the app's table (korean.json `dates`), which the Advisor's decoder reads.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
-import SectionNav from '../../components/SectionNav.astro';
 import KoreanDateReader, { type ReaderEra, type ReaderCount, type Period } from '../../islands/KoreanDateReader';
 import { dateTables, NAV } from '../../lib/korean';
 import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
@@ -64,10 +62,8 @@ const graph = [
 const hanAll = [...new Set([...JSON.stringify([d.eras, d.counts, d.ganji, d.kings, d.japanese_eras, examples, faqs])].filter((c) => /[\u3400-\u9FFF\uF900-\uFAFF]/.test(c)))].join('') + chinaEras.map((e) => e.chars).join('');
 const hangulAll = [...new Set([...JSON.stringify([d.eras, d.counts, d.ganji, d.kings])].filter((c) => /[가-힣]/.test(c)))].join('');
 ---
-<Base {title} {description} {path} jsonld={graph} han={hanAll} hangul={hangulAll}>
-  <div class="wrap">
-    <Crumbs name={h1} mid={['/marks/korean/', 'Korean marks']} />
-    <SectionNav {path} label="Korean marks" items={NAV} />
+<Reference {title} {description} {path} jsonld={graph} han={hanAll} hangul={hangulAll}>
+  <div>
     <header class="phead">
       <h1>{h1}</h1>
       <p class="phead__sub">Type the date as it is written and the reader works out the year: Korean eras, the Chongzhen count, Dangi years, and the Chinese and Japanese eras used in Korea. A cyclical year alone gives every year it could be.</p>
@@ -135,4 +131,4 @@ const hangulAll = [...new Set([...JSON.stringify([d.eras, d.counts, d.ganji, d.k
     <AppBox text="Photograph the writing. The Advisor reads the characters and works out a written date from this same table, and says when a cyclical year alone could be several." />
     <Faq {faqs} />
   </div>
-</Base>
+</Reference>

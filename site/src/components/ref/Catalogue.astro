@@ -1,0 +1,121 @@
+---
+// A catalogue: every record of a kind on one page, grouped, each a row that
+// opens into its sheet in place. A search box and group chips narrow the list
+// as you type. Every record is in the page's HTML (search engines and the
+// Advisor's links reach each one by its anchor); a link to #anchor opens that
+// record, and opening one puts its anchor in the address to share.
+import Spec from './Spec.astro';
+import RecordSheet from './RecordSheet.astro';
+import { faceOf, type Sheet } from '../../lib/records';
+interface Group { key: string; label: string; blurb?: string; sheets: Sheet[] }
+interface Props { groups: Group[]; noun: [string, string]; placeholder: string; label?: string; picker?: string[] }
+const { groups, noun, placeholder, label = 'Find', picker = [] } = Astro.props;
+const total = groups.reduce((n, g) => n + g.sheets.length, 0);
+const nameCls = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).cls;
+const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
+---
+<div class="cat" data-cat data-one={noun[0]} data-many={noun[1]}>
+  <div class="cat__bar" role="search">
+    <label class="cat__q">
+      <span class="visually-hidden">{label}</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+      <input class="field" type="search" autocomplete="off" spellcheck="false" {placeholder} data-q />
+    </label>
+    {picker.length > 0 && (
+      <details class="cat__pick">
+        <summary>Pick the characters you see</summary>
+        <p class="cat__pickhint">Tap each character on your item, in any order. The most common come first.</p>
+        <div class="cat__glyphs" role="group" aria-label="Characters">
+          {picker.map((g) => { const f = faceOf(g, groups[0]?.sheets[0]?.lang ?? null); return <button type="button" class={f.cls} lang={f.lang} data-glyph={g}>{g}</button>; })}
+        </div>
+      </details>
+    )}
+    {groups.length > 1 && (
+      <div class="cat__chips" role="group" aria-label="Show">
+        <button type="button" data-g="" aria-pressed="true">All <span class="num">{total}</span></button>
+        {groups.map((g) => <button type="button" data-g={g.key} aria-pressed="false">{g.label} <span class="num">{g.sheets.length}</span></button>)}
+      </div>
+    )}
+    <p class="cat__sum" aria-live="polite" data-sum>{total.toLocaleString('en-US')} {total === 1 ? noun[0] : noun[1]}.</p>
+  </div>
+
+  {groups.map((g) => g.sheets.length > 0 && (
+    <section class="cat__group" data-group={g.key} aria-labelledby={`cg-${g.key}`}>
+      <h2 id={`cg-${g.key}`}>{g.label} <span class="num">{g.sheets.length}</span></h2>
+      {g.blurb && <p>{g.blurb}</p>}
+      <ul class="cat__list">
+        {g.sheets.map((s) => (
+          <li>
+            <details class="rec" id={s.anchor} data-rec data-g={g.key} data-keys={s.keys}>
+              <summary>
+                <Spec pic={s.pics[0]} glyphs={s.glyphs} lang={s.lang} px={64} />
+                <span class="rec__id">
+                  <span class="rec__name">
+                    {s.glyphs && <span class={nameCls(s)} lang={langOf(s)}>{s.glyphs}</span>}
+                    <span>{s.reading}</span>
+                  </span>
+                  {s.means && <span class="rec__means">{s.means}</span>}
+                </span>
+                <span class="rec__y num">{s.years ?? ''}</span>
+              </summary>
+              <RecordSheet {s} />
+            </details>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</div>
+
+<script>
+  function wire() {
+    for (const cat of document.querySelectorAll<HTMLElement>('[data-cat]')) {
+      if (cat.dataset.wired) continue;
+      cat.dataset.wired = '1';
+      const q = cat.querySelector<HTMLInputElement>('[data-q]')!;
+      const sum = cat.querySelector<HTMLElement>('[data-sum]')!;
+      const recs = [...cat.querySelectorAll<HTMLDetailsElement>('[data-rec]')];
+      const groups = [...cat.querySelectorAll<HTMLElement>('[data-group]')];
+      const chips = [...cat.querySelectorAll<HTMLButtonElement>('[data-g]')].filter((b) => b.tagName === 'BUTTON');
+      const one = cat.dataset.one!, many = cat.dataset.many!;
+      let g = '';
+      const fold = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
+      const run = () => {
+        const words = fold(q.value.trim()).split(/\s+/).filter(Boolean);
+        let n = 0;
+        for (const r of recs) {
+          const keys = fold(r.dataset.keys ?? '');
+          const ok = (!g || r.dataset.g === g) && words.every((w) => keys.includes(w));
+          r.parentElement!.hidden = !ok;
+          if (ok) n++;
+        }
+        for (const s of groups) s.hidden = !s.querySelector('li:not([hidden])');
+        sum.textContent = n === recs.length ? `${n.toLocaleString('en-US')} ${n === 1 ? one : many}.` : n ? `${n} of ${recs.length} ${many}.` : `Nothing matches. Try fewer characters, another spelling, or the meaning in English.`;
+      };
+      q.addEventListener('input', run);
+      for (const b of cat.querySelectorAll<HTMLButtonElement>('[data-glyph]')) b.addEventListener('click', () => {
+        const on = b.getAttribute('aria-pressed') === 'true';
+        b.setAttribute('aria-pressed', String(!on));
+        const picked = [...cat.querySelectorAll<HTMLButtonElement>('[data-glyph][aria-pressed="true"]')].map((x) => x.dataset.glyph).join(' ');
+        q.value = picked; run();
+      });
+      for (const b of chips) b.addEventListener('click', () => { g = b.dataset.g ?? ''; for (const x of chips) x.setAttribute('aria-pressed', String(x === b)); run(); });
+      // Open the record a link names, and name the record a reader opens.
+      const openHash = () => {
+        const id = decodeURIComponent(location.hash.slice(1)) || new URLSearchParams(location.search).get('mark') || '';
+        const r = id ? recs.find((x) => x.id === id) : null;
+        if (r) {
+          r.open = true;
+          // Below the site header and this catalogue's sticky bar.
+          const bar = cat.querySelector<HTMLElement>('.cat__bar')!.getBoundingClientRect().height;
+          window.scrollTo({ top: r.getBoundingClientRect().top + scrollY - 68 - bar - 12 });
+        }
+      };
+      for (const r of recs) r.addEventListener('toggle', () => { if (r.open && location.hash.slice(1) !== r.id) history.replaceState(null, '', `#${r.id}`); });
+      window.addEventListener('hashchange', openHash);
+      openHash();
+    }
+  }
+  wire();
+  document.addEventListener('astro:page-load', wire);
+</script>

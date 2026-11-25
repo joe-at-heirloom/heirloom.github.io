@@ -5,9 +5,8 @@
 // ceramics_data.py writes it, carried on the maker's history record, and the
 // marks database's cards. The markup is the generated pages'
 // (scripts/pages/p_ceramics.py), in their article look (styles/article.css).
-import Base from '../../layouts/Base.astro';
+import Reference from '../../layouts/Reference.astro';
 import GuideAppBox from '../../components/GuideAppBox.astro';
-import GuideRelated from '../../components/GuideRelated.astro';
 import { makers, fill, plainFaq, grid, type MakerPage } from '../../lib/makers';
 import { articleLd, faqLd, longDate } from '../../lib/site';
 import '../../styles/article.css';
@@ -27,10 +26,9 @@ const graph = [
 ];
 const cardIds = (k: string) => d.cards[k] ?? [];
 ---
-<Base title={d.title} description={d.desc} {path} jsonld={graph}>
+<Reference title={d.title} description={d.desc} {path} jsonld={graph} crumb={d.crumb}>
   <div class="guide">
     <article>
-      <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Heirloom</a></li><li><a href="/marks/">Marks</a></li><li aria-current="page">{d.crumb}</li></ol>
       <h1>{d.h1}</h1>
       <p class="guide__lede" set:html={d.lede} />
       <p class="guide__meta">By Heirloom · Updated <time datetime={updated}>{longDate(updated)}</time></p>
@@ -76,6 +74,5 @@ const cardIds = (k: string) => d.cards[k] ?? [];
         {faqs.map(([q, a]) => <details><summary>{q}</summary><div set:html={a} /></details>)}
       </div>
     </article>
-    <GuideRelated />
   </div>
-</Base>
+</Reference>

@@ -1,7 +1,6 @@
 ---
 // /marks/gold-marks: the metal explorer (src/islands/MetalExplorer) for gold.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import MetalExplorer from '../../islands/MetalExplorer';
 import { gold } from '../../lib/gold';
 import { crumbsLd } from '../../lib/site';
@@ -21,9 +20,8 @@ const graph = [
   crumbsLd(path, 'Gold marks', ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name="Gold marks" mid={['/marks/', 'Marks']} />
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
     <header class="phead">
       <h1>Gold marks</h1>
       <p class="phead__sub">Tap each mark you find on the item: a number such as 585, a karat such as 14K, letters such as GF, or a country’s gold mark. Read together, the marks say whether it is solid gold and of what standard, or a layer of gold over another metal, and the years in which they were in use.</p>
@@ -50,4 +48,4 @@ const graph = [
       </ul>
     </section>
   </div>
-</Base>
+</Reference>

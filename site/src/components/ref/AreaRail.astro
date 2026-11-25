@@ -1,0 +1,47 @@
+---
+// One area's pages, grouped as the map groups them, the current page marked.
+// Long lists (every reign, every assay office, every artist) fold, and open
+// by themselves when the current page is in them. Links the area lists from
+// elsewhere carry the name of the area they live in.
+import { area as areaOf, type Area } from '../../lib/reference';
+const { area, path, compact = false } = Astro.props as { area: Area; path: string; compact?: boolean };
+const norm = (h: string) => h.split('#')[0].split('?')[0].replace(/\/+$/, '') || '/';
+const cur = norm(path);
+const isCur = (h: string) => norm(h) === cur;
+---
+<div class:list={['rail', { 'rail--compact': compact }]}>
+  {!compact && (
+    <a class="rail__area" href={area.href} aria-current={isCur(area.href) ? 'page' : undefined}>
+      <span class="rail__up">Reference</span>
+      <strong>{area.label}</strong>
+    </a>
+  )}
+  {area.groups.map((g) => {
+    const open = !g.fold || g.links.some((l) => isCur(l.href)) || g.links.length <= 6;
+    const list = (
+      <ul>
+        {g.links.map((l) => (
+          <li>
+            <a href={l.href} aria-current={isCur(l.href) ? 'page' : undefined} class:list={[{ 'rail__away': l.away }]}>
+              {l.glyph && <span class="rail__glyph han" lang="zh-Hant">{l.glyph}</span>}
+              <span class="rail__t">{l.label}</span>
+              {l.away && <span class="rail__in">in {areaOf(l.away).short}</span>}
+              {!l.away && l.years && <span class="rail__y num">{l.years.replace(' to ', '–')}</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    );
+    return g.fold ? (
+      <details class="rail__group" open={open}>
+        <summary><span>{g.label}</span><span class="rail__n num">{g.links.length}</span></summary>
+        {list}
+      </details>
+    ) : (
+      <div class="rail__group">
+        <p class="rail__label">{g.label}</p>
+        {list}
+      </div>
+    );
+  })}
+</div>

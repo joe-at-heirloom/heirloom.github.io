@@ -3,8 +3,7 @@
 // a reference of its own (kept apart from the marks at /marks/). One search
 // (src/islands/Portal.tsx), every artist at a glance, and every signatures page.
 import { media } from '../lib/media';
-import Base from '../layouts/Base.astro';
-import Crumbs from '../components/Crumbs.astro';
+import Reference from '../layouts/Reference.astro';
 import Portal from '../islands/Portal';
 import { collection, families, PER_RECORD, SEAL_KINDS } from '../lib/portal';
 import { referencePages, isSignaturePage } from '../lib/pages';
@@ -45,9 +44,8 @@ const graph = [
   crumbsLd(path, 'Signatures'),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name="Signatures" />
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
     <header class="phead">
       <h1>Signatures</h1>
       <p class="phead__sub">Search {examples.length} dated signatures by {artists.length} artists, and {people.toLocaleString('en-US')} Chinese painters and collectors with {seals.toLocaleString('en-US')} of their seals and signatures. Type what a signature reads, a name, a year, or the characters of a seal. Every record names its sources.</p>
@@ -84,4 +82,4 @@ const graph = [
       <ul>{pages.map((p) => <li><a href={p.href}>{p.title}</a></li>)}</ul>
     </details>
   </div>
-</Base>
+</Reference>

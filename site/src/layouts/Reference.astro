@@ -1,0 +1,109 @@
+---
+// Every reference page: the site's frame (Base), then the reference's own.
+// Breadcrumbs from the map (Heirloom › Reference › area › page), the area's
+// rail beside the page (its tools, catalogues, makers and guides, with the
+// current page marked), and at the foot the next and previous pages of the
+// area and the other areas. On a phone the rail becomes a menu under the
+// crumbs. The page brings its own header and body (the default slot).
+import Base from './Base.astro';
+import AreaRail from '../components/ref/AreaRail.astro';
+import { AREAS, placeOf, order } from '../lib/reference';
+import { SITE } from '../lib/site';
+import '../styles/reference.css';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  jsonld?: object[];
+  han?: string;
+  hangul?: string;
+  ja?: string;
+  image?: string;
+  /** The page's own name in the crumbs when the map has none for it (a reign, a painter). */
+  crumb?: string;
+  /** A page between the area and this one in the crumbs, e.g. ['/marks/chinese-reign-marks', 'Reign marks']. */
+  via?: [string, string];
+  /** No rail: the page needs the whole width (the reference home, the search). */
+  bare?: boolean;
+  /** false: arriving here is a full page load (see Base). */
+  transitions?: boolean;
+}
+const { title, description, path, jsonld = [], han, hangul, ja, image, crumb, via, bare = false, transitions = true } = Astro.props;
+const { area, link } = placeOf(path);
+const isHome = !!area && area.href.replace(/\/$/, '') === path.replace(/\/$/, '');
+const here = crumb ?? link?.label ?? title.replace(/ \| Heirloom$/, '').split(':')[0];
+
+const trail: [string, string][] = [['/', 'Heirloom'], ['/marks/', 'Reference']];
+if (area && !isHome) trail.push([area.href, area.short]);
+if (via) trail.push(via);
+const atRoot = path.replace(/\/$/, '') === '/marks';
+const crumbs: [string, string][] = atRoot ? [['/', 'Heirloom'], ['/marks/', 'Reference']] : [...trail, [path, isHome ? area!.short : here]];
+// The page's own BreadcrumbList is replaced by this one, from the same map.
+const graph = [
+  ...jsonld.filter((g: any) => g?.['@type'] !== 'BreadcrumbList'),
+  {
+    '@type': 'BreadcrumbList', '@id': `${SITE}${path}#crumbs`,
+    itemListElement: crumbs.map(([href, name], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE + href })),
+  },
+];
+
+// Next and previous, in the area's reading order.
+const seq = area ? order(area) : [];
+const at = seq.findIndex((l) => l.href.replace(/\/$/, '') === path.replace(/\/$/, ''));
+const prev = at > 0 ? seq[at - 1] : null;
+const next = at >= 0 && at < seq.length - 1 ? seq[at + 1] : area && at < 0 && seq.length ? seq[0] : null;
+const others = AREAS().filter((a) => a.key !== area?.key);
+// The rail's own characters (the reigns) join the page's in the han face's subset.
+const railHan = area ? area.groups.flatMap((g) => g.links.map((l) => l.glyph ?? '')).join('') : '';
+const hanAll = han || railHan ? [...new Set([...(han ?? ''), ...railHan])].join('') : undefined;
+---
+<Base {title} {description} {path} jsonld={graph} han={hanAll} {hangul} {ja} {image} {transitions}>
+  <div class:list={['wrap', 'ref', { 'ref--bare': bare || !area }]} data-area={area?.key}>
+    <nav class="ref__crumbs" aria-label="Breadcrumb">
+      <ol>
+        {crumbs.map(([href, name], i) => (
+          <li>{i < crumbs.length - 1 ? <a href={href}>{name}</a> : <span aria-current="page">{name}</span>}</li>
+        ))}
+      </ol>
+    </nav>
+
+    {area && !bare && (
+      <details class="ref__mnav">
+        <summary>
+          <span class="ref__mnav-area">{area.short}</span>
+          <span class="ref__mnav-hint">Every page in this part</span>
+          <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>
+        </summary>
+        <AreaRail {area} {path} compact />
+      </details>
+    )}
+
+    <div class="ref__grid">
+      {area && !bare && (
+        <aside class="ref__rail" aria-label={`${area.short}: every page`}>
+          <AreaRail {area} {path} />
+        </aside>
+      )}
+      <div class="ref__main">
+        <slot />
+
+        {area && (prev || next) && (
+          <nav class="ref__seq" aria-label={`More in ${area.short}`}>
+            {prev ? <a class="ref__seq-prev" href={prev.href}><span>Previous</span><strong>{prev.label}</strong></a> : <span />}
+            {next && <a class="ref__seq-next" href={next.href}><span>Next in {area.short}</span><strong>{next.label}</strong></a>}
+          </nav>
+        )}
+      </div>
+    </div>
+
+    {area && <section class="ref__areas" aria-labelledby="ref-areas">
+      <h2 id="ref-areas">Elsewhere in the reference</h2>
+      <ul>
+        {others.map((a) => (
+          <li><a href={a.href}><strong>{a.short}</strong><span>{a.cue}</span></a></li>
+        ))}
+      </ul>
+    </section>}
+  </div>
+</Base>

@@ -6,14 +6,13 @@
 // their own article look (styles/article.css, carried from their stylesheets),
 // and title, description and h1 come from page-meta.json, so each page reads,
 // looks and ranks as it did.
-import Base from '../../layouts/Base.astro';
+import Reference from '../../layouts/Reference.astro';
 import { artists, type Artist } from '../../lib/artists';
 import { media } from '../../lib/media';
 import { articleLd, crumbsLd, faqLd, longDate, SITE } from '../../lib/site';
 import meta from '../../data/site/page-meta.json';
 import '../../styles/article.css';
 import GuideAppBox from '../../components/GuideAppBox.astro';
-import GuideRelated from '../../components/GuideRelated.astro';
 
 export function getStaticPaths() {
   return artists().map((a) => ({ params: { artist: a.slug }, props: { a } }));
@@ -47,10 +46,9 @@ const graph = [
   crumbsLd(path, `${a.name} signature`, ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
+<Reference {title} {description} {path} jsonld={graph} crumb={`${a.name}`}>
   <div class="guide">
     <article>
-      <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Heirloom</a></li><li><a href="/marks/">Marks</a></li><li aria-current="page">{a.name} signature</li></ol>
       <h1>{h1}</h1>
       <p class="guide__lede">{items.length} close-ups of {poss} signature ({a.nationality}, {a.born}–{a.died}), from works dated {span}, in date order. Each is cut from a museum photograph of the work and links to the museum's record.</p>
       <p class="guide__meta">By Heirloom · Updated <time datetime={updated}>{longDate(updated)}</time></p>
@@ -94,6 +92,5 @@ const graph = [
         {museums.map((mu) => <li>{mu}: photographs of the works, open access or public domain</li>)}
       </ul><Fragment set:html={'<!--/copy-check:skip-->'} />
     </article>
-    <GuideRelated />
   </div>
-</Base>
+</Reference>

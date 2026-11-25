@@ -1,0 +1,20 @@
+---
+// /marks/pottery/: pottery and porcelain, the area's home (lib/reference.ts).
+import Reference from '../../../layouts/Reference.astro';
+import AreaHome from '../../../components/ref/AreaHome.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { articleLd } from '../../../lib/site';
+const path = '/marks/pottery/';
+const title = 'Pottery and Porcelain Marks: Makers, Backstamps and Date Codes | Heirloom';
+const description = 'Factory marks, backstamps and date codes on pottery and porcelain: Meissen, Royal Copenhagen, Royal Doulton, Haviland, Hummel, Noritake, Weller, Roseville and more, with Wedgwood, Minton, Worcester, Rookwood and Sèvres date codes.';
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Pottery and porcelain marks', description, '2026-11-25')]}>
+  <AreaHome k="pottery">
+    <section class="ahome__block read" aria-labelledby="order">
+      <h2 id="order">Where to start</h2>
+      <p>Notice how the mark was put on. A mark pressed into the clay was there before firing; one painted under the glaze was too. A printed or stamped mark on top of the glaze, or a paper label, could have been added later, by a decorator or a seller.</p>
+      <p>Then find the maker in <a href="/marks/pottery-marks">pottery and porcelain marks</a>, where every maker’s marks sit on one timeline. Small letters, numbers or symbols beside the factory mark are often a date code: the <a href="/marks/pottery-date-codes">date-code reader</a> turns them into a year.</p>
+    </section>
+  </AreaHome>
+  <AppBox text="Photograph the base. The Advisor reads the backstamp and any date code, names the maker and years the mark claims, and keeps the reading with the photo." />
+</Reference>

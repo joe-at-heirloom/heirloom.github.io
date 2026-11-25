@@ -2,8 +2,7 @@
 // /marks/chinese-reign-marks: the reign-mark explorer (src/islands/ReignExplorer).
 // The address, title, description, h1 and questions are the generated page's
 // (scripts/pages/p_chinese.py), kept so its standing in search carries over.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
 import ReignExplorer from '../../islands/ReignExplorer';
@@ -33,9 +32,8 @@ const graph = [
   crumbsLd(path, 'Chinese reign marks', ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph} han={han}>
-  <div class="wrap">
-    <Crumbs name="Chinese reign marks" mid={['/marks/', 'Marks']} />
+<Reference {title} {description} {path} jsonld={graph} han={han}>
+  <div>
     <header class="phead">
       <h1>{h1}</h1>
       <p class="phead__sub">Every Ming and Qing reign’s mark, 1368 to 1916. Pick or type the characters on the base and the reigns that fit stay lit. A mark names the reign it claims, not when the item was made.</p>
@@ -53,4 +51,4 @@ const graph = [
     <AppBox text="Photograph the base. The Advisor reads the characters, names the reign they claim from this same table, and says plainly that the mark does not date the item." />
     <Faq {faqs} />
   </div>
-</Base>
+</Reference>

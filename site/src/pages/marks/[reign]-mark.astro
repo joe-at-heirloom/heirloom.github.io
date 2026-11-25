@@ -5,9 +5,7 @@
 // period and later, the later copies, how specialists date the wares, and the
 // sources. Title, description and h1 are the generated pages' (page-meta.json),
 // so each page keeps its standing in search.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
-import SectionNav from '../../components/SectionNav.astro';
+import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
 import { MarkSet } from '../../islands/ReignExplorer';
 import { reigns, type Reign } from '../../lib/reigns';
@@ -44,10 +42,8 @@ const graph = [
   crumbsLd(path, `${r.pinyin} mark`, ['/marks/chinese-reign-marks', 'Chinese reign marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph} {han}>
-  <div class="wrap cn">
-    <Crumbs name={`${r.pinyin} mark`} mid={['/marks/chinese-reign-marks', 'Chinese reign marks']} />
-    <SectionNav {path} label="Chinese marks" items={nav} />
+<Reference {title} {description} {path} jsonld={graph} {han} crumb={`${r.pinyin} mark`} via={['/marks/chinese-reign-marks', 'Reign marks']}>
+  <div class="cn">
 
     <header class="phead">
       <h1>{r.pinyin} mark <span class="han">{r.chars}</span></h1>
@@ -134,4 +130,4 @@ const graph = [
 
     <AppBox text="Photograph the base. The Advisor reads the characters, names the reign they claim from this same table, and says plainly that the mark does not date the item." />
   </div>
-</Base>
+</Reference>

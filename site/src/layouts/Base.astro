@@ -16,8 +16,10 @@ interface Props {
   han?: string; // Chinese characters the page sets in the han face (subset request)
   hangul?: string; // Korean (hangul) characters the page sets, for the hangul face's subset request
   ja?: string; // Japanese kanji and kana the page sets in the Japanese face (subset request)
+  /** false: no view transitions, so arriving here is a full page load (a carried-over page's own scripts run on load). */
+  transitions?: boolean;
 }
-const { title, description, path, image = '/og-image.jpg', jsonld = [], han, hangul, ja } = Astro.props;
+const { title, description, path, image = '/og-image.jpg', jsonld = [], han, hangul, ja, transitions = true } = Astro.props;
 const canonical = new URL(path, Astro.site).toString();
 const fonts =
   'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap';
@@ -60,7 +62,7 @@ const preview = !!process.env.SITE_PREVIEW;
       try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
     </script>
     <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
-    <ClientRouter />
+    {transitions && <ClientRouter />}
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>

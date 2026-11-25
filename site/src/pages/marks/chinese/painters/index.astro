@@ -3,9 +3,7 @@
 // by period. Searching them (names, art names, seal readings) is the reference search's job
 // (/signatures, src/islands/Portal.tsx), so this page hands off to it instead of a finder of its own.
 // Title, description and wording are the generated page's (p_chinese_people.py index_page).
-import Base from '../../../../layouts/Base.astro';
-import Crumbs from '../../../../components/Crumbs.astro';
-import SectionNav from '../../../../components/SectionNav.astro';
+import Reference from '../../../../layouts/Reference.astro';
 import AppBox from '../../../../components/AppBox.astro';
 import { PEOPLE, NAV, IDX, HOME, DYN_ORDER, dates, url, hanOf } from '../../../../lib/chinese';
 import { SITE, crumbsLd } from '../../../../lib/site';
@@ -27,10 +25,8 @@ const graph = [
   crumbsLd(path, 'Painters and collectors', [HOME, 'Chinese marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph} {han}>
-  <div class="wrap cn">
-    <Crumbs name="Painters and collectors" mid={[HOME, 'Chinese marks']} />
-    <SectionNav {path} label="Chinese marks" items={NAV} />
+<Reference {title} {description} {path} jsonld={graph} {han}>
+  <div class="cn">
     <header>
       <h1>Painters, calligraphers and collectors</h1>
       <p class="lede">{n.toLocaleString('en-US')} painters, calligraphers and collectors, from the Tang to the 20th century, with {nItems.toLocaleString('en-US')} of their seals and signatures read and tied to the works they come from. Find a person by pinyin, by their Chinese name, or by any of their art names.</p>
@@ -57,4 +53,4 @@ const graph = [
 
     <AppBox text="Photograph the seals and the signature. The Advisor reads them and names the people they claim, with the record each comes from; it never says whether a work is genuine." />
   </div>
-</Base>
+</Reference>

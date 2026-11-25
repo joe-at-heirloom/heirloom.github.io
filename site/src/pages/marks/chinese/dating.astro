@@ -1,0 +1,78 @@
+---
+// /marks/chinese/dating: reading a Chinese date. The reader (src/islands/
+// ChineseDateReader) over the collection's era names (family chinese-dating:
+// Song, Liao, Jin, Yuan), the Ming and Qing reigns (the reign-mark records),
+// and the Republic's count; then the tables as a catalogue: the era names,
+// the sixty-year cycle, and the taboo characters that give an earliest date.
+// The records already name this page (attributes.intended_page).
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import AppBox from '../../../components/AppBox.astro';
+import ChineseDateReader, { type ReaderEra, type Period } from '../../../islands/ChineseDateReader';
+import { collection } from '../../../lib/portal';
+import { eraSheet, cycleSheet, tabooSheet, CJK } from '../../../lib/records';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/marks.css';
+import '../../../styles/portal.css';
+import '../../../styles/reigns.css';
+import '../../../styles/korean.css';
+
+const path = '/marks/chinese/dating';
+const c = collection();
+const eraRecs = c.records.filter((r) => r.family === 'chinese-dating' && r.kind === 'era name').sort((a, b) => (a.date_from ?? 0) - (b.date_from ?? 0));
+const cycle = c.records.filter((r) => r.kind === 'cyclical year').sort((a, b) => a.attributes.n - b.attributes.n);
+const taboos = c.records.filter((r) => r.kind === 'naming taboo');
+const rules = c.records.filter((r) => r.kind === 'taboo rule');
+const reigns = c.records.filter((r) => r.kind === 'reign mark');
+
+const eras: ReaderEra[] = [
+  ...eraRecs.filter((r) => r.date_from).map((r) => ({ id: r.id, chars: String(r.attributes.era), year1: r.date_from!, start: r.date_from, end: r.date_to ?? null, label: `${r.attributes.pinyin}, ${String(r.attributes.dynasty ?? '').replace(/\s*\S*[㐀-鿿]+\S*$/, '')}` })),
+  ...reigns.filter((r) => r.date_from).map((r) => {
+    const chars = r.name.split(' ').find((w) => CJK.test(w))!;
+    const pinyin = r.id.replace(/^reign-/, '');
+    return { id: r.id, chars, year1: r.date_from!, start: r.date_from, end: r.date_to ?? null, label: `${pinyin.charAt(0).toUpperCase()}${pinyin.slice(1)} reign, ${/\((\w+)\)/.exec(r.name)?.[1] ?? ''}`.replace(/, $/, '') };
+  }),
+  { id: 'minguo', chars: '民國', year1: 1912, start: 1912, end: null, label: 'Year of the Republic (民國), counted from 1912' },
+];
+const periods: Period[] = [
+  { id: 'song', name: 'Song', from: 960, to: 1279 }, { id: 'yuan', name: 'Yuan', from: 1271, to: 1368 },
+  { id: 'ming', name: 'Ming', from: 1368, to: 1644 }, { id: 'qing', name: 'Qing', from: 1644, to: 1911 }, { id: 'rep', name: 'Republic', from: 1912, to: 1949 },
+];
+const ganjiNames = Object.fromEntries(cycle.map((r) => [String(r.attributes.chars), String(r.attributes.pinyin)]));
+const examples = ['乾隆十年', '康熙辛亥', '嘉靖丙午', '民國二十年', '甲午'];
+
+const groups = [
+  { key: 'eras', label: 'Era names, Song to Yuan', blurb: 'Every era name of the Northern and Southern Song, the Liao, the Jin and the Yuan, with year 1 of each. The Ming and Qing reigns are in Reign marks.', sheets: eraRecs.map(eraSheet) },
+  { key: 'cycle', label: 'The sixty-year cycle', blurb: 'Ten heavenly stems paired with twelve earthly branches: 甲子 is year 1, 癸亥 year 60, and the cycle begins again.', sheets: cycle.map(cycleSheet) },
+  { key: 'taboos', label: 'Taboo characters', blurb: 'An emperor’s personal name could not be written while his dynasty ruled: a character missing a stroke, or another put in its place, gives an earliest date.', sheets: taboos.map(tabooSheet) },
+  { key: 'rules', label: 'How each dynasty kept the taboo', sheets: rules.map(tabooSheet) },
+];
+const n = (x: number) => x.toLocaleString('en-US');
+const title = 'Chinese Dates: Era Names, the Sixty-Year Cycle and Taboo Characters | Heirloom';
+const description = `Read a Chinese date: type it as written (乾隆十年, 康熙辛亥, 民國二十年) for the Western year, with ${eraRecs.length} Song to Yuan era names, the Ming and Qing reigns, the sixty-year cycle and the taboo characters that give an earliest date.`;
+const han = [...new Set([...JSON.stringify(groups), ...examples.join(''), ...eras.map((e) => e.chars).join('')].filter((ch) => CJK.test(ch)))].join('');
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Reading a Chinese date', description, '2026-11-25')]} {han}>
+  <header class="rhead">
+    <h1>Reading a Chinese date</h1>
+    <p class="rhead__lede">A Chinese date names an era and a year in it (<span class="han" lang="zh-Hant">乾隆十年</span>, the tenth year of Qianlong, 1745), or a year of the sixty-year cycle (<span class="han" lang="zh-Hant">甲午</span>), or both. Type a date as it is written and the reader gives the Western year and how it was worked out.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{n(eraRecs.length)}</strong> era names, Song to Yuan</li>
+      <li><strong class="num">{reigns.length}</strong> Ming and Qing reigns</li>
+      <li><strong class="num">{taboos.length}</strong> emperors’ taboo characters</li>
+    </ul>
+  </header>
+
+  <ChineseDateReader client:load {eras} {periods} {examples} {ganjiNames} />
+
+  <section class="ahome__block read" aria-labelledby="how">
+    <h2 id="how">How a date is written</h2>
+    <p>From the Han dynasty on, years were counted within an era (<span class="han" lang="zh-Hant">年號</span>) the emperor proclaimed; from the Ming, one era usually ran for a whole reign, which is why a Ming or Qing reign has one name. Year 1 (<span class="han" lang="zh-Hant">元年</span>) is the year the era began, so year <em>n</em> is year 1 plus <em>n</em> minus one.</p>
+    <p>Beside the era, or instead of it, a writer often gave the year of the sixty-year cycle. With an era, the cycle checks the reading: <span class="han" lang="zh-Hant">康熙辛亥</span> can only be 1671. Alone, it comes round every sixty years, and the item has to say which.</p>
+    <p>A character left a stroke short, or replaced, because it was in an emperor’s personal name gives an earliest date for a book or a painting: it was written in or after that reign. Facsimiles and reprints copy their model’s taboos, so the rule cannot date them.</p>
+  </section>
+
+  <Catalogue {groups} noun={['entry', 'entries']} placeholder="Characters, pinyin or a dynasty: 寶祐, Baoyou, Jin, 甲午" label="Characters, pinyin or a dynasty" />
+
+  <AppBox text="Photograph the inscription. The Advisor reads the characters, works out the date as written, checks the cyclical year against it, and keeps the reading with the photo." />
+</Reference>

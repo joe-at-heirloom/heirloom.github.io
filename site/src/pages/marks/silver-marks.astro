@@ -1,8 +1,7 @@
 ---
 // /marks/silver-marks: the metal explorer (src/islands/MetalExplorer) for silver. The
 // marks on an item read together: the metal, the maker, the years.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import MetalExplorer from '../../islands/MetalExplorer';
 import { silver } from '../../lib/silver';
 import { crumbsLd } from '../../lib/site';
@@ -24,9 +23,8 @@ const graph = [
   crumbsLd(path, 'Silver marks', ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name="Silver marks" mid={['/marks/', 'Marks']} />
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
     <header class="phead">
       <h1>Silver marks</h1>
       <p class="phead__sub">Tap each mark you find on the item: a number or a word such as STERLING, a maker’s name, a lion, a year sign. Read together, the marks say whether it is solid silver or plate, who made it, and the years in which they were all in use.</p>
@@ -44,4 +42,4 @@ const graph = [
       <ul class="tools-list">{sheets.map(([l, h]) => <li><a href={h}><span>{l}</span><span class="muted">Every letter, with a finder</span></a></li>)}</ul>
     </section>
   </div>
-</Base>
+</Reference>

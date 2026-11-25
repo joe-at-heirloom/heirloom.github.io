@@ -1,21 +1,17 @@
 ---
-// /marks/korean/: the Korean section's home, the inscription explorer
-// (src/islands/KoreanExplorer). Every inscription and maker's mark in the
-// app's table (backend/src/data/mark-tables/korean.json, via the reference
-// collection), on one timeline, explored in place; ?mark=<slug> opens one.
-import Base from '../../../layouts/Base.astro';
-import Crumbs from '../../../components/Crumbs.astro';
+// /marks/korean/: the Korean section's home, its catalogue. Every inscription
+// and maker's mark in the app's table (backend/src/data/mark-tables/korean.json,
+// via the reference collection), by ware, each a row that opens into its sheet
+// (components/ref/Catalogue); a character picker. #<slug> and the explorer's
+// old ?mark=<slug> both open one.
+import Reference from '../../../layouts/Reference.astro';
 import AppBox from '../../../components/AppBox.astro';
 import Faq from '../../../components/Faq.astro';
-import SectionNav from '../../../components/SectionNav.astro';
-import KoreanExplorer from '../../../islands/KoreanExplorer';
-import { inscriptions, readingNotes, GROUPS, pageChars, NAV } from '../../../lib/korean';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { koSheet, CJK } from '../../../lib/records';
+import { inscriptions, readingNotes, GROUPS, pageChars } from '../../../lib/korean';
 import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
 import synced from '../../../data/app/SOURCE.json';
-import '../../../styles/marks.css';
-import '../../../styles/portal.css';
-import '../../../styles/reigns.css';
-import '../../../styles/korean.css';
 
 const path = '/marks/korean/';
 const rows = inscriptions();
@@ -27,29 +23,37 @@ const h1 = 'Korean marks and inscriptions';
 const faqs: [string, string][] = [
   ['Is Korean pottery marked on the base?', '<p>Mostly not. Korean potters rarely signed or marked their wares before the 20th century. What writing there is usually names who a ware was made for: a government office stamped inside a buncheong bowl, a palace hall written on the base of a 19th-century porcelain dish, or a single character from the court kilns. Makers’ marks become common only with the workshops and studios of the 20th century.</p>'],
   ['Does an inscription mean my item is old?', '<p>No. Inscriptions were copied: reproductions of Goryeo celadon made under Japanese rule (1910–1945) and later Korean celadon often carry old-looking writing. An inscription names what it claims; the body, glaze, form and wear decide the date, and only someone who can handle the item can judge those.</p>'],
-  ['How do I read a Korean inscription?', '<p>Most are in hanja, the Chinese characters Korea wrote in until the 20th century, and read like Chinese. Some late Joseon items are in hangul, the Korean alphabet. Type the characters into the explorer above, or pick the ones you see, and the inscriptions that fit stay lit.</p>'],
+  ['How do I read a Korean inscription?', '<p>Most are in hanja, the Chinese characters Korea wrote in until the 20th century, and read like Chinese. Some late Joseon items are in hangul, the Korean alphabet. Type the characters into the search above, or pick the ones you see, and only the inscriptions that fit stay listed.</p>'],
   ['What is the difference between Goryeo and Joseon ceramics?', '<p>Goryeo (918–1392) is the age of celadon, a gray-green glazed stoneware, often inlaid with white and black slip. Early Joseon made buncheong, a gray stoneware coated in white slip, until about 1600; Joseon’s court kilns made white porcelain from the 15th century to the end of the dynasty. The ceramics guide shows each.</p>'],
 ];
-const chars = pageChars(rows, '長興庫中宮殿天地玄黃');
+const sheets = rows.map(koSheet);
+const groups = GROUPS.map((g) => ({ key: g.id, label: g.name, blurb: g.blurb, sheets: sheets.filter((x) => x.group === g.id) })).filter((g) => g.sheets.length);
+const freq = new Map<string, number>();
+for (const r of rows) for (const ch of new Set([...r.chars, ...r.variants.join('')])) if (CJK.test(ch)) freq.set(ch, (freq.get(ch) ?? 0) + 1);
+const picker = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 160).map(([ch]) => ch);
+const pictured = rows.filter((r) => r.photos.some((p) => p.visible === 'yes')).length;
+const chars = pageChars(rows, '長興庫中宮殿天地玄黃' + picker.join(''));
 const graph = [
   articleLd(path, h1, description, (synced.changed as any).korean ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Korean ceramics inscriptions' } }),
   faqLd(path, faqs),
   crumbsLd(path, h1, ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph} han={chars.han} hangul={chars.hangul}>
-  <div class="wrap">
-    <Crumbs name={h1} mid={['/marks/', 'Marks']} />
-    <SectionNav {path} label="Korean marks" items={NAV} />
-    <header class="phead">
+<Reference {title} {description} {path} jsonld={graph} han={chars.han} hangul={chars.hangul}>
+  <div>
+    <header class="rhead">
       <h1>{h1}</h1>
-      <p class="phead__sub">The writing on Korean ceramics, Goryeo to today: {counts.goryeo ?? 0} Goryeo, {counts.buncheong ?? 0} buncheong and {counts.white ?? 0} white porcelain inscriptions, and {counts.modern ?? 0} marks of workshops and makers since 1883. Type or pick what is written on your item. An inscription names what it claims, not when the item was made.</p>
+      <p class="rhead__lede">The writing on Korean ceramics, Goryeo to today: {counts.goryeo ?? 0} Goryeo, {counts.buncheong ?? 0} buncheong and {counts.white ?? 0} white porcelain inscriptions, and {counts.modern ?? 0} marks of workshops and makers since 1883. Type or pick what is written on your item. An inscription names what it claims, not when the item was made.</p>
+      <ul class="rhead__meta">
+        <li><strong class="num">{rows.length}</strong> inscriptions and marks</li>
+        <li><strong class="num">{pictured}</strong> with a museum photograph</li>
+      </ul>
     </header>
 
-    <KoreanExplorer client:load rows={rows} groups={GROUPS} />
+    <Catalogue {groups} {picker} noun={['inscription', 'inscriptions and marks']} placeholder="Characters, hangul or a reading: 尙藥局, 상약국, Sangyakguk, celadon" label="Characters, hangul or a reading" />
 
     {(notes.reading.length > 0 || notes.caveats.length > 0) && (
-      <section class="block prose" aria-labelledby="read">
+      <section class="ahome__block prose" aria-labelledby="read">
         {notes.reading.length > 0 && <><h2 id="read">How to read a Korean inscription</h2><ul>{notes.reading.map((t) => <li>{t}</li>)}</ul></>}
         {notes.caveats.length > 0 && <><h2 id="copies">An inscription is not a date</h2><ul>{notes.caveats.map((t) => <li>{t}</li>)}</ul></>}
       </section>
@@ -58,4 +62,4 @@ const graph = [
     <AppBox text="Photograph the writing. The Advisor reads the characters, names what they name from this same table, works out a written date, and says plainly that an inscription does not date the item." />
     <Faq {faqs} />
   </div>
-</Base>
+</Reference>

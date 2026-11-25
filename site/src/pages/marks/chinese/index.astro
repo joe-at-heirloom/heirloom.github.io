@@ -2,9 +2,7 @@
 // /marks/chinese/: the Chinese marks overview, built from the collection
 // (reign records, hall marks, painters and collectors) in the shared look.
 // Title, description and h1 are the generated page's (page-meta.json).
-import Base from '../../../layouts/Base.astro';
-import Crumbs from '../../../components/Crumbs.astro';
-import SectionNav from '../../../components/SectionNav.astro';
+import Reference from '../../../layouts/Reference.astro';
 import AppBox from '../../../components/AppBox.astro';
 import { reigns } from '../../../lib/reigns';
 import { PEOPLE, NAV } from '../../../lib/chinese';
@@ -31,10 +29,8 @@ const byDyn = ['Ming', 'Qing', 'Hongxian'].map((d) => [d, rs.filter((r) => r.dyn
 const han = [...new Set([...rs.map((r) => r.chars).join(''), ...families.map((f) => f.zh).join(''), '明清'])].join('');
 const graph = [articleLd(path, 'Chinese marks', description, '2026-11-25'), crumbsLd(path, 'Chinese marks', ['/marks/', 'Marks'])];
 ---
-<Base {title} {description} {path} jsonld={graph} {han}>
-  <div class="wrap cn">
-    <Crumbs name="Chinese marks" mid={['/marks/', 'Marks']} />
-    <SectionNav {path} label="Chinese marks" items={NAV} />
+<Reference {title} {description} {path} jsonld={graph} {han}>
+  <div class="cn">
     <header class="phead">
       <h1>{m?.h1 ?? 'Chinese marks'}</h1>
       <p class="phead__sub">The characters on the base of Chinese porcelain usually name a reign, sometimes a hall or a studio. This reference reads them: every Ming and Qing reign mark and {halls} hall marks, each fact with its sources in English and Chinese, and real marks photographed in museums.</p>
@@ -64,4 +60,4 @@ const graph = [articleLd(path, 'Chinese marks', description, '2026-11-25'), crum
 
     <AppBox text="Photograph the base. The Advisor reads the characters, names the reign or hall the mark claims, and keeps the reading with the photo it came from." />
   </div>
-</Base>
+</Reference>

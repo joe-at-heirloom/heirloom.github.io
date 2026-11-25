@@ -1,16 +1,17 @@
 ---
-// /marks/: the marks portal. One search over the marks in the reference
-// collection (src/islands/Portal.tsx), families to browse, the tools, and every
-// marks page linked (so search engines and readers still reach each one).
-// Signatures and seals are their own reference, at /signatures.
-// The address, title and description are the old hub's, kept as they were.
-import { media } from '../../lib/media';
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+// /marks/: the reference's home. One search over the marks (src/islands/
+// Portal.tsx), then the way in for someone holding an item: what do you see
+// on it? Each answer is an area of the reference (lib/reference.ts). Then how
+// to tell Chinese, Japanese and Korean writing apart, every area with its
+// first pages, and how the reference is made. The address, title and
+// description are the old hub's, kept as they were; every marks page is still
+// linked (the areas' rails and homes list them all).
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
 import Portal from '../../islands/Portal';
 import { collection, families, inScope, PER_RECORD, SEAL_KINDS } from '../../lib/portal';
-import { referencePages, isSignaturePage } from '../../lib/pages';
-import { crumbsLd } from '../../lib/site';
+import { AREAS, order, holdings, pictures } from '../../lib/reference';
+import { media } from '../../lib/media';
 import '../../styles/marks.css';
 import '../../styles/portal.css';
 
@@ -20,74 +21,113 @@ const description = 'Date British silver by its hallmark letter, decode Wedgwood
 
 const c = collection();
 const fams = families('marks');
-const count = c.records.filter((r) => !SEAL_KINDS.has(r.kind) && inScope(r.family, 'marks')).length;
-const imgOf = new Map(c.images.map((i) => [i.id, i.file]));
-// Three real mark images for each family's tile.
-const thumbs = new Map<string, string[]>();
-for (const r of c.records) {
-  if (!r.image_id || SEAL_KINDS.has(r.kind) || !inScope(r.family, 'marks')) continue;
-  const t = thumbs.get(r.family) ?? [];
-  if (t.length < 3 && (r.kind !== 'date letter' || t.length === 0)) { t.push(imgOf.get(r.image_id)!); thumbs.set(r.family, t); }
-}
-
-// Every marks page, by its own title.
-const pages = referencePages().filter((p) => !isSignaturePage(p.href));
-
-const tools = [
-  { href: '/marks/london-date-letters', label: 'Date-letter sheets', note: 'London, Birmingham, Sheffield, Chester' },
-  { href: '/marks/silver-marks', label: 'Silver marks', note: 'Solid or plate, maker and years' },
-  { href: '/marks/gold-marks', label: 'Gold marks', note: 'Karat, filled or plated' },
-  { href: '/marks/watch-serial-numbers', label: 'Watch serial numbers', note: 'Rolex, Omega, pocket watches' },
-  { href: '/marks/pottery-marks', label: 'Pottery and porcelain marks', note: 'Every maker on one timeline' },
-  { href: '/marks/pottery-date-codes', label: 'Pottery date codes', note: 'Wedgwood, Minton, Worcester, Rookwood, Sèvres' },
-  { href: '/marks/chinese-reign-marks', label: 'Chinese reign marks', note: 'Ming and Qing, with a finder' },
-  { href: '/marks/chinese-hall-marks', label: 'Chinese hall marks', note: '126 halls and studios' },
-  { href: '/marks/korean/', label: 'Korean marks and inscriptions', note: 'Goryeo to the 20th century' },
-  { href: '/marks/korean-dates', label: 'Korean dates', note: 'Eras, the Chongzhen count, cyclical years' },
-  { href: '/marks/singer-serial-numbers', label: 'Singer serials', note: 'Year and factory' },
-  { href: '/marks/pocket-watch-serial-numbers', label: 'Pocket-watch serials', note: 'Six American makers' },
-  { href: '/marks/leica-serial-numbers', label: 'Leica serials', note: 'Model and year' },
-];
+const marks = c.records.filter((r) => !SEAL_KINDS.has(r.kind) && inScope(r.family, 'marks')).length;
+const seals = c.records.filter((r) => SEAL_KINDS.has(r.kind) || r.kind === 'signature example').length;
+const areas = AREAS().map((a) => ({ ...a, h: holdings(a), pics: pictures(a, 4), top: order(a).filter((l) => l.href !== a.href).slice(0, 5) }));
+const n = (x: number) => x.toLocaleString('en-US');
+// An area's name inside a sentence: countries keep their capital.
+const inWords = (a: { key: string; short: string }) => (['china', 'japan', 'korea'].includes(a.key) ? a.short : a.short.charAt(0).toLowerCase() + a.short.slice(1));
 const graph = [
-  { '@type': 'CollectionPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' }, hasPart: pages.map((p) => ({ '@type': 'WebPage', url: `https://heirloomapp.io${p.href}`, name: p.title })) },
-  crumbsLd(path, 'Marks'),
+  {
+    '@type': 'CollectionPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description,
+    isPartOf: { '@id': 'https://heirloomapp.io/#website' },
+    hasPart: areas.flatMap((a) => order(a)).map((l) => ({ '@type': 'WebPage', url: `https://heirloomapp.io${l.href}`, name: l.label })),
+  },
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name="Marks" />
-    <header class="phead">
-      <h1>Marks</h1>
-      <p class="phead__sub">Search {count.toLocaleString('en-US')} marks, date letters, reigns and makers. Every record names its sources. Artists’ signatures and Chinese seals are in <a href="/signatures">Signatures</a>.</p>
+<Reference {title} {description} {path} jsonld={graph} crumb="Reference" bare han="大明成化年製尙藥局有田" hangul="상약국한" ja="の九谷ノや">
+  <div class="rhome">
+    <header class="rhead">
+      <h1>Marks, signatures and serial numbers</h1>
+      <p class="rhead__lede">A reference to what is struck, painted, printed or signed on the things people own: {n(marks)} marks, date letters, reigns and makers, and {n(seals)} seals and signatures. Each record names its sources. Search, or start from what you see.</p>
     </header>
 
-    <Portal client:load scope="marks" families={fams} perRecord={[...PER_RECORD]} sealCount={0} placeholder="A letter, a year, 925, 大明成化年製, Gorham, Meissen…" searchLabel="Search every mark, date letter, reign and maker" />
+    <div class="rhome__search">
+      <Portal client:load scope="marks" families={fams} perRecord={[...PER_RECORD]} sealCount={0} placeholder="A letter, a year, 925, 大明成化年製, Gorham, Meissen…" searchLabel="Search every mark, date letter, reign and maker" />
+    </div>
 
-    <section class="browse" aria-labelledby="browse">
-      <h2 id="browse">Browse</h2>
-      <ul class="fams">
-        {fams.map((f) => (
+    <section class="rhome__block" aria-labelledby="see">
+      <h2 id="see">What do you see on it?</h2>
+      <p class="rhome__intro">Turn the item over, or look along the rim, the back or the margin. Pick what is there.</p>
+      <ul class="cues">
+        {areas.map((a) => (
           <li>
-            <a href={`/marks/?f=${f.family}`} class="fam">
-              <span class="fam__imgs">{(thumbs.get(f.family) ?? []).map((t) => <span class="plate plate--print"><img src={media(t)} alt="" loading="lazy" decoding="async" /></span>)}</span>
-              <span class="fam__label">{f.label}</span>
-              <span class="fam__n num">{f.count.toLocaleString('en-US')}</span>
+            <a class="cue" href={a.href}>
+              <span class="cue__pics">{a.pics.slice(0, 3).map((p) => <span class="plate plate--print"><img src={media(p)} alt="" loading="lazy" decoding="async" /></span>)}</span>
+              <span class="cue__text">
+                <span class="cue__see">{a.cue}</span>
+                <span class="cue__go">{a.short}</span>
+              </span>
             </a>
           </li>
         ))}
       </ul>
     </section>
 
-    <section class="tools" aria-labelledby="tools">
-      <h2 id="tools">Tools</h2>
-      <ul>
-        {tools.map((t) => <li><a href={t.href}><span>{t.label}</span><span class="muted">{t.note}</span></a></li>)}
+    <section class="rhome__block" aria-labelledby="cjk">
+      <h2 id="cjk">Chinese, Japanese or Korean?</h2>
+      <p class="rhome__intro">All three wrote with Chinese characters, so a mark in characters is not always Chinese. Look for these first.</p>
+      <div class="tellapart">
+        <div>
+          <span class="sample han" lang="zh-Hant">大明成化年製</span>
+          <h3>Only characters</h3>
+          <p>Usually four or six, in a square, a double ring or two columns, naming a reign or a hall. Japanese and later Chinese potters copied these marks, so a Ming mark can be on a later or a Japanese item. <a href="/marks/chinese/">Chinese marks</a></p>
+        </div>
+        <div>
+          <span class="sample ja" lang="ja">九谷 の ノ や</span>
+          <h3>Characters with kana</h3>
+          <p>Kana are simpler signs (の, ノ, や) mixed in with the characters. Also a kiln or a place name such as 九谷 (Kutani) or 有田 (Arita), and seals in the margin of a woodblock print. <a href="/marks/japanese/">Japanese marks</a></p>
+        </div>
+        <div>
+          <span class="sample hangul" lang="ko">상약국 <span class="han" lang="zh-Hant">尙藥局</span></span>
+          <h3>Hangul, or inlaid characters</h3>
+          <p>Hangul builds each syllable from circles and strokes in a square (한). On older celadon, characters inlaid in white or black name a court office or a place. <a href="/marks/korean/">Korean marks</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="rhome__block" aria-labelledby="areas">
+      <h2 id="areas">The reference, part by part</h2>
+      <ul class="areas">
+        {areas.map((a) => (
+          <li>
+            <article class="areacard">
+              <div class="areacard__head">
+                <h3><a href={a.href}>{a.label}</a></h3>
+                <span class="areacard__n num">{n(a.h.records)} records</span>
+                <p class="areacard__lede">{a.lede}</p>
+              </div>
+              {a.pics.length > 0 && <span class="areacard__pics">{a.pics.map((p) => <span class="plate plate--print"><img src={media(p)} alt="" loading="lazy" decoding="async" /></span>)}</span>}
+              <ul>{a.top.map((l) => <li><a href={l.href}>{l.label}{l.note && <span>{l.note}</span>}</a></li>)}</ul>
+              <a class="areacard__all" href={a.href}>Every page in {inWords(a)} →</a>
+            </article>
+          </li>
+        ))}
       </ul>
     </section>
 
-    <details class="allpages">
-      <summary><h2>Every marks page <span class="num muted">{pages.length}</span></h2></summary>
-      <ul>{pages.map((p) => <li><a href={p.href}>{p.title}</a></li>)}</ul>
-    </details>
+    <section class="rhome__block" aria-labelledby="how">
+      <h2 id="how">How the reference is made</h2>
+      <ul class="principles">
+        <li>
+          <h3>Each fact names its source</h3>
+          <p>Every record lists its sources, numbered: the books, catalogs, museum records and assay-office archives it comes from. Most facts are in two independent sources; a record with only one says so.</p>
+        </li>
+        <li>
+          <h3>A mark says what it claims</h3>
+          <p>Marks were copied, sometimes for centuries. A mark can be matched to a maker, a place and years; it cannot show that an item is genuine. Heirloom never decides that. A specialist who can handle the item is the one to ask.</p>
+        </li>
+        <li>
+          <h3>Pictures say what they are</h3>
+          <p>A photograph is of a real item, a book facsimile is a printed cut from a book, and a drawing is a drawing. Characters with no picture yet are set in type, and say so.</p>
+        </li>
+        <li>
+          <h3>The same records the app reads</h3>
+          <p>When Heirloom’s Advisor reads a mark in your photograph, it reads these records and links back to the one it matched, so you can check the reading yourself.</p>
+        </li>
+      </ul>
+    </section>
+
+    <AppBox text="Photograph the mark. The Advisor reads it, names what it claims (a maker, a reign, an assay office and year), and keeps the reading with the photo it came from." />
   </div>
-</Base>
+</Reference>

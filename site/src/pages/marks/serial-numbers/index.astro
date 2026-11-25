@@ -1,0 +1,20 @@
+---
+// /marks/serial-numbers/: watches, sewing machines and cameras, the area's home.
+import Reference from '../../../layouts/Reference.astro';
+import AreaHome from '../../../components/ref/AreaHome.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { articleLd } from '../../../lib/site';
+const path = '/marks/serial-numbers/';
+const title = 'Serial Numbers: Date a Watch, a Singer or a Leica | Heirloom';
+const description = 'Date a Rolex, an Omega, an American pocket watch, a Singer sewing machine or a Leica camera by its serial number, from the makers’ own tables.';
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Serial numbers', description, '2026-11-25')]}>
+  <AreaHome k="serials">
+    <section class="ahome__block read" aria-labelledby="order">
+      <h2 id="order">Where to find the number</h2>
+      <p>On a wristwatch, between the lugs at six o’clock or inside the case back; on a pocket watch, on the movement under the back. On a Singer, stamped into the bed beside the plate, usually with one or two letters first. On a Leica, engraved on the top plate or the lens mount.</p>
+      <p>A serial number dates when the maker made or sold the item, not when it was last serviced or cased: a watch can have a newer case than its movement.</p>
+    </section>
+  </AreaHome>
+  <AppBox text="Photograph the serial number. The Advisor reads it, finds the maker’s year, and keeps the reading with the photo." />
+</Reference>

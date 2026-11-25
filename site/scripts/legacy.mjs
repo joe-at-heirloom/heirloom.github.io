@@ -32,8 +32,7 @@ const ASSETS = [
 ].map((m) => m[0]).join('\n');
 function door(rel) {
   const r = rel.split('\\').join('/');
-  if (/^marks\/chinese\/painters\//.test(r) || /-signatures?\.html$/.test(r)) return 'p-sigs';
-  if (r.startsWith('marks/')) return 'p-marks';
+  if (r.startsWith('marks/') || r.startsWith('signatures')) return 'p-ref';
   if (/^(guides|home-inventory-checklist|silver-hallmarks|family-heirlooms)\.html$/.test(r)) return 'p-guides';
   if (/^(home-inventory-app|antique-identifier-app)\.html$/.test(r)) return 'p-app';
   return null;

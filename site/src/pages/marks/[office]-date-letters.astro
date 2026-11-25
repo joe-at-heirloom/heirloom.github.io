@@ -4,12 +4,10 @@
 // database; the words are the generated page's (scripts/pages/p_marks.py
 // date_letter_page), carried over so nothing a reader or a search engine had
 // is lost.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import Specimen from '../../components/Specimen.astro';
 import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
-import Related from '../../components/Related.astro';
 import DateLetterSheet, { type Cycle } from '../../islands/DateLetterSheet';
 import { OFFICES, HALLMARKS, BY_ID, cyclesOf, letterEntry, STYLE_WORD, CASE_WORD, VISUAL_LABEL, img, sourceName, type Office, type DLRow } from '../../lib/marks';
 import { soften, articleLd, faqLd, crumbsLd, longDate } from '../../lib/site';
@@ -97,24 +95,15 @@ const graph = [
   crumbsLd(path, `${office} date letters`, ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name={`${office} date letters`} mid={['/marks/', 'Marks']} />
+<Reference {title} {description} {path} jsonld={graph} crumb={`${office} date letters`}>
+  <div>
 
-    <header class="hero">
+    <header class="hero hero--solo">
       <div class="hero__text">
         <h1>{h1}</h1>
         <p class="lede">Every date letter the {office} assay office used from {span}, from the same table Heirloom Advisor dates silver with. Type a letter to see every year it could be.</p>
         <p class="byline">By Heirloom · Updated <time datetime={updated}>{longDate(updated)}</time></p>
       </div>
-      <nav class="offices" aria-label="Assay offices">
-        <p class="offices__label">Assay offices</p>
-        {OFFICES.map((o) => (
-          <a href={`/marks/${o.slug}-date-letters`} aria-current={o.office === office ? 'page' : undefined}>
-            <span>{o.office}</span><span class="num">{o.span}</span>
-          </a>
-        ))}
-      </nav>
     </header>
 
     <div class="answer">
@@ -175,6 +164,5 @@ const graph = [
         </a>
       ))}
     </nav>
-    <Related {path} />
   </div>
-</Base>
+</Reference>

@@ -1,8 +1,7 @@
 ---
 // /marks/pottery-date-codes: the date-code reader (src/islands/CodeReader) for
 // the five factories in the reference collection that put the year in code.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import CodeReader from '../../islands/CodeReader';
 import { codeMakers } from '../../lib/codes';
 import { crumbsLd } from '../../lib/site';
@@ -23,13 +22,12 @@ const graph = [
   crumbsLd(path, 'Pottery date codes', ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name="Pottery date codes" mid={['/marks/', 'Marks']} />
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
     <header class="phead">
       <h1>Pottery date codes</h1>
       <p class="phead__sub">Five factories put the year on their wares in code. Choose the maker, enter what you see beside the mark, and the years that fit stay lit. For the marks themselves, see <a href="/marks/pottery-marks">pottery and porcelain marks</a>.</p>
     </header>
     <CodeReader client:load makers={makers} />
   </div>
-</Base>
+</Reference>

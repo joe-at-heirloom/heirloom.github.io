@@ -3,9 +3,7 @@
 // The address, title, description and sections are the generated page's
 // (scripts/pages/p_chinese_people.py), so links the Advisor stores keep
 // working and the page keeps its standing in search.
-import Base from '../../../../layouts/Base.astro';
-import Crumbs from '../../../../components/Crumbs.astro';
-import SectionNav from '../../../../components/SectionNav.astro';
+import Reference from '../../../../layouts/Reference.astro';
 import AppBox from '../../../../components/AppBox.astro';
 import {
   PEOPLE, NAV, IDX, SEAL_BOOK, SURVEY, SEAL_CREDIT, VERDICT, EXPERT_EN, SHIQU_SERIES,
@@ -45,10 +43,8 @@ const graph = [
 ];
 const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${c.folio ?? ''}` : `contents vol. ${c.volume}, p. ${c.page}`);
 ---
-<Base {title} {description} {path} jsonld={graph} {han}>
-  <div class="wrap cn">
-    <Crumbs name={p.pinyin} mid={[IDX, 'Painters and collectors']} />
-    <SectionNav {path} label="Chinese marks" items={NAV} />
+<Reference {title} {description} {path} jsonld={graph} {han} crumb={p.pinyin} via={[IDX, 'Painters and collectors']}>
+  <div class="cn">
 
     <header class="cn-person">
       <div class="cn-person__seal han" aria-hidden="true">{p.name.slice(0, 4)}</div>
@@ -214,4 +210,4 @@ const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${
       <!--/copy-check:skip-->
     </section>
   </div>
-</Base>
+</Reference>

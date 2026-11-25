@@ -5,11 +5,9 @@
 // cycle, the months, and the museum examples the reader was checked against.
 // All from the app's table (japanese.json `dates`), which the Advisor's
 // decoder reads.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
-import JapaneseTabs from '../../components/JapaneseTabs.astro';
 import JapaneseDateReader, { type ReaderEra, type Period } from '../../islands/JapaneseDateReader';
 import { dateTables, sourceNames, pageChars } from '../../lib/japanese';
 import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
@@ -61,13 +59,11 @@ const ja = pageChars([d.eras, d.kanshi, d.zodiac, months, d.days, d.numerals, d.
 const cite = (ids: string[] = []) => ids.map((i) => names.get(i)).filter(Boolean) as { name: string; url: string | null }[];
 const allSources = [...new Set((d.source_ids ?? []) as string[])].map((i) => names.get(i)).filter(Boolean) as { name: string; url: string | null }[];
 ---
-<Base {title} {description} {path} jsonld={graph} ja={ja}>
-  <div class="wrap">
-    <Crumbs name={h1} mid={['/marks/japanese/', 'Japanese marks']} />
+<Reference {title} {description} {path} jsonld={graph} ja={ja}>
+  <div>
     <header class="phead">
       <h1>{h1}</h1>
       <p class="phead__sub">Type the date as it is written and the reader works out the year: every Japanese era name since 645, the imperial year count, and the sixty-year cycle. An era mark with no number names only the era.</p>
-      <JapaneseTabs {path} />
     </header>
 
     <JapaneseDateReader client:load {eras} {periods} {examples} {cycleNames} />
@@ -156,4 +152,4 @@ const allSources = [...new Set((d.source_ids ?? []) as string[])].map((i) => nam
     <AppBox text="Photograph the writing. The Advisor reads the characters and works out a written date from this same table, and says when a cyclical year alone could be several." />
     <Faq {faqs} />
   </div>
-</Base>
+</Reference>

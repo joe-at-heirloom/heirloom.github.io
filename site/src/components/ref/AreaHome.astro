@@ -1,0 +1,79 @@
+---
+// An area's home: what the area covers, the tools that read a mark (as
+// cards), every other page of the area by group, what the collection holds
+// here and the sources most of it comes from. The page may add its own
+// sections (the default slot, after the groups) and its own lede.
+import { area as areaOf, holdings, type AreaKey } from '../../lib/reference';
+interface Props { k: AreaKey; lede?: string; h1?: string }
+const { k, lede, h1 } = Astro.props;
+const a = areaOf(k);
+const h = holdings(a);
+const [first, ...rest] = a.groups;
+const tools = first.links.filter((l) => l.href.replace(/\/$/, '') !== a.href.replace(/\/$/, '') && !l.away);
+const n = (x: number) => x.toLocaleString('en-US');
+const kindWord = (kind: string, count: number) => {
+  const k2 = kind === 'other' ? 'other mark' : kind.replace(/ \(described\)$/, ' (described in words)');
+  if (count === 1) return k2.charAt(0).toUpperCase() + k2.slice(1);
+  const paren = /\s*\(.*\)$/.exec(k2)?.[0] ?? '';
+  const words = k2.slice(0, k2.length - paren.length).split(' ');
+  // Pluralize the head noun: the last word, or the word before "of"/"on"/"in".
+  const at = words.findIndex((w) => ['of', 'on', 'in', 'for'].includes(w));
+  const i = at > 0 ? at - 1 : words.length - 1;
+  const w = words[i];
+  words[i] = /(s|x|ch|sh)$/.test(w) ? `${w}es` : /[^aeiou]y$/.test(w) ? `${w.slice(0, -1)}ies` : `${w}s`;
+  const t = words.join(' ') + paren;
+  return t.charAt(0).toUpperCase() + t.slice(1);
+};
+---
+<header class="rhead">
+  <h1>{h1 ?? a.label}</h1>
+  <p class="rhead__lede">{lede ?? a.lede}</p>
+  <ul class="rhead__meta">
+    <li><strong class="num">{n(h.records)}</strong> records</li>
+    <li><strong class="num">{n(h.images)}</strong> with a picture</li>
+    <li><strong class="num">{n(h.sources)}</strong> sources</li>
+  </ul>
+</header>
+
+{tools.length > 0 && (
+  <ul class="ahome__tools">
+    {tools.map((t) => (
+      <li><a class="tool" href={t.href}><strong>{t.label}</strong>{t.note && <span>{t.note}</span>}<em>Open →</em></a></li>
+    ))}
+  </ul>
+)}
+
+{rest.map((g) => (
+  <section class="ahome__block" aria-label={g.label}>
+    <h2>{g.label}</h2>
+    <ul class="linklist">
+      {g.links.map((l) => (
+        <li>
+          <a href={l.href}>
+            {l.glyph && <span class="han" lang="zh-Hant">{l.glyph}</span>}
+            <strong>{l.label}</strong>
+            {l.years && <span class="y num">{l.years.replace(' to ', '–')}</span>}
+            {l.away ? <span class="note">In {areaOf(l.away).short}</span> : l.note && <span class="note">{l.note}</span>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+))}
+
+<slot />
+
+<section class="ahome__block" aria-labelledby="holds">
+  <h2 id="holds">What the collection holds here</h2>
+  <dl class="holdings">
+    {h.kinds.slice(0, 8).map(([kind, count]) => <div><dt>{kindWord(kind, count)}</dt><dd>{n(count)}</dd></div>)}
+  </dl>
+</section>
+
+<section class="ahome__block" aria-labelledby="mainsrc">
+  <h2 id="mainsrc">Where most of it comes from</h2>
+  <p>The sources cited by the most records in this part of the reference. Each record lists all of its own.</p>
+  <!--copy-check:skip--><ol class="srclist">
+    {h.topSources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation} <span class="n num">· {n(s.n)} records</span></li>)}
+  </ol><!--/copy-check:skip-->
+</section>

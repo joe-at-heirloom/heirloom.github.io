@@ -1,0 +1,47 @@
+---
+// /marks/chinese/imperial-seals: the seals emperors stamped on the paintings
+// and calligraphy of the palace collection, Southern Tang to Puyi's court,
+// and the sets Qianlong's catalogues stamped together. A catalogue over the
+// collection's imperial seal records (family chinese-marks); the records
+// already name this page (attributes.intended_page).
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { collection } from '../../../lib/portal';
+import { imperialSheet, sealSetSheet, SEAL_DYNASTIES, CJK } from '../../../lib/records';
+import { articleLd } from '../../../lib/site';
+
+const path = '/marks/chinese/imperial-seals';
+const c = collection();
+const seals = c.records.filter((r) => r.kind === 'imperial collection seal').map(imperialSheet);
+const sets = c.records.filter((r) => r.kind === 'imperial seal set').map(sealSetSheet);
+const groups = [
+  ...SEAL_DYNASTIES.map(([key, label, blurb]) => ({ key, label, blurb, sheets: seals.filter((s) => s.group === key) })),
+  { key: 'sets', label: 'The catalogue sets', blurb: 'A work entered in one of Qianlong’s catalogues was stamped with a fixed set of seals. The set tells which catalogue, and which edition.', sheets: sets },
+];
+const pictured = seals.filter((s) => s.pics.length).length;
+const title = 'Chinese Imperial Collection Seals: Qianlong, Huizong and the Palace Seals | Heirloom';
+const description = `${seals.length} seals Chinese emperors stamped on paintings and calligraphy, from the Southern Tang to Puyi’s court, and the seal sets of Qianlong’s catalogues: who each belonged to, where it is found, and the works it is on.`;
+const han = [...new Set([...JSON.stringify(groups)].filter((ch) => CJK.test(ch)))].join('') + '乾隆御覽之寶';
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Chinese imperial collection seals', description, '2026-11-25')]} {han}>
+  <header class="rhead">
+    <h1>Imperial collection seals</h1>
+    <p class="rhead__lede">Emperors stamped the paintings and calligraphy of the palace with their seals: <span class="han" lang="zh-Hant">乾隆御覽之寶</span>, “treasure seen by the Qianlong emperor.” Each seal below says whose it was, what kind of seal it is, where on a work it is found, and works it is on.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{seals.length}</strong> seals</li>
+      <li><strong class="num">{pictured}</strong> with a picture</li>
+      <li><strong class="num">{sets.length}</strong> catalogue sets</li>
+    </ul>
+  </header>
+
+  <Catalogue {groups} noun={['seal', 'seals and sets']} placeholder="Characters, pinyin or an emperor: 御覽, Qianlong, Huizong" label="Characters, pinyin or an emperor" />
+
+  <section class="ahome__block read" aria-labelledby="rely">
+    <h2 id="rely">Before you rely on an imperial seal</h2>
+    <p>Imperial seals were copied more than any other: a later painting often carries a full set of Qianlong’s seals to look as if it came from the palace. A seal says whose it claims to be. Whether a work was ever in the palace collection is a question for the catalogues themselves (the <span class="han" lang="zh-Hant">石渠寶笈</span> and <span class="han" lang="zh-Hant">祕殿珠林</span>) and for a specialist who can see the work.</p>
+    <p>For the seals of painters and private collectors, see <a href="/marks/chinese/painters/">painters and collectors</a>.</p>
+  </section>
+
+  <AppBox text="Photograph the seals. The Advisor reads the characters, names whose seal each claims to be from this same reference, and keeps the reading with the photo." />
+</Reference>

@@ -2,8 +2,7 @@
 // /marks/pottery-marks: the pottery and porcelain explorer (src/islands/PotteryExplorer).
 // Every maker's marks from the reference collection on one timeline, explored
 // in place; the date-code pages linked below it.
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import PotteryExplorer from '../../islands/PotteryExplorer';
 import { pottery, baseWords, HOW } from '../../lib/pottery';
 import { referencePages } from '../../lib/pages';
@@ -28,9 +27,8 @@ const graph = [
   crumbsLd(path, 'Pottery and porcelain marks', ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name="Pottery and porcelain marks" mid={['/marks/', 'Marks']} />
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
     <header class="phead">
       <h1>Pottery and porcelain marks</h1>
       <p class="phead__sub">Every mark of {makers.length} makers, each bar the years it was used. Type what the mark on the base says or shows, or how it was put on, and the marks that fit stay lit. A mark tells you who claims to have made an item and the years the mark was in use; copies of most of these marks exist.</p>
@@ -46,4 +44,4 @@ const graph = [
       </ul>
     </section>
   </div>
-</Base>
+</Reference>

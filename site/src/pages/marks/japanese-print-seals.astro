@@ -3,11 +3,9 @@
 // and date seals (src/islands/PrintSealReader), from the app's table
 // (japanese.json `marks`: the censor-seal rows, `date_seal_rules`, and
 // Watanabe Shōzaburō's seal series, `watanabe_seal_rules`).
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
-import JapaneseTabs from '../../components/JapaneseTabs.astro';
 import PrintSealReader, { type SealType, type Nanushi } from '../../islands/PrintSealReader';
 import { marks, printSealTables, sourceNames, pageChars } from '../../lib/japanese';
 import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
@@ -55,13 +53,11 @@ const graph = [
 ];
 const ja = pageChars([types, nanushi, seals.map((s) => s.chars), watanabe], '子丑寅卯辰巳午未申酉戌亥一二三四五六七八九十閏極改名主御届');
 ---
-<Base {title} {description} {path} jsonld={graph} ja={ja}>
-  <div class="wrap">
-    <Crumbs name={h1} mid={['/marks/japanese/', 'Japanese marks']} />
+<Reference {title} {description} {path} jsonld={graph} ja={ja}>
+  <div>
     <header class="phead">
       <h1>{h1}</h1>
       <p class="phead__sub">From about 1790 to 1876 a print’s approval was cut into its block as small seals, each kind used in its own years. Pick the seals you see and the reader gives the year and month the design was approved.</p>
-      <JapaneseTabs {path} />
     </header>
 
     <PrintSealReader client:load {types} {nanushi} />
@@ -105,4 +101,4 @@ const ja = pageChars([types, nanushi, seals.map((s) => s.chars), watanabe], '子
     <AppBox text="Photograph the seals and the signature. The Advisor reads them, names the artist, publisher and censors from this same table, and says what years the seals allow." />
     <Faq {faqs} />
   </div>
-</Base>
+</Reference>

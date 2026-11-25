@@ -5,8 +5,7 @@
 // reference collection's swiss-watches records.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/Crumbs.astro';
+import Reference from '../../layouts/Reference.astro';
 import WatchReader from '../../islands/WatchReader';
 import { collection } from '../../lib/portal';
 import { crumbsLd, soften } from '../../lib/site';
@@ -34,9 +33,8 @@ const graph = [
   crumbsLd(path, 'Watch serial numbers', ['/marks/', 'Marks']),
 ];
 ---
-<Base {title} {description} {path} jsonld={graph}>
-  <div class="wrap">
-    <Crumbs name="Watch serial numbers" mid={['/marks/', 'Marks']} />
+<Reference {title} {description} {path} jsonld={graph}>
+  <div>
     <header class="phead">
       <h1>Watch serial numbers</h1>
       <p class="phead__sub">Type the number you found on a watch. Every table that can read it gives the year: Rolex case serials, Omega movement serials, and {pocketMakers.join(', ')} pocket-watch movements. Name the maker to settle it. A serial dates the case or the movement; it doesn’t say the watch is original or genuine.</p>
@@ -47,4 +45,4 @@ const graph = [
       <ul class="tools-list">{pages.map(([l, h]) => <li><a href={h}><span>{l}</span><span class="muted">Sources and how the tables were made</span></a></li>)}</ul>
     </section>
   </div>
-</Base>
+</Reference>

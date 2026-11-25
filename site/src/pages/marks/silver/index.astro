@@ -1,0 +1,20 @@
+---
+// /marks/silver/: silver and gold, the area's home (lib/reference.ts).
+import Reference from '../../../layouts/Reference.astro';
+import AreaHome from '../../../components/ref/AreaHome.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { articleLd } from '../../../lib/site';
+const path = '/marks/silver/';
+const title = 'Silver and Gold Marks: Hallmarks, Date Letters and Makers | Heirloom';
+const description = 'Read the marks on silver and gold: British hallmarks and date letters from eleven assay offices, makers’ marks, American plate, and marks from France, Germany, Russia and Mexico, each with its sources.';
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Silver and gold marks', description, '2026-11-25')]}>
+  <AreaHome k="silver">
+    <section class="ahome__block read" aria-labelledby="order">
+      <h2 id="order">Where to start</h2>
+      <p>Look for a number first. 925, 800 or 84 is a standard of silver; STERLING says the same in words. A lion, a leopard’s head or an anchor beside a letter is a British hallmark, and the letter gives the year. A name with EP, EPNS or A1 is plate: a thin coat of silver over another metal.</p>
+      <p>Then tap what you see in the <a href="/marks/silver-marks">silver marks</a> reader. It reads the marks together and says whether they claim solid silver or plate, who made it, and the years that fit all of them.</p>
+    </section>
+  </AreaHome>
+  <AppBox text="Photograph the marks. The Advisor reads the standard, the town mark and the date letter together, names the years that fit, and keeps the reading with the photo." />
+</Reference>
