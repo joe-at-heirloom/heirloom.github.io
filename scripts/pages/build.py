@@ -1,24 +1,22 @@
-"""Build the guide and marks pages: python3 scripts/pages/build.py [--check] [OUT]
+"""Build the guide pages: python3 scripts/pages/build.py [--check] [OUT]
 
-Writes the static HTML for the guides (/home-inventory-app, /guides, …) and the
-marks reference (/marks/…) into the site root, or OUT. The pages are plain HTML
-once written; this script is how they are kept consistent and in step with the
-app's mark tables (tables.py).
+Writes the static HTML for the guides (/home-inventory-app,
+/antique-identifier-app, /home-inventory-checklist, /family-heirlooms and
+/guides) into the site root, or OUT. The pages are plain HTML once written.
+The marks pages are no longer made here: the site's templates build them from
+the reference collection (site/src/pages/marks/, site/src/content/guides/).
 
 --check builds into a temporary folder and fails if any page differs from the
-one in the site, which is how to tell that a hand edit or a table change is
-waiting to be built.
+one in the site, which is how to tell that a hand edit is waiting to be built.
 """
 import sys, os, tempfile, filecmp
 sys.path.insert(0, os.path.dirname(__file__))
 from shell import *
-import tables
-import p_inventory, p_antique, p_checklist, p_silver, p_family, p_marks
-import p_pottery, p_plate, p_basics, p_watches, p_world, p_ceramics, p_signatures, p_artist_sigs, p_chinese, p_chinese_halls, p_chinese_people
+import p_inventory, p_antique, p_checklist, p_family
 
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 CHECK = "--check" in sys.argv
-SITE_DIR = tables.SITE_ROOT
+SITE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 OUT = tempfile.mkdtemp(prefix="heirloom-pages-") if CHECK else (args[0] if args else SITE_DIR)
 
 PATH = "/guides"
@@ -42,7 +40,6 @@ pages = {
     "home-inventory-app.html": p_inventory.HTML,
     "antique-identifier-app.html": p_antique.HTML,
     "home-inventory-checklist.html": p_checklist.HTML,
-    "silver-hallmarks.html": p_silver.HTML,
     "family-heirlooms.html": p_family.HTML,
     "guides.html": hub,
 }
@@ -51,16 +48,7 @@ for name, html_ in pages.items():
         f.write(html_)
 with open(os.path.join(OUT, "home-inventory-template.csv"), "w", newline="") as f:
     f.write(p_checklist.CSV)
-written = []
-os.makedirs(os.path.join(OUT, "marks"), exist_ok=True)
-for path, html_ in p_marks.build(p_pottery.CHILDREN + p_plate.CHILDREN + p_basics.CHILDREN + p_watches.CHILDREN + p_world.CHILDREN + p_ceramics.CHILDREN + [p_signatures.CHILD] + p_chinese.CHILDREN + p_chinese_halls.CHILDREN) + p_pottery.build() + p_plate.build() + p_basics.build() + p_watches.build() + p_world.build() + p_ceramics.build() + [p_signatures.build()] + p_artist_sigs.build() + p_chinese.build() + p_chinese_halls.build() + p_chinese_people.build():
-    rel = path.lstrip("/") + "index.html" if path.endswith("/") else path.lstrip("/") if path.endswith(".json") else path.lstrip("/") + ".html"
-    os.makedirs(os.path.dirname(os.path.join(OUT, rel)), exist_ok=True)
-    with open(os.path.join(OUT, rel), "w") as f:
-        f.write(html_)
-    written.append(rel)
-written += list(pages) + ["home-inventory-template.csv"]
-print(tables.describe())
+written = list(pages) + ["home-inventory-template.csv"]
 if CHECK:
     stale = [w for w in written if not os.path.exists(os.path.join(SITE_DIR, w)) or not filecmp.cmp(os.path.join(OUT, w), os.path.join(SITE_DIR, w), shallow=False)]
     if stale:

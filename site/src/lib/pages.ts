@@ -1,18 +1,15 @@
-// The reference pages at the site's root (marks/*.html, generated outside Astro,
-// and the rebuilt ones that share their addresses), each by its own title.
-import { readdirSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
+// The reference pages under /marks/, each by its own title: the pages the
+// templates build at the addresses the generated pages had, named as those
+// pages were (src/data/site/page-meta.json keeps every one's title), and the
+// sections Astro alone renders.
+import meta from '../data/site/page-meta.json';
 
 export type Page = { href: string; title: string };
 
 export function referencePages(): Page[] {
-  const root = join(process.cwd(), '..', 'marks');
-  return readdirSync(root)
-    .filter((f) => f.endsWith('.html') && f !== 'index.html')
-    .map((f) => {
-      const t = /<title>(.*?)<\/title>/s.exec(readFileSync(join(root, f), 'utf8'))?.[1] ?? f;
-      return { href: `/marks/${f.replace(/\.html$/, '')}`, title: t.replace(/ \| Heirloom$/, '').replace(/&#x27;/g, '’').replace(/&amp;/g, '&') };
-    })
+  return Object.entries(meta as Record<string, { title: string }>)
+    .filter(([path]) => /^\/marks\/[^/]+$/.test(path))
+    .map(([href, m]) => ({ href, title: m.title.replace(/ \| Heirloom$/, '').replace(/'/g, '’') }))
     .concat([
       { href: '/marks/chinese/', title: 'Chinese marks: reign marks, hall marks and seals' },
       { href: '/marks/chinese/painters/', title: 'Chinese painters and collectors: seals and signatures' },

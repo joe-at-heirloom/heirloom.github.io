@@ -9,7 +9,7 @@ name), so the template draws the cards from the collection. Also kept: the
 page's title, description, its own structured data (the layout adds the
 site's), and the "More from Heirloom" cards after the article.
 
-Run once from the website repo:  python3 site/scripts/extract-guides.py [second]
+Run once from the website repo:  python3 site/scripts/extract-guides.py [second|third]
 """
 import html
 import json
@@ -26,7 +26,10 @@ FIRST = ['1847-rogers-bros', 'wm-rogers', 'holmes-and-edwards', 'community-plate
          'is-it-real-silver', 'coin-silver', 'german-silver', 'britannia-silver', 'gold-karat-marks', '/silver-hallmarks']
 SECOND = ['wedgwood-date-codes', 'minton-date-marks', 'royal-worcester-date-marks', 'rookwood-pottery-marks', 'sevres-date-letters',
           'rolex-serial-numbers', 'omega-serial-numbers', 'pocket-watch-serial-numbers', 'leica-serial-numbers', 'singer-serial-numbers']
-PAGES = SECOND if sys.argv[1:] == ['second'] else FIRST
+# Third: the artist-signatures hub. Its close-ups (scripts/pages/signatures.json)
+# are not collection records, so they stay in its blocks as written.
+THIRD = ['artist-signatures']
+PAGES = {'second': SECOND, 'third': THIRD}.get((sys.argv[1:] or [''])[0], FIRST)
 coll = json.load(open('site/src/data/generated/collection.json'))
 recs = {r['id']: r for r in coll['records']}
 by_file = {i['file']: i['id'] for i in coll['images']}

@@ -311,6 +311,13 @@ checkClaims('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.
 // The guide and product pages (search landing pages, Nov 2026) describe the
 // same app, so they are held to the same claims, the homepage's words and its
 // sentence case.
+// The guide rules read the pages as they are served: the built site when
+// COPY_CHECK_PAGES names it (the deploy job passes site/dist), otherwise this
+// checkout. The marks pages are no longer files here (the site's templates
+// build them from the reference collection), so a checkout-only run, as on CI,
+// leaves them to the deploy job, which checks every one in the build.
+const pagesRoot = process.env.COPY_CHECK_PAGES ? resolve(process.env.COPY_CHECK_PAGES) : siteRoot;
+let builtOnly = 0;
 const GUIDE_PAGES = [
   'home-inventory-app.html',
   'antique-identifier-app.html',
@@ -399,12 +406,17 @@ const GUIDE_PAGES = [
   'marks/royal-copenhagen-marks.html',
   'marks/hummel-marks.html',
   // One page per artist (scripts/pages/p_artist_sigs.py), however many there are.
-  ...readdirSync(resolve(siteRoot, 'marks')).filter((f) => f.endsWith('-signature.html')).map((f) => `marks/${f}`),
+  ...(existsSync(resolve(pagesRoot, 'marks')) ? readdirSync(resolve(pagesRoot, 'marks')).filter((f) => f.endsWith('-signature.html')).map((f) => `marks/${f}`) : []),
   // Chinese painters and collectors (scripts/pages/p_chinese_people.py): one page each.
-  ...(existsSync(resolve(siteRoot, 'marks/chinese/painters')) ? readdirSync(resolve(siteRoot, 'marks/chinese/painters')).filter((f) => f.endsWith('.html')).map((f) => `marks/chinese/painters/${f}`) : []),
+  ...(existsSync(resolve(pagesRoot, 'marks/chinese/painters')) ? readdirSync(resolve(pagesRoot, 'marks/chinese/painters')).filter((f) => f.endsWith('.html')).map((f) => `marks/chinese/painters/${f}`) : []),
 ];
 for (const file of GUIDE_PAGES) {
-  const html = readFileSync(resolve(siteRoot, file), 'utf8');
+  if (!existsSync(resolve(pagesRoot, file))) {
+    if (process.env.COPY_CHECK_PAGES) failures.push(`${file} is not in the build (${pagesRoot})`);
+    else builtOnly += 1;
+    continue;
+  }
+  const html = readFileSync(resolve(pagesRoot, file), 'utf8');
   const text = visibleText(html);
   // Heirloom's English for a historical title, seal or remark (class "tr", the Chinese
   // painters' pages) translates someone else's words: 大寶箴 is the "Admonition of the
@@ -608,5 +620,6 @@ console.log(
     `${REQUIRED_ON_HOMEPAGE.length + REQUIRED_IN_HOMEPAGE_HTML.length} required on the homepage, ` +
     `${HOMEPAGE_WORD_RULES.length} word rules, sentence case, ` +
     `the draft guard (${DRAFT_FIXTURES.length} headers and 4 runs of the builder)` +
-    (PRE_RELEASE ? `; PRE_RELEASE=1: ${beforePublishing.length} owed before publishing, above` : '; nothing owed before publishing'),
+    (PRE_RELEASE ? `; PRE_RELEASE=1: ${beforePublishing.length} owed before publishing, above` : '; nothing owed before publishing') +
+    (builtOnly ? `; ${builtOnly} marks pages left to a check of the build (COPY_CHECK_PAGES=site/dist)` : ''),
 );
