@@ -222,6 +222,8 @@ main[data-section="china"] .refs a { color: var(--cn-cinnabar) !important; }
 .cn-seal--big { width: 5.5rem !important; height: 5.5rem !important; font-size: 1.55rem !important; border-radius: 6px !important; }
 .seal-table td, .seal-table th { padding: 7px 10px; vertical-align: top; }
 .seal-table .num { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--sec-ink-soft); }
+.seal-cell { width: 96px; }
+.seal-img { display: block; max-width: 88px; max-height: 88px; width: auto; height: auto; background: #fff; border-radius: 2px; }
 .seal-read { font-family: 'LXGW WenKai TC', 'Noto Serif TC', serif; font-size: 1.1rem; color: var(--sec-ink); }
 .tag { display: inline-block; font-size: 0.74rem; padding: 1px 7px; border-radius: 999px; background: rgba(163,39,28,.1); color: var(--sec-accent); margin-left: 6px; white-space: nowrap; }
 .tag--soft { background: rgba(0,0,0,.05); color: var(--sec-ink-soft); }

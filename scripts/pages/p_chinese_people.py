@@ -3,10 +3,12 @@
 Data: scripts/pages/data/chinese_people.json, exported from the research folder
 (hallmark-sources/chinese/people/). Each person carries two sources kept apart:
 the seal book, 《中國書畫家印鑑款識》 (Shanghai Museum, 1987), for the biography
-and the seals and signatures; and Lao Jixiong's record of the national survey of
-1983–1990, 《中國古代書畫鑑定實錄》 (vol. 1, Beijing collections), for works
-examined and the experts' remarks. Dates are checked against Wikidata, and the
-page says what that check found.
+and the seals and signatures (each seal shown as a facsimile crop hosted at
+media.heirloomapp.io, credited per image); Lao Jixiong's record of the national
+survey of 1983–1990, 《中國古代書畫鑑定實錄》 (all nine volumes), for works examined
+and the specialists' remarks; and the Qianlong-era imperial catalogs (石渠寶笈,
+祕殿珠林, 1744–1816) for works under the person's name in the palace collection.
+Dates are checked against Wikidata, and the page says what that check found.
 """
 import json, os, re
 from shell import *
@@ -18,7 +20,13 @@ from sections import section_page, seal_chars, CSS as SEC_CSS, JS as SEC_JS
 PEOPLE = json.load(open(os.path.join(os.path.dirname(__file__), "data", "chinese_people.json")))
 IDX = "/marks/chinese/painters/"
 SEAL_BOOK = "《中國書畫家印鑑款識》 (Seals and Signatures of Chinese Painters and Calligraphers), compiled by the Shanghai Museum (Beijing: Wenwu chubanshe, 1987; reprinted 2005)"
-SURVEY = "勞繼雄《中國古代書畫鑑定實錄》 (Lao Jixiong, A Complete Authentication and Documentation of Classical Chinese Calligraphy and Paintings), vol. 1 (Beijing: Dongfang chubanshe, 2011)"
+SURVEY = "勞繼雄《中國古代書畫鑑定實錄》 (Lao Jixiong, A Complete Authentication and Documentation of Classical Chinese Calligraphy and Paintings), 9 vols. (Beijing: Dongfang chubanshe, 2011)"
+MEDIA = "https://media.heirloomapp.io/"
+SEAL_CREDIT = "Facsimile from Shanghai Museum, 《中國書畫家印鑑款識》 (Beijing, 1987)"
+SHIQU_EN = {1744: "first series", 1745: "first series", 1793: "second series", 1816: "third series"}
+HALL_EN = {"乾清宮": "Palace of Heavenly Purity", "養心殿": "Hall of Mental Cultivation", "重華宮": "Palace of Double Brilliance", "寧壽宮": "Palace of Tranquil Longevity",
+           "延春閣": "Pavilion of Prolonged Spring", "御書房": "Imperial Study", "淳化軒": "Chunhua Gallery", "避暑山莊": "Chengde summer palace",
+           "懋勤殿": "Hall of Diligence", "南薰殿": "Hall of the South Wind", "毓慶宮": "Palace of Abundant Blessing", "中正殿": "Hall of Rectitude", "三希堂": "Hall of Three Rarities"}
 SKILL = {"山水": "landscape", "人物": "figures", "花卉": "flowers", "花鳥": "birds and flowers", "書法": "calligraphy", "篆刻": "seal carving",
          "墨竹": "ink bamboo", "竹": "bamboo", "梅": "plum blossom", "蘭": "orchids", "鞍馬": "horses", "仕女": "beauties", "佛像": "Buddhist figures",
          "界畫": "ruled-line painting", "走獸": "animals", "草蟲": "insects", "魚": "fish", "指畫": "finger painting", "隸書": "clerical script",
@@ -94,12 +102,20 @@ def person_page(p):
         facts.append(("Writings", f'<span lang="zh-Hant">{e(p["writings"])}</span>'))
     facts.append(("Role", e(role(p))))
     head = '<header class="entry-head entry-head--person"><div class="entry-head__mark"><span class="cn-seal cn-seal--big" lang="zh-Hant" aria-hidden="true">' + p["name"][:4] + '</span></div><dl class="facts">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts) + "</dl></header>"
+    def seal_img(i):
+        if not i.get("img"):
+            return '<span class="muted">no image</span>'
+        pg = i.get("img_page") or ""
+        where = f'vol. {pg[1]}, PDF p. {int(pg[3:])}' if re.match(r"v\d-\d+", pg) else ""
+        credit = f'{SEAL_CREDIT}, {where + ", " if where else ""}entry {p["book"]["no"]}, seal {i["n"]}'
+        return (f'<img class="seal-img" src="{MEDIA}{e(i["img"])}" loading="lazy" decoding="async" '
+                f'alt="Seal or signature {i["n"]} of {e(p["pinyin"])}{(", reading " + e(i["reading"])) if i["reading"] else ""}" title="{e(credit)}">')
     rows = "".join(
-        f'<tr><td class="num">{i["n"]}</td><td><span class="seal-read" lang="zh-Hant">{e(i["reading"]) or "<span class=muted>unread</span>"}</span>'
+        f'<tr><td class="num">{i["n"]}</td><td class="seal-cell">{seal_img(i)}</td><td><span class="seal-read" lang="zh-Hant">{e(i["reading"]) or "<span class=muted>unread</span>"}</span>'
         + (' <span class="tag">collector’s seal</span>' if i["collector_seal"] else "") + (' <span class="tag tag--soft">from a book</span>' if i["rephotographed"] else "")
         + f'</td><td lang="zh-Hant">{e(i["source"])}</td><td class="num">{e(i["date_text"])}</td></tr>'
-        for i in p["items"])
-    seals = (f'<div class="table-wrap"><table class="seal-table"><thead><tr><th>No.</th><th>Reads</th><th>On the work</th><th>Date</th></tr></thead><tbody>{rows}</tbody></table></div>'
+        for i in sorted(p["items"], key=lambda i: i["n"]))     # the book prints captions in two columns; show them in number order
+    seals = (f'<div class="table-wrap"><table class="seal-table"><thead><tr><th>No.</th><th>Image</th><th>Reads</th><th>On the work</th><th>Date</th></tr></thead><tbody>{rows}</tbody></table></div>'
              if rows else "<p>No seals or signatures could be read from this entry yet.</p>")
     surv = ""
     if p["survey"]:
@@ -113,8 +129,26 @@ def person_page(p):
                          + (f'<p class="survey-rec__note" lang="zh-Hant">按：{e(r["note"])}</p>' if r["note"] else "")
                          + (f'<ul class="survey-rec__ops">{ops}</ul>' if ops else "") + "</li>")
         surv = f"""      <h2 id="survey">In the national survey, 1983 to 1990</h2>
-      <p>From 1983 to 1990 a group of China’s leading connoisseurs examined the painting and calligraphy in the country’s public collections; their secretary, Lao Jixiong, recorded each work and what was said about it. These are the works by {e(p["pinyin"])} in the first volume (collections in Beijing), with the group’s verdict and the remarks of named members. The verdicts are theirs; Heirloom repeats them and does not judge any item.</p>
+      <p>From 1983 to 1990 a group of China’s leading connoisseurs examined the painting and calligraphy in the country’s public collections; their secretary, Lao Jixiong, recorded each work and what was said about it. These are the works by {e(p["pinyin"])} in Lao’s record, with the collection that held each, the group’s verdict and the remarks of named members. The verdicts are theirs; Heirloom repeats them and does not judge any item.</p>
       <ul class="survey-list">{"".join(items)}</ul>"""
+    shiqu = ""
+    if p.get("shiqu"):
+        def cite(c):
+            if c.get("juan"):
+                return f'{e(c["juan"])}, f. {e(c["folio"] or "")}'
+            link = c.get("archive_org")
+            t = f'contents vol. {c["volume"]}, p. {c["page"]}'
+            return f'<a href="{e(link)}" rel="nofollow">{t}</a>' if link else t
+        rows_s = "".join(
+            f'<tr><td><span lang="zh-Hant">{e(x["edition"])}</span> {SHIQU_EN.get(x["year"], "")}, {x["year"]}</td>'
+            f'<td><span lang="zh-Hant">{e(x["title"])}</span> <span class="muted" lang="zh-Hant">{e((x["count"] or "") + (x["format"] or ""))}</span></td>'
+            f'<td>{("<span lang=zh-Hant>" + e(x["hall"]) + "</span> " + e(HALL_EN.get(re.sub(r"[一二三四五六七八九十]+$", "", x["hall"]).replace("宫", "宮"), ""))) if x["hall"] else "<span class=muted>not stated</span>"}</td>'
+            f'<td>{("<span lang=zh-Hant>" + e(x["grade"]) + "</span> " + ("upper" if x["grade"] == "上等" else "lower")) if x.get("grade") else ""}</td>'
+            f'<td>{cite(x["cite"])}</td></tr>'
+            for x in sorted(p["shiqu"], key=lambda x: (x["year"], x["title"])))
+        shiqu = f"""      <h2 id="imperial">In the Qing imperial catalogs</h2>
+      <p>The Qianlong emperor had his court catalog the painting and calligraphy in the palaces: 石渠寶笈 (secular works) and 祕殿珠林 (Buddhist and Daoist works), in 1744–45, with further series in 1793 and 1816. These {len(p["shiqu"])} entries are recorded under {e(p["pinyin"])}’s name, with the hall where each was kept and, in the first series, the court’s grade. A listing means the emperor owned an item with that title; it does not show that any particular scroll is that item.</p>
+      <div class="table-wrap"><table class="seal-table"><thead><tr><th>Catalog</th><th>Title</th><th>Kept in</th><th>Grade</th><th>Source</th></tr></thead><tbody>{rows_s}</tbody></table></div>"""
     body = f"""{head}
       <p class="note">{wd_line(p)}</p>
       <h2 id="seals">Seals and signatures</h2>
@@ -122,11 +156,14 @@ def person_page(p):
       {seals}
       <p class="note">The readings were transcribed from the book and checked against its index; a character the book could not read is shown as it prints it. A seal or signature names the person it claims to; it does not make a work theirs.</p>
 {surv}
+{shiqu}
 {cta("Photograph the seals and the signature. The Advisor reads them and names the people they claim, with the record each comes from; it never says whether a work is genuine.")}
       <h2 id="sources">Sources</h2>
       <!--copy-check:skip--><ol class="sources sources--num">
         <li>{e(SEAL_BOOK)}, entry {p["book"]["no"]}, p. {p["book"]["page"]}.</li>
-        {"<li>" + e(SURVEY) + ", pp. " + e(", ".join(sorted({str(int(r["page"][3:])) for r in p["survey"]}, key=int))) + " (PDF pages).</li>" if p["survey"] else ""}
+        {"<li>" + e(SURVEY) + ", " + e("; ".join(f"vol. {v}, pp. " + ", ".join(str(x) for x in sorted({int(r["page"][3:]) for r in p["survey"] if r["page"][1] == v})) for v in sorted({r["page"][1] for r in p["survey"]}))) + " (PDF pages).</li>" if p["survey"] else ""}
+        {"<li>Seal and signature images: facsimiles from the book above, each credited with its volume, page and seal number; reproduced as reference by Heirloom, which holds no licence from the publisher.</li>" if any(i.get("img") for i in p["items"]) else ""}
+        {"<li>Qing imperial catalogs: 石渠寶笈 and 祕殿珠林, first series (1744–45) from the Siku quanshu text (Kanripo), second (1793) and third (1816) series from the contents volumes of the Peking University manuscript copies (Internet Archive); each entry above gives its place in the source.</li>" if p.get("shiqu") else ""}
         {f'<li>Wikidata, <a href="https://www.wikidata.org/wiki/{p["wikidata"]["qid"]}" rel="nofollow">{p["wikidata"]["qid"]}</a>.</li>' if (p.get("wikidata") or {}).get("qid") else ""}
       </ol><!--/copy-check:skip-->
 """
