@@ -1,0 +1,147 @@
+---
+// /marks/tiffany-windows/<state>: one state's (or, for the last page, every
+// other country's) buildings from Tiffany's 1893, 1897 and 1910 lists, town by
+// town, each with its windows, mosaics and other work as Tiffany described
+// them, and the page of each list it is on. Anchors: #town-<town>, #<building
+// id>, #<building id>--<n> for one window (the collection's anchors).
+import Reference from '../../../layouts/Reference.astro';
+import TiffanyMap from '../../../components/ref/TiffanyMap.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { places, townSlug, yearsText, LISTS, BASE, type Place, type Site } from '../../../lib/tiffany';
+import { articleLd } from '../../../lib/site';
+import { media } from '../../../lib/media';
+import '../../../styles/tiffany.css';
+
+export function getStaticPaths() {
+  return places().map((p) => ({ params: { place: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Place };
+const n = (x: number) => x.toLocaleString('en-US');
+const abroad = p.slug === 'outside-the-united-states';
+const focus = abroad ? null : p.sites[0]?.state ?? null;
+const glass = p.glass;
+const listedN = p.sites.filter((s) => Object.keys(s.lists).length > 0).length;
+const laterN = p.sites.length - listedN;
+const where = abroad ? 'outside the United States' : `in ${p.name}`;
+const title = abroad
+  ? 'Tiffany Windows Outside the United States: Canada, Britain, France and More | Heirloom'
+  : `Tiffany Windows in ${p.name}: Every Church and Building Tiffany Listed | Heirloom`;
+const big = [...p.towns].sort((a, b) => b[1].length - a[1].length).slice(0, 3).map(([t]) => t);
+const description = `${n(p.sites.length)} ${p.sites.length === 1 ? 'building' : 'buildings'} ${where} that Tiffany’s lists of 1893, 1897 and 1910 name as holding its windows and mosaics${big.length ? `, in ${big.join(', ')}${p.towns.length > 3 ? ' and more' : ''}` : ''}: each window as Tiffany described it, with the page of the list.`;
+const kindWord: Record<string, string> = { tablet: 'Tablet', decoration: 'Decoration', furnishing: 'Furnishing', other: 'Other work' };
+const listLinks = (lists: Site['lists']) => Object.entries(lists).sort().map(([y, l]) => ({ y, page: l.page, url: l.url }));
+const siteYears = (s: Site) => Object.keys(s.lists).sort().join(',');
+const usOnly = !abroad;
+---
+<Reference {title} {description} path={p.path} jsonld={[articleLd(p.path, `Tiffany windows ${where}`, description, '2026-11-25')]} crumb={p.name}>
+  <header class="rhead">
+    <h1>Tiffany windows {where}</h1>
+    <p class="rhead__lede">The {n(listedN)} {listedN === 1 ? 'building' : 'buildings'} {where} that Tiffany’s own lists of 1893, 1897 and 1910 name as holding its windows, mosaics and other work, town by town{laterN > 0 ? `, and ${laterN} more known from the firm’s drawings and other records` : ''}. Each window is given as Tiffany described it, usually the family it remembers and its subject, with the page of each list it appears on.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{n(p.sites.length)}</strong> buildings</li>
+      <li><strong class="num">{n(glass)}</strong> windows, mosaics and other glass</li>
+      <li><strong class="num">{n(p.towns.length)}</strong> {abroad ? 'places' : 'towns'}</li>
+      <li><a href={`${BASE}/`}>Search every state</a></li>
+    </ul>
+  </header>
+
+  {usOnly && <TiffanyMap {focus} label={`Map of ${p.name} with a dot for each town Tiffany’s lists name there`} filter={(s) => s.place === p.slug} />}
+
+  <div class="twpage" data-twpage>
+    <div class="twpage__bar" role="search">
+      <label class="twfind__q">
+        <span class="visually-hidden">Find on this page</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+        <input class="field" type="search" autocomplete="off" spellcheck="false" placeholder={`A town, a church, a family name or a subject ${where}`} data-q />
+      </label>
+      {p.towns.length > 6 && (
+        <nav class="twtowns" aria-label="Towns">
+          {p.towns.map(([t, ss]) => <a href={`#${townSlug(t)}`}>{t} <span class="num">{ss.length}</span></a>)}
+        </nav>
+      )}
+      <p class="twfind__sum" aria-live="polite" data-sum></p>
+    </div>
+
+    {p.towns.map(([t, ss]) => (
+      <section class="twtown" id={townSlug(t)} data-town>
+        <h2>{t}</h2>
+        {ss.map((s) => {
+          const own = siteYears(s);
+          return (
+            <article class="twsite" id={s.id} data-site data-keys={[s.building, s.town, s.address ?? '', ...s.works.map((w) => w.text)].join(' ').toLowerCase()}>
+              {s.photos[0] && (
+                <figure class="twsite__pic">
+                  <a href={s.photos[0].source_url} rel="noopener"><img src={media(s.photos[0].thumb ?? s.photos[0].image)} alt={s.photos[0].title ?? `A Tiffany window at ${s.building}, ${s.town}`} loading="lazy" decoding="async" width={s.photos[0].w ?? undefined} height={s.photos[0].h ?? undefined} /></a>
+                  <figcaption>{s.photos[0].credit}, {s.photos[0].licence_url ? <a href={s.photos[0].licence_url} rel="noopener license">{s.photos[0].licence}</a> : s.photos[0].licence}</figcaption>
+                </figure>
+              )}
+              <h3>{s.building}</h3>
+              {s.address && <p class="twsite__addr">{s.address}</p>}
+              {Object.keys(s.lists).length > 0 ? (
+                <p class="twsite__lists">
+                  Listed {listLinks(s.lists).map((l, i, a) => <>{i > 0 && (i === a.length - 1 ? ' and ' : ', ')}<a href={l.url} rel="noopener">{l.page ? `${l.y}, page ${l.page}` : l.y === '1893' ? '1893 list' : `${l.y} booklet`}</a></>)}
+                </p>
+              ) : (
+                <p class="twsite__lists twsite__lists--later">Not in Tiffany’s lists: {[
+                  s.works.some((w) => w.booklet) && 'described in a Tiffany Studios booklet',
+                  s.works.some((w) => w.drawing) && 'known from a Tiffany Studios drawing at the Met',
+                  s.commons && 'its glass is photographed and filed as Tiffany on Wikimedia Commons',
+                ].filter(Boolean).join('; ')}.</p>
+              )}
+              {s.works.length > 0 && (
+                <ul class="twsite__works">
+                  {s.works.map((w) => {
+                    const wy = Object.keys(w.lists).sort().join(',');
+                    return (
+                      <li id={w.anchor} class:list={{ 'is-other': !w.glass || !!w.drawing }}>
+                        {w.drawing ? <span class="twtag twtag--draw">{w.drawing.stage === 'design' ? 'Drawing' : w.drawing.stage === 'suggestion' ? 'Proposal' : w.drawing.stage.charAt(0).toUpperCase() + w.drawing.stage.slice(1)}</span> : !w.glass && <span class="twtag">{kindWord[w.kind] ?? 'Other work'}</span>}
+                        <span class="twwork">{w.text}</span>
+                        {w.drawing && <span class="twonly"><a href={w.drawing.url} rel="noopener">{w.drawing.museum.replace(/^The /, 'the ')}, {w.drawing.accession}</a></span>}
+                        {w.booklet && <span class="twonly"><a href={w.booklet.url} rel="noopener">The {w.booklet.year} booklet</a></span>}
+                        {!w.drawing && !w.booklet && Object.keys(s.lists).length > 0 && wy !== own && <span class="twonly">{yearsText(w.lists)} list only</span>}
+                        {w.text1897 && <span class="twalt">1897: {w.text1897}</span>}
+                        {w.ocr && <span class="twnote">Read from the 1897 scan.</span>}
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+              {s.works.length === 0 && s.lists['1893'] && <p class="twsite__none">The 1893 list names the building but not its windows.</p>}
+              {s.notes.length > 0 && s.notes.map((t) => <p class="twsite__note">{t}</p>)}
+            </article>
+          );
+        })}
+      </section>
+    ))}
+  </div>
+
+  <section class="ahome__block read" aria-labelledby="read">
+    <h2 id="read">Reading an entry</h2>
+    <p>Tiffany named most windows by the family they remember and what they show: <q>Hale Memorial Window, “The Pilgrim”</q>. “Ornamental” means a window of patterns or foliage rather than figures; “landscape” one of trees, water and sky. The page links open the list itself: the 1910 list at the <a href={LISTS['1910'].url}>Metropolitan Museum of Art’s library</a>, the 1897 list in the scan put online by the <a href="https://cambridge2000.com/tiffany/index.html">Tiffany Census</a>, the 1893 list (buildings only) at the <a href={LISTS['1893'].url}>Internet Archive</a>.</p>
+    <p>A listing says Tiffany had made the work by that year. It does not say the window is still in the building: churches have closed and windows have been moved, sold and lost. The Tiffany Census records what is known of each one today.</p>
+    <p>Entries marked “not in Tiffany’s lists” come from other records. A drawing from the Tiffany Studios archive at the Metropolitan Museum of Art records a design, a proposal to a client (“suggestion”) or a full-size working drawing (“cartoon”); it shows the firm worked on the commission, not that the window was made or survives. A building whose glass is photographed and filed as Tiffany on Wikimedia Commons rests on that attribution, which we have not checked against the firm’s records.</p>
+  </section>
+
+  <AppBox text="Photograph the signature on a window or panel: Tiffany’s is usually etched or painted near a lower corner. The Advisor reads it, and if you know where the glass came from, it checks the building against these lists." />
+</Reference>
+
+<script>
+  function wire() {
+    const root = document.querySelector<HTMLElement>('[data-twpage]');
+    if (!root || root.dataset.wired) return;
+    root.dataset.wired = '1';
+    const q = root.querySelector<HTMLInputElement>('[data-q]')!;
+    const sum = root.querySelector<HTMLElement>('[data-sum]')!;
+    const sites = [...root.querySelectorAll<HTMLElement>('[data-site]')];
+    const towns = [...root.querySelectorAll<HTMLElement>('[data-town]')];
+    q.addEventListener('input', () => {
+      const terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+      let shown = 0;
+      for (const s of sites) { const hit = terms.every((t) => s.dataset.keys!.includes(t)); s.hidden = !hit; if (hit) shown++; }
+      for (const t of towns) t.hidden = !t.querySelector('[data-site]:not([hidden])');
+      sum.textContent = terms.length ? (shown ? `${shown} ${shown === 1 ? 'building' : 'buildings'}.` : 'Nothing on this page matches.') : '';
+    });
+  }
+  wire();
+  document.addEventListener('astro:page-load', wire);
+</script>

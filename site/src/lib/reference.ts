@@ -17,8 +17,9 @@ import { OFFICES, HALLMARKS } from './marks';
 import { makers } from './makers';
 import { artists } from './artists';
 import { places, allPlaces, DIRS, isSplit, letterPath, makerGroups } from './makers-dir';
+import { places as tiffanyPlaces } from './tiffany';
 
-export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'india' | 'signatures' | 'serials';
+export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'india' | 'signatures' | 'serials' | 'glass';
 export type RefLink = {
   href: string;
   label: string;
@@ -79,6 +80,8 @@ export function astroRoutes(): Set<string> {
   for (const p of allPlaces()) { out.add(p.path); if (isSplit(p)) for (const g of makerGroups(p)) out.add(letterPath(p, g.key)); }
   // Korean painters, calligraphers and collectors (pages/marks/korean/painters/[slug].astro).
   for (const r of collection().records) if (r.family === 'korean-people' && !r.parent_id) out.add(norm(r.page_path));
+  // Tiffany windows, a page per state (pages/marks/tiffany-windows/[place].astro).
+  for (const p of tiffanyPlaces()) out.add(p.path);
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
   const guides = join(process.cwd(), 'src', 'content', 'guides');
   if (existsSync(guides)) for (const f of readdirSync(guides)) if (f.endsWith('.json')) out.add(norm(JSON.parse(readFileSync(join(guides, f), 'utf8')).path));
@@ -325,6 +328,18 @@ function build(): Area[] {
       ],
     },
     {
+      key: 'glass', label: 'Art glass', short: 'Art glass', href: '/marks/tiffany-windows/', scope: 'marks',
+      families: ['tiffany-windows'],
+      lede: 'Where Tiffany’s windows and mosaics were installed, from the firm’s own lists of 1893, 1897 and 1910, church by church and town by town.',
+      cue: 'A leaded or opalescent glass window, a panel or a mosaic',
+      groups: [
+        { label: 'Tiffany windows', links: [
+          { href: '/marks/tiffany-windows/', label: 'Tiffany windows', note: 'Every building Tiffany listed, 1893 to 1910' },
+        ] },
+        { label: 'By state, most buildings first', fold: true, links: [...tiffanyPlaces()].sort((a, b) => (a.slug === 'outside-the-united-states' ? 1 : b.slug === 'outside-the-united-states' ? -1 : b.sites.length - a.sites.length)).map((p) => ({ href: p.path, label: p.name, note: `${p.sites.length.toLocaleString('en-US')} ${p.sites.length === 1 ? 'building' : 'buildings'}` })) },
+      ],
+    },
+    {
       key: 'serials', label: 'Watches and serial numbers', short: 'Serial numbers', href: '/marks/serial-numbers/', scope: 'marks',
       families: ['swiss-watches', 'serial-numbers'],
       lede: 'Serial numbers that date a watch, a sewing machine or a camera, from the makers’ own tables.',
@@ -366,6 +381,7 @@ const HOMES: [RegExp, AreaKey][] = [
   [/-signature$|^\/signatures/, 'signatures'],
   [/^\/marks\/(british|american)-silver-makers\/|^\/marks\/american-silver-date-marks\/|^\/marks\/continental-silver-marks\//, 'silver'],
   [/-date-letters$/, 'silver'],
+  [/^\/marks\/tiffany-windows(\/|$)/, 'glass'],
 ];
 
 /** The area a page belongs to, and the link that names it there. */

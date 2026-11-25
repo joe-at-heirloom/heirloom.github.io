@@ -1,0 +1,160 @@
+---
+// /marks/tiffany-windows/: every building Tiffany's own lists name as holding
+// its windows, mosaics and other work (1893, 1897 and 1910), found by search, on a
+// map, or state by state. The records are the collection's tiffany-windows
+// family (lib/tiffany.ts).
+import Reference from '../../../layouts/Reference.astro';
+import TiffanyMap from '../../../components/ref/TiffanyMap.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { sites, places, subjects, museumWindows, isGlassWork, LISTS, BASE } from '../../../lib/tiffany';
+import { media } from '../../../lib/media';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/tiffany.css';
+
+const path = `${BASE}/`;
+const all = sites();
+const ps = places();
+const n = (x: number) => x.toLocaleString('en-US');
+const works = all.reduce((a, s) => a + s.works.length, 0);
+const glass = all.reduce((a, s) => a + s.works.filter(isGlassWork).length, 0);
+const listedSites = all.filter((s) => Object.keys(s.lists).length > 0);
+const laterSites = all.filter((s) => Object.keys(s.lists).length === 0).sort((a, b) => (a.stateName ?? a.country).localeCompare(b.stateName ?? b.country) || a.town.localeCompare(b.town));
+const drawings = all.reduce((a, s) => a + s.works.filter((w) => w.drawing).length, 0);
+const drawingsOnListed = listedSites.reduce((a, s) => a + s.works.filter((w) => w.drawing).length, 0);
+const towns = new Set(all.map((s) => `${s.place}|${s.town}`)).size;
+const inBoth = all.filter((s) => s.lists['1897'] && s.lists['1910']).length;
+const only97 = all.filter((s) => s.lists['1897'] && !s.lists['1910']).length;
+const only93 = all.filter((s) => Object.keys(s.lists).join() === '1893').length;
+const only1910 = all.filter((s) => s.lists['1910'] && !s.lists['1897']).length;
+const states = ps.filter((p) => p.slug !== 'outside-the-united-states');
+const abroad = ps.find((p) => p.slug === 'outside-the-united-states');
+const common = subjects(8).slice(0, 24);
+const museums = museumWindows().filter((m) => m.pic);
+const title = 'Tiffany Windows: Every Church and Building Tiffany Listed, 1893 to 1910 | Heirloom';
+const description = `${n(listedSites.length)} churches, chapels, libraries, clubs and mausoleums that Tiffany’s own lists of 1893, 1897 and 1910 name as holding its windows and mosaics, and ${n(laterSites.length)} later works known from the firm’s drawings and booklets: ${n(glass)} windows and other glass, town by town, with links to the printed pages.`;
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Tiffany windows: every building Tiffany listed', description, '2026-11-25')]}>
+  <header class="rhead">
+    <h1>Tiffany windows</h1>
+    <p class="rhead__lede">Every church, chapel, school, club and mausoleum that Tiffany’s own published lists name as holding its windows and mosaics. The firm printed the lists in 1893, 1897 and 1910 to show customers where its work could be seen. Each entry here gives the building, the windows as Tiffany described them, and the page of the list it is on, so you can read it in the original.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{n(listedSites.length)}</strong> buildings in the lists</li>
+      <li><strong class="num">{n(laterSites.length)}</strong> more from drawings and other records</li>
+      <li><strong class="num">{n(glass)}</strong> windows, mosaics and other glass</li>
+      <li><strong class="num">{n(towns)}</strong> towns</li>
+      <li><strong class="num">{states.filter((p) => p.slug !== 'district-of-columbia').length}</strong> states and Washington, D.C.{abroad ? `, and ${new Set(abroad.sites.map((s) => s.country)).size} other countries` : ''}</li>
+    </ul>
+  </header>
+
+  <section class="twfind" aria-labelledby="find" data-twfind data-src={`${BASE}/search.json`}>
+    <h2 id="find" class="visually-hidden">Find a building</h2>
+    <label class="twfind__q">
+      <span class="visually-hidden">A town, a church, a family name or a subject</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+      <input class="field" type="search" autocomplete="off" spellcheck="false" placeholder="A town, a church, a family name or a subject: Pittsfield, Trinity, Vanderbilt, Good Shepherd" data-q />
+    </label>
+    <p class="twfind__sum" aria-live="polite" data-sum></p>
+    <ol class="twfind__list" data-list></ol>
+  </section>
+
+  <TiffanyMap label={`Map of the United States with a dot for each of the ${n(towns)} towns Tiffany’s lists name`} />
+
+  <section class="ahome__block" aria-labelledby="states">
+    <h2 id="states">State by state</h2>
+    <p>Each state’s page lists its towns, every building in them, and the windows, mosaics and other work Tiffany named there.</p>
+    <ul class="twstates">
+      {states.map((p) => (
+        <li><a href={p.path}><span class="proper-name">{p.name}</span> <span class="num">{n(p.sites.length)}</span></a></li>
+      ))}
+    </ul>
+    {abroad && (
+      <p class="twabroad">Outside the United States: <a href={abroad.path}>{[...new Set(abroad.sites.map((s) => s.country))].join(', ')}</a> ({abroad.sites.length} buildings, from Montreal to Adelaide).</p>
+    )}
+  </section>
+
+  <section class="ahome__block" aria-labelledby="subjects">
+    <h2 id="subjects">What the windows show</h2>
+    <p>The subjects Tiffany named most often. A window’s subject and the family it remembers are often the quickest way to find it here: search for either.</p>
+    <ul class="twsubj">
+      {common.map(([t, c]) => <li><button type="button" data-term={t}>{t} <span class="num">{c}</span></button></li>)}
+    </ul>
+  </section>
+
+  {museums.length > 0 && (
+    <section class="ahome__block" aria-labelledby="museums">
+      <h2 id="museums">Tiffany windows now in museums</h2>
+      <p>Some windows left their buildings for museums. These are from the museums’ open-access collections, with their photographs.</p>
+      <ul class="twmus">
+        {museums.map((m) => (
+          <li id={m.id}>
+            <a href={m.url} rel="noopener">
+              <img src={media(m.pic!.file)} alt={`${m.title}, Tiffany, ${m.museum}`} loading="lazy" decoding="async" />
+              <span class="twmus__t">{m.title}</span>
+              <span class="twmus__m">{[m.date, m.museum].filter(Boolean).join(', ')}</span>
+              {m.from && <span class="twmus__m">From {m.from}</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="ahome__block" aria-labelledby="later">
+    <h2 id="later">Not in the lists</h2>
+    <p class="read">The lists stop in 1910, and Tiffany Studios worked on until the early 1930s. These {laterSites.length} places come from other records: {n(drawings - drawingsOnListed)} drawings from the firm’s archive at the Metropolitan Museum of Art that name the building (designs, proposals to clients and full-size cartoons, from the 1890s to the early 1930s), the firm’s 1911 booklet on the glass mosaic curtain for the National Theatre in Mexico City, and buildings whose Tiffany glass is photographed and filed as Tiffany on Wikimedia Commons. A drawing shows the firm worked on a commission, not that the work was made; each entry says which record it rests on. A further {drawingsOnListed} drawings name buildings already in the lists, and appear under them.</p>
+    <ul class="twlater">
+      {laterSites.map((s) => (
+        <li><a href={`${BASE}/${s.place}#${s.id}`}><span class="twfind__b">{s.building}</span> <span class="twfind__w">{s.town}, {s.stateName ?? s.country}</span></a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="ahome__block read" aria-labelledby="lists">
+    <h2 id="lists">The lists</h2>
+    <p><a href={LISTS['1910'].url}>A Partial List of Windows</a>, printed by Tiffany Studios in 1910, and <a href={LISTS['1897'].url}>A List of Windows</a>, printed by the Tiffany Glass and Decorating Company in 1897, name the buildings where the firm’s work could be seen, state by state and town by town. Under each building they list its windows, usually as a family’s memorial and the window’s subject: <q>Hale Memorial Window, “The Pilgrim”</q> is a window given in memory of a member of the Hale family, showing a pilgrim. Some entries are mosaics, domes and skylights, and some are tablets, altars and decoration, which are kept here too and marked as other work. The booklet the firm handed out at the Chicago World’s Fair in 1893 ends with <a href={LISTS['1893'].url}>a shorter list</a> of buildings, without their windows, and two installations not in any list come from the captions of the firm’s 1913 booklet <a href={LISTS['1913'].url}>Memorials in Glass and Stone</a>.</p>
+    <p>{n(inBoth)} buildings are in both the 1897 and 1910 lists; {n(only1910)} appear only in 1910, {only97} only in 1897, and {only93} only in 1893. The 1910 wording is given where lists overlap; a window found only in the 1897 list is read from our transcription of its scan. The 1910 list is in the <a href="https://libmma.contentdm.oclc.org/digital/collection/p16028coll5">Metropolitan Museum of Art’s library</a>, the 1897 list is a scan put online by the <a href="https://cambridge2000.com/tiffany/index.html">Tiffany Census</a>, which records what survives of each window today, and the 1893 booklet is at the <a href="https://archive.org/details/synopsisexhibit00tiff">Internet Archive</a>.</p>
+  </section>
+
+  <section class="ahome__block read" aria-labelledby="rely">
+    <h2 id="rely">Before you rely on a listing</h2>
+    <p>A list records what Tiffany said it had made and where, by 1897 or 1910. It does not say a window survives: many churches have been rebuilt, closed or sold, and windows have been moved, sold and lost. Tiffany called the 1910 list partial, and the firm went on making windows until the early 1930s, so a window missing here may still be Tiffany’s.</p>
+    <p>The lists are as printed, mistakes included: a few towns sit under the wrong state, and some names are spelled as the printer set them. Where we have placed a town differently, the entry says so. A window in a listed building is not proof that a window from it is Tiffany’s: windows by other studios hang beside Tiffany’s in many of these churches. The surest evidence is a signature on the glass, the firm’s records, and a specialist who can see the window.</p>
+  </section>
+
+  <AppBox text="Photograph the signature on a window or panel: Tiffany’s is usually etched or painted near a lower corner. The Advisor reads it, and if you know where the glass came from, it checks the building against these lists." />
+</Reference>
+
+<script>
+  type Row = { b: string; t: string; s: string; h: string; n: number; k: string };
+  function wire() {
+    const root = document.querySelector<HTMLElement>('[data-twfind]');
+    if (!root || root.dataset.wired) return;
+    root.dataset.wired = '1';
+    const q = root.querySelector<HTMLInputElement>('[data-q]')!;
+    const list = root.querySelector<HTMLOListElement>('[data-list]')!;
+    const sum = root.querySelector<HTMLElement>('[data-sum]')!;
+    let rows: Row[] | null = null;
+    const load = async () => (rows ??= await fetch(root.dataset.src!).then((r) => r.json()));
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const show = async () => {
+      const terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+      if (!terms.length) { list.innerHTML = ''; sum.textContent = ''; return; }
+      const all = await load();
+      const hits = all.filter((r) => terms.every((t) => r.k.includes(t)));
+      sum.textContent = hits.length ? `${hits.length.toLocaleString('en-US')} ${hits.length === 1 ? 'building' : 'buildings'}${hits.length > 60 ? ', the first 60 shown' : ''}.` : 'No building matches. Try the town alone, or a family name.';
+      list.innerHTML = hits.slice(0, 60).map((r) => `<li><a href="${r.h}"><span class="twfind__b">${esc(r.b)}</span> <span class="twfind__w">${esc(r.t)}, ${esc(r.s)}</span> <span class="twfind__n num">${r.n} ${r.n === 1 ? 'entry' : 'entries'}</span></a></li>`).join('');
+    };
+    let timer = 0;
+    q.addEventListener('input', () => { clearTimeout(timer); timer = window.setTimeout(show, 120); });
+    q.addEventListener('focus', () => { load(); }, { once: true });
+    document.querySelectorAll<HTMLButtonElement>('[data-term]').forEach((b) => b.addEventListener('click', () => {
+      q.value = b.dataset.term!;
+      show();
+      q.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }));
+    const p = new URLSearchParams(location.search).get('q');
+    if (p) { q.value = p; show(); }
+  }
+  wire();
+  document.addEventListener('astro:page-load', wire);
+</script>

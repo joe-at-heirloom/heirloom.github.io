@@ -1,0 +1,79 @@
+/* Tiffany windows (/marks/tiffany-windows/): the finder, the state grid,
+   the subjects, and a state's towns and buildings. */
+
+.twfind { margin-top: 26px; }
+.twfind__q { position: relative; display: block; }
+.twfind__q svg { position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 18px; height: 18px; fill: none; stroke: var(--ink-3); stroke-width: 2; pointer-events: none; }
+.twfind__q .field { padding-left: 44px; }
+.twfind__sum { margin: 10px 0 0; font-size: 14px; color: var(--ink-2); min-height: 1.4em; }
+.twfind__list { list-style: none; margin: 6px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.twfind__list:empty { display: none; }
+.twfind__list a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding: 11px 2px; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+.twfind__list a:hover .twfind__b { color: var(--accent-ink); }
+.twfind__b { font-weight: 600; }
+.twfind__w { grid-column: 1; color: var(--ink-2); font-size: 14.5px; }
+.twfind__n { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-size: 13.5px; color: var(--ink-3); white-space: nowrap; }
+
+.twstates { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0 22px; }
+.twstates a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+.twstates a:hover { color: var(--accent-ink); }
+.twstates .num { color: var(--ink-3); font-size: 14px; }
+.twabroad { margin-top: 16px; }
+
+.twsubj { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.twsubj button { border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font: 500 14.5px/1.2 var(--text); padding: 9px 13px; border-radius: 99px; cursor: pointer; min-height: 38px; text-align: left; }
+.twsubj button:hover { border-color: var(--ink-3); }
+.twsubj .num { color: var(--ink-3); margin-left: 4px; font-weight: 400; }
+
+.twpage { margin-top: 34px; }
+.twpage__bar { position: sticky; top: 68px; z-index: 20; display: grid; gap: 10px; padding: 14px 0 10px; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.twpage__bar > * { min-width: 0; }
+.twpage__bar .twfind__sum { margin: 0; }
+.twtowns { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; mask-image: linear-gradient(90deg, #000 92%, transparent); padding-right: 24px; }
+.twtowns::-webkit-scrollbar { display: none; }
+.twtowns a { flex: none; white-space: nowrap; border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); font: 500 14px/1 var(--text); padding: 9px 12px; border-radius: 99px; text-decoration: none; min-height: 36px; display: inline-flex; align-items: center; }
+.twtowns a:hover { border-color: var(--ink-3); color: var(--ink); }
+.twtowns .num { opacity: 0.7; margin-left: 5px; }
+
+.twtown { margin-top: 40px; scroll-margin-top: 170px; }
+.twtown > h2 { font-size: clamp(1.35rem, 1.15rem + 0.8vw, 1.8rem); padding-bottom: 8px; border-bottom: 1px solid var(--ink); margin: 0; }
+.twsite { padding: 18px 0 16px; border-bottom: 1px solid var(--rule); scroll-margin-top: 170px; }
+.twsite:target, .twsite__works li:target { background: var(--accent-wash); }
+.twsite h3 { font-size: 1.12rem; margin: 0; }
+.twsite__addr { margin: 2px 0 0; color: var(--ink-2); font-size: 15px; }
+.twsite__lists { margin: 6px 0 0; font-size: 13.5px; color: var(--ink-3); }
+.twsite__lists a { color: var(--ink-2); }
+.twsite__works { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 7px; }
+.twsite__works li { position: relative; padding-left: 16px; line-height: 1.45; scroll-margin-top: 170px; }
+.twsite__works li::before { content: ''; position: absolute; left: 2px; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.twsite__works li.is-other::before { background: var(--ink-3); }
+.twsite__works li.is-other .twwork { color: var(--ink-2); }
+.twtag { display: inline-block; margin-right: 8px; font-size: 12.5px; color: var(--ink-3); border: 1px solid var(--rule); border-radius: 99px; padding: 1px 8px; vertical-align: 1px; }
+.twonly, .twalt, .twnote { display: block; font-size: 13.5px; color: var(--ink-3); margin-top: 1px; }
+.twsite__none { margin: 8px 0 0; font-size: 14px; color: var(--ink-3); }
+.twsite__lists--later { color: var(--ink-2); }
+.twtag--draw { border-color: var(--wood); color: var(--ink-2); }
+.twsite__note { margin: 10px 0 0; font-size: 14px; color: var(--ink-2); padding-left: 12px; border-left: 2px solid var(--wood); }
+
+@media (max-width: 640px) {
+  .twpage__bar { top: 60px; }
+  .twfind__list a { grid-template-columns: minmax(0, 1fr); }
+  .twfind__n { grid-column: 1; grid-row: auto; }
+}
+
+.twsite__pic { float: right; margin: 2px 0 10px 18px; width: min(38%, 220px); }
+.twsite__pic img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r); background: var(--plate); }
+.twsite__pic figcaption { font-size: 12px; color: var(--ink-3); margin-top: 4px; line-height: 1.35; }
+.twsite::after { content: ''; display: block; clear: both; }
+
+.twmus { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 18px; }
+.twmus a { display: grid; gap: 4px; color: var(--ink); text-decoration: none; }
+.twmus img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--r); background: var(--plate); }
+.twmus a:hover .twmus__t { color: var(--accent-ink); }
+.twmus__t { font-weight: 600; font-size: 15px; line-height: 1.3; }
+.twmus__m { font-size: 13.5px; color: var(--ink-3); }
+
+.twlater { list-style: none; margin: 16px 0 0; padding: 0; columns: 2 300px; column-gap: 28px; }
+.twlater li { break-inside: avoid; }
+.twlater a { display: grid; padding: 8px 0; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+.twlater a:hover .twfind__b { color: var(--accent-ink); }
