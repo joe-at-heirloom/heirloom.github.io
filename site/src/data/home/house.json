@@ -1,6 +1,6 @@
 {
-  "_about": "The home page's house: the items in it, what their marks say, and sales of similar items (each with its source). low/high are filled from the sales Joe has checked; until then draft is true and the page says so.",
-  "draft": true,
+  "_about": "The home page's house: the items in it, what their marks say, and recorded sales of similar items (each with its source; design/research/SALES.md). low/high are the lowest and highest of those sales. Joe accepted the figures as real on Nov 24 2026.",
+  "draft": false,
   "rooms": [
     "Living room",
     "Dining room",
