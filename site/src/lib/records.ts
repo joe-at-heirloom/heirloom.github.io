@@ -410,6 +410,47 @@ export function tabooSheet(r: Rec): Sheet {
   };
 }
 
+// ── Chinese porcelain marks other than reign and hall marks ─────────────────
+export const OTHER_MARK_GROUPS: [string, string, string][] = [
+  ['symbol', 'Symbol marks', 'A picture in place of characters: a leaf, a hare, a conch, a fungus. Most are Kangxi, when writing the reign name was avoided, and were used again later.'],
+  ['commendation', 'Commendation marks', 'Words of praise or good wishes, 玉 “jade” or 富貴佳器 “fine vessel for the rich and honorable”, instead of a date.'],
+  ['maker', 'Makers and workshops', 'Palace and workshop names, from the Yuan 樞府 wares to the Republic and the People’s Republic.'],
+  ['dynasty', 'A dynasty, no reign', 'Marks that name the dynasty but no reign.'],
+  ['export', 'Export marks', 'Marks in English for the countries the porcelain was sold to, and what each says about date.'],
+  ['date', 'Dates in the sixty-year cycle', 'A cyclical date on porcelain, and where to read it.'],
+];
+export function otherMarkSheet(r: Rec): Sheet {
+  const a = r.attributes;
+  const { list } = numbered(r);
+  const chars = a.chars && CJK.test(String(a.chars)) ? String(a.chars) : null;
+  const periods = (Array.isArray(a.periods) ? a.periods : [])
+    .map((p: any) => [p.label, p.start ? (p.end && p.end !== p.start ? `${p.start}–${p.end}` : `from ${p.start}`) : null].filter(Boolean).join(', ')).filter(Boolean);
+  const differs = (Array.isArray(a.conflicts) ? a.conflicts : []).map((c: any) => clean(`${c.topic}: ${(c.positions ?? []).join(' / ')}${c.resolution ? ` ${c.resolution}` : ''}`)).filter(Boolean);
+  const group = OTHER_MARK_GROUPS.some(([k]) => k === a.category) ? String(a.category) : 'date';
+  const KIND: Record<string, string> = { symbol: 'Symbol mark', commendation: 'Commendation mark', maker: 'Maker’s mark', dynasty: 'Dynasty mark', export: 'Export mark', date: 'Cyclical date' };
+  return {
+    id: r.id, anchor: r.anchor ?? r.id.replace(/^cnmark-/, ''), url: urlOf(r), kind: KIND[group] ?? 'Mark', group,
+    glyphs: chars, typeset: !!chars, lang: chars ? 'zh' : null,
+    reading: a.pinyin ? tidyReading(String(a.pinyin)) : String(a.english ?? r.name), means: a.pinyin ? clean(a.english) : null, meansTr: !!chars,
+    years: yearsOf(r.date_from, r.date_to),
+    facts: [
+      ['What it is', clean(a.dating_value && r.summary ? r.summary.replace(String(a.dating_value), '').trim() : r.summary)],
+      ['What it looks like', clean(r.looks_like)],
+      ['Found on', periods.join('; ')],
+      ['What it says about date', clean(a.dating_value)],
+      ['Later copies', clean(a.later_copies)],
+      ['Also written', (Array.isArray(a.variants) ? a.variants : []).filter((v: string) => v && v !== a.chars).join(', ')],
+      ['Do not confuse', clean(a.overlap)],
+      ['Where sources differ', differs.join(' ')],
+      ['Notes', clean(a.notes)],
+    ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ: [], caution: null,
+    pics: [picOf(r)].filter((p): p is Pic => !!p),
+    sources: list, single: r.single_source,
+    keys: keysOf(r.keys, a.chars, a.pinyin, a.english, a.chinese_name, a.variants),
+  };
+}
+
 const escHtml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 /** A sheet's text as HTML, with official designations (Korea's National Treasure) marked as names, not Heirloom's words. */
 export function withNames(t: string) {

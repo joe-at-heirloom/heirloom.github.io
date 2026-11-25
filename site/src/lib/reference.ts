@@ -225,6 +225,7 @@ function build(): Area[] {
           { href: '/marks/chinese-reign-marks', label: 'Reign marks', note: 'Ming and Qing, with a finder' },
           { href: '/marks/chinese-hall-marks', label: 'Hall marks', note: 'Halls, studios and palace buildings' },
           { href: '/marks/chinese/dating', label: 'Reading a Chinese date', note: 'Era names, the sixty-year cycle, taboo characters' },
+          { href: '/marks/chinese/other-marks', label: 'Other marks', note: 'Symbols, good wishes, makers and export marks' },
         ] },
         { label: 'Every reign', fold: true, links: reignLinks() },
         { label: 'Seals', links: [

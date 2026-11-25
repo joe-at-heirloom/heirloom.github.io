@@ -1,0 +1,41 @@
+---
+// /marks/chinese/other-marks: the marks on the base of Chinese porcelain that
+// are not a reign or a hall: symbols, words of praise, makers and workshops,
+// and the export marks, each with what it does and does not say about date.
+// A catalogue over the collection's records (family chinese-marks, id cnmark-*);
+// the records already name this page.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { collection } from '../../../lib/portal';
+import { otherMarkSheet, OTHER_MARK_GROUPS, CJK } from '../../../lib/records';
+import { articleLd } from '../../../lib/site';
+
+const path = '/marks/chinese/other-marks';
+const marks = collection().records.filter((r) => r.id.startsWith('cnmark-')).map(otherMarkSheet);
+const groups = OTHER_MARK_GROUPS.map(([key, label, blurb]) => ({ key, label, blurb, sheets: marks.filter((s) => s.group === key) })).filter((g) => g.sheets.length);
+const pictured = marks.filter((s) => s.pics.length).length;
+const title = 'Chinese Porcelain Marks: Symbols, Commendation and Export Marks | Heirloom';
+const description = `${marks.length} marks on Chinese porcelain other than reign and hall marks: symbol marks such as the artemisia leaf and the hare, commendation marks such as 玉 and 富貴佳器, makers’ and export marks, and what each says about date.`;
+const han = [...new Set([...JSON.stringify(groups)].filter((ch) => CJK.test(ch)))].join('');
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Chinese porcelain marks: symbols, commendation and export marks', description, '2026-11-25')]} {han}>
+  <header class="rhead">
+    <h1>Other marks on Chinese porcelain</h1>
+    <p class="rhead__lede">Not every base carries a reign. Some have a picture, a leaf or a hare; some a word of praise, <span class="han" lang="zh-Hant">玉</span>, <span class="tr">“jade”</span>; some a workshop’s name, or <span lang="en">CHINA</span> in English for the country the piece was sold to. Each mark below says what it is, when it is found, and what it does and does not say about date.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{marks.length}</strong> marks</li>
+      <li><strong class="num">{pictured}</strong> photographed</li>
+    </ul>
+  </header>
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="Characters, a picture or a word: 玉, hare, leaf, CHINA" label="Characters, a picture or a word" />
+
+  <section class="ahome__block read" aria-labelledby="rely">
+    <h2 id="rely">Before you rely on one of these marks</h2>
+    <p>Symbol and commendation marks were used for long stretches and copied freely, so most of them suggest a period rather than date an item. The export marks set a floor: a piece marked <span lang="en">CHINA</span> for the United States was marked after the law of 1891 asked for it, but the word alone says nothing about how much later.</p>
+    <p>For marks that name a reign, see <a href="/marks/chinese-reign-marks">reign marks</a>; for halls and studios, <a href="/marks/chinese-hall-marks">hall marks</a>.</p>
+  </section>
+
+  <AppBox text="Photograph the base. The Advisor reads the mark, names what it is from this same reference, and says what it does and does not tell you about the date." />
+</Reference>
