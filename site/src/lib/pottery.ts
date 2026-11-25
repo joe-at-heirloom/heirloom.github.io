@@ -18,6 +18,7 @@ export type PMark = {
   id: string; maker: string; firm: string; kind: string; name: string; looks: string; means: string; applied: string; how: How[];
   from: number | null; to: number | null; note: string | null;
   img: { file: string; status: string; credit: string; url: string | null } | null;
+  seeAt: unknown;
   sources: { citation: string; url: string | null; where: string | null }[];
   disagree: { says: string; who: string }[]; single: boolean; words: string;
 };
@@ -65,6 +66,7 @@ export function pottery(): { makers: PMaker[]; marks: PMark[] } {
         id: r.id, maker, firm: r.maker ?? '', kind: r.kind, name: r.name, looks, means, applied, how: howOf(applied),
         from: r.date_from ?? null, to: r.date_to ?? null, note: r.date_note ? tidy(r.date_note) : null,
         img: i && i.file ? { file: i.file, status: i.status, credit: i.credit ?? '', url: i.source_url ?? null } : null,
+        seeAt: r.attributes.see_at ?? null,
         sources: r.sources.map((s) => { const x = src.get(s.id); return x ? { citation: x.citation, url: x.url ?? null, where: s.where ?? null } : null; }).filter((x): x is NonNullable<typeof x> => !!x),
         disagree: (Array.isArray(r.attributes.disagreements) ? r.attributes.disagreements : [])
           .map((d: any) => ({ says: tidy(d.says), who: src.get(d.source) ? short(src.get(d.source)!.citation) : String(d.source ?? '') }))

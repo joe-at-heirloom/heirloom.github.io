@@ -1,0 +1,8 @@
+/* Where to see a mark we can't show (components/SeeAt.tsx): its pictures aren't free to copy, so they're linked. */
+.seeat { margin: 0 0 18px; padding: 12px 16px; border: 1px dashed var(--plate-edge); border-radius: var(--r); font-size: 14.5px; color: var(--ink-2); }
+.seeat p { margin: 0; }
+.seeat p + p, .seeat p + ul { margin-top: 8px; }
+.seeat ul { margin: 0; padding-left: 1.1em; }
+.seeat li { margin: 4px 0; }
+.seeat a { overflow-wrap: anywhere; }
+.seeat .muted { color: var(--ink-3); }

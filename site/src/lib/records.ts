@@ -39,6 +39,8 @@ export type Sheet = {
   single: boolean;
   /** Where to go next from this record: another part of the reference that reads the same item (an office's date letters). */
   links?: { label: string; href: string }[];
+  /** Where to see the mark when its pictures aren't free to copy (components/SeeAt.tsx). */
+  seeAt?: unknown;
   group: string;
   /** Everything a reader might type to find it, lower-cased. */
   keys: string;
@@ -113,6 +115,9 @@ function index() {
   return (ix = { img: new Map(c.images.map((i) => [i.id, i])), src: new Map(c.sources.map((s) => [s.id, s])), kids });
 }
 export const childrenOf = (id: string) => index().kids.get(id) ?? [];
+// A record's links to where its mark can be seen (attributes.see_at), by the collection's id.
+let byId: Map<string, Rec> | null = null;
+const seeAtOf = (id: string) => (byId ??= new Map(collection().records.map((r) => [r.id, r]))).get(id)?.attributes?.see_at;
 
 function picOf(r: Rec): Pic | null {
   const i = r.image_id ? index().img.get(r.image_id) : undefined;
@@ -192,7 +197,7 @@ export function hallSheet(r: Rec): Sheet {
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ: differences(r, add, HALL_DIFFER),
     caution: null,
-    pics, sources: list, single: r.single_source,
+    pics, sources: list, single: r.single_source, seeAt: r.attributes?.see_at,
     keys: keysOf(r.keys, chars, rest.join(' '), r.summary, owner),
   };
 }
@@ -221,7 +226,7 @@ export function sheet(r: Rec, group = ''): Sheet {
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ: differences(r, add, { date_from: 'From', date_to: 'Until', maker: 'Maker', place: 'Place', means: 'What it means' }),
     caution: clean(a.caution ?? a.cautions),
-    pics, sources: list, single: r.single_source,
+    pics, sources: list, single: r.single_source, seeAt: r.attributes?.see_at,
     keys: keysOf(r.keys, r.name, r.maker, r.place, r.summary),
   };
 }
@@ -294,7 +299,7 @@ export function jaSheet(m: JaMark): Sheet {
       ['What it tells you', clean(m.tells)],
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ, caution: clean(m.cautions),
-    pics: [...shows, ...rest].map(jaPic),
+    pics: [...shows, ...rest].map(jaPic), seeAt: seeAtOf(m.id),
     sources, single: m.singleSource,
     keys: keysOf(m.keys, m.chars, m.variants, m.kana, m.romaji, m.romajiPlain, m.spellings, m.meaning, m.maker, m.artist),
   };
@@ -322,7 +327,7 @@ export function koSheet(m: Insc): Sheet {
       ['What it tells you', clean(m.tells)],
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ: [], caution: clean(m.cautions),
-    pics: [...shows, ...rest].map((p) => ({ file: media(p.file), status: 'photo', credit: p.credit, url: p.url, alt: p.caption || p.label })),
+    pics: [...shows, ...rest].map((p) => ({ file: media(p.file), status: 'photo', credit: p.credit, url: p.url, alt: p.caption || p.label })), seeAt: seeAtOf(m.id),
     sources: m.sources.map((s) => ({ citation: s.citation, url: s.url, where: null })), single: m.singleSource,
     keys: keysOf(m.keys, m.chars, m.variants, m.hangul, m.rr, m.mr, m.meaning, m.maker, m.place),
   };
@@ -363,7 +368,7 @@ export function imperialSheet(r: Rec): Sheet {
       ['Seen on', seen.join('; ')],
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ: [], caution: null,
-    pics: [picOf(r)].filter((p): p is Pic => !!p),
+    pics: [picOf(r)].filter((p): p is Pic => !!p), seeAt: r.attributes?.see_at,
     sources: list, single: r.single_source,
     keys: keysOf(r.keys, chars, rest.join(' '), a.english, a.emperor, a.dynasty),
   };
@@ -476,7 +481,7 @@ export function otherMarkSheet(r: Rec): Sheet {
       ['Notes', clean(a.notes)],
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ: [], caution: null,
-    pics: [picOf(r)].filter((p): p is Pic => !!p),
+    pics: [picOf(r)].filter((p): p is Pic => !!p), seeAt: r.attributes?.see_at,
     sources: list, single: r.single_source,
     keys: keysOf(r.keys, a.chars, a.pinyin, a.english, a.chinese_name, a.variants),
   };

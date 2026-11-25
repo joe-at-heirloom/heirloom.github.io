@@ -9,6 +9,7 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { PMark, PMaker, How } from '../lib/pottery';
 import { media } from '../lib/media';
+import { SeeAt, seeAtLinks } from '../components/SeeAt';
 
 type Props = { makers: PMaker[]; marks: PMark[]; how: [How, string, string][]; words: string[] };
 const NOW = new Date().getFullYear();
@@ -268,7 +269,8 @@ function MarkPanel({ marks, makers, id, onOpen, onClose, onMaker }: { marks: PMa
               <div class="plate plate--print panel__plate"><img src={media(m.img.file)} alt={m.looks || m.name} /></div>
               <figcaption>{STATUS[m.img.status] ?? ''}{m.img.credit ? `. ${m.img.credit}` : ''}{m.img.url && <> <a href={m.img.url} rel="noopener">Source</a></>}</figcaption>
             </figure>
-          ) : <p class="muted">No image of this mark yet.</p>}
+          ) : seeAtLinks(m.seeAt).length ? null : <p class="muted">No image of this mark yet.</p>}
+          <SeeAt links={m.seeAt} pictured={!!m.img} />
           <dl class="rfacts">
             {m.looks && <div><dt>Looks like</dt><dd>{m.looks}</dd></div>}
             {m.means && <div><dt>What it means</dt><dd>{m.means}</dd></div>}

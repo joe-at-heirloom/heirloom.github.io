@@ -11,6 +11,7 @@ export type SMark = {
   id: string; group: string; kind: string; name: string; looks: string; means: string; applied: string; maker: string | null;
   from: number | null; to: number | null; note: string | null; metal: Metal | null; year: boolean; sheet: string | null;
   img: { file: string; status: string; credit: string; url: string | null } | null;
+  seeAt: unknown;
   sources: { citation: string; url: string | null; where: string | null }[]; disagree: { says: string; who: string }[]; single: boolean; words: string;
 };
 export type SGroup = { key: string; label: string; page: string | null; count: number };
@@ -74,6 +75,7 @@ export function toMark(r: Rec, group: string, metal: string | null, img: Map<str
     from: r.date_from ?? null, to: r.date_to ?? null, note: r.date_note ? tidy(r.date_note) : null,
     metal, year: /date (letter|code)/.test(r.kind), sheet: SHEET.find(([re]) => re.test(r.id))?.[1] ?? null,
     img: i && i.file ? { file: i.file, status: i.status, credit: i.credit ?? '', url: i.source_url ?? null } : null,
+    seeAt: r.attributes.see_at ?? null,
     sources: r.sources.map((s) => { const x = src.get(s.id); return x ? { citation: x.citation, url: x.url ?? null, where: s.where ?? null } : null; }).filter((x): x is NonNullable<typeof x> => !!x),
     disagree: (Array.isArray(r.attributes.disagreements) ? r.attributes.disagreements : [])
       .map((d: any) => ({ says: tidy(d.says), who: src.get(d.source) ? short(src.get(d.source)!.citation) : '' }))

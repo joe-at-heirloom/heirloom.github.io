@@ -9,6 +9,7 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { SMark, SGroup } from '../lib/silver';
 import { media } from '../lib/media';
+import { SeeAt, seeAtLinks } from '../components/SeeAt';
 
 /** The words a page gives for its metal: badge labels, what each metal reading says, and the prompts. */
 export type MetalWords = { labels: Record<string, string>; says: Record<string, string>; unknown: string; placeholder: string; empty: string; searchLabel: string };
@@ -225,7 +226,8 @@ function MetalPanel({ marks, id, picked, onToggle, onOpen, onClose, groups, word
               <div class="plate plate--print panel__plate"><img src={media(m.img.file)} alt={m.looks || m.name} /></div>
               <figcaption>{STATUS[m.img.status] ?? ''}{m.img.credit ? `. ${m.img.credit}` : ''}{m.img.url && <> <a href={m.img.url} rel="noopener">Source</a></>}</figcaption>
             </figure>
-          ) : <p class="muted">No image of this mark yet.</p>}
+          ) : seeAtLinks(m.seeAt).length ? null : <p class="muted">No image of this mark yet.</p>}
+          <SeeAt links={m.seeAt} pictured={!!m.img} />
           <dl class="rfacts">
             {m.looks && <div><dt>Looks like</dt><dd>{m.looks}</dd></div>}
             {m.means && <div><dt>What it means</dt><dd>{m.means}</dd></div>}

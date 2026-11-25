@@ -3,6 +3,7 @@
 // facts, where the sources differ, a caution, the sources numbered; beside it
 // the mark's pictures, each with its credit.
 import Spec from './Spec.astro';
+import { SeeAt } from '../SeeAt';
 import { statusWord, withNames, type Sheet } from '../../lib/records';
 const { s } = Astro.props as { s: Sheet };
 const [lead, ...more] = s.pics;
@@ -56,4 +57,5 @@ const facts = s.facts.filter((f) => !same(s.means, f.text) && !same(s.reading, f
       )}
     </div>
   )}
+  {s.pics.length === 0 && s.seeAt != null && <div class="sheet2__aside"><SeeAt links={s.seeAt} pictured={false} /></div>}
 </div>

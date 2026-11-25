@@ -11,6 +11,7 @@
 // The address keeps the state: ?q= the search, ?f= the family, ?r= the record.
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { media } from '../lib/media';
+import { SeeAt } from '../components/SeeAt';
 
 type Row = [string, string, string, string, number | null, number | null, string | null, string, string, string];
 type Seal = [string, string, string, string, string, string];
@@ -293,6 +294,7 @@ function RecordPanel({ id, rows, seals, perRecord, onOpen, onClose, labelOf, nee
                 <figcaption>{STATUS[rec.image.status] ?? ''}{rec.image.credit ? `. ${rec.image.credit}` : ''}{rec.image.source_url && <> <a href={rec.image.source_url} rel="noopener">Source</a></>}</figcaption>
               </figure>
             )}
+            <SeeAt links={rec.attributes?.see_at} pictured={!!rec.image} />
             <p class="panel__kind">{rec.kind} · {labelOf(rec.family)}</p>
             <h2 class="panel__name">{rec.name}</h2>
             {(rec.date_from || rec.date_to) && <p class="panel__years num">{years(rec.date_from ?? null, rec.date_to ?? null)}{rec.date_note && <span class="muted"> · {rec.date_note}</span>}</p>}

@@ -6,6 +6,7 @@
 // shows what the generated one did.
 import { collection, type Rec } from './portal';
 import { media } from './media';
+import { seeAtHtml } from '../components/SeeAt';
 
 export type MakerPage = {
   slug: string; title: string; desc: string; h1: string; crumb: string; lede: string; answer: string; maker_heading: string; history: string[];
@@ -53,9 +54,9 @@ export function card(id: string, caption?: string) {
   const i = e.image_id ? imgs.get(e.image_id) : undefined;
   if (i && KIND[i.status] && i.file) {
     return `<figure class="mk mk--${i.status}"><div class="mk__img"><img src="${esc(media(i.file))}" alt="${esc(e.looks_like || e.name)}" loading="lazy" decoding="async"></div>`
-      + `<figcaption><b>${esc(caption ?? e.name)}</b>${yr}<span class="mk__kind">${KIND[i.status]}</span><span class="mk__credit">${esc(i.credit ?? '')}</span></figcaption></figure>`;
+      + `<figcaption><b>${esc(caption ?? e.name)}</b>${yr}<span class="mk__kind">${KIND[i.status]}</span><span class="mk__credit">${esc(i.credit ?? '')}${seeAtHtml(e.attributes?.see_at, true)}</span></figcaption></figure>`;
   }
   const why = e.attributes?.photo_only ? "Shown only as a photograph, which we don't have yet." : 'No image yet.';
-  return `<figure class="mk mk--none"><div class="mk__img mk__img--none"><p>${esc(e.looks_like ?? '')}</p></div><figcaption><b>${esc(caption ?? e.name)}</b>${yr}<span class="mk__kind">${why}</span></figcaption></figure>`;
+  return `<figure class="mk mk--none"><div class="mk__img mk__img--none"><p>${esc(e.looks_like ?? '')}</p></div><figcaption><b>${esc(caption ?? e.name)}</b>${yr}<span class="mk__kind">${why}${seeAtHtml(e.attributes?.see_at, false)}</span></figcaption></figure>`;
 }
 export const grid = (ids: (string | { id: string; caption?: string })[]) => `<div class="mks">${ids.map((x) => (typeof x === 'string' ? card(x) : card(x.id, x.caption))).join('')}</div>`;
