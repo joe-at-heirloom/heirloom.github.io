@@ -8,9 +8,10 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
+// /silver-hallmarks has its own page (src/pages/silver-hallmarks.astro, the GitHub Pages alternative session's guide template, main 1fcb878).
 export const ROOT_PAGES = [
   'guides', 'home-inventory-app', 'antique-identifier-app', 'home-inventory-checklist',
-  'silver-hallmarks', 'family-heirlooms', 'privacy', 'terms', 'support',
+  'family-heirlooms', 'privacy', 'terms', 'support',
 ] as const;
 
 const ENT: Record<string, string> = {
