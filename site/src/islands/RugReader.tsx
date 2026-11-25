@@ -15,9 +15,10 @@ export type ReaderType = {
   knot: string[]; kpsi: [number, number] | null; warp: string[]; weft: string[]; wefts: number[]; offset: string[]; pile: string[];
   img: string | null;
 };
-export type Question = { id: Key; label: string; how: string[]; options: { value: string; label: string; note?: string | null }[] };
+export type Pic = { src: string; alt: string };
+export type Question = { id: Key; label: string; how: string[]; options: { value: string; label: string; note?: string | null; img?: Pic | null }[] };
 export type Key = 'knot' | 'kpsi' | 'warp' | 'weft' | 'wefts' | 'offset' | 'pile';
-type Props = { types: ReaderType[]; questions: Question[]; groups: { id: string; name: string }[] };
+type Props = { types: ReaderType[]; questions: Question[]; groups: { id: string; name: string; img?: Pic | null }[] };
 
 const BANDS: Record<string, [number, number]> = { coarse: [0, 60], medium: [60, 150], fine: [150, 300], 'very-fine': [300, 2000] };
 const offsetOf = (v: string) => (/deep|fully|strong/.test(v) ? 'depressed' : /half|slight|offset|partly/.test(v) ? 'offset' : /level|flat|none|not/.test(v) ? 'level' : '');
@@ -83,19 +84,29 @@ export default function RugReader({ types, questions, groups }: Props) {
         {questions.map((q) => (
           <li class="rr__q" id={`q-${q.id}`}>
             <h3>{q.label}</h3>
-            <div class="px__makers" role="group" aria-label={q.label}>
-              {q.options.map((o) => <button type="button" aria-pressed={ans[q.id] === o.value} onClick={() => set(q.id, o.value)} title={o.note ?? undefined}>{o.label}</button>)}
-              {ans[q.id] && <button type="button" class="link" onClick={() => set(q.id, ans[q.id]!)}>I can’t tell</button>}
+            <div class="rpicks" role="group" aria-label={q.label}>
+              {q.options.map((o) => (
+                <button type="button" class="rpick" aria-pressed={ans[q.id] === o.value} onClick={() => set(q.id, o.value)} title={o.note ?? o.img?.alt ?? undefined}>
+                  <span class="rpick__img">{o.img ? <img src={o.img.src} alt={o.img.alt} loading="lazy" decoding="async" /> : null}</span>
+                  <span class="rpick__label">{o.label}</span>
+                </button>
+              ))}
             </div>
+            {ans[q.id] && <button type="button" class="link rr__clear" onClick={() => set(q.id, ans[q.id]!)}>I can’t tell</button>}
             {q.how.length > 0 && <details class="rr__how"><summary>How to look</summary>{q.how.length === 1 ? <p>{q.how[0]}</p> : <ol>{q.how.map((t) => <li>{t}</li>)}</ol>}</details>}
           </li>
         ))}
         <li class="rr__q">
           <h3>Where do you think it is from? <span class="muted">(optional)</span></h3>
-          <div class="px__makers" role="group" aria-label="Where it is from">
-            <button type="button" aria-pressed={!group} onClick={() => setGroup('')}>Anywhere</button>
-            {groups.map((g) => <button type="button" aria-pressed={group === g.id} onClick={() => setGroup(group === g.id ? '' : g.id)}>{g.name}</button>)}
+          <div class="rpicks rpicks--groups" role="group" aria-label="Where it is from">
+            {groups.map((g) => (
+              <button type="button" class="rpick" aria-pressed={group === g.id} onClick={() => setGroup(group === g.id ? '' : g.id)} title={g.img?.alt}>
+                <span class="rpick__img">{g.img ? <img src={g.img.src} alt={g.img.alt} loading="lazy" decoding="async" /> : null}</span>
+                <span class="rpick__label">{g.name}</span>
+              </button>
+            ))}
           </div>
+          {group && <button type="button" class="link rr__clear" onClick={() => setGroup('')}>Anywhere</button>}
         </li>
       </ol>
 

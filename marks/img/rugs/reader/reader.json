@@ -1,0 +1,462 @@
+{
+ "knot-symmetric": {
+  "file": "reader/knot-symmetric.webp",
+  "width": 300,
+  "height": 350,
+  "status": "facsimile",
+  "caption": "The symmetric (Turkish) knot: the yarn wraps two warps and both ends come up between them. Hawley, Plate B, fig. 1.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "knot-asymmetric": {
+  "file": "reader/knot-asymmetric.webp",
+  "width": 240,
+  "height": 335,
+  "status": "facsimile",
+  "caption": "The asymmetric (Persian) knot: the yarn wraps one warp and passes under the next, so one end comes up beside it. Hawley, Plate B, fig. 4.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "knot-jufti": {
+  "file": "reader/knot-jufti.webp",
+  "width": 300,
+  "height": 300,
+  "status": "photo",
+  "caption": "Jufti knots: knots tied over four warps instead of two.",
+  "credit": "Arie M. den Toom, via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AKnopen_005.jpg"
+ },
+ "kpsi-coarse": {
+  "file": "reader/kpsi-coarse.webp",
+  "width": 360,
+  "height": 360,
+  "status": "rendering",
+  "caption": "One square inch of a rug’s back at 7 knots to the inch each way (49 to the square inch). Each knot shows as two small bumps.",
+  "credit": "Drawing by Heirloom",
+  "licence": null,
+  "url": null
+ },
+ "kpsi-medium": {
+  "file": "reader/kpsi-medium.webp",
+  "width": 360,
+  "height": 360,
+  "status": "rendering",
+  "caption": "One square inch at 10 knots to the inch each way (100 to the square inch).",
+  "credit": "Drawing by Heirloom",
+  "licence": null,
+  "url": null
+ },
+ "kpsi-fine": {
+  "file": "reader/kpsi-fine.webp",
+  "width": 360,
+  "height": 360,
+  "status": "rendering",
+  "caption": "One square inch at 14 knots to the inch each way (196 to the square inch).",
+  "credit": "Drawing by Heirloom",
+  "licence": null,
+  "url": null
+ },
+ "kpsi-very-fine": {
+  "file": "reader/kpsi-very-fine.webp",
+  "width": 360,
+  "height": 360,
+  "status": "rendering",
+  "caption": "One square inch at 20 knots to the inch each way (400 to the square inch).",
+  "credit": "Drawing by Heirloom",
+  "licence": null,
+  "url": null
+ },
+ "warp-wool": {
+  "file": "reader/warp-wool.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "Wool warps: the fringe of a rug woven on wool, soft and slightly fuzzy, ivory to tan.",
+  "credit": "Auckland War Memorial Museum Tāmaki Paenga Hira, via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ARug_%28AM_561976-5%29.jpg"
+ },
+ "warp-cotton": {
+  "file": "reader/warp-cotton.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "Cotton warps: a white, smooth, evenly twisted fringe.",
+  "credit": "Auckland War Memorial Museum Tāmaki Paenga Hira, via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACarpet_%28AM_9414-8%29.jpg"
+ },
+ "warp-silk": {
+  "file": "reader/warp-silk.webp",
+  "width": 200,
+  "height": 190,
+  "status": "photo",
+  "caption": "Silk warps: a fine, glossy fringe on a silk rug.",
+  "credit": "Cllane4, via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ASilk_Hereke_rug._Over_1200_knots_per_square_inch.jpg"
+ },
+ "warp-hair": {
+  "file": "reader/warp-hair.webp",
+  "width": 270,
+  "height": 145,
+  "status": "photo",
+  "caption": "Goat hair: coarse, wiry and dark, here woven into a tent. Goat or camel hair is used for warps and edges in some tribal rugs.",
+  "credit": "David Stanley from Nanaimo, Canada, via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AGoat-hair_Tents_%2834861965093%29.jpg"
+ },
+ "offset-level": {
+  "file": "reader/offset-level.webp",
+  "width": 166,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "Warps level: both loops of each knot show side by side on the back. Hawley, Plate B, fig. 7a.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "offset-offset": {
+  "file": "reader/offset-offset.webp",
+  "width": 161,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "One warp of each knot partly sunk: the back looks slightly ridged. Hawley, Plate B, fig. 8a.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "offset-depressed": {
+  "file": "reader/offset-depressed.webp",
+  "width": 100,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "One warp of each knot sunk under the other: only one loop shows, and the back looks ribbed. Hawley, Plate B, fig. 10a.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "wefts-1": {
+  "file": "reader/wefts-1.webp",
+  "width": 350,
+  "height": 350,
+  "status": "facsimile",
+  "caption": "One weft between each row of knots. Hawley, Plate B, fig. 15.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "wefts-2": {
+  "file": "reader/wefts-2.webp",
+  "width": 350,
+  "height": 350,
+  "status": "facsimile",
+  "caption": "Two wefts between each row of knots. Hawley, Plate B, fig. 16.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "wefts-3": {
+  "file": "reader/wefts-3.webp",
+  "width": 350,
+  "height": 350,
+  "status": "facsimile",
+  "caption": "Three wefts between each row of knots. Hawley, Plate B, fig. 17.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "weft-wool": {
+  "file": "reader/weft-wool.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "Wool: soft and slightly fuzzy, ivory to tan or dyed.",
+  "credit": "Auckland War Memorial Museum Tāmaki Paenga Hira, via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ARug_%28AM_561976-5%29.jpg"
+ },
+ "weft-cotton": {
+  "file": "reader/weft-cotton.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "The back of a rug on cotton warps and wefts: the white cotton shows between the knots.",
+  "credit": "Auckland War Memorial Museum Tāmaki Paenga Hira, via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACarpet_%28AM_9414-6%29.jpg"
+ },
+ "weft-silk": {
+  "file": "reader/weft-silk.webp",
+  "width": 200,
+  "height": 190,
+  "status": "photo",
+  "caption": "Silk: fine and glossy.",
+  "credit": "Cllane4, via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ASilk_Hereke_rug._Over_1200_knots_per_square_inch.jpg"
+ },
+ "weft-hair": {
+  "file": "reader/weft-hair.webp",
+  "width": 270,
+  "height": 145,
+  "status": "photo",
+  "caption": "Goat hair: coarse, wiry and dark.",
+  "credit": "David Stanley from Nanaimo, Canada, via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AGoat-hair_Tents_%2834861965093%29.jpg"
+ },
+ "pile-wool": {
+  "file": "reader/pile-wool.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "Wool pile: soft, with a matt or gentle sheen.",
+  "credit": "Auckland War Memorial Museum Tāmaki Paenga Hira, via Wikimedia Commons",
+  "licence": "CC BY 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ARug_%28AM_561976-4%29.jpg"
+ },
+ "pile-silk": {
+  "file": "reader/pile-silk.webp",
+  "width": 150,
+  "height": 150,
+  "status": "photo",
+  "caption": "Silk pile: very fine, with a strong sheen that changes with the light.",
+  "credit": "Cllane4, via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ASilk_Hereke_rug._Over_1200_knots_per_square_inch.jpg"
+ },
+ "pile-art-silk": {
+  "file": "reader/pile-art-silk.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "Viscose (rayon), the fiber sold as “art silk”: very shiny and smooth.",
+  "credit": "Arkirkland, via Wikimedia Commons",
+  "licence": "CC0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ARayon_sample.jpg"
+ },
+ "pile-hair": {
+  "file": "reader/pile-hair.webp",
+  "width": 270,
+  "height": 145,
+  "status": "photo",
+  "caption": "Goat hair: coarse, wiry and dark. Camel hair is softer and tan to brown.",
+  "credit": "David Stanley from Nanaimo, Canada, via Wikimedia Commons",
+  "licence": "CC BY 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AGoat-hair_Tents_%2834861965093%29.jpg"
+ },
+ "group-persian-city": {
+  "file": "reader/group-persian-city.webp",
+  "width": 169,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "A Kirman rug. Hawley, Plate 3.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "group-arak-district": {
+  "file": "reader/group-arak-district.webp",
+  "width": 230,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "A Sarouk rug. Hawley, Plate 9.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "group-khorasan": {
+  "file": "reader/group-khorasan.webp",
+  "width": 218,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "A Khorassan rug. Hawley, Plate 1.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "group-persian-northwest": {
+  "file": "reader/group-persian-northwest.webp",
+  "width": 263,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "A Gorevan (Heriz district) rug. Hawley, Plate 27.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "group-persian-kurdish": {
+  "file": "reader/group-persian-kurdish.webp",
+  "width": 298,
+  "height": 360,
+  "status": "photo",
+  "caption": "\"Senneh\" Prayer Rug, late 18th–early 19th century.",
+  "credit": "The Metropolitan Museum of Art, Gift of Joseph V. McMullan, 1970",
+  "licence": "Public domain (The Met Open Access, CC0)",
+  "url": "https://www.metmuseum.org/art/collection/search/452193"
+ },
+ "group-persian-hamadan": {
+  "file": "reader/group-persian-hamadan.webp",
+  "width": 201,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "A Hamadan rug. Hawley, Plate 8.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "group-persian-central-west": {
+  "file": "reader/group-persian-central-west.webp",
+  "width": 360,
+  "height": 203,
+  "status": "photo",
+  "caption": "Double Saddle Bag (Khorjin), ca. 1900.",
+  "credit": "The Metropolitan Museum of Art, Gift of Inger G. and William B. Ginsberg, 2015",
+  "licence": "Public domain (The Met Open Access, CC0)",
+  "url": "https://www.metmuseum.org/art/collection/search/681739"
+ },
+ "group-persian-fars": {
+  "file": "reader/group-persian-fars.webp",
+  "width": 192,
+  "height": 360,
+  "status": "photo",
+  "caption": "Khamseh Carpet, c. 1890.",
+  "credit": "Art Institute of Chicago, Gift of Joseph W. Fell",
+  "licence": "CC0 (Art Institute of Chicago, public domain)",
+  "url": "https://www.artic.edu/artworks/226149"
+ },
+ "group-persian-southeast-east": {
+  "file": "reader/group-persian-southeast-east.webp",
+  "width": 229,
+  "height": 360,
+  "status": "photo",
+  "caption": "Carpet, 1900s.",
+  "credit": "The Cleveland Museum of Art, Florence and Charles Abel Oriental Rug Collection",
+  "licence": "CC0 (The Cleveland Museum of Art Open Access)",
+  "url": "https://clevelandart.org/art/1961.385"
+ },
+ "group-caucasian": {
+  "file": "reader/group-caucasian.webp",
+  "width": 314,
+  "height": 360,
+  "status": "photo",
+  "caption": "Star Kazak Carpet, early 19th century.",
+  "credit": "The Metropolitan Museum of Art, The James F. Ballard Collection, Gift of James F. Ballard, 1922",
+  "licence": "Public domain (The Met Open Access, CC0)",
+  "url": "https://www.metmuseum.org/art/collection/search/447483"
+ },
+ "group-anatolian": {
+  "file": "reader/group-anatolian.webp",
+  "width": 330,
+  "height": 360,
+  "status": "photo",
+  "caption": "Prayer Rug with Triple Arch Design, 18th century.",
+  "credit": "The Metropolitan Museum of Art, Bequest of Joseph V. McMullan, 1973",
+  "licence": "Public domain (The Met Open Access, CC0)",
+  "url": "https://www.metmuseum.org/art/collection/search/452570"
+ },
+ "group-turkmen": {
+  "file": "reader/group-turkmen.webp",
+  "width": 248,
+  "height": 360,
+  "status": "photo",
+  "caption": "Tekke Main Carpet, early 19th century.",
+  "credit": "The Metropolitan Museum of Art, The James F. Ballard Collection, Gift of James F. Ballard, 1922",
+  "licence": "Public domain (The Met Open Access, CC0)",
+  "url": "https://www.metmuseum.org/art/collection/search/447504"
+ },
+ "group-afghan": {
+  "file": "reader/group-afghan.webp",
+  "width": 251,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "An Afghan rug. Hawley, Plate 59.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "group-east-turkestan": {
+  "file": "reader/group-east-turkestan.webp",
+  "width": 194,
+  "height": 360,
+  "status": "photo",
+  "caption": "Carpet, 19th century.",
+  "credit": "The Metropolitan Museum of Art, Rogers Fund, 1908",
+  "licence": "Public domain (The Met Open Access, CC0)",
+  "url": "https://www.metmuseum.org/art/collection/search/445278"
+ },
+ "group-chinese": {
+  "file": "reader/group-chinese.webp",
+  "width": 236,
+  "height": 360,
+  "status": "photo",
+  "caption": "Carpet, late 18th–19th century.",
+  "credit": "The Metropolitan Museum of Art, Gift of Miriam and Ira D. Wallach, 1991",
+  "licence": "Public domain (The Met Open Access, CC0)",
+  "url": "https://www.metmuseum.org/art/collection/search/42748"
+ },
+ "group-tibetan": {
+  "file": "reader/group-tibetan.webp",
+  "width": 150,
+  "height": 300,
+  "status": "photo",
+  "caption": "Tibetan rugs of about 1900–1930.",
+  "credit": "Teregath, via Wikimedia Commons",
+  "licence": "CC BY-SA 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3A20thCTibetanRugs.jpg"
+ },
+ "group-japanese": {
+  "file": "reader/group-japanese.webp",
+  "width": 290,
+  "height": 254,
+  "status": "photo",
+  "caption": "Kurashiki dantsu, a Japanese hand-made rug.",
+  "credit": "（by cyu-cyu-）, via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AKd01.jpg"
+ },
+ "group-india": {
+  "file": "reader/group-india.webp",
+  "width": 202,
+  "height": 360,
+  "status": "facsimile",
+  "caption": "A Srinagar (Kashmir) rug. Hawley.",
+  "credit": "Hawley, Oriental Rugs, Antique and Modern (1913; 1922 printing)",
+  "licence": "Public domain",
+  "url": "https://archive.org/details/orientalrugsanti1922hawl"
+ },
+ "group-pakistan": {
+  "file": "reader/group-pakistan.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "Weavers knotting Persian-design carpets in Faisalabad, Pakistan, 2010.",
+  "credit": "Tariq Babur - en:User:Tariq babur, via Wikimedia Commons",
+  "licence": "CC BY 3.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3ACorrectional_Activities_in_Central_Jail_Faisalabad%2C_Pakistan_in_2010_-_Convicted_prisoners_busy_in_knitting_Persian_designs%27_carpets.jpg"
+ },
+ "group-other-handmade": {
+  "file": "reader/group-other-handmade.webp",
+  "width": 360,
+  "height": 271,
+  "status": "photo",
+  "caption": "Moroccan Berber rugs.",
+  "credit": "Jean-yvessevestre, via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AMoroccan_berber_rugs_.jpg"
+ },
+ "group-machine-made": {
+  "file": "reader/group-machine-made.webp",
+  "width": 360,
+  "height": 360,
+  "status": "photo",
+  "caption": "A Jacquard Wilton carpet loom (Museum of Carpet, Kidderminster).",
+  "credit": "Chris Allen, via Wikimedia Commons",
+  "licence": "CC BY-SA 2.0",
+  "url": "https://commons.wikimedia.org/wiki/File%3AMuseum_of_Carpet_-_Jacquard_Wilton_loom_-_geograph.org.uk_-_6288708.jpg"
+ }
+}

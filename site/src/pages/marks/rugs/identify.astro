@@ -8,7 +8,10 @@
 import Reference from '../../../layouts/Reference.astro';
 import AppBox from '../../../components/AppBox.astro';
 import Faq from '../../../components/Faq.astro';
-import RugReader, { type ReaderType, type Question, type Key } from '../../../islands/RugReader';
+import RugReader, { type ReaderType, type Question, type Key, type Pic } from '../../../islands/RugReader';
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { media } from '../../../lib/media';
 import { types, GROUPS, dyes, cite, clean, yearsOf } from '../../../lib/rugs';
 import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
 import synced from '../../../data/app/SOURCE.json';
@@ -51,6 +54,16 @@ const questions: Question[] = [
   ] },
 ];
 
+// The picture on each answer (hallmark-sources/rugs/images/reader/reader_pictures.py: Hawley's Plate B and plates,
+// open-licence Commons photographs, museum photographs, and Heirloom's drawings), keyed <question>-<answer>.
+type ReaderPic = { file: string; status: string; caption: string; credit: string; licence: string | null; url: string | null };
+const picsFile = join(process.cwd(), '..', 'marks', 'img', 'rugs', 'reader', 'reader.json');
+const PICS: Record<string, ReaderPic> = existsSync(picsFile) ? JSON.parse(readFileSync(picsFile, 'utf8')) : {};
+const pic = (key: string): Pic | null => (PICS[key] ? { src: media(`marks/img/rugs/${PICS[key].file}`), alt: soften(PICS[key].caption) } : null);
+for (const q of questions) for (const o of q.options) o.img = pic(`${q.id}-${o.value.replace(/\s+/g, '-')}`);
+const usedPics = Object.entries(PICS);
+const STATUS: Record<string, string> = { photo: 'Photograph', facsimile: 'Book plate', rendering: 'Drawing by Heirloom' };
+
 const rows = types();
 // Designs that modern rugs copy (the classical court carpets) and machine-made rugs have no structure of their own to match.
 const readerTypes: ReaderType[] = rows.filter((t) => t.kind !== 'machine-made' && t.kind !== 'court or classical').map((t) => ({
@@ -80,7 +93,7 @@ const graph = [
       <p class="phead__sub">Lay the rug face down in good light. Answer what you can see; skip what you can’t. The types whose sources describe the same structure appear as you go, with a link to each sheet. First make sure it was <a href="/marks/rugs/handmade-or-machine-made">knotted by hand</a>: a machine-made or tufted rug has no knots to read.</p>
     </header>
 
-    <RugReader client:load types={readerTypes} {questions} groups={GROUPS.filter((g) => readerTypes.some((t) => t.group === g.id)).map((g) => ({ id: g.id, name: g.name }))} />
+    <RugReader client:load types={readerTypes} {questions} groups={GROUPS.filter((g) => readerTypes.some((t) => t.group === g.id)).map((g) => ({ id: g.id, name: g.name, img: pic(`group-${g.id}`) }))} />
 
     {shownFeats.length > 0 && (
       <section class="block prose" aria-labelledby="guide">
@@ -100,6 +113,18 @@ const graph = [
             {cite(f.sources).length > 0 && <p class="faint">Sources: {cite(f.sources).slice(0, 4).map((s, i) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}</p>}
           </div>
         ))}
+      </section>
+    )}
+
+    {usedPics.length > 0 && (
+      <section class="block" aria-labelledby="pictures">
+        <h2 id="pictures">About the pictures</h2>
+        <p class="muted">The knots, warps and wefts are Walter Hawley’s drawings (<em>Oriental Rugs, Antique and Modern</em>, 1913, Plate B), except the jufti knot, a diagram by Arie M. den Toom. The rugs by region are Hawley’s plates or museum photographs. The squares for each knot count are Heirloom’s drawings at true relative scale. The fibers and some regions are photographs shared under open licenses.</p>
+        <ul class="rcredits">
+          {usedPics.map(([, p]) => (
+            <li><img src={media(`marks/img/rugs/${p.file}`)} alt="" loading="lazy" decoding="async" /><span>{soften(p.caption)} <span class="faint">{STATUS[p.status] ?? 'Picture'}: {p.url ? <a href={p.url} rel="nofollow noopener">{p.credit}</a> : p.credit}{p.licence ? `, ${p.licence}` : ''}.</span></span></li>
+          ))}
+        </ul>
       </section>
     )}
 

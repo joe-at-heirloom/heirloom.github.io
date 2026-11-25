@@ -88,3 +88,17 @@
 .rtimeline .num { font-weight: 600; margin-right: 6px; }
 .rr__how ol, .rfeat ol { margin: 6px 0 0; padding-left: 1.3em; display: grid; gap: 4px; max-width: var(--read, 68ch); }
 .rcard__native { font-weight: 400; font-size: 13.5px; color: var(--ink-2); }
+
+/* Answers as pictures (the reader's buttons) */
+.rpicks { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(30%, 124px), 1fr)); }
+.rpicks--groups { grid-template-columns: repeat(auto-fill, minmax(min(30%, 116px), 1fr)); }
+.rpick { display: grid; grid-template-rows: auto 1fr; gap: 6px; padding: 6px; border: 1px solid var(--rule); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); text-align: left; cursor: pointer; font: 500 14px/1.25 var(--sans); }
+.rpick:hover { border-color: var(--ink-3); }
+.rpick[aria-pressed='true'] { border-color: var(--ink); box-shadow: 0 0 0 2px var(--ink); }
+.rpick__img { display: block; aspect-ratio: 1 / 1; overflow: hidden; border-radius: calc(var(--r-sm) - 2px); background: var(--paper-2); }
+.rpick__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rpick__label { padding: 0 2px 2px; }
+.rr__clear { margin-top: 6px; min-height: 32px; }
+.rcredits { font-size: 13.5px; color: var(--ink-2); display: grid; gap: 4px; list-style: none; padding: 0; }
+.rcredits li { display: grid; grid-template-columns: 44px 1fr; gap: 10px; align-items: start; }
+.rcredits img { width: 44px; height: 44px; object-fit: cover; border-radius: 4px; }
