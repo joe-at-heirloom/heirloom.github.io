@@ -1,0 +1,47 @@
+---
+// A row or grid of Pewabic photographs, each with what it shows, the holder's
+// words (title, date, number) and its credit and licence, linked to the
+// holder's page. `kind`: "grid" (pieces on a plain ground, square cells),
+// "strip" (small, one row), "places" (buildings and installations, as shot).
+import { media } from '../../lib/media';
+export type Item = { file: string; alt: string; title: string; sub?: string | null; credit: string; page?: string | null; href?: string | null; w?: number; h?: number };
+interface Props { items: Item[]; kind?: 'grid' | 'strip' | 'places'; eager?: number }
+const { items, kind = 'grid', eager = 0 } = Astro.props;
+---
+{items.length > 0 && (
+  <div class:list={['pwph', `pwph--${kind}`]}>
+    {items.map((it, i) => (
+      <figure class="pwph__fig">
+        {it.href ? (
+          <a class="pwph__img" href={it.href}><img src={media(it.file)} alt={it.alt} loading={i < eager ? 'eager' : 'lazy'} decoding="async" width={it.w} height={it.h} /></a>
+        ) : (
+          <span class="pwph__img"><img src={media(it.file)} alt={it.alt} loading={i < eager ? 'eager' : 'lazy'} decoding="async" width={it.w} height={it.h} /></span>
+        )}
+        <figcaption>
+          <strong>{it.title}</strong>
+          {it.sub && <span class="pwph__sub">{it.sub}</span>}
+          <span class="pwph__credit">{it.page ? <a href={it.page} rel="nofollow noopener">{it.credit}</a> : it.credit}</span>
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+)}
+<style>
+  .pwph { display: grid; gap: 18px 16px; margin-top: 18px; }
+  .pwph--grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .pwph--strip { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; }
+  .pwph--places { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .pwph__fig { margin: 0; display: grid; gap: 7px; align-content: start; }
+  .pwph__img { display: block; border-radius: var(--r); overflow: hidden; border: 1px solid var(--plate-edge); background: #d9d8d5; }
+  .pwph--grid .pwph__img, .pwph--strip .pwph__img { aspect-ratio: 1; }
+  .pwph--grid img, .pwph--strip img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .pwph--places .pwph__img { aspect-ratio: 4 / 3; }
+  .pwph--places img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  a.pwph__img:hover { border-color: var(--ink-3); }
+  figcaption { display: grid; gap: 2px; font-size: 12.5px; line-height: 1.4; color: var(--ink-3); }
+  figcaption strong { color: var(--ink); font-size: 13.5px; font-weight: 600; }
+  .pwph--strip figcaption strong { font-size: 12.5px; font-weight: 500; }
+  .pwph__sub { color: var(--ink-2); }
+  .pwph__credit a { color: inherit; }
+  .pwph--strip .pwph__credit { font-size: 11px; }
+</style>

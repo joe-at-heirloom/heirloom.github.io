@@ -116,3 +116,19 @@ not link them. The site-identity branch (header, Base) will need a rebase
 over this. Build with
 `APP_REPO=… APP_REF=origin/main node scripts/sync-data.mjs` first, then
 `npm run build`.
+
+## Pewabic Pottery (Nov 25, 2026)
+
+A maker with a section of its own, in the pottery area (map group "Pewabic
+Pottery, Detroit"): `/marks/pewabic-pottery/` (home), `/marks/pewabic-pottery-marks`
+(dating key + catalogue of the marks), `…/tile-installations` (catalogue by
+place, sheets on demand as `pewabic-tiles--<group>`), `…/glazes`, `…/history`,
+`…/museum-collections`. Data: the marks are marks-database entries (the app's
+`marks/pewabic.json`, group `ceramics-makers`, so the pottery explorer shows
+them); everything else is the app's `pewabic.json`, read by `lib/pewabic.ts`
+from `src/data/app/` (synced) and, as family `pewabic` records, by the Advisor.
+Both are built from the research in `hallmark-sources/pewabic/`
+(`build_marks.py`, `build_table.py`, `edits.json`); change those, not the JSON.
+Anchors match the app's collect.ts (tiles `#<id>`, glazes `#<id>` and
+`#ware-<id>`, history `#ev-nnn` and `#person-<id>`, marks `#era-<id>` and
+`#lookalike-<id>`).

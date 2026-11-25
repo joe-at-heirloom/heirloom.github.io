@@ -1,0 +1,132 @@
+---
+// /marks/pewabic-pottery/museum-collections: Pewabic pieces in public
+// collections, as each museum records them (title, date, the marks as the
+// museum transcribes them), with a link to the museum's own page; the open
+// photographs; and the museums the sources name that have no online catalogue.
+// From the app's Pewabic table (pieces, holders). Anchors: each piece's id.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import PwPhotos from '../../../components/ref/PwPhotos.astro';
+import { PW, pieces, holders, piecesWithPhotos, pieceItem, photos as allPhotos, photoItem, clean } from '../../../lib/pewabic';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/pewabic.css';
+
+const path = PW.pieces;
+const ps = pieces().slice().sort((a, b) => (a.from ?? 9999) - (b.from ?? 9999) || String(a.holder).localeCompare(String(b.holder)));
+const hs = holders();
+const marked = ps.filter((p) => p.marks).length;
+const short = (h: string) => String(h ?? '').replace(/\s*\(.*\)\s*$/, '').replace(/, Smithsonian$/, '');
+const shortHolders = [...new Set(hs.map((h) => short(h.name)))];
+const counts = shortHolders.map((name) => ({ name, count: hs.filter((h) => short(h.name) === name).reduce((n, h) => n + h.count, 0) }));
+const years = (p: any) => (clean(p.date) ?? '').replace(/^between (\d{4}) and (\d{4})$/i, '$1–$2').replace(/^(circa|ca\.|c\.)\s*/i, 'about ').replace(/^About/, 'about');
+const marksText = (m: string | null) => clean(String(m ?? '').replace(/\s*\|\s*/g, '; ').replace(/^(Signed|Markings|Marks|Inscriptions):\s*/i, '')) ?? '';
+const shot = piecesWithPhotos().slice().sort((a, b) => (a.from ?? 9999) - (b.from ?? 9999) || String(a.accession).localeCompare(String(b.accession)));
+const DECADES: [string, (y: number | null) => boolean][] = [
+  ['The first years, to 1909', (y) => y != null && y < 1910], ['The 1910s', (y) => y != null && y >= 1910 && y < 1920], ['The 1920s', (y) => y != null && y >= 1920 && y < 1930],
+  ['The 1930s', (y) => y != null && y >= 1930 && y < 1940], ['The 1940s and 1950s', (y) => y != null && y >= 1940], ['Not dated', (y) => y == null],
+];
+const byDecade = DECADES.map(([label, test]) => ({ label, items: shot.filter((p) => test(p.from ?? null)) })).filter((d) => d.items.length);
+const others = allPhotos('piece');
+const title = 'Pewabic Pottery in Museums: The Detroit Institute of Arts, the Freer and More | Heirloom';
+const description = `${ps.length} pieces of Pewabic Pottery in ${counts.length} public collections, from the Detroit Institute of Arts and the Freer Gallery, which Charles Lang Freer stocked from 1908 to 1918, to the Met and the Henry Ford: each with its date and the marks as the museum records them.`;
+const faqs: [string, string][] = [
+  ['Which museum has the most Pewabic?', '<p>Among the collections online, the Detroit Institute of Arts, with about 190 pieces, many from the bequest of Dr. and Mrs. Charles W. Creaser. The University of Michigan Museum of Art and the Freer Gallery of Art in Washington follow.</p>'],
+  ['Why does the Freer Gallery have Pewabic?', '<p>Charles Lang Freer, the Detroit collector of Asian art and Whistler, was Mary Chase Perry’s first great patron. He bought from the pottery and was given pieces from 1908 to 1918, and his collection went to the Smithsonian; the museum’s records keep the year of each purchase.</p>'],
+  ['Can I compare my piece with a museum’s?', '<p>Yes: the marks column below gives the mark each museum records, with the museum’s date for the piece, which is the plainest way to see which mark goes with which years. Museums date pieces themselves, often as a range, and a date on a museum label is the museum’s judgment.</p>'],
+];
+const graph = [articleLd(path, 'Pewabic Pottery in museum collections', description, '2026-11-25', { about: { '@type': 'Organization', name: 'Pewabic Pottery' } }), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph} via={[PW.hub, 'Pewabic Pottery']}>
+  <header class="rhead">
+    <h1>Pewabic in museum collections</h1>
+    <p class="rhead__lede">Every piece of Pewabic we found in a public collection online, as the museum records it: what it is, when the museum dates it, and the marks on it in the museum’s own words, with the Detroit Institute of Arts’ own photographs of {shot.length} of them. It is the best evidence there is for which mark and which glaze go with which years.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{ps.length}</strong> pieces</li>
+      <li><strong class="num">{counts.length}</strong> collections</li>
+      <li><strong class="num">{marked}</strong> with their marks recorded</li>
+      <li><strong class="num">{shot.length}</strong> photographed</li>
+      <li><a href={PW.marks}>The marks</a></li>
+    </ul>
+  </header>
+
+  <dl class="pwcount">
+    {counts.map((c) => <div><dt>{c.name}</dt><dd>{c.count}</dd></div>)}
+  </dl>
+
+  <section class="pw-section" aria-labelledby="photos">
+    <h2 id="photos">The pieces, by the museum’s dates</h2>
+    <p>The Detroit Institute of Arts photographs its Pewabic and offers {shot.length} of the photographs for free download as images of public-domain works; they are shown here with its numbers and its dates. Every piece links to its row below, with the marks the museum records, and to the museum’s own page.</p>
+    {byDecade.map((d, i) => (
+      <>
+        <h3 class="pw-decade">{d.label} <span class="num">{d.items.length}</span></h3>
+        <PwPhotos items={d.items.map(pieceItem)} eager={i === 0 ? 6 : 0} />
+      </>
+    ))}
+    {others.length > 0 && (
+      <>
+        <h3 class="pw-decade">Elsewhere</h3>
+        <PwPhotos items={others.map((p) => photoItem(p))} />
+      </>
+    )}
+  </section>
+
+  <section class="pw-section" aria-labelledby="all">
+    <h2 id="all">Every piece</h2>
+    <div class="pwfilter" data-pwfilter>
+      <label class="visually-hidden" for="pwq">Find a piece</label>
+      <input id="pwq" class="field" type="search" placeholder="A word, a mark, a year: iridescent, PEWABIC DETROIT, 1917" autocomplete="off" data-q />
+      <label class="visually-hidden" for="pwh">Collection</label>
+      <select id="pwh" data-h>
+        <option value="">Every collection</option>
+        {counts.map((c) => <option value={c.name}>{c.name} ({c.count})</option>)}
+      </select>
+      <span class="pwfilter__sum" aria-live="polite" data-sum>{ps.length} pieces</span>
+    </div>
+    <div class="pwtable-wrap">
+      <table class="pwtable">
+        <thead><tr><th scope="col">Museum’s date</th><th scope="col">Piece</th><th scope="col">Collection</th><th scope="col">Marks, as the museum records them</th></tr></thead>
+        <tbody>
+          {ps.map((p) => (
+            <tr id={p.id} data-h={short(p.holder)} data-k={[p.title, p.date, p.holder, p.accession, p.glaze, p.materials, p.marks, p.artist].filter(Boolean).join(' ').toLowerCase()}>
+              <td class="num">{years(p)}</td>
+              <td>{p.photos?.length > 0 && <img class="pwthumb" src={`/${(p.photos.find((x: any) => !x.base) ?? p.photos[0]).file}`} alt="" loading="lazy" decoding="async" width="44" height="44" />}{p.url ? <a href={p.url} rel="nofollow noopener">{clean(p.title) ?? 'Piece'}</a> : clean(p.title)}{p.artist && p.artist !== p.maker && p.artist !== 'Pewabic Pottery' ? <span class="muted">, {clean(p.artist)}</span> : ''}{p.glaze && <div class="marks">{clean(p.glaze)}</div>}</td>
+              <td>{short(p.holder)}{p.accession && <div class="marks num">{p.accession}</div>}</td>
+              <td class="marks">{marksText(p.marks)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="pw-section" aria-labelledby="more">
+    <h2 id="more">Collections not online</h2>
+    <p>Lillian Myers Pear’s 1976 history names collections with Pewabic that have no online catalogue we could search: Albion College, the University of Virginia’s McGregor Library, the San Diego Museum of Art, Howard University, Willistead in Windsor, the New Jersey State Museum, and Pewabic’s own museum in Detroit. Cranbrook Art Museum holds several pieces; its online catalogue could not be read for this list.</p>
+  </section>
+
+  <Faq {faqs} />
+
+  <AppBox text="Photograph your piece and its base. The Advisor compares the mark with the dated museum pieces in this reference and gives the years it points to." />
+</Reference>
+
+<script>
+  for (const box of document.querySelectorAll<HTMLElement>('[data-pwfilter]')) {
+    const q = box.querySelector<HTMLInputElement>('[data-q]')!;
+    const h = box.querySelector<HTMLSelectElement>('[data-h]')!;
+    const sum = box.querySelector<HTMLElement>('[data-sum]')!;
+    const rows = [...document.querySelectorAll<HTMLTableRowElement>('tr[data-k]')];
+    const run = () => {
+      const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      let n = 0;
+      for (const r of rows) {
+        const ok = (!h.value || r.dataset.h === h.value) && words.every((w) => r.dataset.k!.includes(w));
+        r.hidden = !ok;
+        if (ok) n++;
+      }
+      sum.textContent = n === rows.length ? `${n} pieces` : `${n} of ${rows.length} pieces`;
+    };
+    q.addEventListener('input', run);
+    h.addEventListener('change', run);
+  }
+</script>

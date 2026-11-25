@@ -1,0 +1,155 @@
+---
+// /marks/pewabic-pottery/history: Pewabic from Mary Chase Perry's first kiln
+// to today: the eras, the time line, the people, the places. From the app's
+// Pewabic table (eras, events, people, places). Anchors: ev-<nnn> and
+// person-<id>, as the collection's records link to them.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import PwPhotos from '../../../components/ref/PwPhotos.astro';
+import { PW, eras, events, people, places, numbering, clean, claims, photos as allPhotos, photoItem, eraPieces, pieceItem } from '../../../lib/pewabic';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/pewabic.css';
+
+const path = PW.history;
+const es = eras();
+const evs = events();
+const ps = people();
+const pl = places();
+const building = [...allPhotos('building'), ...allPhotos('display')];
+const cl = claims();
+const src = numbering();
+const refs = (c: any[]) => src.refs(c);
+const decade = (y: number | null) => (y == null ? 'Undated' : `${Math.floor(y / 10) * 10}s`);
+const byDecade: [string, any[]][] = [];
+for (const e of evs) {
+  const d = decade(e.year);
+  const last = byDecade[byDecade.length - 1];
+  if (last && last[0] === d) last[1].push(e); else byDecade.push([d, [e]]);
+}
+const MONTHS = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const when = (e: any) => [e.day && e.month ? `${MONTHS[e.month]} ${e.day}` : e.month ? MONTHS[e.month] : null, e.year_label ?? e.year].filter(Boolean).join(', ');
+const sup = (ns: number[]) => (ns.length ? `<sup class="refs"> ${ns.map((n) => `<a href="#pws-${n}">${n}</a>`).join(', ')}</sup>` : '');
+const title = 'Pewabic Pottery History: Mary Chase Perry Stratton, Horace Caulkins and the People of Pewabic | Heirloom';
+const description = `Pewabic Pottery from 1903 to today: ${evs.length} dated events, from Mary Chase Perry’s first kiln and the Revelation kilns of Horace Caulkins to the Jefferson Avenue pottery, Michigan State’s years and the Pewabic Society, and ${ps.length} people who made it, with sources.`;
+const faqs: [string, string][] = [
+  ['What does Pewabic mean?', '<p>The sources disagree. Mary Chase Perry repeated that it meant “clay with a copper color,” as two friends had told her; Cara Catallo, and now Pewabic itself, take it from the Ojibwe word for iron or metal. The name came to her from the Pewabic copper mine at Hancock, where she was born, and the copper country it stood for.</p>'],
+  ['When did Mary Chase Perry Stratton die?', '<p>In Detroit in 1961, aged 94. Lillian Myers Pear gives two dates in the same book, April 15 (from the legal records) and March 16; no obituary has been found to settle it.</p>'],
+  ['Who made the pots?', '<p>Mary Chase Perry drew each shape and pinned the drawing above the wheel; a thrower made it, above all Joseph Heerich, who threw for her from about 1903 until the late 1930s; she trimmed, decorated and glazed it. The mark names the pottery, never the potter.</p>'],
+];
+const graph = [articleLd(path, 'Pewabic Pottery history and people', description, '2026-11-25', { about: { '@type': 'Organization', name: 'Pewabic Pottery', foundingDate: '1903' } }), ...(faqs.length ? [faqLd(path, faqs)] : [])];
+---
+<Reference {title} {description} {path} jsonld={graph} via={[PW.hub, 'Pewabic Pottery']}>
+  <header class="rhead">
+    <h1>Pewabic history and people</h1>
+    <p class="rhead__lede">How a china painter from Michigan’s copper country and a maker of dental kilns started an art pottery in a Detroit stable, how it became one of the country’s great makers of architectural tile, and how it survived its founder. Every date with its sources; where the sources disagree, both.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{evs.length}</strong> dated events</li>
+      <li><strong class="num">{ps.length}</strong> people</li>
+      <li><a href={PW.marks}>Dating a piece</a></li>
+    </ul>
+  </header>
+
+  <PwPhotos kind="places" items={building.map((p) => photoItem(p))} eager={3} />
+
+  {es.length > 0 && (
+    <section class="pw-section" aria-labelledby="eras">
+      <h2 id="eras">The eras</h2>
+      <ol class="pweras">
+        {es.map((e) => (
+          <li class="pwera">
+            <div class="pwera__when"><strong>{e.from ?? '?'}{e.to ? `–${e.to}` : '–'}</strong><span>{e.run_by_short ?? clean(e.run_by)}</span></div>
+            <div>
+              <h3><a href={`${PW.marks}#era-${e.id}`}>{e.label ?? clean(e.name)}</a></h3>
+              <p>{clean(e.short ?? e.made)}</p>
+              {eraPieces(e).length > 0 && <PwPhotos kind="strip" items={eraPieces(e).map(pieceItem)} />}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  {(cl.name.length > 0 || cl.founding.length > 0) && (
+    <section class="pw-section" aria-labelledby="name">
+      <h2 id="name">The name, and the year it began</h2>
+      <p>Two questions the sources answer in several ways. Each answer is given with who gives it.</p>
+      <div class="pwboxes">
+        {cl.name.length > 0 && (
+          <div class="pwbox">
+            <h3>What “Pewabic” means</h3>
+            <ul class="pwclaims">{cl.name.map((c) => <li>{clean(c.claim)}<Fragment set:html={sup(refs(c.sources))} /></li>)}</ul>
+          </div>
+        )}
+        {cl.founding.length > 0 && (
+          <div class="pwbox">
+            <h3>When Pewabic began</h3>
+            <ul class="pwclaims">{cl.founding.map((c) => <li>{clean(c.claim)}<Fragment set:html={sup(refs(c.sources))} /></li>)}</ul>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  {evs.length > 0 && (
+    <section class="pw-section" aria-labelledby="time">
+      <h2 id="time">Time line</h2>
+      <ol class="pwtime">
+        {byDecade.map(([d, list]) => (
+          <>
+            <li class="pwtime__decade" aria-hidden="true">{d}</li>
+            {list.map((e) => (
+              <li class="pwev" id={e.id}>
+                <span class="pwev__when">{when(e)}</span>
+                <span class="pwev__what">{clean(e.text)}<Fragment set:html={sup(refs(e.sources))} />
+                  {(e.disagreements ?? []).length > 0 && <span class="pwev__differ">The sources differ: {(e.disagreements as string[]).map((x) => clean(x)).filter(Boolean).join(' ')}</span>}
+                  {e.single && <span class="pwev__differ">One source so far.</span>}
+                </span>
+              </li>
+            ))}
+          </>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  {ps.length > 0 && (
+    <section class="pw-section" aria-labelledby="people">
+      <h2 id="people">The people</h2>
+      <p>The mark on a Pewabic piece names the pottery, not the potter. These are the people the sources name as working there, and what each did.</p>
+      <ul class="pwpeople">
+        {ps.map((p) => (
+          <li id={`person-${p.id}`}>
+            <strong>{clean(p.name)}</strong>{p.life && <span class="life">{clean(p.life)}</span>}<Fragment set:html={sup(refs(p.sources))} />
+            {clean(p.role) && <p>{clean(p.role)}{p.years ? `, ${clean(p.years)}` : ''}.</p>}
+            {clean(p.notes) && <p>{clean(p.notes)}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {pl.length > 0 && (
+    <section class="pw-section" aria-labelledby="places">
+      <h2 id="places">The places</h2>
+      <div class="pwboxes">
+        {pl.map((p) => (
+          <div class="pwbox">
+            <h3>{clean(p.name)}<Fragment set:html={sup(refs(p.sources))} /></h3>
+            <p class="y">{[clean(p.address), clean(p.years)].filter(Boolean).join(' · ')}</p>
+            {clean(p.notes) && <p>{clean(p.notes)}</p>}
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <details class="pwsrc">
+    <summary>Sources ({src.list.length})</summary>
+    <!--copy-check:skip--><ol>{src.list.map((s) => <li id={`pws-${s.n}`}>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}{s.where && <span class="where">, {s.where}</span>}</li>)}</ol><!--/copy-check:skip-->
+  </details>
+
+  {faqs.length > 0 && <Faq {faqs} />}
+
+  <AppBox text="Photograph your piece and its base. The Advisor reads the Pewabic mark and tells you which of these years it belongs to, from this same reference." />
+</Reference>

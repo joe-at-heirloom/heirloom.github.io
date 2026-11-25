@@ -1,0 +1,92 @@
+---
+// /marks/pewabic-pottery/tile-installations: every documented architectural
+// installation of Pewabic tile, 1903 to today, by place: a catalogue over the
+// app's Pewabic table (installations, from hallmark-sources/pewabic). Each
+// record's anchor is its id, as the collection's records link to it.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import PwPhotos from '../../../components/ref/PwPhotos.astro';
+import { PW, installations, salvage, numbering, clean, photos as allPhotos, photoItem } from '../../../lib/pewabic';
+import { pewabicTiles } from '../../../lib/catalogues';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/pewabic.css';
+
+const path = PW.tiles;
+const all = installations();
+const groups = pewabicTiles();
+const cities = new Set(all.map((i) => `${i.city}|${i.state}`)).size;
+const states = new Set(all.filter((i) => (i.country ?? 'US') === 'US').map((i) => i.state)).size;
+const two = all.filter((i) => !i.single).length;
+const described = all.filter((i) => !i.listed_only).length;
+const listed = all.length - described;
+const salv = salvage();
+// One photograph per installation that has one, each opening its record below.
+const seen = new Set<string>();
+const shots = allPhotos('installation').filter((p) => p.ref && !seen.has(p.ref) && seen.add(p.ref));
+const src = numbering();
+const standing = all.filter((i) => i.status === 'extant').length;
+const title = 'Pewabic Tile in Detroit and Beyond: Every Known Installation | Heirloom';
+const description = `${described} Pewabic Pottery tile installations and ${listed} more commissions from the pottery’s books, in ${cities} cities: Detroit’s churches, schools, libraries and office buildings, the Guardian Building, the National Shrine in Washington, the People Mover stations. Where each is, what Pewabic made for it, when, and the sources.`;
+const faqs: [string, string][] = [
+  ['Where can I see Pewabic tile in Detroit?', '<p>Among the places open to visitors: the Guardian Building’s exterior and entrance, the Detroit Public Library’s main branch, the Detroit Institute of Arts, many churches, and the People Mover stations of 1987. Each record below says what is there and whether the building is open to visit, where the sources say.</p>'],
+  ['How can I tell if old tile in my house is Pewabic?', '<p>Most of Pewabic’s historic tiles carry no mark on the back, so a tile is rarely identified by itself. The building’s records (its architect, the tile contractor’s bills, a house history) are the usual evidence. Pewabic’s own guide compares its tile with Flint Faience’s, the maker it is most often confused with in Michigan houses, by the edges and the glazes.</p>'],
+  ['Which is the largest Pewabic installation?', '<p>The crypt church of the Basilica of the National Shrine of the Immaculate Conception in Washington, made from 1924: its ceiling, arches, medallions and Stations of the Cross, some 35,000 visible tiles by the shrine’s count.</p>'],
+  ['Where does this list come from?', '<p>Mostly from Lillian Myers Pear’s 1976 history, whose appendix lists the pottery’s commissions year by year from its own records, and from Cara Catallo’s 2017 history for the later work. We checked what we could against National Register and Historic Landmark nominations, city historic-district reports, period trade journals and the buildings’ own histories. A record with only one source says so.</p>'],
+];
+const graph = [articleLd(path, 'Pewabic tile installations', description, '2026-11-25', { about: { '@type': 'Organization', name: 'Pewabic Pottery' } }), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph} via={[PW.hub, 'Pewabic Pottery']}>
+  <header class="rhead">
+    <h1>Pewabic tile installations</h1>
+    <p class="rhead__lede">Soon after it began, the pottery was making tile for buildings: floors and fireplaces, church altars and Stations of the Cross, fountains, ceilings and murals. This is every installation the sources record, in Detroit and across the country, with what Pewabic made, when, and whether it is still there.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{described}</strong> installations, and <strong class="num">{listed}</strong> more commissions in the pottery’s books</li>
+      <li><strong class="num">{cities}</strong> cities in <strong class="num">{states}</strong> states and beyond</li>
+      <li><strong class="num">{two}</strong> confirmed by two sources</li>
+      <li><strong class="num">{standing}</strong> recorded as standing</li>
+    </ul>
+  </header>
+
+  <PwPhotos kind="places" items={shots.map((p) => photoItem(p, `#${p.ref}`))} eager={4} />
+
+  <div class="pwtiles">
+    <Catalogue {groups} lazy="pewabic-tiles" noun={['installation', 'installations']} placeholder="A building, a street, a city, an architect: Guardian, Jefferson, Grosse Pointe" label="A building, a place or an architect" />
+  </div>
+
+  {salv.length > 0 && (
+    <section class="pw-section" aria-labelledby="saved">
+      <h2 id="saved">Saved from buildings since lost or changed</h2>
+      <p>Pewabic tile has been rescued from demolitions, reused and reinstalled. A loose Pewabic tile may have come from one of these.</p>
+      <div class="pwboxes">
+        {salv.map((x) => {
+          const n = src.refs(x.sources);
+          return (
+            <div class="pwbox">
+              <h3>{clean(x.building)}{n.length > 0 && <sup class="refs"> {n.map((k) => <a href={`#pws-${k}`}>{k}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</h3>
+              {clean(x.years) && <p class="y">{clean(x.years)}</p>}
+              <p>{clean(x.what)}</p>
+            </div>
+          );
+        })}
+      </div>
+      <details class="pwsrc">
+        <summary>Sources ({src.list.length})</summary>
+        <!--copy-check:skip--><ol>{src.list.map((s) => <li id={`pws-${s.n}`}>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}{s.where && <span class="where">, {s.where}</span>}</li>)}</ol><!--/copy-check:skip-->
+      </details>
+    </section>
+  )}
+
+  <section class="pw-section" aria-labelledby="read">
+    <h2 id="read">Reading this list</h2>
+    <div class="pw-read">
+      <p>Most records come from the appendix of Lillian Myers Pear’s <cite>The Pewabic Pottery</cite> (1976), made from the pottery’s own books, which lists commissions under the year they were made. Where only Pear names a building, the record says it rests on one source. “Standing” means a source of 2003 or later says the work is still there; many records have no word either way, and Detroit has lost a great many of these buildings since.</p>
+      <p>A few attributions are disputed, and say so: the Nebraska State Capitol, for one, which Pear and Pewabic list but Nebraska’s own pages credit to Guastavino. Buildings that only Wikipedia or a single article credit to Pewabic are left out until a second source confirms them.</p>
+    </div>
+  </section>
+
+  <Faq {faqs} />
+
+  <AppBox text="Photograph a tile, front and back. The Advisor reads any mark, says what the glaze and the making suggest, and points to the installations in this reference that match." />
+</Reference>

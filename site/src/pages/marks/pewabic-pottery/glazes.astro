@@ -1,0 +1,158 @@
+---
+// /marks/pewabic-pottery/glazes: Pewabic's glazes by family, the wares it
+// made, how it made them, and what an owner can and cannot read from a glaze.
+// From the app's Pewabic table (glazes, wares, making, reading). Anchors: the
+// glaze's id, ware-<id>, as the collection's records link to them.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import PwPhotos from '../../../components/ref/PwPhotos.astro';
+import { PW, glazes, wares, making, reading, GLAZE_FAMILIES, numbering, clean, yearsOf, chosen, pieceItem, photos, photoItem } from '../../../lib/pewabic';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/pewabic.css';
+
+const path = PW.glazes;
+const gs = glazes();
+const ws = wares();
+const mk = making();
+const rd = reading();
+const src = numbering();
+const fam = (f: string) => (f === 'lustre' ? 'luster' : f);
+const families = GLAZE_FAMILIES.map(([key, label, blurb]) => ({ key, label, blurb, list: gs.filter((g) => fam(g.family ?? 'other') === key) })).filter((f) => f.list.length);
+const sup = (cites: any[]) => src.refs(cites);
+// The range, on the DIA's own photographs: chosen to show the glazes, captioned with the museum's words only.
+const range = chosen(['F70.222', 'F70.221', 'F70.227', '46.235', 'F70.187', '25.140', '12.11', '2019.313', 'F70.193', '25.128', 'F70.212', '46.248', '25.133', '46.245', 'F70.216', 'F70.203', 'F70.210', 'F70.249', '47.173', 'F70.229']).sort((a, b) => (a.from ?? 9999) - (b.from ?? 9999));
+const made = photos('making');
+const title = 'Pewabic Glazes: Iridescent, Matte and Egyptian Blue, and How They Were Made | Heirloom';
+const description = `${gs.length} Pewabic Pottery glazes, from the first matte enamels of 1903 to the iridescent glazes first sold in 1909 and today’s range, with the wares Pewabic made (vases, lamps, tiles, mosaics, fireplaces), how they were made, and what a glaze can and cannot tell an owner.`;
+const faqs: [string, string][] = [
+  ['What makes Pewabic’s iridescent glaze?', '<p>A metallic skin made in the glaze itself, not painted on: after the glaze firing the piece was fired again in a smoky, oil-fed kiln, which left the shifting surface. Mary Chase Perry worked on it for years; the pottery’s day books record the first iridescent pieces sold in April and May 1909.</p>'],
+  ['Can I date a Pewabic piece by its glaze?', '<p>Only roughly. The matte glazes came first and never stopped; the iridescents date from 1909 on; and today’s Pewabic makes both. The mark is the better guide, and the sources disagree on many glaze dates, so a glaze alone should not be used to say a piece is old.</p>'],
+  ['Is Pewabic earthenware or stoneware?', '<p>The sources do not agree. Barber in 1904 called the body hard and white; Pear describes a buff body; museums label pieces of the same years earthenware or stoneware. Pewabic makes white stoneware today. The body is not a test of age or of who made a piece.</p>'],
+  ['What is Pewabic Egyptian blue?', '<p>A deep matte blue of the years before the iridescents, which Mary Chase Perry described as breaking into a thousand refractions of violet. One later account calls it iridescent; most call it matte.</p>'],
+];
+const graph = [articleLd(path, 'Pewabic glazes and wares', description, '2026-11-25', { about: { '@type': 'Organization', name: 'Pewabic Pottery' } }), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph} via={[PW.hub, 'Pewabic Pottery']}>
+  <header class="rhead">
+    <h1>Pewabic glazes and wares</h1>
+    <p class="rhead__lede">Pewabic was known first for its glazes: heavy matte enamels in greens, yellows and browns from 1903, and from 1909 the iridescent glazes that made Mary Chase Perry’s name. Here is each glaze the sources describe, what it looks like and when it was made, then the wares, how they were made, and what a glaze can and cannot tell you.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{gs.length}</strong> glazes</li>
+      <li><strong class="num">{ws.length}</strong> kinds of ware</li>
+      <li><a href={PW.marks}>Dating by the mark</a></li>
+    </ul>
+  </header>
+
+  <section class="pw-section" aria-labelledby="range">
+    <h2 id="range">The range, in the Detroit Institute of Arts</h2>
+    <p>Twenty pieces from the museum’s collection, in the order of its dates: the white and cream matte ware of the first years, the deep blues, the iridescent glazes, and the flowing glazes of the 1920s and 1930s. The captions are the museum’s own; a glaze can only be judged in hand.</p>
+    <PwPhotos items={range.map(pieceItem)} eager={8} />
+    <p class="pw-more"><a href={`${PW.pieces}#photos`}>Every photographed piece, by date</a></p>
+  </section>
+
+  {families.map((f) => (
+    <section class="pw-section" aria-labelledby={`fam-${f.key}`}>
+      <h2 id={`fam-${f.key}`}>{f.label}</h2>
+      <p>{f.blurb}</p>
+      <div class="pwglazes">
+        {f.list.map((g) => {
+          const n = sup(g.sources);
+          const yrs = yearsOf(g.from, g.to);
+          return (
+            <article class="pwglaze" id={g.id}>
+              <div>
+                <h3>{clean(g.name)}{n.length > 0 && <sup class="refs"> {n.map((x) => <a href={`#pws-${x}`}>{x}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}{g.disputed && <span class="pwglaze__disputed">Sources disagree</span>}</h3>
+                {g.also?.length > 0 && <p class="pwglaze__also">Also called {g.also.map((a: string) => clean(a)).filter(Boolean).join('; ')}</p>}
+                {clean(g.looks) && <p>{clean(g.looks)}</p>}
+                {clean(g.tell_apart) && <p><strong>Telling it apart.</strong> {clean(g.tell_apart)}</p>}
+                {(clean(g.date_note) || (g.disagreements ?? []).length > 0) && (
+                  <details>
+                    <summary>Dates and where the sources differ</summary>
+                    <ul>
+                      {clean(g.date_note) && <li>{clean(g.date_note)}</li>}
+                      {(g.disagreements as string[]).map((d) => clean(d)).filter(Boolean).map((d) => <li>{d}</li>)}
+                    </ul>
+                  </details>
+                )}
+                {g.single && <p class="onesrc">One source so far.</p>}
+              </div>
+              <div class="pwglaze__side">
+                <div><strong>{yrs ?? 'Undated'}</strong>{g.to == null && g.from != null ? 'and still made' : ''}</div>
+                {g.colors?.length > 0 && <div class="pwglaze__chips">{g.colors.map((c: string) => <span>{c}</span>)}</div>}
+                {g.used_on && <div>On {g.used_on === 'both' ? 'vessels and tiles' : g.used_on}</div>}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  ))}
+
+  {ws.length > 0 && (
+    <section class="pw-section" aria-labelledby="wares">
+      <h2 id="wares">What Pewabic made</h2>
+      <p>Thrown vases and bowls came first; tile followed within a few years and became most of the work. Here is each kind of ware and the years the sources give for it.</p>
+      <div class="pwboxes">
+        {ws.map((w) => {
+          const n = sup(w.sources);
+          return (
+            <div class="pwbox" id={`ware-${w.id}`}>
+              <h3>{clean(w.name)}{n.length > 0 && <sup class="refs"> {n.map((x) => <a href={`#pws-${x}`}>{x}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</h3>
+              <p class="y">{clean(w.years)}</p>
+              {clean(w.what) && <p>{clean(w.what)}</p>}
+              {clean(w.recognize) && <p><span class="label">How to recognize it. </span>{clean(w.recognize)}</p>}
+              {w.single && <p class="onesrc">One source so far.</p>}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  {mk.length > 0 && (
+    <section class="pw-section" aria-labelledby="making">
+      <h2 id="making">How it was made</h2>
+      {made.length > 0 && <PwPhotos kind="places" items={made.map((p) => photoItem(p))} />}
+      <div class="pwboxes">
+        {mk.map((m) => {
+          const n = sup(m.sources);
+          return (
+            <div class="pwbox">
+              <h3>{clean(m.name)}{n.length > 0 && <sup class="refs"> {n.map((x) => <a href={`#pws-${x}`}>{x}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</h3>
+              <p class="y">{clean(m.years)}</p>
+              <p>{clean(m.what)}</p>
+              {m.single && <p class="onesrc">One source so far.</p>}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  {rd.length > 0 && (
+    <section class="pw-section" aria-labelledby="reading">
+      <h2 id="reading">What a glaze can tell you, and what it cannot</h2>
+      <div class="pwboxes">
+        {rd.map((r) => {
+          const n = sup(r.sources);
+          return (
+            <div class="pwbox">
+              <h3>{clean(r.topic)}{n.length > 0 && <sup class="refs"> {n.map((x) => <a href={`#pws-${x}`}>{x}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</h3>
+              <p>{clean(r.text)}</p>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  <details class="pwsrc">
+    <summary>Sources ({src.list.length})</summary>
+    <!--copy-check:skip--><ol>{src.list.map((s) => <li id={`pws-${s.n}`}>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}{s.where && <span class="where">, {s.where}</span>}</li>)}</ol><!--/copy-check:skip-->
+  </details>
+
+  <Faq {faqs} />
+
+  <AppBox text="Photograph the piece in daylight, and its base. The Advisor describes the glaze, reads the Pewabic mark, and gives the years they point to from this same reference." />
+</Reference>

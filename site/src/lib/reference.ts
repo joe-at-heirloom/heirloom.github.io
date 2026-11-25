@@ -208,6 +208,14 @@ function build(): Area[] {
           { href: '/marks/pottery-date-codes', label: 'Pottery date codes', note: 'Wedgwood, Minton, Worcester, Rookwood, Sèvres' },
         ] },
         { label: 'Makers', links: makerLinks() },
+        { label: 'Pewabic Pottery, Detroit', links: [
+          { href: '/marks/pewabic-pottery/', label: 'Pewabic Pottery', note: 'Detroit, 1903 to today' },
+          { href: '/marks/pewabic-pottery-marks', label: 'Pewabic marks', note: 'Dating a piece by its mark' },
+          { href: '/marks/pewabic-pottery/tile-installations', label: 'Pewabic tile installations', note: 'Every building, by place' },
+          { href: '/marks/pewabic-pottery/glazes', label: 'Pewabic glazes and wares' },
+          { href: '/marks/pewabic-pottery/history', label: 'Pewabic history and people' },
+          { href: '/marks/pewabic-pottery/museum-collections', label: 'Pewabic in museums' },
+        ] },
         { label: 'Date codes, factory by factory', links: [
           { href: '/marks/wedgwood-date-codes', label: 'Wedgwood' },
           { href: '/marks/minton-date-marks', label: 'Minton' },
@@ -338,6 +346,7 @@ const HOMES: [RegExp, AreaKey][] = [
   [/^\/marks\/chinese(\/|-)/, 'china'],
   [/^\/marks\/japanese/, 'japan'],
   [/^\/marks\/korean/, 'korea'],
+  [/^\/marks\/pewabic-pottery/, 'pottery'],
   [/-signature$|^\/signatures/, 'signatures'],
   [/^\/marks\/(british|american)-silver-makers\/|^\/marks\/american-silver-date-marks\/|^\/marks\/continental-silver-marks\//, 'silver'],
   [/-date-letters$/, 'silver'],

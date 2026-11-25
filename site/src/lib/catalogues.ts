@@ -8,6 +8,7 @@ import { marks, GROUPS as JA_GROUPS } from './japanese';
 import { inscriptions, GROUPS as KO_GROUPS } from './korean';
 import { jaSheet, koSheet, type Sheet } from './records';
 import { allPlaces, makerGroups, type Place } from './makers-dir';
+import { tileGroups } from './pewabic';
 
 export type Group = { key: string; label: string; blurb?: string; sheets: Sheet[] };
 
@@ -34,11 +35,16 @@ export function placeGroups(p: Place): Group[] {
   return g;
 }
 
+let pw: Group[] | null = null;
+/** Pewabic's tile installations by region (lib/pewabic.ts), built once. */
+export function pewabicTiles(): Group[] { return (pw ??= tileGroups()); }
+
 /** Every companion file: its name (catalogue--group) and its sheets. */
 export function sheetChunks(): { chunk: string; sheets: Sheet[] }[] {
   const out: { chunk: string; sheets: Sheet[] }[] = [];
   for (const g of japaneseGroups()) out.push({ chunk: `japanese--${g.key}`, sheets: g.sheets });
   for (const g of koreanGroups()) out.push({ chunk: `korean--${g.key}`, sheets: g.sheets });
   for (const p of allPlaces()) for (const g of placeGroups(p)) out.push({ chunk: `${p.dir}-${p.slug}--${g.key}`, sheets: g.sheets });
+  for (const g of pewabicTiles()) out.push({ chunk: `pewabic-tiles--${g.key}`, sheets: g.sheets });
   return out;
 }

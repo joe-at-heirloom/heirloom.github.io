@@ -1,0 +1,126 @@
+---
+// /marks/pewabic-pottery/: the Pewabic section's home. What Pewabic is, how
+// to tell if a piece is Pewabic and when it was made, the eras, the section's
+// pages, the key dates, and how the reference was made. Everything comes from
+// the app's Pewabic table and the collection (lib/pewabic.ts).
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import PwPhotos from '../../../components/ref/PwPhotos.astro';
+import { PW, eras, events, people, installations, glazes, pieces, markRecords, chosen, pieceItem, eraPieces, photos as allPhotos, photoItem, piecesWithPhotos, table, clean } from '../../../lib/pewabic';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/pewabic.css';
+
+const path = PW.hub;
+const es = eras();
+const evs = events();
+const marks = markRecords();
+const inst = installations();
+const described = inst.filter((i) => !i.listed_only).length;
+const gs = glazes();
+const ps = pieces();
+const pp = people();
+const hero = chosen(['2019.313', '46.245']);
+const shot = piecesWithPhotos().length;
+const today = allPhotos('today');
+const sources = (table().sources ?? []).length;
+const key = evs.filter((e) => e.key);
+const title = 'Pewabic Pottery, Detroit: History, Marks, Tile and Glazes | Heirloom';
+const description = `Pewabic Pottery, the Detroit art pottery founded by Mary Chase Perry and Horace Caulkins about 1903: how to tell a piece is Pewabic and when it was made, its marks, its iridescent glazes, ${described} tile installations and ${ps.length} pieces in museums, with ${sources} sources.`;
+const faqs: [string, string][] = [
+  ['When was Pewabic Pottery founded?', '<p>Mary Chase Perry and Horace James Caulkins began firing her pottery in his Revelation kilns in a carriage house on Alfred Street in Detroit; the sources date it anywhere from 1898 to 1904, most often 1900 or 1901. The name Pewabic was in use by 1903 and in print by February 1904. The pottery moved into its own building on East Jefferson Avenue in 1907.</p>'],
+  ['What does Pewabic mean?', '<p>Mary Chase Perry repeated that it meant “clay with a copper color”; others take it from the Ojibwe word for iron or metal. The name came from the Pewabic copper mine at Hancock, Michigan, where she was born. <a href="/marks/pewabic-pottery/history#name">Every account, with its source.</a></p>'],
+  ['Is Pewabic Pottery still open?', '<p>Yes. After Mary Chase Perry Stratton died in 1961 the pottery wound down, and Michigan State University held the building as a teaching center from the late 1960s. The nonprofit Pewabic Society took it over around 1981 and production started again in 1982 or 1983. It makes pottery and tile in the same building today.</p>'],
+  ['How do I know if my piece is old Pewabic?', '<p>Turn it over. A round PEWABIC DETROIT seal, with or without a Pp in the middle, or five leaves over PEWABIC, belongs to Mrs. Stratton’s pottery (1903 to the late 1960s). A modern Pewabic stamp with a maker’s symbol, or a year on the back of a tile, belongs to today’s. Many old pieces carry only a paper label, or nothing, and most old tiles were never marked. <a href="/marks/pewabic-pottery-marks">Every mark, with its years.</a></p>'],
+  ['What is Pewabic known for?', '<p>Its glazes, above all the iridescent glazes Mary Chase Perry perfected by 1909, and its architectural tile: church interiors such as the crypt of the National Shrine in Washington, the Guardian Building and the Detroit Public Library in Detroit, fountains, fireplaces and, since 1987, the Detroit People Mover stations.</p>'],
+];
+const graph = [
+  articleLd(path, 'Pewabic Pottery', description, '2026-11-25', { about: { '@type': 'Organization', name: 'Pewabic Pottery', foundingDate: '1903', founder: [{ '@type': 'Person', name: 'Mary Chase Perry Stratton' }, { '@type': 'Person', name: 'Horace James Caulkins' }], address: { '@type': 'PostalAddress', streetAddress: '10125 East Jefferson Avenue', addressLocality: 'Detroit', addressRegion: 'MI', addressCountry: 'US' } } }),
+  faqLd(path, faqs),
+];
+const pages = [
+  { href: PW.marks, title: 'The marks', note: `${marks.length} marks, labels and signatures, each with its years, and how to tell old from new` },
+  { href: PW.tiles, title: 'Tile installations', note: `${described} buildings with Pewabic tile, and ${inst.length - described} more commissions from the pottery’s books` },
+  { href: PW.glazes, title: 'Glazes and wares', note: `${gs.length} glazes, from the first matte enamels to the iridescents, and what Pewabic made` },
+  { href: PW.history, title: 'History and people', note: evs.length ? `${evs.length} dated events and ${pp.length} people` : 'From the first kiln to today' },
+  { href: PW.pieces, title: 'In museums', note: `${ps.length} pieces in public collections, with the marks each museum records` },
+];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead pwhero">
+    <div>
+      <h1>Pewabic Pottery</h1>
+      <p class="rhead__lede">Detroit’s art pottery, begun by Mary Chase Perry and Horace Caulkins in the first years of the twentieth century and still at work in the building she opened on East Jefferson Avenue in 1907. It is known for its iridescent glazes and its tile, from Detroit’s churches and office buildings to the National Shrine in Washington. This is Heirloom’s reference to it: how to tell a Pewabic piece and its age, the marks, the tile, the glazes, the people and the pieces in museums, with the sources for every fact.</p>
+      <ul class="rhead__meta">
+        <li><strong class="num">{marks.length}</strong> marks</li>
+        <li><strong class="num">{described}</strong> installations</li>
+        <li><strong class="num">{gs.length}</strong> glazes</li>
+        <li><strong class="num">{ps.length}</strong> museum pieces, <strong class="num">{shot}</strong> photographed</li>
+        <li><strong class="num">{sources}</strong> sources</li>
+      </ul>
+    </div>
+    {hero.length > 0 && (
+      <div class="pwhero__pics">
+        <PwPhotos items={hero.map(pieceItem)} eager={2} />
+      </div>
+    )}
+  </header>
+
+  <section class="pw-section" aria-labelledby="is-it">
+    <h2 id="is-it">Is it Pewabic, and when was it made?</h2>
+    <p>Three things to look at, in this order.</p>
+    <ul class="ahome__tools">
+      <li><a class="tool" href={PW.marks}><strong>1. The base</strong><span>A round PEWABIC DETROIT seal, five leaves over PEWABIC, a Pp monogram, a paper label: each points to its own years. Modern Pewabic has its own stamps.</span><em>Read the marks</em></a></li>
+      <li><a class="tool" href={PW.glazes}><strong>2. The glaze</strong><span>Heavy matte enamels from 1903, iridescent glazes from 1909. Both are still made, so the glaze narrows the years but does not settle them.</span><em>The glazes</em></a></li>
+      <li><a class="tool" href={PW.tiles}><strong>3. If it is a tile</strong><span>Old Pewabic tiles were seldom marked. A year on the back means a modern one; the building it came from is the best evidence for an old one.</span><em>The tile</em></a></li>
+    </ul>
+  </section>
+
+  {es.length > 0 && (
+    <section class="pw-section" aria-labelledby="eras">
+      <h2 id="eras">Pewabic’s eras</h2>
+      <p>The same name has stood on pottery made under different owners for over a century. Which era a piece belongs to is usually the first question about it.</p>
+      <ol class="pweras">
+        {es.map((e) => (
+          <li class="pwera">
+            <div class="pwera__when"><strong>{e.from ?? '?'}{e.to ? `–${e.to}` : '–'}</strong></div>
+            <div>
+              <h3><a href={`${PW.marks}#era-${e.id}`}>{e.label ?? clean(e.name)}</a></h3>
+              <p>{clean(e.short ?? e.made)}</p>
+              {eraPieces(e).length > 0 && <PwPhotos kind="strip" items={eraPieces(e).map(pieceItem)} />}
+              {e.id === 'pewabic-today' && today.length > 0 && <PwPhotos kind="strip" items={today.map((p) => photoItem(p))} />}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  <section class="pw-section" aria-labelledby="pages">
+    <h2 id="pages">The reference</h2>
+    <ul class="ahome__tools">
+      {pages.map((p) => <li><a class="tool" href={p.href}><strong>{p.title}</strong><span>{p.note}</span></a></li>)}
+    </ul>
+  </section>
+
+  {key.length > 0 && (
+    <section class="pw-section" aria-labelledby="dates">
+      <h2 id="dates">Key dates</h2>
+      <ul class="linklist">
+        {key.map((e) => <li><a href={`${PW.history}#${e.id}`}><strong>{clean(e.short ?? e.text)}</strong><span class="y">{e.year_label ?? e.year}</span></a></li>)}
+      </ul>
+    </section>
+  )}
+
+  <section class="pw-section" aria-labelledby="how">
+    <h2 id="how">How this reference was made</h2>
+    <div class="pw-read">
+      <p>From the books: Lillian Myers Pear’s <cite>The Pewabic Pottery: A History of Its Products and Its People</cite> (1976), written from the pottery’s own records; Cara Catallo’s <cite>Pewabic Pottery: A History Handcrafted in Detroit</cite> (2017); Edwin AtLee Barber’s <cite>Marks of American Potters</cite> (1904); and Lois Lehner’s encyclopedia of American marks (1988). From the period: <cite>Keramic Studio</cite>, <cite>The Craftsman</cite>, the Detroit Museum of Art’s bulletins, the trade journals. From the record: the National Park Service’s 1991 landmark nomination, city historic-district reports, museum records of {ps.length} pieces, and Pewabic’s own pages.</p>
+      <p>Every fact carries its sources; where they disagree, the page says so and gives each. A fact resting on one source says that too. What we could not find is listed as such, not guessed: there is no openly licensed photograph of a Pewabic base yet, and how modern Pewabic’s stamp has changed since 1983 is not in print.</p>
+    </div>
+  </section>
+
+  <Faq {faqs} />
+
+  <AppBox text="Photograph your piece and its base. The Advisor reads the Pewabic mark or label, tells you which era it points to, and keeps the reading with your photos." />
+</Reference>

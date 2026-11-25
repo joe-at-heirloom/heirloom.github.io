@@ -1,0 +1,211 @@
+---
+// /marks/pewabic-pottery-marks: every Pewabic mark, label and signature with
+// the years it points to (the marks database's Pewabic entries, from the
+// research in hallmark-sources/pewabic), as a dating key and a catalogue;
+// then how to tell the eras apart, the look-alikes, and the numbers on a base.
+import Reference from '../../layouts/Reference.astro';
+import Catalogue from '../../components/ref/Catalogue.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import PwPhotos from '../../components/ref/PwPhotos.astro';
+import { PW, markGroups, markBars, eras, lookalikes, numbers, numbering, clean, markRecords, basePhotos, photos as allPhotos, photoItem } from '../../lib/pewabic';
+import { articleLd, faqLd } from '../../lib/site';
+import { media } from '../../lib/media';
+import '../../styles/pewabic.css';
+
+const path = PW.marks;
+const groups = markGroups();
+const total = groups.reduce((n, g) => n + g.sheets.length, 0);
+const pictured = markRecords().filter((r) => r.image_id).length;
+const bars = markBars();
+const A = 1900, B = 2030;
+const pct = (y: number) => `${(((Math.min(Math.max(y, A), B) - A) / (B - A)) * 100).toFixed(2)}%`;
+const ticks = [1900, 1920, 1940, 1960, 1980, 2000, 2020];
+const GROUP_LABEL: Record<string, string> = { stamps: 'Stamps and seals', labels: 'Paper labels', names: 'Names and initials', modern: 'Modern Pewabic' };
+const barGroups = ['stamps', 'names', 'labels', 'modern'].map((g) => ({ key: g, label: GROUP_LABEL[g], bars: bars.filter((b) => b.group === g) })).filter((g) => g.bars.length);
+const span = (b: { from: number; to: number; open: boolean }) => (b.open ? `${b.from} on` : b.from === b.to ? `${b.from}` : `${b.from}–${b.to}`);
+
+const es = eras();
+const bases = basePhotos();
+const today = allPhotos('today');
+const rookwood = allPhotos('lookalike');
+const looks = lookalikes();
+const nums = numbers();
+const src = numbering();
+const eraRefs = es.map((e) => src.refs(e.sources));
+const lookRefs = looks.map((l) => src.refs(l.sources));
+const numRefs = nums.map((n) => src.refs(n.sources));
+
+const title = 'Pewabic Pottery Marks: Dating Pewabic by Its Stamps and Labels | Heirloom';
+const description = `${total} Pewabic Pottery marks, labels and signatures with the years each points to: Revelation Pottery, the five leaves over PEWABIC, the round PEWABIC DETROIT seal, the Pp monogram, paper labels, M1 museum labels, and how modern Pewabic is marked. With sources.`;
+const faqs: [string, string][] = [
+  ['How old is my Pewabic pottery?', '<p>Read the base. Five leaves over PEWABIC points to 1903 to about 1907; the round PEWABIC DETROIT seal to any year from the 1900s to 1969 (sources date its start from 1903 to about 1910); the same seal with a Pp monogram in the middle to about 1925 to 1969. Pewabic stopped making pottery in the late 1960s and started again in 1983; pieces made since then carry modern Pewabic, Detroit and artisan stamps, and tiles often a year on the back.</p>'],
+  ['What does the Pp in the middle of the Pewabic seal mean?', '<p>Pewabic Pottery: a large P with a smaller P under it. Every dated piece that carries it is from about 1925 or later, and the metal stamp was defaced in 1969 when production stopped.</p>'],
+  ['My Pewabic piece has no mark. Is that unusual?', '<p>No. Heavy glaze often fills the stamp, Pewabic often used a paper label instead, and labels come off. Most of its architectural and decorative tiles were never marked at all.</p>'],
+  ['What does M1 on a Pewabic label mean?', '<p>Museum quality. Pieces the pottery set aside as its best were labeled M1, M2 or M3, mostly between about 1915 and the 1920s. The sources differ on whether Charles Lang Freer or Mary Chase Perry Stratton marked them.</p>'],
+  ['Is Revelation Pottery the same as Pewabic?', '<p>It is where Pewabic began. Revelation was the brand of Horace Caulkins’s kilns, and the first pieces Mary Chase Perry fired in them, from about 1901, carry a triangle reading REVELATION POTTERY with M.C.P. and DETROIT. The Pewabic name came a few years later.</p>'],
+];
+const graph = [
+  articleLd(path, 'Pewabic Pottery marks', description, '2026-11-25', { about: { '@type': 'Organization', name: 'Pewabic Pottery', foundingDate: '1903', location: 'Detroit, Michigan' } }),
+  faqLd(path, faqs),
+];
+const img = (f: string | null) => (f ? media(f) : null);
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>Pewabic Pottery marks</h1>
+    <p class="rhead__lede">Mary Chase Perry’s pottery in Detroit marked its work in a dozen ways over more than a century: her name and initials, a triangle, five leaves, round seals, paper labels. Each points to different years. Here is every mark the sources record, what it looks like and when it was used, and how to tell a piece from her lifetime from one made by today’s Pewabic.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{total}</strong> marks, labels and signatures</li>
+      <li><strong class="num">{pictured}</strong> pictured</li>
+      <li>1900 to today</li>
+      <li><a href={PW.hub}>Pewabic Pottery</a></li>
+    </ul>
+  </header>
+
+  <section class="pw-section" aria-labelledby="key">
+    <h2 id="key">The marks by date</h2>
+    <p>Each bar runs from the first year to the last year the sources give for the mark. Paler bars rest on one source only; a bar fading at its right end is still in use. Tap a mark to read it in full.</p>
+    <div class="pwkey" role="list">
+      <div class="pwkey__axis" aria-hidden="true">
+        <span>Mark</span>
+        <div class="pwkey__ticks">{ticks.map((t) => <span style={`left:${pct(t)}`}>{t}</span>)}</div>
+      </div>
+      {barGroups.map((g) => (
+        <>
+          <p class="pwkey__group">{g.label}</p>
+          {g.bars.map((b) => (
+            <a class="pwkey__row" href={`#${b.id}`} role="listitem" data-open={b.id}>
+              <span class="pwkey__label">
+                {b.img ? <span class="pwkey__thumb"><img src={img(b.img)!} alt="" loading="lazy" decoding="async" /></span> : <span class="pwkey__thumb pwkey__thumb--none" aria-hidden="true"></span>}
+                <span class="pwkey__name">{b.name}</span>
+              </span>
+              <span class="pwkey__track" style={`--a:${pct(b.from)};--b:${pct(b.to)}`}>
+                <span class:list={['pwkey__bar', `pwkey__bar--${b.group}`, { 'pwkey__bar--open': b.open, 'pwkey__bar--single': b.single }]}></span>
+                <span class:list={['pwkey__years', { 'pwkey__years--end': b.from > 1990 }]}>{span(b)}</span>
+              </span>
+            </a>
+          ))}
+        </>
+      ))}
+      <p class="pwkey__note"><i style="background:var(--ink-2)"></i>stamp or seal <i style="background:var(--ink-3)"></i>name or initials <i style="background:var(--wood)"></i>paper label <i style="background:var(--accent)"></i>modern Pewabic</p>
+    </div>
+  </section>
+
+  <Catalogue {groups} noun={['mark', 'marks, labels and signatures']} placeholder="What is on the base: PEWABIC, DETROIT, leaves, Pp, MCP, label" label="Words or shapes on the base" />
+
+  {bases.length > 0 && (
+    <section class="pw-section" aria-labelledby="bases">
+      <h2 id="bases">Two Pewabic bases, as they are</h2>
+      <p>A base usually carries more than one thing: the stamp, half filled with glaze; a Pewabic paper label, often with a price or a note in pencil; and the labels and numbers of the people and museums who owned it since. These two are in the Detroit Institute of Arts.</p>
+      <PwPhotos kind="places" items={bases.map((b) => ({ file: b.file, w: b.size?.[0], h: b.size?.[1], alt: `The base of a Pewabic ${String(b.title ?? 'piece').toLowerCase()}, ${b.date}`, title: `${b.title}, ${b.date}: the base`, sub: b.accession === '46.239' ? 'An M.2 museum-quality label, a round PEWABIC · DETROIT label with dots, and owners’ labels. DIA 46.239.' : 'The impressed PEWABIC DETROIT seal and the round PEWABIC DETROIT paper label. DIA 46.245.', credit: 'Photograph: Detroit Institute of Arts', page: b.pieceUrl, href: null }))} />
+    </section>
+  )}
+
+  <section class="pw-section" id="old-or-new" aria-labelledby="oldnew">
+    <h2 id="oldnew">Old or new?</h2>
+    <p>Pewabic is still making pottery and tile in the building Mary Chase Perry Stratton opened in 1907, and its pieces carry the Pewabic name too. What tells them apart is the mark, and on tiles, the back.</p>
+    {today.length > 0 && <PwPhotos kind="strip" items={today.map((p) => photoItem(p))} />}
+    <ul class="pwsigns">
+      <li><strong>The round seal points to before 1970.</strong> The round PEWABIC DETROIT seal, with or without the Pp in the middle, was the mark of Mrs. Stratton’s pottery; its stamp was defaced when production stopped in 1969. <a href="#pewabic-detroit-medallion-impressed">The round seal</a></li>
+      <li><strong>A year on a tile’s back points to after 1983.</strong> Pewabic’s historic tiles were usually not marked at all; a year and a maker’s symbol pressed into the back belong to today’s pottery. <a href="#pewabic-modern-year-on-tile">A year on the back</a></li>
+      <li><strong>MCP on the face does not make a tile old.</strong> Pewabic remakes historic designs from the old molds, and her initials come with the design. <a href="#pewabic-modern-reissue-mcp">Reissued tiles</a></li>
+      <li><strong>A hanging notch or a black X is modern.</strong> A notch molded into the back of a gift tile, and a black X marking a second, are today’s practice. <a href="#pewabic-seconds-mark">Seconds</a></li>
+    </ul>
+    {es.length > 0 && (
+      <ol class="pweras">
+        {es.map((e, i) => (
+          <li class="pwera" id={`era-${e.id}`}>
+            <div class="pwera__when"><strong>{e.from ?? '?'}{e.to ? `–${e.to}` : '–'}</strong><span>{e.run_by_short ?? clean(e.run_by)}</span></div>
+            <div>
+              <h3>{e.label ?? clean(e.name)}{eraRefs[i].length > 0 && <sup class="refs"> {eraRefs[i].map((n) => <a href={`#pws-${n}`}>{n}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</h3>
+              {e.short && <p>{clean(e.short)}</p>}
+              <dl>
+                {clean(e.run_by) && <><dt>Who ran it</dt><dd>{clean(e.run_by)}</dd></>}
+                {clean(e.made) && <><dt>What was made</dt><dd>{clean(e.made)}</dd></>}
+                {clean(e.marks) && <><dt>Marks</dt><dd>{clean(e.marks)}</dd></>}
+                {clean(e.bodies_and_glazes) && <><dt>Clay and glazes</dt><dd>{clean(e.bodies_and_glazes)}</dd></>}
+                {clean(e.how_to_tell) && <><dt>How to tell</dt><dd>{clean(e.how_to_tell)}</dd></>}
+              </dl>
+              {(e.disagreements ?? []).length > 0 && <p class="onesrc">The sources differ: {(e.disagreements as string[]).map((d) => clean(d)).filter(Boolean).join(' ')}</p>}
+              {e.single && <p class="onesrc">One source so far.</p>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    )}
+  </section>
+
+  {looks.length > 0 && (
+    <section class="pw-section" id="not-pewabic" aria-labelledby="notpw">
+      <h2 id="notpw">Often taken for Pewabic</h2>
+      <p>Iridescent glazes, matte green tiles and a Detroit history do not make a piece Pewabic. Every case of confusion the sources record is about tile, and these are they.</p>
+      <div class="pwboxes">
+        {looks.map((l, i) => l.named && (
+          <div class="pwbox" id={`lookalike-${l.id}`}>
+            <h3>{clean(l.maker)}{lookRefs[i].length > 0 && <sup class="refs"> {lookRefs[i].map((n) => <a href={`#pws-${n}`}>{n}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</h3>
+            <p class="y">{[clean(l.place), clean(l.years)].filter(Boolean).join(' · ')}</p>
+            {clean(l.why) && <p><span class="label">Why it is confused. </span>{clean(l.why)}</p>}
+            {clean(l.tell) && <p><span class="label">How to tell. </span>{clean(l.tell)}</p>}
+            {l.single && <p class="onesrc">One source so far.</p>}
+            {l.id === 'rookwood' && rookwood.length > 0 && <PwPhotos kind="places" items={rookwood.map((p) => photoItem(p))} />}
+          </div>
+        ))}
+      </div>
+      <details class="pwsrc">
+        <summary>Other art potteries and tile makers with a similar look ({looks.filter((l) => !l.named).length})</summary>
+        <p class="pw-lede">No source records these being mistaken for Pewabic; they share its iridescent or matte glazes, or its kind of tile. Their marks tell them apart.</p>
+        <div class="pwboxes">
+          {looks.map((l, i) => !l.named && (
+            <div class="pwbox" id={`lookalike-${l.id}`}>
+              <h3>{clean(l.maker)}{lookRefs[i].length > 0 && <sup class="refs"> {lookRefs[i].map((n) => <a href={`#pws-${n}`}>{n}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</h3>
+              <p class="y">{[clean(l.place), clean(l.years)].filter(Boolean).join(' · ')}</p>
+              {clean(l.tell) && <p><span class="label">How to tell. </span>{clean(l.tell)}</p>}
+            </div>
+          ))}
+        </div>
+      </details>
+    </section>
+  )}
+
+  {nums.length > 0 && (
+    <section class="pw-section" id="numbers" aria-labelledby="nums">
+      <h2 id="nums">Numbers and writing on the base</h2>
+      <p>Pewabic used no date codes or shape numbers that the sources have found. The numbers on a base are mostly prices and collectors’ inventory numbers.</p>
+      <div class="pwboxes">
+        {nums.map((n, i) => (
+          <div class="pwbox">
+            <p><strong>{clean(n.what)}</strong>{numRefs[i].length > 0 && <sup class="refs"> {numRefs[i].map((x) => <a href={`#pws-${x}`}>{x}</a>).reduce((a: any, b: any) => [a, ', ', b])}</sup>}</p>
+            <p>{clean(n.means)}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {src.list.length > 0 && (
+    <details class="pwsrc">
+      <summary>Sources for this section ({src.list.length})</summary>
+      <!--copy-check:skip--><ol>{src.list.map((s) => <li id={`pws-${s.n}`}>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}{s.where && <span class="where">, {s.where}</span>}</li>)}</ol><!--/copy-check:skip-->
+    </details>
+  )}
+
+  <section class="pw-section" aria-labelledby="pics">
+    <h2 id="pics">About the pictures</h2>
+    <p>Four marks are cut from the Detroit Institute of Arts’ photographs of two bases, which the museum offers for free download. The rest are shown from the books: Barber’s <cite>Marks of American Potters</cite> (1904), Lillian Myers Pear’s <cite>The Pewabic Pottery</cite> (1976), whose photographs of real marks are the best record in print, and Lois Lehner’s drawings (1988). Each picture says which. Where a mark’s record opens, photographs of dated pieces in the museum that carry it follow the mark.</p>
+  </section>
+
+  <Faq {faqs} />
+
+  <AppBox text="Photograph the base, with any label. The Advisor reads the Pewabic seal or label, gives the years it points to from this same reference, and says plainly when a mark is too glazed over to read." />
+</Reference>
+
+<script>
+  // The dating key opens the mark it names in the catalogue below.
+  for (const a of document.querySelectorAll<HTMLAnchorElement>('[data-open]')) {
+    a.addEventListener('click', () => {
+      const d = document.getElementById(a.dataset.open!) as HTMLDetailsElement | null;
+      if (d) d.open = true;
+    });
+  }
+</script>
