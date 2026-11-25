@@ -1,13 +1,16 @@
 #!/usr/bin/env node
-// Regenerates privacy.html and terms.html from the app repo's legal sources.
+// Brings the app repo's published legal texts into the site.
 //
 // The Markdown in the Heirloom app repo (legal/PRIVACY_POLICY.md and
 // legal/TERMS_OF_SERVICE.md) is the source of truth for the two legal pages.
-// This script turns each into the <main> of the matching page, keeping the
-// site's own head, nav and footer. Run it whenever the sources change:
+// This script copies each, with the company facts applied (company.json), to
+// site/src/content/legal/, and the Astro pages /privacy and /terms render that
+// copy with markdownToHtml below (site/src/lib/legal.ts). Since Nov 25 2026
+// there is no generated HTML: the committed Markdown is what is published.
+// Run it whenever the sources change:
 //
-//   node scripts/build-legal.mjs            # rewrite privacy.html and terms.html
-//   node scripts/build-legal.mjs --check    # exit 1 if the committed pages differ
+//   node scripts/build-legal.mjs            # rewrite site/src/content/legal/*.md
+//   node scripts/build-legal.mjs --check    # exit 1 if the committed copies differ
 //   node scripts/build-legal.mjs --draft    # write them from a draft, to look at only
 //
 // LEGAL_DIR points at the folder holding the two .md files (default:
@@ -23,7 +26,7 @@
 // pipe table, **bold**, *italic* lines, HTML comments, --- rules), plus the
 // pc: company-fact markers described at PAGES.
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -60,13 +63,15 @@ export const COMPANY = existsSync(COMPANY_PATH) ? JSON.parse(readFileSync(COMPAN
 export const PAGES = [
   {
     source: 'PRIVACY_POLICY.md',
-    output: 'privacy.html',
+    output: 'site/src/content/legal/privacy.md',
+    path: '/privacy',
     title: 'Privacy Policy — Heirloom',
     companyNote: 'who provides Heirloom — introduction, §1, §15',
   },
   {
     source: 'TERMS_OF_SERVICE.md',
-    output: 'terms.html',
+    output: 'site/src/content/legal/terms.md',
+    path: '/terms',
     title: 'Terms of Service — Heirloom',
     companyNote: 'who provides Heirloom, and governing law — introduction, §§17, 19',
   },
@@ -77,7 +82,7 @@ export const PAGES = [
  * counsel reads them, each with a header comment that says "DRAFT FOR
  * COUNSEL" (its docs/submission/legal.md, "Publishing"). The site's builder
  * reads that folder by default, so without this guard a plain run would write
- * a draft into privacy.html and terms.html and the next push would publish it.
+ * a draft into the legal copies (site/src/content/legal) and the next push would publish it.
  *
  * The header is the run of HTML comments that opens the file, before its
  * first line of text; the mark is matched there only, so a published text that
@@ -232,116 +237,18 @@ export function markdownToHtml(markdown) {
   return html.join('\n');
 }
 
-export function renderPage({ title, body }) {
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-69Q6D26EG0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-69Q6D26EG0');
-  </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title}</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="nav nav--solid" id="nav">
-    <div class="nav__container">
-      <a href="/" class="nav__logo"><img src="/logo.svg" alt="Heirloom" width="156" height="28"></a>
-      <nav class="nav__links" aria-label="Main">
-        <a href="/#how" class="nav__link">How it works</a>
-        <a href="/home-inventory-app" class="nav__link">Home inventory</a>
-        <a href="/antique-identifier-app" class="nav__link">Antiques</a>
-        <div class="nav__group">
-          <a href="/guides" class="nav__link">Guides<svg class="nav__chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></a>
-          <div class="nav__panel">
-            <a class="nav__panel-item" href="/home-inventory-checklist"><span class="nav__panel-title">Home inventory checklist</span><span class="nav__panel-desc">Room by room, with a free spreadsheet template</span></a>
-            <a class="nav__panel-item" href="/silver-hallmarks"><span class="nav__panel-title">Reading silver hallmarks</span><span class="nav__panel-desc">British, American and continental marks, and plate</span></a>
-            <a class="nav__panel-item" href="/family-heirlooms"><span class="nav__panel-title">Documenting family heirlooms</span><span class="nav__panel-desc">The story, the paperwork, and who each one is for</span></a>
-            <a class="nav__panel-item" href="/marks/"><span class="nav__panel-title">Marks and serial numbers</span><span class="nav__panel-desc">Date silver by its letter; look up Singer, watch and Leica serials</span></a>
-            <a class="nav__panel-all" href="/guides">All guides &rarr;</a>
-          </div>
-        </div>
-      </nav>
-      <div class="nav__actions">
-        <a href="https://web.heirloomapp.io" class="nav__signin">Sign in</a>
-        <a href="https://apps.apple.com/us/app/id6754576251" class="btn btn--primary nav__cta">Get Heirloom</a>
-      </div>
-      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navSheet" aria-label="Open menu"><span></span><span></span></button>
-    </div>
-    <div class="nav__sheet" id="navSheet" hidden>
-      <nav aria-label="Menu">
-        <ul class="nav__sheet-links">
-          <li><a href="/#how">How it works</a></li>
-          <li><a href="/home-inventory-app">Home inventory</a></li>
-          <li><a href="/antique-identifier-app">Antiques</a></li>
-          <li><a href="/guides">Guides</a></li>
-        </ul>
-        <p class="nav__sheet-heading">From the guides</p>
-        <ul class="nav__sheet-guides">
-          <li><a href="/home-inventory-checklist">Home inventory checklist</a></li>
-          <li><a href="/silver-hallmarks">Reading silver hallmarks</a></li>
-          <li><a href="/family-heirlooms">Documenting family heirlooms</a></li>
-          <li><a href="/marks/">Marks and serial numbers</a></li>
-        </ul>
-      </nav>
-      <div class="nav__sheet-foot">
-        <a class="store-badge" href="https://apps.apple.com/us/app/id6754576251"><img class="store-badge__art" src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52"></a>
-        <a class="btn btn--outline" href="https://web.heirloomapp.io">Sign in on the web</a>
-      </div>
-    </div>
-  </header>
-  <main class="legal-page">
-${body}
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <img src="logo.svg" alt="Heirloom" height="24">
-          <p class="footer__tagline">Know what you own.</p>
-        </div>
-        <nav class="footer__links" aria-label="Legal">
-          <a href="/privacy" class="footer__link">Privacy Policy</a>
-          <a href="/terms" class="footer__link">Terms of Service</a>
-          <a href="/support" class="footer__link">Support</a>
-        </nav>
-        <p class="footer__copy">&copy; <!--pc:year-->2026<!--/pc:year--> <a href="https://thepeninsularcompany.com"><!--pc:name-->The Peninsular Company, LLC<!--/pc:name--></a>. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <script src="/nav.js" defer></script>
-</body>
-</html>
-`;
+/** A legal text as the page's body: the source's own H1 ("# Heirloom Privacy
+ *  Policy") gives way to the shorter heading the site has always used. */
+export function renderLegal(text, title) {
+  return markdownToHtml(text).replace(/^<h1>.*?<\/h1>/, `<h1>${title.split(' — ')[0]}</h1>`);
 }
 
-/**
- * Build every page; returns [{output, html}]. Throws if a source is missing.
- * It writes nothing and does not refuse a draft: the app repo's
- * docs/submission/check-legal.mjs imports it to check that its drafts build.
- * Only the command below writes, and it is the one that refuses.
- */
 export function buildAll(legalDir = LEGAL_DIR) {
   return PAGES.map(({ source, output, title, companyNote }) => {
     const path = resolve(legalDir, source);
     if (!existsSync(path)) throw new Error(`Legal source not found: ${path}`);
-    const markdown = applyCompany(readFileSync(path, 'utf8'), companyNote);
-    // The page title comes from the site, the body from the source. The
-    // source's own H1 ("# Heirloom Privacy Policy") is replaced by the shorter
-    // page heading the site has always used.
-    const body = markdownToHtml(markdown).replace(/^<h1>.*?<\/h1>/, `<h1>${title.split(' — ')[0]}</h1>`);
-    return { output, html: renderPage({ title, body: body.replace(/^/gm, '    ') }) };
+    // The published copy: the source with the company facts applied.
+    return { output, title, text: applyCompany(readFileSync(path, 'utf8'), companyNote) };
   });
 }
 
@@ -364,12 +271,12 @@ if (invokedDirectly) {
     process.exit(2);
   }
   let drift = 0;
-  for (const { output, html } of buildAll()) {
+  for (const { output, text } of buildAll()) {
     const target = resolve(siteRoot, output);
     const source = PAGES.find((p) => p.output === output).source;
     if (check) {
       const current = existsSync(target) ? readFileSync(target, 'utf8') : '';
-      if (current !== html) {
+      if (current !== text) {
         drift += 1;
         console.error(
           drafts.includes(source)
@@ -380,7 +287,8 @@ if (invokedDirectly) {
         console.log(`${output} matches its source`);
       }
     } else {
-      writeFileSync(target, html);
+      mkdirSync(dirname(target), { recursive: true });
+      writeFileSync(target, text);
       console.log(drafts.includes(source) ? `wrote ${output} from a DRAFT FOR COUNSEL (--draft): do not commit it` : `wrote ${output}`);
     }
   }

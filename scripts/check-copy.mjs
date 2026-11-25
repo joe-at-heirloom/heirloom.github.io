@@ -38,7 +38,7 @@ import { resolve, dirname, join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { buildAll, LEGAL_DIR, PAGES, isDraft, draftSources, markdownToHtml } from './build-legal.mjs';
+import { buildAll, LEGAL_DIR, PAGES, isDraft, draftSources, markdownToHtml, renderLegal } from './build-legal.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const siteRoot = resolve(here, '..');
@@ -305,13 +305,25 @@ function checkClaims(label, text, ownText = text) {
 // 1. Claims on the homepage and in the README.
 // COPY_CHECK_INDEX lets the rules be run against another homepage (for example
 // the previous one, to show what they catch) without touching the site.
-const indexPath = process.env.COPY_CHECK_INDEX || resolve(siteRoot, 'index.html');
-const indexText = visibleText(readFileSync(indexPath, 'utf8'));
-checkClaims('index.html', indexText);
+// Every page is built by Astro (since Nov 25 2026 there is no HTML in the
+// repository), so the home and support pages are read from a build: the one
+// COPY_CHECK_PAGES names (the deploy job passes site/dist), else site/dist if
+// this checkout has built it. With no build (CI, the legal sync), the page
+// rules are skipped by name and the README and legal rules still run.
+const builtDir = process.env.COPY_CHECK_PAGES ? resolve(process.env.COPY_CHECK_PAGES) : resolve(siteRoot, 'site/dist');
+const built = (file) => (existsSync(resolve(builtDir, file)) ? resolve(builtDir, file) : null);
+const indexPath = process.env.COPY_CHECK_INDEX || built('index.html');
+const hasIndex = !!indexPath && existsSync(indexPath);
+if (!hasIndex) notes.push('skipped: the home page rules (no build: run npm --prefix site run build, or set COPY_CHECK_INDEX)');
+const indexText = hasIndex ? visibleText(readFileSync(indexPath, 'utf8')) : '';
+if (hasIndex) checkClaims('index.html', indexText);
 checkClaims('README.md', readFileSync(resolve(siteRoot, 'README.md'), 'utf8'));
 // The support page (the App Store's Support URL) answers questions about the
 // app in its own words, so it is held to the same claims.
-checkClaims('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.html'), 'utf8')));
+const supportPath = built('support.html');
+const supportText = supportPath ? visibleText(readFileSync(supportPath, 'utf8')) : null;
+if (supportText !== null) checkClaims('support.html', supportText);
+else notes.push('skipped: support.html (no build)');
 // The guide and product pages (search landing pages, Nov 2026) describe the
 // same app, so they are held to the same claims, the homepage's words and its
 // sentence case.
@@ -320,7 +332,7 @@ checkClaims('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.
 // checkout. The marks pages are no longer files here (the site's templates
 // build them from the reference collection), so a checkout-only run, as on CI,
 // leaves them to the deploy job, which checks every one in the build.
-const pagesRoot = process.env.COPY_CHECK_PAGES ? resolve(process.env.COPY_CHECK_PAGES) : siteRoot;
+const pagesRoot = builtDir;
 let builtOnly = 0;
 const GUIDE_PAGES = [
   'home-inventory-app.html',
@@ -439,11 +451,11 @@ for (const file of GUIDE_PAGES) {
 }
 
 // 2. Qualifications the homepage must keep.
-for (const { pattern, why } of REQUIRED_ON_HOMEPAGE) {
+for (const { pattern, why } of hasIndex ? REQUIRED_ON_HOMEPAGE : []) {
   if (!pattern.test(indexText)) failures.push(`index.html is missing ${pattern} — ${why}`);
 }
-const indexHtml = readFileSync(indexPath, 'utf8');
-for (const { pattern, why } of REQUIRED_IN_HOMEPAGE_HTML) {
+const indexHtml = hasIndex ? readFileSync(indexPath, 'utf8') : '';
+for (const { pattern, why } of hasIndex ? REQUIRED_IN_HOMEPAGE_HTML : []) {
   if (!pattern.test(indexHtml)) failures.push(`index.html is missing ${pattern} — ${why}`);
 }
 // The launch words. A hit reads "index.html says …", not "index.html: …", so
@@ -465,7 +477,7 @@ for (const [sentence, hit] of MONEY_FIXTURES) {
 }
 // support.html answers questions about the build that is live, so its words
 // change with the release (S5-16's release-day steps), and are owed before it.
-const supportWords = checkWords('support.html', visibleText(readFileSync(resolve(siteRoot, 'support.html'), 'utf8')));
+const supportWords = supportText === null ? [] : checkWords('support.html', supportText);
 if (supportWords.length) {
   beforePublishing.push(`support.html has ${supportWords.length} word(s) the homepage no longer uses: ${[...new Set(supportWords.map((w) => /says "([^"]+)"/.exec(w)[1].toLowerCase()))].join(', ')}`);
 }
@@ -483,7 +495,13 @@ if (/data-badge="placeholder"/.test(indexHtml)) {
 // to obtain, set, or support insurance coverage or claims", and the
 // homepage's bold line is an inventory ready for your insurer. S5-04 republishes the Terms
 // with counsel's answer to Q10; the homepage goes out with them or after.
-const termsHtml = readFileSync(resolve(siteRoot, 'terms.html'), 'utf8');
+// The legal pages as the site serves them: the published copies in
+// site/src/content/legal, rendered by build-legal.mjs's own renderer.
+const legalHtml = (path) => {
+  const page = PAGES.find((p) => p.path === path);
+  return renderLegal(readFileSync(resolve(siteRoot, page.output), 'utf8'), page.title);
+};
+const termsHtml = legalHtml('/terms');
 if (/must not be used to obtain, set, or support insurance coverage or claims/.test(termsHtml) && /\binsurer\b/i.test(indexText)) {
   beforePublishing.push(
     'terms.html is still the Terms of October 4 ("must not be used to obtain, set, or support insurance coverage or claims") ' +
@@ -508,24 +526,27 @@ for (const [file, musts, mustNots] of [
     [/Expert-lead marketplace/, /grant estate-plan access/, /record estate-planning intentions, you grant/],
   ],
 ]) {
-  const html = readFileSync(resolve(siteRoot, file), 'utf8');
+  const html = legalHtml(file === 'privacy.html' ? '/privacy' : '/terms');
   for (const p of musts) if (!p.test(html)) failures.push(`${file} is missing ${p}`);
   for (const p of mustNots) if (p.test(html)) failures.push(`${file} still contains ${p}`);
 }
 
 if (existsSync(LEGAL_DIR)) {
   const drafts = draftSources(LEGAL_DIR);
-  for (const { output, html } of buildAll(LEGAL_DIR)) {
-    const source = PAGES.find((p) => p.output === output).source;
-    const current = readFileSync(resolve(siteRoot, output), 'utf8');
+  for (const { output, text } of buildAll(LEGAL_DIR)) {
+    const { source, path } = PAGES.find((p) => p.output === output);
+    // Named by the page's old file name, which the app repo's
+    // check-store-copy.mjs reads; the copy itself is site/src/content/legal/*.md.
+    const label = path === '/privacy' ? 'privacy.html' : 'terms.html';
+    const current = existsSync(resolve(siteRoot, output)) ? readFileSync(resolve(siteRoot, output), 'utf8') : '';
     // The problem line keeps its wording: the app repo's
     // docs/submission/check-store-copy.mjs reads it as owed to S5-04. Its
     // hint is safe now, since the builder refuses a draft; the note says why.
-    if (current !== html) failures.push(`${output} differs from ${LEGAL_DIR}/… — run node scripts/build-legal.mjs`);
-    else notes.push(`${output} matches ${LEGAL_DIR}`);
-    if (current !== html && drafts.includes(source)) {
+    if (current !== text) failures.push(`${label} differs from ${LEGAL_DIR}/… — run node scripts/build-legal.mjs`);
+    else notes.push(`${label} matches ${LEGAL_DIR}`);
+    if (current !== text && drafts.includes(source)) {
       notes.push(
-        `${output}: ${source} in LEGAL_DIR is a DRAFT FOR COUNSEL, which build-legal.mjs refuses; ` +
+        `${label}: ${source} in LEGAL_DIR is a DRAFT FOR COUNSEL, which build-legal.mjs refuses; ` +
           "to rebuild the published page, set LEGAL_DIR to a folder holding the published texts (the app repo's docs/submission/legal.md §6 names their commits)",
       );
     }
@@ -570,6 +591,7 @@ try {
   const sources = (header) => {
     for (const { source, output } of PAGES) {
       writeFileSync(join(scratch, 'legal', source), `${header}# Heirloom ${source}\n\nThe text.\n`);
+      mkdirSync(dirname(join(scratch, output)), { recursive: true });
       writeFileSync(join(scratch, output), 'the page as published\n');
     }
   };
@@ -593,10 +615,11 @@ try {
 }
 
 // A draft built by mistake shows its own dated line. Neither page may carry it.
-for (const { output } of PAGES) {
-  const html = readFileSync(resolve(siteRoot, output), 'utf8');
-  if (/draft for counsel/i.test(html)) failures.push(`${output} says "draft for counsel": it was built from a draft`);
-  if (/Last updated:<\/strong> pending\b/.test(html)) failures.push(`${output} is dated "pending": it was built from a draft`);
+for (const { path } of PAGES) {
+  const label = path === '/privacy' ? 'privacy.html' : 'terms.html';
+  const html = legalHtml(path);
+  if (/draft for counsel/i.test(html)) failures.push(`${label} says "draft for counsel": it was built from a draft`);
+  if (/Last updated:<\/strong> pending\b/.test(html)) failures.push(`${label} is dated "pending": it was built from a draft`);
 }
 
 // The Terms sentence part 3 asserts is wrapped across two lines in the app

@@ -6,6 +6,7 @@
 node_modules
 scripts
 hallmark-sources
+design
 wrangler.jsonc
 package.json
 package-lock.json

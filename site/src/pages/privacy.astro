@@ -1,0 +1,12 @@
+---
+// /privacy: the published text in site/src/content/legal/privacy.md, rendered by
+// scripts/build-legal.mjs (see src/lib/legal.ts). Change the text in the app
+// repo's legal/ and run node scripts/build-legal.mjs, never here.
+import Base from '../layouts/Base.astro';
+import { legalPage } from '../lib/legal';
+import '../styles/guides.css';
+const p = await legalPage('privacy');
+---
+<Base title={p.title} description={`Heirloom’s ${p.heading}, from The Peninsular Company, LLC.`} path="/privacy">
+  <div class="wrap rp rp--legal" set:html={p.body} />
+</Base>

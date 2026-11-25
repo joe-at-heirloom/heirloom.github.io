@@ -1,5 +1,4 @@
 ---
-const year = new Date().getFullYear();
 ---
 <footer class="ftr">
   <div class="wrap ftr__in">
@@ -41,7 +40,9 @@ const year = new Date().getFullYear();
   </div>
   <div class="wrap ftr__base">
     <p class="ftr__note">Value estimates are informational only and are not professional appraisals. Many items have no market value, and a record is complete without one. Specialists, sale conversations, sold prices and Heirloom’s price estimates are offered in the United States only for now.</p>
-    <p class="label">© {year} <a href="https://thepeninsularcompany.com">The Peninsular Company, LLC</a>. All rights reserved.</p>
+    <!-- The company's name and year sit between pc: markers that the legal sync
+         in joe-at-heirloom/thepeninsularcompany.github.io keeps current. -->
+    <p class="label">© <Fragment set:html={'<!--pc:year-->2026<!--/pc:year-->'} /> <a href="https://thepeninsularcompany.com"><Fragment set:html={'<!--pc:name-->The Peninsular Company, LLC<!--/pc:name-->'} /></a>. All rights reserved.</p>
   </div>
 </footer>
 
