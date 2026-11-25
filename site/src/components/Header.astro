@@ -1,12 +1,23 @@
 ---
-// One header for every page. The site is two things: a reference you look
-// things up in, and an app you keep a record of yours in. The header says so:
-// two doors, each opening a panel with everything behind it, plus search,
-// sign in and the app. On a phone the same two halves fill a full-height sheet.
-import { reference, signatures, referenceGuides, app, APP_STORE, WEB_APP } from '../lib/nav';
+// One header for every page. The site is part app, part reference: the app
+// comes first, then the two halves of the reference (marks, signatures), then
+// guides. Each door opens a panel with everything behind it; search, sign in
+// and Get Heirloom sit at the right. On a phone the same order fills a sheet.
+import { app, marks, signatures, artists, guides, APP_STORE, WEB_APP } from '../lib/nav';
 const { path } = Astro.props as { path: string };
-const inRef = path.startsWith('/marks') || path.startsWith('/signatures') || path.startsWith('/silver-hallmarks');
-const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href));
+const on = {
+  app: path.startsWith('/app') || ['/home-inventory-app', '/antique-identifier-app'].some((h) => path.startsWith(h)),
+  marks: path.startsWith('/marks') && !path.includes('-signature') && !path.startsWith('/marks/chinese/painters'),
+  sigs: path.startsWith('/signatures') || path.includes('-signature') || path.startsWith('/marks/chinese/painters'),
+  guides: ['/guides', '/home-inventory-checklist', '/silver-hallmarks', '/family-heirlooms'].some((h) => path.startsWith(h)),
+};
+const doors = [
+  { id: 'p-app', label: 'The app', current: on.app },
+  { id: 'p-marks', label: 'Marks', current: on.marks },
+  { id: 'p-sigs', label: 'Signatures', current: on.sigs },
+  { id: 'p-guides', label: 'Guides', current: on.guides },
+];
+const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>';
 ---
 <header class="hdr" transition:persist>
   <div class="wrap hdr__in">
@@ -14,12 +25,11 @@ const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href)
       <img src="/logo.svg" alt="" width="128" height="23" />
     </a>
     <nav class="hdr__nav" aria-label="Main">
-      <button type="button" class="hdr__door" aria-expanded="false" aria-controls="p-ref" data-door="p-ref" aria-current={inRef ? 'page' : undefined}>
-        Reference <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>
-      </button>
-      <button type="button" class="hdr__door" aria-expanded="false" aria-controls="p-app" data-door="p-app" aria-current={inApp ? 'page' : undefined}>
-        The app <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>
-      </button>
+      {doors.map((d) => (
+        <button type="button" class="hdr__door" aria-expanded="false" aria-controls={d.id} data-door={d.id} aria-current={d.current ? 'page' : undefined}>
+          {d.label} <Fragment set:html={arrow} />
+        </button>
+      ))}
     </nav>
     <div class="hdr__end">
       <form class="hdr__search" action="/marks/" method="get" role="search">
@@ -39,37 +49,7 @@ const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href)
     </div>
   </div>
 
-  <!-- Reference panel -->
-  <div class="hp" id="p-ref" hidden>
-    <div class="wrap hp__in">
-      <div class="hp__lead">
-        <p class="label">Reference</p>
-        <p class="hp__t">Read the marks on what you own.</p>
-        <p class="hp__d">Hallmarks, makers’ marks, reign marks, date codes, serial numbers and signatures, each with its sources.</p>
-        <a class="hp__all" href="/marks/">Search the whole reference →</a>
-      </div>
-      <div class="hp__cols">
-        <div>
-          <p class="label">Marks and serial numbers</p>
-          <ul class="hp__grid">
-            {reference.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
-          </ul>
-        </div>
-        <div>
-          <p class="label">Signatures and seals</p>
-          <ul class="hp__list">
-            {signatures.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
-          </ul>
-          <p class="label hp__sub">Guides</p>
-          <ul class="hp__list hp__list--plain">
-            {referenceGuides.map((r) => <li><a href={r.href}>{r.label}</a></li>)}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- App panel -->
+  <!-- The app -->
   <div class="hp" id="p-app" hidden>
     <div class="wrap hp__in">
       <div class="hp__lead">
@@ -90,26 +70,85 @@ const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href)
     </div>
   </div>
 
+  <!-- Marks -->
+  <div class="hp" id="p-marks" hidden>
+    <div class="wrap hp__in">
+      <div class="hp__lead">
+        <p class="label">Marks</p>
+        <p class="hp__t">Read the marks on what you own.</p>
+        <p class="hp__d">Hallmarks, makers’ marks, reign marks, date codes and serial numbers, each with its sources.</p>
+        <a class="hp__all" href="/marks/">Search every mark →</a>
+      </div>
+      <ul class="hp__grid hp__grid--3">
+        {marks.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Signatures -->
+  <div class="hp" id="p-sigs" hidden>
+    <div class="wrap hp__in">
+      <div class="hp__lead">
+        <p class="label">Signatures</p>
+        <p class="hp__t">Who signed it, and when.</p>
+        <p class="hp__d">Dated signatures from museum collections, and the seals of Chinese painters and collectors.</p>
+        <a class="hp__all" href="/signatures">Search every signature →</a>
+      </div>
+      <div class="hp__cols">
+        <ul class="hp__list">
+          {signatures.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
+        </ul>
+        <div>
+          <p class="label">Artists</p>
+          <ul class="hp__names">
+            {artists.map((r) => <li><a href={r.href}>{r.label}</a></li>)}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Guides -->
+  <div class="hp" id="p-guides" hidden>
+    <div class="wrap hp__in">
+      <div class="hp__lead">
+        <p class="label">Guides</p>
+        <p class="hp__t">How to do it yourself.</p>
+        <p class="hp__d">Making a home inventory, reading hallmarks, and keeping the story with the things that have one.</p>
+      </div>
+      <ul class="hp__grid">
+        {guides.map((r) => <li><a href={r.href}><strong>{r.label}</strong>{r.note && <span>{r.note}</span>}</a></li>)}
+      </ul>
+    </div>
+  </div>
+
   <!-- Phone sheet -->
   <div class="hs" id="sheet" hidden>
     <div class="wrap hs__in">
-      <form class="hs__search" action="/marks/" method="get" role="search">
-        <label class="visually-hidden" for="sheet-q">Search the reference</label>
-        <input class="field" id="sheet-q" name="q" type="search" placeholder="A mark, a maker, a serial…" autocomplete="off" />
-      </form>
-      <section>
-        <p class="label">Reference</p>
-        <a class="hs__big" href="/marks/">Search the whole reference</a>
-        {[...reference, ...signatures].map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
-      </section>
       <section>
         <p class="label">The app</p>
         {app.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
+        <div class="hs__end">
+          <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
+          <a class="btn" href={WEB_APP}>Sign in on the web</a>
+        </div>
       </section>
-      <div class="hs__end">
-        <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
-        <a class="btn" href={WEB_APP}>Sign in on the web</a>
-      </div>
+      <section>
+        <p class="label">Marks</p>
+        <form class="hs__search" action="/marks/" method="get" role="search">
+          <label class="visually-hidden" for="sheet-q">Search the marks</label>
+          <input class="field" id="sheet-q" name="q" type="search" placeholder="A mark, a maker, a serial…" autocomplete="off" />
+        </form>
+        {marks.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
+      </section>
+      <section>
+        <p class="label">Signatures</p>
+        {signatures.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
+      </section>
+      <section>
+        <p class="label">Guides</p>
+        {guides.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong>{r.note && <span>{r.note}</span>}</a>)}
+      </section>
     </div>
   </div>
   <div class="hdr__scrim" hidden></div>
@@ -187,7 +226,7 @@ const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href)
   .logo { display: block; flex: none; }
   .logo img { height: 22px; width: auto; }
   .hdr__nav { display: flex; gap: 6px; }
-  .hdr__door { position: relative; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); font: 500 15px/1 var(--text); cursor: pointer; }
+  .hdr__door { position: relative; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); font: 500 15px/1 var(--text); cursor: pointer; }
   .hdr__door svg { width: 12px; height: 12px; stroke: currentColor; stroke-width: 1.6; fill: none; transition: transform 0.2s var(--ease); }
   .hdr__door:hover, .hdr__door[aria-expanded='true'] { color: var(--ink); background: var(--paper-2); }
   .hdr__door[aria-expanded='true'] svg { transform: rotate(180deg); }
@@ -223,7 +262,10 @@ const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href)
   .hp__grid strong, .hp__list strong { font-weight: 600; font-size: 15px; }
   .hp__grid span, .hp__list span { font-size: 13.5px; color: var(--ink-2); }
   .hp__grid a:hover strong, .hp__list a:hover strong, .hp__list--plain a:hover { color: var(--accent-ink); }
-  .hp__list--plain a { font-size: 15px; }
+  .hp__grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .hp__names { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+  .hp__names a { display: block; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-size: 15px; }
+  .hp__names a:hover { color: var(--accent-ink); }
   .hp__sub { margin-top: 22px; }
   .hp__shot { width: 180px; height: auto; border-radius: 20px; box-shadow: var(--shadow-lift); }
   .hdr__scrim { position: fixed; inset: 68px 0 0 0; background: rgb(31 33 36 / 0.18); z-index: 1; }
@@ -236,17 +278,19 @@ const inApp = path.startsWith('/app') || app.some((a) => path.startsWith(a.href)
   .hs__link { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
   .hs__link strong { font-weight: 600; font-size: 16.5px; }
   .hs__link span { font-size: 14px; color: var(--ink-2); }
-  .hs__end { display: grid; gap: 10px; }
+  .hs__end { display: grid; gap: 10px; margin-top: 14px; }
+  .hs__search { margin: 4px 0 6px; }
   .hs__end .btn { justify-content: center; min-height: 50px; }
   :global(html.menu-open) { overflow: hidden; }
 
-  @media (max-width: 1180px) { .hdr__search input { width: 170px; } }
-  @media (max-width: 1040px) { .hdr__search { display: none; } .hdr__in { gap: 20px; } }
-  @media (max-width: 860px) {
+  @media (max-width: 1280px) { .hdr__search input { width: 180px; } }
+  @media (max-width: 1180px) { .hdr__search { display: none; } }
+  @media (max-width: 1040px) { .hdr__in { gap: 18px; } .hdr__door { padding: 0 9px; } }
+  @media (max-width: 900px) {
     .hdr__in { height: 60px; gap: 12px; }
     .hdr__nav, .hdr__cta, .hdr__signin, .hp, .hdr__scrim { display: none !important; }
     .hdr__menu { display: inline-flex; }
     .logo img { height: 19px; }
   }
-  @media (min-width: 861px) { .hs { display: none !important; } }
+  @media (min-width: 901px) { .hs { display: none !important; } }
 </style>
