@@ -1,0 +1,80 @@
+---
+// /marks/chinese/suzuki-artists: the painters the Suzuki catalogue names who have
+// no page here yet, each linked to the University of Tokyo database's own list of
+// their catalogued works. Built from src/data/site/chinese/suzuki-artists.json
+// (hallmark-sources/chinese/suzuki: the catalogue rows no painter page matched).
+import Reference from '../../../layouts/Reference.astro';
+import { articleLd } from '../../../lib/site';
+import artists from '../../../data/site/chinese/suzuki-artists.json';
+
+type A = { name: string | null; pinyin: string; period: string | null; entries: number; search: string };
+const GROUPS: [string, string, RegExp][] = [
+  ['early', 'To the Five Dynasties', /^(wei|sui|tang|five dynasties)/],
+  ['song', 'Song', /^(n\.song|s\.song|song)/],
+  ['jin', 'Jin', /^jin/],
+  ['yuan', 'Yuan', /^yuan/],
+  ['ming', 'Ming', /^ming/],
+  ['qing', 'Qing', /^qing/],
+  ['modern', 'Republic and after', /^(republic|modern|contemporary)/],
+  ['japan', 'Painters of Japan', /japan/],
+  ['korea', 'Painters of Korea', /korea/],
+  ['ryukyu', 'Painters of Ryukyu', /ryukyu/],
+];
+const tidy = (p: string | null) => (p ?? '').split(/\)|\n/)[0].replace(/　/g, '').replace(/\s*\(\?\)\s*|\(\?\)/, '').trim().toLowerCase() + ((p ?? '').includes('(') && !(p ?? '').includes('(?') ? ')' : '');
+const groupOf = (a: A) => GROUPS.find(([, , re]) => re.test(tidy(a.period)))?.[0] ?? 'other';
+const list = artists as A[];
+const groups = [...GROUPS.map(([k, label]) => ({ k, label })), { k: 'other', label: 'Period not given' }]
+  .map((g) => ({ ...g, items: list.filter((a) => groupOf(a) === g.k) }))
+  .filter((g) => g.items.length);
+const entries = list.reduce((s, a) => s + a.entries, 0);
+const path = '/marks/chinese/suzuki-artists';
+const title = 'Painters in the Suzuki Catalogue Not Yet in the Reference | Heirloom';
+const description = `${list.length.toLocaleString('en-US')} painters the Suzuki catalogue of Chinese paintings names, with ${entries.toLocaleString('en-US')} catalogued works, who have no page here yet: each links to the University of Tokyo database’s list of their works.`;
+const han = [...new Set(list.map((a) => a.name ?? '').join(''))].filter((c) => /[㐀-鿿豈-﫿]/.test(c)).join('');
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Painters in the Suzuki catalogue not yet in the reference', description, '2026-11-25')]} {han}>
+  <header class="rhead">
+    <h1>More painters in the Suzuki catalogue</h1>
+    <p class="rhead__lede">The Suzuki catalogue records Chinese paintings in collections around the world. Most of its painters have a page here, with the works it lists under their name. These {list.length.toLocaleString('en-US')} do not yet: most have one or two works in it. Each name opens the University of Tokyo database’s list of the works catalogued under it.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{list.length.toLocaleString('en-US')}</strong> painters</li>
+      <li><strong class="num">{entries.toLocaleString('en-US')}</strong> catalogued works</li>
+    </ul>
+  </header>
+
+  <nav class="sz-jump" aria-label="Periods">
+    {groups.map((g) => <a href={`#${g.k}`}>{g.label} <span class="num">{g.items.length}</span></a>)}
+  </nav>
+
+  {groups.map((g) => (
+    <section class="sz-group" aria-labelledby={g.k}>
+      <h2 id={g.k}>{g.label} <span class="sz-count num">{g.items.length}</span></h2>
+      <ul class="sz-list">
+        {g.items.map((a) => (
+          <li><a href={a.search} rel="nofollow noopener">{a.name && <span class="han" lang="ja">{a.name}</span>}<span class="sz-py">{a.pinyin}</span><span class="sz-n num">{a.entries}</span></a></li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <section class="ahome__block read" aria-labelledby="about">
+    <h2 id="about">About this list</h2>
+    <p>The names are as the catalogue’s database gives them, in Japanese character forms where it has them. The database is the University of Tokyo’s <a href="https://cpdb.ioc.u-tokyo.ac.jp/picture" rel="noopener">中国絵画所在情報データベース</a>, after Suzuki Kei’s <span class="tr">Comprehensive Illustrated Catalog of Chinese Paintings</span> (first and second series). A listing records where a work is held under a painter’s name, not whether it is genuine.</p>
+    <p>A painter moves to a page of their own once their dates and names are found in two sources.</p>
+  </section>
+</Reference>
+
+<style>
+  .sz-jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 28px; }
+  .sz-jump a { font-size: 14px; padding: 6px 12px; border: 1px solid var(--rule); border-radius: 99px; text-decoration: none; color: var(--ink-2); background: var(--paper); }
+  .sz-jump a:hover { border-color: var(--ink-3); color: var(--ink); }
+  .sz-group { margin-top: 36px; }
+  .sz-group h2 { display: flex; align-items: baseline; gap: 10px; }
+  .sz-count { font: 400 13px/1 var(--mono); color: var(--ink-3); }
+  .sz-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 4px 16px; }
+  .sz-list a { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: baseline; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
+  .sz-list a:hover .sz-py { color: var(--accent-ink); }
+  .sz-list .han { font-size: 1.05rem; }
+  .sz-py { color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sz-n { font: 400 12px/1 var(--mono); color: var(--ink-3); }
+</style>
