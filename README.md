@@ -31,10 +31,21 @@ heirloomapp.io is a Cloudflare Worker (`heirloom-site`, `wrangler.jsonc`) servin
   rebuilt is shadowed: `marks/london-date-letters.html` and the other three are
   still generated here, but the live pages are Astro's, so change those in
   `site/src/pages/marks/[office]-date-letters.astro`.
-- **Deploy** from a clean checkout of `main`: `npm run deploy` (installs and builds
-  `site/`, then `wrangler deploy`). A push alone publishes nothing. A plain
-  `wrangler deploy` without the build fails (no `site/dist`) rather than
-  publishing something stale.
+- **Deploys are automatic.** A launchd job on Joe's Mac
+  (`com.heirloom.site-deploy`, `scripts/deploy/auto-deploy.sh`, installed by
+  `scripts/deploy/install-auto-deploy.sh`) checks every 15 minutes. When
+  `main` or the app data the rebuilt pages use has changed, it builds from a
+  kept checkout of `main` (`.claude/worktrees/_keep/site-deployer`) with the
+  app's tables synced from the app's `main`, runs the copy check, refuses a
+  build that lost more than a tenth of its pages, uploads it as a version
+  that takes no traffic, smoke-tests that version at its own address, and
+  only then sends heirloomapp.io to it. Anything that fails leaves the live
+  site as it was and puts up a notification; the log is
+  `~/Library/Logs/Heirloom/site-deploy.log`. It runs while the Mac is awake.
+  So: push to `main`, and it is live within about 15 minutes.
+- **Deploy by hand** from a clean checkout of `main`: `npm run deploy`. A
+  plain `wrangler deploy` without the build fails (no `site/dist`) rather
+  than publishing something stale.
 - **Review** a change first with `npm --prefix site run deploy:preview`
   (the `heirloom-site-next` Worker, marked noindex).
 - **Roll back** with `wrangler rollback` (Cloudflare keeps every version).
