@@ -16,9 +16,19 @@
    "source_name": "Art Institute of Chicago"
   },
   {
+   "text": "His studio names help date his work: Ichiyūsai (一幽斎) about 1830–31, Ichiryūsai (一立斎) about 1832–42, and Ryūsai (立斎) about 1842–58.",
+   "source": "https://www.viewingjapaneseprints.net/texts/ukiyoe/hiroshige-1st.html",
+   "source_name": "John Fiorillo, Viewing Japanese Prints"
+  },
+  {
    "text": "On the One Hundred Famous Views of Edo prints the artist's signature, 'Hiroshige ga', sits in a lower box, alongside the publisher's seal (Uoya Eikichi) and censor's seals giving a month and year.",
    "source": "https://cms-files.brooklynmuseum.org/a57978804667dce8367665de3e8e4cc85c48c1fe.pdf",
    "source_name": "Brooklyn Museum"
+  },
+  {
+   "text": "After Hiroshige died in 1858 his pupil Shigenobu took the name (Hiroshige II), and later Shigemasa signed as Hiroshige too (Hiroshige III, died 1894). Their prints are often taken for the master's: a print signed Hiroshige may be by either, and one with Tōkyō (東京) in its title was made after 1868.",
+   "source": "https://www.hiroshigeii.net",
+   "source_name": "Catalogue Raisonné of the Work of Utagawa Hiroshige II"
   }
  ],
  "items": [
@@ -56,7 +66,8 @@
    "museum": "Cleveland Museum of Art",
    "object_url": "https://clevelandart.org/art/1985.259",
    "image_url": "https://openaccess-cdn.clevelandart.org/1985.259/1985.259_full.tif",
-   "licence": "CC0"
+   "licence": "CC0",
+   "note": "Cleveland dates the painting c. 1832–58; Fiorillo dates the name Ryūsai alone to about 1842–58."
   },
   {
    "file": "/marks/img/sig/utagawa-hiroshige/1832-oriole-on-hall-crabapple.webp",
