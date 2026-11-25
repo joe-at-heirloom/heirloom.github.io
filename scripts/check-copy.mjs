@@ -286,12 +286,12 @@ for (const [sentence, allowed] of APPRAISAL_FIXTURES) {
   }
 }
 
-function checkClaims(label, text) {
+function checkClaims(label, text, ownText = text) {
   for (const { pattern, why } of [...APP_CLAIM_RULES, ...SITE_CLAIM_RULES]) {
     const hit = pattern.exec(text);
     if (hit) failures.push(`${label}: "${hit[0]}" — ${why}`);
   }
-  for (const sentence of sentences(text)) {
+  for (const sentence of sentences(ownText)) {
     if (/\bappraisals?\b/i.test(sentence) && !APPRAISAL_CONTEXT.test(sentence)) {
       failures.push(`${label}: "appraisal" outside a denial or an independent-professional context: ${sentence.trim()}`);
     }
@@ -406,10 +406,16 @@ const GUIDE_PAGES = [
 for (const file of GUIDE_PAGES) {
   const html = readFileSync(resolve(siteRoot, file), 'utf8');
   const text = visibleText(html);
-  checkClaims(file, text);
+  // Heirloom's English for a historical title, seal or remark (class "tr", the Chinese
+  // painters' pages) translates someone else's words: 大寶箴 is the "Admonition of the
+  // Great Treasure" and 相馬 is "Appraising horses". The voice rules ("say item", the
+  // appraisal sentence) are for Heirloom's own words, so they skip those spans; every
+  // claim rule still reads them.
+  const ownText = visibleText(html.replace(/<span\b[^>]*\bclass="[^"]*\btr\b[^"]*"[^>]*>[^<]*<\/span>/g, ' '));
+  checkClaims(file, text, ownText);
   for (const { pattern, why } of HOMEPAGE_WORD_RULES) {
     const g = new RegExp(pattern.source, pattern.flags.includes('g') ? pattern.flags : `${pattern.flags}g`);
-    for (const m of text.matchAll(g)) failures.push(`${file} says "${m[0]}" — ${why}`);
+    for (const m of ownText.matchAll(g)) failures.push(`${file} says "${m[0]}" — ${why}`);
   }
   for (const { word, in: title } of titleCaseHits(html)) failures.push(`${file} title case: "${word}" in "${title}" — sentence case (docs/VOICE.md)`);
   if (!/\bThe iPhone app is in the US App Store for now\./.test(text)) failures.push(`${file} is missing the US-only line (D57)`);

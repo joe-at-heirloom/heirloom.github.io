@@ -115,7 +115,7 @@ def person_page(p):
     rows = "".join(
         f'<tr><td class="num">{i["n"]}</td><td class="seal-cell">{seal_img(i)}</td><td><span class="seal-read" lang="zh-Hant">{e(i["reading"]) or "<span class=muted>unread</span>"}</span>'
         + (f' <span class="seal-py">{e(i["pinyin"])}</span>' if i.get("pinyin") else "")
-        + (f'<span class="seal-gloss">{e(i["gloss"])}</span>' if i.get("gloss") and i.get("kind") not in ("name", "signature") else "")
+        + (f'<span class="seal-gloss tr">{e(i["gloss"])}</span>' if i.get("gloss") and i.get("kind") not in ("name", "signature") else "")
         + (' <span class="tag">collector’s seal</span>' if i["collector_seal"] else "") + (' <span class="tag tag--soft">from a book</span>' if i["rephotographed"] else "")
         + f'</td><td lang="zh-Hant">{e(i["source"])}</td><td class="num">{e(i["date_text"])}</td></tr>'
         for i in sorted(p["items"], key=lambda i: i["n"]))     # the book prints captions in two columns; show them in number order
@@ -127,10 +127,10 @@ def person_page(p):
         for r in p["survey"]:
             zh, en = VERDICT.get(r["verdict"], ("", ""))
             ops = "".join(f'<li><strong>{e(EXPERT_EN.get(o["expert"], ""))} <span lang="zh-Hant">{e(o["expert"])}</span></strong>: '
-                          + (f'“{e(o["text_en"])}” <span lang="zh-Hant" class="muted">{e(o["text"])}</span>' if o.get("text_en") else f'<span lang="zh-Hant">{e(o["text"])}</span>')
+                          + (f'“<span class="tr">{e(o["text_en"])}</span>” <span lang="zh-Hant" class="muted">{e(o["text"])}</span>' if o.get("text_en") else f'<span lang="zh-Hant">{e(o["text"])}</span>')
                           + (f' <span class="tr-doubt">Translator’s note: {e(o["doubt"])}</span>' if o.get("doubt") else "") + '</li>' for o in r["opinions"])
             items.append(f'<li class="survey-rec"><div class="survey-rec__head"><span class="survey-rec__title">'
-                         + (f'{e(r["title_en"])} <span lang="zh-Hant" class="muted">{e(r["title"])}</span>' if r.get("title_en") else f'<span lang="zh-Hant">{e(r["title"])}</span>') + '</span>'
+                         + (f'<span class="tr">{e(r["title_en"])}</span> <span lang="zh-Hant" class="muted">{e(r["title"])}</span>' if r.get("title_en") else f'<span lang="zh-Hant">{e(r["title"])}</span>') + '</span>'
                          f'<span class="verdict verdict--{r["verdict"]}"><span lang="zh-Hant">{zh}</span> {en}</span></div>'
                          f'<p class="survey-rec__meta">{" · ".join(x for x in [(e(r["museum_en"]) + f' <span lang="zh-Hant" class="muted">{e(r["museum"])}</span>') if r.get("museum_en") else e(r["museum"] or ""), e(r.get("medium_en") or r["medium"] or ""), ("inscribed " + f'<span lang="zh-Hant">{e(r["inscription"])}</span>') if r["inscription"] else ""] if x)}</p>'
                          + (f'<p class="survey-rec__note" lang="zh-Hant">按：{e(r["note"])}</p>' if r["note"] else "")
@@ -148,7 +148,7 @@ def person_page(p):
             return f'<a href="{e(link)}" rel="nofollow">{t}</a>' if link else t
         rows_s = "".join(
             f'<tr><td><span lang="zh-Hant">{e(x["edition"])}</span> {SHIQU_EN.get(x["year"], "")}, {x["year"]}</td>'
-            f'<td>{(e(x["title_en"]) + " ") if x.get("title_en") else ""}<span lang="zh-Hant"{" class=muted" if x.get("title_en") else ""}>{e(x["title"])}</span> <span class="muted" lang="zh-Hant">{e((x["count"] or "") + (x["format"] or ""))}</span></td>'
+            f'<td>{(f'<span class="tr">{e(x["title_en"])}</span> ') if x.get("title_en") else ""}<span lang="zh-Hant"{" class=muted" if x.get("title_en") else ""}>{e(x["title"])}</span> <span class="muted" lang="zh-Hant">{e((x["count"] or "") + (x["format"] or ""))}</span></td>'
             f'<td>{("<span lang=zh-Hant>" + e(x["hall"]) + "</span> " + e(HALL_EN.get(re.sub(r"[一二三四五六七八九十]+$", "", x["hall"]).replace("宫", "宮"), ""))) if x["hall"] else "<span class=muted>not stated</span>"}</td>'
             f'<td>{("<span lang=zh-Hant>" + e(x["grade"]) + "</span> " + ("upper" if x["grade"] == "上等" else "lower")) if x.get("grade") else ""}</td>'
             f'<td>{cite(x["cite"])}</td></tr>'
