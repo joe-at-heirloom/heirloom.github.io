@@ -51,7 +51,8 @@ export const inScope = (family: string, scope: Scope) => SIGNATURE_FAMILIES.has(
 
 export const familyLabel = (f: string) => FAMILY[f]?.label ?? f.replace(/-/g, ' ');
 
-export const urlOf = (r: Rec) => `${r.page_path}${r.anchor ? `#${r.anchor}` : ''}`;
+// A record whose page the site's templates make before the collection knows of it carries that address as intended_page.
+export const urlOf = (r: Rec) => `${r.attributes?.intended_page ?? r.page_path}${r.anchor ? `#${r.anchor}` : ''}`;
 const clip = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s);
 
 /** One search row: id, name, kind, family, years, thumbnail, short line, address, search words. */

@@ -1,0 +1,217 @@
+---
+// /marks/chinese/painters/<slug>: one painter, calligrapher or collector.
+// The address, title, description and sections are the generated page's
+// (scripts/pages/p_chinese_people.py), so links the Advisor stores keep
+// working and the page keeps its standing in search.
+import Base from '../../../../layouts/Base.astro';
+import Crumbs from '../../../../components/Crumbs.astro';
+import SectionNav from '../../../../components/SectionNav.astro';
+import AppBox from '../../../../components/AppBox.astro';
+import {
+  PEOPLE, NAV, IDX, SEAL_BOOK, SURVEY, SEAL_CREDIT, VERDICT, EXPERT_EN, SHIQU_SERIES,
+  dates, role, skills, wikidataLine, hallEn, pdfPage, surveyPages, hanOf, url, type Person,
+} from '../../../../lib/chinese';
+import { SITE, articleLd, crumbsLd } from '../../../../lib/site';
+import { media } from '../../../../lib/media';
+import '../../../../styles/chinese.css';
+
+export function getStaticPaths() {
+  return PEOPLE.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Person };
+const path = url(p);
+const d = dates(p);
+// A person from Wikidata (checked against Chinese Wikipedia) has names and years but no seals.
+const wdp = p.set === 'wikidata' ? p.dict! : null;
+const title = wdp
+  ? `${p.pinyin} ${p.name}: Chinese ${role(p)}${d ? ` (${d})` : ''} | Heirloom`
+  : `${p.pinyin} ${p.name}: Seals and Signatures${d ? ` (${d})` : ''} | Heirloom`;
+const description = wdp
+  ? `${p.pinyin} (${p.name}${d ? ', ' + d : ''}), Chinese ${role(p)}${p.dynasty ? ` of the ${p.dynasty} dynasty` : ''}: courtesy and art names, birthplace and dates, from Wikidata checked against Chinese Wikipedia, with sources.`
+  : `${p.pinyin} (${p.name}${d ? ', ' + d : ''}), Chinese ${role(p)}: art names, native place, ${p.items.length} recorded seals and signatures with their readings and the works they come from, with sources.`;
+const items = [...p.items].sort((a, b) => a.n - b.n);
+const wd = wikidataLine(p);
+const shiqu = [...(p.shiqu ?? [])].sort((a, b) => a.year - b.year || a.title.localeCompare(b.title));
+const anyImg = items.some((i) => i.img);
+const han = hanOf(JSON.stringify(p), '中國書畫家印鑑款識勞繼雄古代鑑定實錄真迹僞資料按石渠寶笈祕殿珠林上等次等');
+const graph = [
+  {
+    '@type': 'Person', '@id': SITE + path + '#person', name: p.pinyin, alternateName: [p.name, ...p.aliases].slice(0, 12),
+    ...(p.born ? { birthDate: String(p.born) } : {}), ...(p.died ? { deathDate: String(p.died) } : {}),
+    ...((p.wikidata?.status === 'confirmed' || wdp) && p.wikidata?.qid ? { sameAs: `https://www.wikidata.org/wiki/${p.wikidata.qid}` } : {}),
+  },
+  articleLd(path, `${p.pinyin}: seals and signatures`, description, '2026-11-25'),
+  crumbsLd(path, p.pinyin, [IDX, 'Painters and collectors']),
+];
+const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${c.folio ?? ''}` : `contents vol. ${c.volume}, p. ${c.page}`);
+---
+<Base {title} {description} {path} jsonld={graph} {han}>
+  <div class="wrap cn">
+    <Crumbs name={p.pinyin} mid={[IDX, 'Painters and collectors']} />
+    <SectionNav {path} label="Chinese marks" items={NAV} />
+
+    <header class="cn-person">
+      <div class="cn-person__seal han" aria-hidden="true">{p.name.slice(0, 4)}</div>
+      <div>
+        <h1><span class="proper-name">{p.pinyin}</span> <span class="han">{p.name}</span></h1>
+        <dl class="cn-facts">
+          <dt>Dates</dt>
+          <dd>{d || (p.dates_text ? '' : 'Not recorded')} {p.dates_text && <span class={`han${d ? ' faint' : ''}`}>{p.dates_text}</span>}</dd>
+          {p.aliases.length > 0 && (
+            <>
+              <dt>Other names</dt>
+              <dd class="cn-aliases">
+                {p.aliases.map((a) => {
+                  const g = p.aliases_en?.[a] ?? {};
+                  return (
+                    <span class="cn-alias"><span class="han">{a}</span>{g.pinyin && <em> {g.pinyin}</em>}{g.gloss && <span class="tr"> ({g.gloss})</span>}</span>
+                  );
+                })}
+              </dd>
+            </>
+          )}
+          {wdp && (wdp.bornAll.length > 1 || wdp.diedAll.length > 1) && (<><dt>Other years</dt><dd>Wikidata gives more than one year:{wdp.bornAll.length > 1 && ` born ${wdp.bornAll.join(', ')}`}{wdp.bornAll.length > 1 && wdp.diedAll.length > 1 && ';'}{wdp.diedAll.length > 1 && ` died ${wdp.diedAll.join(', ')}`}.</dd></>)}
+          {wdp && wdp.courtesy.length > 0 && (<><dt>Courtesy names</dt><dd class="cn-aliases">{wdp.courtesy.map((n) => <span class="cn-alias"><span class="han">{n.name}</span>{!n.two_sources && <span class="cn-tag cn-tag--soft">one source</span>}{n.wikipedia_says && <span class="cn-tag">Chinese Wikipedia: {n.wikipedia_says}</span>}</span>)}</dd></>)}
+          {wdp && wdp.artNames.length > 0 && (<><dt>Art names</dt><dd class="cn-aliases">{wdp.artNames.map((n) => <span class="cn-alias"><span class="han">{n.name}</span>{!n.two_sources && <span class="cn-tag cn-tag--soft">one source</span>}{n.wikipedia_says && <span class="cn-tag">Chinese Wikipedia: {n.wikipedia_says}</span>}</span>)}</dd></>)}
+          {wdp && wdp.wikipediaOnly.courtesy.length + wdp.wikipediaOnly.art_names.length > 0 && (<><dt>Only in Chinese Wikipedia</dt><dd class="cn-aliases">{[...wdp.wikipediaOnly.courtesy, ...wdp.wikipediaOnly.art_names].map((n) => <span class="cn-alias han">{n}</span>)}</dd></>)}
+          {wdp && (wdp.birthplace || p.place_en) && (<><dt>Born in</dt><dd>{wdp.birthplace && <span class="han">{wdp.birthplace}</span>} {p.place_en}</dd></>)}
+          {wdp && p.dynasty && (<><dt>Dynasty</dt><dd>{p.dynasty}</dd></>)}
+          {p.place_zh && (<><dt>Native place</dt><dd><span class="han">{p.place_zh}</span> {p.place_en}</dd></>)}
+          {p.ethnicity && (<><dt>Ethnicity</dt><dd class="han">{p.ethnicity}</dd></>)}
+          {p.skills && (<><dt>Known for</dt><dd>{skills(p.skills).map((s, i) => <>{i > 0 && ', '}<span class="han">{s.zh}</span>{s.en && ` ${s.en}`}</>)}</dd></>)}
+          {p.writings && (<><dt>Writings</dt><dd>{p.writings_en && <span class="tr">{p.writings_en} </span>}<span class={`han${p.writings_en ? ' faint' : ''}`}>{p.writings}</span></dd></>)}
+          <dt>Role</dt><dd>{role(p)}</dd>
+        </dl>
+      </div>
+    </header>
+
+    <p class="cn-note">
+      {wdp ? (wdp.single ? 'Wikidata and Chinese Wikipedia do not both give these dates, so they rest on one source.' : 'Wikidata and Chinese Wikipedia give the same dates.') : wd.qid ? <>Checked against <a href={`https://www.wikidata.org/wiki/${wd.qid}`} rel="nofollow">Wikidata {wd.qid}</a>{p.wikidata?.status === 'no book dates' ? '. ' : ': '}{wd.text}</> : wd.text}
+    </p>
+
+    {wdp ? (
+      <section class="cn-block" aria-labelledby="seals">
+        <h2 id="seals">Seals and signatures</h2>
+        <p class="read">No seals or signatures are recorded here for {p.pinyin}. This entry comes from Wikidata, checked against Chinese Wikipedia, which give names and years but not seals.</p>
+      </section>
+    ) : (
+      <section class="cn-block" aria-labelledby="seals">
+        <h2 id="seals">Seals and signatures</h2>
+        <p class="read">The {items.length} seals and signatures the Shanghai Museum’s book records for {p.pinyin}, numbered as in the book (entry {p.book.no}, from p. {p.book.page}), each with its reading, the work it is on, and that work’s date where known. Seals come first and signatures after. A seal a person stamped on someone else’s work, as an owner, is marked as a collector’s seal.</p>
+        {items.length ? (
+          <div class="cn-tablewrap">
+            <table class="cn-table cn-seals">
+              <thead><tr><th>No.</th><th>Image</th><th>Reads</th><th>On the work</th><th>Date</th></tr></thead>
+              <tbody>
+                {items.map((i) => {
+                  const where = pdfPage(i.img_page);
+                  const credit = `${SEAL_CREDIT}, ${where ? where + ', ' : ''}entry ${p.book.no}, seal ${i.n}`;
+                  return (
+                    <tr>
+                      <td class="num">{i.n}</td>
+                      <td class="cn-seals__img">
+                        {i.img ? <img src={media(i.img)} loading="lazy" decoding="async" alt={`Seal or signature ${i.n} of ${p.pinyin}${i.reading ? ', reading ' + i.reading : ''}`} title={credit} /> : <span class="faint">no image</span>}
+                      </td>
+                      <td>
+                        <span class="han cn-read">{i.reading || <span class="faint">unread</span>}</span>
+                        {i.pinyin && <span class="cn-py"> {i.pinyin}</span>}
+                        {i.gloss && i.kind !== 'name' && i.kind !== 'signature' && <span class="cn-gloss tr">{i.gloss}</span>}
+                        {i.collector_seal && <span class="cn-tag">collector’s seal</span>}
+                        {i.rephotographed && <span class="cn-tag cn-tag--soft">from a book</span>}
+                      </td>
+                      <td>{i.source_en ? <><span class="tr">{i.source_en}</span> <span class="han faint">{i.source}</span></> : <span class="han">{i.source}</span>}</td>
+                      <td class="num">{i.date_text}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        ) : <p>No seals or signatures could be read from this entry yet.</p>}
+        <p class="cn-note">The readings were transcribed from the book and checked against its index; a character the book could not read is shown as it prints it. A seal or signature names the person it claims to; it does not make a work theirs.</p>
+      </section>
+    )}
+
+    {p.survey.length > 0 && (
+      <section class="cn-block" aria-labelledby="survey">
+        <h2 id="survey">In the national survey, 1983 to 1990</h2>
+        <p class="read">From 1983 to 1990 a group of China’s leading connoisseurs examined the painting and calligraphy in the country’s public collections; their secretary, Lao Jixiong, recorded each work and what was said about it. These are the works by {p.pinyin} in Lao’s record, with the collection that held each, the group’s verdict and the remarks of named members. The verdicts are theirs; Heirloom repeats them and does not judge any item. Titles and remarks are translated by Heirloom, with the original Chinese beside each; where the source text is unclear, a translator’s note says so.</p>
+        <ul class="cn-survey">
+          {p.survey.map((r) => {
+            const [vz, ve] = VERDICT[r.verdict] ?? ['', ''];
+            return (
+              <li class="cn-rec">
+                <div class="cn-rec__head">
+                  <span class="cn-rec__title">{r.title_en ? <><span class="tr">{r.title_en}</span> <span class="han faint">{r.title}</span></> : <span class="han">{r.title}</span>}</span>
+                  <span class={`cn-verdict cn-verdict--${r.verdict}`}><span class="han">{vz}</span> {ve}</span>
+                </div>
+                <p class="cn-rec__meta">
+                  {[
+                    r.museum_en ? <>{r.museum_en} <span class="han faint">{r.museum}</span></> : r.museum,
+                    r.medium_en || r.medium,
+                    r.inscription ? <>inscribed {r.inscription_en && <span class="tr">{r.inscription_en} </span>}<span class={`han${r.inscription_en ? ' faint' : ''}`}>{r.inscription}</span></> : null,
+                  ].filter(Boolean).map((x, i) => <>{i > 0 && ' · '}{x}</>)}
+                </p>
+                {r.note_en ? (
+                  <p class="cn-rec__note">Lao’s note: <span class="tr">{r.note_en}</span> <span class="han faint">按：{r.note}</span>{r.note_doubt && <span class="cn-doubt"> Translator’s note: {r.note_doubt}</span>}</p>
+                ) : r.note ? <p class="cn-rec__note han">按：{r.note}</p> : null}
+                {r.opinions.length > 0 && (
+                  <ul class="cn-rec__ops">
+                    {r.opinions.map((o) => (
+                      <li>
+                        <strong>{EXPERT_EN[o.expert] ?? ''} <span class="han">{o.expert}</span></strong>:{' '}
+                        {o.text_en ? <>“<span class="tr">{o.text_en}</span>” <span class="han faint">{o.text}</span></> : <span class="han">{o.text}</span>}
+                        {o.doubt && <span class="cn-doubt"> Translator’s note: {o.doubt}</span>}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+
+    {shiqu.length > 0 && (
+      <section class="cn-block" aria-labelledby="imperial">
+        <h2 id="imperial">In the Qing imperial catalogs</h2>
+        <p class="read">The Qianlong emperor had his court catalog the painting and calligraphy in the palaces: <span class="han">石渠寶笈</span> (secular works) and <span class="han">祕殿珠林</span> (Buddhist and Daoist works), in 1744–45, with further series in 1793 and 1816. These {shiqu.length} entries are recorded under {p.pinyin}’s name, with the hall where each was kept and, in the first series, the court’s grade. A listing means the emperor owned an item with that title; it does not show that any particular scroll is that item.</p>
+        <div class="cn-tablewrap">
+          <table class="cn-table">
+            <thead><tr><th>Catalog</th><th>Title</th><th>Kept in</th><th>Grade</th><th>Source</th></tr></thead>
+            <tbody>
+              {shiqu.map((x) => (
+                <tr>
+                  <td><span class="han">{x.edition}</span> {SHIQU_SERIES[x.year] ?? ''}, {x.year}</td>
+                  <td>{x.title_en && <span class="tr">{x.title_en} </span>}<span class={`han${x.title_en ? ' faint' : ''}`}>{x.title}</span> <span class="han faint">{(x.count ?? '') + (x.format ?? '')}</span></td>
+                  <td>{x.hall ? <><span class="han">{x.hall}</span> {hallEn(x.hall)}</> : <span class="faint">not stated</span>}</td>
+                  <td>{x.grade ? <><span class="han">{x.grade}</span> {x.grade === '上等' ? 'upper' : 'lower'}</> : ''}</td>
+                  <td>{x.cite.archive_org ? <a href={x.cite.archive_org} rel="nofollow">{cite(x.cite)}</a> : cite(x.cite)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    <AppBox text="Photograph the seals and the signature. The Advisor reads them and names the people they claim, with the record each comes from; it never says whether a work is genuine." />
+
+    <section class="cn-block" aria-labelledby="sources">
+      <h2 id="sources">Sources</h2>
+      <!--copy-check:skip-->
+      <ol class="cn-sources">
+        {wdp && p.wikidata?.qid && <li>Wikidata, <a href={`https://www.wikidata.org/wiki/${p.wikidata.qid}`} rel="nofollow">{p.wikidata.qid}</a>.</li>}
+        {wdp && wdp.zhwiki && <li>Chinese Wikipedia, <a href={`https://zh.wikipedia.org/wiki/${encodeURIComponent(wdp.zhwiki)}`} rel="nofollow"><span class="han">{wdp.zhwiki}</span></a>: names and years only; no text is copied.</li>}
+        {wdp && wdp.enwiki && <li>English Wikipedia, <a href={wdp.enwiki} rel="nofollow">{p.pinyin}</a>.</li>}
+        {!wdp && <li>{SEAL_BOOK}, entry {p.book.no}, p. {p.book.page}.</li>}
+        {p.survey.length > 0 && <li>{SURVEY}, {surveyPages(p.survey)} (PDF pages).</li>}
+        {anyImg && <li>Seal and signature images: facsimiles from the book above, each credited with its volume, page and seal number; reproduced as reference by Heirloom, which holds no license from the publisher.</li>}
+        {shiqu.length > 0 && <li>Qing imperial catalogs: <span class="han">石渠寶笈</span> and <span class="han">祕殿珠林</span>, first series (1744–45) from the Siku quanshu text (Kanripo), second (1793) and third (1816) series from the contents volumes of the Peking University manuscript copies (Internet Archive); each entry above gives its place in the source.</li>}
+        {!wdp && p.wikidata?.qid && <li>Wikidata, <a href={`https://www.wikidata.org/wiki/${p.wikidata.qid}`} rel="nofollow">{p.wikidata.qid}</a>.</li>}
+      </ol>
+      <!--/copy-check:skip-->
+    </section>
+  </div>
+</Base>

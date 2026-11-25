@@ -1,0 +1,60 @@
+---
+// /marks/chinese/painters/: every painter, calligrapher and collector as a plain list of links,
+// by period. Searching them (names, art names, seal readings) is the reference search's job
+// (/signatures, src/islands/Portal.tsx), so this page hands off to it instead of a finder of its own.
+// Title, description and wording are the generated page's (p_chinese_people.py index_page).
+import Base from '../../../../layouts/Base.astro';
+import Crumbs from '../../../../components/Crumbs.astro';
+import SectionNav from '../../../../components/SectionNav.astro';
+import AppBox from '../../../../components/AppBox.astro';
+import { PEOPLE, NAV, IDX, HOME, DYN_ORDER, dates, url, hanOf } from '../../../../lib/chinese';
+import { SITE, crumbsLd } from '../../../../lib/site';
+import '../../../../styles/chinese.css';
+
+const path = IDX;
+const n = PEOPLE.length;
+const nItems = PEOPLE.reduce((s, p) => s + p.items.length, 0);
+const title = 'Chinese Painters and Collectors: Seals and Signatures | Heirloom';
+const description = `${n} Chinese painters, calligraphers and collectors from the Tang to the 20th century, with their art names, dates, native places and ${nItems.toLocaleString('en-US')} recorded seals and signatures, with sources.`;
+const rows = [...PEOPLE]
+  .sort((a, b) => a.pinyin.toLowerCase().localeCompare(b.pinyin.toLowerCase()) || a.name.localeCompare(b.name))
+  .map((p) => ({ name: p.name, pinyin: p.pinyin, aliases: p.aliases.slice(0, 8), url: url(p), dates: dates(p), dynasty: p.dynasty, collector: p.collector, seals: p.items.length }));
+const periods = DYN_ORDER.filter((d) => rows.some((r) => r.dynasty === d)).map((d) => [d, rows.filter((r) => r.dynasty === d)] as const);
+const rest = rows.filter((r) => !DYN_ORDER.includes(r.dynasty));
+const han = hanOf(...rows.map((r) => r.name), '董其昌香光居士中國書畫家印鑑款識');
+const graph = [
+  { '@type': 'CollectionPage', '@id': SITE + path, url: SITE + path, name: title, description, isPartOf: { '@id': SITE + '/#website' } },
+  crumbsLd(path, 'Painters and collectors', [HOME, 'Chinese marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph} {han}>
+  <div class="wrap cn">
+    <Crumbs name="Painters and collectors" mid={[HOME, 'Chinese marks']} />
+    <SectionNav {path} label="Chinese marks" items={NAV} />
+    <header>
+      <h1>Painters, calligraphers and collectors</h1>
+      <p class="lede">{n.toLocaleString('en-US')} painters, calligraphers and collectors, from the Tang to the 20th century, with {nItems.toLocaleString('en-US')} of their seals and signatures read and tied to the works they come from. Find a person by pinyin, by their Chinese name, or by any of their art names.</p>
+    </header>
+
+    <p class="cn-search"><a class="btn btn--primary" href="/signatures?f=chinese-people">Search names, art names and seals</a> <span class="label">Searches every name and art name, and the reading of every seal.</span></p>
+
+    {[...periods, ...(rest.length ? [['Other', rest] as const] : [])].map(([d, rs]) => (
+      <section class="cn-block cn-period" aria-labelledby={`p-${d}`}>
+        <h2 id={`p-${d}`}>{d} <span class="label">{rs.length}</span></h2>
+        <ul class="cn-people">
+          {rs.map((r) => (
+            <li><a href={r.url}><span class="han">{r.name}</span><span class="cn-people__name">{r.pinyin}</span><span class="cn-people__meta">{[r.dates, r.collector ? 'collector' : '', `${r.seals} seals`].filter(Boolean).join(' · ')}</span></a></li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <section class="cn-block read" aria-labelledby="about">
+      <h2 id="about">Where this comes from</h2>
+      <p>The people, their names and their seals come from the Shanghai Museum’s <span class="han">《中國書畫家印鑑款識》</span> (1987), the standard Chinese reference, which photographed most of its seals and signatures directly from the original works. Dates are checked against Wikidata, and where the two differ each page says so. Works examined in China’s national survey of 1983 to 1990, with the specialists’ verdicts and remarks, come from Lao Jixiong’s record of it.</p>
+      <p class="cn-note">A seal or a signature names the person it claims to. Seals and signatures were copied as readily as reign marks, and Heirloom never says whether a work is genuine.</p>
+    </section>
+
+    <AppBox text="Photograph the seals and the signature. The Advisor reads them and names the people they claim, with the record each comes from; it never says whether a work is genuine." />
+  </div>
+</Base>

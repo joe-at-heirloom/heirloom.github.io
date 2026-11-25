@@ -1,0 +1,136 @@
+/* The Chinese reference family (marks/chinese/…, the hall and reign pages).
+   Tokens only (global.css): no colors or font families of its own. Labels in
+   var(--mono) at 13px, sentence case, never uppercase (Joe's rule). */
+
+.cn { padding-bottom: 40px; }
+.cn h1 { margin: 4px 0 18px; }
+.cn h1 .han { font-weight: 400; letter-spacing: 0; }
+.cn-block { margin-top: 56px; }
+.cn-block h2 { margin-bottom: 14px; }
+.cn-note { color: var(--ink-2); font-size: 15px; max-width: 72ch; }
+.cn .tr { color: var(--ink); }
+.cn-doubt { display: block; margin-top: 2px; font-size: 14px; color: var(--ink-3); font-style: italic; }
+
+/* A person: their name stamped as a seal, and the facts beside it. */
+.cn-person { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(18px, 3vw, 36px); align-items: start; margin-top: 8px; }
+.cn-person__seal {
+  width: 92px; height: 92px; display: grid; place-items: center; padding: 8px; border-radius: var(--r);
+  background: var(--ink); color: var(--paper); font-size: 30px; line-height: 1.05; text-align: center; writing-mode: vertical-rl;
+}
+.cn-facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 8px 20px; margin: 0; }
+.cn-facts dt { font: 400 13px/1.9 var(--mono); color: var(--ink-3); }
+.cn-facts dd { margin: 0; color: var(--ink); }
+.cn-aliases { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.cn-alias em { color: var(--ink-2); }
+.cn-alias .tr { color: var(--ink-2); }
+@media (max-width: 640px) {
+  .cn-person { grid-template-columns: 1fr; }
+  .cn-person__seal { width: 72px; height: 72px; font-size: 24px; }
+  .cn-facts { grid-template-columns: 1fr; gap: 2px; }
+  .cn-facts dd { margin-bottom: 10px; }
+}
+
+/* Tables: seals, catalog entries. */
+.cn-tablewrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); }
+.cn-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.cn-table th { text-align: left; font: 400 13px/1.4 var(--mono); color: var(--ink-3); padding: 12px 14px; border-bottom: 1px solid var(--rule); background: var(--paper-2); white-space: nowrap; }
+.cn-table td { padding: 12px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.cn-table tr:last-child td { border-bottom: 0; }
+.cn-table .num { white-space: nowrap; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.cn-seals__img { width: 104px; }
+.cn-seals__img img { max-width: 92px; max-height: 92px; width: auto; height: auto; padding: 4px; border-radius: var(--r-sm); background: var(--plate); }
+.cn-read { font-size: 1.15rem; }
+.cn-py { font-style: italic; color: var(--ink-2); }
+.cn-gloss { display: block; font-size: 14px; color: var(--ink-2); }
+.cn-tag { display: inline-block; margin: 4px 6px 0 0; padding: 1px 8px; border-radius: 99px; font: 400 13px/1.6 var(--mono); background: var(--plate); color: var(--ink-2); }
+.cn-tag--soft { background: var(--paper-2); color: var(--ink-2); }
+
+/* Survey records. */
+.cn-survey { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.cn-rec { padding: 16px 18px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); }
+.cn-rec__head { display: flex; gap: 12px; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+.cn-rec__title { font-weight: 600; }
+.cn-rec__meta { margin: 6px 0 0; font-size: 15px; color: var(--ink-2); }
+.cn-rec__note { margin: 8px 0 0; font-size: 15px; color: var(--ink-2); }
+.cn-rec__ops { margin: 10px 0 0; padding-left: 18px; font-size: 15px; }
+.cn-rec__ops li { margin-bottom: 6px; }
+.cn-verdict { flex: none; font: 400 13px/1.6 var(--mono); padding: 2px 10px; border-radius: 99px; background: var(--paper-2); color: var(--ink-2); }
+.cn-verdict--forgery { background: var(--ink); color: var(--paper); }
+
+.cn-sources { padding-left: 20px; font-size: 15px; color: var(--ink-2); }
+.cn-sources li { margin-bottom: 8px; }
+
+/* The painters index. */
+.cn-people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 8px; }
+.cn-people a { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 12px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--r); text-decoration: none; background: var(--paper); }
+.cn-people a:hover { border-color: var(--ink-3); color: inherit; }
+.cn-people .han { grid-row: span 2; font-size: 1.4rem; line-height: 1.2; }
+.cn-people__name { font-weight: 600; }
+.cn-people__meta { font: 400 13px/1.4 var(--mono); color: var(--ink-3); }
+
+/* On a phone each seal is a card: number and image, then the reading, the work and its date. */
+@media (max-width: 640px) {
+  .cn-seals thead { display: none; }
+  .cn-seals, .cn-seals tbody { display: block; }
+  .cn-seals tr { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; padding: 14px; border-bottom: 1px solid var(--rule); }
+  .cn-seals tr:last-child { border-bottom: 0; }
+  .cn-seals td { display: block; padding: 0; border: 0; }
+  .cn-seals td:nth-child(1) { grid-column: 1; grid-row: 1; font: 400 13px/1.4 var(--mono); color: var(--ink-3); }
+  .cn-seals td:nth-child(2) { grid-column: 1; grid-row: 2 / span 3; width: auto; }
+  .cn-seals td:nth-child(3) { grid-column: 2; grid-row: 1 / span 2; }
+  .cn-seals td:nth-child(4) { grid-column: 2; grid-row: 3; font-size: 14px; }
+  .cn-seals td:nth-child(5) { grid-column: 2; grid-row: 4; font: 400 13px/1.4 var(--mono); color: var(--ink-3); }
+  .cn-seals td:nth-child(5):empty { display: none; }
+  .cn-seals__img img { max-width: 76px; max-height: 76px; }
+  .cn-tablewrap:has(.cn-seals) { overflow: visible; }
+}
+
+/* Reign pages: the rail of reigns, the mark beside its facts, marks, photographs. */
+.cn-rail { display: grid; gap: 10px; margin: 0 0 32px; }
+.cn-rail__dyn { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; align-items: start; }
+.cn-rail__label { font: 400 13px/2.4 var(--mono); color: var(--ink-3); }
+.cn-rail__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.cn-rail a { display: inline-flex; align-items: baseline; gap: 6px; padding: 6px 10px; border: 1px solid var(--rule); border-radius: var(--r); background: var(--paper); text-decoration: none; color: var(--ink-2); font-size: 14px; }
+.cn-rail a:hover { border-color: var(--ink-3); color: var(--ink); }
+.cn-rail a[aria-current='page'] { border-color: var(--accent); background: var(--accent-wash); color: var(--accent-ink); }
+.cn-rail .han { font-size: 1.05rem; color: var(--ink); }
+.cn-rail__yr { font: 400 12px/1 var(--mono); color: var(--ink-3); }
+@media (max-width: 640px) {
+  .cn-rail__dyn { grid-template-columns: 1fr; gap: 4px; }
+  .cn-rail__chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .cn-rail__py { display: none; }
+}
+.cn-reign__mark { width: 132px; height: 132px; }
+.cn-reign h1 { margin-top: 0; }
+@media (max-width: 640px) { .cn-reign__mark { width: 104px; height: 104px; } .cn-reign__mark .markset--lg { font-size: 2rem; } }
+.cn-block--tight { margin-top: 28px; }
+.cn-answer { margin-top: 24px; padding: 16px 18px; border-left: 3px solid var(--ink); background: var(--paper-2); border-radius: 0 var(--r) var(--r) 0; }
+.cn-answer p { margin: 0; }
+.cn-answer .label { margin-bottom: 4px; }
+.cn-refs { font: 400 11px/1 var(--mono); margin-left: 2px; }
+.cn-refs a { color: var(--ink-3); text-decoration: none; }
+.cn-refs a:hover { color: var(--accent-ink); }
+.cn-one { font-size: 14px; color: var(--ink-3); }
+.cn-marks { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 10px; }
+.cn-marks li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; padding: 14px; border: 1px solid var(--rule); border-radius: var(--r-lg); background: var(--paper); }
+.cn-marks__img { width: 112px; height: 112px; padding: 6px; }
+.cn-marks__img img { max-width: 100%; max-height: 100%; }
+.cn-marks li > span:last-child { display: grid; gap: 4px; align-content: start; }
+.cn-marks__kind, .cn-marks__credit { font: 400 13px/1.4 var(--mono); color: var(--ink-3); }
+.cn-marks__note { font-size: 15px; color: var(--ink-2); }
+.cn-marks li.cn-marks__none { display: block; color: var(--ink-2); }
+.cn-figs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; margin: 12px 0; }
+.cn-figs figure { margin: 0; display: grid; gap: 8px; align-content: start; }
+.cn-figs .plate { aspect-ratio: 1; padding: 8px; }
+.cn-figs img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.cn-figs figcaption { font-size: 14px; color: var(--ink-2); display: grid; gap: 4px; }
+.cn-when { justify-self: start; font: 400 12px/1.6 var(--mono); padding: 0 8px; border-radius: 99px; background: var(--paper-2); color: var(--ink-2); }
+.cn-when--later { background: var(--ink); color: var(--paper); }
+.cn-credit { font: 400 12px/1.4 var(--mono); color: var(--ink-3); }
+.cn-credit a { color: inherit; }
+.cn-kiln { padding-left: 1.1em; }
+.cn-kiln li { margin: 0 0 10px; }
+.cn-pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 48px; padding: 14px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-size: 15px; }
+.cn-pager a { text-decoration: none; }
+.cn-search { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 8px 0 8px; }
+.cn-period h2 { display: flex; align-items: baseline; gap: 10px; }
