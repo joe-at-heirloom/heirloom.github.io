@@ -1,0 +1,96 @@
+{
+ "path": "/marks/leica-serial-numbers",
+ "title": "Leica Serial Number Lookup: Model and Year | Heirloom",
+ "description": "Look up a Leica camera body serial number: the model and the year it was made, screw-mount 1923–1960 and M-mount 1954–1999, from two transcriptions of Leitz's production records.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/leica-serial-numbers#article",
+   "headline": "Leica serial number lookup",
+   "description": "Look up a Leica camera body serial number: the model and the year it was made, screw-mount 1923–1960 and M-mount 1954–1999, from two transcriptions of Leitz's production records.",
+   "url": "https://heirloomapp.io/marks/leica-serial-numbers",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/leica-serial-numbers",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Leica camera serial numbers"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/leica-serial-numbers#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Where is the serial number on a Leica?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On the top plate of the camera body, usually after \"No\". A number on the lens is a separate Leitz series in the same range, and looking it up here gives a wrong answer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "My Leica's serial number starts with a 0. What does that mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Leitz never began a body number with a zero. Soviet FED and Zorki cameras re-engraved as Leicas often did, so such a camera should not be dated from the Leitz list."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does my serial number say a different model from my camera?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Leitz converted many older bodies to later models and kept the original number, so a body numbered as a Leica I or II may now be a III or IIIf. The serial tells you what the body was made as."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/leica-serial-numbers#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Leica serial numbers",
+     "item": "https://heirloomapp.io/marks/leica-serial-numbers"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Leica serial numbers</li></ol>\n      <h1>Leica serial number lookup</h1>\n      <p class=\"guide__lede\">Enter the number from your Leica's top plate to see the model it was made as and the year, from two independent transcriptions of Leitz's production records.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>A Leica body serial is on the top plate, usually after \"No\". Leitz numbered bodies in blocks by model, so the serial gives the model the body was made as and the year: 140890 is a Leica III of 1934. A serial that begins with 0 is not a Leitz number.</p>\n      </div>\n      <h2 id=\"lookup\">Look up a body serial</h2>\n      <div class=\"finder\">\n        <div class=\"finder__row\"><label class=\"grow\">Body serial <input id=\"l-serial\" inputmode=\"numeric\" autocomplete=\"off\" placeholder=\"e.g. 140890\"></label></div>\n        <div id=\"l-results\" class=\"finder__results\" aria-live=\"polite\"><p class=\"finder__hint\">Use the number on the body's top plate, not the lens.</p></div>\n      </div>\n      <h2 id=\"read\">Read these before you rely on a result</h2>\n      <ul><li>Lens serial numbers are a separate Leitz series that uses the same number range. A lens number (on the lens front ring or barrel) must never be looked up in this table. For example, 1234567 on a Summicron is a lens number, not an M4-P body. Look up the number engraved on the camera body&#x27;s top plate.</li><li>Soviet FED and Zorki cameras, and other copies, were widely re-engraved as &#x27;Leica&#x27;, &#x27;Leitz Wetzlar&#x27; or &#x27;D.R.P.&#x27;, sometimes with Luftwaffe or Kriegsmarine markings, and their serial numbers are made up. Genuine Leitz body numbers never have a leading zero (&#x27;No 0547&#x27; is a fake, per LSI). A serial that falls in a row here only means the number is plausible. It does not show the camera is a genuine Leica. Check that the camera&#x27;s features match the model in the row: a camera whose number says Leica II but has Cyrillic markings, no real leather or wrong speed dials is a copy.</li><li>Leitz upgraded (converted) older bodies to later models until at least the mid-1950s and kept the original serial number. A body numbered as a Leica I or II may now be a III, IIIa, IIIc or IIIf. Post-war conversions often gained a new top plate marked &#x27;DBP&#x27; (LSI). In that case the serial dates the original body, not the current configuration. Say &#x27;body originally made as X in YEAR&#x27; when the features do not match.</li><li>The meaning of &#x27;year&#x27;: it is the &#x27;year built&#x27; from the Leica Wiki list. &#x27;year_end&#x27; appears when that list gives a span, such as 1936-37. &#x27;alt_year&#x27; appears when the year in the CameraQuest production-book date differs, by 1 or 2 years in every row kept here. For M bodies the production-book date is the day the serial block was assigned, so it often falls a year before the cameras were built. For the first M3 blocks CameraQuest shows placeholder dates marked &#x27;exact date unrecorded&#x27;. Where they disagree, both values are in the row and &#x27;note&#x27; explains. Treat the result as &#x27;made c. YEAR&#x27; rather than an exact date: numbers were assigned in advance in blocks, not every number in a block was necessarily used, and assembly or sale could run into the next year.</li><li>The two sources are separate transcriptions, but both come from Leitz factory records (CameraQuest&#x27;s is the Leitz production book via Leica&#x27;s Horst Braun; the Leica Wiki does not name its source). Cross-checking them catches copying errors, not mistakes in the factory records themselves. James Lager (quoted by LSI) warns that the handwritten delivery records vary in legibility and that many 1944 entries are unreadable.</li><li>Only ranges where both sources agree on the serial span were kept, and each row is the overlap of the two sources&#x27; ranges. Every row&#x27;s model agrees in both lists, except the &#x27;alt_model&#x27; rows. The year agrees, or differs by 2 years or less and is recorded as alt_year. Where one list splits a block that the other gives whole (for example ELC or black-paint sub-blocks inside a regular M3 batch), the row follows the smaller, more specific block.</li><li>Model naming: for about 100 blocks from 1932 to 1948, CameraQuest&#x27;s production-book transcription says &#x27;Leica I&#x27; and the Leica Wiki says &#x27;Leica Standard&#x27;. These rows use model &#x27;Leica Standard&#x27; with alt_model &#x27;Leica I&#x27;. CameraQuest itself notes that its post-1931 &#x27;Leica I&#x27; heading lumps in Standard models. Two post-1931 blocks are &#x27;Leica I&#x27; in both lists (160701-161150 in 1935 and 325301-325400 in 1939). They are kept as &#x27;Leica I&#x27; with a note that they are probably Standard or other non-rangefinder bodies.</li></ul>\n      <h2 id=\"models\">Models by serial range</h2>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">Model</th><th scope=\"col\">Years</th><th scope=\"col\">Serials (lowest–highest block)</th><th scope=\"col\">Blocks</th></tr></thead><tbody><tr><th scope=\"row\">Leica I</th><td>1923–1939</td><td>100–325,400</td><td>12</td></tr><tr><th scope=\"row\">Leica I Compur</th><td>1926–1930</td><td>5,701–34,802</td><td>4</td></tr><tr><th scope=\"row\">Leica I Luxus</th><td>1930–1930</td><td>34,803–34,817</td><td>1</td></tr><tr><th scope=\"row\">Leica II</th><td>1932–1948</td><td>71,200–358,650</td><td>124</td></tr><tr><th scope=\"row\">Leica Standard</th><td>1932–1948</td><td>101,001–355,650</td><td>109</td></tr><tr><th scope=\"row\">Leica III</th><td>1933–1939</td><td>107,601–343,100</td><td>301</td></tr><tr><th scope=\"row\">Leica 250 Reporter</th><td>1933–1943</td><td>114,051–353,800</td><td>8</td></tr><tr><th scope=\"row\">Leica IIIa</th><td>1935–1950</td><td>156,201–357,200</td><td>309</td></tr><tr><th scope=\"row\">Leica IIIb</th><td>1937–1946</td><td>240,001–355,000</td><td>21</td></tr><tr><th scope=\"row\">Leica IIId</th><td>1940–1942</td><td>360,001–360,100</td><td>1</td></tr><tr><th scope=\"row\">Leica IIIc</th><td>1940–1951</td><td>360,101–525,000</td><td>17</td></tr><tr><th scope=\"row\">Leica IIc</th><td>1948–1951</td><td>440,001–451,000</td><td>2</td></tr><tr><th scope=\"row\">Leica IIf</th><td>1951–1956</td><td>451,001–822,000</td><td>13</td></tr><tr><th scope=\"row\">Leica Ic</th><td>1949–1951</td><td>455,001–562,800</td><td>3</td></tr><tr><th scope=\"row\">Leica IIIf</th><td>1950–1956</td><td>525,001–837,720</td><td>24</td></tr><tr><th scope=\"row\">Leica If</th><td>1951–1957</td><td>562,801–851,000</td><td>11</td></tr><tr><th scope=\"row\">Leica M3</th><td>1954–1966</td><td>700,000–1,164,865</td><td>125</td></tr><tr><th scope=\"row\">Leica IIIg</th><td>1956–1960</td><td>825,001–988,350</td><td>23</td></tr><tr><th scope=\"row\">Leica Ig</th><td>1957–1960</td><td>887,001–987,600</td><td>7</td></tr><tr><th scope=\"row\">Leica M2</th><td>1957–1968</td><td>926,001–1,207,000</td><td>96</td></tr><tr><th scope=\"row\">Leica MP2</th><td>1958–1959</td><td>935,501–952,015</td><td>2</td></tr><tr><th scope=\"row\">Leica M1</th><td>1959–1964</td><td>950,001–1,102,900</td><td>25</td></tr><tr><th scope=\"row\">Leica MD</th><td>1964–1966</td><td>1,102,501–1,160,820</td><td>8</td></tr><tr><th scope=\"row\">Leica MDa</th><td>1966–1976</td><td>1,159,001–1,412,550</td><td>17</td></tr><tr><th scope=\"row\">Leica M4</th><td>1967–1975</td><td>1,175,001–1,443,170</td><td>30</td></tr><tr><th scope=\"row\">Leica MD Post</th><td>1968–1972</td><td>1,185,291–1,294,000</td><td>5</td></tr><tr><th scope=\"row\">Leica M2-R</th><td>1969–1970</td><td>1,248,201–1,250,200</td><td>1</td></tr><tr><th scope=\"row\">Leica M5</th><td>1971–1992</td><td>1,287,051–1,918,020</td><td>18</td></tr><tr><th scope=\"row\">Leica KE-7A</th><td>1972–1972</td><td>1,293,771–1,295,000</td><td>2</td></tr><tr><th scope=\"row\">Leica CL</th><td>1973–1976</td><td>1,300,001–1,440,000</td><td>3</td></tr><tr><th scope=\"row\">Leica M4-2</th><td>1978–1993</td><td>1,480,001–1,932,002</td><td>10</td></tr><tr><th scope=\"row\">Leica MD-2</th><td>1980–1986</td><td>1,545,351–1,704,800</td><td>4</td></tr><tr><th scope=\"row\">Leica M4-P</th><td>1981–1985</td><td>1,546,351–1,651,250</td><td>11</td></tr><tr><th scope=\"row\">Leica M6</th><td>1984–1998</td><td>1,657,251–2,470,300</td><td>92</td></tr><tr><th scope=\"row\">Leica M6 TTL</th><td>1998–1999</td><td>2,466,101–2,482,300</td><td>3</td></tr></tbody></table></div>\n      <h2 id=\"sources\">Sources</h2>\n      <!--copy-check:skip--><ul class=\"sources\"><li>CameraQuest (Stephen Gandy): Leica Screw Mount Serial #&#x27;s Sorted by Number, 1923-1965 (<a href=\"https://cameraquest.com/ltmnum.htm\" rel=\"nofollow\">source</a>)</li><li>CameraQuest (Stephen Gandy): Leica Serial Numbers: M&#x27;s Sorted by Type, 1954-1999 (<a href=\"https://cameraquest.com/mtype.htm\" rel=\"nofollow\">source</a>)</li><li>Leica Wiki (English), l-camera-forum: Serial Numbers Leica Cameras (<a href=\"https://wiki.l-camera-forum.com/leica-wiki.en/index.php/Serial_Numbers_Leica_Cameras\" rel=\"nofollow\">source</a>)</li><li>i35mm.com: Leica Serial Number Lookup (Zhao Zhenguo, 2026-06-05) (<a href=\"https://www.i35mm.com/gear/cameras/leica-cameras/leica-serial-number-lookup-trace-your-cameras-production-year-exact-model/\" rel=\"nofollow\">source</a>)</li><li>roter-punkt-kamera.de: Schraubleica Seriennummern 1923-1965 and Leica Seriennummern Kameras (<a href=\"https://www.roter-punkt-kamera.de/schraubleica-seriennummern/\" rel=\"nofollow\">source</a>)</li><li>Leica Society International (LHSA) blog: Leica Serial Numbers: The Holy Grail of Camera Identification (Jason Schneider, 31 Aug 2020) (<a href=\"https://leicasocietyinternational.org/blog/2020/08/leica-serial-numbers-the-holy-grail-of-camera-identification\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the top plate. The Advisor reads the serial, looks it up in this same table and keeps the model and year on the camera's record.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>Where is the serial number on a Leica?</summary>\n  <div><p>On the top plate of the camera body, usually after \"No\". A number on the lens is a separate Leitz series in the same range, and looking it up here gives a wrong answer.</p></div>\n</details>\n<details>\n  <summary>My Leica's serial number starts with a 0. What does that mean?</summary>\n  <div><p>Leitz never began a body number with a zero. Soviet FED and Zorki cameras re-engraved as Leicas often did, so such a camera should not be dated from the Leitz list.</p></div>\n</details>\n<details>\n  <summary>Why does my serial number say a different model from my camera?</summary>\n  <div><p>Leitz converted many older bodies to later models and kept the original number, so a body numbered as a Leica I or II may now be a III or IIIf. The serial tells you what the body was made as.</p></div>\n</details>\n</div>\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>",
+ "tool": "leica"
+}

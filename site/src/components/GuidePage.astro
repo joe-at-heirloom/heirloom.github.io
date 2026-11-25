@@ -3,12 +3,14 @@
 // file (src/content/guides/<slug>.json, moved word for word from the page
 // scripts by site/scripts/extract-guides.py): the page's written blocks, and
 // between them its grids of mark cards, drawn from the reference collection.
+// A page with a lookup (the date-code and serial-number pages) names it as
+// `tool`, which the old marks/marks.js runs, as it did on the old page.
 import Base from '../layouts/Base.astro';
 import { grid } from '../lib/makers';
 import '../styles/article.css';
 
 export type Guide = {
-  path: string; title: string; description: string; jsonld: object[]; after: string;
+  path: string; title: string; description: string; jsonld: object[]; after: string; tool?: string;
   blocks: ({ html: string } | { cards: { id: string; caption?: string }[] })[];
 };
 const { g } = Astro.props as { g: Guide };
@@ -20,4 +22,6 @@ const { g } = Astro.props as { g: Guide };
     </article>
     <Fragment set:html={g.after} />
   </div>
+  {g.tool && <script is:inline src="/marks/marks.js" defer></script>}
+  {g.tool && <script is:inline set:html={`window.MARKS_TOOL = ${JSON.stringify(g.tool)};`} />}
 </Base>

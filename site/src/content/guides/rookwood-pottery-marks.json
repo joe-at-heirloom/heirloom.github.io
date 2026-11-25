@@ -1,0 +1,124 @@
+{
+ "path": "/marks/rookwood-pottery-marks",
+ "title": "Rookwood Pottery Marks: Flames and Numerals, 1886–1967 | Heirloom",
+ "description": "Date Rookwood pottery from its RP flame mark and Roman numeral, 1886 to 1967, with the shape numbers, glaze letters and modern marks that aren't dates.",
+ "jsonld": [
+  {
+   "@type": "Article",
+   "@id": "https://heirloomapp.io/marks/rookwood-pottery-marks#article",
+   "headline": "Rookwood pottery marks and dates",
+   "description": "Date Rookwood pottery from its RP flame mark and Roman numeral, 1886 to 1967, with the shape numbers, glaze letters and modern marks that aren't dates.",
+   "url": "https://heirloomapp.io/marks/rookwood-pottery-marks",
+   "mainEntityOfPage": "https://heirloomapp.io/marks/rookwood-pottery-marks",
+   "datePublished": "2026-11-22",
+   "dateModified": "2026-11-22",
+   "inLanguage": "en-US",
+   "image": "https://heirloomapp.io/og-image.jpg",
+   "author": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "publisher": {
+    "@id": "https://heirloomapp.io/#org"
+   },
+   "isPartOf": {
+    "@id": "https://heirloomapp.io/#website"
+   },
+   "mentions": {
+    "@id": "https://heirloomapp.io/#app"
+   },
+   "about": {
+    "@type": "Thing",
+    "name": "Rookwood pottery marks"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://heirloomapp.io/marks/rookwood-pottery-marks#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How do I date Rookwood pottery?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Find the RP monogram impressed in the base and count the flames around it: no flames is 1886, and each flame adds a year to 14 flames in 1900. After that, a Roman numeral below the 14 flames counts the years from 1900, so XIV is 1914."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the other numbers and letters on the base?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Arabic number below the numeral is a shape number, often with a size letter (907C). Letters such as V or Z after it name a glaze line. Neither is a date."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "My numeral begins with MM. Is that a Rookwood date?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, but a modern one: the revived company writes the full year in Roman numerals, so MMXII is 2012, not 1912."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://heirloomapp.io/marks/rookwood-pottery-marks#crumbs",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Heirloom",
+     "item": "https://heirloomapp.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Marks",
+     "item": "https://heirloomapp.io/marks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Rookwood pottery marks",
+     "item": "https://heirloomapp.io/marks/rookwood-pottery-marks"
+    }
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "html": "\n      <ol class=\"crumbs\" aria-label=\"Breadcrumb\"><li><a href=\"/\">Heirloom</a></li><li><a href=\"/marks/\">Marks</a></li><li aria-current=\"page\">Rookwood pottery marks</li></ol>\n      <h1>Rookwood pottery marks and dates</h1>\n      <p class=\"guide__lede\">Rookwood's RP monogram counts the years in flames, then in Roman numerals. Count yours to get the year.</p>\n      <p class=\"guide__meta\">By Heirloom &middot; Updated <time datetime=\"2026-11-22\">November 22, 2026</time></p>\n      <div class=\"answer\">\n        <p class=\"answer__label\">In short</p>\n        <p>Rookwood dated its pottery with the flames around the RP monogram in the base: no flames is 1886, one flame was added each year to 14 in 1900, and after that a Roman numeral below the flames counts from 1900 (XXII is 1922). Historic production ended in 1967.</p>\n      </div>\n      <h2 id=\"lookup\">Date a Rookwood mark</h2>\n      <div class=\"finder\">\n        <div class=\"finder__row\">\n          <label>Flames around the RP <input id=\"rk-flames\" type=\"number\" min=\"0\" max=\"14\" inputmode=\"numeric\" placeholder=\"0 to 14\"></label>\n          <label>Roman numeral below (if any) <input id=\"rk-numeral\" maxlength=\"9\" autocomplete=\"off\" placeholder=\"e.g. XIV\"></label>\n        </div>\n        <div id=\"rk-results\" class=\"finder__results\" aria-live=\"polite\"><p class=\"finder__hint\">Count only the short flames around the RP monogram, not the tail of the R. Leave the numeral empty if there is none.</p></div>\n      </div>\n      <h2 id=\"example\">What the mark looks like</h2>\n      <p>The marks at each stage: the name and year to 1886, the bare RP monogram, one flame, the full ring of fourteen, and the numerals that follow. The 1930 photograph shows XXX under the flames; the shape number below it (not shown) is not a date.</p>\n      "
+  },
+  {
+   "cards": [
+    {
+     "id": "rookwood-name-and-year"
+    },
+    {
+     "id": "rookwood-rp-0-flames-1886"
+    },
+    {
+     "id": "rookwood-rp-1-flames-1887"
+    },
+    {
+     "id": "rookwood-rp-14-flames-1900"
+    },
+    {
+     "id": "rookwood-numeral-i-1901"
+    },
+    {
+     "id": "rookwood-numeral-xiv-1914"
+    },
+    {
+     "id": "rookwood-numeral-xxx-1930"
+    }
+   ]
+  },
+  {
+   "html": "\n      <p class=\"stamps__credit\">Pictures: Edwin AtLee Barber, Marks of American Potters (1904), p. 120; public domain; scan at the Internet Archive; cropped by Heirloom. Drawn by Heirloom from the published descriptions; not a photograph. Photograph by Y.paulsen, CC0, via Wikimedia Commons; cropped by Heirloom.</p>\n      <h2 id=\"tables\">How Rookwood dated its marks</h2>\n      <div class=\"table-wrap\"><table><thead><tr><th scope=\"col\">Years</th><th scope=\"col\">The mark</th><th scope=\"col\">How to read it</th></tr></thead><tbody><tr><th scope=\"row\">1882–1886</th><td>ROOKWOOD in block capitals with a four-digit year, impressed</td><td>Read the year as written.</td></tr><tr><th scope=\"row\">1886</th><td>RP monogram (reversed R joined to P) with no flames</td><td>No flames = 1886.</td></tr><tr><th scope=\"row\">1887–1900</th><td>RP monogram with 1 to 14 flames and no numeral below</td><td>Add one year per flame.</td></tr><tr><th scope=\"row\">1901–1967</th><td>RP monogram with 14 flames and an impressed Roman numeral below (I to LXVII)</td><td>Add the numeral to 1900.</td></tr><tr><th scope=\"row\">1982–2005</th><td>Flame mark with an Arabic-numeral year (Townley era)</td><td>Read the year as written.</td></tr><tr><th scope=\"row\">2000–</th><td>Modern Rookwood: Roman numeral beginning MM (e.g. MMXII)</td><td>Read as a full Roman-numeral year.</td></tr></tbody></table></div>\n      <h2 id=\"caveats\">Read these before you rely on a year</h2>\n      <ul><li>A date code only means something next to the right factory mark (impressed WEDGWOOD, impressed MINTON(S), the Royal Worcester printed mark, the Rookwood RP monogram, the Sevres interlaced Ls). A code alone does not identify the maker, and several of these systems were copied or forged (Minton by smaller makers; Sevres very widely).</li><li>The codes give a single year only when read exactly. Letters that look alike (I/J, U/V, O/Q, C/G) and blurred or glaze-filled impressions are the main source of error. When a reading is uncertain, report the candidate years.</li><li>Count only the flames (short rays) around the RP monogram. The tail of the reversed R looks like a flame and must not be counted (K2). Small impressed finishers&#x27; dots near the flames are not flames or dates (K1, K4).</li><li>The Roman numeral sits below the 14-flame RP mark. Directly below it is an Arabic shape number, often with a size letter A-F (e.g. 907C) (K1, K2, K4). Do not read the shape number as a year.</li><li>Letters after the shape number are not dates: V = vellum glaze (from 1904), Z = mat-glaze line (c.1900-1904), Y = architectural faience (K1).</li><li>A hand-scored or wheel-cut X on the base marks a second, or a item withdrawn from sale; with a third stroke it marks a giveaway. It is not the numeral X (1910). The date numeral is impressed in line below the flame mark (K1).</li><li>Kiln-shaped anniversary marks containing 50 (1930 firing), 61 (1940-1941), 70 (1950) or 75 (1955) are anniversary numbers, not the date (K1). Some 1930-1931 items also carry a semicircle of hash marks (K1).</li><li>Before 1882 there was no consistent mark: painted or incised names, an anchor, or an oval &#x27;Rookwood Pottery, 207 Eastern Avenue, 1882, Cincinnati&#x27; (K2). 1882-1886: ROOKWOOD in block capitals with the year in Arabic numerals (K1, K2).</li><li>Production ended in 1967, so historic Roman numerals run from I (1901) to LXVII (1967) (K3, K4). 1960-1967 items made in Mississippi also carry &#x27;Rookwood Pottery Starkville Miss&#x27; (K2, K5).</li><li>Revival marks: under Arthur Townley (from 1982/83 to 2005) the flame mark was used with Arabic-numeral dates (K2). The modern Cincinnati company uses Roman numerals with an MM prefix, e.g. MMXII = 2012 (K2, K5). So XII = 1912 but MMXII = 2012. Never add 1900 to a numeral that begins with MM.</li><li>Sources differ only in wording on the start. K2 and K5 say 1886 has no flames and one flame was added from 1887 (1 flame = 1887). K1, K3 and K4 say a flame was added each year 1886-1900 with 14 in 1900, and K4&#x27;s example (8 flames = 1894) uses the same count. All agree 14 flames = 1900, and year = 1886 + flames fits every source.</li></ul>\n      <h2 id=\"sources\">Sources</h2>\n      <!--copy-check:skip--><ul class=\"sources\"><li>Rookwood Database: Markings (<a href=\"https://rookwooddatabase.com/markings/\" rel=\"nofollow\">source</a>)</li><li>The Pottery Wheel: Rookwood Pottery Marks - How to Identify Rookwood (<a href=\"https://thepotterywheel.com/rookwood-pottery-marks/\" rel=\"nofollow\">source</a>)</li><li>antique-marks.com: Collecting Rookwood Pottery &amp; Dating Rookwood Marks (<a href=\"https://antique-marks.com/rookwood-pottery.html\" rel=\"nofollow\">source</a>)</li><li>Art Pottery Blog: Rookwood Pottery Marks (<a href=\"https://artpotteryblog.com/rookwood-potter-2/\" rel=\"nofollow\">source</a>)</li><li>Lion and Unicorn: Rookwood Pottery Value Guide (<a href=\"https://lionandunicorn.com/rookwood-pottery-value-guide/\" rel=\"nofollow\">source</a>)</li></ul><!--/copy-check:skip-->\n<aside class=\"app-box\" aria-labelledby=\"app-box-title\">\n  <h2 id=\"app-box-title\">Let Heirloom read the marks for you</h2>\n  <p>Photograph the base. The Advisor counts the flames, reads the numeral and dates the mark, and tells you to count again when the flames are blurred.</p>\n  <div class=\"app-box__actions\">\n    <a class=\"store-badge\" href=\"https://apps.apple.com/us/app/id6754576251\"><img class=\"store-badge__art\" src=\"/app-store-badge.svg\" alt=\"Download Heirloom on the App Store\" width=\"156\" height=\"52\"></a>\n    <a class=\"btn btn--outline\" href=\"https://web.heirloomapp.io\">Open Heirloom on the web</a>\n  </div>\n  <p class=\"app-box__note\">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href=\"https://web.heirloomapp.io\">web.heirloomapp.io</a>.</p>\n</aside>\n<aside class=\"pro-note\" aria-label=\"For auction professionals\">\n  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href=\"https://theca.auction\">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>\n</aside>\n      <h2 id=\"faq\">Questions</h2>\n<div class=\"faq\">\n<details>\n  <summary>How do I date Rookwood pottery?</summary>\n  <div><p>Find the RP monogram impressed in the base and count the flames around it: no flames is 1886, and each flame adds a year to 14 flames in 1900. After that, a Roman numeral below the 14 flames counts the years from 1900, so XIV is 1914.</p></div>\n</details>\n<details>\n  <summary>What are the other numbers and letters on the base?</summary>\n  <div><p>The Arabic number below the numeral is a shape number, often with a size letter (907C). Letters such as V or Z after it name a glaze line. Neither is a date.</p></div>\n</details>\n<details>\n  <summary>My numeral begins with MM. Is that a Rookwood date?</summary>\n  <div><p>Yes, but a modern one: the revived company writes the full year in Roman numerals, so MMXII is 2012, not 1912.</p></div>\n</details>\n</div>\n\n\n    "
+  }
+ ],
+ "after": "<section class=\"related\" aria-labelledby=\"related-title\"><p class=\"related__title\" id=\"related-title\">More from Heirloom</p><ul class=\"cards\"><li><a class=\"card\" href=\"/marks/\"><span class=\"card__title\">Marks and serial numbers</span><span class=\"card__desc\">Date British silver by its letter, and look up Singer, pocket-watch and Leica serial numbers.</span></a></li><li><a class=\"card\" href=\"/home-inventory-app\"><span class=\"card__title\">Home inventory app</span><span class=\"card__desc\">Walk your home room by room and make a PDF inventory your insurer can read.</span></a></li><li><a class=\"card\" href=\"/antique-identifier-app\"><span class=\"card__title\">Antique identifier app</span><span class=\"card__desc\">What an app can read in a photo of an antique, and what it cannot tell.</span></a></li><li><a class=\"card\" href=\"/home-inventory-checklist\"><span class=\"card__title\">Home inventory checklist</span><span class=\"card__desc\">Room by room, what to record for each item, and a free spreadsheet template.</span></a></li><li><a class=\"card\" href=\"/silver-hallmarks\"><span class=\"card__title\">Silver hallmarks</span><span class=\"card__desc\">How to read British, American and continental silver marks, and the marks that mean plate.</span></a></li><li><a class=\"card\" href=\"/family-heirlooms\"><span class=\"card__title\">Family heirlooms</span><span class=\"card__desc\">How to record an heirloom's story, keep its paperwork and decide who it is meant for.</span></a></li></ul></section>",
+ "tool": "rookwood"
+}

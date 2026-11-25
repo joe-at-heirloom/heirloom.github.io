@@ -9,15 +9,24 @@ name), so the template draws the cards from the collection. Also kept: the
 page's title, description, its own structured data (the layout adds the
 site's), and the "More from Heirloom" cards after the article.
 
-Run once from the website repo:  python3 site/scripts/extract-guides.py
+Run once from the website repo:  python3 site/scripts/extract-guides.py [second]
 """
 import html
 import json
 import re
 
-PAGES = ['1847-rogers-bros', 'wm-rogers', 'holmes-and-edwards', 'community-plate-oneida', 'international-silver-co', 'russian-silver-marks',
+import sys
+
+# First move (Nov 25): the silver, plate and gold pages. Second: the pottery
+# date-code and serial-number pages, whose lookups marks/marks.js runs (the
+# page names its lookup as window.MARKS_TOOL; their tables of codes stay in
+# the page's blocks, word for word).
+FIRST = ['1847-rogers-bros', 'wm-rogers', 'holmes-and-edwards', 'community-plate-oneida', 'international-silver-co', 'russian-silver-marks',
          'french-silver-marks', 'christofle-marks', 'gorham-silver-marks', 'mexican-silver-marks', 'german-silver-marks', 'silver-purity-marks',
          'is-it-real-silver', 'coin-silver', 'german-silver', 'britannia-silver', 'gold-karat-marks', '/silver-hallmarks']
+SECOND = ['wedgwood-date-codes', 'minton-date-marks', 'royal-worcester-date-marks', 'rookwood-pottery-marks', 'sevres-date-letters',
+          'rolex-serial-numbers', 'omega-serial-numbers', 'pocket-watch-serial-numbers', 'leica-serial-numbers', 'singer-serial-numbers']
+PAGES = SECOND if sys.argv[1:] == ['second'] else FIRST
 coll = json.load(open('site/src/data/generated/collection.json'))
 recs = {r['id']: r for r in coll['records']}
 by_file = {i['file']: i['id'] for i in coll['images']}
@@ -84,6 +93,9 @@ for s in PAGES:
         'description': html.unescape(re.search(r'<meta name="description" content="([^"]*)"', t).group(1)),
         'jsonld': graph, 'blocks': blocks, 'after': after.strip(),
     }
+    tool = re.search(r'window\.MARKS_TOOL = "(\w+)";', t)
+    if tool:
+        out['tool'] = tool.group(1)
     slug = path.rsplit('/', 1)[-1]
     json.dump(out, open(f'site/src/content/guides/{slug}.json', 'w'), ensure_ascii=False, indent=1)
     print(f"{path:34} blocks {len(blocks):3}  card grids {sum(1 for b in blocks if 'cards' in b)}  cards {sum(len(b['cards']) for b in blocks if 'cards' in b)}  graph {[n.get('@type') for n in graph]}")

@@ -9,7 +9,13 @@ import re
 
 MARKS_CLASSES = ['.sigs', '.sig', '.sigs--wide', '.sigs--one', '.sigs--two', '.sig__img', '.sig__who', '.sig__life', '.sig__reads', '.sig__credit',
                  '.sources', '.sources--num', '.pro-note', '.mks', '.mk', '.mk__img', '.mk__img--none', '.mk__years', '.mk__kind', '.mk__credit',
-                 '.mk--photo', '.mk--facsimile', '.mk--rendering', '.mk--none', '.mkd', '.refs', '.rules', '.table--two']
+                 '.mk--photo', '.mk--facsimile', '.mk--rendering', '.mk--none', '.mkd', '.refs', '.rules', '.table--two',
+                 # The lookups on the date-code and serial-number pages (marks/marks.js) and what they write.
+                 '.finder', '.finder__row', '.finder__hint', '.finder__results', '.grow', '.check', '.hits', '.big', '.alike',
+                 '.dl', '.dl--block', '.dl--court_hand', '.dl--gothic', '.dl--italic', '.dl--script', '.dli', '.dli--drawing',
+                 '.dlg', '.dlc', '.dlc--flag', '.dlc__year', '.dlc__note', '.cycle', '.cycle__kind', '.cycle__photo',
+                 '.cyphers', '.cypher', '.cypher-cell', '.cypher-none', '.cypher-note', '.stamps', '.stamps--book', '.stamps--photo',
+                 '.stamps__row', '.stamps__caption', '.stamps__credit', '.stamp', '.stamp--wide', '.photos', '.photo', '.one-src']
 STYLES_CLASSES = ['.btn', '.btn--outline', '.store-badge', '.store-badge__art']
 
 
