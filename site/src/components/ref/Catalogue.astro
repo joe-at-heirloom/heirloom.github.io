@@ -12,7 +12,7 @@ interface Props {
   groups: Group[]; noun: [string, string]; placeholder: string; label?: string; picker?: string[];
   /** Characters read as the same (old forms to new, 寶 → 宝): the search folds both what is typed and the keys. */
   fold?: Record<string, string>;
-  /** Load each group's sheets on demand from /marks/data/sheets/<lazy>--<group>.html (lib/catalogues.ts). */
+  /** Load each group's sheets on demand from /marks/data/sheets/<lazy>--<group> (the host serves the .html at its clean address; lib/catalogues.ts). */
   lazy?: string;
   /** The group chips as a row of letters (a directory by initials). */
   letters?: boolean;
@@ -116,7 +116,7 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
         const slot = r.querySelector<HTMLElement>('[data-chunk]');
         if (!slot) return;
         const chunk = slot.dataset.chunk!;
-        if (!files.has(chunk)) files.set(chunk, fetch(`/marks/data/sheets/${chunk}.html`).then((x) => (x.ok ? x.text() : Promise.reject(x.status))).then((t) => new DOMParser().parseFromString(t, 'text/html')));
+        if (!files.has(chunk)) files.set(chunk, fetch(`/marks/data/sheets/${chunk}`).then((x) => (x.ok ? x.text() : Promise.reject(x.status))).then((t) => new DOMParser().parseFromString(t, 'text/html')));
         try {
           const doc = await files.get(chunk)!;
           const t = doc.querySelector<HTMLTemplateElement>(`template[data-id="${CSS.escape(r.id)}"]`);
