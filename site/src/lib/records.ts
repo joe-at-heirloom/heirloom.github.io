@@ -246,6 +246,27 @@ export function jaSheet(m: JaMark): Sheet {
   const rest = m.photos.filter((p) => !shows.includes(p));
   const flat = (x: string) => x.toLowerCase().normalize('NFKD').replace(/[^a-z]/g, '');
   const others = m.spellings.filter((x) => flat(x) !== flat(m.romaji) && flat(x) !== flat(m.romajiPlain ?? ''));
+  // The sheet's sources, numbered; a fact's own sources (citations) take the same numbers.
+  const sources = m.sources.map((s) => ({ citation: s.citation, url: s.url, where: null as string | null }));
+  const num = (c: string) => {
+    let i = sources.findIndex((s) => s.citation === c);
+    if (i < 0) { sources.push({ citation: c, url: null, where: null }); i = sources.length - 1; }
+    return i + 1;
+  };
+  // Where the sources disagree: the research writes each as a fact beginning
+  // "Sources differ on the <field>: …" or "Another source differs: …".
+  const differ: Differ[] = [];
+  for (const f of m.facts) {
+    const on = /^Sources differ on (?:the )?([^:]+):\s*(.+)$/s.exec(f.text);
+    const another = /^Another source differs:\s*(.+)$/s.exec(f.text);
+    if (!on && !another) continue;
+    const label = on ? on[1].charAt(0).toUpperCase() + on[1].slice(1) : 'Another source';
+    const text = clean(on ? on[2] : another![1]);
+    if (!text) continue;
+    const refs = [...new Set(f.sources.map(num))];
+    const same = differ.find((d) => d.label === label);
+    if (same) same.values.push({ text, refs }); else differ.push({ label, values: [{ text, refs }] });
+  }
   return {
     id: m.id, anchor: m.slug, url: `/marks/japanese/#${m.slug}`, kind: m.kind, group: m.group,
     glyphs: m.chars || null, lang: 'ja', reading: m.romaji,
@@ -265,9 +286,9 @@ export function jaSheet(m: JaMark): Sheet {
       ['Dates', clean(m.dateNote)],
       ['What it tells you', clean(m.tells)],
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
-    differ: [], caution: clean(m.cautions),
+    differ, caution: clean(m.cautions),
     pics: [...shows, ...rest].map(jaPic),
-    sources: m.sources.map((s) => ({ citation: s.citation, url: s.url, where: null })), single: m.singleSource,
+    sources, single: m.singleSource,
     keys: keysOf(m.keys, m.chars, m.variants, m.kana, m.romaji, m.romajiPlain, m.spellings, m.meaning, m.maker, m.artist),
   };
 }
