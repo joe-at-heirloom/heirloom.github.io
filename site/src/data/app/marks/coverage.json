@@ -5,6 +5,7 @@
     { "id": "british-hallmarks-scotland-ireland", "name": "Edinburgh, Glasgow and Dublin date letters", "status": "not started", "why": "The app's table skipped them: cycles not yet cross-checked against two sources" },
     { "id": "british-hallmarks-closed", "name": "Exeter, Newcastle, York, Norwich date letters (closed offices)", "status": "not started", "why": "Not in the app's table; Chaffers 1924 has them" },
     { "id": "british-makers", "name": "British makers' marks directory", "status": "not started", "why": "Thousands of marks; needs our own open-licence images first" },
+    { "id": "british-import-marks", "name": "British import marks and sponsors' marks on foreign watch cases (e.g. R.W.C. Ltd for Rolex)", "status": "not started", "why": "New entry type; lead: Deutsches Uhrenmuseum Furtwangen inv. 2004-080 (CC BY-SA 4.0), a 1927 Rolex Oyster case back with British import marks and R.W.C. Ltd" },
     { "id": "silver-plate", "name": "American silver-plate makers", "status": "partial", "why": "Five pages written; marks need one crop each" },
     { "id": "silver-standards", "name": "Silver standards: 925, 800, coin, Britannia, German silver", "status": "partial", "why": "Five pages written; marks need one crop each" },
     { "id": "world-silver", "name": "Mexican, French, German, Russian, Gorham, Christofle", "status": "partial", "why": "Seven pages written; several marks described in words only" },

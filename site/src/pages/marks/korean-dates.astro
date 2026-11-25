@@ -1,0 +1,138 @@
+---
+// /marks/korean-dates: how dates are written on Korean items, with a reader
+// (src/islands/KoreanDateReader) and the tables it uses: the sixty-year cycle,
+// Korea's own era names, the Chongzhen count, Dangi years, the Chinese and
+// Japanese eras used in Korea, and the kings of Goryeo and Joseon. All from
+// the app's table (korean.json `dates`), which the Advisor's decoder reads.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import SectionNav from '../../components/SectionNav.astro';
+import KoreanDateReader, { type ReaderEra, type ReaderCount, type Period } from '../../islands/KoreanDateReader';
+import { dateTables, NAV } from '../../lib/korean';
+import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
+import chineseTable from '../../data/app/chinese.json';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/korean.css';
+
+const path = '/marks/korean-dates';
+const d = dateTables() as any;
+const src = new Map<string, any>((d.sources ?? []).map((s: any) => [s.id, s]));
+// Korea's own eras and counts (the decoder's), then the Chinese and Japanese eras
+// Korea used: the Ming and Qing from the Chinese reign table, the Japanese from korean.json.
+const koreanEras: ReaderEra[] = (d.eras ?? []).map((e: any) => ({ ...e, label: `${e.rr} era${e.kind === 'korean' || !e.kind ? '' : ` (${e.kind})`}`, kind: e.kind ?? 'korean' }));
+const chinaEras: ReaderEra[] = ((chineseTable as any).systems.reign_marks.rows as any[])
+  .filter((r) => r.dynasty === 'Ming' || r.dynasty === 'Qing')
+  .map((r) => ({ id: `cn-${r.reign_pinyin.toLowerCase()}`, chars: r.reign_chars, start: r.start, end: r.end, year1: r.start, label: `${r.reign_pinyin} era (${r.dynasty} China)`, kind: 'chinese' }));
+const japanEras: ReaderEra[] = (d.japanese_eras ?? []).map((e: any) => ({ ...e, label: `${e.rr} era (Japan)`, kind: 'japanese' }));
+// The Chinese eras of Goryeo's time (the Goryeosa's year table): no end year, because Goryeo
+// sometimes kept writing an era after it ended in China (太平 after 1031).
+const goryeoEras: ReaderEra[] = (d.goryeo_chinese_eras ?? []).filter((e: any) => !/Goryeo/.test(String(e.dynasty)))
+  .map((e: any, i: number) => ({ id: `gc-${i}`, chars: e.chars, year1: e.year1, end: null, label: `${e.chars} era (${String(e.dynasty).replace(/\s*[\u3400-\u9FFF\/]+.*$/, '')})`, kind: 'chinese' }));
+const eras = [...koreanEras, ...chinaEras.filter((c) => !koreanEras.some((k) => k.chars === c.chars)), ...goryeoEras, ...japanEras];
+const counts: ReaderCount[] = (d.counts ?? []).map((c: any) => ({ ...c, explain: soften(String(c.explain ?? '')) }));
+const periods: Period[] = [
+  { id: 'goryeo', name: 'Goryeo', from: 918, to: 1392 },
+  { id: 'early-joseon', name: 'Joseon to 1600', from: 1392, to: 1600 },
+  { id: 'late-joseon', name: 'Joseon 1600–1897', from: 1600, to: 1897 },
+  { id: 'empire', name: 'Korean Empire and after', from: 1897, to: 2000 },
+];
+const ganjiNames = Object.fromEntries((d.ganji ?? []).map((g: any) => [g.chars, { hangul: g.hangul, rr: g.rr }]));
+const examples = ['崇禎紀元後三甲子', '崇禎紀元后再庚午', '光武五年辛丑', '檀紀四仟貳百八拾壹年', '庚午'];
+const kings = (d.kings ?? []) as any[];
+const byDyn = (n: string) => kings.filter((k) => k.dynasty === n);
+const cite = (ids: string[] = []) => ids.map((i) => src.get(i)).filter(Boolean);
+
+const title = 'Korean Dates on Art and Inscriptions: Eras, Cyclical Years, Kings | Heirloom';
+const description = 'Read a date written on a Korean painting, document or ceramic: the sixty-year cycle, Korean era names (Gwangmu, Yunghui), the Chongzhen count Joseon kept after the Ming fell, Dangi years, and the kings of Goryeo and Joseon, with a reader that works out the year.';
+const h1 = 'Reading a date on a Korean item';
+const faqs: [string, string][] = [
+  ['What does 崇禎紀元後 mean on a Korean painting or document?', '<p>“After the beginning of the Chongzhen era.” Chongzhen (1628–1644) was the last era of the Ming dynasty. After the Ming fell, many Joseon writers kept counting from it instead of writing the era names of the Qing, so a date like 崇禎紀元後三甲子 means the third gapja year after 1628: 1804. Type it into the reader above.</p>'],
+  ['How do I convert a Korean cyclical year like 庚午 into a Western year?', '<p>A cyclical year comes round every sixty years, so on its own it names one year in sixty: 庚午 is 1690, 1750, 1810, 1870, 1930 and so on. Which one is meant has to come from the item: its style, the kiln it is known from, or an era written beside it.</p>'],
+  ['What years are Gwangmu and Yunghui?', '<p>Gwangmu (光武) was the era of the Korean Empire from 1897 to 1907, and Yunghui (隆熙) from 1907 to 1910. Gwangmu 5 is 1901.</p>'],
+  ['What is a Dangi year?', '<p>A year counted from the legendary founding of Korea by Dangun, 2333 years before the Western era: Dangi 4281 is 1948. South Korea used it officially from 1948 to 1961.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).korean ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Korean calendar and dating' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/korean/', 'Korean marks']),
+];
+const hanAll = [...new Set([...JSON.stringify([d.eras, d.counts, d.ganji, d.kings, d.japanese_eras, examples, faqs])].filter((c) => /[\u3400-\u9FFF\uF900-\uFAFF]/.test(c)))].join('') + chinaEras.map((e) => e.chars).join('');
+const hangulAll = [...new Set([...JSON.stringify([d.eras, d.counts, d.ganji, d.kings])].filter((c) => /[가-힣]/.test(c)))].join('');
+---
+<Base {title} {description} {path} jsonld={graph} han={hanAll} hangul={hangulAll}>
+  <div class="wrap">
+    <Crumbs name={h1} mid={['/marks/korean/', 'Korean marks']} />
+    <SectionNav {path} label="Korean marks" items={NAV} />
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Type the date as it is written and the reader works out the year: Korean eras, the Chongzhen count, Dangi years, and the Chinese and Japanese eras used in Korea. A cyclical year alone gives every year it could be.</p>
+    </header>
+
+    <KoreanDateReader client:load {eras} {counts} {periods} {examples} {ganjiNames} />
+
+    <section class="block prose" aria-labelledby="ways">
+      <h2 id="ways">The ways a Korean date is written</h2>
+      {counts.map((c: any) => (
+        <div id={`count-${c.id}`}>
+          <h3><span class="han" lang="ko">{c.chars[0]}</span> {c.label}</h3>
+          <p>{c.explain}</p>
+          {(c.examples ?? []).length > 0 && <ul>{c.examples.map((x: any) => <li><span class="han" lang="ko">{x.text}</span>: {x.year}{x.object && <span class="muted"> · {x.object}{x.url && <> <a href={x.url} rel="nofollow noopener">source</a></>}</span>}</li>)}</ul>}
+        </div>
+      ))}
+      {(d.eras ?? []).length > 0 && (
+        <>
+          <h3 id="eras">Korea’s own era names</h3>
+          <table class="ktable">
+            <thead><tr><th>Era</th><th>Years</th><th>Year 1</th><th>Note</th></tr></thead>
+            <tbody>{d.eras.map((e: any) => <tr id={`era-${e.id}`}><td><span class="han" lang="ko">{e.chars}</span> {e.rr}{e.mr && e.mr !== e.rr && <span class="muted"> ({e.mr})</span>}</td><td class="num">{e.start}–{e.end}</td><td class="num">{e.year1}</td><td>{soften(String(e.note ?? ''))}</td></tr>)}</tbody>
+          </table>
+        </>
+      )}
+      {(d.foreign_eras ?? []).length > 0 && (
+        <>
+          <h3 id="foreign">Chinese and Japanese eras in Korea</h3>
+          <ul>{d.foreign_eras.map((f: any) => <li>{soften(String(f.text ?? f.note ?? ''))}</li>)}</ul>
+        </>
+      )}
+    </section>
+
+    {(d.ganji ?? []).length > 0 && (
+      <section class="block" aria-labelledby="cycle">
+        <h2 id="cycle">The sixty-year cycle</h2>
+        <p class="kx__blurb">Each year has a two-character name, a heavenly stem and an earthly branch. The cycle last began in 1984 (甲子, gapja); the years shown are the latest of each.</p>
+        <ol class="ganji">{d.ganji.map((g: any, i: number) => <li><span class="han" lang="ko">{g.chars}</span><span>{g.rr} · <span lang="ko" class="kx__hangul">{g.hangul}</span></span><span class="num">{1984 + i - (1984 + i > 2043 ? 60 : 0)}, {1924 + i}, {1864 + i}</span></li>)}</ol>
+      </section>
+    )}
+
+    {kings.length > 0 && (
+      <section class="block prose" aria-labelledby="kings">
+        <h2 id="kings">Kings of Goryeo and Joseon</h2>
+        <p>Korean inscriptions seldom name a king; the reign years help place an era or a cyclical year. Korean records count a reign’s first year in two ways, so a table may differ from another by a year; the years here follow the note under each table.</p>
+        {['Goryeo', 'Joseon', 'Korean Empire'].map((n) => byDyn(n).length > 0 && (
+          <>
+            <h3>{n}</h3>
+            <table class="ktable">
+              <thead><tr><th>King</th><th>Reign</th></tr></thead>
+              <tbody>{byDyn(n).map((k) => <tr id={`king-${n.toLowerCase().replace(/[^a-z]+/g, '-')}-${k.id}`}><td><span class="han" lang="ko">{k.chars}</span> {k.rr}{k.hangul && <span class="kx__hangul muted"> {k.hangul}</span>}</td><td class="num">{k.start}–{k.end}</td></tr>)}</tbody>
+            </table>
+          </>
+        ))}
+      </section>
+    )}
+
+    {(d.sources ?? []).length > 0 && (
+      <details class="block rsources">
+        <summary>Sources <span class="muted num">{d.sources.length}</span></summary>
+        <ol>{d.sources.map((s: any) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</li>)}</ol>
+      </details>
+    )}
+
+    <AppBox text="Photograph the writing. The Advisor reads the characters and works out a written date from this same table, and says when a cyclical year alone could be several." />
+    <Faq {faqs} />
+  </div>
+</Base>

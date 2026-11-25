@@ -16,6 +16,10 @@ export function referencePages(): Page[] {
     .concat([
       { href: '/marks/chinese/', title: 'Chinese marks: reign marks, hall marks and seals' },
       { href: '/marks/chinese/painters/', title: 'Chinese painters and collectors: seals and signatures' },
+      // The Korean section, rendered by Astro only (no generated page at the root).
+      { href: '/marks/korean/', title: 'Korean pottery marks and inscriptions: Goryeo, buncheong, Joseon' },
+      { href: '/marks/korean-dates', title: 'Korean dates on art and inscriptions: eras, cyclical years, kings' },
+      { href: '/marks/korean-ceramics', title: 'Korean pottery and porcelain by period: celadon, buncheong, moon jars' },
     ])
     .sort((a, b) => a.title.localeCompare(b.title));
 }

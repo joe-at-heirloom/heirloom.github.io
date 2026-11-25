@@ -1,10 +1,11 @@
 {
   "repo": "heirloom (app)",
   "ref": "origin/main",
-  "commit": "fdf8c6dd",
+  "commit": "6e175fef",
   "changed": {
     "hallmarks": "2026-11-24",
     "chinese": "2026-11-24",
+    "korean": "2026-11-25",
     "marks": "2026-11-24"
   }
 }

@@ -1,0 +1,88 @@
+/* The Korean section: the inscription explorer (on top of reigns.css), the date reader, the ceramics guide. */
+:root { --hangul: 'Nanum Myeongjo', 'Noto Serif KR', 'AppleMyungjo', serif; }
+[lang='ko'] { font-family: var(--han), var(--hangul); }
+.kx__hangul, .kx__hangul * { font-family: var(--hangul); }
+
+
+.kx__groups { flex-wrap: wrap; }
+.kx__palette { gap: 16px; }
+.kx__pgroup h3 { font: 600 13.5px/1.3 var(--sans); color: var(--ink-2); margin: 0 0 8px; }
+.pair__chars { display: inline-flex; gap: 3px; grid-column: 1 / -1; }
+
+.kx__timeline { margin: 22px 0 8px; display: grid; gap: 6px; }
+.kx__lane { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 10px; align-items: center; }
+.kx__lane-name { font-size: 13px; color: var(--ink-2); text-align: right; }
+.kx__lane-bar { position: relative; height: 22px; border-radius: 5px; background: var(--paper-2); }
+.kx__era { position: absolute; top: 0; height: 100%; border-radius: 5px; opacity: 0.28; }
+.kx__seg { position: absolute; top: 4px; height: 14px; border: 0; padding: 0; border-radius: 3px; cursor: pointer; opacity: 0.85; transition: opacity 0.2s, transform 0.2s; }
+.kx__seg.is-dim { opacity: 0.12; }
+.kx__seg.is-open, .kx__seg:hover { transform: scaleY(1.4); outline: 2px solid var(--ink); z-index: 1; opacity: 1; }
+.kx__era--goryeo, .kx__seg--goryeo { background: #7fa89a; }
+.kx__era--buncheong, .kx__seg--buncheong { background: #a59a83; }
+.kx__era--white, .kx__seg--white { background: #9aa9bd; }
+.kx__era--modern, .kx__seg--modern { background: #b08a7a; }
+.kx__ticks { margin-left: 138px; }
+
+.kx__blurb { max-width: 68ch; color: var(--ink-2); margin: -4px 0 14px; font-size: 15.5px; }
+.kx__grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+.kcard__means { font-size: 13px; color: var(--ink-2); line-height: 1.35; }
+.kx__chars { font-family: var(--han), var(--hangul); color: #1b1916; line-height: 1.15; text-align: center; padding: 0 8%; overflow-wrap: anywhere; }
+.kx__chars--md { font-size: 2rem; }
+.kx__chars--md.is-long { font-size: 1.35rem; }
+.kx__chars--lg { font-size: 2.4rem; }
+.kx__chars--lg.is-long { font-size: 1.5rem; }
+.kx__noc { font-size: 14px; padding: 0 10px; text-align: center; }
+.kx__big { font-size: 2.4rem; line-height: 1.1; }
+.kx__names { margin: 0 0 6px; font-size: 1.05rem; }
+.kx__variants { margin: 0 0 10px; font-size: 14.5px; color: var(--ink-2); }
+.kx__dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; margin: 14px 0; font-size: 14.5px; }
+.kx__dl dt { color: var(--ink-3); }
+.kx__dl dd { margin: 0; color: var(--ink-2); }
+.kx__tells { font-size: 15px; }
+
+/* The date reader */
+.dr { margin: 18px 0 8px; display: grid; gap: 14px; }
+.dr__q input { font-family: var(--han), var(--hangul), var(--sans); }
+.dr__eg { display: flex; flex-wrap: wrap; gap: 6px; font-size: 14px; color: var(--ink-3); align-items: center; }
+.dr__eg button { border: 1px solid var(--rule); background: var(--paper); border-radius: 999px; padding: 6px 11px; cursor: pointer; font-size: 15px; color: var(--ink); }
+.dr__out { display: grid; gap: 12px; }
+.dr__card { padding: 16px 18px; border-radius: var(--r-lg); border: 1px solid var(--rule); background: var(--paper); }
+.dr__card.is-exact { border-color: var(--accent); box-shadow: var(--shadow); }
+.dr__year { font: 500 2rem/1.1 var(--serif); }
+.dr__year small { font: 400 15px/1 var(--sans); color: var(--ink-3); margin-left: 8px; }
+.dr__how { margin: 6px 0 0; font-size: 14.5px; color: var(--ink-2); }
+.dr__cands { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.dr__cands span { padding: 4px 9px; border-radius: 8px; background: var(--paper-2); font-size: 14px; }
+.dr__cands span.is-likely { background: var(--accent-wash); color: var(--accent-ink); font-weight: 600; }
+.ktable { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.ktable th, .ktable td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.ktable th { font-weight: 600; color: var(--ink-2); }
+.ktable .han { font-size: 1.1em; }
+.ganji { display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); gap: 6px; list-style: none; padding: 0; margin: 0; }
+.ganji li { padding: 8px 10px; border-radius: 10px; border: 1px solid var(--rule); display: grid; gap: 1px; font-size: 13px; color: var(--ink-2); }
+.ganji .han { font-size: 1.3rem; color: var(--ink); }
+.ganji .num { color: var(--ink-3); font-size: 12px; }
+
+/* The ceramics guide */
+.kware { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 28px; align-items: start; margin: 38px 0; }
+.kware__photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.kware__photos figure { margin: 0; display: grid; gap: 6px; }
+.kware__photos .plate { aspect-ratio: 1; border: 1px solid var(--plate-edge); }
+.kware__photos img { width: 90%; height: 90%; object-fit: contain; }
+.kware__photos figcaption { font-size: 12px; color: var(--ink-3); }
+
+@media (max-width: 760px) {
+  .kx__lane { grid-template-columns: 74px minmax(0, 1fr); gap: 6px; }
+  .kx__lane-name { font-size: 11.5px; }
+  .kx__ticks { margin-left: 80px; }
+  .kx__grid { grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); }
+  .kware { grid-template-columns: 1fr; }
+}
+
+.kwtoc { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px 28px; }
+.kwtoc__h { font: 600 15px/1.3 var(--sans); margin-bottom: 6px; }
+.kwtoc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 14.5px; }
+.kware { scroll-margin-top: 90px; border-top: 1px solid var(--rule); padding-top: 26px; }
+.kware h3 { font-size: 1.45rem; margin-bottom: 6px; }
+.kware h4 { font: 600 15px/1.4 var(--sans); margin: 16px 0 6px; }
+.kware__names { margin: 0 0 4px; font-size: 1.02rem; }

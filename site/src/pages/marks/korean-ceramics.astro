@@ -1,0 +1,107 @@
+---
+// /marks/korean-ceramics: Korean pottery and porcelain by period. Each ware from
+// the app's table (korean.json `wares`, via the reference collection): what it
+// is, the kilns, what an owner can look at (body, glaze, foot, firing marks),
+// the copies the sources name, museum examples, and open-licence photographs
+// (marks/img/korean, CC0). Rendered ahead of time, no island: it is reading.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import SectionNav from '../../components/SectionNav.astro';
+import { wares, WARE_ERAS, NAV } from '../../lib/korean';
+import { articleLd, faqLd, crumbsLd } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/korean.css';
+
+const path = '/marks/korean-ceramics';
+const ws = wares();
+const years = (w: { from: number | null; to: number | null }) => (w.from == null ? '' : w.to == null || w.to === w.from ? `${w.from}` : `${w.from}–${w.to}`);
+const title = 'Korean Pottery and Porcelain by Period: Celadon, Buncheong, Moon Jars | Heirloom';
+const description = `${ws.length} Korean wares from Silla stoneware to modern celadon: Goryeo celadon, buncheong, Joseon white and blue-and-white porcelain and moon jars, how to recognize each by its body, glaze and foot, and the copies to watch for.`;
+const h1 = 'Korean ceramics by period';
+const faqs: [string, string][] = [
+  ['What is a Korean moon jar?', '<p>A large, round white porcelain jar of the Joseon dynasty, usually over 40 cm high, made mostly at the court kilns at Gwangju in the late 17th and 18th centuries. It was too big to throw whole, so the top and bottom halves were made separately and joined, which is why many lean a little and show a seam at the widest point. The milky white and the round shape gave it its name, dal hangari.</p>'],
+  ['How can I tell if my Korean celadon is Goryeo or a later copy?', '<p>Goryeo celadon (918–1392) was copied under Japanese rule and again from the 1950s at Gangjin and Icheon, so look at the item, not just the decoration. Fine Goryeo celadons were often fired standing on small silica spurs that leave little white marks on the foot; the glaze, the body where it shows, and the wear all count. The sources read describe no single test, and only a specialist who can handle the item can judge it.</p>'],
+  ['What is buncheong?', '<p>A gray stoneware covered in white slip, made in early Joseon from the late 14th century to about 1600. The slip was stamped, inlaid, carved away, painted with iron, brushed on, or the pot was simply dipped in it; each technique is shown below.</p>'],
+  ['Is Korean pottery marked?', '<p>Mostly not. The writing that does appear names an office, a palace hall or a place, and is collected in the inscriptions explorer.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).korean ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Korean ceramics' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/korean/', 'Korean marks']),
+];
+const han = [...new Set(ws.map((w) => w.hanja ?? '').join(''))].filter((c) => /[㐀-鿿]/.test(c)).join('');
+const hangul = [...new Set(ws.map((w) => w.hangul ?? '').join(''))].filter((c) => /[가-힣]/.test(c)).join('');
+---
+<Base {title} {description} {path} jsonld={graph} {han} {hangul}>
+  <div class="wrap">
+    <Crumbs name={h1} mid={['/marks/korean/', 'Korean marks']} />
+    <SectionNav {path} label="Korean marks" items={NAV} />
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Every main Korean ware from Silla stoneware to modern celadon: what it is, where it was made, and what you can look at yourself (the body, the glaze, the foot and the marks of firing), with the copies the sources name.</p>
+    </header>
+
+    <nav class="block kwtoc" aria-label="Wares">
+      {WARE_ERAS.map(([e, label]) => {
+        const list = ws.filter((w) => w.era === e);
+        return list.length > 0 && (
+          <div>
+            <h2 class="kwtoc__h">{label}</h2>
+            <ul>{list.map((w) => <li><a href={`#${w.id}`}>{w.name}</a> <span class="num muted">{years(w)}</span></li>)}</ul>
+          </div>
+        );
+      })}
+    </nav>
+
+    {WARE_ERAS.map(([e, label]) => {
+      const list = ws.filter((w) => w.era === e);
+      return list.length > 0 && (
+        <section class="block" aria-label={label}>
+          <h2 class="rx__dynasty">{label}</h2>
+          {list.map((w) => (
+            <article class="kware" id={w.id}>
+              <div class="prose">
+                <h3>{w.name}</h3>
+                <p class="kware__names">
+                  {w.hanja && <span class="han" lang="ko">{w.hanja}</span>}
+                  {w.hangul && <span class="kx__hangul" lang="ko"> · {w.hangul}</span>}
+                  {w.rr && <span class="muted"> · {w.rr}{w.mr && w.mr !== w.rr ? ` (${w.mr})` : ''}</span>}
+                </p>
+                <p class="num muted">{years(w)}{w.period && <> · {w.period}</>}</p>
+                <p>{w.what}</p>
+                {w.kilns.length > 0 && <p><strong>Kilns.</strong> {w.kilns.join('; ')}</p>}
+                {w.recognize.length > 0 && <><h4>How to recognize it</h4><ul>{w.recognize.map((t) => <li>{t}</li>)}</ul></>}
+                {w.copies.length > 0 && <><h4>Copies</h4><ul>{w.copies.map((c) => <li>{c.text}</li>)}</ul></>}
+                {w.singleSource && <p class="panel__warn">Part of this rests on one source only.</p>}
+                <details class="rsources">
+                  <summary>The evidence and sources <span class="muted num">{w.facts.length}</span></summary>
+                  <ul>{w.facts.map((f) => <li>{f.text} <span class="faint">({f.single || f.sources.length === 1 ? 'one source' : `${f.sources.length} sources`})</span></li>)}</ul>
+                  {w.examples.length > 0 && <><p><strong>Museum examples</strong></p><ul>{w.examples.map((x) => <li>{x.url ? <a href={x.url} rel="nofollow noopener">{x.title}</a> : x.title}{x.holder && <span class="muted">, {x.holder}{x.id && ` (${x.id})`}</span>}</li>)}</ul></>}
+                  <ol>{w.sources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}</li>)}</ol>
+                </details>
+              </div>
+              {w.photos.length > 0 && (
+                <div class="kware__photos">
+                  {w.photos.slice(0, 4).map((p) => (
+                    <figure>
+                      <span class="plate"><img src={`/${p.file}`} alt={`${p.title}, ${p.date}`} loading="lazy" decoding="async" /></span>
+                      <figcaption>{p.title}, {p.date}. {p.credit}{p.url && <> <a href={p.url} rel="noopener">Source</a></>}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              )}
+            </article>
+          ))}
+        </section>
+      );
+    })}
+
+    <AppBox text="Photograph the item, its base and any writing. The Advisor compares what it sees with this same guide and the inscription table, and says what it cannot tell from photographs." />
+    <Faq {faqs} />
+  </div>
+</Base>

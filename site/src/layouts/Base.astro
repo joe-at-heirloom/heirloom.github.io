@@ -14,12 +14,14 @@ interface Props {
   image?: string;
   jsonld?: object[];
   han?: string; // Chinese characters the page sets in the han face (subset request)
+  hangul?: string; // Korean (hangul) characters the page sets, for the hangul face's subset request
 }
-const { title, description, path, image = '/og-image.jpg', jsonld = [], han } = Astro.props;
+const { title, description, path, image = '/og-image.jpg', jsonld = [], han, hangul } = Astro.props;
 const canonical = new URL(path, Astro.site).toString();
 const fonts =
   'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap';
 const hanFont = han ? `https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap&text=${encodeURIComponent(han)}` : null;
+const hangulFont = hangul ? `https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap&text=${encodeURIComponent(hangul)}` : null;
 const graph = [ORG, WEBSITE, ...jsonld];
 const preview = !!process.env.SITE_PREVIEW;
 ---
@@ -49,6 +51,7 @@ const preview = !!process.env.SITE_PREVIEW;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href={fonts} />
     {hanFont && <link rel="stylesheet" href={hanFont} />}
+    {hangulFont && <link rel="stylesheet" href={hangulFont} />}
     <script is:inline>
       try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
     </script>

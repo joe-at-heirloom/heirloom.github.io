@@ -40,6 +40,7 @@ export const FAMILY: Record<string, { label: string; order: number }> = {
   'pottery-codes': { label: 'Pottery date codes', order: 7 },
   'chinese-marks': { label: 'Chinese marks', order: 8 },
   'chinese-people': { label: 'Chinese painters and collectors', order: 9 },
+  'korean-marks': { label: 'Korean marks and dates', order: 9.5 },
   signatures: { label: 'Artist signatures', order: 10 },
   'swiss-watches': { label: 'Watches', order: 11 },
   'serial-numbers': { label: 'Serial numbers', order: 12 },

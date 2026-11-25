@@ -30,7 +30,7 @@ const PREFIX = 'backend/src/data/mark-tables';
 const out = join(site, 'src', 'data', 'app');
 mkdirSync(join(out, 'marks'), { recursive: true });
 
-const tables = ['hallmarks', 'chinese'];
+const tables = ['hallmarks', 'chinese', 'korean'];
 for (const t of tables) writeFileSync(join(out, `${t}.json`), git('show', `${APP_REF}:${PREFIX}/${t}.json`));
 const dbFiles = git('ls-tree', '--name-only', `${APP_REF}:${PREFIX}/marks`).split('\n').filter((n) => n.endsWith('.json'));
 for (const n of dbFiles) writeFileSync(join(out, 'marks', n), git('show', `${APP_REF}:${PREFIX}/marks/${n}`));
@@ -46,6 +46,11 @@ mkdirSync(join(siteOut, 'chinese'), { recursive: true });
 const chImg = join(repo, 'marks', 'img', 'chinese');
 for (const f of readdirSync(chImg)) if (/^index.*\.json$/.test(f)) copyFileSync(join(chImg, f), join(siteOut, 'chinese', f));
 copyFileSync(join(repo, 'scripts', 'pages', 'data', 'chinese_kiln.json'), join(siteOut, 'chinese_kiln.json'));
+// The Korean section's photographs of the main wares (the ceramics guide); the
+// photographs of inscriptions reach the site as records of the collection.
+mkdirSync(join(siteOut, 'korean'), { recursive: true });
+const koImg = join(repo, 'marks', 'img', 'korean');
+if (existsSync(koImg)) for (const f of readdirSync(koImg)) if (/^index.*\.json$/.test(f)) copyFileSync(join(koImg, f), join(siteOut, 'korean', f));
 // The whole reference collection (marks, letters, reigns, halls, kiln facts,
 // people and seals, signatures, makers), built by the same collect.ts that
 // publishes it to the Advisor's database, from the app's kept checkout at its
