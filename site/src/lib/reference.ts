@@ -249,7 +249,6 @@ function build(): Area[] {
         { label: 'Seals', links: [
           { href: '/marks/chinese/painters/', label: 'Painters and collectors', note: 'Their seals and signatures' },
           { href: '/marks/chinese/imperial-seals', label: 'Imperial collection seals', note: 'The emperors’ seals on paintings' },
-          { href: '/marks/chinese/suzuki-artists', label: 'More painters in the Suzuki catalogue', note: 'Not yet in the reference' },
         ] },
       ],
     },

@@ -186,3 +186,6 @@
   .cn-works td:nth-child(4)::before { content: 'Held by '; color: var(--ink-3); }
   .cn-tablewrap:has(.cn-works) { overflow: visible; }
 }
+/* A painter with works in the Suzuki catalogue and no page here: the link leaves the site. */
+.cn-people a.cn-people--out { background: var(--paper-2); border-style: dashed; }
+.cn-people a.cn-people--out .han { color: var(--ink-2); }

@@ -7,6 +7,7 @@ import Reference from '../../../../layouts/Reference.astro';
 import AppBox from '../../../../components/AppBox.astro';
 import { PEOPLE, NAV, IDX, HOME, DYN_ORDER, dates, url, hanOf } from '../../../../lib/chinese';
 import { SITE, crumbsLd } from '../../../../lib/site';
+import catalogueOnly from '../../../../data/site/chinese/suzuki-artists.json';
 import '../../../../styles/chinese.css';
 
 const path = IDX;
@@ -14,12 +15,25 @@ const n = PEOPLE.length;
 const nItems = PEOPLE.reduce((s, p) => s + p.items.length, 0);
 const title = 'Chinese Painters and Collectors: Seals and Signatures | Heirloom';
 const description = `${n} Chinese painters, calligraphers and collectors from the Tang to the 20th century, with their art names, dates, native places and ${nItems.toLocaleString('en-US')} recorded seals and signatures, with sources.`;
-const rows = [...PEOPLE]
-  .sort((a, b) => a.pinyin.toLowerCase().localeCompare(b.pinyin.toLowerCase()) || a.name.localeCompare(b.name))
-  .map((p) => ({ name: p.name, pinyin: p.pinyin, aliases: p.aliases.slice(0, 8), url: url(p), dates: dates(p), dynasty: p.dynasty, collector: p.collector, seals: p.items.length }));
+type Row = { name: string; pinyin: string; url: string; dates: string; dynasty: string; collector: boolean; seals: number; works: number; external: boolean };
+// Painters the Suzuki catalogue names who have no page here yet: in the same lists,
+// linked to the University of Tokyo database's list of their catalogued works.
+const PERIOD: [RegExp, string][] = [[/^n\.?\s*song/i, 'Northern Song'], [/^s\.?\s*song/i, 'Southern Song'], [/^five dynasties/i, 'Five Dynasties'], [/^tang/i, 'Tang'],
+  [/^jin/i, 'Jin'], [/^yuan/i, 'Yuan'], [/^ming/i, 'Ming'], [/^qing/i, 'Qing'], [/^republic/i, 'Republic'], [/^(modern|contemporary)/i, 'Modern']];
+const periodOf = (p: string | null) => { const t = (p ?? '').replace(/\u3000/g, ' ').trim(); return /japan|korea|ryukyu/i.test(t) ? '' : PERIOD.find(([re]) => re.test(t))?.[1] ?? ''; };
+const outside = (catalogueOnly as { name: string | null; pinyin: string; period: string | null; entries: number; search: string }[])
+  .map((a): Row => ({ name: a.name ?? '', pinyin: a.pinyin, url: a.search, dates: '', dynasty: periodOf(a.period), collector: false, seals: 0, works: a.entries, external: true }));
+const rows: Row[] = [
+  ...PEOPLE.map((p): Row => ({ name: p.name, pinyin: p.pinyin, url: url(p), dates: dates(p), dynasty: p.dynasty, collector: p.collector, seals: p.items.length, works: p.works?.length ?? 0, external: false })),
+  ...outside,
+].sort((a, b) => a.pinyin.toLowerCase().localeCompare(b.pinyin.toLowerCase()) || a.name.localeCompare(b.name));
+const meta = (r: Row) => r.external
+  ? [`${r.works} ${r.works === 1 ? 'work' : 'works'} in the Suzuki catalogue`].join('')
+  : [r.dates, r.collector ? 'collector' : '', r.seals ? `${r.seals} seals` : '', r.works ? `${r.works} catalogued works` : ''].filter(Boolean).join(' · ');
 const periods = DYN_ORDER.filter((d) => rows.some((r) => r.dynasty === d)).map((d) => [d, rows.filter((r) => r.dynasty === d)] as const);
 const rest = rows.filter((r) => !DYN_ORDER.includes(r.dynasty));
 const han = hanOf(...rows.map((r) => r.name), '董其昌香光居士中國書畫家印鑑款識');
+const nOut = outside.length;
 const graph = [
   { '@type': 'CollectionPage', '@id': SITE + path, url: SITE + path, name: title, description, isPartOf: { '@id': SITE + '/#website' } },
   crumbsLd(path, 'Painters and collectors', [HOME, 'Chinese marks']),
@@ -30,6 +44,7 @@ const graph = [
     <header>
       <h1>Painters, calligraphers and collectors</h1>
       <p class="lede">{n.toLocaleString('en-US')} painters, calligraphers and collectors, from the Tang to the 20th century, with {nItems.toLocaleString('en-US')} of their seals and signatures read and tied to the works they come from. Find a person by pinyin, by their Chinese name, or by any of their art names.</p>
+      <p class="cn-note">The lists also name {nOut.toLocaleString('en-US')} painters with works in the Suzuki catalogue of Chinese paintings who have no page here yet; their names open the University of Tokyo database’s list of their works ↗.</p>
     </header>
 
     <p class="cn-search"><a class="btn btn--primary" href="/signatures?f=chinese-people">Search names, art names and seals</a> <span class="label">Searches every name and art name, and the reading of every seal.</span></p>
@@ -39,7 +54,9 @@ const graph = [
         <h2 id={`p-${d}`}>{d} <span class="label">{rs.length}</span></h2>
         <ul class="cn-people">
           {rs.map((r) => (
-            <li><a href={r.url}><span class="han">{r.name}</span><span class="cn-people__name">{r.pinyin}</span><span class="cn-people__meta">{[r.dates, r.collector ? 'collector' : '', `${r.seals} seals`].filter(Boolean).join(' · ')}</span></a></li>
+            <li>{r.external
+              ? <a href={r.url} rel="nofollow noopener" class="cn-people--out"><span class="han" lang="ja">{r.name}</span><span class="cn-people__name">{r.pinyin} <span aria-hidden="true">↗</span></span><span class="cn-people__meta">{meta(r)}</span></a>
+              : <a href={r.url}><span class="han">{r.name}</span><span class="cn-people__name">{r.pinyin}</span><span class="cn-people__meta">{meta(r)}</span></a>}</li>
           ))}
         </ul>
       </section>
