@@ -1,0 +1,42 @@
+[
+ {
+  "row_id": "fuki-chosyun",
+  "holder": "Hallwyl Museum (Hallwylska museet), Stockholm, via Wikimedia Commons",
+  "accession": "96059",
+  "title": "Bowl (one of a pair), probably Arita",
+  "date": "probably 1800–1878 (Hallwyl Museum; bought in Stockholm in 1879)",
+  "object_url": "https://commons.wikimedia.org/wiki/File:Undersidan_med_skrivtecknen_Fu_ki_cho_shun_betydande_rikedom_-_Hallwylska_museet_-_96059.tif",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Undersidan_med_skrivtecknen_Fu_ki_cho_shun_betydande_rikedom_-_Hallwylska_museet_-_96059.tif",
+  "licence": "Public domain (Commons licence field: Public domain; Hallwyl Museum release)",
+  "credit": "Photo: Jens Mohr, Hallwyl Museum, Stockholm (inv. 96059), public domain, via Wikimedia Commons",
+  "view": "base",
+  "inscription_visible": "yes",
+  "file": "commons-hallwylska-96059.webp",
+  "crop_of": null,
+  "caption": "Underside of a bowl, probably Arita, 1800–1878; the mark 冨貴長春 is inside the foot.",
+  "pixels": [
+   1600,
+   1067
+  ]
+ },
+ {
+  "row_id": "fuki-chosyun",
+  "holder": "Hallwyl Museum (Hallwylska museet), Stockholm, via Wikimedia Commons",
+  "accession": "96059",
+  "title": "Bowl (one of a pair), probably Arita",
+  "date": "probably 1800–1878 (Hallwyl Museum; bought in Stockholm in 1879)",
+  "object_url": "https://commons.wikimedia.org/wiki/File:Undersidan_med_skrivtecknen_Fu_ki_cho_shun_betydande_rikedom_-_Hallwylska_museet_-_96059.tif",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Undersidan_med_skrivtecknen_Fu_ki_cho_shun_betydande_rikedom_-_Hallwylska_museet_-_96059.tif",
+  "licence": "Public domain (Commons licence field: Public domain; Hallwyl Museum release)",
+  "credit": "Photo: Jens Mohr, Hallwyl Museum, Stockholm (inv. 96059), public domain, via Wikimedia Commons",
+  "view": "base",
+  "inscription_visible": "yes",
+  "file": "commons-hallwylska-96059-mark.webp",
+  "crop_of": "commons-hallwylska-96059.webp",
+  "caption": "Underside of a bowl with the four characters 冨貴長春 (fuki chōshun, wealth, honour and lasting spring) painted in underglaze blue inside the foot; the Hallwyl Museum attributes the pair to the Arita kilns.",
+  "pixels": [
+   1424,
+   1600
+  ]
+ }
+]
