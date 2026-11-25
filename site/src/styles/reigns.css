@@ -107,3 +107,6 @@
   .fit__mark { width: 96px; height: 96px; }
   .fit__name { font-size: 1.2rem; }
 }
+
+.rmarks__imgs { display: flex; flex-wrap: wrap; gap: 8px; }
+.rmarks li { grid-template-columns: auto minmax(0, 1fr); }

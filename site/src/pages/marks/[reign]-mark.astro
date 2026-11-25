@@ -1,0 +1,137 @@
+---
+// /marks/<reign>-mark: one Ming or Qing reign's mark, built from the reign
+// records the explorer (/marks/chinese-reign-marks) reads (src/lib/reigns.ts):
+// the marks in both scripts with their book facsimiles, museum examples of the
+// period and later, the later copies, how specialists date the wares, and the
+// sources. Title, description and h1 are the generated pages' (page-meta.json),
+// so each page keeps its standing in search.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import SectionNav from '../../components/SectionNav.astro';
+import AppBox from '../../components/AppBox.astro';
+import { MarkSet } from '../../islands/ReignExplorer';
+import { reigns, type Reign } from '../../lib/reigns';
+import { NAV } from '../../lib/chinese';
+import { media } from '../../lib/media';
+import { articleLd, crumbsLd } from '../../lib/site';
+import meta from '../../data/site/page-meta.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/chinese.css';
+
+export function getStaticPaths() {
+  const rs = reigns();
+  return rs.map((r, i) => ({ params: { reign: r.id.replace(/^reign-/, '') }, props: { r, prev: rs[i - 1] ?? null, next: rs[i + 1] ?? null } }));
+}
+const { r, prev, next } = Astro.props as { r: Reign; prev: Reign | null; next: Reign | null };
+const slug = r.id.replace(/^reign-/, '');
+const path = `/marks/${slug}-mark`;
+const m = (meta as Record<string, { title: string | null; description: string | null; h1: string | null }>)[path] ?? null;
+const years = r.start === r.end ? String(r.start) : `${r.start}–${r.end}`;
+const title = m?.title ?? `${r.pinyin} Mark: ${r.chars} Reign Marks, ${years} | Heirloom`;
+const description = m?.description ?? `How to recognize a ${r.pinyin} reign mark (${r.chars}, ${years}): the characters, the scripts used on imperial wares, the later copies, and photographs from museum collections, with sources.`;
+const dynasty = r.dynasty === 'Hongxian' ? 'Hongxian empire' : `${r.dynasty} dynasty`;
+const HAN = /[㐀-鿿豈-﫿]/;
+const shown = r.marks.filter((k) => HAN.test(k.chars) || k.chars.startsWith('('));
+const period = r.photos.filter((p) => p.when === 'period');
+const later = r.photos.filter((p) => p.when === 'later');
+const other = r.photos.filter((p) => p.when !== 'period' && p.when !== 'later');
+const nav = NAV.map((i) => (i.label === 'Reign marks' ? { ...i, match: path } : i));
+const han = [...new Set([...r.glyphs, ...r.chars, ...r.marks.map((k) => k.chars).join(''), ...r.photos.map((p) => p.caption + p.label).join('')])].filter((c) => HAN.test(c)).join('');
+const graph = [
+  articleLd(path, `${r.pinyin} mark ${r.chars}`, description, '2026-11-25', { about: { '@type': 'Thing', name: `${r.pinyin} reign mark` } }),
+  crumbsLd(path, `${r.pinyin} mark`, ['/marks/chinese-reign-marks', 'Chinese reign marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph} {han}>
+  <div class="wrap cn">
+    <Crumbs name={`${r.pinyin} mark`} mid={['/marks/chinese-reign-marks', 'Chinese reign marks']} />
+    <SectionNav {path} label="Chinese marks" items={nav} />
+
+    <header class="phead">
+      <h1>{r.pinyin} mark <span class="han">{r.chars}</span></h1>
+      <dl class="cn-facts">
+        <dt>Reign</dt><dd>{r.pinyin} <span class="han">{r.chars}</span>, {dynasty}</dd>
+        <dt>Years</dt><dd class="num">{years}{r.alt && <span class="muted"> ({r.alt})</span>}{r.yearNote && <span class="muted"> · {r.yearNote}</span>}</dd>
+        {r.spellings.length > 1 && (<><dt>Older spellings</dt><dd>{r.spellings.filter((s) => s.toLowerCase() !== slug).join(', ')}</dd></>)}
+        {r.emperor && (<><dt>Emperor</dt><dd>{r.emperor}</dd></>)}
+      </dl>
+    </header>
+
+    {r.summary && <p class="cn-block panel__summary">{r.summary}</p>}
+
+    <section class="cn-block rmarks" aria-labelledby="mark">
+      <h2 id="mark">The {r.pinyin} mark</h2>
+      <ul>
+        {shown.map((k) => {
+          // Every book's facsimile of this mark (Chaffers, Du Sartel…), not only the first.
+          const faxes = r.fax.filter((f) => f.count === k.count && f.script === (k.script === 'seal' ? 'seal' : 'regular'));
+          return (
+            <li>
+              <span class="rmarks__imgs">{faxes.length ? faxes.map((f) => <span class="plate plate--print rmarks__img"><img src={media(f.file)} alt={`${k.chars}, ${k.script} script`} title={f.credit} loading="lazy" /></span>) : <span class="plate plate--print rmarks__img">{HAN.test(k.chars) ? <MarkSet chars={k.chars} size="sm" /> : <span class="muted">{k.chars}</span>}</span>}</span>
+              <span class="rmarks__text">
+                <span class="han rmarks__chars">{HAN.test(k.chars) ? k.chars : ''}</span>
+                <span class="rmarks__kind">{k.count ? `${k.count} ${k.count === 1 ? 'character' : 'characters'}, ` : ''}{k.script} script{faxes.length ? ` · book ${faxes.length > 1 ? 'facsimiles' : 'facsimile'}: ${faxes.map((f) => f.credit).join('; ')}` : HAN.test(k.chars) ? ' · set in type' : ''}</span>
+                {k.note && <span class="rmarks__note">{k.note}</span>}
+              </span>
+            </li>
+          );
+        })}
+        {r.fax.filter((f) => !shown.some((k) => f.count === k.count && f.script === (k.script === 'seal' ? 'seal' : 'regular'))).map((f) => (
+          <li>
+            <span class="rmarks__imgs"><span class="plate plate--print rmarks__img"><img src={media(f.file)} alt={`${f.label}, ${r.pinyin} mark`} loading="lazy" /></span></span>
+            <span class="rmarks__text"><span class="rmarks__kind">{f.label} · book facsimile: {f.credit}</span></span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    {period.length > 0 && (
+      <section class="cn-block rphotos" aria-labelledby="imperial">
+        <h2 id="imperial">On imperial wares</h2>
+        <ul>{period.map((p) => <li><figure><span class="plate plate--print"><img src={media(p.file)} alt={p.label} loading="lazy" /></span><figcaption><span class="when when--period">Of the period</span><span>{p.caption || p.label}</span><span class="faint">{p.credit}{p.url && <> <a href={p.url} rel="noopener">Source</a></>}</span></figcaption></figure></li>)}</ul>
+      </section>
+    )}
+
+    {(r.copies || later.length > 0) && (
+      <section class="cn-block rphotos" aria-labelledby="later">
+        <h2 id="later">Later items with this mark</h2>
+        {r.copies && <p class="rcopies">{r.copies}</p>}
+        {later.length > 0 && <ul>{later.map((p) => <li><figure><span class="plate plate--print"><img src={media(p.file)} alt={p.label} loading="lazy" /></span><figcaption><span class="when when--later">Later than the mark</span><span>{p.caption || p.label}</span><span class="faint">{p.credit}{p.url && <> <a href={p.url} rel="noopener">Source</a></>}</span></figcaption></figure></li>)}</ul>}
+      </section>
+    )}
+
+    {other.length > 0 && (
+      <section class="cn-block rphotos" aria-labelledby="other">
+        <h2 id="other">Other examples in museums</h2>
+        <ul>{other.map((p) => <li><figure><span class="plate plate--print"><img src={media(p.file)} alt={p.label} loading="lazy" /></span><figcaption><span>{p.caption || p.label}</span><span class="faint">{p.credit}{p.url && <> <a href={p.url} rel="noopener">Source</a></>}</span></figcaption></figure></li>)}</ul>
+      </section>
+    )}
+
+    {r.facts.length > 0 && (
+      <section class="cn-block rfactsx" aria-labelledby="dating">
+        <h2 id="dating">How specialists date {r.pinyin} wares</h2>
+        <ul>{r.facts.map((f) => <li><strong>{f.topic}.</strong> {f.text} {f.sources.length > 0 && <span class="faint">({f.sources.join('; ')})</span>}</li>)}</ul>
+      </section>
+    )}
+
+    <p class="cn-block cn-note">A reign mark names the reign it claims. Heirloom never decides whether an item is of that period or genuine; a specialist who can handle it is the one to ask.</p>
+    {r.singleSource && <p class="panel__warn">Part of this record rests on one source only.</p>}
+
+    <p class="panel__actions">
+      <a class="btn btn--primary" href={`/marks/chinese-reign-marks?reign=${slug}`}>Compare with every reign</a>
+      {prev && <a class="btn" href={`/marks/${prev.id.replace(/^reign-/, '')}-mark`}>← {prev.pinyin}</a>}
+      {next && <a class="btn" href={`/marks/${next.id.replace(/^reign-/, '')}-mark`}>{next.pinyin} →</a>}
+    </p>
+
+    <section class="cn-block" aria-labelledby="sources">
+      <h2 id="sources">Sources</h2>
+      <!--copy-check:skip-->
+      <ol class="cn-sources">{r.sources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}</li>)}</ol>
+      <!--/copy-check:skip-->
+    </section>
+
+    <AppBox text="Photograph the base. The Advisor reads the characters, names the reign they claim from this same table, and says plainly that the mark does not date the item." />
+  </div>
+</Base>

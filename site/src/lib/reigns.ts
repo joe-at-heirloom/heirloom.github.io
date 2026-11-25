@@ -5,7 +5,7 @@ import { collection, type Rec } from './portal';
 import { soften } from './site';
 import chineseTable from '../data/app/chinese.json';
 
-export type Fax = { file: string; script: 'regular' | 'seal'; count: number; label: string; credit: string };
+export type Fax = { file: string; script: 'regular' | 'seal' | 'other'; count: number; label: string; credit: string };
 export type Photo = { file: string; label: string; caption: string; when: 'period' | 'later' | null; credit: string; url: string | null };
 export type Fact = { topic: string; text: string; sources: string[] };
 export type Reign = {
@@ -41,12 +41,14 @@ export function reigns(): Reign[] {
       const fax: Fax[] = children
         .filter((k) => k.kind.startsWith('book facsimile') && k.image_id)
         .map((k) => {
-          const m = /book-[a-z]+-(kaishu|seal)(\d)/.exec(k.id) ?? [];
-          const script = m[1] === 'seal' ? 'seal' : 'regular';
-          const count = Number(m[2] ?? 6);
-          return { file: img.get(k.image_id!)!.file, script, count, label: `${script === 'seal' ? 'Seal script' : 'Regular script'}, ${count} characters`, credit: img.get(k.image_id!)!.credit ?? '' };
+          // book-<reign>-<kaishu|seal|other><count>[-<book>]: "other" is a form the book prints beside the usual marks.
+          const m = /book-[a-z]+-(kaishu|seal|other)(\d)?/.exec(k.id) ?? [];
+          const script: Fax['script'] = m[1] === 'seal' ? 'seal' : m[1] === 'other' ? 'other' : 'regular';
+          const count = m[2] ? Number(m[2]) : script === 'other' ? 0 : 6;
+          const label = script === 'other' ? 'Another form in the books' : `${script === 'seal' ? 'Seal script' : 'Regular script'}, ${count} characters`;
+          return { file: img.get(k.image_id!)!.file, script, count, label, credit: img.get(k.image_id!)!.credit ?? '' };
         })
-        .sort((x, y) => (x.script === y.script ? y.count - x.count : x.script === 'regular' ? -1 : 1));
+        .sort((x, y) => (x.script === y.script ? y.count - x.count : ['regular', 'seal', 'other'].indexOf(x.script) - ['regular', 'seal', 'other'].indexOf(y.script)));
       const photos: Photo[] = children
         .filter((k) => k.kind.startsWith('museum example') && k.image_id)
         .map((k) => {
