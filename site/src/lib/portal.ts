@@ -30,6 +30,11 @@ export function collection(): Collection {
 }
 
 export const SEAL_KINDS = new Set(['seal or signature', "collector's seal"]);
+// The works catalogued under a painter's name (9,000 and more, the Suzuki catalogue) are shown on the
+// painter's own page only: in the search they would outnumber the people, and as one file each
+// (data/r/, below) they would nearly double the site's files.
+const PAGE_ONLY = new Set(['catalogued work']);
+const inPortal = (kind: string) => !SEAL_KINDS.has(kind) && !PAGE_ONLY.has(kind);
 export const FAMILY: Record<string, { label: string; order: number }> = {
   'british-hallmarks': { label: 'British hallmarks', order: 1 },
   'world-silver': { label: 'Silver from other countries', order: 2 },
@@ -71,7 +76,7 @@ export function indexRows(scope: Scope): IndexRow[] {
     if (r.parent_id && r.image_id && !childImg.has(r.parent_id)) childImg.set(r.parent_id, img.get(r.image_id)!);
   }
   return c.records
-    .filter((r) => !SEAL_KINDS.has(r.kind) && inScope(r.family, scope))
+    .filter((r) => inPortal(r.kind) && inScope(r.family, scope))
     .map((r) => {
       const words = [...new Set([...r.keys, r.maker ?? '', r.place ?? ''].map((w) => w.toLowerCase()).filter(Boolean))].join('|');
       return [r.id, r.name, r.kind, r.family, r.date_from ?? null, r.date_to ?? null, (r.image_id ? img.get(r.image_id) : null) ?? childImg.get(r.id) ?? null,
@@ -100,9 +105,9 @@ export function familyRecords(family: string) {
   const src = new Map(c.sources.map((s) => [s.id, s]));
   const byId = new Map(c.records.map((r) => [r.id, r]));
   const children = new Map<string, string[]>();
-  for (const r of c.records) if (r.parent_id && !SEAL_KINDS.has(r.kind)) (children.get(r.parent_id) ?? children.set(r.parent_id, []).get(r.parent_id)!).push(r.id);
+  for (const r of c.records) if (r.parent_id && inPortal(r.kind)) (children.get(r.parent_id) ?? children.set(r.parent_id, []).get(r.parent_id)!).push(r.id);
   return c.records
-    .filter((r) => r.family === family && !SEAL_KINDS.has(r.kind))
+    .filter((r) => r.family === family && inPortal(r.kind))
     .map((r) => {
       const { keys, sources, image_id, ...rest } = r;
       const i = image_id ? img.get(image_id) : null;
@@ -136,6 +141,6 @@ export function recordsOne(family: string) {
 export function families(scope?: Scope) {
   const c = collection();
   const counts = new Map<string, number>();
-  for (const r of c.records) if (!SEAL_KINDS.has(r.kind) && (!scope || inScope(r.family, scope))) counts.set(r.family, (counts.get(r.family) ?? 0) + 1);
+  for (const r of c.records) if (inPortal(r.kind) && (!scope || inScope(r.family, scope))) counts.set(r.family, (counts.get(r.family) ?? 0) + 1);
   return [...counts.entries()].sort((a, b) => (FAMILY[a[0]]?.order ?? 99) - (FAMILY[b[0]]?.order ?? 99)).map(([f, n]) => ({ family: f, label: familyLabel(f), count: n }));
 }

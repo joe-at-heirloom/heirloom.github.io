@@ -49,6 +49,8 @@ export type Person = {
   aliases_en?: Record<string, { pinyin?: string; gloss?: string }>; place_zh: string; place_en: string; skills: string;
   writings: string; writings_en?: string | null; ethnicity: string; book: { no: number; page: number }; name_uncertain: boolean;
   items: SealItem[]; survey: SurveyRec[]; wikidata: { status?: string; qid?: string | null; born?: number[]; died?: number[] }; shiqu: ShiquEntry[];
+  /** Works catalogued under the person's name in the Suzuki catalogue (child records of kind "catalogued work"). */
+  works: Work[];
   /** Where the person comes from: the Shanghai Museum's seal book, or Wikidata checked against Chinese Wikipedia (no seals). */
   set: 'seal-book' | 'wikidata';
   dict?: {
@@ -57,6 +59,70 @@ export type Person = {
     wikipediaOnly: { courtesy: string[]; art_names: string[] }; zhwiki: string | null; enwiki: string | null;
   };
 };
+
+/** One work in the Suzuki catalogue under a person's name: where it is held, not whether it is theirs. */
+export type Work = {
+  id: string; title: string; title_en: string | null; date: string; format: string; medium: string; medium_ja: string; size: string;
+  /** Who holds it, as the catalogue names them (the group); holder adds the accession number where there is one. */
+  held: string | null; holder: string | null; no: string; url: string | null; asGiven: string | null; near: boolean;
+};
+export const SUZUKI_DB = 'https://cpdb.ioc.u-tokyo.ac.jp/picture';
+const PERIOD: Record<string, string> = { 'S.Song': 'Southern Song', 'N.Song': 'Northern Song' };
+/** The database's format abbreviations, in words ("hg." a hanging scroll, "al. leaf" an album leaf). */
+function formatEn(f: unknown) {
+  const t = String(f ?? '').trim().replace(/^\((.*)\)$/, '$1').trim();
+  if (!t) return '';
+  const w = t
+    .replace(/\bhg\./g, 'hanging scroll').replace(/\bhd\./g, 'handscroll').replace(/\bal\. ?leaves\b/g, 'album leaves')
+    .replace(/\bal\. ?leaf\b/g, 'album leaf').replace(/\bal\./g, 'album').replace(/\brd\. fan\b/g, 'round fan').replace(/\bfr\./g, 'framed')
+    .replace(/\s{2,}/g, ' ');
+  return w.charAt(0).toUpperCase() + w.slice(1);
+}
+/** "紙・墨・淡" (paper, ink, light color) as "Ink and light color on paper"; anything not in the list stays as written. */
+const GROUND: Record<string, string> = { 紙: 'paper', 絹: 'silk', 金箋: 'gold paper', 綾: 'damask', 絖: 'satin', 麻: 'hemp' };
+const PAINT: Record<string, string> = { 墨: 'ink', 淡: 'light color', 着: 'color', 金: 'gold', 泥金: 'gold paint' };
+function mediumEn(m: unknown) {
+  const [ground, ...paint] = String(m ?? '').split('・').map((x) => x.trim()).filter(Boolean);
+  if (!ground || !GROUND[ground] || !paint.length || paint.some((x) => !PAINT[x])) return '';
+  const p = paint.map((x) => PAINT[x]);
+  const list = p.length > 1 ? `${p.slice(0, -1).join(', ')} and ${p.at(-1)}` : p[0];
+  return `${list} on ${GROUND[ground]}`;
+}
+/** The holder as the catalogue names it; the private collections under one name. */
+function holderOf(m: unknown) {
+  const t = String(m ?? '').trim();
+  if (!t) return null;
+  return /^private collections?$/i.test(t) || t === '個人コレクション' ? 'Private collections' : t;
+}
+/** The database's English titles carry its HTML entities (&quot;); the page escapes text itself. */
+const unentity = (t: string) => t.replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, '’').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+/** "167.0×45.2" as "167.0 × 45.2 cm"; a size given on one side only ("30.3×") as that side. */
+function sizeOf(v: unknown) {
+  const sides = String(v ?? '').split('×').map((x) => x.trim()).filter(Boolean);
+  return sides.length ? `${sides.join(' × ')} cm` : '';
+}
+function workOf(k: { id: string; name: string; attributes: Record<string, any> }): Work {
+  const s = k.attributes;
+  const db = k.id.startsWith('suzuki-cpdb');
+  return {
+    id: k.id,
+    // The database's titles are in Japanese forms (図, not 圖), with an English title for most; the
+    // museums' own records (the first 77) give an English title only.
+    title: db ? String(s.title ?? '') : '',
+    title_en: db ? (s.title_en ? unentity(String(s.title_en)) : null) : String(s.title ?? k.name),
+    date: db ? PERIOD[s.period] ?? String(s.period ?? '') : String(s.date ?? ''),
+    format: db ? formatEn(s.format) : '',
+    medium: db ? mediumEn(s.medium) : '',
+    medium_ja: db && !mediumEn(s.medium) ? String(s.medium ?? '') : '',
+    size: sizeOf(s.size_cm),
+    held: holderOf(s.museum),
+    holder: holderOf(s.museum) && s.accession ? `${holderOf(s.museum)}, ${s.accession}` : holderOf(s.museum),
+    no: Array.isArray(s.numbers) ? s.numbers.join(', ') : '',
+    url: s.record_url ?? s.museum_url ?? null,
+    asGiven: db && s.artist_as_given ? String(s.artist_as_given) : null,
+    near: s.match === 'one character differs',
+  };
+}
 
 /** The people, from the collection. */
 function people(): Person[] {
@@ -88,7 +154,7 @@ function people(): Person[] {
         aliases: Array.isArray(a.aliases) ? a.aliases : [], aliases_en: a.aliases_en ?? undefined,
         place_zh: a.place_zh ?? '', place_en: r.place ?? '', skills: a.skills ?? '', writings: a.writings ?? '', writings_en: a.writings_en ?? null,
         ethnicity: a.ethnicity ?? '', book: a.book ?? { no: 0, page: 0 }, name_uncertain: !!a.name_uncertain,
-        items: (seals.get(r.id) ?? []).map((k) => {
+        items: (seals.get(r.id) ?? []).filter((k) => k.kind !== 'catalogued work').map((k) => {
           const s = k.attributes;
           return {
             n: Number(s.n), reading: s.reading ?? '', source: s.work ?? '', source_en: s.work_en ?? undefined, date_text: s.date_text ?? '',
@@ -98,6 +164,7 @@ function people(): Person[] {
           };
         }),
         survey: Array.isArray(a.survey) ? a.survey : [], wikidata: a.wikidata ?? {}, shiqu: Array.isArray(a.shiqu) ? a.shiqu : [],
+        works: (seals.get(r.id) ?? []).filter((k) => k.kind === 'catalogued work').map(workOf),
       };
     })
     .filter((p) => p.slug && p.slug !== 'marks');

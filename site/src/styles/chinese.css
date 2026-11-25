@@ -165,3 +165,24 @@
 .cn-reigns a { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--rule); border-radius: var(--r); background: var(--paper); text-decoration: none; color: inherit; }
 .cn-reigns a:hover { border-color: var(--ink-3); }
 .cn-reigns .han { font-size: 1.3rem; }
+/* The Suzuki catalogue's works: Japanese forms in the Japanese face; the rows past ten fold. */
+.cn [lang='ja'] { font-family: 'Klee One', 'Hiragino Mincho ProN', 'Yu Mincho', var(--han); }
+.cn-works td:first-child { min-width: 16rem; }
+.cn-works .cn-gloss, .cn-works .cn-tag { display: block; margin-top: 4px; }
+.cn-works .cn-tag { display: inline-block; }
+.cn-more { margin-top: 14px; }
+.cn-more > summary { cursor: pointer; color: var(--accent-ink); font-weight: 500; margin-bottom: 14px; }
+/* On a phone a work reads as a card: its title, then date, format and holder, the number at the top. */
+@media (max-width: 640px) {
+  .cn-works thead { display: none; }
+  .cn-works, .cn-works tbody { display: block; }
+  .cn-works tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; padding: 12px 14px; border-bottom: 1px solid var(--rule); }
+  .cn-works tr:last-child { border-bottom: 0; }
+  .cn-works td { padding: 0; border: 0; }
+  .cn-works td:nth-child(1) { grid-column: 1; grid-row: 1; min-width: 0; }
+  .cn-works td:nth-child(5) { grid-column: 2; grid-row: 1; font-size: 13px; }
+  .cn-works td:nth-child(2), .cn-works td:nth-child(3), .cn-works td:nth-child(4) { grid-column: 1 / -1; font-size: 14px; color: var(--ink-2); margin-top: 4px; }
+  .cn-works td:nth-child(2):empty { display: none; }
+  .cn-works td:nth-child(4)::before { content: 'Held by '; color: var(--ink-3); }
+  .cn-tablewrap:has(.cn-works) { overflow: visible; }
+}

@@ -6,7 +6,7 @@
 import Reference from '../../../../layouts/Reference.astro';
 import AppBox from '../../../../components/AppBox.astro';
 import {
-  PEOPLE, NAV, IDX, SEAL_BOOK, SURVEY, SEAL_CREDIT, VERDICT, EXPERT_EN, SHIQU_SERIES,
+  PEOPLE, NAV, IDX, SEAL_BOOK, SURVEY, SEAL_CREDIT, VERDICT, EXPERT_EN, SHIQU_SERIES, SUZUKI_DB,
   dates, role, skills, wikidataLine, hallEn, pdfPage, surveyPages, hanOf, url, type Person,
 } from '../../../../lib/chinese';
 import { SITE, articleLd, crumbsLd } from '../../../../lib/site';
@@ -42,9 +42,22 @@ const graph = [
   articleLd(path, `${p.pinyin}: seals and signatures`, description, '2026-11-25'),
   crumbsLd(path, p.pinyin, [IDX, 'Painters and collectors']),
 ];
+// The works catalogued under this name in the Suzuki catalogue, by where they are held: the
+// holders with the most first, the ones the catalogue does not name last. Ten show; the rest fold.
+const holders = new Map<string, number>();
+for (const w of p.works) holders.set(w.held ?? '', (holders.get(w.held ?? '') ?? 0) + 1);
+const works = [...p.works].sort((a, b) =>
+  Number(!a.held) - Number(!b.held) || holders.get(b.held ?? '')! - holders.get(a.held ?? '')! || (a.held ?? '').localeCompare(b.held ?? '') || a.no.localeCompare(b.no, 'en', { numeric: true }));
+const workChunks = works.length > 12 ? [works.slice(0, 10), works.slice(10)] : [works];
+// When the list folds, a line names the holders with the most works (two or more each).
+const topHolders = workChunks.length > 1 ? [...holders.entries()].filter(([h, n]) => h && n > 1).sort((a, b) => b[1] - a[1]) : [];
+const holderCount = [...holders.keys()].filter(Boolean).length;
+const otherName = p.works.some((w) => w.asGiven && w.asGiven !== p.name);
+// Japanese forms (図, not 圖) and kana go in the Japanese face's subset.
+const ja = p.works.length ? [...new Set(p.works.flatMap((w) => [...w.title, ...(w.asGiven ?? ''), ...w.medium_ja, ...(/[\u3040-\u30ff\u4e00-\u9fff]/.test(w.holder ?? '') ? w.holder! : '')]))].join('') : undefined;
 const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${c.folio ?? ''}` : `contents vol. ${c.volume}, p. ${c.page}`);
 ---
-<Reference {title} {description} {path} jsonld={graph} {han} crumb={p.pinyin} via={[IDX, 'Painters and collectors']}>
+<Reference {title} {description} {path} jsonld={graph} {han} {ja} crumb={p.pinyin} via={[IDX, 'Painters and collectors']}>
   <div class="cn">
 
     <header class="cn-person">
@@ -193,6 +206,42 @@ const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${
       </section>
     )}
 
+    {works.length > 0 && (
+      <section class="cn-block" aria-labelledby="catalogued">
+        <h2 id="catalogued">In the Suzuki catalogue: {works.length.toLocaleString('en-US')} {works.length === 1 ? 'work' : 'works'}</h2>
+        <p class="read">The <em>Comprehensive Illustrated Catalog of Chinese Paintings</em>, begun by Suzuki Kei at the University of Tokyo (first series 1982–83, second series 1998–2001), records Chinese paintings in collections around the world. {works.length === 1 ? 'This work is' : `These ${works.length.toLocaleString('en-US')} works are`} catalogued under {p.pinyin}’s name{otherName ? ', some under another of the names above' : ''}, with where each is held. A listing records where a work is held and the name it is catalogued under; it does not show that the work is by {p.pinyin}, and Heirloom does not judge any item.</p>
+        {topHolders.length > 0 && (
+          <p class="read">Held most often by {topHolders.slice(0, 5).map(([h, n], i) => <>{i > 0 && (i === Math.min(topHolders.length, 5) - 1 ? ' and ' : ', ')}{/[\u3040-\u30ff\u4e00-\u9fff]/.test(h) ? <span lang="ja">{h}</span> : h === 'Private collections' ? 'private collections' : h} ({n})</>)}{holderCount > 5 && <>, among {holderCount} holders in all</>}.</p>
+        )}
+        {workChunks.map((rows, k) => {
+          const table = (
+            <div class="cn-tablewrap">
+              <table class="cn-table cn-works">
+                <thead><tr><th>Work</th><th>Date</th><th>Format</th><th>Held by</th><th>No.</th></tr></thead>
+                <tbody>
+                  {rows.map((w) => (
+                    <tr>
+                      <td>
+                        {w.title_en && <span class="tr">{w.title_en}</span>}{w.title_en && w.title && ' '}{w.title && <span lang="ja" class={w.title_en ? 'faint' : ''}>{w.title}</span>}
+                        {w.asGiven && w.asGiven !== p.name && <span class="cn-gloss">catalogued as <span lang="ja">{w.asGiven}</span></span>}
+                        {w.near && <span class="cn-tag cn-tag--soft">name differs by one character</span>}
+                      </td>
+                      <td>{w.date}</td>
+                      <td>{[w.format, w.format ? w.medium : w.medium.charAt(0).toUpperCase() + w.medium.slice(1), w.medium_ja && <span lang="ja">{w.medium_ja}</span>, w.size].filter(Boolean).map((x, i) => <>{i > 0 && ', '}{x}</>)}</td>
+                      <td>{w.holder ? (/[\u3040-\u30ff\u4e00-\u9fff]/.test(w.holder) ? <span lang="ja">{w.holder}</span> : w.holder) : <span class="faint">not recorded</span>}</td>
+                      <td class="num">{w.url ? <a href={w.url} rel="nofollow">{w.no || 'record'}</a> : w.no}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+          return k === 0 ? table : <details class="cn-more"><summary>Show the other {rows.length.toLocaleString('en-US')}</summary>{table}</details>;
+        })}
+        <p class="cn-note">Each number links to the work’s record in the University of Tokyo’s <a href={SUZUKI_DB} rel="nofollow">Chinese Painting Location Database</a>, which indexes the catalogue’s first and second series (a few link to the holding museum’s own record instead). Titles, dates and holders are as the database gives them, with its English title where it has one.</p>
+      </section>
+    )}
+
     <AppBox text="Photograph the seals and the signature. The Advisor reads them and names the people they claim, with the record each comes from; it never says whether a work is genuine." />
 
     <section class="cn-block" aria-labelledby="sources">
@@ -206,6 +255,7 @@ const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${
         {p.survey.length > 0 && <li>{SURVEY}, {surveyPages(p.survey)} (PDF pages).</li>}
         {anyImg && <li>Seal and signature images: facsimiles from the book above, each credited with its volume, page and seal number; reproduced as reference by Heirloom, which holds no license from the publisher.</li>}
         {shiqu.length > 0 && <li>Qing imperial catalogs: <span class="han">石渠寶笈</span> and <span class="han">祕殿珠林</span>, first series (1744–45) from the Siku quanshu text (Kanripo), second (1793) and third (1816) series from the contents volumes of the Peking University manuscript copies (Internet Archive); each entry above gives its place in the source.</li>}
+        {works.length > 0 && <li>Suzuki Kei, comp., <span class="han">中國繪畫總合圖錄</span> (Comprehensive Illustrated Catalog of Chinese Paintings), University of Tokyo Press, 1982–83, second series 1998–2001; indexed in the <a href={SUZUKI_DB} rel="nofollow">Chinese Painting Location Database</a>, Institute for Advanced Studies on Asia, University of Tokyo.</li>}
         {!wdp && p.wikidata?.qid && <li>Wikidata, <a href={`https://www.wikidata.org/wiki/${p.wikidata.qid}`} rel="nofollow">{p.wikidata.qid}</a>.</li>}
       </ol>
       <!--/copy-check:skip-->

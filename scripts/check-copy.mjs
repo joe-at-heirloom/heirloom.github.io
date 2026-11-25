@@ -203,6 +203,8 @@ const TITLE_NAMES = new Set([
   'Ming', 'Qing', 'Republic', 'Hongxian', 'Hongwu', 'Jianwen', 'Yongle', 'Hongxi', 'Xuande', 'Zhengtong', 'Jingtai', 'Tianshun', 'Chenghua', 'Hongzhi', 'Zhengde', 'Jiajing', 'Longqing', 'Wanli', 'Taichang', 'Tianqi', 'Chongzhen', 'Shunzhi', 'Kangxi', 'Yongzheng', 'Qianlong', 'Jiaqing', 'Daoguang', 'Xianfeng', 'Tongzhi', 'Guangxu', 'Xuantong', 'Chinese',
   // Earlier dynasties (the Chinese painters' filters: "Northern Song", "Southern Song").
   'Song', 'Tang', 'Yuan', 'Jin', 'Liao', 'Han', 'Sui', 'Zhou', 'Five', 'Dynasties',
+  // The Suzuki catalogue (the painters' catalogued works).
+  'Suzuki',
 ]);
 // Artists' names on the signature pages are names, not title case.
 for (const f of existsSync(resolve(siteRoot, 'scripts/pages/signatures')) ? readdirSync(resolve(siteRoot, 'scripts/pages/signatures')) : []) {
