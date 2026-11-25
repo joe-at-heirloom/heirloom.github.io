@@ -1,0 +1,48 @@
+---
+// /marks/pottery-marks: the pottery and porcelain explorer (src/islands/PotteryExplorer).
+// Every maker's marks from the reference collection on one timeline, explored
+// in place; the date-code pages linked below it.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import PotteryExplorer from '../../islands/PotteryExplorer';
+import { pottery, baseWords, HOW } from '../../lib/pottery';
+import { referencePages } from '../../lib/pages';
+import { crumbsLd } from '../../lib/site';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/pottery.css';
+
+const path = '/marks/pottery-marks';
+const { makers, marks } = pottery();
+const names = makers.map((m) => m.label);
+const list = `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+const title = 'Pottery and Porcelain Marks: Find the Maker and the Years | Heirloom';
+const description = `${marks.length} marks of ${list} on one timeline, with the years each was used, what it looks like and the copies to watch for.`;
+const words = baseWords(marks);
+const CODES = ['/marks/wedgwood-date-codes', '/marks/minton-date-marks', '/marks/royal-worcester-date-marks', '/marks/rookwood-pottery-marks', '/marks/sevres-date-letters'];
+const codes = referencePages().filter((p) => CODES.includes(p.href)).map((p) => ({ ...p, title: p.title.replace(/:.*$/, ''), note: p.title.replace(/^[^:]*:\s*/, '') }));
+const graph = [
+  { '@type': 'CollectionPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' },
+    hasPart: makers.map((m) => ({ '@type': 'WebPage', url: `https://heirloomapp.io${m.page}`, name: `${m.label} marks` })) },
+  crumbsLd(path, 'Pottery and porcelain marks', ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name="Pottery and porcelain marks" mid={['/marks/', 'Marks']} />
+    <header class="phead">
+      <h1>Pottery and porcelain marks</h1>
+      <p class="phead__sub">Every mark of {makers.length} makers, each bar the years it was used. Type what the mark on the base says or shows, or how it was put on, and the marks that fit stay lit. A mark tells you who claims to have made an item and the years the mark was in use; copies of most of these marks exist.</p>
+    </header>
+
+    <PotteryExplorer client:load makers={makers} marks={marks} how={HOW} words={words} />
+
+    <section class="ptools" aria-labelledby="codes">
+      <h2 id="codes">Date codes</h2>
+      <ul class="tools-list">
+        {codes.map((t) => <li><a href={t.href}><span>{t.title}</span><span class="muted">{t.note}</span></a></li>)}
+      </ul>
+    </section>
+  </div>
+</Base>
