@@ -16,6 +16,29 @@ This repo contains the landing page with a waitlist signup, plus the legal pages
 
 **Claims on this site must match shipped behavior.** `npm test` (no dependencies) holds `index.html` and this README to the app's own copy rules — no universal-valuation, timing, genuineness or estate-access promises — and checks that the legal pages match their sources. See [Keeping the copy honest](#keeping-the-copy-honest).
 
+## How the site is built and deployed (since 2026-11-24)
+
+heirloomapp.io is a Cloudflare Worker (`heirloom-site`, `wrangler.jsonc`) serving
+`site/dist`, which `site/` builds with Astro:
+
+- **Rebuilt pages** live in `site/src/pages` (so far the four British date-letter
+  pages, `/marks/<office>-date-letters`, and the 404 page). Their facts come from
+  the app's tables, synced into `site/src/data` with `npm --prefix site run
+  data:sync` (commit what it changes).
+- **Every other page** is this repository's root, carried into the build
+  byte for byte (`site/scripts/legacy.mjs`). The generator (`scripts/pages/build.py`)
+  and hand edits keep working as before. A root file whose page Astro has
+  rebuilt is shadowed: `marks/london-date-letters.html` and the other three are
+  still generated here, but the live pages are Astro's, so change those in
+  `site/src/pages/marks/[office]-date-letters.astro`.
+- **Deploy** from a clean checkout of `main`: `npm run deploy` (installs and builds
+  `site/`, then `wrangler deploy`). A push alone publishes nothing. A plain
+  `wrangler deploy` without the build fails (no `site/dist`) rather than
+  publishing something stale.
+- **Review** a change first with `npm --prefix site run deploy:preview`
+  (the `heirloom-site-next` Worker, marked noindex).
+- **Roll back** with `wrangler rollback` (Cloudflare keeps every version).
+
 ## Features (on the landing page)
 
 - Hero with waitlist CTA and an example record in the shape of the app's own (Grandpa's pocket watch, made up and badged Example): its story, a maker still unknown, an estimate still open, and under a loupe the photograph of the movement that would change that
