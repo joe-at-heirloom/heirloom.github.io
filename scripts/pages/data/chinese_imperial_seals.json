@@ -9890,5 +9890,135 @@
     }
    ]
   }
+ ],
+ "photos": [
+  {
+   "seal_id": "jin-mingchang",
+   "file": "imperial-seals/jin-mingchang.webp",
+   "credit": "五代南唐趙幹江行初雪圖 卷, National Palace Museum, Taipei; photograph via Wikimedia Commons (Zhao Gan. Traveling on the River in First Snow. 960-975. Ink and color on silk. 25,9x376,5cm. National Palace Museum, Taipei..jpg)",
+   "licence": "Public domain (PD-Art)",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Zhao_Gan._Traveling_on_the_River_in_First_Snow._960-975._Ink_and_color_on_silk._25,9x376,5cm._National_Palace_Museum,_Taipei..jpg",
+   "object": "五代南唐趙幹江行初雪圖 卷",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/51?dep=P",
+   "crop_box": [
+    7320,
+    15,
+    7550,
+    386
+   ]
+  },
+  {
+   "seal_id": "qing-baoji-chongbian",
+   "file": "imperial-seals/qing-baoji-chongbian.webp",
+   "credit": "宋徽宗文會圖 軸, National Palace Museum, Taipei; photograph via Wikimedia Commons (文会图轴.宋代.宋徽宗赵佶.绢本设色.台北故宫博物院藏.jpg)",
+   "licence": "Public domain (PD-Art)",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:%E6%96%87%E4%BC%9A%E5%9B%BE%E8%BD%B4.%E5%AE%8B%E4%BB%A3.%E5%AE%8B%E5%BE%BD%E5%AE%97%E8%B5%B5%E4%BD%B6.%E7%BB%A2%E6%9C%AC%E8%AE%BE%E8%89%B2.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.jpg",
+   "object": "宋徽宗文會圖 軸",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/50?dep=P",
+   "crop_box": [
+    11688,
+    4456,
+    11953,
+    4734
+   ]
+  },
+  {
+   "seal_id": "qing-qianlong-yulan-zhibao-square",
+   "file": "imperial-seals/qing-qianlong-yulan-zhibao-square.webp",
+   "credit": "宋郭熙早春圖 軸, National Palace Museum, Taipei; photograph via Wikimedia Commons (早春图轴.北宋.郭熙绘.绢本浅设色.宋神宗熙宁五年.台北故宫博物院藏.tif)",
+   "licence": "Public domain (PD-Art)",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:%E6%97%A9%E6%98%A5%E5%9B%BE%E8%BD%B4.%E5%8C%97%E5%AE%8B.%E9%83%AD%E7%86%99%E7%BB%98.%E7%BB%A2%E6%9C%AC%E6%B5%85%E8%AE%BE%E8%89%B2.%E5%AE%8B%E7%A5%9E%E5%AE%97%E7%86%99%E5%AE%81%E4%BA%94%E5%B9%B4.%E5%8F%B0%E5%8C%97%E6%95%85%E5%AE%AB%E5%8D%9A%E7%89%A9%E9%99%A2%E8%97%8F.tif",
+   "object": "宋郭熙早春圖 軸",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/47?dep=P",
+   "crop_box": [
+    1091,
+    19,
+    1457,
+    377
+   ]
+  },
+  {
+   "seal_id": "qing-wuyizhai-jingjian-xi",
+   "file": "imperial-seals/qing-wuyizhai-jingjian-xi.webp",
+   "credit": "唐玄宗鶺鴒頌 卷, National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw; photograph via Wikimedia Commons (NPM-故書000059 唐玄宗鶺鴒頌 卷.pdf)",
+   "licence": "CC BY 4.0 (NPM open data); artwork public domain",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:NPM-%E6%95%85%E6%9B%B8000059_%E5%94%90%E7%8E%84%E5%AE%97%E9%B6%BA%E9%B4%92%E9%A0%8C_%E5%8D%B7.pdf",
+   "object": "唐玄宗鶺鴒頌 卷",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14715?dep=P",
+   "crop_box": [
+    1589,
+    1464,
+    1798,
+    1893
+   ]
+  },
+  {
+   "seal_id": "qing-xuantong-jianshang",
+   "file": "imperial-seals/qing-xuantong-jianshang.webp",
+   "credit": "唐玄宗鶺鴒頌 卷, National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw; photograph via Wikimedia Commons (NPM-故書000059 唐玄宗鶺鴒頌 卷.pdf)",
+   "licence": "CC BY 4.0 (NPM open data); artwork public domain",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:NPM-%E6%95%85%E6%9B%B8000059_%E5%94%90%E7%8E%84%E5%AE%97%E9%B6%BA%E9%B4%92%E9%A0%8C_%E5%8D%B7.pdf",
+   "object": "唐玄宗鶺鴒頌 卷",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14715?dep=P",
+   "crop_box": [
+    1584,
+    1199,
+    1811,
+    1427
+   ]
+  },
+  {
+   "seal_id": "qing-xuantong-yulan-zhibao",
+   "file": "imperial-seals/qing-xuantong-yulan-zhibao.webp",
+   "credit": "唐玄宗鶺鴒頌 卷, National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw; photograph via Wikimedia Commons (NPM-故書000059 唐玄宗鶺鴒頌 卷.pdf)",
+   "licence": "CC BY 4.0 (NPM open data); artwork public domain",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:NPM-%E6%95%85%E6%9B%B8000059_%E5%94%90%E7%8E%84%E5%AE%97%E9%B6%BA%E9%B4%92%E9%A0%8C_%E5%8D%B7.pdf",
+   "object": "唐玄宗鶺鴒頌 卷",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14715?dep=P",
+   "crop_box": [
+    615,
+    299,
+    909,
+    673
+   ]
+  },
+  {
+   "seal_id": "song-xuanhe-lianzhu",
+   "file": "imperial-seals/song-xuanhe-lianzhu.webp",
+   "credit": "唐玄宗鶺鴒頌 卷, National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw; photograph via Wikimedia Commons (NPM-故書000059 唐玄宗鶺鴒頌 卷.pdf)",
+   "licence": "CC BY 4.0 (NPM open data); artwork public domain",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:NPM-%E6%95%85%E6%9B%B8000059_%E5%94%90%E7%8E%84%E5%AE%97%E9%B6%BA%E9%B4%92%E9%A0%8C_%E5%8D%B7.pdf",
+   "object": "唐玄宗鶺鴒頌 卷",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14715?dep=P",
+   "crop_box": [
+    560,
+    1595,
+    712,
+    1930
+   ]
+  },
+  {
+   "seal_id": "ssong-jixidian-bao",
+   "file": "imperial-seals/ssong-jixidian-bao.webp",
+   "credit": "唐懷素自敘帖 卷, National Palace Museum, Taipei, CC BY 4.0 @ www.npm.gov.tw; photograph via Wikimedia Commons (NPM-故書000381 唐懷素自敘帖 卷.pdf)",
+   "licence": "CC BY 4.0 (NPM open data); artwork public domain",
+   "holder": "National Palace Museum, Taipei",
+   "source_url": "https://commons.wikimedia.org/wiki/File:NPM-%E6%95%85%E6%9B%B8000381_%E5%94%90%E6%87%B7%E7%B4%A0%E8%87%AA%E6%95%98%E5%B8%96_%E5%8D%B7.pdf",
+   "object": "唐懷素自敘帖 卷",
+   "npm_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14890?dep=P",
+   "crop_box": [
+    2137,
+    1534,
+    2576,
+    1970
+   ]
+  }
  ]
 }
