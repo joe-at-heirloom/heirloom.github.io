@@ -201,45 +201,6 @@
   "enwiki": null
  },
  {
-  "qid": "Q10295891",
-  "slug": "chou-zhang",
-  "name": "張謙德",
-  "name_wikidata": "張謙德",
-  "pinyin": "Chou Zhang",
-  "dynasty": "Ming",
-  "polity": [
-   "Ming dynasty"
-  ],
-  "dates": {
-   "born": 1577,
-   "died": 1643,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "叔益",
-    "two_sources": true
-   },
-   {
-    "name": "青甫",
-    "two_sources": true
-   }
-  ],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": [
-    "米菴"
-   ]
-  },
-  "birthplace": {
-   "zh": "昆山市",
-   "en": "Kunshan"
-  },
-  "zhwiki": "張謙德",
-  "enwiki": null
- },
- {
   "qid": "Q10296389",
   "slug": "q10296389",
   "name": "徐朗西",
@@ -1331,50 +1292,6 @@
   },
   "zhwiki": "陆皓东",
   "enwiki": "https://en.wikipedia.org/wiki/Lu_Haodong"
- },
- {
-  "qid": "Q1064977",
-  "slug": "xia-chang",
-  "name": "夏㫤",
-  "name_wikidata": "夏昶",
-  "pinyin": "Xia Chang",
-  "dynasty": "Ming",
-  "polity": [
-   "Ming dynasty"
-  ],
-  "dates": {
-   "born": 1388,
-   "died": 1470,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "仲昭",
-    "two_sources": true
-   }
-  ],
-  "art_names": [
-   {
-    "name": "玉峰",
-    "two_sources": false
-   },
-   {
-    "name": "自在居士",
-    "two_sources": true
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": [
-    "玉峯"
-   ]
-  },
-  "birthplace": {
-   "zh": "昆山市",
-   "en": "Kunshan"
-  },
-  "zhwiki": "夏㫤",
-  "enwiki": "https://en.wikipedia.org/wiki/Xia_Chang"
  },
  {
   "qid": "Q10731276",
@@ -6184,62 +6101,6 @@
   "enwiki": null
  },
  {
-  "qid": "Q11096060",
-  "slug": "li-zonghan-2",
-  "name": "李宗瀚",
-  "name_wikidata": "李宗瀚",
-  "pinyin": "Li Zonghan",
-  "dynasty": "Qing",
-  "polity": [
-   "Qing dynasty"
-  ],
-  "dates": {
-   "born": 1770,
-   "died": 1832,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "公博",
-    "two_sources": false,
-    "wikipedia_says": "art_names"
-   },
-   {
-    "name": "北溟",
-    "two_sources": true
-   },
-   {
-    "name": "春湖",
-    "two_sources": false,
-    "wikipedia_says": "art_names"
-   }
-  ],
-  "art_names": [
-   {
-    "name": "拓園",
-    "two_sources": false
-   },
-   {
-    "name": "湖東樓",
-    "two_sources": false
-   },
-   {
-    "name": "湖西莊",
-    "two_sources": false
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": []
-  },
-  "birthplace": {
-   "zh": null,
-   "en": null
-  },
-  "zhwiki": "李宗瀚",
-  "enwiki": null
- },
- {
   "qid": "Q11096377",
   "slug": "li-jianzhong",
   "name": "李建中",
@@ -8067,41 +7928,6 @@
   "enwiki": "https://en.wikipedia.org/wiki/Huang_Shaoqiang"
  },
  {
-  "qid": "Q11176572",
-  "slug": "huang-jin",
-  "name": "黃溍",
-  "name_wikidata": "黃溍",
-  "pinyin": "Huang Jin",
-  "dynasty": "Yuan",
-  "polity": [
-   "Yuan dynasty"
-  ],
-  "dates": {
-   "born": 1277,
-   "died": 1357,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "晉卿",
-    "two_sources": true
-   }
-  ],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [
-    "文晉"
-   ],
-   "art_names": []
-  },
-  "birthplace": {
-   "zh": null,
-   "en": null
-  },
-  "zhwiki": "黃溍",
-  "enwiki": null
- },
- {
   "qid": "Q11176723",
   "slug": "huang-shaoji",
   "name": "黃紹箕",
@@ -8801,76 +8627,6 @@
   },
   "zhwiki": "苏曼殊",
   "enwiki": "https://en.wikipedia.org/wiki/Su_Manshu"
- },
- {
-  "qid": "Q1154748",
-  "slug": "jin-shengtan",
-  "name": "金聖歎",
-  "name_wikidata": "金圣叹",
-  "pinyin": "Jin Shengtan",
-  "dynasty": "Ming",
-  "polity": [
-   "Ming dynasty",
-   "Qing dynasty"
-  ],
-  "dates": {
-   "born": [
-    1608,
-    1610
-   ],
-   "died": 1661,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "圣歎",
-    "two_sources": false
-   },
-   {
-    "name": "聖嘆",
-    "two_sources": false
-   },
-   {
-    "name": "聖歎",
-    "two_sources": false
-   },
-   {
-    "name": "若采",
-    "two_sources": false
-   },
-   {
-    "name": "苦采",
-    "two_sources": false
-   }
-  ],
-  "art_names": [
-   {
-    "name": "唱經堂",
-    "two_sources": false
-   },
-   {
-    "name": "貫花主人",
-    "two_sources": false
-   },
-   {
-    "name": "貫華堂",
-    "two_sources": false
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [
-    "瓊章"
-   ],
-   "art_names": [
-    "泐庵"
-   ]
-  },
-  "birthplace": {
-   "zh": "苏州市",
-   "en": "Suzhou"
-  },
-  "zhwiki": "金聖歎",
-  "enwiki": "https://en.wikipedia.org/wiki/Jin_Shengtan"
  },
  {
   "qid": "Q11572885",
@@ -12542,40 +12298,6 @@
   "enwiki": null
  },
  {
-  "qid": "Q15915547",
-  "slug": "kungpah-t-king",
-  "name": "金紹城",
-  "name_wikidata": "金紹城",
-  "pinyin": "Kungpah T. King",
-  "dynasty": "Republic",
-  "polity": [
-   "Republic of China"
-  ],
-  "dates": {
-   "born": 1878,
-   "died": 1926,
-   "two_sources": true
-  },
-  "courtesy": [],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [
-    "拱北",
-    "鞏伯"
-   ],
-   "art_names": [
-    "北樓",
-    "藕湖"
-   ]
-  },
-  "birthplace": {
-   "zh": null,
-   "en": null
-  },
-  "zhwiki": "金紹城",
-  "enwiki": null
- },
- {
   "qid": "Q15915744",
   "slug": "wang-xia",
   "name": "王洽",
@@ -14140,42 +13862,6 @@
   },
   "zhwiki": "关良",
   "enwiki": "https://en.wikipedia.org/wiki/Guan_Liang"
- },
- {
-  "qid": "Q16059870",
-  "slug": "gu-yun",
-  "name": "顧沄",
-  "name_wikidata": "顧沄",
-  "pinyin": "Gu Yun",
-  "dynasty": "Qing",
-  "polity": [
-   "Qing dynasty"
-  ],
-  "dates": {
-   "born": 1835,
-   "died": 1896,
-   "two_sources": true
-  },
-  "courtesy": [],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": [
-    "壺翁",
-    "壺隱",
-    "浚川",
-    "病鶴等",
-    "雲壺",
-    "雲壺外史",
-    "頌墨"
-   ]
-  },
-  "birthplace": {
-   "zh": null,
-   "en": null
-  },
-  "zhwiki": "顾沄",
-  "enwiki": "https://en.wikipedia.org/wiki/Gu_Yun"
  },
  {
   "qid": "Q16075413",
@@ -19570,76 +19256,6 @@
   "enwiki": "https://en.wikipedia.org/wiki/Muqi"
  },
  {
-  "qid": "Q3083166",
-  "slug": "gao-qifeng",
-  "name": "高奇峰",
-  "name_wikidata": "高奇峰",
-  "pinyin": "Gao Qifeng",
-  "dynasty": "Republic",
-  "polity": [
-   "Republic of China"
-  ],
-  "dates": {
-   "born": 1889,
-   "died": 1933,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "奇峰",
-    "two_sources": true
-   },
-   {
-    "name": "飞瀑",
-    "two_sources": false
-   }
-  ],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": []
-  },
-  "birthplace": {
-   "zh": "番禺区",
-   "en": "Panyu District"
-  },
-  "zhwiki": "高奇峰",
-  "enwiki": "https://en.wikipedia.org/wiki/Gao_Qifeng"
- },
- {
-  "qid": "Q3083171",
-  "slug": "gao-jianfu",
-  "name": "高劍父",
-  "name_wikidata": "高剑父",
-  "pinyin": "Gao Jianfu",
-  "dynasty": "Qing",
-  "polity": [
-   "Qing dynasty",
-   "Republic of China"
-  ],
-  "dates": {
-   "born": 1879,
-   "died": 1951,
-   "two_sources": true
-  },
-  "courtesy": [],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [
-    "爵廷"
-   ],
-   "art_names": [
-    "劍父"
-   ]
-  },
-  "birthplace": {
-   "zh": "番禺区",
-   "en": "Panyu District"
-  },
-  "zhwiki": "高剑父",
-  "enwiki": "https://en.wikipedia.org/wiki/Gao_Jianfu"
- },
- {
   "qid": "Q3083484",
   "slug": "liu-songnian",
   "name": "劉松年",
@@ -20435,40 +20051,6 @@
   },
   "zhwiki": "黃居寀",
   "enwiki": "https://en.wikipedia.org/wiki/Huang_Jucai"
- },
- {
-  "qid": "Q3170503",
-  "slug": "chen-shizeng",
-  "name": "陳師曾",
-  "name_wikidata": "陈师曾",
-  "pinyin": "Chen Shizeng",
-  "dynasty": "Qing",
-  "polity": [
-   "Qing dynasty",
-   "Republic of China"
-  ],
-  "dates": {
-   "born": 1876,
-   "died": 1923,
-   "two_sources": true
-  },
-  "courtesy": [],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [
-    "師曾"
-   ],
-   "art_names": [
-    "朽道人",
-    "槐堂"
-   ]
-  },
-  "birthplace": {
-   "zh": "凤凰县",
-   "en": "Fenghuang County"
-  },
-  "zhwiki": "陈师曾",
-  "enwiki": "https://en.wikipedia.org/wiki/Chen_Shizeng"
  },
  {
   "qid": "Q31758",
@@ -21864,43 +21446,6 @@
   },
   "zhwiki": "宗炳",
   "enwiki": "https://en.wikipedia.org/wiki/Zong_Bing"
- },
- {
-  "qid": "Q369608",
-  "slug": "qi-baishi",
-  "name": "齊白石",
-  "name_wikidata": "齊白石",
-  "pinyin": "Qi Baishi",
-  "dynasty": "Qing",
-  "polity": [
-   "People's Republic of China",
-   "Qing dynasty",
-   "Republic of China"
-  ],
-  "dates": {
-   "born": 1864,
-   "died": 1957,
-   "two_sources": true
-  },
-  "courtesy": [],
-  "art_names": [],
-  "wikipedia_only": {
-   "courtesy": [
-    "渭清",
-    "瀕生"
-   ],
-   "art_names": [
-    "寄萍老人",
-    "白石山人",
-    "蘭亭"
-   ]
-  },
-  "birthplace": {
-   "zh": "湘潭县",
-   "en": "Xiangtan County"
-  },
-  "zhwiki": "齐白石",
-  "enwiki": "https://en.wikipedia.org/wiki/Qi_Baishi"
  },
  {
   "qid": "Q371868",
@@ -27729,44 +27274,6 @@
   "enwiki": null
  },
  {
-  "qid": "Q6787213",
-  "slug": "zeng-qi",
-  "name": "曾棨",
-  "name_wikidata": "曾棨",
-  "pinyin": "Zeng Qi",
-  "dynasty": "Ming",
-  "polity": [
-   "Ming dynasty"
-  ],
-  "dates": {
-   "born": 1372,
-   "died": 1432,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "子啟",
-    "two_sources": true
-   }
-  ],
-  "art_names": [
-   {
-    "name": "西墅",
-    "two_sources": true
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": []
-  },
-  "birthplace": {
-   "zh": "江西省",
-   "en": "Jiangxi"
-  },
-  "zhwiki": "曾棨",
-  "enwiki": null
- },
- {
   "qid": "Q67931973",
   "slug": "wu-fuzhi",
   "name": "吳茀之",
@@ -27867,46 +27374,6 @@
    "en": null
   },
   "zhwiki": "孙天牧",
-  "enwiki": null
- },
- {
-  "qid": "Q6806889",
-  "slug": "kangli-naonao",
-  "name": "康里巎巎",
-  "name_wikidata": "巙巙",
-  "pinyin": "Kangli Naonao",
-  "dynasty": "Yuan",
-  "polity": [
-   "Yuan dynasty"
-  ],
-  "dates": {
-   "born": 1295,
-   "died": 1345,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "子山",
-    "two_sources": true
-   }
-  ],
-  "art_names": [
-   {
-    "name": "正齋",
-    "two_sources": true
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": [
-    "恕叟"
-   ]
-  },
-  "birthplace": {
-   "zh": null,
-   "en": null
-  },
-  "zhwiki": "康里巎巎",
   "enwiki": null
  },
  {
@@ -28399,45 +27866,6 @@
   },
   "zhwiki": "劉啟祥",
   "enwiki": "https://en.wikipedia.org/wiki/Liu_Chi-hsiang"
- },
- {
-  "qid": "Q706685",
-  "slug": "chang-chien",
-  "name": "張謇",
-  "name_wikidata": "张謇",
-  "pinyin": "Chang Chien",
-  "dynasty": "Qing",
-  "polity": [
-   "Qing dynasty",
-   "Republic of China"
-  ],
-  "dates": {
-   "born": 1853,
-   "died": 1926,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "季直",
-    "two_sources": true
-   }
-  ],
-  "art_names": [
-   {
-    "name": "嗇庵",
-    "two_sources": true
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": []
-  },
-  "birthplace": {
-   "zh": "常乐镇",
-   "en": "Changle Town"
-  },
-  "zhwiki": "张謇",
-  "enwiki": "https://en.wikipedia.org/wiki/Zhang_Jian_(businessman)"
  },
  {
   "qid": "Q706792",
@@ -33170,50 +32598,6 @@
   "found_by": "Suzuki catalogue"
  },
  {
-  "qid": "Q16923068",
-  "slug": "wang-kui",
-  "name": "王揆",
-  "name_wikidata": "王揆",
-  "pinyin": "Wang Kui",
-  "dynasty": "Qing",
-  "polity": [
-   "Qing dynasty"
-  ],
-  "dates": {
-   "born": 1619,
-   "died": 1696,
-   "two_sources": false
-  },
-  "courtesy": [
-   {
-    "name": "端士",
-    "two_sources": true
-   }
-  ],
-  "art_names": [
-   {
-    "name": "芝厂",
-    "two_sources": false
-   },
-   {
-    "name": "芝廛",
-    "two_sources": true
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": []
-  },
-  "birthplace": {
-   "zh": null,
-   "en": null
-  },
-  "zhwiki": "王揆 (清朝)",
-  "enwiki": null,
-  "round": 2,
-  "found_by": "Suzuki catalogue"
- },
- {
   "qid": "Q16924912",
   "slug": "sun-chaorang",
   "name": "孫朝讓",
@@ -33492,203 +32876,6 @@
   },
   "zhwiki": "李嵩 (南宋画家)",
   "enwiki": "https://en.wikipedia.org/wiki/Li_Song_(painter)",
-  "round": 2,
-  "found_by": "Suzuki catalogue"
- },
- {
-  "qid": "Q360135",
-  "slug": "kang-youwei-2",
-  "name": "康有為",
-  "name_wikidata": "康有为",
-  "pinyin": "Kang Youwei",
-  "dynasty": "Qing",
-  "polity": [
-   "Qing dynasty",
-   "Republic of China"
-  ],
-  "dates": {
-   "born": 1858,
-   "died": 1927,
-   "two_sources": true
-  },
-  "courtesy": [
-   {
-    "name": "广厦",
-    "two_sources": true
-   },
-   {
-    "name": "廣廈",
-    "two_sources": true
-   }
-  ],
-  "art_names": [
-   {
-    "name": "一天園",
-    "two_sources": false
-   },
-   {
-    "name": "不忍",
-    "two_sources": false
-   },
-   {
-    "name": "人天廬",
-    "two_sources": false
-   },
-   {
-    "name": "勞念劬",
-    "two_sources": false
-   },
-   {
-    "name": "勞我廬",
-    "two_sources": false
-   },
-   {
-    "name": "南海先生",
-    "two_sources": false
-   },
-   {
-    "name": "南海老人",
-    "two_sources": false
-   },
-   {
-    "name": "南華",
-    "two_sources": false
-   },
-   {
-    "name": "南蘭堂",
-    "two_sources": false
-   },
-   {
-    "name": "大庇閣",
-    "two_sources": false
-   },
-   {
-    "name": "天孝堂",
-    "two_sources": false
-   },
-   {
-    "name": "天游化人",
-    "two_sources": true
-   },
-   {
-    "name": "天游閣",
-    "two_sources": false
-   },
-   {
-    "name": "天風海濤樓",
-    "two_sources": false
-   },
-   {
-    "name": "奮務閣",
-    "two_sources": false
-   },
-   {
-    "name": "寥天室",
-    "two_sources": false
-   },
-   {
-    "name": "幽飲亭",
-    "two_sources": false
-   },
-   {
-    "name": "康聖人",
-    "two_sources": false
-   },
-   {
-    "name": "明夷",
-    "two_sources": true
-   },
-   {
-    "name": "明夷子",
-    "two_sources": false
-   },
-   {
-    "name": "明夷閣",
-    "two_sources": false
-   },
-   {
-    "name": "明瑟亭",
-    "two_sources": false
-   },
-   {
-    "name": "更生",
-    "two_sources": true
-   },
-   {
-    "name": "更甡",
-    "two_sources": false
-   },
-   {
-    "name": "游存叟",
-    "two_sources": true
-   },
-   {
-    "name": "甦生",
-    "two_sources": false
-   },
-   {
-    "name": "硓雲荒館",
-    "two_sources": false
-   },
-   {
-    "name": "納東海亭",
-    "two_sources": false
-   },
-   {
-    "name": "素廣",
-    "two_sources": false
-   },
-   {
-    "name": "萬木樓",
-    "two_sources": false
-   },
-   {
-    "name": "萬木草堂",
-    "two_sources": false
-   },
-   {
-    "name": "西樵山人",
-    "two_sources": true
-   },
-   {
-    "name": "逍遙遊齋",
-    "two_sources": false
-   },
-   {
-    "name": "長孺",
-    "two_sources": false
-   },
-   {
-    "name": "長懶別莊",
-    "two_sources": false
-   },
-   {
-    "name": "長素",
-    "two_sources": true
-   },
-   {
-    "name": "長興學舍",
-    "two_sources": false
-   },
-   {
-    "name": "雲衢書屋",
-    "two_sources": false
-   },
-   {
-    "name": "須彌雪亭",
-    "two_sources": false
-   }
-  ],
-  "wikipedia_only": {
-   "courtesy": [],
-   "art_names": []
-  },
-  "birthplace": {
-   "zh": "南海区",
-   "en": "Nanhai District"
-  },
-  "zhwiki": "康有为",
-  "enwiki": "https://en.wikipedia.org/wiki/Kang_Youwei",
   "round": 2,
   "found_by": "Suzuki catalogue"
  },
