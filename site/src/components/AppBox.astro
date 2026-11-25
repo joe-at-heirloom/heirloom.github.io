@@ -1,0 +1,32 @@
+---
+// "Let Heirloom read the marks for you": the App Store badge (US only, D57),
+// the web app for everyone else, and the Theca note Joe chose for marks pages.
+import { APP_URL, WEB_APP } from '../lib/site';
+const { text } = Astro.props as { text: string };
+---
+<aside class="appbox" aria-labelledby="appbox-title">
+  <div class="appbox__text">
+    <h2 id="appbox-title">Let Heirloom read the marks for you</h2>
+    <p>{text}</p>
+    <p class="appbox__note">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href={WEB_APP}>web.heirloomapp.io</a>.</p>
+  </div>
+  <div class="appbox__actions">
+    <a class="appbox__badge" href={APP_URL}><img src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52" /></a>
+    <a class="btn" href={WEB_APP}>Open Heirloom on the web</a>
+  </div>
+</aside>
+<aside class="pronote" aria-label="For auction professionals">
+  <p><strong>Art professional?</strong> If you catalog for a regional auction house, <a href="https://theca.auction">Theca</a> is built for your house: cataloging, photography, consignments and sales in one system.</p>
+</aside>
+<style>
+  .appbox { margin-top: 80px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center; padding: clamp(24px, 4vw, 40px); border-radius: var(--r-lg); background: var(--paper-2); border: 1px solid var(--rule); }
+  .appbox h2 { margin-bottom: 10px; }
+  .appbox p { margin: 0 0 10px; color: var(--ink-2); max-width: 60ch; }
+  .appbox__note { font-size: 14px; color: var(--ink-3) !important; margin: 0 !important; }
+  .appbox__actions { display: grid; gap: 10px; justify-items: start; }
+  .appbox__badge img { height: 48px; width: auto; }
+  .pronote { margin-top: 16px; font-size: 14px; color: var(--ink-3); }
+  .pronote p { margin: 0; }
+  .pronote strong { color: var(--ink-2); font-weight: 600; }
+  @media (max-width: 720px) { .appbox { grid-template-columns: 1fr; } }
+</style>

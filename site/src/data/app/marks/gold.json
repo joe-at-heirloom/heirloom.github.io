@@ -1,0 +1,1742 @@
+{
+ "sources": {
+  "uk-hallmarking-act-1973-sch2": {
+   "kind": "official",
+   "author": "UK Parliament",
+   "title": "Hallmarking Act 1973, Schedule 2 (current text and as enacted)",
+   "year": 1973,
+   "url": "https://www.legislation.gov.uk/ukpga/1973/43/schedule/2"
+  },
+  "uk-si-1998-2978": {
+   "kind": "official",
+   "author": "UK Government",
+   "title": "The Hallmarking (Hallmarking Act Amendment) Regulations 1998, SI 1998/2978",
+   "year": 1998,
+   "url": "https://www.legislation.gov.uk/uksi/1998/2978/made"
+  },
+  "bhc-fineness-2014": {
+   "kind": "official",
+   "author": "British Hallmarking Council",
+   "title": "Guidance on Fineness Description",
+   "year": 2014,
+   "url": "https://assets.publishing.service.gov.uk/media/5a7f05baed915d74e6227f54/bhc-guidance-on-fineness-april-2014.pdf"
+  },
+  "gov-uk-hallmarking-summary": {
+   "kind": "official",
+   "author": "UK Government",
+   "title": "Hallmarking is the law: guidance summary",
+   "url": "https://www.gov.uk/government/publications/hallmarking-guidance-notes/hallmarking-is-the-law-guidance-summary"
+  },
+  "london-assay-office-history": {
+   "kind": "official",
+   "author": "The Goldsmiths' Company Assay Office, London",
+   "title": "History of hallmarking",
+   "url": "https://www.assayofficelondon.co.uk/about-us/history-of-hallmarking"
+  },
+  "birmingham-assay-office-1932": {
+   "kind": "official",
+   "author": "Birmingham Assay Office",
+   "title": "Timeline: 1932",
+   "url": "https://www.theassayoffice.co.uk/timeline-post/1932/"
+  },
+  "jackson-1905": {
+   "kind": "book",
+   "author": "Sir Charles J. Jackson",
+   "title": "English Goldsmiths and Their Marks, 1st ed.",
+   "year": 1905,
+   "url": "https://archive.org/details/englishgoldsmith00jack",
+   "public_domain": true
+  },
+  "lbma-purity-of-gold": {
+   "kind": "official",
+   "author": "London Bullion Market Association",
+   "title": "Purity of gold",
+   "url": "https://www.lbma.org.uk/wonders-of-gold/items/purity-of-gold"
+  },
+  "bis-hallmarking-faq": {
+   "kind": "official",
+   "author": "Bureau of Indian Standards",
+   "title": "Hallmarking FAQs (IS 1417 grades)",
+   "url": "https://www.bis.gov.in/hallmarking-overview/hallmarking-faqs/hallmarking-faq/?lang=en"
+  },
+  "de-feingehg": {
+   "kind": "official",
+   "author": "Federal Ministry of Justice (Germany)",
+   "title": "Gesetz über den Feingehalt der Gold- und Silberwaren (1884, as amended)",
+   "year": 1884,
+   "url": "https://www.gesetze-im-internet.de/feingehg/BJNR001200884.html"
+  },
+  "adin-alloys": {
+   "kind": "website",
+   "author": "Adin Antique Jewelry",
+   "title": "Adin Academy: Alloys and metal standards",
+   "url": "https://www.antiquejewel.com/jewellery-studies/006-alloys-and-metal-standards",
+   "note": "Dealer's reference article"
+  },
+  "us-15-usc-291-300": {
+   "kind": "official",
+   "author": "US Congress",
+   "title": "National Gold and Silver Stamping Act, 15 U.S.C. 291-300",
+   "year": 1906,
+   "url": "https://www.law.cornell.edu/uscode/text/15/295"
+  },
+  "ftc-16-cfr-23": {
+   "kind": "official",
+   "author": "Federal Trade Commission",
+   "title": "Guides for the Jewelry, Precious Metals, and Pewter Industries, 16 CFR Part 23 (current)",
+   "year": 2018,
+   "url": "https://www.law.cornell.edu/cfr/text/16/23.3"
+  },
+  "ftc-16-cfr-23-2012": {
+   "kind": "official",
+   "author": "Federal Trade Commission",
+   "title": "16 CFR 23.4, 2012 edition (guides before the 2018 revision)",
+   "year": 2012,
+   "url": "https://www.govinfo.gov/content/pkg/CFR-2012-title16-vol1/xml/CFR-2012-title16-vol1-sec23-4.xml"
+  },
+  "ftc-2018-federal-register": {
+   "kind": "official",
+   "author": "Federal Trade Commission",
+   "title": "Jewelry Guides final revision, Federal Register 83 (159)",
+   "year": 2018,
+   "url": "https://www.govinfo.gov/content/pkg/FR-2018-08-16/html/2018-17454.htm"
+  },
+  "hallmarking-convention-ccm": {
+   "kind": "official",
+   "author": "Hallmarking Convention",
+   "title": "The Common Control Mark",
+   "url": "https://www.hallmarkingconvention.org/en/about/the-common-control-mark"
+  },
+  "de-reichsgesetz-1884": {
+   "kind": "official",
+   "author": "Deutsches Reich",
+   "title": "Gesetz über den Feingehalt der Gold- und Silberwaaren, 16 July 1884, Reichsgesetzblatt 1884 no. 21, pp. 120-122",
+   "year": 1884,
+   "url": "https://de.wikisource.org/wiki/Gesetz_%C3%BCber_den_Feingehalt_der_Gold-_und_Silberwaaren",
+   "public_domain": true
+  },
+  "de-feingehstempg-1886": {
+   "kind": "official",
+   "author": "Bundesrat",
+   "title": "Bekanntmachung über die Form des Stempelzeichens, 7 January 1886 (FeinGehStempG)",
+   "year": 1886,
+   "url": "https://www.gesetze-im-internet.de/feingehstempg/BJNR000010886.html"
+  },
+  "rosenberg-1922": {
+   "kind": "book",
+   "author": "Marc Rosenberg",
+   "title": "Der Goldschmiede Merkzeichen, 3rd ed., vol. 1",
+   "year": 1922,
+   "url": "https://archive.org/details/dergoldschmiede00rosegoog",
+   "public_domain": true
+  },
+  "meyers-1887-feingehalt": {
+   "kind": "book",
+   "author": "Meyers Konversations-Lexikon",
+   "title": "4th ed., vol. 6, \"Feingehalt\"",
+   "year": 1887,
+   "url": "https://de.wikisource.org/wiki/MKL1888:Feingehalt",
+   "public_domain": true
+  },
+  "ru-federal-assay-chamber-history": {
+   "kind": "official",
+   "author": "Federal Assay Chamber of the Russian Federation",
+   "title": "History of assay marks",
+   "url": "https://probpalata.gov.ru/about/history/"
+  },
+  "chaffers-1896": {
+   "kind": "book",
+   "author": "W. Chaffers",
+   "title": "Hall Marks on Gold and Silver Plate, with a history of l'orfèvrerie française",
+   "year": 1896,
+   "url": "https://archive.org/details/hallmarksongolds00chaf_1",
+   "public_domain": true
+  },
+  "carre-1922": {
+   "kind": "thesis",
+   "author": "Louis Carré",
+   "title": "De la réglementation des ouvrages en métaux précieux, Rennes",
+   "year": 1922,
+   "url": "https://archive.org/details/IA41543513_0002"
+  },
+  "capdevielle-1928": {
+   "kind": "thesis",
+   "author": "Georges Capdevielle",
+   "title": "Le régime de l'industrie des métaux précieux en France, Paris",
+   "year": 1928,
+   "url": "https://archive.org/details/IA41547905_0048"
+  },
+  "douane-garantie-2009": {
+   "kind": "official",
+   "author": "DGDDI and Monnaie de Paris",
+   "title": "Garantie des métaux précieux (table of current marks)",
+   "year": 2009,
+   "url": "https://www.douane.gouv.fr/sites/default/files/uploads/files/2019-09/garantie-metaux-france.pdf"
+  },
+  "postnikova-loseva-1983": {
+   "kind": "book",
+   "author": "M. M. Postnikova-Loseva, N. G. Platonova, B. L. Ulyanova",
+   "title": "Zolotoe i serebryanoe delo XV–XX vv. (Territoriya SSSR) [Gold and silver work, 15th–20th centuries, territory of the USSR]",
+   "year": 1983,
+   "publisher": "Nauka, Moscow",
+   "note": "In copyright: facts and page citations only; no image may be cropped, traced or published."
+  },
+  "jackson-pickford-1991": {
+   "kind": "book",
+   "author": "Ian Pickford (ed.)",
+   "title": "Jackson's Hallmarks, Pocket Edition: English, Scottish, Irish Silver & Gold Marks from 1300 to the Present Day",
+   "year": 1991,
+   "publisher": "Antique Collectors' Club",
+   "note": "In copyright: facts and page citations only."
+  },
+  "bradbury-1997": {
+   "kind": "book",
+   "author": "Frederick Bradbury",
+   "title": "Bradbury's Book of Hallmarks",
+   "year": 1997,
+   "publisher": "J. W. Northend, Sheffield (revised edition)",
+   "note": "In copyright: facts and page citations only."
+  },
+  "swiss-pmc-hallmarks-1880": {
+   "kind": "official",
+   "author": "Swiss Federal Precious Metals Control",
+   "title": "Reproduction of the ancient official hallmarks since 1880",
+   "url": "https://commons.wikimedia.org/wiki/File:Reproduction_of_the_ancient_Swiss_official_hallmarks_since_1880.png",
+   "note": "Official table, released CC0; original PDF on ezv.admin.ch."
+  }
+ },
+ "entries": [
+  {
+   "id": "gold-fineness-333",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "333 on gold",
+   "looks_like": "The figures 333, struck alone or in a shaped punch beside other marks.",
+   "means": "333 parts of pure gold per 1,000: 8 karat. German law lets jewelry state any fineness in thousandths, which is how 333 is seen.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "de-feingehg"
+    },
+    {
+     "id": "adin-alloys"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-375",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "375 on gold",
+   "looks_like": "The figures 375, struck alone or in a shaped punch beside other marks.",
+   "means": "375 parts of pure gold per 1,000: 9 karat. A UK standard since 1854 (marked 9 and .375 until 1975).",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "uk-hallmarking-act-1973-sch2"
+    },
+    {
+     "id": "bhc-fineness-2014"
+    },
+    {
+     "id": "lbma-purity-of-gold"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-585",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "585 on gold",
+   "looks_like": "The figures 585, struck alone or in a shaped punch beside other marks.",
+   "means": "585 parts of pure gold per 1,000: 14 karat (exactly 583.3; 585 is the usual stamp).",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "uk-hallmarking-act-1973-sch2"
+    },
+    {
+     "id": "bhc-fineness-2014"
+    },
+    {
+     "id": "lbma-purity-of-gold"
+    },
+    {
+     "id": "bis-hallmarking-faq"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-750",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "750 on gold",
+   "looks_like": "The figures 750, struck alone or in a shaped punch beside other marks.",
+   "means": "750 parts of pure gold per 1,000: 18 karat.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "uk-hallmarking-act-1973-sch2"
+    },
+    {
+     "id": "bhc-fineness-2014"
+    },
+    {
+     "id": "lbma-purity-of-gold"
+    },
+    {
+     "id": "bis-hallmarking-faq"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/gold-fineness-750.webp",
+    "marks_in_image": 1,
+    "object": "Omega ladies' wristwatch, gold, about 1960: inside of the case back, the Swiss form 18K above 0.750",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "47-2966-2",
+    "source_url": "https://bawue.museum-digital.de/object/58034",
+    "licence": "CC-BY-SA-4.0",
+    "credit": "Deutsches Uhrenmuseum Furtwangen, 47-2966-2, CC BY-SA 4.0, via museum-digital; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/swiss-watches/omega-ladies-1960-caseback-inside-duf-47-2966-2.jpg",
+    "crop": [
+     1030,
+     705,
+     228,
+     207
+    ],
+    "rotate_degrees": 0,
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-833",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "833 on gold",
+   "looks_like": "The figures 833, struck alone or in a shaped punch beside other marks.",
+   "means": "833 parts of pure gold per 1,000: 20 karat.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "bis-hallmarking-faq"
+    },
+    {
+     "id": "adin-alloys"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-916",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "916 on gold",
+   "looks_like": "The figures 916, struck alone or in a shaped punch beside other marks.",
+   "means": "916 parts of pure gold per 1,000: 22 karat (UK law writes 916.6).",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "uk-hallmarking-act-1973-sch2"
+    },
+    {
+     "id": "bhc-fineness-2014"
+    },
+    {
+     "id": "bis-hallmarking-faq"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-958",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "958 on gold",
+   "looks_like": "The figures 958, struck alone or in a shaped punch beside other marks.",
+   "means": "958 parts of pure gold per 1,000: 23 karat.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "bis-hallmarking-faq"
+    },
+    {
+     "id": "adin-alloys"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-990",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "990 on gold",
+   "looks_like": "The figures 990, struck alone or in a shaped punch beside other marks.",
+   "means": "990 parts of pure gold per 1,000: fine gold, 990. A UK standard from 1999.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "uk-hallmarking-act-1973-sch2"
+    },
+    {
+     "id": "bhc-fineness-2014"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-fineness-999",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "999 on gold",
+   "looks_like": "The figures 999, struck alone or in a shaped punch beside other marks.",
+   "means": "999 parts of pure gold per 1,000: fine gold, 24 karat in practice. A UK standard from 1999.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "uk-hallmarking-act-1973-sch2"
+    },
+    {
+     "id": "bhc-fineness-2014"
+    },
+    {
+     "id": "lbma-purity-of-gold"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "us-karat-10k",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "10K on American gold",
+   "looks_like": "10K or 10KT, with the maker's name or trademark beside it at least as large (required since 1961).",
+   "means": "10 karat gold (417 thousandths). US law allows 3 thousandths short tested without solder (half a karat before the 1976 amendment).",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "us-15-usc-291-300"
+    },
+    {
+     "id": "ftc-16-cfr-23"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "us-karat-14k",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "14K on American gold",
+   "looks_like": "14K or 14KT, with the maker's name or trademark beside it at least as large (required since 1961).",
+   "means": "14 karat gold (583 thousandths). US law allows 3 thousandths short tested without solder (half a karat before the 1976 amendment).",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "us-15-usc-291-300"
+    },
+    {
+     "id": "ftc-16-cfr-23"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "us-karat-18k",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "18K on American gold",
+   "looks_like": "18K or 18KT, with the maker's name or trademark beside it at least as large (required since 1961).",
+   "means": "18 karat gold (750 thousandths). US law allows 3 thousandths short tested without solder (half a karat before the 1976 amendment).",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "us-15-usc-291-300"
+    },
+    {
+     "id": "ftc-16-cfr-23"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "gold-filled-gf",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "Gold filled (GF)",
+   "looks_like": "GF, G.F. or GOLD FILLED, often with a fraction and karat, as 1/20 12K GF.",
+   "means": "A layer of at least 10 karat gold bonded to base metal, at least 1/20 of the metal's weight. In 1/20 12K GF the layer is 12 karat and 1/20 of the weight, so about 2.5% of the metal is pure gold.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "ftc-16-cfr-23"
+    },
+    {
+     "id": "ftc-16-cfr-23-2012"
+    },
+    {
+     "id": "ftc-2018-federal-register"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "FTC Jewelry Guides only (current and 2012 texts of the same guides); no independent source found for this term and its minimums"
+  },
+  {
+   "id": "rolled-gold-plate-rgp",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "Rolled gold plate (RGP)",
+   "looks_like": "RGP or R.G.P., often with a fraction and karat, as 1/40 10K RGP or 14K. R.G.P.",
+   "means": "The same bonded gold layer as gold filled but thinner: at least 1/40 of the metal's weight.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "ftc-16-cfr-23"
+    },
+    {
+     "id": "ftc-16-cfr-23-2012"
+    },
+    {
+     "id": "ftc-2018-federal-register"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "FTC Jewelry Guides only (current and 2012 texts of the same guides); no independent source found for this term and its minimums"
+  },
+  {
+   "id": "gold-electroplate",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "Gold electroplate (GE, GEP)",
+   "looks_like": "GE or GEP (trade abbreviations), or GOLD ELECTROPLATE.",
+   "means": "At least 10 karat gold put on by electrolysis, at least 0.175 microns of fine gold.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "ftc-16-cfr-23"
+    },
+    {
+     "id": "ftc-16-cfr-23-2012"
+    },
+    {
+     "id": "ftc-2018-federal-register"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "FTC Jewelry Guides only (current and 2012 texts of the same guides); no independent source found for this term and its minimums"
+  },
+  {
+   "id": "heavy-gold-electroplate-hge",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "Heavy gold electroplate (HGE)",
+   "looks_like": "HGE (trade abbreviation) or HEAVY GOLD ELECTROPLATE.",
+   "means": "At least 10 karat gold put on by electrolysis, at least 2.5 microns of fine gold.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "ftc-16-cfr-23"
+    },
+    {
+     "id": "ftc-16-cfr-23-2012"
+    },
+    {
+     "id": "ftc-2018-federal-register"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "FTC Jewelry Guides only (current and 2012 texts of the same guides); no independent source found for this term and its minimums"
+  },
+  {
+   "id": "vermeil",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "Vermeil",
+   "looks_like": "Sterling marks (925 or STERLING) on an item with a gold surface, sometimes with the word VERMEIL.",
+   "means": "Sterling silver coated with gold of at least 10 karat, at least 2.5 microns thick.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "ftc-16-cfr-23"
+    },
+    {
+     "id": "ftc-16-cfr-23-2012"
+    },
+    {
+     "id": "ftc-2018-federal-register"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "FTC Jewelry Guides only (current and 2012 texts of the same guides); no independent source found for this term and its minimums"
+  },
+  {
+   "id": "gold-flashed-washed",
+   "group": "gold",
+   "country": "US",
+   "kind": "standard mark",
+   "name": "Gold flashed, gold washed",
+   "looks_like": "GOLD FLASHED or GOLD WASHED.",
+   "means": "Plating thinner than 0.175 microns. The FTC allowed the terms until 2018 and no longer does.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "ftc-16-cfr-23"
+    },
+    {
+     "id": "ftc-16-cfr-23-2012"
+    },
+    {
+     "id": "ftc-2018-federal-register"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "FTC Jewelry Guides only (current and 2012 texts of the same guides); no independent source found for this term and its minimums"
+  },
+  {
+   "id": "british-gold-crown",
+   "group": "gold",
+   "country": "GB",
+   "kind": "standard mark",
+   "name": "Crown (British gold)",
+   "looks_like": "A crown in a shaped punch, beside the carat figure (to 1975) or the millesimal number (1975 on).",
+   "means": "Gold of a British legal standard: with 18 from 1798, with 22 from 1844, on all UK-made gold with 375, 585, 750 or 916 from 1975; optional from 1999. Not used on 9, 12 or 15 carat before 1975.",
+   "applied": "stamped",
+   "date_from": 1798,
+   "date_to": null,
+   "date_note": "Optional from 1 January 1999.",
+   "sources": [
+    {
+     "id": "chaffers-1924"
+    },
+    {
+     "id": "jackson-1905"
+    },
+    {
+     "id": "london-assay-office-history"
+    },
+    {
+     "id": "uk-hallmarking-act-1973-sch2"
+    },
+    {
+     "id": "uk-si-1998-2978"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/british-gold-crown.webp",
+    "marks_in_image": 1,
+    "object": "Victorian 18 carat mourning ring, Chester, 1891",
+    "holder": "Wikimedia Commons (Charles J. Sharp)",
+    "accession": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Victorian_18ct_mourning_ring_with_hair.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "credit": "Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/mourning_18ct_chester1891.jpg",
+    "crop": [
+     1238,
+     366,
+     259,
+     250
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "british-gold-18-carat",
+   "group": "gold",
+   "country": "GB",
+   "kind": "standard mark",
+   "name": "18 (British gold, before 1975)",
+   "looks_like": "The figure 18 in a shaped punch, beside a crown.",
+   "means": "18 carat gold (750). The crown and 18 replaced the lion passant on 18 carat gold from 1798; replaced by 750 in 1975.",
+   "applied": "stamped",
+   "date_from": 1798,
+   "date_to": 1975,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "chaffers-1924"
+    },
+    {
+     "id": "jackson-1905"
+    },
+    {
+     "id": "london-assay-office-history"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/british-gold-18-carat.webp",
+    "marks_in_image": 1,
+    "object": "Victorian 18 carat mourning ring, Chester, 1891",
+    "holder": "Wikimedia Commons (Charles J. Sharp)",
+    "accession": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Victorian_18ct_mourning_ring_with_hair.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "credit": "Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/mourning_18ct_chester1891.jpg",
+    "crop": [
+     1506,
+     366,
+     275,
+     253
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "british-gold-22-carat",
+   "group": "gold",
+   "country": "GB",
+   "kind": "standard mark",
+   "name": "22 (British gold, before 1975)",
+   "looks_like": "The figure 22 in a rectangle with cut corners, struck beside a separate crown.",
+   "means": "22 carat gold (916.6). Struck with the crown from 1844; before that 22 carat gold carried the lion passant like sterling.",
+   "applied": "stamped",
+   "date_from": 1844,
+   "date_to": 1975,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "chaffers-1924"
+    },
+    {
+     "id": "jackson-1905"
+    },
+    {
+     "id": "london-assay-office-history"
+    },
+    {
+     "id": "jackson-pickford-1991",
+     "where": "pp. 36, 39: London gold (22ct.)"
+    },
+    {
+     "id": "bradbury-1997",
+     "where": "p. 21: gold standard marks"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/british-gold-22-carat.webp",
+    "marks_in_image": 1,
+    "object": "Jackson's Hallmarks (1991), p. 36, London: Gold (22ct.), cycle XXI (1876-96): the 22 punch, struck beside a separate crown",
+    "holder": "the book",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (Antique Collectors' Club, 1991), p. 36, London cycles.",
+    "credit": "From Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (1991), p. 36.",
+    "original": "hallmark-sources/british-books/jackson-p36-360-040.png",
+    "crop": [
+     1265,
+     897,
+     95,
+     76
+    ],
+    "rotate_degrees": 0,
+    "page": 36,
+    "note": "Printed in the book as a small dark punch silhouette, at the scan's own size.",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Portable Antiquities Scheme FindID 855642 (Exeter band, 1875, CC BY 2.0): cropped at native size (130 px) but the 22 is too worn to read",
+     "Public-domain books pass 2026-11-22: Chaffers 1924 (pp. 17-18) gives the gold standards in text only, with no facsimile of the crown, 22 or decimal punches.",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable"
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "british-gold-15-carat-decimal",
+   "group": "gold",
+   "country": "GB",
+   "kind": "standard mark",
+   "name": "15 and .625 (British gold)",
+   "looks_like": "The carat figure 15 and the decimal .625, with no crown.",
+   "means": "15 carat gold, one of the three lower standards added in 1854.",
+   "applied": "stamped",
+   "date_from": 1854,
+   "date_to": 1932,
+   "date_note": "Ended 1932, when 14 carat replaced 15 and 12.",
+   "sources": [
+    {
+     "id": "chaffers-1924"
+    },
+    {
+     "id": "jackson-1905"
+    },
+    {
+     "id": "london-assay-office-history"
+    },
+    {
+     "id": "jackson-pickford-1991",
+     "where": "pp. 36, 39, 42"
+    },
+    {
+     "id": "bradbury-1997",
+     "where": "p. 21"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/british-gold-15-carat-decimal.webp",
+    "marks_in_image": 1,
+    "object": "Jackson's Hallmarks (1991), p. 36, London: Gold (15ct.), cycle XXI (1876-96)",
+    "holder": "the book",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (Antique Collectors' Club, 1991), p. 36, London cycles.",
+    "credit": "From Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (1991), p. 36.",
+    "original": "hallmark-sources/british-books/jackson-p36-360-040.png",
+    "crop": [
+     1196,
+     1767,
+     172,
+     68
+    ],
+    "rotate_degrees": 0,
+    "page": 36,
+    "note": "Printed in the book as a small dark punch silhouette, at the scan's own size.",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Public-domain books pass 2026-11-22: Chaffers 1924 (pp. 17-18) gives the gold standards in text only, with no facsimile of the crown, 22 or decimal punches.",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Jackson's (Pickford 1991) and Bradbury's (1997) checked 2026-11-24: both show this punch, but its outline is an irregular shaped form, not a simple geometric one, so it is not drawn."
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "british-gold-12-carat-decimal",
+   "group": "gold",
+   "country": "GB",
+   "kind": "standard mark",
+   "name": "12 and .5 (British gold)",
+   "looks_like": "The carat figure 12 and the decimal .5, with no crown.",
+   "means": "12 carat gold, one of the three lower standards added in 1854.",
+   "applied": "stamped",
+   "date_from": 1854,
+   "date_to": 1932,
+   "date_note": "Ended 1932, when 14 carat replaced 15 and 12.",
+   "sources": [
+    {
+     "id": "chaffers-1924"
+    },
+    {
+     "id": "jackson-1905"
+    },
+    {
+     "id": "london-assay-office-history"
+    },
+    {
+     "id": "jackson-pickford-1991",
+     "where": "pp. 36, 39, 42"
+    },
+    {
+     "id": "bradbury-1997",
+     "where": "p. 21"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/british-gold-12-carat-decimal.webp",
+    "marks_in_image": 1,
+    "object": "Jackson's Hallmarks (1991), p. 36, London: Gold (12ct.), cycle XXI (1876-96)",
+    "holder": "the book",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (Antique Collectors' Club, 1991), p. 36, London cycles.",
+    "credit": "From Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (1991), p. 36.",
+    "original": "hallmark-sources/british-books/jackson-p36-360-040.png",
+    "crop": [
+     1203,
+     2063,
+     165,
+     83
+    ],
+    "rotate_degrees": 0,
+    "page": 36,
+    "note": "Printed in the book as a small dark punch silhouette, at the scan's own size.",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Public-domain books pass 2026-11-22: Chaffers 1924 (pp. 17-18) gives the gold standards in text only, with no facsimile of the crown, 22 or decimal punches.",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Jackson's (Pickford 1991) and Bradbury's (1997) checked 2026-11-24: both show this punch, but its outline is an irregular shaped form, not a simple geometric one, so it is not drawn."
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "british-gold-9-carat-decimal",
+   "group": "gold",
+   "country": "GB",
+   "kind": "standard mark",
+   "name": "9 and .375 (British gold)",
+   "looks_like": "The figure 9 in a diamond joined to a rectangle holding ·375, one punch, no crown.",
+   "means": "9 carat gold, one of the three lower standards added in 1854.",
+   "applied": "stamped",
+   "date_from": 1854,
+   "date_to": 1975,
+   "date_note": "Replaced by 375 in 1975.",
+   "sources": [
+    {
+     "id": "chaffers-1924"
+    },
+    {
+     "id": "jackson-1905"
+    },
+    {
+     "id": "london-assay-office-history"
+    },
+    {
+     "id": "jackson-pickford-1991",
+     "where": "pp. 36, 39: London gold (9ct.)"
+    },
+    {
+     "id": "bradbury-1997",
+     "where": "p. 21: gold standard marks"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/british-gold-9-carat-decimal.webp",
+    "marks_in_image": 1,
+    "object": "Jackson's Hallmarks (1991), p. 36, London: Gold (9ct.), cycle XXI (1876-96)",
+    "holder": "the book",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (Antique Collectors' Club, 1991), p. 36, London cycles.",
+    "credit": "From Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (1991), p. 36.",
+    "original": "hallmark-sources/british-books/jackson-p36-360-040.png",
+    "crop": [
+     1196,
+     2384,
+     176,
+     65
+    ],
+    "rotate_degrees": 0,
+    "page": 36,
+    "note": "Printed in the book as a small dark punch silhouette, at the scan's own size.",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Public-domain books pass 2026-11-22: Chaffers 1924 (pp. 17-18) gives the gold standards in text only, with no facsimile of the crown, 22 or decimal punches.",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable"
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "british-gold-14-carat-1932",
+   "group": "gold",
+   "country": "GB",
+   "kind": "standard mark",
+   "name": "14 carat (British gold, 1932-1975)",
+   "looks_like": "The figure 14 in a small rounded punch joined to ·585, one punch, no crown (London, from 1932).",
+   "means": "14 carat gold, introduced in 1932 in place of 15 and 12 carat; replaced by 585 in 1975.",
+   "applied": "stamped",
+   "date_from": 1932,
+   "date_to": 1975,
+   "date_note": "Jackson's (Pickford 1991, p. 39) and Bradbury's (1997, p. 21) both show 14·585 as the London 14 carat mark from 1932.",
+   "sources": [
+    {
+     "id": "london-assay-office-history"
+    },
+    {
+     "id": "birmingham-assay-office-1932"
+    },
+    {
+     "id": "jackson-pickford-1991",
+     "where": "pp. 36, 39, 42"
+    },
+    {
+     "id": "bradbury-1997",
+     "where": "p. 21"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/british-gold-14-carat-1932.webp",
+    "marks_in_image": 1,
+    "object": "Jackson's Hallmarks (1991), p. 39, London: Gold (14ct.) from 1932, cycle XXIII",
+    "holder": "the book",
+    "licence": "in-copyright-reference",
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (Antique Collectors' Club, 1991), p. 39, London cycles.",
+    "credit": "From Ian Pickford (ed.), Jackson's Hallmarks, Pocket Edition (1991), p. 39.",
+    "original": "hallmark-sources/british-books/jackson-p39-360-043.png",
+    "crop": [
+     303,
+     2800,
+     118,
+     56
+    ],
+    "rotate_degrees": 0,
+    "page": 39,
+    "note": "Printed in the book as a small dark punch silhouette, at the scan's own size.",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Public-domain books pass 2026-11-22: Chaffers 1924 (pp. 17-18) gives the gold standards in text only, with no facsimile of the crown, 22 or decimal punches.",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Jackson's (Pickford 1991) and Bradbury's (1997) checked 2026-11-24: both show this punch, but its outline is an irregular shaped form, not a simple geometric one, so it is not drawn."
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "convention-mark-gold",
+   "group": "gold",
+   "kind": "standard mark",
+   "name": "Common Control Mark (gold)",
+   "looks_like": "A balance-scale outline around the fineness number.",
+   "means": "Gold assayed under the 1972 Vienna Convention; member countries accept it without marking it again. In force from 1975.",
+   "applied": "stamped",
+   "date_from": 1975,
+   "date_to": null,
+   "date_note": "Which gold finenesses may appear inside it is not sourced.",
+   "sources": [
+    {
+     "id": "hallmarking-convention-ccm"
+    },
+    {
+     "id": "gov-uk-hallmarking-summary"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
+     "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
+     "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
+     "Auckland Museum AM 1966.52 watch (mark not visible)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ]
+  },
+  {
+   "id": "germany-gold-crown-in-sun",
+   "group": "gold",
+   "country": "DE",
+   "kind": "standard mark",
+   "name": "Crown in a sun (German gold)",
+   "looks_like": "The imperial crown inside a circle (the sun sign), beside the fineness in thousandths and the firm's name or trademark.",
+   "means": "German gold of a stated fineness, at least 585, under the 1884 law, from 1 January 1888. Not allowed on jewelry.",
+   "applied": "stamped",
+   "date_from": 1888,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "de-reichsgesetz-1884"
+    },
+    {
+     "id": "de-feingehstempg-1886"
+    },
+    {
+     "id": "rosenberg-1922"
+    },
+    {
+     "id": "meyers-1887-feingehalt"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/germany-gold-crown-in-sun.webp",
+    "marks_in_image": 1,
+    "object": "Rosenberg, Der Goldschmiede Merkzeichen (1922), p. 4, form Nr. 1",
+    "holder": "Internet Archive (public-domain book)",
+    "accession": "",
+    "source_url": "https://archive.org/details/dergoldschmiede00rosegoog/page/n44",
+    "licence": "public-domain",
+    "credit": "Facsimile: M. Rosenberg, Der Goldschmiede Merkzeichen, 3rd ed. (1922), p. 4, public domain.",
+    "original": "hallmark-sources/world/Rosenberg_1922_p4_Reichsstempel.jpg",
+    "crop": [
+     818,
+     3250,
+     302,
+     258
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/german-silver-marks"
+   ]
+  },
+  {
+   "id": "soviet-gold-star-583",
+   "group": "gold",
+   "country": "RU",
+   "kind": "standard mark",
+   "name": "Soviet star with 583",
+   "looks_like": "One punch: a Cyrillic assay-office letter, a five-pointed star with hammer and sickle, and the fineness 583.",
+   "means": "Soviet state assay mark on 583 gold (14 karat at the exact figure). The star type was used from 1958 to 1994.",
+   "applied": "stamped",
+   "date_from": 1958,
+   "date_to": 1994,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "ru-federal-assay-chamber-history"
+    },
+    {
+     "id": "lbma-purity-of-gold"
+    },
+    {
+     "id": "postnikova-loseva-1983",
+     "where": "pp. 263–264: marks approved from 7 May 1958"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/soviet-gold-star-583.webp",
+    "marks_in_image": 1,
+    "object": "Gold ring, described by its photographer as Soviet",
+    "holder": "Wikimedia Commons (Star61)",
+    "accession": "",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Soviet_Union_fineness_for_gold.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "credit": "Star61, CC BY-SA 4.0, via Wikimedia Commons; cropped and graded by Heirloom.",
+    "original": "hallmark-sources/world/soviet_gold.jpg",
+    "crop": [
+     660,
+     460,
+     1430,
+     520
+    ],
+    "rotate_degrees": 0
+   },
+   "pages": [
+    "/marks/gold-karat-marks",
+    "/marks/russian-silver-marks"
+   ],
+   "single_source": "The 1994 end date is from Russia's Federal Assay Chamber only; Postnikova-Loseva (1983) confirms the star mark from 7 May 1958 and 583 as a gold standard."
+  },
+  {
+   "id": "france-gold-eagle-head",
+   "group": "gold",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Eagle's head (French gold)",
+   "looks_like": "An eagle's head in profile; for 18 karat (750) in a six-sided frame with the figure 3, for 22 karat with 1; frameless on small items.",
+   "means": "French gold. Small Paris gold 1838-1919; all French gold from the decree of June 1919.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "capdevielle-1928"
+    },
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "douane-garantie-2009"
+    },
+    {
+     "id": "chaffers-1896"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/france-gold-eagle-head.webp",
+    "marks_in_image": 1,
+    "object": "Chaffers 1896, plate 10: head of an eagle, gold assay mark, Paris, 1838",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/hallmarksongolds00chaf_1/page/n322",
+    "original": "hallmark-sources/world-books/chaffers1896_n322.jpg",
+    "crop": [
+     947,
+     684,
+     321,
+     214
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from W. Chaffers, Hall Marks on Gold and Silver Plate (1896), plate 10 (p. 273), public domain."
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-gold-greek-physician",
+   "group": "gold",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Head of a Greek physician (French gold)",
+   "looks_like": "A bearded head in a frame with the figure 1, 2 or 3.",
+   "means": "French gold, 1838-1919: 1 = 920, 2 = 840, 3 = 750.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": 1919,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "chaffers-1896"
+    },
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/france-gold-greek-physician.webp",
+    "marks_in_image": 1,
+    "object": "Chaffers 1896, plate 10: head of a Greek physician, gold standard no. 1 (0.920), as engraved for the 1838 ordinance",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/hallmarksongolds00chaf_1/page/n322",
+    "original": "hallmark-sources/world-books/chaffers1896_n322.jpg",
+    "crop": [
+     298,
+     678,
+     364,
+     362
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from W. Chaffers, Hall Marks on Gold and Silver Plate (1896), plate 10 (p. 273), public domain."
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-gold-horse-head",
+   "group": "gold",
+   "country": "FR",
+   "kind": "standard mark",
+   "name": "Horse's head (French gold, small items)",
+   "looks_like": "A horse's head.",
+   "means": "Small gold items assayed outside Paris, 1838-1919.",
+   "applied": "stamped",
+   "date_from": 1838,
+   "date_to": 1919,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "chaffers-1896"
+    },
+    {
+     "id": "carre-1922"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/france-gold-horse-head.webp",
+    "marks_in_image": 1,
+    "object": "Chaffers 1896, plate 10: head of a horse, gold assay mark, departments, 1838",
+    "holder": "Internet Archive (public-domain book)",
+    "licence": "public-domain",
+    "source_url": "https://archive.org/details/hallmarksongolds00chaf_1/page/n322",
+    "original": "hallmark-sources/world-books/chaffers1896_n322.jpg",
+    "crop": [
+     942,
+     1082,
+     350,
+     212
+    ],
+    "rotate_degrees": 0,
+    "credit": "Facsimile from W. Chaffers, Hall Marks on Gold and Silver Plate (1896), plate 10 (p. 273), public domain."
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "france-gold-owl",
+   "group": "gold",
+   "country": "FR",
+   "kind": "import mark",
+   "name": "Owl (French gold of foreign or uncertain origin)",
+   "looks_like": "An owl.",
+   "means": "Gold from non-treaty countries or of unknown origin, from the decree of 29 June 1893 (the gold counterpart of the swan).",
+   "applied": "stamped",
+   "date_from": 1893,
+   "date_to": null,
+   "date_note": "",
+   "sources": [
+    {
+     "id": "carre-1922"
+    },
+    {
+     "id": "capdevielle-1928"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Hallmarks of France and poinçon/Minerve searches",
+     "Paris Musées CC0 detail photos: Coffret OGAL103, Miroir PPO1081, Pendentif PPO1082, Boucle 1990.148.94, Saucière ODUT1454 (marks named in the records but not legible in the photos)",
+     "Met Open Access API (rate-limited)",
+     "Rijksmuseum API",
+     "Cooper Hewitt (rate-limited, not completed)",
+     "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+    ],
+    "needs": "photo"
+   },
+   "pages": [
+    "/marks/french-silver-marks"
+   ]
+  },
+  {
+   "id": "switzerland-helvetia-gold-750",
+   "group": "gold",
+   "country": "CH",
+   "kind": "standard mark",
+   "name": "Helvetia head (Swiss gold, 750)",
+   "looks_like": "A woman's head in profile (Helvetia), with braided hair and a necklace, in a shaped shield; struck with the fineness on watch cases.",
+   "means": "Swiss official control mark for gold of 750 thousandths (18 karat) on watch cases, a former official hallmark.",
+   "applied": "stamped",
+   "date_from": 1880,
+   "date_to": null,
+   "date_note": "The control lists it among its official hallmarks used since 1880 and since replaced; the end year is not given. Seen on a gold Omega and a gold Rolex case of about 1960 in the Deutsches Uhrenmuseum Furtwangen (47-2966-2, 47-2889-02), beside 18K 0.750.",
+   "sources": [
+    {
+     "id": "swiss-pmc-hallmarks-1880"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "marks_in_image": 1,
+    "holder": "Wikimedia Commons (Swiss Federal Precious Metals Control)",
+    "licence": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Reproduction_of_the_ancient_Swiss_official_hallmarks_since_1880.png",
+    "original": "hallmark-sources/swiss-watches/swiss-pmc-ancient-hallmarks-since-1880.png",
+    "rotate_degrees": 0,
+    "credit": "Swiss Federal Precious Metals Control, Reproduction of the ancient official hallmarks since 1880, CC0, via Wikimedia Commons.",
+    "file": "marks/img/db/switzerland-helvetia-gold-750.webp",
+    "object": "The large Helvetia punch in the table",
+    "crop": [
+     44,
+     208,
+     138,
+     162
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "Only the Swiss Federal Precious Metals Control's own table of former marks was found; it gives the standard but not the years the mark was used."
+  },
+  {
+   "id": "switzerland-squirrel-gold-583",
+   "group": "gold",
+   "country": "CH",
+   "kind": "standard mark",
+   "name": "Squirrel (Swiss gold, 583)",
+   "looks_like": "A squirrel sitting upright, in a shaped shield.",
+   "means": "Swiss official control mark for gold of 583 thousandths (14 karat) on watch cases, a former official hallmark.",
+   "applied": "stamped",
+   "date_from": 1880,
+   "date_to": null,
+   "date_note": "The control lists it among its official hallmarks used since 1880 and since replaced; the end year is not given.",
+   "sources": [
+    {
+     "id": "swiss-pmc-hallmarks-1880"
+    }
+   ],
+   "disagreements": [],
+   "visual": {
+    "status": "facsimile",
+    "marks_in_image": 1,
+    "holder": "Wikimedia Commons (Swiss Federal Precious Metals Control)",
+    "licence": "CC0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Reproduction_of_the_ancient_Swiss_official_hallmarks_since_1880.png",
+    "original": "hallmark-sources/swiss-watches/swiss-pmc-ancient-hallmarks-since-1880.png",
+    "rotate_degrees": 0,
+    "credit": "Swiss Federal Precious Metals Control, Reproduction of the ancient official hallmarks since 1880, CC0, via Wikimedia Commons.",
+    "file": "marks/img/db/switzerland-squirrel-gold-583.webp",
+    "object": "The large squirrel (écureuil) punch in the table",
+    "crop": [
+     259,
+     210,
+     139,
+     142
+    ]
+   },
+   "pages": [
+    "/marks/gold-karat-marks"
+   ],
+   "single_source": "Only the Swiss Federal Precious Metals Control's own table of former marks was found; it gives the standard but not the years the mark was used."
+  }
+ ]
+}

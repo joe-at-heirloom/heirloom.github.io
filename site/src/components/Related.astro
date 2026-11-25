@@ -1,0 +1,21 @@
+---
+import { GUIDES } from '../lib/site';
+const { path } = Astro.props as { path: string };
+---
+<section class="related" aria-labelledby="related-title">
+  <h2 id="related-title">More from Heirloom</h2>
+  <ul>
+    {GUIDES.filter(([p]) => p !== path).map(([p, n, d]) => (
+      <li><a href={p}><span class="related__t">{n}</span><span class="related__d">{d}</span></a></li>
+    ))}
+  </ul>
+</section>
+<style>
+  .related { margin-top: 80px; }
+  .related h2 { font-size: 1.5rem; margin-bottom: 16px; }
+  .related ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .related a { display: grid; gap: 4px; height: 100%; padding: 18px 20px; border-radius: var(--r-lg); border: 1px solid var(--rule); text-decoration: none; transition: border-color 0.2s, transform 0.2s var(--ease); }
+  .related a:hover { border-color: var(--ink-3); transform: translateY(-2px); color: inherit; }
+  .related__t { font: 500 1.1rem/1.3 var(--serif); }
+  .related__d { font-size: 14px; color: var(--ink-2); }
+</style>

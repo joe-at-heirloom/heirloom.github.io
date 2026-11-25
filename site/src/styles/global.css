@@ -1,0 +1,138 @@
+/* Heirloom site: one set of tokens, light and dark. A museum catalogue:
+   paper, ink, plates for specimens, the brand orange kept for what you can
+   press. No small capitals and no tiny uppercase labels (Joe's rule). */
+
+:root {
+  --paper: #faf8f5;
+  --paper-2: #f3f0eb;
+  --plate: #ece8e1;
+  --plate-edge: #e0dbd2;
+  --ink: #1b1916;
+  --ink-2: #57524b;
+  --ink-3: #8a847b;
+  --rule: #e4dfd7;
+  --accent: #e84316;
+  --accent-ink: #c2370e;
+  --accent-wash: #fdeee8;
+  --focus: #e84316;
+  --shadow: 0 1px 2px rgb(27 25 22 / 0.04), 0 8px 24px rgb(27 25 22 / 0.06);
+  --shadow-lift: 0 2px 4px rgb(27 25 22 / 0.06), 0 18px 48px rgb(27 25 22 / 0.12);
+
+  --serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Inter', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --han: 'LXGW WenKai TC', 'Noto Serif TC', 'Songti TC', serif;
+
+  --wide: 1240px;
+  --read: 680px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --r-sm: 6px;
+  --r: 10px;
+  --r-lg: 16px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #13120f;
+    --paper-2: #1b1a16;
+    --plate: #23211c;
+    --plate-edge: #2e2b25;
+    --ink: #f1ede6;
+    --ink-2: #b9b2a7;
+    --ink-3: #847d72;
+    --rule: #2c2924;
+    --accent: #ff6a3d;
+    --accent-ink: #ff8a64;
+    --accent-wash: #2a1810;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
+    --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 18px 48px rgb(0 0 0 / 0.45);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --paper: #13120f;
+  --paper-2: #1b1a16;
+  --plate: #23211c;
+  --plate-edge: #2e2b25;
+  --ink: #f1ede6;
+  --ink-2: #b9b2a7;
+  --ink-3: #847d72;
+  --rule: #2c2924;
+  --accent: #ff6a3d;
+  --accent-ink: #ff8a64;
+  --accent-wash: #2a1810;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
+  --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 18px 48px rgb(0 0 0 / 0.45);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 88px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--sans);
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration-color: color-mix(in oklab, currentColor 35%, transparent); text-underline-offset: 3px; }
+a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+::selection { background: var(--accent-wash); color: var(--ink); }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.015em; line-height: 1.1; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.4rem, 1.6rem + 3.6vw, 4.6rem); font-weight: 400; letter-spacing: -0.025em; }
+h2 { font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem); }
+h3 { font-size: 1.3rem; }
+p { margin: 0 0 1em; text-wrap: pretty; }
+.num { font-variant-numeric: tabular-nums lining-nums; }
+.han { font-family: var(--han); font-weight: 400; }
+
+.wrap { width: min(100% - 2 * var(--gutter), var(--wide)); margin-inline: auto; }
+.read { max-width: var(--read); }
+.lede { font-size: clamp(1.1rem, 1rem + 0.4vw, 1.3rem); line-height: 1.55; color: var(--ink-2); max-width: 62ch; }
+.muted { color: var(--ink-2); }
+.faint { color: var(--ink-3); }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Buttons and fields */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px;
+  border-radius: 999px; border: 1px solid var(--rule); background: var(--paper);
+  font: 500 15px/1 var(--sans); color: var(--ink); text-decoration: none; cursor: pointer;
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.btn:hover { border-color: var(--ink-3); color: var(--ink); }
+.btn--primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn--primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); color: #fff; }
+.field {
+  width: 100%; min-height: 52px; padding: 0 18px; border-radius: 14px; border: 1px solid var(--rule);
+  background: var(--paper); color: var(--ink); font: 400 18px/1 var(--sans);
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.field::placeholder { color: var(--ink-3); }
+.field:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-wash); }
+
+/* A plate: the ground a specimen sits on. A print plate stays paper in both
+   themes: book facsimiles are black ink on white and photographs are toned
+   for paper, so in dark mode they hang like prints on a dark wall instead of
+   glaring or being inverted (an inverted mark is a different mark). */
+.plate { background: var(--plate); border-radius: var(--r); display: grid; place-items: center; overflow: hidden; }
+.plate--print { --print: #ebe6dd; background: var(--print); color: #1b1916; }
+.plate--print img { mix-blend-mode: multiply; }
+
+/* Prose */
+.prose { max-width: var(--read); }
+.prose h2 { margin: 2.2em 0 0.6em; }
+.prose h3 { margin: 1.8em 0 0.4em; }
+.prose ul, .prose ol { padding-left: 1.2em; margin: 0 0 1.2em; }
+.prose li { margin: 0.35em 0; }
+.prose li::marker { color: var(--ink-3); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}

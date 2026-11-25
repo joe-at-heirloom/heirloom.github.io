@@ -1,0 +1,67 @@
+---
+const { path } = Astro.props as { path: string };
+const links = [
+  { href: '/marks/', label: 'Marks', match: '/marks' },
+  { href: '/guides', label: 'Guides', match: '/guides' },
+  { href: '/home-inventory-app', label: 'Home inventory', match: '/home-inventory' },
+];
+---
+<header class="hdr" transition:persist>
+  <div class="wrap hdr__in">
+    <a class="logo" href="/" aria-label="Heirloom, home">
+      <img src="/logo.svg" alt="" width="112" height="20" />
+    </a>
+    <nav class="hdr__nav" aria-label="Main">
+      {links.map((l) => (
+        <a href={l.href} aria-current={path.startsWith(l.match) ? 'page' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+    <div class="hdr__end">
+      <button class="theme" type="button" aria-label="Switch light or dark" data-theme-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" /></svg>
+      </button>
+      <a class="btn btn--primary hdr__cta" href="https://apps.apple.com/us/app/id6754576251">Get Heirloom</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  function wire() {
+    document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((b) => {
+      b.onclick = () => {
+        const root = document.documentElement;
+        const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+        root.dataset.theme = dark ? 'light' : 'dark';
+        try { localStorage.setItem('theme', root.dataset.theme); } catch {}
+      };
+    });
+  }
+  wire();
+  document.addEventListener('astro:after-swap', () => {
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+    wire();
+  });
+</script>
+
+<style>
+  .hdr { position: sticky; top: 0; z-index: 50; background: color-mix(in oklab, var(--paper) 96%, transparent); backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid color-mix(in oklab, var(--rule) 70%, transparent); }
+  .hdr__in { display: flex; align-items: center; gap: 28px; height: 68px; }
+  .logo img { height: 20px; width: auto; }
+  .hdr__nav { display: flex; gap: 4px; }
+  .hdr__nav a { padding: 8px 12px; border-radius: 999px; text-decoration: none; color: var(--ink-2); font-size: 15px; font-weight: 500; }
+  .hdr__nav a:hover { color: var(--ink); background: var(--paper-2); }
+  .hdr__nav a[aria-current='page'] { color: var(--ink); background: var(--paper-2); }
+  .hdr__end { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+  .theme { width: 40px; height: 40px; border-radius: 999px; border: 0; background: transparent; color: var(--ink-2); display: grid; place-items: center; cursor: pointer; }
+  .theme:hover { background: var(--paper-2); color: var(--ink); }
+  .theme svg { width: 18px; height: 18px; fill: currentColor; }
+  .hdr__cta { min-height: 38px; padding: 0 16px; font-size: 14px; }
+  @media (max-width: 720px) {
+    .hdr__in { gap: 12px; height: 60px; }
+    .hdr__nav { gap: 0; overflow-x: auto; scrollbar-width: none; }
+    .hdr__nav a { padding: 8px 9px; font-size: 14px; white-space: nowrap; }
+    .hdr__nav a:not([href='/marks/']):not([href='/guides']) { display: none; }
+    .hdr__cta { display: none; }
+    .logo img { height: 17px; }
+  }
+</style>

@@ -1,0 +1,2502 @@
+{
+  "sources": {
+    "sp-cbr-hartford-1901": {
+      "kind": "book",
+      "author": "J. H. Beers & Co.",
+      "title": "Commemorative Biographical Record of Hartford County, Connecticut",
+      "year": 1901,
+      "url": "https://archive.org/details/commemorativebio01beer/page/n677",
+      "public_domain": true
+    },
+    "sp-curtis-early-silver-1913": {
+      "kind": "book",
+      "author": "George Munson Curtis",
+      "title": "Early Silver of Connecticut and its Makers",
+      "year": 1913,
+      "url": "https://archive.org/details/earlysilverofcon00curt/page/n151",
+      "public_domain": true
+    },
+    "sp-meriden-150-1956": {
+      "kind": "book",
+      "author": "Meriden sesquicentennial committee",
+      "title": "150 Years of Meriden",
+      "year": 1956,
+      "url": "https://archive.org/details/150yearsofmeride00meri/page/n121"
+    },
+    "sp-century-of-meriden-1906": {
+      "kind": "book",
+      "author": "C. B. Gillespie and G. M. Curtis",
+      "title": "A Century of Meriden",
+      "year": 1906,
+      "url": "https://archive.org/details/bub_gb_-zQWAAAAYAAJ/page/n1093",
+      "public_domain": true
+    },
+    "sp-silver-standard-1906": {
+      "kind": "periodical",
+      "author": "Meriden Britannia Co. (International Silver Co., successor)",
+      "title": "The Silver Standard: a periodical of 1847",
+      "year": 1906,
+      "url": "https://archive.org/details/silverstandardpe00meri",
+      "public_domain": true,
+      "note": "The maker's own house paper: evidence of what the company said, not neutral history"
+    },
+    "sp-jc-trademarks-1896": {
+      "kind": "book",
+      "author": "Jewelers' Circular Publishing Co.",
+      "title": "Trade-Marks of the Jewelry and Kindred Trades",
+      "year": 1896,
+      "url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades",
+      "public_domain": true
+    },
+    "sp-busiest-house-1889": {
+      "kind": "catalog",
+      "author": "The Busiest House in America",
+      "title": "13th Annual Illustrated Catalog",
+      "year": 1889,
+      "url": "https://archive.org/details/13thannualillust00busi/page/n121",
+      "public_domain": true
+    },
+    "sp-rogers-and-bro-1892": {
+      "kind": "catalog",
+      "author": "Rogers & Brother",
+      "title": "Price List of the Celebrated Rogers & Bro. A-1 Electro Silver Plated Spoons, Forks, Knives",
+      "year": 1892,
+      "url": "https://archive.org/details/pricelistofceleb00roge/page/n10",
+      "public_domain": true
+    },
+    "sp-meriden-silver-plate-1883": {
+      "kind": "catalog",
+      "author": "Meriden Silver Plate Co.",
+      "title": "Illustrated Catalogue and Price List",
+      "year": 1883,
+      "url": "https://archive.org/details/illustradedcata00meriuoft",
+      "public_domain": true
+    },
+    "sp-sears-1897": {
+      "kind": "catalog",
+      "author": "Sears, Roebuck & Co.",
+      "title": "Catalogue No. 104, spring",
+      "year": 1897,
+      "url": "https://archive.org/details/sears-roebuck-catalog-104-spring-1897",
+      "public_domain": true
+    },
+    "sp-case-rogers-spurr-1882": {
+      "kind": "court",
+      "author": "US Circuit Court, D. Mass.",
+      "title": "William Rogers Mfg. Co. v. Rogers & Spurr Mfg. Co., 11 F. 495",
+      "year": 1882,
+      "url": "https://law.resource.org/pub/us/case/reporter/F/0011/0011.f.0495.pdf",
+      "public_domain": true
+    },
+    "sp-case-simpson-hall-miller-1887": {
+      "kind": "court",
+      "author": "Connecticut Supreme Court",
+      "title": "William Rogers Mfg. Co. v. Simpson, Hall, Miller & Co., 54 Conn. 527",
+      "year": 1887,
+      "public_domain": true,
+      "note": "Read through a summary page; check the official report before quoting"
+    },
+    "sp-case-rw-rogers-1895a": {
+      "kind": "court",
+      "author": "US Circuit Court, S.D.N.Y.",
+      "title": "William Rogers Mfg. Co. v. R. W. Rogers Co., 66 F. 56",
+      "year": 1895,
+      "url": "https://law.resource.org/pub/us/case/reporter/F/0066/0066.f1.0056.pdf",
+      "public_domain": true
+    },
+    "sp-case-rw-rogers-1895b": {
+      "kind": "court",
+      "author": "US Court of Appeals, 2d Cir.",
+      "title": "R. W. Rogers Co. v. Wm. Rogers Mfg. Co., 70 F. 1017",
+      "year": 1895,
+      "url": "https://law.resource.org/pub/us/case/reporter/F/0070/0070.f1.1017.pdf",
+      "public_domain": true
+    },
+    "sp-rainwater-via-point-ellice": {
+      "kind": "website",
+      "author": "Point Ellice House (Library and Archives Canada web archive), citing Rainwater, Encyclopedia of American Silver Manufacturers",
+      "title": "Simpson, Hall, Miller & Co.",
+      "url": "https://epe.lac-bac.gc.ca/100/205/301/ic/cdc/peh/objects/manufacturers/pmanu29.html"
+    },
+    "sp-cooper-hewitt-202018": {
+      "kind": "museum",
+      "author": "Cooper Hewitt, Smithsonian Design Museum",
+      "title": "Assyrian Head pattern fish server, Meriden Britannia Co., 1885-86 (marks recorded)",
+      "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/202018"
+    },
+    "sp-waldo-bridgeport-1897": {
+      "kind": "book",
+      "author": "George C. Waldo",
+      "title": "The Standard's History of Bridgeport",
+      "year": 1897,
+      "url": "https://archive.org/details/standardshistory00wald",
+      "public_domain": true
+    },
+    "sp-patent-us309013": {
+      "kind": "patent",
+      "author": "W. A. Warner",
+      "title": "US patent 309,013, Plated Ware",
+      "year": 1884,
+      "url": "https://patents.google.com/patent/US309013",
+      "public_domain": true
+    },
+    "sp-patent-us337099": {
+      "kind": "patent",
+      "author": "W. A. Warner",
+      "title": "US patent 337,099, Manufacture of Spoons",
+      "year": 1886,
+      "url": "https://patents.google.com/patent/US337099",
+      "public_domain": true
+    },
+    "sp-patent-us755727": {
+      "kind": "patent",
+      "author": "W. A. Warner, assignor to The Holmes and Edwards Silver Company",
+      "title": "US patent 755,727",
+      "year": 1904,
+      "url": "https://patents.google.com/patent/US755727A/en",
+      "public_domain": true
+    },
+    "sp-hagan-silverplate-1990": {
+      "kind": "book",
+      "author": "Tere Hagan",
+      "title": "Silverplated Flatware: An Identification & Value Guide, revised 4th ed.",
+      "year": 1990,
+      "url": "https://archive.org/details/silverplatedflat00haga",
+      "note": "Read through archive.org full-text search only"
+    },
+    "sp-snell-1980": {
+      "kind": "book",
+      "author": "Doris Jean Snell",
+      "title": "American Silverplated Flatware Patterns",
+      "year": 1980,
+      "url": "https://archive.org/details/americansilverpl0000snel",
+      "note": "Read through archive.org full-text search only"
+    },
+    "sp-dolan-1993": {
+      "kind": "book",
+      "author": "Maryanne Dolan",
+      "title": "1830's-1990's American Sterling Silver Flatware",
+      "year": 1993,
+      "url": "https://archive.org/details/1830s1990sameric0000dola",
+      "note": "Read through archive.org full-text search only"
+    },
+    "sp-he-deep-silver-1957": {
+      "kind": "brochure",
+      "author": "International Silver Co.",
+      "title": "New Rhythmic ... in Holmes & Edwards Deep Silver",
+      "year": 1957,
+      "url": "https://archive.org/details/holmes-edwards-rhythmic-silverware-1957"
+    },
+    "sp-oneida-community-1901": {
+      "kind": "booklet",
+      "author": "Oneida Community Ltd.",
+      "title": "Oneida Community: 1848-1901",
+      "year": 1901,
+      "url": "https://archive.org/details/oneidacommunity100onei",
+      "public_domain": true
+    },
+    "sp-oneida-catalog-1903": {
+      "kind": "catalog",
+      "author": "Oneida Community Ltd.",
+      "title": "Oneida Community Quality Silverware, Catalog No. 25",
+      "year": 1903,
+      "url": "https://archive.org/details/oneidacommunityq00onei",
+      "public_domain": true
+    },
+    "sp-edmonds-1948": {
+      "kind": "book",
+      "author": "Walter D. Edmonds",
+      "title": "The First Hundred Years, 1848-1948 (Oneida Ltd.)",
+      "year": 1948,
+      "url": "https://library.syracuse.edu/digital/collections/f/FirstHundredYears,1848-1948/"
+    },
+    "sp-syracuse-oneida-finding-aid": {
+      "kind": "archive",
+      "author": "Syracuse University Special Collections",
+      "title": "Oneida Community Collection, 1811-1997: biographical history",
+      "url": "https://findingaids.syr.edu/catalog/oneida_comm"
+    },
+    "sp-oneida-heirloom-sterling-1965": {
+      "kind": "brochure",
+      "author": "Oneida Ltd.",
+      "title": "Oneida Heirloom Sterling (brochures, 1965 and 1967)",
+      "year": 1965,
+      "url": "https://archive.org/details/oneida-heirloom-sterling-1965"
+    },
+    "sp-commons-heritage-o-7647-9": {
+      "kind": "museum",
+      "author": "House of Commons Heritage Collection (Canada)",
+      "title": "O-7647.9, soup spoon marked INTERNATIONAL S. CO. XII, electroplated nickel silver",
+      "url": "https://ourcommons.ca/heritage/en/collection/2244"
+    },
+    "sp-iastate-international": {
+      "kind": "museum",
+      "author": "Iowa State University Museums",
+      "title": "International Silver Co. biography",
+      "url": "https://emuseum.its.iastate.edu/people/3148/international-silver-co/objects",
+      "note": "Seen via a search snippet; may derive from A Century of Meriden"
+    },
+    "sp-international-sterling-1951": {
+      "kind": "brochure",
+      "author": "International Silver Co.",
+      "title": "Design for Beauty (International Sterling promotion)",
+      "year": 1951,
+      "note": "On archive.org; seen by the research session"
+    },
+    "sp-uspto-329758": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 329758: 1847 ROGERS BROS (silver-plated flatware), first use claimed 1862, owner of record Lifetime Brands; cancelled 2020",
+      "url": "https://tsdr.uspto.gov/#caseNumber=329758&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-385300": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 385300: 1847 ROGERS BROS. STERLING, first use claimed May 15, 1940, owner of record International Silver Co.; cancelled 2002",
+      "url": "https://tsdr.uspto.gov/#caseNumber=385300&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-385301": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 385301: 1847 STERLING, first use claimed May 15, 1940, owner of record International Silver Co.",
+      "url": "https://tsdr.uspto.gov/#caseNumber=385301&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-329754": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 329754: WM. ROGERS & SON (silver-plated flatware), first use claimed 1866, owner of record Syratech Corp.",
+      "url": "https://tsdr.uspto.gov/#caseNumber=329754&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-329757": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 329757: 1865 WM. ROGERS MFG. CO., first use claimed 1865, owner of record Syratech Corp.",
+      "url": "https://tsdr.uspto.gov/#caseNumber=329757&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-329755": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 329755: WM ROGERS with eagle and star (flatware), first use claimed 1878, owner of record Syratech Corp.; expired 2006",
+      "url": "https://tsdr.uspto.gov/#caseNumber=329755&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-503060": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 503060: WM ROGERS with eagle and star (hollowware), first use claimed February 1919, owner of record International Silver Co.",
+      "url": "https://tsdr.uspto.gov/#caseNumber=503060&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-147780": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 147780: ROGERS & BRO. with a five-point star, first use claimed 1858, owner of record Lifetime Brands",
+      "url": "https://tsdr.uspto.gov/#caseNumber=147780&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-77597": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 77597: WM. A. ROGERS A.1.R. with horseshoe, first use claimed February 1896, owner of record Oneida Ltd.",
+      "url": "https://tsdr.uspto.gov/#caseNumber=77597&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-uspto-805168": {
+      "kind": "official",
+      "author": "USPTO",
+      "title": "US trademark registration 805168: WM. A. ROGERS, first use claimed October 1, 1895, owner of record Oneida Ltd.",
+      "url": "https://tsdr.uspto.gov/#caseNumber=805168&caseType=US_REGISTRATION_NO&searchType=statusSearch",
+      "note": "First-use dates are the applicant's sworn claim"
+    },
+    "sp-jc-trademarks-1922": {
+      "kind": "book",
+      "author": "Jewelers' Circular Publishing Co.",
+      "title": "Trade-Marks of the Jewelry and Kindred Trades (1922 edition)",
+      "year": 1922,
+      "url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx",
+      "public_domain": true,
+      "note": "Harvard copy, HathiTrust full view"
+    },
+    "sp-rainwater-2004": {
+      "kind": "book",
+      "author": "Dorothy T. Rainwater, with Martin and Colette Fuller",
+      "title": "Encyclopedia of American Silver Manufacturers, 5th edition (Schiffer)",
+      "year": 2004,
+      "url": "https://archive.org/details/encyclopediaofam00rain_0",
+      "public_domain": false,
+      "note": "In copyright: cited for facts only; no image from it is cropped, traced or published"
+    },
+    "sp-kovels-silver": {
+      "kind": "book",
+      "author": "Ralph and Terry Kovel",
+      "title": "Kovels' American Silver Marks",
+      "year": 1989,
+      "url": "https://archive.org/details/kovelsamericansi0000kove",
+      "public_domain": false,
+      "note": "In copyright; images used on Joe's decision (2026-11-24)"
+    }
+  },
+  "entries": [
+    {
+      "id": "plate-1847-rogers-bros",
+      "group": "silver-plate",
+      "maker": "Meriden Britannia Co.; International Silver Co. from 1898",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "1847 ROGERS BROS.",
+      "looks_like": "The words 1847 ROGERS BROS. in small capitals stamped in a line on the back of a flatware handle, usually followed by a grade mark. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "Silver-plated flatware of the 1847 Rogers Bros. line. 1847 is the year the business counted from, not the year the item was made.",
+      "applied": "stamped",
+      "date_from": 1862,
+      "date_to": null,
+      "date_note": "First use claimed as 1862 in the trademark registration; used into the second half of the 20th century.",
+      "sources": [
+        {
+          "id": "sp-uspto-329758"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-meriden-150-1956"
+        },
+        {
+          "id": "sp-silver-standard-1906"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 116, 157, 203"
+        }
+      ],
+      "disagreements": [
+        {
+          "topic": "when the Rogers brothers began plating",
+          "readings": [
+            {
+              "source": "sp-cbr-hartford-1901",
+              "years": "1844, 1846 and 1847 in three family sketches"
+            },
+            {
+              "source": "sp-curtis-early-silver-1913",
+              "years": "about 1847"
+            },
+            {
+              "source": "sp-silver-standard-1906",
+              "years": "1847 (the maker's own claim)"
+            }
+          ]
+        },
+        {
+          "topic": "when the Rogers brothers began plating",
+          "readings": [
+            {
+              "source": "sp-rainwater-2004",
+              "years": "1847, the year they perfected electroplating and first sold under the name Rogers Bros. (pp. 116, 203); Rogers & Mead plated in Hartford 1845-46"
+            }
+          ]
+        }
+      ],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-1847-rogers-bros.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1896), p. 56",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n85/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n85-p56.jpg",
+        "crop": [
+          690,
+          1871,
+          394,
+          90
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), p. 56, public domain.",
+        "note": "1847—ROGERS BROS., as set in type in the 1896 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Cooper Hewitt 202018 (CC0, image CHA1876, https://collection.cooperhewitt.org/view/objects/asitem/id/202018): the mark is legible but its letters are about 20 px tall at the largest size served (1280 px), so a native crop is 222x56 px, under the 90 px minimum; the website page shows an enlarged crop of it",
+          "Cooper Hewitt 202019-202021 and 200038 (CC0): the same mark, no larger",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "1896 Jewelers' Circular prints the name in type only, no cut (p. 56)",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 pp. 157, 119: 1847 ROGERS BROS. printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/1847-rogers-bros",
+        "/marks/international-silver-co"
+      ]
+    },
+    {
+      "id": "plate-rogers-bros-hollowware",
+      "group": "silver-plate",
+      "maker": "Meriden Britannia Co.; International Silver Co.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "ROGERS BROS. (without 1847)",
+      "looks_like": "The words ROGERS BROS. with no year, on the base of hollowware. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "The Meriden Britannia and International Silver hollowware mark of the Rogers Bros. line.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-silver-standard-1906"
+        },
+        {
+          "id": "sp-case-rogers-spurr-1882"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-rogers-bros-hollowware.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: The Silver Standard (1906), leaf 7",
+        "holder": "Internet Archive (silverstandardpe00meri)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/silverstandardpe00meri/page/n7/mode/1up",
+        "original": "hallmark-sources/plate/books/silverstandard-1906-n7.jpg",
+        "crop": [
+          347,
+          3383,
+          295,
+          57
+        ],
+        "credit": "Facsimile from Meriden Britannia Co., The Silver Standard (1906), leaf 7, public domain.",
+        "note": "*** ROGERS BROS., as set in type among the hollowware trademarks in Meriden Britannia's own paper, The Silver Standard (1906); the struck stamp's letters may differ. The print is small (25 px of letters). Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "JC 1922 p. 171 (seq 199): Meriden Britannia's hollowware marks print 1847 with ROGERS BROS. in boxes, not ROGERS BROS. alone",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/1847-rogers-bros"
+      ]
+    },
+    {
+      "id": "plate-grade-a1",
+      "group": "silver-plate",
+      "maker": null,
+      "country": "US",
+      "kind": "other",
+      "name": "A1 (grade of plate)",
+      "looks_like": "A capital A and the figure 1, often with a stop after each, stamped after the maker's name on American plated flatware.",
+      "means": "Standard first-quality silver plate, sold as extra plate. A grade mark appears only on plate, never on sterling.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "In the trade from at least the 1880s.",
+      "sources": [
+        {
+          "id": "sp-busiest-house-1889"
+        },
+        {
+          "id": "sp-rogers-and-bro-1892"
+        },
+        {
+          "id": "sp-meriden-silver-plate-1883"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 202"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/plate-grade-a1.webp",
+        "marks_in_image": 1,
+        "object": "Cream ladle, Wm. A. Rogers, about 1900 (1990.B.200)",
+        "holder": "Deutsches Klingenmuseum Solingen",
+        "accession": "1990.B.200",
+        "source_url": "https://www.europeana.eu/item/1091/item_7EL3HFXD4G632JXSF7TQ4TKGPJLXA7OJ",
+        "licence": "CC-BY-4.0",
+        "credit": "Deutsches Klingenmuseum Solingen, 1990.B.200, CC BY 4.0; cropped by Heirloom.",
+        "original": "hallmark-sources/plate/klingenmuseum-1990.B.200-cream-ladle.jpg",
+        "crop": [
+          595,
+          323,
+          111,
+          90
+        ],
+        "note": "Cut at native size, 111x90 px; graded with svg_stencil.grade(); ungraded crop in hallmark-sources/db-raw/plate-grade-a1.png"
+      },
+      "pages": [
+        "/marks/1847-rogers-bros",
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-grade-xii",
+      "group": "silver-plate",
+      "maker": null,
+      "country": "US",
+      "kind": "other",
+      "name": "XII (sectional plate)",
+      "looks_like": "The Roman numeral XII stamped after the maker's name.",
+      "means": "Sectional plate: extra silver laid on the parts that wear (the back of the bowl, the heel, the tips) before the whole item was plated.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": 1917,
+      "date_note": "Sold as a grade of 1847 Rogers Bros. in 1889; also on International S. Co. spoons. On 1847 Rogers Bros., grade marks ended after 1917, when the line was made in one quality only (Rainwater p. 118).",
+      "sources": [
+        {
+          "id": "sp-busiest-house-1889"
+        },
+        {
+          "id": "sp-rogers-and-bro-1892"
+        },
+        {
+          "id": "sp-cbr-hartford-1901"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 118, 157"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-grade-xii.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Price List of the Celebrated Rogers & Bro. A-1 Electro Silver Plated Spoons, Forks, Knives (1892), p. 5",
+        "holder": "Internet Archive (pricelistofceleb00roge)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/pricelistofceleb00roge/page/n10/mode/1up",
+        "original": "hallmark-sources/plate/books/rogers-and-bro-1892-n10.jpg",
+        "crop": [
+          298,
+          1514,
+          64,
+          74
+        ],
+        "credit": "Facsimile from Rogers & Brother, Price List of the Celebrated Rogers & Bro. A-1 Electro Silver Plated Spoons, Forks, Knives (1892), p. 5, public domain.",
+        "note": "XII at the end of the stamp ★ROGERS & BRO. XII, drawn running up the handle of a spoon in Rogers & Brother's 1892 price list; turned a quarter-turn to read across. The stripes are the engraver's shading of the handle. Small print (about 50 px). Cut at the page's native resolution; greyscale and autocontrast only. Rotated a quarter turn.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Cooper Hewitt 200032, Assyrian Head table spoon marked Rogers Smith & Co. XII: one overview photo only, mark not legible",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "Rogers & Bro. 1892 p. 5 shows XII only as labels on a diagram of a spoon, not as a stamp",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 157: XII printed in type in a line of text, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/1847-rogers-bros"
+      ]
+    },
+    {
+      "id": "plate-grade-triple",
+      "group": "silver-plate",
+      "maker": null,
+      "country": "US",
+      "kind": "other",
+      "name": "TRIPLE (triple plate)",
+      "looks_like": "The word TRIPLE stamped near the maker's name. On 1847 Rogers Bros. it reads XS TRIPLE (the ordinary grade) or XII TRIPLE (sectional). The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "The heaviest regular grade of plate in the period catalogs.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": 1917,
+      "date_note": "On 1847 Rogers Bros., grade marks ended after 1917, when the line was made in one quality only (Rainwater p. 118).",
+      "sources": [
+        {
+          "id": "sp-busiest-house-1889"
+        },
+        {
+          "id": "sp-sears-1897"
+        },
+        {
+          "id": "sp-meriden-silver-plate-1883"
+        },
+        {
+          "id": "sp-rogers-and-bro-1892"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 118"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-grade-triple.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 118",
+        "holder": "Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer)",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 118",
+        "source_url": "",
+        "original": "hallmark-sources/plate/books/rainwater2004-p118-500dpi.png",
+        "crop": [
+          2272,
+          840,
+          288,
+          78
+        ],
+        "credit": "From Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 118.",
+        "note": "TRIPLE, from 1847 ROGERS BROS. TRIPLE, as set in type in Rainwater's grade table (from an International Silver pamphlet of the early 1900s); the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/1847-rogers-bros"
+      ]
+    },
+    {
+      "id": "plate-1847-rogers-bros-sterling",
+      "group": "silver-plate",
+      "maker": "International Silver Co.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "1847 ROGERS BROS. STERLING, or 1847 STERLING",
+      "looks_like": "1847 ROGERS BROS. or 1847 with the word STERLING. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "Sterling silver sold by International Silver under the 1847 name; not plate.",
+      "applied": "stamped",
+      "date_from": 1940,
+      "date_to": null,
+      "date_note": "First use claimed as May 15, 1940.",
+      "sources": [
+        {
+          "id": "sp-uspto-385300"
+        },
+        {
+          "id": "sp-uspto-385301"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 119"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-1847-rogers-bros-sterling.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 119",
+        "holder": "Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer)",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 119",
+        "source_url": "",
+        "original": "hallmark-sources/plate/books/rainwater2004-p119-500dpi.png",
+        "crop": [
+          260,
+          2828,
+          1202,
+          112
+        ],
+        "credit": "From Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 119.",
+        "note": "1847 ROGERS BROS. STERLING, as set in type in Rainwater; the struck stamp's letters may differ. Scaled down to fit 720 px. Cut at the page's native resolution, scaled to 720x67; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "From 1940, so no public-domain book can show it",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 119: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/1847-rogers-bros"
+      ]
+    },
+    {
+      "id": "plate-meriden-britannia-scale",
+      "group": "silver-plate",
+      "maker": "Meriden Britannia Co.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "MERIDEN B. COMPANY seal with a balance scale",
+      "looks_like": "A round seal: MERIDEN B. COMPANY around the edge, a balance scale on a shield in the middle. On flatware it is tiny, struck after 1847 ROGERS BROS. A1.",
+      "means": "Meriden Britannia Co.'s own mark: beside 1847 ROGERS BROS. on spoons, forks and knives, and alone on white-metal hollowware (1896).",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Seen on 1885-86 ware.",
+      "sources": [
+        {
+          "id": "sp-cooper-hewitt-202018"
+        },
+        {
+          "id": "sp-jc-trademarks-1896",
+          "where": "p. 56"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 157 (shown after 1847 ROGERS BROS.)"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-meriden-britannia-scale.webp",
+        "marks_in_image": 1,
+        "object": "Printed trade-mark: the MERIDEN B. COMPANY seal, printed beside 1847—ROGERS BROS. for flatware and on its own for white-metal hollowware",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n85/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n85-p56.jpg",
+        "crop": [
+          991,
+          1579,
+          272,
+          232
+        ],
+        "credit": "Facsimile from Jewelers' Circular Publishing Co., Trade-Marks of the Jewelry and Kindred Trades (1896), p. 56, public domain.",
+        "note": "Cut at the scan's native size; neutral greyscale, autocontrast only. Mark's own box 1022-1232 x 1595-1805 px on the page."
+      },
+      "pages": [
+        "/marks/1847-rogers-bros"
+      ]
+    },
+    {
+      "id": "plate-wm-rogers-and-son",
+      "group": "silver-plate",
+      "maker": "Wm. Rogers Mfg. Co., Hartford; International Silver Co. from 1898",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "WM. ROGERS & SON",
+      "looks_like": "WM. ROGERS & SON in capitals along the back of a handle, often with an anchor or a grade such as AA.",
+      "means": "Silver-plated flatware of Wm. Rogers Mfg. Co., the Hartford firm that used William Rogers's name; later International Silver.",
+      "applied": "stamped",
+      "date_from": 1865,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-case-rogers-spurr-1882"
+        },
+        {
+          "id": "sp-case-rw-rogers-1895b"
+        },
+        {
+          "id": "sp-uspto-329754"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 117, 120, 203"
+        }
+      ],
+      "disagreements": [
+        {
+          "topic": "year the mark was adopted",
+          "readings": [
+            {
+              "source": "sp-case-rogers-spurr-1882",
+              "years": "1865"
+            },
+            {
+              "source": "sp-case-rw-rogers-1895b",
+              "years": "1866"
+            },
+            {
+              "source": "sp-uspto-329754",
+              "years": "1866"
+            }
+          ]
+        }
+      ],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/plate-wm-rogers-and-son.webp",
+        "marks_in_image": 1,
+        "object": "Silver-plated spoon, back of the handle (undated)",
+        "holder": "Deidre Woollard (Flickr)",
+        "source_url": "https://www.flickr.com/photos/51035581380@N01/4894854455/",
+        "licence": "CC-BY-2.0",
+        "credit": "\"wm rogers & son silverplate\" by Deidre Woollard, CC BY 2.0; cropped by Heirloom.",
+        "original": "hallmark-sources/plate/flickr-4894854455-wm-rogers-and-son.jpg",
+        "crop": [
+          893,
+          976,
+          585,
+          90
+        ],
+        "rotate_degrees": 5.6,
+        "note": "Cut at native size, 585x90 px; graded with svg_stencil.grade(); ungraded crop in hallmark-sources/db-raw/plate-wm-rogers-and-son.png; rotated 5.6 degrees (counterclockwise) to level the line before cropping, crop box in the rotated frame"
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-1865-wm-rogers-mfg-co",
+      "group": "silver-plate",
+      "maker": "Wm. Rogers Mfg. Co., Hartford",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "1865 WM. ROGERS MFG. CO.",
+      "looks_like": "1865 WM. ROGERS MFG. CO. in capitals. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "Wm. Rogers Mfg. Co.; 1865 is the firm's founding year, not the year the item was made.",
+      "applied": "stamped",
+      "date_from": 1865,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-case-rogers-spurr-1882"
+        },
+        {
+          "id": "sp-uspto-329757"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 117, 119, 203"
+        },
+        {
+          "id": "sp-jc-trademarks-1922",
+          "where": "p. 180"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-1865-wm-rogers-mfg-co.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1922), p. 180",
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=208",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0208.png",
+        "crop": [
+          600,
+          996,
+          1465,
+          96
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 180, public domain.",
+        "note": "1865 WM. ROGERS MFG. CO., as set in type in the 1922 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Scaled down to fit 720 px. Cut at the page's native resolution, scaled to 720x47; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "JC 1896 p. 58 prints 1865. WM. ROGERS M'F'G. CO., but the lines above and below leave only about 71 px, under the 90 px minimum",
+          "JC 1922 p. 180 (seq 208) prints 1865 WM. ROGERS MFG. CO., but its lines are 57 px apart, too close for a 90 px crop",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 119: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-rogers-anchors",
+      "group": "silver-plate",
+      "maker": "Wm. Rogers Mfg. Co., Hartford",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "ROGERS between two anchors",
+      "looks_like": "The word ROGERS with a small anchor on each side. As printed in 1896: engraved anchors, the name set in type.",
+      "means": "Wm. Rogers Mfg. Co.",
+      "applied": "stamped",
+      "date_from": 1887,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-case-rw-rogers-1895b"
+        },
+        {
+          "id": "sp-jc-trademarks-1896",
+          "where": "p. 58"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-rogers-anchors.webp",
+        "marks_in_image": 1,
+        "object": "Printed trade-mark: ROGERS between two anchors, Wm. Rogers Mfg. Co.",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n87/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n87-p58.jpg",
+        "crop": [
+          1420,
+          2525,
+          540,
+          123
+        ],
+        "credit": "Facsimile from Jewelers' Circular Publishing Co., Trade-Marks of the Jewelry and Kindred Trades (1896), p. 58, public domain.",
+        "note": "Cut at the scan's native size; neutral greyscale, autocontrast only. Mark's own box 1480-1900 x 2540-2635 px on the page."
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-wm-rogers-eagle-star",
+      "group": "silver-plate",
+      "maker": "Simpson, Hall, Miller & Co., Wallingford; International Silver Co. later",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "WM. ROGERS between an eagle and a star",
+      "looks_like": "WM. ROGERS with an eagle on one side and a star on the other (often written ★Wm. Rogers★).",
+      "means": "Two uses, decades apart. William Rogers stamped WM. ROGERS between an eagle and a star on his own coin silver spoons, 1825-1841 (from 1841 WM. ROGERS & CO.); from 1878 Simpson, Hall, Miller & Co. used it on silver plate under a contract with William Rogers Jr., and International Silver later on hollowware.",
+      "applied": "stamped",
+      "date_from": 1825,
+      "date_to": null,
+      "date_note": "Coin silver 1825-1841 (Rainwater pp. 202, 208); plate from 1878 (court of 1887, trademark claim, Rainwater p. 229).",
+      "sources": [
+        {
+          "id": "sp-case-simpson-hall-miller-1887"
+        },
+        {
+          "id": "sp-uspto-329755"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-uspto-503060"
+        },
+        {
+          "id": "sp-jc-trademarks-1922",
+          "where": "p. 182"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 202, 208, 229"
+        }
+      ],
+      "disagreements": [
+        {
+          "topic": "when Simpson, Hall, Miller joined International Silver",
+          "readings": [
+            {
+              "source": "sp-century-of-meriden-1906",
+              "years": "first half of 1899"
+            },
+            {
+              "source": "sp-rainwater-2004",
+              "years": "1898 (one of the original companies, p. 229)"
+            }
+          ]
+        },
+        {
+          "topic": "who used the eagle-and-star WM. ROGERS mark, and when",
+          "readings": [
+            {
+              "source": "sp-rainwater-2004",
+              "years": "William Rogers on coin silver, 1825-1841 (pp. 202, 208); Simpson, Hall, Miller on plate from 1878 (p. 229)"
+            },
+            {
+              "source": "sp-case-simpson-hall-miller-1887",
+              "years": "Simpson, Hall, Miller on plate from 1878"
+            },
+            {
+              "source": "sp-uspto-329755",
+              "years": "first use on plated flatware claimed 1878"
+            }
+          ]
+        }
+      ],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-wm-rogers-eagle-star.webp",
+        "marks_in_image": 1,
+        "object": "Printed trade-mark: the eagle, WM. ROGERS. and the star (flatware), Simpson, Hall, Miller & Co., International Silver Co. successor",
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=210",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0210.png",
+        "crop": [
+          2840,
+          1108,
+          655,
+          132
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 182, public domain.",
+        "note": "Cut at the scan's native size; neutral greyscale, autocontrast only. Mark's own box 2915-3420 x 1125-1222 px on the page."
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-rogers-and-bro-star",
+      "group": "silver-plate",
+      "maker": "Rogers & Brother, Waterbury; International Silver Co. from 1898",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "★ROGERS & BRO. A1",
+      "looks_like": "A five-point star before ROGERS & BRO., usually with A1. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "Rogers & Brother of Waterbury, a separate firm from the 1847 brothers.",
+      "applied": "stamped",
+      "date_from": 1858,
+      "date_to": 1976,
+      "date_note": "Rainwater (p. 202): the firm's first goods were stamped with the star; flatware patterns with these marks ended about 1976.",
+      "sources": [
+        {
+          "id": "sp-uspto-147780"
+        },
+        {
+          "id": "sp-rogers-and-bro-1892"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 202"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-rogers-and-bro-star.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1896), p. 58",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n87/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n87-p58.jpg",
+        "crop": [
+          670,
+          1222,
+          525,
+          90
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), p. 58, public domain.",
+        "note": "★ ROGERS & BRO., A 1., as set in type in the 1896 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Cooper Hewitt 202022 (CC0), Assyrian Head cake knife marked star / Rogers & Bro / A1: illegible at the 1280 px served",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "1896 Jewelers' Circular prints the name in type only, no cut (p. 58)",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 202: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-c-rogers-and-bros",
+      "group": "silver-plate",
+      "maker": "C. Rogers & Bros., Meriden; International Silver Co. from 1903",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "C. ROGERS & BROS. A1",
+      "looks_like": "C. ROGERS & BROS. with A1. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "Cephas, Gilbert and Wilbur Rogers of Meriden, a different Rogers family.",
+      "applied": "stamped",
+      "date_from": 1866,
+      "date_to": 1903,
+      "date_note": "Firm organized February 26, 1866; it used the mark until International Silver bought it in 1903, and International never used its marks (Rainwater pp. 203-204).",
+      "sources": [
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-century-of-meriden-1906"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 203-204"
+        },
+        {
+          "id": "sp-jc-trademarks-1922",
+          "where": "p. 176"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-c-rogers-and-bros.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1922), p. 176",
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=204",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0204.png",
+        "crop": [
+          2245,
+          5016,
+          1135,
+          121
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 176, public domain.",
+        "note": "C. ROGERS & BROS., A 1., as set in type in the 1922 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Scaled down to fit 720 px. Cut at the page's native resolution, scaled to 720x77; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "JC 1896 p. 58 prints C. ROGERS & BROS., A 1. (new mark) between two captions, with too little room for a 90 px crop",
+          "1922 Jewelers' Circular prints the name in type only, no cut (p. 176, seq 204)",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 204: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-rogers-smith-and-co",
+      "group": "silver-plate",
+      "maker": "Rogers, Smith & Co.; owned by Meriden Britannia Co.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "ROGERS, SMITH & CO.",
+      "looks_like": "ROGERS, SMITH & CO. in capitals, sometimes with XII.",
+      "means": "Rogers, Smith & Co., of Hartford and New Haven, later part of the Meriden Britannia group.",
+      "applied": "stamped",
+      "date_from": 1857,
+      "date_to": 1918,
+      "date_note": "Marks name the town: Hartford 1857-62, New Haven 1862-77, West Meriden 1877 to the early 1880s, then Meriden to about 1918 (Rainwater p. 206).",
+      "sources": [
+        {
+          "id": "sp-cbr-hartford-1901"
+        },
+        {
+          "id": "sp-meriden-150-1956"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 203, 206-207"
+        }
+      ],
+      "disagreements": [
+        {
+          "topic": "when the firm moved to Meriden",
+          "readings": [
+            {
+              "source": "sp-meriden-150-1956",
+              "years": "1877"
+            },
+            {
+              "source": "sp-rainwater-2004",
+              "years": "plating shop moved to Meriden June 1865 (merged with Meriden Britannia January 1, 1866); the business itself on January 1, 1877 (p. 206)"
+            }
+          ]
+        },
+        {
+          "topic": "year the firm was founded",
+          "readings": [
+            {
+              "source": "sp-rainwater-2004",
+              "years": "January 1, 1857 (p. 206); 1856 (pp. 117, 203)"
+            }
+          ]
+        }
+      ],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-rogers-smith-and-co.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1896), p. 58",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n87/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n87-p58.jpg",
+        "crop": [
+          1240,
+          1576,
+          870,
+          202
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1896), p. 58, public domain.",
+        "note": "The firm's banner mark, ROGERS.SMITH & CO. / WARRANTED 12 DWT. between star-and-arrow ends, as drawn in the 1896 Jewelers' Circular trade-mark book: the name in this mark, not the plain name stamp. Cut at the page's native resolution, scaled to 720x167; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Cooper Hewitt 200032 (CC0): one overview photo, mark not legible",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "JC 1896 p. 58 prints ROGERS.SMITH & CO. WARRANTED 12 DWT. in a banner, and three shield marks; none is the plain name stamp this entry describes",
+          "JC 1922 p. 181 (seq 209): again only the WARRANTED 12 DWT. banner and shield marks",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 206: only the WARRANTED 12 DWT. banner, ACORN and shield marks, not the plain name",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-wm-a-rogers",
+      "group": "silver-plate",
+      "maker": "Wm. A. Rogers Ltd., New York; later Oneida",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "WM. A. ROGERS",
+      "looks_like": "WM. A. ROGERS in capitals with serifs, often followed by A1 and a horseshoe.",
+      "means": "Wm. A. Rogers Ltd., unrelated to the Hartford Rogers family; Oneida bought it in 1929.",
+      "applied": "stamped",
+      "date_from": 1895,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-uspto-805168"
+        },
+        {
+          "id": "sp-uspto-77597"
+        },
+        {
+          "id": "sp-edmonds-1948"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 208"
+        }
+      ],
+      "disagreements": [
+        {
+          "topic": "when Wm. A. Rogers began",
+          "readings": [
+            {
+              "source": "sp-rainwater-2004",
+              "years": "began making plated silverware in 1894, from Oneida's records (p. 208)"
+            },
+            {
+              "source": "sp-uspto-805168",
+              "years": "first use of WM. A. ROGERS claimed October 1, 1895"
+            },
+            {
+              "source": "sp-uspto-77597",
+              "years": "horseshoe mark first used February 1896"
+            }
+          ]
+        }
+      ],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/plate-wm-a-rogers.webp",
+        "marks_in_image": 1,
+        "object": "Cream ladle, Wm. A. Rogers, about 1900 (1990.B.200)",
+        "holder": "Deutsches Klingenmuseum Solingen",
+        "accession": "1990.B.200",
+        "source_url": "https://www.europeana.eu/item/1091/item_7EL3HFXD4G632JXSF7TQ4TKGPJLXA7OJ",
+        "licence": "CC-BY-4.0",
+        "credit": "Deutsches Klingenmuseum Solingen, 1990.B.200, CC BY 4.0; cropped by Heirloom.",
+        "original": "hallmark-sources/plate/klingenmuseum-1990.B.200-cream-ladle.jpg",
+        "crop": [
+          142,
+          323,
+          453,
+          90
+        ],
+        "note": "Cut at native size, 453x90 px; graded with svg_stencil.grade(); ungraded crop in hallmark-sources/db-raw/plate-wm-a-rogers.png"
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-wm-a-rogers-horseshoe",
+      "group": "silver-plate",
+      "maker": "Wm. A. Rogers Ltd.; later Oneida",
+      "country": "US",
+      "kind": "trademark",
+      "name": "Horseshoe with R",
+      "looks_like": "A small horseshoe, open end down, with a capital R inside, struck after WM. A. ROGERS A1.",
+      "means": "Part of Wm. A. Rogers's registered mark (WM. A. ROGERS A.1.R. with horseshoe).",
+      "applied": "stamped",
+      "date_from": 1896,
+      "date_to": null,
+      "date_note": "First use claimed February 1896.",
+      "sources": [
+        {
+          "id": "sp-uspto-77597"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 208"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/plate-wm-a-rogers-horseshoe.webp",
+        "marks_in_image": 1,
+        "object": "Cream ladle, Wm. A. Rogers, about 1900 (1990.B.200)",
+        "holder": "Deutsches Klingenmuseum Solingen",
+        "accession": "1990.B.200",
+        "source_url": "https://www.europeana.eu/item/1091/item_7EL3HFXD4G632JXSF7TQ4TKGPJLXA7OJ",
+        "licence": "CC-BY-4.0",
+        "credit": "Deutsches Klingenmuseum Solingen, 1990.B.200, CC BY 4.0; cropped by Heirloom.",
+        "original": "hallmark-sources/plate/klingenmuseum-1990.B.200-cream-ladle.jpg",
+        "crop": [
+          710,
+          322,
+          65,
+          90
+        ],
+        "note": "Cut at native size, 65x90 px; graded with svg_stencil.grade(); ungraded crop in hallmark-sources/db-raw/plate-wm-a-rogers-horseshoe.png"
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-r-w-rogers-co",
+      "group": "silver-plate",
+      "maker": "R. W. Rogers Co., New York",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "R. W. ROGERS CO.",
+      "looks_like": "R. W. ROGERS CO. in capitals.",
+      "means": "A short-lived imitation of the Rogers name that the courts stopped in 1895.",
+      "applied": "stamped",
+      "date_from": 1894,
+      "date_to": 1895,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-case-rw-rogers-1895a"
+        },
+        {
+          "id": "sp-case-rw-rogers-1895b"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "none",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "JC 1922 pp. 157-187: not listed",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ],
+        "blocked": []
+      },
+      "pages": [
+        "/marks/wm-rogers"
+      ]
+    },
+    {
+      "id": "plate-holmes-and-edwards",
+      "group": "silver-plate",
+      "maker": "The Holmes & Edwards Silver Co., Bridgeport; International Silver Co. from 1898",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "HOLMES & EDWARDS",
+      "looks_like": "HOLMES & EDWARDS in capitals on the back of a handle.",
+      "means": "The Bridgeport maker's name; on its own it says nothing about the grade.",
+      "applied": "stamped",
+      "date_from": 1882,
+      "date_to": null,
+      "date_note": "The firm's works are traced to 1882, when it took over Rogers & Brittin (Rainwater p. 108); production moved from Bridgeport to Meriden in 1931.",
+      "sources": [
+        {
+          "id": "sp-waldo-bridgeport-1897"
+        },
+        {
+          "id": "sp-jc-trademarks-1896",
+          "where": "p. 55"
+        },
+        {
+          "id": "sp-century-of-meriden-1906"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 108-109"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-holmes-and-edwards.webp",
+        "marks_in_image": 1,
+        "object": "Printed trade-mark: HOLMES & EDWARDS in a cartouche",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n84/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n84-p55.jpg",
+        "crop": [
+          376,
+          1119,
+          353,
+          90
+        ],
+        "credit": "Facsimile from Jewelers' Circular Publishing Co., Trade-Marks of the Jewelry and Kindred Trades (1896), p. 55, public domain.",
+        "note": "Cut at the scan's native size; neutral greyscale, autocontrast only. Mark's own box 383-719 x 1146-1182 px on the page."
+      },
+      "pages": [
+        "/marks/holmes-and-edwards",
+        "/marks/international-silver-co"
+      ]
+    },
+    {
+      "id": "plate-he-sterling-inlaid",
+      "group": "silver-plate",
+      "maker": "The Holmes & Edwards Silver Co.",
+      "country": "US",
+      "kind": "other",
+      "name": "STERLING INLAID",
+      "looks_like": "The words STERLING INLAID, usually near HOLMES & EDWARDS.",
+      "means": "Silver plate with small blocks of solid silver set in at the wear points before plating; not sterling.",
+      "applied": "stamped",
+      "date_from": 1884,
+      "date_to": null,
+      "date_note": "The inlay patents date from 1884 and 1886. Rainwater (p. 109): the inlaid line was renamed Deepsilver in 1956 and the sterling inlay was given up by 1972.",
+      "sources": [
+        {
+          "id": "sp-jc-trademarks-1896",
+          "where": "p. 55"
+        },
+        {
+          "id": "sp-waldo-bridgeport-1897"
+        },
+        {
+          "id": "sp-patent-us309013"
+        },
+        {
+          "id": "sp-patent-us337099"
+        },
+        {
+          "id": "sp-patent-us755727"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 108-109"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-he-sterling-inlaid.webp",
+        "marks_in_image": 1,
+        "object": "Printed trade-mark: STERLING INLAID in a cartouche, Holmes & Edwards Silver Co.",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n84/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n84-p55.jpg",
+        "crop": [
+          414,
+          1045,
+          284,
+          90
+        ],
+        "credit": "Facsimile from Jewelers' Circular Publishing Co., Trade-Marks of the Jewelry and Kindred Trades (1896), p. 55, public domain.",
+        "note": "Cut at the scan's native size; neutral greyscale, autocontrast only. Mark's own box 421-688 x 1073-1107 px on the page."
+      },
+      "pages": [
+        "/marks/holmes-and-edwards"
+      ]
+    },
+    {
+      "id": "plate-he-xiv",
+      "group": "silver-plate",
+      "maker": "The Holmes & Edwards Silver Co.",
+      "country": "US",
+      "kind": "other",
+      "name": "XIV",
+      "looks_like": "The Roman numeral XIV, with HOLMES & EDWARDS.",
+      "means": "Holmes & Edwards' extra-sectional grade: an extra coat of plate on the back of the bowl and the handle. Still plate, and not inlaid.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-waldo-bridgeport-1897"
+        },
+        {
+          "id": "sp-jc-trademarks-1896",
+          "where": "p. 55"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 109 (shown, not explained)"
+        }
+      ],
+      "disagreements": [],
+      "single_source": "Two books show XIV as a Holmes & Edwards mark (Jewelers' Circular 1896, Rainwater 2004), but only the 1897 Bridgeport history says what it means",
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-he-xiv.webp",
+        "marks_in_image": 1,
+        "object": "Printed trade-mark: XIV in a cartouche, printed after HOLMES & EDWARDS",
+        "holder": "Internet Archive (TradeMarksJewelryAndKindredTrades)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/TradeMarksJewelryAndKindredTrades/page/n84/mode/1up",
+        "original": "hallmark-sources/plate/books/jc1896-n84-p55.jpg",
+        "crop": [
+          724,
+          1119,
+          78,
+          90
+        ],
+        "credit": "Facsimile from Jewelers' Circular Publishing Co., Trade-Marks of the Jewelry and Kindred Trades (1896), p. 55, public domain.",
+        "note": "Cut at the scan's native size; neutral greyscale, autocontrast only. Mark's own box 733-791 x 1146-1182 px on the page."
+      },
+      "pages": [
+        "/marks/holmes-and-edwards"
+      ]
+    },
+    {
+      "id": "plate-he-deep-silver",
+      "group": "silver-plate",
+      "maker": "International Silver Co.",
+      "country": "US",
+      "kind": "other",
+      "name": "DEEP SILVER",
+      "looks_like": "DEEP SILVER with HOLMES & EDWARDS.",
+      "means": "International Silver's 1950s name for the Holmes & Edwards inlaid line; still plate.",
+      "applied": "stamped",
+      "date_from": 1956,
+      "date_to": 1960,
+      "date_note": "Rainwater (p. 109): the SILVER-INLAID mark became Holmes & Edwards Deepsilver in 1956 and International Deepsilver in 1960; International's own brochure uses Deep Silver in 1957.",
+      "sources": [
+        {
+          "id": "sp-he-deep-silver-1957"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 109"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-he-deep-silver.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: International Silver Co., Holmes & Edwards brochure (1957), p. 2",
+        "holder": "Internet Archive (holmes-edwards-rhythmic-silverware-1957)",
+        "licence": "in-copyright-reference",
+        "licence_note": "Brochure reproduced by Heirloom on its own decision (Joe, 2026-11-24); archive.org marks it public domain (PDM 1.0) but the cover carries a ©5/57 notice, so it is treated as possibly in copyright. Source: International Silver Co., Holmes & Edwards brochure (1957), p. 2 (cover panel).",
+        "source_url": "https://archive.org/details/holmes-edwards-rhythmic-silverware-1957",
+        "original": "hallmark-sources/plate/books/he-deep-silver-1957-sheet2.jpg",
+        "crop": [
+          110,
+          930,
+          420,
+          332
+        ],
+        "credit": "From International Silver Co., Holmes & Edwards Deep Silver brochure (1957), p. 2.",
+        "note": "Holmes & Edwards / Deep Silver as set in the brochure; not the stamp, whose letters differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "From the 1950s, so no public-domain book can show it",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 109: Deepsilver named in the text, no mark shown",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/holmes-and-edwards"
+      ]
+    },
+    {
+      "id": "plate-oneida-community",
+      "group": "silver-plate",
+      "maker": "Oneida Community Ltd.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "ONEIDA COMMUNITY",
+      "looks_like": "ONEIDA COMMUNITY in capitals, sometimes with A1.",
+      "means": "Oneida Community Ltd. In 1896 it appears on nickel-silver flatware; by 1901 the company stamped it only on its triple-plate grade.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-oneida-community-1901"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-oneida-catalog-1903",
+          "where": "p. 3"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 175-176"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-oneida-community.webp",
+        "marks_in_image": 1,
+        "object": "Printed trade-mark: the tiny stamp every piece bears: ONEIDA COMMUNITY between ruled lines",
+        "holder": "Winterthur Library, via Internet Archive (oneidacommunityq00onei)",
+        "licence": "public-domain",
+        "source_url": "https://archive.org/details/oneidacommunityq00onei/page/n6/mode/1up",
+        "original": "hallmark-sources/plate/books/oneida1903-n6-p3.jpg",
+        "crop": [
+          1082,
+          1469,
+          558,
+          116
+        ],
+        "credit": "Facsimile from Oneida Community Ltd., Oneida Community Quality Silverware, Catalog No. 25 (1903), p. 3, public domain.",
+        "note": "Cut at the scan's native size; neutral greyscale, autocontrast only. Mark's own box 1108-1595 x 1478-1570 px on the page."
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-community-plate",
+      "group": "silver-plate",
+      "maker": "Oneida Community Ltd.; Oneida Ltd. from 1935",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "COMMUNITY, or COMMUNITY PLATE",
+      "looks_like": "COMMUNITY or COMMUNITY PLATE in capitals. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "Oneida's top grade of silver plate, sold at first as heavier than triple plate.",
+      "applied": "stamped",
+      "date_from": 1901,
+      "date_to": null,
+      "date_note": "Avalon, the first pattern, was shown in 1901 and sold from 1902.",
+      "sources": [
+        {
+          "id": "sp-edmonds-1948"
+        },
+        {
+          "id": "sp-oneida-catalog-1903"
+        },
+        {
+          "id": "sp-hagan-silverplate-1990"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 175-176"
+        },
+        {
+          "id": "sp-jc-trademarks-1922",
+          "where": "p. 173"
+        }
+      ],
+      "disagreements": [
+        {
+          "topic": "start of Community Plate",
+          "readings": [
+            {
+              "source": "sp-edmonds-1948",
+              "years": "shown 1901, on sale 1902"
+            },
+            {
+              "source": "sp-hagan-silverplate-1990",
+              "years": "1901"
+            },
+            {
+              "source": "sp-snell-1980",
+              "years": "about 1903"
+            },
+            {
+              "source": "sp-rainwater-2004",
+              "years": "Avalon shown at Buffalo 1901; Community Plate introduced January 1902 (p. 175)"
+            }
+          ]
+        }
+      ],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-community-plate.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173",
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=201",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0201.png",
+        "crop": [
+          1955,
+          1990,
+          665,
+          94
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173, public domain.",
+        "note": "COMMUNITY, as set in type in Oneida's list of marks in the 1922 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "1922 Jewelers' Circular prints the name in type only, no cut (p. 173, seq 201)",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 176: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-oneida-reliance",
+      "group": "silver-plate",
+      "maker": "Oneida Community Ltd.",
+      "country": "US",
+      "kind": "other",
+      "name": "RELIANCE",
+      "looks_like": "RELIANCE with the Oneida Community name. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "A cheaper grade of Oneida silver plate than Community.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-edmonds-1948"
+        },
+        {
+          "id": "sp-snell-1980"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 176"
+        },
+        {
+          "id": "sp-jc-trademarks-1922",
+          "where": "p. 173"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-oneida-reliance.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173",
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=201",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0201.png",
+        "crop": [
+          1930,
+          3628,
+          600,
+          96
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173, public domain.",
+        "note": "RELIANCE, as set in type in the 1922 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "1922 Jewelers' Circular prints the name in type only, no cut (p. 173, seq 201)",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 176: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-oneida-tudor-plate",
+      "group": "silver-plate",
+      "maker": "Oneida Community Ltd.",
+      "country": "US",
+      "kind": "other",
+      "name": "TUDOR PLATE",
+      "looks_like": "TUDOR PLATE with ONEIDA COMMUNITY. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "A cheaper grade of Oneida silver plate than Community.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-snell-1980"
+        },
+        {
+          "id": "sp-hagan-silverplate-1990"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 176"
+        },
+        {
+          "id": "sp-jc-trademarks-1922",
+          "where": "p. 173"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-oneida-tudor-plate.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173",
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=201",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0201.png",
+        "crop": [
+          1975,
+          3926,
+          720,
+          104
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173, public domain.",
+        "note": "TUDOR PLATE, as set in type in the 1922 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "1922 Jewelers' Circular prints the name in type only, no cut (p. 173, seq 201)",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 176: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-oneida-par-plate",
+      "group": "silver-plate",
+      "maker": "Oneida Community Ltd.",
+      "country": "US",
+      "kind": "other",
+      "name": "PAR PLATE",
+      "looks_like": "PAR PLATE with ONEIDA COMMUNITY. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "A cheaper grade of Oneida silver plate than Community.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-snell-1980"
+        },
+        {
+          "id": "sp-hagan-silverplate-1990"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 176"
+        },
+        {
+          "id": "sp-jc-trademarks-1922",
+          "where": "p. 173"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-oneida-par-plate.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173",
+        "holder": "HathiTrust (Harvard copy)",
+        "licence": "public-domain",
+        "source_url": "https://babel.hathitrust.org/cgi/pt?id=hvd.hb9jsx&seq=201",
+        "original": "hallmark-sources/hathitrust/jewelers-circular-1922/seq0201.png",
+        "crop": [
+          1960,
+          2970,
+          1035,
+          184
+        ],
+        "credit": "Facsimile from The Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), p. 173, public domain.",
+        "note": "ONEIDA COMMUNITY / PAR PLATE on two lines, as set in type in the 1922 Jewelers' Circular trade-mark book; the struck stamp's letters may differ. Scaled down to fit 720 px. Cut at the page's native resolution, scaled to 720x128; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Statens maritima och transporthistoriska museer (Swedish Naval Museum) MM16018, teaspoon marked ONEIDA COMMUNITY PAR PLATE, CC BY 4.0 (https://digitaltmuseum.se/011024812908): only a 425x207 overview, no mark visible; a close-up could be requested from the museum",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "1922 Jewelers' Circular prints the name in type only, no cut (p. 173, seq 201)",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 176: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-oneida-community-sterling",
+      "group": "silver-plate",
+      "maker": "Oneida Community Ltd.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "ONEIDA COMMUNITY STERLING",
+      "looks_like": "ONEIDA COMMUNITY with STERLING. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "Oneida's sterling silver, not plate.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Rainwater (p. 176): Oneida began making sterling flatware in 1946.",
+      "sources": [
+        {
+          "id": "sp-dolan-1993"
+        },
+        {
+          "id": "sp-kovels-silver",
+          "where": "p. 278"
+        }
+      ],
+      "disagreements": [],
+      "single_source": "Only Dolan 1993 shows this exact form; Rainwater (p. 176) shows Oneida's sterling, from 1946, as ONEIDA STERLING and HEIRLOOM STERLING",
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-oneida-community-sterling.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Ralph and Terry Kovel, Kovels' American Silver Marks (1989), p. 278",
+        "holder": "Ralph and Terry Kovel, Kovels' American Silver Marks",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Ralph and Terry Kovel, Kovels' American Silver Marks (1989), p. 278",
+        "source_url": "",
+        "original": "hallmark-sources/plate/books/kovels-p278-360dpi.png",
+        "crop": [
+          1735,
+          1872,
+          715,
+          68
+        ],
+        "credit": "From Ralph and Terry Kovel, Kovels' American Silver Marks (1989), p. 278.",
+        "note": "ONEIDA COMMUNITY (O) (C) STERLING, as set in type in Kovels' American Silver Marks; the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "After 1928, so no public-domain book can show it",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 176: shows ONEIDA STERLING and HEIRLOOM STERLING, not this form",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark",
+          "Kovels' American Silver Marks p. 278 prints ONEIDA COMMUNITY (O) (C) STERLING in type only, no cut"
+        ]
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-heirloom-sterling",
+      "group": "silver-plate",
+      "maker": "Oneida Ltd.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "HEIRLOOM STERLING",
+      "looks_like": "HEIRLOOM STERLING, sometimes with ONEIDA.",
+      "means": "Oneida's sterling line, from a brand bought with Wm. A. Rogers in 1929. No connection with Heirloom, the app.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "Oneida's sterling flatware began in 1946; HEIRLOOM PLATE was used from December 31, 1925 (Rainwater p. 176).",
+      "sources": [
+        {
+          "id": "sp-dolan-1993"
+        },
+        {
+          "id": "sp-oneida-heirloom-sterling-1965"
+        },
+        {
+          "id": "sp-edmonds-1948"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 176"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-heirloom-sterling.webp",
+        "marks_in_image": 1,
+        "object": "Mark as printed in Rainwater, Encyclopedia of American Silver Manufacturers",
+        "holder": "Rainwater, Encyclopedia of American Silver Manufacturers",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer, 2004), p. 176",
+        "source_url": "",
+        "original": "hallmark-sources/plate/books/rainwater2004-p176-500dpi.png",
+        "crop": [
+          1789,
+          1880,
+          674,
+          374
+        ],
+        "credit": "From Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers (2004), p. 176.",
+        "note": "Cut at the scan's own 500 ppi (pdftoppm -r 500 -gray, PDF page 178 (the scan's own 500 ppi)); neutral greyscale, autocontrast only. Mark's own box 1867-2385 x 1925-2211 px."
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-oneida-ltd",
+      "group": "silver-plate",
+      "maker": "Oneida Ltd.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "ONEIDA LTD.",
+      "looks_like": "ONEIDA LTD. in capitals.",
+      "means": "The company's name from March 1, 1935: an item marked so was made in 1935 or later.",
+      "applied": "stamped",
+      "date_from": 1935,
+      "date_to": null,
+      "date_note": "Renamed March 1, 1935 (Edmonds 1948; Rainwater p. 176).",
+      "sources": [
+        {
+          "id": "sp-edmonds-1948"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 176"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "none",
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "From 1935, so no public-domain book can show it",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 176: no mark shown",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ],
+        "blocked": []
+      },
+      "pages": [
+        "/marks/community-plate-oneida"
+      ]
+    },
+    {
+      "id": "plate-international-silver-co",
+      "group": "silver-plate",
+      "maker": "International Silver Co.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "INTERNATIONAL SILVER CO.",
+      "looks_like": "INTERNATIONAL SILVER CO. in plain capitals.",
+      "means": "Made by the International Silver Co. of Meriden, formed November 19, 1898. Read the next word: a grade mark means plate, STERLING means sterling.",
+      "applied": "stamped",
+      "date_from": 1898,
+      "date_to": null,
+      "date_note": "Company formed November 1898. Rainwater (p. 118): its own name was not used as a mark on flatware until after 1928; before then its flatware carried the founding firms' brands.",
+      "sources": [
+        {
+          "id": "sp-century-of-meriden-1906"
+        },
+        {
+          "id": "sp-iastate-international"
+        },
+        {
+          "id": "sp-hagan-silverplate-1990"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 116-119"
+        }
+      ],
+      "disagreements": [
+        {
+          "topic": "when INTERNATIONAL SILVER CO. appears on flatware",
+          "readings": [
+            {
+              "source": "sp-rainwater-2004",
+              "years": "after 1928 (p. 118)"
+            },
+            {
+              "source": "sp-century-of-meriden-1906",
+              "years": "company formed 1898; marks not discussed"
+            }
+          ]
+        }
+      ],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/plate-international-silver-co.webp",
+        "marks_in_image": 1,
+        "object": "Silver-plated condiment holder, Wilcox / International Silver Co., 1950s according to the photographer",
+        "holder": "Manuelarosi (Wikimedia Commons)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wilcox_IS_International_Silver_co.jpg",
+        "licence": "CC0",
+        "credit": "\"Wilcox IS International Silver co.\" by Manuelarosi, Wikimedia Commons, CC0; cropped by Heirloom.",
+        "original": "hallmark-sources/plate/commons-wilcox-is-international-silver-co.jpg",
+        "crop": [
+          73,
+          453,
+          720,
+          90
+        ],
+        "rotate_degrees": -4.1,
+        "note": "Cut at native size, 720x90 px; graded with svg_stencil.grade(); ungraded crop in hallmark-sources/db-raw/plate-international-silver-co.png; rotated -4.1 degrees (counterclockwise) to level the line before cropping, crop box in the rotated frame"
+      },
+      "pages": [
+        "/marks/international-silver-co"
+      ]
+    },
+    {
+      "id": "plate-international-s-co",
+      "group": "silver-plate",
+      "maker": "International Silver Co.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "INTERNATIONAL S. CO.",
+      "looks_like": "INTERNATIONAL S. CO. in capitals, often with a grade such as XII. The image shows it as set in type in a trade book; the struck stamp's letters may differ.",
+      "means": "International Silver Co. on plated flatware.",
+      "applied": "stamped",
+      "date_from": 1898,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-commons-heritage-o-7647-9"
+        },
+        {
+          "id": "sp-hagan-silverplate-1990"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 119"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "facsimile",
+        "file": "marks/img/db/plate-international-s-co.webp",
+        "marks_in_image": 1,
+        "object": "Printed mark: Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 119",
+        "holder": "Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer)",
+        "licence": "in-copyright-reference",
+        "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 119",
+        "source_url": "",
+        "original": "hallmark-sources/plate/books/rainwater2004-p119-500dpi.png",
+        "crop": [
+          262,
+          1530,
+          631,
+          82
+        ],
+        "credit": "From Dorothy T. Rainwater, Encyclopedia of American Silver Manufacturers, 5th ed. (Schiffer) (2004), p. 119.",
+        "note": "INTERNATIONAL S. CO., as set in type in Rainwater; the struck stamp's letters may differ. Cut at the page's native resolution; greyscale and autocontrast only.",
+        "blocked": [
+          {
+            "what": "International Silver Co. footed dish, about 1935",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/20266",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, a side view of the dish)"
+          },
+          {
+            "what": "International Silver Co. Flagship flatware, about 1936",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/491709",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, the fork, knife and spoon face up)"
+          },
+          {
+            "what": "International Silver Co. 20th Century Limited flatware by Henry Dreyfuss, 1938",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/491847",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, the set face up)"
+          },
+          {
+            "what": "International Silver Co. prototype tea service by Eliel Saarinen, about 1932-35",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/490759",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, the service on its tray)"
+          },
+          {
+            "what": "International Silver Co. teapot by Paul A. Lobel, 1934",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/482754",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (two images, both overall views of the set; the record lists Wilcox Silver Plate Co. Division)"
+          },
+          {
+            "what": "International Silver Co. Tall Boy by Lurelle Guild, about 1934",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/487134",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, a front view)"
+          },
+          {
+            "what": "Three-piece tea set with tray, designed by Jean George Theobald, 1928; its base photo shows Wilcox S.P. Company in an arch, EPNS and INTERNATIONAL S. CO.",
+            "holder": "Art Institute of Chicago",
+            "url": "https://www.artic.edu/artworks/154136",
+            "licence": "not public domain (the museum lists the work as in copyright; its images are not open)",
+            "ask": "Art Institute of Chicago, Rights and Reproductions",
+            "checked": "checked 2026-11-24: mark shown on the base, legible"
+          }
+        ],
+        "searched": [
+          "Wikimedia Commons: API search over many phrasings and the categories Oneida Limited, International Silver Company, Wilcox Silver Plate Company, Holmes & Edwards, 1847 Rogers Bros., Meriden Britannia Company, Hallmarks on silver, Silverware of the United States, Silver plate (2026-11-22)",
+          "Flickr: about 60 searches filtered to CC BY, CC BY-SA, CC0 and public domain, and the Grannies Kitchen photostream",
+          "Smithsonian Open Access and Cooper Hewitt (CHNDM): searches for Rogers, Oneida, Holmes, International Silver, Simpson Hall Miller",
+          "The Met Open Access: searches for Rogers, Meriden Britannia, Holmes Edwards, Oneida, International Silver",
+          "Europeana (finds from the Deutsches Klingenmuseum and DigitaltMuseum)",
+          "Openverse (until it returned a bot challenge); Museums Victoria and Auckland Museum refused automated search, so not searched",
+          "House of Commons Heritage Collection (Canada) O-7647.9: the image's licence was not established",
+          "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
+          "JC 1922 pp. 121-187 (seq 149-215): no INTERNATIONAL S. CO. mark printed",
+          "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
+          "Rainwater 2004 p. 119: printed in type only, no cut",
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+        ]
+      },
+      "pages": [
+        "/marks/international-silver-co"
+      ]
+    },
+    {
+      "id": "plate-international-sterling",
+      "group": "silver-plate",
+      "maker": "International Silver Co.",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "INTERNATIONAL STERLING",
+      "looks_like": "INTERNATIONAL and STERLING, often with a small shield between them.",
+      "means": "International Silver's sterling silver, not plate.",
+      "applied": "stamped",
+      "date_from": null,
+      "date_to": null,
+      "date_note": "",
+      "sources": [
+        {
+          "id": "sp-international-sterling-1951"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "p. 119"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/plate-international-sterling.webp",
+        "marks_in_image": 1,
+        "object": "Spoon in the Spring Glory pattern, International Silver Co. (1988.B.134)",
+        "holder": "Deutsches Klingenmuseum Solingen",
+        "accession": "1988.B.134",
+        "source_url": "https://www.europeana.eu/item/1091/item_VI5OR5Z2JRAO4FYSTFTQDJJD64RV6M4X",
+        "licence": "CC-BY-4.0",
+        "credit": "Deutsches Klingenmuseum Solingen, 1988.B.134, CC BY 4.0; cropped by Heirloom.",
+        "original": "hallmark-sources/plate/klingenmuseum-1988.B.134-spring-glory.jpg",
+        "crop": [
+          230,
+          705,
+          1310,
+          170
+        ],
+        "note": "Cut at 1310x170 px and scaled to 720x93 to fit the 720 px limit (never enlarged); graded with svg_stencil.grade(); ungraded copy in hallmark-sources/db-raw/plate-international-sterling.png. Mark's own box 272-1375 x 755-815 px; the R to its left is a separate stamp, left out.",
+        "blocked": [
+          {
+            "what": "International Silver Co. footed dish, about 1935",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/20266",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, a side view of the dish)"
+          },
+          {
+            "what": "International Silver Co. Flagship flatware, about 1936",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/491709",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, the fork, knife and spoon face up)"
+          },
+          {
+            "what": "International Silver Co. 20th Century Limited flatware by Henry Dreyfuss, 1938",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/491847",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, the set face up)"
+          },
+          {
+            "what": "International Silver Co. prototype tea service by Eliel Saarinen, about 1932-35",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/490759",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, the service on its tray)"
+          },
+          {
+            "what": "International Silver Co. teapot by Paul A. Lobel, 1934",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/482754",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (two images, both overall views of the set; the record lists Wilcox Silver Plate Co. Division)"
+          },
+          {
+            "what": "International Silver Co. Tall Boy by Lurelle Guild, about 1934",
+            "holder": "The Metropolitan Museum of Art",
+            "url": "https://www.metmuseum.org/art/collection/search/487134",
+            "licence": "not Open Access (in copyright, permission needed)",
+            "ask": "The Met, Image and Data Resources (image licensing)",
+            "checked": "checked 2026-11-22: mark not shown (one image, a front view)"
+          },
+          {
+            "what": "Three-piece tea set with tray, designed by Jean George Theobald, 1928; its base photo shows Wilcox S.P. Company in an arch, EPNS and INTERNATIONAL S. CO.",
+            "holder": "Art Institute of Chicago",
+            "url": "https://www.artic.edu/artworks/154136",
+            "licence": "not public domain (the museum lists the work as in copyright; its images are not open)",
+            "ask": "Art Institute of Chicago, Rights and Reproductions",
+            "checked": "checked 2026-11-24: mark shown on the base, legible"
+          }
+        ]
+      },
+      "pages": [
+        "/marks/international-silver-co"
+      ]
+    },
+    {
+      "id": "plate-wilcox",
+      "group": "silver-plate",
+      "maker": "Wilcox Silver Plate Co., Meriden; International Silver Co. from 1898",
+      "country": "US",
+      "kind": "maker's mark",
+      "name": "WILCOX",
+      "looks_like": "WILCOX in thin capitals, on a slight arc, above the International Silver Co. name on hollowware.",
+      "means": "The name of the Wilcox Silver Plate Co. of Meriden, one of International Silver's founding firms; with INTERNATIONAL SILVER CO. beside it, made by International.",
+      "applied": "stamped",
+      "date_from": 1898,
+      "date_to": null,
+      "date_note": "Wilcox was a founding member in 1898; the photographed item is dated to the 1950s by its photographer.",
+      "sources": [
+        {
+          "id": "sp-century-of-meriden-1906"
+        },
+        {
+          "id": "sp-jc-trademarks-1896"
+        },
+        {
+          "id": "sp-rainwater-2004",
+          "where": "pp. 116-117, 120"
+        }
+      ],
+      "disagreements": [],
+      "visual": {
+        "status": "photo",
+        "file": "marks/img/db/plate-wilcox.webp",
+        "marks_in_image": 1,
+        "object": "Silver-plated condiment holder, Wilcox / International Silver Co., 1950s according to the photographer",
+        "holder": "Manuelarosi (Wikimedia Commons)",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wilcox_IS_International_Silver_co.jpg",
+        "licence": "CC0",
+        "credit": "\"Wilcox IS International Silver co.\" by Manuelarosi, Wikimedia Commons, CC0; cropped by Heirloom.",
+        "original": "hallmark-sources/plate/commons-wilcox-is-international-silver-co.jpg",
+        "crop": [
+          165,
+          283,
+          480,
+          96
+        ],
+        "note": "Cut at native size, 480x96 px; graded with svg_stencil.grade(); ungraded crop in hallmark-sources/db-raw/plate-wilcox.png"
+      },
+      "pages": [
+        "/marks/international-silver-co"
+      ]
+    }
+  ]
+}

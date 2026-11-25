@@ -100,8 +100,8 @@ def omega_page():
 {marksdb.grid(["omega-name-on-movement", "omega-caliber-number"])}
       <p>Beside the serial, the movement carries the maker's name and the caliber number, often by the Omega sign. The caliber number names the movement's design and is shared by every movement of that type, so it narrows the years a watch can be from but does not date it.</p>
       <h2 id="reference">Serial or reference?</h2>
-{marksdb.grid(["omega-case-reference", "omega-case-number"])}
-      <p>The serial belongs to one movement. The reference names the model: on vintage watches it is stamped inside the case back, in forms such as 2915-1, 165.024 or ST 145.022-69, and later Omega used longer product codes with dots, such as 311.30.42.30.01.005. Inside the case back there may also be the case maker's own number, a separate series. Only the movement serial is dated here.</p>
+{marksdb.grid(["omega-case-reference", "omega-case-number", "omega-case-maker-hf"])}
+      <p>The serial belongs to one movement. The reference names the model: on vintage watches it is stamped inside the case back, in forms such as 2915-1, 165.024 or ST 145.022-69, and later Omega used longer product codes with dots, such as 311.30.42.30.01.005. Inside the case back there may also be the case maker's own number, a separate series, and the case maker's sign: HF for Huguenin Frères, which made nearly all early Speedmaster cases. Only the movement serial is dated here.</p>
       <h2 id="read">Read these before you rely on a year</h2>
       {caveats}
       <h2 id="tables">Serials by year</h2>
@@ -178,8 +178,9 @@ def rolex_page():
         <div id="rx-results" class="finder__results" aria-live="polite"><p class="finder__hint">Use the number at 6 o'clock, not the model number at 12. Spaces and commas don't matter.</p></div>
       </div>
       <h2 id="where">Where the serial is, and how to read it safely</h2>
-{marksdb.grid(["rolex-case-serial-between-lugs", "rolex-rehaut-serial"])}
+{marksdb.grid(["rolex-case-serial-between-lugs", "rolex-rehaut-serial", "rolex-early-case-serial-inside-back"])}
       <p>On a Rolex made before about 2008 the serial is engraved on the case between the lugs at 6 o'clock, where the bracelet or strap hides it. Taking the bracelet off means pushing out its spring bars, and a slipped tool scratches the lugs, so a jeweler or watchmaker is the safer way; they can read the number and fit the bracelet back in a few minutes.</p>
+      <p>On some 1920s Rolex cases the serial is stamped inside the case back instead, among the maker's and patent stamps. The published lists disagree this early, so a British hallmark in the same back is the better guide to the date.</p>
       <p>From about 2005 Rolex also engraved the serial on the rehaut, the ring between the dial and the crystal, at 6 o'clock, and from about 2008 only there. It can be read without opening the watch: tilt it under a bright light and use a magnifier. The warranty card, or the papers that came with the watch, carry the same serial.</p>
       <h2 id="reference">Serial or model number?</h2>
 {marksdb.grid(["rolex-reference-between-lugs"])}

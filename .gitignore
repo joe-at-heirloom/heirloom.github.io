@@ -1,3 +1,6 @@
 .DS_Store
 node_modules/
 __pycache__/
+
+# Wrangler's local cache (account id, build state): never committed
+.wrangler/

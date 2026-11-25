@@ -1,0 +1,22 @@
+{
+  "name": "heirloom-site",
+  "private": true,
+  "type": "module",
+  "description": "heirloomapp.io rebuilt: Astro, rendered ahead of time, interactive marks reference. Data comes from the app's mark tables (npm run data:sync).",
+  "scripts": {
+    "dev": "node scripts/prebuild.mjs && astro dev",
+    "build": "node scripts/prebuild.mjs && astro build && node scripts/legacy.mjs && pagefind --site dist",
+    "preview": "wrangler dev",
+    "data:sync": "node scripts/sync-data.mjs",
+    "deploy:preview": "SITE_PREVIEW=1 npm run build && wrangler deploy",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^6.1.6",
+    "@astrojs/sitemap": "^3.7.6",
+    "astro": "^7.4.13",
+    "pagefind": "^1.6.0",
+    "preact": "^11.2.0",
+    "wrangler": "^4.152.0"
+  }
+}

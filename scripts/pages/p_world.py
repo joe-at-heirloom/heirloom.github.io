@@ -70,6 +70,7 @@ GOLD_SRC = {
     "cfr": ("Federal Trade Commission, <cite>Guides for the Jewelry, Precious Metals, and Pewter Industries</cite>, 16 CFR 23.3 and 23.4 (current)", "https://www.law.cornell.edu/cfr/text/16/23.3"),
     "cfr2012": ("16 CFR 23.4, 2012 edition (the guides before the 2018 revision)", "https://www.govinfo.gov/content/pkg/CFR-2012-title16-vol1/xml/CFR-2012-title16-vol1-sec23-4.xml"),
     "ftc2018": ("Federal Trade Commission, final revision of the Jewelry Guides, Federal Register 83 (159), August 16, 2018", "https://www.govinfo.gov/content/pkg/FR-2018-08-16/html/2018-17454.htm"),
+    "swisspmc": ("Swiss Federal Precious Metals Control, <cite>Reproduction of the ancient official hallmarks since 1880</cite>", "https://commons.wikimedia.org/wiki/File:Reproduction_of_the_ancient_Swiss_official_hallmarks_since_1880.png"),
     "hmc": ("The Hallmarking Convention, <cite>The Common Control Mark</cite>", "https://www.hallmarkingconvention.org/en/about/the-common-control-mark"),
 }
 
@@ -123,8 +124,11 @@ def gold():
       </ul>
 {marksdb.grid(['british-gold-crown', 'british-gold-18-carat', 'british-gold-22-carat', 'british-gold-15-carat-decimal', 'british-gold-12-carat-decimal', 'british-gold-9-carat-decimal', 'british-gold-14-carat-1932'])}
       <p>The convention mark, a balance-scale outline around a number, comes from a treaty signed in Vienna in 1972. Countries that belong to it accept each other's convention-marked gold and silver without marking it again.</p>
+      <h3>Swiss gold watch cases</h3>
+      <p>Gold and silver watch cases sold in Switzerland must be checked and marked by the Swiss precious metals control. A Swiss gold case of the mid-20th century often shows the fineness as 18K above 0.750, beside the control's own mark: a head of Helvetia for 750, a squirrel for 583. The control lists both among its former official marks, used since 1880; it gives no end year.</p>
+      {marksdb.grid(['gold-fineness-750', 'switzerland-helvetia-gold-750', 'switzerland-squirrel-gold-583'])}
       <p>For the date letter itself, see <a href="/marks/london-date-letters">London</a>, <a href="/marks/birmingham-date-letters">Birmingham</a>, <a href="/marks/sheffield-date-letters">Sheffield</a> and <a href="/marks/chester-date-letters">Chester</a>.</p>"""
-    srcs = [GOLD_SRC[k] for k in ("hma2", "hma1", "si1998", "bhc", "gov", "aol", "bao", "sao", "chaffers", "jackson", "lbma", "bis", "feingehg", "adin", "usc", "cfr", "cfr2012", "ftc2018", "hmc")]
+    srcs = [GOLD_SRC[k] for k in ("hma2", "hma1", "si1998", "bhc", "gov", "aol", "bao", "sao", "chaffers", "jackson", "lbma", "bis", "feingehg", "adin", "usc", "cfr", "cfr2012", "ftc2018", "hmc", "swisspmc")]
     cavs = [
         "A number stamped on gold says what the maker claims. Only a test says what the metal is; stamps are faked and worn, and plated items sometimes carry a bare karat mark they shouldn't.",
         "The karat in a plated or filled mark is the layer's, not the item's.",
@@ -167,6 +171,7 @@ MX_SRC = [
     ("Art Institute of Chicago: William Spratling (274261, 274262) and Héctor Aguilar (274263–274265), inscriptions fields", "https://www.artic.edu/artworks/274263"),
     ("Los Angeles County Museum of Art: Spratling, Los Castillo, Margot de Taxco and Aguilar records, curatorial notes; and <cite>Modern Mexican Silver</cite>, LACMA Unframed, 2013", "https://unframed.lacma.org/node/1130"),
     ("Newark Museum of Art: Antonio Pineda bracelet, 2017.67.25", "https://collections.newarkmuseumart.org/objects/222307/bracelet"),
+    ("P. C. Morrill and C. A. Berk, <cite>Mexican Silver: 20th Century Handwrought Jewelry &amp; Metalwork</cite> (Atglen: Schiffer, 1994), glossary and pls. VII-27b, XVI-8b", None),
     ("Real Academia Española, <cite>Diccionario de la lengua española</cite>, “alpaca”", "https://dle.rae.es/alpaca"),
     ("<cite>Encyclopaedia Britannica</cite>, “nickel silver”", "https://www.britannica.com/technology/nickel-silver"),
 ]
@@ -194,7 +199,7 @@ def mexico():
       <h2 id="eagle">The eagle mark</h2>
       <p>On Mexican silver of the 1950s and 1960s you often find a small stamp of an eagle with a number in it. Museums call it the eagle assay mark, and date silver with it from about 1948 into the 1960s. It fits the 1947 standard, which asked for each item to be assayed and stamped with the producer's number.</p>
       <p><strong>What the number means is disputed.</strong> Museum records show a different number for each Taxco workshop: 9 on Héctor Aguilar's silver (Art Institute of Chicago), 16 on Margot de Taxco's (Museum of Fine Arts, Boston) and 30 on William Spratling's (Art Institute of Chicago). That points to a number for the maker. Some guides instead read low numbers as a city, such as 3 for Taxco; no official or museum source found for this page supports that reading.</p>
-      <p>The years usually given for the eagle, 1948 to 1980, are not stated in any official text found for this page. What is certain is the frame around them: the duty to stamp a producer's number dates from 1947, and the registration numbers of 1979–1980 replaced the old system. No open-license photograph of these marks was found, so the cards below describe them in words.</p>
+      <p>The years usually given for the eagle, 1948 to 1980, are not stated in any official text found for this page. What is certain is the frame around them: the duty to stamp a producer's number dates from 1947, and the registration numbers of 1979–1980 replaced the old system. Morrill and Berk's <cite>Mexican Silver</cite> (1994) dates the eagle stamp about 1948 to about 1970; the eagle below, with Margot de Taxco's number 16, is from their book. The other cards describe their marks in words.</p>
       {marksdb.grid(['mexico-eagle-assay-mark', 'mexico-hecho-en-mexico', 'mexico-registration-code', 'mexico-alpaca'])}
       <h2 id="codes">Letter-and-number codes, from 1980</h2>
       <p>From 1980 the law required the producer's government registration number on Mexican silver, and the current standard still does. On Taxco silver these appear as codes of two letters and a number, such as TS-24, often beside 925 and México. Collectors' guides read the first letter as the city (T for Taxco) and the second as the maker's surname; that reading is widely repeated, but no official or museum source found here explains how the codes were built. The code identifies a registered maker, not a year.</p>
@@ -206,7 +211,7 @@ def mexico():
         <li><strong>Los Castillo:</strong> founded by the Castillo brothers, who trained with Spratling; LACMA dates it to 1939, the Museum of Fine Arts, Boston to 1942.</li>
         <li><strong>Margot de Taxco:</strong> the workshop of Margot van Voorhies Carr, from 1946, known for enamel; marked MARGOT DE TAXCO with a model number.</li>
       </ul>
-      <p>These are artists' and studio marks: they are shown here only as photographs, never redrawn, and no open-license photograph of them has been found yet.</p>
+      <p>These are artists' and studio marks: they are shown here only as photographs, never redrawn. Aguilar's HA is from Morrill and Berk's book; for the others no usable photograph has been found yet.</p>
       {marksdb.grid(['spratling-ws-mark', 'aguilar-ha-mark', 'margot-de-taxco-mark', 'los-castillo-mark', 'pineda-antonio-crown-mark'])}"""
     cavs = [
         "Mexican marks are widely copied, and Spratling's most of all. A mark gives what the item claims; a specialist can tell more.",
@@ -289,6 +294,7 @@ RU_SRC = [
     ("A. O. Bekker and M. F. Dubrovin, on assay masters' marks of 1895–1896, <cite>Manuscript</cite> 2019 no. 11", "https://doi.org/10.30853/manuscript.2019.11.57"),
     ("Victoria and Albert Museum records: ladle, 1865 (O94664); box (O95094); cup, Moscow 1775 (O91386); brooch by August Hollming (O299139); Fabergé cigarette case (O152721)", "https://collections.vam.ac.uk/item/O94664/"),
     ("Hillwood Estate, Museum and Gardens records: Fabergé coffeepot, Moscow 1908–1917 (12.566.2); ashtray (12.163); vodka cup (12.141); pen holder (12.403)", "https://hillwoodmuseum.org/collection/item/12.566.2"),
+    ("M. M. Postnikova-Loseva, N. G. Platonova and B. L. Ulyanova, <cite>Zolotoe i serebryanoe delo XV–XX vv. (Territoriya SSSR)</cite> (Moscow: Nauka, 1983), pp. 145–264, the index of marks", None),
     ("Fabergé Research Site, hallmarks notes after Lowes and McCanless, <cite>Fabergé Eggs: A Retrospective Encyclopedia</cite>", "https://fabergeresearch.com/workmasters/"),
     ("The Metropolitan Museum of Art: candlestick, Moscow, about 1780 (2004.80); standing cup by Basil Nikiforoff, Moscow, 1737 (25.15.32)", "https://www.metmuseum.org/art/collection/search/231012"),
 ]
@@ -308,7 +314,7 @@ def russia():
       <p>Russian marking of gold and silver goes back to a decree of Peter the Great in 1700. Through the 18th and 19th centuries an item usually carried the arms of its town (Moscow: Saint George and the dragon; St Petersburg: crossed anchors with a scepter), the initials of the assay master with the year, the standard in zolotniks, and the maker's mark. From the 1770s to 1896 the year on the assay master's mark was compulsory, which makes these marks unusually easy to date.</p>
 {marksdb.grid(['russia-assay-master-year-mark', 'russia-moscow-town-mark', 'russia-st-petersburg-town-mark', 'russia-84-zolotnik', 'russia-88-zolotnik', 'russia-91-zolotnik'])}
       <h2 id="towns">Town marks before 1896</h2>
-      <p>Moscow and St Petersburg assayed most Russian silver, but provincial towns struck their own arms as a town mark. These are the marks Marc Rosenberg printed in 1928, with the years he gives for each. His book is the only published source found for them, so read the years as his.</p>
+      <p>Moscow and St Petersburg assayed most Russian silver, but provincial towns struck their own arms as a town mark. These are the marks Marc Rosenberg printed in 1928. Most are confirmed by Postnikova-Loseva's standard Russian reference (1983), whose years, by assay master, are often wider or earlier than Rosenberg's; each card gives the years the sources agree on, and where they differ, the database keeps both. Vitebsk and Kamianets-Podilskyi rest on Rosenberg alone, and Postnikova-Loseva gives the gateway mark to Zhitomir.</p>
       {marksdb.grid(['russia-astrakhan-town-mark', 'russia-irkutsk-tobolsk-town-mark', 'russia-kaluga-town-mark', 'russia-kamianets-podilskyi-town-mark', 'russia-kazan-town-mark', 'russia-kiev-town-mark-1794', 'russia-kiev-town-mark-19th-century-oval', 'russia-kiev-town-mark-19th-century-t', 'russia-kostroma-town-mark', 'russia-pskov-town-mark', 'russia-tula-town-mark', 'russia-tver-town-mark', 'russia-veliky-ustyug-town-mark', 'russia-vitebsk-town-mark', 'russia-vladimir-town-mark', 'russia-vologda-town-mark', 'russia-yaroslavl-town-mark'])}
       <h2 id="kokoshnik">The kokoshnik, 1896 to 1927</h2>
       <p>A new assay charter of March 11, 1896 brought one state mark for the whole empire: a woman's head in a kokoshnik, the tall traditional headdress, with the standard number beside it. Assay masters' marks no longer carry a year. Sources date the new mark from 1896 (the charter) or from 1899 (when it came into general use); read it as 1896 to 1899 onward.</p>
@@ -316,8 +322,10 @@ def russia():
         <li><strong>Head facing left:</strong> the first type, with the Cyrillic initials of the district's assay chief. Up to 1908.</li>
         <li><strong>Head facing right:</strong> from 1908, with a Greek letter for the assay district in place of the initials: delta (Δ) for Moscow. Museums date this type 1908 to 1917; Russia's assay chamber shows it in use to 1926, until the Soviet change of 1927.</li>
       </ul>
-      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. No open-license photograph of a legible kokoshnik was found, so the cards below describe it in words.</p>
-{marksdb.grid(['russia-kokoshnik-left', 'russia-kokoshnik-right', 'russia-district-letter-delta', 'faberge-cyrillic-name-mark'])}
+      <p>The direction is a guide, not a rule: one Hillwood record notes a left-facing head on an item dated after 1908. The left-facing kokoshnik below is on a Fabergé fork in the Klingenmuseum Solingen; the other kokoshnik and Soviet marks are the printed drawings in Postnikova-Loseva (1983), official state signs.</p>
+{marksdb.grid(['russia-kokoshnik-left', 'russia-assay-lebedkin-moscow', 'russia-assay-st-petersburg-1899', 'russia-kokoshnik-right', 'russia-district-letter-delta'])}
+      <p>Some makers' marks of the period, as Postnikova-Loseva prints them:</p>
+{marksdb.grid(['faberge-cyrillic-name-mark', 'faberge-kf-mark', 'grachev-mark', 'khlebnikov-mark'])}
       <h2 id="soviet">Soviet marks, from 1927</h2>
       <p>In 1927 fineness moved to thousandths (875, 916, 925 on silver), and the state mark became a worker's head with a hammer. From 1958 it was a hammer and sickle inside a five-pointed star, with the fineness and a letter for the assay office, until 1994, when the kokoshnik returned with metric numbers. These dates come from Russia's Federal Assay Chamber; no second published source was found for them. The star with hammer and sickle appears on the <a href="/marks/gold-karat-marks">gold marks page</a>, beside 583.</p>
       {marksdb.grid(['soviet-worker-hammer', 'soviet-star-silver'])}"""
@@ -347,6 +355,7 @@ def russia():
 GORHAM_SRC = [
     ("D. T. Rainwater, <cite>American Silver Manufacturers</cite> (1966), p. 60, Gorham entry and date-letter table (read in excerpt)", "https://archive.org/details/americansilverma0000unse"),
     ("D. T. Rainwater, <cite>Encyclopedia of American Silver Manufacturers</cite> (1975; 4th ed. 1998)", "https://archive.org/details/encyclopediaofam0000rain"),
+    ("R. and T. Kovel, <cite>Kovels' American Silver Marks, 1650 to the Present</cite> (New York: Crown, 1989), pp. 153–154, Gorham chronology and date-mark chart", None),
     ("C. H. Carpenter Jr., <cite>Gorham Silver 1831–1981</cite> (New York: Dodd, Mead, 1982), the standard history, with the full date-mark chart", "https://archive.org/details/gorhamsilver18310000carp"),
     ("D. S. Cinamon, <cite>All About Antique Silver with International Hallmarks</cite> (2005), Gorham section (read in excerpt)", "https://archive.org/details/allaboutantiques0000cina"),
     ("N. D. Turner, <cite>American Silver Flatware, 1837–1910</cite> (1972), on Gorham's adoption of sterling in 1868 (read in excerpt)", "https://archive.org/details/americansilverfl0000unse"),
@@ -365,23 +374,10 @@ GORHAM_SRC = [
 ]
 
 
+GORHAM_SYMBOLS = [(1885, 'boar'), (1886, 'cross-in-square'), (1887, 'fleur-de-lis'), (1888, 'star-in-circle'), (1889, 'oval'), (1890, 'cockerel'), (1891, 'lion-head'), (1892, 'sea-creature'), (1893, 'two-globes'), (1894, 'circle-arrow'), (1895, 'crescent'), (1896, 'shell'), (1897, 'trident'), (1898, 'three-arrows'), (1899, 'hook'), (1900, 'bell'), (1901, 'hourglass'), (1902, 'lamp'), (1903, 'pitcher'), (1904, 'lyre'), (1905, 'horseshoe'), (1906, 'key'), (1907, 'scissors'), (1908, 'compasses'), (1909, 'arrow'), (1910, 'knot'), (1911, 'pipe'), (1912, 'fish'), (1913, 'shamrock'), (1914, 'small-figure'), (1915, 'dagger'), (1916, 'halberd'), (1917, 'curved-sword'), (1918, 'pickaxe'), (1919, 'horn'), (1920, 'spoon'), (1921, 'anvil'), (1922, 'bird'), (1923, 'trowel'), (1924, 'acorn'), (1925, 'winged-foot'), (1926, 'sailing-ship'), (1927, 'biplane'), (1928, 'tree'), (1929, 'airship'), (1930, 'elephant'), (1931, 'winged-wheel'), (1932, 'pointing-hand'), (1933, 'parachute')]
+
+
 def gorham():
-    letters = "ABCDEFGHIJKLMNOPQ"
-    confirmed = {"C": "Art Institute of Chicago", "G": "Cooper Hewitt; RISD Museum", "H": "RISD Museum", "M": "The Met", "N": "The Met", "O": "The Met", "P": "Minneapolis Institute of Art", "Q": "Cooper Hewitt; Minneapolis Institute of Art"}
-    cells = "".join(
-        f'<li class="dlc" title="{e(("Dated example: " + confirmed[l]) if l in confirmed else "By the sequence")}"><span class="dl">{l}</span><span class="dlc__year">{1868 + n}</span></li>'
-        for n, l in enumerate(letters)
-    )
-    sym = [
-        ("1886", "A cross in a small square with a double border", "Art Institute of Chicago; Cooper Hewitt (as possible)"),
-        ("1888", "A star in a circle", "Cooper Hewitt only"),
-        ("1891", "A lion's head", "Cooper Hewitt only"),
-        ("1894", "A circle with an arrow at the upper right", "The year: Cooper Hewitt and the Museum of the City of New York; the shape: Cooper Hewitt only"),
-        ("1897", "A trident", "Art Institute of Chicago; RISD Museum"),
-        ("1900", "A bell-like shape", "Cooper Hewitt only"),
-        ("1906", "A key", "RISD Museum only"),
-        ("1910", "A knot", "RISD Museum only"),
-    ]
     sections = f"""      <h2 id="history">Gorham, in brief</h2>
       <p>Jabez Gorham, a Providence jeweler, began making silver spoons in 1831, first as Gorham &amp; Webster. The firm became the Gorham Manufacturing Company in the 1860s, and later the largest silver maker in the US. Before 1868 it worked in coin silver and marked its wares with the firm's name in a rectangle: Gorham &amp; Webster, Gorham &amp; Thurber, Gorham &amp; Co. In 1868 it adopted the sterling standard, 925 thousandths, and the mark it has used since.</p>
       <h2 id="trademark">The lion, anchor and G</h2>
@@ -395,14 +391,14 @@ def gorham():
         <li><strong>From 1885: a small picture symbol</strong> for each year, such as a trident or a key.</li>
       </ul>
       <h3>The letters, 1868 to 1884</h3>
-      <ul class="dlg">{cells}</ul>
-      <p class="note">The sequence is from Rainwater's table. Museum records date dated examples of C, G, H, M, N, O, P and Q to these same years. One disagrees: the Minneapolis Institute of Art dates a dish marked K to 1879, where the sequence gives 1878.</p>
-      <p>Three of the letters, struck on silver the Met dates to those years:</p>
-      {marksdb.grid(['gorham-date-letter-m-1880', 'gorham-date-letter-n-1881', 'gorham-date-letter-o-1882'])}
-      <h3>The symbols, from 1885</h3>
-      <p>Each year from 1885 had its own small symbol. The full chart is printed in Carpenter's <cite>Gorham Silver</cite> and Rainwater's <cite>Encyclopedia</cite>; it could not be checked against a second source year by year, so it is not reproduced here. These are the years museum records tie to a symbol:</p>
-      {table(["Year", "The symbol", "Dated by"], sym)}
-      <p class="note">Rows dated by one museum only are shown as that museum describes them; check them against a full chart before you rely on them. Later Gorham silver, from 1941, has been said to carry a shape whose number of sides gives the decade; only one museum example (a hexagon on a pitcher of 1960) was found for it.</p>
+      <p>Rainwater's <cite>American Silver Manufacturers</cite> (1966) and Kovels' <cite>American Silver Marks</cite> (1989) both print the same chart. The letters below are as Rainwater sets them in type; three are photographs of the real punches, on silver the Met dates to those years. Museum records confirm C, G, H, M, N, O, P and Q; the Minneapolis Institute of Art dates a dish marked K to 1879, where the chart gives 1878.</p>
+      {marksdb.grid(["gorham-date-letter-" + l.lower() + "-" + str(1868 + n) for n, l in enumerate("ABCDEFGHIJKLMNOPQ")])}
+      <h3>The symbols, 1885 to 1933</h3>
+      <p>From 1885 each year had its own small symbol, as both charts print them. Year marks stopped in 1933.</p>
+      {marksdb.grid(["gorham-date-symbol-" + str(y) + "-" + n for y, n in GORHAM_SYMBOLS])}
+      <h3>The decade frames, from 1941</h3>
+      <p>Year marking resumed in January 1941 on sterling hollowware: a frame whose shape gives the decade, with a numeral for the year inside. A square is the 1940s, a pentagon the 1950s, a hexagon the 1960s; Kovels adds a heptagon for the 1970s and an octagon for the 1980s.</p>
+      {marksdb.grid(['gorham-date-square-1940s', 'gorham-date-pentagon-1950s', 'gorham-date-hexagon-1960s'])}
       <h2 id="martele">Martelé</h2>
       <p>Martelé (French for hammered) was Gorham's hand-raised, hand-hammered Art Nouveau line, designed under William C. Codman and shown at the Paris Exposition of 1900. It was made in silver finer than sterling, and marked differently: the word Martelé in script, a spread eagle, the lion, anchor and G, then <strong>950-1000 FINE</strong> or <strong>.9584</strong>, with a model number and often a letter code. Some carry a retailer's name, such as Spaulding &amp; Co. of Chicago.</p>
 {marksdb.grid(['gorham-martele-script', 'gorham-martele-eagle', 'gorham-martele-950-1000-fine', 'gorham-martele-9584'])}
@@ -410,7 +406,7 @@ def gorham():
     cavs = [
         "The lion, anchor and G is a company mark, not a government hallmark: it says Gorham made and sold the item as sterling.",
         "A date mark dates the making of the item, not its engraving or later repair.",
-        "Many Gorham symbols after 1885 are small and alike. Where this page gives only one museum for a year, check a full chart before you rely on it.",
+        "Many Gorham symbols after 1885 are small and alike, and the chart prints them small; match the shape carefully, and check the other marks agree.",
     ]
     faqs = [
         ("What is the Gorham silver mark?", "<p>A walking lion, an anchor and a Gothic G in a row, usually with STERLING and a model number. Gorham has used it on sterling since 1868. It imitates British hallmarks but is Gorham's own trademark.</p>"),

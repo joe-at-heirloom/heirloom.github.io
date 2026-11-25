@@ -1,0 +1,28 @@
+{
+ "chaffers-1924": {
+  "kind": "book",
+  "author": "W. Chaffers",
+  "title": "Handbook to Hall Marks on Gold and Silver Plate",
+  "year": 1924,
+  "url": "https://archive.org/details/ChaffersHandbookToHallMarks",
+  "public_domain": true
+ },
+ "jackson-1921": {
+  "kind": "book",
+  "author": "Sir Charles J. Jackson",
+  "title": "English Goldsmiths and Their Marks, 2nd ed.",
+  "year": 1921,
+  "public_domain": true
+ },
+ "birmingham-assay-office": {
+  "kind": "official",
+  "author": "Birmingham Assay Office",
+  "title": "Date-letter archive, Birmingham 1773-2000 and the shared letters 1975-2000",
+  "note": "Bought by Joe 2026-11-22; facts only, images not for publication without permission"
+ },
+ "bullionbypost-chart": {
+  "kind": "website",
+  "author": "BullionByPost",
+  "title": "Hallmark date letters 1900-2019"
+ }
+}

@@ -1,0 +1,14 @@
+// The rebuilt heirloomapp.io (Astro). Until it replaces the live site it
+// deploys to its own Worker, heirloom-site-next, for review on workers.dev.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "heirloom-site-next",
+  "compatibility_date": "2026-10-20",
+  "workers_dev": true,
+  "preview_urls": true,
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

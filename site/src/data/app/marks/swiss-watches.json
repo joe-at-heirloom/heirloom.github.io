@@ -1,0 +1,1003 @@
+{
+ "sources": {
+  "bobs-rolex-serials": {
+   "kind": "website",
+   "author": "Bob's Watches",
+   "title": "Rolex serial numbers",
+   "url": "https://www.bobswatches.com/rolex-serial-numbers",
+   "retrieved": "2026-11-22",
+   "note": "Dealer page; facts only"
+  },
+  "rolex-date-chart-pdf": {
+   "kind": "website",
+   "author": "Unknown (the 'Specht Sheet' chart)",
+   "title": "Rolex date chart (PDF)",
+   "url": "https://cdn.shopify.com/s/files/1/0257/0164/6390/files/Rolex-Date-Chart.pdf",
+   "retrieved": "2026-11-22",
+   "note": "Independent of Bob's current list; its notes on where the serial is are used here, not its interpolated years"
+  },
+  "swisswatchexpo-rolex-serials": {
+   "kind": "website",
+   "author": "Swiss Watch Expo",
+   "title": "Rolex serial numbers",
+   "url": "https://www.swisswatchexpo.com/rolex-serial-numbers",
+   "retrieved": "2026-11-22",
+   "note": "Dealer page; facts only"
+  },
+  "phillips-rolex-lots": {
+   "kind": "auction",
+   "author": "Phillips",
+   "title": "Rolex lot descriptions giving 'Case No.' and 'Ref.' separately, and stamps inside case backs (e.g. The Watch Auction: One, lot 167; Toki, lot 77)",
+   "url": "https://www.phillips.com/detail/rolex/CH080215/167",
+   "retrieved": "2026-11-22"
+  },
+  "luxurybazaar-rehaut": {
+   "kind": "website",
+   "author": "Luxury Bazaar",
+   "title": "Understanding the Rolex rehaut",
+   "url": "https://www.luxurybazaar.com/grey-market/?p=132",
+   "retrieved": "2026-11-22",
+   "note": "Dealer page; facts only"
+  },
+  "1stdibs-rehaut": {
+   "kind": "website",
+   "author": "1stDibs",
+   "title": "When did Rolex start engraving the rehaut?",
+   "url": "https://www.1stdibs.com/answers/when-did-rolex-start-engraving-the-rehaut",
+   "retrieved": "2026-11-22"
+  },
+  "britannica-rolex": {
+   "kind": "encyclopedia",
+   "author": "Encyclopaedia Britannica",
+   "title": "Rolex",
+   "url": "https://www.britannica.com/topic/Rolex",
+   "retrieved": "2026-11-22"
+  },
+  "swisswatchexpo-rolex-logo": {
+   "kind": "website",
+   "author": "Swiss Watch Expo",
+   "title": "History of the Rolex name and logo",
+   "url": "https://www.swisswatchexpo.com/thewatchclub/2023/05/10/history-of-the-rolex-name-and-logo/",
+   "retrieved": "2026-11-22"
+  },
+  "bobs-rolex-coronet": {
+   "kind": "website",
+   "author": "Bob's Watches",
+   "title": "The evolution of the Rolex coronet",
+   "url": "https://www.bobswatches.com/rolex-blog/editorial/evolution-rolex-coronet.html",
+   "retrieved": "2026-11-22"
+  },
+  "fratello-rolex-history-1": {
+   "kind": "website",
+   "author": "Fratello Watches",
+   "title": "Rolex brand history, part one: 1905-1945",
+   "url": "https://www.fratellowatches.com/rolex-brand-history-part-one-1905-1945/",
+   "retrieved": "2026-11-22"
+  },
+  "omega-faq": {
+   "kind": "official",
+   "author": "Omega SA",
+   "title": "FAQ: find information about the brand and your product",
+   "url": "https://www.omegawatches.com/en-us/customer-service/faq/find-information-about-the-brand-and-your-product",
+   "retrieved": "2026-11-22"
+  },
+  "fratello-omega-extract": {
+   "kind": "website",
+   "author": "Fratello Watches",
+   "title": "Omega's Extract of the Archives: how it works",
+   "retrieved": "2026-11-22",
+   "note": "Explains the movement serial, the caliber number on the movement and the separate case number"
+  },
+  "antiquorum-omegamania-2007": {
+   "kind": "auction",
+   "author": "Antiquorum",
+   "title": "Omegamania (Geneva, 15 April 2007), lot descriptions giving movement No., case No., Ref. and caliber separately",
+   "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
+   "retrieved": "2026-11-22"
+  },
+  "bobs-omega-serials": {
+   "kind": "website",
+   "author": "Bob's Watches",
+   "title": "Omega watches serial numbers guide",
+   "url": "https://www.bobswatches.com/omega/serial-numbers",
+   "retrieved": "2026-11-22",
+   "note": "Dealer page; facts only"
+  },
+  "brittons-omega-dates": {
+   "kind": "website",
+   "author": "Brittons Watches",
+   "title": "How to date your Omega watch",
+   "url": "https://brittons-watches.co.uk/watches_omega_dates.htm",
+   "retrieved": "2026-11-22",
+   "note": "Cites Marco Richon, Omega: A Journey Through Time, for the 1991 change"
+  },
+  "omega-chronicle-1894": {
+   "kind": "official",
+   "author": "Omega SA",
+   "title": "1894: Omega is born",
+   "url": "https://www.omegawatches.com/chronicle/1894-omega-is-born",
+   "retrieved": "2026-11-22"
+  },
+  "hls-omega": {
+   "kind": "encyclopedia",
+   "author": "Historisches Lexikon der Schweiz",
+   "title": "Omega",
+   "url": "https://hls-dhs-dss.ch/articles/041991",
+   "retrieved": "2026-11-22"
+  },
+  "duf-museum-digital": {
+   "kind": "museum",
+   "author": "Deutsches Uhrenmuseum Furtwangen",
+   "title": "Object records and photographs on museum-digital (Baden-Wurttemberg), CC BY-SA",
+   "url": "https://bawue.museum-digital.de/institution/97",
+   "retrieved": "2026-11-24"
+  },
+  "amsterdam-rolex-serials": {
+   "kind": "website",
+   "author": "Amsterdam Vintage Watches",
+   "title": "Dating your Rolex by serial number: a comprehensive guide",
+   "url": "https://amsterdamvintagewatches.com/watch-guide/dating-your-rolex-by-serial-number-a-comprehensive-guide/",
+   "retrieved": "2026-11-22",
+   "note": "Dealer page; facts only"
+  },
+  "boettcher-oyster-case-serials": {
+   "kind": "website",
+   "author": "David Boettcher, Vintage Watch Straps",
+   "title": "Oyster case serial numbers (blog, updated 2025)",
+   "url": "https://vintagewatchstraps.com/blogoystercaseserials.php",
+   "retrieved": "2026-11-24",
+   "note": "Collector's research from British hallmark dates; facts only"
+  },
+  "antiquorum-2018-lot-151": {
+   "kind": "auction",
+   "author": "Antiquorum",
+   "title": "Omega ref. 105.012-66 'CB' Speedmaster, Geneva, 11 November 2018, lot 151 (catalogue note on HF and CB case makers)",
+   "url": "https://catalog.antiquorum.swiss/en/lots/omega-ref-105-012-66-cb-speedmaster-lot-317-151",
+   "retrieved": "2026-11-24"
+  },
+  "hairspring-cb-case": {
+   "kind": "website",
+   "author": "Hairspring",
+   "title": "CB case 105.012-66 Omega Speedmaster",
+   "url": "https://hairspring.com/finds/cb-case-105-012-66-omega-speedmaster/",
+   "retrieved": "2026-11-24",
+   "note": "Dealer article; facts only"
+  }
+ },
+ "entries": [
+  {
+   "id": "rolex-case-serial-between-lugs",
+   "maker": "Rolex SA",
+   "kind": "serial",
+   "name": "Case serial between the lugs at 6 o'clock",
+   "looks_like": "A number engraved across the case between the two lower lugs, on the 6 o'clock side, hidden by the bracelet or strap: digits only to 1987 (up to seven), then a letter and six digits (R123456) to about 2010.",
+   "means": "The case's serial number; dates the case by the Rolex serial table (rolex.json). Not the model reference, which is at 12 o'clock.",
+   "applied": "engraved",
+   "date_from": null,
+   "date_to": 2008,
+   "date_note": "Between the lugs until about 2008; from about 2005 also on the rehaut, and from about 2008 only there. When this location began is not settled by the sources.",
+   "sources": [
+    {
+     "id": "bobs-rolex-serials",
+     "where": "where to find the serial"
+    },
+    {
+     "id": "rolex-date-chart-pdf",
+     "where": "p. 1, header note"
+    },
+    {
+     "id": "phillips-rolex-lots",
+     "where": "'Case No.' in lot descriptions"
+    }
+   ],
+   "visual": {
+    "status": "rendering",
+    "file": "marks/img/db/rolex-case-serial-between-lugs.webp",
+    "marks_in_image": 1,
+    "confidence": "high",
+    "method": "The position is fixed by sources bobs-rolex-serials and rolex-date-chart-pdf: between the lugs on the 6 o'clock side, drawn as the case edge and the two lugs seen from below. The digit style is illustrative: example serial 5398992 (a dated watch in rolex.json, warranty card 1979) set in a plain sans-serif (Helvetica regular), ink on paper, 4x supersampled (hallmark-sources/draw_watch_numbers.py). Drawn from the description, not traced.",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "blocked": [
+     {
+      "what": "Close-up photographs of case serials between the lugs in Rolex lot images",
+      "holder": "Phillips",
+      "url": "https://www.phillips.com/detail/rolex/CH080215/167",
+      "licence": "All rights reserved (auction photograph)",
+      "ask": "Phillips image and rights department",
+      "checked": "checked 2026-11-22: mark not shown (lot 167's only image shows the watch on its bracelet with its papers)"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "rolex-reference-between-lugs",
+   "maker": "Rolex SA",
+   "kind": "serial",
+   "name": "Model reference between the lugs at 12 o'clock",
+   "looks_like": "A four- to six-digit number engraved between the two upper lugs, on the 12 o'clock side, hidden by the bracelet; on older watches often stamped inside the case back as well.",
+   "means": "The model reference: it names the model, bezel and metal (a Datejust 16234, a Submariner 5513) and is shared by every watch of that model. It is not a serial and does not date the watch.",
+   "applied": "engraved",
+   "date_from": null,
+   "date_to": null,
+   "sources": [
+    {
+     "id": "bobs-rolex-serials",
+     "where": "model number section"
+    },
+    {
+     "id": "swisswatchexpo-rolex-serials",
+     "where": "reference number section"
+    },
+    {
+     "id": "phillips-rolex-lots",
+     "where": "'Ref.' and 'inside case back stamped' in lot descriptions"
+    }
+   ],
+   "visual": {
+    "status": "rendering",
+    "file": "marks/img/db/rolex-reference-between-lugs.webp",
+    "marks_in_image": 1,
+    "confidence": "high",
+    "method": "The position is fixed by sources bobs-rolex-serials and swisswatchexpo-rolex-serials: between the lugs on the 12 o'clock side, drawn as the case edge and the two lugs. The digit style is illustrative: example reference 5513 (a Submariner reference among the dated watches in rolex.json) set in a plain sans-serif (Helvetica regular), ink on paper, 4x supersampled (hallmark-sources/draw_watch_numbers.py). Drawn from the description, not traced.",
+    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
+    "blocked": [
+     {
+      "what": "Photographs of the reference between the lugs and stamped inside case backs in Rolex lot images",
+      "holder": "Phillips",
+      "url": "https://phillips.com/detail/rolex/HK080624/77",
+      "licence": "All rights reserved (auction photograph)",
+      "ask": "Phillips image and rights department",
+      "checked": "checked 2026-11-22: mark not shown (Toki lot 77's four images show the dial, the closed case back and the sides, bracelet on)"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": [],
+   "date_note": ""
+  },
+  {
+   "id": "rolex-rehaut-serial",
+   "maker": "Rolex SA",
+   "kind": "serial",
+   "name": "Case serial on the rehaut at 6 o'clock",
+   "looks_like": "The serial engraved in the inner ring between the dial and the crystal (the rehaut), at 6 o'clock, in the gap in the repeated ROLEX engraving; readable through the crystal.",
+   "means": "The same case serial, moved where it can be read without removing the bracelet. Random serials (from about 2010) carry no date.",
+   "applied": "laser-engraved",
+   "date_from": 2005,
+   "date_to": null,
+   "date_note": "Also between the lugs from about 2005 to 2008, then only on the rehaut.",
+   "sources": [
+    {
+     "id": "bobs-rolex-serials",
+     "where": "2005 and 2008"
+    },
+    {
+     "id": "rolex-date-chart-pdf",
+     "where": "p. 1, header note: 2005 and 2008"
+    }
+   ],
+   "disagreements": [
+    {
+     "note": "BeckerTime puts the start in 2006-2007 on some models; Bob's and the date chart give 2005."
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
+     "Commons: Rolex Datejust 36 and Datejust 126234 photographs by ajay_suresh (CC BY 2.0): the rehaut is visible but a reflection covers the serial at 6 o'clock",
+     "2026-11-24: Wikimedia Commons searches 'Rolex rehaut', 'Rolex inner bezel', 'Rolex serial', 'Rolex lugs', 'Rolex Submariner rehaut': only Rolex-GMT-Master-II-Batgirl.jpg (CC0, Brattyq, 1200 x 1200) shows the rehaut; its serial at 6 o'clock and the ROLEX engraving are visible but about 8-10 px tall at native size, too small to read without enlarging",
+     "2026-11-24: Europeana (reusable only) 'rolex': German Clock Museum Rolex watches of about 1927, 1935 and 1960 (CC BY-SA 4.0) predate the rehaut engraving",
+     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed"
+    ],
+    "blocked": [],
+    "note": "The two Commons photos that show a rehaut have the serial hidden by a reflection."
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH"
+  },
+  {
+   "id": "rolex-rehaut-engraving",
+   "maker": "Rolex SA",
+   "kind": "trademark",
+   "name": "ROLEX engraved round the rehaut",
+   "looks_like": "The word ROLEX repeated in small capitals all the way round the inner ring between the dial and the crystal, with a gap at 6 o'clock for the serial and a small coronet at 12.",
+   "means": "A Rolex trademark engraving added to the rehaut; it marks a case of about 2004-2005 or later.",
+   "applied": "laser-engraved",
+   "date_from": 2004,
+   "date_to": null,
+   "date_note": "2004 (Turn-O-Graph first) or 2005 (Datejust first): the sources disagree.",
+   "sources": [
+    {
+     "id": "luxurybazaar-rehaut",
+     "where": "introduction date"
+    },
+    {
+     "id": "1stdibs-rehaut",
+     "where": "introduction date"
+    }
+   ],
+   "disagreements": [
+    {
+     "source": "luxurybazaar-rehaut",
+     "date_from": 2004,
+     "note": "Turn-O-Graph first"
+    },
+    {
+     "source": "1stdibs-rehaut",
+     "date_from": 2005,
+     "note": "Datejust first"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
+     "Commons: Rolex Datejust 36 (ajay_suresh, CC BY 2.0) shows the engraving, but its letters are about 25 px tall; its letters are about 25 px on a curve, and any crop of 90 px or more takes in the minute track",
+     "2026-11-24: Wikimedia Commons searches 'Rolex rehaut', 'Rolex inner bezel', 'Rolex serial', 'Rolex lugs', 'Rolex Submariner rehaut': only Rolex-GMT-Master-II-Batgirl.jpg (CC0, Brattyq, 1200 x 1200) shows the rehaut; its serial at 6 o'clock and the ROLEX engraving are visible but about 8-10 px tall at native size, too small to read without enlarging",
+     "2026-11-24: Europeana (reusable only) 'rolex': German Clock Museum Rolex watches of about 1927, 1935 and 1960 (CC BY-SA 4.0) predate the rehaut engraving",
+     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed"
+    ],
+    "blocked": [],
+    "note": "Usable source photo exists at too low a resolution for a single-mark crop."
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH"
+  },
+  {
+   "id": "rolex-coronet",
+   "maker": "Rolex SA",
+   "kind": "trademark",
+   "name": "Rolex coronet",
+   "looks_like": "A five-pointed crown, each point ending in a small ball, above an oval base; applied in metal on the dial at 12 o'clock, and embossed on the winding crown.",
+   "means": "Rolex's trademark. It names the maker; it does not date the watch or show that it is genuine.",
+   "applied": "applied (dial) / embossed (winding crown)",
+   "date_from": 1925,
+   "date_to": null,
+   "date_note": "Registered as a trademark in 1925 (Britannica) or 1931 (Swiss Watch Expo); on dials from the 1930s and on winding crowns from the 1950s.",
+   "sources": [
+    {
+     "id": "britannica-rolex",
+     "where": "trademark, 1925"
+    },
+    {
+     "id": "swisswatchexpo-rolex-logo",
+     "where": "trademark registration"
+    },
+    {
+     "id": "bobs-rolex-coronet",
+     "where": "dial and winding crown"
+    }
+   ],
+   "disagreements": [
+    {
+     "source": "britannica-rolex",
+     "date_from": 1925
+    },
+    {
+     "source": "swisswatchexpo-rolex-logo",
+     "date_from": 1931
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/rolex-coronet.webp",
+    "marks_in_image": 1,
+    "object": "Rolex Datejust 36, black sunburst dial (recent)",
+    "holder": "Wikimedia Commons (ajay_suresh, via Flickr)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rolex_Datejust_36_-_Black_Sunburst_Dial_(50826887656).jpg",
+    "licence": "CC-BY-2.0",
+    "original": "hallmark-sources/swiss-watches/rolex-datejust-36-ajay-suresh.jpg",
+    "credit": "Photograph: \"Rolex Datejust 36 - Black Sunburst Dial\" by ajay_suresh, Wikimedia Commons, CC BY 2.0; cropped and toned by Heirloom.",
+    "crop": [
+     3368,
+     1028,
+     268,
+     266
+    ],
+    "margins": {
+     "l": 31,
+     "r": 31,
+     "t": 6,
+     "b": 34
+    },
+    "raw": "hallmark-sources/db-raw/rolex-coronet.png",
+    "note": "The applied coronet on a recent Datejust dial."
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH"
+  },
+  {
+   "id": "rolex-name-on-dial",
+   "maker": "Rolex SA",
+   "kind": "trademark",
+   "name": "ROLEX on the dial",
+   "looks_like": "The word ROLEX in serif capitals below the coronet at 12 o'clock, usually followed by the model name (OYSTER PERPETUAL, DATEJUST).",
+   "means": "The maker's name, registered as a trademark by Hans Wilsdorf in 1908. It names the maker; it does not date the watch or show that it is genuine.",
+   "applied": "printed",
+   "date_from": 1908,
+   "date_to": null,
+   "sources": [
+    {
+     "id": "britannica-rolex",
+     "where": "name registered 1908"
+    },
+    {
+     "id": "fratello-rolex-history-1",
+     "where": "1908"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/rolex-name-on-dial.webp",
+    "marks_in_image": 1,
+    "object": "Rolex Datejust 36, black sunburst dial (recent)",
+    "holder": "Wikimedia Commons (ajay_suresh, via Flickr)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rolex_Datejust_36_-_Black_Sunburst_Dial_(50826887656).jpg",
+    "licence": "CC-BY-2.0",
+    "original": "hallmark-sources/swiss-watches/rolex-datejust-36-ajay-suresh.jpg",
+    "credit": "Photograph: \"Rolex Datejust 36 - Black Sunburst Dial\" by ajay_suresh, Wikimedia Commons, CC BY 2.0; cropped and toned by Heirloom.",
+    "crop": [
+     3283,
+     1358,
+     434,
+     90
+    ],
+    "margins": {
+     "l": 50,
+     "r": 50,
+     "t": 19,
+     "b": 11
+    },
+    "raw": "hallmark-sources/db-raw/rolex-name-on-dial.png",
+    "note": "ROLEX on a recent Datejust dial, cut at the photo's native resolution."
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": [],
+   "date_note": ""
+  },
+  {
+   "id": "omega-movement-serial",
+   "maker": "Omega SA",
+   "kind": "serial",
+   "name": "Movement serial number",
+   "looks_like": "Seven or eight digits engraved on a plate or bridge of the movement, seen with the case back off (for example 13977738).",
+   "means": "The movement's serial number; dates the movement to about a year or two by the Omega serial table (omega.json), from 1,000,000 (about 1894) to about 56,000,000 (about 1995).",
+   "applied": "engraved",
+   "date_from": 1894,
+   "date_to": null,
+   "date_note": "On the movement through most of the 20th century; from about 1991 also on the case back or a lug.",
+   "sources": [
+    {
+     "id": "omega-faq",
+     "where": "where is the serial number"
+    },
+    {
+     "id": "fratello-omega-extract",
+     "where": "movement number"
+    },
+    {
+     "id": "antiquorum-omegamania-2007",
+     "where": "'No.' in lot descriptions"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-movement-serial.webp",
+    "marks_in_image": 1,
+    "object": "Omega wristwatch with caliber 266 movement, case back removed (1950s per the uploader)",
+    "holder": "Wikimedia Commons (Clyde94)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Omega_266,_met%C3%A0_anni_%2750.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-266-clyde94.jpg",
+    "credit": "Photograph: \"Omega 266, metà anni '50\" by Clyde94, Wikimedia Commons, CC BY-SA 4.0; cropped, levelled and toned by Heirloom.",
+    "crop": [
+     1204,
+     2866,
+     792,
+     172
+    ],
+    "crop_frame": "after rotating the original by angle about center",
+    "rotation": {
+     "center": [
+      1632,
+      2978
+     ],
+     "angle": -83.3
+    },
+    "margins": {
+     "l": 98,
+     "r": 40,
+     "t": 22,
+     "b": 4
+    },
+    "raw": "hallmark-sources/db-raw/omega-movement-serial.png",
+    "note": "Serial 13977738 on a caliber 266 plate."
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "omega-caliber-number",
+   "maker": "Omega SA",
+   "kind": "other",
+   "name": "Caliber number on the movement",
+   "looks_like": "A short number, usually three digits, engraved on the movement beside the Omega sign (Ω 266, 321, 565).",
+   "means": "The movement's model (caliber), shared by every movement of that design. It is not a serial and does not date the watch; a caliber's production years narrow it.",
+   "applied": "engraved",
+   "date_from": null,
+   "date_to": null,
+   "sources": [
+    {
+     "id": "fratello-omega-extract",
+     "where": "caliber number, e.g. 321"
+    },
+    {
+     "id": "antiquorum-omegamania-2007",
+     "where": "'Cal.' in lot descriptions"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-caliber-number.webp",
+    "marks_in_image": 1,
+    "object": "Omega wristwatch with caliber 266 movement, case back removed (1950s per the uploader)",
+    "holder": "Wikimedia Commons (Clyde94)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Omega_266,_met%C3%A0_anni_%2750.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-266-clyde94.jpg",
+    "credit": "Photograph: \"Omega 266, metà anni '50\" by Clyde94, Wikimedia Commons, CC BY-SA 4.0; cropped, levelled and toned by Heirloom.",
+    "crop": [
+     2392,
+     1620,
+     226,
+     260
+    ],
+    "crop_frame": "after rotating the original by angle about center",
+    "rotation": {
+     "center": [
+      2505,
+      1750
+     ],
+     "angle": 90
+    },
+    "margins": {
+     "l": 26,
+     "r": 26,
+     "t": 30,
+     "b": 30
+    },
+    "raw": "hallmark-sources/db-raw/omega-caliber-number.png",
+    "note": "Ω 266 on a caliber 266 bridge."
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": [],
+   "date_note": ""
+  },
+  {
+   "id": "omega-name-on-movement",
+   "maker": "Omega SA",
+   "kind": "trademark",
+   "name": "OMEGA on the movement",
+   "looks_like": "The word OMEGA in capitals engraved on a bridge of the movement, often with SWISS and the jewel count (17 JEWELS).",
+   "means": "The maker's name. Omega was the name of the Brandt brothers' 1894 caliber; Louis Brandt & Frère took it as the company name in 1903.",
+   "applied": "engraved",
+   "date_from": 1894,
+   "date_to": null,
+   "date_note": "The name dates from the 1894 caliber; the company used it from 1903.",
+   "sources": [
+    {
+     "id": "omega-chronicle-1894",
+     "where": "1894 caliber"
+    },
+    {
+     "id": "hls-omega",
+     "where": "1894 and 1903"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-name-on-movement.webp",
+    "marks_in_image": 1,
+    "object": "Omega wristwatch with caliber 266 movement, case back removed (1950s per the uploader)",
+    "holder": "Wikimedia Commons (Clyde94)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Omega_266,_met%C3%A0_anni_%2750.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-266-clyde94.jpg",
+    "credit": "Photograph: \"Omega 266, metà anni '50\" by Clyde94, Wikimedia Commons, CC BY-SA 4.0; cropped, levelled and toned by Heirloom.",
+    "crop": [
+     999,
+     1249,
+     930,
+     246
+    ],
+    "crop_frame": "after rotating the original by angle about center",
+    "rotation": {
+     "center": [
+      1464,
+      1372
+     ],
+     "angle": -4
+    },
+    "margins": {
+     "l": 107,
+     "r": 107,
+     "t": 28,
+     "b": 28
+    },
+    "raw": "hallmark-sources/db-raw/omega-name-on-movement.png",
+    "note": "OMEGA on the bridge of a caliber 266."
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "omega-case-back-serial",
+   "maker": "Omega SA",
+   "kind": "serial",
+   "name": "Serial on the case back or a lug",
+   "looks_like": "An eight-digit number engraved on the outside of the case back or on the side of a lug.",
+   "means": "The watch's serial, engraved where it can be read without opening the case. From about 1995 numbers were given in blocks by caliber, so it does not date the watch by itself.",
+   "applied": "engraved",
+   "date_from": 1991,
+   "date_to": null,
+   "date_note": "From 15 February 1991 per Brittons (citing Richon); 'the early 1990s' per Bob's.",
+   "sources": [
+    {
+     "id": "omega-faq",
+     "where": "current watches: back or lug"
+    },
+    {
+     "id": "brittons-omega-dates",
+     "where": "15 February 1991"
+    },
+    {
+     "id": "bobs-omega-serials",
+     "where": "early 1990s"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-case-back-serial.webp",
+    "marks_in_image": 1,
+    "object": "Omega Seamaster chronograph on its bracelet, seen from the back (2000s)",
+    "holder": "Wikimedia Commons (Rama)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Omega-Seamaster-p1020461.jpg",
+    "licence": "CC-BY-SA-2.0",
+    "original": "hallmark-sources/swiss-watches/omega-seamaster-rama-p1020461.jpg",
+    "credit": "Photograph: \"Omega-Seamaster-p1020461\" by Rama, Wikimedia Commons, CC BY-SA 2.0 France; cropped, levelled and toned by Heirloom.",
+    "crop": [
+     788,
+     801,
+     96,
+     24
+    ],
+    "crop_frame": "after rotating the original by angle about center",
+    "rotation": {
+     "center": [
+      830,
+      813
+     ],
+     "angle": -18
+    },
+    "margins": {
+     "l": 11,
+     "r": 11,
+     "t": 3,
+     "b": 3
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-back-serial.png",
+    "note": "The serial engraved on the side of a lug, the place Omega names for current watches. Small and only partly legible: 96 x 24 px at the photo's native size, never enlarged.",
+    "searched_before": [
+     "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22) (Speedmaster case backs on Commons show only the outside engraving, no serial)",
+     "A drawing would only repeat the number; needs a photo."
+    ],
+    "blocked": [
+     {
+      "what": "Omega Speedmaster case back",
+      "holder": "Wikimedia Commons uploader",
+      "url": "https://commons.wikimedia.org/wiki/File:Omega_Speedmaster_Rueckseite.jpg",
+      "licence": "GPL-3.0",
+      "ask": "The uploader, via their Commons talk page",
+      "checked": "checked 2026-11-22: mark not shown (a display back with an Apollo XI inscription and a limited-edition number, A 3764, not the eight-digit serial; the file page calls it a caliber 864 movement)"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "omega-case-reference",
+   "maker": "Omega SA",
+   "kind": "serial",
+   "name": "Model reference inside the case back",
+   "looks_like": "A reference stamped inside the case back, in forms such as 2915-1, 165.024 or ST 145.022-69; later watches use longer product codes with dots (311.30.42.30.01.005).",
+   "means": "The model reference, shared by every watch of that model. It is not a serial and does not date the watch.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "sources": [
+    {
+     "id": "antiquorum-omegamania-2007",
+     "where": "'Ref.' in lot descriptions"
+    },
+    {
+     "id": "bobs-omega-serials",
+     "where": "reference systems"
+    },
+    {
+     "id": "omega-faq",
+     "where": "product code explained"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-case-reference.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the case back of an Omega Speedmaster Professional, 1967 (Deutsches Uhrenmuseum Furtwangen, inv. 2003-110)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "2003-110",
+    "source_url": "https://bawue.museum-digital.de/object/57964",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-speedmaster-1967-caseback-inside-duf-2003-110.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     522,
+     874,
+     280,
+     54
+    ],
+    "margins": {
+     "l": 32,
+     "r": 32,
+     "t": 6,
+     "b": 6
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-reference.png",
+    "note": "Reference 105 012-66 (the Speedmaster Professional's ST 105.012-66) stamped inside the case back. Small crop at the photo's native size (280 x 54 px). The case maker's HF sign below it is left out, and the museum's inventory number (on the outside of the back) is not in the crop.",
+    "searched_before": [
+     "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
+     "Met Open Access API (no Rolex or Omega watches); Smithsonian NMAH Omega records (usage conditions apply, not CC0); Auckland War Memorial Museum, Hillary's Rolex AM 2014.7.70 (CC BY 4.0; no serial or reference visible)",
+     "A drawing would only repeat the number; needs a photo."
+    ],
+    "blocked": [
+     {
+      "what": "Photographs inside Omega case backs in lot images",
+      "holder": "Antiquorum; Phillips",
+      "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
+      "licence": "All rights reserved (auction photograph)",
+      "ask": "Antiquorum or Phillips image departments",
+      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": [],
+   "date_note": ""
+  },
+  {
+   "id": "omega-case-number",
+   "maker": "Omega SA",
+   "kind": "serial",
+   "name": "Case maker's number inside the case back",
+   "looks_like": "A number stamped inside the case back of some vintage Omegas, often seven or eight digits like a movement serial.",
+   "means": "The case's own number in a separate series (Antiquorum lists it as 'case No.' beside the movement 'No.'). It can't be dated with the movement serial table.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "On some vintage watches only.",
+   "sources": [
+    {
+     "id": "antiquorum-omegamania-2007",
+     "where": "'case No.' beside movement 'No.'"
+    },
+    {
+     "id": "fratello-omega-extract",
+     "where": "separate case number"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-case-number.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the gold case back of a small Omega ladies' wristwatch, about 1960 (Deutsches Uhrenmuseum Furtwangen, inv. 47-2966-2)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "47-2966-2",
+    "source_url": "https://bawue.museum-digital.de/object/58034",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-ladies-1960-caseback-inside-duf-47-2966-2.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     918,
+     906,
+     506,
+     80
+    ],
+    "margins": {
+     "l": 58,
+     "r": 58,
+     "t": 7,
+     "b": 4
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-number.png",
+    "note": "512056 stamped below the Swiss gold marks. The museum record does not label either number; 512056 is taken as the case number and 7112, below it, as the reference by their position only. Native size (506 x 80 px); no museum inventory number in the crop.",
+    "searched_before": [
+     "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
+     "Met Open Access API (no Rolex or Omega watches); Smithsonian NMAH Omega records (usage conditions apply, not CC0); Auckland War Memorial Museum, Hillary's Rolex AM 2014.7.70 (CC BY 4.0; no serial or reference visible)",
+     "A drawing would only repeat the number; needs a photo."
+    ],
+    "blocked": [
+     {
+      "what": "Photographs inside Omega case backs in lot images",
+      "holder": "Antiquorum",
+      "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
+      "licence": "All rights reserved (auction photograph)",
+      "ask": "Antiquorum image department",
+      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "rolex-early-case-serial-inside-back",
+   "maker": "Rolex SA",
+   "kind": "serial",
+   "name": "Early case serial stamped inside the case back",
+   "looks_like": "A number of about five digits stamped inside the case back of a 1920s Rolex, below the maker's and patent stamps (21491 on a gold Oyster of about 1927).",
+   "means": "The case's serial number on an early Rolex. Gold Oyster cases of the late 1920s appear to have their own series, starting at about 20,000, apart from silver ones; the published serial lists disagree this early, so the British hallmark in the same back dates the case better.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "Seen on 1920s cases; when the serial moved between the lugs is not settled by these sources.",
+   "sources": [
+    {
+     "id": "boettcher-oyster-case-serials",
+     "where": "gold and silver case series"
+    },
+    {
+     "id": "amsterdam-rolex-serials",
+     "where": "serial stamped inside the case back on some vintage models"
+    },
+    {
+     "id": "duf-museum-digital",
+     "where": "object 2004-080, Rolex Oyster about 1927"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/rolex-early-case-serial-inside-back.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the gold case back of a Rolex Oyster, about 1927 (Deutsches Uhrenmuseum Furtwangen, inv. 2004-080)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "2004-080",
+    "source_url": "https://bawue.museum-digital.de/object/57974",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/rolex-oyster-1927-caseback-inside-duf-2004-080.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     958,
+     1026,
+     444,
+     86
+    ],
+    "margins": {
+     "l": 51,
+     "r": 51,
+     "t": 10,
+     "b": 10
+    },
+    "raw": "hallmark-sources/db-raw/rolex-early-case-serial-inside-back.png",
+    "note": "21491 below GENEVA-SUISSE. Small crop at the photo's native size (444 x 86 px); no museum inventory number in the crop."
+   },
+   "pages": [
+    "/marks/rolex-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  },
+  {
+   "id": "omega-case-maker-hf",
+   "maker": "Huguenin Frères & Co. (for Omega)",
+   "kind": "maker's mark",
+   "name": "HF case maker's sign inside a Speedmaster case back",
+   "looks_like": "The letters HF joined in a small circle, stamped inside the case back below the reference.",
+   "means": "The case was made by Huguenin Frères & Co. of Le Locle, which made nearly all Speedmaster cases with the caliber 321; from 1966 some 105.012 cases came from La Centrale Boîtes and are signed CB instead. It names the case maker, not the watch's date.",
+   "applied": "stamped",
+   "date_from": null,
+   "date_to": null,
+   "date_note": "On Speedmaster cases of the caliber 321 era (to about 1968).",
+   "sources": [
+    {
+     "id": "antiquorum-2018-lot-151",
+     "where": "catalogue note"
+    },
+    {
+     "id": "hairspring-cb-case",
+     "where": "HF and CB cases"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/omega-case-maker-hf.webp",
+    "marks_in_image": 1,
+    "object": "Inside of the case back of an Omega Speedmaster Professional, 1967 (Deutsches Uhrenmuseum Furtwangen, inv. 2003-110)",
+    "holder": "Deutsches Uhrenmuseum Furtwangen",
+    "accession": "2003-110",
+    "source_url": "https://bawue.museum-digital.de/object/57964",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/omega-speedmaster-1967-caseback-inside-duf-2003-110.jpg",
+    "credit": "Photograph: Deutsches Uhrenmuseum Furtwangen, via museum-digital, CC BY-SA 4.0; cropped and toned by Heirloom.",
+    "crop": [
+     623,
+     960,
+     88,
+     90
+    ],
+    "margins": {
+     "l": 10,
+     "r": 10,
+     "t": 10,
+     "b": 10
+    },
+    "raw": "hallmark-sources/db-raw/omega-case-maker-hf.png",
+    "note": "The HF sign below reference 105 012-66 on the same case back. Small crop at the photo's native size (88 x 90 px)."
+   },
+   "pages": [
+    "/marks/omega-serial-numbers"
+   ],
+   "group": "swiss-watches",
+   "country": "CH",
+   "disagreements": []
+  }
+ ]
+}
