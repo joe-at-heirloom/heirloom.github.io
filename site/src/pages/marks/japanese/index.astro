@@ -9,7 +9,8 @@ import Reference from '../../../layouts/Reference.astro';
 import AppBox from '../../../components/AppBox.astro';
 import Faq from '../../../components/Faq.astro';
 import Catalogue from '../../../components/ref/Catalogue.astro';
-import { jaSheet, CJK } from '../../../lib/records';
+import { japaneseGroups } from '../../../lib/catalogues';
+import { CJK } from '../../../lib/records';
 import { marks, GROUPS, pageChars } from '../../../lib/japanese';
 import { KYU_SHIN } from '../../../lib/japanese-dates';
 import { articleLd, faqLd, crumbsLd } from '../../../lib/site';
@@ -19,8 +20,7 @@ const path = '/marks/japanese/';
 const rows = marks();
 const by = (f: string) => rows.filter((r) => r.family === f).length;
 const pictured = rows.filter((r) => r.photos.some((p) => p.visible === 'yes')).length;
-const sheets = rows.map(jaSheet);
-const groups = GROUPS.map((g) => ({ key: g.id, label: g.name, sheets: sheets.filter((x) => x.group === g.id) })).filter((g) => g.sheets.length);
+const groups = japaneseGroups();
 // The characters on the marks, most used first, for the picker.
 const freq = new Map<string, number>();
 for (const r of rows) for (const ch of new Set([...r.chars, ...r.variants.join('')])) if (CJK.test(ch) && !/[\u3040-\u30ff]/.test(ch)) freq.set(ch, (freq.get(ch) ?? 0) + 1);
@@ -53,7 +53,7 @@ const ja = pageChars(rows.map((r) => r.chars + r.variants.join('') + (r.kana ?? 
       </ul>
     </header>
 
-    <Catalogue {groups} {picker} fold={KYU_SHIN} noun={['mark', 'marks, seals, signatures and crests']} placeholder="Characters, a reading or a name: 錦光山, Kinkozan, Fukagawa, Watanabe" label="Characters, a reading or a name" />
+    <Catalogue {groups} {picker} lazy="japanese" fold={KYU_SHIN} noun={['mark', 'marks, seals, signatures and crests']} placeholder="Characters, a reading or a name: 錦光山, Kinkozan, Fukagawa, Watanabe" label="Characters, a reading or a name" />
 
     <section class="ahome__block prose" aria-labelledby="read">
       <h2 id="read">How to read a Japanese mark</h2>

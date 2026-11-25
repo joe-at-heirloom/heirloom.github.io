@@ -22,8 +22,8 @@ interface Props {
   image?: string;
   /** The page's own name in the crumbs when the map has none for it (a reign, a painter). */
   crumb?: string;
-  /** A page between the area and this one in the crumbs, e.g. ['/marks/chinese-reign-marks', 'Reign marks']. */
-  via?: [string, string];
+  /** Pages between the area and this one in the crumbs, e.g. ['/marks/chinese-reign-marks', 'Reign marks'], or several. */
+  via?: [string, string] | [string, string][];
   /** No rail: the page needs the whole width (the reference home, the search). */
   bare?: boolean;
   /** false: arriving here is a full page load (see Base). */
@@ -36,7 +36,7 @@ const here = crumb ?? link?.label ?? title.replace(/ \| Heirloom$/, '').split(':
 
 const trail: [string, string][] = [['/', 'Heirloom'], ['/marks/', 'Reference']];
 if (area && !isHome) trail.push([area.href, area.short]);
-if (via) trail.push(via);
+if (via) for (const v of (Array.isArray(via[0]) ? via : [via]) as [string, string][]) trail.push(v);
 const atRoot = path.replace(/\/$/, '') === '/marks';
 const crumbs: [string, string][] = atRoot ? [['/', 'Heirloom'], ['/marks/', 'Reference']] : [...trail, [path, isHome ? area!.short : here]];
 // The page's own BreadcrumbList is replaced by this one, from the same map.

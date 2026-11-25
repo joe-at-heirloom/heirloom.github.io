@@ -37,6 +37,8 @@ export type Sheet = {
   pics: Pic[];
   sources: { citation: string; url: string | null; where: string | null }[];
   single: boolean;
+  /** Where to go next from this record: another part of the reference that reads the same item (an office's date letters). */
+  links?: { label: string; href: string }[];
   group: string;
   /** Everything a reader might type to find it, lower-cased. */
   keys: string;
@@ -80,7 +82,8 @@ const SPELL: [RegExp, string][] = [
 export function voice(t: string) {
   let out = t;
   for (const [re, to] of SPELL) out = out.replace(re, to);
-  return out;
+  // "a piece" softened to "a item": an item.
+  return out.replace(/\b([Aa]) item/g, '$1n item');
 }
 
 export function yearsOf(a?: number | null, b?: number | null): string | null {

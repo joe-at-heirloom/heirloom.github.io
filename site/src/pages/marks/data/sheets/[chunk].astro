@@ -1,0 +1,17 @@
+---
+// /marks/data/sheets/<catalogue>--<group>.html: the record sheets of one group
+// of a catalogue, each in a <template data-id="<anchor>">, fetched by the
+// catalogue page the first time a row of that group is opened (lib/catalogues.ts).
+// Not a page to read or to index.
+import RecordSheet from '../../../../components/ref/RecordSheet.astro';
+import { sheetChunks } from '../../../../lib/catalogues';
+import type { Sheet } from '../../../../lib/records';
+export function getStaticPaths() {
+  return sheetChunks().map((c) => ({ params: { chunk: c.chunk }, props: { sheets: c.sheets } }));
+}
+const { sheets } = Astro.props as { sheets: Sheet[] };
+---
+<meta name="robots" content="noindex" />
+<div data-pagefind-ignore="all">
+  {sheets.map((s) => <template data-id={s.anchor}><RecordSheet {s} /></template>)}
+</div>

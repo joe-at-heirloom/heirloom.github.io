@@ -263,3 +263,33 @@
 .ref .guide h2 { font-family: var(--display); font-weight: 650; font-stretch: 112%; letter-spacing: -0.015em; }
 /* One way of labelling facts across the reference: plain words, not code. */
 .ref .cn-facts dt { font: 400 14.5px/1.7 var(--text); color: var(--ink-3); }
+
+/* Where to go next from a record, and a sheet still on its way */
+.sheet2__next { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 6px; font-size: 15px; font-weight: 600; }
+.sheet2__next a { text-decoration: none; color: var(--accent-ink); }
+.sheet2__next a:hover { text-decoration: underline; }
+.sheet2-slot { padding: 10px 0 24px 82px; font-size: 14px; color: var(--ink-3); }
+@media (max-width: 860px) { .sheet2-slot { padding-left: 0; } }
+/* A letter bar for long catalogues: the chips as a row of letters */
+.cat--letters .cat__chips button { min-width: 40px; padding: 9px 10px; }
+/* The makers directory */
+.places { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 32px; }
+.places a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: baseline; padding: 11px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
+.places strong { font-weight: 600; font-size: 15.5px; }
+.places .n { font-size: 13.5px; color: var(--ink-3); text-align: right; }
+.places .y { grid-column: 1 / -1; font-size: 13.5px; color: var(--ink-2); }
+.places a:hover strong { color: var(--accent-ink); }
+
+/* A big town's hub: a tile per letter, with the first marks under it */
+.lettergrid { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.lettergrid a { display: grid; gap: 8px; height: 100%; padding: 12px; border: 1px solid var(--rule); border-radius: var(--r-lg); text-decoration: none; transition: border-color 0.2s, transform 0.2s var(--ease); }
+.lettergrid a:hover { border-color: var(--ink-3); transform: translateY(-2px); color: inherit; }
+.lettergrid__l { font: 400 2.2rem/1 var(--glyph); }
+.lettergrid__pics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; }
+.lettergrid__pics .plate { aspect-ratio: 1; border-radius: var(--r-sm); }
+.lettergrid__pics img { width: 86%; height: 86%; object-fit: contain; }
+.lettergrid__n { font-size: 13px; color: var(--ink-3); }
+.letters { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 18px; }
+.letters a { min-width: 36px; padding: 6px 8px; text-align: center; border: 1px solid var(--rule); border-radius: var(--r-sm); text-decoration: none; font-size: 14.5px; color: var(--ink-2); }
+.letters a:hover { border-color: var(--ink-3); color: var(--ink); }
+.letters a[aria-current='page'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }

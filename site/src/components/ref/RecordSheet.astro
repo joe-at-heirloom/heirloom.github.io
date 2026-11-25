@@ -37,6 +37,7 @@ const [lead, ...more] = s.pics;
         </ol><!--/copy-check:skip-->
       </div>
     )}
+    {s.links && s.links.length > 0 && <ul class="sheet2__next">{s.links.map((l) => <li><a href={l.href}>{l.label} →</a></li>)}</ul>}
     {s.single && <p class="onesrc">Only one source records this so far; read it as that source’s account.</p>}
   </div>
   {s.pics.length > 0 && (

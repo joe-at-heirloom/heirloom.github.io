@@ -51,6 +51,19 @@ they show up everywhere the day their route exists.
 | Tools and readers | the islands | kept as they were (silver, gold, pottery, date codes, reigns, date letters, watches, Japanese and Korean dates, print seals), now inside the frame |
 | Guide pages | `components/GuidePage.astro` (main's `[...guide].astro`, `content/guides`) | the article pages (plate makers, silver by country, standards, date codes, serial lookups) inside the frame; a page with a lookup is reached by a full page load so `marks.js` runs |
 
+## Sheets on demand, and big directories
+
+A catalogue with `lazy="<name>"` carries only its rows; each group's sheets
+are one companion file, `/marks/data/sheets/<name>--<group>.html`
+(`pages/marks/data/sheets/[chunk].astro`), fetched the first time a row of
+that group opens. Pages and companion files build from the same functions
+(`lib/catalogues.ts`); add a new lazy catalogue to `sheetChunks()` there.
+
+The British makers directory (`/marks/british-silver-makers/`, lib/makers-dir.ts)
+is one page per town; a town with more than 1,500 marks (London) is a hub of
+letters with a page per letter, and the hub sends an old `#mm-…` link to its
+letter. The same template takes the next makers' families (DIRS).
+
 ## Adding a collection (what is still coming)
 
 1. The records reach the collection (the app's `collect.ts`), as today.
@@ -77,10 +90,6 @@ they show up everywhere the day their route exists.
 
 ## Not done yet
 
-- British makers by place (`/marks/british-silver-makers/<place>`, 7,833
-  marks across 41 places): the map lists every place the records name; the
-  pages are being built elsewhere. London alone is 4,349 marks, too many for
-  full sheets in one page: rows first, sheets fetched when opened.
 - The record text itself: hall-mark owners still read like research
   ("Disputed: princely (饮流斋…) vs. a Forbidden City hall"). The templates
   tidy what they safely can; an editorial pass on the data, like the Japanese

@@ -8,7 +8,8 @@ import Reference from '../../../layouts/Reference.astro';
 import AppBox from '../../../components/AppBox.astro';
 import Faq from '../../../components/Faq.astro';
 import Catalogue from '../../../components/ref/Catalogue.astro';
-import { koSheet, CJK } from '../../../lib/records';
+import { koreanGroups } from '../../../lib/catalogues';
+import { CJK } from '../../../lib/records';
 import { inscriptions, readingNotes, GROUPS, pageChars } from '../../../lib/korean';
 import { articleLd, faqLd, crumbsLd, soften } from '../../../lib/site';
 import synced from '../../../data/app/SOURCE.json';
@@ -26,8 +27,7 @@ const faqs: [string, string][] = [
   ['How do I read a Korean inscription?', '<p>Most are in hanja, the Chinese characters Korea wrote in until the 20th century, and read like Chinese. Some late Joseon items are in hangul, the Korean alphabet. Type the characters into the search above, or pick the ones you see, and only the inscriptions that fit stay listed.</p>'],
   ['What is the difference between Goryeo and Joseon ceramics?', '<p>Goryeo (918–1392) is the age of celadon, a gray-green glazed stoneware, often inlaid with white and black slip. Early Joseon made buncheong, a gray stoneware coated in white slip, until about 1600; Joseon’s court kilns made white porcelain from the 15th century to the end of the dynasty. The ceramics guide shows each.</p>'],
 ];
-const sheets = rows.map(koSheet);
-const groups = GROUPS.map((g) => ({ key: g.id, label: g.name, blurb: g.blurb, sheets: sheets.filter((x) => x.group === g.id) })).filter((g) => g.sheets.length);
+const groups = koreanGroups();
 const freq = new Map<string, number>();
 for (const r of rows) for (const ch of new Set([...r.chars, ...r.variants.join('')])) if (CJK.test(ch)) freq.set(ch, (freq.get(ch) ?? 0) + 1);
 const picker = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 160).map(([ch]) => ch);
@@ -50,7 +50,7 @@ const graph = [
       </ul>
     </header>
 
-    <Catalogue {groups} {picker} noun={['inscription', 'inscriptions and marks']} placeholder="Characters, hangul or a reading: 尙藥局, 상약국, Sangyakguk, celadon" label="Characters, hangul or a reading" />
+    <Catalogue {groups} {picker} lazy="korean" noun={['inscription', 'inscriptions and marks']} placeholder="Characters, hangul or a reading: 尙藥局, 상약국, Sangyakguk, celadon" label="Characters, hangul or a reading" />
 
     {(notes.reading.length > 0 || notes.caveats.length > 0) && (
       <section class="ahome__block prose" aria-labelledby="read">

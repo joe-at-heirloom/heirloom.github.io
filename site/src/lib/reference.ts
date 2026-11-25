@@ -16,6 +16,7 @@ import { collection, SEAL_KINDS } from './portal';
 import { OFFICES, HALLMARKS } from './marks';
 import { makers } from './makers';
 import { artists } from './artists';
+import { places, isSplit, letterPath, makerGroups } from './makers-dir';
 
 export type AreaKey = 'silver' | 'pottery' | 'china' | 'japan' | 'korea' | 'signatures' | 'serials';
 export type RefLink = {
@@ -75,6 +76,7 @@ export function astroRoutes(): Set<string> {
   for (const m of makers()) out.add(`/marks/${m.slug}`);
   for (const a of artists()) out.add(`/marks/${a.slug}-signature`);
   for (const r of collection().records) if (r.kind === 'reign mark') out.add(`/marks/${r.id.replace(/^reign-/, '')}-mark`);
+  for (const p of places()) { out.add(p.path); if (isSplit(p)) for (const g of makerGroups(p)) out.add(letterPath(p, g.key)); }
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
   const guides = join(process.cwd(), 'src', 'content', 'guides');
   if (existsSync(guides)) for (const f of readdirSync(guides)) if (f.endsWith('.json')) out.add(norm(JSON.parse(readFileSync(join(guides, f), 'utf8')).path));
@@ -137,18 +139,11 @@ function build(): Area[] {
     const y = years.get(o.office);
     return { href: `/marks/${o.slug}-date-letters`, label: o.office, note: o.town, years: y ? span(y[0], y[1]) : undefined };
   });
-  // Every place Jackson lists makers for (41 of them, with the unascribed groups), as the records name their pages.
-  const makerPlaces = new Map<string, number>();
-  for (const r of collection().records) if (r.family === 'british-makers') {
-    const p = String(r.attributes?.intended_page ?? r.page_path);
-    if (p.startsWith('/marks/british-silver-makers/')) makerPlaces.set(p, (makerPlaces.get(p) ?? 0) + 1);
-  }
-  const placeName = (slug: string) => slug === 'king-s-lynn' ? 'King’s Lynn' : slug.startsWith('unascribed-')
-    ? `Unascribed, ${slug.slice(11).charAt(0).toUpperCase()}${slug.slice(12)}`
-    : slug.split('-').map((w) => (w === 'and' ? w : w.charAt(0).toUpperCase() + w.slice(1))).join(' ');
-  const makerOffices: RefLink[] = [...makerPlaces.entries()]
-    .sort((a, b) => b[1] - a[1])
-    .map(([href, n]) => ({ href, label: placeName(href.split('/').pop()!), note: `${n.toLocaleString('en-US')} marks` }));
+  // Every town Jackson lists makers for (lib/makers-dir.ts), most marks first, after the directory itself.
+  const makerOffices: RefLink[] = [
+    { href: '/marks/british-silver-makers/', label: 'Every town', note: 'The directory, by country' },
+    ...places().map((p) => ({ href: p.path, label: p.name, note: `${p.n.toLocaleString('en-US')} marks` })),
+  ];
 
   return [
     {

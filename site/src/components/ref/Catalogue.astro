@@ -12,14 +12,18 @@ interface Props {
   groups: Group[]; noun: [string, string]; placeholder: string; label?: string; picker?: string[];
   /** Characters read as the same (old forms to new, 寶 → 宝): the search folds both what is typed and the keys. */
   fold?: Record<string, string>;
+  /** Load each group's sheets on demand from /marks/data/sheets/<lazy>--<group>.html (lib/catalogues.ts). */
+  lazy?: string;
+  /** The group chips as a row of letters (a directory by initials). */
+  letters?: boolean;
 }
-const { groups, noun, placeholder, label = 'Find', picker = [], fold } = Astro.props;
+const { groups, noun, placeholder, label = 'Find', picker = [], fold, lazy, letters = false } = Astro.props;
 const folded = (t: string) => (fold ? [...t].map((c) => fold[c] ?? c).join('') : t);
 const total = groups.reduce((n, g) => n + g.sheets.length, 0);
 const nameCls = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).cls;
 const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
 ---
-<div class="cat" data-cat data-one={noun[0]} data-many={noun[1]} data-fold={fold ? JSON.stringify(fold) : undefined}>
+<div class:list={['cat', { 'cat--letters': letters }]} data-cat data-one={noun[0]} data-many={noun[1]} data-fold={fold ? JSON.stringify(fold) : undefined}>
   <div class="cat__bar" role="search">
     <label class="cat__q">
       <span class="visually-hidden">{label}</span>
@@ -63,7 +67,7 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
                 </span>
                 <span class="rec__y num">{s.years ?? ''}</span>
               </summary>
-              <RecordSheet {s} />
+              {lazy ? <div class="sheet2-slot" data-chunk={`${lazy}--${g.key}`}>Opening…</div> : <RecordSheet {s} />}
             </details>
           </li>
         ))}
@@ -106,12 +110,31 @@ const langOf = (s: Sheet) => faceOf(s.glyphs ?? '', s.lang).lang;
         q.value = picked; run();
       });
       for (const b of chips) b.addEventListener('click', () => { g = b.dataset.g ?? ''; for (const x of chips) x.setAttribute('aria-pressed', String(x === b)); run(); });
+      // Sheets that load on demand: one companion file per group, fetched once.
+      const files = new Map<string, Promise<Document>>();
+      const fill = async (r: HTMLDetailsElement) => {
+        const slot = r.querySelector<HTMLElement>('[data-chunk]');
+        if (!slot) return;
+        const chunk = slot.dataset.chunk!;
+        if (!files.has(chunk)) files.set(chunk, fetch(`/marks/data/sheets/${chunk}.html`).then((x) => (x.ok ? x.text() : Promise.reject(x.status))).then((t) => new DOMParser().parseFromString(t, 'text/html')));
+        try {
+          const doc = await files.get(chunk)!;
+          const t = doc.querySelector<HTMLTemplateElement>(`template[data-id="${CSS.escape(r.id)}"]`);
+          if (t) slot.replaceWith(document.importNode(t.content, true));
+          else slot.textContent = 'This record’s details are missing. Reload the page to try again.';
+        } catch {
+          files.delete(chunk);
+          slot.textContent = 'The details could not be loaded. Check the connection, then open the record again.';
+        }
+      };
+      for (const r of recs) r.addEventListener('toggle', () => { if (r.open) fill(r); });
       // Open the record a link names, and name the record a reader opens.
       const openHash = () => {
         const id = decodeURIComponent(location.hash.slice(1)) || new URLSearchParams(location.search).get('mark') || '';
         const r = id ? recs.find((x) => x.id === id) : null;
         if (r) {
           r.open = true;
+          fill(r);
           // Below the site header and this catalogue's sticky bar.
           const bar = cat.querySelector<HTMLElement>('.cat__bar')!.getBoundingClientRect().height;
           const go = () => window.scrollTo({ top: r.getBoundingClientRect().top + scrollY - 68 - bar - 12 });
