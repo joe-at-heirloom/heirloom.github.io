@@ -1,0 +1,55 @@
+---
+// /marks/korean/painters/: every Korean painter, calligrapher and collector in the
+// collection (the app's korean-people.json), as a plain list of links by period.
+// Searching names, art names and seal readings is the reference search's job
+// (/signatures), so this page hands off to it, as the Chinese list does.
+import Reference from '../../../../layouts/Reference.astro';
+import AppBox from '../../../../components/AppBox.astro';
+import { people, PERIOD_ORDER, PERIOD_LABEL, PEOPLE_IDX, personDates, personRole } from '../../../../lib/korean';
+import { SITE, crumbsLd } from '../../../../lib/site';
+import '../../../../styles/chinese.css';
+
+const path = PEOPLE_IDX;
+const ps = people();
+const nSeals = ps.reduce((s, p) => s + p.seals.length, 0);
+const withArt = ps.filter((p) => p.art.length).length;
+const title = 'Korean Painters and Calligraphers: Art Names, Dates and Seals | Heirloom';
+const description = `${ps.length} Korean painters, calligraphers and collectors from Goryeo to the 20th century, with the art names their works are signed and sealed with, their dates, their works in museums${nSeals ? ` and ${nSeals} seals and signatures from open-license paintings` : ''}, with sources.`;
+const periods = PERIOD_ORDER.map((d) => [d, ps.filter((p) => p.period === d)] as const).filter(([, l]) => l.length);
+const rest = ps.filter((p) => !PERIOD_ORDER.includes(p.period));
+const han = [...new Set(ps.map((p) => p.hanja ?? '').join(''))].join('');
+const hangul = [...new Set(ps.map((p) => p.hangul ?? '').join(''))].join('');
+const graph = [
+  { '@type': 'CollectionPage', '@id': SITE + path, url: SITE + path, name: title, description, isPartOf: { '@id': SITE + '/#website' } },
+  crumbsLd(path, 'Painters and calligraphers', ['/marks/korean/', 'Korean marks']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph} {han} {hangul} crumb="Painters and calligraphers">
+  <div class="cn">
+    <header>
+      <h1>Korean painters, calligraphers and collectors</h1>
+      <p class="lede">{ps.length.toLocaleString('en-US')} people from Goryeo to those born before 1915, {withArt} of them with the art names (號, ho) their works are signed and sealed with{nSeals > 0 && <>, and {nSeals} seals and signatures cut from paintings in open museum collections</>}. Find a person by name in English, hangul or hanja, or by any art name.</p>
+    </header>
+
+    <p class="cn-search"><a class="btn btn--primary" href="/signatures?f=korean-people">Search names, art names and seals</a> <span class="label">Searches every name and art name, and the reading of every seal.</span></p>
+
+    {[...periods, ...(rest.length ? [['Other', rest] as const] : [])].map(([d, rs]) => (
+      <section class="cn-block cn-period" aria-labelledby={`p-${d.replace(/\s+/g, '-')}`}>
+        <h2 id={`p-${d.replace(/\s+/g, '-')}`}>{PERIOD_LABEL[d] ?? d} <span class="label">{rs.length}</span></h2>
+        <ul class="cn-people">
+          {rs.map((p) => (
+            <li><a href={`${PEOPLE_IDX}${p.slug}`}><span class="han" lang="ko">{p.hanja ?? p.hangul}</span><span class="cn-people__name proper-name">{p.rr}</span><span class="cn-people__meta">{[personDates(p), personRole(p), p.art[0]?.hanja ?? '', p.seals.length ? `${p.seals.length} seals` : ''].filter(Boolean).join(' · ')}</span></a></li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <section class="cn-block read" aria-labelledby="about">
+      <h2 id="about">Where this comes from</h2>
+      <p>The people, their courtesy and art names and their dates come from the Encyclopedia of Korean Culture (한국민족문화대백과사전) and Wikidata, checked against Oh Se-chang’s dictionary of Korean painters and calligraphers, <span class="han">槿域書畫徵</span> (1928). Where the two give the same dates, the page says so; where only one does, it says that too. The seals and signatures are cut from photographs of paintings that museums publish under open licenses.</p>
+      <p class="cn-note">A seal or a signature names the person it claims to. Korean seals and signatures were copied too, and Heirloom never says whether a work is genuine.</p>
+    </section>
+
+    <AppBox text="Photograph the seals and the signature. The Advisor reads them and names the people they claim, with the record each comes from; it never says whether a work is genuine." />
+  </div>
+</Reference>

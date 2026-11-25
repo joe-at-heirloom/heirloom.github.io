@@ -41,6 +41,7 @@ export const FAMILY: Record<string, { label: string; order: number }> = {
   'chinese-marks': { label: 'Chinese marks', order: 8 },
   'chinese-people': { label: 'Chinese painters and collectors', order: 9 },
   'korean-marks': { label: 'Korean marks and dates', order: 9.5 },
+  'korean-people': { label: 'Korean painters and calligraphers', order: 9.6 },
   'japanese-marks': { label: 'Japanese marks, seals and dates', order: 9.7 },
   signatures: { label: 'Artist signatures', order: 10 },
   'swiss-watches': { label: 'Watches', order: 11 },
@@ -48,7 +49,7 @@ export const FAMILY: Record<string, { label: string; order: number }> = {
 };
 /** The families each search covers. Signatures are their own reference, not marks. */
 export type Scope = 'marks' | 'signatures';
-const SIGNATURE_FAMILIES = new Set(['signatures', 'chinese-people']);
+const SIGNATURE_FAMILIES = new Set(['signatures', 'chinese-people', 'korean-people']);
 export const inScope = (family: string, scope: Scope) => SIGNATURE_FAMILIES.has(family) === (scope === 'signatures');
 
 export const familyLabel = (f: string) => FAMILY[f]?.label ?? f.replace(/-/g, ' ');
@@ -82,7 +83,7 @@ export function indexRows(scope: Scope): IndexRow[] {
 export type SealRow = [string, string, string, string, string, string];
 export function sealRows(): SealRow[] {
   const c = collection();
-  const people = new Map(c.records.filter((r) => r.family === 'chinese-people' && !SEAL_KINDS.has(r.kind)).map((r) => [r.id, r]));
+  const people = new Map(c.records.filter((r) => (r.family === 'chinese-people' || r.family === 'korean-people') && !SEAL_KINDS.has(r.kind)).map((r) => [r.id, r]));
   return c.records
     .filter((r) => SEAL_KINDS.has(r.kind))
     .map((r) => {

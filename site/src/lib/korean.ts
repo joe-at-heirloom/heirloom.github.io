@@ -16,6 +16,8 @@ export type Insc = {
   meaning: string; wares: string[]; technique: string | null; where: string | null; from: number | null; to: number | null; dateNote: string | null;
   tells: string | null; cautions: string | null; maker: string | null; place: string | null; facts: Fact[]; photos: Photo[];
   sources: { citation: string; url: string | null }[]; singleSource: boolean; glyphs: string[]; keys: string[];
+  /** What a maker's mark looks like: characters, shape, how applied, where, color, and its forms over time. */
+  markForm: { chars?: string; shape?: string; applied?: string; position?: string; colour?: string; variants?: { period?: string; form?: string }[] } | null;
 };
 export type Group = { id: string; name: string; short: string; start: number; end: number; blurb: string };
 
@@ -26,6 +28,7 @@ export const NAV = [
   { href: '/marks/korean/', label: 'Inscriptions and marks' },
   { href: '/marks/korean-dates', label: 'Reading a date' },
   { href: '/marks/korean-ceramics', label: 'Ceramics by period' },
+  { href: '/marks/korean/painters/', label: 'Painters and calligraphers' },
 ];
 const T = (koreanTable as any).systems;
 
@@ -70,6 +73,7 @@ export function inscriptions(): Insc[] {
         wares: Array.isArray(a.wares) ? a.wares.map(String) : [], technique: a.technique ?? null, where: a.where_on_object ?? null,
         from: r.date_from ?? null, to: r.date_to ?? null, dateNote: r.date_note ? soften(r.date_note) : null,
         tells: a.what_it_tells ? soften(String(a.what_it_tells)) : null, cautions: a.cautions ? soften(String(a.cautions)) : null,
+        markForm: a.mark_form ?? null,
         maker: r.maker ?? null, place: r.place ?? null,
         facts: (Array.isArray(a.facts) ? a.facts : []).map((f: any) => ({
           text: soften(String(f.text ?? '')), single: !!f.single_source,
@@ -124,14 +128,19 @@ const eraOf = (id: string) =>
   /^(silla|early-celadon)/.test(id) ? 'before' : id.startsWith('goryeo') ? 'goryeo' : id.startsWith('buncheong') ? 'buncheong'
   : id === 'onggi' ? 'other' : /^(colonial|post1945)/.test(id) ? 'modern' : 'joseon';
 
-export function wares(): Ware[] {
+/**
+ * One guide's entries: the ceramics (korean.json `wares`), or another category
+ * of the guides (furniture, metalwork, folk art), each a record of kind "ware"
+ * with its category and, outside ceramics, the section it is listed under.
+ */
+export function wares(category = 'ceramics'): Ware[] {
   const c = collection();
   const src = new Map(c.sources.map((s) => [s.id, s]));
   const cite = (ids: string[] = []) => ids.map((id) => src.get(`korean:${id}`)?.citation ?? '').filter(Boolean);
   const file = join(process.cwd(), 'src', 'data', 'site', 'korean', 'index.json');
   const imgs: any[] = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : [];
   return c.records
-    .filter((r) => r.family === 'korean-marks' && r.kind === 'ware')
+    .filter((r) => r.family === 'korean-marks' && r.kind === 'ware' && (r.attributes.category ?? 'ceramics') === category)
     .map((r): Ware => {
       const a = r.attributes;
       const id = r.anchor ?? r.id.replace(/^ko-ware-/, '');
@@ -144,8 +153,61 @@ export function wares(): Ware[] {
         examples: (a.examples ?? []).map((x: any) => ({ holder: String(x.holder ?? ''), id: String(x.accession_or_designation ?? x.accession ?? ''), title: String(x.title ?? ''), url: x.url ?? null })),
         photos: imgs.filter((i) => i.group === 'ware_type' && i.ware_id === id).map((i) => ({ file: `marks/img/korean/${i.file}`, title: String(i.title ?? ''), date: String(i.date ?? '').replace(/\s+/g, ' '), credit: String(i.credit ?? ''), url: i.object_url ?? null })),
         sources: r.sources.map((s) => src.get(s.id)).filter(Boolean).map((s) => ({ citation: s!.citation, url: s!.url ?? null })),
-        singleSource: r.single_source, era: eraOf(id),
+        singleSource: r.single_source, era: category === 'ceramics' ? eraOf(id) : String(a.section ?? 'all'),
       };
     })
-    .sort((x, y) => WARE_ERAS.findIndex(([e]) => e === x.era) - WARE_ERAS.findIndex(([e]) => e === y.era) || (x.from ?? 0) - (y.from ?? 0));
+    .sort((x, y) => (category === 'ceramics' ? WARE_ERAS.findIndex(([e]) => e === x.era) - WARE_ERAS.findIndex(([e]) => e === y.era) : 0) || (x.from ?? 0) - (y.from ?? 0));
 }
+
+// ── Painters, calligraphers and collectors ──────────────────────────────────
+export const PEOPLE_IDX = '/marks/korean/painters/';
+export const PERIOD_ORDER = ['Goryeo', 'early Joseon', 'mid Joseon', 'late Joseon', 'modern'];
+export const PERIOD_LABEL: Record<string, string> = {
+  Goryeo: 'Goryeo, 918–1392', 'early Joseon': 'Early Joseon, 1392 to about 1550', 'mid Joseon': 'Mid Joseon, about 1550 to 1700',
+  'late Joseon': 'Late Joseon, about 1700 to 1910', modern: 'Born before 1915, working into the 20th century',
+};
+export type KName = { hanja?: string | null; hangul?: string | null; rr?: string | null; mr?: string | null; sources: string[] };
+export type KSeal = { id: string; n: number; file: string; reading: string | null; kind: string; collector: boolean; work: string | null; date: string | null; holder: string | null; credit: string; url: string | null };
+export type KPerson = {
+  id: string; slug: string; hanja: string | null; hangul: string | null; rr: string; mr: string | null; spellings: string[];
+  courtesy: KName[]; art: KName[]; other: KName[]; clan: string | null; born: number | null; died: number | null; twoSources: boolean;
+  period: string; roles: string[]; knownFor: string; works: { title: string; title_rr?: string | null; holder?: string | null; accession?: string | null; url?: string | null }[];
+  cautions: string[]; wikidata: string | null; encykorea: string | null; ulan: string | null; seals: KSeal[];
+  sources: { citation: string; url: string | null }[]; single: boolean;
+};
+let peopleCache: KPerson[] | null = null;
+export function people(): KPerson[] {
+  if (peopleCache) return peopleCache;
+  const c = collection();
+  const img = new Map(c.images.map((i) => [i.id, i]));
+  const src = new Map(c.sources.map((s) => [s.id, s]));
+  const seals = new Map<string, Rec[]>();
+  for (const r of c.records) if (r.family === 'korean-people' && r.parent_id) (seals.get(r.parent_id) ?? seals.set(r.parent_id, []).get(r.parent_id)!).push(r);
+  peopleCache = c.records
+    .filter((r) => r.family === 'korean-people' && !r.parent_id)
+    .map((r): KPerson => {
+      const a = r.attributes;
+      const slug = r.page_path.replace(PEOPLE_IDX, '').replace(/\/$/, '');
+      return {
+        id: r.id, slug, hanja: a.name_hanja ?? null, hangul: a.name_hangul ?? null, rr: String(a.rr ?? ''), mr: a.mr ?? null, spellings: a.other_spellings ?? [],
+        courtesy: a.courtesy_names ?? [], art: a.art_names ?? [], other: a.other_names ?? [], clan: a.clan_seat ?? null,
+        born: r.date_from ?? null, died: r.date_to ?? null, twoSources: !!a.dates_two_sources, period: String(a.period ?? ''), roles: a.roles ?? [],
+        knownFor: soften(r.summary ?? ''), works: a.works ?? [], cautions: (a.cautions ?? []).map((x: string) => soften(x)),
+        wikidata: a.wikidata ?? null, encykorea: a.encykorea_url ?? null, ulan: a.ulan ?? null,
+        seals: (seals.get(r.id) ?? []).map((s, k) => {
+          const i = s.image_id ? img.get(s.image_id) : null;
+          return { id: s.id, n: k + 1, file: i?.file ?? '', reading: s.attributes.reading ?? null, kind: String(s.attributes.mark_kind ?? 'seal'), collector: s.kind === "collector's seal",
+            work: s.attributes.work ?? null, date: s.attributes.date_text ?? null, holder: s.attributes.holder ?? null, credit: i?.credit ?? '', url: i?.source_url ?? null };
+        }).filter((s) => s.file),
+        sources: r.sources.map((s) => src.get(s.id)).filter(Boolean).map((s) => ({ citation: s!.citation, url: s!.url ?? null })), single: r.single_source,
+      };
+    })
+    .sort((x, y) => x.rr.localeCompare(y.rr));
+  return peopleCache;
+}
+export const personDates = (p: { born: number | null; died: number | null }) => (p.born && p.died ? `${p.born}–${p.died}` : p.born ? `born ${p.born}` : p.died ? `died ${p.died}` : '');
+export const personRole = (p: KPerson) => {
+  const r = p.roles.filter((x) => x !== 'collector');
+  const base = r.includes('monk-painter') ? 'monk painter' : r.includes('painter') && r.includes('calligrapher') ? 'painter and calligrapher' : r.includes('calligrapher') ? 'calligrapher' : r.includes('painter') ? 'painter' : '';
+  return [base, p.roles.includes('collector') ? 'collector' : ''].filter(Boolean).join(' and ') || 'artist';
+};

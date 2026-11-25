@@ -1,0 +1,45 @@
+---
+// /marks/korean-metalwork: metal. Each entry from the app's table (korean.json `wares`,
+// category "Bronze mirrors and ritual bronzes, brass and white brass, iron inlaid with silver, Joseon silver, and lacquer inlaid with mother-of-pearl or painted ox horn, with what tells older work from 20th-century production.", via the reference collection): what it is, where it was made,
+// how to recognize it, the copies the sources name, the evidence, and
+// open-licence photographs. Rendered ahead of time on the guides' shared layout.
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import KoreanGuide from '../../components/KoreanGuide.astro';
+import { wares } from '../../lib/korean';
+import { articleLd, faqLd, crumbsLd } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/korean.css';
+
+const path = '/marks/korean-metalwork';
+const ws = wares('metal');
+const SECTIONS: [string, string][] = [['metal', 'Metalwork'], ['lacquer', 'Lacquer, mother-of-pearl and ox horn'], ['later', 'Made in the 20th century']];
+const title = 'Korean Metalwork and Lacquer: Brass, Silver, Inlaid Iron, Mother-of-Pearl | Heirloom';
+const description = `${ws.length} Korean metalwork and lacquer types, from Goryeo bronze mirrors and brass yugi to silver-inlaid iron, white brass fittings, mother-of-pearl lacquer and painted ox horn: how to recognize each and how later production differs, with sources.`;
+const h1 = 'Korean metalwork and lacquer';
+const faqs: [string, string][] = [['What is Korean mother-of-pearl lacquer?', '<p>Najeon: lacquer inlaid with shaped pieces of shell. Korea made it from the Goryeo period, when it is very rare, to today; Tongyeong on the south coast was a center. Boxes and furniture made in quantity in the 20th century, for export and for visitors, are much more common than older pieces.</p>'], ['What is Korean brass called?', '<p>Yugi: bronze or brass tableware and vessels, either cast or hammered (bangjja). Anseong was so famous for it that its name became a saying for something that fits exactly.</p>']];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).korean ?? synced.changed.marks, { about: { '@type': 'Thing', name: h1 } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/korean/', 'Korean marks']),
+];
+const han = [...new Set(ws.map((w) => w.hanja ?? '').join(''))].filter((c) => /[㐀-鿿]/.test(c)).join('');
+const hangul = [...new Set(ws.map((w) => w.hangul ?? '').join(''))].filter((c) => /[가-힣]/.test(c)).join('');
+---
+<Reference {title} {description} {path} jsonld={graph} {han} {hangul}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Bronze mirrors and ritual bronzes, brass and white brass, iron inlaid with silver, Joseon silver, and lacquer inlaid with mother-of-pearl or painted ox horn, with what tells older work from 20th-century production.</p>
+    </header>
+
+    <KoreanGuide {ws} sections={SECTIONS} label={h1} places="Where made" />
+
+    <AppBox text="Photograph the item from the front, the back, the inside and any marks or labels. The Advisor compares what it sees with this same guide and says what it cannot tell from photographs." />
+    <Faq {faqs} />
+  </div>
+</Reference>

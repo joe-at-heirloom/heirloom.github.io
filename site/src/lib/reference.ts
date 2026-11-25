@@ -77,6 +77,8 @@ export function astroRoutes(): Set<string> {
   for (const a of artists()) out.add(`/marks/${a.slug}-signature`);
   for (const r of collection().records) if (r.kind === 'reign mark') out.add(`/marks/${r.id.replace(/^reign-/, '')}-mark`);
   for (const p of allPlaces()) { out.add(p.path); if (isSplit(p)) for (const g of makerGroups(p)) out.add(letterPath(p, g.key)); }
+  // Korean painters, calligraphers and collectors (pages/marks/korean/painters/[slug].astro).
+  for (const r of collection().records) if (r.family === 'korean-people' && !r.parent_id) out.add(norm(r.page_path));
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
   const guides = join(process.cwd(), 'src', 'content', 'guides');
   if (existsSync(guides)) for (const f of readdirSync(guides)) if (f.endsWith('.json')) out.add(norm(JSON.parse(readFileSync(join(guides, f), 'utf8')).path));
@@ -272,11 +274,19 @@ function build(): Area[] {
           { href: '/marks/korean-dates', label: 'Reading a Korean date', note: 'Eras, kings, the Chongzhen count' },
           { href: '/marks/korean-ceramics', label: 'Ceramics by period', note: 'Celadon, buncheong, white porcelain' },
         ] },
+        { label: 'Guides by kind', links: [
+          { href: '/marks/korean-furniture', label: 'Furniture', note: 'Chests, cabinets, tables; telling old from export' },
+          { href: '/marks/korean-metalwork', label: 'Metalwork and lacquer', note: 'Brass, silver, inlaid iron, mother-of-pearl' },
+          { href: '/marks/korean-folk-art', label: 'Folk painting and textiles', note: 'Minhwa, screens, wrapping cloths, ornaments' },
+        ] },
+        { label: 'Painters and seals', links: [
+          { href: '/marks/korean/painters/', label: 'Painters and calligraphers', note: 'Art names, dates and seals' },
+        ] },
       ],
     },
     {
       key: 'signatures', label: 'Artists’ signatures', short: 'Signatures', href: '/signatures', scope: 'signatures',
-      families: ['signatures', 'chinese-people'],
+      families: ['signatures', 'chinese-people', 'korean-people'],
       lede: 'How painters signed over their careers, from dated examples in museum collections, and the seals of Chinese painters and collectors.',
       cue: 'A signature, a monogram or a seal on a painting or print',
       groups: [

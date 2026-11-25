@@ -1,0 +1,98 @@
+---
+// /marks/korean/painters/<slug>: one Korean painter, calligrapher or collector, from
+// the reference collection (the app's korean-people.json): names, art names (the
+// names on signatures and seals), dates, works in museums, and the seals and
+// signatures cut from open-license paintings, each with its source.
+import Reference from '../../../../layouts/Reference.astro';
+import AppBox from '../../../../components/AppBox.astro';
+import { people, PEOPLE_IDX, personDates, personRole, PERIOD_LABEL, type KPerson, type KName } from '../../../../lib/korean';
+import { SITE, articleLd, crumbsLd } from '../../../../lib/site';
+import { media } from '../../../../lib/media';
+import '../../../../styles/chinese.css';
+
+export function getStaticPaths() {
+  return people().map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: KPerson };
+const path = `${PEOPLE_IDX}${p.slug}`;
+const d = personDates(p);
+const role = personRole(p);
+const title = `${p.rr} ${p.hanja ?? p.hangul}: Korean ${role}${d ? ` (${d})` : ''} | Heirloom`;
+const description = `${p.rr} (${[p.hanja, p.hangul].filter(Boolean).join(', ')}${d ? ', ' + d : ''}), Korean ${role}: courtesy and art names${p.seals.length ? `, ${p.seals.length} seals and signatures from museum paintings` : ''}, works and sources.`;
+const nameLine = (n: KName) => [n.hanja, n.hangul].filter(Boolean).join(' ');
+const han = [...new Set(JSON.stringify([p.hanja, p.courtesy, p.art, p.other, p.seals.map((s) => s.reading), p.works.map((w) => w.title), p.clan]))].filter((c) => /[㐀-鿿豈-﫿]/.test(c)).join('');
+const hangul = [...new Set(JSON.stringify([p.hangul, p.courtesy, p.art, p.other, p.works.map((w) => w.title), p.clan]))].filter((c) => /[가-힣]/.test(c)).join('');
+const graph = [
+  {
+    '@type': 'Person', '@id': SITE + path + '#person', name: p.rr, alternateName: [p.hanja, p.hangul, p.mr, ...p.art.map((n) => n.hanja), ...p.spellings].filter(Boolean).slice(0, 14),
+    ...(p.born ? { birthDate: String(p.born) } : {}), ...(p.died ? { deathDate: String(p.died) } : {}),
+    ...(p.wikidata ? { sameAs: `https://www.wikidata.org/wiki/${p.wikidata}` } : {}),
+  },
+  articleLd(path, `${p.rr}: names, seals and works`, description, '2026-11-25'),
+  crumbsLd(path, p.rr, [PEOPLE_IDX, 'Painters and calligraphers']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph} {han} {hangul} crumb={p.rr} via={[PEOPLE_IDX, 'Painters and calligraphers']}>
+  <div class="cn">
+    <header class="cn-person">
+      <div class="cn-person__seal han" aria-hidden="true" lang="ko">{(p.hanja ?? p.hangul ?? '').slice(0, 4)}</div>
+      <div>
+        <h1><span class="proper-name">{p.rr}</span> <span class="han" lang="ko">{p.hanja}</span> <span class="kx__hangul" lang="ko">{p.hangul}</span></h1>
+        <dl class="cn-facts">
+          <dt>Dates</dt><dd>{d || 'Not recorded'}{d && <span class="faint"> · {p.twoSources ? 'two sources agree' : 'one source'}</span>}</dd>
+          {p.mr && p.mr !== p.rr && (<><dt>Older romanization</dt><dd class="proper-name">{p.mr}</dd></>)}
+          {p.art.length > 0 && (<><dt>Art names (ho)</dt><dd class="cn-aliases">{p.art.map((n) => <span class="cn-alias"><span class="han" lang="ko">{nameLine(n)}</span>{n.rr && <em> {n.rr}</em>}{n.sources.length < 2 && <span class="cn-tag cn-tag--soft">one source</span>}</span>)}</dd></>)}
+          {p.courtesy.length > 0 && (<><dt>Courtesy names (ja)</dt><dd class="cn-aliases">{p.courtesy.map((n) => <span class="cn-alias"><span class="han" lang="ko">{nameLine(n)}</span>{n.rr && <em> {n.rr}</em>}</span>)}</dd></>)}
+          {p.other.length > 0 && (<><dt>Other names</dt><dd class="cn-aliases">{p.other.map((n) => <span class="cn-alias"><span class="han" lang="ko">{nameLine(n)}</span>{n.rr && <em> {n.rr}</em>}</span>)}</dd></>)}
+          {p.clan && (<><dt>Clan seat</dt><dd lang="ko">{p.clan}</dd></>)}
+          <dt>Period</dt><dd>{PERIOD_LABEL[p.period] ?? p.period}</dd>
+          <dt>Role</dt><dd>{role}</dd>
+        </dl>
+      </div>
+    </header>
+
+    {p.knownFor && <p class="read">{p.knownFor}</p>}
+    {p.cautions.length > 0 && <div class="cn-note">{p.cautions.map((c) => <p>{c}</p>)}</div>}
+
+    <section class="cn-block" aria-labelledby="seals">
+      <h2 id="seals">Seals and signatures</h2>
+      {p.seals.length ? (
+        <>
+          <p class="read">Cut from photographs of {p.rr}’s works that museums publish under open licenses, each with the reading the museum gives (or none, where it gives none), and the work it comes from.</p>
+          <div class="cn-tablewrap">
+            <table class="cn-table cn-seals">
+              <thead><tr><th>No.</th><th>Image</th><th>Reads</th><th>On the work</th></tr></thead>
+              <tbody>
+                {p.seals.map((s) => (
+                  <tr id={`seal-${s.n}`}>
+                    <td class="num">{s.n}</td>
+                    <td class="cn-seals__img"><img src={media(s.file)} loading="lazy" decoding="async" alt={`${s.kind} ${s.n} of ${p.rr}${s.reading ? ', reading ' + s.reading : ''}`} title={s.credit} /></td>
+                    <td><span class="han cn-read" lang="ko">{s.reading || <span class="faint">reading uncertain</span>}</span> <span class="cn-tag cn-tag--soft">{s.kind}</span>{s.collector && <span class="cn-tag">collector’s seal</span>}</td>
+                    <td>{s.work}{s.date && <span class="faint"> · {s.date}</span>}<br /><span class="faint">{s.credit}{s.url && <> <a href={s.url} rel="noopener">Source</a></>}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      ) : <p class="read">No seal or signature of {p.rr} is shown here yet: none of the open-license museum photographs found so far shows one clearly.</p>}
+      <p class="cn-note">A seal or a signature names the person it claims to; it does not make a work theirs.</p>
+    </section>
+
+    {p.works.length > 0 && (
+      <section class="cn-block" aria-labelledby="works">
+        <h2 id="works">Works</h2>
+        <ul class="read">{p.works.map((w) => <li><span lang="ko">{w.title}</span>{w.title_rr && w.title_rr !== w.title && <span class="faint"> ({w.title_rr})</span>}{w.holder && <>, {w.holder}{w.accession && ` ${w.accession}`}</>}{w.url && <> <a href={w.url} rel="nofollow noopener">record</a></>}</li>)}</ul>
+      </section>
+    )}
+
+    <section class="cn-block" aria-labelledby="sources">
+      <h2 id="sources">Sources</h2>
+      {p.single && <p class="cn-note">Part of this entry rests on one source only.</p>}
+      <ol class="read">{p.sources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}</li>)}</ol>
+      <p class="cn-note">{[p.wikidata && <>Wikidata <a href={`https://www.wikidata.org/wiki/${p.wikidata}`} rel="nofollow">{p.wikidata}</a></>, p.ulan && <>Getty ULAN <a href={`http://vocab.getty.edu/page/ulan/${p.ulan}`} rel="nofollow">{p.ulan}</a></>, p.encykorea && <><a href={p.encykorea} rel="nofollow">Encyclopedia of Korean Culture</a></>].filter(Boolean).map((x, i) => <>{i > 0 && ' · '}{x}</>)}</p>
+    </section>
+
+    <AppBox text="Photograph the seals and the signature. The Advisor reads them and names the people they claim, with the record each comes from; it never says whether a work is genuine." />
+  </div>
+</Reference>

@@ -1,0 +1,65 @@
+---
+// A Korean guide's body: the contents by section, then each entry with what it
+// is, where it was made, how to recognize it, the copies the sources name, the
+// evidence and sources, and open-license photographs. Used by the ceramics,
+// furniture, metalwork and folk-art guides (lib/korean wares(category)).
+import type { Ware } from '../lib/korean';
+const { ws, sections, label = 'Entries', places = 'Kilns' } = Astro.props as { ws: Ware[]; sections: [string, string][]; label?: string; places?: string };
+const WARE_ERAS = sections;
+const years = (w: { from: number | null; to: number | null }) => (w.from == null ? '' : w.to == null || w.to === w.from ? `${w.from}` : `${w.from}–${w.to}`);
+---
+    <nav class="block kwtoc" aria-label={label}>
+      {WARE_ERAS.map(([e, label]) => {
+        const list = ws.filter((w) => w.era === e);
+        return list.length > 0 && (
+          <div>
+            <h2 class="kwtoc__h">{label}</h2>
+            <ul>{list.map((w) => <li><a href={`#${w.id}`}>{w.name}</a> <span class="num muted">{years(w)}</span></li>)}</ul>
+          </div>
+        );
+      })}
+    </nav>
+
+    {WARE_ERAS.map(([e, label]) => {
+      const list = ws.filter((w) => w.era === e);
+      return list.length > 0 && (
+        <section class="block" aria-label={label}>
+          <h2 class="rx__dynasty">{label}</h2>
+          {list.map((w) => (
+            <article class="kware" id={w.id}>
+              <div class="prose">
+                <h3>{w.name}</h3>
+                <p class="kware__names">
+                  {w.hanja && <span class="han" lang="ko">{w.hanja}</span>}
+                  {w.hangul && <span class="kx__hangul" lang="ko"> · {w.hangul}</span>}
+                  {w.rr && <span class="muted"> · {w.rr}{w.mr && w.mr !== w.rr ? ` (${w.mr})` : ''}</span>}
+                </p>
+                <p class="num muted">{years(w)}{w.period && <> · {w.period}</>}</p>
+                <p>{w.what}</p>
+                {w.kilns.length > 0 && <p><strong>{places}.</strong> {w.kilns.join('; ')}</p>}
+                {w.recognize.filter((t) => t.trim()).length > 0 && <><h4>How to recognize it</h4><ul>{w.recognize.filter((t) => t.trim()).map((t) => <li>{t}</li>)}</ul></>}
+                {w.copies.filter((c) => c.text.trim()).length > 0 && <><h4>Copies</h4><ul>{w.copies.filter((c) => c.text.trim()).map((c) => <li>{c.text}</li>)}</ul></>}
+                {w.singleSource && <p class="panel__warn">Part of this rests on one source only.</p>}
+                <details class="rsources">
+                  <summary>The evidence and sources <span class="muted num">{w.facts.length}</span></summary>
+                  <ul>{w.facts.map((f) => <li>{f.text} <span class="faint">({f.single || f.sources.length === 1 ? 'one source' : `${f.sources.length} sources`})</span></li>)}</ul>
+                  {w.examples.length > 0 && <><p><strong>Museum examples</strong></p><ul>{w.examples.map((x) => <li>{x.url ? <a href={x.url} rel="nofollow noopener">{x.title}</a> : x.title}{x.holder && <span class="muted">, {x.holder}{x.id && ` (${x.id})`}</span>}</li>)}</ul></>}
+                  <ol>{w.sources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}</li>)}</ol>
+                </details>
+              </div>
+              {w.photos.length > 0 && (
+                <div class="kware__photos">
+                  {w.photos.slice(0, 4).map((p) => (
+                    <figure>
+                      <span class="plate"><img src={`/${p.file}`} alt={`${p.title}, ${p.date}`} loading="lazy" decoding="async" /></span>
+                      <figcaption>{p.title}, {p.date}. {p.credit}{p.url && <> <a href={p.url} rel="noopener">Source</a></>}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              )}
+            </article>
+          ))}
+        </section>
+      );
+    })}
+

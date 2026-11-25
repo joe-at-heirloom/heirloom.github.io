@@ -1,0 +1,45 @@
+---
+// /marks/korean-furniture: furniture. Each entry from the app's table (korean.json `wares`,
+// category "Chests by region, cabinets, scholars' furniture and tables, the woods and the metal fittings, and what tells a 19th-century piece from the export and reproduction furniture made in the 20th century.", via the reference collection): what it is, where it was made,
+// how to recognize it, the copies the sources name, the evidence, and
+// open-licence photographs. Rendered ahead of time on the guides' shared layout.
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import KoreanGuide from '../../components/KoreanGuide.astro';
+import { wares } from '../../lib/korean';
+import { articleLd, faqLd, crumbsLd } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/korean.css';
+
+const path = '/marks/korean-furniture';
+const ws = wares('furniture');
+const SECTIONS: [string, string][] = [['chests', 'Chests and cabinets'], ['study', 'Scholars’ furniture'], ['tables', 'Small tables (soban)'], ['other', 'Medicine chests, mirror stands and inlaid furniture'], ['woods', 'The woods'], ['hardware', 'The metal fittings'], ['later', 'Made in the 20th century']];
+const title = 'Korean Antique Furniture: Bandaji, Chests, Soban and Their Hardware | Heirloom';
+const description = `${ws.length} Korean furniture types, from bandaji chests by region to soban tables, scholars' desks and medicine chests: the woods, the hardware and how it dates, and how 20th-century export and reproduction pieces differ, with sources.`;
+const h1 = 'Korean furniture';
+const faqs: [string, string][] = [['How can I tell an old Korean chest from a reproduction?', '<p>Look at the back, the inside and the fittings, not just the front. Older chests were built from solid boards with hand-cut joints; their iron or brass fittings were cut and hammered, and the wear follows how the chest was used. Pieces made from the 1950s on for export and visitors often use plywood, machine screws and press-stamped brass. The sources read give no single test, so a specialist who can handle the chest is the one to judge it.</p>'], ['What is a bandaji?', '<p>A Korean chest that opens at the front: the upper half of the front panel folds down on hinges. Bandaji were made all over Korea in the late Joseon period and after, and each region had its own proportions, woods and metalwork, which is how they are named today (Ganghwa, Pyongyang, Bakcheon and others).</p>']];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).korean ?? synced.changed.marks, { about: { '@type': 'Thing', name: h1 } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/korean/', 'Korean marks']),
+];
+const han = [...new Set(ws.map((w) => w.hanja ?? '').join(''))].filter((c) => /[㐀-鿿]/.test(c)).join('');
+const hangul = [...new Set(ws.map((w) => w.hangul ?? '').join(''))].filter((c) => /[가-힣]/.test(c)).join('');
+---
+<Reference {title} {description} {path} jsonld={graph} {han} {hangul}>
+  <div>
+    <header class="phead">
+      <h1>{h1}</h1>
+      <p class="phead__sub">Chests by region, cabinets, scholars' furniture and tables, the woods and the metal fittings, and what tells a 19th-century piece from the export and reproduction furniture made in the 20th century.</p>
+    </header>
+
+    <KoreanGuide {ws} sections={SECTIONS} label={h1} places="Where made" />
+
+    <AppBox text="Photograph the item from the front, the back, the inside and any marks or labels. The Advisor compares what it sees with this same guide and says what it cannot tell from photographs." />
+    <Faq {faqs} />
+  </div>
+</Reference>
