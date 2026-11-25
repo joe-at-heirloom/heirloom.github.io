@@ -1,0 +1,98 @@
+---
+// /marks/: the marks portal. One search over the whole reference collection
+// (src/islands/Portal.tsx), families to browse, the tools, and every
+// reference page linked (so search engines and readers still reach each one).
+// The address, title and description are the old hub's, kept as they were.
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Portal from '../../islands/Portal';
+import { collection, families, PER_RECORD, SEAL_KINDS } from '../../lib/portal';
+import { crumbsLd } from '../../lib/site';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+
+const path = '/marks/';
+const title = 'Marks and Serial Numbers: Date Silver, Singers, Watches | Heirloom';
+const description = 'Date British silver by its hallmark letter, decode Wedgwood, Minton, Royal Worcester, Rookwood and Sèvres date codes, and look up Singer, pocket-watch and Leica serials.';
+
+const c = collection();
+const fams = families();
+const sealCount = c.records.filter((r) => SEAL_KINDS.has(r.kind)).length;
+const imgOf = new Map(c.images.map((i) => [i.id, i.file]));
+// Three real mark images for each family's tile.
+const thumbs = new Map<string, string[]>();
+for (const r of c.records) {
+  if (!r.image_id || SEAL_KINDS.has(r.kind)) continue;
+  const t = thumbs.get(r.family) ?? [];
+  if (t.length < 3 && (r.kind !== 'date letter' || t.length === 0)) { t.push(imgOf.get(r.image_id)!); thumbs.set(r.family, t); }
+}
+
+// Every reference page, by its own title (the root's generated pages and the rebuilt ones share addresses).
+const root = join(process.cwd(), '..', 'marks');
+const pages = readdirSync(root)
+  .filter((f) => f.endsWith('.html') && f !== 'index.html')
+  .map((f) => {
+    const t = /<title>(.*?)<\/title>/s.exec(readFileSync(join(root, f), 'utf8'))?.[1] ?? f;
+    return { href: `/marks/${f.replace(/\.html$/, '')}`, title: t.replace(/ \| Heirloom$/, '').replace(/&#x27;/g, '’').replace(/&amp;/g, '&') };
+  })
+  .concat([
+    { href: '/marks/chinese/', title: 'Chinese marks: reign marks, hall marks and seals' },
+    { href: '/marks/chinese/painters/', title: 'Chinese painters and collectors: seals and signatures' },
+  ])
+  .sort((a, b) => a.title.localeCompare(b.title));
+
+const tools = [
+  { href: '/marks/london-date-letters', label: 'Date-letter sheets', note: 'London, Birmingham, Sheffield, Chester' },
+  { href: '/marks/chinese-reign-marks', label: 'Chinese reign marks', note: 'Ming and Qing, with a finder' },
+  { href: '/marks/chinese-hall-marks', label: 'Chinese hall marks', note: '126 halls and studios' },
+  { href: '/marks/chinese/painters/', label: 'Chinese painters', note: '1,220 people and their seals' },
+  { href: '/marks/artist-signatures', label: 'Artist signatures', note: 'Dated real examples' },
+  { href: '/marks/singer-serial-numbers', label: 'Singer serials', note: 'Year and factory' },
+  { href: '/marks/pocket-watch-serial-numbers', label: 'Pocket-watch serials', note: 'Six American makers' },
+  { href: '/marks/leica-serial-numbers', label: 'Leica serials', note: 'Model and year' },
+];
+const graph = [
+  { '@type': 'CollectionPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' }, hasPart: pages.map((p) => ({ '@type': 'WebPage', url: `https://heirloomapp.io${p.href}`, name: p.title })) },
+  crumbsLd(path, 'Marks'),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name="Marks" />
+    <header class="phead">
+      <h1>Marks</h1>
+      <p class="phead__sub">Search {(c.records.length - sealCount).toLocaleString('en-US')} marks, letters, reigns, makers and signatures, and {sealCount.toLocaleString('en-US')} Chinese seals. Every record names its sources.</p>
+    </header>
+
+    <Portal client:load families={fams} perRecord={[...PER_RECORD]} sealCount={sealCount} />
+
+    <section class="browse" aria-labelledby="browse">
+      <h2 id="browse">Browse</h2>
+      <ul class="fams">
+        {fams.map((f) => (
+          <li>
+            <a href={`/marks/?f=${f.family}`} class="fam">
+              <span class="fam__imgs">{(thumbs.get(f.family) ?? []).map((t) => <span class="plate plate--print"><img src={`/${t}`} alt="" loading="lazy" decoding="async" /></span>)}</span>
+              <span class="fam__label">{f.label}</span>
+              <span class="fam__n num">{f.count.toLocaleString('en-US')}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="tools" aria-labelledby="tools">
+      <h2 id="tools">Tools</h2>
+      <ul>
+        {tools.map((t) => <li><a href={t.href}><span>{t.label}</span><span class="muted">{t.note}</span></a></li>)}
+      </ul>
+    </section>
+
+    <details class="allpages">
+      <summary><h2>Every reference page <span class="num muted">{pages.length}</span></h2></summary>
+      <ul>{pages.map((p) => <li><a href={p.href}>{p.title}</a></li>)}</ul>
+    </details>
+  </div>
+</Base>

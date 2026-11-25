@@ -4551,7 +4551,9 @@
      "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
      "Not drawn: only one source gives this year letter.",
      "Reilly (1995) p. 505 gives no G = 1930: from 1930 the year itself was impressed, so there is no mark to cut.",
-     "Final push, 2026-11-24: Reilly (1995) p. 505 and Godden (1964) p. 659 both say the letters stop in 1929 or 1930 and the year itself was impressed from 1930, and Commons has no photograph of a G-coded piece of that year; with two of three sources saying the code was not used, nothing is drawn."
+     "Final push, 2026-11-24: Reilly (1995) p. 505 and Godden (1964) p. 659 both say the letters stop in 1929 or 1930 and the year itself was impressed from 1930, and Commons has no photograph of a G-coded piece of that year; with two of three sources saying the code was not used, nothing is drawn.",
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr open-licence search ('wedgwood mark', 'wedgwood bottom', 'wedgwood base', 'wedgwood backstamp', 'wedgwood underside', 'wedgwood impressed', 'wedgwood 1930'), Openverse ('wedgwood bottom', 'wedgwood impressed') and Commons full-text search (underside, base impressed, 1930 mark, Made in England impressed): the only base view of the period is Auckland Museum's Keith Murray vase (AM 1995.65.2-4, CC BY), which shows WEDGWOOD, MADE IN ENGLAND and the Murray signature but no year code; the Walters' Fairyland plate of 1924-1930 is photographed from the front only.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
     ],
     "blocked": [],
     "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
@@ -17616,17 +17618,34 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "rendering",
+    "status": "photo",
     "file": "marks/img/db/rookwood-rp-2-flames-1888.webp",
     "marks_in_image": 1,
-    "method": "The RP monogram (a reversed R sharing its upright with a P) with 2 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 2 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
-    "confidence": "high",
-    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
-    "size": [
-     185,
-     240
+    "object": "Vase, 1888, decorated by Kataro Shirayamadani",
+    "holder": "Cooper Hewitt, Smithsonian Design Museum",
+    "accession": "1967-48-117",
+    "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/139245",
+    "licence": "CC0",
+    "credit": "Cooper Hewitt, Smithsonian Design Museum, Smithsonian Open Access (CC0); cropped by Heirloom.",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/photos/si/CHSDM-7B4E13E5A4E82_06.jpg",
+    "original_size": [
+     8256,
+     6188
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 2-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "rotate_degrees": -50.0,
+    "crop": [
+     2664,
+     1831,
+     594,
+     794
+    ],
+    "crop_note": "x, y, width, height in the museum's full-resolution JPEG (Smithsonian IDS CHSDM-7B4E13E5A4E82_06), after rotating it -50 degrees (OpenCV sign: negative is clockwise) about the mark's centre; about 15% margin, cut short of the shape numbers; reduced only to keep the long edge at 720 px",
+    "grade": "svg_stencil.grade_color()",
+    "size": [
+     539,
+     720
+    ],
+    "note": "The RP with two flames on the vase's base; the stamp was struck about 50 degrees off and the crop is turned 50 degrees clockwise so the RP stands upright. Both flames sit above the monogram, a little to the left. The museum records 'impressed Rookwood cipher with two flames'; the shape number 424 A/S beside it is left out."
    },
    "disagreements": [],
    "date_note": ""
@@ -17691,7 +17710,11 @@
      183,
      240
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 3-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "note": "Drawn, not copied: no book or open photograph of the 3-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print.",
+    "searched": [
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
+    ]
    },
    "disagreements": [],
    "date_note": ""
@@ -17756,7 +17779,11 @@
      208,
      240
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 4-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "note": "Drawn, not copied: no book or open photograph of the 4-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print.",
+    "searched": [
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
+    ]
    },
    "disagreements": [],
    "date_note": ""
@@ -17811,17 +17838,34 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "rendering",
+    "status": "photo",
     "file": "marks/img/db/rookwood-rp-5-flames-1891.webp",
     "marks_in_image": 1,
-    "method": "The RP monogram (a reversed R sharing its upright with a P) with 5 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 5 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
-    "confidence": "high",
-    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
-    "size": [
-     248,
-     240
+    "object": "Jug, 1891, decorated by Matthew A. Daly",
+    "holder": "Cooper Hewitt, Smithsonian Design Museum",
+    "accession": "1984-84-8",
+    "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/181670",
+    "licence": "CC0",
+    "credit": "Cooper Hewitt, Smithsonian Design Museum, Smithsonian Open Access (CC0); cropped by Heirloom.",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/photos/si/CHSDM-181670_05.jpg",
+    "original_size": [
+     6200,
+     8272
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 5-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "rotate_degrees": 0.0,
+    "crop": [
+     3048,
+     2006,
+     860,
+     904
+    ],
+    "crop_note": "x, y, width, height in the museum's full-resolution JPEG (Smithsonian IDS CHSDM-181670_05); about 15% margin, cut short of the shape numbers; reduced only to keep the long edge at 720 px",
+    "grade": "svg_stencil.grade_color()",
+    "size": [
+     685,
+     720
+    ],
+    "note": "The RP with five flames on the jug's base (the museum: 'RP cipher with 5 flames'); counted on the full-size original: five separate flame impressions, the leftmost filled with red glaze and glaze debris lying between the next three. The shape number 512 / S below is left out."
    },
    "disagreements": [],
    "date_note": ""
@@ -17886,7 +17930,11 @@
      283,
      240
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 6-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "note": "Drawn, not copied: no book or open photograph of the 6-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print.",
+    "searched": [
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
+    ]
    },
    "disagreements": [],
    "date_note": ""
@@ -17951,7 +17999,11 @@
      305,
      240
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 7-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "note": "Drawn, not copied: no book or open photograph of the 7-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print.",
+    "searched": [
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
+    ]
    },
    "disagreements": [],
    "date_note": ""
@@ -18006,17 +18058,34 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "rendering",
+    "status": "photo",
     "file": "marks/img/db/rookwood-rp-8-flames-1894.webp",
     "marks_in_image": 1,
-    "method": "The RP monogram (a reversed R sharing its upright with a P) with 8 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 8 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
-    "confidence": "high",
-    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
-    "size": [
-     323,
-     240
+    "object": "Ewer, 1894, decorated by Matthew A. Daly, silver overlay by Gorham",
+    "holder": "Cooper Hewitt, Smithsonian Design Museum",
+    "accession": "1984-84-9",
+    "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/181671",
+    "licence": "CC0",
+    "credit": "Cooper Hewitt, Smithsonian Design Museum, Smithsonian Open Access (CC0); cropped by Heirloom.",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/photos/si/CHSDM-181671_02.jpg",
+    "original_size": [
+     5792,
+     7524
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 8-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "rotate_degrees": 0.0,
+    "crop": [
+     2170,
+     2715,
+     628,
+     615
+    ],
+    "crop_note": "x, y, width, height in the museum's full-resolution JPEG (Smithsonian IDS CHSDM-181671_02); about 15% margin, cut short of the shape numbers; reduced only to keep the long edge at 720 px",
+    "grade": "svg_stencil.grade_color()",
+    "size": [
+     628,
+     615
+    ],
+    "note": "The RP with eight flames on the ewer's base (the museum: 'RP cipher with 8 flames', struck twice; the upper strike is shown). Counted on the full-size original: eight flames from the lowest on the left round to the broad one on the right; the curved tail at lower left is the R's leg, not a flame. The flames sit unevenly over the top, not as an even fan."
    },
    "disagreements": [],
    "date_note": ""
@@ -18152,7 +18221,11 @@
      329,
      240
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 10-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "note": "Drawn, not copied: no book or open photograph of the 10-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print.",
+    "searched": [
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
+    ]
    },
    "disagreements": [],
    "date_note": ""
@@ -18217,7 +18290,11 @@
      327,
      240
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 11-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "note": "Drawn, not copied: no book or open photograph of the 11-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print.",
+    "searched": [
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
+    ]
    },
    "disagreements": [],
    "date_note": ""
@@ -18272,17 +18349,34 @@
     "/marks/rookwood-pottery-marks"
    ],
    "visual": {
-    "status": "rendering",
+    "status": "photo",
     "file": "marks/img/db/rookwood-rp-12-flames-1898.webp",
     "marks_in_image": 1,
-    "method": "The RP monogram (a reversed R sharing its upright with a P) with 12 flames and no numeral. Peck (1968, p. 136), Ellis (1995, p. 215) and Rookwood's own catalogue (about 1900, p. 25) say a flame was added each year from the single top flame of 1887; the printed 1-, 9- and 14-flame marks all set their flames at the same pitch (300 degrees for 14), symmetric about the top, with a top-centre flame only when the count is odd. The 12 flames here follow that rule; letters in Libre Caslon Text, flames as plain teardrops. No printed example of this count was found, so the spacing is the rule's, not a copy of the punch.",
-    "confidence": "high",
-    "credit": "Drawn by Heirloom from the published descriptions; not a photograph.",
-    "size": [
-     303,
-     240
+    "object": "Vase, 1898, decorated by Kataro Shirayamadani",
+    "holder": "Cooper Hewitt, Smithsonian Design Museum",
+    "accession": "1984-84-5",
+    "source_url": "https://collection.cooperhewitt.org/view/objects/asitem/id/181661",
+    "licence": "CC0",
+    "credit": "Cooper Hewitt, Smithsonian Design Museum, Smithsonian Open Access (CC0); cropped by Heirloom.",
+    "original": "/Users/joelint/Library/Application Support/Claude/side-session-notes/local_a4696be3-e8be-4505-a3c8-c8651c973d52/pottery-sources/photos/si/CHSDM-406C34BD53462_07.jpg",
+    "original_size": [
+     6200,
+     8272
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 12-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "rotate_degrees": 0.0,
+    "crop": [
+     2612,
+     1302,
+     1245,
+     1069
+    ],
+    "crop_note": "x, y, width, height in the museum's full-resolution JPEG (Smithsonian IDS CHSDM-406C34BD53462_07); about 15% margin, cut short of the shape numbers; reduced only to keep the long edge at 720 px",
+    "grade": "svg_stencil.grade_color()",
+    "size": [
+     720,
+     618
+    ],
+    "note": "The RP with twelve flames on the vase's base (the museum: 'RP impressed with 12 flames ... 1898'); counted on the full-size original: twelve flames round the top and sides; the two glaze-filled shapes at the bottom are the feet of the R and the P, not flames. The shape number 614C below is left out."
    },
    "disagreements": [],
    "date_note": ""
@@ -18347,7 +18441,11 @@
      280,
      240
     ],
-    "note": "Drawn, not copied: no book or open photograph of the 13-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print."
+    "note": "Drawn, not copied: no book or open photograph of the 13-flame mark was found; the arrangement follows the 1-, 9- and 14-flame marks the books print.",
+    "searched": [
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
+    ]
    },
    "disagreements": [],
    "date_note": ""
@@ -22251,7 +22349,9 @@
      "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
      "Not drawn: the sources give the system, not the mark's layout (and only one source describes it).",
      "Ellis (1995) p. 215-216 covers marks to the 1967 closing only; nothing on the later Townley or revived-factory marks.",
-     "Final push, 2026-11-24: Lehner (1988) p. 382-383 describes the Townley revival (from 1982; pieces block-ink marked underglaze; Townley held the RP, RP-and-flames and ROOKWOOD marks) but prints no mark; Kovel's Dictionary of Marks prints none after 1967; Commons has no photograph of a Townley-era base. Not drawn: only one source gives the Arabic year and none says where it sits or what the ink mark looks like."
+     "Final push, 2026-11-24: Lehner (1988) p. 382-383 describes the Townley revival (from 1982; pieces block-ink marked underglaze; Townley held the RP, RP-and-flames and ROOKWOOD marks) but prints no mark; Kovel's Dictionary of Marks prints none after 1967; Commons has no photograph of a Townley-era base. Not drawn: only one source gives the Arabic year and none says where it sits or what the ink mark looks like.",
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
     ],
     "blocked": [],
     "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."
@@ -22304,7 +22404,9 @@
      "Open-collections photo pass, 2026-11-24: Cleveland Museum of Art open-access API (CC0; marks read on its 3400 px base views), Art Institute of Chicago API (CC0 items; serves only 843 px, no legible mark of this year), Rijksmuseum data API (one front view per item), SMK API (no matching ceramics), Minneapolis Institute of Art search (one view per item), Europeana open-reuse search (no item photographs of these marks). Finna.fi showed a bot check and was not searched; DigitaltMuseum needs an API key.",
      "Not drawn: the sources give the system, not the mark's layout.",
      "Ellis (1995) p. 215-216 covers marks to the 1967 closing only; nothing on the later Townley or revived-factory marks.",
-     "2026-11-24: a drawing with an example numeral (MMXII) was made and withdrawn on Joe's call; no printed or photographed revived-factory mark was found"
+     "2026-11-24: a drawing with an example numeral (MMXII) was made and withdrawn on Joe's call; no printed or photographed revived-factory mark was found",
+     "Open-licence photo pass by object (base views), 2026-11-24: Flickr search filtered to CC BY, CC BY-SA, CC0 and PD mark ('rookwood pottery', 'rookwood vase', 'rookwood mark', 'rookwood base', 'rookwood bottom', 'rookwood underside', 'rookwood paperweight', 'rookwood 1890', 'rookwood 1895', 'rookwood 2012', 'rookwood townley'): architectural tiles and front views only (museado's CC0 Met jug and mug sets have no base view); Openverse ('rookwood pottery' 102 results, 'rookwood', 'rookwood vase', 'rookwood bottom'): front views only; Commons full-text search (RP flames, monogram, impressed mark, underside, bottom, Townley, 1889-1897, Daderot's DSC museum series at the Cincinnati Art Museum, de Young and Portland Museum of Art, the Met's 1889 ewer DP232141-2, Cooper Hewitt's second views CH 18457367-2, 18457577-2, 18618577-2, 18801153-2, 18618575-2, 18802889-2): every view is of the side, none of the base. Blocked, not searched: Cincinnati Art Museum collection (Cloudflare check), Smithsonian collections search (Cloudflare check) and image server (request rejected), Smithsonian Open Access API (shared DEMO_KEY over its rate limit), Brooklyn Museum (Vercel security check); Indianapolis Museum of Art (Newfields) collection search returned not found. Cleveland and the Art Institute of Chicago were searched in the earlier pass.",
+     "Smithsonian Open Access API (key), 2026-11-24: all 321 Rookwood records with images; Cooper Hewitt base views exist for 1888 (2 flames), 1891 (5), 1894 (8), 1898 (12) and 1899 (13, mark hidden under a label in the photograph) and were used where the mark is clear; no Smithsonian record of a Townley-era or post-2004 Rookwood piece, and no Wedgwood piece of 1929-1931 with a base view. Also searched: Joe Haupt's Flickr (CC BY-SA; no Rookwood, Wedgwood only 1950s accessories) and Google Images with the Creative Commons filter ('rookwood pottery bottom mark', 'rookwood pottery flames mark base', 'rookwood vase underside', 'rookwood pottery MMXII', 'rookwood pottery 2010', 'wedgwood impressed mark date code', 'wedgwood mark bottom'): nothing of these marks (a modern Wedgwood bone-china backstamp on Commons has no year code)."
     ],
     "blocked": [],
     "note": "No licence-barred image was found; the gap is that no open photo or public-domain facsimile of this mark turned up."

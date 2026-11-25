@@ -517,7 +517,7 @@
           55
         ],
         "credit": "As set in type in Ensko, Makers of Early American Silver (1915), p. 13, public domain.",
-        "note": "Type, not a cut of the punch: the book prints each mark's wording. The crop takes the 'Pure Coin' line of the Laforme mark alone; the next line (V. L. & B.) sits close below, so the crop is 55 px tall at native size."
+        "note": "Type, not a cut of the punch: the book prints each mark's wording. The crop takes the 'Pure Coin' line of the Laforme mark alone; the next line (V. L. & B.) sits close below, so the crop is 55 px tall at native size. Photo lead (not used): NMAH prize cup DL*60.0990 (record ld1-1643398853934-1643398864738-0), underside struck PURE COIN in a triangle; its CC0 base photo (NMAH-AHB2014q060853) shows the mark only as a sliver between two paper labels, so no clean crop. A new photograph with the labels lifted would serve; ask NMAH."
       },
       "pages": [
         "/marks/coin-silver"
@@ -564,7 +564,13 @@
           "Not reached: the 1904 and 1915 editions (not found on archive.org; HathiTrust not tried) and Rosenberg, Der Goldschmiede Merkzeichen (1911, 1922), which covers European goldsmiths' marks before about 1850 and isn't likely to show these American words.",
           "Jewelers' Circular, Trade-Marks of the Jewelry and Kindred Trades (1922), HathiTrust hvd.hb9jsx, scans 146–220 (silverware and plated ware), read with on-device OCR and checked by eye: STANDARD appears only in plate names (STANDARD PLATE), a firm name (Standard Silver Co.) and watch grades, not as the coin-standard mark.",
           "Kovels' American Silver Marks (1989) and Rainwater's Encyclopedia (2004) are in copyright: cited for facts only, images not reproduced.",
-          "Ensko, Makers of Early American Silver (1915) and American Silversmiths and Their Marks (1927); French (1917); archive.org full-text search of pre-1929 texts for 'stamped standard' and 'marked standard': no STANDARD mark set in type or drawn."
+          "Ensko, Makers of Early American Silver (1915) and American Silversmiths and Their Marks (1927); French (1917); archive.org full-text search of pre-1929 texts for 'stamped standard' and 'marked standard': no STANDARD mark set in type or drawn.",
+          "Cleveland Museum of Art open access API (CC0), 2026-11-24: 'standard silver', 'coin silver', 'pure coin', and ~140 silver spoons, ladles, cups and hollowware filtered for STANDARD, COIN, DOLLAR or PREMIUM in their inscriptions: only Russian '88 silver standard' marks, no American STANDARD.",
+          "Flickr search (in the browser; the open-licence filter returned an error without a login, so licences were checked on each photo page) and Wikimedia Commons full-text searches, 2026-11-24: 'coin silver spoon', 'Philadelphia silver spoon mark', 'silversmith mark \"STANDARD\"', 'insource:\"coin silver\" standard'. Nearest: 'Silver Berry Spoon.jpg' (Peter L. Krider, Philadelphia; public domain via DPLA), front view only, no mark shown.",
+          "Openverse API, 2026-11-24: refused anonymous requests (429, then 401 Unauthorized), so not searched.",
+          "Smithsonian Open Access API with a registered key, 2026-11-24: 'spoon', 'teaspoon', 'coin silver', 'silver Philadelphia', 'silver Baltimore', 'silver tablespoon', 'silver fork', 'silver ladle', 'silver beaker', 'silver cup', 'sugar tongs', 'silversmith mark' (up to 1000 records each), records with CC0 images and their mark descriptions read. Found: National Museum of American History child's cup (record ld1-1643398853934-1643398857126-1), underside struck 'STANDARD' and two other marks, but the record has no online images. Ask: NMAH (Smithsonian) for a photograph of the underside. Also seen: Peter L. Krider's coin silver presentation pitcher, Philadelphia 1851 (NMAH 2005.0233.0915, 6 CC0 images), no view of its marks.",
+          "Joe Haupt's Flickr (CC BY-SA 2.0), 2026-11-24: the public tag feed returned nothing for coinsilver, antiquesilver, vintagesilver, silverspoon, hallmark, standard and similar tags (his tags are long compound phrases); his Commons mirror searched instead: 28 coin silver pocket-watch photos, case lids checked; the readable lid stamps are watch-case makers' marks (e.g. Am. Watch Co. Waltham, WARRANTED COIN SILVER), no STANDARD.",
+          "Google Images with the Creative Commons filter (in the browser), 2026-11-24: 'coin silver spoon mark' and '\"STANDARD\" coin silver spoon mark': coins, Cleveland's Erastus Cook tablespoon (front view) and LACMA teaspoons (front views); no STANDARD mark."
         ],
         "blocked": []
       },

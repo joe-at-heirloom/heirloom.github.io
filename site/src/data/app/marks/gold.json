@@ -234,7 +234,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -273,7 +280,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -315,7 +329,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24 (withdrawn): lead eBay seller annmarisham-0, https://www.ebay.com/itm/137372671885 (585 inside a pearl ring shank); legible photo of the mark, permission from the seller needed."
     ],
     "needs": "photo"
    },
@@ -408,7 +429,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -447,7 +475,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -483,7 +518,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -519,7 +561,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -558,7 +607,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -595,7 +651,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -632,7 +695,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -669,7 +739,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -702,16 +779,37 @@
    ],
    "disagreements": [],
    "visual": {
-    "status": "none",
+    "status": "photo",
+    "file": "marks/img/db/gold-filled-gf.webp",
+    "marks_in_image": 1,
+    "object": "Hamilton Masterpiece men's watch (quartz), inside of the case back: HAMILTON W.CO. / 10K GOLD FILLED / MAJOR WATCH CASE CO. INC.; the crop is the 10K GOLD FILLED line",
+    "holder": "Flickr (Joe Haupt)",
+    "source_url": "https://www.flickr.com/photos/51764518@N02/51323299934/",
+    "licence": "CC-BY-SA-2.0",
+    "credit": "Joe Haupt, CC BY-SA 2.0, via Flickr; cropped by Heirloom.",
+    "original": "hallmark-sources/haupt-flickr/haupt-hamilton-masterpiece-inside-51323299934_k.jpg",
+    "crop": [
+     1360,
+     678,
+     292,
+     42
+    ],
+    "rotate_degrees": 0,
+    "note": "Small: the stamped line is about 30 px tall at the photo's largest size (2048 px). Toned lightly (greyscale with a gentle contrast lift) rather than with grade(), which broke the thin letters into noise; a sliver of the next line's tops shows at the bottom edge.",
     "searched": [
      "Wikimedia Commons: Category:Jewellery punches, Category:Hallmarks of the United Kingdom, searches for 585/750/375/14K/18K/GF/RGP/rolled gold/gold filled",
      "Portable Antiquities Scheme finds on Commons (modern gold rings; FindID 497656 and 252149 checked: marks illegible or under 400 px)",
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
-    ],
-    "needs": "photo"
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe)."
+    ]
    },
    "pages": [
     "/marks/gold-karat-marks"
@@ -750,7 +848,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24 (withdrawn): lead White's Auctions on LiveAuctioneers, https://www.liveauctioneers.com/item/247597882_10k-rgp-waltham-vanguard-open-face-pocket-watch-middleboro-ma (Star Watch Case Company, 10K ROLLED GOLD PLATE); legible photo of the mark, permission from the seller needed."
     ],
     "needs": "photo"
    },
@@ -791,7 +896,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -832,7 +944,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -873,7 +992,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -914,7 +1040,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -1372,7 +1505,14 @@
      "Joe Haupt CC BY-SA watch photos on Commons (titles name GF/RGP but the stamped backs are not shown)",
      "Auckland Museum AM 1966.52 watch (mark not visible)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },
@@ -1648,7 +1788,14 @@
      "Rijksmuseum API",
      "Cooper Hewitt (rate-limited, not completed)",
      "Open-collections pass 2026-11-24: Europeana with reusable filter (kultaleima 585, Goldstempel 585, Feingehalt 750 Gold Ring, goud keur 14 karaat, doublé Stempel, gold filled 1/20, rolled gold plate): no photo of the stamp; Finna.fi and DigitaltMuseum behind Cloudflare bot checks (need Joe); SMK, Rijksmuseum and Nationalmuseum Sweden APIs gave nothing usable",
-     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp."
+     "Final books pass 2026-11-24: no printing or open photo found in Jackson's, Bradbury's, Chaffers or the Jewelers' Circular trade-mark books; needs a real photo of the stamp.",
+     "Open-photo pass 2026-11-24: Openverse API now needs a registered key (HTTP 401), not searched; needs Joe if wanted.",
+     "Open-photo pass 2026-11-24: Portable Antiquities Scheme database (finds.org.uk) behind a Cloudflare challenge, not searched; PAS finds already on Commons checked (FindID 510785, 282580, 249798, 830715): marks not shown or not legible.",
+     "Open-photo pass 2026-11-24: Flickr open-licence search (CC BY, BY-SA, CC0, PDM) for 14k ring, 585, gold filled stamp, gold ring hallmark inside, and Joe Haupt's photostream (case back): product or front views only, no legible stamp.",
+     "Open-photo pass 2026-11-24: Wikimedia Commons full-text search by object (ring hallmark 585/750/375, ring inside stamp, gold filled watch case, rolled gold plate, 1/20 12K, 14K/18K stamp, gold electroplate, Punze/proba/guldstämpel 585, CCM, Christofle poinçon, Gallia, alpaca Mexico): Joe Haupt watch photos show fronts only; Auckland Museum medal 2001.25.628 shows 9 .375 too faint to read.",
+     "Smithsonian Open Access API pass 2026-11-24 (CC0 media only; about 30 queries by object and mark: gold ring, watch case, pocket watch, wristwatch, class ring, wedding ring, locket, cufflinks, brooch, medal, gold filled, rolled gold, R.G.P., electroplate, stamped/marked 14K, 18K, 10K, 585, 750, Christofle, Gallia, alpaca): records that name a stamp (NMAAHC wedding ring A2017.13.1.56, 18 ct, stamp inside the band; NMAAHC 2016.161.5 '14K' inside the shank; Cooper Hewitt matchsafe 162292 '14K stamped on bezel'; NPM Luff ring 10K) have photos where the stamp is not shown or cannot be read.",
+     "Joe Haupt Flickr pass 2026-11-24: tag feeds (about 40 brand and object tags) and leads 17187487026, 20634696119, 16950825930, 17137741641, 14899152877, 15085749175, 52969669070, 8498297463 checked: front views only, no back or inside view found; Flickr in-user search returned an error; Google Images with the Creative Commons filter showed a CAPTCHA (needs Joe).",
+     "Seller-photo pass 2026-11-24: LiveAuctioneers search and lot pages, Google Images, eBay (stopped after eBay returned 403 rate-limit pages), Etsy and Ruby Lane by mark; no legible seller or auction photo of this mark at 90 px or more found, or the candidates were blurry, too small or covered."
     ],
     "needs": "photo"
    },

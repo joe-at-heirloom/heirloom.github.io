@@ -9,6 +9,6 @@
     "legal:check": "node scripts/build-legal.mjs --check",
     "pages:build": "python3 scripts/pages/build.py",
     "pages:check": "python3 scripts/pages/build.py --check",
-    "deploy": "npm --prefix site ci && npm --prefix site run build && wrangler deploy"
+    "deploy": "npm --prefix site ci && npm --prefix site run data:sync && npm --prefix site run build && wrangler deploy"
   }
 }

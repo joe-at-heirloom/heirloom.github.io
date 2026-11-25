@@ -21,8 +21,13 @@ This repo contains the landing page with a waitlist signup, plus the legal pages
 heirloomapp.io is a Cloudflare Worker (`heirloom-site`, `wrangler.jsonc`) serving
 `site/dist`, which `site/` builds with Astro:
 
-- **Rebuilt pages** live in `site/src/pages` (so far the four British date-letter
-  pages, `/marks/<office>-date-letters`, and the 404 page). Their facts come from
+- **Rebuilt pages** live in `site/src/pages`: the marks portal at `/marks/`
+  (one search over the whole reference collection, every record opened in
+  place, `?q=`, `?f=` and `?r=<record id>` in the address), the four British
+  date-letter pages (`/marks/<office>-date-letters`) and the 404 page. The
+  portal reads the collection the Advisor reads: `data:sync` runs the app's
+  `scripts/reference/collect.ts` (from the app's kept checkout at its main)
+  into `site/src/data/generated/`, which is not committed. Their facts come from
   the app's tables, synced into `site/src/data` with `npm --prefix site run
   data:sync` (commit what it changes).
 - **Every other page** is this repository's root, carried into the build

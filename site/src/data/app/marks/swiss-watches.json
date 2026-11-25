@@ -292,16 +292,47 @@
     }
    ],
    "visual": {
-    "status": "none",
-    "searched": [
+    "status": "photo",
+    "file": "marks/img/db/rolex-rehaut-serial.webp",
+    "marks_in_image": 1,
+    "object": "Rolex Cosmograph Daytona 126528LN 'Le Mans', 2024",
+    "holder": "Wikimedia Commons (Verygoodlord)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rolex_Le_Mans_Daytona_126528LN.jpg",
+    "licence": "CC-BY-SA-4.0",
+    "original": "hallmark-sources/swiss-watches/rolex-daytona-126528ln-commons.jpg",
+    "credit": "Photograph: \"Rolex Le Mans Daytona 126528LN\" by Verygoodlord, Wikimedia Commons, CC BY-SA 4.0; cropped by Heirloom.",
+    "crop": [
+     2777,
+     3438,
+     500,
+     29
+    ],
+    "crop_frame": "after rotating the original by angle about center",
+    "rotation": {
+     "center": [
+      3027,
+      3450
+     ],
+     "angle": 90
+    },
+    "margins": {
+     "l": 30,
+     "r": 30,
+     "t": 3,
+     "b": 0
+    },
+    "raw": "hallmark-sources/db-raw/rolex-rehaut-serial.png",
+    "note": "The serial engraved on the rehaut at 6 o'clock, shown upright: like the ROLEX letters round the ring, the characters face outward, so they read with the case edge up (upside down when the watch is held 12 o'clock up). The small crown in the middle of the line is engraved on the rehaut itself, not the dial's printed crown, which sits just inside it and is left out of the crop. Small: 500 x 29 px at the photo's native size, never enlarged. The ring curves, so the outermost character at each end falls outside the crop, left out rather than take in the dial's crown.",
+    "searched_before": [
      "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
      "Commons: Rolex Datejust 36 and Datejust 126234 photographs by ajay_suresh (CC BY 2.0): the rehaut is visible but a reflection covers the serial at 6 o'clock",
      "2026-11-24: Wikimedia Commons searches 'Rolex rehaut', 'Rolex inner bezel', 'Rolex serial', 'Rolex lugs', 'Rolex Submariner rehaut': only Rolex-GMT-Master-II-Batgirl.jpg (CC0, Brattyq, 1200 x 1200) shows the rehaut; its serial at 6 o'clock and the ROLEX engraving are visible but about 8-10 px tall at native size, too small to read without enlarging",
      "2026-11-24: Europeana (reusable only) 'rolex': German Clock Museum Rolex watches of about 1927, 1935 and 1960 (CC BY-SA 4.0) predate the rehaut engraving",
-     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed"
-    ],
-    "blocked": [],
-    "note": "The two Commons photos that show a rehaut have the serial hidden by a reflection."
+     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed",
+     "2026-11-24: Flickr, open licences only (CC BY, CC BY-SA, CC0, PD mark): 'rolex rehaut' (no results), 'rolex submariner' (87 results, mostly vintage Submariners without a rehaut engraving); further Flickr searches were refused ('couldn't process your search') and not retried",
+     "2026-11-24: Openverse (by, by-sa, cc0, pdm): 'rolex rehaut', 'rolex dial macro', 'rolex submariner close up', 'rolex gmt master II', 'rolex explorer II', 'rolex daytona' throttled (HTTP 429); 'rolex submariner date', 'rolex serial', 'rolex yacht-master', 'rolex sky-dweller', 'rolex deepsea', 'rolex 116610', 'rolex 126610', 'rolex milgauss' returned 31 images, none with a legible rehaut except the Commons files below",
+     "2026-11-24: Wikimedia Commons, every file in Category:Rolex watches and the model categories (Submariner, GMT-Master, GMT-Master II, Datejust, Day-Date, Daytona, Explorer, Sea-Dweller, Yacht-Master, Oyster Perpetual, Milgauss, Sky-Dweller, Air-King): 157 files; full-size checks of Rolex Le Mans Daytona 126528LN (serial at 6 legible in part), Rolex Datejust 36 - Rolex Crown (engraving at 12 legible), Datejust 36 At an Angle (engraving at 12; the 6 o'clock side in a reflection), Datejust 36 Presentation Ready / On Display / Ready in the Box (too small), Submariner 14060M (mid-2000s, no rehaut engraving visible), Deepsea 116660 (CC0; its rehaut reads RING LOCK SYSTEM, not ROLEX)"
+    ]
    },
    "pages": [
     "/marks/rolex-serial-numbers"
@@ -343,16 +374,39 @@
     }
    ],
    "visual": {
-    "status": "none",
-    "searched": [
+    "status": "photo",
+    "file": "marks/img/db/rolex-rehaut-engraving.webp",
+    "marks_in_image": 1,
+    "object": "Rolex Datejust 36, black sunburst dial (recent), close-up at 12 o'clock",
+    "holder": "Wikimedia Commons (ajay_suresh, via Flickr)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rolex_Datejust_36_-_Rolex_Crown_(50826142188).jpg",
+    "licence": "CC-BY-2.0",
+    "original": "hallmark-sources/swiss-watches/rolex-datejust-36-crown-ajay-suresh.jpg",
+    "credit": "Photograph: \"Rolex Datejust 36 - Rolex Crown\" by ajay_suresh, Wikimedia Commons, CC BY 2.0; cropped by Heirloom.",
+    "crop": [
+     2023,
+     769,
+     1014,
+     218
+    ],
+    "margins": {
+     "l": 117,
+     "r": 117,
+     "t": 26,
+     "b": 22
+    },
+    "raw": "hallmark-sources/db-raw/rolex-rehaut-engraving.png",
+    "note": "The engraved ring at 12 o'clock: X, the small crown, R, from the repeated ROLEX. Scaled down from 1014 x 218 px to 720 wide; the engraving is soft (slightly out of focus) in the original.",
+    "searched_before": [
      "Wikimedia Commons: Category:Rolex watches and Category:Omega watches with subcategories to depth 3, and full-text searches (2026-11-22)",
      "Commons: Rolex Datejust 36 (ajay_suresh, CC BY 2.0) shows the engraving, but its letters are about 25 px tall; its letters are about 25 px on a curve, and any crop of 90 px or more takes in the minute track",
      "2026-11-24: Wikimedia Commons searches 'Rolex rehaut', 'Rolex inner bezel', 'Rolex serial', 'Rolex lugs', 'Rolex Submariner rehaut': only Rolex-GMT-Master-II-Batgirl.jpg (CC0, Brattyq, 1200 x 1200) shows the rehaut; its serial at 6 o'clock and the ROLEX engraving are visible but about 8-10 px tall at native size, too small to read without enlarging",
      "2026-11-24: Europeana (reusable only) 'rolex': German Clock Museum Rolex watches of about 1927, 1935 and 1960 (CC BY-SA 4.0) predate the rehaut engraving",
-     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed"
-    ],
-    "blocked": [],
-    "note": "Usable source photo exists at too low a resolution for a single-mark crop."
+     "2026-11-24: Smithsonian collections search stopped at a bot check (request verification); not bypassed",
+     "2026-11-24: Flickr, open licences only (CC BY, CC BY-SA, CC0, PD mark): 'rolex rehaut' (no results), 'rolex submariner' (87 results, mostly vintage Submariners without a rehaut engraving); further Flickr searches were refused ('couldn't process your search') and not retried",
+     "2026-11-24: Openverse (by, by-sa, cc0, pdm): 'rolex rehaut', 'rolex dial macro', 'rolex submariner close up', 'rolex gmt master II', 'rolex explorer II', 'rolex daytona' throttled (HTTP 429); 'rolex submariner date', 'rolex serial', 'rolex yacht-master', 'rolex sky-dweller', 'rolex deepsea', 'rolex 116610', 'rolex 126610', 'rolex milgauss' returned 31 images, none with a legible rehaut except the Commons files below",
+     "2026-11-24: Wikimedia Commons, every file in Category:Rolex watches and the model categories (Submariner, GMT-Master, GMT-Master II, Datejust, Day-Date, Daytona, Explorer, Sea-Dweller, Yacht-Master, Oyster Perpetual, Milgauss, Sky-Dweller, Air-King): 157 files; full-size checks of Rolex Le Mans Daytona 126528LN (serial at 6 legible in part), Rolex Datejust 36 - Rolex Crown (engraving at 12 legible), Datejust 36 At an Angle (engraving at 12; the 6 o'clock side in a reflection), Datejust 36 Presentation Ready / On Display / Ready in the Box (too small), Submariner 14060M (mid-2000s, no rehaut engraving visible), Deepsea 116660 (CC0; its rehaut reads RING LOCK SYSTEM, not ROLEX)"
+    ]
    },
    "pages": [
     "/marks/rolex-serial-numbers"

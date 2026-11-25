@@ -1436,7 +1436,14 @@
           "Public-domain books, 2026-11-22: Jewelers' Circular Trade-Marks of the Jewelry and Kindred Trades 1896 (archive.org, silver-plate pages 55-60); the 1904 and 1915 editions were not reachable (not on archive.org; HathiTrust behind a bot check); the 1922 edition pp. 118-192 from HathiTrust, saved with Joe; Rogers & Bro. price list 1892; Oneida Community catalog 1903; The Silver Standard 1906-07",
           "JC 1922 pp. 157-187: not listed",
           "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
-          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark",
+          "Flickr, open licences only, 2026-11-24: R. W. Rogers, \"R. W. Rogers\" silver, rogers spoon, silverplate spoon: no R. W. Rogers Co. item (results were Wm. Rogers and Wm. A. Rogers spoons and unrelated photos)",
+          "Wikimedia Commons full-text: R. W. Rogers, and by object: nothing relevant",
+          "Openverse: behind a Cloudflare bot check, not used. The firm traded only in 1894-95 before a court stopped it, so little survives",
+          "Smithsonian Open Access (with API key), 2026-11-24: R. W. Rogers, R.W. Rogers Co., Rogers silverplate: no R. W. Rogers Co. object",
+          "Google Images with the Creative Commons filter, 2026-11-24 (R. W. Rogers silverplate; \"R W Rogers\" spoon): nothing relevant",
+          "Joe Haupt (France1978) on Flickr, CC BY-SA 2.0: tag feeds (rogers, vintagerogers, wmarogers, rwrogers) and a search of his photostream for rogers and wm rogers: only Roy Rogers items, Rogers transistor radios and Rogers cigarette lighters and cases, no flatware",
+          "Google Images without the licence filter, 2026-11-24 (\"R. W. Rogers Co\" spoon; \"R.W. Rogers\" silver plate mark): only Wm. Rogers, Wm. A. Rogers and Rogers Rose listings; no R. W. Rogers Co. item"
         ],
         "blocked": []
       },
@@ -2151,9 +2158,26 @@
           "From 1935, so no public-domain book can show it",
           "Open collections, 2026-11-24: Cleveland Museum of Art open-access API (no Rogers, Meriden, Oneida, Holmes & Edwards or International Silver plate); Art Institute of Chicago API (only International Silver items still in copyright); Minneapolis Institute of Art (Virginia Hamill tea service, Wilcox / International, public domain, but only an overall photo); Wikimedia Commons file and category searches (advertisements only); Europeana, covering DigitaltMuseum, Finna and the Deutsches Klingenmuseum (Oneida teaspoons FVM130185-6 and a 1847 Rogers fork 021027791359 shown only whole). Finna's own API and DigitaltMuseum's API were not reachable: Finna sits behind a Cloudflare bot check, and DigitaltMuseum now needs an API key",
           "Rainwater 2004 p. 176: no mark shown",
-          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark"
+          "Reference books, 2026-11-24: Hagan, Silverplated Flatware (1990) shows pattern drawings only, no marks; Rainwater, American Silver Manufacturers (1966) prints these marks in type, as the 2004 edition does; Kovels' American Silver Marks has no drawn cut of this mark",
+          "Flickr, open licences only (CC BY, CC BY-SA, CC0, PDM), 2026-11-24, by object: oneida spoon, oneida silverware, oneida fork, oneida knife, oneida flatware, oneida ltd, oneida community, silverplate spoon, spoon hallmark, fork hallmark. Only one Oneida mark found: ONEIDA® on a stainless knife blade (willc2, 4290189060, CC BY-SA), a modern mark, not ONEIDA LTD. Others were front views (joeshlabotnik 1440677988; Deidre Woollard 4894823597, 4895407588) or Canadian Wm. A. Rogers hollowware (GranniesKitchen)",
+          "Wikimedia Commons full-text by object (Oneida spoon, fork, knife, flatware, stainless, Ltd; spoon back marks; silverplate spoon): only Oneida-Venetia-Teaspoon.jpg (CC0), a 159x626 front view with no mark",
+          "Openverse: behind a Cloudflare bot check, not used. Smithsonian Open Access: demo-key rate limit reached; earlier searches found Oneida items without images",
+          "Smithsonian Open Access (with API key), 2026-11-24, by object: Oneida, Oneida Ltd, Oneida flatware/spoon/fork/silverplate, silverplate spoon, silver plated fork. NMAH holds Oneida Ltd. flatware (a 1934 fork, DL.66.0499; a child's set of about 1950; souvenir spoons) but none has an open image in Open Access; the library hits are Oneida trade catalogues without images",
+          "Google Images with the Creative Commons filter, 2026-11-24 (oneida spoon; oneida ltd spoon back mark; oneida ltd silverplate; oneida silverware mark; oneida community silverplate; \"oneida ltd\" fork): only advertisements (PICRYL), stock photos and File:Silver plated Oneida tea set.jpg (Mark Miller, CC BY-SA 3.0), a front view of a tea set with no mark visible",
+          "Joe Haupt (France1978) on Flickr, CC BY-SA 2.0: tag feeds (vintageoneida, oneida, oneidaltd, oneidacommunity, vintageflatware, vintagesilverplate and others) and a search of his photostream for oneida, oneida spoon, oneida ltd, community plate, silverplate spoon and flatware: no Oneida flatware",
+          "Lead, 2026-11-24: eBay listing 204117771611 (seller T-Ricks Trading, sold), \"Vintage Collectible Oneida LTD. Baby Spoon, Silver Plate (C1-9)\", https://www.ebay.com/itm/204117771611, has a close-up of ONEIDA LTD stamped on the handle. Not used: a seller's photograph needs the seller's permission; could be added if permission is granted"
         ],
-        "blocked": []
+        "blocked": [
+          {
+            "what": "Fork, Oneida Ltd., 1934, silver plated (DL.66.0499)",
+            "holder": "National Museum of American History, Smithsonian",
+            "url": "https://americanhistory.si.edu/collections/object/nmah_301599",
+            "licence": "Usage Conditions Apply (not CC0)",
+            "ask": "Smithsonian NMAH, Rights and Reproductions",
+            "checked": "checked 2026-11-24: one photo, the front of the fork; the mark is not shown",
+            "shows_mark": false
+          }
+        ]
       },
       "pages": [
         "/marks/community-plate-oneida"

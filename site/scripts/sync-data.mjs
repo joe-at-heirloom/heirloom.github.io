@@ -10,7 +10,7 @@
 //   APP_REPO  the app repository (default: ~/Apps/Heirloom)
 //   APP_REF   branch or commit to read (default: origin/main, fetched first)
 import { execFileSync } from 'node:child_process';
-import { mkdirSync, writeFileSync, readdirSync, copyFileSync, existsSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readdirSync, copyFileSync, existsSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { homedir } from 'node:os';
@@ -46,4 +46,25 @@ mkdirSync(join(siteOut, 'chinese'), { recursive: true });
 const chImg = join(repo, 'marks', 'img', 'chinese');
 for (const f of readdirSync(chImg)) if (/^index.*\.json$/.test(f)) copyFileSync(join(chImg, f), join(siteOut, 'chinese', f));
 copyFileSync(join(repo, 'scripts', 'pages', 'data', 'chinese_kiln.json'), join(siteOut, 'chinese_kiln.json'));
+// The whole reference collection (marks, letters, reigns, halls, kiln facts,
+// people and seals, signatures, makers), built by the same collect.ts that
+// publishes it to the Advisor's database, from the app's kept checkout at its
+// main (.claude/worktrees/_keep/reference-publisher; REFERENCE_CHECKOUT to
+// name another). Generated, not committed: src/data/generated/.
+const KEPT = process.env.REFERENCE_CHECKOUT || join(APP_REPO, '.claude', 'worktrees', '_keep', 'reference-publisher');
+const genDir = join(site, 'src', 'data', 'generated');
+mkdirSync(genDir, { recursive: true });
+execFileSync(join(KEPT, 'node_modules', '.bin', 'tsx'), [join(KEPT, 'scripts', 'reference', 'collect.ts'), join(genDir, 'collection.json')], {
+  env: { ...process.env, APP_REPO: KEPT, APP_REF, SITE_REPO: repo, SITE_REF: process.env.SITE_REF || 'origin/main' },
+  stdio: ['ignore', 'ignore', 'inherit'],
+  maxBuffer: 1 << 28,
+});
+// Drop the build time: the same research must give the same file, or the
+// deploy job (which fingerprints src/data) would redeploy on every run.
+{
+  const file = join(genDir, 'collection.json');
+  const c = JSON.parse(readFileSync(file, 'utf8'));
+  delete c.meta.built_at;
+  writeFileSync(file, JSON.stringify(c));
+}
 console.log(`[sync] ${tables.length} tables + ${dbFiles.length} marks-db files from app ${APP_REF} (${sha}); site data copied`);
