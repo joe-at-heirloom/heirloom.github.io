@@ -1,0 +1,35 @@
+---
+// /marks/pottery-date-codes: the date-code reader (src/islands/CodeReader) for
+// the five factories in the reference collection that put the year in code.
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import CodeReader from '../../islands/CodeReader';
+import { codeMakers } from '../../lib/codes';
+import { crumbsLd } from '../../lib/site';
+import '../../styles/marks.css';
+import '../../styles/portal.css';
+import '../../styles/reigns.css';
+import '../../styles/pottery.css';
+import '../../styles/codes.css';
+
+const path = '/marks/pottery-date-codes';
+const makers = codeMakers();
+const count = makers.reduce((n, m) => n + m.codes.filter((c) => c.series !== 'mark').length, 0);
+const title = 'Pottery Date Codes: Wedgwood, Minton, Royal Worcester, Rookwood, Sèvres | Heirloom';
+const description = `Read the year from a Wedgwood three-letter code, a Minton year sign, Royal Worcester dots, Rookwood flames or a Sèvres letter: ${count} codes, each with its image and sources.`;
+const graph = [
+  { '@type': 'WebPage', '@id': `https://heirloomapp.io${path}#page`, url: `https://heirloomapp.io${path}`, name: title, description, isPartOf: { '@id': 'https://heirloomapp.io/#website' },
+    hasPart: makers.map((m) => ({ '@type': 'WebPage', url: `https://heirloomapp.io${m.page}`, name: `${m.label} date codes` })) },
+  crumbsLd(path, 'Pottery date codes', ['/marks/', 'Marks']),
+];
+---
+<Base {title} {description} {path} jsonld={graph}>
+  <div class="wrap">
+    <Crumbs name="Pottery date codes" mid={['/marks/', 'Marks']} />
+    <header class="phead">
+      <h1>Pottery date codes</h1>
+      <p class="phead__sub">Five factories put the year on their wares in code. Choose the maker, enter what you see beside the mark, and the years that fit stay lit. For the marks themselves, see <a href="/marks/pottery-marks">pottery and porcelain marks</a>.</p>
+    </header>
+    <CodeReader client:load makers={makers} />
+  </div>
+</Base>
