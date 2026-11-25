@@ -64,6 +64,22 @@ if (existsSync(jaImg)) for (const f of readdirSync(jaImg)) if (/^index.*\.json$/
 const KEPT = process.env.REFERENCE_CHECKOUT || join(APP_REPO, '.claude', 'worktrees', '_keep', 'reference-publisher');
 const genDir = join(site, 'src', 'data', 'generated');
 mkdirSync(genDir, { recursive: true });
+// The collection must be made by the collect.ts of the commit asked for
+// (APP_REF), not by whatever commit the kept checkout last stood at: the
+// publisher moves it to the app's main only every 15 minutes, and an older
+// collect.ts can disagree with this site (it once dropped the maker and
+// artist pages when their old HTML went). So move the kept checkout to that
+// commit first, the step the publisher takes at each run. A checkout named by
+// REFERENCE_CHECKOUT is someone's own, so it is only checked.
+{
+  const git = (...a) => execFileSync('git', ['-C', KEPT, ...a], { encoding: 'utf8' }).trim();
+  const want = git('rev-parse', `${APP_REF}^{commit}`), have = git('rev-parse', 'HEAD');
+  if (want !== have) {
+    if (process.env.REFERENCE_CHECKOUT) throw new Error(`[sync] ${KEPT} is at ${have.slice(0, 8)}, not ${APP_REF} (${want.slice(0, 8)}): its collect.ts would make the collection; check it out at ${APP_REF} first`);
+    console.log(`[sync] moving the reference checkout from ${have.slice(0, 8)} to ${APP_REF} (${want.slice(0, 8)})`);
+    git('checkout', '-q', '--detach', '--force', want);
+  }
+}
 execFileSync(join(KEPT, 'node_modules', '.bin', 'tsx'), [join(KEPT, 'scripts', 'reference', 'collect.ts'), join(genDir, 'collection.json')], {
   env: { ...process.env, APP_REPO: KEPT, APP_REF, SITE_REPO: repo, SITE_REF: process.env.SITE_REF || 'origin/main' },
   stdio: ['ignore', 'ignore', 'inherit'],

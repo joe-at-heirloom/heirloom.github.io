@@ -17,7 +17,14 @@ export type MakerPage = {
 export function makers(): MakerPage[] {
   return collection().records
     .filter((r) => r.family === 'ceramics-makers' && r.kind === 'maker history' && r.attributes.page)
-    .map((r) => ({ ...(r.attributes.page as Omit<MakerPage, 'slug'>), slug: r.page_path.replace(/^\/marks\//, '') }));
+    .map((r) => {
+      // Every maker has a page (the app's collect.ts says so). A maker linked to
+      // /marks/ instead means the collection was made by an older collect.ts:
+      // fail here, plainly, rather than build a page with no address.
+      const slug = r.page_path.replace(/^\/marks\//, '');
+      if (!/^[a-z0-9-]+$/.test(slug)) throw new Error(`makers(): ${r.id} has no page of its own (page_path ${r.page_path}); the collection is out of step with this site: run npm run data:sync`);
+      return { ...(r.attributes.page as Omit<MakerPage, 'slug'>), slug };
+    });
 }
 
 /** {src:a,b} in the copy, as superscript links to the page's numbered sources (p_ceramics.py refs). */
