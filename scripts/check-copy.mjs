@@ -201,6 +201,8 @@ const TITLE_NAMES = new Set([
   'Bend', 'Rogers', 'Bros', 'Wm', 'Holmes', 'Edwards', 'Oneida', 'Community', 'International', 'Silver', 'Co', 'Plate', 'Britannia', 'Minton', 'Rookwood', 'Royal', 'Sèvres', 'Wedgwood', 'Worcester', 'Heirloom', 'Advisor', 'App', 'Store', 'US', 'PDF', 'CSV', 'Apple', 'I', 'Done', 'Settings', 'Rolex', 'Omega', 'Christofle', 'French', 'G', 'German', 'Gorham', 'Martelé', 'Mexican', 'Mexico', 'Minerva', 'Russian', 'Soviet', 'Taxco', 'Weller', 'Roseville', 'Rozane', 'Sicard', 'Rv', 'U.S.A', 'Nippon', 'Japan', 'M', 'RC', 'Noritake', 'Rose', 'China', 'Made', 'Occupied', 'N', 'Limoges', 'Haviland', 'Theo', 'H', 'L', 'France', 'CFH', 'GDM', 'Meissen', 'AR', 'K.P.M', 'K.H.C', 'King', 'Copenhagen', 'Denmark', 'Hummel', 'TMK', 'Goebel', 'U.S', 'RPCo', 'Olympic', 'R.P.Co', 'Donatello', 'McCoy', 'J', 'W', 'Brush-McCoy', 'Brush', 'NM', 'LCC', 'Floraline', 'Hull', 'Art', 'Red', 'Riding', 'Hood', 'Oven', 'Proof', 'Doulton', 'Watts', 'Lambeth', 'Burslem', 'England', 'HN',
   // Chinese dynasties and reigns (the Chinese reign-mark pages).
   'Ming', 'Qing', 'Republic', 'Hongxian', 'Hongwu', 'Jianwen', 'Yongle', 'Hongxi', 'Xuande', 'Zhengtong', 'Jingtai', 'Tianshun', 'Chenghua', 'Hongzhi', 'Zhengde', 'Jiajing', 'Longqing', 'Wanli', 'Taichang', 'Tianqi', 'Chongzhen', 'Shunzhi', 'Kangxi', 'Yongzheng', 'Qianlong', 'Jiaqing', 'Daoguang', 'Xianfeng', 'Tongzhi', 'Guangxu', 'Xuantong', 'Chinese',
+  // Earlier dynasties (the Chinese painters' filters: "Northern Song", "Southern Song").
+  'Song', 'Tang', 'Yuan', 'Jin', 'Liao', 'Han', 'Sui', 'Zhou', 'Five', 'Dynasties',
 ]);
 // Artists' names on the signature pages are names, not title case.
 for (const f of existsSync(resolve(siteRoot, 'scripts/pages/signatures')) ? readdirSync(resolve(siteRoot, 'scripts/pages/signatures')) : []) {
@@ -232,6 +234,8 @@ function titleCaseHits(html) {
       .replace(/&rsquo;|&lsquo;/g, '\u2019')
       .replace(/&ldquo;|&rdquo;|&quot;/g, '"')
       .replace(/&amp;/g, '&')
+      // An apostrophe as Astro writes it (&#39;) or Python did (&#x27;): "Monet's signature" is a name, not title case.
+      .replace(/&#(?:39|x27);/g, "'")
       .replace(/&[a-z]+;/g, ' ')
       .replace(/\s+/g, ' ')
       .trim();

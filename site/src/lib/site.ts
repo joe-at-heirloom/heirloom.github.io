@@ -30,7 +30,7 @@ export const GUIDES: [string, string, string][] = [
 export function soften(text: string) {
   const pairs: [string, string][] = [
     ['with confidence', 'as certain'], ['being transferred to', 'being moved to'], ['transferred', 'moved'],
-    ['Labelled', 'Labeled'], ['labelled', 'labeled'], ['centre', 'center'], ['grey', 'gray'], ['Pieces', 'Items'],
+    ['Labelled', 'Labeled'], ['labelled', 'labeled'], ['centre', 'center'], ['grey', 'gray'], ['Pieces', 'Items'], ['neighbour', 'neighbor'],
   ];
   for (const [a, b] of pairs) text = text.split(a).join(b);
   return text
