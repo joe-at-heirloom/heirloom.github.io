@@ -30,7 +30,7 @@ const parts = [
   path="/app"
 >
   <section class="wrap ap">
-    <p class="label">The app</p>
+    <p class="eyebrow">The app</p>
     <h1>Your home’s inventory, room by room.</h1>
     <p class="lede">The photos, the stories, and what each item’s marks say, ready for your insurer or your family. Photograph one, or write down what you already know.</p>
     <div class="ap__cta">
@@ -63,11 +63,11 @@ const parts = [
     <h2>Two ways in</h2>
     <div class="ways">
       <div>
-        <p class="label">Photograph it</p>
+        <p class="eyebrow">Photograph it</p>
         <p>Found it in the attic, inherited it, or just curious. Take a few photos. The Advisor reads the marks, labels and details it can see, says plainly what it cannot tell, and asks a question only when the answer would change something. Many keepsakes have no market value, and that is fine.</p>
       </div>
       <div>
-        <p class="label">Write it down</p>
+        <p class="eyebrow">Write it down</p>
         <p>You’re the collector and you did the research years ago. Catalogue it yourself: maker, provenance, condition, your own valuation. Your words and your estimates are never overwritten.</p>
       </div>
     </div>
@@ -96,8 +96,8 @@ const parts = [
   .ap2 h2 { margin-bottom: 10px; }
   .ap2 > p { max-width: 62ch; }
   .steps { list-style: none; counter-reset: s; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
-  .steps li { counter-increment: s; border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 6px; color: var(--ink-2); font-size: 15px; }
-  .steps li::before { content: counter(s); font: 400 13px var(--mono); color: var(--ink-3); }
+  .steps li { counter-increment: s; border-top: 2px solid var(--accent); padding-top: 12px; display: grid; gap: 6px; color: var(--ink-2); font-size: 15px; }
+  .steps li::before { content: counter(s); font: 500 13px var(--mono); color: var(--accent-ink); }
   .steps strong { color: var(--ink); font-weight: 600; font-size: 16px; }
   .ways { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; margin-top: 18px; }
   .ways p:not(.label) { color: var(--ink-2); }

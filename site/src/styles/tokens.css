@@ -1,0 +1,76 @@
+/* The site's tokens: one place, read by global.css (Astro pages) and shell.css
+   (the header and footer put on pages the old generator made). */
+
+:root {
+  --paper: #f6f5f1;        /* museum board */
+  --paper-2: #edebe6;      /* studio */
+  --plate: #e6e3dc;        /* the ground a specimen sits on */
+  --plate-edge: #d9d5cc;
+  --wood: #d8be96;         /* basswood */
+  --ink: #1f2124;          /* graphite */
+  --ink-2: #55575c;
+  --ink-3: #85868a;
+  --rule: #dcd9d1;
+  --accent: #e84316;       /* the logo's orange */
+  --accent-ink: #c2370e;
+  --accent-wash: #fbe9e2;
+  --focus: #e84316;
+  --shadow: 0 1px 2px rgb(31 33 36 / 0.05), 0 8px 24px rgb(31 33 36 / 0.07);
+  --shadow-lift: 0 2px 4px rgb(31 33 36 / 0.07), 0 18px 48px rgb(31 33 36 / 0.14);
+
+  --display: 'Archivo', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text: 'Archivo', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --glyph: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  /* older names, kept so every page and island picks the system up */
+  --serif: var(--display);
+  --sans: var(--text);
+  --han: 'LXGW WenKai TC', 'Noto Serif TC', 'Songti TC', serif;
+
+  --wide: 1240px;
+  --read: 680px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --r-sm: 4px;
+  --r: 6px;
+  --r-lg: 10px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #161719;
+    --paper-2: #1d1e21;
+    --plate: #25262a;
+    --plate-edge: #303136;
+    --wood: #b99a6c;
+    --ink: #eeece7;
+    --ink-2: #b4b3ae;
+    --ink-3: #85857f;
+    --rule: #2c2d31;
+    --accent: #ff6a3d;
+    --accent-ink: #ff8a64;
+    --accent-wash: #2b1811;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
+    --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 18px 48px rgb(0 0 0 / 0.45);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --paper: #161719;
+  --paper-2: #1d1e21;
+  --plate: #25262a;
+  --plate-edge: #303136;
+  --wood: #b99a6c;
+  --ink: #eeece7;
+  --ink-2: #b4b3ae;
+  --ink-3: #85857f;
+  --rule: #2c2d31;
+  --accent: #ff6a3d;
+  --accent-ink: #ff8a64;
+  --accent-wash: #2b1811;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.25);
+  --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 18px 48px rgb(0 0 0 / 0.45);
+  color-scheme: dark;
+}
+

@@ -53,7 +53,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   <div class="hp" id="p-app" hidden>
     <div class="wrap hp__in">
       <div class="hp__lead">
-        <p class="label">The app</p>
+        <p class="eyebrow">The app</p>
         <p class="hp__t">Your home’s inventory, room by room.</p>
         <p class="hp__d">The photos, the stories, and what each item’s marks say, ready for your insurer or your family.</p>
         <div class="hp__cta">
@@ -74,7 +74,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   <div class="hp" id="p-marks" hidden>
     <div class="wrap hp__in">
       <div class="hp__lead">
-        <p class="label">Marks</p>
+        <p class="eyebrow">Marks</p>
         <p class="hp__t">Read the marks on what you own.</p>
         <p class="hp__d">Hallmarks, makers’ marks, reign marks, date codes and serial numbers, each with its sources.</p>
         <a class="hp__all" href="/marks/">Search every mark →</a>
@@ -89,7 +89,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   <div class="hp" id="p-sigs" hidden>
     <div class="wrap hp__in">
       <div class="hp__lead">
-        <p class="label">Signatures</p>
+        <p class="eyebrow">Signatures</p>
         <p class="hp__t">Who signed it, and when.</p>
         <p class="hp__d">Dated signatures from museum collections, and the seals of Chinese painters and collectors.</p>
         <a class="hp__all" href="/signatures">Search every signature →</a>
@@ -99,7 +99,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
           {signatures.map((r) => <li><a href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a></li>)}
         </ul>
         <div>
-          <p class="label">Artists</p>
+          <p class="eyebrow">Artists</p>
           <ul class="hp__names">
             {artists.map((r) => <li><a href={r.href}>{r.label}</a></li>)}
           </ul>
@@ -112,7 +112,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   <div class="hp" id="p-guides" hidden>
     <div class="wrap hp__in">
       <div class="hp__lead">
-        <p class="label">Guides</p>
+        <p class="eyebrow">Guides</p>
         <p class="hp__t">How to do it yourself.</p>
         <p class="hp__d">Making a home inventory, reading hallmarks, and keeping the story with the things that have one.</p>
       </div>
@@ -126,7 +126,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   <div class="hs" id="sheet" hidden>
     <div class="wrap hs__in">
       <section>
-        <p class="label">The app</p>
+        <p class="eyebrow">The app</p>
         {app.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
         <div class="hs__end">
           <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
@@ -134,7 +134,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
         </div>
       </section>
       <section>
-        <p class="label">Marks</p>
+        <p class="eyebrow">Marks</p>
         <form class="hs__search" action="/marks/" method="get" role="search">
           <label class="visually-hidden" for="sheet-q">Search the marks</label>
           <input class="field" id="sheet-q" name="q" type="search" placeholder="A mark, a maker, a serial…" autocomplete="off" />
@@ -142,11 +142,11 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
         {marks.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
       </section>
       <section>
-        <p class="label">Signatures</p>
+        <p class="eyebrow">Signatures</p>
         {signatures.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
       </section>
       <section>
-        <p class="label">Guides</p>
+        <p class="eyebrow">Guides</p>
         {guides.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong>{r.note && <span>{r.note}</span>}</a>)}
       </section>
     </div>
@@ -228,7 +228,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   .hdr__nav { display: flex; gap: 6px; }
   .hdr__door { position: relative; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); font: 500 15px/1 var(--text); cursor: pointer; }
   .hdr__door svg { width: 12px; height: 12px; stroke: currentColor; stroke-width: 1.6; fill: none; transition: transform 0.2s var(--ease); }
-  .hdr__door:hover, .hdr__door[aria-expanded='true'] { color: var(--ink); background: var(--paper-2); }
+  .hdr__door:hover, .hdr__door[aria-expanded='true'] { color: var(--accent-ink); background: var(--accent-wash); }
   .hdr__door[aria-expanded='true'] svg { transform: rotate(180deg); }
   .hdr__door[aria-current='page'] { color: var(--ink); }
   .hdr__door[aria-current='page']::after { content: ''; position: absolute; left: 12px; right: 12px; bottom: -14px; height: 2px; background: var(--accent); }
@@ -247,7 +247,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   .hdr__menu { display: none; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border: 1px solid var(--rule); border-radius: var(--r-sm); background: var(--paper); color: var(--ink); font: 500 14px/1 var(--text); cursor: pointer; }
   .hdr__menu svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 1.6; fill: none; }
 
-  .hp { position: absolute; left: 0; right: 0; top: 100%; z-index: 2; background: var(--paper); border-bottom: 1px solid var(--rule); box-shadow: 0 24px 48px -24px rgb(31 33 36 / 0.25); }
+  .hp { position: absolute; left: 0; right: 0; top: 100%; z-index: 2; background: var(--paper); border-top: 2px solid var(--accent); border-bottom: 1px solid var(--rule); box-shadow: 0 24px 48px -24px rgb(31 33 36 / 0.25); }
   .hp__in { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr); gap: 48px; padding-block: 32px 36px; }
   .hp__lead { border-right: 1px solid var(--rule); padding-right: 32px; }
   .hp__t { font: 680 26px/1.12 var(--display); font-stretch: 112%; letter-spacing: -0.015em; margin: 10px 0 10px; }
@@ -273,7 +273,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   .hs { position: fixed; inset: 60px 0 0 0; background: var(--paper); overflow-y: auto; border-top: 1px solid var(--rule); z-index: 3; }
   .hs__in { display: grid; gap: 28px; padding-block: 16px calc(32px + env(safe-area-inset-bottom, 0px)); }
   .hs section { display: grid; }
-  .hs .label { margin: 0 0 4px; }
+  .hs .eyebrow { margin: 0 0 4px; }
   .hs__big { font: 680 24px/1.15 var(--display); font-stretch: 112%; text-decoration: none; padding: 10px 0 12px; border-bottom: 1px solid var(--rule); }
   .hs__link { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
   .hs__link strong { font-weight: 600; font-size: 16.5px; }

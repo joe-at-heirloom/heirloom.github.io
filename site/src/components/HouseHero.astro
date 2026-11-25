@@ -21,7 +21,7 @@ const priced = data.items.filter((i) => !i.unknown);
   </div>
   <div class="hh__lead">
     <div class="hh__copy">
-      <p class="label hh__fig">Fig. 1. An ordinary house, scale 1:24</p>
+      <p class="eyebrow hh__fig">Fig. 1. An ordinary house, scale 1:24</p>
       <h1>Know what you own.</h1>
       <p class="hh__sub" id="hh-sub">Move the glass over the house. Under it, the items worth a look show their color. Rest it on one to see what it is, what its marks say, and what similar ones have sold for.</p>
     </div>
@@ -241,7 +241,7 @@ const priced = data.items.filter((i) => !i.unknown);
   .hh--explored .hh__lead { gap: 18px; }
   .hh__count p { margin: 0; }
   .hh__draft { margin-left: 10px; border: 1px solid var(--rule); border-radius: 99px; padding: 1px 7px; }
-  .hh__amt { font: 500 clamp(32px, 3.6vw, 48px)/1.1 var(--mono); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--ink); }
+  .hh__amt { font: 500 clamp(32px, 3.6vw, 48px)/1.1 var(--mono); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--accent); }
   .hh__unk { font: 500 16px var(--text); letter-spacing: 0; color: var(--ink-2); margin-left: 10px; }
   .hh__card { position: relative; z-index: 4; pointer-events: auto; margin-top: auto; width: 100%; max-width: 420px; display: grid; grid-template-columns: 128px minmax(0, 1fr); background: var(--paper); border: 1px solid var(--rule); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-lift); }
   .hh__card--hint { grid-template-columns: minmax(0, 1fr); }
