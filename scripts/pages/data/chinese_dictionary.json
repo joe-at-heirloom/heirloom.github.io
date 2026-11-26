@@ -202,10 +202,10 @@
  },
  {
   "qid": "Q10296389",
-  "slug": "q10296389",
+  "slug": "xu-langxi",
   "name": "徐朗西",
   "name_wikidata": "徐朗西",
-  "pinyin": null,
+  "pinyin": "Xu Langxi",
   "dynasty": "Modern",
   "polity": [
    "People's Republic of China"
@@ -230,7 +230,8 @@
    "en": null
   },
   "zhwiki": "徐朗西",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q10310062",
@@ -477,10 +478,10 @@
  },
  {
   "qid": "Q10379556",
-  "slug": "q10379556",
+  "slug": "shen-qizhan",
   "name": "沈屺瞻",
   "name_wikidata": "沈屺瞻",
-  "pinyin": null,
+  "pinyin": "Shen Qizhan",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -503,7 +504,8 @@
    "en": null
   },
   "zhwiki": "沈屺瞻",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q10394365",
@@ -1204,10 +1206,10 @@
  },
  {
   "qid": "Q10567272",
-  "slug": "q10567272",
+  "slug": "huang-zhiyun",
   "name": "黃至筠",
   "name_wikidata": "黄至筠",
-  "pinyin": null,
+  "pinyin": "Huang Zhiyun",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -1231,7 +1233,8 @@
    "en": null
   },
   "zhwiki": "黄至筠",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q105750836",
@@ -2427,10 +2430,10 @@
  },
  {
   "qid": "Q10899981",
-  "slug": "q10899981",
+  "slug": "liu-yezhao",
   "name": "劉業昭",
   "name_wikidata": "劉業昭",
-  "pinyin": null,
+  "pinyin": "Liu Yezhao",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty",
@@ -2455,7 +2458,8 @@
    "en": null
   },
   "zhwiki": "劉業昭",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q10900170",
@@ -2882,10 +2886,10 @@
  },
  {
   "qid": "Q109173868",
-  "slug": "q109173868",
+  "slug": "ma-mengrong",
   "name": "馬孟容",
   "name_wikidata": "马孟容",
-  "pinyin": null,
+  "pinyin": "Ma Mengrong",
   "dynasty": "Republic",
   "polity": [
    "Republic of China"
@@ -2908,14 +2912,15 @@
    "en": null
   },
   "zhwiki": "马孟容",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q109174159",
-  "slug": "q109174159",
+  "slug": "nong-kang",
   "name": "農康",
   "name_wikidata": "农康",
-  "pinyin": null,
+  "pinyin": "Nong Kang",
   "dynasty": "Modern",
   "polity": [
    "People's Republic of China"
@@ -2936,7 +2941,8 @@
    "en": null
   },
   "zhwiki": "农康",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q109174197",
@@ -3100,10 +3106,10 @@
  },
  {
   "qid": "Q10919948",
-  "slug": "q10919948",
+  "slug": "lu-chuncheng",
   "name": "呂春成",
   "name_wikidata": "呂春成",
-  "pinyin": null,
+  "pinyin": "Lü Chuncheng",
   "dynasty": "Modern",
   "polity": [
    "Taiwan"
@@ -3124,7 +3130,8 @@
    "en": null
   },
   "zhwiki": "呂春成",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q10920879",
@@ -3733,10 +3740,10 @@
  },
  {
   "qid": "Q10947161",
-  "slug": "q10947161",
+  "slug": "an-shaofang",
   "name": "安紹芳",
   "name_wikidata": "安绍芳",
-  "pinyin": null,
+  "pinyin": "An Shaofang",
   "dynasty": "Ming",
   "polity": [
    "Ming dynasty"
@@ -3761,7 +3768,8 @@
    "en": null
   },
   "zhwiki": "安绍芳",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q10947788",
@@ -7523,10 +7531,10 @@
  },
  {
   "qid": "Q11138571",
-  "slug": "q11138571",
+  "slug": "shen-ruizhou",
   "name": "沈瑞舟",
   "name_wikidata": "沈瑞舟",
-  "pinyin": null,
+  "pinyin": "Shen Ruizhou",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -7551,7 +7559,8 @@
    "en": null
   },
   "zhwiki": "沈瑞舟",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q11138600",
@@ -8089,10 +8098,10 @@
  },
  {
   "qid": "Q11177809",
-  "slug": "q11177809",
+  "slug": "huang-ruting",
   "name": "黃汝亭",
   "name_wikidata": "黄汝亭",
-  "pinyin": null,
+  "pinyin": "Huang Ruting",
   "dynasty": "Ming",
   "polity": [
    "Ming dynasty"
@@ -8113,7 +8122,8 @@
    "en": null
   },
   "zhwiki": "黄汝亭",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q11178238",
@@ -8319,10 +8329,10 @@
  },
  {
   "qid": "Q11180747",
-  "slug": "q11180747",
+  "slug": "pang-kai",
   "name": "龐塏",
   "name_wikidata": "龐塏",
-  "pinyin": null,
+  "pinyin": "Pang Kai",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -8348,7 +8358,8 @@
    "en": null
   },
   "zhwiki": "龐塏",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q11181313",
@@ -8875,10 +8886,10 @@
  },
  {
   "qid": "Q116226857",
-  "slug": "q116226857",
+  "slug": "li-xueqiao",
   "name": "李學樵",
   "name_wikidata": "李學樵",
-  "pinyin": null,
+  "pinyin": "Li Xueqiao",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -8909,7 +8920,8 @@
    "en": null
   },
   "zhwiki": "李學樵",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q11626867",
@@ -9274,10 +9286,10 @@
  },
  {
   "qid": "Q117349536",
-  "slug": "q117349536",
+  "slug": "zhuang-shixun",
   "name": "莊士勳",
   "name_wikidata": "莊士勳",
-  "pinyin": null,
+  "pinyin": "Zhuang Shixun",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty",
@@ -9309,14 +9321,15 @@
    "en": "Lukang Township"
   },
   "zhwiki": "莊士勳",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q117789220",
-  "slug": "q117789220",
+  "slug": "zheng-yilin",
   "name": "鄭貽林",
   "name_wikidata": "鄭貽林",
-  "pinyin": null,
+  "pinyin": "Zheng Yilin",
   "dynasty": "Republic",
   "polity": [
    "Taiwan under Qing dynasty rule"
@@ -9347,7 +9360,8 @@
    "en": "Quanzhou Fu"
   },
   "zhwiki": "鄭貽林",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q1194981",
@@ -10110,10 +10124,10 @@
  },
  {
   "qid": "Q134528252",
-  "slug": "q134528252",
+  "slug": "shen-maishi",
   "name": "沈邁士",
   "name_wikidata": "沈邁士",
-  "pinyin": null,
+  "pinyin": "Shen Maishi",
   "dynasty": "Modern",
   "polity": [],
   "dates": {
@@ -10139,14 +10153,15 @@
    "en": null
   },
   "zhwiki": "沈邁士",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q134533470",
-  "slug": "q134533470",
+  "slug": "zhang-minbiao",
   "name": "張民表",
   "name_wikidata": "張民表",
-  "pinyin": null,
+  "pinyin": "Zhang Minbiao",
   "dynasty": "Ming",
   "polity": [
    "Ming dynasty"
@@ -10173,7 +10188,8 @@
    "en": "Zhongmu County"
   },
   "zhwiki": "張民表",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q135254759",
@@ -10208,10 +10224,10 @@
  },
  {
   "qid": "Q135657925",
-  "slug": "q135657925",
+  "slug": "zhuang-baoshu",
   "name": "莊寶書",
   "name_wikidata": "莊寶書",
-  "pinyin": null,
+  "pinyin": "Zhuang Baoshu",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -10236,7 +10252,8 @@
    "en": null
   },
   "zhwiki": "莊寶書",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q1360244",
@@ -10401,10 +10418,10 @@
  },
  {
   "qid": "Q136898047",
-  "slug": "q136898047",
+  "slug": "han-lin",
   "name": "韓麟",
   "name_wikidata": "韓麟",
-  "pinyin": null,
+  "pinyin": "Han Lin",
   "dynasty": "Yuan",
   "polity": [
    "Yuan dynasty"
@@ -10427,14 +10444,15 @@
    "en": "Zhengding County"
   },
   "zhwiki": "韓麟",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q139669896",
-  "slug": "q139669896",
+  "slug": "ge-dingchen",
   "name": "葛定辰",
   "name_wikidata": "葛定辰",
-  "pinyin": null,
+  "pinyin": "Ge Dingchen",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -10457,7 +10475,8 @@
    "en": null
   },
   "zhwiki": "葛定辰",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q14556923",
@@ -10894,10 +10913,10 @@
  },
  {
   "qid": "Q15891424",
-  "slug": "q15891424",
+  "slug": "shao-qian",
   "name": "邵潛",
   "name_wikidata": "邵潜",
-  "pinyin": null,
+  "pinyin": "Shao Qian",
   "dynasty": "Ming",
   "polity": [
    "Ming dynasty"
@@ -10922,14 +10941,15 @@
    "en": null
   },
   "zhwiki": "邵潜",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15895793",
-  "slug": "q15895793",
+  "slug": "yan-yuan",
   "name": "顏元",
   "name_wikidata": "顏元",
-  "pinyin": null,
+  "pinyin": "Yan Yuan",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -10954,7 +10974,8 @@
    "en": null
   },
   "zhwiki": "顏元 (畫家)",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15895964",
@@ -11188,10 +11209,10 @@
  },
  {
   "qid": "Q15900410",
-  "slug": "q15900410",
+  "slug": "liang-tan",
   "name": "梁檀",
   "name_wikidata": "梁檀",
-  "pinyin": null,
+  "pinyin": "Liang Tan",
   "dynasty": "Ming",
   "polity": [
    "Ming dynasty",
@@ -11221,7 +11242,8 @@
    "en": "Taiyuan"
   },
   "zhwiki": "梁檀",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15900514",
@@ -11270,10 +11292,10 @@
  },
  {
   "qid": "Q15901810",
-  "slug": "q15901810",
+  "slug": "jiang-ji",
   "name": "蔣驥",
   "name_wikidata": "蔣驥",
-  "pinyin": null,
+  "pinyin": "Jiang Ji",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -11298,7 +11320,8 @@
    "en": null
   },
   "zhwiki": "蔣驥 (清朝)",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15902201",
@@ -11411,10 +11434,10 @@
  },
  {
   "qid": "Q15903882",
-  "slug": "q15903882",
+  "slug": "liu-bingzhao",
   "name": "劉炳照",
   "name_wikidata": "劉炳照",
-  "pinyin": null,
+  "pinyin": "Liu Bingzhao",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -11442,7 +11465,8 @@
    "en": null
   },
   "zhwiki": "劉炳照",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15904009",
@@ -11552,10 +11576,10 @@
  },
  {
   "qid": "Q15908046",
-  "slug": "q15908046",
+  "slug": "qian-huafo",
   "name": "錢化佛",
   "name_wikidata": "钱化佛",
-  "pinyin": null,
+  "pinyin": "Qian Huafo",
   "dynasty": "Republic",
   "polity": [
    "Republic of China"
@@ -11579,7 +11603,8 @@
    "en": "Changzhou"
   },
   "zhwiki": "钱化佛",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15908358",
@@ -11722,10 +11747,10 @@
  },
  {
   "qid": "Q15909758",
-  "slug": "q15909758",
+  "slug": "gao-lesan",
   "name": "高樂三",
   "name_wikidata": "高乐三",
-  "pinyin": null,
+  "pinyin": "Gao Lesan",
   "dynasty": "Modern",
   "polity": [
    "People's Republic of China"
@@ -11753,7 +11778,8 @@
    "en": null
   },
   "zhwiki": "高乐三",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15909839",
@@ -11952,10 +11978,10 @@
  },
  {
   "qid": "Q15912767",
-  "slug": "q15912767",
+  "slug": "peng-chunshi",
   "name": "彭醇士",
   "name_wikidata": "彭醇士",
-  "pinyin": null,
+  "pinyin": "Peng Chunshi",
   "dynasty": "Republic",
   "polity": [
    "Republic of China"
@@ -11981,7 +12007,8 @@
    "en": null
   },
   "zhwiki": "彭醇士",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15912791",
@@ -12086,10 +12113,10 @@
  },
  {
   "qid": "Q15913872",
-  "slug": "q15913872",
+  "slug": "pan-linggao",
   "name": "潘齡皋",
   "name_wikidata": "潘齡皋",
-  "pinyin": null,
+  "pinyin": "Pan Linggao",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -12114,7 +12141,8 @@
    "en": null
   },
   "zhwiki": "潘齡皋",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15914195",
@@ -12238,10 +12266,10 @@
  },
  {
   "qid": "Q15915016",
-  "slug": "q15915016",
+  "slug": "yin-zhongrong",
   "name": "殷仲容",
   "name_wikidata": "殷仲容",
-  "pinyin": null,
+  "pinyin": "Yin Zhongrong",
   "dynasty": "Tang",
   "polity": [
    "Tang dynasty"
@@ -12264,7 +12292,8 @@
    "en": null
   },
   "zhwiki": "殷仲容",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15915150",
@@ -12741,10 +12770,10 @@
  },
  {
   "qid": "Q15923193",
-  "slug": "q15923193",
+  "slug": "zhang-lu-an",
   "name": "張魯庵",
   "name_wikidata": "张鲁庵",
-  "pinyin": null,
+  "pinyin": "Zhang Lu'an",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -12769,7 +12798,8 @@
    "en": "Zhejiang"
   },
   "zhwiki": "张鲁庵",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q15923725",
@@ -14028,10 +14058,10 @@
  },
  {
   "qid": "Q16075748",
-  "slug": "q16075748",
+  "slug": "fan-jiaju",
   "name": "范家駒",
   "name_wikidata": "范家驹",
-  "pinyin": null,
+  "pinyin": "Fan Jiaju",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -14054,7 +14084,8 @@
    "en": null
   },
   "zhwiki": "范家驹",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q16075943",
@@ -14427,10 +14458,10 @@
  },
  {
   "qid": "Q16077345",
-  "slug": "q16077345",
+  "slug": "tan-xinzhen",
   "name": "譚鑫振",
   "name_wikidata": "譚鑫振",
-  "pinyin": null,
+  "pinyin": "Tan Xinzhen",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -14453,7 +14484,8 @@
    "en": null
   },
   "zhwiki": "譚鑫振",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q16077448",
@@ -15415,10 +15447,10 @@
  },
  {
   "qid": "Q16905361",
-  "slug": "q16905361",
+  "slug": "li-yingbin",
   "name": "李應彬",
   "name_wikidata": "李應彬",
-  "pinyin": null,
+  "pinyin": "Li Yingbin",
   "dynasty": "Modern",
   "polity": [
    "Taiwan"
@@ -15441,7 +15473,8 @@
    "en": null
   },
   "zhwiki": "李應彬",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q16905502",
@@ -15473,10 +15506,10 @@
  },
  {
   "qid": "Q16906774",
-  "slug": "q16906774",
+  "slug": "fan-heyan",
   "name": "范鶴言",
   "name_wikidata": "范鶴言",
-  "pinyin": null,
+  "pinyin": "Fan Heyan",
   "dynasty": "Modern",
   "polity": [
    "Taiwan"
@@ -15499,7 +15532,8 @@
    "en": null
   },
   "zhwiki": "范鶴言",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q16907036",
@@ -15881,10 +15915,10 @@
  },
  {
   "qid": "Q17164007",
-  "slug": "q17164007",
+  "slug": "yang-yunyou",
   "name": "楊雲友",
   "name_wikidata": "成岫",
-  "pinyin": null,
+  "pinyin": "Yang Yunyou",
   "dynasty": "Ming",
   "polity": [
    "Ming dynasty"
@@ -15909,7 +15943,8 @@
    "en": null
   },
   "zhwiki": "成岫",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q17164040",
@@ -16259,10 +16294,10 @@
  },
  {
   "qid": "Q18233854",
-  "slug": "q18233854",
+  "slug": "sun-peicang",
   "name": "孫佩蒼",
   "name_wikidata": "孫佩蒼",
-  "pinyin": null,
+  "pinyin": "Sun Peicang",
   "dynasty": "Republic",
   "polity": [
    "Republic of China"
@@ -16285,7 +16320,8 @@
    "en": null
   },
   "zhwiki": "孫佩蒼",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q18234498",
@@ -17118,10 +17154,10 @@
  },
  {
   "qid": "Q19855271",
-  "slug": "q19855271",
+  "slug": "zhang-daorui",
   "name": "張道瑞",
   "name_wikidata": "張道瑞",
-  "pinyin": null,
+  "pinyin": "Zhang Daorui",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -17146,14 +17182,15 @@
    "en": null
   },
   "zhwiki": "張道瑞",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q19856142",
-  "slug": "q19856142",
+  "slug": "zhuchan",
   "name": "竹禪",
   "name_wikidata": "竹禅",
-  "pinyin": null,
+  "pinyin": "Zhuchan",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -17176,7 +17213,8 @@
    "en": "Chongqing"
   },
   "zhwiki": "竹禅",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q203782",
@@ -17290,10 +17328,10 @@
  },
  {
   "qid": "Q21015087",
-  "slug": "q21015087",
+  "slug": "zhu-duokui",
   "name": "朱多煃",
   "name_wikidata": "朱多煃",
-  "pinyin": null,
+  "pinyin": "Zhu Duokui",
   "dynasty": "Ming",
   "polity": [
    "Ming dynasty"
@@ -17318,7 +17356,8 @@
    "en": null
   },
   "zhwiki": "朱多煃",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q2112649",
@@ -17636,10 +17675,10 @@
  },
  {
   "qid": "Q22101081",
-  "slug": "q22101081",
+  "slug": "jian-mingyong",
   "name": "簡明勇",
   "name_wikidata": "簡明勇",
-  "pinyin": null,
+  "pinyin": "Jian Mingyong",
   "dynasty": "Modern",
   "polity": [
    "Taiwan"
@@ -17662,7 +17701,8 @@
    "en": null
   },
   "zhwiki": "簡明勇",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q22247735",
@@ -17823,10 +17863,10 @@
  },
  {
   "qid": "Q2308422",
-  "slug": "q2308422",
+  "slug": "zhou-fang",
   "name": "周昉",
   "name_wikidata": "周昉",
-  "pinyin": null,
+  "pinyin": "Zhou Fang",
   "dynasty": "Tang",
   "polity": [
    "Tang dynasty"
@@ -17849,7 +17889,8 @@
    "en": "Chang'an"
   },
   "zhwiki": "周昉",
-  "enwiki": "https://en.wikipedia.org/wiki/Zhou_Fang_(Tang_dynasty)"
+  "enwiki": "https://en.wikipedia.org/wiki/Zhou_Fang_(Tang_dynasty)",
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q2341628",
@@ -18201,10 +18242,10 @@
  },
  {
   "qid": "Q24838494",
-  "slug": "q24838494",
+  "slug": "liu-bin",
   "name": "柳濱",
   "name_wikidata": "柳滨",
-  "pinyin": null,
+  "pinyin": "Liu Bin",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -18227,7 +18268,8 @@
    "en": null
   },
   "zhwiki": "柳滨 (1887年)",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q24838650",
@@ -18741,10 +18783,10 @@
  },
  {
   "qid": "Q28415125",
-  "slug": "q28415125",
+  "slug": "yi-shen",
   "name": "伊慎",
   "name_wikidata": "伊慎",
-  "pinyin": null,
+  "pinyin": "Yi Shen",
   "dynasty": "Tang",
   "polity": [
    "Tang dynasty"
@@ -18767,7 +18809,8 @@
    "en": null
   },
   "zhwiki": "伊慎",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q28416346",
@@ -19516,10 +19559,10 @@
  },
  {
   "qid": "Q30944595",
-  "slug": "q30944595",
+  "slug": "yang-zhao",
   "name": "楊肇",
   "name_wikidata": "杨肇",
-  "pinyin": null,
+  "pinyin": "Yang Zhao",
   "dynasty": null,
   "polity": [
    "Western Jin dynasty"
@@ -19545,7 +19588,8 @@
    "en": null
   },
   "zhwiki": "楊肇",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q30945636",
@@ -26205,10 +26249,10 @@
  },
  {
   "qid": "Q60990167",
-  "slug": "q60990167",
+  "slug": "cai-ying",
   "name": "蔡英",
   "name_wikidata": "蔡英",
-  "pinyin": null,
+  "pinyin": "Cai Ying",
   "dynasty": "Qing",
   "polity": [
    "Qing dynasty"
@@ -26231,7 +26275,8 @@
    "en": null
   },
   "zhwiki": "蔡英 (1861年)",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q6128042",
@@ -27554,10 +27599,10 @@
  },
  {
   "qid": "Q69863031",
-  "slug": "q69863031",
+  "slug": "zheng-zhongjian",
   "name": "鄭仲堅",
   "name_wikidata": "郑仲坚",
-  "pinyin": null,
+  "pinyin": "Zheng Zhongjian",
   "dynasty": "Modern",
   "polity": [
    "People's Republic of China"
@@ -27582,7 +27627,8 @@
    "en": "Guiyang"
   },
   "zhwiki": "郑仲坚",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q700284",
@@ -29765,10 +29811,10 @@
  },
  {
   "qid": "Q78116832",
-  "slug": "q78116832",
+  "slug": "peng-babai",
   "name": "彭八百",
   "name_wikidata": "彭八百",
-  "pinyin": null,
+  "pinyin": "Peng Babai",
   "dynasty": "Modern",
   "polity": [
    "People's Republic of China"
@@ -29793,7 +29839,8 @@
    "en": null
   },
   "zhwiki": "彭八百",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q7967574",
@@ -30890,10 +30937,10 @@
  },
  {
   "qid": "Q85852312",
-  "slug": "q85852312",
+  "slug": "huang-ruozhou",
   "name": "黃若舟",
   "name_wikidata": "黄若舟",
-  "pinyin": null,
+  "pinyin": "Huang Ruozhou",
   "dynasty": "Modern",
   "polity": [
    "People's Republic of China"
@@ -30916,7 +30963,8 @@
    "en": "Liyang"
   },
   "zhwiki": "黄若舟",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q8666",
@@ -31018,10 +31066,10 @@
  },
  {
   "qid": "Q890294",
-  "slug": "q890294",
+  "slug": "wei-xie",
   "name": "衛協",
   "name_wikidata": "卫协",
-  "pinyin": null,
+  "pinyin": "Wei Xie",
   "dynasty": null,
   "polity": [
    "China"
@@ -31042,7 +31090,8 @@
    "en": null
   },
   "zhwiki": "衛協",
-  "enwiki": null
+  "enwiki": null,
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q890613",
@@ -31707,10 +31756,10 @@
  },
  {
   "qid": "Q109176540",
-  "slug": "q109176540",
+  "slug": "teng-gu",
   "name": "滕固",
   "name_wikidata": "滕固",
-  "pinyin": null,
+  "pinyin": "Teng Gu",
   "dynasty": "Republic",
   "polity": [],
   "dates": {
@@ -31733,7 +31782,8 @@
   "zhwiki": "滕固",
   "enwiki": null,
   "round": 2,
-  "found_by": "Suzuki catalogue"
+  "found_by": "Suzuki catalogue",
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q10921143",
@@ -32284,10 +32334,10 @@
  },
  {
   "qid": "Q116227209",
-  "slug": "q116227209",
+  "slug": "zhou-zhaoxiang",
   "name": "周肇祥",
   "name_wikidata": "周肇祥",
-  "pinyin": null,
+  "pinyin": "Zhou Zhaoxiang",
   "dynasty": "Modern",
   "polity": [],
   "dates": {
@@ -32315,7 +32365,8 @@
   "zhwiki": "周肇祥",
   "enwiki": null,
   "round": 2,
-  "found_by": "Suzuki catalogue"
+  "found_by": "Suzuki catalogue",
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q11658307",
@@ -32749,10 +32800,10 @@
  },
  {
   "qid": "Q22078666",
-  "slug": "q22078666",
+  "slug": "lian-bu",
   "name": "廉布",
   "name_wikidata": "廉布",
-  "pinyin": null,
+  "pinyin": "Lian Bu",
   "dynasty": null,
   "polity": [
    "Northern Song dynasty"
@@ -32777,7 +32828,8 @@
   "zhwiki": "廉布",
   "enwiki": null,
   "round": 2,
-  "found_by": "Suzuki catalogue"
+  "found_by": "Suzuki catalogue",
+  "pinyin_from": "characters (pypinyin), checked by hand"
  },
  {
   "qid": "Q28355101",
