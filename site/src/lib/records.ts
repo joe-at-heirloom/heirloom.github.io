@@ -642,7 +642,9 @@ export function exportSilverSheet(r: Rec): Sheet {
     };
   }
   const chinese: EsFact[] = (a.chinese ?? []).filter((f: EsFact) => CJK.test(f.v));
-  const glyph = (chinese.find((f) => !f.ss) ?? chinese[0])?.v.replace(/\s*[(/].*$/, '').trim() || null;
+  // A chop is named by its characters ("Chop 善 (Shan)"): they are the mark.
+  const chop = a.type === 'workshop_chop' ? /^Chop\s+(\S+)\s*(?:\((.+)\))?/.exec(r.name) : null;
+  const glyph = chop ? chop[1] : (chinese.find((f) => !f.ss) ?? chinese[0])?.v.replace(/\s*[(/].*$/, '').trim() || null;
   const city = r.place ?? null;
   const group = a.type === 'workshop_chop' ? 'chops' : a.type === 'unidentified_mark' ? 'unidentified' : city ? ES_CITY[city] ?? 'ports' : 'unplaced';
   const differ: Differ[] = [];
@@ -654,8 +656,8 @@ export function exportSilverSheet(r: Rec): Sheet {
   return {
     id: r.id, anchor: r.anchor ?? r.id, url: urlOf(r), kind: KIND[a.type] ?? 'Export silver', group,
     glyphs: glyph, typeset: !!glyph, lang: glyph ? 'zh' : null,
-    reading: String(r.name).replace(/\s+[㐀-鿿𠀀-𪛟].*$/u, ''),
-    means: [((a.roles ?? []) as EsFact[])[0]?.v, city].filter(Boolean).join(', ') || null,
+    reading: chop ? chop[2] ?? chop[1] : String(r.name).replace(/\s+[㐀-鿿𠀀-𪛟].*$/u, ''),
+    means: clean([((a.roles ?? []) as EsFact[])[0]?.v, city].filter(Boolean).join(', ')),
     years: r.date_from ? `c.${yearsOf(r.date_from, r.date_to)}` : null,
     facts: [
       ['Marks', marks.join('; ')],
