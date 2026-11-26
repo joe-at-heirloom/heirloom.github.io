@@ -33,14 +33,14 @@ const KINDS: [string, string][] = [
   ['torba or asmalyk design', 'Torba and asmalyk designs'], ['ensi layout', 'Ensi layouts'], ['border', 'Borders'],
 ];
 const kindLabel = (k: string) => KINDS.find(([x]) => x === k)?.[1] ?? 'Other';
-const tribeName = (id: string) => TR.find((t) => t.id === id)?.name ?? id;
+const tribeName = (id: string, label?: string) => TR.find((t) => t.id === id)?.name ?? label ?? id;
 const SURE: Record<string, string> = { 'most sources': '', 'some sources': ' (some sources)', disputed: ' (disputed)' };
 const gulSheets = G.map((g) => p2Sheet(g, {
   page: path, prefix: 'gul', kind: 'Turkmen gul', group: String(g.raw.kind ?? 'other'),
   means: g.raw.meaning ?? null,
   fields: [
     ['What to look for', g.raw.shape],
-    ['Tribes', (g.raw.tribes ?? []).map((t: any) => `${tribeName(tribeId(t.tribe))}${SURE[t.how_sure] ?? ''}`).join(', ') || null],
+    ['Tribes', (g.raw.tribes ?? []).map((t: any) => `${tribeName(tribeId(t.tribe), t.tribe)}${SURE[t.how_sure] ?? ''}`).join(', ') || null],
     ['Woven on', (g.raw.formats ?? []).join(', ') || null],
     ['With it', (g.raw.minor_guls_with_it ?? []).join(', ') || null],
     ['How to tell it apart', g.raw.how_to_tell],
@@ -58,7 +58,7 @@ const head = (n: { lang: string; text: string }[]) => n.find((x) => x.lang === '
 const items = G.map((g) => ({
   anchor: `gul-${g.id}`, name: g.name, native: head(g.native), kind: String(g.raw.kind ?? 'other'),
   img: g.pics[0] ? { src: media(g.pics[0].file), alt: g.pics[0].caption || g.name } : null,
-  tribes: (g.raw.tribes ?? []).map((t: any) => ({ id: tribeId(t.tribe), sure: String(t.how_sure ?? '') })),
+  tribes: (g.raw.tribes ?? []).map((t: any) => ({ id: tribeId(t.tribe), sure: String(t.how_sure ?? ''), label: String(t.tribe ?? '') })),
   formats: (g.raw.formats ?? []).map(formatId),
 }));
 const usedKinds = KINDS.filter(([k]) => items.some((i) => i.kind === k)).map(([id, name]) => ({ id, name }));

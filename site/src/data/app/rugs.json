@@ -34503,21 +34503,21 @@
       "back": null
      },
      "design": {
-      "field": "Large, simple, often pictorial designs (Buddhist, mythological, landscapes), shaded colors, often no border (Leitch); early rugs with all-over repeats.",
+      "field": "Large, simple, often pictorial designs (Buddhist, mythological, landscapes), shaded colors, often no border; early rugs with all-over repeats.",
       "motifs": [
        "dragon",
        "landscape",
        "Buddhist emblems"
       ],
-      "border": "Usually absent (Leitch); one dealer says about four borders.",
-      "colors": "Brilliant yellow, green, blue and red (Leitch); more blue than Ningxia.",
+      "border": "Usually absent; one dealer says about four borders.",
+      "colors": "Brilliant yellow, green, blue and red; more blue than Ningxia.",
       "formats": [
        "rug",
        "mat (poshti)",
        "pillar rug",
        "saddle rug"
       ],
-      "sizes": "Mats to carpets, measured in Chinese feet (Leitch).",
+      "sizes": "Mats to carpets, measured in Chinese feet.",
       "motif_ids": [
        "dragon",
        "buddhist-emblems"
@@ -34731,7 +34731,7 @@
        "room-size carpet",
        "mat (poshti)"
       ],
-      "sizes": "Mats to very large carpets, round, oval or rectangular, in English feet (Leitch).",
+      "sizes": "Mats to very large carpets, round, oval or rectangular, in English feet.",
       "motif_ids": [
        "dragon",
        "bat",
@@ -34745,7 +34745,7 @@
       {
        "id": "tianjin",
        "name": "Tianjin (Tientsin)",
-       "how_to_tell": "Tianjin rugs of the 1920s have the same foundation and count but longer pile of machine-spun wool, darker colors, very even wefting and sometimes symmetric knots throughout (Leitch)."
+       "how_to_tell": "Tianjin rugs of the 1920s have the same foundation and count but longer pile of machine-spun wool, darker colors, very even wefting and sometimes symmetric knots throughout."
       },
       {
        "id": "ningxia",
@@ -34969,7 +34969,7 @@
        "fret"
       ],
       "border": "",
-      "colors": "Darker hues than Peking (Leitch); chemically washed to soft pastel tones for export.",
+      "colors": "Darker hues than Peking; chemically washed to soft pastel tones for export.",
       "formats": [
        "rug",
        "room-size carpet",
@@ -36741,7 +36741,7 @@
        "rug",
        "mat (poshti)"
       ],
-      "sizes": "Standard size of Japanese dantsu is one tatami mat (Takashima 2014).",
+      "sizes": "Standard size of Japanese dantsu is one tatami mat.",
       "motif_ids": [
        "peony",
        "scrolling-vine"
@@ -36902,7 +36902,7 @@
        "rug",
        "mat (poshti)"
       ],
-      "sizes": "Standard size of Japanese dantsu is one tatami mat (Takashima 2014).",
+      "sizes": "Standard size of Japanese dantsu is one tatami mat.",
       "motif_ids": [
        "peony",
        "scrolling-vine"
@@ -70558,13 +70558,13 @@
      "name": "Medallion and corners",
      "kind": "layout",
      "other_names": [
-      "medallion",
-      "central medallion",
-      "medallion-and-corner design",
-      "lachak-toranj",
-      "toranj",
-      "corner pieces",
-      "spandrels",
+      "Medallion",
+      "Central medallion",
+      "Medallion-and-corner design",
+      "Lachak-toranj",
+      "Toranj",
+      "Corner pieces",
+      "Spandrels",
       "Lachakturunj (Azerbaijani museum spelling)"
      ],
      "native": [
@@ -70593,7 +70593,7 @@
        "source": "azcarpetmuseum_api"
       }
      ],
-     "literal": "lachak: in Dehkhoda's dictionary, a small triangular head kerchief (چارقد خرد سه گوش); the corner piece is named after it. toranj: no literal meaning found in the sources read.",
+     "literal": "Lachak: in Dehkhoda's dictionary, a small triangular head kerchief (چارقد خرد سه گوش); the corner piece is named after it. toranj: no literal meaning found in the sources read.",
      "description": "A large central shape in the middle of the field: round, oval, lobed, diamond, shield- or star-shaped, often with a smaller cap or pendant above and below. In the medallion-and-corner layout a quarter of a matching shape fills each corner of the field.",
      "where_found": [
       "tabriz",
@@ -70792,11 +70792,11 @@
      "name": "Pole medallion and medallion rows",
      "kind": "layout",
      "other_names": [
-      "pole medallion",
-      "medallion row",
-      "multiple medallions",
-      "chain medallion",
-      "column of medallions"
+      "Pole medallion",
+      "Medallion row",
+      "Multiple medallions",
+      "Chain medallion",
+      "Column of medallions"
      ],
      "native": [],
      "literal": null,
@@ -70887,20 +70887,20 @@
      "name": "Prayer niche (mihrab)",
      "kind": "layout",
      "other_names": [
-      "prayer niche",
-      "mihrab",
-      "niche",
-      "prayer arch",
-      "prayer rug design",
-      "stepped mihrab",
-      "double niche",
-      "triple arch",
-      "cross panel",
-      "lamp",
-      "mosque lamp",
-      "namazlık",
-      "seccade",
-      "jaynamaz"
+      "Prayer niche",
+      "Mihrab",
+      "Niche",
+      "Prayer arch",
+      "Prayer rug design",
+      "Stepped mihrab",
+      "Double niche",
+      "Triple arch",
+      "Cross panel",
+      "Lamp",
+      "Mosque lamp",
+      "Namazlık",
+      "Seccade",
+      "Jaynamaz"
      ],
      "native": [
       {
@@ -70927,7 +70927,7 @@
        "source": "azcarpetmuseum_api"
       }
      ],
-     "literal": "mehrabi: 'of the mihrab', the niche in a mosque wall that faces Mecca. Stone glosses namazlık and seccade (Turkish) and jaynamaz (Persian) as prayer rug.",
+     "literal": "Mehrabi: 'of the mihrab', the niche in a mosque wall that faces Mecca. Stone glosses namazlık and seccade (Turkish) and jaynamaz (Persian) as prayer rug.",
      "description": "An arch at one end of the field, pointed, stepped, rounded or three-lobed, so the field reads as a doorway or niche. Columns may hold up the arch, a lamp or ewer may hang from its top, and a panel (cross panel) may run across the rug above or below the niche.",
      "where_found": [
       "tabriz",
@@ -71086,11 +71086,11 @@
      "name": "Saff (row of niches)",
      "kind": "layout",
      "other_names": [
-      "saff",
-      "saph",
-      "family prayer rug",
-      "multiple-niche prayer rug",
-      "multi-niche rug"
+      "Saff",
+      "Saph",
+      "Family prayer rug",
+      "Multiple-niche prayer rug",
+      "Multi-niche rug"
      ],
      "native": [
       {
@@ -71105,7 +71105,7 @@
        "source": "oyman_2019"
       }
      ],
-     "literal": "saff: Arabic 'row, rank' (Stone).",
+     "literal": "Saff: Arabic 'row, rank'.",
      "description": "Several prayer niches side by side across the width of one rug, like a row of worshippers.",
      "where_found": [
       "kayseri"
@@ -71170,14 +71170,14 @@
      "name": "Lattice (trellis)",
      "kind": "field design",
      "other_names": [
-      "lattice",
-      "trellis",
-      "diaper",
-      "honeycomb",
-      "lozenge lattice",
-      "mirror design",
-      "network",
-      "bandi"
+      "Lattice",
+      "Trellis",
+      "Diaper",
+      "Honeycomb",
+      "Lozenge lattice",
+      "Mirror design",
+      "Network",
+      "Bandi"
      ],
      "native": [],
      "literal": null,
@@ -71274,13 +71274,13 @@
      "name": "Garden panel (kheshti)",
      "kind": "field design",
      "other_names": [
-      "kheshti",
-      "khesti",
-      "khishti",
-      "garden panel",
-      "panel design",
-      "compartment design",
-      "brick design"
+      "Kheshti",
+      "Khesti",
+      "Khishti",
+      "Garden panel",
+      "Panel design",
+      "Compartment design",
+      "Brick design"
      ],
      "native": [
       {
@@ -71296,7 +71296,7 @@
        "source": "iranica_carpets_iv"
       }
      ],
-     "literal": "khesht: 'brick' (Iranica). The field looks laid in bricks or tiles.",
+     "literal": "Khesht: 'brick'. The field looks laid in bricks or tiles.",
      "description": "The field is divided into rows of rectangular panels like tiles. Each panel holds one plant, tree, flower vase, bird or small niche.",
      "where_found": [
       "bakhtiari"
@@ -71357,12 +71357,12 @@
      "name": "Garden carpet",
      "kind": "layout",
      "other_names": [
-      "garden carpet",
-      "garden design",
-      "chahar bagh",
-      "garden compartments",
-      "water channels",
-      "baghi"
+      "Garden carpet",
+      "Garden design",
+      "Chahar bagh",
+      "Garden compartments",
+      "Water channels",
+      "Baghi"
      ],
      "native": [
       {
@@ -71378,7 +71378,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "chahar bagh: 'four gardens', the quartered garden (Stone). baghi: 'garden-like'.",
+     "literal": "Chahar bagh: 'four gardens', the quartered garden. baghi: 'garden-like'.",
      "description": "A bird's-eye plan of a formal garden: water channels (often drawn with zigzags or chevrons, sometimes with fish) divide the field into planted beds with trees and flowers, with pools where the channels cross.",
      "where_found": [
       "qum",
@@ -71447,10 +71447,10 @@
      "name": "Open (plain) field",
      "kind": "field design",
      "other_names": [
-      "open field",
-      "plain field",
-      "empty field",
-      "mirror carpet"
+      "Open field",
+      "Plain field",
+      "Empty field",
+      "Mirror carpet"
      ],
      "native": [
       {
@@ -71460,7 +71460,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "kaf-sadeh: 'plain ground'.",
+     "literal": "Kaf-sadeh: 'plain ground'.",
      "description": "Most of the field is left as one plain color, or as plain bands, with at most a few small motifs or a small medallion.",
      "where_found": [
       "gabbeh",
@@ -71525,12 +71525,12 @@
      "name": "Stripes",
      "kind": "field design",
      "other_names": [
-      "stripes",
-      "stripe",
-      "diagonal stripes",
-      "banded design",
-      "moharramat",
-      "moharrami"
+      "Stripes",
+      "Stripe",
+      "Diagonal stripes",
+      "Banded design",
+      "Moharramat",
+      "Moharrami"
      ],
      "native": [
       {
@@ -71540,7 +71540,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "moharramat: in Dehkhoda (citing Nazem al-Atebba), a cloth-sellers' word for striped cloth with alternating black and white or colored stripes.",
+     "literal": "Moharramat: in Dehkhoda (citing Nazem al-Atebba), a cloth-sellers' word for striped cloth with alternating black and white or colored stripes.",
      "description": "The field is filled with parallel stripes, running the length of the rug, across it, or diagonally, often each stripe carrying its own row of small motifs (botehs, flowers, stars).",
      "where_found": [
       "moroccan-middle-atlas",
@@ -71617,13 +71617,13 @@
      "name": "Pictorial designs",
      "kind": "field design",
      "other_names": [
-      "pictorial",
-      "picture rug",
-      "figures",
-      "portrait rug",
+      "Pictorial",
+      "Picture rug",
+      "Figures",
+      "Portrait rug",
       "Persepolis design",
-      "zirkhaki",
-      "landscape"
+      "Zirkhaki",
+      "Landscape"
      ],
      "native": [
       {
@@ -71639,7 +71639,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "naqsh-e ghalat: 'wrong design', a dealers' term Stone reports for pictorial rugs. tablo'i: 'like a picture (tableau)'.",
+     "literal": "Naqsh-e ghalat: 'wrong design', a dealers' term Stone reports for pictorial rugs. tablo'i: 'like a picture (tableau)'.",
      "description": "A picture fills the field instead of a pattern: people, kings and heroes, animals, buildings (Persepolis), scenes from poetry, or copies of European prints.",
      "where_found": [
       "tabriz",
@@ -71699,13 +71699,13 @@
      "name": "Animals and hunting scenes",
      "kind": "field design",
      "other_names": [
-      "animal carpet",
-      "hunting carpet",
-      "hunting scene",
-      "animals",
-      "shekargah",
-      "animals in combat",
-      "lion"
+      "Animal carpet",
+      "Hunting carpet",
+      "Hunting scene",
+      "Animals",
+      "Shekargah",
+      "Animals in combat",
+      "Lion"
      ],
      "native": [
       {
@@ -71715,7 +71715,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "shekargah: 'hunting ground'.",
+     "literal": "Shekargah: 'hunting ground'.",
      "description": "Animals, real and mythical, among flowering plants: lions and leopards attacking deer or cattle, birds, sometimes riders hunting with spears and bows.",
      "where_found": [
       "kashan-silk",
@@ -71827,11 +71827,11 @@
      "name": "Sampler (vagireh)",
      "kind": "layout",
      "other_names": [
-      "sampler",
-      "vagireh",
-      "wagireh",
-      "vagiereh",
-      "vāgīra"
+      "Sampler",
+      "Vagireh",
+      "Wagireh",
+      "Vagiereh",
+      "Vāgīra"
      ],
      "native": [
       {
@@ -71841,7 +71841,7 @@
        "source": "iranica_carpets_iv"
       }
      ],
-     "literal": "vagireh: Stone glosses it 'copy, sampler'.",
+     "literal": "Vagireh: Stone glosses it 'copy, sampler'.",
      "description": "A small rug that shows fragments of a design: part of a border, a corner, and part of the field, often ending abruptly, used as a weaver's model.",
      "where_found": [
       "bidjar"
@@ -71892,13 +71892,13 @@
      "name": "War rug imagery",
      "kind": "field design",
      "other_names": [
-      "war rug",
-      "war imagery",
-      "tank",
-      "helicopter",
+      "War rug",
+      "War imagery",
+      "Tank",
+      "Helicopter",
       "Kalashnikov",
-      "map",
-      "war aksi"
+      "Map",
+      "War aksi"
      ],
      "native": [],
      "literal": null,
@@ -71941,13 +71941,13 @@
      "name": "Herati",
      "kind": "field design",
      "other_names": [
-      "herati",
+      "Herati",
       "Herati pattern",
-      "fish pattern",
-      "mahi",
-      "mahi-dar-ham",
+      "Fish pattern",
+      "Mahi",
+      "Mahi-dar-ham",
       "Feraghan design",
-      "twin fish",
+      "Twin fish",
       "Herati border"
      ],
      "native": [
@@ -71976,7 +71976,7 @@
        "source": "azcarpetmuseum_api"
       }
      ],
-     "literal": "herati: 'from Herat' (Iranica). mahi: 'fish', from the leaves around each rosette. mahi-dar-ham: 'fish intertwined'.",
+     "literal": "Herati: 'from Herat'. mahi: 'fish', from the leaves around each rosette. mahi-dar-ham: 'fish intertwined'.",
      "description": "A small repeat that covers the field: a flower or rosette inside a diamond, with four long curved leaves (sickle or lancet leaves) lying along the diamond's sides. Repeated, the leaves look like little fish swimming around the flowers. It may be finely curved or drawn in angular steps.",
      "where_found": [
       "tabriz",
@@ -72107,10 +72107,10 @@
      "name": "Mina khani",
      "kind": "field design",
      "other_names": [
-      "mina khani",
-      "minakhani",
+      "Mina khani",
+      "Minakhani",
       "Mina Khani design",
-      "mina-khani"
+      "Mina-khani"
      ],
      "native": [
       {
@@ -72120,7 +72120,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "Iranica: literal meaning unknown, possibly from a proper name.",
+     "literal": "Literal meaning unknown, possibly from a proper name.",
      "description": "A network of stems drawn as linked diamonds, with a large round flower (often white or ivory) at each crossing and smaller flowers between them, on a dark field.",
      "where_found": [
       "farahan",
@@ -72204,9 +72204,9 @@
      "name": "Afshan",
      "kind": "field design",
      "other_names": [
-      "afshan",
-      "avshan",
-      "efshan",
+      "Afshan",
+      "Avshan",
+      "Efshan",
       "Khila-afshan"
      ],
      "native": [
@@ -72223,7 +72223,7 @@
        "source": "azcarpetmuseum_api"
       }
      ],
-     "literal": "afshan: 'scattered, strewn' (Stone; Dehkhoda: پراکنده، منتشر، پاشان).",
+     "literal": "Afshan: 'scattered, strewn' (Stone; Dehkhoda: پراکنده، منتشر، پاشان).",
      "description": "An all-over design without a medallion: flowers and leaves scattered evenly over the field. In Caucasian rugs the afshan is drawn as stiff right-angled blossom cups (calyxes) on stems, surrounded by small florets.",
      "where_found": [
       "mashhad",
@@ -72284,18 +72284,18 @@
      "name": "Boteh (paisley)",
      "kind": "field motif",
      "other_names": [
-      "boteh",
-      "buta",
-      "bota",
-      "botah",
-      "paisley",
-      "pear",
-      "cone",
-      "palm",
-      "almond",
-      "badem",
-      "mir-i-boteh",
-      "comet motif",
+      "Boteh",
+      "Buta",
+      "Bota",
+      "Botah",
+      "Paisley",
+      "Pear",
+      "Cone",
+      "Palm",
+      "Almond",
+      "Badem",
+      "Mir-i-boteh",
+      "Comet motif",
       "Khila-buta"
      ],
      "native": [
@@ -72323,7 +72323,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "bota / boteh: 'bush, shrub' (Iranica; Stone gives 'bush'). Turkish badem: 'almond' (Stone).",
+     "literal": "Bota / boteh: 'bush, shrub' (Iranica; Stone gives 'bush'). Turkish badem: 'almond'.",
      "description": "A pear- or teardrop-shaped figure with the narrow tip bent over, the shape known in the West as paisley. It may be small and repeated in rows over the whole field, or large and few. Drawing ranges from finely detailed and curved to stiff and stepped.",
      "where_found": [
       "tabriz",
@@ -72491,16 +72491,16 @@
      "name": "Shah abbasi (palmette) design",
      "kind": "field motif",
      "other_names": [
-      "shah abbasi",
+      "Shah abbasi",
       "Shah Abbas design",
-      "palmette",
-      "palmettes",
-      "khatai",
-      "hatayi",
-      "gol-e eslimi",
-      "palmette border",
-      "angular palmettes",
-      "dented-quadrilateral 'palmettes'"
+      "Palmette",
+      "Palmettes",
+      "Khatai",
+      "Hatayi",
+      "Gol-e eslimi",
+      "Palmette border",
+      "Angular palmettes",
+      "Dented-quadrilateral 'palmettes'"
      ],
      "native": [
       {
@@ -72533,7 +72533,7 @@
        "source": "azcarpetmuseum_api"
       }
      ],
-     "literal": "shah-abbasi: 'of Shah Abbas' (Iranica). gol-e eslimi: 'patterned' or 'arabesque flower' (Iranica). khatai/hatayi: 'Chinese, Cathayan' (Stone).",
+     "literal": "Shah-abbasi: 'of Shah Abbas'. gol-e eslimi: 'patterned' or 'arabesque flower'. khatai/hatayi: 'Chinese, Cathayan'.",
      "description": "A palmette is a fan-shaped flower seen from the side, layered, with a pointed or lobed outline. The shah abbasi design repeats such palmettes and smaller blossoms over the field, linked by stems and often by cloud bands. Stone describes the shah abbasi motif itself as a symmetrical palmette with two sprays at the top.",
      "where_found": [
       "kashan",
@@ -72626,11 +72626,11 @@
      "name": "Arabesque (eslimi)",
      "kind": "field motif",
      "other_names": [
-      "arabesque",
-      "eslimi",
-      "islimi",
-      "rumi",
-      "split-leaf arabesque",
+      "Arabesque",
+      "Eslimi",
+      "Islimi",
+      "Rumi",
+      "Split-leaf arabesque",
       "Garrus design",
       "Lotto pattern"
      ],
@@ -72653,7 +72653,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "shakheh-ye eslimi: 'patterned' or 'arabesque branch' (Iranica).",
+     "literal": "Shakheh-ye eslimi: 'patterned' or 'arabesque branch'.",
      "description": "Scrolling stems that branch and split, ending in pointed, forked leaves (split-leaf or 'rumi' forms). Arabesques run under or over the flowers of a design, sometimes in two or three overlapping systems, and are also used in borders.",
      "where_found": [
       "kashan",
@@ -72742,12 +72742,12 @@
      "name": "Harshang (crab design)",
      "kind": "field motif",
      "other_names": [
-      "harshang",
-      "kharchang",
-      "crab design",
-      "flaming palmette",
-      "crab border",
-      "kharchangi"
+      "Harshang",
+      "Kharchang",
+      "Crab design",
+      "Flaming palmette",
+      "Crab border",
+      "Kharchangi"
      ],
      "native": [
       {
@@ -72763,7 +72763,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "kharchang: 'crab' (Iranica; Stone gives harshang as the Turkish form of Persian kharchang, 'crab').",
+     "literal": "Kharchang: 'crab' (Iranica; Stone gives harshang as the Turkish form of Persian kharchang, 'crab').",
      "description": "Shield-shaped or flame-like palmettes with leafy projections that suggest a crab's claws, spaced over the field among smaller flowers. In a crab border the 'crabs' sit where two interlacing scrolling stems cross, with leaves for claws.",
      "where_found": [
       "kurdish",
@@ -72859,11 +72859,11 @@
      "name": "Gol hennai (henna flower)",
      "kind": "field design",
      "other_names": [
-      "gol hennai",
-      "guli hinnai",
-      "gul hennae",
-      "gol henna",
-      "henna flower"
+      "Gol hennai",
+      "Guli hinnai",
+      "Gul hennae",
+      "Gol henna",
+      "Henna flower"
      ],
      "native": [
       {
@@ -72873,7 +72873,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "'henna flower' (Hawley; Stone). Henna is Lawsonia inermis.",
+     "literal": "'henna flower'. Henna is Lawsonia inermis.",
      "description": "An all-over repeat of small sprays of henna flowers, usually in a diamond arrangement; each spray shows small bright five-petaled flowers on a stem.",
      "where_found": [
       "farahan",
@@ -72929,11 +72929,11 @@
      "name": "Gol farang (European rose)",
      "kind": "field design",
      "other_names": [
-      "gol farang",
-      "gul farang",
-      "farangi gul",
-      "cabbage rose",
-      "rose",
+      "Gol farang",
+      "Gul farang",
+      "Farangi gul",
+      "Cabbage rose",
+      "Rose",
       "European rose",
       "Mejidian style",
       "French bouquet",
@@ -73025,13 +73025,13 @@
      "name": "Vase design (goldani) and zel-e soltan",
      "kind": "field design",
      "other_names": [
-      "vase",
-      "vase design",
-      "vase of flowers",
-      "goldani",
-      "zel-e soltan",
-      "zill-i sultan",
-      "zil-es-sultan",
+      "Vase",
+      "Vase design",
+      "Vase of flowers",
+      "Goldani",
+      "Zel-e soltan",
+      "Zill-i sultan",
+      "Zil-es-sultan",
       "Zell-i Sultan"
      ],
      "native": [
@@ -73048,7 +73048,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "goldani: 'of the flower vase'. zell-e soltan: Arabic-Persian 'shadow of the ruler', the title of the Qajar prince Mas'ud Mirza, governor of Iran's southern provinces (Stone).",
+     "literal": "Goldani: 'of the flower vase'. zell-e soltan: Arabic-Persian 'shadow of the ruler', the title of the Qajar prince Mas'ud Mirza, governor of Iran's southern provinces.",
      "description": "Flowers growing from a vase, either one large vase at the foot of the field (often in prayer designs) or small vases repeated over the field. In the zel-e soltan design small vases of flowers are repeated in rows; some have birds beside the vase.",
      "where_found": [
       "tabriz",
@@ -73136,18 +73136,18 @@
      "name": "Floral sprays and small flowering plants",
      "kind": "field design",
      "other_names": [
-      "floral spray",
-      "floral sprays",
-      "sprig",
-      "sprigs",
-      "millefleurs",
-      "flowering plant rows",
-      "shrub design",
+      "Floral spray",
+      "Floral sprays",
+      "Sprig",
+      "Sprigs",
+      "Millefleurs",
+      "Flowering plant rows",
+      "Shrub design",
       "Sarouk design",
       "American Sarouk design"
      ],
      "native": [],
-     "literal": "millefleurs: French 'a thousand flowers' (Stone).",
+     "literal": "Millefleurs: French 'a thousand flowers'.",
      "description": "Separate sprays or small plants (a stem with leaves and one or more flowers) set in rows or scattered over the field without a lattice; in millefleurs designs the field is packed with tiny flowers. The 20th-century 'American Sarouk' field is made of large detached sprays on a red ground.",
      "where_found": [
       "kerman-american-market",
@@ -73247,13 +73247,13 @@
      "name": "Tree of life",
      "kind": "field motif",
      "other_names": [
-      "tree of life",
-      "tree",
-      "trees",
-      "branch",
-      "dallı",
-      "derakhti",
-      "tree design"
+      "Tree of life",
+      "Tree",
+      "Trees",
+      "Branch",
+      "Dallı",
+      "Derakhti",
+      "Tree design"
      ],
      "native": [
       {
@@ -73274,7 +73274,7 @@
        "source": "oyman_2019"
       }
      ],
-     "literal": "derakht-e zendegi / hayat ağacı: 'tree of life'.",
+     "literal": "Derakht-e zendegi / hayat ağacı: 'tree of life'.",
      "description": "A tree with a central trunk and branches spreading up and out, drawn naturally or as a stiff, stepped figure, often filling a prayer niche or the whole field.",
      "where_found": [
       "isfahan",
@@ -73397,9 +73397,9 @@
      "name": "Cypress",
      "kind": "field motif",
      "other_names": [
-      "cypress",
-      "cypress tree",
-      "conical tree"
+      "Cypress",
+      "Cypress tree",
+      "Conical tree"
      ],
      "native": [],
      "literal": null,
@@ -73474,11 +73474,11 @@
      "name": "Weeping willow (bid majnun)",
      "kind": "field design",
      "other_names": [
-      "weeping willow",
-      "willow",
-      "bid majnun",
-      "willow and cypress",
-      "tereh asshur"
+      "Weeping willow",
+      "Willow",
+      "Bid majnun",
+      "Willow and cypress",
+      "Tereh asshur"
      ],
      "native": [
       {
@@ -73488,7 +73488,7 @@
        "source": "goljaam_683"
       }
      ],
-     "literal": "bid-e majnun: the weeping willow, literally 'Majnun's willow' or 'mad willow' (Majnun, 'the madman', is the lover of Persian poetry).",
+     "literal": "Bid-e majnun: the weeping willow, literally 'Majnun's willow' or 'mad willow' (Majnun, 'the madman', is the lover of Persian poetry).",
      "description": "Rows of trees across the field: drooping willows alternating with upright cypresses and flowering trees, sometimes in panels.",
      "where_found": [
       "bidjar",
@@ -73535,10 +73535,10 @@
      "name": "Pomegranate",
      "kind": "field motif",
      "other_names": [
-      "pomegranate",
-      "pomegranate tree",
-      "pomegranate design",
-      "liuka baiza"
+      "Pomegranate",
+      "Pomegranate tree",
+      "Pomegranate design",
+      "Liuka baiza"
      ],
      "native": [
       {
@@ -73633,12 +73633,12 @@
      "name": "Sickle leaf (saz leaf)",
      "kind": "field motif",
      "other_names": [
-      "sickle leaf",
-      "lanceolate leaf",
-      "saz leaf",
-      "saz",
-      "large leaf",
-      "serrated leaf"
+      "Sickle leaf",
+      "Lanceolate leaf",
+      "Saz leaf",
+      "Saz",
+      "Large leaf",
+      "Serrated leaf"
      ],
      "native": [
       {
@@ -73648,7 +73648,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "saz (Turkish): 'reed, bulrush' or 'enchanted forest' (Stone).",
+     "literal": "Saz (Turkish): 'reed, bulrush' or 'enchanted forest'.",
      "description": "A long, narrow, curved leaf, often with a serrated edge, sweeping across the field or curling around palmettes and rosettes.",
      "where_found": [
       "classical-vase",
@@ -73724,10 +73724,10 @@
      "name": "Rosette",
      "kind": "minor motif",
      "other_names": [
-      "rosette",
-      "floret",
-      "roundel",
-      "rosette border"
+      "Rosette",
+      "Floret",
+      "Roundel",
+      "Rosette border"
      ],
      "native": [],
      "literal": null,
@@ -73801,14 +73801,14 @@
      "name": "Tulip, carnation and other Turkish flowers",
      "kind": "field motif",
      "other_names": [
-      "tulip",
-      "carnation",
+      "Tulip",
+      "Carnation",
       "Rhodian lily",
-      "carnation border",
+      "Carnation border",
       "Ladik tulip",
       "Laleh Abbasi",
-      "lale",
-      "vandyke"
+      "Lale",
+      "Vandyke"
      ],
      "native": [
       {
@@ -73824,7 +73824,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "lale: Turkish 'tulip' (Stone). laleh abbasi: 'Abbasi tulip' (Stone).",
+     "literal": "Lale: Turkish 'tulip'. laleh abbasi: 'Abbasi tulip'.",
      "description": "Tulips drawn as tall upright stems topped by pointed or three-lobed flower heads, often in a row in a panel above or below a prayer niche; carnations as fan-shaped flowers on short stems, often bent; in borders, carnations alternate with diagonal leaves.",
      "where_found": [
       "nain",
@@ -73906,13 +73906,13 @@
      "name": "Birds",
      "kind": "field motif",
      "other_names": [
-      "bird",
-      "birds",
-      "chickens",
-      "hen design",
-      "murgi",
-      "peacock",
-      "cock"
+      "Bird",
+      "Birds",
+      "Chickens",
+      "Hen design",
+      "Murgi",
+      "Peacock",
+      "Cock"
      ],
      "native": [
       {
@@ -73927,7 +73927,7 @@
        "source": "oyman_2019"
       }
      ],
-     "literal": "murgi: from Persian morgh, 'chicken' (Stone).",
+     "literal": "Murgi: from Persian morgh, 'chicken'.",
      "description": "Birds drawn naturally (peacocks, songbirds in classical carpets) or as small stiff geometric hens and cocks scattered over the field or around a medallion.",
      "where_found": [
       "akstafa",
@@ -74026,15 +74026,15 @@
      "name": "Cloud band",
      "kind": "field motif",
      "other_names": [
-      "cloud band",
-      "cloudband",
+      "Cloud band",
+      "Cloudband",
       "Chinese cloud band",
-      "tchi",
-      "chi",
-      "cloud",
-      "cloud collar",
-      "ruyi cloud",
-      "bulud"
+      "Tchi",
+      "Chi",
+      "Cloud",
+      "Cloud collar",
+      "Ruyi cloud",
+      "Bulud"
      ],
      "native": [
       {
@@ -74130,17 +74130,17 @@
      "name": "Curvilinear and rectilinear drawing",
      "kind": "field design",
      "other_names": [
-      "floral",
-      "geometric",
-      "curvilinear",
-      "rectilinear",
-      "angular floral",
-      "geometric floral",
-      "geometric flowers",
-      "tribal geometric",
-      "stepped",
-      "gardan",
-      "shekasteh"
+      "Floral",
+      "Geometric",
+      "Curvilinear",
+      "Rectilinear",
+      "Angular floral",
+      "Geometric floral",
+      "Geometric flowers",
+      "Tribal geometric",
+      "Stepped",
+      "Gardan",
+      "Shekasteh"
      ],
      "native": [
       {
@@ -74162,7 +74162,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "gardan: 'turning'; shekasteh: 'broken'; hendesi: 'geometric'.",
+     "literal": "Gardan: 'turning'; shekasteh: 'broken'; hendesi: 'geometric'.",
      "description": "Not a motif but the way motifs are drawn. Curvilinear drawing has smooth curves, thin stems and naturalistic flowers; it needs a fine weave and usually a drawn design (cartoon). Rectilinear drawing builds every outline from steps and straight lines, so flowers become stars, diamonds and hooks.",
      "where_found": [
       "malayer",
@@ -74300,14 +74300,14 @@
      "name": "Mazarlik (landscape or 'cemetery' design)",
      "kind": "field design",
      "other_names": [
-      "mazarlik",
-      "mezarlık",
-      "cemetery carpet",
-      "graveyard rug",
-      "landscape carpet",
-      "türbelik",
-      "turbehlik",
-      "ship carpet"
+      "Mazarlik",
+      "Mezarlık",
+      "Cemetery carpet",
+      "Graveyard rug",
+      "Landscape carpet",
+      "Türbelik",
+      "Turbehlik",
+      "Ship carpet"
      ],
      "native": [
       {
@@ -74321,7 +74321,7 @@
        "source": "mumford_1902"
       }
      ],
-     "literal": "mezarlık: Turkish 'cemetery'; türbelik, from türbe, 'tomb' (Mumford).",
+     "literal": "Mezarlık: Turkish 'cemetery'; türbelik, from türbe, 'tomb'.",
      "description": "Rows of small houses or mosques and trees (often cypresses and willows) arranged across the field, usually of a prayer rug, like a village or a graveyard seen in rows.",
      "where_found": [
       "kula",
@@ -74374,10 +74374,10 @@
       "Memling gul",
       "Memling göl",
       "Memling motif",
-      "hooked lozenge (some writers)"
+      "Hooked lozenge (some writers)"
      ],
      "native": [],
-     "literal": "Named in the West after the painter Hans Memling, whose paintings show rugs with the motif (Stone).",
+     "literal": "Named in the West after the painter Hans Memling, whose paintings show rugs with the motif.",
      "description": "A small stepped figure, roughly a diamond or octagon, whose stepped outline throws off hooks; it is repeated in rows over the field or used as a minor motif. Stone illustrates Kazak, Moghan, Kurdish and Anatolian versions.",
      "where_found": [
       "varamin",
@@ -74429,14 +74429,14 @@
      "name": "Octagon and other polygons",
      "kind": "medallion",
      "other_names": [
-      "octagon",
-      "octagon medallion",
-      "hexagon",
-      "hooked hexagon",
-      "hooked hexagon medallion",
+      "Octagon",
+      "Octagon medallion",
+      "Hexagon",
+      "Hooked hexagon",
+      "Hooked hexagon medallion",
       "Holbein octagon",
-      "interlace",
-      "compartment design (Mamluk)"
+      "Interlace",
+      "Compartment design (Mamluk)"
      ],
      "native": [],
      "literal": null,
@@ -74572,13 +74572,13 @@
      "name": "Diamond (lozenge) medallion",
      "kind": "medallion",
      "other_names": [
-      "diamond",
-      "lozenge",
-      "rhomb",
-      "diamond medallion",
-      "hooked diamond",
-      "latch-hook diamond",
-      "hooked lozenge",
+      "Diamond",
+      "Lozenge",
+      "Rhomb",
+      "Diamond medallion",
+      "Hooked diamond",
+      "Latch-hook diamond",
+      "Hooked lozenge",
       "Qashqai medallion",
       "Joshaghan lozenge"
      ],
@@ -74692,14 +74692,14 @@
      "name": "Sunburst (eagle) medallion",
      "kind": "medallion",
      "other_names": [
-      "sunburst",
-      "eagle medallion",
+      "Sunburst",
+      "Eagle medallion",
       "Eagle Kazak",
       "Sunburst Kazak",
       "Adler Kazak",
       "Chelaberd",
       "Palace design",
-      "Tcherkess (Hawley)"
+      "Tcherkess"
      ],
      "native": [
       {
@@ -74852,11 +74852,11 @@
      "other_names": [
       "Lori Pambak",
       "Lori-Pambak medallion",
-      "calyx medallion",
+      "Calyx medallion",
       "Kars medallion"
      ],
      "native": [],
-     "literal": "Named after Lori Pambak, a town south of Tbilisi in the Kazak region (Stone).",
+     "literal": "Named after Lori Pambak, a town south of Tbilisi in the Kazak region.",
      "description": "A large octagonal medallion filled with two pairs of opposed calyx (cup) forms joined at the base, usually one or two in the field of a Kazak rug.",
      "where_found": [
       "kars",
@@ -74891,9 +74891,9 @@
      "name": "Shield medallion (Sewan Kazak)",
      "kind": "medallion",
      "other_names": [
-      "shield",
-      "shield medallion",
-      "cruciform medallion",
+      "Shield",
+      "Shield medallion",
+      "Cruciform medallion",
       "Sewan Kazak",
       "Shield Kazak"
      ],
@@ -74955,11 +74955,11 @@
      "name": "Latch hook",
      "kind": "minor motif",
      "other_names": [
-      "latch hook",
-      "running latch hook",
-      "angular hook",
-      "hook",
-      "çengel"
+      "Latch hook",
+      "Running latch hook",
+      "Angular hook",
+      "Hook",
+      "Çengel"
      ],
      "native": [
       {
@@ -74969,7 +74969,7 @@
        "source": "balkanal_2019"
       }
      ],
-     "literal": "çengel: Turkish 'hook'.",
+     "literal": "Çengel: Turkish 'hook'.",
      "description": "Small hooks projecting at right or acute angles, all turned the same way, along the edges of diamonds, medallions, bands and borders. A long row of them standing on a line is a 'running latch hook'.",
      "where_found": [
       "mosul",
@@ -75087,13 +75087,13 @@
      "name": "Star (eight-pointed star)",
      "kind": "field motif",
      "other_names": [
-      "star",
-      "eight-pointed star",
-      "octagram",
+      "Star",
+      "Eight-pointed star",
+      "Octagram",
       "Star Kazak",
       "Star Ushak",
-      "rayed star",
-      "yıldız",
+      "Rayed star",
+      "Yıldız",
       "Solomon's seal",
       "Mühr-ü Süleyman"
      ],
@@ -75111,7 +75111,7 @@
        "source": "balkanal_2019"
       }
      ],
-     "literal": "yıldız: Turkish 'star'. Mühr-ü Süleyman: 'seal of Solomon'.",
+     "literal": "Yıldız: Turkish 'star'. Mühr-ü Süleyman: 'seal of Solomon'.",
      "description": "A star with eight points, often drawn as two squares laid over each other or as a cross with notched arms; also six-pointed and many-pointed stars. Large stars fill the field of 'Star Kazak' rugs; small ones are scattered or set in rows.",
      "where_found": [
       "shahsavan",
@@ -75235,7 +75235,7 @@
       "Lesghian star"
      ],
      "native": [],
-     "literal": "Named after the Lesghis (Lezgins), mountain peoples of Daghestan (Stone).",
+     "literal": "Named after the Lesghis (Lezgins), mountain peoples of Daghestan.",
      "description": "A stepped eight-pointed star with four arrow-like projections, usually large and in a column of two or three down the field.",
      "where_found": [
       "daghestan",
@@ -75288,7 +75288,7 @@
       "S-form",
       "Z motif",
       "S-border",
-      "ajdaha",
+      "Ajdaha",
       "S-stem"
      ],
      "native": [
@@ -75305,7 +75305,7 @@
        "source": "iranica_carpets_iv"
       }
      ],
-     "literal": "ajdaha: Persian 'dragon' (Stone cross-refers the S motif to it).",
+     "literal": "Ajdaha: Persian 'dragon' (Stone cross-refers the S motif to it).",
      "description": "S or Z shapes, angular or curved, used singly as fillers or in chains along borders and ends; very large S forms fill the field of some Caucasian soumaks and pile rugs.",
      "where_found": [
       "kazak",
@@ -75404,15 +75404,15 @@
      "name": "Ram's horn",
      "kind": "field motif",
      "other_names": [
-      "ram's horn",
-      "kochak",
-      "koçboynuzu",
-      "koç boynuzu",
-      "vurma",
-      "buynuz",
-      "kochkor muyuz",
-      "kochanak",
-      "horn motif"
+      "Ram's horn",
+      "Kochak",
+      "Koçboynuzu",
+      "Koç boynuzu",
+      "Vurma",
+      "Buynuz",
+      "Kochkor muyuz",
+      "Kochanak",
+      "Horn motif"
      ],
      "native": [
       {
@@ -75433,7 +75433,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "koçboynuzu: Turkish 'ram's horn'; buynuz: Azerbaijani 'horn'.",
+     "literal": "Koçboynuzu: Turkish 'ram's horn'; buynuz: Azerbaijani 'horn'.",
      "description": "Pairs of curls turned outward like a ram's horns, on a stem or at the ends of a bar; in felts and Kyrgyz and Turkmen work the curls are large and bold, in pile rugs small and repeated.",
      "where_found": [
       "kuba",
@@ -75522,9 +75522,9 @@
      "name": "Tarantula",
      "kind": "minor motif",
      "other_names": [
-      "tarantula",
-      "tarantula border",
-      "spider"
+      "Tarantula",
+      "Tarantula border",
+      "Spider"
      ],
      "native": [],
      "literal": null,
@@ -75595,10 +75595,10 @@
      "name": "Scorpion (akrep)",
      "kind": "field motif",
      "other_names": [
-      "scorpion",
-      "akrep",
-      "toplu çengel",
-      "akrepli"
+      "Scorpion",
+      "Akrep",
+      "Toplu çengel",
+      "Akrepli"
      ],
      "native": [
       {
@@ -75620,7 +75620,7 @@
        "source": "balkanal_2019"
       }
      ],
-     "literal": "akrep: Turkish 'scorpion'; toplu çengel: 'ball with hooks' (Stone).",
+     "literal": "Akrep: Turkish 'scorpion'; toplu çengel: 'ball with hooks'.",
      "description": "A diamond or rectangle with hooked appendages projecting from its sides, or a long body with many legs; used as a field motif or filler.",
      "where_found": [
       "dosemealti"
@@ -75685,13 +75685,13 @@
      "name": "Elibelinde (hands on hips)",
      "kind": "field motif",
      "other_names": [
-      "elibelinde",
-      "eli belinde",
-      "el bel",
-      "hands on hips",
-      "gelin kız",
-      "ana kız",
-      "mother goddess motif"
+      "Elibelinde",
+      "Eli belinde",
+      "El bel",
+      "Hands on hips",
+      "Gelin kız",
+      "Ana kız",
+      "Mother goddess motif"
      ],
      "native": [
       {
@@ -75712,7 +75712,7 @@
        "source": "balkanal_2019"
       }
      ],
-     "literal": "elibelinde: Turkish 'hands on hips' (Stone).",
+     "literal": "Elibelinde: Turkish 'hands on hips'.",
      "description": "A highly geometric human figure: a body (often a stepped diamond or hourglass) with arms bent so the hands rest on the hips, and sometimes a head and legs; usually in kilims, singly, in rows or as a border.",
      "where_found": [],
      "table_names": [],
@@ -75793,13 +75793,13 @@
      "name": "Swastika (wan)",
      "kind": "minor motif",
      "other_names": [
-      "swastika",
-      "wan",
-      "fylfot",
-      "pech",
-      "swastika fret",
-      "swastika border",
-      "pinwheel"
+      "Swastika",
+      "Wan",
+      "Fylfot",
+      "Pech",
+      "Swastika fret",
+      "Swastika border",
+      "Pinwheel"
      ],
      "native": [
       {
@@ -75914,13 +75914,13 @@
      "name": "Fret (key pattern)",
      "kind": "border",
      "other_names": [
-      "fret",
-      "key fret",
+      "Fret",
+      "Key fret",
       "Greek key",
-      "meander",
+      "Meander",
       "T-fret",
-      "thunder pattern",
-      "leiwen",
+      "Thunder pattern",
+      "Leiwen",
       "Chinese feet"
      ],
      "native": [
@@ -75931,7 +75931,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "leiwen: 'thunder pattern' (Stone).",
+     "literal": "Leiwen: 'thunder pattern'.",
      "description": "Lines that turn at right angles to make a continuous key, meander or T-shaped pattern, usually in a border; in Chinese rugs frets also form corner pieces and medallions.",
      "where_found": [
       "khotan",
@@ -76013,10 +76013,10 @@
      "name": "Bat",
      "kind": "minor motif",
      "other_names": [
-      "bat",
-      "bats",
-      "five bats",
-      "wufu"
+      "Bat",
+      "Bats",
+      "Five bats",
+      "Wufu"
      ],
      "native": [
       {
@@ -76026,7 +76026,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "wufu: 'five blessings' (Stone: five bats are emblematic of blessings).",
+     "literal": "Wufu: 'five blessings' (Stone: five bats are emblematic of blessings).",
      "description": "A small bat with spread wings, drawn as a curved scalloped shape with a little head; scattered over the field, set in rows, or grouped around a medallion or a shou character.",
      "where_found": [
       "kashgar",
@@ -76096,10 +76096,10 @@
      "name": "Shou (longevity character)",
      "kind": "medallion",
      "other_names": [
-      "shou",
-      "shou character",
-      "longevity character",
-      "fu-shou"
+      "Shou",
+      "Shou character",
+      "Longevity character",
+      "Fu-shou"
      ],
      "native": [
       {
@@ -76115,7 +76115,7 @@
        "source": "sina_panjin_2017"
       }
      ],
-     "literal": "shou: 'long life'.",
+     "literal": "Shou: 'long life'.",
      "description": "The Chinese character for long life, drawn as a round medallion or in tall rectangular forms, used as a central medallion, in rows in the field or repeated in borders.",
      "where_found": [
       "ningxia"
@@ -76159,14 +76159,14 @@
      "name": "Dragon",
      "kind": "field motif",
      "other_names": [
-      "dragon",
-      "lung",
-      "long",
-      "kuilong",
-      "archaic dragon",
-      "dragon and phoenix",
+      "Dragon",
+      "Lung",
+      "Long",
+      "Kuilong",
+      "Archaic dragon",
+      "Dragon and phoenix",
       "Caucasian dragon carpet",
-      "ajdaha",
+      "Ajdaha",
       "Əjdahalı"
      ],
      "native": [
@@ -76299,11 +76299,11 @@
      "name": "Lotus",
      "kind": "field motif",
      "other_names": [
-      "lotus",
-      "scrolling lotus",
-      "lotus scroll",
-      "chanzhi lian",
-      "goulian"
+      "Lotus",
+      "Scrolling lotus",
+      "Lotus scroll",
+      "Chanzhi lian",
+      "Goulian"
      ],
      "native": [
       {
@@ -76319,7 +76319,7 @@
        "source": "dpm_ningxia_entries"
       }
      ],
-     "literal": "goulian: 'hooked lotus'; chuanzhi: 'linked branches' (Palace Museum glossary).",
+     "literal": "Goulian: 'hooked lotus'; chuanzhi: 'linked branches' (Palace Museum glossary).",
      "description": "A water-lily flower with pointed petals, seen from the side or from above, often on scrolling stems that link the flowers into a continuous pattern.",
      "where_found": [
       "ningxia",
@@ -76388,10 +76388,10 @@
      "name": "Peony",
      "kind": "field motif",
      "other_names": [
-      "peony",
-      "mudan",
-      "kani-botan",
-      "crab peony"
+      "Peony",
+      "Mudan",
+      "Kani-botan",
+      "Crab peony"
      ],
      "native": [
       {
@@ -76407,7 +76407,7 @@
        "source": "kotobank_nichigai"
       }
      ],
-     "literal": "kani-botan: Japanese 'crab peony'.",
+     "literal": "Kani-botan: Japanese 'crab peony'.",
      "description": "A large, round, many-petaled flower seen from the side or above, often with leaves and buds, in borders and fields.",
      "where_found": [
       "nabeshima-dantsu",
@@ -76483,14 +76483,14 @@
      "name": "Scrolling vine",
      "kind": "minor motif",
      "other_names": [
-      "vine",
-      "scroll",
-      "floral scroll",
-      "scrolling stem",
-      "meandering vine",
-      "karakusa",
-      "chanzhi",
-      "tak"
+      "Vine",
+      "Scroll",
+      "Floral scroll",
+      "Scrolling stem",
+      "Meandering vine",
+      "Karakusa",
+      "Chanzhi",
+      "Tak"
      ],
      "native": [
       {
@@ -76512,7 +76512,7 @@
        "source": "iranica_carpets_iv"
       }
      ],
-     "literal": "karakusa: Japanese 'Tang (Chinese) grass'; tak: Persian 'vine' (Iranica).",
+     "literal": "Karakusa: Japanese 'Tang (Chinese) grass'; tak: Persian 'vine'.",
      "description": "A continuous wavy stem that curls back on itself, carrying leaves, buds and flowers, used in borders and as a ground pattern beneath other motifs.",
      "where_found": [
       "nabeshima-dantsu",
@@ -76600,12 +76600,12 @@
      "name": "Sea waves and mountains",
      "kind": "border",
      "other_names": [
-      "waves",
-      "sea waves",
-      "wave border",
-      "sacred mountain",
-      "standing water",
-      "water motive"
+      "Waves",
+      "Sea waves",
+      "Wave border",
+      "Sacred mountain",
+      "Standing water",
+      "Water motive"
      ],
      "native": [],
      "literal": null,
@@ -76669,16 +76669,16 @@
      "other_names": [
       "Buddhist emblems",
       "Buddhist symbols",
-      "eight auspicious symbols",
-      "eight treasures",
-      "babao",
-      "endless knot",
-      "knot of destiny",
-      "dorje",
-      "vajra",
-      "hundred antiques",
-      "bogu",
-      "po ku"
+      "Eight auspicious symbols",
+      "Eight treasures",
+      "Babao",
+      "Endless knot",
+      "Knot of destiny",
+      "Dorje",
+      "Vajra",
+      "Hundred antiques",
+      "Bogu",
+      "Po ku"
      ],
      "native": [
       {
@@ -76700,7 +76700,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "babao: 'eight treasures'. bogu: 'broad antiquity'. dorje: Tibetan 'sacred stone' (Stone).",
+     "literal": "Babao: 'eight treasures'. bogu: 'broad antiquity'. dorje: Tibetan 'sacred stone'.",
      "description": "Small emblems scattered in the field or border: the eight Buddhist symbols (wheel, conch, umbrella, canopy, lotus, vase, paired fish and endless knot), often tied with ribbons; or the 'hundred antiques', vases, bronzes, books and scholars' objects. Tibetan rugs may show crossed dorjes (ritual thunderbolts).",
      "where_found": [
       "kashgar",
@@ -76793,10 +76793,10 @@
      "name": "Tiger stripe",
      "kind": "field design",
      "other_names": [
-      "tiger stripe",
-      "tiger pelt",
-      "tiger skin",
-      "tiger rug"
+      "Tiger stripe",
+      "Tiger pelt",
+      "Tiger skin",
+      "Tiger rug"
      ],
      "native": [],
      "literal": null,
@@ -76837,10 +76837,10 @@
      "name": "Checkerboard",
      "kind": "field design",
      "other_names": [
-      "checkerboard",
-      "checker board",
-      "chequerboard",
-      "check border"
+      "Checkerboard",
+      "Checker board",
+      "Chequerboard",
+      "Check border"
      ],
      "native": [],
      "literal": null,
@@ -76880,13 +76880,13 @@
      "name": "Kufesque border",
      "kind": "border",
      "other_names": [
-      "kufesque",
-      "kufic border",
-      "pseudo-kufic",
-      "lam-alif border"
+      "Kufesque",
+      "Kufic border",
+      "Pseudo-kufic",
+      "Lam-alif border"
      ],
      "native": [],
-     "literal": "kufesque: 'like Kufic', the angular early Arabic script.",
+     "literal": "Kufesque: 'like Kufic', the angular early Arabic script.",
      "description": "A border of tall, angular, letter-like uprights joined at the base, sometimes knotted or interlaced, that imitates (without spelling) angular Arabic script. In Caucasian rugs the same idea survives as a white border of stiff angular figures.",
      "where_found": [
       "kuba",
@@ -76963,9 +76963,9 @@
      "name": "Turtle (samovar) border",
      "kind": "border",
      "other_names": [
-      "turtle border",
-      "tortoise border",
-      "samovar border",
+      "Turtle border",
+      "Tortoise border",
+      "Samovar border",
       "Herati border"
      ],
      "native": [],
@@ -77019,11 +77019,11 @@
      "name": "Wine-glass (leaf and calyx) border",
      "kind": "border",
      "other_names": [
-      "wine-glass border",
-      "wineglass border",
-      "leaf and calyx",
-      "leaf and goblet",
-      "serrated leaf and wine cup"
+      "Wine-glass border",
+      "Wineglass border",
+      "Leaf and calyx",
+      "Leaf and goblet",
+      "Serrated leaf and wine cup"
      ],
      "native": [],
      "literal": null,
@@ -77086,13 +77086,13 @@
      "name": "Reciprocal trefoil (laleh abbasi)",
      "kind": "border",
      "other_names": [
-      "reciprocal trefoil",
-      "reciprocating trefoil",
-      "laleh abbasi",
-      "medakhel",
-      "madakhel",
-      "scepter head",
-      "doorways"
+      "Reciprocal trefoil",
+      "Reciprocating trefoil",
+      "Laleh abbasi",
+      "Medakhel",
+      "Madakhel",
+      "Scepter head",
+      "Doorways"
      ],
      "native": [
       {
@@ -77108,7 +77108,7 @@
        "source": "stone_2013"
       }
      ],
-     "literal": "madakhel: 'doorways' (Iranica; Stone medahil). laleh abbasi: 'Abbasi tulip' (Stone).",
+     "literal": "Madakhel: 'doorways' (Iranica; Stone medahil). laleh abbasi: 'Abbasi tulip'.",
      "description": "A narrow guard stripe of two interlocking rows of three-lobed (trefoil) shapes, one row pointing in, the other out, in two contrasting colors; extreme versions are rows of triangles each topped by a small diamond.",
      "where_found": [
       "karadagh",
@@ -77170,9 +77170,9 @@
      "name": "Running dog (wave) border",
      "kind": "border",
      "other_names": [
-      "running dog",
-      "running-dog border",
-      "wave border",
+      "Running dog",
+      "Running-dog border",
+      "Wave border",
       "Seichur border",
       "Seishour border",
       "Vitruvian scroll"
@@ -77295,11 +77295,11 @@
      "name": "Barber-pole stripe",
      "kind": "border",
      "other_names": [
-      "barber-pole stripe",
-      "barberpole",
-      "barber pole border",
-      "diagonal stripe border",
-      "gyak"
+      "Barber-pole stripe",
+      "Barberpole",
+      "Barber pole border",
+      "Diagonal stripe border",
+      "Gyak"
      ],
      "native": [],
      "literal": null,
@@ -77362,11 +77362,11 @@
      "name": "Cartouche",
      "kind": "border",
      "other_names": [
-      "cartouche",
-      "cartouche border",
-      "ghabi",
-      "qabi",
-      "compartment"
+      "Cartouche",
+      "Cartouche border",
+      "Ghabi",
+      "Qabi",
+      "Compartment"
      ],
      "native": [
       {
@@ -77376,7 +77376,7 @@
        "source": "egharloo_zavieh_2020"
       }
      ],
-     "literal": "ghabi: 'framed, in frames'.",
+     "literal": "Ghabi: 'framed, in frames'.",
      "description": "An elongated frame with rounded, cut or lobed ends, used in borders (alternating with rosettes or other shapes) or overlapping across the field; cartouches often hold inscriptions.",
      "where_found": [
       "tabriz",
@@ -77448,9 +77448,9 @@
      "name": "Broken border",
      "kind": "border",
      "other_names": [
-      "broken border",
-      "interrupted border",
-      "overlapping border"
+      "Broken border",
+      "Interrupted border",
+      "Overlapping border"
      ],
      "native": [],
      "literal": null,
@@ -78160,30 +78160,22 @@
       "Teke gul",
       "Tekke göl",
       "Teke-göl",
-      "octagon of the 'Royal Bokhara' (trade)",
+      "Octagon of the 'Royal Bokhara' (trade)",
       "'Bokhara' gul (trade)"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "теке-гёль",
-        "source": "berdimuhamedov_2011"
-       },
-       {
-        "form": "теке-гёль",
-        "source": "tsareva_2012"
-       },
-       {
-        "form": "«теке гёль» (OCR reads «теке голь»)",
-        "source": "moshkova_1946",
-        "note": "glossed by Moshkova as 'текинский узор', Tekke pattern"
-       }
-      ],
-      "note": "No Turkmen-language (Latin or Cyrillic) source naming this gul was reached; the Turkmen edition of Berdimuhamedov's book was not archived. Bogolyubov (1908) gives no separate name: he counts Merv and part of Akhal Tekke ornament in his 'Salor group'."
-     },
-     "meaning": "No agreed meaning. Moshkova (1946) recorded the weavers' names for its parts: kush 'bird', dunguz burun 'pig's snout', chakkan 'one that bites or stings', kovacha 'cotton boll', and read the gul as a plant with birds or animals at its sides. The Turkmen state book (Berdimuhamedov 2011) offers several readings without choosing: red poppies and tulips of the Kopet Dagh foothills, an oasis with herds at water, the four seasons, an all-seeing eye.",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "теке-гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "теке гёль",
+       "translit": null
+      }
+     ],
+     "meaning": "No agreed meaning. Moshkova (1946) recorded the weavers' names for its parts: kush 'bird', dunguz burun 'pig's snout', chakkan 'one that bites or stings', kovacha 'cotton boll', and read the gul as a plant with birds or animals at its sides. The Turkmen state book offers several readings without choosing: red poppies and tulips of the Kopet Dagh foothills, an oasis with herds at water, the four seasons, an all-seeing eye.",
      "meaning_sources": [
       "moshkova_1980",
       "moshkova_1946",
@@ -78230,41 +78222,7 @@
       "chakmak-gul"
      ],
      "minor_guls_note": "Lewis (1920): rows of octagons alternate with rows of diamond forms. Berdimuhamedov (2011) names the cross-shaped 'ak bashly chemche gyol', the openwork 'gurbaga' and the 'chakmak' and 'dyrnak' guls as the in-between figures. The Rijksmuseum labels the cross-shaped figures on a Tekke rug (BK-1975-268) 'so-called chemche guls'.",
-     "how_to_tell": [
-      {
-       "vs": "salor-gul",
-       "text": "The Salor main-carpet gul is rounder, with a many-lobed outline, and lies on an open field with no grid lines; the Tekke gul is a stepped octagon and on main carpets sits on thin dark lines through its center.",
-       "sources": [
-        "berdimuhamedov_2011",
-        "hawley_1922",
-        "lewis_1920"
-       ]
-      },
-      {
-       "vs": "gulli-gul",
-       "text": "The Ersari gulli gul is larger and simpler, usually in three rows almost touching, with clover-leaf figures in its quarters (Bogolyubov: the Ersari rose is larger and simpler than the Salor and Yomud ones).",
-       "sources": [
-        "bogolyubov_1908",
-        "hawley_1922",
-        "stone_2013"
-       ]
-      },
-      {
-       "vs": "saryk-gul",
-       "text": "The Saryk gul is a stepped octagon with a central hexagon and usually no grid of lines.",
-       "sources": [
-        "stone_2013"
-       ],
-       "single_source": true
-      },
-      {
-       "vs": "pakistani-bokhara",
-       "text": "Pakistani 'Bokhara' rugs copy the Tekke gul; the copy is told by the structure on the back (see the Pakistani 'Bokhara' rugs (incl. Jaldar and Mori) type: cotton foundation), not by the gul.",
-       "sources": [
-        "iranica_carpets_xvi"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Hawley describes the commoner 'Royal Bokhara' pattern as an octagon around a quartered hexagon, with one pair of opposite quarters white or cream and the other red; in large rugs the centers of the octagons are joined by straight dark blue lines.",
@@ -78377,7 +78335,6 @@
       "berdimuhamedov_2011",
       "bogolyubov_1908",
       "hawley_1922",
-      "iranica_carpets_xvi",
       "lewis_1920",
       "moshkova_1946",
       "moshkova_1980",
@@ -78410,36 +78367,30 @@
       "Salor gol",
       "Salor gul",
       "Rose of Salor (old books; also used for the turret gul)",
-      "salor-gyol"
+      "Salor-gyol"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«салор гёль» (OCR «салор голь»)",
-        "source": "moshkova_1946",
-        "note": "glossed 'салорский узор', Salor pattern"
-       },
-       {
-        "form": "салор-гёль",
-        "source": "tsareva_2012"
-       },
-       {
-        "form": "салыр-гёль; weavers also call it «мары-гёль» (Mary = Merv gul)",
-        "source": "berdimuhamedov_2011"
-       },
-       {
-        "form": "салорская роза (салоръ-гюль)",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "Rose von Salor (Salor-Güll) [German text]",
-        "source": "bogolyubov_1908"
-       }
-      ],
-      "note": "Moshkova rejects 'Salor rose' as a mistranslation: weavers understand göl as 'pattern', and gül 'flower' is a different word. It is not certain which of the two Salor guls (this one or the turret gul) Bogolyubov and Berdimuhamedov mean in every passage; Berdimuhamedov's 'saw-toothed edge' and 'small pyramids crowned by rams' heads' fit the turret gul better."
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "салор гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "салор-гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "мары-гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "салорская роза",
+       "translit": null
+      }
+     ],
      "meaning": null,
      "kind": "main carpet gul",
      "shape": "A large rosette close to a circle with a scalloped (many-lobed) outline, divided on two axes into quarters colored on the diagonal, with a complex filling. Tsareva sees long-necked birds at the ends of the vertical axis and short-necked ones at the horizontal axis. Clusters of small clover-leaf figures fill the quarters; on the Met's Salor main carpet small H-shaped figures sit near the center.",
@@ -78486,33 +78437,7 @@
       "small octagonal minor gul (Met 1974.149.46; unnamed in the record)",
       "stepped octagon minor gul copied by the Saryk (Cleveland 2006.201)"
      ],
-     "how_to_tell": [
-      {
-       "vs": "tekke-gul",
-       "text": "Rounder and many-lobed, on an open field without grid lines; the Tekke gul is a stepped octagon on a grid.",
-       "sources": [
-        "berdimuhamedov_2011",
-        "tsareva_2012"
-       ]
-      },
-      {
-       "vs": "gulli-gul",
-       "text": "The Ersari gulli gul belongs to the same family (quarters with clover-leaf figures) but is bigger and simpler, usually three to a row on Ersari and Afghan carpets; structure is the safer guide (Salor: asymmetric knot open left on deeply depressed warps, silk highlights).",
-       "sources": [
-        "bogolyubov_1908",
-        "iranica_carpets_xvi",
-        "stone_2013"
-       ]
-      },
-      {
-       "vs": "turret-gul",
-       "text": "The turret gul is an octagon with a row of turret-like points along its frame; it is the Salor chuval gul, not the main-carpet gul.",
-       "sources": [
-        "stone_2013",
-        "rijksmuseum_turkmen"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Tsareva describes the Salor gul as a scalloped rosette close to a circle, with a cross-shaped two-axis structure, complex filling and diagonal coloring, and calls it the archetype for main carpets of all tribes of the Salor confederation.",
@@ -78607,16 +78532,13 @@
      ],
      "where_found": [],
      "sources": [
-      "berdimuhamedov_2011",
       "bogolyubov_1908",
       "cleveland_2006_201",
       "cole_moshkova_captions",
       "hawley_1922",
       "iranica_carpets_xvi",
       "met_1974_149_46",
-      "moshkova_1946",
       "moshkova_1980",
-      "rijksmuseum_turkmen",
       "stone_2013",
       "tsareva_2012"
      ],
@@ -78645,27 +78567,23 @@
       "Salor turret gul",
       "Salor chuval gul",
       "Rose of Salor",
-      "Salor gul (Stone)",
-      "mar-gol",
-      "mary gul (Merv gul)",
-      "keyhole gul"
+      "Salor gul",
+      "Mar-gol",
+      "Mary gul (Merv gul)",
+      "Keyhole gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«мар-гёль» (OCR «мар-гбль»), 'Merv ornament'",
-        "source": "moshkova_1946",
-        "note": "name used by the Kizil Ayak for a pattern borrowed from the Merv Saryk or Salor; Moshkova does not draw it, so the match to the turret gul is likely but not certain"
-       },
-       {
-        "form": "«мары-гёль»",
-        "source": "berdimuhamedov_2011",
-        "note": "weavers' name for the Salyr gul"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "мар-гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "мары-гёль",
+       "translit": null
+      }
+     ],
      "meaning": null,
      "kind": "chuval gul",
      "shape": "An octagon whose frame carries a row of small turret- or tooth-like points (Berdimuhamedov: small triangular 'pyramids' topped by a stylized ram's head, giving a saw-toothed edge), with ram's-horn hooks inside and a stepped cross or star at the center. Usually two or three rows of them on a chuval face.",
@@ -78729,24 +78647,7 @@
      "minor_guls_with_it": [
       "quartered cross-shaped minor figures (Rijksmuseum BK-1975-314 and -315)"
      ],
-     "how_to_tell": [
-      {
-       "vs": "salor-gul",
-       "text": "The Salor main-carpet gul is round and many-lobed with clover-leaf clusters; the turret gul is a clear octagon with a toothed inner frame.",
-       "sources": [
-        "tsareva_2012",
-        "stone_2013"
-       ]
-      },
-      {
-       "vs": "tekke-gul",
-       "text": "The Tekke gul has stepped sides and diagonally colored quarters with hooked 'bird' figures, not a toothed frame.",
-       "sources": [
-        "hawley_1922",
-        "stone_2013"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Stone describes the turret gul as an octagon with projections around the perimeter, used by the Salor, Sariq, Ersari and Kizil Ayak, tied to the Salor in early literature and sometimes called the 'Rose of Salor'.",
@@ -78814,7 +78715,6 @@
       "berdimuhamedov_2011",
       "bogolyubov_1908",
       "cole_moshkova_captions",
-      "hawley_1922",
       "moshkova_1946",
       "moshkova_1980",
       "rijksmuseum_turkmen",
@@ -78858,24 +78758,21 @@
      "name": "Saryk gul",
      "other_names": [
       "Sariq gul",
-      "sary-gyol",
+      "Sary-gyol",
       "Saryk göl"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«сарык гёль» (OCR «сарык голь»)",
-        "source": "moshkova_1946",
-        "note": "glossed 'сарыкский узор'"
-       },
-       {
-        "form": "сары-гёль",
-        "source": "tsareva_2012"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "сарык гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "сары-гёль",
+       "translit": null
+      }
+     ],
      "meaning": null,
      "kind": "main carpet gul",
      "shape": "A stepped octagon with a central hexagon. On the oldest known Saryk bag face (Cleveland 2008.223) the guls are divided into quarters and alternate with angular minor guls in staggered rows. Moshkova saw a single bird figure in it, a step between the Tekke gul and the old Yomut gul.",
@@ -78904,24 +78801,7 @@
      "minor_guls_with_it": [
       "angular minor guls in staggered rows (Cleveland 2008.223)"
      ],
-     "how_to_tell": [
-      {
-       "vs": "tekke-gul",
-       "text": "No grid of lines and a central hexagon; and the Saryk tie almost all their knots symmetric, while Tekke knots are asymmetric (look at the back).",
-       "sources": [
-        "stone_2013",
-        "iranica_carpets_xvi"
-       ]
-      },
-      {
-       "vs": "salor-gul",
-       "text": "Saryk weavers also copied the Salor gul (Cleveland 2006.201); on such pieces Cleveland says only the minor borders with contrasting triangles are Saryk hallmarks.",
-       "sources": [
-        "cleveland_2006_201"
-       ],
-       "single_source": true
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The most common Sariq gul is a stepped octagon with a central hexagon.",
@@ -78952,9 +78832,7 @@
      "disagreements": [],
      "where_found": [],
      "sources": [
-      "cleveland_2006_201",
       "cleveland_2008_223",
-      "iranica_carpets_xvi",
       "moshkova_1946",
       "moshkova_1980",
       "stone_2013",
@@ -78982,26 +78860,24 @@
      "id": "temirchin-gul",
      "name": "Temirchin gul",
      "other_names": [
-      "temirjin gul",
-      "temerchin gul",
-      "temirdzhin gol",
-      "temirchen gul",
-      "onurga"
+      "Temirjin gul",
+      "Temerchin gul",
+      "Temirdzhin gol",
+      "Temirchen gul",
+      "Onurga"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«темирджин гёль» (OCR «темирджин голь»)",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "«темирджик-гёль»",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "темирджин гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "темирджик-гёль",
+       "translit": null
+      }
+     ],
      "meaning": "Stone gives 'onurga' as another name. Cole's captions (dealer text) report that Tsareva reads one element as a fish.",
      "meaning_sources": [
       "stone_2013",
@@ -79038,16 +78914,7 @@
      ],
      "period_note": "Early Sariq main carpets and some old Ersari carpets.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "gulli-gul",
-       "text": "The gulli gul has clover-leaf figures in its quarters; the temirchin gul has rows of fish-like shapes and a rectangular center.",
-       "sources": [
-        "stone_2013",
-        "moshkova_1980"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Stone describes the temirchin (temerchin) gul as an octagonal gul of early Sariq main carpets and some old Ersari carpets, with four overlapping angelfish-like shapes in each quarter.",
@@ -79114,53 +78981,43 @@
      "id": "gulli-gul",
      "name": "Gulli gul",
      "other_names": [
-      "gülli göl",
-      "gulli gol",
+      "Gülli göl",
+      "Gulli gol",
       "Ersari gul",
-      "elephant's foot",
-      "fil-pai",
-      "fil-pay",
+      "Elephant's foot",
+      "Fil-pai",
+      "Fil-pay",
       "Afghan gul (trade)"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«гюлли гёль» (OCR «гюлли голь»)",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "гюлли-гёль",
-        "source": "tsareva_2012"
-       },
-       {
-        "form": "гюлли-гёль",
-        "source": "berdimuhamedov_2011"
-       },
-       {
-        "form": "эрсаринская роза",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "ersarische Rose [German text]",
-        "source": "bogolyubov_1908"
-       }
-      ],
-      "other": [
-       {
-        "form": "fil-pai, Persian 'elephant's foot': the principal octagonal gul of each Ersari subtribe",
-        "source": "stone_2013"
-       }
-      ]
-     },
-     "meaning": "Moshkova: in the Ersari gul the side figures have become trefoils and the weavers call them gul, 'flower'. Stone: 'elephant's foot' (fil-pai) is also a loose name for any octagonal Turkmen gul.",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "гюлли гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "гюлли-гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "эрсаринская роза",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "ersarische Rose [German text]",
+       "translit": null
+      }
+     ],
+     "meaning": "In the Ersari gul the side figures have become trefoils and the weavers call them gul, 'flower'. Stone: 'elephant's foot' (fil-pai) is also a loose name for any octagonal Turkmen gul.",
      "meaning_sources": [
       "moshkova_1980",
       "stone_2013"
      ],
      "kind": "main carpet gul",
-     "shape": "A large octagon, quartered, each quarter holding a clover-leaf (trefoil) figure; many variants. Bogolyubov (Plate XXVI, Char Vilayet): five parts, an inner part in the field color and four outer parts alternately dark green and light brick red with clover leaves and stars. On Ersari and Afghan carpets usually three upright rows of large octagons almost touching, with small diamonds between.",
+     "shape": "A large octagon, quartered, each quarter holding a clover-leaf (trefoil) figure; many variants. Bogolyubov (Plate xxvi, Char Vilayet): five parts, an inner part in the field color and four outer parts alternately dark green and light brick red with clover leaves and stars. On Ersari and Afghan carpets usually three upright rows of large octagons almost touching, with small diamonds between.",
      "shape_sources": [
       "stone_2013",
       "bogolyubov_1908",
@@ -79205,24 +79062,7 @@
       "small diamonds or clusters of eight-pointed stars, some fringed with hooks (Hawley, 'Afghans')",
       "gaz ayak 'goose' figure (Tsareva: an intermediate motif of the Ersari group)"
      ],
-     "how_to_tell": [
-      {
-       "vs": "tekke-gul",
-       "text": "Bigger and plainer, often three rows nearly touching, no grid of lines; clover leaves in the quarters.",
-       "sources": [
-        "bogolyubov_1908",
-        "hawley_1922"
-       ]
-      },
-      {
-       "vs": "salor-gul",
-       "text": "The Salor main-carpet gul is the same family but smaller, round and many-lobed, on finer, silk-highlighted Salor structure.",
-       "sources": [
-        "tsareva_2012",
-        "stone_2013"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The gulli gul is associated with the Ersari, Salor and Saryq; each quarter contains a clover-leaf motif, and there are many variations.",
@@ -79335,19 +79175,16 @@
      "id": "keyik-gul",
      "name": "Keyik gul",
      "other_names": [
-      "keyik göl",
-      "gazelle gul"
+      "Keyik göl",
+      "Gazelle gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«кейик гёль»",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "кейик гёль",
+       "translit": null
+      }
+     ],
      "meaning": "The Turkmen state book says some art historians see a priestly sign combined with horsemen and banners in the Ersari gul; over time the horsemen came to be read as gazelles (keyik), hence the name.",
      "meaning_sources": [
       "berdimuhamedov_2011"
@@ -79395,20 +79232,16 @@
      "id": "kepse-gul",
      "name": "Kepse gul",
      "other_names": [
-      "kepche gul",
-      "kepse göl"
+      "Kepche gul",
+      "Kepse göl"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«кепсе гёль» (OCR «кепсе голь»)",
-        "source": "moshkova_1946"
-       }
-      ],
-      "note": "The Turkmen state book names a stepped, rhombic Yomut gul with jagged outline 'гобса-гёль' (gobsa-gyol), likened to a fishing boat; whether this is the kepse gul is not stated."
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "кепсе гёль",
+       "translit": null
+      }
+     ],
      "meaning": "Stone glosses kepse as Turkish 'sheaf' (single source).",
      "meaning_sources": [
       "stone_2013"
@@ -79434,16 +79267,7 @@
      ],
      "period_note": "Kepse and dyrnak guls appear on newly made torbas but not on old ones. Cole (dealer text): old chuvals and torbas with the kepse gul are rare but known.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "dyrnak-gul",
-       "text": "The dyrnak gul is a diamond edged with comb-like hooks; the kepse is a wider horizontal lozenge of upright bands with an octagon at its center.",
-       "sources": [
-        "stone_2013",
-        "tsareva_2012"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Moshkova names the kepse gol and the dyrnak gol as the basic tribal guls of the Yomut.",
@@ -79485,8 +79309,7 @@
       "cole_moshkova_captions",
       "moshkova_1946",
       "moshkova_1980",
-      "stone_2013",
-      "tsareva_2012"
+      "stone_2013"
      ],
      "single_source": false,
      "images": []
@@ -79495,30 +79318,29 @@
      "id": "dyrnak-gul",
      "name": "Dyrnak gul",
      "other_names": [
-      "dirnak gul",
-      "claw gul",
-      "comb gul",
-      "dyrnak göl"
+      "Dirnak gul",
+      "Claw gul",
+      "Comb gul",
+      "Dyrnak göl"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«дырнак гёль» (OCR «дырнак голь»)",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "«дырнак-гёль» (коготь птицы, 'bird's claw')",
-        "source": "berdimuhamedov_2011"
-       },
-       {
-        "form": "«дырнак» — туркм. 'когти, когтистый'",
-        "source": "tsareva_2012"
-       }
-      ]
-     },
-     "meaning": "'Claws, clawed' (Tsareva); 'bird's claw' (Berdimuhamedov); Turkish 'claw' (Stone). Tsareva suggests that some dyrnak-type diamonds are no-longer-recognizable two-headed eagles.",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "дырнак гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "дырнак-гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "дырнак",
+       "translit": null
+      }
+     ],
+     "meaning": "'Claws, clawed'; 'bird's claw'; Turkish 'claw'. Tsareva suggests that some dyrnak-type diamonds are no-longer-recognizable two-headed eagles.",
      "meaning_sources": [
       "tsareva_2012",
       "berdimuhamedov_2011",
@@ -79568,23 +79390,7 @@
      ],
      "period_note": "On newly made torbas, not on old ones.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "kepse-gul",
-       "text": "Dyrnak: a diamond with comb-like hooks; kepse: a horizontal lozenge of upright bands around an octagon.",
-       "sources": [
-        "stone_2013"
-       ]
-      },
-      {
-       "vs": "c-gul",
-       "text": "The C gul also has a hooked outline but holds C-shaped crescents in its quarters.",
-       "sources": [
-        "stone_2013"
-       ],
-       "single_source": true
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The dyrnak (Turk. 'claw') gul is a quartered diamond with external and internal hooks, used in Yomud, Chaudor, Chub Bash and Ersari weavings.",
@@ -79626,7 +79432,6 @@
      "where_found": [],
      "sources": [
       "berdimuhamedov_2011",
-      "moshkova_1946",
       "moshkova_1980",
       "stone_2013",
       "tsareva_2012"
@@ -79667,30 +79472,27 @@
      "id": "tauk-noska-gul",
      "name": "Tauk noska gul",
      "other_names": [
-      "tauk nuska",
-      "tauk nauska",
-      "tauk-nuska",
-      "chicken gul",
-      "hen gul",
+      "Tauk nuska",
+      "Tauk nauska",
+      "Tauk-nuska",
+      "Chicken gul",
+      "Hen gul",
       "H gul",
-      "tavak (Tsareva's preferred reading)"
+      "Tavak (Tsareva's preferred reading)"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«таук нуска»",
-        "source": "moshkova_1946",
-        "note": "also «таук гёль»"
-       },
-       {
-        "form": "«таук-нуска», правильнее «тавак» (Persian-Tajik 'dish')",
-        "source": "tsareva_2012"
-       }
-      ]
-     },
-     "meaning": "Moshkova: the Arabachi call it tauk nuska, 'figure of a hen'; Stone: Turkish 'chicken design gul'. Tsareva (in a note) prefers tavak, Persian-Tajik 'dish', the Central Asian word for round rosettes and medallions.",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "таук нуска",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "таук-нуска",
+       "translit": null
+      }
+     ],
+     "meaning": "The Arabachi call it tauk nuska, 'figure of a hen'; Stone: Turkish 'chicken design gul'. Tsareva (in a note) prefers tavak, Persian-Tajik 'dish', the Central Asian word for round rosettes and medallions.",
      "meaning_sources": [
       "moshkova_1980",
       "stone_2013",
@@ -79761,17 +79563,7 @@
       "chemche (Kizil Ayak, Stone)",
       "erre gul on a Chodor main carpet (Cole, dealer text)"
      ],
-     "how_to_tell": [
-      {
-       "vs": "ertmen-gul",
-       "text": "The ertmen is a stepped diamond with ram's-horn curls at top and bottom and an upright axis; the tauk noska is a quartered octagon with paired animals or H shapes.",
-       "sources": [
-        "stone_2013",
-        "tsareva_2012",
-        "berdimuhamedov_2011"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The tauk noska gul is used by the Kizilayak, Ersari, Arabachi, Yomut and Chodor and contains two small animals in each quadrant; in early versions the animal has two heads.",
@@ -79846,7 +79638,6 @@
      ],
      "where_found": [],
      "sources": [
-      "berdimuhamedov_2011",
       "bogolyubov_1908",
       "cole_moshkova_captions",
       "met_22_100_46",
@@ -79891,14 +79682,9 @@
      "id": "c-gul",
      "name": "C gul",
      "other_names": [
-      "crescent gul"
+      "Crescent gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [],
-      "note": "No native name found."
-     },
+     "native": [],
      "meaning": null,
      "kind": "main carpet gul",
      "shape": "An octagonal or stepped-diamond gul with C-shapes or crescents inside, some facing left and some right.",
@@ -79923,16 +79709,7 @@
      "minor_guls_with_it": [
       "small barred cross figures between the guls (Cleveland 2010.190)"
      ],
-     "how_to_tell": [
-      {
-       "vs": "dyrnak-gul",
-       "text": "Both have hooked outlines; look for the crescents inside the quarters.",
-       "sources": [
-        "stone_2013"
-       ],
-       "single_source": true
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The 'C' gul is a Turkmen octagon gul with C-shapes or crescents facing both left and right, found in Yomud rugs.",
@@ -79971,31 +79748,30 @@
      "id": "ertmen-gul",
      "name": "Ertmen gul",
      "other_names": [
-      "ertman gul",
+      "Ertman gul",
       "Chodor gul",
-      "chodor-gyol",
+      "Chodor-gyol",
       "Chowdur gul",
-      "kushly (Amu Darya Chodor name for the composition)"
+      "Kushly (Amu Darya Chodor name for the composition)"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«эртмен»",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "«чоудор-гёль»",
-        "source": "tsareva_2012"
-       },
-       {
-        "form": "«човдурский гёль»",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
-     "meaning": "Moshkova: a plant flanked by two birds; the Chodor could no longer name its parts, but Chodor on the Amu Darya call the composition kushly, 'with birds'. The Turkmen state book reports a folk reading as the houses of bride and groom.",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "эртмен",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "чоудор-гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "човдурский гёль",
+       "translit": null
+      }
+     ],
+     "meaning": "A plant flanked by two birds; the Chodor could no longer name its parts, but Chodor on the Amu Darya call the composition kushly, 'with birds'. The Turkmen state book reports a folk reading as the houses of bride and groom.",
      "meaning_sources": [
       "moshkova_1980",
       "berdimuhamedov_2011"
@@ -80043,17 +79819,7 @@
      ],
      "period_note": "The ertmen deformed within 20–30 years and stopped being woven on Chodor carpets, replaced by the tauk noska; it survived on chuvals and torbas, where weavers still called it the Chodor tribal gul. Tsareva illustrates a Chodor main carpet with it dated to the early 19th century and says it was also used on chuvals by tribes close to the Esen-khan confederation.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "tauk-noska-gul",
-       "text": "Upright stepped diamond with horn curls top and bottom, not a quartered octagon with paired animals.",
-       "sources": [
-        "tsareva_2012",
-        "stone_2013",
-        "berdimuhamedov_2011"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The ertmen (Chodor) gul is a stepped diamond with ram's-horn projections at its upper and lower corners and a vertical axis.",
@@ -80135,26 +79901,17 @@
      "id": "eagle-gul",
      "name": "Eagle gul",
      "other_names": [
-      "igl-gyol",
-      "eagle-group gul",
+      "Igl-gyol",
+      "Eagle-group gul",
       "Imreli gul (disputed)"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«игл-гёль»",
-        "source": "tsareva_2012"
-       }
-      ],
-      "other": [
-       {
-        "form": "große Güllen ... ähnelt erhobenen Adlerflügeln ('like raised eagle wings', of a Yomud carpet)",
-        "source": "bogolyubov_1908"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "игл-гёль",
+       "translit": null
+      }
+     ],
      "meaning": "Tsareva reads its outline as schematized eagles with spread wings. Stone reports it is thought to be a stylized floral palmette.",
      "meaning_sources": [
       "tsareva_2012",
@@ -80266,22 +80023,18 @@
      "id": "gushly-gul",
      "name": "Gushly gul",
      "other_names": [
-      "guşly göl",
-      "gush",
-      "bird gul"
+      "Guşly göl",
+      "Gush",
+      "Bird gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«гуш» (птица) или «гушлы-гёль»",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "note": "The table row soviet-turkmen already uses the Turkmen Latin form 'guşly göl'."
-     },
-     "meaning": "Gush, 'bird' (Berdimuhamedov).",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "гуш",
+       "translit": null
+      }
+     ],
+     "meaning": "Gush, 'bird'.",
      "meaning_sources": [
       "berdimuhamedov_2011"
      ],
@@ -80330,28 +80083,18 @@
      "id": "yomut-anchor-gul",
      "name": "Yomut gul with anchor figures",
      "other_names": [
-      "anchor gul (descriptive)"
+      "Anchor gul (descriptive)"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«якоревидные символы» (anchor-like symbols)",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "other": [
-       {
-        "form": "stilisierte Anker; Güllen ... mit Pfeilen und Ankern geschmückt [German text]",
-        "source": "bogolyubov_1908"
-       }
-      ],
-      "note": "No source read gives this gul a name; the entry is descriptive."
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "якоревидные символы",
+       "translit": null
+      }
+     ],
      "meaning": null,
      "kind": "main carpet gul",
-     "shape": "An octagon (often with a zigzag or stepped center) with small anchor- or arrow-shaped figures around it (Met 22.100.47) or inside it (Bogolyubov), set in offset rows.",
+     "shape": "An octagon (often with a zigzag or stepped center) with small anchor- or arrow-shaped figures around it (Met 22.100.47) or inside it, set in offset rows.",
      "shape_sources": [
       "bogolyubov_1908",
       "berdimuhamedov_2011",
@@ -80382,16 +80125,7 @@
      ],
      "period_note": "Met 22.100.47 is dated probably mid-19th century.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "dyrnak-gul",
-       "text": "The dyrnak gul's hooks run along its own edges like a comb; here separate anchor figures ring an octagon.",
-       "sources": [
-        "stone_2013",
-        "tsareva_2012"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Anchor-like figures are typical of the field of Yomut carpets: Bogolyubov saw stylized anchors inside small Yomud guls and arrows and anchors in Ogurjali guls; the Turkmen state book says anchor-like symbols prevail in Yomut fields.",
@@ -80408,9 +80142,7 @@
      "sources": [
       "berdimuhamedov_2011",
       "bogolyubov_1908",
-      "met_open_access",
-      "stone_2013",
-      "tsareva_2012"
+      "met_open_access"
      ],
      "single_source": false,
      "images": [
@@ -80434,28 +80166,25 @@
      "id": "chuval-gul",
      "name": "Chuval gul",
      "other_names": [
-      "chuval göl",
-      "small chuval guls",
+      "Chuval göl",
+      "Small chuval guls",
       "Yomut chuval gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«чувал гюль»",
-        "source": "moshkova_1946",
-        "note": "the old Yomut gol on chuvals, 'now called chuval gyul, not gyol'"
-       },
-       {
-        "form": "«малые чувал-гёли»",
-        "source": "tsareva_2012"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "чувал гюль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "малые чувал-гёли",
+       "translit": null
+      }
+     ],
      "meaning": null,
      "kind": "chuval gul",
-     "shape": "Guls of bag faces, smaller than main-carpet guls, often two or three rows of three. Moshkova's old Yomut chuval gul has no 'birds' and sharp geometric angles; the Rijksmuseum's Ersari chuval BK-1975-316 has stepped, quartered guls with hooked projections at top and bottom.",
+     "shape": "Guls of bag faces, smaller than main-carpet guls, often two or three rows of three. Moshkova's old Yomut chuval gul has no 'birds' and sharp geometric angles; the Rijksmuseum's Ersari chuval bk-1975-316 has stepped, quartered guls with hooked projections at top and bottom.",
      "shape_sources": [
       "moshkova_1980",
       "tsareva_2012",
@@ -80502,16 +80231,7 @@
      ],
      "period_note": "Moshkova's 'dead gul': once a Yomut tribal gul, by the 1940s used on chuvals only and seen as ornament.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "turret-gul",
-       "text": "The Salor/Saryk chuval gul (turret gul) is an octagon with a toothed frame.",
-       "sources": [
-        "stone_2013",
-        "rijksmuseum_turkmen"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Moshkova says the old Yomut gol, now used only in the field of chuvals, is called chuval gyul rather than gol and is used alongside purely ornamental patterns.",
@@ -80561,7 +80281,6 @@
       "moshkova_1946",
       "moshkova_1980",
       "rijksmuseum_turkmen",
-      "stone_2013",
       "tsareva_2012"
      ],
      "single_source": true,
@@ -80600,14 +80319,9 @@
      "id": "erre-gul",
      "name": "Erre gul",
      "other_names": [
-      "erre göl"
+      "Erre göl"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [],
-      "note": "No native-language source found."
-     },
+     "native": [],
      "meaning": null,
      "kind": "chuval gul",
      "shape": "An indented rectangle with a flower at the center and crosses at top and bottom, with arrowheads pointing in at the sides; in a variant a diamond fills the center.",
@@ -80678,31 +80392,23 @@
      "id": "chemche-gul",
      "name": "Chemche gul",
      "other_names": [
-      "chemche göl",
-      "ak bashly chemche gul",
-      "spoon gul"
+      "Chemche göl",
+      "Ak bashly chemche gul",
+      "Spoon gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«ак башлы чемче гёль»",
-        "source": "berdimuhamedov_2011"
-       },
-       {
-        "form": "«чемче» (as a ram's-horn sign)",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "other": [
-       {
-        "form": "'kruisvormige motieven, z.g. chemche guls' (Dutch museum label)",
-        "source": "rijksmuseum_turkmen"
-       }
-      ]
-     },
-     "meaning": "Chemche means 'spoon' or 'scoop' (Stone); the same word names the spoon bag, chemche torba (Moshkova; Berdimuhamedov). The Turkmen state book lists chemche among signs for ram's horns.",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "ак башлы чемче гёль",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "чемче",
+       "translit": null
+      }
+     ],
+     "meaning": "Chemche means 'spoon' or 'scoop'; the same word names the spoon bag, chemche torba. The Turkmen state book lists chemche among signs for ram's horns.",
      "meaning_sources": [
       "stone_2013",
       "moshkova_1980",
@@ -80740,16 +80446,7 @@
      ],
      "period_note": null,
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "gurbaga-gul",
-       "text": "Stone refers the gurbaga (frog) minor gul to the chemche entry; the state book calls the gurbaga 'openwork'. No source read gives a reliable visual test.",
-       "sources": [
-        "stone_2013",
-        "berdimuhamedov_2011"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "Chemche gul is a common minor gul in Turkmen rugs, a quartered diamond that may have eight radiating arms alternately ending in the ram's-horn motif.",
@@ -80798,21 +80495,18 @@
      "id": "gurbaga-gul",
      "name": "Gurbaga gul",
      "other_names": [
-      "kurbage gul",
-      "gorbaghe gul",
-      "gurbaghe gul",
-      "frog gul"
+      "Kurbage gul",
+      "Gorbaghe gul",
+      "Gurbaghe gul",
+      "Frog gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«гурбага»",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "гурбага",
+       "translit": null
+      }
+     ],
      "meaning": "Frog (Stone: Turkish kurbage, 'frog').",
      "meaning_sources": [
       "stone_2013"
@@ -80880,19 +80574,16 @@
      "id": "chakmak-gul",
      "name": "Chakmak gul",
      "other_names": [
-      "çakmak göl",
-      "flint-steel gul"
+      "Çakmak göl",
+      "Flint-steel gul"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«чакмак гёль» (огниво, 'flint and steel')",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "чакмак гёль",
+       "translit": null
+      }
+     ],
      "meaning": "Chakmak, 'flint and steel' (fire-striker); the book links it to fire and the hearth.",
      "meaning_sources": [
       "berdimuhamedov_2011"
@@ -80940,20 +80631,17 @@
      "id": "sagdak",
      "name": "Sagdak",
      "other_names": [
-      "sagdaq",
-      "sagdak gul",
-      "quiver"
+      "Sagdaq",
+      "Sagdak gul",
+      "Quiver"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«сагдак» ('колчан', quiver)",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "сагдак",
+       "translit": null
+      }
+     ],
      "meaning": "Sagdak, 'quiver'; the book counts it among protective and wishing ornaments.",
      "meaning_sources": [
       "berdimuhamedov_2011"
@@ -80995,28 +80683,19 @@
      "id": "aina-gul",
      "name": "Aina gul",
      "other_names": [
-      "mirror gul",
-      "compartment gul",
-      "aina gochak",
-      "aýna göçak"
+      "Mirror gul",
+      "Compartment gul",
+      "Aina gochak",
+      "Aýna göçak"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«айна гочак» (a gul with 'horns')",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "other": [
-       {
-        "form": "'aina-gochak-motief' (Dutch museum label)",
-        "source": "rijksmuseum_turkmen"
-       }
-      ]
-     },
-     "meaning": "Aina, 'mirror' (Stone: Persian âyena); gochak, ram's horns, a sign of courage and strength (Berdimuhamedov).",
+     "native": [
+      {
+       "lang": "ru",
+       "text": "айна гочак",
+       "translit": null
+      }
+     ],
+     "meaning": "Aina, 'mirror' (Stone: Persian âyena); gochak, ram's horns, a sign of courage and strength.",
      "meaning_sources": [
       "stone_2013",
       "berdimuhamedov_2011"
@@ -81041,7 +80720,7 @@
       "torba",
       "chuval"
      ],
-     "period_note": "Rijksmuseum BK-1975-317 is dated about 1850.",
+     "period_note": "Rijksmuseum bk-1975-317 is dated about 1850.",
      "minor_guls_with_it": [],
      "how_to_tell": [],
      "facts": [
@@ -81058,7 +80737,6 @@
      "disagreements": [],
      "where_found": [],
      "sources": [
-      "berdimuhamedov_2011",
       "rijksmuseum_turkmen",
       "stone_2013"
      ],
@@ -81069,12 +80747,7 @@
      "id": "sekme-gul",
      "name": "Sekme gul",
      "other_names": [],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [],
-      "note": "No native-language source found."
-     },
+     "native": [],
      "meaning": null,
      "kind": "minor gul",
      "shape": "A rectangle holding two concentric stepped diamonds.",
@@ -81093,16 +80766,7 @@
      "formats": [],
      "period_note": null,
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "aina-gul",
-       "text": "Very close to Stone's second form of the aina (compartment) gul.",
-       "sources": [
-        "stone_2013"
-       ],
-       "single_source": true
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The sekme gul is a rectangle containing two concentric stepped diamonds, used in Tekke weavings.",
@@ -81125,23 +80789,16 @@
      "id": "dagdan",
      "name": "Dagdan",
      "other_names": [
-      "dagdan border",
-      "dagdan amulet"
+      "Dagdan border",
+      "Dagdan amulet"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«дагдан»",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "«дагдан»",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "дагдан",
+       "translit": null
+      }
+     ],
      "meaning": "An amulet well known in Turkmenistan; Moshkova says weavers give it a religious-magical (protective) meaning.",
      "meaning_sources": [
       "moshkova_1980",
@@ -81201,7 +80858,6 @@
      "disagreements": [],
      "where_found": [],
      "sources": [
-      "berdimuhamedov_2011",
       "moshkova_1946",
       "moshkova_1980",
       "stone_2013"
@@ -81213,19 +80869,16 @@
      "id": "ashik",
      "name": "Ashik design",
      "other_names": [
-      "ashik gul",
-      "asmalyk lattice"
+      "Ashik gul",
+      "Asmalyk lattice"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«ашик»",
-        "source": "moshkova_1946"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "ашик",
+       "translit": null
+      }
+     ],
      "meaning": "Moshkova reads it as a late, simplified form of an older bird ornament.",
      "meaning_sources": [
       "moshkova_1980"
@@ -81252,16 +80905,7 @@
      ],
      "period_note": "Osmolduks made in the colonial period often have the ashik design; the two or three early 19th- or late 18th-century osmolduks in Moscow and St Petersburg museums show an older form, a colored rhomboid rosette with white zigzags and a bird (sometimes an animal) at its center.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "bird-asmalyk",
-       "text": "Bird asmalyks show recognizable birds in a lattice; the ashik is an abstract stepped-diamond lattice.",
-       "sources": [
-        "stone_2013",
-        "moshkova_1980"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The ashik gul is a gul of serrated or stepped diamonds, which may be concentric.",
@@ -81311,23 +80955,20 @@
      "id": "bird-asmalyk",
      "name": "Bird asmalyk design",
      "other_names": [
-      "bird asmalyk",
-      "running birds",
-      "bustard asmalyk"
+      "Bird asmalyk",
+      "Running birds",
+      "Bustard asmalyk"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "асмалдык с мотивом бегущих дроф (asmaldyk with running bustards)",
-        "source": "tsareva_2012"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "асмалдык с мотивом бегущих дроф",
+       "translit": null
+      }
+     ],
      "meaning": null,
      "kind": "torba or asmalyk design",
-     "shape": "Repeated birds within a lattice of serrated leaves on a red field, with white borders carrying a meandering vine; running or standing birds (Tsareva).",
+     "shape": "Repeated birds within a lattice of serrated leaves on a red field, with white borders carrying a meandering vine; running or standing birds.",
      "shape_sources": [
       "stone_2013",
       "tsareva_2012"
@@ -81406,25 +81047,22 @@
      "id": "darvaza",
      "name": "Darvaza design",
      "other_names": [
-      "darvaza medallion",
-      "gate design"
+      "Darvaza medallion",
+      "Gate design"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«дарваза» (перс.-тадж., также туркм. 'ворота', gate)",
-        "source": "tsareva_2012"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "дарваза",
+       "translit": null
+      }
+     ],
      "meaning": "Darvaza, 'gate' (Persian-Tajik, also Turkmen).",
      "meaning_sources": [
       "tsareva_2012"
      ],
      "kind": "torba or asmalyk design",
-     "shape": "Tsareva: the field of an asmalyk with three large central rosettes and two rows of arches running lengthwise; also a Salor wedding panel. Stone: a complex symmetrical polygon with six to eight small hexagons.",
+     "shape": "The field of an asmalyk with three large central rosettes and two rows of arches running lengthwise; also a Salor wedding panel. Stone: a complex symmetrical polygon with six to eight small hexagons.",
      "shape_sources": [
       "tsareva_2012",
       "stone_2013"
@@ -81464,7 +81102,7 @@
      "how_to_tell": [],
      "facts": [
       {
-       "text": "Tsareva: darvaza is the Turkmen name for an asmalyk field composition of three large central rosettes and two rows of lengthwise arches.",
+       "text": "Darvaza is the Turkmen name for an asmalyk field composition of three large central rosettes and two rows of lengthwise arches.",
        "sources": [
         "tsareva_2012"
        ],
@@ -81507,26 +81145,28 @@
      "id": "kejebelik",
      "name": "Kejebelik (wedding-caravan) design",
      "other_names": [
-      "kejebe design",
-      "wedding caravan asmalyk"
+      "Kejebe design",
+      "Wedding caravan asmalyk"
      ],
-     "native": {
-      "turkmen_latin": "kejebelik (UNESCO inventory, OCR-normalized)",
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«кеджебелик»",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
-     "meaning": "From kejebe, the tent-like litter in which the bride rode on a camel (Stone).",
+     "native": [
+      {
+       "lang": "tk",
+       "text": "kejebelik (UNESCO inventory, OCR-normalized)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "кеджебелик",
+       "translit": null
+      }
+     ],
+     "meaning": "From kejebe, the tent-like litter in which the bride rode on a camel.",
      "meaning_sources": [
       "stone_2013",
       "berdimuhamedov_2011"
      ],
      "kind": "torba or asmalyk design",
-     "shape": "Asmalyks picturing the wedding caravan itself (Berdimuhamedov).",
+     "shape": "Asmalyks picturing the wedding caravan itself.",
      "shape_sources": [
       "berdimuhamedov_2011"
      ],
@@ -81562,22 +81202,15 @@
      "id": "torba-designs",
      "name": "Torba designs",
      "other_names": [
-      "bag designs"
+      "Bag designs"
      ],
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "торба",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "торба",
-        "source": "berdimuhamedov_2011"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "торба",
+       "translit": null
+      }
+     ],
      "meaning": null,
      "kind": "torba or asmalyk design",
      "shape": "No single design. Torbas carry compartment guls (aina gul), old tribal guls that left the main carpet (ertmen, Salor gul), later Yomut kepse and dyrnak guls, and many borrowed patterns.",
@@ -81615,7 +81248,6 @@
      "disagreements": [],
      "where_found": [],
      "sources": [
-      "berdimuhamedov_2011",
       "bogolyubov_1908",
       "moshkova_1946",
       "moshkova_1980"
@@ -81656,48 +81288,40 @@
      "id": "ensi-layout",
      "name": "Ensi (hatchli) layout",
      "other_names": [
-      "hatchli",
-      "khatchli",
-      "katchli",
-      "hatchlu",
+      "Hatchli",
+      "Khatchli",
+      "Katchli",
+      "Hatchlu",
       "Khatchlie Bokhara",
       "Hardjli",
       "Princess Bokhara (trade)",
-      "engsi",
-      "purdah",
-      "pardeh",
+      "Engsi",
+      "Purdah",
+      "Pardeh",
       "Pende khatchli (Saryk variant)"
      ],
-     "native": {
-      "turkmen_latin": "ensi (UNESCO inventory)",
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "«энгси»",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "энси",
-        "source": "gogel_1927"
-       },
-       {
-        "form": "энси",
-        "source": "tsareva_2012"
-       },
-       {
-        "form": "энси",
-        "source": "berdimuhamedov_2011"
-       },
-       {
-        "form": "энси (дверные энси)",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "Enessy [German text]",
-        "source": "bogolyubov_1908"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "ensi (UNESCO inventory)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "энгси",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "энси",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "Enessy [German text]",
+       "translit": null
+      }
+     ],
      "meaning": "Hatchli/khatchli means 'cross-like': Stone derives it from Turkish haçlı 'cruciform'; Lewis and Hawley say it comes from Armenian.",
      "meaning_sources": [
       "stone_2013",
@@ -81770,16 +81394,7 @@
      ],
      "period_note": "Many Tekke rugs have the katchli pattern. The trade sold them as 'Princess Bokhara' prayer rugs.",
      "minor_guls_with_it": [],
-     "how_to_tell": [
-      {
-       "vs": "prayer rug (namazlyk)",
-       "text": "An ensi's field is divided into four by a cross; a namazlyk has a single prayer niche. Old books call ensis prayer rugs.",
-       "sources": [
-        "gogel_1927",
-        "hawley_1922"
-       ]
-      }
-     ],
+     "how_to_tell": [],
      "facts": [
       {
        "text": "The ensi field is divided into four parts by crossing vertical and horizontal bands.",
@@ -81937,650 +81552,319 @@
      "id": "tekke",
      "row": "tekke",
      "name": "Tekke",
-     "native": {
-      "turkmen_latin": "Teke",
-      "turkmen_cyrillic": "Теке",
-      "russian": [
-       {
-        "form": "текинцы",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "текинцы",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "текинцы",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "german_bogolyubov": "Thekinen (Teke)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Teke",
+       "translit": null
+      },
+      {
+       "lang": "tk",
+       "text": "Теке",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "текинцы",
+       "translit": null
+      }
+     ],
      "where_19th_century": "The Akhal oasis along the Kopet Dagh (Ashgabat, Tejen) and, from about 1830, the Merv oasis; groups also lived along the Persian border and later in northern Afghanistan.",
      "where_sources": [
       "hawley_1922",
       "bogolyubov_1908",
       "stone_2013"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Asymmetric, generally open to the right (Iranica); Stone: asymmetric.",
-       "sources": [
-        "iranica_carpets_xvi",
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "wefts",
-       "text": "Usually two wefts between rows of knots, a few single-wefted (Stone; Hawley gives two).",
-       "sources": [
-        "stone_2013",
-        "hawley_1922"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "density",
-       "text": "Stone: about 150 knots per square inch; Tekke torbas may be very finely knotted. Turkmen state book: 220,000–400,000 knots per square meter (about 142–258 per square inch).",
-       "sources": [
-        "stone_2013",
-        "berdimuhamedov_2011"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "sides",
-       "text": "Dark blue overcasting (Stone); Hawley: double overcasting or a three-cord goat-hair selvage.",
-       "sources": [
-        "stone_2013",
-        "hawley_1922"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "palette",
-       "text": "Dark red to red-brown with dark blue and ivory (Hawley, 'Royal Bokhara'); the Turkmen state book says even modern Tekke carpets in unusual colors keep warm, golden shades.",
-       "sources": [
-        "hawley_1922",
-        "berdimuhamedov_2011"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets, chuvals, torbas, ensis, asmalyks (bird asmalyks), khalyks, kapunuks, tent bands; Stone says most khalyks are Tekke.",
-       "sources": [
-        "stone_2013",
-        "bogolyubov_1908",
-        "tsareva_2012"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Knot: Asymmetric, generally open to the right; Stone: asymmetric. Wefts: Usually two wefts between rows of knots, a few single-wefted (Stone; Hawley gives two). Density: Stone: about 150 knots per square inch; Tekke torbas may be very finely knotted. Turkmen state book: 220,000–400,000 knots per square meter (about 142–258 per square inch). Sides: Dark blue overcasting; Hawley: double overcasting or a three-cord goat-hair selvage. Palette: Dark red to red-brown with dark blue and ivory (Hawley, 'Royal Bokhara'); the Turkmen state book says even modern Tekke carpets in unusual colors keep warm, golden shades. Formats: Main carpets, chuvals, torbas, ensis, asmalyks (bird asmalyks), khalyks, kapunuks, tent bands; Stone says most khalyks are Tekke.",
+     "where": "The Akhal oasis along the Kopet Dagh (Ashgabat, Tejen) and, from about 1830, the Merv oasis; groups also lived along the Persian border and later in northern Afghanistan.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "berdimuhamedov_2011",
-      "bogolyubov_1908",
-      "hawley_1922",
-      "iranica_carpets_xvi",
-      "moshkova_1946",
-      "stone_2013",
-      "tsareva_2012"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "salor",
      "row": "salor",
      "name": "Salor",
-     "native": {
-      "turkmen_latin": "Salyr",
-      "turkmen_cyrillic": "Салыр",
-      "russian": [
-       {
-        "form": "салоры",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "салоры",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "салыры (салырский ковёр)",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "german_bogolyubov": "Saloren"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Salyr",
+       "translit": null
+      },
+      {
+       "lang": "tk",
+       "text": "Салыр",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "салоры",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "салыры",
+       "translit": null
+      }
+     ],
      "where_19th_century": "Bogolyubov: the Yolatan and Pende oases at the end of the 18th century, most leaving for the Hari Rud and Sarakhs in 1780; Stone: around Merv until defeated in the 1830s; later scattered, some in Afghanistan.",
      "where_sources": [
       "bogolyubov_1908",
       "stone_2013"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Asymmetric, open to the left, on closely packed warps lying on two levels (Iranica); Stone's 'S group': asymmetric open left, highly offset warps, long pile.",
-       "sources": [
-        "iranica_carpets_xvi",
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "palette",
-       "text": "Rust red to brick red with bluish-red or pink silk highlights (Stone, 'S group'); Bogolyubov notes silk in Pende and Merv chuvals and torbas; the Turkmen state book cites an 18th-century Salor carpet in the Hermitage with silk in nine colors.",
-       "sources": [
-        "stone_2013",
-        "bogolyubov_1908",
-        "berdimuhamedov_2011"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets, chuvals (turret gul), torbas, ensis, kejebe trappings and wedding panels (darvaza).",
-       "sources": [
-        "iranica_carpets_xvi",
-        "tsareva_2012",
-        "rijksmuseum_turkmen"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Knot: Asymmetric, open to the left, on closely packed warps lying on two levels; Stone's 'S group': asymmetric open left, highly offset warps, long pile. Palette: Rust red to brick red with bluish-red or pink silk highlights (Stone, 'S group'); Bogolyubov notes silk in Pende and Merv chuvals and torbas; the Turkmen state book cites an 18th-century Salor carpet in the Hermitage with silk in nine colors. Formats: Main carpets, chuvals (turret gul), torbas, ensis, kejebe trappings and wedding panels (darvaza).",
+     "where": "The Yolatan and Pende oases at the end of the 18th century, most leaving for the Hari Rud and Sarakhs in 1780; Stone: around Merv until defeated in the 1830s; later scattered, some in Afghanistan.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "berdimuhamedov_2011",
-      "bogolyubov_1908",
-      "iranica_carpets_xvi",
-      "moshkova_1946",
-      "rijksmuseum_turkmen",
-      "stone_2013",
-      "tsareva_2012"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "saryk",
      "row": "saryk",
      "name": "Saryk",
-     "native": {
-      "turkmen_latin": "Saryk",
-      "turkmen_cyrillic": "Сарык",
-      "russian": [
-       {
-        "form": "сарыки",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "сарыки",
-        "source": "moshkova_1946"
-       }
-      ],
-      "german_bogolyubov": "Saryken"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Saryk",
+       "translit": null
+      },
+      {
+       "lang": "tk",
+       "text": "Сарык",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "сарыки",
+       "translit": null
+      }
+     ],
      "where_19th_century": "Merv, then the Pende (Penjdeh) oasis on the Murghab, which Bogolyubov says they took from the Salor; later some in northern Afghanistan.",
      "where_sources": [
       "bogolyubov_1908",
       "stone_2013"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Almost always symmetric (Iranica; Cleveland records); Stone: very late pieces may be asymmetric.",
-       "sources": [
-        "iranica_carpets_xvi",
-        "cleveland_2006_201",
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "palette",
-       "text": "Stone: earliest pieces all wool with an orange-tan field; then crimson with white cotton and magenta silk highlights; after 1880 purple-brown, brown or purple. Cleveland 2008.223: soft red with cotton and magenta silk.",
-       "sources": [
-        "stone_2013",
-        "cleveland_2008_223"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets, chuvals, ensis (Pende khatchli), kapunuks; Bogolyubov illustrates a Saryk namazlyk used as an ensi and a Saryk door surround from Takhta Bazar.",
-       "sources": [
-        "stone_2013",
-        "bogolyubov_1908"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Knot: Almost always symmetric (Iranica; Cleveland records); Stone: very late pieces may be asymmetric. Palette: Stone: earliest pieces all wool with an orange-tan field; then crimson with white cotton and magenta silk highlights; after 1880 purple-brown, brown or purple. Cleveland 2008.223: soft red with cotton and magenta silk. Formats: Main carpets, chuvals, ensis (Pende khatchli), kapunuks; Bogolyubov illustrates a Saryk namazlyk used as an ensi and a Saryk door surround from Takhta Bazar.",
+     "where": "Merv, then the Pende (Penjdeh) oasis on the Murghab, which Bogolyubov says they took from the Salor; later some in northern Afghanistan.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "bogolyubov_1908",
-      "cleveland_2006_201",
-      "cleveland_2008_223",
-      "iranica_carpets_xvi",
-      "moshkova_1946",
-      "stone_2013"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "yomut",
      "row": "yomut",
      "name": "Yomut",
-     "native": {
-      "turkmen_latin": "Ýomut",
-      "turkmen_cyrillic": "Ёмут",
-      "russian": [
-       {
-        "form": "юмуды",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "йомуты",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "иомуды / йомуды",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "german_bogolyubov": "Jomuden"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Ýomut",
+       "translit": null
+      },
+      {
+       "lang": "tk",
+       "text": "Ёмут",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "юмуды",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "йомуты",
+       "translit": null
+      }
+     ],
      "where_19th_century": "The east Caspian coast and the Gorgan and Atrek plains (into Iran) and the Khiva oasis; subgroups include the Atabai, Jafarbai, Ogurjali and Igdyr (Stone). Bogolyubov's Yomud ornament group adds the Chodor, Abdal, Khoja and Goklan.",
      "where_sources": [
       "stone_2013",
       "bogolyubov_1908"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Both symmetric and asymmetric, sometimes in one carpet (Iranica); Stone: symmetric more common.",
-       "sources": [
-        "iranica_carpets_xvi",
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "density",
-       "text": "Stone: typically 100–150 per square inch; Cleveland 2010.190: 128–136 symmetric.",
-       "sources": [
-        "stone_2013",
-        "cleveland_2010_190"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "palette",
-       "text": "Brownish red dominant, main borders usually on a white ground, wider range of colors than other tribes (Stone); the Turkmen state book: more white, green, lilac and blue than other Turkmen carpets.",
-       "sources": [
-        "stone_2013",
-        "berdimuhamedov_2011"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets with decorated end panels (elem), chuvals, torbas, asmalyks (the only tribe still making knotted wedding trappings in Moshkova's day), ensis, hearth rugs (ojakbashy), tent bands.",
-       "sources": [
-        "stone_2013",
-        "moshkova_1980",
-        "bogolyubov_1908"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Knot: Both symmetric and asymmetric, sometimes in one carpet; Stone: symmetric more common. Density: Stone: typically 100–150 per square inch; Cleveland 2010.190: 128–136 symmetric. Palette: Brownish red dominant, main borders usually on a white ground, wider range of colors than other tribes; the Turkmen state book: more white, green, lilac and blue than other Turkmen carpets. Formats: Main carpets with decorated end panels (elem), chuvals, torbas, asmalyks (the only tribe still making knotted wedding trappings in Moshkova's day), ensis, hearth rugs (ojakbashy), tent bands.",
+     "where": "The east Caspian coast and the Gorgan and Atrek plains (into Iran) and the Khiva oasis; subgroups include the Atabai, Jafarbai, Ogurjali and Igdyr. Bogolyubov's Yomud ornament group adds the Chodor, Abdal, Khoja and Goklan.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "berdimuhamedov_2011",
-      "bogolyubov_1908",
-      "cleveland_2010_190",
-      "iranica_carpets_xvi",
-      "moshkova_1946",
-      "moshkova_1980",
-      "stone_2013"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "chodor",
      "row": "chodor",
      "name": "Chodor",
-     "native": {
-      "turkmen_latin": "Çowdur",
-      "turkmen_cyrillic": "Човдур",
-      "russian": [
-       {
-        "form": "чаудоры (чаудоръ)",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "чоудоры",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "човдуры",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "german_bogolyubov": "Tschaudoren"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Çowdur",
+       "translit": null
+      },
+      {
+       "lang": "tk",
+       "text": "Човдур",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "чаудоры",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "чоудоры",
+       "translit": null
+      }
+     ],
      "where_19th_century": "The Khiva (Khorezm) oasis; one group settled on the Amu Darya between Daynau and Sayat at the end of the 18th century (Moshkova).",
      "where_sources": [
       "stone_2013",
       "moshkova_1980",
       "bogolyubov_1908"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Asymmetric, open to the right (Stone).",
-       "sources": [
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": true
-      },
-      {
-       "field": "wefts",
-       "text": "Two-ply, sometimes wool, sometimes cotton (Stone).",
-       "sources": [
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": true
-      },
-      {
-       "field": "palette",
-       "text": "Often a purple-brown field (Stone); Bogolyubov's Chodor carpet (Plate XXIII) has a chestnut-brown ground, which he calls rare in Turkmen carpets.",
-       "sources": [
-        "stone_2013",
-        "bogolyubov_1908"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets (ertmen, later tauk noska guls), chuvals, torbas; Moshkova: the Chodor supplied carpets to the Khiva and Bukhara markets.",
-       "sources": [
-        "moshkova_1980",
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Knot: Asymmetric, open to the right. Wefts: Two-ply, sometimes wool, sometimes cotton. Palette: Often a purple-brown field; Bogolyubov's Chodor carpet (Plate xxiii) has a chestnut-brown ground, which he calls rare in Turkmen carpets. Formats: Main carpets (ertmen, later tauk noska guls), chuvals, torbas; Moshkova: the Chodor supplied carpets to the Khiva and Bukhara markets.",
+     "where": "The Khiva (Khorezm) oasis; one group settled on the Amu Darya between Daynau and Sayat at the end of the 18th century.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "berdimuhamedov_2011",
-      "bogolyubov_1908",
-      "moshkova_1946",
-      "moshkova_1980",
-      "stone_2013"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "arabachi",
      "row": "arabachi",
      "name": "Arabachi",
-     "native": {
-      "turkmen_latin": "Arabaçy",
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "арабачи",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "арабачи (арабачинцы)",
-        "source": "tsareva_2012"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Arabaçy",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "арабачи",
+       "translit": null
+      }
+     ],
      "where_19th_century": "The middle Amu Darya; Moshkova: the Denau district of Chardzhou, where they kept their identity best.",
      "where_sources": [
       "stone_2013",
       "moshkova_1980"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Asymmetric, open to the left, some warp offset; wefts of wool and white cotton (Stone).",
-       "sources": [
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": true
-      },
-      {
-       "field": "palette",
-       "text": "Purplish-brown field with outlines in natural brown wool (Stone).",
-       "sources": [
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": true
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets (tauk noska), chuvals, kapunuks, asmalyks with eagle figures (Tsareva).",
-       "sources": [
-        "stone_2013",
-        "tsareva_2012",
-        "moshkova_1980"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Knot: Asymmetric, open to the left, some warp offset; wefts of wool and white cotton. Palette: Purplish-brown field with outlines in natural brown wool. Formats: Main carpets (tauk noska), chuvals, kapunuks, asmalyks with eagle figures.",
+     "where": "The middle Amu Darya; Moshkova: the Denau district of Chardzhou, where they kept their identity best.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "moshkova_1946",
-      "moshkova_1980",
-      "stone_2013",
-      "tsareva_2012"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "ersari",
      "row": "ersari",
      "name": "Ersari",
-     "native": {
-      "turkmen_latin": "Ärsary",
-      "turkmen_cyrillic": "Эрсары",
-      "russian": [
-       {
-        "form": "эрсаринцы",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "эрсари / эрсаринцы",
-        "source": "moshkova_1946"
-       },
-       {
-        "form": "эрсары / эрсаринцы",
-        "source": "berdimuhamedov_2011"
-       }
-      ],
-      "german_bogolyubov": "Ersari"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Ärsary",
+       "translit": null
+      },
+      {
+       "lang": "tk",
+       "text": "Эрсары",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "эрсаринцы",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "эрсари / эрсаринцы",
+       "translit": null
+      }
+     ],
      "where_19th_century": "The middle Amu Darya from Charjou to Kerki and into northern Afghanistan. Bogolyubov's Ersari group: Bashyr, Kashyr, Burdalyk, Chakyr, Ali-Eli, Toncha, Topcha and other Ersari in Russia, Bukhara and Afghanistan, plus the Karakalpak.",
      "where_sources": [
       "bogolyubov_1908",
       "stone_2013"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Asymmetric (Stone, for Beshir); Iranica: often more coarsely woven than other Turkmen.",
-       "sources": [
-        "stone_2013",
-        "iranica_carpets_xvi"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "palette",
-       "text": "Bogolyubov: Ersari roses on one-color fields from dark red to yellow. Turkmen state book: more yellow than in other styles, light details on indigo set against the field.",
-       "sources": [
-        "bogolyubov_1908",
-        "berdimuhamedov_2011"
-       ],
-       "quote": null,
-       "single_source": false
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets (gulli gul), chuvals (including striped chuvals, Rijksmuseum BK-1975-313), ensis, prayer rugs; many non-tribal designs (Herati, ikat, boteh).",
-       "sources": [
-        "stone_2013",
-        "iranica_carpets_xvi",
-        "rijksmuseum_turkmen"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Knot: Asymmetric (Stone, for Beshir); Iranica: often more coarsely woven than other Turkmen. Palette: Bogolyubov: Ersari roses on one-color fields from dark red to yellow. Turkmen state book: more yellow than in other styles, light details on indigo set against the field. Formats: Main carpets (gulli gul), chuvals (including striped chuvals, Rijksmuseum bk-1975-313), ensis, prayer rugs; many non-tribal designs (Herati, ikat, boteh).",
+     "where": "The middle Amu Darya from Charjou to Kerki and into northern Afghanistan. Bogolyubov's Ersari group: Bashyr, Kashyr, Burdalyk, Chakyr, Ali-Eli, Toncha, Topcha and other Ersari in Russia, Bukhara and Afghanistan, plus the Karakalpak.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "berdimuhamedov_2011",
-      "bogolyubov_1908",
-      "iranica_carpets_xvi",
-      "moshkova_1946",
-      "rijksmuseum_turkmen",
-      "stone_2013"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "kizil-ayak",
      "row": "kizil-ayak",
      "name": "Kizil Ayak",
-     "native": {
-      "turkmen_latin": "Gyzyl aýak",
-      "turkmen_cyrillic": "Гызыл-аяк",
-      "russian": [
-       {
-        "form": "кизиль-аяки (эрсаринцы)",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "кызыл-аяки (род)",
-        "source": "moshkova_1946"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Gyzyl aýak",
+       "translit": null
+      },
+      {
+       "lang": "tk",
+       "text": "Гызыл-аяк",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "кизиль-аяки",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "кызыл-аяки",
+       "translit": null
+      }
+     ],
      "where_19th_century": "The middle Amu Darya valley (Bogolyubov).",
      "where_sources": [
       "bogolyubov_1908",
       "stone_2013"
      ],
-     "weaving": [
-      {
-       "field": "knot",
-       "text": "Asymmetric, open to the right; light undyed wool warps, brown wefts (Stone).",
-       "sources": [
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": true
-      },
-      {
-       "field": "quality",
-       "text": "Bogolyubov ranks Kizil Ayak carpets first among Turkmen work of the Amu Darya for knotting and clipping, as Pende carpets are first on the Murghab.",
-       "sources": [
-        "bogolyubov_1908"
-       ],
-       "quote": null,
-       "single_source": true
-      },
-      {
-       "field": "formats",
-       "text": "Main carpets (tauk noska major gul, chemche minor gul), chuvals, flat-woven kilims.",
-       "sources": [
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": true
-      }
-     ],
+     "weaving": "Knot: Asymmetric, open to the right; light undyed wool warps, brown wefts. Quality: Bogolyubov ranks Kizil Ayak carpets first among Turkmen work of the Amu Darya for knotting and clipping, as Pende carpets are first on the Murghab. Formats: Main carpets (tauk noska major gul, chemche minor gul), chuvals, flat-woven kilims.",
+     "where": "The middle Amu Darya valley.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "bogolyubov_1908",
-      "moshkova_1946",
-      "stone_2013"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "chub-bash",
      "row": "chub-bash",
      "name": "Chub Bash",
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": []
-     },
+     "native": [],
      "where_19th_century": "Northern Afghanistan (Ersari area); possibly an Ersari subtribe (Stone).",
      "where_sources": [
       "stone_2013"
      ],
-     "weaving": [
-      {
-       "field": "note",
-       "text": "Stone: some Kizil Ayak and Chub Bash weavings may not be separable by structure or design.",
-       "sources": [
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": true
-      }
-     ],
+     "weaving": "Note: Stone: some Kizil Ayak and Chub Bash weavings may not be separable by structure or design.",
+     "where": "Northern Afghanistan (Ersari area); possibly an Ersari subtribe.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "stone_2013"
-     ],
+     "other_names": [],
      "single_source": true,
      "images": []
     },
@@ -82588,134 +81872,84 @@
      "id": "goklan",
      "row": null,
      "name": "Goklan",
-     "native": {
-      "turkmen_latin": "Göklen",
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "гокланы",
-        "source": "bogolyubov_1908"
-       }
-      ],
-      "german_bogolyubov": "Hoklanen"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "Göklen",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "гокланы",
+       "translit": null
+      }
+     ],
      "where_19th_century": "Khurasan in Iran (Stone); Bogolyubov: the Sumbar valley (Kara).",
      "where_sources": [
       "stone_2013",
       "bogolyubov_1908"
      ],
-     "weaving": [
-      {
-       "field": "note",
-       "text": "Stone: their work may have been attributed to the Yomud; symmetric knot over three warps in outlines; red silk wefts occasionally. Bogolyubov: they made no pile carpets, only flatweaves (palas).",
-       "sources": [
-        "stone_2013",
-        "bogolyubov_1908"
-       ],
-       "quote": null,
-       "single_source": false,
-       "note": "Disagreement on whether the Goklan wove pile carpets."
-      }
-     ],
+     "weaving": "Note: Stone: their work may have been attributed to the Yomud; symmetric knot over three warps in outlines; red silk wefts occasionally. Bogolyubov: they made no pile carpets, only flatweaves (palas).",
+     "where": "Khurasan in Iran; Bogolyubov: the Sumbar valley (Kara).",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "bogolyubov_1908",
-      "stone_2013"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "igdyr",
      "row": null,
      "name": "Igdyr",
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "икдыры",
-        "source": "bogolyubov_1908"
-       },
-       {
-        "form": "икдыр",
-        "source": "moshkova_1946"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "икдыры",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "икдыр",
+       "translit": null
+      }
+     ],
      "where_19th_century": "Near the Yomut, on whom they depended (Moshkova); Stone: a tribe related to the Yomud.",
      "where_sources": [
       "moshkova_1980",
       "stone_2013"
      ],
-     "weaving": [
-      {
-       "field": "note",
-       "text": "Bogolyubov counts the Igdyr in the Yomud ornament group (his Plate XXIV is an Igdyr ensi); Moshkova says they weave Yomut patterns, having lost their own gul.",
-       "sources": [
-        "bogolyubov_1908",
-        "moshkova_1980"
-       ],
-       "quote": null,
-       "single_source": false
-      }
-     ],
+     "weaving": "Note: Bogolyubov counts the Igdyr in the Yomud ornament group (his Plate xxiv is an Igdyr ensi); Moshkova says they weave Yomut patterns, having lost their own gul.",
+     "where": "Near the Yomut, on whom they depended; Stone: a tribe related to the Yomud.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "bogolyubov_1908",
-      "moshkova_1946",
-      "moshkova_1980"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     },
     {
      "id": "imreli",
      "row": null,
      "name": "Imreli",
-     "native": {
-      "turkmen_latin": null,
-      "turkmen_cyrillic": null,
-      "russian": [
-       {
-        "form": "имрели (ранняя форма эймур)",
-        "source": "tsareva_2012"
-       },
-       {
-        "form": "имрели",
-        "source": "moshkova_1946"
-       }
-      ]
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "имрели",
+       "translit": null
+      }
+     ],
      "where_19th_century": "Tsareva: for centuries between the Gurgan and Atrek rivers; pushed out from the 18th century, partly into Akhal and the Khiva oasis.",
      "where_sources": [
       "tsareva_2012"
      ],
-     "weaving": [
-      {
-       "field": "note",
-       "text": "Moshkova: weave Yomut patterns. Tsareva: creators of the eagle (igl) gul. Stone: the attribution of carpets to the Imreli (from 1980) is questionable.",
-       "sources": [
-        "moshkova_1980",
-        "tsareva_2012",
-        "stone_2013"
-       ],
-       "quote": null,
-       "single_source": false,
-       "note": "Disputed."
-      }
-     ],
+     "weaving": "Note: Moshkova: weave Yomut patterns. Tsareva: creators of the eagle (igl) gul. Stone: the attribution of carpets to the Imreli (from 1980) is questionable.",
+     "where": "For centuries between the Gurgan and Atrek rivers; pushed out from the 18th century, partly into Akhal and the Khiva oasis.",
+     "sources": [],
      "facts": [],
      "disagreements": [],
-     "sources": [
-      "moshkova_1946",
-      "moshkova_1980",
-      "stone_2013",
-      "tsareva_2012"
-     ],
-     "single_source": false,
+     "other_names": [],
+     "single_source": true,
      "images": []
     }
    ],
@@ -82723,10 +81957,18 @@
     {
      "id": "main-carpet",
      "term": "Main carpet",
-     "native": {
-      "turkmen_latin": "haly; uly haly 'large carpet' (UNESCO inventory)",
-      "russian": "халы (Moshkova 1946; Tsareva 2012), постилочный ковер"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "haly",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "халы",
+       "translit": null
+      }
+     ],
      "size": "Large floor carpet; Bogolyubov's Merv example 285 x 196 cm; Hawley: 'Royal Bokhara' 4–10 ft long.",
      "text": "The large floor carpet of the tent, carrying the tribe's main gul in rows. Scholars call it the main carpet; the Turkmen word is haly.",
      "sources": [
@@ -82735,18 +81977,30 @@
       "tsareva_2012",
       "unesco_ich_01486"
      ],
+     "name": "Main carpet",
+     "what": "The large floor carpet of the tent, carrying the tribe's main gul in rows. Scholars call it the main carpet; the Turkmen word is haly.",
+     "sizes": "Large floor carpet; Bogolyubov's Merv example 285 x 196 cm; Hawley: 'Royal Bokhara' 4–10 ft long.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "chuval",
      "term": "Chuval",
-     "native": {
-      "turkmen_latin": "çuwal (UNESCO inventory, OCR-normalized)",
-      "russian": "чувал (Moshkova 1946; Berdimuhamedov 2011; Tsareva 2012); човалъ (Bogolyubov 1908); Tschowal (German text)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "çuwal (UNESCO inventory, OCR-normalized)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "чувал",
+       "translit": null
+      }
+     ],
      "size": "About 3 x 6 ft (Stone); Rijksmuseum chuval faces 61 x 105 cm to 100 x 164 cm; Met 22.100.40a 75 x 138 cm.",
      "text": "The large storage bag, hung in pairs on the tent lattice opposite the door; open on a long side; Tsareva: no fringe. Often only the pile face survives. The Turkmen state book names dozens of kinds (haly chuval with pile; ak chuval; gyzyl chuval; argysh chuval; chuvalcha, a small one).",
      "sources": [
@@ -82756,36 +82010,60 @@
       "stone_2013",
       "tsareva_2012"
      ],
+     "name": "Chuval",
+     "what": "The large storage bag, hung in pairs on the tent lattice opposite the door; open on a long side; Tsareva: no fringe. Often only the pile face survives. The Turkmen state book names dozens of kinds (haly chuval with pile; ak chuval; gyzyl chuval; argysh chuval; chuvalcha, a small one).",
+     "sizes": "About 3 x 6 ft (Stone); Rijksmuseum chuval faces 61 x 105 cm to 100 x 164 cm; Met 22.100.40a 75 x 138 cm.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "ak-chuval",
      "term": "Ak chuval",
-     "native": {
-      "turkmen_latin": "ak çuwal ('white chuval')",
-      "russian": "«ак чувал» (Berdimuhamedov 2011)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "ak çuwal ('white chuval')",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "ак чувал",
+       "translit": null
+      }
+     ],
      "size": "Chuval size.",
      "text": "A chuval whose pile ornament is laid in bands on a white flat-woven ground (Stone: a white-ground pile skirt and white flat-woven stripes). A 'gyzyl chuval' has the same bands on a red flat-woven ground.",
      "sources": [
       "berdimuhamedov_2011",
       "stone_2013"
      ],
+     "name": "Ak chuval",
+     "what": "A chuval whose pile ornament is laid in bands on a white flat-woven ground (Stone: a white-ground pile skirt and white flat-woven stripes). A 'gyzyl chuval' has the same bands on a red flat-woven ground.",
+     "sizes": "Chuval size.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "torba",
      "term": "Torba",
-     "native": {
-      "turkmen_latin": "torba (UNESCO inventory)",
-      "russian": "торба (Bogolyubov 1908; Moshkova 1946; Tsareva 2012; Berdimuhamedov 2011)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "torba (UNESCO inventory)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "торба",
+       "translit": null
+      }
+     ],
      "size": "Smaller and shallower than a chuval; Rijksmuseum Tekke torba BK-1975-317: 32 x 76 cm.",
      "text": "A long, shallow bag open on a long side, hung from the tent struts, pile on one face only (Stone). Tsareva: medium-sized wall bag with a fringe, made in pairs; the Turkmen state book: torbas differ from chuvals in size and shape and have a thick long wool fringe at the bottom. Named kinds include chemche torba (spoons), chanak torba (wooden bowls), duz torba (salt), gazan torba (cauldron), at torba (horse feed), chopan torba (shepherd's bag).",
      "sources": [
@@ -82794,18 +82072,25 @@
       "stone_2013",
       "tsareva_2012"
      ],
+     "name": "Torba",
+     "what": "A long, shallow bag open on a long side, hung from the tent struts, pile on one face only. Tsareva: medium-sized wall bag with a fringe, made in pairs; the Turkmen state book: torbas differ from chuvals in size and shape and have a thick long wool fringe at the bottom. Named kinds include chemche torba (spoons), chanak torba (wooden bowls), duz torba (salt), gazan torba (cauldron), at torba (horse feed), chopan torba (shepherd's bag).",
+     "sizes": "Smaller and shallower than a chuval; Rijksmuseum Tekke torba BK-1975-317: 32 x 76 cm.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "mafrash",
      "term": "Mafrash",
-     "native": {
-      "turkmen_latin": null,
-      "russian": "мафрач (Tsareva 2012; Berdimuhamedov 2011; Gogel 1927 'мафрачи')"
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "мафрач",
+       "translit": null
+      }
+     ],
      "size": "Small; Gogel: narrow; Tsareva: small rectangular; Iranica: medium-sized.",
      "text": "In Turkmen use a small rectangular wall bag with a fringe, made in pairs (Tsareva); Gogel calls mafrachi narrow wall bags whose end panels are almost absent. Iranica places it between chuval and torba in size. Stone's 'mafrash' is a different item, the box-shaped flat-woven bedding bag of the Shahsavan and others.",
      "sources": [
@@ -82815,18 +82100,30 @@
       "tsareva_2012"
      ],
      "disagreement": "Size (small per Tsareva and Gogel, medium per Iranica) and meaning (Stone's Shahsavan bedding bag).",
+     "name": "Mafrash",
+     "what": "In Turkmen use a small rectangular wall bag with a fringe, made in pairs; Gogel calls mafrachi narrow wall bags whose end panels are almost absent. Iranica places it between chuval and torba in size. Stone's 'mafrash' is a different item, the box-shaped flat-woven bedding bag of the Shahsavan and others.",
+     "sizes": "Small; Gogel: narrow; Tsareva: small rectangular; Iranica: medium-sized.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "asmalyk",
      "term": "Asmalyk",
-     "native": {
-      "turkmen_latin": "asmalyk (UNESCO inventory)",
-      "russian": "осмолдук (Gogel 1927; Moshkova 1946); асмалдык (Tsareva 2012); асмалык (Berdimuhamedov 2011)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "asmalyk (UNESCO inventory)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "осмолдук",
+       "translit": null
+      }
+     ],
      "size": "Pentagonal; Stone gives no size; pairs.",
      "text": "A five- or seven-sided (sometimes rectangular, Tsareva) camel trapping, made in pairs, hung on the camel carrying the bride in the wedding procession. Bogolyubov's plates XVIII and XIX show pentagonal and heptagonal Yomud pieces that his text calls 'chuvals'.",
      "sources": [
@@ -82837,8 +82134,12 @@
       "tsareva_2012"
      ],
      "disagreement": "Bogolyubov (1908) calls five- and seven-sided Yomud pieces chuvals ('Tschowal', 'човалъ'); later writers call such pieces asmalyks.",
+     "name": "Asmalyk",
+     "what": "A five- or seven-sided (sometimes rectangular, Tsareva) camel trapping, made in pairs, hung on the camel carrying the bride in the wedding procession. Bogolyubov's plates xviii and xix show pentagonal and heptagonal Yomud pieces that his text calls 'chuvals'.",
+     "sizes": "Pentagonal; Stone gives no size; pairs.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": [
       {
@@ -82874,10 +82175,18 @@
     {
      "id": "ensi",
      "term": "Ensi",
-     "native": {
-      "turkmen_latin": "ensi (UNESCO inventory)",
-      "russian": "энгси (Moshkova 1946); энси (Gogel 1927; Tsareva 2012; Berdimuhamedov 2011; Bogolyubov 1908)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "ensi (UNESCO inventory)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "энгси",
+       "translit": null
+      }
+     ],
      "size": "Bogolyubov: about 130 x 210 cm (Yomud, Plate XIV) and 140 x 175 cm (Saryk namazlyk used as ensi); Rijksmuseum Tekke ensis 133 x 121 and 141 x 124 cm.",
      "text": "The pile curtain hung over the tent door on the outside; its field is usually divided into four by a cross. See the ensi layout entry.",
      "sources": [
@@ -82888,18 +82197,25 @@
       "tsareva_2012",
       "unesco_ich_01486"
      ],
+     "name": "Ensi",
+     "what": "The pile curtain hung over the tent door on the outside; its field is usually divided into four by a cross. See the ensi layout entry.",
+     "sizes": "Bogolyubov: about 130 x 210 cm (Yomud, Plate XIV) and 140 x 175 cm (Saryk namazlyk used as ensi); Rijksmuseum Tekke ensis 133 x 121 and 141 x 124 cm.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "germech",
      "term": "Germech",
-     "native": {
-      "turkmen_latin": null,
-      "russian": "гермеч (Moshkova 1946; Berdimuhamedov 2011)"
-     },
+     "native": [
+      {
+       "lang": "ru",
+       "text": "гермеч",
+       "translit": null
+      }
+     ],
      "size": "Small; Stone: the same width as the ensi.",
      "text": "A small rug at the tent door. Moshkova and the Turkmen state book place it across the threshold; Stone says it hung across the entrance beneath the ensi to keep out ground dust, matching the ensi in width and design.",
      "sources": [
@@ -82908,18 +82224,30 @@
       "stone_2013"
      ],
      "disagreement": "Laid on the threshold (Moshkova; Berdimuhamedov) or hung below the ensi (Stone).",
+     "name": "Germech",
+     "what": "A small rug at the tent door. Moshkova and the Turkmen state book place it across the threshold; Stone says it hung across the entrance beneath the ensi to keep out ground dust, matching the ensi in width and design.",
+     "sizes": "Small; Stone: the same width as the ensi.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "kapunuk",
      "term": "Kapunuk",
-     "native": {
-      "turkmen_latin": "gapylyk (UNESCO inventory)",
-      "russian": "капуннук (Moshkova 1946); гапылык (Berdimuhamedov 2011)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "gapylyk (UNESCO inventory)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "капуннук",
+       "translit": null
+      }
+     ],
      "size": "About door width.",
      "text": "A pile decoration across the top and down the sides of the tent door on the inside (Stone; UNESCO inventory: a U-shaped rug for decorating the yurt entrance from inside). Moshkova thought it grew out of the khalyk hung over the door after the wedding. Stone: a curled-leaf design is common in Ersari, Saryk, Tekke and Arabachi kapunuks.",
      "sources": [
@@ -82928,18 +82256,30 @@
       "stone_2013",
       "unesco_ich_01486"
      ],
+     "name": "Kapunuk",
+     "what": "A pile decoration across the top and down the sides of the tent door on the inside (Stone; UNESCO inventory: a U-shaped rug for decorating the yurt entrance from inside). Moshkova thought it grew out of the khalyk hung over the door after the wedding. Stone: a curled-leaf design is common in Ersari, Saryk, Tekke and Arabachi kapunuks.",
+     "sizes": "About door width.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "khalyk",
      "term": "Khalyk",
-     "native": {
-      "turkmen_latin": "halyk",
-      "russian": "халык (Moshkova 1946)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "halyk",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "халык",
+       "translit": null
+      }
+     ],
      "size": "Small, with long tassels.",
      "text": "A small wedding trapping with long tassels. Moshkova: it hung on the chest of the bride's camel (rectangular; five-sided in old pieces); Iranica: a trapping for the bride's litter; Stone: U-shaped or rectangular with pendant triangles, a camel trapping or curtain for a bride's litter, mostly Tekke.",
      "sources": [
@@ -82948,35 +82288,48 @@
       "stone_2013"
      ],
      "disagreement": "Camel chest (Moshkova) or bride's litter (Iranica; Stone allows both).",
+     "name": "Khalyk",
+     "what": "A small wedding trapping with long tassels. Moshkova: it hung on the chest of the bride's camel (rectangular; five-sided in old pieces); Iranica: a trapping for the bride's litter; Stone: U-shaped or rectangular with pendant triangles, a camel trapping or curtain for a bride's litter, mostly Tekke.",
+     "sizes": "Small, with long tassels.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     },
     {
      "id": "jollar",
      "term": "Jollar",
-     "native": {
-      "turkmen_latin": null,
-      "russian": null
-     },
+     "native": [],
      "size": "Much longer than wide, for example 2 x 6 ft (Stone).",
      "text": "A long tent bag, open on a long side, one face often pile, sometimes with tassels; also called penjerlik (Stone).",
      "sources": [
       "stone_2013"
      ],
      "single_source": true,
+     "name": "Jollar",
+     "what": "A long tent bag, open on a long side, one face often pile, sometimes with tassels; also called penjerlik.",
+     "sizes": "Much longer than wide, for example 2 x 6 ft (Stone).",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "images": []
     },
     {
      "id": "tent-band",
      "term": "Tent band (ak ýüp)",
-     "native": {
-      "turkmen_latin": "ak ýüp (white-ground, wedding); oý ýüp; ýolam",
-      "russian": "акйуп; оййуп (Berdimuhamedov 2011); иоламы, боу (Moshkova 1946); иолам (Tsareva 2012); биль йуп (Vasilyeva 1974)"
-     },
+     "native": [
+      {
+       "lang": "tk",
+       "text": "ak ýüp (white-ground, wedding)",
+       "translit": null
+      },
+      {
+       "lang": "ru",
+       "text": "акйуп; оййуп",
+       "translit": null
+      }
+     ],
      "size": "Stone: typically about 45 ft long and 6–18 in wide. Bogolyubov: 18–25 cm wide, up to 15 m; a Merv Tekke band almost 30 cm by 12.5 m. Turkmen state book: 10–15 m long, 20–40 cm wide.",
      "text": "A long band tied around the tent frame where wall and roof meet. The ak ýüp, with pile figures on a white ground, decorated the wedding tent; the oý ýüp was a plainer flat-woven band.",
      "sources": [
@@ -82986,8 +82339,12 @@
       "stone_2013",
       "tsareva_2012"
      ],
+     "name": "Tent band (ak ýüp)",
+     "what": "A long band tied around the tent frame where wall and roof meet. The ak ýüp, with pile figures on a white ground, decorated the wedding tent; the oý ýüp was a plainer flat-woven band.",
+     "sizes": "Stone: typically about 45 ft long and 6–18 in wide. Bogolyubov: 18–25 cm wide, up to 15 m; a Merv Tekke band almost 30 cm by 12.5 m. Turkmen state book: 10–15 m long, 20–40 cm wide.",
      "facts": [],
      "disagreements": [],
+     "other_names": [],
      "single_source": false,
      "images": []
     }
@@ -83318,14 +82675,14 @@
      "kind": "pile knot",
      "name": "Symmetric knot",
      "other_names": [
-      "Turkish knot (Mumford, Kendrick, May, Jacobsen, Brinton)",
-      "Ghiordes knot (Hawley, May, Kendrick)",
-      "Gördes knot (Stone)",
+      "Turkish knot",
+      "Ghiordes knot",
+      "Gördes knot",
       "Turkbaff / torkībāf (Persian trade term; Stone, Iranica)",
       "'double' knot (Leitch's term for the knot as used in China; Turkish 'çift düğüm')",
-      "closed knot (Turkish 'kapalı düğüm')",
-      "complete knot (English term cited by Öztürk)",
-      "symmetrical knot (Kendrick & Tattersall 1922, the earliest use Öztürk found)"
+      "Closed knot (Turkish 'kapalı düğüm')",
+      "Complete knot (English term cited by Öztürk)",
+      "Symmetrical knot (Kendrick & Tattersall 1922, the earliest use Öztürk found)"
      ],
      "native": [
       {
@@ -83398,7 +82755,7 @@
       "may_1952 pp. 40-42",
       "ozturk_2025 pp. 171-172 (collar above, ends pulled down)"
      ],
-     "front": "One tuft per pair of warps, rising from between them; if you part the pile you see a collar of yarn lying across BOTH warps, with the whole tuft coming out from under it. The two ends cannot be parted to show a warp: trying only twists them tighter (Hawley p. 48; May pp. 42-43). Across a row, gaps between warps alternately hold two yarn ends and none (Mumford p. 87; Kendrick p. 94).",
+     "front": "One tuft per pair of warps, rising from between them; if you part the pile you see a collar of yarn lying across both warps, with the whole tuft coming out from under it. The two ends cannot be parted to show a warp: trying only twists them tighter (Hawley p. 48; May pp. 42-43). Across a row, gaps between warps alternately hold two yarn ends and none (Mumford p. 87; Kendrick p. 94).",
      "back": "Two nodes per knot, one lying across the back of each of the two warps. On level warps the two nodes are the same size and side by side, like two beads (Hawley Plate B 7-a; May Fig. 20). If one warp of each pair is depressed its node is smaller (Plate B 8-a); if it is fully doubled under, only one node per knot shows (Hawley p. 52; Stone p. 160). On the back the symmetric and asymmetric knots look alike, so the back alone rarely tells which knot was used.",
      "where_typical": [
       "tabriz",
@@ -83677,9 +83034,9 @@
      "kind": "pile knot",
      "name": "Asymmetric knot, open to the left",
      "other_names": [
-      "Persian knot (Mumford, Kendrick, May, Jacobsen)",
+      "Persian knot",
       "Sehna / Senneh / Senna / Sena knot (Hawley, Lewis, May, Jacobsen; Stone calls the name incorrect)",
-      "farsibaff / fārsībāf (Persian trade term)",
+      "Farsibaff / fārsībāf (Persian trade term)",
       "'single' knot (Leitch, for the knot as used in China)",
       "'right-hand Sehna knot' in Kendrick & Tattersall's sense (encircled warp on the right as seen by the weaver), which under Heirloom's convention is this knot",
       "'asimetrik düğüm sol' (Turkish, some publications cited by Öztürk)",
@@ -83743,7 +83100,7 @@
       }
      ],
      "how_made": [
-      "Seen from the front, warps W1 (left) and W2 (right). Leave one end of the pile yarn (A) in front, to the LEFT of W1.",
+      "Seen from the front, warps W1 (left) and W2 (right). Leave one end of the pile yarn (A) in front, to the left of W1.",
       "Pass the yarn behind W1, from left to right, and bring it forward through the gap between W1 and W2.",
       "Carry it across the front of W2 (this is the collar, which crosses one warp only), around the right side of W2, and back behind W2 from right to left.",
       "Bring it forward again through the gap between W1 and W2 as end B, below the collar. W2 is now fully encircled; W1 is only passed behind.",
@@ -84035,7 +83392,7 @@
       }
      ],
      "how_made": [
-      "Seen from the front, warps W1 (left) and W2 (right). Leave end A in front, to the RIGHT of W2.",
+      "Seen from the front, warps W1 (left) and W2 (right). Leave end A in front, to the right of W2.",
       "Pass the yarn behind W2, from right to left, and bring it forward through the gap between W1 and W2.",
       "Carry it across the front of W1 (the collar), around the left side of W1, and back behind W1 from left to right.",
       "Bring it forward through the gap between W1 and W2 as end B, below the collar. W1 is fully encircled; W2 is only passed behind.",
@@ -84175,11 +83532,11 @@
      "kind": "pile knot",
      "name": "Jufti knot, symmetric form (symmetric knot on four warps)",
      "other_names": [
-      "Turkish jufti (Jacobsen)",
-      "false knot (Jacobsen)",
-      "double knot (Stone; not to be confused with 'double knot' = symmetric knot)",
-      "doutakapi, Langari knot (Stone)",
-      "jofti / joftī (Persian, 'paired, doubled')"
+      "Turkish jufti",
+      "False knot",
+      "Double knot (Stone; not to be confused with 'double knot' = symmetric knot)",
+      "Doutakapi, Langari knot",
+      "Jofti / joftī (Persian, 'paired, doubled')"
      ],
      "native": [
       {
@@ -84209,7 +83566,7 @@
       "iranica_carpets_iii"
      ],
      "front": "One tuft per four warps, so solid-colored areas have half as many tufts across as areas knotted normally; Stone says outlines are knotted normally, so they feel denser than the plain areas when you run a finger along the warps.",
-     "back": "Two nodes per knot, each lying across TWO warps instead of one, so in jufti areas the nodes are wider and there are half as many across an inch. Babajamali warns that jufti and other 'fraud' knots show the same curve on the back as regular knots, so they are hard to see.",
+     "back": "Two nodes per knot, each lying across two warps instead of one, so in jufti areas the nodes are wider and there are half as many across an inch. Babajamali warns that jufti and other 'fraud' knots show the same curve on the back as regular knots, so they are hard to see.",
      "where_typical": [
       "tabriz",
       "mashhad",
@@ -84375,9 +83732,9 @@
      "kind": "pile knot",
      "name": "Jufti knot, asymmetric form (asymmetric knot on four warps)",
      "other_names": [
-      "Persian jufti (Jacobsen)",
-      "false knot",
-      "jofti (Persian)",
+      "Persian jufti",
+      "False knot",
+      "Jofti (Persian)",
       "Khurasan jufti (Stone: asymmetric and open to the left)"
      ],
      "native": [
@@ -84390,7 +83747,7 @@
      ],
      "how_made": [
       "Treat W1+W2 as one warp and W3+W4 as another (open-left form shown).",
-      "Leave end A in front, to the LEFT of W1.",
+      "Leave end A in front, to the left of W1.",
       "Pass the yarn behind W1 and W2 together and bring it forward in the gap between W2 and W3.",
       "Carry it across the front of W3 and W4 (collar), around the right side of W4, back behind W4 and W3, and forward in the W2-W3 gap as end B.",
       "Pull down and cut: end A left of W1, end B between W2 and W3."
@@ -84457,10 +83814,10 @@
      "kind": "pile knot",
      "name": "Single-warp knot (Spanish knot)",
      "other_names": [
-      "Spanish knot (Stone, Öztürk)",
-      "single-warp knot (Kendrick)",
+      "Spanish knot",
+      "Single-warp knot",
       "İspanyol düğümü / tek çözgüye düğüm (Turkish)",
-      "single-warp symmetrical knot (Commons caption)"
+      "Single-warp symmetrical knot (Commons caption)"
      ],
      "native": [
       {
@@ -84478,10 +83835,10 @@
       }
      ],
      "how_made": [
-      "Row 1 uses every other warp: W2, W4, W6 ...",
+      "Row 1 uses every other warp: W2, W4, W6...",
       "Lay the yarn across the front of W2, take both ends around behind W2 so that they cross each other at the back.",
       "Bring the ends forward, one on each side of W2: one in the W1-W2 gap and one in the W2-W3 gap.",
-      "In the next row tie the knots on the warps left empty before (W1, W3, W5 ...), so each knot sits between two knots of the row below."
+      "In the next row tie the knots on the warps left empty before (W1, W3, W5...), so each knot sits between two knots of the row below."
      ],
      "how_made_sources": [
       "kendrick_1922 pp. 95-97 and Fig. i",
@@ -84574,8 +83931,8 @@
      "other_names": [
       "Tibetan knot",
       "Tibetan loop (rugs_current.json value)",
-      "rod-knot technique (Chinese 穿杆结扣)",
-      "weft wrapping with cut loops (Stone)"
+      "Rod-knot technique (Chinese 穿杆结扣)",
+      "Weft wrapping with cut loops"
      ],
      "native": [
       {
@@ -84680,10 +84037,10 @@
      "kind": "pile knot",
      "name": "Offset knots (knots shifted by one warp in alternate rows)",
      "other_names": [
-      "staggered knots",
-      "diagonal knotting",
-      "half-brick knotting (after Kendrick)",
-      "packing knots (Stone, when no weft separates the rows)"
+      "Staggered knots",
+      "Diagonal knotting",
+      "Half-brick knotting (after Kendrick)",
+      "Packing knots (Stone, when no weft separates the rows)"
      ],
      "native": [],
      "how_made": [
@@ -84799,7 +84156,7 @@
      "other_names": [],
      "native": [],
      "how_made": [
-      "Stone: the yarn encircles two warps twice; on the front the tufts come out in opposite diagonal directions from under a diagonal loop. It may be shifted by one warp either way and combined with symmetric knots on four warps."
+      "The yarn encircles two warps twice; on the front the tufts come out in opposite diagonal directions from under a diagonal loop. It may be shifted by one warp either way and combined with symmetric knots on four warps."
      ],
      "how_made_sources": [
       "stone_2013 p. 46"
@@ -84833,14 +84190,14 @@
      "kind": "tufted",
      "name": "Hand-tufted pile (tufting gun, latex and backing cloth)",
      "other_names": [
-      "tufted rug",
-      "gun-tufted",
-      "machine-tufted (the factory form, with rows of needles)",
-      "NOTE: before about the 1920s 'hand-tufted' was also used in English for hand-KNOTTED carpets (Brinton 1919)"
+      "Tufted rug",
+      "Gun-tufted",
+      "Machine-tufted (the factory form, with rows of needles)",
+      "NOTE: before about the 1920s 'hand-tufted' was also used in English for hand-KNOTTED carpets"
      ],
      "native": [],
      "how_made": [
-      "Stretch a primary backing cloth on a frame (Stone: a cotton backing; CRI: woven or non-woven polypropylene in machine-tufted carpet).",
+      "Stretch a primary backing cloth on a frame (Stone: a cotton backing; cri: woven or non-woven polypropylene in machine-tufted carpet).",
       "Shoot the pile yarn into the cloth with a hand-held tufting gun; the yarn is not knotted to anything. Machine tufting does the same with rows of hundreds of needles.",
       "Leave the loops as loop pile, or cut them for cut pile.",
       "Coat the back with latex (or another bonding compound) to lock the tufts in the cloth.",
@@ -84914,9 +84271,9 @@
      "kind": "tufted",
      "name": "Hooked rug (loops pulled through a cloth)",
      "other_names": [
-      "rag rug",
-      "draw-in rug (Stone)",
-      "New England hooked rug (Holt)"
+      "Rag rug",
+      "Draw-in rug",
+      "New England hooked rug"
      ],
      "native": [],
      "how_made": [
@@ -84992,8 +84349,8 @@
      "other_names": [
       "Wilton",
       "Brussels (uncut loops)",
-      "worsted Wilton",
-      "woollen Wilton",
+      "Worsted Wilton",
+      "Woollen Wilton",
       "Jacquard Wilton"
      ],
      "native": [],
@@ -85009,7 +84366,7 @@
       "cri_carpet_primer_2017 pp. 14-15"
      ],
      "front": "Cut (Wilton) or looped (Brussels) pile in perfectly regular rows; few colors in any one lengthwise line (one per frame).",
-     "back": "A machine-woven grid of chain, stuffer and weft yarns with no knots; heavy and firm for its pile height because unused pile yarns are buried in the body (Brinton).",
+     "back": "A machine-woven grid of chain, stuffer and weft yarns with no knots; heavy and firm for its pile height because unused pile yarns are buried in the body.",
      "where_typical": [
       "wilton-oriental-design",
       "karagheusian-gulistan",
@@ -85064,10 +84421,10 @@
      "kind": "machine pile",
      "name": "Axminster (power-loomed, tufts inserted row by row)",
      "other_names": [
-      "spool Axminster",
-      "gripper Axminster",
-      "seamless Axminster",
-      "moquette (Stone)",
+      "Spool Axminster",
+      "Gripper Axminster",
+      "Seamless Axminster",
+      "Moquette",
       "Royal / Imperial Axminster (British qualities, Brinton)",
       "(historic) hand-knotted Axminster carpets of Axminster and Wilton, England"
      ],
@@ -85082,8 +84439,8 @@
       "stone_2013 p. 36",
       "cri_carpet_primer_2017 p. 15"
      ],
-     "front": "Cut pile only, many colors possible; tufts in straight machine rows; in one common weave the tufts slant like hand-knotted pile (Brinton).",
-     "back": "Flat or ribbed with jute weft showing; no knots; the rug bends across its width but resists bending along its length (CRI).",
+     "front": "Cut pile only, many colors possible; tufts in straight machine rows; in one common weave the tufts slant like hand-knotted pile.",
+     "back": "Flat or ribbed with jute weft showing; no knots; the rug bends across its width but resists bending along its length (cri).",
      "where_typical": [
       "axminster-oriental-design",
       "karastan",
@@ -85123,8 +84480,8 @@
      "kind": "machine pile",
      "name": "Chenille Axminster (pile woven in as ready-made 'fur' wefts)",
      "other_names": [
-      "chenille carpet",
-      "chenille rug"
+      "Chenille carpet",
+      "Chenille rug"
      ],
      "native": [],
      "how_made": [
@@ -85167,9 +84524,9 @@
      "kind": "machine pile",
      "name": "Tapestry carpet (pile yarn printed before weaving)",
      "other_names": [
-      "tapestry Brussels",
-      "printed-warp carpet",
-      "velvet (cut version)"
+      "Tapestry Brussels",
+      "Printed-warp carpet",
+      "Velvet (cut version)"
      ],
      "native": [],
      "how_made": [
@@ -85178,7 +84535,7 @@
      "how_made_sources": [
       "brinton_1919 pp. 71-72, 85-86"
      ],
-     "front": "Color changes cannot be made sharp; the colors look as if they had run (Brinton).",
+     "front": "Color changes cannot be made sharp; the colors look as if they had run.",
      "back": "Machine-woven ground; no knots.",
      "where_typical": [
       "bigelow"
@@ -85207,10 +84564,10 @@
      "kind": "machine pile",
      "name": "Modern power-loomed 'oriental design' rug",
      "other_names": [
-      "machine-made rug",
+      "Machine-made rug",
       "Belgian rug",
       "'Oriental design' rug (US trade)",
-      "heat-set polypropylene (olefin) rug"
+      "Heat-set polypropylene (olefin) rug"
      ],
      "native": [],
      "how_made": [
@@ -85264,11 +84621,11 @@
      "kind": "flatweave",
      "name": "Slit tapestry (slit-woven kilim)",
      "other_names": [
-      "kilim",
-      "gelim",
-      "slit weave (Stone)",
-      "slit kilim",
-      "ilikli kilim (Turkish)"
+      "Kilim",
+      "Gelim",
+      "Slit weave",
+      "Slit kilim",
+      "Ilikli kilim (Turkish)"
      ],
      "native": [
       {
@@ -85404,9 +84761,9 @@
      "kind": "flatweave",
      "name": "Dovetailed tapestry (shared warp)",
      "other_names": [
-      "warp sharing (Stone)",
-      "dovetailing",
-      "shared-warp tapestry"
+      "Warp sharing",
+      "Dovetailing",
+      "Shared-warp tapestry"
      ],
      "native": [
       {
@@ -85417,7 +84774,7 @@
       }
      ],
      "how_made": [
-      "As slit tapestry, but at the boundary the wefts of BOTH colors turn back around the SAME warp (W3), in turn, so no slit forms."
+      "As slit tapestry, but at the boundary the wefts of both colors turn back around the same warp (W3), in turn, so no slit forms."
      ],
      "how_made_sources": [
       "iranica_carpets_v (Fig. 79)",
@@ -85482,9 +84839,9 @@
      "kind": "flatweave",
      "name": "Interlocked tapestry (single and double interlocking)",
      "other_names": [
-      "interlocking wefts (Stone)",
-      "single interlock",
-      "double interlock"
+      "Interlocking wefts",
+      "Single interlock",
+      "Double interlock"
      ],
      "native": [
       {
@@ -85560,10 +84917,10 @@
      "kind": "flatweave",
      "name": "Weft-faced plain weave (plain kilim)",
      "other_names": [
-      "plain kilim",
-      "kilim band (at the ends of pile rugs)",
-      "atkı yüzlü dokuma (Turkish)",
-      "web (Hawley)"
+      "Plain kilim",
+      "Kilim band (at the ends of pile rugs)",
+      "Atkı yüzlü dokuma (Turkish)",
+      "Web"
      ],
      "native": [
       {
@@ -85732,12 +85089,12 @@
      "kind": "flatweave",
      "name": "Soumak, plain (weft wrapping, not countered)",
      "other_names": [
-      "sumak",
-      "soumac",
-      "plain weft wrapping (Stone)",
-      "plain sumak (Iranica)",
+      "Sumak",
+      "Soumac",
+      "Plain weft wrapping",
+      "Plain sumak",
       "'Kashmir' (old US trade name for Caucasian soumaks)",
-      "flat stitch (Hawley)"
+      "Flat stitch"
      ],
      "native": [
       {
@@ -85876,10 +85233,10 @@
      "kind": "flatweave",
      "name": "Soumak, countered (herringbone)",
      "other_names": [
-      "countered weft wrapping",
-      "countered sumak",
-      "herringbone soumak",
-      "balıksırtı sumak (Turkish; seen only in a search summary)"
+      "Countered weft wrapping",
+      "Countered sumak",
+      "Herringbone soumak",
+      "Balıksırtı sumak (Turkish; seen only in a search summary)"
      ],
      "native": [
       {
@@ -85950,11 +85307,11 @@
      "kind": "flatweave",
      "name": "Cicim (supplementary-weft brocading, overlay-underlay)",
      "other_names": [
-      "jijim / djidjim (in some usages)",
-      "brocade",
-      "overlay-underlay brocading (Stone)",
-      "supplementary weft-float patterning (Iranica)",
-      "cecim (Azerbaijani, per Selçuk)"
+      "Jijim / djidjim (in some usages)",
+      "Brocade",
+      "Overlay-underlay brocading",
+      "Supplementary weft-float patterning",
+      "Cecim (Azerbaijani, per Selçuk)"
      ],
      "native": [
       {
@@ -86063,10 +85420,10 @@
      "kind": "flatweave",
      "name": "Zili / sileh (supplementary-weft float brocade with regular skips)",
      "other_names": [
-      "sileh, sili, zili (Stone)",
-      "zili (Turkish, Azerbaijani)",
-      "fitilli (Antalya, Turkish)",
-      "verneh (some usages)"
+      "Sileh, sili, zili",
+      "Zili (Turkish, Azerbaijani)",
+      "Fitilli (Antalya, Turkish)",
+      "Verneh (some usages)"
      ],
      "native": [
       {
@@ -86158,9 +85515,9 @@
      "kind": "flatweave",
      "name": "Jajim (warp-faced plain weave)",
      "other_names": [
-      "jijim, djidjim, dezhidzhim (Stone)",
-      "warp-faced plain weave",
-      "çözgü yüzlü dokuma (Turkish)"
+      "Jijim, djidjim, dezhidzhim",
+      "Warp-faced plain weave",
+      "Çözgü yüzlü dokuma (Turkish)"
      ],
      "native": [
       {
@@ -86239,10 +85596,10 @@
      "kind": "foundation",
      "name": "Level warps (both warps of each knot side by side)",
      "other_names": [
-      "warps on one level",
-      "flat warps",
-      "no warp offset",
-      "taḵt (Persian, Iranica)"
+      "Warps on one level",
+      "Flat warps",
+      "No warp offset",
+      "Taḵt (Persian, Iranica)"
      ],
      "native": [
       {
@@ -86418,12 +85775,12 @@
      "kind": "foundation",
      "name": "Partly offset warps (slightly offset, half depressed)",
      "other_names": [
-      "slightly offset",
-      "half depressed",
-      "semi-offset (Stone)",
-      "depressed (May)",
-      "45-degree offset (Stone)",
-      "nim-lool (Persian, Stone)"
+      "Slightly offset",
+      "Half depressed",
+      "Semi-offset",
+      "Depressed",
+      "45-degree offset",
+      "Nim-lool (Persian, Stone)"
      ],
      "native": [
       {
@@ -86547,12 +85904,12 @@
      "kind": "foundation",
      "name": "Deeply depressed warps (one warp of each knot hidden)",
      "other_names": [
-      "fully offset",
-      "completely offset",
-      "doubled under (Hawley)",
-      "buried (May)",
-      "lool, lule; lool-baft (Persian, Stone)",
-      "closed back (Chinese trade usage, Stone)"
+      "Fully offset",
+      "Completely offset",
+      "Doubled under",
+      "Buried",
+      "Lool, lule; lool-baft (Persian, Stone)",
+      "Closed back (Chinese trade usage, Stone)"
      ],
      "native": [
       {
@@ -86697,9 +86054,9 @@
      "kind": "foundation",
      "name": "One weft between rows of knots (single-wefted)",
      "other_names": [
-      "single-wefted",
-      "one shoot",
-      "'crosses once' (Hawley)"
+      "Single-wefted",
+      "One shoot",
+      "'crosses once'"
      ],
      "native": [],
      "how_made": [
@@ -86793,10 +86150,10 @@
      "kind": "foundation",
      "name": "Two wefts between rows of knots (double-wefted)",
      "other_names": [
-      "double-wefted",
-      "two shoots",
-      "'crosses twice' (Hawley)",
-      "across and back once"
+      "Double-wefted",
+      "Two shoots",
+      "'crosses twice'",
+      "Across and back once"
      ],
      "native": [
       {
@@ -86994,13 +86351,13 @@
      "kind": "foundation",
      "name": "Three (or more) wefts between rows of knots",
      "other_names": [
-      "triple-wefted",
-      "'crosses three times' (Hawley)",
-      "vase technique (for one Safavid structure)"
+      "Triple-wefted",
+      "'crosses three times'",
+      "Vase technique (for one Safavid structure)"
      ],
      "native": [],
      "how_made": [
-      "After each row of knots, pass three shoots of weft (twice one way, once the other); in fine Persian carpets on offset warps the middle shoot is very sinuous and the two outer ones straight (Kendrick). Some coarse rugs have many shoots, varying in number."
+      "After each row of knots, pass three shoots of weft (twice one way, once the other); in fine Persian carpets on offset warps the middle shoot is very sinuous and the two outer ones straight. Some coarse rugs have many shoots, varying in number."
      ],
      "how_made_sources": [
       "kendrick_1922 p. 96",
@@ -87101,10 +86458,10 @@
      "kind": "side",
      "name": "Overcast side (single cord wrapped by the weft)",
      "other_names": [
-      "weft overcasting (Hawley)",
-      "overcast edge",
-      "whip stitch (Stone's drawing label)",
-      "shirazeh (Persian: the wrapped edge; see shirazeh)"
+      "Weft overcasting",
+      "Overcast edge",
+      "Whip stitch (Stone's drawing label)",
+      "Shirazeh (Persian: the wrapped edge; see shirazeh)"
      ],
      "native": [
       {
@@ -87229,8 +86586,8 @@
      "kind": "side",
      "name": "Double overcast side (extra yarn wound over the cord)",
      "other_names": [
-      "double overcasting (Hawley)",
-      "attached double overcasting (figure-eight to the adjacent warps)"
+      "Double overcasting",
+      "Attached double overcasting (figure-eight to the adjacent warps)"
      ],
      "native": [
       {
@@ -87328,11 +86685,11 @@
      "kind": "side",
      "name": "Weft selvage (two or more cords wrapped figure-eight)",
      "other_names": [
-      "selvage, selvedge",
-      "flat selvage",
-      "kenārapīč (Persian, Iranica)",
-      "band-e kenāreh (heavy selvage warps, Stone)",
-      "multi-cord selvage"
+      "Selvage, selvedge",
+      "Flat selvage",
+      "Kenārapīč (Persian, Iranica)",
+      "Band-e kenāreh (heavy selvage warps, Stone)",
+      "Multi-cord selvage"
      ],
      "native": [
       {
@@ -87472,9 +86829,9 @@
      "kind": "side",
      "name": "Double and added selvage",
      "other_names": [
-      "double selvage (Hawley)",
-      "added selvage (Hawley)",
-      "mixed selvage (Hawley)"
+      "Double selvage",
+      "Added selvage",
+      "Mixed selvage"
      ],
      "native": [],
      "how_made": [
@@ -87547,8 +86904,8 @@
      "kind": "side",
      "name": "Shirazeh (Persian name for the wrapped side edge)",
      "other_names": [
-      "shirazeh, shirazi (trade spellings)",
-      "side binding"
+      "Shirazeh, shirazi (trade spellings)",
+      "Side binding"
      ],
      "native": [
       {
@@ -87596,9 +86953,9 @@
      "kind": "side",
      "name": "Machine-serged, taped or false selvage",
      "other_names": [
-      "serging (Stone)",
-      "false selvage (Stone)",
-      "binding tape"
+      "Serging",
+      "False selvage",
+      "Binding tape"
      ],
      "native": [],
      "how_made": [
@@ -87649,10 +87006,10 @@
      "kind": "end",
      "name": "Kilim band (plain-woven web) at the end",
      "other_names": [
-      "web (Hawley)",
-      "kilim end",
-      "skirt, elem (Turkmen, when patterned or piled)",
-      "gelīm (Persian)"
+      "Web",
+      "Kilim end",
+      "Skirt, elem (Turkmen, when patterned or piled)",
+      "Gelīm (Persian)"
      ],
      "native": [
       {
@@ -87805,11 +87162,11 @@
      "kind": "end",
      "name": "Knotted, braided or netted fringe",
      "other_names": [
-      "fringe",
-      "knotted warps",
-      "braided (plaited) fringe",
-      "netted fringe",
-      "macrame end (Stone)"
+      "Fringe",
+      "Knotted warps",
+      "Braided (plaited) fringe",
+      "Netted fringe",
+      "Macrame end"
      ],
      "native": [
       {
@@ -87883,7 +87240,7 @@
       "yagcibedir",
       "yuruk"
      ],
-     "what_it_tells": "Warp ends finished by hand; on a hand-woven rug the fringe IS the warps.",
+     "what_it_tells": "Warp ends finished by hand; on a hand-woven rug the fringe is the warps.",
      "cautions": "Machine-made fringe also exists (Mumford 1902 already mentions 'ordinary machine-made fringe'); always check that the fringe threads continue into the rug.",
      "facts": [
       {
@@ -87924,8 +87281,8 @@
      "kind": "end",
      "name": "Looped warps (uncut loops at one end)",
      "other_names": [
-      "warp loops",
-      "loop end"
+      "Warp loops",
+      "Loop end"
      ],
      "native": [],
      "how_made": [
@@ -87964,7 +87321,7 @@
       "ningxia",
       "baotou-suiyuan"
      ],
-     "what_it_tells": "Common at the lower (first-woven) end of Caucasian and many village and Chinese rugs (Hawley; Leitch).",
+     "what_it_tells": "Common at the lower (first-woven) end of Caucasian and many village and Chinese rugs.",
      "cautions": "",
      "facts": [
       {
@@ -88004,9 +87361,9 @@
      "kind": "end",
      "name": "Chained or twined end (weft chaining, zanjireh)",
      "other_names": [
-      "weft chaining (Stone)",
-      "weft twining at the ends (Stone)",
-      "zanjireh (Persian 'chain')"
+      "Weft chaining",
+      "Weft twining at the ends",
+      "Zanjireh (Persian 'chain')"
      ],
      "native": [
       {
@@ -88052,8 +87409,8 @@
      "kind": "end",
      "name": "Sewn-on fringe",
      "other_names": [
-      "artificial fringe (Stone)",
-      "added fringe"
+      "Artificial fringe",
+      "Added fringe"
      ],
      "native": [],
      "how_made": [
