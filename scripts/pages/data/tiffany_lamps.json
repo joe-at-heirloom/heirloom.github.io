@@ -32,7 +32,9 @@
    "design": "Vine leaf border",
    "description": null,
    "size": 10,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1410",
@@ -53,7 +55,18 @@
    "design": null,
    "description": null,
    "size": 12,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/318.jpg",
+     "kind": "catalogue",
+     "lamp": "318",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 12; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1411",
@@ -72,7 +85,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 12,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1412",
@@ -102,7 +129,18 @@
    "design": "Etched Metal over Glass",
    "description": null,
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/539.jpg",
+     "kind": "catalogue",
+     "lamp": "539",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1420",
@@ -121,7 +159,9 @@
    "design": "Vine leaf border",
    "description": null,
    "size": 14,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1421",
@@ -140,7 +180,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 14,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1424",
@@ -161,7 +215,28 @@
    "design": "heavy ribs",
    "description": null,
    "size": 14,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/cma-2018-277.jpg",
+     "kind": "museum",
+     "museum_id": "cma-2018-277",
+     "title": "Spider and Web Table Lamp",
+     "museum": "Cleveland Museum of Art",
+     "credit": "Cleveland Museum of Art, 2018.277, open access (CC0)",
+     "licence": "CC0",
+     "url": "https://clevelandart.org/art/2018.277"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/337.jpg",
+     "kind": "catalogue",
+     "lamp": "337",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 21; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1426",
@@ -180,7 +255,21 @@
    "design": "Daffodil design",
    "description": null,
    "size": 14,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.263/2018.263_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Daffodil",
+    "inferred": false,
+    "title": "Daffodil Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.263"
+   }
   },
   {
    "no": "1435",
@@ -199,7 +288,9 @@
    "design": "Vine Leaf border",
    "description": null,
    "size": 16,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1436",
@@ -218,7 +309,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 16,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1443",
@@ -237,7 +342,21 @@
    "design": "Bamboo design",
    "description": null,
    "size": 16,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.265/2018.265_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Bamboo",
+    "inferred": false,
+    "title": "Bamboo Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.265"
+   }
   },
   {
    "no": "1457",
@@ -256,7 +375,9 @@
    "design": "Pomegranate border",
    "description": null,
    "size": 16,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1461",
@@ -277,7 +398,18 @@
    "design": "Poppy design",
    "description": null,
    "size": 16,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/533.jpg",
+     "kind": "catalogue",
+     "lamp": "533",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 13; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1462",
@@ -296,7 +428,21 @@
    "design": "Dragonfly and Water design",
    "description": null,
    "size": 16,
-   "shape": "cone"
+   "shape": "cone",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_%28Clara_Pierce_Wolcott_Driscoll%2C_1899%29.jpg/960px-Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_%28Clara_Pierce_Wolcott_Driscoll%2C_1899%29.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Dragonfly",
+    "inferred": false,
+    "title": "Corning Museum of Glass - 20220412 - 36 - \"Dragonflies and Water Flowers\" reading lamp (Clara Pierce Wolcott Driscoll, 1899).jpg",
+    "museum": "Corning Museum of Glass",
+    "credit": "Andre Carrotflower, CC BY-SA 4.0, via Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_(Clara_Pierce_Wolcott_Driscoll,_1899).jpg"
+   }
   },
   {
    "no": "1467",
@@ -317,7 +463,18 @@
    "design": "Oak-leaf design",
    "description": null,
    "size": 18,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/368.jpg",
+     "kind": "catalogue",
+     "lamp": "368",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 20; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1469",
@@ -336,7 +493,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 18,
-   "shape": "low dome"
+   "shape": "low dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1470",
@@ -355,7 +526,9 @@
    "design": "Vine Leaf border",
    "description": null,
    "size": 18,
-   "shape": "low dome"
+   "shape": "low dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1475",
@@ -374,7 +547,20 @@
    "design": "Peony design",
    "description": null,
    "size": 18,
-   "shape": "low dome"
+   "shape": "low dome",
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/cma-2018-274.jpg",
+     "kind": "museum",
+     "museum_id": "cma-2018-274",
+     "title": "Peony Table Lamp",
+     "museum": "Cleveland Museum of Art",
+     "credit": "Cleveland Museum of Art, 2018.274, open access (CC0)",
+     "licence": "CC0",
+     "url": "https://clevelandart.org/art/2018.274"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1482",
@@ -393,7 +579,21 @@
    "design": "Turtleback band",
    "description": null,
    "size": 18,
-   "shape": "low dome"
+   "shape": "low dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.287/2018.287_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Turtleback band",
+    "inferred": false,
+    "title": "Turtleback Reading Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.287"
+   }
   },
   {
    "no": "1486",
@@ -412,7 +612,9 @@
    "design": "Gentian Blossom",
    "description": null,
    "size": 18,
-   "shape": "dish"
+   "shape": "dish",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1488",
@@ -431,7 +633,9 @@
    "design": "Vine leaf border",
    "description": null,
    "size": 18,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1491",
@@ -450,7 +654,21 @@
    "design": "Dogwood band",
    "description": null,
    "size": 20,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Dogwood_Shade_with_Chased_Pod_Floor_Base_-_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg/960px-Dogwood_Shade_with_Chased_Pod_Floor_Base_-_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Dogwood band",
+    "inferred": false,
+    "title": "Dogwood Shade with Chased Pod Floor Base - Tiffany Lamp - www.joyofmuseums.com - New-York Historical Society.jpg",
+    "museum": "New-York Historical Society",
+    "credit": "Joyofmuseums, CC BY-SA 4.0, via Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Dogwood_Shade_with_Chased_Pod_Floor_Base_-_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg"
+   }
   },
   {
    "no": "1493",
@@ -471,7 +689,18 @@
    "design": "Plain design",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/531.jpg",
+     "kind": "catalogue",
+     "lamp": "531",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 19; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1495",
@@ -492,7 +721,18 @@
    "design": "Dragonfly design",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/366.jpg",
+     "kind": "catalogue",
+     "lamp": "366",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 11; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1497",
@@ -513,7 +753,18 @@
    "design": "Daffodil design",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/443.jpg",
+     "kind": "catalogue",
+     "lamp": "443",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 18; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1228"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1498",
@@ -532,7 +783,9 @@
    "design": "Vine leaf border",
    "description": null,
    "size": 20,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1501",
@@ -551,7 +804,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 22,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1505",
@@ -570,7 +837,21 @@
    "design": "Peony design",
    "description": null,
    "size": 22,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.274/2018.274_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Peony",
+    "inferred": false,
+    "title": "Peony Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.274"
+   }
   },
   {
    "no": "1507",
@@ -591,7 +872,28 @@
    "design": "Dragonfly design",
    "description": null,
    "size": 22,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/aic-2006-2.jpg",
+     "kind": "museum",
+     "museum_id": "aic-2006-2",
+     "title": "Lamp with Hanging Head Dragonfly Shade and Mosaic and Turtleback Base",
+     "museum": "Art Institute of Chicago",
+     "credit": "Art Institute of Chicago, 2006.2, open access (CC0)",
+     "licence": "CC0",
+     "url": "https://www.artic.edu/artworks/185905"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/550.jpg",
+     "kind": "catalogue",
+     "lamp": "550",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 17; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1227"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1509",
@@ -610,7 +912,21 @@
    "design": "Bamboo design",
    "description": null,
    "size": 22,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.265/2018.265_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Bamboo",
+    "inferred": false,
+    "title": "Bamboo Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.265"
+   }
   },
   {
    "no": "1510",
@@ -629,7 +945,9 @@
    "design": "Vine leaf border",
    "description": null,
    "size": 24,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1515",
@@ -648,7 +966,21 @@
    "design": "Geometric design",
    "description": null,
    "size": 24,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Chandelier_MET_DT280723.jpg/960px-Chandelier_MET_DT280723.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Geometric",
+    "inferred": true,
+    "title": "Chandelier MET DT280723.jpg",
+    "museum": "Metropolitan Museum of Art",
+    "credit": "Louis Comfort Tiffany / Tiffany Studios, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Chandelier_MET_DT280723.jpg"
+   }
   },
   {
    "no": "1528",
@@ -667,7 +999,21 @@
    "design": "Poinsettia design",
    "description": null,
    "size": 26,
-   "shape": "low dome"
+   "shape": "low dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Lamp_shade_%28poinsettia_pattern%29%2C_Louis_Comfort_Tiffany%2C_Tiffany_Studios%2C_1914%2C_leaded_glass_-_Currier_Museum_of_Art_-_Manchester%2C_NH_-_DSC07547.jpg/960px-Lamp_shade_%28poinsettia_pattern%29%2C_Louis_Comfort_Tiffany%2C_Tiffany_Studios%2C_1914%2C_leaded_glass_-_Currier_Museum_of_Art_-_Manchester%2C_NH_-_DSC07547.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Poinsettia",
+    "inferred": false,
+    "title": "Lamp shade (poinsettia pattern), Louis Comfort Tiffany, Tiffany Studios, 1914, leaded glass - Currier Museum of Art - Manchester, NH - DSC07547.jpg",
+    "museum": "Currier Museum of Art",
+    "credit": "Daderot, Public domain, via Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Lamp_shade_(poinsettia_pattern),_Louis_Comfort_Tiffany,_Tiffany_Studios,_1914,_leaded_glass_-_Currier_Museum_of_Art_-_Manchester,_NH_-_DSC07547.jpg"
+   }
   },
   {
    "no": "1531",
@@ -686,7 +1032,21 @@
    "design": "Poppy design",
    "description": null,
    "size": 20,
-   "shape": "cone"
+   "shape": "cone",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.275/2018.275_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Poppy",
+    "inferred": false,
+    "title": "Poppy Filigree Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.275"
+   }
   },
   {
    "no": "1537",
@@ -707,7 +1067,18 @@
    "design": "Laburnum design",
    "description": null,
    "size": 24,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/553.jpg",
+     "kind": "catalogue",
+     "lamp": "553",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 12; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1539",
@@ -726,7 +1097,21 @@
    "design": "Laburnum design",
    "description": null,
    "size": 22,
-   "shape": "irregular edge"
+   "shape": "irregular edge",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Clara_driscoll_per_tiffany_studios%2C_lampada_laburnum%2C_1910_ca._02.jpg/960px-Clara_driscoll_per_tiffany_studios%2C_lampada_laburnum%2C_1910_ca._02.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Laburnum",
+    "inferred": false,
+    "title": "Clara driscoll per tiffany studios, lampada laburnum, 1910 ca. 02.jpg",
+    "museum": "Milwaukee Art Museum",
+    "credit": "Sailko, CC BY 3.0, via Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Clara_driscoll_per_tiffany_studios,_lampada_laburnum,_1910_ca._02.jpg"
+   }
   },
   {
    "no": "1548",
@@ -747,7 +1132,18 @@
    "design": "Tulip design",
    "description": null,
    "size": 22,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/387.jpg",
+     "kind": "catalogue",
+     "lamp": "387",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 27; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1564",
@@ -768,7 +1164,18 @@
    "design": null,
    "description": null,
    "size": 24,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/529.jpg",
+     "kind": "catalogue",
+     "lamp": "529",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 22; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1232"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1568",
@@ -787,7 +1194,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 10,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1574",
@@ -808,7 +1229,28 @@
    "design": "border of Peonies",
    "description": null,
    "size": 24,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/cma-2018-269.jpg",
+     "kind": "museum",
+     "museum_id": "cma-2018-269",
+     "title": "Peony Border Floor Lamp",
+     "museum": "Cleveland Museum of Art",
+     "credit": "Cleveland Museum of Art, 2018.269, open access (CC0)",
+     "licence": "CC0",
+     "url": "https://clevelandart.org/art/2018.269"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/376.jpg",
+     "kind": "catalogue",
+     "lamp": "376",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 27; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1585",
@@ -827,7 +1269,21 @@
    "design": "Dragonfly and Water design",
    "description": null,
    "size": 12,
-   "shape": "dish"
+   "shape": "dish",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_%28Clara_Pierce_Wolcott_Driscoll%2C_1899%29.jpg/960px-Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_%28Clara_Pierce_Wolcott_Driscoll%2C_1899%29.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Dragonfly",
+    "inferred": false,
+    "title": "Corning Museum of Glass - 20220412 - 36 - \"Dragonflies and Water Flowers\" reading lamp (Clara Pierce Wolcott Driscoll, 1899).jpg",
+    "museum": "Corning Museum of Glass",
+    "credit": "Andre Carrotflower, CC BY-SA 4.0, via Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_(Clara_Pierce_Wolcott_Driscoll,_1899).jpg"
+   }
   },
   {
    "no": "1587",
@@ -857,7 +1313,18 @@
    "design": "glass panels",
    "description": null,
    "size": 11,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/618.jpg",
+     "kind": "catalogue",
+     "lamp": "618",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1588",
@@ -887,7 +1354,18 @@
    "design": "Chinese Shade, etched metal and glass (11 in. spread)",
    "description": null,
    "size": 11,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/535.jpg",
+     "kind": "catalogue",
+     "lamp": "535",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 21; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1592",
@@ -906,7 +1384,9 @@
    "design": "Ornamental design",
    "description": null,
    "size": 24,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1593",
@@ -925,7 +1405,9 @@
    "design": "Colonial design",
    "description": null,
    "size": 16,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1594",
@@ -946,7 +1428,18 @@
    "design": null,
    "description": null,
    "size": 16,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/584.jpg",
+     "kind": "catalogue",
+     "lamp": "584",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 8; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1218"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1596",
@@ -965,7 +1458,21 @@
    "design": "Tulip design",
    "description": null,
    "size": 18,
-   "shape": "low dome"
+   "shape": "low dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.268/2018.268_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Tulip",
+    "inferred": false,
+    "title": "Tulip Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.268"
+   }
   },
   {
    "no": "1597",
@@ -984,7 +1491,21 @@
    "design": "Poppy design",
    "description": null,
    "size": 26,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.275/2018.275_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Poppy",
+    "inferred": false,
+    "title": "Poppy Filigree Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.275"
+   }
   },
   {
    "no": "1598",
@@ -1003,7 +1524,21 @@
    "design": "Poppy design",
    "description": null,
    "size": 18,
-   "shape": "low dome"
+   "shape": "low dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.275/2018.275_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Poppy",
+    "inferred": false,
+    "title": "Poppy Filigree Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.275"
+   }
   },
   {
    "no": "1599",
@@ -1022,7 +1557,21 @@
    "design": "Magnolia design",
    "description": null,
    "size": 28,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Magnolia_Shade_%E2%80%93_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg/960px-Magnolia_Shade_%E2%80%93_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Magnolia",
+    "inferred": false,
+    "title": "Magnolia Shade – Tiffany Lamp - www.joyofmuseums.com - New-York Historical Society.jpg",
+    "museum": "New-York Historical Society",
+    "credit": "Joyofmuseums, CC BY-SA 4.0, via Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Shade_%E2%80%93_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg"
+   }
   },
   {
    "no": "1900",
@@ -1041,7 +1590,9 @@
    "design": "Triangular border",
    "description": null,
    "size": 16,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1901",
@@ -1073,7 +1624,26 @@
    "design": null,
    "description": null,
    "size": 16,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/151.jpg",
+     "kind": "catalogue",
+     "lamp": "151",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 4; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1214"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/534.jpg",
+     "kind": "catalogue",
+     "lamp": "534",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 16; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1902",
@@ -1092,7 +1662,21 @@
    "design": "Oriental Poppy",
    "description": null,
    "size": 26,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.262/2018.262_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Oriental Poppy",
+    "inferred": false,
+    "title": "Oriental Poppy Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.262"
+   }
   },
   {
    "no": "1903",
@@ -1111,7 +1695,21 @@
    "design": "Peony",
    "description": null,
    "size": 22,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.274/2018.274_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Peony",
+    "inferred": false,
+    "title": "Peony Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.274"
+   }
   },
   {
    "no": "1904",
@@ -1130,7 +1728,20 @@
    "design": "Yellow Rose",
    "description": null,
    "size": 26,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "marks/img/tiffany/lamps/1915/397.jpg",
+    "kind": "example",
+    "lamp": "397",
+    "credit": "Tiffany Bronze Lamps (ca. 1915), page 11; Met Libraries, public domain",
+    "licence": "public domain",
+    "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221",
+    "exact": false,
+    "design": "Rose design",
+    "sibling": "1915",
+    "title": "Shade No. 1915 on lamp No. 397"
+   }
   },
   {
    "no": "1906",
@@ -1149,7 +1760,21 @@
    "design": "Tulip design",
    "description": null,
    "size": 16,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://openaccess-cdn.clevelandart.org/2018.268/2018.268_web.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Tulip",
+    "inferred": false,
+    "title": "Tulip Table Lamp",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Cleveland Museum of Art, CC0",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://clevelandart.org/art/2018.268"
+   }
   },
   {
    "no": "1907",
@@ -1168,7 +1793,9 @@
    "design": "Greek border",
    "description": null,
    "size": 22,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1908",
@@ -1187,7 +1814,9 @@
    "design": "Zodiac design",
    "description": null,
    "size": 22,
-   "shape": "cone"
+   "shape": "cone",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1910",
@@ -1206,7 +1835,9 @@
    "design": "Russian design",
    "description": null,
    "size": 20,
-   "shape": "cone"
+   "shape": "cone",
+   "photos": [],
+   "example": null
   },
   {
    "no": "1911",
@@ -1225,7 +1856,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 20,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1913",
@@ -1244,7 +1889,21 @@
    "design": "Plain Squares",
    "description": null,
    "size": 18,
-   "shape": "cone"
+   "shape": "cone",
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG/960px-Table_Lamp%2C_Tiffany_Studios%2C_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG",
+    "kind": "example",
+    "exact": false,
+    "design": "Plain Squares",
+    "inferred": true,
+    "title": "Table Lamp, Tiffany Studios, 1902-1919 - Nelson-Atkins Museum of Art - DSC09186.JPG",
+    "museum": "Nelson-Atkins Museum of Art",
+    "credit": "Daderot, CC0, via Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
+   }
   },
   {
    "no": "1914",
@@ -1265,7 +1924,18 @@
    "design": "Early English design",
    "description": null,
    "size": 22,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/557.jpg",
+     "kind": "catalogue",
+     "lamp": "557",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 16; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1915",
@@ -1286,7 +1956,18 @@
    "design": "Rose design",
    "description": null,
    "size": 26,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/397.jpg",
+     "kind": "catalogue",
+     "lamp": "397",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 11; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1916",
@@ -1307,7 +1988,18 @@
    "design": "Grecian Band",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/528.jpg",
+     "kind": "catalogue",
+     "lamp": "528",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 15; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1917",
@@ -1328,7 +2020,18 @@
    "design": "Daffodil and Narcissus design",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/532.jpg",
+     "kind": "catalogue",
+     "lamp": "532",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 19; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1918",
@@ -1349,7 +2052,18 @@
    "design": "Azalea design",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/549.jpg",
+     "kind": "catalogue",
+     "lamp": "549",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 13; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1924",
@@ -1381,7 +2095,26 @@
    "design": "Favrilefabrique Glass",
    "description": null,
    "size": 14,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/580.jpg",
+     "kind": "catalogue",
+     "lamp": "580",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 18; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1228"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/615.jpg",
+     "kind": "catalogue",
+     "lamp": "615",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 20; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1927",
@@ -1402,7 +2135,18 @@
    "design": "Favrilefabrique Glass",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/587.jpg",
+     "kind": "catalogue",
+     "lamp": "587",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1928",
@@ -1421,7 +2165,9 @@
    "design": null,
    "description": null,
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [],
+   "example": null
   },
   {
    "no": "1938",
@@ -1442,7 +2188,18 @@
    "design": "Favrilefabrique Glass",
    "description": null,
    "size": 8,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/613.jpg",
+     "kind": "catalogue",
+     "lamp": "613",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 5; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1939",
@@ -1463,7 +2220,18 @@
    "design": "Favrilefabrique Glass",
    "description": null,
    "size": 10,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/604.jpg",
+     "kind": "catalogue",
+     "lamp": "604",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 10; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1940-A",
@@ -1484,7 +2252,18 @@
    "design": "Favrilefabrique Glass",
    "description": null,
    "size": 7,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/418.jpg",
+     "kind": "catalogue",
+     "lamp": "418",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 6; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1942-D",
@@ -1516,7 +2295,26 @@
    "design": "Favrilefabrique Glass",
    "description": null,
    "size": 5,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/614.jpg",
+     "kind": "catalogue",
+     "lamp": "614",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 5; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/653.jpg",
+     "kind": "catalogue",
+     "lamp": "653",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 24; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1234"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1948",
@@ -1535,7 +2333,21 @@
    "design": "Favrile Fabrique Glass Shade",
    "description": null,
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tiffany_studios%2C_lampada_tappezzeria_piegata%2C_1910-15_ca.jpg/960px-Tiffany_studios%2C_lampada_tappezzeria_piegata%2C_1910-15_ca.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Linenfold / Favrile-fabrique",
+    "inferred": true,
+    "title": "Tiffany studios, lampada tappezzeria piegata, 1910-15 ca.jpg",
+    "museum": "Cleveland Museum of Art",
+    "credit": "Sailko, CC BY 3.0, via Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Tiffany_studios,_lampada_tappezzeria_piegata,_1910-15_ca.jpg"
+   }
   },
   {
    "no": "1952",
@@ -1556,7 +2368,18 @@
    "design": "Favrilefabrique Glass",
    "description": null,
    "size": 20,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/560.jpg",
+     "kind": "catalogue",
+     "lamp": "560",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 15; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
+    }
+   ],
+   "example": null
   },
   {
    "no": "1998",
@@ -1575,7 +2398,21 @@
    "design": "Poinsettia and Lattice",
    "description": null,
    "size": 18,
-   "shape": null
+   "shape": null,
+   "photos": [],
+   "example": {
+    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Lamp_shade_%28poinsettia_pattern%29%2C_Louis_Comfort_Tiffany%2C_Tiffany_Studios%2C_1914%2C_leaded_glass_-_Currier_Museum_of_Art_-_Manchester%2C_NH_-_DSC07547.jpg/960px-Lamp_shade_%28poinsettia_pattern%29%2C_Louis_Comfort_Tiffany%2C_Tiffany_Studios%2C_1914%2C_leaded_glass_-_Currier_Museum_of_Art_-_Manchester%2C_NH_-_DSC07547.jpg",
+    "kind": "example",
+    "exact": false,
+    "design": "Poinsettia",
+    "inferred": false,
+    "title": "Lamp shade (poinsettia pattern), Louis Comfort Tiffany, Tiffany Studios, 1914, leaded glass - Currier Museum of Art - Manchester, NH - DSC07547.jpg",
+    "museum": "Currier Museum of Art",
+    "credit": "Daderot, Public domain, via Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Lamp_shade_(poinsettia_pattern),_Louis_Comfort_Tiffany,_Tiffany_Studios,_1914,_leaded_glass_-_Currier_Museum_of_Art_-_Manchester,_NH_-_DSC07547.jpg"
+   }
   },
   {
    "no": "1999",
@@ -1594,7 +2431,9 @@
    "design": "Maple Leaf design",
    "description": null,
    "size": 22,
-   "shape": "dome"
+   "shape": "dome",
+   "photos": [],
+   "example": null
   }
  ],
  "bases": [
@@ -1619,7 +2458,17 @@
    "design": null,
    "description": "Oil Lamp, Greek model",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/151.jpg",
+     "kind": "catalogue",
+     "lamp": "151",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 4; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1214"
+    }
+   ]
   },
   {
    "no": "309",
@@ -1642,7 +2491,17 @@
    "design": null,
    "description": "Newel or Mantel Lamp; No. 100 Favrile Glass globes, $5 each; also carried with lights reversed",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/309.jpg",
+     "kind": "catalogue",
+     "lamp": "309",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 10; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
+    }
+   ]
   },
   {
    "no": "318",
@@ -1665,7 +2524,17 @@
    "design": null,
    "description": "Adjustable Reading Lamp (two shades)",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/318.jpg",
+     "kind": "catalogue",
+     "lamp": "318",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 12; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
+    }
+   ]
   },
   {
    "no": "319",
@@ -1688,7 +2557,17 @@
    "design": null,
    "description": "Decorative Lamp, three 8 candle-power lights, No. 104 iridescent Favrile Globes, $2 each",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/319.jpg",
+     "kind": "catalogue",
+     "lamp": "319",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 9; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
+    }
+   ]
   },
   {
    "no": "337",
@@ -1711,7 +2590,27 @@
    "design": null,
    "description": "Reading Lamp, three lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/cma-2018-277.jpg",
+     "kind": "museum",
+     "museum_id": "cma-2018-277",
+     "title": "Spider and Web Table Lamp",
+     "museum": "Cleveland Museum of Art",
+     "credit": "Cleveland Museum of Art, 2018.277, open access (CC0)",
+     "licence": "CC0",
+     "url": "https://clevelandart.org/art/2018.277"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/337.jpg",
+     "kind": "catalogue",
+     "lamp": "337",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 21; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
+    }
+   ]
   },
   {
    "no": "366",
@@ -1734,7 +2633,17 @@
    "design": null,
    "description": "Library Lamp, ornate base and stem",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/366.jpg",
+     "kind": "catalogue",
+     "lamp": "366",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 11; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
+    }
+   ]
   },
   {
    "no": "368",
@@ -1757,7 +2666,17 @@
    "design": null,
    "description": "Library Lamp, three lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/368.jpg",
+     "kind": "catalogue",
+     "lamp": "368",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 20; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
+    }
+   ]
   },
   {
    "no": "376",
@@ -1780,7 +2699,27 @@
    "design": null,
    "description": "Floor Standard, foliated design, six lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/cma-2018-269.jpg",
+     "kind": "museum",
+     "museum_id": "cma-2018-269",
+     "title": "Peony Border Floor Lamp",
+     "museum": "Cleveland Museum of Art",
+     "credit": "Cleveland Museum of Art, 2018.269, open access (CC0)",
+     "licence": "CC0",
+     "url": "https://clevelandart.org/art/2018.269"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1915/376.jpg",
+     "kind": "catalogue",
+     "lamp": "376",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 27; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
+    }
+   ]
   },
   {
    "no": "381",
@@ -1803,7 +2742,17 @@
    "design": null,
    "description": "Decorative Lamp, Pond Lily base, ten lights, No. 104 Favrile Glass globes, iridescent, $2 each",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/381.jpg",
+     "kind": "catalogue",
+     "lamp": "381",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 9; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
+    }
+   ]
   },
   {
    "no": "382",
@@ -1826,7 +2775,17 @@
    "design": null,
    "description": "Decorative Lamp, Pond Lily base, as No. 381 with twelve lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/381.jpg",
+     "kind": "catalogue",
+     "lamp": "381",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 9; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
+    }
+   ]
   },
   {
    "no": "383",
@@ -1849,7 +2808,17 @@
    "design": null,
    "description": "Decorative Lamp, Pond Lily base, as No. 381 with eighteen lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/381.jpg",
+     "kind": "catalogue",
+     "lamp": "381",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 9; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
+    }
+   ]
   },
   {
    "no": "385",
@@ -1872,7 +2841,17 @@
    "design": null,
    "description": "Decorative Lamp, Pond Lily base, as No. 381 with seven lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/381.jpg",
+     "kind": "catalogue",
+     "lamp": "381",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 9; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
+    }
+   ]
   },
   {
    "no": "387",
@@ -1895,7 +2874,17 @@
    "design": null,
    "description": "Floor Standard, plain",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/387.jpg",
+     "kind": "catalogue",
+     "lamp": "387",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 27; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
+    }
+   ]
   },
   {
    "no": "397",
@@ -1918,7 +2907,17 @@
    "design": null,
    "description": "Library Standard, adjustable, six lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/397.jpg",
+     "kind": "catalogue",
+     "lamp": "397",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 11; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
+    }
+   ]
   },
   {
    "no": "403",
@@ -1941,7 +2940,17 @@
    "design": null,
    "description": "Reading Lamp, natural Nautilus shell, adjustable, 16 C. P. light",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/403.jpg",
+     "kind": "catalogue",
+     "lamp": "403",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 10; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
+    }
+   ]
   },
   {
    "no": "413",
@@ -1964,7 +2973,17 @@
    "design": null,
    "description": "Picture Reflector or Reading Lamp, adjustable",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/413.jpg",
+     "kind": "catalogue",
+     "lamp": "413",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 21; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
+    }
+   ]
   },
   {
    "no": "416",
@@ -1987,7 +3006,17 @@
    "design": null,
    "description": "Balanced Lamp, adjustable (shade can be lowered below base line)",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/416.jpg",
+     "kind": "catalogue",
+     "lamp": "416",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 9; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
+    }
+   ]
   },
   {
    "no": "417",
@@ -2010,7 +3039,17 @@
    "design": null,
    "description": "Balanced Lamp, well-sweep design, adjustable (shade can be lowered below base line)",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/417.jpg",
+     "kind": "catalogue",
+     "lamp": "417",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 8; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1218"
+    }
+   ]
   },
   {
    "no": "418",
@@ -2033,7 +3072,17 @@
    "design": null,
    "description": "Reading Lamp, adjustable shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/418.jpg",
+     "kind": "catalogue",
+     "lamp": "418",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 6; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
+    }
+   ]
   },
   {
    "no": "419",
@@ -2056,7 +3105,17 @@
    "design": null,
    "description": "Reading Lamp, bell form, adjustable shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/419.jpg",
+     "kind": "catalogue",
+     "lamp": "419",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 6; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
+    }
+   ]
   },
   {
    "no": "420",
@@ -2079,7 +3138,17 @@
    "design": null,
    "description": "Desk Lamp, leaf ornament",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/420.jpg",
+     "kind": "catalogue",
+     "lamp": "420",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 4; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1214"
+    }
+   ]
   },
   {
    "no": "423",
@@ -2102,7 +3171,17 @@
    "design": null,
    "description": "Portable Floor Lamp, adjustable shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/423.jpg",
+     "kind": "catalogue",
+     "lamp": "423",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 25; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1235"
+    }
+   ]
   },
   {
    "no": "423-H",
@@ -2125,7 +3204,17 @@
    "design": null,
    "description": "Portable Floor Lamp, adjustable top",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/423-H.jpg",
+     "kind": "catalogue",
+     "lamp": "423-H",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 25; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1235"
+    }
+   ]
   },
   {
    "no": "424",
@@ -2148,7 +3237,17 @@
    "design": null,
    "description": "Reading Lamp, bell form, adjustable shade, with longer stem (as No. 419)",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/419.jpg",
+     "kind": "catalogue",
+     "lamp": "419",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 6; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
+    }
+   ]
   },
   {
    "no": "425",
@@ -2171,7 +3270,17 @@
    "design": null,
    "description": "Floor Lamp, adjustable shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/425.jpg",
+     "kind": "catalogue",
+     "lamp": "425",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 26; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1236"
+    }
+   ]
   },
   {
    "no": "429-A",
@@ -2194,7 +3303,17 @@
    "design": null,
    "description": "Light, adjustable Boudoir Lamp for floor, with 12 in. silk shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/429-A.jpg",
+     "kind": "catalogue",
+     "lamp": "429-A",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 23; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1233"
+    }
+   ]
   },
   {
    "no": "443",
@@ -2217,7 +3336,17 @@
    "design": null,
    "description": "Library Lamp, design of Lily stems",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/443.jpg",
+     "kind": "catalogue",
+     "lamp": "443",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 18; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1228"
+    }
+   ]
   },
   {
    "no": "445",
@@ -2251,7 +3380,17 @@
    "design": null,
    "description": "Desk Lamp, overlay ornament",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/445.jpg",
+     "kind": "catalogue",
+     "lamp": "445",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 7; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1217"
+    }
+   ]
   },
   {
    "no": "468",
@@ -2274,7 +3413,17 @@
    "design": null,
    "description": "Floor Lamp, balanced adjustable shade, well-sweep design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/468.jpg",
+     "kind": "catalogue",
+     "lamp": "468",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 24; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1234"
+    }
+   ]
   },
   {
    "no": "515",
@@ -2306,7 +3455,8 @@
    "design": null,
    "description": "Ninth Century desk set: Lamp and Shade, gold only",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": []
   },
   {
    "no": "528",
@@ -2329,7 +3479,17 @@
    "design": null,
    "description": "Library Lamp, Fifteenth Century design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/528.jpg",
+     "kind": "catalogue",
+     "lamp": "528",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 15; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
+    }
+   ]
   },
   {
    "no": "529",
@@ -2352,7 +3512,17 @@
    "design": null,
    "description": "Library Lamp, Roman design, six lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/529.jpg",
+     "kind": "catalogue",
+     "lamp": "529",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 22; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1232"
+    }
+   ]
   },
   {
    "no": "531",
@@ -2375,7 +3545,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/531.jpg",
+     "kind": "catalogue",
+     "lamp": "531",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 19; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
+    }
+   ]
   },
   {
    "no": "532",
@@ -2398,7 +3578,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/532.jpg",
+     "kind": "catalogue",
+     "lamp": "532",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 19; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
+    }
+   ]
   },
   {
    "no": "533",
@@ -2421,7 +3611,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/533.jpg",
+     "kind": "catalogue",
+     "lamp": "533",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 13; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
+    }
+   ]
   },
   {
    "no": "534",
@@ -2444,7 +3644,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/534.jpg",
+     "kind": "catalogue",
+     "lamp": "534",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 16; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
+    }
+   ]
   },
   {
    "no": "535",
@@ -2478,7 +3688,17 @@
    "design": null,
    "description": "Chinese Desk Lamp, two lights",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/535.jpg",
+     "kind": "catalogue",
+     "lamp": "535",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 21; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
+    }
+   ]
   },
   {
    "no": "537",
@@ -2499,7 +3719,8 @@
    "design": null,
    "description": "Zodiac desk set: Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": []
   },
   {
    "no": "538",
@@ -2520,7 +3741,8 @@
    "design": null,
    "description": "Louis XVI desk set: Lamp, shade extra",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": []
   },
   {
    "no": "539",
@@ -2554,7 +3776,17 @@
    "design": null,
    "description": "Adam Lamp and Shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/539.jpg",
+     "kind": "catalogue",
+     "lamp": "539",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
+    }
+   ]
   },
   {
    "no": "549",
@@ -2577,7 +3809,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/549.jpg",
+     "kind": "catalogue",
+     "lamp": "549",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 13; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
+    }
+   ]
   },
   {
    "no": "550",
@@ -2600,7 +3842,17 @@
    "design": null,
    "description": "Library Lamp, Louis XIV design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/550.jpg",
+     "kind": "catalogue",
+     "lamp": "550",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 17; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1227"
+    }
+   ]
   },
   {
    "no": "552",
@@ -2623,7 +3875,17 @@
    "design": null,
    "description": "Miniature adjustable lamp of Etched Metal and Glass, pine needle or grape vine design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/552.jpg",
+     "kind": "catalogue",
+     "lamp": "552",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 7; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1217"
+    }
+   ]
   },
   {
    "no": "553",
@@ -2646,7 +3908,17 @@
    "design": null,
    "description": "Library Lamp, Tree design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/553.jpg",
+     "kind": "catalogue",
+     "lamp": "553",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 12; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
+    }
+   ]
   },
   {
    "no": "557",
@@ -2669,7 +3941,17 @@
    "design": null,
    "description": "Library Lamp, Early English design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/557.jpg",
+     "kind": "catalogue",
+     "lamp": "557",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 16; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
+    }
+   ]
   },
   {
    "no": "558",
@@ -2690,7 +3972,8 @@
    "design": null,
    "description": "Graduate desk set: Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": []
   },
   {
    "no": "560",
@@ -2713,7 +3996,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/560.jpg",
+     "kind": "catalogue",
+     "lamp": "560",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 15; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
+    }
+   ]
   },
   {
    "no": "569",
@@ -2736,7 +4029,17 @@
    "design": null,
    "description": "Reading Lamp; shade can be raised and lowered and placed at any angle",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/569.jpg",
+     "kind": "catalogue",
+     "lamp": "569",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 6; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
+    }
+   ]
   },
   {
    "no": "576",
@@ -2759,7 +4062,17 @@
    "design": null,
    "description": "Bridge Lamp, with a 7 in. extension; adjustable silk shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/576.jpg",
+     "kind": "catalogue",
+     "lamp": "576",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 23; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1233"
+    }
+   ]
   },
   {
    "no": "578",
@@ -2782,7 +4095,17 @@
    "design": null,
    "description": "Floor Lamp, adjustable shade, with a 9-in. extension",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/578.jpg",
+     "kind": "catalogue",
+     "lamp": "578",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 22; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1232"
+    }
+   ]
   },
   {
    "no": "580",
@@ -2805,7 +4128,17 @@
    "design": null,
    "description": "3-light Empire Lamp, decorated Favrile Glass Candles",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/580.jpg",
+     "kind": "catalogue",
+     "lamp": "580",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 18; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1228"
+    }
+   ]
   },
   {
    "no": "582",
@@ -2828,7 +4161,17 @@
    "design": null,
    "description": "Floor Standard, smoker’s attachments, adjustable shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/582.jpg",
+     "kind": "catalogue",
+     "lamp": "582",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 26; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1236"
+    }
+   ]
   },
   {
    "no": "584",
@@ -2851,7 +4194,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/584.jpg",
+     "kind": "catalogue",
+     "lamp": "584",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 8; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1218"
+    }
+   ]
   },
   {
    "no": "587",
@@ -2874,7 +4227,17 @@
    "design": null,
    "description": "Library Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/587.jpg",
+     "kind": "catalogue",
+     "lamp": "587",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
+    }
+   ]
   },
   {
    "no": "604",
@@ -2908,7 +4271,17 @@
    "design": null,
    "description": "Reading Lamp, finished in gold and inlaid with Abalone pearl",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/604.jpg",
+     "kind": "catalogue",
+     "lamp": "604",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 10; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
+    }
+   ]
   },
   {
    "no": "606",
@@ -2931,7 +4304,17 @@
    "design": null,
    "description": "Desk Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/606.jpg",
+     "kind": "catalogue",
+     "lamp": "606",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 7; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1217"
+    }
+   ]
   },
   {
    "no": "608",
@@ -2954,7 +4337,17 @@
    "design": null,
    "description": "Desk Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/608.jpg",
+     "kind": "catalogue",
+     "lamp": "608",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 5; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
+    }
+   ]
   },
   {
    "no": "612",
@@ -2975,7 +4368,8 @@
    "design": null,
    "description": "Nautical desk set: Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": []
   },
   {
    "no": "613",
@@ -3009,7 +4403,17 @@
    "design": null,
    "description": "Reading Lamp with adjustable shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/613.jpg",
+     "kind": "catalogue",
+     "lamp": "613",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 5; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
+    }
+   ]
   },
   {
    "no": "614",
@@ -3032,7 +4436,17 @@
    "design": null,
    "description": "Reading Lamp with adjustable shade",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/614.jpg",
+     "kind": "catalogue",
+     "lamp": "614",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 5; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
+    }
+   ]
   },
   {
    "no": "615",
@@ -3055,7 +4469,17 @@
    "design": null,
    "description": "Reading Lamp, Greek design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/615.jpg",
+     "kind": "catalogue",
+     "lamp": "615",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 20; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
+    }
+   ]
   },
   {
    "no": "617",
@@ -3078,7 +4502,17 @@
    "design": null,
    "description": "Reading Lamp, Greek design",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/617.jpg",
+     "kind": "catalogue",
+     "lamp": "617",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 17; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1227"
+    }
+   ]
   },
   {
    "no": "618",
@@ -3101,7 +4535,17 @@
    "design": null,
    "description": "Reading Lamp",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/618.jpg",
+     "kind": "catalogue",
+     "lamp": "618",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
+    }
+   ]
   },
   {
    "no": "653",
@@ -3124,7 +4568,17 @@
    "design": null,
    "description": "Decorative Lamp for floor; bronze with Favrile Glass candles; four shades No. 1942-D",
    "size": null,
-   "shape": null
+   "shape": null,
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1915/653.jpg",
+     "kind": "catalogue",
+     "lamp": "653",
+     "credit": "Tiffany Bronze Lamps (ca. 1915), page 24; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1234"
+    }
+   ]
   }
  ],
  "museum": [

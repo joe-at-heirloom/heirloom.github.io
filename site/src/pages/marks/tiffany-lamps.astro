@@ -1,144 +1,138 @@
 ---
 // /marks/tiffany-lamps: Tiffany Studios lamps and shades by the number Tiffany
 // gave them. Every shade and base the firm's own catalogues number (Tiffany
-// Bronze Lamps, ca. 1915; Desk Sets, 1910), what each was, its size and
-// price, the base each shade was sold on, and museum lamps whose recorded
-// marks give a number. A reader finds a number; the catalogue lists them all.
+// Bronze Lamps, ca. 1915; Desk Sets, 1910), each with a photograph: a museum's
+// photograph of that very number first, else the lamp as the 1915 catalogue
+// pictures it, else (marked as such) another shade of the same design. One
+// search bar filters every card as you type; design buttons narrow by pattern.
 import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
-import { lamps, shadeLine, baseLine, prices, SOURCES, LAMPS, type Model } from '../../lib/tiffany-lamps';
+import { lamps, shadeLine, baseLine, prices, cardPhoto, designFamilies, famsOf, modelText, SOURCES, LAMPS, type Model, type MuseumLamp } from '../../lib/tiffany-lamps';
 import { articleLd } from '../../lib/site';
 import { media } from '../../lib/media';
 import '../../styles/tiffany.css';
 
 const { shades, bases, museum } = lamps();
 const path = LAMPS;
-const desk = bases.filter((b) => b.entries.some((e) => e.desk_set));
-const leaded = shades.filter((s) => parseInt(s.no, 10) >= 1400 && parseInt(s.no, 10) < 2000);
 const pictured = museum.filter((m) => m.pic);
 const marked = museum.filter((m) => m.marks);
 const marksShown = [...new Map(marked.map((m) => [m.marks!.replace(/\s+/g, ' ').trim(), m])).values()].slice(0, 10);
+const withPhoto = (ms: Model[]) => ms.filter((m) => cardPhoto(m)).length;
 const title = 'Tiffany Lamp and Shade Numbers: Every Model in Tiffany’s Own Catalogues | Heirloom';
-const description = `${shades.length} Tiffany Studios shade numbers and ${bases.length} lamp base numbers from Tiffany’s own catalogues (Tiffany Bronze Lamps, about 1915, and Desk Sets, 1910): the design, size and price of each, the base each shade was sold on, and ${museum.length} museum lamps with their marks.`;
-const index = [
-  ...shades.map((m) => ({ n: m.no, k: 'Shade', t: shadeLine(m), a: m.anchor, p: prices(m).join(', '), m: 0 })),
-  ...bases.map((m) => ({ n: m.no, k: 'Lamp base', t: baseLine(m), a: m.anchor, p: prices(m).join(', '), m: 0 })),
-  // numbers stamped on museum lamps (the museum's record says where), as a museum example
-  ...museum.flatMap((m) => [
-    ...(m.shade_no ? [{ n: m.shade_no, k: 'Shade', t: `on a museum lamp: ${m.title}, ${m.museum}`, a: m.anchor, p: '', m: 1 }] : []),
-    ...(m.base_no ? [{ n: m.base_no, k: 'Lamp base', t: `on a museum lamp: ${m.title}, ${m.museum}`, a: m.anchor, p: '', m: 1 }] : []),
-  ]),
-];
+const description = `${shades.length} Tiffany Studios shade numbers and ${bases.length} lamp base numbers from Tiffany’s own catalogues (Tiffany Bronze Lamps, about 1915, and Desk Sets, 1910), with photographs: the design, size and price of each, the base each shade was sold on, and ${museum.length} museum lamps with their marks.`;
 const onBases = (m: Model) => [...new Set(m.entries.map((e) => e.on_base).filter(Boolean))] as string[];
 const withShades = (m: Model) => [...new Set(m.entries.map((e) => e.with_shade).filter(Boolean))] as string[];
 const examples = (m: Model) => museum.filter((x) => (m.kind === 'shade' ? x.shade_no : x.base_no) === m.no);
 const pageLink = (m: Model) => m.entries.filter((e) => e.ptr).map((e) => ({ y: SOURCES[e.src].year, p: e.page, url: SOURCES[e.src].page(e.ptr!) }));
+const keysOf = (m: Model) => [m.no, m.kind, m.kind === 'shade' ? shadeLine(m) : baseLine(m), m.design ?? '', m.shape ?? '', m.size ? `${m.size} in` : '',
+  ...m.entries.map((e) => `${e.as_printed ?? ''} ${e.shade_as_printed ?? ''} ${e.desk_set ?? ''}`), ...examples(m).map((x) => `${x.title} ${x.pattern ?? ''}`)].join(' ').toLowerCase();
+const musText = (x: MuseumLamp) => `${x.title} ${x.pattern ?? ''}`;
+const families = designFamilies([...shades.map(modelText), ...bases.map(modelText), ...museum.map(musText)]);
+const famAttr = (t: string) => famsOf(t).join(' ');
+// numbers stamped on museum lamps but not in the catalogues: found by the search too
+const catNos = new Set([...shades, ...bases].map((m) => `${m.kind}:${m.no}`));
+const museumOnly = museum.flatMap((m) => [
+  ...(m.shade_no && !catNos.has(`shade:${m.shade_no}`) ? [{ n: m.shade_no, k: 'Shade', m }] : []),
+  ...(m.base_no && !catNos.has(`base:${m.base_no}`) ? [{ n: m.base_no, k: 'Lamp base', m }] : []),
+  ...m.stamped.filter((n) => n !== m.shade_no && n !== m.base_no && !catNos.has(`shade:${n}`) && !catNos.has(`base:${n}`)).map((n) => ({ n, k: 'Stamped', m })),
+]);
 ---
 <Reference {title} {description} {path} jsonld={[articleLd(path, 'Tiffany lamp and shade numbers', description, '2026-11-25')]}>
   <header class="rhead">
     <h1>Tiffany lamps and shades</h1>
-    <p class="rhead__lede">Tiffany Studios gave every shade and every lamp base a number, and stamped it on the piece: a shade’s on a small tag at the rim, a base’s on its underside, beside the name. These are all the numbers Tiffany’s own catalogues give, with what each one was, its size, its price, and the bases each shade was sold on, and museum lamps whose marks are recorded.</p>
+    <p class="rhead__lede">Tiffany Studios gave every shade and every lamp base a number, and stamped it on the piece: a shade’s on a small tag at the rim, a base’s on its underside, beside the name. These are all the numbers Tiffany’s own catalogues give, each with a photograph, what it was, its size, its price, and the bases each shade was sold on.</p>
     <ul class="rhead__meta">
-      <li><strong class="num">{shades.length}</strong> shades</li>
-      <li><strong class="num">{bases.length}</strong> lamp bases</li>
-      <li><strong class="num">{museum.length}</strong> museum lamps{pictured.length ? `, ${pictured.length} pictured` : ''}</li>
+      <li><strong class="num">{shades.length}</strong> shades, {withPhoto(shades)} pictured</li>
+      <li><strong class="num">{bases.length}</strong> lamp bases, {withPhoto(bases)} pictured</li>
+      <li><strong class="num">{museum.length}</strong> museum lamps</li>
     </ul>
   </header>
 
-  <section class="twfind lampread" aria-labelledby="read" data-lampread>
-    <h2 id="read" class="visually-hidden">Find a number</h2>
-    <label class="twfind__q">
-      <span class="visually-hidden">The number on the shade’s tag or the base</span>
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-      <input class="field" type="search" inputmode="text" autocomplete="off" spellcheck="false" placeholder="The number on the tag or base, or a design: 1495, 337, Dragonfly, Poppy" data-q />
-    </label>
-    <p class="twfind__sum" aria-live="polite" data-sum></p>
-    <ol class="twfind__list" data-list></ol>
-    <script type="application/json" data-index set:html={JSON.stringify(index)} />
-  </section>
+  <div class="lampfind" data-lampfind>
+    <div class="lampfind__bar" role="search">
+      <label class="twfind__q">
+        <span class="visually-hidden">A number, a design, a size or a shape</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+        <input class="field" type="search" autocomplete="off" spellcheck="false" placeholder="A tag or base number, a design, a size: 1495, Peony, 20 in" data-q />
+      </label>
+      <div class="lampfind__chips" role="group" aria-label="Designs">
+        <button type="button" data-fam="" aria-pressed="true">All</button>
+        {families.map((f) => <button type="button" data-fam={f.key} aria-pressed="false">{f.label} <span class="num">{f.count}</span></button>)}
+      </div>
+      <p class="twfind__sum" aria-live="polite" data-sum></p>
+    </div>
 
-  {pictured.length > 0 && (
-    <section class="ahome__block" aria-labelledby="museums">
-      <h2 id="museums">Tiffany lamps in museums</h2>
-      <p>Lamps in museum collections, with the museums’ open-access photographs and the marks each museum records. Some bases carry a second, longer number as well as the model’s; the museums record what is stamped, not what each number means.</p>
-      <ul class="twmus">
-        {pictured.map((m) => (
-          <li id={m.anchor}>
-            <a href={m.url} rel="noopener">
-              <img src={media(m.pic!.file)} alt={`${m.title}, Tiffany Studios, ${m.museum}`} loading="lazy" decoding="async" />
-              <span class="twmus__t">{m.title}</span>
-              <span class="twmus__m">{[m.date, m.museum].filter(Boolean).join(', ')}</span>
-              {(m.shade_no || m.base_no) && <span class="twmus__m">{[m.shade_no && `Shade No. ${m.shade_no}`, m.base_no && `base No. ${m.base_no}`].filter(Boolean).join(', ')}</span>}
-              {m.marks && <span class="twmus__mk">{m.marks}</span>}
-            </a>
+    <section class="lampsec" aria-labelledby="shades" data-sec>
+      <h2 id="shades">Shades <span class="num" data-count>{shades.length}</span></h2>
+      <p class="read">Leaded shades are numbered from 1400 up, glass and Favrile-fabrique shades mostly in the 1900s. Where the catalogue only lists a shade, the photograph is of another shade of the same design, and says so.</p>
+      <ul class="lampgrid">
+        {shades.map((m) => {
+          const ph = cardPhoto(m); const ob = onBases(m); const ex = examples(m);
+          return (
+            <li id={m.anchor} class="lampcard" data-card data-no={m.no.toLowerCase()} data-fams={famAttr(modelText(m))} data-keys={keysOf(m)}>
+              {ph ? (
+                <a class="lampcard__pic" href={ph.url ?? undefined} rel="noopener"><img src={media(ph.file)} alt={`Tiffany Studios shade No. ${m.no}, ${shadeLine(m)}`} loading="lazy" decoding="async" /></a>
+              ) : <span class="lampcard__pic lampcard__pic--none">No photograph yet</span>}
+              <span class="lampcard__no">Shade No. <strong class="num">{m.no}</strong></span>
+              <span class="lampcard__t">{shadeLine(m)}</span>
+              <span class="lampcard__m">{prices(m).join(', ')}</span>
+              <span class="lampcard__m">
+                {ob.length > 0 && <>On lamp {ob.map((b, i) => <>{i > 0 && ', '}<a href={`#base-${b.toLowerCase()}`}>No. {b}</a></>)}{' · '}</>}
+                {ex.length > 0 && <>{ex.length} in museums{' · '}</>}
+                {pageLink(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="noopener">{l.y}, p. {l.p}</a></>)}
+              </span>
+              {ph && <span class="lampcard__cap">{ph.caption}{ph.credit && <span class="lampcard__credit">{ph.credit}</span>}</span>}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+
+    <section class="lampsec" aria-labelledby="bases" data-sec>
+      <h2 id="bases">Lamp bases <span class="num" data-count>{bases.length}</span></h2>
+      <p class="read">The lamp’s own number is the base’s. The catalogue prices the base, the shade it shows on it, and the two together; the photograph is the lamp as the catalogue shows it, with that shade.</p>
+      <ul class="lampgrid">
+        {bases.map((m) => {
+          const ph = cardPhoto(m); const ws = withShades(m); const ex = examples(m);
+          const pr = prices(m).length ? prices(m) : prices(m, 'complete').map((p) => `${p} complete`);
+          return (
+            <li id={m.anchor} class="lampcard" data-card data-no={m.no.toLowerCase()} data-fams={famAttr(modelText(m))} data-keys={keysOf(m)}>
+              {ph ? (
+                <a class="lampcard__pic" href={ph.url ?? undefined} rel="noopener"><img src={media(ph.file)} alt={`Tiffany Studios lamp No. ${m.no}, ${baseLine(m)}`} loading="lazy" decoding="async" /></a>
+              ) : <span class="lampcard__pic lampcard__pic--none">No photograph yet</span>}
+              <span class="lampcard__no">Lamp No. <strong class="num">{m.no}</strong></span>
+              <span class="lampcard__t">{baseLine(m)}</span>
+              <span class="lampcard__m">{pr.join(', ')}</span>
+              <span class="lampcard__m">
+                {ws.length > 0 && <>With shade {ws.map((s, i) => <>{i > 0 && ', '}<a href={`#shade-${s.toLowerCase()}`}>No. {s}</a></>)}{' · '}</>}
+                {ex.length > 0 && <>{ex.length} in museums{' · '}</>}
+                {pageLink(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="noopener">{l.y}, p. {l.p}</a></>)}
+              </span>
+              {ph && <span class="lampcard__cap">{ph.caption}{ph.credit && <span class="lampcard__credit">{ph.credit}</span>}</span>}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+
+    <section class="lampsec" aria-labelledby="museums" data-sec>
+      <h2 id="museums">Tiffany lamps in museums <span class="num" data-count>{museum.length}</span></h2>
+      <p class="read">Lamps in museum collections, with the museums’ open-access photographs and the marks each museum records. Some bases carry a second, longer number as well as the model’s; the museums record what is stamped, not what each number means.</p>
+      <ul class="lampgrid">
+        {museum.map((m) => (
+          <li id={m.anchor} class="lampcard" data-card data-no={[...new Set([m.shade_no, m.base_no, ...m.stamped].filter(Boolean))].join(' ').toLowerCase()} data-fams={famAttr(musText(m))} data-keys={`${m.title} ${m.pattern ?? ''} ${m.museum} ${m.marks ?? ''} ${m.shade_no ?? ''} ${m.base_no ?? ''} museum`.toLowerCase()}>
+            {m.pic ? <a class="lampcard__pic" href={m.url} rel="noopener"><img src={media(m.pic.file)} alt={`${m.title}, Tiffany Studios, ${m.museum}`} loading="lazy" decoding="async" /></a>
+              : <span class="lampcard__pic lampcard__pic--none">No open photograph</span>}
+            <span class="lampcard__t"><a href={m.url} rel="noopener">{m.title}</a></span>
+            <span class="lampcard__m">{[m.date, m.museum].filter(Boolean).join(', ')}</span>
+            {(m.shade_no || m.base_no) && <span class="lampcard__m">{[m.shade_no && `Shade No. ${m.shade_no}`, m.base_no && `lamp No. ${m.base_no}`].filter(Boolean).join(', ')}</span>}
+            {m.marks && <span class="twmus__mk">{m.marks}</span>}
           </li>
         ))}
       </ul>
-      {museum.filter((m) => !m.pic).length > 0 && (
-        <>
-          <h3 class="lampsub">Also in museums, without an open photograph</h3>
-          <ul class="lamplist">
-            {museum.filter((m) => !m.pic).map((m) => (
-              <li id={m.anchor} class="lampitem lampitem--wide">
-                <span class="lampitem__body">
-                  <span class="lampitem__t"><a href={m.url} rel="noopener">{m.title}</a></span>
-                  <span class="lampitem__m">{[m.date, `${m.museum}, ${m.accession}`].filter(Boolean).join(', ')}{m.marks ? ` · Marked: ${m.marks}` : ''}</span>
-                </span>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
     </section>
-  )}
-
-  <section class="ahome__block" aria-labelledby="shades">
-    <h2 id="shades">Shades</h2>
-    <p class="read">Leaded shades are numbered from 1400 up, glass and Favrile-fabrique shades mostly in the 1900s. The catalogue gives each one’s design, its diameter and shape (dome, low dome, cone, dish, or an irregular edge), and its price on its own; a shade and a base were sold separately or together.</p>
-    <ul class="lamplist">
-      {shades.map((m) => {
-        const ob = onBases(m); const ex = examples(m);
-        return (
-          <li id={m.anchor} class="lampitem">
-            <span class="lampitem__no num">{m.no}</span>
-            <span class="lampitem__body">
-              <span class="lampitem__t">{shadeLine(m)}</span>
-              <span class="lampitem__m">
-                {prices(m).join(', ')}
-                {ob.length > 0 && <>{' · '}on base {ob.map((b, i) => <>{i > 0 && ', '}<a href={`#base-${b.toLowerCase()}`}>No. {b}</a></>)}</>}
-                {ex.length > 0 && <>{' · '}{ex.length} in museums</>}
-                {' · '}{pageLink(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="noopener">{l.y}, page {l.p}</a></>)}
-              </span>
-            </span>
-          </li>
-        );
-      })}
-    </ul>
-  </section>
-
-  <section class="ahome__block" aria-labelledby="bases">
-    <h2 id="bases">Lamp bases</h2>
-    <p class="read">The lamp’s own number is the base’s. The catalogue prices the base, the shade it shows on it, and the two together.</p>
-    <ul class="lamplist">
-      {bases.map((m) => {
-        const ws = withShades(m); const ex = examples(m);
-        return (
-          <li id={m.anchor} class="lampitem">
-            <span class="lampitem__no num">{m.no}</span>
-            <span class="lampitem__body">
-              <span class="lampitem__t">{baseLine(m)}</span>
-              <span class="lampitem__m">
-                {prices(m).length > 0 ? prices(m).join(', ') : prices(m, 'complete').map((p) => `${p} complete`).join(', ')}
-                {ws.length > 0 && <>{' · '}with shade {ws.map((s, i) => <>{i > 0 && ', '}<a href={`#shade-${s.toLowerCase()}`}>No. {s}</a></>)}</>}
-                {ex.length > 0 && <>{' · '}{ex.length} in museums</>}
-                {' · '}{pageLink(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="noopener">{l.y}, page {l.p}</a></>)}
-              </span>
-            </span>
-          </li>
-        );
-      })}
-    </ul>
-  </section>
+    <script type="application/json" data-museumonly set:html={JSON.stringify(museumOnly.map((x) => ({ n: x.n.toLowerCase(), k: x.k })))} />
+  </div>
 
   {marksShown.length > 0 && (
     <section class="ahome__block read" aria-labelledby="marks">
@@ -153,37 +147,52 @@ const pageLink = (m: Model) => m.entries.filter((e) => e.ptr).map((e) => ({ y: S
   <section class="ahome__block read" aria-labelledby="rely">
     <h2 id="rely">Before you rely on a number</h2>
     <p>The 1915 catalogue says the name “Tiffany Studios” will be found on every piece of its metal work, and that lamps and shades were sold separately or in any combination, so a shade on a different base from the one shown here is not itself a sign of anything. A number and the name say which model a lamp claims to be. Tags, stamped names and whole lamps have been copied for a century; a matching number is where a question starts, not its answer, and only a specialist who can see the lamp can say what it is.</p>
-    <p>These are the numbers in the two catalogues we can read in full. Tiffany made many more models, listed in price lists and catalogues not yet online, so a number missing here may still be Tiffany’s.</p>
+    <p>These are the numbers in the two catalogues we can read in full. Tiffany made many more models, listed in price lists and catalogues not yet online, so a number missing here may still be Tiffany’s. The catalogue photographs are from Tiffany Bronze Lamps (about 1915) in the <a href={SOURCES.T1915.url}>Metropolitan Museum of Art’s library</a>, public domain.</p>
   </section>
 
   <AppBox text="Photograph the tag on the shade’s rim and the underside of the base. The Advisor reads the numbers and the name, looks them up in this reference, and keeps the reading with the photo." />
 </Reference>
 
 <script>
-  type Row = { n: string; k: string; t: string; a: string; p: string; m: number };
   function wire() {
-    const root = document.querySelector<HTMLElement>('[data-lampread]');
+    const root = document.querySelector<HTMLElement>('[data-lampfind]');
     if (!root || root.dataset.wired) return;
     root.dataset.wired = '1';
-    const rows: Row[] = JSON.parse(root.querySelector('[data-index]')!.textContent!);
     const q = root.querySelector<HTMLInputElement>('[data-q]')!;
-    const list = root.querySelector<HTMLOListElement>('[data-list]')!;
     const sum = root.querySelector<HTMLElement>('[data-sum]')!;
-    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const cards = [...root.querySelectorAll<HTMLElement>('[data-card]')];
+    const secs = [...root.querySelectorAll<HTMLElement>('[data-sec]')];
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-fam]')];
+    const museumOnly: { n: string; k: string }[] = JSON.parse(root.querySelector('[data-museumonly]')!.textContent || '[]');
+    let fam = '';
     const show = () => {
-      const v = q.value.trim().toLowerCase().replace(/^no\.?\s*/, '');
-      if (!v) { list.innerHTML = ''; sum.textContent = ''; return; }
-      const digits = /^\d/.test(v);
-      const hits = rows.filter((r) => (digits ? r.n.toLowerCase() === v || r.n.toLowerCase().startsWith(v) : `${r.t} ${r.k}`.toLowerCase().includes(v)))
-        .sort((a, b) => Number(b.n.toLowerCase() === v) - Number(a.n.toLowerCase() === v));
-      const exact = hits.filter((r) => r.n.toLowerCase() === v);
-      sum.textContent = !hits.length ? 'Not in these two catalogues or on a museum lamp here. Tiffany made more models than they list; see below.'
-        : digits && exact.some((r) => !r.m) ? `No. ${exact[0].n} is in Tiffany’s catalogue.`
-        : digits && exact.length ? `No. ${exact[0].n} is not in the two catalogues, but it is stamped on a museum lamp.`
-        : `${hits.length} ${hits.length === 1 ? 'match' : 'matches'}.`;
-      list.innerHTML = hits.slice(0, 30).map((r) => `<li><a href="#${r.a}"><span class="twfind__b">${esc(r.k)} No. ${esc(r.n)}</span> <span class="twfind__w">${esc(r.t)}</span> <span class="twfind__n num">${esc(r.p)}</span></a></li>`).join('');
+      const raw = q.value.trim().toLowerCase().replace(/^no\.?\s*/, '');
+      const terms = raw.split(/\s+/).filter(Boolean);
+      const num = /^[a-z]?\d/.test(raw) ? raw : '';
+      let shown = 0;
+      for (const c of cards) {
+        const nos = (c.dataset.no || '').split(' ');
+        const hit = (!fam || (c.dataset.fams || '').split(' ').includes(fam)) && (num ? nos.some((n) => n.startsWith(num)) : terms.every((t) => c.dataset.keys!.includes(t)));
+        c.hidden = !hit; if (hit) shown++;
+      }
+      for (const s of secs) {
+        const n = s.querySelectorAll('[data-card]:not([hidden])').length;
+        s.hidden = n === 0;
+        const cnt = s.querySelector('[data-count]'); if (cnt) cnt.textContent = String(n);
+      }
+      if (!raw && !fam) { sum.textContent = ''; return; }
+      const exact = cards.filter((c) => !c.hidden && (c.dataset.no || '').split(' ').includes(num) && c.closest('[data-sec]')!.querySelector('h2')!.id !== 'museums');
+      sum.textContent = num && exact.length ? `No. ${num.toUpperCase()} is in Tiffany’s catalogue.`
+        : num && museumOnly.some((x) => x.n === num) ? `No. ${num.toUpperCase()} is not in the two catalogues, but it is stamped on a museum lamp below.`
+        : num && !shown ? 'Not in these two catalogues or on a museum lamp here. Tiffany made more models than they list.'
+        : `${shown} ${shown === 1 ? 'match' : 'matches'}.`;
     };
     q.addEventListener('input', show);
+    chips.forEach((b) => b.addEventListener('click', () => {
+      fam = b.dataset.fam || '';
+      chips.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      show();
+    }));
     const p = new URLSearchParams(location.search).get('n');
     if (p) { q.value = p; show(); }
   }

@@ -11,10 +11,11 @@ export type Entry = {
   height?: string | null; complete?: number | null; on_base?: string | null; with_shade?: string | null; shade_size?: number | null;
   shade_as_printed?: string | null; shade_price?: number | null; shape?: string | null; desk_set?: string | null; base_as_printed?: string | null;
 };
-export type Model = { id: string; no: string; kind: 'shade' | 'base'; anchor: string; entries: Entry[]; design: string | null; size: number | null; shape: string | null; museum: string[]; pic: string | null };
+export type Photo = { file: string; kind: 'catalogue' | 'museum' | 'example'; credit: string | null; licence: string | null; licence_url?: string | null; url: string | null; lamp?: string; title?: string; museum?: string | null; design?: string; exact?: boolean; sibling?: string; inferred?: boolean };
+export type Model = { id: string; no: string; kind: 'shade' | 'base'; anchor: string; entries: Entry[]; design: string | null; size: number | null; shape: string | null; museum: string[]; pic: string | null; photos: Photo[]; example: Photo | null };
 export type MuseumLamp = {
   id: string; anchor: string; title: string; museum: string; accession: string; kind: string; pattern: string | null; date: string | null;
-  medium: string | null; dimensions: string | null; marks: string | null; shade_no: string | null; base_no: string | null; url: string; pic: { file: string; credit: string | null; licence: string | null } | null;
+  medium: string | null; dimensions: string | null; marks: string | null; shade_no: string | null; base_no: string | null; stamped: string[]; url: string; pic: { file: string; credit: string | null; licence: string | null } | null;
 };
 export const SOURCES: Record<string, { year: number; title: string; url: string; page: (ptr: number) => string }> = {
   T1915: { year: 1915, title: 'Tiffany Bronze Lamps (ca. 1915)', url: 'https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1240', page: (p) => `https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/${p}` },
@@ -30,7 +31,7 @@ export function lamps() {
   const model = (r: Rec): Model => ({
     id: r.id, no: String(r.attributes.no), kind: r.attributes.kind, anchor: String(r.anchor), entries: r.attributes.entries ?? [],
     design: r.attributes.design ?? null, size: r.attributes.size ?? null, shape: r.attributes.shape ?? null, museum: r.attributes.museum ?? [],
-    pic: r.image_id ? img.get(r.image_id)?.file ?? null : null,
+    pic: r.image_id ? img.get(r.image_id)?.file ?? null : null, photos: r.attributes.photos ?? [], example: r.attributes.example ?? null,
   });
   const num = (s: string) => parseInt(s, 10) || 0;
   const shades = recs.filter((r) => r.kind === 'Tiffany shade model').map(model).sort((a, b) => num(a.no) - num(b.no) || a.no.localeCompare(b.no));
@@ -40,7 +41,7 @@ export function lamps() {
     return {
       id: r.id, anchor: String(r.anchor), title: String(a.title), museum: String(a.museum), accession: String(a.accession), kind: String(a.kind ?? ''),
       pattern: a.pattern ?? null, date: a.date ?? null, medium: a.medium ?? null, dimensions: a.dimensions ?? null, marks: a.marks ?? null,
-      shade_no: a.shade_no ?? null, base_no: a.base_no ?? null, url: String(a.url), pic: i ? { file: i.file, credit: i.credit ?? null, licence: i.licence ?? null } : null,
+      shade_no: a.shade_no ?? null, base_no: a.base_no ?? null, stamped: a.stamped ?? [], url: String(a.url), pic: i ? { file: i.file, credit: i.credit ?? null, licence: i.licence ?? null } : null,
     };
   });
   return (cache = { shades, bases, museum });
@@ -60,3 +61,35 @@ export function baseLine(m: Model) {
 /** "$90 (1915)" for each catalogue that prices it. */
 export const prices = (m: Model, field: 'price' | 'complete' = 'price') =>
   m.entries.map((e) => (e[field] != null ? `$${e[field]} (${SOURCES[e.src].year})` : e.price_text ? `${e.price_text} (${SOURCES[e.src].year})` : null)).filter(Boolean) as string[];
+
+/** The picture a card shows, and what it shows, in a few words. */
+export function cardPhoto(m: Model): { file: string; caption: string; credit: string | null; url: string | null } | null {
+  const p = m.photos[0];
+  if (p?.kind === 'museum') return { file: p.file, caption: `This number at the ${p.museum}`, credit: null, url: p.url };
+  if (p?.kind === 'example') return { file: p.file, caption: `This number${p.museum ? `, ${p.museum}` : ''}`, credit: p.credit, url: p.url };
+  if (p?.kind === 'catalogue') return { file: p.file, caption: m.kind === 'shade' ? `As pictured in 1915, on lamp No. ${p.lamp}` : 'As pictured in 1915', credit: null, url: p.url };
+  const e = m.example;
+  if (e?.sibling) return { file: e.file, caption: `Not this number: No. ${e.sibling}, the same design, as pictured in 1915`, credit: null, url: e.url };
+  if (e?.inferred) return { file: e.file, caption: `Not this number: a Tiffany shade of this kind${e.museum ? `, ${e.museum}` : ''}`, credit: /Wikimedia Commons/.test(e.credit ?? '') ? e.credit : null, url: e.url };
+  if (e) return { file: e.file, caption: `Not this number: another ${e.design ? `${e.design.replace(/ design$/i, '')} ` : ''}shade${e.museum ? `, ${e.museum}` : ''}`, credit: /Wikimedia Commons/.test(e.credit ?? '') ? e.credit : null, url: e.url };
+  return null;
+}
+/** Design families for the filter buttons: label, key, and what in a model's words marks it. */
+const FAM: [string, RegExp][] = [
+  ['Dragonfly', /dragonfly/], ['Peony', /peon/], ['Poppy', /popp/], ['Daffodil', /daffodil|narcissus/], ['Tulip', /tulip/], ['Rose', /\brose/],
+  ['Poinsettia', /poinsettia/], ['Magnolia', /magnolia/], ['Laburnum', /laburnum/], ['Dogwood', /dogwood/], ['Azalea', /azalea/], ['Bamboo', /bamboo/],
+  ['Vine leaf', /vine ?leaf/], ['Plain squares', /plain squares/], ['Geometric', /geometric/], ['Favrile-fabrique', /fabrique/], ['Iridescent glass', /iridescent/],
+  ['Zodiac', /zodiac/], ['Greek', /greek|grecian/], ['Oak leaf', /oak-? ?leaf/], ['Turtleback', /turtle-? ?back/], ['Etched metal', /etched/], ['Pine needle', /pine needle/],
+  ['Bookmark', /bookmark/], ['Abalone', /abalone/], ['Grapevine', /grape/], ['Maple leaf', /maple/], ['Pomegranate', /pomegranate/], ['Lily', /\blil(y|ies)/],
+];
+const famKey = (label: string) => label.toLowerCase().replace(/[^a-z]+/g, '-');
+export function famsOf(text: string) {
+  const t = text.toLowerCase();
+  return FAM.filter(([, re]) => re.test(t)).map(([l]) => famKey(l));
+}
+export const modelText = (m: Model) => `${m.design ?? ''} ${m.entries.map((e) => `${e.as_printed ?? ''} ${e.shade_as_printed ?? ''} ${e.desk_set ?? ''}`).join(' ')}`;
+export function designFamilies(texts: string[]) {
+  const n = new Map<string, number>();
+  for (const t of texts) for (const k of famsOf(t)) n.set(k, (n.get(k) ?? 0) + 1);
+  return FAM.map(([l]) => ({ label: l, key: famKey(l), count: n.get(famKey(l)) ?? 0 })).filter((f) => f.count >= 2).sort((a, b) => b.count - a.count);
+}
