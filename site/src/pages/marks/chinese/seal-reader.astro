@@ -1,0 +1,37 @@
+---
+// /marks/chinese/seal-reader: find a Chinese seal from a photo. The matching runs
+// in the page (src/islands/SealReader.tsx, src/lib/sealmatch.ts) over an index of
+// the seal book's read seals (public/marks/chinese/seal-reader/, built by
+// hallmark-sources/chinese/seal_reader/build_index.py). Nothing is uploaded.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import SealReader from '../../../islands/SealReader';
+import { articleLd } from '../../../lib/site';
+import seals from '../../../../public/marks/chinese/seal-reader/seals.json';
+import '../../../styles/seal-reader.css';
+
+const path = '/marks/chinese/seal-reader';
+const total = (seals as { seals: unknown[] }).seals.length;
+const people = (seals as { people: unknown[] }).people.length;
+const title = 'Chinese Seal Reader: Find a Seal From a Photo | Heirloom';
+const description = `Photograph a red seal on a Chinese painting or calligraphy and find the closest of ${total.toLocaleString('en-US')} seals and signatures of ${people.toLocaleString('en-US')} painters and collectors, with their readings and owners. Read in your browser; nothing is uploaded.`;
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Chinese seal reader', description, '2026-11-26')]}>
+  <header class="rhead">
+    <h1>Read a seal from a photo</h1>
+    <p class="rhead__lede">Seal script is hard to read even for people who read Chinese. Photograph a red seal on a painting or a piece of calligraphy, draw a box around it, and the reader finds the seals it looks most like among {total.toLocaleString('en-US')} recorded seals and signatures of {people.toLocaleString('en-US')} painters and collectors, with what each one reads and whose it is.</p>
+  </header>
+
+  <SealReader client:load {total} />
+
+  <section class="ahome__block read" aria-labelledby="how">
+    <h2 id="how">How it reads a seal</h2>
+    <p>The reader takes the red of the seal from your photo (or the dark ink of a printed one), squares it up and compares its shape with every seal in the reference: the seals photographed for the Shanghai Museum’s <span class="han">《中國書畫家印鑑款識》</span> from the works they are on. Your photo is read in the page and never leaves your device.</p>
+    <p>It works best on one seal at a time, photographed straight on, with the box drawn close to its edges. Seals stamped over writing, faded seals and seals cut at the edge of a mount match less well. A seal that is not in the book cannot be found: the results then show the closest shapes, marked as only similar.</p>
+    <h2 id="mean">What a match means</h2>
+    <p>A very close match says your seal looks like one recorded on a known work. Seals were copied as readily as signatures, and a matching seal is often how a copy was made to look right, so a match is where research starts. Heirloom never says whether a work is genuine.</p>
+    <p>Imperial seals have their own page: <a href="/marks/chinese/imperial-seals">imperial collection seals</a>.</p>
+  </section>
+
+  <AppBox text="Photograph the seals and the signature on the work. The Advisor reads them, names the people they claim and keeps the reading with the photo; it never says whether a work is genuine." />
+</Reference>

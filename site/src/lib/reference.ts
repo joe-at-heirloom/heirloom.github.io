@@ -272,6 +272,7 @@ function build(): Area[] {
         { label: 'Every reign', fold: true, links: reignLinks() },
         { label: 'Seals', links: [
           { href: '/marks/chinese/painters/', label: 'Painters and collectors', note: 'Their seals and signatures' },
+          { href: '/marks/chinese/seal-reader', label: 'Read a seal from a photo', note: 'Find a seal among 21,000 recorded' },
           { href: '/marks/chinese/imperial-seals', label: 'Imperial collection seals', note: 'The emperors’ seals on paintings' },
         ] },
       ],
