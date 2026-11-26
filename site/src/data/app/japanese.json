@@ -87,7 +87,7 @@
      "family": "crests",
      "name": "Family and imperial crests",
      "short": "Crests",
-     "rows": 25
+     "rows": 33
     }
    ],
    "caveats": [
@@ -137,7 +137,9 @@
        "text": "The 'Daimin Seika nensei' mark imitates Chinese porcelain and was used through the Edo period, from the 1630s without interruption, in steady numbers, down to modern times.",
        "sources": [
         "kyuto_bulletin9",
-        "bowes_1882"
+        "bowes_1882",
+        "franks_1880",
+        "burton_hobson_1909"
        ],
        "quote": "1630 年代から途切れることなく、一定数の使用を保ちながら近代まで使用される",
        "single_source": false
@@ -161,14 +163,18 @@
       {
        "text": "Forged Chinese year-marks such as Dai Min Sei-ka nen sei (1465-87) are found on early 17th-century Old Japan; the practice was revived for modern imitation Old Japan made for Europe and America.",
        "sources": [
-        "bowes_1882"
+        "bowes_1882",
+        "franks_1880",
+        "burton_hobson_1909"
        ],
        "quote": "Dai Min, Sei-Ka, NEN sEI",
-       "single_source": true
+       "single_source": false
       }
      ],
      "sources": [
       "bowes_1882",
+      "burton_hobson_1909",
+      "franks_1880",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin9",
       "kyuto_exh2023"
@@ -211,10 +217,11 @@
       {
        "text": "大明年製 is found on Chinese porcelain from early on but appears in Hizen marks only from the 1660-70s and becomes prominent in the 18th century.",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "chaffers_1912"
        ],
        "quote": "1660 ～ 1670 年代から使用されるようになり、18 世紀に顕著",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "In the second half of the 18th century it appears mostly on small dishes, with one example on a salt dish.",
@@ -234,11 +241,12 @@
       }
      ],
      "sources": [
+      "chaffers_1912",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin9",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "japanese"
     },
     {
@@ -386,10 +394,11 @@
       {
        "text": "大明嘉靖年製 appears in the 1650s, increases to the early 18th century and breaks off in the mid-18th; it was reused around 1800 in altered forms (e.g. 嘉製年製).",
        "sources": [
-        "kyuto_bulletin9"
+        "kyuto_bulletin9",
+        "bowes_1882"
        ],
        "quote": "1650 年代に出現し、18 世紀前半にかけて数を増やすものの 18 世紀半ばに断絶",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Cleveland records an apocryphal 大明嘉靖年製 in the foot ring of an Arita dish.",
@@ -401,11 +410,12 @@
       }
      ],
      "sources": [
+      "bowes_1882",
       "cleveland_open",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin9"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "japanese"
     },
     {
@@ -454,13 +464,15 @@
        "text": "It appears in the late 17th century and surges in number in the Genroku period.",
        "sources": [
         "kyuto_bulletin7_miyaki",
-        "kyuto_bulletin8"
+        "kyuto_bulletin8",
+        "bowes_1882"
        ],
        "quote": null,
        "single_source": false
       }
      ],
      "sources": [
+      "bowes_1882",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin8",
       "kyuto_bulletin9"
@@ -616,17 +628,28 @@
       {
        "text": "The Kyushu Ceramic Museum shows 宣明年製 and 宣明成化年製 as Arita inventions.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "chaffers_1912"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
+      },
+      {
+       "text": "Another source differs: dates the 宣明年製 pieces it knows 'of recent date' (blue and white), not the later 17th century.",
+       "sources": [
+        "chaffers_1912"
+       ],
+       "quote": "On blue and white porcelain of recent date",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "chaffers_1912",
       "kyuto_bulletin7_miyaki",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "japanese"
     },
     {
@@ -874,7 +897,9 @@
        "text": "福 in seal script appears early in Hizen marks and is used through the Edo period; the 示+畐 form falls in number after the late 17th century and returns in the 19th.",
        "sources": [
         "kyuto_bulletin9",
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "bowes_1882",
+        "franks_1880"
        ],
        "quote": "早くから現れ、江戸時代を通じて使用される",
        "single_source": false
@@ -905,7 +930,9 @@
       }
      ],
      "sources": [
+      "bowes_1882",
       "cleveland_open",
+      "franks_1880",
       "kyuto_bulletin6",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin9",
@@ -952,10 +979,11 @@
       {
        "text": "The uzu-fuku appears in the 1660s, becomes the main fuku mark from the 1670s into the 18th century, typically with three spirals; degraded forms follow.",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "bowes_1882"
        ],
        "quote": "1660 年代から出現し、1670 年代以降から 18 世紀にかけて",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "It falls out of use by the end of the 18th century, is absent in the early 19th, and a typical form returns after the Meiji era.",
@@ -983,12 +1011,13 @@
       }
      ],
      "sources": [
+      "bowes_1882",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin8",
       "kyuto_bulletin9",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -1118,9 +1147,19 @@
        ],
        "quote": "18 世紀末になって突然現れ",
        "single_source": true
+      },
+      {
+       "text": "Another source differs: Bowes no. 37 (p. 59), 'a Cup of Old Japan in the Dresden Collection', is drawn as 福 in a square with a cross in the lower box, which looks like the form the museum says first appears at the end of the 18th century. The Dresden collection was formed 1698–1711 (Bowes p. 2). This is read from an engraving; Bowes calls it only 'FUKU. Prosperity'.",
+       "sources": [
+        "bowes_1882"
+       ],
+       "quote": "No. 37.-Painted in blue upon a Cup of Old Japan in the Dresden Collection. FUKU.",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "bowes_1882",
       "kyuto_bulletin9",
       "kyuto_exh2023"
      ],
@@ -1158,7 +1197,7 @@
      "where_on_object": "inside the foot ring (高台内) on the base",
      "date_from": 1885,
      "date_to": null,
-     "date_note": "One dealer blog gives 1885 for the trademark registration; Japanese Wikipedia says the 7th and 8th generations used it and the 12th-generation company was given the right in 1919. Fuku-in-square marks from the Edo period are older.",
+     "date_note": "One dealer blog gives 1885 for the trademark registration. Fuku-in-square marks from the Edo period are older.",
      "what_it_tells": "Fuku in a (double) square, linked to Sakaida Kakiemon.",
      "cautions": "Fuku in a square is also on many unrelated Arita pieces, and most pieces with this mark are not by the Kakiemon family. The mark was disputed in the Taishō era with the Imaizumi (Imaemon) family. An auction label 'kakufuku' does not show a Kakiemon origin.",
      "facts": [
@@ -1181,6 +1220,8 @@
       }
      ],
      "sources": [
+      "bowes_1882",
+      "franks_1880",
       "kyuto_bulletin9",
       "kyuto_exh2023",
       "turuta_kakufuku"
@@ -1244,10 +1285,11 @@
       {
        "text": "Cleveland: covered bowl, early to mid 1800s, 'four characters in blue circle on base: Wealth Long Spring'.",
        "sources": [
-        "cleveland_open"
+        "cleveland_open",
+        "bowes_1882"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
       }
      ],
      "sources": [
@@ -1294,10 +1336,12 @@
       {
        "text": "竒玉宝鼎之珍 is a praise phrase characteristic of the Genroku-style period; continues to the mid-18th century and returns around 1800.",
        "sources": [
-        "kyuto_bulletin9"
+        "kyuto_bulletin9",
+        "chaffers_1912",
+        "burton_hobson_1909"
        ],
        "quote": "元禄様式の時代に特徴的な銘",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "It is commoner on Arita than on Chinese porcelain.",
@@ -1309,10 +1353,12 @@
       }
      ],
      "sources": [
+      "burton_hobson_1909",
+      "chaffers_1912",
       "kyuto_bulletin9",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -1640,7 +1686,8 @@
        "text": "A 金-like seal-script character in a double square is among the marks at the Nangawara kilns.",
        "sources": [
         "kyuto_exh2023",
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "chaffers_1912"
        ],
        "quote": null,
        "single_source": false
@@ -1652,9 +1699,20 @@
        ],
        "quote": "金",
        "single_source": true
+      },
+      {
+       "text": "Another source differs: B&H p.183 list 'Kin (gold)' as 'on Okawaji ware, 18th cent.', not Arita/Nangawara.",
+       "sources": [
+        "burton_hobson_1909"
+       ],
+       "quote": "Kin (gold): on Okawaji ware 18th cent.",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "burton_hobson_1909",
+      "chaffers_1912",
       "cleveland_open",
       "kyuto_bulletin7_miyaki",
       "kyuto_exh2023"
@@ -1694,16 +1752,18 @@
       {
        "text": "The clove-flower mark has been found only at the Tsuji kiln site at Nangawara; surviving pieces are mostly abroad.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "bowes_1882"
        ],
        "quote": "南川原窯の辻窯跡でのみ出土",
-       "single_source": true
+       "single_source": false
       }
      ],
      "sources": [
+      "bowes_1882",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -1798,7 +1858,9 @@
        "text": "The legend was on Ming porcelain made for Japan ('Shōzui'); Arita copied it from the later 18th century and it degenerated (五→王).",
        "sources": [
         "kyuto_bulletin9",
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "burton_hobson_1909",
+        "ohashi_ck9"
        ],
        "quote": "呉祥瑞",
        "single_source": false
@@ -1810,12 +1872,24 @@
        ],
        "quote": null,
        "single_source": true
+      },
+      {
+       "text": "Another source differs: takes the Go Shonsui legend at face value: cat. nos.165-166 'Made by Gorodayiu Go Shonsui about 1580-90' (p.90), the editor adding only that the date looks too early.",
+       "sources": [
+        "franks_1880"
+       ],
+       "quote": "Made by Gorodayiu Go Shonsui about 1580-90",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
       "bowes_1882",
+      "burton_hobson_1909",
+      "franks_1880",
       "kyuto_bulletin9",
-      "kyuto_exh2023"
+      "kyuto_exh2023",
+      "ohashi_ck9"
      ],
      "single_source": false,
      "decode": "contains"
@@ -1925,13 +1999,15 @@
        "text": "Other Hizen era marks: 寛延, 天明, 寛政, 文化, 文政, 天保 (a few on map dishes), and 明治年製.",
        "sources": [
         "kyuto_bulletin9",
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "bowes_1882"
        ],
        "quote": null,
        "single_source": false
       }
      ],
      "sources": [
+      "bowes_1882",
       "kyuto_bulletin9",
       "kyuto_exh2023"
      ],
@@ -2030,10 +2106,13 @@
       {
        "text": "亀山製 is a Nagasaki Kameyama-ware mark (kiln founded 1807, Bunka 4), copied at Arita.",
        "sources": [
-        "kyuto_bulletin9"
+        "kyuto_bulletin9",
+        "burton_hobson_1909",
+        "chaffers_1912",
+        "morse_1901"
        ],
        "quote": "亀山焼の銘を有田で写したもの",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Kameyama pieces also carry 崎陽住亀山製.",
@@ -2051,14 +2130,35 @@
        "quote": "文化元年（一八〇四）大神甚五兵衛が長崎市の後方にある垣根山で創始",
        "single_source": true,
        "disagreement": true
+      },
+      {
+       "text": "Another source differs: gives the founding as 1803 (abandoned 1864, revival attempt 1872), B&H p.186 the span 1803-46; the record says 1807 (Bunka 4).",
+       "sources": [
+        "chaffers_1912"
+       ],
+       "quote": "A factory opened in 1803 at Kameyama",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: 精選版日本国語大辞典 dates Kameyama ware's founding to 文化元年 (1804) by 大神甚五兵衛 at 垣根山, Nagasaki; the record (from 宮木) gives kiln founded 1807 (Bunka 4). Neither side resolved; the dictionary also says it ended with the third generation.",
+       "sources": [
+        "kotobank_kameyama"
+       ],
+       "quote": "文化元年（一八〇四）大神甚五兵衛が…創始した磁器",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "burton_hobson_1909",
+      "chaffers_1912",
       "kotobank_kameyama",
       "kyuto_bulletin9",
-      "kyuto_exh2023"
+      "kyuto_exh2023",
+      "morse_1901"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -2149,17 +2249,19 @@
       {
        "text": "The 9th-10th generation Sakaida Kakiemon used '酒柿' on non-export wares as well.",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "brinkley_1901"
        ],
        "quote": "「酒柿」",
-       "single_source": true
+       "single_source": false
       }
      ],
      "sources": [
+      "brinkley_1901",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin9"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -2254,7 +2356,11 @@
        "text": "蔵春亭三保造 is the brand mark of Hisatomi Yojibei (Masatsune) who got the exclusive export right from the Saga domain in 1841; the mark starts 1841 and ends 1861 (his death), uncertain to 1871.",
        "sources": [
         "kyuto_bulletin7_miyaki",
-        "kyuto_bulletin9"
+        "kyuto_bulletin9",
+        "brinkley_1901",
+        "franks_1880",
+        "kb_hisatomi",
+        "ck58_newsletter"
        ],
        "quote": "蔵春亭三保造",
        "single_source": false
@@ -2262,21 +2368,85 @@
       {
        "text": "The Kōgei shiryō (1877) says: when selling to foreigners, 三保 was put on each piece.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "franks_1880"
        ],
        "quote": "外国ニ鬻ク毎器ニ三保ノ二字ヲ銘ス",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Zōshuntei Miho zō is the first brand mark in Arita; the name Zōshuntei was granted by the 10th Saga lord Nabeshima Naomasa.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "ck58_newsletter"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
+      },
+      {
+       "text": "Another source differs: Bowes pp.77, 78 nos.77-79 and 105 read 三保 as 'San Ho' and date Arita pieces 'about 1820' (egg-shell c.1837 at Mikawachi), earlier than the 1841 start.",
+       "sources": [
+        "bowes_1882"
+       ],
+       "quote": "made at Arita about 1820 A.D. Zo-shun-tei San Ho tsukuru",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: says the Zoshuntei Miho mark 'began to be applied at Mikawachi about 1825' (Mikawachi, not Arita), earlier than 1841.",
+       "sources": [
+        "brinkley_1901"
+       ],
+       "quote": "a mark which began to be applied at Mikawachi, about 1825",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: B&H p.185 dates 'Zoshun tei Sampo sei' c.1830 (under Mikawaji).",
+       "sources": [
+        "burton_hobson_1909"
+       ],
+       "quote": "Zoshun tei Sampo sei c. 1830",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Old books place the Zoshuntei mark earlier than the museum does (c.1820-1830, Franks 'period Tempo about 1830') and tie it to egg-shell ware and Mikawachi as well as Arita; the museum's 1841 is the grant of the export right, not necessarily the first use.",
+       "sources": [
+        "bowes_1882",
+        "brinkley_1901",
+        "franks_1880"
+       ],
+       "quote": "Tempo, or about a.d. 1830, ... Sampo",
+       "single_source": false
+      },
+      {
+       "text": "Another source differs: Gives Hisatomi Yojibei (名 昌保) as dying in 1878 (明治11), whereas the record has the mark ending 1861 with his death (Masatsune). Possibly two generations (father/son) are being merged on one side or the other; the dictionary does not mention Masatsune.",
+       "sources": [
+        "kb_hisatomi"
+       ],
+       "quote": "明治11年6月21日死去",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: Kyoto National Museum catalogues 蔵春亭三保 base marks as Meiji (19th-20th c.), later than the record's 1841-1861(1871) span. A museum dating of individual pieces, not a statement about the mark's dates.",
+       "sources": [
+        "knm_zoshuntei_lidded"
+       ],
+       "quote": "「蔵春亭三保」の書銘あり",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "bowes_1882",
+      "brinkley_1901",
+      "burton_hobson_1909",
+      "ck58_newsletter",
+      "franks_1880",
+      "kb_hisatomi",
+      "knm_zoshuntei_lidded",
       "kyuto_bulletin7_miyaki",
       "kyuto_bulletin9",
       "kyuto_exh2023"
@@ -2329,10 +2499,13 @@
       {
        "text": "Tashiro Monzaemon received a trade licence in 1856 and used the brand 肥碟山信甫; the mark ran from 1856 to 1890 (death of his son Sakusaku, who ran the business).",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "chaffers_1912",
+        "burton_hobson_1909",
+        "ck55_newsletter"
        ],
        "quote": "肥碟山信甫とは安政３年 (1856) に佐賀藩から許可を得て貿易を開始した田代紋左衛門のブランド銘",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "The marks occur both as 造 and 製; 造 is generally older.",
@@ -2360,10 +2533,13 @@
       }
      ],
      "sources": [
+      "burton_hobson_1909",
+      "chaffers_1912",
+      "ck55_newsletter",
       "kyuto_bulletin7_miyaki",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -2409,18 +2585,22 @@
       {
        "text": "肥碟山深川 is the mark of the 8th Fukagawa Eizaemon from 1868. It ends with the founding of Kōransha in 1875, though exhibits at Philadelphia in 1876 carried 肥前深川製 and 肥碟山深川製.",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "brinkley_1901",
+        "kb_fukagawa_eizaemon"
        ],
        "quote": "八代深川栄左衛門の銘",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "The Philadelphia Museum holds pieces marked 肥前深川製, 肥碟山深川製, 肥碟山深川造 from the 1876 exhibition.",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "franks_1880",
+        "chaffers_1912"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Bowes (1882) gives 'Nichi-hi-zan Fuka-gawa seisu' and 'Hichozan Fuka-gawa seisu/tsukuru' with illustrations.",
@@ -2442,9 +2622,13 @@
      ],
      "sources": [
       "bowes_1882",
+      "brinkley_1901",
+      "chaffers_1912",
+      "franks_1880",
+      "kb_fukagawa_eizaemon",
       "kyuto_bulletin7_miyaki"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -2485,7 +2669,9 @@
        "text": "年木庵喜三 is the mark of the Fukaumi family, used from before 1862 (a dated box) until 1875; with the Kōransha orchid mark in 1875-79; after 1879 they used 精磁会社製之.",
        "sources": [
         "kyuto_bulletin7_miyaki",
-        "bowes_1882"
+        "bowes_1882",
+        "brinkley_1901",
+        "franks_1880"
        ],
        "quote": "年木庵喜三製」の銘については図７で示したように文久２年 (1862) 以前から",
        "single_source": false
@@ -2506,10 +2692,22 @@
        "quote": "Tosui-ki-an Ki-so seisu. Made by Kiso Toshikian",
        "single_source": true,
        "disagreement": true
+      },
+      {
+       "text": "Another source differs: Audsley & Bowes 1881 p.266 read the mark 'Ki-so Zo-moku-an' (造木庵/Zomokuan); Bowes 1882 corrected it to 'Toshi-ki-an'; Chaffers p.421 reads 'Nemboku an Kiso' (late 19th c., BM). Reading variants of 年木庵 only.",
+       "sources": [
+        "audsley_1881"
+       ],
+       "quote": "made by Kiso at the factory of Zomokuan",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "audsley_1881",
       "bowes_1882",
+      "brinkley_1901",
+      "franks_1880",
       "kyuto_bulletin7_miyaki"
      ],
      "single_source": false,
@@ -2555,10 +2753,14 @@
       {
        "text": "Kōransha was founded in 1875 by the Fukagawa, Tsuji and Fukaumi kilns; each marked its own wares with the orchid and its own name.",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "franks_1880",
+        "brinkley_1901",
+        "kb_fukagawa_eizaemon",
+        "kb_fukaumi_sumi"
        ],
        "quote": "蘭のマークとそれぞれの名前をいれる",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Orchid + 深川造/製 is dated 1875 and seen to 1887; orchid + 辻製 and orchid + 喜三製 limited to 1875-79 (when Tsuji and Fukaumi left to found 精磁会社).",
@@ -2571,26 +2773,40 @@
       {
        "text": "The Kyushu Ceramic Museum shows the orchid mark as Kōransha's (Arita) mark.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "brinkley_1901"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
       },
       {
-       "text": "Kōransha: 1875 joint-stock society; 1879 reorganised as a partnership company; 1970 joint-stock company (Japanese Wikipedia).",
+       "text": "Kōransha began in 1875 and was reorganised as a company in 1879.",
        "sources": [
         "koransha_official"
        ],
        "quote": null,
        "single_source": true
+      },
+      {
+       "text": "Another source differs: dates the founding of the Koran-sha to 1876 (the museum says 1875).",
+       "sources": [
+        "brinkley_1901"
+       ],
+       "quote": "In 1876 he took the lead in establishing a keramic society called the Koran-sha",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "brinkley_1901",
+      "franks_1880",
+      "kb_fukagawa_eizaemon",
+      "kb_fukaumi_sumi",
       "koransha_official",
       "kyuto_bulletin7_miyaki",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -2632,7 +2848,9 @@
        "text": "The V&A vase has 大日本三河内製 in blue (fired black on the unglazed ring) and around it in red '於香蘭社 (orchid) 西山製'; shown at Philadelphia 1876, bought by V&A 1877, c.1875.",
        "sources": [
         "kyuto_bulletin7_miyaki",
-        "bowes_1882"
+        "bowes_1882",
+        "franks_1880",
+        "chaffers_1912"
        ],
        "quote": "於香蘭社",
        "single_source": false
@@ -2644,10 +2862,21 @@
        ],
        "quote": "Dai Nip-pon. MI-KAWA-CHI SEI",
        "single_source": true
+      },
+      {
+       "text": "Another source differs: reads 西山 as 'Seizan' not Nishiyama, and calls the 大日本三河内製 ring 'impressed', not blue.",
+       "sources": [
+        "franks_1880"
+       ],
+       "quote": "Impressed, and forming a ring round the base, Dai Ni-pon Mi-kawa-ji sei",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
       "bowes_1882",
+      "chaffers_1912",
+      "franks_1880",
       "kyuto_bulletin7_miyaki"
      ],
      "single_source": false,
@@ -2692,10 +2921,12 @@
       {
        "text": "Tsuji Katsuzō and the Fukaumi brothers left Kōransha and founded 精磁会社 in 1879; they then used marks like 精磁会社製之.",
        "sources": [
-        "kyuto_bulletin7_miyaki"
+        "kyuto_bulletin7_miyaki",
+        "brinkley_1901",
+        "kb_fukaumi_sumi"
        ],
        "quote": "明治 12 年以降は「精磁会社製之」等の銘を用いた",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "A collector blog dates the Seiji Kaisha mark to 1879-97, used for several years on lesser wares by later decorators.",
@@ -2704,13 +2935,24 @@
        ],
        "quote": null,
        "single_source": true
+      },
+      {
+       "text": "Another source differs: gives the secession as 1880 (the museum says 1879).",
+       "sources": [
+        "brinkley_1901"
+       ],
+       "quote": "In 1880 Tsuji seceded from the Koran-sha",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "brinkley_1901",
+      "kb_fukaumi_sumi",
       "kyuto_bulletin7_miyaki",
       "modernjp_marks_blog"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -2747,7 +2989,7 @@
      "where_on_object": "inside the foot ring (高台内) on the base",
      "date_from": 1894,
      "date_to": null,
-     "date_note": "The company was founded in January 1894 (Japanese Wikipedia; the Ministry of Land, Infrastructure, Transport and Tourism); the sources do not say when the Fuji emblem was first used.",
+     "date_note": "The company was founded in January 1894 (the company's profile and the Ministry of Land, Infrastructure, Transport and Tourism); the sources do not say when the Fuji emblem was first used.",
      "what_it_tells": "Name of the firm, with the Fuji-flowing-water emblem.",
      "cautions": "A different company (Kōransha, Fukagawa Eizaemon) used 深川造 earlier, so do not confuse the two. The firm exhibited at Paris in 1900 as 'Fukagawa Porcelain'.",
      "facts": [
@@ -2756,7 +2998,9 @@
        "sources": [
         "mlit_fukagawa",
         "fukagawa_official",
-        "newswitch_fukagawa"
+        "newswitch_fukagawa",
+        "kb_fukagawa_chuji",
+        "kb_fukagawa_seiji_corp"
        ],
        "quote": null,
        "single_source": false
@@ -2789,6 +3033,8 @@
      "sources": [
       "fukagawa_home",
       "fukagawa_official",
+      "kb_fukagawa_chuji",
+      "kb_fukagawa_seiji_corp",
       "kyuto_exh2023",
       "mlit_fukagawa",
       "modernjp_marks_blog",
@@ -2832,10 +3078,13 @@
       {
        "text": "Kōransha is the Arita firm founded in 1875 and reorganised in 1879 as 香蘭社合名会社.",
        "sources": [
-        "koransha_official"
+        "koransha_official",
+        "franks_1880",
+        "kb_fukagawa_eizaemon",
+        "kb_heibonsha_toji"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "The museum's modern examples show the orchid on Kōransha wares.",
@@ -2852,13 +3101,26 @@
        ],
        "quote": "明治12年（1879年）7月10日",
        "single_source": true
+      },
+      {
+       "text": "Another source differs: dates the formation 1876.",
+       "sources": [
+        "brinkley_1901"
+       ],
+       "quote": "In 1876 he took the lead in establishing a keramic society called the Koran-sha",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
+      "brinkley_1901",
+      "franks_1880",
+      "kb_fukagawa_eizaemon",
+      "kb_heibonsha_toji",
       "koransha_official",
       "kyuto_exh2023"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -2903,7 +3165,10 @@
        "text": "Mikawachi marks of the Meiji export wares include 三川内, 大日本三川内, 三川内福本造 and 平戸産枝栄造; they identify Mikawachi against Arita.",
        "sources": [
         "kyuto_bulletin7_miyaki",
-        "bowes_1882"
+        "bowes_1882",
+        "franks_1880",
+        "chaffers_1912",
+        "burton_hobson_1909"
        ],
        "quote": null,
        "single_source": false
@@ -2919,6 +3184,9 @@
      ],
      "sources": [
       "bowes_1882",
+      "burton_hobson_1909",
+      "chaffers_1912",
+      "franks_1880",
       "kyuto_bulletin7_miyaki"
      ],
      "single_source": false,
@@ -2975,17 +3243,21 @@
       {
        "text": "Bowes (1882) no.87-88: 'Hira-to zo / sei, Mi-kawa-chi'.",
        "sources": [
-        "bowes_1882"
+        "bowes_1882",
+        "chaffers_1912",
+        "burton_hobson_1909"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
       }
      ],
      "sources": [
       "bowes_1882",
+      "burton_hobson_1909",
+      "chaffers_1912",
       "kyuto_bulletin7_miyaki"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -3033,22 +3305,39 @@
       {
        "text": "Bowes (1882, p.38) calls the comb pattern the 'Kushi-de mark' of Ohokawachi, painted in blue.",
        "sources": [
-        "bowes_1882"
+        "bowes_1882",
+        "franks_1880",
+        "brinkley_1901",
+        "chaffers_1912",
+        "burton_hobson_1909"
        ],
        "quote": "KUSHI-DE MARK",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "The Kyushu Ceramic Museum shows Nabeshima (1690-1720s) with no mark, like palace-ware.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "brinkley_1901"
        ],
        "quote": "鍋島焼の裏面",
+       "single_source": false
+      },
+      {
+       "text": "A comb-tooth band is not proof of Nabeshima: Brinkley warns it is also found on some old Kutani ware.",
+       "sources": [
+        "brinkley_1901"
+       ],
+       "quote": "being found sometimes on old Kutani ware",
        "single_source": true
       }
      ],
      "sources": [
       "bowes_1882",
+      "brinkley_1901",
+      "burton_hobson_1909",
+      "chaffers_1912",
+      "franks_1880",
       "kyuto_exh2023"
      ],
      "single_source": false,
@@ -3090,10 +3379,11 @@
       {
        "text": "The Kyushu museum shows 今右衛門 as the mark of the Imaemon kiln, Arita.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "brinkley_1901"
        ],
        "quote": "今右衛門",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Reported dispute: in the Taishō era the Imaizumi family sued over the 角福 mark, later withdrew and called its work Imaemon ware.",
@@ -3105,10 +3395,11 @@
       }
      ],
      "sources": [
+      "brinkley_1901",
       "kyuto_exh2023",
       "turuta_kakufuku"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -3209,16 +3500,22 @@
       {
        "text": "In the early Shōwa period 有田焼 first begins to be used as a mark; earlier the wares were called Imari ware.",
        "sources": [
-        "kyuto_exh2023"
+        "kyuto_exh2023",
+        "franks_1880",
+        "chaffers_1912",
+        "morse_1901"
        ],
        "quote": "ついに産地の名前を冠した「有田焼」が銘としても使われるようになりました",
-       "single_source": true
+       "single_source": false
       }
      ],
      "sources": [
-      "kyuto_exh2023"
+      "chaffers_1912",
+      "franks_1880",
+      "kyuto_exh2023",
+      "morse_1901"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "contains"
     },
     {
@@ -3312,7 +3609,7 @@
      "date_to": null,
      "date_note": "Used on genuine Kagoshima wares before 1868 and then, as a trade convention, on export and imitation Satsuma from the 1870s until the present; the crest alone gives no date.",
      "what_it_tells": "That the maker or seller wanted the piece taken as Satsuma ware. On pre-Meiji Kagoshima work it points to the domain's patronage; on Meiji and later pieces it is a style label.",
-     "cautions": "It does not show age or origin. Bowes (1882) says marks were very seldom used in Satsuma itself and the crest appeared only in rare instances. By the Meiji export boom the crest was painted on pieces from Kyoto, Osaka, Tokyo, Yokohama (Ōta) and Seto/Nagoya. Gotheborg records the Shimazu crest with Satsuma stamps on mass-produced pieces made about 1947 for sale to American servicemen and on 1970s-80s imports. Jahn, cited by Wikipedia, says the crest appears regardless of a piece's age or whether it is genuine.",
+     "cautions": "It does not show age or origin. Bowes (1882) says marks were very seldom used in Satsuma itself and the crest appeared only in rare instances. By the Meiji export boom the crest was painted on pieces from Kyoto, Osaka, Tokyo, Yokohama (Ōta) and Seto/Nagoya. Gotheborg records the Shimazu crest with Satsuma stamps on mass-produced pieces made about 1947 for sale to American servicemen and on 1970s–80s imports.",
      "facts": [
       {
        "text": "Bowes (1882) engraves the crest of the Prince of Satsuma, 'in slight relief, in gold and red', from a tea bowl of choice faience, where it occupies the position of the maker's mark.",
@@ -3395,7 +3692,7 @@
      "date_to": null,
      "date_note": "As a printed or painted export label it belongs to the Meiji export boom (after 1868) and later; Gotheborg dates examples from c.1880 to the 1980s.",
      "what_it_tells": "The maker claims the Satsuma style (crackled ivory body, enamel and gilt). Not a place of manufacture.",
-     "cautions": "Pieces made at Awata and other Kyoto kilns, Osaka, Tokyo, Yokohama and Seto were sold as Satsuma (Jahn via Wikipedia; Morse 1901). The stamp 'Satsuma' in Latin or hiragana letters is twentieth-century. Gotheborg's list notes the last character may appear abbreviated.",
+     "cautions": "Pieces made at Awata and other Kyoto kilns, Osaka, Tokyo, Yokohama and Seto were sold as Satsuma (Morse 1901). The stamp 'Satsuma' in Latin or hiragana letters is twentieth-century. Gotheborg's list notes the last character may appear abbreviated.",
      "facts": [
       {
        "text": "Bowes records 'Satsuma' within a signed mark on a red-painted vase of 1875 ('Nippon, Nakajima seisu, Satsuma'), Satsuma being named as the style.",
@@ -3546,7 +3843,7 @@
      "where_on_object": "base",
      "date_from": 1868,
      "date_to": 1912,
-     "date_note": "The prefix is seen on Meiji export wares, and Bowes (1882) already has it on Kyoto pieces (for example 'Dai Nippon, Dohachi seisu', 1875). Wikipedia and Nilsson say Meiji, and later pieces keep it.",
+     "date_note": "The prefix is seen on Meiji export wares, and Bowes (1882) already has it on Kyoto pieces (for example 'Dai Nippon, Dohachi seisu', 1875). Gotheborg dates it to Meiji, and later pieces keep it.",
      "what_it_tells": "The piece was made for export in the Meiji period or later. The prefix is a country label, not a maker.",
      "cautions": "Later wares copy the whole formula, so the prefix cannot date a piece closer than 'Meiji or later'. A television appraiser declared short forms such as 日本錦光山造 fake (see kinkozan-dai-nippon-kyoto).",
      "facts": [
@@ -4459,7 +4756,7 @@
      "where_on_object": "base",
      "date_from": 1872,
      "date_to": 1922,
-     "date_note": "English Wikipedia says exports began in 1872; the 9th Yohei (1878–1922) is the maker of the export Satsuma that carries the name, and Kodansha dates him 1856–1922.",
+     "date_note": "The 9th Yohei (1878–1922) is the maker of the export Satsuma that carries the name; Kodansha dates him 1856–1922.",
      "what_it_tells": "Awata decorator who sold Satsuma-style wares to the West, working beside the 6th Kinkōzan.",
      "cautions": "Eight earlier Taizan Yohei existed; the 8th (d.1878) also made wares for Europe and America.",
      "facts": [
@@ -4472,7 +4769,7 @@
        "single_source": true
       },
       {
-       "text": "English Wikipedia lists Taizan/Obi-ya as c.1673–1922, exporting from 1872.",
+       "text": "Taizan (Obiya) made export wares from 1872.",
        "sources": [
         "maezaki_2012"
        ],
@@ -4821,7 +5118,7 @@
      "where_on_object": "base",
      "date_from": null,
      "date_to": null,
-     "date_note": "Meiji (Cefiro, Wikipedia); no establishment date is confirmed, and Kyoto Tōjiki Gōshi Kaisha is a Japanese commercial form of the 1890s onward.",
+     "date_note": "Meiji (Cefiro); no establishment date is confirmed, and the company form gōshi kaisha (合資会社) dates from the 1890s on.",
      "what_it_tells": "A Kyoto exporter-decorator; individual artists (Seikōzan, Ryōzan, Hōzan) worked under it.",
      "cautions": "The identification of Yasuda with 京都陶磁器合資会社 rests on comparing a display-list entry with collector pages, not on a company history. The firm's dates are not established.",
      "facts": [
@@ -4834,7 +5131,7 @@
        "single_source": true
       },
       {
-       "text": "Wikipedia (en) lists Yasuda as 'Yasuda Kyoto Tokiji Goshigaisha', Meiji period; Cefiro shows the full company name plus a trademark on a vase.",
+       "text": "Cefiro shows the full company name, Yasuda Kyoto Tōjiki Gōshi Kaisha, with a trademark on a Meiji-period vase.",
        "sources": [
         "cefiro_satsuma"
        ],
@@ -5055,11 +5352,11 @@
      ],
      "technique": "gilt painted",
      "where_on_object": "base",
-     "date_from": 1880,
-     "date_to": 1927,
-     "date_note": "English Wikipedia gives c.1880–1927, resumed after 1945.",
+     "date_from": null,
+     "date_to": null,
+     "date_note": null,
      "what_it_tells": "A Kyoto Satsuma studio.",
-     "cautions": "There was post-1945 production under the same name; the place comes from English Wikipedia only.",
+     "cautions": "There was post-1945 production under the same name.",
      "facts": [
       {
        "text": "Display list: 越田製造 with 祥山 on a pierced fan-shaped jar and 越田 / 祥山 on a box.",
@@ -5443,9 +5740,9 @@
      "where_on_object": "base",
      "date_from": 1827,
      "date_to": null,
-     "date_note": "Hōzen was invited to the Kishu Nishihama garden kiln in 1827 and given gold and silver seals 河濱支流 and 永樂, and the family took the name Eiraku formally only in Meiji (Japanese Wikipedia).",
+     "date_note": "Hōzen was invited to the Kishū Nishihama garden kiln in 1827 and given gold and silver seals, 河濱支流 and 永樂.",
      "what_it_tells": "A Kyoto kiln of the Zengorō house; the Eiraku name begins with Hōzen. Wazen (和全, 1823–1896) moved to Kaga (Yamashiro) in 1866 and made Kutani-style wares.",
-     "cautions": "Bowes (1882) attributes the 永樂 seal to Ryōzen, the 10th head, as a reward from the Tokugawa. Morse, the Japanese encyclopedia and Japanese Wikipedia say it was Hōzen (1827, Kishu Tokugawa). Eiraku wares were widely imitated: Bowes's Seikōzan teapot is a copy in Eiraku style, and pieces reading 'Yeiraku made in Kutani' (Bowes) were made by a family member who settled in Kaga, not at the Kyoto kiln.",
+     "cautions": "Bowes (1882) attributes the 永樂 seal to Ryōzen, the 10th head, as a reward from the Tokugawa; Morse and the Japanese encyclopedia say it was Hōzen (1827, Kishū Tokugawa). Eiraku wares were widely imitated: Bowes's Seikōzan teapot is a copy in Eiraku style, and pieces reading 'Yeiraku made in Kutani' (Bowes) were made by a family member who settled in Kaga, not at the Kyoto kiln.",
      "facts": [
       {
        "text": "Heibonsha: Hōzen was granted gold and silver seals 〈河浜支流〉〈永楽〉 by the Kishu Tokugawa house (garden kiln of Nishihama, 1827).",
@@ -8708,10 +9005,11 @@
       {
        "text": "Section 6 of the 1890 Tariff Act required that from 1 March 1891 articles of foreign manufacture be marked 'in legible English words' to show country of origin, or be refused entry.",
        "sources": [
-        "us_stat_26_567"
+        "us_stat_26_567",
+        "vanpatten_nippon4_1997"
        ],
        "quote": "in legible English words",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "NIPPON began to appear on bases in 1891. In 1921 US Customs stopped accepting Nippon, so 'Japan' was required.",
@@ -8738,6 +9036,22 @@
        ],
        "quote": "BANKO. NIPPON",
        "single_source": true
+      },
+      {
+       "text": "A US Treasury Department ruling, effective 1 October 1921, held that 'Nippon' is a Japanese word whose English equivalent is 'Japan', so from that date goods had to be marked Japan (reported by Van Patten, who does not give the Treasury Decision number).",
+       "sources": [
+        "vanpatten_nippon4_1997"
+       ],
+       "quote": "as of October 1, 1921, that Nippon was a Japanese word",
+       "single_source": true
+      },
+      {
+       "text": "Noritake's own company history says 'Nippon' appeared in its backstamps from 1891 until 'Japan' replaced it in 1921.",
+       "sources": [
+        "vanpatten_noritake_1984"
+       ],
+       "quote": "until “Japan” replaced it in 1921",
+       "single_source": true
       }
      ],
      "sources": [
@@ -8746,7 +9060,9 @@
       "cycookery_koransha",
       "gotheborg_mckinley",
       "gotheborg_nippon",
-      "us_stat_26_567"
+      "us_stat_26_567",
+      "vanpatten_nippon4_1997",
+      "vanpatten_noritake_1984"
      ],
      "single_source": false,
      "decode": "words"
@@ -8795,9 +9111,18 @@
       {
        "text": "Noritake backstamps after 1921 state 'Japan' or 'Made in Japan'.",
        "sources": [
-        "gotheborg_noritake"
+        "gotheborg_noritake",
+        "vanpatten_noritake_1984"
        ],
        "quote": "Japan",
+       "single_source": false
+      },
+      {
+       "text": "Treasury Department ruling of 1 October 1921: 'Nippon' not acceptable as the English country name; 'Japan' required from that date.",
+       "sources": [
+        "vanpatten_nippon4_1997"
+       ],
+       "quote": "as of October 1, 1921, that Nippon was a Japanese word",
        "single_source": true
       }
      ],
@@ -8805,7 +9130,9 @@
       "cycookery_koransha",
       "gotheborg_awaji",
       "gotheborg_nippon",
-      "gotheborg_noritake"
+      "gotheborg_noritake",
+      "vanpatten_nippon4_1997",
+      "vanpatten_noritake_1984"
      ],
      "single_source": false,
      "decode": "alone"
@@ -8941,10 +9268,11 @@
       {
        "text": "US Bureau of Customs ruling in the late 1940s allowed 'Made in Occupied Japan', 'Made in Japan', 'Japan' or 'Occupied Japan'; first shipment reached New York 10 Aug 1948.",
        "sources": [
-        "deseret_2006"
+        "deseret_2006",
+        "vanpatten_noritake_1984"
        ],
        "quote": "August 10, 1948",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Collector sources say half of exports had to be marked and that pieces of pairs may be unmarked; fakes occur.",
@@ -8972,6 +9300,23 @@
        "quote": "will be marked, stamped, branded or labeled",
        "single_source": true,
        "disagreement": true
+      },
+      {
+       "text": "Another source differs: Lefton (Chicago importer) says its items made 1945 to 1953 were labelled 'Made in Occupied Japan' as the law required, a wider span than March 1947 to December 1949 obligatory / April 1952 end.",
+       "sources": [
+        "lehner_1988"
+       ],
+       "quote": "Items made between 1945 and 1953",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Noritake says its own 'Made in Occupied Japan' backstamp was not used until August 1947, when export trade reopened, and ran to 1952; its first two years' US-military wares were sold under the name Rose China.",
+       "sources": [
+        "vanpatten_noritake_1984"
+       ],
+       "quote": "not used by them until August 1947",
+       "single_source": true
       }
      ],
      "sources": [
@@ -8982,8 +9327,10 @@
       "gotheborg_occupied",
       "gotheborg_oj",
       "isotope_news_2026",
+      "lehner_1988",
       "scapin_1535",
-      "scapin_2061"
+      "scapin_2061",
+      "vanpatten_noritake_1984"
      ],
      "single_source": false,
      "decode": "words"
@@ -9021,10 +9368,11 @@
       {
        "text": "Collector reference: paper labels were used and may have fallen off, so the lack of NIPPON does not prove a later date.",
        "sources": [
-        "gotheborg_nippon"
+        "gotheborg_nippon",
+        "vanpatten_nippon4_1997"
        ],
        "quote": "paper labels",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Occupied Japan marking could be a paper label, cloth label, engraved, handwritten or stamped.",
@@ -9039,7 +9387,8 @@
      "sources": [
       "appraizely_oj",
       "gotheborg_nippon",
-      "gotheborg_occupied"
+      "gotheborg_occupied",
+      "vanpatten_nippon4_1997"
      ],
      "single_source": false,
      "decode": "never"
@@ -9202,10 +9551,19 @@
        ],
        "quote": "Meito China",
        "single_source": true
+      },
+      {
+       "text": "Kotaro Asukai (the Asukai Kotero of the record) is listed among the six founders of Noritake (Nippon Toki) in 1904, which fits the claim that the founder of Nagoya Seito Sho had come from Noritake. The book does not mention Nagoya Seito Sho or Meito.",
+       "sources": [
+        "vanpatten_noritake_1984"
+       ],
+       "quote": "and Kotaro Asukai.",
+       "single_source": true
       }
      ],
      "sources": [
-      "gotheborg_20c"
+      "gotheborg_20c",
+      "vanpatten_noritake_1984"
      ],
      "single_source": true,
      "decode": "never"
@@ -9498,10 +9856,20 @@
        ],
        "quote": "Chikaramachi",
        "single_source": true
+      },
+      {
+       "text": "Another source differs: Hinode Shokai in Van Patten is a New York retail firm opened by Morimura Yutaka in 1877 (238 6th Street) and closed 1879, not a Japan-side renaming after 1946. Likely a different, earlier firm sharing the name, so the record should not tie its Hinode Shokai to Morimura Gumi without a source.",
+       "sources": [
+        "vanpatten_noritake_1984"
+       ],
+       "quote": "Hinode Shokai, at 238 6th Street",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
-      "gotheborg_20c"
+      "gotheborg_20c",
+      "vanpatten_noritake_1984"
      ],
      "single_source": true,
      "decode": "contains"
@@ -25014,8 +25382,8 @@
      "technique": "stamped",
      "where_on_object": "base",
      "date_from": 1894,
-     "date_to": 1936,
-     "date_note": "Kuhn & Komor was founded in 1894 (Wikipedia, as a cross-check only). The Wikipedia article gives the Kuhn business in Yokohama from 1869 and a closure around 1936; these dates are not independently confirmed.",
+     "date_to": 1923,
+     "date_note": "Kuhn & Komor was founded in 1894 and traded in Yokohama until 1923 (Jankowski); the shop was probably destroyed in the 1923 earthquake.",
      "what_it_tells": "Another foreign Yokohama retailer; with Japanese marks on some pieces.",
      "cautions": "The sources for the stamp are sales listings. The founding year differs between 1869 (Kuhn & Co.) and 1894 (Kuhn & Komor).",
      "facts": [
@@ -25029,7 +25397,7 @@
        "single_source": false
       },
       {
-       "text": "Another source differs: Date range: the Yokohama company traded until 1923 under Julius Kuhn and the shop was probably destroyed in the 1923 earthquake; Komor & Komor was the Hong Kong successor name from 1916. The record's 1936 end (from Wikipedia) is not supported here.",
+       "text": "The Yokohama company traded until 1923 under Julius Kuhn, and the shop was probably destroyed in the 1923 earthquake; Komor & Komor was the Hong Kong successor name from 1916.",
        "sources": [
         "jankowski_kk"
        ],
@@ -25609,6 +25977,100 @@
      "decode": "never"
     },
     {
+     "id": "kikusui",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "菊水",
+     "variants": [],
+     "kana": "きくすい",
+     "romaji": "Kikusui",
+     "romaji_plain": "Kikusui",
+     "other_spellings": [
+      "Kiku-sui",
+      "Kikusui mon",
+      "Chrysanthemum on water",
+      "Kusunoki crest"
+     ],
+     "meaning": "Chrysanthemum on flowing water; the crest famous as the Kusunoki family's",
+     "kind": "crest",
+     "device": "A chrysanthemum over flowing water",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "crest (mon) as painted, lacquered, cast, woven or embroidered",
+     "where_on_object": "sword mounts, flags, lacquer",
+     "date_from": null,
+     "date_to": null,
+     "date_note": "Used as a decorative motif from the Kamakura period; known as the Kusunoki crest since the 14th century.",
+     "what_it_tells": "Points to the Kusunoki crest or to loyalist sentiment, not to a particular owner.",
+     "cautions": "Not an imperial crest: it is a family or loyalist crest that happens to use the chrysanthemum. The Kikusui brand names (sake etc.) also use it. The origin stories (Go-Daigo's gift) are not confirmed.",
+     "facts": [
+      {
+       "text": "菊水 is a design of a chrysanthemum floating on flowing water; as a crest it is famous as the Kusunoki family's.",
+       "sources": [
+        "kb_kikusui",
+        "jaanus_kikusui"
+       ],
+       "quote": "楠木氏の家紋として有名",
+       "single_source": false
+      },
+      {
+       "text": "The motif came from China, where a chrysanthemum on a stream symbolised long life; it reached Japan in the Kamakura period (mirrors, lacquer, dyed textiles) and has been best known since the 14th century as the Kusunoki crest pattern; in the Edo period it was also used on kosode and Noh robes.",
+       "sources": [
+        "jaanus_kikusui"
+       ],
+       "quote": "(JAANUS entry Kikusuimon; summary, not a verbatim quote)",
+       "single_source": true
+      },
+      {
+       "text": "The Taiheiki is cited for banners that all bore the kikusui crest.",
+       "sources": [
+        "kb_kikusui"
+       ],
+       "quote": "旗共は、皆菊水の紋也",
+       "single_source": true
+      }
+     ],
+     "sources": [
+      "jaanus_kikusui",
+      "kb_kikusui"
+     ],
+     "single_source": false,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "meaning",
+       "from": "Chrysanthemum on flowing water; the crest of Kusunoki Masashige (loyalist hero)",
+       "to": "Chrysanthemum on flowing water; the crest famous as the Kusunoki family's",
+       "why": "Both sources say the Kusunoki family (氏), not Masashige by name; 'loyalist hero' is not in either.",
+       "sources": [
+        "kb_kikusui",
+        "jaanus_kikusui"
+       ]
+      },
+      {
+       "field": "device",
+       "from": "A single chrysanthemum (often half-opened, with 16 petals) over wavy stream lines",
+       "to": "A chrysanthemum over flowing water",
+       "why": "Neither source gives petal count or 'half-opened'.",
+       "sources": [
+        "kb_kikusui",
+        "jaanus_kikusui"
+       ]
+      },
+      {
+       "field": "date_note",
+       "from": "Associated with Kusunoki Masashige (14th century); the sources give no dates for use on objects.",
+       "to": "Used as a decorative motif from the Kamakura period; known as the Kusunoki crest since the 14th century.",
+       "why": "JAANUS gives the Kamakura arrival and the 14th-century Kusunoki association.",
+       "sources": [
+        "jaanus_kikusui"
+       ]
+      }
+     ],
+     "held_confirmed": true
+    },
+    {
      "id": "hinomaru",
      "group": "kamon",
      "family": "crests",
@@ -25706,6 +26168,91 @@
      "decode": "never"
     },
     {
+     "id": "kikumon-gunyo",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "菊花紋章（軍用）",
+     "variants": [],
+     "kana": "きっかもんしょう",
+     "romaji": "Kikka monshō (gunyō)",
+     "romaji_plain": "Kikka monsho (gunyo)",
+     "other_spellings": [
+      "Chrysanthemum seal",
+      "Imperial chrysanthemum on rifle"
+     ],
+     "meaning": "The chrysanthemum crest on Army and Navy arms and ships",
+     "kind": "crest",
+     "device": "A chrysanthemum stamped on the receiver (or barrel) of Army rifles, and a large gilt chrysanthemum shield on the bow of major Navy ships",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "stamped, cut or cast",
+     "where_on_object": "rifle receiver, ship bow",
+     "date_from": null,
+     "date_to": null,
+     "date_note": "Meiji army rifles (Murata onward) to the end of the Imperial forces; the source gives no exact span.",
+     "what_it_tells": "A chrysanthemum on a rifle marks Army ownership, not presentation or provenance, and is often removed or overstamped after disposal.",
+     "cautions": "The crest was usually overstamped when rifles left army hands, and often partly ground off on rifles surrendered after 1945.",
+     "facts": [
+      {
+       "text": "The imperial chrysanthemum was stamped on the receiver of rifles made for the Imperial Japanese Army; on Murata and Arisaka rifles it is stamped on the barrel or receiver, marking the emperor's ownership.",
+       "sources": [
+        "oldmil_markings",
+        "militaryrifles_murata"
+       ],
+       "quote": "stamped on the receiver of rifles",
+       "single_source": false
+      },
+      {
+       "text": "When rifles left army hands (sold abroad, given to schools) the chrysanthemum was typically overstamped with an arsenal mark, and it was often partly ground off on rifles surrendered after 1945; captured rifles usually keep it intact.",
+       "sources": [
+        "oldmil_markings"
+       ],
+       "quote": "overstamped with the Koishikawa",
+       "single_source": true
+      },
+      {
+       "text": "A golden chrysanthemum-shaped shield over six feet across projected from the bow of the most important Navy ships (battleships, aircraft carriers, cruisers).",
+       "sources": [
+        "pbs_yamato"
+       ],
+       "quote": "visible for miles",
+       "single_source": true
+      }
+     ],
+     "sources": [
+      "militaryrifles_murata",
+      "oldmil_markings",
+      "pbs_yamato"
+     ],
+     "single_source": false,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "device",
+       "from": "A gold chrysanthemum cut into the receiver of rifles (Murata rifle onward, including the Type 38 Arisaka) or fixed on the bow of warships",
+       "to": "A chrysanthemum stamped on the receiver (or barrel) of Army rifles, and a large gilt chrysanthemum shield on the bow of major Navy ships",
+       "why": "Sources say stamped, not 'gold' or 'cut'; the gilt applies to the ship's bow shield; bow emblem confined to battleships, carriers and cruisers.",
+       "sources": [
+        "oldmil_markings",
+        "militaryrifles_murata",
+        "pbs_yamato"
+       ]
+      },
+      {
+       "field": "what_it_tells",
+       "from": "A rifle receiver or bow crest says the piece was an official military arm of the Meiji-Shōwa state; the crest was ground off or punched on rifles sold outside the military.",
+       "to": "A chrysanthemum on a rifle marks Army ownership, not presentation or provenance, and is often removed or overstamped after disposal.",
+       "why": "The stamp marks the emperor's/army's ownership; overstamped when the rifle left service.",
+       "sources": [
+        "oldmil_markings",
+        "militaryrifles_murata"
+       ]
+      }
+     ],
+     "held_confirmed": true
+    },
+    {
      "id": "kirimon-shihai",
      "group": "kamon",
      "family": "crests",
@@ -25736,9 +26283,9 @@
      "where_on_object": "inside or outside the cup",
      "date_from": null,
      "date_to": null,
-     "date_note": "The Edo-Tokyo Museum holds one catalogued as 19th-20th century. A summary of another record dates a paulownia cup to Meiji 28 (1895), given in the Sino-Japanese War.",
+     "date_note": "The Edo-Tokyo Museum catalogues one as 19th–20th century.",
      "what_it_tells": "A crested cup of this kind was received from the imperial house or a ministry as a reward (military service, exhibition, public work); the paperwork or its box would say for what. The paulownia or chrysanthemum shows the channel, not the occasion.",
-     "cautions": "Commemorative cups are mass produced for veterans' groups and can bear the crest too, so look for an inscription, a box and a record of the award. The Met's imperial-gift items were presented to foreign visitors, while the Edo-Tokyo cup is domestic.",
+     "cautions": "Commemorative cups were mass-produced for veterans' groups and can bear the crest too, so look for an inscription, a box and a record of the award.",
      "facts": [
       {
        "text": "The Edo-Tokyo Museum holds a 'gift sake cup with paulownia crest' (桐紋賜盃), 9.2 x 3.3 cm, catalogued as 19th-20th century; the record gives no further description.",
@@ -25746,14 +26293,6 @@
         "edohaku_kirimon"
        ],
        "quote": "桐紋賜盃",
-       "single_source": true
-      },
-      {
-       "text": "A summary of another Edo-Tokyo Museum record describes a paulownia-crest cup given in the Sino-Japanese War, Meiji 28 (1895); only the summary was seen, not the full record.",
-       "sources": [
-        "edohaku_136345"
-       ],
-       "quote": null,
        "single_source": true
       }
      ],
@@ -25811,18 +26350,20 @@
       {
        "text": "丸に三つ葵 is the crest of the Tokugawa shogun house and the Matsudaira clan, and of shrines and temples with Tokugawa links.",
        "sources": [
-        "kb_aoimon"
+        "kb_aoimon",
+        "kb_mitsubaaoi"
        ],
        "quote": "丸に三つ葵：徳川将軍家、松平氏",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "In the Edo period the shogunate strictly restricted the use of the three-leaf hollyhock, unlike the chrysanthemum.",
        "sources": [
-        "kb_aoimon"
+        "kb_aoimon",
+        "kb_monsho"
        ],
        "quote": null,
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "A Walters Art Museum incense burner is catalogued as having the Tokugawa family crest (aoi mon).",
@@ -25831,15 +26372,201 @@
        ],
        "quote": null,
        "single_source": true
+      },
+      {
+       "text": "A Tokugawa Art Museum tsujigahana kosode (Important Cultural Property, designated 2004; Momoyama, listed 1601-1700) is scattered with three-leaf hollyhock crests and is said to have been worn by Owari's fourth head Yoshimichi.",
+       "sources": [
+        "bunka_158658"
+       ],
+       "quote": "三つ葉葵紋",
+       "single_source": true
+      },
+      {
+       "text": "Nihon Kokugo Daijiten describes 三葉葵 as three hollyhock leaves joined in a tomoe form.",
+       "sources": [
+        "kb_mitsubaaoi"
+       ],
+       "quote": "葵の葉三枚を巴形に組み合わせた",
+       "single_source": true
       }
      ],
      "sources": [
       "bunka_135967",
+      "bunka_158658",
       "kb_aoimon",
+      "kb_mitsubaaoi",
+      "kb_monsho",
       "walters_commons_aoi"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "never"
+    },
+    {
+     "id": "owari-mitsuba-aoi",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "尾州三つ葵",
+     "variants": [
+      "尾張三つ葵",
+      "尾張葵"
+     ],
+     "kana": "びしゅうみつあおい",
+     "romaji": "Bishū mitsu-aoi",
+     "romaji_plain": "Bishu mitsu-aoi",
+     "other_spellings": [
+      "Tokugawa branch hollyhock"
+     ],
+     "meaning": "The three-leaf hollyhock as carried on Owari Tokugawa family objects",
+     "kind": "crest",
+     "device": "Three hollyhock leaves, usually in a ring (丸に三つ葉葵); on the Momoyama kosode scattered without a ring",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "crest (mon) as painted, lacquered, cast, woven or embroidered",
+     "where_on_object": "varies; see what_it_tells",
+     "date_from": null,
+     "date_to": null,
+     "date_note": "The crest dates from the Edo period (branch houses) and the descendant families still use it.",
+     "what_it_tells": "With other evidence, the house of Owari Tokugawa; the crest alone does not name it.",
+     "cautions": "The sources show the ordinary three-leaf hollyhock on this house's objects, not a separate branch drawing, so the crest alone does not tell the Tokugawa branches apart.",
+     "facts": [
+      {
+       "text": "A white twill christening robe handed down in the Owari Tokugawa house (attributed to the third head, Tsunanari) carries five embroidered crests, described in the survey as the Tokugawa house's crest: a three-leaf hollyhock in a ring.",
+       "sources": [
+        "kamiya_bijutsu272"
+       ],
+       "quote": "徳川家の家紋丸に三つ葉葵紋",
+       "single_source": true
+      },
+      {
+       "text": "The Tokugawa Art Museum's tsujigahana kosode (Important Cultural Property, Momoyama, listed 1601-1700) is scattered with three-leaf hollyhock crests without a ring; it is said to have been Ieyasu's, passed to Owari's first head Yoshinao, and worn by the fourth head Yoshimichi.",
+       "sources": [
+        "bunka_158658"
+       ],
+       "quote": "葵紋散文様",
+       "single_source": true
+      },
+      {
+       "text": "The Tokugawa Art Museum haori (ICP) with five three-leaf hollyhock crests is said to have passed from Ieyasu to Yoshinao of Owari.",
+       "sources": [
+        "bunka_135967"
+       ],
+       "quote": "(already credited in the table; Owari link)",
+       "single_source": true
+      }
+     ],
+     "sources": [
+      "bunka_135967",
+      "bunka_158658",
+      "kamiya_bijutsu272"
+     ],
+     "single_source": true,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "meaning",
+       "from": "Owari Tokugawa branch version of the three-hollyhock crest",
+       "to": "The three-leaf hollyhock as carried on Owari Tokugawa family objects",
+       "why": "The Owari robe survey calls the crest simply the Tokugawa house's ring-and-three-leaf hollyhock; no source read describes a separate Owari drawing.",
+       "sources": [
+        "kamiya_bijutsu272"
+       ]
+      },
+      {
+       "field": "device",
+       "from": "Three aoi leaves in the branch house's own drawing (leaf shape, stalks, ring) distinct from the main Tokugawa form",
+       "to": "Three hollyhock leaves, usually in a ring (丸に三つ葉葵); on the Momoyama kosode scattered without a ring",
+       "why": "Unsupported 'own drawing'; sources show the ordinary Tokugawa form, ring present on the robe and absent on the kosode.",
+       "sources": [
+        "kamiya_bijutsu272",
+        "bunka_158658"
+       ]
+      }
+     ],
+     "held_confirmed": true
+    },
+    {
+     "id": "aizu-mitsuba-aoi",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "会津三つ葵",
+     "variants": [
+      "會津三つ葵"
+     ],
+     "kana": "あいづみつあおい",
+     "romaji": "Aizu mitsu-aoi",
+     "romaji_plain": "Aizu mitsu-aoi",
+     "other_spellings": [
+      "Tokugawa branch hollyhock"
+     ],
+     "meaning": "Aizu Matsudaira version of the three-hollyhock crest",
+     "kind": "crest",
+     "device": "The Matsudaira three-leaf hollyhock (丸に三つ葵)",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "crest (mon) as painted, lacquered, cast, woven or embroidered",
+     "where_on_object": "varies",
+     "date_from": null,
+     "date_to": null,
+     "date_note": "The Aizu lords took the Matsudaira name and crest in the late 17th century (1669 or 1696, sources disagree).",
+     "what_it_tells": "With other evidence, the Matsudaira of Aizu; the crest alone does not name them.",
+     "cautions": "The sources give the Aizu Matsudaira the ordinary ringed three-leaf hollyhock (丸に三つ葵), so the crest alone does not tell the Tokugawa and Matsudaira houses apart.",
+     "facts": [
+      {
+       "text": "The Aizu domain's lords took the Matsudaira name and crest (English text: 1669, when the father handed over the domain; Chinese text of the same record: 1696, Matsudaira Masanaka, granted by the fifth shogun Tsunayoshi).",
+       "sources": [
+        "mlit_aizu"
+       ],
+       "quote": "took the Matsudaira name and crest",
+       "single_source": true
+      },
+      {
+       "text": "丸に三つ葵 is the crest of the Tokugawa shogun house and the Matsudaira clan.",
+       "sources": [
+        "kb_aoimon"
+       ],
+       "quote": "(Britannica 葵紋, summary as in the table)",
+       "single_source": true
+      },
+      {
+       "text": "Sources differ on the details: English text 1669 (Masatsune); Chinese text 1696 (Masanaka).",
+       "sources": [
+        "mlit_aizu"
+       ],
+       "quote": null,
+       "single_source": true,
+       "disagreement": true
+      }
+     ],
+     "sources": [
+      "kb_aoimon",
+      "mlit_aizu"
+     ],
+     "single_source": true,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "device",
+       "from": "Three aoi leaves in the branch house's own drawing (leaf shape, stalks, ring) distinct from the main Tokugawa form",
+       "to": "The Matsudaira three-leaf hollyhock (丸に三つ葵)",
+       "why": "No source read gives a distinct Aizu drawing; Britannica gives the Matsudaira crest as 丸に三つ葵.",
+       "sources": [
+        "kb_aoimon",
+        "mlit_aizu"
+       ]
+      },
+      {
+       "field": "date_note",
+       "from": "Edo period (branch houses); modern use by the descendant families.",
+       "to": "The Aizu lords took the Matsudaira name and crest in the late 17th century (1669 or 1696, sources disagree).",
+       "why": "The two language versions of one MLIT record differ; single source.",
+       "sources": [
+        "mlit_aizu"
+       ]
+      }
+     ],
+     "held_confirmed": true
     },
     {
      "id": "maru-ni-juji",
@@ -25903,6 +26630,85 @@
      ],
      "single_source": true,
      "decode": "never"
+    },
+    {
+     "id": "kaga-umebachi",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "加賀梅鉢",
+     "variants": [
+      "梅鉢",
+      "変わり梅鉢",
+      "剣梅鉢"
+     ],
+     "kana": "かがうめばち",
+     "romaji": "Kaga umebachi",
+     "romaji_plain": "Kaga umebachi",
+     "other_spellings": [
+      "Maeda crest",
+      "Kaga plum",
+      "umebachi",
+      "Umebachi mon"
+     ],
+     "meaning": "The Maeda family's plum-blossom crest (Kaga domain), the 剣梅鉢",
+     "kind": "crest",
+     "device": "A plum blossom seen from the front, stylised from a single-petal flower; the Maeda form is the 剣梅鉢 (sword plum bowl)",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "crest (mon) as painted, lacquered, cast, woven or embroidered",
+     "where_on_object": "lacquer lids, metalwork, banners",
+     "date_from": null,
+     "date_to": null,
+     "date_note": null,
+     "what_it_tells": "On lacquer or metalwork, points to the Maeda family or Kaga domain; plum-blossom crests are also the emblem of Tenjin (Sugawara Michizane) shrines.",
+     "cautions": "Plum-bowl crests are very common (Tenjin shrines, many families). A plum crest on Kutani does not show a Maeda commission: the sources do not tie the Maeda crest to Kutani wares.",
+     "facts": [
+      {
+       "text": "The 梅鉢 crest is a plum blossom seen from the front, stylised from a single-petal flower, with varieties such as 剣梅鉢 and 星梅鉢; it is famous as the crest of Sugawara no Michizane and of the Maeda family of Kaga.",
+       "sources": [
+        "kb_umebachi"
+       ],
+       "quote": "菅原道真、加賀の前田家の家紋として有名",
+       "single_source": true
+      },
+      {
+       "text": "The Maeda lords of Kaga had the 剣梅鉢 (sword plum bowl) as their family crest, and revered Sugawara no Michizane as an ancestor.",
+       "sources": [
+        "maff_fukuume"
+       ],
+       "quote": "前田家の家紋「剣梅鉢」",
+       "single_source": true
+      }
+     ],
+     "sources": [
+      "kb_umebachi",
+      "maff_fukuume"
+     ],
+     "single_source": true,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "device",
+       "from": "A plum blossom of five round petals with small stamens at the centre; the Maeda form has a 'varied plum' (変わり梅鉢) drawing with round petals and a small ring or dots at the centre",
+       "to": "A plum blossom seen from the front, stylised from a single-petal flower; the Maeda form is the 剣梅鉢 (sword plum bowl)",
+       "why": "Sources name the Maeda form 剣梅鉢; 'varied plum' and ring/dots are not in them.",
+       "sources": [
+        "kb_umebachi",
+        "maff_fukuume"
+       ]
+      },
+      {
+       "field": "meaning",
+       "from": "The Maeda family's plum-blossom crest (Kaga domain), 'Kaga plum bowl'",
+       "to": "The Maeda family's plum-blossom crest (Kaga domain), the 剣梅鉢",
+       "why": "Name from the sources.",
+       "sources": [
+        "maff_fukuume"
+       ]
+      }
+     ],
+     "held_confirmed": true
     },
     {
      "id": "nabeshima-gyoyo",
@@ -26017,10 +26823,11 @@
       {
        "text": "The nine-star crest has one central star ringed by eight; it comes from the nine luminaries (sun, moon, five planets, two nodes). Users include Hosokawa, Date, Sōma, Toda, Aoyama, Chiba and Kiso. The Hosokawa changed their design to the separated 離れ九曜 after the 1747 killing of Hosokawa Munetaka.",
        "sources": [
-        "kb_kuyo"
+        "kb_kuyo",
+        "kb_kuyo_heibonsha"
        ],
        "quote": "中央の星を八星が囲む九曜紋",
-       "single_source": true
+       "single_source": false
       },
       {
        "text": "Eisei Bunko (the Hosokawa museum) held a 2024 exhibition on the nine-star crest on armour, textiles and furnishings; the Hosokawa tradition says Tadaoki received it from Oda Nobunaga.",
@@ -26033,9 +26840,10 @@
      ],
      "sources": [
       "eisei_kuyo",
-      "kb_kuyo"
+      "kb_kuyo",
+      "kb_kuyo_heibonsha"
      ],
-     "single_source": true,
+     "single_source": false,
      "decode": "never"
     },
     {
@@ -26077,13 +26885,91 @@
        ],
        "quote": null,
        "single_source": true
+      },
+      {
+       "text": "竹に雀: sparrows facing each other inside a ring of bamboo grass, used by Uesugi, Nagao and Date families; Nihon Kokugo Daijiten adds that it refers 'especially' to the Date of Sendai.",
+       "sources": [
+        "kb_takenisuzume"
+       ],
+       "quote": "特に、仙台の伊達家をさしていう",
+       "single_source": true
       }
      ],
      "sources": [
+      "kb_takenisuzume",
       "sendai_takahashi"
      ],
      "single_source": true,
      "decode": "never"
+    },
+    {
+     "id": "uesugi-zasa",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "上杉笹",
+     "variants": [
+      "竹に二羽飛び雀",
+      "竹に雀",
+      "米沢笹",
+      "丸に九枚笹に対い雀"
+     ],
+     "kana": "うえすぎざさ",
+     "romaji": "Uesugi-zasa",
+     "romaji_plain": "Uesugi-zasa",
+     "other_spellings": [
+      "Uesugi bamboo and sparrows",
+      "Uesugi crest",
+      "Yonezawa sasa"
+     ],
+     "meaning": "The Uesugi crest: bamboo grass in a ring with a pair of facing sparrows (竹に雀), also used by the Nagao and Date",
+     "kind": "crest",
+     "device": "Bamboo-grass leaves forming a ring with a pair of facing sparrows inside",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "crest (mon) as painted, lacquered, cast, woven or embroidered",
+     "where_on_object": "armour, banners, lacquer",
+     "date_from": null,
+     "date_to": null,
+     "date_note": null,
+     "what_it_tells": "On Uesugi (Yonezawa) objects it names the Uesugi family; the Nagao and the Date of Sendai used the same kind of crest.",
+     "cautions": "The source describes the Uesugi and Date crests alike as 竹に雀, bamboo grass with facing sparrows, so the crest alone does not tell the houses apart.",
+     "facts": [
+      {
+       "text": "竹に雀: bamboo-grass leaves make a circle with sparrows facing each other inside it; used by the Uesugi, Nagao and Date families, and 'especially' of the Date of Sendai.",
+       "sources": [
+        "kb_takenisuzume"
+       ],
+       "quote": "笹竹で丸を作り、その中にスズメが向き合っている",
+       "single_source": true
+      }
+     ],
+     "sources": [
+      "kb_takenisuzume"
+     ],
+     "single_source": true,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "meaning",
+       "from": "The Uesugi crest: bamboo grass in a ring with two sparrows (sometimes called 竹に二羽飛び雀)",
+       "to": "The Uesugi crest: bamboo grass in a ring with a pair of facing sparrows (竹に雀), also used by the Nagao and Date",
+       "why": "Alternate name 竹に二羽飛び雀 not found in the source.",
+       "sources": [
+        "kb_takenisuzume"
+       ]
+      },
+      {
+       "field": "device",
+       "from": "Nine bamboo-grass leaves arranged in a ring with a pair of facing sparrows at the top centre (the Yonezawa form places the sparrows below the leaves)",
+       "to": "Bamboo-grass leaves forming a ring with a pair of facing sparrows inside",
+       "why": "Leaf count and the Yonezawa placement appear only on secondary sites seen in search snippets, not read.",
+       "sources": [
+        "kb_takenisuzume"
+       ]
+      }
+     ],
+     "held_confirmed": true
     },
     {
      "id": "ichimonji-ni-mitsuboshi",
@@ -26180,6 +27066,82 @@
      "decode": "never"
     },
     {
+     "id": "takeda-bishi",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "武田菱",
+     "variants": [
+      "割菱",
+      "四つ割り菱"
+     ],
+     "kana": "たけだびし",
+     "romaji": "Takedabishi",
+     "romaji_plain": "Takedabishi",
+     "other_spellings": [
+      "Takeda diamond",
+      "Takeda hishi",
+      "Takeda crest"
+     ],
+     "meaning": "The Takeda diamond: a diamond divided into four (割り菱)",
+     "kind": "crest",
+     "device": "A diamond divided into four smaller diamonds (four lozenges forming a larger lozenge)",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "crest (mon) as painted, lacquered, cast, woven or embroidered",
+     "where_on_object": "armour, banners",
+     "date_from": null,
+     "date_to": null,
+     "date_note": "The Takeda of Kai used the diamond crest in the Sengoku period.",
+     "what_it_tells": null,
+     "cautions": "Diamond (hishi) crests are many (割り菱, 松皮菱), so a diamond crest alone does not name the Takeda.",
+     "facts": [
+      {
+       "text": "武田菱 is four rhombuses combined into one larger rhombus; named for the Takeda of Kai, whose crest it was.",
+       "sources": [
+        "kb_takedabishi"
+       ],
+       "quote": "甲斐（山梨県）の武田氏の家紋であったところからいう",
+       "single_source": true
+      },
+      {
+       "text": "The 割菱 split-rhombus design was used by the Kai Takeda (Heibonsha).",
+       "sources": [
+        "kb_takedabishi"
+       ],
+       "quote": "甲斐武田氏が用いた武田菱",
+       "single_source": true
+      },
+      {
+       "text": "四つ割菱 (also called 割菱 or 武田菱) is a diamond divided into four smaller diamonds.",
+       "sources": [
+        "jaanus_yotsuwaribishi"
+       ],
+       "quote": "a diamond shape divided into four smaller diamond",
+       "single_source": true
+      }
+     ],
+     "sources": [
+      "jaanus_yotsuwaribishi",
+      "kb_takedabishi"
+     ],
+     "single_source": true,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "device",
+       "from": "Four lozenges (diamonds) arranged to make a larger diamond, with narrow spaces between them",
+       "to": "A diamond divided into four smaller diamonds (four lozenges forming a larger lozenge)",
+       "why": "The 'narrow spaces' are not in the sources.",
+       "sources": [
+        "kb_takedabishi",
+        "jaanus_yotsuwaribishi"
+       ]
+      }
+     ],
+     "held_confirmed": true
+    },
+    {
      "id": "hikone-tachibana",
      "group": "kamon",
      "family": "crests",
@@ -26236,6 +27198,99 @@
      "decode": "never"
     },
     {
+     "id": "takanoha",
+     "group": "kamon",
+     "family": "crests",
+     "chars": "違い鷹の羽",
+     "variants": [
+      "鷹の羽",
+      "丸に違い鷹の羽"
+     ],
+     "kana": "ちがいたかのは",
+     "romaji": "Chigai takanoha",
+     "romaji_plain": "Chigai takanoha",
+     "other_spellings": [
+      "Hawk feather crest",
+      "Takanoha"
+     ],
+     "meaning": "Crossed hawk feathers (違い鷹の羽): a long-established crest of warrior houses",
+     "kind": "crest",
+     "device": "Two hawk feathers with their markings, crossed (違い) or side by side (並び)",
+     "maker": {},
+     "artist": null,
+     "wares": [],
+     "technique": "crest (mon) as painted, lacquered, cast, woven or embroidered",
+     "where_on_object": "lacquer lid, kimono, ceramics, metalwork, banners",
+     "date_from": null,
+     "date_to": null,
+     "date_note": "Used as a carriage crest in the Heian period; family crests became widespread from the Kamakura period; commoners used crests in the Edo period; still used today.",
+     "what_it_tells": "A Chigai takanoha crest on an object tells you only a motif. Thousands of families share it. Find the family from the object's own papers, not from the crest. Popular with warrior families; Asano and Abe use it.",
+     "cautions": "Very many families, shrines and temples share this crest, and it is also used as pure decoration, so it never shows provenance. Variants (ring, number, drawing) separate branches in crest books but are not reliable on an object with no recorded history.",
+     "facts": [
+      {
+       "text": "鷹の羽 is a crest modelled on hawk feathers and their markings, with forms such as 違い鷹の羽 (crossed) and 並び鷹の羽 (side by side).",
+       "sources": [
+        "kb_takanoha"
+       ],
+       "quote": "鷹の羽とその斑紋をかたどったもの",
+       "single_source": true
+      },
+      {
+       "text": "Nipponica names 鷹羽 among familiar crests; its ranking of the most-used plant crests lists 桐, 藤, 菊, 蔦, 笹, 酢漿草, 梅, 桔梗 in that order, with 鷹羽 not ranked.",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "鷹羽(たかのは)、井桁(げた)、源氏車",
+       "single_source": true
+      },
+      {
+       "text": "A 1660 text (わらんべ草, cited in Nihon Kokugo Daijiten under 九曜) says a hawk-feather crest was altered into 九曜 for use as a crest.",
+       "sources": [
+        "kb_kuyo"
+       ],
+       "quote": "割鷹の羽を違(たがへ)て、為レ紋",
+       "single_source": true
+      },
+      {
+       "text": "Sources differ on the details: Nipponica 約2800種; Maypedia 300〜500 in common use (not 241/5,116).",
+       "sources": [
+        "kb_takanoha"
+       ],
+       "quote": null,
+       "single_source": true,
+       "disagreement": true
+      }
+     ],
+     "sources": [
+      "kb_kuyo",
+      "kb_monsho",
+      "kb_takanoha"
+     ],
+     "single_source": true,
+     "decode": "never",
+     "corrections": [
+      {
+       "field": "meaning",
+       "from": "Crossed hawk feathers (one of the ten commonest family crests)",
+       "to": "Crossed hawk feathers (違い鷹の羽): a long-established crest of warrior houses",
+       "why": "'One of the ten commonest' is not supported: Nipponica's ranked list does not include 鷹羽; it is named only as a familiar crest.",
+       "sources": [
+        "kb_monsho"
+       ]
+      },
+      {
+       "field": "device",
+       "from": "Two hawk feathers crossed in a saltire, often in a ring",
+       "to": "Two hawk feathers with their markings, crossed (違い) or side by side (並び)",
+       "why": "Daijisen lists both forms; ring not mentioned.",
+       "sources": [
+        "kb_takanoha"
+       ]
+      }
+     ],
+     "held_confirmed": true
+    },
+    {
      "id": "tachibana",
      "group": "kamon",
      "family": "crests",
@@ -26288,6 +27343,23 @@
        "quote": "約2800種にも上り",
        "single_source": true,
        "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Heibonsha: the tachibana crest was first the Tachibana clan's, and as the clan faded from court the Ii and Kuroda houses took it up.",
+       "sources": [
+        "kb_tachibana"
+       ],
+       "quote": "井伊，黒田などがこの紋を用いた",
+       "single_source": true
       }
      ],
      "sources": [
@@ -26337,6 +27409,15 @@
       },
       {
        "text": "Another source differs: 日本大百科全書: 約2800種 (about 2,800 kinds); マイペディア: 通常広く用いられるもので300〜500 (different counting basis from the 241 / 5,116 figures).",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
        "sources": [
         "kb_monsho"
        ],
@@ -26398,6 +27479,15 @@
        "quote": "約2800種にも上り",
        "single_source": true,
        "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
@@ -26448,6 +27538,15 @@
       },
       {
        "text": "Another source differs: 日本大百科全書: 約2800種 (about 2,800 kinds); マイペディア: 通常広く用いられるもので300〜500 (different counting basis from the 241 / 5,116 figures).",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
        "sources": [
         "kb_monsho"
        ],
@@ -26518,6 +27617,15 @@
        "quote": "約2800種にも上り",
        "single_source": true,
        "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
       }
      ],
      "sources": [
@@ -26567,6 +27675,15 @@
       },
       {
        "text": "Another source differs: 日本大百科全書: 約2800種 (about 2,800 kinds); マイペディア: 通常広く用いられるもので300〜500 (different counting basis from the 241 / 5,116 figures).",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
        "sources": [
         "kb_monsho"
        ],
@@ -26637,10 +27754,28 @@
        "quote": "約2800種にも上り",
        "single_source": true,
        "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "沢瀉 is a crest of arrowhead (omodaka) leaves, or leaves with flower; varieties include 立て沢瀉 and 抱き沢瀉.",
+       "sources": [
+        "kb_omodaka"
+       ],
+       "quote": "オモダカの葉と花を組み合わせたもの",
+       "single_source": true
       }
      ],
      "sources": [
       "kb_monsho",
+      "kb_omodaka",
       "mlit_mori"
      ],
      "single_source": true,
@@ -26686,6 +27821,15 @@
       },
       {
        "text": "Another source differs: 日本大百科全書: 約2800種 (about 2,800 kinds); マイペディア: 通常広く用いられるもので300〜500 (different counting basis from the 241 / 5,116 figures).",
+       "sources": [
+        "kb_monsho"
+       ],
+       "quote": "約2800種にも上り",
+       "single_source": true,
+       "disagreement": true
+      },
+      {
+       "text": "Another source differs: not found as retrieved: the コトバンク 紋章 page gives 約2800種 (Nipponica) and 300〜500 in common use (Maypedia); no 241 / 5,116.",
        "sources": [
         "kb_monsho"
        ],
@@ -27740,6 +28884,14 @@
      "notes": "Public domain; full text read via archive.org OCR (raw/bowes_1882_djvu.txt)."
     },
     {
+     "id": "brinkley_1901",
+     "name": "F. Brinkley, Japan: Its History, Arts and Literature, vol. 8 'Keramic Art' (Boston/Tokyo, 1901), chapter 'Wares of Hizen' pp.~97-115",
+     "url": "https://archive.org/details/japanitshistorya08brin",
+     "lang": "en",
+     "retrieved": "2026-11-25",
+     "notes": "PD book, read from archive.org OCR; independent of Bowes. Page numbers are read from OCR running heads and may be off by one; confirm on the page image before any crop."
+    },
+    {
      "id": "bunka_12taka",
      "name": "文化遺産オンライン「十二の鷹」(鈴木長吉, 国立工芸館) detail record",
      "url": "https://online.bunka.go.jp/db/heritages/detail/604579",
@@ -27762,6 +28914,14 @@
      "lang": "ja",
      "retrieved": "2026-11-24",
      "notes": "Record read in full."
+    },
+    {
+     "id": "bunka_158658",
+     "name": "文化遺産オンライン: 浅葱地葵紋散文様辻が花染小袖 (徳川美術館; 重要文化財, 2004)",
+     "url": "https://online.bunka.go.jp/heritages/detail/158658",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Agency for Cultural Affairs record of the Tokugawa Art Museum's kosode; read in full."
     },
     {
      "id": "bunka_173841",
@@ -27796,6 +28956,14 @@
      "notes": "Agency for Cultural Affairs record: 1893 work; Chokichi appointed 帝室技芸員 in 明治29 (1896)."
     },
     {
+     "id": "burton_hobson_1909",
+     "name": "W. Burton & R. L. Hobson, Handbook of Marks on Pottery and Porcelain (London, 1909; read in the 1919 printing), 'Japanese Porcelain' pp.181-187",
+     "url": "https://archive.org/details/handbookofmarkso00burtuoft",
+     "lang": "en",
+     "retrieved": "2026-11-25",
+     "notes": "PD handbook, read from archive.org OCR. Compilation: its bibliography lists Franks's Japanese Pottery, so it is NOT independent of franks_1880 (it is independent of Bowes's wording)."
+    },
+    {
      "id": "cefiro_makers",
      "name": "cefiro.main.jp (Naturalistic Spoon) pages on Meiji metalworkers, Kiryu Kosho Kaisha, Komai, Samurai Shokai, Miyao",
      "url": "https://cefiro.main.jp/Other_Japanese_Makers.html",
@@ -27812,12 +28980,36 @@
      "notes": "Collector page; captions with names, dates (Ryozan 1868–1912), Yasuda company. May derive from Gotheborg."
     },
     {
+     "id": "chaffers_1912",
+     "name": "W. Chaffers, Marks and Monograms on European and Oriental Pottery and Porcelain, 'Japan - Hizen' (New Chaffers, 1912 edition), pp.418-423",
+     "url": "https://archive.org/details/marksmonogra00chaf",
+     "lang": "en",
+     "retrieved": "2026-11-25",
+     "notes": "PD handbook, read from archive.org OCR. Its Hizen captions are taken from the Franks collection and the Japanese Historical Collection (the same V&A/BM objects as franks_1880), so it is NOT independent of franks_1880."
+    },
+    {
      "id": "chamberlain_mason_1901",
      "name": "Chamberlain & Mason, A Handbook for Travellers in Japan (9th? ed., 1901), §25 Chronological Tables, Table I \"The Japanese Year-names\" (adapted from Satow)",
      "url": "https://archive.org/details/handbookfortrav00cham",
      "lang": "en",
      "retrieved": "2026-11-24",
      "notes": "Alphabetical list of all nengō with start year and end year in Western years (public domain). The OCR text is badly interleaved across columns, so it was used only as an automated plausibility check (both years found near the era name); eras not confirmed this way are marked single-sourced. Saved excerpt: raw/chamberlain_mason_1901_table1_satow.txt"
+    },
+    {
+     "id": "ck55_newsletter",
+     "name": "佐賀県立九州陶磁文化館報『セラミック九州』No.55 (2019-03-22) p.5 展覧会報告「幕末明治 有田の豪商―蔵春亭と肥碟山信甫―」",
+     "url": "https://saga-museum.jp/ceramic/docs/%E3%82%BB%E3%83%A9%E3%83%9F%E3%83%83%E3%82%AF%E4%B9%9D%E5%B7%9E55.pdf",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Museum newsletter; SAME INSTITUTION as the 宮木 bulletins, author not named: weak/partial independence."
+    },
+    {
+     "id": "ck58_newsletter",
+     "name": "佐賀県立九州陶磁文化館報『セラミック九州』No.58 (2022-03-17) 所蔵品解説 〈色絵花鳥文角瓶〉",
+     "url": "https://saga-museum.jp/ceramic/docs/%E3%82%BB%E3%83%A9%E3%83%9F%E3%83%83%E3%82%AF%E4%B9%9D%E5%B7%9E58.pdf",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Museum newsletter; SAME INSTITUTION as the 宮木 bulletins and the author of this item is not named, so treat as weak/partial independence, not a full second source."
     },
     {
      "id": "cleveland_1917_660",
@@ -28108,6 +29300,14 @@
      "notes": "Ikkaisai from c.1853, Taiso exclusively from 1873"
     },
     {
+     "id": "franks_1880",
+     "name": "A. W. Franks, Japanese Pottery, being a native report with an introduction and catalogue (South Kensington Museum, London, 1880), Hizen factories pp.84-99, catalogue nos.165-210",
+     "url": "https://archive.org/details/japanesepotteryb00franiala",
+     "lang": "en",
+     "retrieved": "2026-11-25",
+     "notes": "PD museum handbook; the catalogue describes the South Kensington (now V&A) pieces themselves, so it is independent of Heirloom's museum-bulletin sources and of Bowes. The Hizen history is a translation of a Japanese government report. Printed page numbers are taken from the OCR running heads (approximate +/-1)."
+    },
+    {
      "id": "fukagawa_home",
      "name": "深川製磁 公式サイト トップページ",
      "url": "https://www.fukagawa-seiji.co.jp/",
@@ -28340,6 +29540,14 @@
      "notes": "Standard English dictionary entry: kiwame seal 1791-1842, gyōji seals 1811-1815, date seals 1805-10, 1814 and 1852-75, nanushi seals from 1843, aratame from 1853, censor seals discontinued 1875. Mirror at projects.mcah.columbia.edu/jaanus/record/aratamein. Excerpt raw/jaanus_aratame.txt."
     },
     {
+     "id": "jaanus_kikusui",
+     "name": "JAANUS (Japanese Architecture and Art Net Users System), Kikusuimon 菊水文",
+     "url": "https://projects.mcah.columbia.edu/jaanus/node/3079",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "English-language art-history dictionary; independent of the Shogakukan dictionaries."
+    },
+    {
      "id": "jaanus_kiwame",
      "name": "JAANUS, 'kiwame-in 極印'",
      "url": "https://aisf.or.jp/~jaanus/deta/k/kiwamein.htm",
@@ -28362,6 +29570,14 @@
      "lang": "en",
      "retrieved": "2026-11-24",
      "notes": "Era names began with 大化 645; dates of the first few eras vary between sources. Saved excerpt: raw/jaanus_nengo.txt"
+    },
+    {
+     "id": "jaanus_yotsuwaribishi",
+     "name": "JAANUS, Yotsuwaribishi 四つ割菱",
+     "url": "https://aisf.or.jp/~jaanus/deta/y/yotsuwaribishi.htm",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Art-history dictionary; independent of the Japanese dictionaries."
     },
     {
      "id": "jankowski_kk",
@@ -28426,6 +29642,14 @@
      "lang": "en",
      "retrieved": "2026-11-25",
      "notes": "Museum-collection profile with footnoted scholarship (Merritt, Walker and Doi). Probably draws on the same published literature as Fiorillo but is a separate text."
+    },
+    {
+     "id": "kamiya_bijutsu272",
+     "name": "近世小裁・中裁衣類調査報告: 伝徳川綱誠所用白綾産衣, 美術研究 272 (東京文化財研究所; repository file '272_10_Kamiya')",
+     "url": "https://tobunken.repo.nii.ac.jp/record/6624/files/272_10_Kamiya_Redacted.pdf",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Garment survey of an Owari Tokugawa christening robe; PDF text read (author given only by file name, Kamiya). Independent of the museum record."
     },
     {
      "id": "kanagawa_kpmrr051",
@@ -28500,6 +29724,38 @@
      "notes": "Japanese reference dictionaries as reproduced on コトバンク; independent of Cleveland, AIC and Fiorillo."
     },
     {
+     "id": "kb_fukagawa_chuji",
+     "name": "デジタル版 日本人名大辞典+Plus「深川忠次」(講談社, via コトバンク)",
+     "url": "https://kotobank.jp/word/%E6%B7%B1%E5%B7%9D%E5%BF%A0%E6%AC%A1",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Biographical dictionary; independent of the museum and of the company's own site."
+    },
+    {
+     "id": "kb_fukagawa_eizaemon",
+     "name": "デジタル版 日本人名大辞典+Plus「深川栄左衛門」(講談社, via コトバンク)",
+     "url": "https://kotobank.jp/word/%E6%B7%B1%E5%B7%9D%E6%A0%84%E5%B7%A6%E8%A1%9B%E9%96%80",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Biographical dictionary; independent of the museum. No page numbers."
+    },
+    {
+     "id": "kb_fukagawa_seiji_corp",
+     "name": "講談社『日本の企業がわかる事典 2014-2015』「深川製磁」(via コトバンク)",
+     "url": "https://kotobank.jp/word/%E6%B7%B1%E5%B7%9D%E8%A3%BD%E7%A3%81",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Company-directory entry (Kodansha); outside the company's own site, though the facts are probably company-supplied."
+    },
+    {
+     "id": "kb_fukaumi_sumi",
+     "name": "デジタル版 日本人名大辞典+Plus「深海墨之助」(講談社, via コトバンク)",
+     "url": "https://kotobank.jp/word/%E6%B7%B1%E6%B5%B7%E5%A2%A8%E4%B9%8B%E5%8A%A9",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Biographical dictionary; independent of the museum."
+    },
+    {
      "id": "kb_gekko",
      "name": "デジタル版 日本人名大辞典+Plus 「尾形月耕」 via コトバンク",
      "url": "https://kotobank.jp/word/%E5%B0%BE%E5%BD%A2%E6%9C%88%E8%80%95-17705",
@@ -28532,6 +29788,14 @@
      "notes": "Japanese reference dictionaries as reproduced on コトバンク; independent of Cleveland, AIC and Fiorillo."
     },
     {
+     "id": "kb_heibonsha_toji",
+     "name": "平凡社『世界大百科事典(旧版)』「陶磁器」より 香蘭社の言及 (via コトバンク 香蘭社)",
+     "url": "https://kotobank.jp/word/%E9%A6%99%E8%98%AD%E7%A4%BE",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Encyclopedia; independent of the museum."
+    },
+    {
      "id": "kb_hinomaru",
      "name": "日本大百科全書 / 百科事典マイペディア「日の丸」, via コトバンク",
      "url": "https://kotobank.jp/word/%E6%97%A5%E3%81%AE%E4%B8%B8-167399",
@@ -28556,6 +29820,14 @@
      "notes": "Japanese reference dictionaries as reproduced on コトバンク; independent of Cleveland, AIC and Fiorillo."
     },
     {
+     "id": "kb_hisatomi",
+     "name": "デジタル版 日本人名大辞典+Plus「久富与次兵衛」(講談社, via コトバンク)",
+     "url": "https://kotobank.jp/word/%E4%B9%85%E5%AF%8C%E4%B8%8E%E6%AC%A1%E5%85%B5%E8%A1%9B",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Biographical dictionary entry (Kodansha); independent of the Kyushu Ceramic Museum. Online entry, no page numbers."
+    },
+    {
      "id": "kb_ikkaisai",
      "name": "世界大百科事典 (旧版) text quoted under 「一魁斎」 via コトバンク",
      "url": "https://kotobank.jp/word/%E4%B8%80%E9%AD%81%E6%96%8E-1269667",
@@ -28578,6 +29850,14 @@
      "lang": "ja",
      "retrieved": "2026-11-25",
      "notes": "Printed encyclopedia entry; independent of ja.wikipedia."
+    },
+    {
+     "id": "kb_kikusui",
+     "name": "デジタル大辞泉 / 精選版 日本国語大辞典「菊水」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/%E8%8F%8A%E6%B0%B4-50177",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Two Shogakukan dictionaries (one publisher, counted as one source); entry for the crest sense read on the page."
     },
     {
      "id": "kb_kiri",
@@ -28660,6 +29940,14 @@
      "notes": "Shogakukan dictionary."
     },
     {
+     "id": "kb_kuyo_heibonsha",
+     "name": "改訂新版 世界大百科事典 / ブリタニカ国際大百科事典「九曜」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/九曜",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Entries on the nine luminaries; independent of the Nihon Kokugo Daijiten entry used in the table."
+    },
+    {
      "id": "kb_kyokujitsu",
      "name": "共同通信ニュース用語解説「旭日旗」, via コトバンク",
      "url": "https://kotobank.jp/word/%E6%97%AD%E6%97%A5%E6%97%97-190045",
@@ -28674,6 +29962,14 @@
      "lang": "ja",
      "retrieved": "2026-11-25",
      "notes": "Japanese reference dictionaries as reproduced on コトバンク; independent of Cleveland, AIC and Fiorillo."
+    },
+    {
+     "id": "kb_mitsubaaoi",
+     "name": "精選版 日本国語大辞典 / 旺文社日本史事典 三訂版「三葉葵」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/三葉葵",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Nihon Kokugo Daijiten plus Obunsha: two publishers."
     },
     {
      "id": "kb_monsho",
@@ -28706,6 +30002,14 @@
      "lang": "ja",
      "retrieved": "2026-11-25",
      "notes": "Nipponica biography entry."
+    },
+    {
+     "id": "kb_omodaka",
+     "name": "デジタル大辞泉 / 精選版 日本国語大辞典「沢瀉」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/沢瀉",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Shogakukan dictionaries."
     },
     {
      "id": "kb_onchi",
@@ -28772,6 +30076,38 @@
      "notes": "Japanese reference dictionaries as reproduced on コトバンク; independent of Cleveland, AIC and Fiorillo."
     },
     {
+     "id": "kb_takanoha",
+     "name": "デジタル大辞泉「鷹の羽」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/鷹の羽",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Shogakukan."
+    },
+    {
+     "id": "kb_takedabishi",
+     "name": "デジタル大辞泉 / 精選版 日本国語大辞典 / 世界大百科事典(旧版)「武田菱」「ヒシ」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/武田菱",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Shogakukan (two) plus Heibonsha; the Heibonsha passage sits in the ヒシ entry linked on the page."
+    },
+    {
+     "id": "kb_takenisuzume",
+     "name": "デジタル大辞泉 / 精選版 日本国語大辞典「竹に雀」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/竹に雀",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Shogakukan dictionaries (one publisher)."
+    },
+    {
+     "id": "kb_umebachi",
+     "name": "デジタル大辞泉 / 精選版 日本国語大辞典「梅鉢」 (via コトバンク)",
+     "url": "https://kotobank.jp/word/梅鉢",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Shogakukan dictionaries (one publisher)."
+    },
+    {
      "id": "kb_utamaro",
      "name": "日本大百科全書 (ニッポニカ) 「喜多川歌麿」 via コトバンク",
      "url": "https://kotobank.jp/word/%E5%96%9C%E5%A4%9A%E5%B7%9D%E6%AD%8C%E9%BA%BF-16143",
@@ -28794,6 +30130,22 @@
      "lang": "ja",
      "retrieved": "2026-11-25",
      "notes": "Scholarly paper (Osaka University repository, PDF read); different author from the Maezaki papers."
+    },
+    {
+     "id": "knm_zoshuntei_cup",
+     "name": "京都国立博物館 収蔵品データベース: Tea Cup with Bamboo, Plum Blossoms, and Orchids (「蔵春亭三保作」染付銘)",
+     "url": "https://knmdb.kyohaku.go.jp/eng/4508.html",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Museum catalogue record; independent. Dated Meiji, 19th c."
+    },
+    {
+     "id": "knm_zoshuntei_lidded",
+     "name": "京都国立博物館 収蔵品データベース: Lidded Bowls with Landscape and with Vessels in Underglaze Blue (「蔵春亭三保」の書銘)",
+     "url": "https://knmdb.kyohaku.go.jp/eng/4564.html",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Museum catalogue record; independent of the Kyushu museum. Dates the piece to Meiji, 19th-20th c."
     },
     {
      "id": "kobe_np_tosei",
@@ -29260,6 +30612,14 @@
      "notes": "Exhibition booklet; same author/museum as bulletins."
     },
     {
+     "id": "lehner_1988",
+     "name": "Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Collector Books, 1988), p. 255, entry 'Lefton, George Zolton, China Company'",
+     "url": "",
+     "lang": "en",
+     "retrieved": "2026-11-25",
+     "notes": "Book from Joe's own PDF copy. Entry text is based on information furnished by the company. Independent of Gotheborg."
+    },
+    {
      "id": "liangyi_ando",
      "name": "兩依藏博物館 (Liang Yi Museum) 安藤七寶店 introductory text (Ando Cloisonné Company)",
      "url": "https://zh.liangyimuseum.com/_files/ugd/c40d14_5cef8db334ea4e298829b6118a92140a.pdf",
@@ -29298,6 +30658,14 @@
      "lang": "ja",
      "retrieved": "2026-11-24",
      "notes": "Eiraku Wazen at Yamashiro from 1865. raw/osaka_kutani.txt"
+    },
+    {
+     "id": "maff_fukuume",
+     "name": "農林水産省 にっぽん伝統食図鑑「福梅」",
+     "url": "https://www.maff.go.jp/j/keikaku/syokubunka/traditional-foods/menu/hukuume_hukunme.html",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Ministry page on a New Year sweet; names the Maeda crest in passing; independent of the dictionaries."
     },
     {
      "id": "mak_47576",
@@ -29420,6 +30788,14 @@
      "notes": "University paper; OCR text of the PDF is rough. raw/mieu_banko.txt"
     },
     {
+     "id": "militaryrifles_murata",
+     "name": "militaryrifles.com, Murata Type 13 page (Doyon / Underkofler)",
+     "url": "https://militaryrifles.com/japan/murata13",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Collector research site; independent of oldmilitarymarkings.com (separate authors)."
+    },
+    {
      "id": "mint_150",
      "name": "造幣局150周年特設サイト 沿革 (Japan Mint, history)",
      "url": "https://www.mint.go.jp/150th/history",
@@ -29434,6 +30810,14 @@
      "lang": "ja",
      "retrieved": "2026-11-24",
      "notes": "Official Mint page. Describes the hallmark as the Japanese flag (日の丸) plus a lozenge holding the fineness number. The silver grades themselves are shown only as images on the page."
+    },
+    {
+     "id": "mlit_aizu",
+     "name": "国土交通省 観光庁 観光多言語解説DB「会津を統治した大名や藩主」(The Lords of the Aizu Domain)",
+     "url": "https://www.mlit.go.jp/tagengo-db/en/R4-00498.html",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Tourism text; its English and Chinese versions differ (1669 vs 1696)."
     },
     {
      "id": "mlit_fukagawa",
@@ -29740,6 +31124,22 @@
      "notes": "NOT opened; known only through Redfern's footnote."
     },
     {
+     "id": "ohashi_ck9",
+     "name": "大橋康二「鍋島藩窯跡出土の京焼風陶器(下) ー印銘を中心としてー」『セラミック九州』No.9, p.5 (佐賀県立九州陶磁文化館; issue year not shown in the PDF text)",
+     "url": "https://saga-museum.jp/ceramic/%E3%82%BB%E3%83%A9%E3%83%9F%E3%83%83%E3%82%AF%E4%B9%9D%E5%B7%9ENo.09.pdf",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Short article by 大橋康二, not 宮木; published in the museum's newsletter, so same institution but a different scholar. Read from the PDF text layer."
+    },
+    {
+     "id": "oldmil_markings",
+     "name": "Markings on Japanese Arisaka Rifles and Bayonets of World War II (oldmilitarymarkings.com)",
+     "url": "https://www.oldmilitarymarkings.com/japanese_markings.html",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Hobbyist reference compiled from published books; disclaims accuracy."
+    },
+    {
      "id": "oldphotos_samurai",
      "name": "Old Photos of Japan, Samurai Shokai page",
      "url": "https://www.oldphotosjapan.com/photos/818/samurai-shokai",
@@ -29778,6 +31178,14 @@
      "lang": "en",
      "retrieved": "2026-11-24",
      "notes": "dealer text; jizuri = imprimatur of approved lifetime impression, stamped graphite signature = posthumous; commercial source"
+    },
+    {
+     "id": "pbs_yamato",
+     "name": "PBS NOVA, Sinking the Supership: Anatomy of Yamato, 'Symbol of Glory'",
+     "url": "https://www.pbs.org/wgbh/nova/supership/expl-01.html",
+     "lang": "ja",
+     "retrieved": "2026-11-25",
+     "notes": "Popular-history page; only for the bow emblem."
     },
     {
      "id": "pedia_montsuki",
@@ -30250,6 +31658,22 @@
      "lang": "en",
      "retrieved": "2026-11-24",
      "notes": "museum catalogue text"
+    },
+    {
+     "id": "vanpatten_nippon4_1997",
+     "name": "Joan F. Van Patten, Collector's Encyclopedia of Nippon Porcelain, Fourth Series (Collector Books, 1997), pp. 7, 63, 285",
+     "url": "",
+     "lang": "en",
+     "retrieved": "2026-11-25",
+     "notes": "Book from Joe's own PDF copy (in-copyright, read for facts only). Independent of Gotheborg: gives the 1890 Act text (p. 285) and reports Treasury Department rulings of 8 Feb 1917 and 1 Oct 1921 (p. 63)."
+    },
+    {
+     "id": "vanpatten_noritake_1984",
+     "name": "Joan F. Van Patten, Collector's Encyclopedia of Noritake (Collector Books, 1984), pp. 6, 10, 13, 90",
+     "url": "",
+     "lang": "en",
+     "retrieved": "2026-11-25",
+     "notes": "Book from Joe's own PDF copy. Draws on correspondence and brochures supplied by the Noritake Co. itself, so independent of Gotheborg. Same author as vanpatten_nippon4_1997: count the two books together as one author's view where they repeat each other."
     },
     {
      "id": "vjp_recuts",

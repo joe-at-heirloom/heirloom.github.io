@@ -1,0 +1,2189 @@
+{
+ "about": "Pewabic Pottery, Detroit: marks, labels and signatures. Built by hallmark-sources/pewabic/build_marks.py in the website repo from the research there; edit the research or the script, not this file.",
+ "sources": {
+  "pewabic-aic-records": {
+   "kind": "museum",
+   "author": "Art Institute of Chicago",
+   "title": "Collection record 1987.109.2 (Pewabic vase)",
+   "year": 2026,
+   "url": "https://www.artic.edu/artworks/69265"
+  },
+  "brunk-pewabic-labels-2007": {
+   "kind": "museum",
+   "author": "Thomas W. Brunk (curator)",
+   "title": "Pewabic Pottery: Patronage, Private Residences, Public Buildings, Sacred Spaces (exhibition labels, Marshall M. Fredericks Sculpture Museum, Saginaw Valley State University)",
+   "year": 2007,
+   "url": "http://tfaoi.org/aa/7aa/7aa553.htm",
+   "note": "About 100 pieces, each with its date and its marks. With the UMMA marks text, one line of evidence (both probably Brunk)."
+  },
+  "catallo-pewabic-2017": {
+   "kind": "book",
+   "author": "Cara Catallo",
+   "title": "Pewabic Pottery: A History Handcrafted in Detroit",
+   "year": 2017,
+   "publisher": "The History Press, Charleston",
+   "public_domain": false,
+   "note": "Joe's copy, read 2026-11-25."
+  },
+  "pewabic-cooper-hewitt-records": {
+   "kind": "museum",
+   "author": "Cooper Hewitt, Smithsonian Design Museum",
+   "title": "Collection record 1983-88-17 (Pewabic vase)",
+   "year": 2026,
+   "url": "https://collection.cooperhewitt.org/objects/18394913/"
+  },
+  "pewabic-dia-records": {
+   "kind": "museum",
+   "author": "Detroit Institute of Arts",
+   "title": "Collection records of Pewabic Pottery (the 'Markings' field), read 2026-11-25",
+   "year": 2026,
+   "url": "https://dia.org/collection"
+  },
+  "fisher-fired-magic-2003": {
+   "kind": "book",
+   "author": "Marcy Heller Fisher",
+   "title": "Fired Magic: Detroit's Pewabic Pottery Treasures",
+   "year": 2003,
+   "publisher": "Wayne State University Press, Detroit",
+   "public_domain": false,
+   "note": "A children's story with a glossary and lists of installations and collections; used only for those."
+  },
+  "pewabic-freer-records": {
+   "kind": "museum",
+   "author": "National Museum of Asian Art (Freer Gallery of Art), Smithsonian",
+   "title": "Collection records of Pewabic Pottery bought by Charles Lang Freer, 1908-1918, read 2026-11-25",
+   "year": 2026,
+   "url": "https://asia.si.edu/"
+  },
+  "pewabic-henry-ford-records": {
+   "kind": "museum",
+   "author": "The Henry Ford",
+   "title": "Collection record 2019.117.13 (Vase, 1992, Pewabic Pottery), with a photograph of its base",
+   "year": 2026,
+   "url": "https://www.thehenryford.org/collections/explore/artifact/493690"
+  },
+  "pewabic-met-records": {
+   "kind": "museum",
+   "author": "The Metropolitan Museum of Art",
+   "title": "Collection records of Pewabic Pottery (1984.131, 2018.294.181-184, 2020.64.105-106)",
+   "year": 2026,
+   "url": "https://www.metmuseum.org/art/collection"
+  },
+  "pewabic-nmah-records": {
+   "kind": "museum",
+   "author": "Smithsonian National Museum of American History",
+   "title": "Ceramics and Glass collection records of Pewabic Pottery (CE.379639, CE.393668)",
+   "year": 2026,
+   "url": "https://americanhistory.si.edu/collections"
+  },
+  "pear-pewabic-1976": {
+   "kind": "book",
+   "author": "Lillian Myers Pear",
+   "title": "The Pewabic Pottery: A History of Its Products and Its People",
+   "year": 1976,
+   "publisher": "Wallace-Homestead, Des Moines",
+   "public_domain": false,
+   "note": "Joe's copy, read 2026-11-25. Marks and Seals pp. 34-35 (photographs Figs. 37-42); labels p. 46."
+  },
+  "pewabic-org-seconds": {
+   "kind": "website",
+   "author": "Pewabic Pottery",
+   "title": "What makes a second?",
+   "year": 2026,
+   "url": "https://www.pewabic.org/",
+   "note": "The maker's own account; read 2026-11-25."
+  },
+  "pewabic-org-timeline": {
+   "kind": "website",
+   "author": "Pewabic Pottery",
+   "title": "Pewabic through the years (timeline)",
+   "year": 2026,
+   "url": "https://www.pewabic.org/",
+   "note": "The maker's own account; read 2026-11-25."
+  },
+  "pewabic-org-vessels": {
+   "kind": "website",
+   "author": "Pewabic Pottery",
+   "title": "Getting to the bottom of Pewabic's vessel-making process",
+   "year": 2026,
+   "url": "https://www.pewabic.org/",
+   "note": "The maker's own account; read 2026-11-25."
+  },
+  "simanaitis-pewabic-2013": {
+   "kind": "website",
+   "author": "Dennis Simanaitis",
+   "title": "'Pewabic Pottery', Simanaitis Says",
+   "year": 2013,
+   "url": "https://simanaitissays.com/2013/01/27/pewabic-pottery/",
+   "note": "An owner's account of a 1992 tile's back."
+  },
+  "umma-pewabic-marks-labels": {
+   "kind": "museum",
+   "author": "University of Michigan Museum of Art",
+   "title": "'Pewabic Pottery: Marks and Labels', from the museum's catalogue of the Margaret Watson Parker Pewabic collection (about 1995), as copied to a student website",
+   "year": 1995,
+   "url": "https://howardbesser.name/",
+   "note": "Unsigned; probably by Thomas W. Brunk: not independent of brunk-pewabic-labels-2007."
+  }
+ },
+ "entries": [
+  {
+   "id": "pewabic-perry-name",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "signature",
+   "name": "Perry, written on the base",
+   "looks_like": "The name Perry written by hand on the base of a small early piece.",
+   "means": "Made by Mary Chase Perry in her first workshop, before the pottery had a settled name.",
+   "applied": "painted",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1900,
+   "date_to": 1905,
+   "date_note": "Her first years of pottery, about 1900 to 1903, before the Pewabic name (dated 1903 by Pewabic and Catallo, 1905 in one passage of Pear). Pewabic and Catallo say she signed in ink or glaze; Pear's photograph does not show which.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34; photo Fig. 37, p. 35"
+    },
+    {
+     "id": "catallo-pewabic-2017",
+     "where": "p. 32"
+    },
+    {
+     "id": "pewabic-org-timeline",
+     "where": "1903 entry"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-perry-name.webp",
+    "marks_in_image": 1,
+    "object": "Pear, The Pewabic Pottery (1976), p. 35, Fig. 37",
+    "holder": "Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976)",
+    "licence": "in-copyright-reference",
+    "credit": "Lillian Myers Pear, The Pewabic Pottery (1976), p. 35, Fig. 37.",
+    "original": "hallmark-sources/pewabic/marks/pages/pear-1976-p35-fig37-perry-signature.png",
+    "size": [
+     445,
+     438
+    ],
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976), p. 35, Fig. 37."
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-m-c-perry-painted",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "signature",
+   "name": "M. C. Perry, painted",
+   "looks_like": "M. C. Perry painted in script on a small test bowl or vase.",
+   "means": "Mary Chase Perry's own pieces from the first experiments.",
+   "applied": "painted",
+   "where_on_piece": "not stated (presumably base)",
+   "used_on": "vessels",
+   "date_from": 1900,
+   "date_to": 1903,
+   "date_note": "Pear places it on the tiny test bowls of the first experiments. The same signature is on her earlier china painting on bought French porcelain, about 1895, which is not Pewabic pottery.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 18"
+    }
+   ],
+   "single_source": "Only one independent source.",
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-mcp-initials",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "MCP, her initials",
+   "looks_like": "The capital letters M C P on the base, pressed into the clay, scratched in, or written.",
+   "means": "Mary Chase Perry's initials, her own mark on early work.",
+   "applied": "impressed",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1901,
+   "date_to": 1907,
+   "date_note": "Barber printed it as in use in 1904. No source gives a first or last year; about 1901 to 1907 are the years of her first workshop. Barber says impressed; Pewabic and Catallo say written in ink or glaze; a Minneapolis vase has it scratched in. All three seem to exist.",
+   "sources": [
+    {
+     "id": "barber-marks-american-potters-1904",
+     "where": "p. 167"
+    },
+    {
+     "id": "evans-art-pottery-1974",
+     "where": "p. 229, as given in Lehner (1988), Lehner p. 342"
+    },
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34"
+    },
+    {
+     "id": "catallo-pewabic-2017",
+     "where": "p. 32"
+    },
+    {
+     "id": "pewabic-org-timeline",
+     "where": "1903 entry"
+    },
+    {
+     "id": "lehner-us-marks-1988",
+     "where": "p. 342, mark no. 1 (redrawn from Barber)"
+    }
+   ],
+   "disagreements": [
+    "Barber says the initials are impressed; Catallo and the Pewabic timeline say 'hand-signed' MCP in ink or glaze; the Minneapolis Institute of Art records MCP incised. Probably all three exist."
+   ],
+   "examples": [
+    {
+     "holder": "Minneapolis Institute of Art",
+     "accession": "2000.225.2",
+     "url": "https://collections.artsmia.org/art/12960",
+     "inscription_as_recorded": "'PEWABIC', stamped into clay, on bottom; '701' and 'MCP', incised in clay, on bottom; '518', in red pigment, on bottom",
+     "object_date": "about 1903-1907"
+    }
+   ],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/pewabic-mcp-initials.webp",
+    "marks_in_image": 1,
+    "object": "Barber, Marks of American Potters (1904), p. 167",
+    "holder": "Internet Archive (Google scan)",
+    "licence": "public-domain",
+    "credit": "Edwin AtLee Barber, Marks of American Potters (1904), p. 167, public domain; cut by Heirloom.",
+    "original": "hallmark-sources/pewabic/marks/pages/barber-1904-p167-mcp-initials-mark.png",
+    "size": [
+     378,
+     164
+    ],
+    "source_url": "https://archive.org/details/marksamericanpo00barbgoog"
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-revelation-pottery-triangle",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "Revelation Pottery triangle",
+   "looks_like": "A triangle with REVELATION up the left side and POTTERY down the right, a candle in a holder inside, M.C.P. under it and DETROIT along the bottom.",
+   "means": "Fired in Horace Caulkins's Revelation kilns, before the name Pewabic; Revelation was the kiln's brand. Pear calls it her earliest and rarest seal.",
+   "applied": "impressed",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1901,
+   "date_to": 1905,
+   "date_note": "Brunk dates the first pieces to the Revelation kiln's introduction in April 1901 and shows examples of about 1904; the Detroit Institute of Arts dates its example about 1905; Evans says it was used only for a year before 1906.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 18; p. 34; p. 210; photo Fig. 42, p. 35"
+    },
+    {
+     "id": "evans-art-pottery-1974",
+     "where": "p. 229, as given in Lehner (1988), Lehner p. 342 and mark no. 6, p. 343"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "essay and section one labels"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "73.197"
+    },
+    {
+     "id": "pewabic-org-timeline",
+     "where": "1903 entry"
+    },
+    {
+     "id": "catallo-pewabic-2017",
+     "where": "p. 32"
+    }
+   ],
+   "disagreements": [
+    "Years: Brunk 2007 - from April 1901 (kiln demonstration pieces); Pear - the first Stable-Studio years, before the Pewabic name (which Pear dates 1905); Evans (as Lehner gives him) - only for a year before 1906; the Detroit Institute of Arts dates its example about 1905; Brunk's examples 1904 and about 1904.",
+    "What is inside the triangle: the Detroit Institute of Arts and Lehner's drawing - a candle in a holder; Pear - 'the flame'. Probably the same device (the kiln flame drawn as a candle).",
+    "Catallo (p. 34) mentions 'a paper label with a triangular \"Pewabic Pottery Detroit\"' as a later mark; no other source describes a triangular Pewabic label, and no example was found. It may be a confusion with this Revelation triangle."
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "73.197",
+     "url": "https://dia.org/collection/vase-62880",
+     "inscription_as_recorded": "Signed, on bottom: M.C.P. [in a triangle with a candle in holder]; Marked, on bottom around signature: REVELATION POTTERY DETROIT",
+     "object_date": "about 1905"
+    },
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Stamped \"Revelation Pottery Detroit, MCP\" (Revelation Pottery squat vase)",
+     "object_date": "1904"
+    },
+    {
+     "holder": "Collection of Tara and David Chicatelli (exhibited 2007)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Stamped \"Revelation Pottery Detroit, MCP\"",
+     "object_date": "about 1904"
+    },
+    {
+     "holder": "Pewabic Museum collection (photo in Pear Fig. 42)",
+     "accession": null,
+     "url": null,
+     "inscription_as_recorded": "Pewabic Seals - Pewabic Museum Collection (caption)",
+     "object_date": null
+    }
+   ],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/pewabic-revelation-pottery-triangle.webp",
+    "marks_in_image": 1,
+    "object": "Lehner (1988), p. 343, mark no. 6 (after Evans)",
+    "holder": "Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988)",
+    "licence": "in-copyright-reference",
+    "credit": "Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 343, mark no. 6 (after Evans).",
+    "original": "hallmark-sources/pewabic/marks/pages/lehner-1988-p343-no6-revelation-pottery-triangle.png",
+    "size": [
+     483,
+     404
+    ],
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 343, mark no. 6 (after Evans)."
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-maple-leaves-impressed",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "Five leaves over PEWABIC",
+   "looks_like": "A row of five small leaves in an arc with PEWABIC curving underneath, pressed into the clay. Museums also call it the crescent mark, or PEWABIC under five flames.",
+   "means": "Pewabic's first standard mark, on the matte-glazed ware of the first workshop.",
+   "applied": "impressed",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1903,
+   "date_to": 1907,
+   "date_note": "1903 to about 1907 (University of Michigan Museum of Art; Smithsonian). Barber printed it in 1904; the dated museum examples run 1903 to 1906. The Kovels' 1903 to the present is the pottery's span, not the mark's.",
+   "sources": [
+    {
+     "id": "barber-marks-american-potters-1904",
+     "where": "p. 167"
+    },
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34; photo Fig. 39, p. 35 (Albion College pieces)"
+    },
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'Maple Leaf/Pewabic'"
+    },
+    {
+     "id": "pewabic-nmah-records",
+     "where": "CE.379639"
+    },
+    {
+     "id": "evans-art-pottery-1974",
+     "where": "p. 229, as given in Lehner (1988), Lehner p. 342"
+    },
+    {
+     "id": "kovel-dictionary-marks-1953",
+     "where": "p. 210, mark (h)"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "section two labels (many 'Impressed Maple Leaves mark')"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "F70.222"
+    },
+    {
+     "id": "pewabic-met-records",
+     "where": "2020.64.105; 2018.294.181"
+    }
+   ],
+   "disagreements": [
+    "Order of marks: Pear and Evans put the maple-leaf mark after Perry/Revelation and before the round Pewabic seal; Catallo (pp. 33-34) puts it after the round mark and the PP mark.",
+    "Pear (p. 34) says the leaf mark carried the word Pewabic but also says the Pewabic name was adopted only in 1905; Barber printed the mark in 1904 and the Pewabic timeline and Catallo date the name to 1903.",
+    "Kovels date the mark 1903-present (the pottery's dates); every other source ends it about 1907."
+   ],
+   "examples": [
+    {
+     "holder": "Smithsonian NMAH",
+     "accession": "CE.379639",
+     "url": "https://n2t.net/ark:/65665/ng49ca746a3-dd72-704b-e053-15f76fa0b4fa",
+     "inscription_as_recorded": "The bottom is marked with the earliest marks used at Pewabic Pottery - five impressed maple leaves over \"Pewabic\". (Record also notes the base was 'signed by the collector'.)",
+     "object_date": "1903-1907"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.222",
+     "url": "https://dia.org/collection/vase-32936",
+     "inscription_as_recorded": "Impressed, on bottom: [mapleleaf]",
+     "object_date": "between 1903 and 1906"
+    },
+    {
+     "holder": "The Metropolitan Museum of Art",
+     "accession": "2020.64.105",
+     "url": "https://www.metmuseum.org/art/collection/search/716863",
+     "inscription_as_recorded": "PEWABIC (slightly curved), surmounted by 5 flames",
+     "object_date": "about 1904"
+    },
+    {
+     "holder": "The Metropolitan Museum of Art",
+     "accession": "2018.294.181",
+     "url": "https://www.metmuseum.org/art/collection/search/19898",
+     "inscription_as_recorded": "Marks on underside: [crescent Pewabic mark, illegible] (impressed stamp)",
+     "object_date": "about 1904"
+    },
+    {
+     "holder": "The Metropolitan Museum of Art",
+     "accession": "2018.294.183",
+     "url": "https://www.metmuseum.org/art/collection/search/19924",
+     "inscription_as_recorded": "Marked on underside: PEWABIC (crescent shape) [impressed stamp] (stamped twice)",
+     "object_date": "about 1907-10"
+    },
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Globular vase ... Impressed Maple Leaves mark",
+     "object_date": "about 1906"
+    }
+   ],
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/pewabic-maple-leaves-impressed.webp",
+    "marks_in_image": 1,
+    "object": "Barber, Marks of American Potters (1904), p. 167",
+    "holder": "Internet Archive (Google scan)",
+    "licence": "public-domain",
+    "credit": "Edwin AtLee Barber, Marks of American Potters (1904), p. 167, public domain; cut by Heirloom.",
+    "original": "hallmark-sources/pewabic/marks/pages/barber-1904-p167-pewabic-leaves-mark.png",
+    "size": [
+     342,
+     171
+    ],
+    "source_url": "https://archive.org/details/marksamericanpo00barbgoog"
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-maple-leaves-paper-label",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "Five leaves over PEWABIC, paper label",
+   "looks_like": "The same leaves-and-PEWABIC design printed in black on a small paper label stuck to the base.",
+   "means": "Early Pewabic, the printed form of the leaf mark.",
+   "applied": "paper label",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1903,
+   "date_to": 1907,
+   "date_note": "Dated by its museum examples (1903 to 1906) and by the leaf mark; no source dates the label on its own.",
+   "sources": [
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'Maple Leaf/Pewabic'"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "F70.227; 46.235; F70.221"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.227",
+     "url": "https://dia.org/collection/vase-28745",
+     "inscription_as_recorded": "Marks, two paper labels on bottom: [mapleleaf]; Creaser #54",
+     "object_date": "about 1904"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "46.235",
+     "url": "https://dia.org/collection/vase-62918",
+     "inscription_as_recorded": "Marked, paper label on bottom: [maple leaf mark]",
+     "object_date": "1906"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.221",
+     "url": "https://dia.org/collection/vase-32935",
+     "inscription_as_recorded": "Signed, on bottom: K-CP || Mark, paper label on bottom: [mapleleaf]",
+     "object_date": "between 1903 and 1905"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-straight-line-impressed",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "PEWABIC in a straight line",
+   "looks_like": "PEWABIC in capitals in one straight line, pressed into the clay, with no leaves and no circle.",
+   "means": "Early Pewabic, after or alongside the leaf mark.",
+   "applied": "impressed",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1904,
+   "date_to": 1910,
+   "date_note": "About 1906 to 1910 in the University of Michigan catalogue; one example given to Freer is about 1904 (Brunk). Both are probably Brunk's work, so this rests on one line of evidence.",
+   "sources": [
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'PEWABIC impressed in straight line'"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "Case one - Patronage, 'Vase with peacocks, c. 1904'"
+    }
+   ],
+   "disagreements": [
+    "Start date: about 1904 (Brunk 2007, one example) versus about 1906 (the University of Michigan catalogue). Both are probably by Brunk, so they are one lineage, not two sources."
+   ],
+   "examples": [
+    {
+     "holder": "Private collection (exhibited 2007, Brunk); ex Charles L. Freer",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Impressed bar mark \"Pewabic\"",
+     "object_date": "about 1904"
+    },
+    {
+     "holder": "Detroit Institute of Arts (shape of the word not recorded)",
+     "accession": "F70.213",
+     "url": "https://dia.org/collection/zodiac-plate-32710",
+     "inscription_as_recorded": "Stamped, on bottom: PEWABIC",
+     "object_date": "1910"
+    }
+   ],
+   "single_source": "One line of evidence: the University of Michigan catalogue and Brunk 2007 are probably by the same author.",
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-bar-paper-label",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "PEWABIC bar label",
+   "looks_like": "A small white paper label with a thin printed border and PEWABIC in widely spaced black capitals.",
+   "means": "An early Pewabic sales label.",
+   "applied": "paper label",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1903,
+   "date_to": 1910,
+   "date_note": "Brunk shows it on pieces of 1903 and about 1904; the University of Michigan catalogue gives about 1906 to 1910.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "Fig. 60, p. 46"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "section one and two labels"
+    },
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'PEWABIC impressed in straight line'"
+    }
+   ],
+   "disagreements": [
+    "Dates: 1903-about 1904 examples (Brunk 2007) versus about 1906-1910 (the University of Michigan catalogue)."
+   ],
+   "examples": [
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Bowl ... Paper \"PEWABIC\" bar label",
+     "object_date": "1903"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-bar-paper-label.webp",
+    "marks_in_image": 1,
+    "object": "Pear, The Pewabic Pottery (1976), p. 46, Fig. 60",
+    "holder": "Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976)",
+    "licence": "in-copyright-reference",
+    "credit": "Lillian Myers Pear, The Pewabic Pottery (1976), p. 46, Fig. 60.",
+    "original": "hallmark-sources/pewabic/marks/pages/pear-1976-p46-fig60-pewabic-bar-paper-label.png",
+    "size": [
+     720,
+     202
+    ],
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976), p. 46, Fig. 60."
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-reversed-pewabic",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "PEWABIC in reverse",
+   "looks_like": "PEWABIC pressed or cut into the clay as a mirror image, so it reads backwards.",
+   "means": "An uncommon early Pewabic marking; why it is reversed is not known.",
+   "applied": "incised",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1904,
+   "date_to": 1911,
+   "date_note": "About 1908 to 1911 in the University of Michigan catalogue; one example of about 1904 (Brunk). One line of evidence.",
+   "sources": [
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'PEWABIC impressed in reverse'"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "section two labels, 'Low bowl, c. 1904'"
+    }
+   ],
+   "disagreements": [
+    "About 1908-1911 (the University of Michigan catalogue) versus a about 1904 example (Brunk 2007). One lineage (probably both Brunk). The University of Michigan Museum of Art calls it impressed, Brunk incised."
+   ],
+   "examples": [
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "\"Pewabic\" hand-inscribed and \"PEWABIC\" incised in reverse",
+     "object_date": "about 1904"
+    }
+   ],
+   "single_source": "One line of evidence: the University of Michigan catalogue and Brunk 2007 are probably by the same author.",
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-detroit-1908-moulded",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "commemorative mark",
+   "name": "Pewabic, Detroit, 1908",
+   "looks_like": "Pewabic and Detroit with the year 1908, sunk into the clay in script or capitals.",
+   "means": "Marks the opening of the new pottery building on East Jefferson Avenue in 1908; Brunk's example is a molded box made for the opening.",
+   "applied": "incised",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1908,
+   "date_to": 1908,
+   "date_note": "The year is part of the mark. On a molded piece it came from the mold, and the same box was cast again in the 1940s, so a later cast could carry 1908.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34; photo Fig. 38, p. 35 (Albion College)"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "section two labels, 'Oval box and lid, 1908'"
+    }
+   ],
+   "disagreements": [
+    "Pear's photographed example reads 'Pewabic / Detroit / 1908'; Brunk's reads 'Pewabic Pottery / Detroit / 1908'. Probably two versions."
+   ],
+   "examples": [
+    {
+     "holder": "Albion College, Visual Arts Museum (photo in Pear Fig. 38)",
+     "accession": null,
+     "url": null,
+     "inscription_as_recorded": "Pewabic Seals - Pewabic, Detroit, 1908 (caption)",
+     "object_date": "1908"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-detroit-1908-moulded.webp",
+    "marks_in_image": 1,
+    "object": "Pear, The Pewabic Pottery (1976), p. 35, Fig. 38",
+    "holder": "Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976)",
+    "licence": "in-copyright-reference",
+    "credit": "Lillian Myers Pear, The Pewabic Pottery (1976), p. 35, Fig. 38.",
+    "original": "hallmark-sources/pewabic/marks/pages/pear-1976-p35-fig38-pewabic-detroit-1908-incised.png",
+    "size": [
+     600,
+     432
+    ],
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976), p. 35, Fig. 38."
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-detroit-medallion-impressed",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "PEWABIC DETROIT round seal",
+   "looks_like": "A small circle about an inch across: PEWABIC round the top, DETROIT round the bottom, the middle plain or with a small dot. Often pressed twice, and often half filled with glaze.",
+   "means": "Pewabic's standard mark for most of Mary Chase Perry Stratton's career, and the commonest Pewabic mark.",
+   "applied": "impressed",
+   "where_on_piece": "base, usually in the trimmed centre of the foot",
+   "used_on": "vessels",
+   "date_from": 1903,
+   "date_to": 1969,
+   "date_note": "Its start is given as 1903, about 1908 or about 1910; it was used until production stopped in 1969 (some sources say early 1967). Firmly dated pieces carry it from 1917 (bought by Freer) through the 1920s to 1950. Pear and Evans call it a Pewabic Pottery seal, but every example recorded on a piece reads PEWABIC DETROIT.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34; p. 210; photo Fig. 41, p. 35"
+    },
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'PEWABIC DETROIT impressed medallion'"
+    },
+    {
+     "id": "evans-art-pottery-1974",
+     "where": "p. 229, as given in Lehner (1988), Lehner p. 342"
+    },
+    {
+     "id": "lehner-us-marks-1988",
+     "where": "p. 343, mark no. 3 ('shown in various directories of the 1950's')"
+    },
+    {
+     "id": "pewabic-nmah-records",
+     "where": "CE.393668"
+    },
+    {
+     "id": "pewabic-freer-records",
+     "where": "F1917.437; F1917.440"
+    },
+    {
+     "id": "pewabic-met-records",
+     "where": "1984.131; 2018.294.184"
+    },
+    {
+     "id": "pewabic-aic-records",
+     "where": "1987.109.2"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "many records, e.g. 72.44, 46.231, F70.205, F82.58"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "sections three-five labels"
+    },
+    {
+     "id": "catallo-pewabic-2017",
+     "where": "pp. 33-34 [PDF 35-36]"
+    }
+   ],
+   "disagreements": [
+    "Start: Pear p. 210 says Heerich stamped a new circular seal 'bearing the name \"Pewabic Pottery\"' in 1903; Catallo calls the circle the first Pewabic mark; the University of Michigan catalogue says from about 1910; Brunk's earliest examples are about 1908-1909; Evans (as Lehner gives him) puts the circular mark after the Revelation and maple-leaf marks.",
+    "Wording: Pear p. 210 and Evans (as Lehner gives him) call it a 'Pewabic Pottery' seal; every transcription on a real piece found reads PEWABIC / DETROIT.",
+    "End: 1969 (Day Books end; the University of Michigan catalogue). Pewabic and Catallo say Michigan State ended production pottery at the start of 1967. Freer's gallery label says Pewabic was made 'from 1903 until 1965'.",
+    "Size: Pear - about one inch; a Cranbrook record seen only as a search-engine snippet - 3/4 inch (not verified; Cranbrook's site blocked automated reading)."
+   ],
+   "examples": [
+    {
+     "holder": "Freer Gallery of Art",
+     "accession": "F1917.437",
+     "url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1917.437/",
+     "inscription_as_recorded": "Impressed in clay, \"Pewabic, Detroit\" (Marks); Round sticker affixed to base of vessel, \"Pewabic Detroit\" printed in black ink, and \"6537\" written in pencil (Inscriptions)",
+     "object_date": "about 1917 (bought from Pewabic 1917)"
+    },
+    {
+     "holder": "Freer Gallery of Art",
+     "accession": "F1917.440",
+     "url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1917.440/",
+     "inscription_as_recorded": "Impressed in clay, \"Pewabic, Detroit\"; round sticker \"Pewabic Detroit\" in black ink with \"19. 00\" in pencil (price); two rectangular white stickers with perforated black-dash borders, \"2592\" and \"6533\"",
+     "object_date": "bought from Pewabic 1917-1920"
+    },
+    {
+     "holder": "The Metropolitan Museum of Art",
+     "accession": "1984.131",
+     "url": "https://www.metmuseum.org/art/collection/search/9372",
+     "inscription_as_recorded": "stamped on underside of the base in a circle: PEWABIC DETROIT",
+     "object_date": "about 1917"
+    },
+    {
+     "holder": "The Metropolitan Museum of Art",
+     "accession": "2018.294.184",
+     "url": "https://www.metmuseum.org/art/collection/search/20295",
+     "inscription_as_recorded": "Mark on underside: PEWABIC / DETROIT (in circle) [impressed stamp]",
+     "object_date": "about 1918-25"
+    },
+    {
+     "holder": "The Metropolitan Museum of Art",
+     "accession": "2018.294.182",
+     "url": "https://www.metmuseum.org/art/collection/search/19920",
+     "inscription_as_recorded": "Marks on underside: (Pewabic mark) [two impressed stamps, barely legible]",
+     "object_date": "about 1918-25"
+    },
+    {
+     "holder": "Art Institute of Chicago",
+     "accession": "1987.109.2",
+     "url": "https://www.artic.edu/artworks/69265",
+     "inscription_as_recorded": "Stamped bottom: \"[PEW]ABIC/DETROIT\" [Pewabic Pottery mark].",
+     "object_date": "1926"
+    },
+    {
+     "holder": "Smithsonian NMAH",
+     "accession": "CE.76.418",
+     "url": "https://n2t.net/ark:/65665/ng49ca746a3-dd73-704b-e053-15f76fa0b4fa",
+     "inscription_as_recorded": "Impressed twice on the bottom.",
+     "object_date": "not given"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "72.44",
+     "url": "https://dia.org/collection/vase-30313",
+     "inscription_as_recorded": "Stamp, on bottom: PEWABIC DETROIT",
+     "object_date": "between 1915 and 1920"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "46.246",
+     "url": "https://dia.org/collection/vase-62885",
+     "inscription_as_recorded": "Circular mark: Pewabic Detroit",
+     "object_date": "between 1917 and 1920"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.224",
+     "url": "https://dia.org/collection/vase-32938",
+     "inscription_as_recorded": "Stamped, on bottom: PEWABIC DETROIT",
+     "object_date": "1947 or 1948"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F82.58",
+     "url": "https://dia.org/collection/vase-62920",
+     "inscription_as_recorded": "On bottom, impressed medallion partly obscured by glaze: PEWABIC",
+     "object_date": "1950"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.217",
+     "url": "https://dia.org/collection/vase-32931",
+     "inscription_as_recorded": "Stamped, on the bottom: DETROIT",
+     "object_date": "1910"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-detroit-medallion-impressed.webp",
+    "marks_in_image": 1,
+    "object": "Bottle, about 1930, Pewabic Pottery, Detroit Institute of Arts 46.245 (the base)",
+    "holder": "Detroit Institute of Arts",
+    "accession": "46.245",
+    "source_url": "https://dia.org/collection/bottle-62894",
+    "licence": "public-domain",
+    "licence_note": "The DIA offers this photograph of a public-domain work for free download ('Many images of DIA works in the public domain are available for free download from this website', dia.org/collection/rights-reproduction); used with credit on Joe's decision, 2026-11-25.",
+    "credit": "Detroit Institute of Arts, 46.245, photograph of the base; cropped by Heirloom.",
+    "original": "hallmark-sources/pewabic/corpus/dia/orig/46.245-d2-2016-04-27.jpg",
+    "crop": [
+     592,
+     455,
+     905,
+     775
+    ],
+    "size": [
+     313,
+     320
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-pp-medallion",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "Round seal with the Pp monogram",
+   "looks_like": "The round PEWABIC DETROIT seal with a monogram in the middle: a large P with a smaller P tucked under it.",
+   "means": "Pewabic Pottery; the later form of the round seal.",
+   "applied": "impressed",
+   "where_on_piece": "base (also the underside of box lids)",
+   "used_on": "vessels",
+   "date_from": 1925,
+   "date_to": 1969,
+   "date_note": "Every dated example is about 1925 or later (Brunk's earliest about 1925; the University of Michigan says after about 1930); the metal stamp was defaced in 1969 when production stopped. Catallo alone puts it before 1907.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34; photo Fig. 40, p. 35"
+    },
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'PEWABIC Pp DETROIT impressed medallion'"
+    },
+    {
+     "id": "evans-art-pottery-1974",
+     "where": "p. 229, as given in Lehner (1988), Lehner p. 343, marks nos. 4 and 5"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "labels, e.g. 'Vase, baluster shape, gold iridescent glaze, c. 1925'"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "F70.255; F70.247; F70.249; F82.59; F70.229"
+    },
+    {
+     "id": "catallo-pewabic-2017",
+     "where": "p. 34"
+    }
+   ],
+   "disagreements": [
+    "Start: about 1925 (Brunk 2007 example) versus 'after about 1930' (the University of Michigan catalogue).",
+    "Order: Catallo (p. 34) puts the Pp seal second, before the maple-leaf mark, which would make it pre-1907; every dated example found is 1925 or later.",
+    "Lehner's mark no. 4 (from Evans) shows the Pp monogram with DETROIT but no PEWABIC; no museum record of that form was found."
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.255",
+     "url": "https://dia.org/collection/bowl-32327",
+     "inscription_as_recorded": "Stamped, on bottom: PP [within] PEWABIC DETROIT",
+     "object_date": "between 1940 and 1950"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.229",
+     "url": "https://dia.org/collection/roman-holiday-box-and-lid-32505",
+     "inscription_as_recorded": "Sticker: PEWABIC DETROIT | 3.50 Stamped, on underside of lid: PP PEWABIC DETROIT",
+     "object_date": "between 1940 and 1950"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F82.59",
+     "url": "https://dia.org/collection/bowl-62901",
+     "inscription_as_recorded": "Inscribed, on bottom (painted in black): W B 5 || Marks, on bottom (impressed medallion): PEWABIC | Pp | DETROIT",
+     "object_date": "between 1940 and 1945"
+    },
+    {
+     "holder": "Collection of David H. Spear (exhibited 2007)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Inscribed \"Oct. 1932 WBS for John Challis,\" impressed medallion mark \"Pewabic Pp Detroit\"",
+     "object_date": "October 1932"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-pp-medallion.webp",
+    "marks_in_image": 1,
+    "object": "Pear, The Pewabic Pottery (1976), p. 35, Fig. 40",
+    "holder": "Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976)",
+    "licence": "in-copyright-reference",
+    "credit": "Lillian Myers Pear, The Pewabic Pottery (1976), p. 35, Fig. 40.",
+    "original": "hallmark-sources/pewabic/marks/pages/pear-1976-p35-fig40-pp-medallion.png",
+    "size": [
+     448,
+     460
+    ],
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lillian Myers Pear, The Pewabic Pottery (Des Moines: Wallace-Homestead, 1976), p. 35, Fig. 40."
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-pp-large-seal",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "Large Pewabic seal with P.P.",
+   "looks_like": "A big round seal about two inches across, reading Pewabic, Detroit, with large letters P.P. in the middle.",
+   "means": "Pewabic Pottery, on large work: big panels and garden pots.",
+   "applied": "impressed",
+   "where_on_piece": "not stated (panels and garden pots)",
+   "used_on": "both",
+   "date_note": "Pear gives no date, and no museum example was found.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34"
+    }
+   ],
+   "single_source": "Only Pear describes it; no example found.",
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_from": null,
+   "date_to": null
+  },
+  {
+   "id": "pewabic-detroit-round-paper-label",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "PEWABIC DETROIT round paper label",
+   "looks_like": "A round tan paper sticker about an inch across, PEWABIC printed round the top and DETROIT round the bottom in black or thin dark letters, often with a price or number pencilled in the middle.",
+   "means": "Pewabic's sales label; Pear says many pieces were labeled instead of stamped.",
+   "applied": "paper label",
+   "where_on_piece": "base; one Cooper Hewitt vase has it inside the rim because glaze covered the base",
+   "used_on": "vessels",
+   "date_from": 1903,
+   "date_to": 1969,
+   "date_note": "Brunk shows it on pieces of about 1903 and 1904; the University of Michigan says from about 1910. Used until 1969. Dated museum examples: 1908, 1912, 1917. A label can be put on later than the piece was made, and many have come off.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 34; Fig. 61, p. 46"
+    },
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'Medallion Paper Labels'"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "labels (many 'Medallion paper label \"Pewabic Detroit\"')"
+    },
+    {
+     "id": "pewabic-freer-records",
+     "where": "F1912.103; F1917.437; F1917.440"
+    },
+    {
+     "id": "pewabic-cooper-hewitt-records",
+     "where": "1983-88-17"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "F70.203 and many 'Sticker' records"
+    }
+   ],
+   "disagreements": [
+    "Start: about 1903-1904 (Brunk 2007 examples; the Detroit Institute of Arts's 1908 example) versus about 1910 (the University of Michigan catalogue)."
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.203",
+     "url": "https://dia.org/collection/vase-32920",
+     "inscription_as_recorded": "Mark, paper label on bottom: Pewabic Detroit",
+     "object_date": "1908"
+    },
+    {
+     "holder": "Freer Gallery of Art",
+     "accession": "F1912.103",
+     "url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1912.103/",
+     "inscription_as_recorded": "Rectangular sticker affixed to base of vessel, \"2355\" printed in black ink; Rectangular sticker ... \"3588\" printed in black ink; Round sticker affixed to base of vessel, \"Pewabic Detroit\" printed in black ink, \"450 14\" written in pencil in center",
+     "object_date": "bought from Pewabic 1912"
+    },
+    {
+     "holder": "Cooper Hewitt, Smithsonian Design Museum",
+     "accession": "1983-88-17",
+     "url": "https://collection.cooperhewitt.org/view/objects/asitem/id/180740",
+     "inscription_as_recorded": "Obscured by glaze on bottom. Circular paper label attached inside rim: PEWABIC / DETROIT",
+     "object_date": "1909-15"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.184",
+     "url": "https://dia.org/collection/vase-32903",
+     "inscription_as_recorded": "Mark, sticker on bottom: PEWABIC DETROIT | 18.00 | $5",
+     "object_date": "1915"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.216",
+     "url": "https://dia.org/collection/vase-62936",
+     "inscription_as_recorded": "Signed, on bottom: WM & MARY CHASE STRATTON || Sticker, on bottom: PEWABIC DETROIT",
+     "object_date": "1930"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.236",
+     "url": "https://dia.org/collection/brooch-32382",
+     "inscription_as_recorded": "Label, on back: PEWABIC DETROIT #10 | 2.50",
+     "object_date": "between 1945 and 1951"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-detroit-round-paper-label.webp",
+    "marks_in_image": 1,
+    "object": "Bottle, about 1930, Pewabic Pottery, Detroit Institute of Arts 46.245 (the base)",
+    "holder": "Detroit Institute of Arts",
+    "accession": "46.245",
+    "source_url": "https://dia.org/collection/bottle-62894",
+    "licence": "public-domain",
+    "licence_note": "The DIA offers this photograph of a public-domain work for free download ('Many images of DIA works in the public domain are available for free download from this website', dia.org/collection/rights-reproduction); used with credit on Joe's decision, 2026-11-25.",
+    "credit": "Detroit Institute of Arts, 46.245, photograph of the base; cropped by Heirloom.",
+    "original": "hallmark-sources/pewabic/corpus/dia/orig/46.245-d2-2016-04-27.jpg",
+    "crop": [
+     912,
+     445,
+     1280,
+     805
+    ],
+    "size": [
+     368,
+     360
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-detroit-dotted-paper-label",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "Round paper label with dots between the words",
+   "looks_like": "The round PEWABIC DETROIT paper label with a dot or star between the two words.",
+   "means": "A variant of Pewabic's round sales label.",
+   "applied": "paper label",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_to": 1969,
+   "date_note": "No source dates it. The Detroit Institute of Arts has one, shown here, on a bottle it dates 1920; Brunk's one example is about 1950, and Lehner's drawing of the same design comes from 1950s trade directories.",
+   "sources": [
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'Medallion Paper Labels'"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "'Cigarette box and lid, peacock design, c. 1950'"
+    },
+    {
+     "id": "pear-pewabic-1976",
+     "where": "Fig. 61, p. 46 (dots visible in the photograph)"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Impressed medallion mark \"Pewabic Pp Detroit\" and medallion paper label \"Pewabic * Detroit *\" with \"8.00\" handwritten in center",
+     "object_date": "about 1950"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-detroit-dotted-paper-label.webp",
+    "marks_in_image": 1,
+    "object": "Bottle, 1920, Pewabic Pottery, Detroit Institute of Arts 46.239 (the base)",
+    "holder": "Detroit Institute of Arts",
+    "accession": "46.239",
+    "source_url": "https://dia.org/collection/bottle-62887",
+    "licence": "public-domain",
+    "licence_note": "The DIA offers this photograph of a public-domain work for free download ('Many images of DIA works in the public domain are available for free download from this website', dia.org/collection/rights-reproduction); used with credit on Joe's decision, 2026-11-25.",
+    "credit": "Detroit Institute of Arts, 46.239, photograph of the base; cropped by Heirloom.",
+    "original": "hallmark-sources/pewabic/corpus/dia/orig/46.239-d2-2016-04-27.jpg",
+    "crop": [
+     222,
+     392,
+     700,
+     850
+    ],
+    "size": [
+     478,
+     458
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_from": null
+  },
+  {
+   "id": "pewabic-pottery-sepia-paper-label",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "PEWABIC POTTERY round paper label",
+   "looks_like": "A round paper label reading PEWABIC POTTERY, usually in brown ink; Mrs. Stratton sometimes wrote in its middle.",
+   "means": "A Pewabic sales label.",
+   "applied": "paper label",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1904,
+   "date_to": 1969,
+   "date_note": "The University of Michigan says from the late 1920s to 1969; Brunk shows it on pieces back to about 1904, and the Detroit Institute of Arts has one on a jar of 1915 to 1920. Those are the dates of the pieces, and a label can be added later.",
+   "sources": [
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'PEWABIC POTTERY sepia ink'"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "labels, e.g. 'Vase, c. 1904 ... Medallion paper label \"Pewabic Pottery\" in sepia letters'"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "46.248"
+    }
+   ],
+   "disagreements": [
+    "Late 1920s-1969 (the University of Michigan catalogue) versus examples back to about 1904 (Brunk 2007, same probable author) and a 1915-1920 the Detroit Institute of Arts example. The museum and exhibition dates are of the pots, not the labels; a label can be added later."
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "46.248",
+     "url": "https://dia.org/collection/jar-62903",
+     "inscription_as_recorded": "Marked, paper label on bottom (black ink): Pewabic Pottery",
+     "object_date": "between 1915 and 1920"
+    },
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "medallion paper label \"Pewabic Pottery\" with \"MARY CHASE STRATTON\" written by Mrs. Stratton in center, and a strip of cloth tape with \"#120\"",
+     "object_date": "about 1918"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-price-label",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "Price labels",
+   "looks_like": "A small paper label with a dollar price ($2.50 to $200), or a price pencilled in the middle of the round Pewabic label.",
+   "means": "The pottery's selling price, not a date or a shape number.",
+   "applied": "paper label",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1904,
+   "date_to": 1969,
+   "sources": [
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "'Electrolier lamp base, 1904'"
+    },
+    {
+     "id": "pewabic-freer-records",
+     "where": "F1917.440"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "e.g. 25.129, 25.135, 46.232, 46.241, 64.90"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "25.129",
+     "url": "https://dia.org/collection/vase-62905",
+     "inscription_as_recorded": "Marked, paper label on bottom (sepia ink): $200",
+     "object_date": "between 1912 and 1915"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "46.232",
+     "url": "https://dia.org/collection/vase-62917",
+     "inscription_as_recorded": "Marked, paper label on bottom: #2, $85.00",
+     "object_date": "1916"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "46.241",
+     "url": "https://dia.org/collection/bottle-62893",
+     "inscription_as_recorded": "Mark, paper label on bottom (sepia ink): #11, $40.00",
+     "object_date": "1920"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-m-quality-labels",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "M1, M2 and M3 labels",
+   "looks_like": "A small handwritten paper label reading M1, M2 or M3, or M1 pencilled under DETROIT on the round label, on the base of an exceptional piece.",
+   "means": "M for museum quality: pieces set aside as the best the pottery made.",
+   "applied": "paper label",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1915,
+   "date_to": 1938,
+   "date_note": "On pieces of about 1915 to 1925; no longer used by 1938. Pear says Charles Lang Freer chose and marked them; the University of Michigan says Mrs. Stratton made the labels at Freer's urging, which fits an M1 on a vase of 1924 and the M2 shown here, on a bottle the Detroit Institute of Arts dates 1920, both after Freer died in 1919.",
+   "sources": [
+    {
+     "id": "pear-pewabic-1976",
+     "where": "p. 196; also pp. 187, 191, 201, 202"
+    },
+    {
+     "id": "umma-pewabic-marks-labels",
+     "where": "'M1 and M2 handwritten paper labels'"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "section 'M1, M2, and M3 Paper Labels'"
+    }
+   ],
+   "disagreements": [
+    "Who marked them: Pear says Charles L. Freer selected and marked the pieces; the University of Michigan catalogue (citing Ella Peters) says Freer encouraged Mrs. Stratton and she devised the labels.",
+    "Brunk 2007 shows an M1 label on a vase dated 1924, five years after Freer's death, which fits Stratton applying them.",
+    "The University of Michigan catalogue's author had seen only M1 and M2 and was told of M3; Pear and Brunk 2007 name M3.",
+    "Pear's 'The first two numbers represent the year' (caption, p. 201) refers to Freer Gallery accession numbers, not to the M labels or to marks on the pots."
+   ],
+   "examples": [
+    {
+     "holder": "University of Michigan Museum of Art (per Pear Fig. 446)",
+     "accession": null,
+     "url": null,
+     "inscription_as_recorded": "Marked M-1 by Charles L. Freer, denoting museum quality, in 1916 (caption)",
+     "object_date": "1916 (marking date according to Pear)"
+    },
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Impressed medallion mark \"Pewabic Detroit\", medallion paper label \"Pewabic Pottery\" in sepia with \"60.00\" penciled in center, and an \"M1\" paper label",
+     "object_date": "1924"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-m-quality-labels.webp",
+    "marks_in_image": 1,
+    "object": "Bottle, 1920, Pewabic Pottery, Detroit Institute of Arts 46.239 (the base)",
+    "holder": "Detroit Institute of Arts",
+    "accession": "46.239",
+    "source_url": "https://dia.org/collection/bottle-62887",
+    "licence": "public-domain",
+    "licence_note": "The DIA offers this photograph of a public-domain work for free download ('Many images of DIA works in the public domain are available for free download from this website', dia.org/collection/rights-reproduction); used with credit on Joe's decision, 2026-11-25.",
+    "credit": "Detroit Institute of Arts, 46.239, photograph of the base; cropped by Heirloom.",
+    "original": "hallmark-sources/pewabic/corpus/dia/orig/46.239-d2-2016-04-27.jpg",
+    "crop": [
+     505,
+     150,
+     868,
+     440
+    ],
+    "size": [
+     363,
+     290
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-freer-inventory-labels",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "label",
+   "name": "Charles Lang Freer's inventory numbers",
+   "looks_like": "Small rectangular white stickers with a dashed black border and a printed four-digit number, often two of them, or a number painted in orange inside the foot.",
+   "means": "Freer's own inventory numbers: the piece belonged to Charles Lang Freer, Pewabic's first great patron. Not a Pewabic mark.",
+   "applied": "paper label",
+   "where_on_piece": "base; painted numbers inside the foot",
+   "used_on": "vessels",
+   "date_from": 1903,
+   "date_to": 1920,
+   "date_note": "Freer bought Pewabic from 1903 to 1918; his collection went to the Freer Gallery in 1920. The labels are identified as his by Brunk; the Freer Gallery records transcribe them without naming them.",
+   "sources": [
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "Case one - Patronage"
+    },
+    {
+     "id": "pewabic-freer-records",
+     "where": "F1912.103; F1917.440 (stickers transcribed; the records do not say whose numbers they are)"
+    }
+   ],
+   "disagreements": [
+    "The identification as Freer's labels is Brunk's; the Freer Gallery's own records transcribe the stickers without naming them."
+   ],
+   "examples": [
+    {
+     "holder": "Freer Gallery of Art",
+     "accession": "F1917.440",
+     "url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1917.440/",
+     "inscription_as_recorded": "Rectangular, white sticker with perforated boarder of black dashes, \"2592\" printed in black ink; ... \"6533\" printed in black ink",
+     "object_date": "bought 1917"
+    },
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Impressed medallion mark \"Pewabic Detroit\" and Freer's inventory number \"6523\" painted in orange on inside of foot.",
+     "object_date": "1917"
+    }
+   ],
+   "visual": {
+    "status": "rendering",
+    "file": "marks/img/db/pewabic-freer-inventory-labels.webp",
+    "marks_in_image": 1,
+    "method": "Drawn by Heirloom after a photograph of the base of a bottle bought in 1917 at Freer Gallery of Art (National Museum of Asian Art) (F1917.440), which is not free to copy: the mark is public, the photograph is not. Layout and wording as photographed; the numbers traced from the photograph, the edge redrawn.",
+    "confidence": "high",
+    "holder": "Freer Gallery of Art (National Museum of Asian Art)",
+    "accession": "F1917.440",
+    "source_url": "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1917.440/",
+    "credit": "Drawing by Heirloom after a photograph at Freer Gallery of Art (National Museum of Asian Art), F1917.440.",
+    "original": "hallmark-sources/pewabic/drawings/pewabic-freer-inventory-labels.png",
+    "size": [
+     371,
+     159
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-wbs-inscription",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "signature",
+   "name": "WBS, William Buck Stratton",
+   "looks_like": "The letters WBS scratched or written on the base, usually with a year such as 1933 or 1935; once W B STRATTON in full.",
+   "means": "Designed or made by William Buck Stratton, the architect of the pottery building and Mary Chase Perry's husband.",
+   "applied": "incised",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1927,
+   "date_to": 1938,
+   "date_note": "Dated examples run from October 1932 to 1935; pieces of 1927 are attributed to him. He died in 1938. Evans says WBS appears on early pieces, which the dated examples do not bear out.",
+   "sources": [
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "William B. Stratton section"
+    },
+    {
+     "id": "pewabic-dia-records",
+     "where": "47.173"
+    },
+    {
+     "id": "evans-art-pottery-1974",
+     "where": "p. 229, as given in Lehner (1988), Lehner p. 342"
+    }
+   ],
+   "disagreements": [
+    "Evans (as Lehner gives him): 'early pieces'. Dated examples: 1932-1935.",
+    "The Detroit Institute of Arts F82.59 (1940-1945) is recorded as 'W B 5' painted in black. It may be a misreading of WBS, but Stratton died in 1938; unresolved."
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "47.173",
+     "url": "https://dia.org/collection/vase-62923",
+     "inscription_as_recorded": "Signed and dated, on bottom: WBS - 1935 || Marked, on bottom: PEWABIC-DETROIT",
+     "object_date": "1935"
+    },
+    {
+     "holder": "Collection of David H. Spear (exhibited 2007)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Inscribed \"Oct. 1932 WBS for John Challis,\" impressed medallion mark \"Pewabic Pp Detroit\"",
+     "object_date": "October 1932"
+    },
+    {
+     "holder": "Private collection (exhibited 2007, Brunk)",
+     "accession": null,
+     "url": "https://www.tfaoi.org/aa/7aa/7aa851.htm",
+     "inscription_as_recorded": "Inscribed \"Scarab Club 1934 PEWABIC W B STRATTON",
+     "object_date": "1934"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-stratton-names",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "signature",
+   "name": "Mary Chase Stratton, signed",
+   "looks_like": "MARY CHASE STRATTON handwritten in the middle of a Pewabic label, or WM & MARY CHASE STRATTON signed on the base; also on clay Christmas-card tiles.",
+   "means": "From the Strattons personally, often a gift.",
+   "applied": "painted",
+   "where_on_piece": "base; on Christmas tiles, the face",
+   "used_on": "both",
+   "date_from": 1918,
+   "date_to": 1938,
+   "date_note": "The joint name belongs to their marriage, 1918 to 1938. Dated examples: about 1918, 1930, about 1935.",
+   "sources": [
+    {
+     "id": "pewabic-dia-records",
+     "where": "F70.216"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "labels: c. 1918 vase and c. 1935 Christmas card tile"
+    },
+    {
+     "id": "pear-pewabic-1976",
+     "where": "Fig. 59, p. 46"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.216",
+     "url": "https://dia.org/collection/vase-62936",
+     "inscription_as_recorded": "Signed, on bottom: WM & MARY CHASE STRATTON || Sticker, on bottom: PEWABIC DETROIT",
+     "object_date": "1930"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-handwritten-pewabic",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "PEWABIC written by hand",
+   "looks_like": "PEWABIC scratched into the base, or written in pencil or crayon; once PP scratched in.",
+   "means": "Pewabic, marked by hand where no stamp was used.",
+   "applied": "incised",
+   "where_on_piece": "base",
+   "used_on": "vessels",
+   "date_from": 1904,
+   "date_to": 1950,
+   "date_note": "Examples run from about 1904 to about 1950.",
+   "sources": [
+    {
+     "id": "pewabic-dia-records",
+     "where": "F70.183; F70.207; F70.219; F70.220; F70.228"
+    },
+    {
+     "id": "brunk-pewabic-labels-2007",
+     "where": "labels: 'Low bowl, c. 1904'; 'Bottle, c. late 1920s'; 'Bottle, c. 1950'"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.183",
+     "url": "https://dia.org/collection/bookends-32362",
+     "inscription_as_recorded": "Incised, on bottom: PEWABIC Mark, sticker on bottom: PEWABIC DETROT | do not take | original one",
+     "object_date": "between 1935 and 1945"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.207",
+     "url": "https://dia.org/collection/vase-32924",
+     "inscription_as_recorded": "Mark, on bottom (in crayon): PEWABIC",
+     "object_date": "between 1925 and 1930"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.219",
+     "url": "https://dia.org/collection/vase-32933",
+     "inscription_as_recorded": "Incised, on bottom: PEWABIC",
+     "object_date": "no date"
+    }
+   ],
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ]
+  },
+  {
+   "id": "pewabic-name-on-tile-face",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "other",
+   "name": "PEWABIC on the face of a tile",
+   "looks_like": "A tile with PEWABIC or DETROIT molded or written on its front as part of the design.",
+   "means": "A Pewabic sign or showroom tile, or a place named in the design, like DETROIT on the skyline tile shown here. Names and initials on club and association tiles are the customer's, not Pewabic's.",
+   "applied": "molded",
+   "where_on_piece": "face",
+   "used_on": "tiles",
+   "sources": [
+    {
+     "id": "pewabic-dia-records",
+     "where": "F70.296; F70.290"
+    },
+    {
+     "id": "pear-pewabic-1976",
+     "where": "Fig. 413, p. 191"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.296",
+     "url": "https://dia.org/collection/tile-32870",
+     "inscription_as_recorded": "Inscribed, center: PEWABIC",
+     "object_date": "between 1920 and 1950"
+    },
+    {
+     "holder": "Detroit Institute of Arts",
+     "accession": "F70.290",
+     "url": "https://dia.org/collection/tile-view-detroit-skyline-32872",
+     "inscription_as_recorded": "Inscribed, at bottom: Detroit",
+     "object_date": "between 1920 and 1950"
+    }
+   ],
+   "visual": {
+    "status": "photo",
+    "file": "marks/img/db/pewabic-name-on-tile-face.webp",
+    "marks_in_image": 1,
+    "object": "Tile with View of Detroit Skyline, 1920–1950, Pewabic Pottery, Detroit Institute of Arts F70.290 (the face)",
+    "holder": "Detroit Institute of Arts",
+    "accession": "F70.290",
+    "source_url": "https://dia.org/collection/tile-view-detroit-skyline-32872",
+    "licence": "public-domain",
+    "licence_note": "The DIA offers this photograph of a public-domain work for free download ('Many images of DIA works in the public domain are available for free download from this website', dia.org/collection/rights-reproduction); used with credit on Joe's decision, 2026-11-25.",
+    "credit": "Detroit Institute of Arts, F70.290, photograph of the face; cropped by Heirloom.",
+    "original": "hallmark-sources/pewabic/corpus/dia/orig/F70.290-D1.jpg",
+    "crop": [
+     500,
+     768,
+     872,
+     872
+    ],
+    "size": [
+     372,
+     104
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_from": null,
+   "date_to": null
+  },
+  {
+   "id": "pewabic-modern-maker-stamp",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "Modern Pewabic stamps",
+   "looks_like": "A small round seal on the base: PEWABIC round the top, DETROIT round the bottom, and the year in the middle, as on a vase of 1992 at The Henry Ford. Tiles carry a Pewabic stamp on the back.",
+   "means": "Made by today's nonprofit Pewabic Pottery, which restarted production in 1983.",
+   "applied": "impressed",
+   "where_on_piece": "base of vessels; back of tiles",
+   "used_on": "both",
+   "date_from": 1983,
+   "date_note": "Pewabic's own pages mention its signature Pewabic, Detroit and artisan stamps. The one modern stamp found in a museum, on a vase of 1992 at The Henry Ford, is the round seal with the year in its middle; the old seal has none. Whether every modern piece carries a year, and since when, is not documented.",
+   "sources": [
+    {
+     "id": "pewabic-org-seconds",
+     "where": "'stamps + markings'"
+    },
+    {
+     "id": "simanaitis-pewabic-2013"
+    },
+    {
+     "id": "fisher-fired-magic-2003",
+     "where": "p. 25"
+    },
+    {
+     "id": "pewabic-org-vessels"
+    },
+    {
+     "id": "pewabic-henry-ford-records",
+     "where": "2019.117.13"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "The Henry Ford",
+     "accession": "2019.117.13",
+     "url": "https://www.thehenryford.org/collections/explore/artifact/493690",
+     "object_date": "1992",
+     "inscription_as_recorded": "on bottom, stamped: [in circle] JFM / [leaf] [in circle] PEWABIC / 1992 / DETROIT"
+    }
+   ],
+   "visual": {
+    "status": "rendering",
+    "file": "marks/img/db/pewabic-modern-maker-stamp.webp",
+    "marks_in_image": 1,
+    "method": "Drawn by Heirloom after a photograph of the base of a vase of 1992 at The Henry Ford (2019.117.13), which is not free to copy: the mark is public, the photograph is not. Layout and wording as photographed; the letters drawn, not traced.",
+    "confidence": "high",
+    "holder": "The Henry Ford",
+    "accession": "2019.117.13",
+    "source_url": "https://www.thehenryford.org/collections/explore/artifact/493690",
+    "credit": "Drawing by Heirloom after a photograph at The Henry Ford, 2019.117.13.",
+    "original": "hallmark-sources/pewabic/drawings/pewabic-modern-maker-stamp.svg",
+    "size": [
+     300,
+     300
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_to": null
+  },
+  {
+   "id": "pewabic-modern-artisan-stamp",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "decorator mark",
+   "name": "Modern artisan's symbol",
+   "looks_like": "A small circle with a maker's initials or symbol, stamped beside the Pewabic seal: JFM with a leaf on a vase of 1992 at The Henry Ford, a cardinal on a 1992 tile.",
+   "means": "Which Pewabic artisan made the piece, in the modern era. No list of the symbols was found.",
+   "applied": "impressed",
+   "where_on_piece": "base of vessels; back of tiles",
+   "used_on": "both",
+   "date_from": 1983,
+   "sources": [
+    {
+     "id": "pewabic-org-seconds",
+     "where": "'stamps + markings'"
+    },
+    {
+     "id": "simanaitis-pewabic-2013"
+    },
+    {
+     "id": "pewabic-henry-ford-records",
+     "where": "2019.117.13"
+    }
+   ],
+   "examples": [
+    {
+     "holder": "The Henry Ford",
+     "accession": "2019.117.13",
+     "url": "https://www.thehenryford.org/collections/explore/artifact/493690",
+     "object_date": "1992",
+     "inscription_as_recorded": "on bottom, stamped: [in circle] JFM / [leaf]"
+    }
+   ],
+   "visual": {
+    "status": "rendering",
+    "file": "marks/img/db/pewabic-modern-artisan-stamp.webp",
+    "marks_in_image": 1,
+    "method": "Drawn by Heirloom after a photograph of the base of a vase of 1992 at The Henry Ford (2019.117.13), which is not free to copy: the mark is public, the photograph is not. Layout and wording as photographed; the letters drawn, not traced.",
+    "confidence": "high",
+    "holder": "The Henry Ford",
+    "accession": "2019.117.13",
+    "source_url": "https://www.thehenryford.org/collections/explore/artifact/493690",
+    "credit": "Drawing by Heirloom after a photograph at The Henry Ford, 2019.117.13.",
+    "original": "hallmark-sources/pewabic/drawings/pewabic-modern-artisan-stamp.svg",
+    "size": [
+     300,
+     300
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_to": null
+  },
+  {
+   "id": "pewabic-modern-year-on-tile",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "date code",
+   "name": "A year on the back of a tile",
+   "looks_like": "A year, such as 1992, pressed into the back of a tile.",
+   "means": "The year a modern Pewabic tile was made. Stratton-era tiles were usually unmarked, so a year points to the modern era.",
+   "applied": "impressed",
+   "where_on_piece": "back of tile",
+   "used_on": "tiles",
+   "date_from": 1983,
+   "sources": [
+    {
+     "id": "simanaitis-pewabic-2013"
+    }
+   ],
+   "single_source": "One example (1992), described by its owner; when the practice began was not found.",
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_to": null
+  },
+  {
+   "id": "pewabic-seconds-mark",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "other",
+   "name": "Seconds: a black X",
+   "looks_like": "A black X, or a special stamp, on the bottom or back.",
+   "means": "A modern Pewabic second, sold at the annual seconds sale for a flaw in the glaze, color or shape, or a missing stamp. Some modern seconds have no Pewabic stamp at all.",
+   "applied": "painted",
+   "where_on_piece": "bottom of vessels; back of tiles",
+   "used_on": "both",
+   "sources": [
+    {
+     "id": "pewabic-org-seconds",
+     "where": "'stamps + markings'"
+    }
+   ],
+   "single_source": "Pewabic's own account of its current practice.",
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_from": null,
+   "date_to": null
+  },
+  {
+   "id": "pewabic-modern-reissue-mcp",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "other",
+   "name": "MCP on a modern reissued tile",
+   "looks_like": "Mary Chase Perry's initials molded into the face of a new tile, such as Pewabic's current peacock tile.",
+   "means": "A modern tile made from a historic (1909) design. The initials are part of the old design and do not make the tile old.",
+   "applied": "molded",
+   "where_on_piece": "face",
+   "used_on": "tiles",
+   "date_from": 1983,
+   "sources": [
+    {
+     "id": "catallo-pewabic-2017",
+     "where": "unnumbered colour plate, caption"
+    },
+    {
+     "id": "catallo-pewabic-2017",
+     "where": "p. 98; p. 102"
+    }
+   ],
+   "single_source": "Catallo, with Pewabic's current tiles; when the reissues began is not stated.",
+   "visual": {
+    "status": "none",
+    "searched": [
+     "Barber, Marks of American Potters (1904), p. 167",
+     "Pear, The Pewabic Pottery (1976), pp. 34-35, 46",
+     "Lehner (1988), pp. 342-343; Kovels' Dictionary of Marks, p. 210",
+     "Detroit Institute of Arts, Freer, Met, Art Institute of Chicago, Cleveland, Cooper Hewitt, Smithsonian American History and Minneapolis records (no open photograph of a base)",
+     "Wikimedia Commons, category Pewabic Pottery (whole pieces and buildings only)"
+    ],
+    "blocked": [
+     {
+      "what": "Base photographs of Pewabic pieces in the online collection",
+      "holder": "Detroit Institute of Arts",
+      "licence": "not stated",
+      "url": "https://dia.org/collection",
+      "ask": "DIA Rights and Reproductions"
+     }
+    ]
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_to": null
+  },
+  {
+   "id": "pewabic-detroit-arched-stamp-no-border",
+   "group": "ceramics-makers",
+   "maker": "Pewabic Pottery, Detroit",
+   "country": "US",
+   "kind": "maker's mark",
+   "name": "PEWABIC over DETROIT, no circle",
+   "looks_like": "PEWABIC in an arc over DETROIT, hand-lettered, with no circle round it.",
+   "means": "A Pewabic stamp, as Lehner copied it from a 1978 museum booklet. It may be the round seal drawn without its border.",
+   "applied": "ink stamp",
+   "where_on_piece": "not stated",
+   "used_on": "vessels",
+   "date_note": "Lehner gives no date.",
+   "sources": [
+    {
+     "id": "lehner-us-marks-1988",
+     "where": "p. 342 note and p. 343 mark no. 7"
+    }
+   ],
+   "single_source": "Only Lehner, copying a 1978 booklet.",
+   "visual": {
+    "status": "facsimile",
+    "file": "marks/img/db/pewabic-detroit-arched-stamp-no-border.webp",
+    "marks_in_image": 1,
+    "object": "Lehner (1988), p. 343, mark no. 7",
+    "holder": "Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988)",
+    "licence": "in-copyright-reference",
+    "credit": "Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (1988), p. 343, mark no. 7.",
+    "original": "hallmark-sources/pewabic/marks/pages/lehner-1988-p343-no7-pewabic-detroit-stamp.png",
+    "size": [
+     445,
+     261
+    ],
+    "licence_note": "In-copyright reference book, reproduced by Heirloom on its own decision (Joe, 2026-11-24); no licence from the publisher or author. Source: Lois Lehner, Lehner's Encyclopedia of U.S. Marks on Pottery, Porcelain & Clay (Paducah: Collector Books, 1988), p. 343, mark no. 7."
+   },
+   "pages": [
+    "/marks/pewabic-pottery-marks"
+   ],
+   "date_from": null,
+   "date_to": null
+  }
+ ]
+}

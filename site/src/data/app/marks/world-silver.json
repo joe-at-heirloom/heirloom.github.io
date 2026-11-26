@@ -1634,7 +1634,8 @@
       "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
       "licence": "company copyright and trademark (drawings, not photos)",
       "ask": "Christofle press or heritage office",
-      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing",
+      "shows_mark": true
      }
     ],
     "photo_only": "A pictorial trademark (balance, bee, stars, laurels): a crisp redraw would help forgers; show it only as a photograph."
@@ -1691,7 +1692,8 @@
       "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
       "licence": "company copyright and trademark (drawings, not photos)",
       "ask": "Christofle press or heritage office",
-      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing",
+      "shows_mark": true
      }
     ],
     "photo_only": "A pictorial trademark (the balance with OC): a crisp redraw would help forgers; show it only as a photograph."
@@ -1745,7 +1747,8 @@
       "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
       "licence": "company copyright and trademark (drawings, not photos)",
       "ask": "Christofle press or heritage office",
-      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing",
+      "shows_mark": true
      }
     ],
     "photo_only": "A pictorial trademark (chess knight with OC): a crisp redraw would help forgers; show it only as a photograph."
@@ -1800,7 +1803,8 @@
       "url": "https://www.christofle.com/media/wysiwyg/PDF/CHRISTOFLE_AUTENTIFICATION_VINTAGE_EN.pdf",
       "licence": "company copyright and trademark (drawings, not photos)",
       "ask": "Christofle press or heritage office",
-      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing"
+      "checked": "checked 2026-11-22: the guide shows the mark as a company drawing",
+      "shows_mark": true
      }
     ],
     "photo_only": "A pictorial trademark (the Gallia cockerel): a crisp redraw would help forgers; show it only as a photograph."

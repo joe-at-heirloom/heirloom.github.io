@@ -204,7 +204,8 @@
       "url": "https://www.phillips.com/detail/rolex/CH080215/167",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Phillips image and rights department",
-      "checked": "checked 2026-11-22: mark not shown (lot 167's only image shows the watch on its bracelet with its papers)"
+      "checked": "checked 2026-11-22: mark not shown (lot 167's only image shows the watch on its bracelet with its papers)",
+      "shows_mark": false
      }
     ]
    },
@@ -253,7 +254,8 @@
       "url": "https://phillips.com/detail/rolex/HK080624/77",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Phillips image and rights department",
-      "checked": "checked 2026-11-22: mark not shown (Toki lot 77's four images show the dial, the closed case back and the sides, bracelet on)"
+      "checked": "checked 2026-11-22: mark not shown (Toki lot 77's four images show the dial, the closed case back and the sides, bracelet on)",
+      "shows_mark": false
      }
     ]
    },
@@ -788,7 +790,8 @@
       "url": "https://commons.wikimedia.org/wiki/File:Omega_Speedmaster_Rueckseite.jpg",
       "licence": "GPL-3.0",
       "ask": "The uploader, via their Commons talk page",
-      "checked": "checked 2026-11-22: mark not shown (a display back with an Apollo XI inscription and a limited-edition number, A 3764, not the eight-digit serial; the file page calls it a caliber 864 movement)"
+      "checked": "checked 2026-11-22: mark not shown (a display back with an Apollo XI inscription and a limited-edition number, A 3764, not the eight-digit serial; the file page calls it a caliber 864 movement)",
+      "shows_mark": false
      }
     ]
    },
@@ -860,7 +863,8 @@
       "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Antiquorum or Phillips image departments",
-      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)"
+      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)",
+      "shows_mark": false
      }
     ]
    },
@@ -930,7 +934,8 @@
       "url": "https://catalog.antiquorum.swiss/en/auctions/geneva-mandarin-oriental-hotel-du-rhone-2007-04-15/lots",
       "licence": "All rights reserved (auction photograph)",
       "ask": "Antiquorum image department",
-      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)"
+      "checked": "checked 2026-11-22: mark not shown (Omegamania lot 64's image shows the dial only)",
+      "shows_mark": false
      }
     ]
    },

@@ -2300,7 +2300,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/20266",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, a side view of the dish)"
+            "checked": "checked 2026-11-22: mark not shown (one image, a side view of the dish)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. Flagship flatware, about 1936",
@@ -2308,7 +2309,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/491709",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, the fork, knife and spoon face up)"
+            "checked": "checked 2026-11-22: mark not shown (one image, the fork, knife and spoon face up)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. 20th Century Limited flatware by Henry Dreyfuss, 1938",
@@ -2316,7 +2318,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/491847",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, the set face up)"
+            "checked": "checked 2026-11-22: mark not shown (one image, the set face up)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. prototype tea service by Eliel Saarinen, about 1932-35",
@@ -2324,7 +2327,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/490759",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, the service on its tray)"
+            "checked": "checked 2026-11-22: mark not shown (one image, the service on its tray)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. teapot by Paul A. Lobel, 1934",
@@ -2332,7 +2336,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/482754",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (two images, both overall views of the set; the record lists Wilcox Silver Plate Co. Division)"
+            "checked": "checked 2026-11-22: mark not shown (two images, both overall views of the set; the record lists Wilcox Silver Plate Co. Division)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. Tall Boy by Lurelle Guild, about 1934",
@@ -2340,7 +2345,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/487134",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, a front view)"
+            "checked": "checked 2026-11-22: mark not shown (one image, a front view)",
+            "shows_mark": false
           },
           {
             "what": "Three-piece tea set with tray, designed by Jean George Theobald, 1928; its base photo shows Wilcox S.P. Company in an arch, EPNS and INTERNATIONAL S. CO.",
@@ -2348,7 +2354,8 @@
             "url": "https://www.artic.edu/artworks/154136",
             "licence": "not public domain (the museum lists the work as in copyright; its images are not open)",
             "ask": "Art Institute of Chicago, Rights and Reproductions",
-            "checked": "checked 2026-11-24: mark shown on the base, legible"
+            "checked": "checked 2026-11-24: mark shown on the base, legible",
+            "shows_mark": true
           }
         ],
         "searched": [
@@ -2418,7 +2425,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/20266",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, a side view of the dish)"
+            "checked": "checked 2026-11-22: mark not shown (one image, a side view of the dish)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. Flagship flatware, about 1936",
@@ -2426,7 +2434,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/491709",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, the fork, knife and spoon face up)"
+            "checked": "checked 2026-11-22: mark not shown (one image, the fork, knife and spoon face up)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. 20th Century Limited flatware by Henry Dreyfuss, 1938",
@@ -2434,7 +2443,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/491847",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, the set face up)"
+            "checked": "checked 2026-11-22: mark not shown (one image, the set face up)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. prototype tea service by Eliel Saarinen, about 1932-35",
@@ -2442,7 +2452,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/490759",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, the service on its tray)"
+            "checked": "checked 2026-11-22: mark not shown (one image, the service on its tray)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. teapot by Paul A. Lobel, 1934",
@@ -2450,7 +2461,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/482754",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (two images, both overall views of the set; the record lists Wilcox Silver Plate Co. Division)"
+            "checked": "checked 2026-11-22: mark not shown (two images, both overall views of the set; the record lists Wilcox Silver Plate Co. Division)",
+            "shows_mark": false
           },
           {
             "what": "International Silver Co. Tall Boy by Lurelle Guild, about 1934",
@@ -2458,7 +2470,8 @@
             "url": "https://www.metmuseum.org/art/collection/search/487134",
             "licence": "not Open Access (in copyright, permission needed)",
             "ask": "The Met, Image and Data Resources (image licensing)",
-            "checked": "checked 2026-11-22: mark not shown (one image, a front view)"
+            "checked": "checked 2026-11-22: mark not shown (one image, a front view)",
+            "shows_mark": false
           },
           {
             "what": "Three-piece tea set with tray, designed by Jean George Theobald, 1928; its base photo shows Wilcox S.P. Company in an arch, EPNS and INTERNATIONAL S. CO.",
@@ -2466,7 +2479,8 @@
             "url": "https://www.artic.edu/artworks/154136",
             "licence": "not public domain (the museum lists the work as in copyright; its images are not open)",
             "ask": "Art Institute of Chicago, Rights and Reproductions",
-            "checked": "checked 2026-11-24: mark shown on the base, legible"
+            "checked": "checked 2026-11-24: mark shown on the base, legible",
+            "shows_mark": true
           }
         ]
       },

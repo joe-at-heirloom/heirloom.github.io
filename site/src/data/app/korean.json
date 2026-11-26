@@ -235,6 +235,20 @@
      "notes": "Design critic's newspaper column; secondary."
     },
     {
+     "id": "chosen_koseki_zufu_v15",
+     "name": "朝鮮總督府 編, 朝鮮古蹟圖譜 第十五冊 (京城, 1935; foreword dated 昭和十年六月)",
+     "url": "https://archive.org/details/choysenkosekizu15kung",
+     "lang": "ja",
+     "licence": "Public domain"
+    },
+    {
+     "id": "chosen_koseki_zufu_v8",
+     "name": "朝鮮總督府 編, 朝鮮古蹟圖譜 第八冊 (京城, 1928; foreword dated 昭和三年三月)",
+     "url": "https://archive.org/details/choysenkosekizu8kung",
+     "lang": "ja",
+     "licence": "Public domain"
+    },
+    {
      "id": "cma_1995_39",
      "name": "Cleveland Museum of Art 1995.39, Dream Jar, Shin Sangho, 1994",
      "url": "https://clevelandart.org/art/1995.39",
@@ -2008,6 +2022,18 @@
      "author": "송찬식",
      "written": "집필 1995년",
      "last_modified": "최종수정 2024년 03월 14일",
+     "licence": "Korean Copyright Act art. 24-2; attribution required",
+     "notes": "Encykorea article (facts used; our own English)."
+    },
+    {
+     "id": "encykorea_E0043954",
+     "name": "이담, 『한국민족문화대백과사전』, 한국학중앙연구원",
+     "url": "https://encykorea.aks.ac.kr/Article/E0043954",
+     "lang": "ko",
+     "retrieved": "2026-11-25",
+     "author": "권인혁",
+     "written": "집필 1995년",
+     "last_modified": "최종수정 2026년 08월 12일",
      "licence": "Korean Copyright Act art. 24-2; attribution required",
      "notes": "Encykorea article (facts used; our own English)."
     },
@@ -3822,6 +3848,14 @@
      "notes": "Reports the 문화재청 designation notice; partly dependent on khs_sunhwa."
     },
     {
+     "id": "nfm_collection",
+     "name": "국립민속박물관 소장품 (National Folk Museum of Korea), collection records via e뮤지엄 and nfm.go.kr",
+     "url": "https://www.nfm.go.kr/",
+     "lang": "ko",
+     "retrieved": "2026-11-25",
+     "notes": "Catalogue records read in round 3 (guides3/raw). Counted as one source however many objects."
+    },
+    {
      "id": "nfmk_101066",
      "name": "국립민속박물관, 「화신상회(和信商會) 전단」 민속 101066, e뮤지엄 record + photograph",
      "url": "https://www.emuseum.go.kr/detail?relicId=PS0100200100110106600000",
@@ -4372,6 +4406,15 @@
      "retrieved": "2026-11-25",
      "licence": "",
      "notes": "Web searches run for 'KOREA STERLING'/'STERLING KOREA', Korean silver for US servicemen (English and Korean), 天銀/十成銀 marks, 京城 銀器 刻印 (Japanese), 朝鮮総督府 品位證明 (Japanese and Korean): no reference source found for the items flagged as not found."
+    },
+    {
+     "id": "seohwajing_1928_index",
+     "name": "槿域書畵徵 (Geunyeok seohwajing / Kŭnyŏk sŏhwa ching), 吳世昌 輯, 京城: 啓明俱樂部, 1928 — 人名總目 (name index, pp. 一–一五) and 書畵徵收載人數 (p. 一六)",
+     "url": "https://viewer.nl.go.kr/conv/CNTS-00133331948.pdf",
+     "lang": "zh-classical",
+     "retrieved": "2026-11-25",
+     "licence": "Public domain (compiler d. 1953; published 1928).",
+     "notes": "Local copy people/downloads/seohwajing-1928/seohwajing-1928.pdf, PDF pages 22–37. Index transcribed by eye from 220-dpi page images (raw/seohwajing_index_transcription.tsv): 1,102 of the book's 1,117 entries (13 Silla calligraphers skipped; ~2 missed). Book totals: ● painting 392, ○ calligraphy 576, ◐ both 149; our transcription: 390 / 562 (+13 Silla skipped) / 150. Small annotations (字、號, reign-year marks) are hard to read: uncertain readings carry \"?\". Only the index was read, not the entries; studies show the book has errors (see people/sources.json seohwajing_error_studies), so it is never used alone for dates."
     },
     {
      "id": "seoul_1993_kwangjuyo",
@@ -5832,7 +5875,8 @@
       "freer_lee1994",
       "history_leejongmin_ganji",
       "jkaa_jeon2012",
-      "vam_gisa"
+      "vam_gisa",
+      "chosen_koseki_zufu_v8"
      ],
      "single_source": false,
      "decode": "never"
@@ -5892,7 +5936,8 @@
       "fitzwilliam_imsin",
       "freer_lee1994",
       "history_leejongmin_ganji",
-      "jkaa_jeon2012"
+      "jkaa_jeon2012",
+      "chosen_koseki_zufu_v8"
      ],
      "single_source": false,
      "decode": "never"
@@ -5960,7 +6005,8 @@
       "fitzwilliam_imsin",
       "freer_lee1994",
       "history_leejongmin_ganji",
-      "jkaa_jeon2012"
+      "jkaa_jeon2012",
+      "chosen_koseki_zufu_v8"
      ],
      "single_source": false,
      "decode": "never"
@@ -6011,7 +6057,8 @@
      "sources": [
       "freer_lee1994",
       "history_leejongmin_ganji",
-      "jkaa_jeon2012"
+      "jkaa_jeon2012",
+      "chosen_koseki_zufu_v8"
      ],
      "single_source": false,
      "decode": "never"
@@ -6062,7 +6109,8 @@
      "sources": [
       "freer_lee1994",
       "history_leejongmin_ganji",
-      "jkaa_jeon2012"
+      "jkaa_jeon2012",
+      "chosen_koseki_zufu_v8"
      ],
      "single_source": false,
      "decode": "never"
@@ -7321,22 +7369,24 @@
      "id": "si",
      "group": "goryeo",
      "chars": "詩",
-     "variants": [],
+     "variants": [
+      "詩銘"
+     ],
      "hangul": "시",
      "rr": "Si",
      "mr": "Si",
      "other_spellings": [],
-     "meaning": "'Poem'",
+     "meaning": "'Poem': celadon with a poem on it (詩銘), incised, inlaid in black or white, or painted in iron-brown; catalogues name such wares by the word.",
      "kind": "character mark",
      "wares": [
-      "incised celadon gourd-shaped bottle"
+      "celadon bottles, bowls and wine bottles"
      ],
-     "technique": "white inlay",
+     "technique": "incised, inlaid (black or white) or painted in iron-brown",
      "where_on_object": "not specified",
      "date_from": 1170,
      "date_to": 1180,
-     "date_note": "Listed by Yun Yong-i among celadons he dates 1170-1180.",
-     "what_it_tells": "An early use of inlay to add a word to a carved item.",
+     "date_note": "Yun Yong-i dates the bottle he describes to 1170–1180; the others are not dated.",
+     "what_it_tells": "That the writing is a poem, not a mark: it names no maker, office, place or date. Read it as verse.",
      "cautions": "Single source (NMK item). None of the sources consulted mention later copies carrying this inscription; that is not evidence that none exist. Goryeo-style celadon has been reproduced since the colonial period, so the inscription alone does not by itself date the item or show that it is genuine.",
      "maker": null,
      "place": null,
@@ -7348,13 +7398,22 @@
        ],
        "quote": "inscription si 詩 in white inlay",
        "single_source": true
+      },
+      {
+       "text": "The Government-General's 1928 catalogue shows Goryeo celadons with poems on them (詩銘): a bowl with an incised poem, an inlaid bottle with chrysanthemums and a poem in black inlay, a gourd-shaped bottle with a poem in a panel, and a wine bottle with willows and a poem in iron-brown.",
+       "sources": [
+        "chosen_koseki_zufu_v8"
+       ],
+       "quote": "詩銘",
+       "single_source": true
       }
      ],
      "sources": [
+      "chosen_koseki_zufu_v8",
       "freer_yun1992"
      ],
      "single_source": true,
-     "decode": "alone"
+     "decode": "never"
     },
     {
      "id": "jangjinju",
@@ -7899,7 +7958,8 @@
       "jangdaeri2018",
       "parkdb1977",
       "sillok_taejong17_0420",
-      "sillokwiki_janghunggo"
+      "sillokwiki_janghunggo",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -7997,7 +8057,8 @@
       "parkjm2020",
       "seamuse",
       "sillok_taejong17_0420",
-      "sillokwiki_naeseomsi"
+      "sillokwiki_naeseomsi",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -8075,7 +8136,8 @@
       "emuseum_nmk",
       "parkjm2020",
       "sillok_taejong17_0420",
-      "sillokwiki_naejasi"
+      "sillokwiki_naejasi",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -8166,7 +8228,8 @@
       "goheung2023",
       "parkjm2020",
       "sillok_taejong17_0420",
-      "sillokwiki_yebinsi"
+      "sillokwiki_yebinsi",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -8428,7 +8491,8 @@
      "sources": [
       "emuseum_nmk",
       "encykorea_buncheong",
-      "sillokwiki_insubu"
+      "sillokwiki_insubu",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -8490,7 +8554,8 @@
       "encykorea_buncheong",
       "jangdaeri2018",
       "sillok_taejong17_0420",
-      "sillokwiki_saseonseo"
+      "sillokwiki_saseonseo",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -8644,7 +8709,8 @@
       "emuseum_nmk",
       "encykorea_buncheong",
       "jiriji_gyeongju",
-      "met"
+      "met",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -9203,7 +9269,8 @@
      "sources": [
       "emuseum_nmk",
       "encykorea_buncheong",
-      "jiriji_changwon"
+      "jiriji_changwon",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": true
     },
@@ -9681,7 +9748,8 @@
      "sources": [
       "emuseum_nmk",
       "encykorea_buncheong",
-      "jiriji_eonyang"
+      "jiriji_eonyang",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -9807,7 +9875,8 @@
       "encykorea_buncheong",
       "jangdaeri2018",
       "jiriji_samga",
-      "sillokwiki_samgahyeon"
+      "sillokwiki_samgahyeon",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false
     },
@@ -11287,7 +11356,8 @@
       }
      ],
      "sources": [
-      "emuseum_nmk"
+      "emuseum_nmk",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": true,
      "decode": "never"
@@ -11330,7 +11400,8 @@
      ],
      "sources": [
       "emuseum_nmk",
-      "encykorea_buncheong"
+      "encykorea_buncheong",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false,
      "decode": "never"
@@ -11376,7 +11447,8 @@
      ],
      "sources": [
       "emuseum_nmk",
-      "encykorea_buncheong"
+      "encykorea_buncheong",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false,
      "decode": "never"
@@ -11419,7 +11491,8 @@
      ],
      "sources": [
       "emuseum_nmk",
-      "encykorea_buncheong"
+      "encykorea_buncheong",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false,
      "decode": "never"
@@ -11463,7 +11536,8 @@
      ],
      "sources": [
       "emuseum_nmk",
-      "encykorea_buncheong"
+      "encykorea_buncheong",
+      "chosen_koseki_zufu_v15"
      ],
      "single_source": false,
      "decode": "never"
@@ -24074,6 +24148,120 @@
       "enc_donggyeong"
      ],
      "single_source": false
+    },
+    {
+     "id": "buncheong-single-characters",
+     "group": "buncheong",
+     "chars": "天",
+     "variants": [
+      "夫",
+      "菓",
+      "黃",
+      "寧",
+      "仁",
+      "禾",
+      "大",
+      "梁",
+      "公",
+      "崔",
+      "自",
+      "內",
+      "洪字"
+     ],
+     "hangul": "글자 하나",
+     "rr": "Single characters",
+     "mr": "Single characters",
+     "other_spellings": [],
+     "meaning": "A single character on a buncheong dish, cup or bowl, stamped, inlaid or brushed in iron; what each one means is not recorded.",
+     "kind": "character mark",
+     "wares": [
+      "buncheong"
+     ],
+     "technique": "stamped, inlaid or brushed in iron",
+     "where_on_object": "inside or on the outer wall",
+     "date_from": 1400,
+     "date_to": 1600,
+     "date_note": "The span of buncheong itself; none of these items is dated.",
+     "what_it_tells": "That the item is marked, not by whom or for whom: the catalogues give the character and no reading of it.",
+     "cautions": "A lone 天 or 黃 on buncheong is not the white-porcelain kiln mark of the same character (the 天地玄黃 marks of the Gwangju court kilns): the wares differ. A character can also be a short form of an office or place name (內 for 內贍 or 內資, 仁 for 仁壽府), but no source read says so for these items.",
+     "maker": null,
+     "place": null,
+     "facts": [
+      {
+       "text": "The Government-General's 1935 catalogue shows buncheong dishes, cups and bowls marked with a single character: 天, 夫, 菓, 黃, 寧, 仁, 禾, 大, 梁, 公, 崔, 自 and 內, and one marked 洪字. It gives the character and the owner, and no reading.",
+       "sources": [
+        "chosen_koseki_zufu_v15"
+       ],
+       "quote": "三島手文字入",
+       "single_source": true
+      },
+      {
+       "text": "The National Museum of Korea catalogues a stamped buncheong dish marked 黃 (본관 12035) and a buncheong dish marked 天 (수정 333) under those characters.",
+       "sources": [
+        "emuseum_nmk"
+       ],
+       "quote": "분청사기인화문『황』명접시; 『천』이 새겨진 분청사기 접시",
+       "single_source": true
+      }
+     ],
+     "sources": [
+      "chosen_koseki_zufu_v15",
+      "emuseum_nmk"
+     ],
+     "decode": "never",
+     "single_source": true
+    },
+    {
+     "id": "buncheong-epitaph-tablets",
+     "group": "buncheong",
+     "chars": "墓誌",
+     "variants": [
+      "誌石"
+     ],
+     "hangul": "묘지",
+     "rr": "Myoji",
+     "mr": "Myoji",
+     "other_spellings": [],
+     "meaning": "Epitaph tablets of buncheong-type stoneware: the dead person's name, family and dates written on a slab or a spirit-tablet shape for burial.",
+     "kind": "date",
+     "wares": [
+      "buncheong"
+     ],
+     "technique": "white-inlaid characters on a dark body, or brushed in iron",
+     "where_on_object": "the face of the tablet",
+     "date_from": 1450,
+     "date_to": 1550,
+     "date_note": "The dated tablets and sherds range from 景泰 (1450s) to 嘉靖 (1530s–40s).",
+     "what_it_tells": "A dated tablet dates its own making closely, and a sherd found at a kiln dates that kiln: these are the anchors for dating buncheong. Undated ones show only that the type was made.",
+     "cautions": "Each dated tablet is listed under its reign era (景泰, 天順, 成化, 弘治, 嘉靖); this row is for the tablets and fragments with no date to read.",
+     "maker": null,
+     "place": null,
+     "facts": [
+      {
+       "text": "The Government-General's 1935 catalogue shows pottery epitaph tablets (墓誌陶版) and fragments in the Government-General and Yi Royal Household museums, some dated, several with no date legible.",
+       "sources": [
+        "chosen_koseki_zufu_v15"
+       ],
+       "quote": "墓誌陶版",
+       "single_source": true
+      },
+      {
+       "text": "Dated buncheong epitaphs run into the 16th century: an iron-painted epitaph sherd of 1536 from the Gyeryongsan kilns and an epitaph of 1540 at the National Museum of Korea show buncheong still made after the office marks end.",
+       "sources": [
+        "encykorea_buncheong",
+        "emuseum_nmk"
+       ],
+       "quote": "嘉靖十五年",
+       "single_source": false
+      }
+     ],
+     "sources": [
+      "chosen_koseki_zufu_v15",
+      "emuseum_nmk",
+      "encykorea_buncheong"
+     ],
+     "decode": "never",
+     "single_source": false
     }
    ]
   },
@@ -31789,9 +31977,10 @@
      "kilns": [
       "Gaeseong (Kaesong), North Hwanghae Province, DPRK"
      ],
-     "what_it_is": "Chest style of the merchant city of Gaeseong. The only description found is a Seoul dealer's: instead of a full-width drop-front, the door opens in the center between two small drawers set at the top on either side; less brass, lower part undecorated, hinges engraved with characters for longevity, prosperity and wealth.",
+     "what_it_is": "Chest style of the merchant city of Gaeseong. A Seoul dealer describes the door opening in the center between two small drawers set at the top on either side, with less brass, a plain lower front, and hinges engraved with characters for longevity, prosperity and wealth. The National Folk Museum's chests of this name have the center opening and the small top drawers, but several are heavily fitted in brass.",
      "how_to_recognize": [
-      "(single dealer source) center opening flanked by two small top drawers; fewer fittings; lower front plain; engraved character hinges."
+      "(single dealer source) center opening flanked by two small top drawers; fewer fittings; lower front plain; engraved character hinges.",
+      "Museum examples (National Folk Museum) are often brass-rich, with gourd-shaped hinges and bat and 囍 plates: less brass is not a reliable sign."
      ],
      "copies": [
       {
@@ -31819,10 +32008,20 @@
        "quote": "상업 도시인 개성에서 발달하였다",
        "quote_gloss": "developed in the commercial city of Gaeseong",
        "single_source": true
+      },
+      {
+       "text": "The National Folk Museum's chests catalogued as 개성반닫이 (민속 24344, 24348, 24361, 24362) include brass-rich ones with gourd-shaped hinges and bat and 囍 plates; two (24361, 24362) open in the center between small top drawers.",
+       "sources": [
+        "nfm_collection"
+       ],
+       "quote": "개성반닫이",
+       "quote_gloss": null,
+       "single_source": true
       }
      ],
      "sources": [
       "enc_gakkesuri",
+      "nfm_collection",
       "ye_olde_chats"
      ],
      "examples": [],
@@ -31909,7 +32108,8 @@
       "Black iron hinges and corner plates pierced with a sharp punch into lace-like geometric scroll patterns.",
       "Body of close-grained, figure-less linden (피나무) or walnut, painted dark or red so the iron lace stands out.",
       "One large crescent handle at the bottom center of the front and smaller ones at the top corners of the door; Bakcheon chests also used handles on front and back, not only the sides.",
-      "Later items: seven or eight long brass yakgwa hinges side by side (Bae)."
+      "Later items: seven or eight long brass yakgwa hinges side by side (Bae).",
+      "Museums use 숭숭이 (pierced iron) for chests from Ganghwa, Haeju and Pyongan too: pierced iron alone does not make a chest a Bakcheon one."
      ],
      "copies": [],
      "facts": [
@@ -31952,12 +32152,34 @@
        "quote": "앞판과 뒷널에 쓰인 예도",
        "quote_gloss": "examples used on the front and back boards",
        "single_source": false
+      },
+      {
+       "text": "Museums give the name 숭숭이 to pierced-iron chests from more places than Bakcheon: Ganghwa (National Museum of Korea, 건희 4602), Haeju (National Folk Museum, 민속 62484) and Pyongan province (National Museum of Korea, 건희 4630).",
+       "sources": [
+        "emuseum_nmk",
+        "nfm_collection"
+       ],
+       "quote": "숭숭이반닫이",
+       "quote_gloss": null,
+       "single_source": false
+      },
+      {
+       "text": "Bakcheon chests are not all linden: the National Museum of Korea's (구 8703) is linden, but the National Folk Museum records one (민속 70664) as paulownia.",
+       "sources": [
+        "emuseum_nmk",
+        "nfm_collection"
+       ],
+       "quote": "피나무; 오동나무",
+       "quote_gloss": null,
+       "single_source": false
       }
      ],
      "sources": [
+      "emuseum_nmk",
       "enc_bakcheon_bandaji",
       "enc_bandaji",
       "enc_jangseok",
+      "nfm_collection",
       "song_park_2010",
       "ye_olde_chats"
      ],
@@ -32097,6 +32319,15 @@
        "quote": "소나무가 주재",
        "quote_gloss": "pine is the main wood",
        "single_source": false
+      },
+      {
+       "text": "Regional names are given to later chests too: the National Folk Museum dates its 밀양반닫이 민속 74534 and 진주반닫이 민속 74535 after 1945, while its 밀양반닫이 70665 and 김해반닫이 74511 are Joseon.",
+       "sources": [
+        "nfm_collection"
+       ],
+       "quote": "광복이후",
+       "quote_gloss": null,
+       "single_source": true
       }
      ],
      "sources": [
@@ -32104,6 +32335,7 @@
       "enc_jeju_bandaji",
       "enc_miryang_bandaji",
       "kim_2017_gyeongnam",
+      "nfm_collection",
       "song_park_2010"
      ],
      "examples": [],
@@ -32173,12 +32405,22 @@
        "quote": "",
        "quote_gloss": "",
        "single_source": true
+      },
+      {
+       "text": "The National Folk Museum's records overlap Jeju and southwest Jeolla: one chest (민속 51402) is called 전라도, 장흥 and 제주도 반닫이, another (49821) 제주도 and 해남 반닫이; most of its Jeju chests are zelkova.",
+       "sources": [
+        "nfm_collection"
+       ],
+       "quote": "제주도반닫이",
+       "quote_gloss": null,
+       "single_source": true
       }
      ],
      "sources": [
       "enc_bandaji",
       "enc_jeju_bandaji",
       "morris_2022",
+      "nfm_collection",
       "wright_pai_1984"
      ],
      "examples": [],
@@ -32212,13 +32454,23 @@
        "quote": "",
        "quote_gloss": "",
        "single_source": true
+      },
+      {
+       "text": "The National Museum of Korea's 남원 반닫이 (신수 13557, colonial period, persimmon wood) is a tall two-part chest with a tier of drawers and open compartments, not a plain box chest.",
+       "sources": [
+        "emuseum_nmk"
+       ],
+       "quote": "남원 반닫이",
+       "quote_gloss": null,
+       "single_source": true
       }
      ],
      "sources": [
+      "emuseum_nmk",
       "kim_2017_gyeongnam"
      ],
      "examples": [],
-     "single_source": true
+     "single_source": false
     },
     {
      "id": "nong",
@@ -32963,7 +33215,7 @@
      "category": "furniture",
      "section": "chests",
      "name": "Gakgesuri: strong-box cabinet",
-     "hanja": "角其所里 (Sillok transcription); Japanese 懸硯 kakesuzuri",
+     "hanja": "角其所里 (Sillok transcription); Japanese 懸硯 kakesuzuri; 甲開修理 (National Museum of Korea catalogue)",
      "hangul": "각게수리 · 가께수리",
      "rr": "gakgesuri / gakkesuri",
      "mr": "kakkesuri / kakkesuri",
@@ -33018,10 +33270,22 @@
        "quote": "",
        "quote_gloss": "",
        "single_source": true
+      },
+      {
+       "text": "The National Museum of Korea also catalogues the type as 갑게수리 and writes it 甲開修理 (건희 4470, 4350); the National Folk Museum writes 가께수리, with 각게수리 among its other spellings.",
+       "sources": [
+        "emuseum_nmk",
+        "nfm_collection"
+       ],
+       "quote": "갑게수리(甲開修理)",
+       "quote_gloss": null,
+       "single_source": false
       }
      ],
      "sources": [
+      "emuseum_nmk",
       "enc_gakkesuri",
+      "nfm_collection",
       "nmnh",
       "sillok_gyeongjong2"
      ],
@@ -33333,7 +33597,8 @@
      "how_to_recognize": [
       "Rim carved in one item with the thick top; sometimes a carved center motif (phoenix, cranes, peaches, auspicious characters).",
       "Straight round legs; an apron of relief-carved scroll or peony between the legs; an upper stretcher and a second lower stretcher 5–6 cm below.",
-      "Top of zelkova or ginkgo (linden sometimes); legs pine or zelkova. Bae: H 25–28, 38–47 × 28–38 cm."
+      "Top of zelkova or ginkgo (linden sometimes); legs pine or zelkova. Bae: H 25–28, 38–47 × 28–38 cm.",
+      "Museum examples vary: the National Folk Museum's Joseon Tongyeong table has bamboo-jointed legs and one stretcher above foot rails."
      ],
      "copies": [],
      "facts": [
@@ -33345,11 +33610,21 @@
        "quote": "반 둘레의 전까지 연이어 조각",
        "quote_gloss": "carved continuously with the rim",
        "single_source": true
+      },
+      {
+       "text": "The National Folk Museum's Joseon Tongyeong table (민속 29166) has bamboo-jointed legs and a single stretcher above foot rails, not straight round legs with two stretchers.",
+       "sources": [
+        "nfm_collection"
+       ],
+       "quote": "통영반",
+       "quote_gloss": null,
+       "single_source": true
       }
      ],
      "sources": [
       "enc_soban",
-      "enc_tongyeongban"
+      "enc_tongyeongban",
+      "nfm_collection"
      ],
      "examples": [],
      "single_source": false
@@ -33477,13 +33752,23 @@
        "quote": "유리 거울이 유입되면서",
        "quote_gloss": "as glass mirrors came in",
        "single_source": true
+      },
+      {
+       "text": "The National Folk Museum uses 경대 and 빗접 (comb box) for the same items (민속 63595, 40319, 40320), and also calls a standing mirror on a stand 경대 (민속 105766).",
+       "sources": [
+        "nfm_collection"
+       ],
+       "quote": "빗접",
+       "quote_gloss": null,
+       "single_source": true
       }
      ],
      "sources": [
-      "enc_gyeongdae"
+      "enc_gyeongdae",
+      "nfm_collection"
      ],
      "examples": [],
-     "single_source": true
+     "single_source": false
     },
     {
      "id": "dwiju",
@@ -33701,10 +33986,20 @@
        "quote": "",
        "quote_gloss": "",
        "single_source": true
+      },
+      {
+       "text": "The National Folk Museum writes 괴목 with 槐 in its titles, e.g. 槐木三層饌欌 (민속 4988): a catalogue title, not a wood identification.",
+       "sources": [
+        "nfm_collection"
+       ],
+       "quote": "槐木三層饌欌",
+       "quote_gloss": null,
+       "single_source": true
       }
      ],
      "sources": [
       "enc_neutinamu",
+      "nfm_collection",
       "song_park_2010",
       "ye_olde_chats"
      ],

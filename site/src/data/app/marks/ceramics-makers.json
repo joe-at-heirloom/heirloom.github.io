@@ -9097,11 +9097,12 @@
         ],
         "blocked": [
           {
-            "what": "Backstamp chart images 1870-1923 and 1923-",
+            "what": "Backstamp charts, 1870-1923 and 1923-1985",
             "holder": "Royal Copenhagen (Fiskars)",
             "url": "https://www.royalcopenhagen.com/en-us/pages/backstamps",
             "licence": "copyrighted; facts only",
-            "ask": "Royal Copenhagen / Fiskars"
+            "ask": "Royal Copenhagen / Fiskars",
+            "shows_mark": true
           }
         ]
       },
@@ -9145,11 +9146,12 @@
         ],
         "blocked": [
           {
-            "what": "Backstamp chart images 1870-1923 and 1923-",
+            "what": "Backstamp charts, 1870-1923 and 1923-1985",
             "holder": "Royal Copenhagen (Fiskars)",
             "url": "https://www.royalcopenhagen.com/en-us/pages/backstamps",
             "licence": "copyrighted; facts only",
-            "ask": "Royal Copenhagen / Fiskars"
+            "ask": "Royal Copenhagen / Fiskars",
+            "shows_mark": true
           }
         ],
         "photo_only": "A round stamp with the wave device."
@@ -9209,11 +9211,12 @@
         ],
         "blocked": [
           {
-            "what": "Backstamp chart images 1870-1923 and 1923-",
+            "what": "Backstamp charts, 1870-1923 and 1923-1985",
             "holder": "Royal Copenhagen (Fiskars)",
             "url": "https://www.royalcopenhagen.com/en-us/pages/backstamps",
             "licence": "copyrighted; facts only",
-            "ask": "Royal Copenhagen / Fiskars"
+            "ask": "Royal Copenhagen / Fiskars",
+            "shows_mark": true
           }
         ]
       },

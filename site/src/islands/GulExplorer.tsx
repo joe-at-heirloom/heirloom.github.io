@@ -30,7 +30,7 @@ export default function GulExplorer({ items, tribes, formats, kinds }: Props) {
     <div class="gx">
       <div class="gx__bar">
         {chips('Tribe', tribes.filter((t) => used('tribes', t.id)), tribe, setTribe)}
-        {chips('Woven on', formats.filter((f) => used('formats', f.id)), format, setFormat)}
+        {formats.length > 0 && chips('Woven on', formats.filter((f) => used('formats', f.id)), format, setFormat)}
         {kinds.length > 1 && chips('Kind', kinds, kind, setKind)}
         <p class="gx__sum" aria-live="polite">{shown.length === items.length ? `${items.length} guls.` : `${shown.length} of ${items.length} guls.`}</p>
       </div>

@@ -89,7 +89,7 @@ const graph = [
     </header>
 
     {items.length > 0 && (
-      <GulExplorer client:visible {items} tribes={TR.map((t) => ({ id: t.id, name: t.name }))} formats={FO.map((f) => ({ id: f.id, name: f.name }))} kinds={usedKinds} />
+      <GulExplorer client:visible {items} tribes={TR.map((t) => ({ id: t.id, name: t.name }))} formats={[]} kinds={usedKinds} />
     )}
 
     <h2 id="sheets">Every gul</h2>

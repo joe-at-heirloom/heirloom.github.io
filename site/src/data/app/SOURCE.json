@@ -1,12 +1,16 @@
 {
   "repo": "heirloom (app)",
-  "ref": "origin/main",
-  "commit": "ccc17af9",
+  "ref": "data/rugs-phase2",
+  "commit": "734891ae",
   "changed": {
     "hallmarks": "2026-11-25",
     "chinese": "2026-11-24",
     "korean": "2026-11-25",
     "japanese": "2026-11-25",
+    "pewabic": "2026-11-25",
+    "indian": "2026-11-25",
+    "rugs": "2026-11-25",
+    "registration": "2026-11-25",
     "marks": "2026-11-25"
   }
 }

@@ -40,10 +40,10 @@ const graph = [
   faqLd(path, faqs),
   crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
 ];
+const steps = (x: unknown): string[] => (Array.isArray(x) ? x : x ? [x] : []).map((t) => clean(String(t)) ?? '').filter(Boolean);
 const fields = (r: (typeof rows)[number]): [string, string | null][] => [
   ['Also called', r.others.join(', ') || null],
   ['In other languages', nativeLine(r.native) || null],
-  ['How it is made', clean(r.raw.how_made)],
   ['On the front', clean(r.raw.front)],
   ['On the back', clean(r.raw.back)],
   ['What it tells you', clean(r.raw.what_it_tells)],
@@ -66,7 +66,11 @@ const fields = (r: (typeof rows)[number]): [string, string | null][] => [
             <li class="kw__item" id={`struct-${r.id}`}>
               <div>
                 <h3>{r.name}</h3>
-                <dl class="kw__dl">{fields(r).filter(([, v]) => v).map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}</dl>
+                <dl class="kw__dl">
+                  {fields(r).slice(0, 2).filter(([, v]) => v).map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}
+                  {steps(r.raw.how_made).length > 0 && <><dt>How it is made</dt><dd>{steps(r.raw.how_made).length > 1 ? <ol>{steps(r.raw.how_made).map((t) => <li>{t}</li>)}</ol> : steps(r.raw.how_made)[0]}</dd></>}
+                  {fields(r).slice(2).filter(([, v]) => v).map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}
+                </dl>
                 {r.raw.cautions && <p class="caution"><strong>Careful: </strong>{clean(r.raw.cautions)}</p>}
                 {typeLinks(r.raw.where_typical, 8).length > 0 && (
                   <p class="muted">Typical of: {typeLinks(r.raw.where_typical, 8).map((l, i) => <>{i > 0 && ', '}<a href={l.href}>{l.label}</a></>)}</p>
