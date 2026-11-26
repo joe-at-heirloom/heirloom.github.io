@@ -33,7 +33,7 @@ export type RugType = {
   country: string | null; region: string | null; madeBy: string | null; kind: string | null;
   from: number | null; to: number | null; dateNote: string | null;
   st: Structure;
-  design: { field: string | null; motifs: string[]; border: string | null; colors: string | null; formats: string[]; sizes: string | null };
+  design: { field: string | null; motifs: string[]; motifIds: string[]; gulIds: string[]; border: string | null; colors: string | null; formats: string[]; sizes: string | null };
   lookAlikes: { id: string | null; name: string; how: string }[];
   trade: string | null; tells: string | null; cautions: string | null;
   facts: { text: string; sources: string[]; single: boolean }[];
@@ -74,7 +74,7 @@ export function types(): RugType[] {
       country: r.country ?? null, region: S(r.region), madeBy: S(r.made_by), kind: r.kind ?? null,
       from: r.date_from ?? null, to: r.date_to ?? null, dateNote: S(r.date_note),
       st: structureOf(r.structure),
-      design: { field: S(d.field), motifs: arr(d.motifs), border: S(d.border), colors: S(d.colors), formats: arr(d.formats), sizes: S(d.sizes) },
+      design: { field: S(d.field), motifs: arr(d.motifs), motifIds: arr(d.motif_ids), gulIds: arr(d.gul_ids), border: S(d.border), colors: S(d.colors), formats: arr(d.formats), sizes: S(d.sizes) },
       lookAlikes: (r.look_alikes ?? []).map((l: any) => ({ id: l.id ?? null, name: String(l.name ?? l.id ?? ''), how: S(l.how_to_tell) ?? '' })).filter((l: any) => l.name),
       trade: S(r.trade_use), tells: S(r.what_it_tells), cautions: S(r.cautions),
       facts: (r.facts ?? []).map((f: any) => ({ text: S(f.text) ?? '', sources: arr(f.sources), single: !!f.single_source })),
@@ -127,6 +127,13 @@ export function rugSheet(t: RugType): Sheet {
   }));
   const pics = t.photos.map((p) => ({ file: media(p.file), status: 'photo', credit: p.credit, url: p.url, alt: p.caption || p.title }));
   const keys = [t.name, ...t.others, t.native, t.translit, t.region, t.country, t.madeBy, ...t.design.motifs].filter(Boolean).map((x) => String(x).toLowerCase());
+  // Its motifs and guls, each a link to its sheet (/marks/rugs/motifs, /marks/rugs/turkmen-guls).
+  const mName = new Map((T.motifs?.rows ?? []).map((m: any) => [String(m.id), String(m.name)]));
+  const gName = new Map((T.guls?.rows ?? []).map((g: any) => [String(g.id), String(g.name)]));
+  const links = [
+    ...t.design.gulIds.filter((i) => gName.has(i)).map((i) => ({ label: `Gul: ${gName.get(i)}`, href: `/marks/rugs/turkmen-guls#gul-${i}` })),
+    ...t.design.motifIds.filter((i) => mName.has(i)).map((i) => ({ label: `Motif: ${mName.get(i)}`, href: `/marks/rugs/motifs#motif-${i}` })),
+  ].slice(0, 8);
   return {
     id: t.id, anchor: t.slug, url: `/marks/rugs/types#${t.slug}`, kind: kindLabel(t.kind), group: t.group,
     glyphs: t.native, typeset: false, lang: t.native ? 'in' : null, reading: t.name, means: t.country,
@@ -135,7 +142,7 @@ export function rugSheet(t: RugType): Sheet {
     differ, caution: clean(t.cautions),
     pics,
     sources: ids.map((i) => { const s = SOURCES.get(i)!; return { citation: s.name, url: s.url, where: null }; }),
-    single: t.single,
+    single: t.single, links,
     keys: [...new Set(keys)].join(' '),
   };
 }
@@ -153,4 +160,83 @@ export { yearsOf, clean };
 export function rugChars(...texts: unknown[]): string {
   const all = texts.map((t) => (typeof t === 'string' ? t : JSON.stringify(t ?? ''))).join('');
   return [...new Set([...all].filter((c) => /[؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿]/.test(c)))].join('');
+}
+
+// ── Phase 2: motifs (/marks/rugs/motifs), Turkmen guls with their tribes and bag
+// formats (/marks/rugs/turkmen-guls), knots and weaves (/marks/rugs/knots). Each row's
+// pictures are on the row (crops of museums' open-access photographs, Heirloom's drawings;
+// hallmark-sources/rugs/crops_to_web.py). ─────────────────────────────────────────────
+export type Native = { lang: string; text: string; translit: string | null };
+export type P2Pic = { file: string; width: number | null; height: number | null; status: string; caption: string; credit: string; licence: string | null; url: string | null; view: string | null };
+export type P2Row = {
+  id: string; name: string; others: string[]; native: Native[]; facts: { text: string; sources: string[]; single: boolean }[];
+  differ: { about: string; says: { source: string; text: string }[] }[]; sources: string[]; single: boolean; pics: P2Pic[]; raw: any;
+};
+const LANG: Record<string, string> = { fa: 'Persian', ar: 'Arabic', tr: 'Turkish', az: 'Azerbaijani', hy: 'Armenian', ru: 'Russian', tk: 'Turkmen', zh: 'Chinese', bo: 'Tibetan', ug: 'Uyghur', ka: 'Georgian', ur: 'Urdu', hi: 'Hindi', ja: 'Japanese', es: 'Spanish', ku: 'Kurdish', ps: 'Pashto', prs: 'Dari', uz: 'Uzbek' };
+export const langName = (l: string) => LANG[l] ?? LANG[l.split('-')[0]] ?? l;
+const nativeList = (n: unknown): Native[] =>
+  (Array.isArray(n) ? n : n ? [{ lang: '', text: String(n) }] : [])
+    .filter((x: any) => x && x.text)
+    .map((x: any) => ({ lang: String(x.lang ?? ''), text: String(x.text), translit: x.translit ? String(x.translit) : null }));
+function p2(x: any): P2Row {
+  return {
+    id: String(x.id), name: String(x.name ?? x.id), others: arr(x.other_names), native: nativeList(x.native),
+    facts: (x.facts ?? []).map((f: any) => ({ text: S(f.text) ?? '', sources: arr(f.sources), single: !!f.single_source })).filter((f: any) => f.text),
+    differ: (x.disagreements ?? []).map((d: any) => ({ about: String(d.about ?? ''), says: (d.says ?? []).map((y: any) => ({ source: String(y.source ?? ''), text: S(y.text) ?? '' })) })),
+    sources: arr(x.sources), single: !!x.single_source,
+    pics: (x.images ?? []).map((p: any): P2Pic => ({ file: String(p.file), width: p.width ?? null, height: p.height ?? null, status: String(p.status ?? 'photo'), caption: S(p.caption) ?? '', credit: String(p.credit ?? ''), licence: p.licence ?? null, url: p.url ?? null, view: p.view ?? null })),
+    raw: x,
+  };
+}
+export const motifs = (): P2Row[] => (T.motifs?.rows ?? []).map(p2);
+export const guls = (): P2Row[] => (T.guls?.rows ?? []).map(p2);
+export const tribes = (): P2Row[] => (T.guls?.tribes ?? []).map(p2);
+export const formats = (): P2Row[] => (T.guls?.formats ?? []).map(p2);
+export const structures = (): P2Row[] => (T.structures?.rows ?? []).map(p2);
+export const plateB = (): any[] => T.structures?.plate_b ?? [];
+export const motifAliases = (): Record<string, string> => T.motifs?.aliases ?? {};
+
+/** The types a phase 2 row names (where_found, where_typical), as links to their sheets. */
+export function typeLinks(ids: unknown, max = 10): { label: string; href: string }[] {
+  const all = new Map(types().map((t) => [t.slug, t]));
+  return arr(ids).map((i) => all.get(i)).filter(Boolean).slice(0, max).map((t) => ({ label: t!.name, href: `/marks/rugs/types#${t!.slug}` }));
+}
+
+/** Every script a row's names are written in, as one line: "Persian بته (boteh); Turkish …". */
+export const nativeLine = (n: Native[]) => n.map((x) => `${x.lang ? `${langName(x.lang)} ` : ''}${x.text}${x.translit && x.translit !== x.text ? ` (${x.translit})` : ''}`).join('; ');
+/** The name set in its own script at the head of a row: Persian or Arabic first, then any other non-Latin script. */
+const headNative = (n: Native[]) => n.find((x) => /[؀-ۿ]/.test(x.text)) ?? n.find((x) => /[^\u0000-ɏ\s]/.test(x.text)) ?? null;
+
+/** A phase 2 row as a catalogue sheet: its fields in order, as [label, text]. */
+export function p2Sheet(r: P2Row, o: { page: string; prefix: string; kind: string; group: string; fields: [string, unknown][]; links?: { label: string; href: string }[]; means?: string | null; years?: string | null }): Sheet {
+  const ids = [...new Set([...r.sources, ...r.facts.flatMap((f) => f.sources), ...r.differ.flatMap((d) => d.says.map((s) => s.source))])].filter((i) => SOURCES.has(i));
+  const num = (id: string) => ids.indexOf(id) + 1;
+  const head = headNative(r.native);
+  const fields: [string, unknown][] = [
+    ['Also called', r.others.join(', ') || null],
+    ['In other languages', nativeLine(r.native.filter((x) => x !== head)) || null],
+    ...o.fields,
+  ];
+  // Facts not already said by a field, as "Sources say".
+  const said = fields.map(([, v]) => String(v ?? '')).join(' ').toLowerCase();
+  const extra = r.facts.filter((f) => !said.includes(f.text.toLowerCase().slice(0, 60))).map((f) => f.text);
+  if (extra.length) fields.push(['What sources say', extra.join(' ')]);
+  const pics = r.pics.map((p) => ({ file: media(p.file), status: p.status, credit: p.credit, url: p.url, alt: p.caption || r.name }));
+  const keys = [r.name, ...r.others, ...r.native.flatMap((x) => [x.text, x.translit]), ...o.fields.map(([, v]) => (typeof v === 'string' ? v : ''))].filter(Boolean).map((x) => String(x).toLowerCase());
+  return {
+    id: `${o.prefix}-${r.id}`, anchor: `${o.prefix}-${r.id}`, url: `${o.page}#${o.prefix}-${r.id}`, kind: o.kind, group: o.group,
+    glyphs: head?.text ?? null, typeset: !!head, lang: head ? (/[\u4e00-\u9fff]/.test(head.text) ? 'zh' : 'in') : null, reading: r.name, means: o.means ?? null,
+    years: o.years ?? null,
+    facts: fields.filter(([, v]) => v != null && v !== '').map(([label, v]) => ({ label, text: clean(Array.isArray(v) ? v.join(', ') : String(v)) ?? '' })).filter((f) => f.text),
+    differ: r.differ.filter((d) => d.says.length > 1).map((d) => ({ label: d.about.replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase()), values: d.says.map((s) => ({ text: s.text, refs: SOURCES.has(s.source) ? [num(s.source)] : [] })) })),
+    caution: clean(r.raw.cautions), pics,
+    sources: ids.map((i) => { const s = SOURCES.get(i)!; return { citation: s.name, url: s.url, where: null }; }),
+    single: r.single, links: o.links ?? [], keys: [...new Set(keys)].join(' '),
+  };
+}
+
+/** Chinese characters a page sets (motif names such as 寿 and 卍), for the han font request. */
+export function hanChars(...texts: unknown[]): string {
+  const all = texts.map((t) => (typeof t === 'string' ? t : JSON.stringify(t ?? ''))).join('');
+  return [...new Set([...all].filter((c) => /[㐀-鿿卐卍]/.test(c)))].join('');
 }

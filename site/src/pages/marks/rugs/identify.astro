@@ -77,7 +77,7 @@ const title = 'Identify an Oriental Rug from the Back: Knots, Warps, Wefts | Hei
 const description = `Turn the rug over and answer what you see: the knot, the knots to the inch, the warps, the wefts, the pile. ${readerTypes.length} Persian, Caucasian, Turkish, Turkmen, Chinese and Indian types are matched against their structure, with how to look at each feature.`;
 const h1 = 'Turn it over: identify a rug from its back';
 const faqs: [string, string][] = [
-  ['How do I tell a Persian knot from a Turkish knot?', '<p>Part the pile along a row of knots and look at the base of the tufts, or look at the back with a magnifier. The symmetric (Turkish) knot wraps two warps and both ends come up between them; the asymmetric (Persian) knot wraps one warp and passes under the other, so one end comes up beside it. The guide below says what each looks like.</p>'],
+  ['How do I tell a Persian knot from a Turkish knot?', '<p>Part the pile along a row of knots and look at the base of the tufts, or look at the back with a magnifier. The symmetric (Turkish) knot wraps two warps and both ends come up between them; the asymmetric (Persian) knot wraps one warp and passes under the other, so one end comes up beside it. The guide below says what each looks like, and <a href="/marks/rugs/knots">knots and weaves</a> draws both.</p>'],
   ['Why does the back of a rug matter more than the pattern?', '<p>Patterns traveled: Persian designs were woven in India, China and Turkey, and Caucasian ones in Iran and Turkey. How a rug is built (the knot, the foundation, the wefts, the edges) changed less, because weavers kept their own way of working.</p>'],
 ];
 const graph = [
@@ -90,7 +90,7 @@ const graph = [
   <div>
     <header class="phead">
       <h1>{h1}</h1>
-      <p class="phead__sub">Lay the rug face down in good light. Answer what you can see; skip what you can’t. The types whose sources describe the same structure appear as you go, with a link to each sheet. First make sure it was <a href="/marks/rugs/handmade-or-machine-made">knotted by hand</a>: a machine-made or tufted rug has no knots to read.</p>
+      <p class="phead__sub">Lay the rug face down in good light. Answer what you can see; skip what you can’t. The types whose sources describe the same structure appear as you go, with a link to each sheet. First make sure it was <a href="/marks/rugs/handmade-or-machine-made">knotted by hand</a>: a machine-made or tufted rug has no knots to read. Each knot, foundation and finish is drawn, front and back, in <a href="/marks/rugs/knots">knots and weaves</a>.</p>
     </header>
 
     <RugReader client:load types={readerTypes} {questions} groups={GROUPS.filter((g) => readerTypes.some((t) => t.group === g.id)).map((g) => ({ id: g.id, name: g.name, img: pic(`group-${g.id}`) }))} />

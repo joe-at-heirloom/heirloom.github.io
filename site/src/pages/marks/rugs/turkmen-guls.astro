@@ -1,0 +1,114 @@
+---
+// /marks/rugs/turkmen-guls: the Turkmen gul explorer. Every gul (the repeating medallions of
+// Turkmen rugs and bags) as a picture card, narrowed by tribe and by what it is woven on
+// (islands/GulExplorer.tsx); below, each gul's sheet (components/ref/Catalogue: names in
+// Turkmen and Russian, its shape, the tribes sources give it to and how sure they are, the
+// formats, how to tell it from look-alikes, where sources differ), then the tribes and the
+// bag and rug formats. From the app's table (rugs.json, `guls`; research in
+// hallmark-sources/rugs/turkmen_guls). #gul-<id>, #tribe-<id> and #format-<id> open one.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import GulExplorer from '../../../islands/GulExplorer';
+import { guls, tribes, formats, p2Sheet, typeLinks, rugChars } from '../../../lib/rugs';
+import { media } from '../../../lib/media';
+import { articleLd, faqLd, crumbsLd } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/turkmen-guls';
+const G = guls(), TR = tribes(), FO = formats();
+const slugOf = (s: unknown) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const tribeId = (name: unknown) => {
+  const s = slugOf(name);
+  return TR.find((t) => t.id === s || slugOf(t.name) === s || t.others.some((o) => slugOf(o) === s))?.id ?? s;
+};
+const formatId = (name: unknown) => {
+  const s = slugOf(name);
+  return FO.find((f) => f.id === s || slugOf(f.name) === s || f.others.some((o) => slugOf(o) === s))?.id ?? s;
+};
+const KINDS: [string, string][] = [
+  ['main carpet gul', 'Main carpet guls'], ['chuval gul', 'Chuval guls'], ['minor gul', 'Minor guls'],
+  ['torba or asmalyk design', 'Torba and asmalyk designs'], ['ensi layout', 'Ensi layouts'], ['border', 'Borders'],
+];
+const kindLabel = (k: string) => KINDS.find(([x]) => x === k)?.[1] ?? 'Other';
+const tribeName = (id: string) => TR.find((t) => t.id === id)?.name ?? id;
+const SURE: Record<string, string> = { 'most sources': '', 'some sources': ' (some sources)', disputed: ' (disputed)' };
+const gulSheets = G.map((g) => p2Sheet(g, {
+  page: path, prefix: 'gul', kind: 'Turkmen gul', group: String(g.raw.kind ?? 'other'),
+  means: g.raw.meaning ?? null,
+  fields: [
+    ['What to look for', g.raw.shape],
+    ['Tribes', (g.raw.tribes ?? []).map((t: any) => `${tribeName(tribeId(t.tribe))}${SURE[t.how_sure] ?? ''}`).join(', ') || null],
+    ['Woven on', (g.raw.formats ?? []).join(', ') || null],
+    ['With it', (g.raw.minor_guls_with_it ?? []).join(', ') || null],
+    ['How to tell it apart', g.raw.how_to_tell],
+    ['Dates', g.raw.period_note],
+  ],
+  links: typeLinks(g.raw.where_found, 6),
+}));
+const groups = [
+  ...KINDS.map(([key, label]) => ({ key, label, blurb: undefined, sheets: gulSheets.filter((s) => s.group === key) })),
+  { key: 'other', label: 'Other designs', blurb: undefined, sheets: gulSheets.filter((s) => !KINDS.some(([k]) => k === s.group)) },
+].filter((g) => g.sheets.length);
+const tribeSheets = TR.map((t) => p2Sheet(t, { page: path, prefix: 'tribe', kind: 'Turkmen tribe', group: 'tribes', fields: [['Where they lived', t.raw.where], ['Their weaving', t.raw.weaving]] }));
+const formatSheets = FO.map((f) => p2Sheet(f, { page: path, prefix: 'format', kind: 'Rug or bag format', group: 'formats', fields: [['What it is', f.raw.what], ['Sizes', f.raw.sizes]] }));
+const head = (n: { lang: string; text: string }[]) => n.find((x) => x.lang === 'tk')?.text ?? n[0]?.text ?? null;
+const items = G.map((g) => ({
+  anchor: `gul-${g.id}`, name: g.name, native: head(g.native), kind: String(g.raw.kind ?? 'other'),
+  img: g.pics[0] ? { src: media(g.pics[0].file), alt: g.pics[0].caption || g.name } : null,
+  tribes: (g.raw.tribes ?? []).map((t: any) => ({ id: tribeId(t.tribe), sure: String(t.how_sure ?? '') })),
+  formats: (g.raw.formats ?? []).map(formatId),
+}));
+const usedKinds = KINDS.filter(([k]) => items.some((i) => i.kind === k)).map(([id, name]) => ({ id, name }));
+const title = 'Turkmen Guls: Tekke, Yomut, Salor, Saryk and Ersari Rug Guls Explained | Heirloom';
+const description = `${G.length} Turkmen guls, the repeating medallions of Turkmen rugs and bags: which tribes wove each one (Tekke, Yomut, Salor, Saryk, Ersari, Chodor and others), on which kinds of rug and bag, how to tell look-alikes apart, and where sources disagree, with museum photographs.`;
+const h1 = 'Turkmen guls';
+const faqs: [string, string][] = [
+  ['What is a gul?', '<p>A gul (Turkmen <span lang="tk">göl</span>) is the medallion repeated in rows across the field of a Turkmen rug or bag. Each tribe had its own main guls, and sources have long used them to say which tribe wove a piece.</p>'],
+  ['Does the gul tell me which tribe wove my rug?', '<p>It is a strong clue, not proof. Tribes took guls from one another, and today Tekke and other guls are woven in Pakistan, Afghanistan and Iran in rugs sold as “Bokhara”. Sources disagree about some attributions; each sheet says how sure they are. The structure (the knot, which side it opens to, the wefts) is checked as well.</p>'],
+  ['Is my “Bokhara” rug from Bukhara?', '<p>Almost never. The trade calls rugs with Turkmen guls “Bokhara” after the market city; most sold today are Pakistani. See the <a href="/marks/rugs/types">rug types</a> for Pakistani and Afghan rugs in Turkmen designs.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Turkmen rugs' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph} indic={rugChars([...G, ...TR, ...FO].map((r) => r.native))}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">Look at the medallion repeated across your rug or bag, then pick it below. Each gul’s sheet says which tribes sources give it to, what it is woven on, and what it is mistaken for. Choose a tribe, or what the piece is (a main carpet, a chuval bag, a torba), to narrow the cards.</p>
+      <ul class="rhead__meta">
+        <li><strong class="num">{G.length}</strong> guls and designs</li>
+        <li><strong class="num">{TR.length}</strong> tribes</li>
+        <li><strong class="num">{FO.length}</strong> rug and bag formats</li>
+      </ul>
+    </header>
+
+    {items.length > 0 && (
+      <GulExplorer client:visible {items} tribes={TR.map((t) => ({ id: t.id, name: t.name }))} formats={FO.map((f) => ({ id: f.id, name: f.name }))} kinds={usedKinds} />
+    )}
+
+    <h2 id="sheets">Every gul</h2>
+    <Catalogue {groups} noun={['gul', 'guls']} placeholder="A gul or a tribe: Tekke, Yomut, kepse, dyrnak, chemche" label="A gul or a tribe" />
+
+    {tribeSheets.length > 0 && (
+      <section class="ahome__block" aria-labelledby="tribes">
+        <h2 id="tribes">The tribes</h2>
+        <Catalogue groups={[{ key: 'tribes', label: 'Turkmen tribes', sheets: tribeSheets }]} noun={['tribe', 'tribes']} placeholder="A tribe: Tekke, Yomut, Ersari" label="A tribe" />
+      </section>
+    )}
+    {formatSheets.length > 0 && (
+      <section class="ahome__block" aria-labelledby="formats">
+        <h2 id="formats">Rugs and bags</h2>
+        <Catalogue groups={[{ key: 'formats', label: 'Formats', sheets: formatSheets }]} noun={['format', 'formats']} placeholder="A format: chuval, torba, ensi, asmalyk" label="A format" />
+      </section>
+    )}
+
+    <AppBox text="Photograph the whole piece, one gul up close, and the back. The Advisor compares the gul and the knot with these sheets and says which tribes sources give it to." />
+    <Faq {faqs} />
+  </div>
+</Reference>

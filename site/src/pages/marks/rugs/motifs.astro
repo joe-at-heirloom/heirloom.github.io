@@ -1,0 +1,77 @@
+---
+// /marks/rugs/motifs: the motifs and designs woven in oriental rugs (the boteh, the herati,
+// the mina khani, the memling gul, the running-dog border and the rest), each a row that
+// opens into its sheet (components/ref/Catalogue): its names in English and in the weavers'
+// languages, what the name means, what it looks like, the rug types it is found on, what it
+// tells and what it doesn't, where sources differ, and a crop from a museum photograph.
+// From the app's table (rugs.json, `motifs`; research in hallmark-sources/rugs/motifs).
+// The Turkmen guls have their own page (/marks/rugs/turkmen-guls). #motif-<id> opens one.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { motifs, p2Sheet, typeLinks, types, rugChars, hanChars } from '../../../lib/rugs';
+import { articleLd, faqLd, crumbsLd } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/motifs';
+const rows = motifs();
+const names = new Map(types().map((t) => [t.slug, t.name]));
+const KINDS: [string, string, string][] = [
+  ['layout', 'How the field is laid out', 'The plan of the whole rug: a medallion with corners, an allover repeat, a prayer niche, compartments.'],
+  ['field design', 'Allover designs', 'A small unit repeated across the whole field.'],
+  ['medallion', 'Medallions', 'The large central figure, and its shapes.'],
+  ['field motif', 'Motifs in the field', 'Single figures woven in the field.'],
+  ['border', 'Borders', 'The bands around the field.'],
+  ['minor motif', 'Small motifs and fillers', 'The small figures scattered between the main ones.'],
+  ['drawing', 'How the design is drawn', 'Straight-line (rectilinear) drawing or curving (curvilinear) drawing.'],
+];
+const sheetOf = (r: (typeof rows)[number]) => p2Sheet(r, {
+  page: path, prefix: 'motif', kind: 'Motif', group: String(r.raw.kind ?? 'field motif'),
+  means: r.raw.literal ?? null,
+  fields: [
+    ['What it looks like', r.raw.description],
+    ['Where you find it', (r.raw.where_found ?? []).map((i: string) => names.get(i)).filter(Boolean).join(', ') || null],
+    ['What it tells you', r.raw.what_it_tells],
+  ],
+  links: typeLinks(r.raw.where_found, 8),
+});
+const sheets = rows.map(sheetOf);
+const known = new Set(KINDS.map(([k]) => k));
+const groups = [
+  ...KINDS.map(([key, label, blurb]) => ({ key, label, blurb, sheets: sheets.filter((s) => s.group === key) })),
+  { key: 'other', label: 'Other motifs', blurb: undefined, sheets: sheets.filter((s) => !known.has(s.group)) },
+].filter((g) => g.sheets.length);
+const pictured = rows.filter((r) => r.pics.length).length;
+const title = 'Oriental Rug Motifs and Designs: Boteh, Herati, Mina Khani and More | Heirloom';
+const description = `${rows.length} motifs and designs woven in oriental rugs, from the boteh and the herati to the memling gul and the running-dog border: what each is called in English, Persian, Turkish and other languages, what it looks like, where it is found, and what it does and doesn’t tell you about a rug, with museum photographs and sources.`;
+const h1 = 'Rug motifs and designs';
+const faqs: [string, string][] = [
+  ['Does the design tell me where my rug was made?', '<p>Rarely on its own. Designs travelled: the herati and the boteh were woven across Iran and copied in India, Pakistan and China, and Turkmen guls are woven in Pakistan and Afghanistan today. A design narrows the field; the knot, the warps and wefts, the sides and the ends tell more. Start with <a href="/marks/rugs/identify">turn it over</a>.</p>'],
+  ['What do the symbols in my rug mean?', '<p>Many meanings told about rug motifs are recent stories, and scholars disagree about others. Each sheet here gives what a name means word for word and, where sources give one, who says a motif stands for something. Where they differ, the sheet shows both.</p>'],
+  ['Where are the Turkmen guls?', '<p>On their own page: <a href="/marks/rugs/turkmen-guls">Turkmen guls</a>, with which tribes wove each one and on which kinds of rug and bag.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Oriental rug motifs' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+---
+<Reference {title} {description} {path} jsonld={graph} indic={rugChars(rows.map((r) => r.native))} han={hanChars(rows.map((r) => r.native)) || undefined}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">What the shapes woven in a rug are called, in English and in the weavers’ own languages, and the kinds of rug each is found on. Type a name in any spelling or a word that describes it. A motif is woven in many places: it narrows where a rug may be from, it doesn’t place it.</p>
+      <ul class="rhead__meta">
+        <li><strong class="num">{rows.length}</strong> motifs and designs</li>
+        {pictured > 0 && <li><strong class="num">{pictured}</strong> with a museum photograph</li>}
+      </ul>
+    </header>
+
+    <Catalogue {groups} noun={['motif', 'motifs']} placeholder="A name or a shape: boteh, herati, mina khani, ram’s horn, cloud band" label="A name or a shape" />
+
+    <AppBox text="Photograph the whole rug and a close view of the design. The Advisor names the motifs it sees and says which rug types use them, alongside what the back shows." />
+    <Faq {faqs} />
+  </div>
+</Reference>

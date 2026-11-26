@@ -102,3 +102,30 @@
 .rcredits { font-size: 13.5px; color: var(--ink-2); display: grid; gap: 4px; list-style: none; padding: 0; }
 .rcredits li { display: grid; grid-template-columns: 44px 1fr; gap: 10px; align-items: start; }
 .rcredits img { width: 44px; height: 44px; object-fit: cover; border-radius: 4px; }
+
+/* Turkmen gul explorer (islands/GulExplorer.tsx) */
+.gx { margin: 8px 0 32px; }
+.gx__bar { display: grid; gap: 10px; margin-bottom: 14px; }
+.gx__row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.gx__label { font: 600 14px/1.2 var(--sans); color: var(--ink-2); min-width: 72px; }
+.gx__row button { min-height: 36px; padding: 4px 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); color: var(--ink); font: 500 14px/1.2 var(--sans); cursor: pointer; }
+.gx__row button[aria-pressed='true'] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+.gx__sum { margin: 0; color: var(--ink-2); font-size: 14px; }
+.gx__grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(46%, 168px), 1fr)); }
+.gx__card { text-decoration: none; height: 100%; }
+.gx__card .rpick__label { display: grid; gap: 2px; }
+.gx__native, .gx__tribes { font-weight: 400; font-size: 13px; color: var(--ink-2); }
+
+/* Knots and weaves (/marks/rugs/knots) */
+.kw__sec { margin: 28px 0; }
+.kw__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 28px; }
+.kw__item { display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr); border-top: 1px solid var(--rule); padding-top: 18px; scroll-margin-top: 80px; }
+@media (min-width: 760px) { .kw__item { grid-template-columns: minmax(0, 5fr) minmax(0, 4fr); } }
+.kw__item h3 { margin: 0 0 4px; }
+.kw__figs { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); align-content: start; }
+.kw__figs figure { margin: 0; }
+.kw__figs img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); border-radius: var(--r-sm); background: #f6f1df; }
+.kw__figs figcaption { font-size: 13px; color: var(--ink-2); margin-top: 4px; }
+.kw__dl { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px 14px; margin: 8px 0 0; }
+.kw__dl dt { font-weight: 600; margin-top: 8px; }
+.kw__dl dd { margin: 0; }

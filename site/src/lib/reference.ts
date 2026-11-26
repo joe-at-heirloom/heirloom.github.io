@@ -369,9 +369,12 @@ function build(): Area[] {
           { href: '/marks/rugs/handmade-or-machine-made', label: 'Hand-knotted or machine-made?', note: 'The checks, and what each answer means' },
           { href: '/marks/rugs/dates', label: 'A date or a name woven in', note: 'Persian, Arabic and Armenian numbers' },
           { href: '/marks/rugs/knot-count', label: 'Knot counts', note: 'Raj, line, 16/18, 9/9 and knots per inch' },
+          { href: '/marks/rugs/turkmen-guls', label: 'Turkmen guls', note: 'Which tribe wove the medallion on your rug or bag' },
         ] },
         { label: 'Reference', links: [
           { href: '/marks/rugs/types', label: 'Rug types', note: 'Persian, Caucasian, Turkish, Turkmen, Chinese, Indian and more' },
+          { href: '/marks/rugs/motifs', label: 'Motifs and designs', note: 'Boteh, herati, mina khani, borders, and where each is woven' },
+          { href: '/marks/rugs/knots', label: 'Knots and weaves', note: 'Turkish and Persian knots, kilim, soumak, sides and ends, drawn' },
           { href: '/marks/rugs/labels', label: 'Labels and import rules', note: 'Made in Persia, Made in Iran, brands, embargo years' },
           { href: '/marks/rugs/dyes', label: 'Dyes, washes and age', note: 'Natural and synthetic dyes, painted and washed rugs' },
         ] },

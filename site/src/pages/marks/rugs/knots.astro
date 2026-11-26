@@ -1,0 +1,101 @@
+---
+// /marks/rugs/knots: how rugs are made, drawn. The pile knots (symmetric, asymmetric open left
+// and right, jufti, single-warp, Tibetan), tufted and machine-made pile, the flatweaves (kilim,
+// soumak, brocading), the foundation (warp levels, wefts) and the sides and ends: for each, how
+// it is made, what shows on the front and on the back, where it is typical, and Heirloom's
+// drawings of it, drawn from the sources' descriptions and Hawley's Plate B (1913). From the
+// app's table (rugs.json, `structures`; research in hallmark-sources/rugs/knots; drawings by
+// hallmark-sources/rugs/drawings/draw_knots.py). #struct-<id> is each one.
+import Reference from '../../../layouts/Reference.astro';
+import AppBox from '../../../components/AppBox.astro';
+import Faq from '../../../components/Faq.astro';
+import { structures, typeLinks, nativeLine, cite, clean, rugChars } from '../../../lib/rugs';
+import { media } from '../../../lib/media';
+import { articleLd, faqLd, crumbsLd } from '../../../lib/site';
+import synced from '../../../data/app/SOURCE.json';
+import '../../../styles/rugs.css';
+
+const path = '/marks/rugs/knots';
+const rows = structures();
+const KINDS: [string, string, string][] = [
+  ['pile knot', 'Pile knots', 'The knots that make the pile of a hand-knotted rug. The knot shows best on the back.'],
+  ['tufted', 'Tufted and hooked pile', 'Pile pushed through a backing cloth, not knotted.'],
+  ['machine pile', 'Machine-made pile', 'Pile woven in by a power loom.'],
+  ['flatweave', 'Flatweaves', 'Rugs with no pile: the design is in the weave itself.'],
+  ['foundation', 'The foundation', 'The warps and wefts the knots are tied on, and how they lie.'],
+  ['side', 'Sides', 'How the long edges are finished.'],
+  ['end', 'Ends', 'How the ends are finished: the fringe is the warps.'],
+];
+const sections = KINDS.map(([key, label, blurb]) => ({ key, label, blurb, items: rows.filter((r) => r.raw.kind === key) })).filter((s) => s.items.length);
+const title = 'Rug Knots and Weaves Explained: Turkish, Persian, Jufti, Kilim and Soumak | Heirloom';
+const description = `How oriental rugs are made, drawn: the symmetric (Turkish) and asymmetric (Persian) knots and which way each opens, jufti and single-warp knots, Tibetan knotting, hand-tufted and machine-made pile, kilim, soumak and brocading, warp levels, wefts, sides and ends, and what each looks like on the back.`;
+const h1 = 'Knots and weaves';
+const faqs: [string, string][] = [
+  ['How do I tell a Turkish knot from a Persian knot?', '<p>Look at the back with a magnifier and part the pile on the front. Both knots show two small bumps on the back, one around each warp. On the front, the two tufts of a symmetric (Turkish) knot come up together between its two warps; an asymmetric (Persian) knot goes right round one warp, so one tuft comes up between the warps and the other beside the second warp. The drawings below show both, seen from the front.</p>'],
+  ['Why does the back of my rug look ribbed?', '<p>Its warps lie on two levels: one warp of each knot is pulled down below the other by a tight weft. The back then shows one bump per knot instead of two, in ridges. This is typical of some city and village rugs and points away from others. See the foundation drawings.</p>'],
+  ['Is a hand-tufted rug hand-knotted?', '<p>No. A hand-tufted rug is made with a tufting gun that pushes loops of yarn through a cloth; the back is covered with a glued backing cloth, and the fringe is sewn on. It has no knots. The <a href="/marks/rugs/handmade-or-machine-made">hand-made checks</a> go through how to tell.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).rugs ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Rug knots' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/rugs/', 'Rugs']),
+];
+const fields = (r: (typeof rows)[number]): [string, string | null][] => [
+  ['Also called', r.others.join(', ') || null],
+  ['In other languages', nativeLine(r.native) || null],
+  ['How it is made', clean(r.raw.how_made)],
+  ['On the front', clean(r.raw.front)],
+  ['On the back', clean(r.raw.back)],
+  ['What it tells you', clean(r.raw.what_it_tells)],
+];
+---
+<Reference {title} {description} {path} jsonld={graph} indic={rugChars(rows.map((r) => r.native))}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">How a rug is held together decides more about where it was made than its pattern does. These are the knots, the flat weaves and the finishes a rug may have, drawn as they look from the front and from the back. Use them with <a href="/marks/rugs/identify">turn it over</a>.</p>
+      <ul class="rhead__meta"><li><strong class="num">{rows.length}</strong> knots, weaves and finishes</li></ul>
+    </header>
+
+    {sections.map((sec) => (
+      <section class="kw__sec" aria-labelledby={`k-${sec.key.replace(/\s+/g, '-')}`}>
+        <h2 id={`k-${sec.key.replace(/\s+/g, '-')}`}>{sec.label}</h2>
+        <p>{sec.blurb}</p>
+        <ul class="kw__list">
+          {sec.items.map((r) => (
+            <li class="kw__item" id={`struct-${r.id}`}>
+              <div>
+                <h3>{r.name}</h3>
+                <dl class="kw__dl">{fields(r).filter(([, v]) => v).map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}</dl>
+                {r.raw.cautions && <p class="caution"><strong>Careful: </strong>{clean(r.raw.cautions)}</p>}
+                {typeLinks(r.raw.where_typical, 8).length > 0 && (
+                  <p class="muted">Typical of: {typeLinks(r.raw.where_typical, 8).map((l, i) => <>{i > 0 && ', '}<a href={l.href}>{l.label}</a></>)}</p>
+                )}
+                {r.differ.filter((d) => d.says.length > 1).length > 0 && (
+                  <div class="differ">
+                    <h4>Where the sources differ</h4>
+                    <dl>{r.differ.filter((d) => d.says.length > 1).map((d) => <div><dt>{d.about.replace(/_/g, ' ')}</dt><dd><ul>{d.says.map((s) => <li>{s.text} <span class="muted">({cite([s.source])[0]?.name ?? s.source})</span></li>)}</ul></dd></div>)}</dl>
+                  </div>
+                )}
+                <p class="muted">Sources: {cite(r.sources).map((s, i) => <>{i > 0 && '; '}{s.url ? <a href={s.url} rel="nofollow noopener">{s.name}</a> : s.name}</>)}{r.single && ' (one source so far)'}</p>
+              </div>
+              {r.pics.length > 0 && (
+                <div class="kw__figs">
+                  {r.pics.map((p) => (
+                    <figure>
+                      <img src={media(p.file)} alt={p.caption} width={p.width ?? undefined} height={p.height ?? undefined} loading="lazy" decoding="async" />
+                      <figcaption>{p.caption} {p.credit}.</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <AppBox text="Photograph the back up close, with a coin or a ruler beside it, and a corner where the side and the end meet. The Advisor reads the knot, the warps and the wefts against these drawings." />
+    <Faq {faqs} />
+  </div>
+</Reference>
