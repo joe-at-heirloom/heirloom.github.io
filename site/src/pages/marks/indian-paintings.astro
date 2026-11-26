@@ -1,0 +1,73 @@
+---
+// /marks/indian-paintings: the kinds of Indian painting a collector meets, how
+// to tell them apart, the 20th-century work sold as old, and the seals and
+// notes written on paintings (Mughal library seals, inspection notes,
+// attributions), from the app's table (indian.json `paintings`).
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import Catalogue from '../../components/ref/Catalogue.astro';
+import { sealSheet, clean } from '../../lib/records';
+import { paintings, indicChars } from '../../lib/indian';
+import { articleLd, faqLd, crumbsLd } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/indian.css';
+
+const path = '/marks/indian-paintings';
+const { schools, seals } = paintings();
+const years = (a: number | null, b: number | null, p: string | null) => p ?? (a ? (b ? `${a}–${b}` : `from ${a}`) : null);
+const sealGroups = [{ key: 'seals', label: 'From the Mughal library and later collections', sheets: seals.map(sealSheet) }].filter((g) => g.sheets.length);
+const title = 'Indian Paintings: Mughal, Rajput, Pahari, Company and Kalighat, and Their Seals | Heirloom';
+const description = `How to tell Mughal, Deccani, Rajput, Pahari, Company School and Kalighat paintings apart, the 20th-century miniatures sold as old, and ${seals.length} seals and notes written on Indian paintings, with what each tells.`;
+const h1 = 'Indian paintings and the writing on them';
+const faqs: [string, string][] = [
+  ['Is my Indian miniature painting old?', '<p>It may not be. Since the early 20th century, painters have made small paintings for travelers in the classic Mughal and Rajput compositions: emperors, hunts, lovers, ragamala scenes. Some are on paper stained to look old or on old manuscript pages cleared of their writing; some are on ivory, bone or plastic. The sources give no reliable test you can make by eye, and old paper does not make an old painting. Only a specialist who can examine the painting can judge its age.</p>'],
+  ['What is the writing on the back of my painting?', '<p>It depends on the school: Persian notes and seals on Mughal pages, Devanagari titles, painters’ names and Samvat dates on Rajput ones, Takri captions on Pahari ones, English captions on Company School paintings. Each school below says what to look for; the seals and notes catalogue reads the Mughal library’s marks.</p>'],
+  ['Does a Mughal seal prove a painting is Mughal?', '<p>No. Seals and notes were added to pages later, copied, and forged, and pages were cut from the books they came from. A seal says what it claims; the painting itself has to be judged.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).indian ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Indian painting' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/indian/', 'Indian marks']),
+];
+const indic = indicChars(seals.map((s) => s.native));
+---
+<Reference {title} {description} {path} jsonld={graph} {indic}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">The kinds of Indian painting found in Western homes, from Mughal court pages to Kalighat bazaar pictures and Ravi Varma prints: how to recognize each, what writing to look for, and the later work made to look old. Then the seals and notes the Mughal library and later collectors wrote on paintings.</p>
+    </header>
+
+    {schools.length > 0 && (
+      <section class="ahome__block" aria-labelledby="schools">
+        <h2 id="schools">The kinds of painting</h2>
+        <div class="ischools">
+          {schools.map((s) => (
+            <article class="ischool" id={s.id}>
+              <h3>{s.name}{years(s.from, s.to, s.period) && <span class="num muted"> · {years(s.from, s.to, s.period)}</span>}</h3>
+              {s.region && <p class="muted">{clean(s.region)}{s.patrons && <> · {clean(s.patrons)}</>}</p>}
+              {s.recognize.length > 0 && <ul>{s.recognize.map((t) => <li>{clean(t)}</li>)}</ul>}
+              {s.writing && <p><strong>Writing to look for: </strong>{clean(s.writing)}</p>}
+              {s.lookAlikes.length > 0 && <p><strong>Not to confuse with: </strong>{s.lookAlikes.map((l) => `${l.name ? `${l.name}: ` : ''}${l.how}`).join(' ')}</p>}
+              {s.copies && <p><strong>Later work: </strong>{clean(s.copies)}</p>}
+              {s.cautions && <p class="caution"><strong>Careful: </strong>{clean(s.cautions)}</p>}
+              {s.sources.length > 0 && <p class="faint iera__src">Sources: {s.sources.slice(0, 4).map((x, i) => <>{i > 0 && '; '}{x.url ? <a href={x.url} rel="nofollow noopener">{x.citation}</a> : x.citation}</>)}{s.singleSource && ' · one source so far'}</p>}
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {sealGroups.length > 0 && (
+      <section class="ahome__block" aria-labelledby="seals">
+        <h2 id="seals">Seals and notes on paintings</h2>
+        <p class="muted">The Mughal imperial library stamped and annotated the pages it held: emperors’ and librarians’ seals, notes that a page was inspected, its value, who painted it. Later libraries added their own. Type the Persian, a name or a word.</p>
+        <Catalogue groups={sealGroups} noun={['seal or note', 'seals and notes']} placeholder="Persian, a name or a word: Shah Jahan, ‘arz dida, Rampur" label="Persian, a name or a word" />
+      </section>
+    )}
+
+    <AppBox text="Photograph the painting and the back of it. The Advisor reads the writing and seals, says which school the painting looks like and what the writing claims, and never takes a seal as proof." />
+    <Faq {faqs} />
+  </div>
+</Reference>

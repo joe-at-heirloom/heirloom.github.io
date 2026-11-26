@@ -310,14 +310,18 @@ function build(): Area[] {
     },
     {
       key: 'india', label: 'Indian marks and dates', short: 'India', href: '/marks/indian/', scope: 'marks', script: 'indic',
-      families: ['indian-marks'],
-      lede: 'Silver makers’ marks from Calcutta, Bombay, Madras, Kutch, Burma and Ceylon, Indian hallmarks on gold and silver since 2000, origin stamps, and the ways an Indian date is written.',
+      families: ['indian-marks', 'indian-figures', 'indian-paintings'],
+      lede: 'Silver makers’ marks from Calcutta, Bombay, Madras, Kutch, Burma and Ceylon, Indian hallmarks on gold and silver since 2000, origin stamps, the ways an Indian date is written, who a figure on a bronze or a painting shows, and the kinds of Indian painting.',
       cue: 'Devanagari, Gujarati or Persian writing, or a maker’s name and an elephant struck into silver',
       groups: [
         { label: 'Marks and dates', links: [
           { href: '/marks/indian/', label: 'Silver marks and stamps', note: 'Makers, retailers and origin stamps, 1770s to today' },
           { href: '/marks/indian-hallmarks', label: 'Indian hallmarks', note: 'The BIS mark, 22K916, year letters, HUID' },
           { href: '/marks/indian-dates', label: 'Reading an Indian date', note: 'Samvat, Shaka, Hijri and regnal years' },
+        ] },
+        { label: 'Figures and paintings', links: [
+          { href: '/marks/indian-figures', label: 'Who is this figure?', note: 'Hindu, Buddhist and Jain figures by what they hold and ride' },
+          { href: '/marks/indian-paintings', label: 'Indian paintings', note: 'Schools, later copies, and the seals on paintings' },
         ] },
       ],
     },

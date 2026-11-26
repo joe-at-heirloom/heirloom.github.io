@@ -379,6 +379,55 @@ export function inSheet(m: InMark): Sheet {
   };
 }
 
+// ── Indian figures and the seals on paintings (lib/indian.ts, phase 2) ──────
+import type { FigRow, SealRow } from './indian';
+const RELIGION: Record<string, string> = { hindu: 'Hindu', buddhist: 'Buddhist', jain: 'Jain' };
+/** A figure by who it shows: its signs in plain words, the look-alikes and how to tell them, the regions and styles. */
+export function figSheet(f: FigRow): Sheet {
+  const list = (a: string[]) => a.join(', ');
+  return {
+    id: f.id, anchor: f.slug, url: `/marks/indian-figures#${f.slug}`, kind: `${RELIGION[f.religion] ?? ''} ${f.kind}`.trim(), group: f.group,
+    glyphs: f.native[0] ?? null, lang: 'in', reading: f.name, means: clean(f.identifyBy), meansTr: false,
+    years: null,
+    facts: [
+      ['Also called', [f.iast, ...f.other].filter((x) => x && x !== f.name).join(', ')],
+      ['In its own script', f.native.join(' · ')],
+      ['Arms', f.arms.length ? f.arms.join(' or ') : null],
+      ['In the hands', list(f.holds)],
+      ['Gestures', list(f.gestures)],
+      ['Beneath or beside', list(f.mount)],
+      ['Pose', list(f.posture)],
+      ['Head and body', list(f.headBody)],
+      ['Emblem on the pedestal', f.emblems.join(' or ')],
+      ['Other signs', clean(f.features)],
+      ['Look-alikes', f.lookAlikes.map((l) => `${l.name}: ${l.how}`).join(' ')],
+      ['Where and when', clean(f.regions)],
+      ['What style can say', clean(f.dating)],
+    ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ: [], caution: clean(f.cautions),
+    pics: f.photos.map((p) => ({ file: media(p.file), status: p.status, credit: p.credit, url: p.url, alt: p.caption || f.name })),
+    sources: f.sources.map((x) => ({ citation: x.citation, url: x.url, where: null })), single: f.singleSource,
+    keys: keysOf(f.name, f.iast, f.native, f.other, f.holds, f.mount, f.posture, f.headBody, f.emblems),
+  };
+}
+/** A seal or note on a painting: its Persian as written (set in Nastaliq), whose it is, what it tells. */
+export function sealSheet(r: SealRow): Sheet {
+  return {
+    id: r.id, anchor: r.slug, url: `/marks/indian-paintings#${r.slug}`, kind: r.kind.charAt(0).toUpperCase() + r.kind.slice(1), group: r.kind,
+    glyphs: r.native, lang: 'in', reading: r.translit || r.meaning || r.slug, means: clean(r.meaning), meansTr: true,
+    years: yearsOf(r.from, r.to),
+    facts: [
+      ['Whose', clean(r.owner)],
+      ['Where on the painting', clean(r.where)],
+      ['Dates', clean(r.dateNote)],
+      ['What it tells you', clean(r.tells)],
+    ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ: [], caution: clean(r.cautions), pics: [],
+    sources: r.sources.map((x) => ({ citation: x.citation, url: x.url, where: null })), single: r.singleSource,
+    keys: keysOf(r.native, r.translit, r.meaning, r.owner, r.kind),
+  };
+}
+
 // ── Chinese imperial collection seals ───────────────────────────────────────
 export const SEAL_DYNASTIES: [string, string, string][] = [
   ['tang', 'Southern Tang', 'The seals of the Southern Tang court (937–975), the oldest imperial collection seals recorded.'],

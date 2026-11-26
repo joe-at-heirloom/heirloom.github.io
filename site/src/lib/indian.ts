@@ -94,3 +94,70 @@ export function stampRules(): { id: string; name: string; meaning: string | null
     years: span(r.date_from, r.date_to), tells: r.what_it_tells ? soften(String(r.what_it_tells)) : null, cautions: r.cautions ? soften(String(r.cautions)) : null,
   }));
 }
+
+// ── Phase 2: figures and paintings ──────────────────────────────────────────
+export type FigRow = {
+  id: string; slug: string; group: string; name: string; iast: string | null; native: string[]; other: string[]; religion: string; kind: string;
+  arms: number[]; holds: string[]; gestures: string[]; mount: string[]; posture: string[]; headBody: string[]; emblems: string[]; features: string | null;
+  identifyBy: string; lookAlikes: { name: string; slug: string | null; how: string }[]; regions: string | null; dating: string | null; cautions: string | null;
+  photos: Photo[]; sources: { citation: string; url: string | null }[]; singleSource: boolean;
+};
+const srcMap = (list: any[] = []) => new Map<string, any>(list.map((s: any) => [s.id, s]));
+
+/** The photographs the collection ties to a record (museum examples), best first. */
+function photosOf(recordId: string): Photo[] {
+  const c = collection();
+  const img = new Map(c.images.map((i) => [i.id, i]));
+  return c.records
+    .filter((r) => r.parent_id === recordId && r.image_id && img.has(r.image_id))
+    .map((k) => { const i = img.get(k.image_id!)!; return { file: i.file, status: i.status ?? 'photo', label: k.name, caption: soften(k.summary ?? ''), credit: i.credit ?? '', url: i.source_url ?? null, visible: k.attributes.mark_visible ?? null }; })
+    .sort((x, y) => (x.visible === 'yes' ? 0 : 1) - (y.visible === 'yes' ? 0 : 1));
+}
+
+/** Every figure, from the app's table (indian.json `figures`), with its museum photographs. */
+export function figures(): FigRow[] {
+  const F = T.figures ?? {};
+  const src = srcMap(F.sources);
+  const byId = new Map<string, any>((F.rows ?? []).map((r: any) => [r.id, r]));
+  return (F.rows ?? []).map((r: any): FigRow => ({
+    id: `in-fig-${r.id}`, slug: r.id, group: r.group, name: r.name, iast: r.iast ?? null, native: r.native ?? [], other: r.other_names ?? [], religion: r.religion, kind: r.kind,
+    arms: r.arms ?? [], holds: r.holds ?? [], gestures: r.gestures ?? [], mount: r.mount ?? [], posture: r.posture ?? [], headBody: r.head_body ?? [], emblems: Array.isArray(r.jain_emblem) ? r.jain_emblem : r.jain_emblem ? [r.jain_emblem] : [],
+    // The agents' plain-words description, without their notes to the build ("token wanted: …").
+    features: r.features_other ? soften(String(r.features_other).replace(/\s*\(?token wanted:[^;.)]*\)?/gi, '').replace(/\s+([.,;])/g, '$1').trim()) || null : null,
+    identifyBy: soften(String(r.identify_by ?? '')),
+    lookAlikes: (r.look_alikes ?? []).map((l: any) => ({ name: l.id && byId.get(l.id) ? byId.get(l.id).name : String(l.name ?? ''), slug: l.id && byId.has(l.id) ? l.id : null, how: soften(String(l.how_to_tell ?? '')) })).filter((l: any) => l.name && l.how),
+    regions: r.regions_styles ? soften(String(r.regions_styles)) : null, dating: r.dating_clues ? soften(String(r.dating_clues)) : null, cautions: r.cautions ? soften(String(r.cautions)) : null,
+    photos: photosOf(`in-fig-${r.id}`),
+    sources: (r.sources ?? []).map((id: string) => src.get(id)).filter(Boolean).map((s: any) => ({ citation: s.name, url: s.url ?? null })),
+    singleSource: !!r.single_source,
+  }));
+}
+/** The figure tables' tokens, only those some figure uses. */
+export function figureVocab(): Record<string, string[]> {
+  const v = (T.figures ?? {}).vocab ?? {};
+  return { religion: v.religion ?? [], arms: (v.arms ?? []).map(String), holds: v.holds ?? [], gestures: v.gestures ?? [], mount: v.mount ?? [], posture: v.posture ?? [], headBody: v.head_body ?? [], emblem: v.jain_emblem ?? [] };
+}
+
+export type School = { id: string; name: string; other: string[]; period: string | null; from: number | null; to: number | null; region: string | null; patrons: string | null; recognize: string[]; writing: string | null; lookAlikes: { name: string; how: string }[]; copies: string | null; cautions: string | null; sources: { citation: string; url: string | null }[]; singleSource: boolean };
+export type SealRow = { id: string; slug: string; kind: string; native: string | null; translit: string | null; meaning: string | null; owner: string | null; from: number | null; to: number | null; dateNote: string | null; where: string | null; tells: string | null; cautions: string | null; sources: { citation: string; url: string | null }[]; singleSource: boolean };
+
+/** The paintings guide (indian.json `paintings`): schools, and the seals and notes found on paintings. */
+export function paintings(): { schools: School[]; seals: SealRow[] } {
+  const P = T.paintings ?? {};
+  const src = srcMap(P.sources);
+  const cite = (ids: string[] = []) => ids.map((id) => src.get(id)).filter(Boolean).map((s: any) => ({ citation: s.name, url: s.url ?? null }));
+  const txt = (x: unknown) => (x == null || x === '' ? null : soften(typeof x === 'string' ? x : Array.isArray(x) ? x.join('; ') : JSON.stringify(x)));
+  return {
+    schools: (P.schools ?? []).map((r: any): School => ({
+      id: r.id, name: r.name, other: r.other_names ?? [], period: txt(r.period), from: typeof r.date_from === 'number' ? r.date_from : null, to: typeof r.date_to === 'number' ? r.date_to : null,
+      region: txt(r.region), patrons: txt(r.patrons), recognize: (r.how_to_recognize ?? []).map((x: any) => soften(String(x))), writing: txt(r.writing_found),
+      lookAlikes: (r.look_alikes ?? []).map((l: any) => (typeof l === 'string' ? { name: '', how: soften(l) } : { name: String(l.name ?? l.id ?? ''), how: soften(String(l.how_to_tell ?? '')) })).filter((l: any) => l.how),
+      copies: txt(r.later_copies), cautions: txt(r.cautions), sources: cite(r.sources), singleSource: !!r.single_source,
+    })),
+    seals: (P.seals ?? []).map((r: any): SealRow => ({
+      id: `in-ptg-${r.id}`, slug: r.id, kind: String(r.kind ?? 'seal'), native: r.native ?? null, translit: r.translit ?? null, meaning: txt(r.meaning), owner: txt(r.owner),
+      from: typeof r.date_from === 'number' ? r.date_from : null, to: typeof r.date_to === 'number' ? r.date_to : null, dateNote: txt(r.date_note), where: txt(r.where_on_object),
+      tells: txt(r.what_it_tells), cautions: txt(r.cautions), sources: cite(r.sources), singleSource: !!r.single_source,
+    })),
+  };
+}

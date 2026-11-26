@@ -1,0 +1,70 @@
+---
+// /marks/indian-figures: who is this figure? The identifier (islands/FigureFinder)
+// over the app's table (indian.json `figures`): Hindu, Buddhist and Jain
+// figures by what they hold, ride and wear, each with its look-alikes; then
+// every figure as a record sheet (components/ref/Catalogue), #<slug> opens one.
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import Catalogue from '../../components/ref/Catalogue.astro';
+import FigureFinder, { type Fig } from '../../islands/FigureFinder';
+import { figSheet } from '../../lib/records';
+import { figures, figureVocab, indicChars } from '../../lib/indian';
+import { media } from '../../lib/media';
+import { articleLd, faqLd, crumbsLd } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/reigns.css';
+import '../../styles/indian.css';
+
+const path = '/marks/indian-figures';
+const rows = figures();
+const vocab = figureVocab() as any;
+const labels = { religion: 'Religion, if you know it', arms: 'Arms', holds: 'In the hands', gestures: 'Gesture of a hand', mount: 'Beneath or beside the figure', posture: 'Pose', headBody: 'Head and body', emblem: 'Emblem on a Jain pedestal' };
+const figs: Fig[] = rows.map((r) => ({
+  id: r.id, slug: r.slug, name: r.name, iast: r.iast, native: r.native, other: r.other, religion: r.religion, kind: r.kind,
+  arms: r.arms, holds: r.holds, gestures: r.gestures, mount: r.mount, posture: r.posture, headBody: r.headBody, emblems: r.emblems,
+  identifyBy: r.identifyBy, lookAlikes: r.lookAlikes,
+  photo: r.photos[0] ? { file: media(r.photos[0].file), credit: r.photos[0].credit, url: r.photos[0].url } : null,
+}));
+const GROUPS = [
+  { key: 'shiva_devi', label: 'Shiva, the Goddess, Ganesha and Skanda' },
+  { key: 'vishnu_krishna', label: 'Vishnu, Krishna and Rama' },
+  { key: 'other_hindu', label: 'Other Hindu figures' },
+  { key: 'buddhist', label: 'Buddhist figures' },
+  { key: 'jain', label: 'Jain figures' },
+];
+const sheets = rows.map(figSheet);
+const groups = GROUPS.map((g) => ({ key: g.key, label: g.label, sheets: sheets.filter((s) => s.group === g.key) })).filter((g) => g.sheets.length);
+const title = 'Who Is This Figure? Identify Hindu, Buddhist and Jain Figures | Heirloom';
+const description = `Identify a figure on an Indian bronze, brass, stone or painting by what you see: the arms, what the hands hold, the animal it rides, the pose, the emblem on a Jain pedestal. ${rows.length} Hindu, Buddhist and Jain figures with the signs that tell look-alikes apart.`;
+const h1 = 'Who is this figure?';
+const faqs: [string, string][] = [
+  ['How do I identify a Hindu god from a statue?', '<p>By what the figure holds and what it stands or sits on. Each god has signs artists gave it: Shiva’s trident and drum, Vishnu’s discus and conch, Ganesha’s elephant head, the animal each rides. Tap the ones you see above and the figures that fit come first. Artists varied the details, so one missing sign does not rule a figure out.</p>'],
+  ['How can I tell a Jain figure from a Buddha?', '<p>A seated Jain figure (a Tirthankara) sits with both hands resting in the lap, wears no robe over the shoulder, and usually has a diamond-shaped mark on the chest (often missing on figures from south India); the emblem on the pedestal names which of the twenty-four it is. A Buddha wears a monk’s robe and his hands often make a gesture: touching the earth, teaching, raised in reassurance. Both can have a bump on the crown of the head, so that does not tell them apart.</p>'],
+  ['Does knowing who a figure is tell me how old it is?', '<p>No. These forms have been made for centuries and are still cast and carved today, often closely following old ones. Who the figure shows says nothing about its age or whether it is old; the material, the casting and the wear decide that, and only someone who can handle it can judge them.</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).indian ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Indian iconography' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/indian/', 'Indian marks']),
+];
+const indic = indicChars(rows.map((r) => r.native));
+---
+<Reference {title} {description} {path} jsonld={graph} {indic}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">Tap what you see on the figure, on a bronze, a brass image, a carving or a painting, and the figures that fit come first, with the one sign that tells each from its look-alikes. {rows.length} Hindu, Buddhist and Jain figures. Who a figure shows says nothing about how old it is.</p>
+    </header>
+
+    <FigureFinder client:load figures={figs} {vocab} {labels} />
+
+    <section class="ahome__block" aria-labelledby="all">
+      <h2 id="all">Every figure</h2>
+      <Catalogue {groups} noun={['figure', 'figures']} placeholder="A name or a sign: Ganesha, trident, peacock, snake hood" label="A name or a sign" />
+    </section>
+
+    <AppBox text="Photograph the figure. The Advisor describes what it holds and rides, names who it most likely shows with these same signs, and says plainly that this does not date it." />
+    <Faq {faqs} />
+  </div>
+</Reference>

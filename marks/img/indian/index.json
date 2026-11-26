@@ -2,6 +2,7 @@
  {
   "file": "jackson-1921-p473-hamilton-and-co-elephant-a.webp",
   "row_id": "hamilton-and-co-elephant-a",
+  "row_kind": "mark",
   "kind": "book",
   "holder": "Charles J. Jackson, English Goldsmiths and Their Marks, 2nd ed. (London: Macmillan, 1921)",
   "accession": "p. 473",
@@ -21,6 +22,7 @@
  {
   "file": "aucklandmuseum-1939-138-5-hamilton-and-co-elephant-a.webp",
   "row_id": "hamilton-and-co-elephant-a",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Auckland War Memorial Museum Tāmaki Paenga Hira",
   "accession": "1939.138",
@@ -40,6 +42,7 @@
  {
   "file": "jackson-1921-p473-pittar-and-co.webp",
   "row_id": "pittar-and-co",
+  "row_kind": "mark",
   "kind": "book",
   "holder": "Charles J. Jackson, English Goldsmiths and Their Marks, 2nd ed. (London: Macmillan, 1921)",
   "accession": "p. 473",
@@ -59,6 +62,7 @@
  {
   "file": "jackson-1921-p473-pseudo-elephant.webp",
   "row_id": "pseudo-elephant",
+  "row_kind": "mark",
   "kind": "book",
   "holder": "Charles J. Jackson, English Goldsmiths and Their Marks, 2nd ed. (London: Macmillan, 1921)",
   "accession": "p. 473",
@@ -78,6 +82,7 @@
  {
   "file": "aucklandmuseum-1939-138-5-pseudo-elephant.webp",
   "row_id": "pseudo-elephant",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Auckland War Memorial Museum Tāmaki Paenga Hira",
   "accession": "1939.138",
@@ -97,6 +102,7 @@
  {
   "file": "jackson-1921-p473-pseudo-urn.webp",
   "row_id": "pseudo-urn",
+  "row_kind": "mark",
   "kind": "book",
   "holder": "Charles J. Jackson, English Goldsmiths and Their Marks, 2nd ed. (London: Macmillan, 1921)",
   "accession": "p. 473",
@@ -116,6 +122,7 @@
  {
   "file": "jackson-1921-p473-pseudo-letter-a-b.webp",
   "row_id": "pseudo-letter-a-b",
+  "row_kind": "mark",
   "kind": "book",
   "holder": "Charles J. Jackson, English Goldsmiths and Their Marks, 2nd ed. (London: Macmillan, 1921)",
   "accession": "p. 473",
@@ -135,6 +142,7 @@
  {
   "file": "aucklandmuseum-1939-138-5-pseudo-letter-a-b.webp",
   "row_id": "pseudo-letter-a-b",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Auckland War Memorial Museum Tāmaki Paenga Hira",
   "accession": "1939.138",
@@ -154,6 +162,7 @@
  {
   "file": "jackson-1921-p473-pseudo-lion-passant-calcutta.webp",
   "row_id": "pseudo-lion-passant-calcutta",
+  "row_kind": "mark",
   "kind": "book",
   "holder": "Charles J. Jackson, English Goldsmiths and Their Marks, 2nd ed. (London: Macmillan, 1921)",
   "accession": "p. 473",
@@ -173,6 +182,7 @@
  {
   "file": "aucklandmuseum-1939-138-5-hamilton-and-co-name-stamp.webp",
   "row_id": "hamilton-and-co-name-stamp",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Auckland War Memorial Museum Tāmaki Paenga Hira",
   "accession": "1939.138",
@@ -192,6 +202,7 @@
  {
   "file": "aucklandmuseum-1939-138-5-tally-marks-calcutta.webp",
   "row_id": "tally-marks-calcutta",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Auckland War Memorial Museum Tāmaki Paenga Hira",
   "accession": "1939.138",
@@ -211,6 +222,7 @@
  {
   "file": "commons-mrotterdam-73513-1.webp",
   "row_id": "india",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Museum Rotterdam (via Wikimedia Commons)",
   "accession": "73513",
@@ -230,6 +242,7 @@
  {
   "file": "commons-lovell-pa-cricket-ball-1.webp",
   "row_id": "made-in-india",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Wikimedia Commons (uploader's own work: Bradmansdad)",
   "accession": "File:Lovell PA cricket ball.jpg",
@@ -249,6 +262,7 @@
  {
   "file": "commons-placemat-made-in-india-1.webp",
   "row_id": "made-in-india-textile-label",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Flickr user byzantiumbooks (Bill Smith), via Wikimedia Commons",
   "accession": "Flickr 32349608400; Commons File:Placemat Made in India.jpg",
@@ -268,6 +282,7 @@
  {
   "file": "commons-shopping-bag-of-aarong-1.webp",
   "row_id": "aarong",
+  "row_kind": "mark",
   "kind": "museum",
   "holder": "Wikimedia Commons (uploader's own work: M.parvage)",
   "accession": "File:Shopping bag of Aarong.jpg",
@@ -282,6 +297,4786 @@
   "size": [
    720,
    715
+  ]
+ },
+ {
+  "file": "cma-1960-48-1.webp",
+  "row_id": "shiva",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1960.48",
+  "title": "Shiva under trees",
+  "date": "c. 1780",
+  "object_url": "https://clevelandart.org/art/1960.48",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund",
+  "caption": "Painting: white-skinned (ash-smeared) Shiva standing under trees with a trident over his shoulder, a snake at his neck and a spotted animal-skin wrap; the holder notes the third eye and crescent at his brow",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   854,
+   1100
+  ]
+ },
+ {
+  "file": "met-1987-80-1-1-nataraja.webp",
+  "row_id": "nataraja",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1987.80.1",
+  "title": "Shiva as Lord of Dance (Nataraja)",
+  "date": "ca. late 11th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39328",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of R. H. Ellsworth Ltd., in honor of Susan Dillon, 1987",
+  "caption": "Chola bronze Nataraja: four-armed Shiva dancing on one leg on the prostrate dwarf inside the flaming ring, with flying locks; upper hands hold drum and fire, lower left arm swings across toward the raised left foot",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1958-288-1.webp",
+  "row_id": "natesha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1958.288",
+  "title": "Eight Armed Shiva Dancing Between Two Pillars",
+  "date": "900s–1000s",
+  "object_url": "https://clevelandart.org/art/1958.288",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, James Parmelee Fund",
+  "caption": "Sandstone relief: eight-armed Shiva dancing between two pillars, no flame ring or dwarf; small bull (Nandi) at his feet lower left",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   1094
+  ]
+ },
+ {
+  "file": "met-1982-220-10-1.webp",
+  "row_id": "somaskanda",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1982.220.10",
+  "title": "Shiva, Parvati, and Their Son Skanda (Somaskandamurti)",
+  "date": "early 11th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39327",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Lita Annenberg Hazen Charitable Trust Gift, in honor of Cynthia Hazen and Leon B. Polsky, 1982",
+  "caption": "Chola bronze group on one base: four-armed Shiva seated (back hands with axe and deer), Uma seated at his left, and the small standing child Skanda between them",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   880
+  ]
+ },
+ {
+  "file": "aic-1961-775-1.webp",
+  "row_id": "uma-maheshvara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1961.775",
+  "title": "God Shiva Seated in Loving Embrace with Goddess Uma on the Bull Nandi",
+  "date": "9th century",
+  "object_url": "https://www.artic.edu/artworks/86961",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Kate S. Buckingham Fund",
+  "caption": "Sandstone stele: Shiva seated holding a trident, Uma seated on his left thigh in embrace, the couple on the bull Nandi below",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   786,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2002-631-1.webp",
+  "row_id": "ardhanarishvara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2002.631",
+  "title": "God Shiva as Lord Who Is Half-Male, Half-Female (Ardhanarishvara)",
+  "date": "14th century",
+  "object_url": "https://www.artic.edu/artworks/130677",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of the Alsdorf Foundation",
+  "caption": "Granite figure split down the middle: male right half with matted-hair crown, female left half with one full breast and hip-length skirt, leaning on the bull behind",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   607,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1965-453-1.webp",
+  "row_id": "dakshinamurti",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1965.453",
+  "title": "God Shiva as the Supreme Teacher (Dakshinamurti)",
+  "date": "10th century",
+  "object_url": "https://www.artic.edu/artworks/23640",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Kate S. Buckingham Fund",
+  "caption": "Granite figure of Shiva seated with one leg pendant beneath a carved banyan tree, matted-hair crown; hands and the dwarf under his foot are worn and hard to read at this size",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   469,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1971-117-1.webp",
+  "row_id": "vinadhara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1971.117",
+  "title": "Shiva as Lord of Music",
+  "date": "c. 1000",
+  "object_url": "https://clevelandart.org/art/1971.117",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund",
+  "caption": "Chola bronze: standing four-armed Shiva, back hands holding axe and antelope, the two front hands posed empty as if holding a vina across the body (instrument lost)",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   768,
+   1100
+  ]
+ },
+ {
+  "file": "met-62-81-1.webp",
+  "row_id": "lingodbhava",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "62.81",
+  "title": "Shiva Revealed in the Linga (Lingodbhavamurti)",
+  "date": "late 12th–13th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38137",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Fletcher Fund, 1962",
+  "caption": "Granite slab carved as the linga with an oval opening in which four-armed Shiva stands; a boar is carved at the base and a bird (swan) near the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-111-1.webp",
+  "row_id": "gangadhara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2018.111",
+  "title": "Descent of the Ganges",
+  "date": "c. 1700–1710",
+  "object_url": "https://clevelandart.org/art/2018.111",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund",
+  "caption": "Painting of the Descent of the Ganges: Shiva seated with Parvati on Mount Kailash, the river flowing from his topknot, the sage Bhagiratha standing on one leg below; narrative scene rather than the sculptural Gangadhara with Ganga on a lock",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   780
+  ]
+ },
+ {
+  "file": "cma-2005-87-1-vrisharudha.webp",
+  "row_id": "vrisharudha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2005.87",
+  "title": "Shiva and Nandi",
+  "date": "1900s",
+  "object_url": "https://clevelandart.org/art/2005.87",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Pamela Elizabeth Ward in loving memory of her parents, William E. and Evelyn Svec Ward",
+  "caption": "Mithila (Madhubani) painting: blue four-armed Shiva with trident and drum astride his bull",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   726,
+   1100
+  ]
+ },
+ {
+  "file": "met-2018-757-1.webp",
+  "row_id": "tripurantaka",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2018.757",
+  "title": "Shiva as Vanquisher of the Three Cities (Shiva Tripuravijaya)",
+  "date": "ca. 1000–1020",
+  "object_url": "https://www.metmuseum.org/art/collection/search/768115",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Lila Acheson Wallace and The Vincent Astor Foundation Gifts, funds from various donors, Florence and Herbert Irving Acquisitions Fund for Asian Art, The Miriam and Ira D. Wallach Foundation and Harris Brisbane Dick Funds, Mr. and Mrs. Richard L. Chilton Jr. Gift, Oscar L. Tang Fund for Asian Art, Fletcher Fund, Brooke Russell Astor Bequest, Florence and Herbert Irving Acquisitions Fund, Eliot and Wilson Nolen Gift, and Seymour Fund; Mrs. Stephen V. Harkness Fund, Bequests of Bernard M. Baruch and Mary Strong Shattuck, Gifts of George D. Pratt and Mrs. Lewis S. Wolff, from the Estate of Dorothea Wolff, and Rogers Fund, by exchange, 2018",
+  "caption": "Chola bronze: standing four-armed Shiva, back hands holding axe and deer, front hands posed empty for bow (left) and arrow (right)",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1969-673-1.webp",
+  "row_id": "kalyanasundara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1969.673",
+  "title": "Marriage of Shiva and Parvati",
+  "date": "c. 1600",
+  "object_url": "https://www.artic.edu/artworks/32215",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Mr. and Mrs. Robert B. Mayer",
+  "caption": "Bronze pair: four-armed Shiva (back hands with axe and deer) taking Parvati's right hand in his right hand; Parvati stands at his right",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   832,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1958-208-1.webp",
+  "row_id": "bhairava",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1958.208",
+  "title": "Trikala Bhairava",
+  "date": "1000s–1100s",
+  "object_url": "https://clevelandart.org/art/1958.208",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Louise Hawley Stone, In Memory of Louis Severance Higgins",
+  "caption": "Stone head with three faces (Trikala Bhairava): central face with bulging eyes, fangs and moustache, hair standing up; no body, so no trident, drum or dog",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   1071
+  ]
+ },
+ {
+  "file": "cma-1962-164-1.webp",
+  "row_id": "gajasamhara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1962.164",
+  "title": "Shiva as Slayer of the Elephant Demon",
+  "date": "1000s",
+  "object_url": "https://clevelandart.org/art/1962.164",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Granite relief: eight-armed Shiva in a wild dance, stretching the flayed elephant hide behind him like an arch, the elephant's hind feet sticking up at the top right",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   823,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1973-73-1.webp",
+  "row_id": "mukhalinga",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1973.73",
+  "title": "One-Faced Linga (Ekamukhalinga)",
+  "date": "600s–700s",
+  "object_url": "https://clevelandart.org/art/1973.73",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Schist one-faced linga: Shiva's face on the shaft with piled matted hair, crescent moon at the left of the hair and a third eye",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   689,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2021-236-1.webp",
+  "row_id": "mukhalinga",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2021.236",
+  "title": "Emblem of God Shiva with Four Faces (Chaturmukhalinga)",
+  "date": "7th/8th century",
+  "object_url": "https://www.artic.edu/artworks/148374",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Sandstone four-faced linga (chaturmukhalinga): faces of Shiva turned to the four directions around the shaft",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   866,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1989-369-1.webp",
+  "row_id": "sadashiva",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1989.369",
+  "title": "Standing Shiva Mahadeva",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1989.369",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin",
+  "caption": "Kashmir schist stele: standing Shiva Mahadeva with three heads (calm central face flanked by side faces), the bull behind him and small attendants at his feet",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   847,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2019-723-1.webp",
+  "row_id": "sadashiva",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2019.723",
+  "title": "Cosmic Form of Shiva (Sadashiva)",
+  "date": "Pala period, c. 11th century",
+  "object_url": "https://www.artic.edu/artworks/148370",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Marilynn B. Alsdorf",
+  "caption": "Pala schist stele: five-headed, ten-armed Sadashiva seated in meditation on a lotus",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   800,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1971-173-1.webp",
+  "row_id": "ravananugraha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1971.173",
+  "title": "Ravana Shaking Mount Kailasa",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1971.173",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Sundry Purchase Fund",
+  "caption": "Sandstone relief: Shiva and Parvati seated together on Mount Kailasa above, many-armed Ravana heaving at the mountain below",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   704,
+   1100
+  ]
+ },
+ {
+  "file": "met-57-51-3-1.webp",
+  "row_id": "parvati",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "57.51.3",
+  "title": "Standing Parvati",
+  "date": "ca. first quarter 10th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39325",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Bequest of Cora Timken Burnett, 1956",
+  "caption": "Chola bronze: slender two-armed goddess standing with a sway of the hips, right hand raised in the flower-holding pose (flower lost), left arm hanging; tall crown",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1970-62-1.webp",
+  "row_id": "ganesha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1970.62",
+  "title": "Ganesha",
+  "date": "c. 1070",
+  "object_url": "https://clevelandart.org/art/1970.62",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Katharine Holden Thayer",
+  "caption": "Chola bronze: four-armed elephant-headed Ganesha with pot belly, back hands holding goad and noose, trunk curling to a sweet; no rat shown",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   666,
+   1100
+  ]
+ },
+ {
+  "file": "met-61-39-1.webp",
+  "row_id": "ganesha-standing",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "61.39",
+  "title": "Standing Ganesha",
+  "date": "16th–17th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38440",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Seymour Fund, 1961",
+  "caption": "Painted wood: elephant-headed Ganesha standing in a shrine frame, several arms; attributes hard to read at this size",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1961-93-1.webp",
+  "row_id": "ganesha-dancing",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1961.93",
+  "title": "Dancing Ganesha",
+  "date": "c. 1000",
+  "object_url": "https://clevelandart.org/art/1961.93",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Sandstone: six-armed Ganesha in dance, one leg lifted and bent, pot belly, trunk curling",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   835,
+   1100
+  ]
+ },
+ {
+  "file": "met-1988-260-1.webp",
+  "row_id": "skanda",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1988.260",
+  "title": "Karttikeya, the God of War",
+  "date": "6th–7th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38182",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Anonymous Gift, 1988",
+  "caption": "Stone stele: youthful Karttikeya standing with a tall spear, his peacock at his side",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   581,
+   700
+  ]
+ },
+ {
+  "file": "aic-1962-203-1.webp",
+  "row_id": "shanmukha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1962.203",
+  "title": "Karttikeya, Commander of the Divine Army, Seated on a Peacock",
+  "date": "Ganga Period, about 12th century",
+  "object_url": "https://www.artic.edu/artworks/13853",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Purchased with funds provided by Mr. and Mrs. Sylvain S. Wyler",
+  "caption": "Basalt: Karttikeya with several heads (three visible in front) and many arms holding weapons, seated on a peacock whose tail forms the arch behind him",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   843,
+   976
+  ]
+ },
+ {
+  "file": "cma-2003-103-1.webp",
+  "row_id": "durga-mahishasuramardini",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.103",
+  "title": "Durga Killing the Demon Mahisha",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.103",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: ten-armed Durga standing on her lion, grabbing the demon who emerges from the buffalo and spearing him, while the lion bites",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   678,
+   1100
+  ]
+ },
+ {
+  "file": "met-1990-15-1.webp",
+  "row_id": "durga-lion",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1990.15",
+  "title": "Four-Armed Durga Seated on Her Lion Vehicle",
+  "date": "9th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38384",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Cynthia Hazen Polsky Gift, 1990",
+  "caption": "Stone stele: four-armed Durga seated at ease on her lion, the lion's head at lower right; no buffalo",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   500,
+   704
+  ]
+ },
+ {
+  "file": "cma-2014-650-1.webp",
+  "row_id": "kali",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2014.650",
+  "title": "Kali on Shiva, from a Tantric Devi Series",
+  "date": "c. 1810",
+  "object_url": "https://clevelandart.org/art/2014.650",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Nancy and Wayne Hunnicutt",
+  "caption": "Painting: dark-skinned four-armed Kali with sword and a severed head, skull garland and crescent, crouched over the white figure of Shiva lying on his back on a cremation ground",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   810
+  ]
+ },
+ {
+  "file": "cma-1956-7-1.webp",
+  "row_id": "bhadrakali",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1956.7",
+  "title": "Kali",
+  "date": "900s–1000s",
+  "object_url": "https://clevelandart.org/art/1956.7",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, The Norweb Collection",
+  "caption": "Chola bronze: four-armed goddess standing alone with a halo of flaming hair; fangs and skull ornaments too small to read at this size",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   760,
+   1100
+  ]
+ },
+ {
+  "file": "met-1989-121-1.webp",
+  "row_id": "chamunda",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1989.121",
+  "title": "Chamunda, the Horrific Destroyer of Evil",
+  "date": "10th–11th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38152",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Anonymous Gift and Rogers Fund, 1989",
+  "caption": "Sandstone fragment: emaciated goddess with ribs and sunken belly, gaunt grimacing face and piled hair; arms broken",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-162-1-annapurna.webp",
+  "row_id": "annapurna",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.162",
+  "title": "Annapurna and Shiva",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.162",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: crowned Annapurna seated, ladling food with a spoon into the begging bowl of ash-white Shiva",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   676,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2021-206-1.webp",
+  "row_id": "saptamatrikas",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2021.206",
+  "title": "God Shiva Seated with the Seven Mother Goddesses (Saptamatrika)",
+  "date": "10th century",
+  "object_url": "https://www.artic.edu/artworks/130624",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Sandstone frieze: a row of seated mother goddesses with Shiva; the mounts beneath them are small and worn",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   728
+  ]
+ },
+ {
+  "file": "aic-2022-6-1.webp",
+  "row_id": "brahmani",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2022.6",
+  "title": "Mother Goddess Brahmani Seated in Royal Ease (Lalitasana) with Attendants",
+  "date": "9th century",
+  "object_url": "https://www.artic.edu/artworks/153523",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Red sandstone: goddess with three visible heads seated at ease on a throne with attendants; the swan mount and water pot are small and worn",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2021-239-1.webp",
+  "row_id": "maheshvari",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2021.239",
+  "title": "Mother Goddess Maheshvari Seated on the Bull Nandi",
+  "date": "10th/11th century",
+  "object_url": "https://www.artic.edu/artworks/151118",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Schist stele: four-armed goddess seated above a recumbent bull; upper hands hold attributes (trident not clearly legible at this size)",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   904,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2021-233-1.webp",
+  "row_id": "kaumari",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2021.233",
+  "title": "Dancing Mother Goddess Kaumari with Peacock",
+  "date": "9th/10th century",
+  "object_url": "https://www.artic.edu/artworks/130631",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Sandstone: Kaumari dancing with her peacock at lower left",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   797,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1978-70-1.webp",
+  "row_id": "varahi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1978.70",
+  "title": "Varahi",
+  "date": "c. 1300s",
+  "object_url": "https://clevelandart.org/art/1978.70",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund",
+  "caption": "Bronze: four-armed goddess with a sow's head on a young woman's body, in a dancing pose on a lotus",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   981,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1996-805-1.webp",
+  "row_id": "indrani",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1996.805",
+  "title": "Fragment of a Plaque with Seated Mother Goddesses Indrani and Chamunda",
+  "date": "c. 10th/11th century",
+  "object_url": "https://www.artic.edu/artworks/151423",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Helen A. Regenstein Endowment",
+  "caption": "Copper repousse plaque fragment: Indrani seated at left over her elephant (curled trunk below her), raising an object in her upper hand; head lost",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   330,
+   425
+  ]
+ },
+ {
+  "file": "aic-1970-552-1.webp",
+  "row_id": "appar",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1970.552",
+  "title": "Shaiva Saint Appar, Holding a Spade",
+  "date": "14th century",
+  "object_url": "https://www.artic.edu/artworks/34501",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Bertha Evans Brown Fund",
+  "caption": "Bronze: standing saint with hands joined in prayer and a long-handled spade resting against his left shoulder",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   565,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2011-205-1.webp",
+  "row_id": "sambandar",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2011.205",
+  "title": "Dancing Child-Saint Sambandar",
+  "date": "c. 1300s",
+  "object_url": "https://clevelandart.org/art/2011.205",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Dr. Norman Zaworski",
+  "caption": "Bronze: small naked child saint dancing on one leg, right hand raised with pointing finger",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   860,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1969-699-1-vishnu.webp",
+  "row_id": "vishnu",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1969.699",
+  "title": "Four-Armed God Vishnu Holding Discus and Conch",
+  "date": "Vijayanagar period, 15th century",
+  "object_url": "https://www.artic.edu/artworks/32285",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Robert Allerton Purchase Fund",
+  "caption": "Bronze: crowned four-armed Vishnu standing, discus (face-on) in the upper right hand and conch in the upper left, front right hand in fear-not, front left on the hip",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   525,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1961-46-1.webp",
+  "row_id": "vishnu-on-garuda",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1961.46",
+  "title": "Vishnu Riding on Garuda",
+  "date": "300s CE",
+  "object_url": "https://clevelandart.org/art/1961.46",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund",
+  "caption": "Schist stele: Vishnu straddling the shoulders of Garuda, whose wings spread out at both sides; a fan of tail feathers behind Vishnu's head",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   809,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1995-463-1.webp",
+  "row_id": "lakshmi-narayana",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1995.463",
+  "title": "Narayana and Lakshmi",
+  "date": "12th century",
+  "object_url": "https://www.artic.edu/artworks/143627",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Phyllis A. Figiel Shirey",
+  "caption": "Bronze: four-armed Vishnu seated with Lakshmi on his left knee, the two embracing, in an arched frame",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   797,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1932-116-1.webp",
+  "row_id": "vishnu-24-forms",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1932.116",
+  "title": "Vasudeva - Vishnu - Narayana as Shridhara, one of the 24 forms of Vishnu",
+  "date": "1500s–1600s",
+  "object_url": "https://clevelandart.org/art/1932.116",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Dudley P. Allen Fund",
+  "caption": "Brass: standing four-armed Vishnu holding his four emblems (discus at upper right); catalogued as Shridhara, one of the 24 forms",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   759,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1963-104-1-1.webp",
+  "row_id": "sridevi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1963.104.1",
+  "title": "Shri",
+  "date": "900–950",
+  "object_url": "https://clevelandart.org/art/1963.104.1",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Granite: two-armed goddess standing with one hand raised holding a lotus; from the Vishnu with Shri and Bhu group",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   512,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1963-104-3-1.webp",
+  "row_id": "bhudevi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1963.104.3",
+  "title": "Bhu",
+  "date": "900–950",
+  "object_url": "https://clevelandart.org/art/1963.104.3",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Granite: two-armed goddess standing with one hand raised holding a lotus/water lily, the other hanging; Bhu from the Vishnu with Shri and Bhu group",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   537,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1974-235-1.webp",
+  "row_id": "garuda",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1974.235",
+  "title": "God Vishnu's Mount, Garuda, Standing with Hands in Gesture of Adoration (Anjalimudra)",
+  "date": "13th century",
+  "object_url": "https://www.artic.edu/artworks/47166",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Kate S. Buckingham Fund",
+  "caption": "Gilt bronze: winged Garuda standing with hands joined in adoration, beaked face, wings spread behind",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   791,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2021-232-1.webp",
+  "row_id": "ayudhapurusha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2021.232",
+  "title": "Four-Armed Standing God Vishnu with Personified Weapons (Ayudhapurusha)",
+  "date": "8th/9th century",
+  "object_url": "https://www.artic.edu/artworks/153541",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Chlorite: standing four-armed Vishnu with two small personified weapons at his feet, his lower hands resting on their heads",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   855,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2016-427-1.webp",
+  "row_id": "hayagriva",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2016.427",
+  "title": "Horse-Headed Incarnation of God Vishnu (Vajimukha)",
+  "date": "Pre–Angkor period, 7th–8th century",
+  "object_url": "https://www.artic.edu/artworks/151098",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Marilynn B. Alsdorf",
+  "caption": "Sandstone figure with a horse's head on a standing human body; arms lost, so no emblems",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   624,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-114-b-1-dashavatara.webp",
+  "row_id": "dashavatara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.114.b",
+  "title": "Das Avataras, Ten Incarnations of Vishnu (verso), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.114.b",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Woodcut in ten panels: fish-tailed Matsya, Kurma on the tortoise, boar-headed Varaha, many-armed Narasimha tearing the demon, Vamana with parasol; below Parashurama with axe, Rama with Sita, Krishna/Balarama, the Jagannath triad in the ninth place, Kalki on horseback",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   796
+  ]
+ },
+ {
+  "file": "cma-2003-114-b-1-matsya.webp",
+  "row_id": "matsya",
+  "row_kind": "figure",
+  "kind": "book",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.114.b",
+  "title": "Das Avataras, Ten Incarnations of Vishnu (verso), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.114.b",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Panel 1 of the woodcut: crowned four-armed man whose lower body is a fish, with a small kneeling figure",
+  "view": "book cut",
+  "mark_visible": "yes",
+  "size": [
+   652,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-114-b-1-kurma.webp",
+  "row_id": "kurma",
+  "row_kind": "figure",
+  "kind": "book",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.114.b",
+  "title": "Das Avataras, Ten Incarnations of Vishnu (verso), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.114.b",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Panel 2 of the woodcut: crowned four-armed figure rising from a large tortoise shell, holding discus and other emblems",
+  "view": "book cut",
+  "mark_visible": "yes",
+  "size": [
+   624,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-114-b-1-parashurama.webp",
+  "row_id": "parashurama",
+  "row_kind": "figure",
+  "kind": "book",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.114.b",
+  "title": "Das Avataras, Ten Incarnations of Vishnu (verso), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.114.b",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Bottom panel 1 of the woodcut: bearded figure raising an axe, with a second figure at his side",
+  "view": "book cut",
+  "mark_visible": "yes",
+  "size": [
+   623,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-114-b-1-kalki.webp",
+  "row_id": "kalki",
+  "row_kind": "figure",
+  "kind": "book",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.114.b",
+  "title": "Das Avataras, Ten Incarnations of Vishnu (verso), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.114.b",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Bottom panel 5 of the woodcut: Kalki as a rider on a white horse, sword raised",
+  "view": "book cut",
+  "mark_visible": "yes",
+  "size": [
+   633,
+   1100
+  ]
+ },
+ {
+  "file": "met-1987-422-2-1.webp",
+  "row_id": "kalki",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1987.422.2",
+  "title": "Kalki on Horseback",
+  "date": "10th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38942",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Mr. and Mrs. Lawrence Phillips, 1987",
+  "caption": "Metal figure: Kalki as a rider on horseback swinging a sword over his head",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   461,
+   849
+  ]
+ },
+ {
+  "file": "cma-2011-148-1.webp",
+  "row_id": "varaha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2011.148",
+  "title": "Varaha, Boar Incarnation of Vishnu",
+  "date": "700–800s",
+  "object_url": "https://clevelandart.org/art/2011.148",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Maxeen and John Flower in honor of Dr. Stanislaw Czuma",
+  "caption": "Sandstone: boar-headed Varaha in a lunging pose, the small Earth goddess seated on his raised elbow, discus in one hand",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1098,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1987-361-3-1.webp",
+  "row_id": "narasimha-ugra",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1987.361.3",
+  "title": "Man-Lion Incarnation of God Vishnu (Narasimha) Disemboweling King Hiranykashipu",
+  "date": "10th/11th century",
+  "object_url": "https://www.artic.edu/artworks/109462",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection",
+  "caption": "Red sandstone relief: lion-headed god seated with a man laid across his lap, hands at the man's belly (disembowelling); worn",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   733,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1996-88-1.webp",
+  "row_id": "lakshmi-narasimha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1996.88",
+  "title": "Lion-Headed Incarnation of God Vishnu (Narasimha)",
+  "date": "c. 15th century",
+  "object_url": "https://www.artic.edu/artworks/144964",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Kate S. Buckingham Fund",
+  "caption": "Bronze: four-armed lion-headed Narasimha seated cross-legged with a yoga band round his knees, discus and conch in the back hands, and a small goddess (Lakshmi) seated on his left thigh",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   786,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1973-187-1.webp",
+  "row_id": "yoga-narasimha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1973.187",
+  "title": "Yoga Narashimha, Vishnu in his Man-Lion Avatar",
+  "date": "c. 1250",
+  "object_url": "https://clevelandart.org/art/1973.187",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Dr. Norman Zaworski",
+  "caption": "Bronze: lion-headed Narasimha seated with legs crossed and knees up, front hands resting on the knees, discus and conch in the back hands",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   835,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-142-1.webp",
+  "row_id": "trivikrama",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2018.142",
+  "title": "Queen Kaikeyi reminds King Dasharatha about the sacrifices of King Bali and King Shivi, folio 39 from the Ayodhya Kanda (Book of Ayodhya) of a Ramayana (Rama's Journey)",
+  "date": "c. 1710",
+  "object_url": "https://clevelandart.org/art/2018.142",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund",
+  "caption": "Ramayana folio: blue Vishnu as a giant with one leg kicked up to the sky, where Brahma washes his foot; King Bali's sacrifice with the fire below",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   685
+  ]
+ },
+ {
+  "file": "cma-2003-134-a-1.webp",
+  "row_id": "rama",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.134.a",
+  "title": "Rama and Sita enthroned (recto), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.134.a",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: green-skinned crowned Rama enthroned with Sita, holding bow and arrow; Lakshmana with parasol, Hanuman prostrate below",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   910,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-152-1.webp",
+  "row_id": "rama-group",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.152",
+  "title": "Rama and Sita enthroned with Lakshmana and Hanuman attending, from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.152",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: Rama and Sita enthroned, Lakshmana holding the royal parasol, small Hanuman kneeling in adoration",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   668,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-168-1.webp",
+  "row_id": "balarama",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.168",
+  "title": "Balarama and Krishna",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.168",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: white-skinned Balarama holding a plough beside the dark blue Krishna, the pair as mirror images",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   689,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1989-339-1.webp",
+  "row_id": "krishna",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1989.339",
+  "title": "Krishna summoning the cows",
+  "date": "c. 1780–90",
+  "object_url": "https://clevelandart.org/art/1989.339",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin",
+  "caption": "Pahari painting: dark-skinned Krishna in the centre, standing among trees, with his flute, summoning the herd of cows under a stormy sky; white-skinned Balarama with herding stick at left",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   904
+  ]
+ },
+ {
+  "file": "aic-1995-62-1.webp",
+  "row_id": "kaliya-mardana",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1995.62",
+  "title": "God Krishna Dancing on the Head of the Snake Demon Kaliya (Kaliyadamana)",
+  "date": "Vijayanagar period, 14th century",
+  "object_url": "https://www.artic.edu/artworks/136981",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Kate S. Buckingham Fund",
+  "caption": "Bronze: boy Krishna dancing on one leg on the many-hooded head of the serpent Kaliya, holding the serpent's tail up in his left hand",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   573,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1949-600-1.webp",
+  "row_id": "navanita-krishna",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1949.600",
+  "title": "Infant Krishna",
+  "date": "16th century",
+  "object_url": "https://www.artic.edu/artworks/66081",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Mrs. Joseph L. Valentine",
+  "caption": "Bronze: crawling baby Krishna on hands and knees, hair in a topknot, tiger-claw pendant; no butter ball visible from this side",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   843,
+   674
+  ]
+ },
+ {
+  "file": "aic-1949-599-1.webp",
+  "row_id": "navanita-nritta",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1949.599",
+  "title": "Krishna the Butter Thief",
+  "date": "Chola period, 15th century",
+  "object_url": "https://www.artic.edu/artworks/66078",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Mrs. Joseph L. Valentine",
+  "caption": "Bronze: child Krishna dancing on one leg, left arm flung out, right hand at his hip holding a small lump (the butter ball)",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   843,
+   1087
+  ]
+ },
+ {
+  "file": "cma-2001-45-1-govardhanadhari.webp",
+  "row_id": "govardhanadhari",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2001.45",
+  "title": "Krishna Lifting Mount Govardhan",
+  "date": "c. 1780–90",
+  "object_url": "https://clevelandart.org/art/2001.45",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Painting: Krishna holding up Mount Govardhan over his head with one hand, cowherds, milkmaids and cows sheltering beneath, Balarama helping with a staff",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   802,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-86-1.webp",
+  "row_id": "radha-krishna",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2018.86",
+  "title": "Taking of the toll, Dana-Lila",
+  "date": "c. 1760",
+  "object_url": "https://clevelandart.org/art/2018.86",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund",
+  "caption": "Painting: blue Krishna facing Radha (disguised as a toll-collector) and her companions in a landscape with cows",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   842,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1937-454-1-shrinathji.webp",
+  "row_id": "shrinathji",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1937.454",
+  "title": "Pichvai of Shri Nathji",
+  "date": "1825–50",
+  "object_url": "https://clevelandart.org/art/1937.454",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund",
+  "caption": "Painted cloth (pichvai): the dark frontal Shri Nathji icon in the centre with his left arm raised straight up, flanked by milkmaids under banana trees; cows and shrine scenes in the border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1011,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1917-425-1-jagannath.webp",
+  "row_id": "jagannath",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1917.425",
+  "title": "God Jagannath with his Brother Balabhadra and Sister Subhadra",
+  "date": "c. 1875",
+  "object_url": "https://www.artic.edu/artworks/130736",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Mrs. Sarah Raymond Fitzwilliam",
+  "caption": "Kalighat-type painting of the Puri triad: black Jagannath with huge round eyes at right, white Balabhadra at left, small yellow Subhadra between, all with stump arms",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   785,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1917-425-1-balabhadra.webp",
+  "row_id": "balabhadra",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1917.425",
+  "title": "God Jagannath with his Brother Balabhadra and Sister Subhadra",
+  "date": "c. 1875",
+  "object_url": "https://www.artic.edu/artworks/130736",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Mrs. Sarah Raymond Fitzwilliam",
+  "caption": "Same painting: Balabhadra is the white-faced figure at left with round eyes and stump arms, beside yellow Subhadra and black Jagannath",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   785,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1917-425-1-subhadra.webp",
+  "row_id": "subhadra",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1917.425",
+  "title": "God Jagannath with his Brother Balabhadra and Sister Subhadra",
+  "date": "c. 1875",
+  "object_url": "https://www.artic.edu/artworks/130736",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Mrs. Sarah Raymond Fitzwilliam",
+  "caption": "Same painting: Subhadra is the small yellow figure in the middle, without arms, between white Balabhadra and black Jagannath",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   785,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1980-26-1.webp",
+  "row_id": "hanuman-devotee",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1980.26",
+  "title": "Monkey General Hanuman",
+  "date": "c. 1000",
+  "object_url": "https://clevelandart.org/art/1980.26",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Chola bronze: monkey-faced Hanuman standing humbly, one hand raised to his mouth, the other hanging",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   789,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-120-1.webp",
+  "row_id": "hanuman-carrying-rama",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.120",
+  "title": "Hanuman with Rama and Lakshmana on his shoulders, from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.120",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: big red-faced Hanuman striding with green Rama and Lakshmana, both holding bows, seated on his shoulders",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   674,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-148-1.webp",
+  "row_id": "brahma",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.148",
+  "title": "Brahma",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.148",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: four-headed, four-armed Brahma seated cross-legged, holding a manuscript and other emblems",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   674,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1971-61-1-navagraha.webp",
+  "row_id": "navagraha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1971.61",
+  "title": "Nine Celestial Bodies (Navagraha)",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1971.61",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Doris and Ed Wiener",
+  "caption": "Sandstone lintel: a row of nine celestial bodies, seven standing male figures, then the huge bodiless head of Rahu, then the serpent-tailed Ketu at the right end",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   544
+  ]
+ },
+ {
+  "file": "cma-1971-61-1-rahu.webp",
+  "row_id": "rahu",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1971.61",
+  "title": "Nine Celestial Bodies (Navagraha)",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1971.61",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Doris and Ed Wiener",
+  "caption": "Detail of the planet lintel: Rahu as a huge bodiless head with curled hair, his hands resting on the ground below his chin",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   623,
+   851
+  ]
+ },
+ {
+  "file": "cma-1971-61-1-ketu.webp",
+  "row_id": "ketu",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1971.61",
+  "title": "Nine Celestial Bodies (Navagraha)",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1971.61",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Doris and Ed Wiener",
+  "caption": "Detail of the planet lintel: Ketu, the last figure, a crowned human upper body ending in a coiled serpent tail, holding a staff",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   340,
+   877
+  ]
+ },
+ {
+  "file": "cma-1971-61-1-shani.webp",
+  "row_id": "shani",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1971.61",
+  "title": "Nine Celestial Bodies (Navagraha)",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1971.61",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Doris and Ed Wiener",
+  "caption": "Detail of the planet lintel: Saturn, the seventh figure, standing on one leg with the other leg drawn up (lame), holding a staff",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   298,
+   851
+  ]
+ },
+ {
+  "file": "aic-1965-383-1.webp",
+  "row_id": "surya",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1965.383",
+  "title": "Sun God Surya Standing in His Chariot",
+  "date": "Pala period, 10th/11th century",
+  "object_url": "https://www.artic.edu/artworks/23437",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Mr. and Mrs. Earl Morse",
+  "caption": "Pala chlorite stele: Surya standing frontally holding two lotuses at shoulder height, attendants at his sides and the horses of his chariot on the pedestal",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   733,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-158-1.webp",
+  "row_id": "ganga",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.158",
+  "title": "The Goddess Ganga",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.158",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: four-armed crowned Ganga seated on her makara (an elephant-snouted fish), holding a water pot and lotus",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   788,
+   1100
+  ]
+ },
+ {
+  "file": "met-1984-318-1.webp",
+  "row_id": "kubera",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1984.318",
+  "title": "Seated Kubera (Study Collection)",
+  "date": "9th century(?)",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38387",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Anonymous Gift, 1984",
+  "caption": "Stone: pot-bellied seated god with a crown, holding a round purse/pot of treasure in his lap",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   826,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1955-51-1.webp",
+  "row_id": "agni",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1955.51",
+  "title": "Agni, God of Fire",
+  "date": "c. 1000",
+  "object_url": "https://clevelandart.org/art/1955.51",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Edward L. Whittemore Fund",
+  "caption": "Sandstone stele: Agni standing with a halo of flames behind him and his goat/ram at his feet; Brahmans performing fire sacrifices in the side registers",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   721,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1982-134-1.webp",
+  "row_id": "yama",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1982.134",
+  "title": "Yama as Dharma, the Judge of the Deceased with His Consorts (miniature stele)",
+  "date": "800s",
+  "object_url": "https://clevelandart.org/art/1982.134",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Willard G. Clark",
+  "caption": "Schist miniature stele: Yama in his aspect as Dharma, the judge, holding a balance, flanked by consorts with bowls and spears; no buffalo visible",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   668
+  ]
+ },
+ {
+  "file": "met-19-90-1.webp",
+  "row_id": "varuna",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "19.90",
+  "title": "Varuna Holding a Noose and Riding a Swan",
+  "date": "6th–8th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/37533",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Rogers Fund, 1919",
+  "caption": "Sandstone panel: Varuna seated holding a looped noose in his raised right hand, with his goose (swan) beside his foot",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   797,
+   900
+  ]
+ },
+ {
+  "file": "aic-1981-641-1.webp",
+  "row_id": "revanta",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1981.641",
+  "title": "Revanta, Son of Sun God Surya",
+  "date": "c. 10th century",
+  "object_url": "https://www.artic.edu/artworks/63527",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Robert Allerton Purchase Fund",
+  "caption": "Bronze shrine: Revanta riding his horse under an arched frame, flanked by attendants (one raising a parasol/sword)",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   843,
+   1054
+  ]
+ },
+ {
+  "file": "cma-1967-148-1.webp",
+  "row_id": "manikkavachakar",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1967.148",
+  "title": "Shiva Saint: Manikkavachakar",
+  "date": "1100s–1200s",
+  "object_url": "https://clevelandart.org/art/1967.148",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Bronze: standing saint with curly hair, right hand raised in the teaching gesture, left hand holding a small palm-leaf manuscript",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   810,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2019-726-1.webp",
+  "row_id": "manasa",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2019.726",
+  "title": "Snake Goddess Manasa",
+  "date": "Pala period, c. 11th century",
+  "object_url": "https://www.artic.edu/artworks/130612",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Marilynn B. Alsdorf",
+  "caption": "Pala basalt stele: goddess seated with one leg pendant under a canopy of cobra hoods, holding a snake, a child on her knee",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   539,
+   1100
+  ]
+ },
+ {
+  "file": "met-2008-645-3a-b-1.webp",
+  "row_id": "khandoba",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2008.645.3a, b",
+  "title": "Khandoba and Mhalsi on Horseback",
+  "date": "17th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/75277",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Jeffrey and Denise Figiel, 2008",
+  "caption": "Maharashtra brass: Khandoba riding a horse with his consort Mhalsa seated behind him on the same horse, on an openwork stand",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   915
+  ]
+ },
+ {
+  "file": "met-1988-354-1.webp",
+  "row_id": "yaksha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1988.354",
+  "title": "Patravahaka yaksha",
+  "date": "ca. 50 BCE",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38468",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Jeffrey B. Soref, in honor of Martin Lerner, 1988",
+  "caption": "Sandstone: stout, pot-bellied male nature spirit with a grimacing face, frontal, arms broken (a bowl-bearer, patravahaka)",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   772,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1965-250-1.webp",
+  "row_id": "yakshi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1965.250",
+  "title": "Railing Pillar with a Yakshi (Female Nature Divinity)",
+  "date": "c. 125–50 CE",
+  "object_url": "https://clevelandart.org/art/1965.250",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund",
+  "caption": "Red sandstone railing pillar: nearly nude, heavily jewelled woman grasping the branch of a tree above her",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   686,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1971-15-1.webp",
+  "row_id": "shalabhanjika",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1971.15",
+  "title": "Gateway Bracket",
+  "date": "150–200 CE",
+  "object_url": "https://clevelandart.org/art/1971.15",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Sandstone gateway bracket: woman leaning at an angle under a tree canopy, one arm raised to the branch",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   931,
+   1100
+  ]
+ },
+ {
+  "file": "met-42-25-18-1.webp",
+  "row_id": "apsaras",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "42.25.18",
+  "title": "Dancing Apsaras",
+  "date": "13th–14th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38419",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Abby Aldrich Rockefeller, 1942",
+  "caption": "Sandstone temple-wall slab: ornamented celestial woman in a dancing pose, no god's emblems",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   1100
+  ]
+ },
+ {
+  "file": "met-33-25-1.webp",
+  "row_id": "naga",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "33.25",
+  "title": "Naga attendant holding a fly whisk",
+  "date": "ca. 3rd century CE",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38241",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Rogers Fund, 1933",
+  "caption": "Limestone relief: male naga attendant raising a fly whisk, a small fan of cobra hoods behind his head",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   334,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1988-102-1.webp",
+  "row_id": "kirtimukha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1988.102",
+  "title": "Pediment with the Face of Glory (Kirti-mukha)",
+  "date": "c. 1000s",
+  "object_url": "https://clevelandart.org/art/1988.102",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, The Severance and Greta Millikin Purchase Fund",
+  "caption": "Sandstone pediment: a horned, bulging-eyed mask with no body at the apex, foliage scrolling out from its mouth across the triangle",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   706
+  ]
+ },
+ {
+  "file": "met-1970-44-1.webp",
+  "row_id": "mithuna",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1970.44",
+  "title": "Loving Couple (Mithuna)",
+  "date": "13th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38141",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Florance Waterbury Bequest, 1970",
+  "caption": "Stone relief: a man and woman standing in a close embrace, no divine emblems or extra arms",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1964-369-1.webp",
+  "row_id": "dvarapala-shaiva",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1964.369",
+  "title": "A Guardian of Shiva",
+  "date": "1200s",
+  "object_url": "https://clevelandart.org/art/1964.369",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Hoysala schist stele: four-armed door guardian holding a drum and a trident/staff (Shiva's emblems), with a club, richly ornamented",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   639,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1999-261-1.webp",
+  "row_id": "deepalakshmi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1999.261",
+  "title": "Votive Lamp (Deepa Lakshmi)",
+  "date": "1700s-1800s",
+  "object_url": "https://clevelandart.org/art/1999.261",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Dr. Norman Zaworski",
+  "caption": "Bronze votive lamp: a kneeling woman holding out a lamp bowl with both hands, a long curving handle behind her",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   878
+  ]
+ },
+ {
+  "file": "cma-2012-19-1.webp",
+  "row_id": "devotee",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2012.19",
+  "title": "Female Devotee",
+  "date": "c. early 100s CE",
+  "object_url": "https://clevelandart.org/art/2012.19",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Bequest of Jeptha H. Wade III in honor of Emily V. Wade",
+  "caption": "Sandstone: female devotee walking to worship carrying a covered tray of garlands on her shoulder; head lost; hands not joined",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   691,
+   1100
+  ]
+ },
+ {
+  "file": "met-1986-511-4-1.webp",
+  "row_id": "mohra",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1986.511.4",
+  "title": "Processional Mask of Hindu Deity",
+  "date": "Probably 14th–16th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39368",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Marie-Hélène and Guy Weill, 1986",
+  "caption": "Repousse copper-alloy mask: a deity's face with crown and large ear ornaments, flat sheet form",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   914,
+   1100
+  ]
+ },
+ {
+  "file": "met-1982-220-11-1.webp",
+  "row_id": "karaikkal-ammaiyar",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1982.220.11",
+  "title": "Karaikkal Ammaiyar, Shaiva Saint",
+  "date": "ca. late 13th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39413",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Edward J. Gallagher Jr. Bequest, in memory of his father, Edward Joseph Gallagher, his mother, Ann Hay Gallagher, and his son, Edward Joseph Gallagher III, 1982",
+  "caption": "Chola bronze: emaciated woman saint seated cross-legged, ribs and sagging breasts showing, smiling, two-armed and holding a pair of cymbals; no weapons",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-87-1.webp",
+  "row_id": "linga",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2018.87",
+  "title": "Women worshiping a Shiva linga: Devagandhari Ragini of Hindol Raga, from a Ragamala",
+  "date": "c. 1700",
+  "object_url": "https://clevelandart.org/art/2018.87",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund",
+  "caption": "Ragamala painting: two women worshipping a dark Shiva linga, a smooth upright pillar with rounded top set in a ring-shaped base with a spout, on a stepped platform",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   959,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-155-1.webp",
+  "row_id": "vishnu-reclining",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2018.155",
+  "title": "Vishnu on Ananta, the Endless Serpent",
+  "date": "c. 1700",
+  "object_url": "https://clevelandart.org/art/2018.155",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund",
+  "caption": "Painting: blue four-armed Vishnu lying on the coiled white many-headed serpent Ananta, a lotus stalk rising from his navel to four-headed Brahma above, Lakshmi at his feet",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1065,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-121-1-lakshmi.webp",
+  "row_id": "lakshmi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.121",
+  "title": "Lakshmi and Sarasvati",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.121",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting, left figure: crowned goddess in a red sari standing on a lotus, holding lotus flowers, without discus or conch",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   597,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-121-1-sarasvati.webp",
+  "row_id": "sarasvati",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.121",
+  "title": "Lakshmi and Sarasvati",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.121",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting, right figure: white-skinned crowned goddess in a dark sari standing on a lotus and playing a vina",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   590,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2019-733-1.webp",
+  "row_id": "sarasvati",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2019.733",
+  "title": "Four-Armed Sarasvati, Goddess of Learning, Seated in Lotus Position (Padmasana)",
+  "date": "Hoysala period, 12th century",
+  "object_url": "https://www.artic.edu/artworks/148364",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Marilynn B. Alsdorf",
+  "caption": "Hoysala stele: four-armed Sarasvati seated cross-legged on a lotus under an ornate arch, holding attributes (book/rosary/vina, small at this size)",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   862,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-149-1.webp",
+  "row_id": "gajalakshmi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.149",
+  "title": "Gajalakshmi: Lakshmi with Elephants",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.149",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: four-armed Lakshmi seated on a lotus between two white elephants raising water pots over her head",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   731,
+   1100
+  ]
+ },
+ {
+  "file": "met-2021-222-1.webp",
+  "row_id": "subrahmanya",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2021.222",
+  "title": "Subramanian and his wives, Mahavalli and Devasena (Shri Shanmukha Subramania Swami)",
+  "date": "ca. 1900–15",
+  "object_url": "https://www.metmuseum.org/art/collection/search/849525",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Friends of Asian Art Gifts, 2021",
+  "caption": "Chromolithograph: six-headed, many-armed Subrahmanya standing with spear before a spread peacock tail, his two wives Valli and Devasena at his sides, a cobra at his feet",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   762,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1989-332-1.webp",
+  "row_id": "sita",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1989.332",
+  "title": "Rama, Sita, and Lakshmana in the forest",
+  "date": "c. 1830",
+  "object_url": "https://clevelandart.org/art/1989.332",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin",
+  "caption": "Pahari painting: Sita seated beside Rama in a forest hut, Lakshmana kneeling outside; she is known only from the group",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   804,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2021-244-1.webp",
+  "row_id": "lakshmana",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2021.244",
+  "title": "Rama and Lakshmana Holding Bows, Seated under a Tree",
+  "date": "Gupta period, c. 5th/6th century",
+  "object_url": "https://www.artic.edu/artworks/153503",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Gupta terracotta panel: two princes seated side by side under a tree, each holding a bow; one is Lakshmana, but which is not marked",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   888
+  ]
+ },
+ {
+  "file": "cma-1953-245-1.webp",
+  "row_id": "radha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1953.245",
+  "title": "Toilette of Radha",
+  "date": "c. 1810–20",
+  "object_url": "https://clevelandart.org/art/1953.245",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Edward L. Whittemore Fund",
+  "caption": "Pahari painting: a lady (Radha per the holder's title) seated on a terrace at her toilette, holding a mirror, attended by maids",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   800,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2002-629-1.webp",
+  "row_id": "parthasarathi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2002.629",
+  "title": "Arjuna Slays Karna, page from a Mahabharata series",
+  "date": "c. 19th century",
+  "object_url": "https://www.artic.edu/artworks/180204",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Gift of Pratapaditya and Chitra Pal",
+  "caption": "Painting: at right, a chariot drawn by a rearing horse with a small blue-skinned charioteer (Krishna) holding the reins and the archer Arjuna drawing his bow behind him",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   729,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1967-241-1.webp",
+  "row_id": "vatapatrashayi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1967.241",
+  "title": "Markandeya Viewing Krishna in the Cosmic Ocean",
+  "date": "c. 1680",
+  "object_url": "https://clevelandart.org/art/1967.241",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of Dr. and Mrs. Sherman E. Lee",
+  "caption": "Painting: a tiny blue baby lying on a large pipal/banyan leaf floating on the cosmic ocean, holding his foot toward his mouth; the sage Markandeya on a lower leaf",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1082,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2021-202a-1.webp",
+  "row_id": "yamuna",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2021.202a",
+  "title": "River Goddess Yamuna with Attendants",
+  "date": "9th century",
+  "object_url": "https://www.artic.edu/artworks/148379",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+  "caption": "Sandstone door-jamb group: the river goddess standing with attendants under a tree, one holding a water pot; her tortoise mount is not clearly visible on the wave-carved base",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   881,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1985-1026-1.webp",
+  "row_id": "vayu",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1985.1026",
+  "title": "Architectural Strut with the Dikpala, Vayu, Standing on a Deer",
+  "date": "17th century",
+  "object_url": "https://www.artic.edu/artworks/104984",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection",
+  "caption": "Carved wooden temple strut: a dancing guardian figure under foliage standing on a deer",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   693,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1985-1025-1.webp",
+  "row_id": "ishana",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1985.1025",
+  "title": "Architectural Strut with the Dikpala, Isana, Standing on a Bull",
+  "date": "17th century",
+  "object_url": "https://www.artic.edu/artworks/104983",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, James W. and Marilynn Alsdorf Collection",
+  "caption": "Carved wooden temple strut: a guardian figure standing on a recumbent bull",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   693,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-183-1.webp",
+  "row_id": "rati",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2018.183",
+  "title": "Rati, the Goddess of Erotic Love, Takes Aim at Krishna, from a Rasikapriya",
+  "date": "c. 1660",
+  "object_url": "https://clevelandart.org/art/2018.183",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund",
+  "caption": "Rasikapriya painting, lower band: a kneeling woman (Rati, per the holder) drawing a bow at blue Krishna seated on a terrace",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   324
+  ]
+ },
+ {
+  "file": "cma-2003-157-a-1.webp",
+  "row_id": "shitala",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.157.a",
+  "title": "Sheetaladevi: The Smallpox Goddess (recto), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.157.a",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Kalighat painting: four-armed crowned goddess riding a donkey, holding a broom, a winnowing fan and a water pot",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   706,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-157-1.webp",
+  "row_id": "venugopala",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2018.157",
+  "title": "Krishna Fluting",
+  "date": "c. 1675–1700",
+  "object_url": "https://clevelandart.org/art/2018.157",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund",
+  "caption": "Rajasthani painting: blue Krishna standing with legs crossed, playing a transverse flute held to one side of his mouth, crowned with lotus/peacock ornament, cows and a herd boy around him",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   726,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1961-94-1-chandrashekhara.webp",
+  "row_id": "chandrashekhara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1961.94",
+  "title": "Shiva and Parvati",
+  "date": "c. 1020–40",
+  "object_url": "https://clevelandart.org/art/1961.94",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Chola bronze pair: four-armed Shiva standing with feet level, back hands holding axe and deer, front right hand in fear-not; no animal, no dance; Parvati stands separately at his left",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   996,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1987-218-1.webp",
+  "row_id": "nandi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1987.218",
+  "title": "Great Pagoda, Great Bull, Front View, Tanjore, India (Rajarajeshvara Temple), plate 12 from Photographic Views of Tanjore and Trivady (Madras: Madras Presidency)",
+  "date": "1857",
+  "object_url": "https://clevelandart.org/art/1987.218",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Albumen photograph (1857): the colossal stone Nandi, a recumbent humped bull, in its pillared pavilion at the Brihadishvara (Rajarajeshvara) temple, Thanjavur",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   775
+  ]
+ },
+ {
+  "file": "met-57-70-6-1.webp",
+  "row_id": "hanuman-mountain",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "57.70.6",
+  "title": "Hanuman Bearing the Mountaintop with Medicinal Herbs",
+  "date": "ca. 1800",
+  "object_url": "https://www.metmuseum.org/art/collection/search/37960",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Edward M. Bratter, 1957",
+  "caption": "Painting on cloth: monkey-faced Hanuman flying, holding the mountaintop of herbs aloft in one hand and a banner in the other, ringed by his own long coiled tail",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   992,
+   1100
+  ]
+ },
+ {
+  "file": "met-2016-248-1.webp",
+  "row_id": "vamana",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2016.248",
+  "title": "Vamana being blessed by King Bali",
+  "date": "ca. 1780s",
+  "object_url": "https://www.metmuseum.org/art/collection/search/712987",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Nancy Fessenden Gift, 2016",
+  "caption": "Painting: the shaven dwarf boy-priest Vamana holding a parasol, standing before crowned King Bali who pours water into his hands to seal the gift",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   720,
+   1100
+  ]
+ },
+ {
+  "file": "met-1987-142-69-1.webp",
+  "row_id": "vishnu-seated",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1987.142.69",
+  "title": "Seated Vishnu",
+  "date": "9th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39324",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Samuel Eilenberg Collection, Gift of Samuel Eilenberg, 1987",
+  "caption": "Bronze: four-armed Vishnu seated within an arched frame; the discus and conch in the back hands are small at this size",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   799,
+   1100
+  ]
+ },
+ {
+  "file": "met-1991-301-1.webp",
+  "row_id": "vaikuntha-chaturmurti",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1991.301",
+  "title": "Vaikuntha Vishnu",
+  "date": "last quarter of the 8th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38515",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Florence and Herbert Irving Gift, 1991",
+  "caption": "Kashmir stone: standing Vishnu with a boar's head and a lion's head projecting from either side of his human face, halo behind, small personified attendants at his feet",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "met-2022-304-1-venkateshvara.webp",
+  "row_id": "venkateshvara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2022.304",
+  "title": "Vishnu Venkateshvara, Lord of Tirupati",
+  "date": "late 18th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/858236",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Friends of Asian Art Gifts, 2022",
+  "caption": "Painting: the Tirupati image of Venkateshvara, dark blue four-armed Vishnu with tall crown and white namam, conch and discus in the back hands, flanked by attendants",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   781,
+   1100
+  ]
+ },
+ {
+  "file": "met-2019-209-1.webp",
+  "row_id": "panchamukha-hanuman",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2019.209",
+  "title": "Hanuman in His Tantric Five-Headed Pancha Mukha Form",
+  "date": "ca. late 19th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/826439",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Steven Kossak, The Kronos Collections, 2019",
+  "caption": "Painting: Hanuman in his tantric five-headed form (monkey face central with other animal heads), many arms holding weapons, standing on figures",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   934,
+   1100
+  ]
+ },
+ {
+  "file": "met-1987-415-2-1.webp",
+  "row_id": "nagini",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1987.415.2",
+  "title": "Nagini (Serpent Queen or Consort of Nagaraja)",
+  "date": "second quarter of the 5th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39892",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Evelyn Kossak, The Kronos Collections, 1987",
+  "caption": "Sandstone: standing serpent queen with a canopy of cobra hoods behind her head and serpent coils down her back",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2004-454-1.webp",
+  "row_id": "kama",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "2004.454",
+  "title": "Kama Shoots a Love Arrow at Shiva, from a copy of the Song of Gauri (Gita-Gauri)",
+  "date": "c. 1675-1680",
+  "object_url": "https://www.artic.edu/artworks/183372",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Louise Lutz Endowment",
+  "caption": "Gita-Gauri painting, top band: youthful Kama, half-hidden in a flowering tree, drawing his bow with a flower-tipped arrow at Shiva, who sits in meditation while Parvati kneels before him",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   390
+  ]
+ },
+ {
+  "file": "met-2021-221-1.webp",
+  "row_id": "ganesha-consorts",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2021.221",
+  "title": "Ganesha with his consorts Riddhi and Siddhi (Riddhi-Siddhi Ganapati)",
+  "date": "ca. 1900–15",
+  "object_url": "https://www.metmuseum.org/art/collection/search/849524",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Friends of Asian Art Gifts, 2021",
+  "caption": "Chromolithograph: crowned four-armed Ganesha enthroned under a parasol with his two consorts Riddhi and Siddhi seated at either side, attendants with fly-whisks behind",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   795,
+   1100
+  ]
+ },
+ {
+  "file": "met-2008-359-16-1.webp",
+  "row_id": "umasahita",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2008.359.16",
+  "title": "Shiva and Parvati",
+  "date": "19th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/74668",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of Subhash Kapoor, in memory of his parents, Smt Shashi Kanta and Shree Parshotam Ram Kapoor, 2008",
+  "caption": "Pahari ink drawing: Shiva seated on a tiger skin with a snake at his neck, Parvati seated apart at his left facing him, with the bull and her lion below; no child",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   985,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-162-1-sign-third-eye.webp",
+  "row_id": "sign-third-eye",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "2003.162",
+  "title": "Annapurna and Shiva",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.162",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward",
+  "caption": "Detail of a Kalighat painting: Shiva's face with a vertical third eye in the middle of the forehead",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   623,
+   737
+  ]
+ },
+ {
+  "file": "aic-1969-699-1-sign-crowns.webp",
+  "row_id": "sign-crowns",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Art Institute of Chicago",
+  "accession": "1969.699",
+  "title": "Four-Armed God Vishnu Holding Discus and Conch",
+  "date": "Vijayanagar period, 15th century",
+  "object_url": "https://www.artic.edu/artworks/32285",
+  "licence": "CC0 (Art Institute of Chicago: public domain, is_public_domain true on the object record)",
+  "credit": "The Art Institute of Chicago, Robert Allerton Purchase Fund",
+  "caption": "Detail of a Vishnu bronze: tall cylindrical jewelled crown (kirita) with a pointed finial",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   242,
+   490
+  ]
+ },
+ {
+  "file": "cma-1961-94-1-sign-crowns.webp",
+  "row_id": "sign-crowns",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1961.94",
+  "title": "Shiva and Parvati",
+  "date": "c. 1020–40",
+  "object_url": "https://clevelandart.org/art/1961.94",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Detail of a Chola Shiva bronze: tall headdress of piled matted locks (jata-makuta)",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   533,
+   875
+  ]
+ },
+ {
+  "file": "cma-1963-104-2-1.webp",
+  "row_id": "sign-sacred-thread",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Cleveland Museum of Art",
+  "accession": "1963.104.2",
+  "title": "Vishnu",
+  "date": "900–950",
+  "object_url": "https://clevelandart.org/art/1963.104.2",
+  "licence": "CC0 (Cleveland Museum of Art Open Access; share_license_status CC0 on the object record)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund",
+  "caption": "Detail of a granite Vishnu: the sacred thread running diagonally from the left shoulder across the chest to the right hip, over necklaces and a waist band",
+  "view": "mark detail",
+  "mark_visible": "partly",
+  "size": [
+   960,
+   952
+  ]
+ },
+ {
+  "file": "met-1987-80-1-1-sign-halo.webp",
+  "row_id": "sign-halo",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1987.80.1",
+  "title": "Shiva as Lord of Dance (Nataraja)",
+  "date": "ca. late 11th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39328",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Gift of R. H. Ellsworth Ltd., in honor of Susan Dillon, 1987",
+  "caption": "Chola bronze Nataraja: the flaming ring (prabhavali with flame tongues) round the dancing figure",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "met-2022-304-1-sign-tilaka.webp",
+  "row_id": "sign-tilaka",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2022.304",
+  "title": "Vishnu Venkateshvara, Lord of Tirupati",
+  "date": "late 18th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/858236",
+  "licence": "CC0 (The Met Open Access; isPublicDomain true on the object record)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Friends of Asian Art Gifts, 2022",
+  "caption": "Detail of the Venkateshvara painting: a vertical red mark (with faint white namam) on the forehead under the tall crown, the Vaishnava type",
+  "view": "mark detail",
+  "mark_visible": "partly",
+  "size": [
+   724,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1935-146-1.webp",
+  "row_id": "buddha-earth-touching",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1935.146",
+  "title": "Buddha Calling on Earth to Witness",
+  "date": "800s",
+  "object_url": "https://clevelandart.org/art/1935.146",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Dudley P. Allen Fund 1935.146",
+  "caption": "Pala black-stone stele: Buddha seated with legs locked on a lotus, right hand reaching over the right knee to touch the earth, left hand in the lap; Bodhi-tree leaves at the top, small Buddhas and stupas at the sides",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   731,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1964-556-1.webp",
+  "row_id": "buddha-meditation",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1964.556",
+  "title": "Buddha Shakyamuni Seated in Meditation (Dhyanamudra)",
+  "date": "Chola period, about 12th century",
+  "object_url": "https://www.artic.edu/artworks/21023",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Purchased with funds provided by Mr. and Mrs. Robert Andrew Brown, 1964.556",
+  "caption": "Chola-period stone Buddha from Nagapattinam seated with legs locked, both hands resting palm-up one on the other in the lap, nothing held; flame-like finial on the cranial bump",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1966-30-1.webp",
+  "row_id": "buddha-fear-not",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1966.30",
+  "title": "Standing Buddha",
+  "date": "c. 900",
+  "object_url": "https://clevelandart.org/art/1966.30",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund 1966.30",
+  "caption": "Kashmir brass standing Buddha on a lotus pedestal, right hand raised palm out with fingers up (fear-not gesture), left hand holding the hem of the robe; partial flame aureole behind",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   838,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1972-43-1.webp",
+  "row_id": "buddha-standing",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1972.43",
+  "title": "Standing Buddha",
+  "date": "150–200 CE",
+  "object_url": "https://clevelandart.org/art/1972.43",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of Morris and Eleanor Everett in memory of Flora Morris Everett 1972.43",
+  "caption": "Gandharan grey-schist standing Buddha in a heavy toga-like robe with deep folds, right forearm raised, left hand gathering the robe; halo behind the head",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   658,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1989-367-1.webp",
+  "row_id": "buddha-crowned",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1989.367",
+  "title": "Crowned Buddha Seated on a Lion Throne",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1989.367",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin 1989.367",
+  "caption": "Kashmir brass Buddha seated on a lion throne, wearing a tall crown, necklaces and a monk-like robe, hands in the lap",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   976,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1986-70-1.webp",
+  "row_id": "buddha-ascetic",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1986.70",
+  "title": "Fasting Buddha",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1986.70",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund 1986.70",
+  "caption": "Kashmir ivory panel: emaciated Buddha with ribs and veins showing, seated in meditation at the center, surrounded by carved figures (three successive fasting scenes per holder)",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   918,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1965-27-1.webp",
+  "row_id": "buddha-life-scenes-stele",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1965.27",
+  "title": "Shakyamuni Buddha Calling the Earth to Witness his Enlightenment",
+  "date": "1000–1100s",
+  "object_url": "https://clevelandart.org/art/1965.27",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund 1965.27",
+  "caption": "Small Pala soft-stone plaque: central earth-touching Buddha in a shrine, framed by small scenes from the Buddha's life, with the reclining Buddha (parinirvana) at the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   995,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1963-263-1.webp",
+  "row_id": "buddha-muchalinda",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1963.263",
+  "title": "Naga-Enthroned Buddha",
+  "date": "1100s",
+  "object_url": "https://clevelandart.org/art/1963.263",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund 1963.263",
+  "caption": "Bronze Buddha in meditation seated on three coils of a serpent, with a fan of seven snake hoods rising behind his head",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   788,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2000-68-1.webp",
+  "row_id": "amitabha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2000.68",
+  "title": "Seated Amitabha with Attendants",
+  "date": "c. 1100s",
+  "object_url": "https://clevelandart.org/art/2000.68",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Mr. and Mrs. William H. Marlatt Fund 2000.68",
+  "caption": "Painted cloth: large red Buddha seated in meditation, both hands in the lap, on a throne, flanked by standing bodhisattvas, rows of monks above and adepts below",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   875,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1970-10-1.webp",
+  "row_id": "akshobhya",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1970.10",
+  "title": "Akshobhya: the Buddha of the East",
+  "date": "late 800s",
+  "object_url": "https://clevelandart.org/art/1970.10",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1970.10",
+  "caption": "Pala bronze Buddha seated on a stepped lotus throne, right hand reaching down to touch the earth, left hand in the lap; small animals on the throne front",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   1051
+  ]
+ },
+ {
+  "file": "aic-2000-76-1.webp",
+  "row_id": "amitayus",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2000.76",
+  "title": "Buddha Amitāyus Holding a Vase of Longevity (Kalasa)",
+  "date": "18th century",
+  "object_url": "https://www.artic.edu/artworks/154481",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Avery Brundage Fund, 2000.76",
+  "caption": "Gilt-bronze crowned and jeweled Buddha seated on a lotus base, both hands in the lap holding a long-necked vase of longevity",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   847,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1971-20-1.webp",
+  "row_id": "avalokiteshvara-padmapani",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1971.20",
+  "title": "Padmapani Lokeshvara Seated on the Rock",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1971.20",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund 1971.20",
+  "caption": "Kashmir bronze bodhisattva seated cross-legged on a lotus over a rocky base, left hand holding a lotus stem with the flower at the shoulder, right hand lowered palm out; a tiny seated Buddha in the piled hair",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1012,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1991-155-1.webp",
+  "row_id": "khasarpana-lokeshvara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1991.155",
+  "title": "Bodhisattva of Compassion as Lokeshvara the Sky Flyer (Khasarpana)",
+  "date": "late 1000s",
+  "object_url": "https://clevelandart.org/art/1991.155",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, The Severance and Greta Millikin Purchase Fund 1991.155",
+  "caption": "Small Pala soft-stone plaque: bodhisattva seated at ease with one foot down on a lotus, holding a lotus, with small attendant figures around the base",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1078,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1989-4-1.webp",
+  "row_id": "shadakshari-lokeshvara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1989.4",
+  "title": "Stele with Shadakshari-Lokeshvara",
+  "date": "c. 1200s",
+  "object_url": "https://clevelandart.org/art/1989.4",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1989.4",
+  "caption": "Plaque with a four-armed bodhisattva seated cross-legged, front hands pressed together at the heart, upper hands raised holding attributes; two seated attendants and inscriptions on the arch",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   998
+  ]
+ },
+ {
+  "file": "cma-1975-101-1.webp",
+  "row_id": "avalokiteshvara-eleven-headed",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1975.101",
+  "title": "Eleven-Headed Bodhisattva of Compassion (Avalokiteshvara)",
+  "date": "around 1000",
+  "object_url": "https://clevelandart.org/art/1975.101",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund 1975.101",
+  "caption": "Gilt bronze standing bodhisattva with a tall pyramid of small heads above the main face and six arms holding attributes",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   747,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1938-301-b-1-vairocana.webp",
+  "row_id": "vairocana",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1938.301.b",
+  "title": "Ratnasambhava, Akshobhya, Vairochana with attendants, Amitabha, and Amoghasiddhi, Top cover, from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+  "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+  "object_url": "https://clevelandart.org/art/1938.301.b",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1938.301.b",
+  "caption": "Central panel of a painted wooden manuscript cover: pale (white) Buddha in a monk's robe seated in an aureole, both hands raised before the chest in the teaching (wheel-turning) gesture",
+  "view": "detail",
+  "mark_visible": "yes",
+  "size": [
+   421,
+   396
+  ]
+ },
+ {
+  "file": "cma-1938-301-b-1-ratnasambhava.webp",
+  "row_id": "ratnasambhava",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1938.301.b",
+  "title": "Ratnasambhava, Akshobhya, Vairochana with attendants, Amitabha, and Amoghasiddhi, Top cover, from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+  "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+  "object_url": "https://clevelandart.org/art/1938.301.b",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1938.301.b",
+  "caption": "Left-end panel of the same painted manuscript cover: yellow-faced Buddha in a red robe seated in an aureole, right hand lowered over the knee palm out (boon-giving), left hand in the lap",
+  "view": "detail",
+  "mark_visible": "yes",
+  "size": [
+   452,
+   396
+  ]
+ },
+ {
+  "file": "cma-1938-301-b-1-amoghasiddhi.webp",
+  "row_id": "amoghasiddhi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1938.301.b",
+  "title": "Ratnasambhava, Akshobhya, Vairochana with attendants, Amitabha, and Amoghasiddhi, Top cover, from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+  "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+  "object_url": "https://clevelandart.org/art/1938.301.b",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1938.301.b",
+  "caption": "Right-end panel of the same painted manuscript cover: green-faced Buddha in a red robe seated in an aureole, right hand raised before the chest palm out (fear-not), left hand in the lap",
+  "view": "detail",
+  "mark_visible": "yes",
+  "size": [
+   442,
+   396
+  ]
+ },
+ {
+  "file": "met-2015-500-4-6-1.webp",
+  "row_id": "vajrasattva",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2015.500.4.6",
+  "title": "The Bodhisattva Vajrasattva",
+  "date": "8th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39342",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Gift of Florence and Herbert Irving, 2015, 2015.500.4.6",
+  "caption": "Kashmir brass crowned and jeweled bodhisattva seated at ease on a lotus over a rock base, right hand holding a vajra at the chest, left hand resting a bell at the hip",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2014-1031-1.webp",
+  "row_id": "vajradhara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2014.1031",
+  "title": "Vajradhara Buddha Seated Holding a Thunderbolt (Vajra) and Bell (Ghanta)",
+  "date": "15th century",
+  "object_url": "https://www.artic.edu/artworks/148390",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Marilynn B. Alsdorf, 2014.1031",
+  "caption": "Copper-alloy crowned and jeweled figure seated cross-legged, wrists crossed over the chest holding a vajra and a bell",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   816,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2019-731-1.webp",
+  "row_id": "aniconic-symbols",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2019.731",
+  "title": "Buddha's Footprints (Buddhapada)",
+  "date": "c. 2nd/3rd century",
+  "object_url": "https://www.artic.edu/artworks/130672",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Marilynn B. Alsdorf, 2019.731",
+  "caption": "Limestone slab carved with a pair of the Buddha's footprints, each sole marked with a large wheel, set in a framed panel",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   862
+  ]
+ },
+ {
+  "file": "aic-2019-728-1.webp",
+  "row_id": "buddha-teaching",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2019.728",
+  "title": "Buddha Giving the First Sermon (Dharmachakrapravartanamudra)",
+  "date": "Pala period, late 10th/early 11th century",
+  "object_url": "https://www.artic.edu/artworks/148396",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Marilynn B. Alsdorf, 2019.728",
+  "caption": "Pala stone stele: Buddha seated with legs locked on a lotus throne, both hands raised before the chest with fingers forming linked circles (wheel-turning gesture); small stupas at the shoulders, carved base with a central wheel flanked by animals",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   859,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1996-29-1.webp",
+  "row_id": "medicine-buddha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1996.29",
+  "title": "The Medicine Buddha Bhaishajyaguru With His Mandala Retinue",
+  "date": "14th century",
+  "object_url": "https://www.artic.edu/artworks/144397",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Kate S. Buckingham Fund, 1996.29",
+  "caption": "Painted cloth: dark-blue robed Buddha seated on a lotus holding a bowl in the lap, right hand extended over the knee, two standing bodhisattvas and rows of small deities around",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   864,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2019-729-1.webp",
+  "row_id": "simhanada-lokeshvara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2019.729",
+  "title": "Bodhisattva Simhanada Lokeshvara",
+  "date": "Pala period, about 11th century",
+  "object_url": "https://www.artic.edu/artworks/151113",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Marilynn B. Alsdorf, 2019.729",
+  "caption": "Pala black-stone stele: unadorned bodhisattva with piled hair seated at royal ease on a crouching lion, a trident (with snake) rising at his right and a lotus at his left; small seated Buddhas at the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   571,
+   1100
+  ]
+ },
+ {
+  "file": "met-55-121-36-9-1.webp",
+  "row_id": "marichi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "55.121.36.9",
+  "title": "Wrathful Eight-armed and Three-faced Goddess Tara Marichi, Leaf from a dispersed Pancavimsatisahasrika Prajnaparamita Manuscript",
+  "date": "ca. 1090",
+  "object_url": "https://www.metmuseum.org/art/collection/search/74857",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Rogers Fund, 1955, 55.121.36.9",
+  "caption": "Palm-leaf manuscript painting: eight-armed, three-faced goddess (a dark sow-like face beside the main face) striding in a red flame aureole, a single pig at her feet; Sanskrit text either side",
+  "view": "detail",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   630
+  ]
+ },
+ {
+  "file": "cma-1969-61-1.webp",
+  "row_id": "maitreya",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1969.61",
+  "title": "Maitreya",
+  "date": "c. 200s CE",
+  "object_url": "https://clevelandart.org/art/1969.61",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund 1969.61",
+  "caption": "Gandharan grey-schist standing bodhisattva in princely dress and jewels with long looped hair, holding a water flask in the lowered left hand",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   709,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1964-370-1.webp",
+  "row_id": "manjushri",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1964.370",
+  "title": "Bodhisattva of Wisdom (Manjushri)",
+  "date": "1400s",
+  "object_url": "https://clevelandart.org/art/1964.370",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Leonard C. Hanna Jr. Fund 1964.370",
+  "caption": "Gilt-copper four-armed crowned bodhisattva seated cross-legged, upper right hand raising a sword, upper left holding a bow with a lotus stem, lower hands before the body",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   944,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1971-14-1.webp",
+  "row_id": "vajrapani",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1971.14",
+  "title": "Vajrapani",
+  "date": "700s",
+  "object_url": "https://clevelandart.org/art/1971.14",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1971.14",
+  "caption": "Kashmir brass stocky figure with flaming hair seated at ease on a rocky base, holding a vajra in the raised right hand; no bell",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1023,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1965-476-1.webp",
+  "row_id": "gandhara-bodhisattva",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1965.476",
+  "title": "Bodhisattva",
+  "date": "late 100s CE",
+  "object_url": "https://clevelandart.org/art/1965.476",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1965.476",
+  "caption": "Gandharan grey-schist standing bodhisattva with halo, moustache, turban-like headdress, heavy necklaces and amulet strings, draped lower garment; right forearm missing",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   652,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1989-347-1.webp",
+  "row_id": "green-tara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1989.347",
+  "title": "Seated Tara",
+  "date": "1100s",
+  "object_url": "https://clevelandart.org/art/1989.347",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin 1989.347",
+  "caption": "Pala bronze goddess seated on a lotus throne with the right leg stepping down, right hand lowered in boon-giving, lotus stems rising at the shoulders",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   907,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2014-1044-1.webp",
+  "row_id": "white-tara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2014.1044",
+  "title": "Goddess White Tara with Kneeling Donor at Base",
+  "date": "c. 12th century",
+  "object_url": "https://www.artic.edu/artworks/144727",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Marilynn B. Alsdorf, 2014.1044",
+  "caption": "Small stone plaque: crowned goddess seated with both legs crossed on a double lotus, right hand lowered in boon-giving, lotus flowers at both shoulders, a tiny kneeling donor at the base",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1938-301-1-b-1.webp",
+  "row_id": "prajnaparamita",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1938.301.1.b",
+  "title": "Prajnaparamita ﬂanked by two female ﬁgures, folio 1 (verso), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+  "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+  "object_url": "https://clevelandart.org/art/1938.301.1.b",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1938.301.1.b",
+  "caption": "Central painted panel of a palm-leaf manuscript folio: four-armed golden goddess seated in an aureole, front hands before the chest in the teaching gesture; paint worn, the book is not clear",
+  "view": "detail",
+  "mark_visible": "partly",
+  "size": [
+   442,
+   335
+  ]
+ },
+ {
+  "file": "cma-1947-493-1.webp",
+  "row_id": "vasudhara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1947.493",
+  "title": "Vasudhara, Goddess of Abundance",
+  "date": "1300s–1400s",
+  "object_url": "https://clevelandart.org/art/1947.493",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1947.493",
+  "caption": "Gilt-copper six-armed goddess seated with one leg down, holding attributes (sheaf of grain, vase) in her hands; crowned and jeweled",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   1094
+  ]
+ },
+ {
+  "file": "aic-2016-58-1.webp",
+  "row_id": "hariti",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2016.58",
+  "title": "Goddess Hariti Seated Holding a Child",
+  "date": "2nd/3rd century",
+  "object_url": "https://www.artic.edu/artworks/153535",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Marilynn B. Alsdorf, 2016.58",
+  "caption": "Gandharan schist relief: richly dressed woman seated on a throne holding a small child against her body, with further small children at her side",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   784,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1996-30-1.webp",
+  "row_id": "jambhala",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1996.30",
+  "title": "Jambhala, the God of Wealth, Seated on a Dragon",
+  "date": "15th century",
+  "object_url": "https://www.artic.edu/artworks/144399",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Bequest of Arthur Rubloff, 1996.30",
+  "caption": "Carved ivory: fat crowned god seated at ease on a coiling dragon above a tier of small figures, one arm raised, an animal (mongoose) held at the left",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   776,
+   1100
+  ]
+ },
+ {
+  "file": "aic-2014-1045-1.webp",
+  "row_id": "mahakala",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "2014.1045",
+  "title": "Buddhist God Mahakala",
+  "date": "15th century",
+  "object_url": "https://www.artic.edu/artworks/144728",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Marilynn B. Alsdorf, 2014.1045",
+  "caption": "Small painted stone: squat wrathful figure with bulging eyes, crown of skulls and fangs, holding a horizontal staff (gandi) across both forearms",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   848
+  ]
+ },
+ {
+  "file": "aic-1970-486-1.webp",
+  "row_id": "padmasambhava",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1970.486",
+  "title": "Guru Rinpoche (Padmasambhava) in Multiple Forms, with Peaceful and Wrathful Meditational Deities and Protectors",
+  "date": "18th century",
+  "object_url": "https://www.artic.edu/artworks/34310",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Everett and Ann McNear Collection, 1970.486",
+  "caption": "Central figure of a painted cloth: seated teacher in layered robes and a lotus hat holding a vajra in the raised right hand and a skull cup in the left, a staff resting against the left shoulder",
+  "view": "detail",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   1053
+  ]
+ },
+ {
+  "file": "nmaa-f1924-10-1.webp",
+  "row_id": "deities-in-union",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "National Museum of Asian Art",
+  "accession": "F1924.10",
+  "title": "Sri Cakrasamvara and Vajravarahi",
+  "date": "16th-17th century",
+  "object_url": "https://asia.si.edu/object/F1924.10/",
+  "licence": "CC0 (Smithsonian Open Access, usage CC0)",
+  "credit": "National Museum of Asian Art, Smithsonian Institution, Washington, DC: Purchase — Charles Lang Freer Endowment, F1924.10",
+  "caption": "Gilt-copper many-armed, multi-headed male deity in close embrace with a female partner facing him, striding on two prostrate figures on an oval base",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   910,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1969-228-1.webp",
+  "row_id": "rishabhanatha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1969.228",
+  "title": "Rishabha, the First Jina",
+  "date": "800s–900s",
+  "object_url": "https://clevelandart.org/art/1969.228",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of George P. Bickford 1969.228",
+  "caption": "Red sandstone bust of a Jina with small curls, long earlobes and locks of hair falling behind the ears to the shoulders; lower body and pedestal lost",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   850,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1978-274-1.webp",
+  "row_id": "parshvanatha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1978.274",
+  "title": "Jaina Tirthankara Parshvanatha with Serpent Hood Seated in Meditation (Dhyanamudra)",
+  "date": "12th century",
+  "object_url": "https://www.artic.edu/artworks/52665",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of the Auxiliary Board in honor of Mr. and Mrs. James W. Alsdorf, 1978.274",
+  "caption": "Black-stone stele: Jina seated in meditation under a canopy of seven snake hoods, attendant figures at the sides, a triple umbrella above",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1026,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2001-88-1-jina-seated.webp",
+  "row_id": "jina-seated",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2001.88",
+  "title": "Jina (Tirthankara)",
+  "date": "900s–1000s",
+  "object_url": "https://clevelandart.org/art/2001.88",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Severance and Greta Millikin Purchase Fund 2001.88",
+  "caption": "Bronze Jina seated cross-legged, both hands in the lap right over left, diamond-shaped srivatsa in the middle of the chest, plain body without garment or jewels, on a carved cushion",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   891,
+   1100
+  ]
+ },
+ {
+  "file": "mia-98-246-1.webp",
+  "row_id": "jina-standing",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Minneapolis Institute of Art",
+  "accession": "98.246",
+  "title": "Jina",
+  "date": "11th or 12th century",
+  "object_url": "https://collections.artsmia.org/art/5682",
+  "licence": "Public domain (Mia rights_type: Public Domain)",
+  "credit": "Minneapolis Institute of Art, The Mr. and Mrs. Bernard M. Granum Fund, 98.246",
+  "caption": "Small bronze nude Jina standing rigidly frontal on a round lotus base, arms hanging straight down clear of the body",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   633,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1995-261-1.webp",
+  "row_id": "chaturvimshatipatta",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1995.261",
+  "title": "Altarpiece with the First Jaina Tirthankara Rishabhanatha Surrounded by Twenty-Three Other Tirthankaras",
+  "date": "1089 A.D.",
+  "object_url": "https://www.artic.edu/artworks/142507",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Kate S. Buckingham Endowment, 1995.261",
+  "caption": "Brass altarpiece inlaid with silver and copper: large central seated Jina with silver-inlaid eyes and chest mark in a shrine frame, surrounded by rows of small seated Jinas; wheel between two deer and lions on the throne front",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "met-65-73-1-2.webp",
+  "row_id": "inscription-form",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "65.73.1",
+  "title": "Seated Jain Tirthankara",
+  "date": "15th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39263",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Gift of Mr. and Mrs. J. J. Klejman, 1965, 65.73.1",
+  "caption": "Back of a cast-brass Jain altarpiece: Devanagari inscription engraved around the arch, across the cross-bar (beginning with a samvat date in the 1500s) and down the central back plate",
+  "view": "back",
+  "mark_visible": "yes",
+  "size": [
+   941,
+   1100
+  ]
+ },
+ {
+  "file": "met-65-73-1-1.webp",
+  "row_id": "panchatirthi",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "65.73.1",
+  "title": "Seated Jain Tirthankara",
+  "date": "15th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39263",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Gift of Mr. and Mrs. J. J. Klejman, 1965, 65.73.1",
+  "caption": "Front of the same cast-brass altarpiece: large central seated Jina with silver-inlaid eyes and chest mark under an arch, two small seated Jinas above and two small standing Jinas at the sides (five Jinas in all), attendants, and a row of small figures on the stepped base",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   1100
+  ]
+ },
+ {
+  "file": "met-1992-131-1.webp",
+  "row_id": "sect-signs",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1992.131",
+  "title": "Jain Svetambara Tirthankara in Meditation",
+  "date": "first half of the 11th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38574",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Florence and Herbert Irving Gift, 1992, 1992.131",
+  "caption": "White marble Jina seated in meditation, hands in the lap; a carved waist-cloth band shows at the waist and lap (no genitals shown), eyes carved open",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   880,
+   1100
+  ]
+ },
+ {
+  "file": "met-2008-279-1.webp",
+  "row_id": "neminatha",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2008.279",
+  "title": "Enthroned Jina, Probably Neminatha",
+  "date": "late 7th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/74501",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Purchase, several members of The Chairman's Council Gifts and Josephine Jackson Foundation Gift, 2008, 2008.279",
+  "caption": "Bronze Jina seated in meditation on a high throne with lions, a male attendant seated at the left end and a goddess at the right end of the throne",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   826,
+   1100
+  ]
+ },
+ {
+  "file": "met-2011-501-1.webp",
+  "row_id": "padmavati",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2011.501",
+  "title": "Jain Goddess Padmavati",
+  "date": "ca. 10th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/76744",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Vijay K. Anand, M.D., Nanda Anand, Maya Anand, and Rohit Anand Gift, 2011, 2011.501",
+  "caption": "Bronze shrine with a four-armed crowned goddess seated on a throne under a pillared arch, holding a goad and other attributes, attendants at the sides; a small Jina sheltered by snake hoods sits at the top of the frame",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "met-1987-142-339-1.webp",
+  "row_id": "bahubali",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1987.142.339",
+  "title": "Jain Siddha Bahubali, Entwined with Forest Vines",
+  "date": "late 6th–7th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39134",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Samuel Eilenberg Collection, Gift of Samuel Eilenberg, 1987, 1987.142.339",
+  "caption": "Small bronze nude figure standing rigidly in kayotsarga on a round lotus base, with vines climbing his legs and arms",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   826,
+   1100
+  ]
+ },
+ {
+  "file": "met-1987-142-335-1.webp",
+  "row_id": "jina-parikara",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1987.142.335",
+  "title": "Enthroned Jina Attended by a Yaksha, a Yakshi, and Chauri-Bearers",
+  "date": "9th–10th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/39226",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Samuel Eilenberg Collection, Gift of Samuel Eilenberg, 1987, 1987.142.335",
+  "caption": "Bronze shrine: Jina seated in meditation on a lion throne under a triple umbrella and a tree-like openwork arch, flywhisk bearers at the sides, a yaksha and a yakshi seated at the two ends of the base",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "met-55-121-38-1-2.webp",
+  "row_id": "ashtamangala",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "55.121.38.1",
+  "title": "A Tirthankara and the Eight Auspicious Symbols; Page from a Dispersed Kalpa Sutra (Jain Book of Rituals)",
+  "date": "15th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/37790",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Rogers Fund, 1955, 55.121.38.1",
+  "caption": "Painted panel on a Kalpasutra manuscript leaf: Jina seated in a shrine between two attendants, with rows of auspicious symbols above and below (a full vase at the top; a svastika, a nandyavarta-like square maze and a flower diagram in the bottom row)",
+  "view": "detail",
+  "mark_visible": "partly",
+  "size": [
+   997,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2001-88-1-srivatsa.webp",
+  "row_id": "srivatsa",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2001.88",
+  "title": "Jina (Tirthankara)",
+  "date": "900s–1000s",
+  "object_url": "https://clevelandart.org/art/2001.88",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Severance and Greta Millikin Purchase Fund 2001.88",
+  "caption": "Chest of a bronze seated Jina with a raised diamond-and-petal srivatsa mark in the middle of the chest",
+  "view": "detail",
+  "mark_visible": "yes",
+  "size": [
+   660,
+   646
+  ]
+ },
+ {
+  "file": "met-1993-477-2-1.webp",
+  "row_id": "snake-hood-counts",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "1993.477.2",
+  "title": "Standing Jain Tirthankara Parshvanatha",
+  "date": "6th century",
+  "object_url": "https://www.metmuseum.org/art/collection/search/38453",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Gift of Florence and Herbert Irving, 1993, 1993.477.2",
+  "caption": "Red sandstone stele: nude Jina standing in kayotsarga with two arms hanging, sheltered by a canopy of snake hoods (about seven) with the serpent's coils behind the body; small attendants at the feet",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   826,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1919-898-1.webp",
+  "row_id": "mughal-akbar",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1919.898",
+  "title": "The Young Emperor Akbar Arrests the Insolent Shah Abu’l-Maali, Page from a Manuscript of the Akbarnama",
+  "date": "Mughal dynasty (1526-1857), c. 1590-1595",
+  "object_url": "https://www.artic.edu/artworks/76816",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Lucy Maud Buckingham Collection, 1919.898",
+  "caption": "Full manuscript page: crowded court scene with the young emperor under a green-and-gold canopy, many small figures in bright colours, buildings and rocky landscape behind, a line of Persian text at the foot",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   653,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2013-313-1.webp",
+  "row_id": "mughal-jahangir",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.313",
+  "title": "Portrait of Suraj Singh Rathor, Raja of Marwar and Maternal Uncle of Shah Jahan: A Page from the Prince Khurram Album",
+  "date": "c. 1600",
+  "object_url": "https://clevelandart.org/art/2013.313",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.313",
+  "caption": "Album portrait: a single standing nobleman in profile against a plain pale-green ground with a few flowering plants, finely modelled face, Persian inscriptions in the margin",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   517,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1945-168-1.webp",
+  "row_id": "mughal-shah-jahan",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1945.168",
+  "title": "Portrait of Asaf Khan (1569–1641), from the Late Shah Jahan Album",
+  "date": "c. 1653",
+  "object_url": "https://clevelandart.org/art/1945.168",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1945.168",
+  "caption": "Album page: standing portrait of a noble in white on a green ground in a gold-sprinkled frame, wide outer border painted with figures of courtiers, servants and scholars",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   725,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1973-237-1.webp",
+  "row_id": "mughal-late",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1973.237",
+  "title": "Tiered Court Scene",
+  "date": "c. 1735",
+  "object_url": "https://clevelandart.org/art/1973.237",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of Mr. and Mrs. Michael de Havenon 1973.237",
+  "caption": "Tall painting of a palace in tiers of pale terraces and pavilions crowded with small figures, a large court assembly in the middle, floral border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   774,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1981-249-1.webp",
+  "row_id": "mughal-later-copies",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1981.249",
+  "title": "Portrait of Emperor Jahangir",
+  "date": "c. 1800",
+  "object_url": "https://www.artic.edu/artworks/62243",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Kate S. Buckingham Fund, 1981.249",
+  "caption": "Standing portrait of the emperor Jahangir with halo, holding a globe and a shield, on a small dais against a bright green ground, inside a gold-flecked border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   735,
+   1100
+  ]
+ },
+ {
+  "file": "nmaa-f1931-20-1.webp",
+  "row_id": "mughal-album-leaf",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "National Museum of Asian Art",
+  "accession": "F1931.20",
+  "title": "Jahangir Giving Books to Shaykhs, from the St. Petersburg Album",
+  "date": "ca. 1620; borders mid-18th century; calligraphy AH 1020 (1611-12); Mughal dynasty, Reign of Jahangir",
+  "object_url": "https://asia.si.edu/object/F1931.20/",
+  "licence": "CC0 (Smithsonian Open Access, usage CC0)",
+  "credit": "National Museum of Asian Art, Smithsonian Institution, Washington, DC: Purchase — Charles Lang Freer Endowment, F1931.20",
+  "caption": "Album page: central painting of the haloed emperor seated under a red canopy handing books to sheikhs among courtiers, inside a wide later border painted with flowers",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   759,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1971-82-1.webp",
+  "row_id": "provincial-mughal-18c",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1971.82",
+  "title": "Royal Women Celebrating Diwali",
+  "date": "c. 1760",
+  "object_url": "https://clevelandart.org/art/1971.82",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund 1971.82",
+  "caption": "Night scene: women on a marble terrace by a river with fireworks, rows of lamps along railings and boats, a pavilion at right",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   931
+  ]
+ },
+ {
+  "file": "cma-2013-286-1.webp",
+  "row_id": "deccani-bijapur",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.286",
+  "title": "A marbled picture of Rustam catching Rakhsh",
+  "date": "c. 1650",
+  "object_url": "https://clevelandart.org/art/2013.286",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.286",
+  "caption": "Page painted over and around a marbled ground: many horses and grooms, the hero catching a foal, flowering plants, on buff paper",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   649,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2013-287-1.webp",
+  "row_id": "deccani-golconda",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.287",
+  "title": "Sultan Abdullah Qutb Shah (1614-74) on Horseback",
+  "date": "c. 1635",
+  "object_url": "https://clevelandart.org/art/2013.287",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.287",
+  "caption": "Equestrian portrait of a sultan on a horse against a plain buff ground, in a gold-sprinkled border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   627,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2013-291-1.webp",
+  "row_id": "deccani-hyderabad",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.291",
+  "title": "A princess with attendants on a terrace",
+  "date": "c. 1720–1730",
+  "object_url": "https://clevelandart.org/art/2013.291",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.291",
+  "caption": "Princess seated on a terrace with attendants, a fountain in front, white pavilion and evening sky behind",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   708,
+   1100
+  ]
+ },
+ {
+  "file": "nmaa-s2018-1-57-1.webp",
+  "row_id": "rajput-mewar",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "National Museum of Asian Art",
+  "accession": "S2018.1.57",
+  "title": "Maharana Raj Singh I observing an elephant fight",
+  "date": "ca. 1670-1675",
+  "object_url": "https://asia.si.edu/object/S2018.1.57/",
+  "licence": "CC0 (Smithsonian Open Access, usage CC0)",
+  "credit": "National Museum of Asian Art, Smithsonian Institution, Washington, DC: Purchase and partial gift from the Catherine and Ralph Benkaim Collection — funds provided by the Friends of the National Museum of Asian Art, S2018.1.57",
+  "caption": "Court scene of elephant fights in a palace arena: grey elephants with red trappings, many small figures and spectators, flat yellow ground, a pavilion at the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   987
+  ]
+ },
+ {
+  "file": "aic-1965-1127-1.webp",
+  "row_id": "rajput-bundi",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1965.1127",
+  "title": "Bhairavi Ragini, Page from a Bundi Ragamala Set",
+  "date": "c. 1765-1780",
+  "object_url": "https://www.artic.edu/artworks/24539",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Russell Tyson purchase fund, 1965.1127",
+  "caption": "Ragamala page: women at a shrine in a pavilion by a lotus pond, dense green banana trees and flowering plants behind, red border with a Devanagari title at the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   875,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-180-1.webp",
+  "row_id": "rajput-kota",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2018.180",
+  "title": "Maharao Ram Singh II of Kota (r. 1828–66) Hunting Buffalo",
+  "date": "1832",
+  "object_url": "https://clevelandart.org/art/2018.180",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund 2018.180",
+  "caption": "Hunting scene: a ruler on horseback spearing a charging black buffalo with attendants, sparse trees on a pale ground, inscriptions along the top border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   850
+  ]
+ },
+ {
+  "file": "cma-2001-172-1.webp",
+  "row_id": "rajput-kishangarh",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2001.172",
+  "title": "Portrait of Maharaja Savant Singh with Consort, Bani Thani",
+  "date": "mid-1700s",
+  "object_url": "https://clevelandart.org/art/2001.172",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of Dr. Norman Zaworski 2001.172",
+  "caption": "A ruler reclining on a terrace with his consort and women attendants, figures with long curving eyes and sharp profiles, lawn and pavilion behind, dark floral border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
+  ]
+ },
+ {
+  "file": "nmaa-s2018-1-50-1.webp",
+  "row_id": "rajput-marwar",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "National Museum of Asian Art",
+  "accession": "S2018.1.50",
+  "title": "Bangali Ragini",
+  "date": "ca. 1630",
+  "object_url": "https://asia.si.edu/object/S2018.1.50/",
+  "licence": "CC0 (Smithsonian Open Access, usage CC0)",
+  "credit": "National Museum of Asian Art, Smithsonian Institution, Washington, DC: Purchase and partial gift from the Catherine and Ralph Benkaim Collection — funds provided by the Friends of the National Museum of Asian Art, S2018.1.50",
+  "caption": "Ragamala page: an ascetic woman seated before a pink domed shrine with a tiger inside, flowering tree behind, Devanagari title at the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   756,
+   1100
+  ]
+ },
+ {
+  "file": "nmaa-s2018-1-43-1.webp",
+  "row_id": "rajput-bikaner",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "National Museum of Asian Art",
+  "accession": "S2018.1.43",
+  "title": "Krishna playing with the gopis, folio from a Rasikpriya",
+  "date": "dated 1686 (Samvat 1743)",
+  "object_url": "https://asia.si.edu/object/S2018.1.43/",
+  "licence": "CC0 (Smithsonian Open Access, usage CC0)",
+  "credit": "National Museum of Asian Art, Smithsonian Institution, Washington, DC: Purchase and partial gift from the Catherine and Ralph Benkaim Collection — funds provided by the Friends of the National Museum of Asian Art, S2018.1.43",
+  "caption": "Krishna dancing with women in a garden by a white pavilion, slender figures, dark trees, red border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   802,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1962-147-6-1.webp",
+  "row_id": "rajput-amber-jaipur",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1962.147.6",
+  "title": "Lalita Ragini, Page from a Jaipur Ragamala Set",
+  "date": "c. 1750-1770",
+  "object_url": "https://www.artic.edu/artworks/129862",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Russell Tyson, 1962.147.6",
+  "caption": "Ragamala page with a block of Devanagari text at the top: a man at a palace door, a woman lying on a bed, a horse and attendant below, red border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   812,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2018-82-1.webp",
+  "row_id": "pahari-basohli",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2018.82",
+  "title": "Sanehi Ragini, from the “Second Basohli\" Ragamala",
+  "date": "c. 1690–95",
+  "object_url": "https://clevelandart.org/art/2018.82",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund 2018.82",
+  "caption": "Ragamala page: a couple on a patterned carpet in a pavilion, strong flat yellow, red and grey, Takri-style title at the top, red border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1099,
+   1100
+  ]
+ },
+ {
+  "file": "nmaa-f2017-13-4-1.webp",
+  "row_id": "pahari-guler",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "National Museum of Asian Art",
+  "accession": "F2017.13.4",
+  "title": "The poet Sundar Das before Emperor Shah Jahan, folio from a Sundar Shringar",
+  "date": "ca. 1750-1760",
+  "object_url": "https://asia.si.edu/object/F2017.13.4/",
+  "licence": "CC0 (Smithsonian Open Access, usage CC0)",
+  "credit": "National Museum of Asian Art, Smithsonian Institution, Washington, DC: Purchase from the Catherine and Ralph Benkaim Collection — Charles Lang Freer Endowment, F2017.13.4",
+  "caption": "Folio: an emperor seated against a bolster on a white terrace receiving a poet and courtiers, cool green lawn and cypress trees behind, finely drawn figures, dark-blue border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   744
+  ]
+ },
+ {
+  "file": "cma-2001-45-1-pahari-kangra.webp",
+  "row_id": "pahari-kangra",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2001.45",
+  "title": "Krishna Lifting Mount Govardhan",
+  "date": "c. 1780–90",
+  "object_url": "https://clevelandart.org/art/2001.45",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, John L. Severance Fund 2001.45",
+  "caption": "Krishna holding up Mount Govardhan on one hand above a crowd of herders, women and cattle, under a dark stormy sky with Indra on his elephant; fine line and soft colour",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   802,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1985-601-1.webp",
+  "row_id": "pahari-chamba",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1985.601",
+  "title": "Krishna Playing Chopar With Radha",
+  "date": "c. 1760",
+  "object_url": "https://www.artic.edu/artworks/104468",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Gift of Herman Spertus in memory of Sara Spertus, 1985.601",
+  "caption": "Krishna and Radha playing a board game (chopar) on a terrace with women attendants, white palace building and trees behind, dark-blue border",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   762,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2012-302-1.webp",
+  "row_id": "pahari-mandi",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2012.302",
+  "title": "Shamsher Sen of Mandi with a youth",
+  "date": "1760–70",
+  "object_url": "https://clevelandart.org/art/2012.302",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of Dr. Norman Zaworski 2012.302",
+  "caption": "Two large standing figures in white jamas against a flat blue ground, a raja with a staff facing a youth, bold outlines, buff border with a Takri label",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   957,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1982-119-1.webp",
+  "row_id": "company-patna",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1982.119",
+  "title": "Juggler",
+  "date": "c. 1840",
+  "object_url": "https://clevelandart.org/art/1982.119",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of Mr. and Mrs. William E. Ward 1982.119",
+  "caption": "Watercolour of a single juggler squatting with a bow and balls in a pale landscape under a washed blue sky, ruled borders, in European-influenced style",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   919,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1972-285-1.webp",
+  "row_id": "company-calcutta",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1972.285",
+  "title": "Green Parrot",
+  "date": "c. 1820",
+  "object_url": "https://clevelandart.org/art/1972.285",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Bequest of Edgar A. Hahn 1972.285",
+  "caption": "Natural-history watercolour: a green parakeet perched on a leafy branch on plain paper, with a small inscription at lower left",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   846,
+   1100
+  ]
+ },
+ {
+  "file": "aic-1981-247-1.webp",
+  "row_id": "company-lucknow-delhi",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1981.247",
+  "title": "Four Recruits in White Dhotis, page from the Fraser Album",
+  "date": "Company School, c. 1815-1816",
+  "object_url": "https://www.artic.edu/artworks/89516",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Kate S. Buckingham Fund, 1981.247",
+  "caption": "Album page: four standing and seated men in white dhotis drawn on plain paper without background, careful naturalistic faces",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   728
+  ]
+ },
+ {
+  "file": "cma-2001-164-1.webp",
+  "row_id": "company-tanjore-trichinopoly",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2001.164",
+  "title": "A Couple (from the series Costumes and Professions)",
+  "date": "mid-1800s",
+  "object_url": "https://clevelandart.org/art/2001.164",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward 2001.164",
+  "caption": "A man and woman standing side by side on a plain ground with a shadow at their feet, he holding a banner and cymbals, she with a pot; costume-and-caste set picture",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   907,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-110-a-1.webp",
+  "row_id": "kalighat",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2003.110.a",
+  "title": "The Goddess Kali (recto), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.110.a",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward 2003.110.a",
+  "caption": "Kalighat watercolour of the goddess Kali: black face, long red tongue, garland of heads, bold sweeping outlines and flat bright colour on plain paper",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   687,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2003-111-a-1.webp",
+  "row_id": "kalighat-later",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2003.111.a",
+  "title": "Jatayu hinders Ravana’s chariot trying to prevent Sita’s abduction (recto), from a Kalighat album",
+  "date": "c. 1890",
+  "object_url": "https://clevelandart.org/art/2003.111.a",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of William E. Ward in memory of his wife, Evelyn Svec Ward 2003.111.a",
+  "caption": "Black-ink relief print: the vulture Jatayu with spread wings attacking Ravana's flying chariot drawn as a domed building, Bengali-style lettering at the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   729,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1937-454-1-nathdwara-pichhvai.webp",
+  "row_id": "nathdwara-pichhvai",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1937.454",
+  "title": "Pichvai of Shri Nathji",
+  "date": "1825–50",
+  "object_url": "https://clevelandart.org/art/1937.454",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1937.454",
+  "caption": "Large painted cloth hanging: the black image of Shri Nathji with raised arm at the center flanked by rows of women (gopis) under trees, border of small panels with cows and shrines",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   904,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2005-87-1-mithila-madhubani.webp",
+  "row_id": "mithila-madhubani",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2005.87",
+  "title": "Shiva and Nandi",
+  "date": "1900s",
+  "object_url": "https://clevelandart.org/art/2005.87",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of Pamela Elizabeth Ward in loving memory of her parents, William E. and Evelyn Svec Ward 2005.87",
+  "caption": "Mithila painting on paper: blue-skinned Shiva with arms outstretched beside his bull Nandi, filled with flowers, dots and hatched patterns in pink, red and black, Devanagari caption at the top",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   726,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2013-324-9.webp",
+  "row_id": "servant-formula-seals",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.324",
+  "title": "Portrait of Raja Jagat Singh of Nurpur (reigned 1618–46)",
+  "date": "probably 1619",
+  "object_url": "https://clevelandart.org/art/2013.324",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.324",
+  "caption": "Close view of a gold nasta'liq ascription on a dark ground: 'amal-i banda-yi dargah Bichitr (work of the servant of the court, Bichitr)",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   898
+  ]
+ },
+ {
+  "file": "cma-1973-237-6.webp",
+  "row_id": "later-mughal-seals",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1973.237",
+  "title": "Tiered Court Scene",
+  "date": "c. 1735",
+  "object_url": "https://clevelandart.org/art/1973.237",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift of Mr. and Mrs. Michael de Havenon 1973.237",
+  "caption": "Square black seal impression naming Muhammad Shah Padshah Ghazi, on the back of a Delhi painting of c. 1735",
+  "view": "back",
+  "mark_visible": "partly",
+  "size": [
+   1100,
+   853
+  ]
+ },
+ {
+  "file": "cma-2013-313-5.webp",
+  "row_id": "emperor-handwritten-labels",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.313",
+  "title": "Portrait of Suraj Singh Rathor, Raja of Marwar and Maternal Uncle of Shah Jahan: A Page from the Prince Khurram Album",
+  "date": "c. 1600",
+  "object_url": "https://clevelandart.org/art/2013.313",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.313",
+  "caption": "One line of black nasta'liq on the gold inner border below the portrait: shabih-i Raja Suraj Singh Rathor (likeness of Raja Suraj Singh Rathor)",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   854,
+   231
+  ]
+ },
+ {
+  "file": "cma-2013-331-3.webp",
+  "row_id": "amal-i-ascription",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.331",
+  "title": "Shamsa (sunburst) with portrait of Aurangzeb (1618–1707), from the Emperor's Album (the Kevorkian Album)",
+  "date": "illumination 1640–55; original portrait c. 1640–50; altered after 1658",
+  "object_url": "https://clevelandart.org/art/2013.331",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.331",
+  "caption": "Tiny black nasta'liq ascription 'amal-i Bichitr (work of Bichitr) in the gold ground just below the round portrait medallion",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   255,
+   146
+  ]
+ },
+ {
+  "file": "cma-2013-300-11.webp",
+  "row_id": "amal-i-ascription",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.300",
+  "title": "A feast for Babur hosted by his half-brother Jahangir Mirza in Ghazni in May 1505, from a Babur-nama (Memoirs of Babur)",
+  "date": "c. 1589; outer margins added c. mid-1900s",
+  "object_url": "https://clevelandart.org/art/2013.300",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.300",
+  "caption": "Black nasta'liq ascription 'amal Basawan (work of Basawan) in the bottom margin below the painting",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   697,
+   253
+  ]
+ },
+ {
+  "file": "cma-2013-304-1.webp",
+  "row_id": "collaborative-ascriptions",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.304",
+  "title": "Hulagu Khan giving a feast and dispensing favor upon the amirs and princes, from a Chingiz-nama (Book of Chingiz Khan) of the Jami al-tavarikh (Compendium of Chronicles)",
+  "date": "c. 1596–1600",
+  "object_url": "https://clevelandart.org/art/2013.304",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.304",
+  "caption": "One line of red nasta'liq in the bottom margin under the painting naming three artists: tarh Lal, 'amal Dharam Das, chihra-numa Padarath",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   891,
+   160
+  ]
+ },
+ {
+  "file": "cma-2013-347-a-4.webp",
+  "row_id": "other-signature-formulas",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.347.a",
+  "title": "Posthumous portrait of the Mughal emperor Muhammad Shah (reigned 1719–1748) holding a falcon (recto)",
+  "date": "1764",
+  "object_url": "https://clevelandart.org/art/2013.347.a",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.347.a",
+  "caption": "Black nasta'liq signature on a gold band: raqam-i kamtarin Muhammad Reza-i Hindi with the date 178 written above",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   361
+  ]
+ },
+ {
+  "file": "cma-2013-343-2.webp",
+  "row_id": "hidden-signatures",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.343",
+  "title": "A blindfolded suitor is brought before a princess; verso: scrolling floral vines",
+  "date": "1755",
+  "object_url": "https://clevelandart.org/art/2013.343",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.343",
+  "caption": "Very small black nasta'liq signature written on the white pillar of the pavilion just below its capital ('amal-i Fayzullah)",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   126,
+   110
+  ]
+ },
+ {
+  "file": "cma-1967-244-1.webp",
+  "row_id": "attribution-reliability",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1967.244",
+  "title": "Jain Ascetic Walking Along a Riverbank",
+  "date": "c. 1600",
+  "object_url": "https://clevelandart.org/art/1967.244",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Severance and Greta Millikin Collection 1967.244",
+  "caption": "Sky area of the painting: a faded, partly erased line of large nasta'liq across the top and, at right above the palm tree, a small 'amal-i Behzad ascription",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   458
+  ]
+ },
+ {
+  "file": "cma-2013-314-7.webp",
+  "row_id": "painting-numbers",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.314",
+  "title": "Isfandiyar slays Arjasp, the king of Turan, from a Shah-nama (Book of Kings) of Firdausi (Persian, about 934–1020)",
+  "date": "1600–1605",
+  "object_url": "https://clevelandart.org/art/2013.314",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.314",
+  "caption": "Close view of a margin: the number 25 in Persian numerals and, below, the name Haidar Kashmiri in black nasta'liq",
+  "view": "mark detail",
+  "mark_visible": "yes",
+  "size": [
+   1100,
+   907
+  ]
+ },
+ {
+  "file": "cma-1964-452-3-rajput-court-inventory-marks.webp",
+  "row_id": "rajput-court-inventory-marks",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1964.452",
+  "title": "Kedara Ragini",
+  "date": "c. 1650",
+  "object_url": "https://clevelandart.org/art/1964.452",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1964.452",
+  "caption": "Oval purple stamp with Devanagari lettering: tasvir khana (picture store), a number (99) and Datia State",
+  "view": "back",
+  "mark_visible": "yes",
+  "size": [
+   996,
+   510
+  ]
+ },
+ {
+  "file": "cma-2018-160-2.webp",
+  "row_id": "rajput-court-inventory-marks",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2018.160",
+  "title": "Sultan Ibrahim ibn Adham of Balkh Visited by Angels",
+  "date": "c. 1740",
+  "object_url": "https://clevelandart.org/art/2018.160",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase and partial gift from the Catherine and Ralph Benkaim Collection; Severance and Greta Millikin Purchase Fund 2018.160",
+  "caption": "Red fraction-style number 21/57 and a short crossed-out line of Devanagari in black ink at the top of the back",
+  "view": "back",
+  "mark_visible": "yes",
+  "size": [
+   683,
+   210
+  ]
+ },
+ {
+  "file": "cma-1964-452-3-samvat-and-inventory-writing.webp",
+  "row_id": "samvat-and-inventory-writing",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1964.452",
+  "title": "Kedara Ragini",
+  "date": "c. 1650",
+  "object_url": "https://clevelandart.org/art/1964.452",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1964.452",
+  "caption": "Back of a Rajput painting: seven lines of Devanagari text in black with red verse markers at the top, an oval purple Datia State picture-store stamp with a number below, and small pencil numbers at the bottom corners",
+  "view": "back",
+  "mark_visible": "yes",
+  "size": [
+   895,
+   1100
+  ]
+ },
+ {
+  "file": "cma-2013-300-6.webp",
+  "row_id": "detached-and-remargined-pages",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "2013.300",
+  "title": "A feast for Babur hosted by his half-brother Jahangir Mirza in Ghazni in May 1505, from a Babur-nama (Memoirs of Babur)",
+  "date": "c. 1589; outer margins added c. mid-1900s",
+  "object_url": "https://clevelandart.org/art/2013.300",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Gift in honor of Madeline Neves Clapp; Gift of Mrs. Henry White Cannon by exchange; Bequest of Louise T. Cooper; Leonard C. Hanna Jr. Fund; From the Catherine and Ralph Benkaim Collection 2013.300",
+  "caption": "Whole leaf: the painted Babur-nama page set in later outer margins of a different, paler paper that frame the original page on all sides",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   716,
+   1100
+  ]
+ },
+ {
+  "file": "nmaa-f1930-86-1.webp",
+  "row_id": "buddha-parinirvana",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "National Museum of Asian Art",
+  "accession": "F1930.86",
+  "title": "Parinirvana of Buddha, from a Prajnaparamita manuscript",
+  "date": "early 12th century; Pala-Sena dynasty",
+  "object_url": "https://asia.si.edu/object/F1930.86/",
+  "licence": "CC0 (Smithsonian Open Access, usage CC0)",
+  "credit": "National Museum of Asian Art, Smithsonian Institution, Washington, DC: Purchase — Charles Lang Freer Endowment, F1930.86",
+  "caption": "Central painted panel of a palm-leaf manuscript folio: robed Buddha lying on his side on a couch with mourning figures below and a small stupa and figure above",
+  "view": "detail",
+  "mark_visible": "yes",
+  "size": [
+   513,
+   525
+  ]
+ },
+ {
+  "file": "aic-1940-83-1.webp",
+  "row_id": "buddha-boon-giving",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Art Institute of Chicago",
+  "accession": "1940.83",
+  "title": "Standing Buddha with Left Hand in Gift Giving Gesture (varadamudra)",
+  "date": "Chola period (c. 855-1279), about 11th century",
+  "object_url": "https://www.artic.edu/artworks/36812",
+  "licence": "CC0 (Art Institute of Chicago, is_public_domain true)",
+  "credit": "Art Institute of Chicago, Samuel M. Nickerson Fund, 1940.83",
+  "caption": "Chola bronze standing Buddha on a lotus over a stepped base: right hand raised palm out (fear-not), left hand held out low with the open palm (boon-giving)",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   839,
+   1100
+  ]
+ },
+ {
+  "file": "cma-1973-159-1.webp",
+  "row_id": "buddha-descent",
+  "row_kind": "figure",
+  "kind": "museum",
+  "holder": "Cleveland Museum of Art",
+  "accession": "1973.159",
+  "title": "Standing Buddha",
+  "date": "c. 800s",
+  "object_url": "https://clevelandart.org/art/1973.159",
+  "licence": "CC0 (Cleveland Open Access, share_license_status CC0)",
+  "credit": "The Cleveland Museum of Art, Purchase from the J. H. Wade Fund 1973.159",
+  "caption": "Small standing Buddha in a clinging robe on a lotus base, right hand lowered palm out, left hand holding the robe; no ladder or stair shown",
+  "view": "whole object",
+  "mark_visible": "partly",
+  "size": [
+   879,
+   1100
+  ]
+ },
+ {
+  "file": "met-2013-10-1.webp",
+  "row_id": "ravi-varma-press",
+  "row_kind": "painting",
+  "kind": "museum",
+  "holder": "The Metropolitan Museum of Art",
+  "accession": "2013.10",
+  "title": "Lakshmi",
+  "date": "1894",
+  "object_url": "https://www.metmuseum.org/art/collection/search/78264",
+  "licence": "CC0 (Met Open Access, isPublicDomain true)",
+  "credit": "The Metropolitan Museum of Art, Purchase, Gift of Mrs. William J. Calhoun and Bequest of Nina Bunshaft, by exchange, 2013, 2013.10",
+  "caption": "Chromolithograph: four-armed Lakshmi in a red sari standing on a pink lotus in a pond with swans and an elephant holding a garland, wooded landscape; printed signature 'Ravi Varma' at lower left and a printed title in Devanagari and English (LAXMI) with press lines along the bottom margin",
+  "view": "whole object",
+  "mark_visible": "yes",
+  "size": [
+   825,
+   1100
   ]
  }
 ]

@@ -52,3 +52,31 @@
 .iletters strong { display: block; font-size: 1.3rem; }
 .iletters .num { font-size: 14px; color: var(--ink-2); }
 .iletters li.is-disputed { border-style: dashed; }
+
+/* The figure identifier (islands/FigureFinder) */
+.ff { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); margin: 14px 0 28px; }
+@media (min-width: 900px) { .ff { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); align-items: start; } .ff__out { position: sticky; top: 84px; max-height: calc(100vh - 100px); overflow-y: auto; } }
+.ff__q { margin-bottom: 10px; }
+.ff__group { border: 0; padding: 0; margin: 0 0 12px; }
+.ff__group legend { font-size: 14px; color: var(--ink-2); margin-bottom: 6px; padding: 0; }
+.ff__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.ff__chips button { min-height: 36px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); color: var(--ink); padding: 4px 12px; font-size: 14.5px; cursor: pointer; }
+.ff__chips button[aria-pressed='true'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.ff__clear { border: 0; background: none; color: var(--accent-ink); text-decoration: underline; cursor: pointer; padding: 6px 0; font-size: 14.5px; }
+.ff__out { display: grid; gap: 12px; align-content: start; }
+.ff__card { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 12px; border-top: 1px solid var(--rule); padding-top: 12px; }
+.ff__card:not(:has(.ff__pic)) { grid-template-columns: minmax(0, 1fr); }
+.ff__pic { width: 84px; aspect-ratio: 1; display: grid; place-items: center; border-radius: var(--r); overflow: hidden; }
+.ff__pic img { width: 100%; height: 100%; object-fit: cover; }
+.ff__card h3 { font-size: 1.1rem; margin-bottom: 2px; }
+.ff__card p { margin: 0 0 6px; font-size: 15px; }
+.ff__iast { color: var(--ink-2); }
+.ff__matched { color: var(--accent-ink); font-size: 14px !important; }
+.ff__like { margin: 4px 0 0; padding-left: 18px; font-size: 14px; color: var(--ink-2); }
+
+/* The paintings guide */
+.ischools { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.ischool { border-top: 1px solid var(--rule); padding-top: 10px; }
+.ischool h3 { font-size: 1.15rem; margin-bottom: 4px; }
+.ischool p, .ischool li { font-size: 15px; }
+.ischool ul { padding-left: 18px; margin: 4px 0 8px; }
