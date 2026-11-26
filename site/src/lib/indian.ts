@@ -7,6 +7,8 @@ import { collection, type Rec } from './portal';
 import { soften } from './site';
 import { INDIC } from './scripts';
 import indianTable from '../data/app/indian.json';
+import { readFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 export type Photo = { file: string; status: string; label: string; caption: string; credit: string; url: string | null; visible: string | null };
 export type InMark = {
@@ -191,4 +193,13 @@ export function crafts(): CraftRow[] {
 export function craftVocab(): Record<string, string[]> {
   const v = (T.crafts ?? {}).vocab ?? {};
   return { materials: v.materials ?? [], woods: v.woods ?? [], techniques: v.techniques ?? [], forms: v.forms ?? [], regions: v.regions ?? [] };
+}
+
+/** The crafts finder's technique close-ups: marks/img/indian/tech/index.json,
+ * cut from the craft photographs by hallmark-sources/indian/images/technique_crops.py. */
+export function techCloseUps(): Record<string, { file: string; title: string | null; credit: string | null }> {
+  const file = join(process.cwd(), '..', 'marks', 'img', 'indian', 'tech', 'index.json');
+  if (!existsSync(file)) return {};
+  const idx = JSON.parse(readFileSync(file, 'utf8')) as Record<string, any>;
+  return Object.fromEntries(Object.entries(idx).map(([k, v]) => [k, { file: String(v.file), title: v.title ?? null, credit: v.credit ?? null }]));
 }

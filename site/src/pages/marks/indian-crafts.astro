@@ -1,8 +1,10 @@
 ---
 // /marks/indian-crafts: what is it? The finder (islands/CraftFinder) over the
 // app's table (indian.json `crafts`): Indian metal crafts, inlay and
-// carving, and jewelry, by
-// material, technique, form and region; then every craft as a record sheet
+// carving, and jewelry, by what the item is (outlines), what it is made of
+// (swatches), how it is decorated (close-ups, lib/craft-pictures + the cuts
+// in marks/img/indian/tech) and where it is said to come from; then every
+// craft as a record sheet
 // (components/ref/Catalogue), #<slug> opens one. Carpets and rugs have their
 // own reference.
 import Reference from '../../layouts/Reference.astro';
@@ -11,17 +13,24 @@ import Faq from '../../components/Faq.astro';
 import Catalogue from '../../components/ref/Catalogue.astro';
 import CraftFinder, { type Craft } from '../../islands/CraftFinder';
 import { craftSheet } from '../../lib/records';
-import { crafts, craftVocab, indicChars } from '../../lib/indian';
+import { crafts, craftVocab, indicChars, techCloseUps } from '../../lib/indian';
 import { media } from '../../lib/media';
 import { articleLd, faqLd, crumbsLd } from '../../lib/site';
 import synced from '../../data/app/SOURCE.json';
 import '../../styles/reigns.css';
 import '../../styles/indian.css';
+import '../../styles/indian-crafts.css';
 
 const path = '/marks/indian-crafts';
 const rows = crafts();
 const vocab = craftVocab() as any;
-const labels = { forms: 'What it is', materials: 'What it is made of', woods: 'The wood, if you know it', techniques: 'How it is made or decorated', regions: 'Where it is said to come from' };
+const labels = { forms: 'What is it?', materials: 'What is it made of?', woods: 'Which wood, if you know it?', techniques: 'How is it made or decorated?', regions: 'Where is it said to come from?' };
+const close = techCloseUps();
+const techPics = Object.fromEntries(Object.entries(close).map(([k, v]) => [k, { ...v, file: media(v.file) }]));
+// Who holds the photographs the close-ups are cut from (LACMA asks for its address).
+const holders = [...new Set(Object.values(close).map((v) => (v.credit ?? '').split(',')[0].trim()).filter(Boolean))]
+  .map((h) => h.replace(/^The /, 'the ').replace('Los Angeles County Museum of Art', 'the Los Angeles County Museum of Art (www.lacma.org)'));
+const techCredit = holders.length ? `Close-ups cut from public-domain photographs at ${holders.length > 1 ? `${holders.slice(0, -1).join(', ')} and ${holders.at(-1)}` : holders[0]}.` : '';
 const items: Craft[] = rows.map((r) => ({
   id: r.id, slug: r.slug, name: r.name, native: r.native, other: r.other, group: r.group, kind: r.kind,
   materials: r.materials, woods: r.woods, techniques: r.techniques, forms: r.forms, regions: r.regions,
@@ -59,7 +68,7 @@ const indic = indicChars(rows.map((r) => r.native));
       <p class="rhead__lede">Tap what the item is, what it is made of and how it is decorated, and the Indian crafts that fit come first: {rows.length} kinds of metalwork, inlay and carving, and jewelry, with how to recognize each, the marks and labels found on them, what was made later for export and tourists, and what each is confused with.</p>
     </header>
 
-    <CraftFinder client:load crafts={items} {vocab} {labels} />
+    <CraftFinder client:load crafts={items} {vocab} {labels} {techPics} {techCredit} />
 
     <section class="ahome__block" aria-labelledby="all">
       <h2 id="all">Every craft</h2>
