@@ -1,0 +1,46 @@
+---
+// /marks/chinese/export-silver: the silversmiths and retailers of Canton, Hong Kong,
+// Shanghai and the treaty ports who made silver for Western buyers (c.1785–1949),
+// their workshop chops, marks no source has tied to a maker, and the rules for
+// dating a piece. A catalogue over the collection's records (family
+// chinese-export-silver, ids cn-export-silver-*); the records already name this page.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import AppBox from '../../../components/AppBox.astro';
+import { collection } from '../../../lib/portal';
+import { exportSilverSheet, EXPORT_SILVER_GROUPS, CJK } from '../../../lib/records';
+import { articleLd } from '../../../lib/site';
+
+const path = '/marks/chinese/export-silver';
+const recs = collection().records.filter((r) => r.family === 'chinese-export-silver');
+const sheets = recs.map(exportSilverSheet);
+const groups = EXPORT_SILVER_GROUPS.map(([key, label, blurb]) => ({ key, label, blurb, sheets: sheets.filter((s) => s.group === key).sort((x, y) => x.reading.localeCompare(y.reading)) })).filter((g) => g.sheets.length);
+const makers = recs.filter((r) => r.kind === 'export silversmith or retailer').length;
+const marks = recs.filter((r) => r.kind !== 'dating rule').length;
+const rules = recs.length - marks;
+const twoSourced = recs.filter((r) => r.kind === 'export silversmith or retailer' && !r.single_source).length;
+const title = 'Chinese Export Silver Marks: Makers of Canton, Hong Kong and Shanghai | Heirloom';
+const description = `${makers} Chinese export silversmiths and retailers of Canton, Hong Kong, Shanghai and the treaty ports, with their marks, Chinese names and dates, workshop chops, unidentified marks and ${rules} rules for dating a piece, every fact sourced.`;
+const han = [...new Set([...JSON.stringify(groups)].filter((ch) => CJK.test(ch)))].join('');
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Chinese export silver marks', description, '2026-11-26')]} {han}>
+  <header class="rhead">
+    <h1>Chinese export silver</h1>
+    <p class="rhead__lede">From about 1785 the silversmiths of Canton, and later of Hong Kong, Shanghai and the treaty ports, made silver for Western buyers. Early pieces carry marks made to pass as English hallmarks; later ones a firm’s initials or name in Latin letters, often with its name in Chinese characters and a workshop’s chop. Each firm below lists its marks, its names in both scripts, where and when it worked, and the sources for every fact.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{makers}</strong> silversmiths and retailers</li>
+      <li><strong class="num">{twoSourced}</strong> confirmed by two independent sources</li>
+      <li><strong class="num">{rules}</strong> dating rules</li>
+    </ul>
+  </header>
+
+  <Catalogue {groups} noun={['record', 'records']} placeholder="Letters or characters on the mark: KHC, WH, 其昌, Wang Hing" label="Letters or characters on the mark" />
+
+  <section class="ahome__block read" aria-labelledby="rely">
+    <h2 id="rely">Before you rely on a mark</h2>
+    <p>China had no assay office for export silver, so a number such as 90 or a pair of pseudo-hallmarks is the maker’s own claim, not a guarantee of fineness. Several firms shared initials, one firm could sell what many workshops made, and the best-known marks have been copied since. A fact the sheet marks as resting on one source is the weakest; dates in particular differ from book to book, and where they do the sheet shows each.</p>
+    <p>For the marks on porcelain see <a href="/marks/chinese/other-marks">other marks</a>, and for English hallmarks, which the early Canton marks imitate, <a href="/silver-hallmarks">how to read a hallmark</a>.</p>
+  </section>
+
+  <AppBox text="Photograph the marks under the base. The Advisor reads them, names the firm from this same reference, and says what the marks do and do not tell you about the date." />
+</Reference>

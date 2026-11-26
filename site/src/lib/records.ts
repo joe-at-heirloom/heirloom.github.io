@@ -613,6 +613,69 @@ export function otherMarkSheet(r: Rec): Sheet {
   };
 }
 
+// ── Chinese export silver: makers, workshop chops, unidentified marks, dating rules ──
+export const EXPORT_SILVER_GROUPS: [string, string, string][] = [
+  ['rules', 'Dating a piece', 'What the marks, the address and the style say about when a piece was made. Each rule lists its sources; one flagged as resting on one source is the weakest.'],
+  ['canton', 'Canton (Guangzhou)', 'The first export silversmiths, in the streets by the foreign factories and, after 1856, on Honam Island across the river.'],
+  ['hong-kong', 'Hong Kong', 'Retailers and makers on Queen’s Road and Wing Lok Street, from the 1840s.'],
+  ['shanghai', 'Shanghai', 'The largest center after the 1880s, many firms on Nanking Road.'],
+  ['ports', 'Beijing, Jiujiang and the other ports', 'Beijing, Tianjin, Jiujiang, Hankou, Ningbo, Chengdu and the other cities named in the sources.'],
+  ['unplaced', 'City not recorded', 'Firms a source names, with its mark and characters, but no city.'],
+  ['chops', 'Workshop chops', 'The small Chinese-character stamp of the workshop that made a piece a retailer marked.'],
+  ['unidentified', 'Marks not yet tied to a maker', 'Marks recorded on export silver whose maker no source names. Where a named firm used the same letters, the sheet says so.'],
+];
+const ES_CITY: Record<string, string> = { Canton: 'canton', Guangzhou: 'canton', 'Hong Kong': 'hong-kong', Shanghai: 'shanghai' };
+type EsFact = { v: string; ss?: boolean; src?: string[] };
+export function exportSilverSheet(r: Rec): Sheet {
+  const a = r.attributes as any;
+  const { list, add } = numbered(r);
+  const one = (f: EsFact) => (f.ss ? `${f.v} (one source)` : f.v);
+  const join = (l: EsFact[] | undefined, sep = '; ') => (l ?? []).map(one).join(sep);
+  if (r.kind === 'dating rule') {
+    return {
+      id: r.id, anchor: r.anchor ?? r.id, url: urlOf(r), kind: 'Dating rule', group: 'rules',
+      glyphs: null, lang: null, reading: r.name, means: null, years: null,
+      facts: [['The rule', clean(a.claim)], ...((a.says ?? []) as any[]).filter((s) => s.says).map((s) => [`Source ${add(s.source) ?? ''}`.trim(), clean(s.says)])]
+        .filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+      differ: [], caution: null, pics: [], sources: list, single: r.single_source,
+      keys: keysOf(r.name, a.claim, a.topic),
+    };
+  }
+  const chinese: EsFact[] = (a.chinese ?? []).filter((f: EsFact) => CJK.test(f.v));
+  const glyph = (chinese.find((f) => !f.ss) ?? chinese[0])?.v.replace(/\s*[(/].*$/, '').trim() || null;
+  const city = r.place ?? null;
+  const group = a.type === 'workshop_chop' ? 'chops' : a.type === 'unidentified_mark' ? 'unidentified' : city ? ES_CITY[city] ?? 'ports' : 'unplaced';
+  const differ: Differ[] = [];
+  if (chinese.length > 1) differ.push({ label: 'Chinese name', values: chinese.map((f) => ({ text: f.v, refs: (f.src ?? []).map((s) => add(s)).filter((n): n is number => !!n) })) });
+  const said = (a.active?.said ?? []) as { v: string; src: string[] }[];
+  if (a.active?.conflict && said.length > 1) differ.push({ label: 'When it was active', values: said.map((x) => ({ text: x.v, refs: x.src.map((s) => add(s)).filter((n): n is number => !!n) })) });
+  const marks = ((a.marks ?? []) as (EsFact & { pseudo?: boolean })[]).map((m) => `${one(m)}${m.pseudo ? ', with pseudo-hallmarks' : ''}`);
+  const KIND: Record<string, string> = { maker: 'Silversmith or retailer', workshop_chop: 'Workshop chop', unidentified_mark: 'Unidentified mark' };
+  return {
+    id: r.id, anchor: r.anchor ?? r.id, url: urlOf(r), kind: KIND[a.type] ?? 'Export silver', group,
+    glyphs: glyph, typeset: !!glyph, lang: glyph ? 'zh' : null,
+    reading: String(r.name).replace(/\s+[㐀-鿿𠀀-𪛟].*$/u, ''),
+    means: [((a.roles ?? []) as EsFact[])[0]?.v, city].filter(Boolean).join(', ') || null,
+    years: r.date_from ? `c.${yearsOf(r.date_from, r.date_to)}` : null,
+    facts: [
+      ['Marks', marks.join('; ')],
+      ['Name as written', join(a.names)],
+      ['Chinese name', chinese.length === 1 ? one(chinese[0]) : null],
+      ['Romanization', join(a.romanization)],
+      ['Where', [join(a.cities), join(a.addresses)].filter(Boolean).join('; ')],
+      ['Active', a.active?.conflict ? null : said.map((x) => x.v).join('; ')],
+      ['Dated pieces', ((a.dated_examples ?? []) as EsFact[]).map((x) => x.v).join('; ')],
+      ['What the marks say about date', ((a.dating_hints ?? []) as { hint: string }[]).map((h) => h.hint).join('; ')],
+      ['Same letters as', (a.possible_attributions ?? []).length ? `a mark of ${a.possible_attributions.join(', ')}; the sources of this mark do not say it is theirs` : null],
+      ['Notes', ((a.notes ?? []) as EsFact[]).map(one).join(' · ')],
+    ].map(([label, text]) => [label, clean(text)]).filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ, caution: clean(a.caution),
+    pics: [picOf(r)].filter((p): p is Pic => !!p),
+    sources: list, single: r.single_source,
+    keys: keysOf(r.keys, r.name, city, (a.marks ?? []).map((m: EsFact) => m.v)),
+  };
+}
+
 const escHtml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 /** A sheet's text as HTML, with official designations (Korea's National Treasure) marked as names, not Heirloom's words. */
 export function withNames(t: string) {
