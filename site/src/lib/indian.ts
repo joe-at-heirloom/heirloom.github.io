@@ -161,3 +161,34 @@ export function paintings(): { schools: School[]; seals: SealRow[] } {
     })),
   };
 }
+
+// ── Phase 3: the decorative arts ────────────────────────────────────────────
+export type CraftRow = {
+  id: string; slug: string; group: string; name: string; native: string[]; other: string[]; kind: string;
+  materials: string[]; woods: string[]; techniques: string[]; forms: string[]; regions: string[];
+  from: number | null; to: number | null; dateNote: string | null; identifyBy: string; recognize: string[];
+  marks: string | null; later: string | null; tellOld: string | null; lookAlikes: { name: string; how: string }[];
+  features: string | null; cautions: string | null; photos: Photo[]; sources: { citation: string; url: string | null }[]; singleSource: boolean;
+};
+/** Every craft (indian.json `crafts`), with its museum photographs. */
+export function crafts(): CraftRow[] {
+  const C = T.crafts ?? {};
+  const src = srcMap(C.sources);
+  const t = (x: unknown) => (x == null || x === '' ? null : soften(typeof x === 'string' ? x : JSON.stringify(x)));
+  return (C.rows ?? []).map((r: any): CraftRow => ({
+    id: `in-craft-${r.id}`, slug: r.id, group: r.group, name: r.name, native: r.native ?? [], other: r.other_names ?? [], kind: r.kind ?? 'craft',
+    materials: r.materials ?? [], woods: r.woods ?? [], techniques: r.techniques ?? [], forms: r.forms ?? [], regions: r.regions ?? [],
+    from: r.date_from ?? null, to: r.date_to ?? null, dateNote: t(r.date_note), identifyBy: soften(String(r.identify_by ?? '')),
+    recognize: (r.how_to_recognize ?? []).map((x: any) => soften(String(x))), marks: t(r.marks_and_labels), later: t(r.later_production), tellOld: t(r.how_to_tell_old),
+    lookAlikes: (r.look_alikes ?? []).map((l: any) => ({ name: String(l.name ?? ''), how: soften(String(l.how_to_tell ?? '')) })).filter((l: any) => l.name && l.how),
+    features: r.features_other ? soften(String(r.features_other).replace(/\s*\(?token wanted:[^;.)]*\)?/gi, '').trim()) || null : null, cautions: t(r.cautions),
+    photos: photosOf(`in-craft-${r.id}`),
+    sources: (r.sources ?? []).map((id: string) => src.get(id)).filter(Boolean).map((s: any) => ({ citation: s.name, url: s.url ?? null })),
+    singleSource: !!r.single_source,
+  }));
+}
+/** The crafts tables' tokens, only those some craft uses. */
+export function craftVocab(): Record<string, string[]> {
+  const v = (T.crafts ?? {}).vocab ?? {};
+  return { materials: v.materials ?? [], woods: v.woods ?? [], techniques: v.techniques ?? [], forms: v.forms ?? [], regions: v.regions ?? [] };
+}

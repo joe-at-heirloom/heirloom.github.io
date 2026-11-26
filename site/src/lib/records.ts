@@ -428,6 +428,37 @@ export function sealSheet(r: SealRow): Sheet {
   };
 }
 
+// ── Indian decorative arts (lib/indian.ts, phase 3) ───────────────────────────
+import type { CraftRow } from './indian';
+/** A craft: what it is, how to recognize it, the marks and labels on it, what was made later and how sources tell old from new. */
+export function craftSheet(c: CraftRow): Sheet {
+  const list = (a: string[]) => a.join(', ');
+  return {
+    id: c.id, anchor: c.slug, url: `/marks/indian-crafts#${c.slug}`, kind: c.kind.charAt(0).toUpperCase() + c.kind.slice(1), group: c.group,
+    glyphs: c.native[0] ?? null, lang: 'in', reading: c.name, means: clean(c.identifyBy), meansTr: false,
+    years: yearsOf(c.from, c.to),
+    facts: [
+      ['Also called', list(c.other.filter((x) => x !== c.name))],
+      ['In its own script', c.native.join(' · ')],
+      ['Materials', list([...c.materials, ...c.woods.map((w) => `${w} wood`)])],
+      ['Techniques', list(c.techniques)],
+      ['Found as', list(c.forms)],
+      ['Where', list(c.regions)],
+      ['How to recognize it', c.recognize.map((x) => clean(x)).filter(Boolean).join(' ')],
+      ['Marks and labels', clean(c.marks)],
+      ['Made later', clean(c.later)],
+      ['Old or new', clean(c.tellOld)],
+      ['Not to confuse with', c.lookAlikes.map((l) => `${l.name}: ${l.how}`).join(' ')],
+      ['Other signs', clean(c.features)],
+      ['Dates', clean(c.dateNote)],
+    ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ: [], caution: clean(c.cautions),
+    pics: c.photos.map((p) => ({ file: media(p.file), status: p.status, credit: p.credit, url: p.url, alt: p.caption || c.name })),
+    sources: c.sources.map((x) => ({ citation: x.citation, url: x.url, where: null })), single: c.singleSource,
+    keys: keysOf(c.name, c.native, c.other, c.materials, c.woods, c.techniques, c.forms, c.regions),
+  };
+}
+
 // ── Chinese imperial collection seals ───────────────────────────────────────
 export const SEAL_DYNASTIES: [string, string, string][] = [
   ['tang', 'Southern Tang', 'The seals of the Southern Tang court (937–975), the oldest imperial collection seals recorded.'],

@@ -1,0 +1,72 @@
+---
+// /marks/indian-crafts: what is it? The finder (islands/CraftFinder) over the
+// app's table (indian.json `crafts`): Indian metal crafts, inlay and
+// carving, and jewelry, by
+// material, technique, form and region; then every craft as a record sheet
+// (components/ref/Catalogue), #<slug> opens one. Carpets and rugs have their
+// own reference.
+import Reference from '../../layouts/Reference.astro';
+import AppBox from '../../components/AppBox.astro';
+import Faq from '../../components/Faq.astro';
+import Catalogue from '../../components/ref/Catalogue.astro';
+import CraftFinder, { type Craft } from '../../islands/CraftFinder';
+import { craftSheet } from '../../lib/records';
+import { crafts, craftVocab, indicChars } from '../../lib/indian';
+import { media } from '../../lib/media';
+import { articleLd, faqLd, crumbsLd } from '../../lib/site';
+import synced from '../../data/app/SOURCE.json';
+import '../../styles/reigns.css';
+import '../../styles/indian.css';
+
+const path = '/marks/indian-crafts';
+const rows = crafts();
+const vocab = craftVocab() as any;
+const labels = { forms: 'What it is', materials: 'What it is made of', woods: 'The wood, if you know it', techniques: 'How it is made or decorated', regions: 'Where it is said to come from' };
+const items: Craft[] = rows.map((r) => ({
+  id: r.id, slug: r.slug, name: r.name, native: r.native, other: r.other, group: r.group, kind: r.kind,
+  materials: r.materials, woods: r.woods, techniques: r.techniques, forms: r.forms, regions: r.regions,
+  identifyBy: r.identifyBy, lookAlikes: r.lookAlikes,
+  photo: r.photos[0] ? { file: media(r.photos[0].file), credit: r.photos[0].credit, url: r.photos[0].url } : null,
+}));
+const GROUPS = [
+  { key: 'metal_crafts', label: 'Metal crafts' },
+  { key: 'stone_carving', label: 'Inlay and carving' },
+  { key: 'jewelry', label: 'Jewelry' },
+];
+const sheets = rows.map(craftSheet);
+const groups = GROUPS.map((g) => ({ key: g.key, label: g.label, sheets: sheets.filter((s) => s.group === g.key) })).filter((g) => g.sheets.length);
+const title = 'Indian Decorative Arts: Identify Bidri, Brass, Enamel, Marble Inlay, Carving and Jewelry | Heirloom';
+const description = `What is it? Identify an Indian bidri or brass item, enamel, marble inlay, carving or piece of jewelry by what it is made of and how it is decorated. ${rows.length} crafts, with how to recognize each, the marks and labels on them, and what was made later.`;
+const h1 = 'Indian decorative arts: what is it?';
+const faqs: [string, string][] = [
+  ['What is bidri, and is my bidri piece old?', '<p>Bidri is a cast alloy, mostly zinc, blackened all over and inlaid with silver (sometimes gold or brass), so bright metal sits flush in a matt black ground. It was made at Bidar, Hyderabad, Lucknow and Purnea, revived in Hyderabad in the 20th century and made since for shops and export, with new shapes such as cigarette cases and ash trays. The sources give no reliable test of age: museums date bidri approximately, by its design.</p>'],
+  ['Is my Moradabad or Benares brass tray antique?', '<p>Probably not old enough to call antique without other evidence. Engraved Moradabad brass with colored lac and chased Benares brass were made in large quantities for Europeans from the 1870s and for export through the 20th century. The sources describe a sequence of styles rather than a test: colored lac flowers and scenes of the gods appear from about 1900, and spun or pressed shapes and electroplating belong to the industrial 20th-century trade.</p>'],
+  ['Is my Agra marble inlay box old?', '<p>Agra inlay of colored stones in white marble was revived about 1850 and has been made since for visitors and export, mostly as small boxes, plates and table tops. The sources grade it by quality, not age (in fine work no joins show; cheap work shows cement), and treat a portable piece as made after 1850 unless something documents it.</p>'],
+  ['Is it ivory or bone?', '<p>Indian carvers used bone, often camel bone, in the same forms as ivory, and by 1900 bone had replaced ivory in cheap inlay. Telling them apart takes a specialist. It matters: buying and selling ivory is restricted in India and in many other countries, and an item sold as the wrong material causes problems either way.</p>'],
+  ['Is my kundan jewelry real gold?', '<p>Real kundan sets each stone in a rim of very pure gold foil. Imitation kundan uses plated brass, copper or silver and foil-backed glass, and is made in great quantity today; “one gram gold” is plated base metal. Glass stones alone do not make a piece imitation, and a kundan look does not make it gold: the metal decides, and only a test settles it. Kundan and polki pieces are exempt from India’s hallmarking (see <a href="/marks/indian-hallmarks">Indian hallmarks</a>).</p>'],
+];
+const graph = [
+  articleLd(path, h1, description, (synced.changed as any).indian ?? synced.changed.marks, { about: { '@type': 'Thing', name: 'Indian decorative arts' } }),
+  faqLd(path, faqs),
+  crumbsLd(path, h1, ['/marks/indian/', 'Indian marks']),
+];
+const indic = indicChars(rows.map((r) => r.native));
+---
+<Reference {title} {description} {path} jsonld={graph} {indic}>
+  <div>
+    <header class="rhead">
+      <h1>{h1}</h1>
+      <p class="rhead__lede">Tap what the item is, what it is made of and how it is decorated, and the Indian crafts that fit come first: {rows.length} kinds of metalwork, inlay and carving, and jewelry, with how to recognize each, the marks and labels found on them, what was made later for export and tourists, and what each is confused with.</p>
+    </header>
+
+    <CraftFinder client:load crafts={items} {vocab} {labels} />
+
+    <section class="ahome__block" aria-labelledby="all">
+      <h2 id="all">Every craft</h2>
+      <Catalogue {groups} noun={['craft', 'crafts']} placeholder="A name, a material or a place: bidri, Moradabad, marble inlay, kundan" label="A name, a material or a place" />
+    </section>
+
+    <AppBox text="Photograph the item and any label or mark. The Advisor describes what it is made of and how it was made, names the craft it most likely is from these same records, and says plainly what that cannot tell about its age." />
+    {faqs.length > 0 && <Faq {faqs} />}
+  </div>
+</Reference>
