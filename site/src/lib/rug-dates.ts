@@ -19,8 +19,9 @@
  *     and Iran's calendar by law since 1925: Western = S.H. + 621 from
  *     Nowruz (20 or 21 March) to the end of December, + 622 before it, so
  *     one year again falls in two;
- *   - the imperial count Iran used in 1976–78 (2535–2537 = S.H. 1355–1357),
- *     given as a possibility only: no source we could read confirms it;
+ *   - the imperial count Iran used from March 1976 to August 1978
+ *     (2535–2537 = S.H. 1355–1357; Encyclopaedia Iranica and the Majlis
+ *     records), offered only for those three numbers;
  *   - the Ottoman fiscal (Rumi) year on Turkish items of 1840–1926: + 584 from
  *     1 March, + 585 before it, offered only when the item is Turkish;
  *   - an Armenian date: letters as numbers. When the sum + 551 would be in
@@ -164,7 +165,7 @@ export function calendarReadings(n: number, numerals: Numerals, opts: RugDateOpt
   }
   if (n >= IMPERIAL[0] && n <= IMPERIAL[1]) {
     const ys = [n - 1180 + 621, n - 1180 + 622];
-    out.push({ calendar: 'imperial', years: ys, how: `possibly the imperial year Iran used in 1976–78: ${n} − 1180 = ${n - 1180} S.H., ${span(ys)} (not confirmed in a source we could read)` });
+    out.push({ calendar: 'imperial', years: ys, how: `the imperial year Iran used from March 1976 to August 1978: ${n} − 1180 = ${n - 1180} S.H., ${span(ys)}` });
   }
   if (opts.turkish && n >= RUMI_FIRST && n <= RUMI_LAST) {
     const ys = [n + 584, n + 585];
