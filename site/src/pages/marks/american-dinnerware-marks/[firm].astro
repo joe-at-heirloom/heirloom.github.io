@@ -1,0 +1,101 @@
+---
+// /marks/american-dinnerware-marks/<firm>: one American firm's marks
+// (lib/american-dinnerware.ts): the firm under each name Lehner gives it, any
+// date codes it used, its marks on one time line, and the catalogue of marks,
+// each opening into its sheet. Shares the Staffordshire pages' styles.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { firms, markGroups, bars, thumbUrl, HUB, WROTE, type Firm } from '../../../lib/american-dinnerware';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+export function getStaticPaths() {
+  return firms().map((f) => ({ params: { firm: f.slug }, props: { f } }));
+}
+const { f } = Astro.props as { f: Firm };
+const path = f.page;
+const groups = markGroups(f);
+const key = bars(f);
+const A = Math.max(1840, Math.floor(((key[0]?.from ?? 1880) - 5) / 10) * 10), B = 1990;
+const pct = (y: number) => `${(((Math.min(Math.max(y, A), B) - A) / (B - A)) * 100).toFixed(2)}%`;
+const step = B - A > 100 ? 20 : 10;
+const ticks: number[] = []; for (let y = Math.ceil(A / step) * step; y <= B; y += step) ticks.push(y);
+const span = (b: { from: number; to: number; open: boolean; circa: boolean }) => `${b.circa ? 'c. ' : ''}${b.open ? `${b.from} on` : b.from === b.to ? `${b.from}` : `${b.from}–${b.to}`}`;
+const names = f.entries.map((e) => e.name);
+const short = f.title.replace(/ \(.*\)$/, '');
+const title = `${f.title} Marks: Dating ${short} by Its Backstamps | Heirloom`;
+const description = `${f.marks.length} marks of ${names.slice(0, 2).join(' and ')}${names.length > 2 ? ' and related firms' : ''} (${f.where}), with the years each was used${f.pictured ? ` and ${f.pictured} pictured` : ''}${f.rules.length ? ', and how to read its date codes' : ''}. From Lehner's Encyclopedia of U.S. Marks.`;
+const graph = [articleLd(path, `${f.title} marks`, description, '2026-11-25', { about: { '@type': 'Organization', name: names[0] ?? f.title, location: f.where } })];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>{f.title} marks</h1>
+    <p class="rhead__lede">{f.entries.length > 1 ? `The marks of ${names.join('; ')}, ${f.where}.` : `The marks of ${names[0]}, ${f.where}.`} Find the mark on your piece below: the years it was used date the piece{f.rules.length ? ', and the numbers or letters stamped with it can narrow it to a year' : ''}.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{f.marks.length}</strong> marks</li>
+      <li><strong class="num">{f.pictured}</strong> pictured</li>
+      {f.rules.length > 0 && <li><a href="#codes">Date codes</a></li>}
+      <li><a href={`${HUB}#rules`}>Dating any American mark</a></li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="firm">
+    <h2 id="firm">{f.entries.length > 1 ? 'The firms' : 'The firm'}</h2>
+    <ul class="st-entries">
+      {f.entries.map((e) => (
+        <li class="st-entry">
+          <h3>{e.name} {e.dates && <span class="y">{e.dates}</span>}</h3>
+          {e.place && <p>{e.place}</p>}
+          {e.wares && <p>{e.wares}</p>}
+          {e.history && <p>{e.history}</p>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {f.rules.length > 0 && (
+    <section class="st-section" aria-labelledby="codes">
+      <h2 id="codes">Date codes</h2>
+      <p>What the numbers and letters stamped with {short}’s marks mean, as Lehner gives them.</p>
+      <ul class="st-entries">
+        {f.rules.map((r) => (
+          <li class="st-entry">
+            <h3>{r.what}</h3>
+            <p>{r.text}</p>
+            {r.page && <p class="st-credit">Lehner (1988), p. {r.page}.</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {key.length > 1 && (
+    <section class="st-section" aria-labelledby="key">
+      <h2 id="key">The marks by date</h2>
+      <p>Each bar runs over the years Lehner gives for the mark. A bar fading at its right end was still in use when she wrote ({WROTE}). Tap a mark to read it in full.</p>
+      <div class="stkey" role="list">
+        <div class="stkey__axis" aria-hidden="true">
+          <span>Mark</span>
+          <div class="stkey__ticks">{ticks.map((t) => <span style={`left:${pct(t)}`}>{t}</span>)}</div>
+        </div>
+        {key.map((b) => (
+          <a class="stkey__row" href={`#${b.id}`} role="listitem" data-open={b.id}>
+            <span class="stkey__label">
+              {b.img ? <span class="stkey__thumb"><img src={thumbUrl(b.img)!} alt="" loading="lazy" decoding="async" /></span> : <span class="stkey__thumb stkey__thumb--none" aria-hidden="true"></span>}
+              <span class="stkey__name">{b.name}</span>
+            </span>
+            <span class="stkey__track" style={`--a:${pct(b.from)};--b:${pct(b.to)}`}>
+              <span class:list={['stkey__bar', { 'stkey__bar--open': b.open }]}></span>
+              <span class:list={['stkey__years', { 'stkey__years--end': b.from > B - 20 }]}>{span(b)}</span>
+            </span>
+          </a>
+        ))}
+        <p class="stkey__note">“c.” means about. Marks Lehner gives no date for are in the catalogue below, not on this line.</p>
+      </div>
+    </section>
+  )}
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="Words in the mark: a line or pattern name, U.S.A., a town" label="Words in the mark" />
+
+  <p class="st-credit">Firms, marks and dates from Lois Lehner, <cite>Lehner’s Encyclopedia of U.S. Marks on Pottery, Porcelain &amp; Clay</cite> (Paducah, Ky., 1988); the pictures of marks are reproduced from it, credited page by page. Marks Lehner gives only in words are given in words. Each mark rests on Lehner alone until a second source is matched. <a href={HUB}>Every firm</a></p>
+</Reference>

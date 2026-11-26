@@ -1,0 +1,95 @@
+---
+// /marks/american-dinnerware-marks: American dinnerware and giftware makers'
+// marks. The rules that date any American backstamp, then every firm with its
+// own page of marks (lib/american-dinnerware.ts; the app's
+// marks/american-dinnerware.json, read from Lehner 1988).
+import Reference from '../../../layouts/Reference.astro';
+import { firms, RULES, thumbUrl } from '../../../lib/american-dinnerware';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+const path = '/marks/american-dinnerware-marks/';
+const all = firms();
+const total = all.reduce((n, f) => n + f.marks.length, 0);
+const pictured = all.reduce((n, f) => n + f.pictured, 0);
+const GROUPS: { label: string; blurb: string; keys: string[] }[] = [
+  { label: 'Everyday dinnerware', blurb: 'Dinner sets in semi-porcelain and earthenware, most of them from the potteries of eastern Ohio, West Virginia and western Pennsylvania.', keys: ['homer-laughlin', 'taylor-smith-taylor', 'knowles-taylor-knowles', 'edwin-knowles', 'harker', 'hall', 'salem', 'royal-china', 'sebring', 'french-saxon', 'limoges-china', 'crooksville', 'cronin', 'scio', 'paden-city', 'ws-george', 'canonsburg', 'steubenville', 'universal', 'mount-clemens', 'southern-potteries', 'stangl', 'pfaltzgraff'] },
+  { label: 'Fine china and hotel china', blurb: 'Vitreous china and porcelain for the table and for hotels, railroads and restaurants, and the Chicago studio that decorated imported china.', keys: ['lenox', 'syracuse', 'shenango', 'iroquois', 'pickard'] },
+  { label: 'California pottery', blurb: 'Dinnerware and pottery from the Los Angeles area.', keys: ['gladding-mcbean', 'metlox', 'vernon-kilns', 'bauer'] },
+  { label: 'Stoneware, kitchenware and gifts', blurb: 'Crocks, mixing bowls, kitchenware, art ware and gifts.', keys: ['red-wing', 'watt', 'purinton', 'shawnee', 'haeger', 'frankoma', 'fitz-and-floyd'] },
+];
+const byKey = new Map(all.map((f) => [f.key, f]));
+const listed = new Set(GROUPS.flatMap((g) => g.keys));
+const rest = all.filter((f) => !listed.has(f.key));
+const groups = [
+  ...GROUPS.map((g) => ({ ...g, firms: g.keys.map((k) => byKey.get(k)).filter((f): f is NonNullable<typeof f> => !!f) })),
+  ...(rest.length ? [{ label: 'More firms', blurb: '', keys: [], firms: rest }] : []),
+].filter((g) => g.firms.length);
+const years = (f: { from: number | null; to: number | null }) => (f.from ? `${f.from}${f.to ? `–${f.to}` : ' on'}` : '');
+
+const title = 'American Dinnerware Marks: Dating Backstamps, Firm by Firm | Heirloom';
+const description = `${total.toLocaleString('en-US')} marks of ${all.length} American dinnerware and pottery firms, from Homer Laughlin (Fiesta), Hall and Taylor, Smith & Taylor to Lenox, Syracuse, Franciscan, Red Wing and Frankoma, each with the years it was used, and how to date any American backstamp.`;
+const faqs: [string, string][] = [
+  ['How do I date American dinnerware by its mark?', '<p>Find the firm below and match the mark: most firms changed their marks every decade or two, and the years each was used date the piece. Some firms, Homer Laughlin among them, stamped numbers or letters with the mark that give the month and year. Then read the words around the mark: ®, a ZIP code or a two-letter state each give a year the piece cannot be older than.</p>'],
+  ['What does ® mean on a plate?', '<p>That the maker’s trademark was registered with the federal government. The circled R was introduced by the Lanham Act of 1946, in force from July 1947, so a mark with ® is 1947 or later.</p>'],
+];
+const graph = [articleLd(path, 'American dinnerware marks', description, '2026-11-25'), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>American dinnerware marks</h1>
+    <p class="rhead__lede">The marks of American dinnerware, kitchenware and pottery firms. Most of them changed their backstamp every decade or two, so the mark under a plate or a bowl dates it. First, the words that date any American mark; then each firm and every mark it used.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{all.length}</strong> firms</li>
+      <li><strong class="num">{total.toLocaleString('en-US')}</strong> marks</li>
+      <li><strong class="num">{pictured.toLocaleString('en-US')}</strong> pictured</li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="rules">
+    <h2 id="rules">What the words on the base tell you</h2>
+    <p>Each of these gives a year the piece is no older than. Read them together with the firm’s own marks below.</p>
+    <ul class="st-rules">
+      {RULES.map((r) => (
+        <li class="st-rule">
+          <span class="st-rule__mark">{r.mark}</span>
+          <span class="st-rule__says">{r.says}</span>
+          <p class="st-rule__why">{r.why}</p>
+          <p class="st-credit">{r.cite}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section st-groups" aria-labelledby="firms">
+    <h2 id="firms">The firms</h2>
+    <p>Each page lists the firm’s marks, with a picture where the book shows the mark, the years each mark was used, and the firm’s date codes where it had them.</p>
+    {groups.map((g) => (
+      <>
+        <h3>{g.label}</h3>
+        {g.blurb && <p>{g.blurb}</p>}
+        <ul class="st-firms">
+          {g.firms.map((f) => (
+            <li>
+              <a class="st-firm" href={f.page}>
+                <span class="st-firm__pic">{f.thumb ? <img src={thumbUrl(f.thumb)!} alt="" loading="lazy" decoding="async" /> : null}</span>
+                <span>
+                  <span class="st-firm__name">{f.title}</span>
+                  <span class="st-firm__meta">{[f.where, years(f)].filter(Boolean).join(' · ')}</span>
+                  <span class="st-firm__meta">{f.marks.length} marks</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </section>
+
+  <section class="st-section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {faqs.map(([q, a]) => (<><h3>{q}</h3><Fragment set:html={a} /></>))}
+  </section>
+
+  <p class="st-credit">Firms, marks and dates from Lois Lehner, <cite>Lehner’s Encyclopedia of U.S. Marks on Pottery, Porcelain &amp; Clay</cite> (Paducah, Ky., 1988), the standard reference; the pictures of marks are reproduced from it, credited page by page. Each mark rests on Lehner alone until a second source is matched.</p>
+</Reference>
