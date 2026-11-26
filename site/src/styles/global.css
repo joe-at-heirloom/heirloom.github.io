@@ -69,6 +69,10 @@ p { margin: 0 0 1em; text-wrap: pretty; }
    for paper, so in dark mode they hang like prints on a dark wall instead of
    glaring or being inverted (an inverted mark is a different mark). */
 .plate { background: var(--plate); border-radius: var(--r); display: grid; place-items: center; overflow: hidden; }
+/* One cell exactly the plate's size: without it a percentage height on the picture
+   resolves against an auto row, so tall pictures outgrew their frame and lost their
+   top and bottom to the overflow. */
+.plate { grid-template: minmax(0, 1fr) / minmax(0, 1fr); }
 .plate--print { --print: #ebe6dd; background: var(--print); color: #1b1916; }
 .plate--print img { mix-blend-mode: multiply; }
 
