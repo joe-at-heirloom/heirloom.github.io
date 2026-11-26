@@ -77,3 +77,19 @@
 .twlater li { break-inside: avoid; }
 .twlater a { display: grid; padding: 8px 0; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
 .twlater a:hover .twfind__b { color: var(--accent-ink); }
+
+/* Tiffany lamps (/marks/tiffany-lamps) */
+.lamplist { list-style: none; margin: 16px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.lampitem { display: grid; grid-template-columns: 4.5em minmax(0, 1fr); gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--rule); scroll-margin-top: 120px; }
+.lampitem:target { background: var(--accent-wash); }
+.lampitem__no { font-weight: 600; font-size: 1.05rem; color: var(--ink); }
+.lampitem__body { display: grid; gap: 2px; }
+.lampitem__t { line-height: 1.4; }
+.lampitem__m { font-size: 13.5px; color: var(--ink-3); }
+.lampitem__m a { color: var(--ink-2); }
+.lampmarks { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.lampmarks q { font-family: var(--mono); font-size: 14px; }
+.lampmarks .twmus__m { display: block; }
+.lampsub { margin: 34px 0 0; font-size: 1.1rem; }
+.lampitem--wide { grid-template-columns: minmax(0, 1fr); }
+.twmus__mk { font-family: var(--mono); font-size: 12px; color: var(--ink-3); line-height: 1.35; }

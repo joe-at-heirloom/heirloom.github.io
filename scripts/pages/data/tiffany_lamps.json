@@ -1,0 +1,4630 @@
+{
+ "about": "Tiffany Studios shade and lamp base numbers from Tiffany’s own catalogues, and museum lamps with their recorded marks. Built by hallmark-sources/tiffany/lamps.",
+ "sources": {
+  "T1915": {
+   "citation": "Tiffany Studios, Tiffany Bronze Lamps (New York: Tiffany Studios, Madison Avenue and Forty-fifth Street, [ca. 1915]).",
+   "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1240",
+   "page_url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/{ptr}",
+   "year": 1915
+  },
+  "T1910": {
+   "citation": "Tiffany Studios, Desk Sets and Useful Articles (New York: Tiffany Studios, 1910).",
+   "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1209",
+   "page_url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/{ptr}",
+   "year": 1910
+  }
+ },
+ "shades": [
+  {
+   "no": "1400",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 10,
+     "as_printed": "Vine leaf border, dome shape",
+     "price": 25,
+     "shape": "dome"
+    }
+   ],
+   "design": "Vine leaf border",
+   "description": null,
+   "size": 10,
+   "shape": "dome"
+  },
+  {
+   "no": "1410",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 12,
+     "ptr": 1222,
+     "size": 12,
+     "as_printed": null,
+     "price": 28,
+     "on_base": "318",
+     "base_as_printed": "Adjustable Reading Lamp (two shades)",
+     "complete": 101
+    }
+   ],
+   "design": null,
+   "description": null,
+   "size": 12,
+   "shape": null
+  },
+  {
+   "no": "1411",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 12,
+     "as_printed": "Plain Squares, dome shape",
+     "price": 23,
+     "shape": "dome"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 12,
+   "shape": "dome"
+  },
+  {
+   "no": "1412",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 14,
+     "ptr": 1224,
+     "size": null,
+     "as_printed": "Etched Metal over Glass",
+     "price": 30,
+     "on_base": "539",
+     "base_as_printed": "Adam Lamp and Shade",
+     "complete": 58
+    },
+    {
+     "src": "T1910",
+     "page": 5,
+     "ptr": 1180,
+     "as_printed": "Adam desk set: Shade, metal and glass",
+     "price": 35.0,
+     "on_base": "539",
+     "desk_set": "Adam"
+    }
+   ],
+   "design": "Etched Metal over Glass",
+   "description": null,
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "1420",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 14,
+     "as_printed": "Vine leaf border, dome shape",
+     "price": 30,
+     "shape": "dome"
+    }
+   ],
+   "design": "Vine leaf border",
+   "description": null,
+   "size": 14,
+   "shape": "dome"
+  },
+  {
+   "no": "1421",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 14,
+     "as_printed": "Plain Squares, dome shape",
+     "price": 25,
+     "shape": "dome"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 14,
+   "shape": "dome"
+  },
+  {
+   "no": "1424",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 21,
+     "ptr": 1231,
+     "size": 14,
+     "as_printed": "heavy ribs",
+     "price": 40,
+     "on_base": "337",
+     "base_as_printed": "Reading Lamp, three lights",
+     "complete": 75
+    }
+   ],
+   "design": "heavy ribs",
+   "description": null,
+   "size": 14,
+   "shape": null
+  },
+  {
+   "no": "1426",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 14,
+     "as_printed": "Daffodil design, dome shape",
+     "price": 50,
+     "shape": "dome"
+    }
+   ],
+   "design": "Daffodil design",
+   "description": null,
+   "size": 14,
+   "shape": "dome"
+  },
+  {
+   "no": "1435",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Vine Leaf border, dome shape",
+     "price": 35,
+     "shape": "dome"
+    }
+   ],
+   "design": "Vine Leaf border",
+   "description": null,
+   "size": 16,
+   "shape": "dome"
+  },
+  {
+   "no": "1436",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Plain Squares, dome shape",
+     "price": 30,
+     "shape": "dome"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 16,
+   "shape": "dome"
+  },
+  {
+   "no": "1443",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Bamboo design, dome shape",
+     "price": 60,
+     "shape": "dome"
+    }
+   ],
+   "design": "Bamboo design",
+   "description": null,
+   "size": 16,
+   "shape": "dome"
+  },
+  {
+   "no": "1457",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Pomegranate border, dome shape",
+     "price": 35,
+     "shape": "dome"
+    }
+   ],
+   "design": "Pomegranate border",
+   "description": null,
+   "size": 16,
+   "shape": "dome"
+  },
+  {
+   "no": "1461",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 13,
+     "ptr": 1223,
+     "size": 16,
+     "as_printed": "Poppy design",
+     "price": 75,
+     "on_base": "533",
+     "base_as_printed": "Library Lamp",
+     "complete": 100
+    }
+   ],
+   "design": "Poppy design",
+   "description": null,
+   "size": 16,
+   "shape": null
+  },
+  {
+   "no": "1462",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Dragonfly and Water design, cone shape",
+     "price": 70,
+     "shape": "cone"
+    }
+   ],
+   "design": "Dragonfly and Water design",
+   "description": null,
+   "size": 16,
+   "shape": "cone"
+  },
+  {
+   "no": "1467",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 20,
+     "ptr": 1230,
+     "size": 18,
+     "as_printed": "Oak-leaf design",
+     "price": 65,
+     "on_base": "368",
+     "base_as_printed": "Library Lamp, three lights",
+     "complete": 130
+    }
+   ],
+   "design": "Oak-leaf design",
+   "description": null,
+   "size": 18,
+   "shape": null
+  },
+  {
+   "no": "1469",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Plain Squares, low dome shape",
+     "price": 45,
+     "shape": "low dome"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 18,
+   "shape": "low dome"
+  },
+  {
+   "no": "1470",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Vine Leaf border, low dome shape",
+     "price": 55,
+     "shape": "low dome"
+    }
+   ],
+   "design": "Vine Leaf border",
+   "description": null,
+   "size": 18,
+   "shape": "low dome"
+  },
+  {
+   "no": "1475",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Peony design, low dome shape",
+     "price": 100,
+     "shape": "low dome"
+    }
+   ],
+   "design": "Peony design",
+   "description": null,
+   "size": 18,
+   "shape": "low dome"
+  },
+  {
+   "no": "1482",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Turtleback band, low dome shape",
+     "price": 60,
+     "shape": "low dome"
+    }
+   ],
+   "design": "Turtleback band",
+   "description": null,
+   "size": 18,
+   "shape": "low dome"
+  },
+  {
+   "no": "1486",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Gentian Blossom, dish shape",
+     "price": 80,
+     "shape": "dish"
+    }
+   ],
+   "design": "Gentian Blossom",
+   "description": null,
+   "size": 18,
+   "shape": "dish"
+  },
+  {
+   "no": "1488",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Vine leaf border, dome shape",
+     "price": 45,
+     "shape": "dome"
+    }
+   ],
+   "design": "Vine leaf border",
+   "description": null,
+   "size": 18,
+   "shape": "dome"
+  },
+  {
+   "no": "1491",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 20,
+     "as_printed": "Dogwood band, dome shape",
+     "price": 100,
+     "shape": "dome"
+    }
+   ],
+   "design": "Dogwood band",
+   "description": null,
+   "size": 20,
+   "shape": "dome"
+  },
+  {
+   "no": "1493",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 19,
+     "ptr": 1229,
+     "size": 20,
+     "as_printed": "Plain design",
+     "price": 40,
+     "on_base": "531",
+     "base_as_printed": "Library Lamp",
+     "complete": 75
+    }
+   ],
+   "design": "Plain design",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1495",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 11,
+     "ptr": 1221,
+     "size": 20,
+     "as_printed": "Dragonfly design",
+     "price": 90,
+     "on_base": "366",
+     "base_as_printed": "Library Lamp, ornate base and stem",
+     "complete": 165
+    }
+   ],
+   "design": "Dragonfly design",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1497",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 18,
+     "ptr": 1228,
+     "size": 20,
+     "as_printed": "Daffodil design",
+     "price": 100,
+     "on_base": "443",
+     "base_as_printed": "Library Lamp, design of Lily stems",
+     "complete": 155
+    }
+   ],
+   "design": "Daffodil design",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1498",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 20,
+     "as_printed": "Vine leaf border, dome shape",
+     "price": 60,
+     "shape": "dome"
+    }
+   ],
+   "design": "Vine leaf border",
+   "description": null,
+   "size": 20,
+   "shape": "dome"
+  },
+  {
+   "no": "1501",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Plain Squares, dome shape",
+     "price": 60,
+     "shape": "dome"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 22,
+   "shape": "dome"
+  },
+  {
+   "no": "1505",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Peony design, dome shape",
+     "price": 150,
+     "shape": "dome"
+    }
+   ],
+   "design": "Peony design",
+   "description": null,
+   "size": 22,
+   "shape": "dome"
+  },
+  {
+   "no": "1507",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 17,
+     "ptr": 1227,
+     "size": 22,
+     "as_printed": "Dragonfly design",
+     "price": 150,
+     "on_base": "550",
+     "base_as_printed": "Library Lamp, Louis XIV design",
+     "complete": 275
+    }
+   ],
+   "design": "Dragonfly design",
+   "description": null,
+   "size": 22,
+   "shape": null
+  },
+  {
+   "no": "1509",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Bamboo design, dome shape",
+     "price": 125,
+     "shape": "dome"
+    }
+   ],
+   "design": "Bamboo design",
+   "description": null,
+   "size": 22,
+   "shape": "dome"
+  },
+  {
+   "no": "1510",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 24,
+     "as_printed": "Vine leaf border, dome shape",
+     "price": 85,
+     "shape": "dome"
+    }
+   ],
+   "design": "Vine leaf border",
+   "description": null,
+   "size": 24,
+   "shape": "dome"
+  },
+  {
+   "no": "1515",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 24,
+     "as_printed": "Geometric design, dome shape",
+     "price": 100,
+     "shape": "dome"
+    }
+   ],
+   "design": "Geometric design",
+   "description": null,
+   "size": 24,
+   "shape": "dome"
+  },
+  {
+   "no": "1528",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 26,
+     "as_printed": "Poinsettia design, low dome shape",
+     "price": 200,
+     "shape": "low dome"
+    }
+   ],
+   "design": "Poinsettia design",
+   "description": null,
+   "size": 26,
+   "shape": "low dome"
+  },
+  {
+   "no": "1531",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 20,
+     "as_printed": "Poppy design, cone shape",
+     "price": 90,
+     "shape": "cone"
+    }
+   ],
+   "design": "Poppy design",
+   "description": null,
+   "size": 20,
+   "shape": "cone"
+  },
+  {
+   "no": "1537",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 12,
+     "ptr": 1222,
+     "size": 24,
+     "as_printed": "Laburnum design",
+     "price": 225,
+     "on_base": "553",
+     "base_as_printed": "Library Lamp, Tree design",
+     "complete": 290
+    }
+   ],
+   "design": "Laburnum design",
+   "description": null,
+   "size": 24,
+   "shape": null
+  },
+  {
+   "no": "1539",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Laburnum design, irregular edge",
+     "price": 200,
+     "shape": "irregular edge"
+    }
+   ],
+   "design": "Laburnum design",
+   "description": null,
+   "size": 22,
+   "shape": "irregular edge"
+  },
+  {
+   "no": "1548",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 27,
+     "ptr": 1237,
+     "size": 22,
+     "as_printed": "Tulip design",
+     "price": 175,
+     "on_base": "387",
+     "base_as_printed": "Floor Standard, plain",
+     "complete": 235
+    }
+   ],
+   "design": "Tulip design",
+   "description": null,
+   "size": 22,
+   "shape": null
+  },
+  {
+   "no": "1564",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 22,
+     "ptr": 1232,
+     "size": 24,
+     "as_printed": null,
+     "price": 75,
+     "on_base": "529",
+     "base_as_printed": "Library Lamp, Roman design, six lights",
+     "complete": 135
+    }
+   ],
+   "design": null,
+   "description": null,
+   "size": 24,
+   "shape": null
+  },
+  {
+   "no": "1568",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 10,
+     "as_printed": "Plain Squares, dome shape",
+     "price": 20,
+     "shape": "dome"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 10,
+   "shape": "dome"
+  },
+  {
+   "no": "1574",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 27,
+     "ptr": 1237,
+     "size": 24,
+     "as_printed": "border of Peonies",
+     "price": 175,
+     "on_base": "376",
+     "base_as_printed": "Floor Standard, foliated design, six lights",
+     "complete": 325
+    }
+   ],
+   "design": "border of Peonies",
+   "description": null,
+   "size": 24,
+   "shape": null
+  },
+  {
+   "no": "1585",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 12,
+     "as_printed": "Dragonfly and Water design, dish shape",
+     "price": 50,
+     "shape": "dish"
+    }
+   ],
+   "design": "Dragonfly and Water design",
+   "description": null,
+   "size": 12,
+   "shape": "dish"
+  },
+  {
+   "no": "1587",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 14,
+     "ptr": 1224,
+     "size": 11,
+     "as_printed": "glass panels",
+     "price": 20,
+     "on_base": "618",
+     "base_as_printed": "Reading Lamp",
+     "complete": 43
+    },
+    {
+     "src": "T1910",
+     "page": 25,
+     "ptr": 1200,
+     "as_printed": "Zodiac desk set: Shade",
+     "price": 30.0,
+     "on_base": "537",
+     "desk_set": "Zodiac"
+    }
+   ],
+   "design": "glass panels",
+   "description": null,
+   "size": 11,
+   "shape": null
+  },
+  {
+   "no": "1588",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 21,
+     "ptr": 1231,
+     "size": 11,
+     "as_printed": "Chinese Shade, etched metal and glass (11 in. spread)",
+     "price": null,
+     "on_base": "535",
+     "base_as_printed": "Chinese Desk Lamp, two lights",
+     "complete": 50
+    },
+    {
+     "src": "T1910",
+     "page": 11,
+     "ptr": 1186,
+     "as_printed": "Chinese desk set: Lamp Shade",
+     "price": 35.0,
+     "on_base": "535",
+     "desk_set": "Chinese"
+    }
+   ],
+   "design": "Chinese Shade, etched metal and glass (11 in. spread)",
+   "description": null,
+   "size": 11,
+   "shape": null
+  },
+  {
+   "no": "1592",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 24,
+     "as_printed": "Ornamental design, dome shape",
+     "price": 85,
+     "shape": "dome"
+    }
+   ],
+   "design": "Ornamental design",
+   "description": null,
+   "size": 24,
+   "shape": "dome"
+  },
+  {
+   "no": "1593",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Colonial design, dome shape",
+     "price": 45,
+     "shape": "dome"
+    }
+   ],
+   "design": "Colonial design",
+   "description": null,
+   "size": 16,
+   "shape": "dome"
+  },
+  {
+   "no": "1594",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 8,
+     "ptr": 1218,
+     "size": 16,
+     "as_printed": null,
+     "price": 30,
+     "on_base": "584",
+     "base_as_printed": "Library Lamp",
+     "complete": 65
+    }
+   ],
+   "design": null,
+   "description": null,
+   "size": 16,
+   "shape": null
+  },
+  {
+   "no": "1596",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Tulip design, low dome shape",
+     "price": 125,
+     "shape": "low dome"
+    }
+   ],
+   "design": "Tulip design",
+   "description": null,
+   "size": 18,
+   "shape": "low dome"
+  },
+  {
+   "no": "1597",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 26,
+     "as_printed": "Poppy design, dome shape",
+     "price": 250,
+     "shape": "dome"
+    }
+   ],
+   "design": "Poppy design",
+   "description": null,
+   "size": 26,
+   "shape": "dome"
+  },
+  {
+   "no": "1598",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Poppy design, low dome shape",
+     "price": 125,
+     "shape": "low dome"
+    }
+   ],
+   "design": "Poppy design",
+   "description": null,
+   "size": 18,
+   "shape": "low dome"
+  },
+  {
+   "no": "1599",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 28,
+     "as_printed": "Magnolia design, dome shape",
+     "price": 300,
+     "shape": "dome"
+    }
+   ],
+   "design": "Magnolia design",
+   "description": null,
+   "size": 28,
+   "shape": "dome"
+  },
+  {
+   "no": "1900",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Triangular border, dome shape",
+     "price": 25,
+     "shape": "dome"
+    }
+   ],
+   "design": "Triangular border",
+   "description": null,
+   "size": 16,
+   "shape": "dome"
+  },
+  {
+   "no": "1901",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 4,
+     "ptr": 1214,
+     "size": 16,
+     "as_printed": null,
+     "price": 25,
+     "on_base": "151",
+     "base_as_printed": "Oil Lamp, Greek model",
+     "complete": 55
+    },
+    {
+     "src": "T1915",
+     "page": 16,
+     "ptr": 1226,
+     "size": 16,
+     "as_printed": null,
+     "price": 25,
+     "on_base": "534",
+     "base_as_printed": "Library Lamp",
+     "complete": 50
+    }
+   ],
+   "design": null,
+   "description": null,
+   "size": 16,
+   "shape": null
+  },
+  {
+   "no": "1902",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 26,
+     "as_printed": "Oriental Poppy, dome shape",
+     "price": 350,
+     "shape": "dome"
+    }
+   ],
+   "design": "Oriental Poppy",
+   "description": null,
+   "size": 26,
+   "shape": "dome"
+  },
+  {
+   "no": "1903",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Peony, dome shape",
+     "price": 200,
+     "shape": "dome"
+    }
+   ],
+   "design": "Peony",
+   "description": null,
+   "size": 22,
+   "shape": "dome"
+  },
+  {
+   "no": "1904",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 26,
+     "as_printed": "Yellow Rose, dome shape",
+     "price": 350,
+     "shape": "dome"
+    }
+   ],
+   "design": "Yellow Rose",
+   "description": null,
+   "size": 26,
+   "shape": "dome"
+  },
+  {
+   "no": "1906",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 16,
+     "as_printed": "Tulip design, dome shape",
+     "price": 75,
+     "shape": "dome"
+    }
+   ],
+   "design": "Tulip design",
+   "description": null,
+   "size": 16,
+   "shape": "dome"
+  },
+  {
+   "no": "1907",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Greek border, dome shape",
+     "price": 85,
+     "shape": "dome"
+    }
+   ],
+   "design": "Greek border",
+   "description": null,
+   "size": 22,
+   "shape": "dome"
+  },
+  {
+   "no": "1908",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Zodiac design, cone shape",
+     "price": 175,
+     "shape": "cone"
+    }
+   ],
+   "design": "Zodiac design",
+   "description": null,
+   "size": 22,
+   "shape": "cone"
+  },
+  {
+   "no": "1910",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 20,
+     "as_printed": "Russian design, cone shape",
+     "price": 175,
+     "shape": "cone"
+    }
+   ],
+   "design": "Russian design",
+   "description": null,
+   "size": 20,
+   "shape": "cone"
+  },
+  {
+   "no": "1911",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 20,
+     "as_printed": "Plain Squares, dome shape",
+     "price": 50,
+     "shape": "dome"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 20,
+   "shape": "dome"
+  },
+  {
+   "no": "1913",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Plain Squares, cone shape",
+     "price": 35,
+     "shape": "cone"
+    }
+   ],
+   "design": "Plain Squares",
+   "description": null,
+   "size": 18,
+   "shape": "cone"
+  },
+  {
+   "no": "1914",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 16,
+     "ptr": 1226,
+     "size": 22,
+     "as_printed": "Early English design",
+     "price": 100,
+     "on_base": "557",
+     "base_as_printed": "Library Lamp, Early English design",
+     "complete": 155
+    }
+   ],
+   "design": "Early English design",
+   "description": null,
+   "size": 22,
+   "shape": null
+  },
+  {
+   "no": "1915",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 11,
+     "ptr": 1221,
+     "size": 26,
+     "as_printed": "Rose design",
+     "price": 160,
+     "on_base": "397",
+     "base_as_printed": "Library Standard, adjustable, six lights",
+     "complete": 285
+    }
+   ],
+   "design": "Rose design",
+   "description": null,
+   "size": 26,
+   "shape": null
+  },
+  {
+   "no": "1916",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 15,
+     "ptr": 1225,
+     "size": 20,
+     "as_printed": "Grecian Band",
+     "price": 70,
+     "on_base": "528",
+     "base_as_printed": "Library Lamp, Fifteenth Century design",
+     "complete": 100
+    }
+   ],
+   "design": "Grecian Band",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1917",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 19,
+     "ptr": 1229,
+     "size": 20,
+     "as_printed": "Daffodil and Narcissus design",
+     "price": 150,
+     "on_base": "532",
+     "base_as_printed": "Library Lamp",
+     "complete": 185
+    }
+   ],
+   "design": "Daffodil and Narcissus design",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1918",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 13,
+     "ptr": 1223,
+     "size": 20,
+     "as_printed": "Azalea design",
+     "price": 150,
+     "on_base": "549",
+     "base_as_printed": "Library Lamp",
+     "complete": 275
+    }
+   ],
+   "design": "Azalea design",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1924",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 18,
+     "ptr": 1228,
+     "size": 14,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 35,
+     "on_base": "580",
+     "base_as_printed": "3-light Empire Lamp, decorated Favrile Glass Candles",
+     "complete": 75
+    },
+    {
+     "src": "T1915",
+     "page": 20,
+     "ptr": 1230,
+     "size": 14,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 35,
+     "on_base": "615",
+     "base_as_printed": "Reading Lamp, Greek design",
+     "complete": 60
+    }
+   ],
+   "design": "Favrilefabrique Glass",
+   "description": null,
+   "size": 14,
+   "shape": null
+  },
+  {
+   "no": "1927",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 14,
+     "ptr": 1224,
+     "size": 20,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 65,
+     "on_base": "587",
+     "base_as_printed": "Library Lamp",
+     "complete": 115
+    }
+   ],
+   "design": "Favrilefabrique Glass",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1928",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1910",
+     "page": 3,
+     "ptr": 1178,
+     "as_printed": "Abalone desk set: Shade",
+     "price": 50.0,
+     "on_base": "604",
+     "desk_set": "Abalone"
+    }
+   ],
+   "design": null,
+   "description": null,
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "1938",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 5,
+     "ptr": 1215,
+     "size": 8,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 25,
+     "on_base": "613",
+     "base_as_printed": "Reading Lamp with adjustable shade",
+     "complete": 50
+    }
+   ],
+   "design": "Favrilefabrique Glass",
+   "description": null,
+   "size": 8,
+   "shape": null
+  },
+  {
+   "no": "1939",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 10,
+     "ptr": 1220,
+     "size": 10,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 35,
+     "on_base": "604",
+     "base_as_printed": "Reading Lamp, finished in gold and inlaid with Abalone pearl",
+     "complete": 85
+    }
+   ],
+   "design": "Favrilefabrique Glass",
+   "description": null,
+   "size": 10,
+   "shape": null
+  },
+  {
+   "no": "1940-A",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 6,
+     "ptr": 1216,
+     "size": 7,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 20,
+     "on_base": "418",
+     "base_as_printed": "Reading Lamp, adjustable shade",
+     "complete": 40
+    }
+   ],
+   "design": "Favrilefabrique Glass",
+   "description": null,
+   "size": 7,
+   "shape": null
+  },
+  {
+   "no": "1942-D",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 5,
+     "ptr": 1215,
+     "size": 5,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 12,
+     "on_base": "614",
+     "base_as_printed": "Reading Lamp with adjustable shade",
+     "complete": 37
+    },
+    {
+     "src": "T1915",
+     "page": 24,
+     "ptr": 1234,
+     "size": 5,
+     "as_printed": "Favrilefabrique Glass, each $12",
+     "price": 12,
+     "on_base": "653",
+     "base_as_printed": "Decorative Lamp for floor; bronze with Favrile Glass candles; four shades No. 1942-D",
+     "complete": 208
+    }
+   ],
+   "design": "Favrilefabrique Glass",
+   "description": null,
+   "size": 5,
+   "shape": null
+  },
+  {
+   "no": "1948",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1910",
+     "page": 15,
+     "ptr": 1190,
+     "as_printed": "Graduate desk set: Favrile Fabrique Glass Shade",
+     "price": 40.0,
+     "on_base": "558",
+     "desk_set": "Graduate"
+    }
+   ],
+   "design": "Favrile Fabrique Glass Shade",
+   "description": null,
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "1952",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 15,
+     "ptr": 1225,
+     "size": 20,
+     "as_printed": "Favrilefabrique Glass",
+     "price": 60,
+     "on_base": "560",
+     "base_as_printed": "Library Lamp",
+     "complete": 88
+    }
+   ],
+   "design": "Favrilefabrique Glass",
+   "description": null,
+   "size": 20,
+   "shape": null
+  },
+  {
+   "no": "1998",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 18,
+     "as_printed": "Poinsettia and Lattice",
+     "price": 85,
+     "shape": null
+    }
+   ],
+   "design": "Poinsettia and Lattice",
+   "description": null,
+   "size": 18,
+   "shape": null
+  },
+  {
+   "no": "1999",
+   "kind": "shade",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 28,
+     "ptr": 1238,
+     "size": 22,
+     "as_printed": "Maple Leaf design, dome shape",
+     "price": 175,
+     "shape": "dome"
+    }
+   ],
+   "design": "Maple Leaf design",
+   "description": null,
+   "size": 22,
+   "shape": "dome"
+  }
+ ],
+ "bases": [
+  {
+   "no": "151",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 4,
+     "ptr": 1214,
+     "as_printed": "Oil Lamp, Greek model",
+     "height": "20 in.",
+     "price": 30,
+     "complete": 55,
+     "with_shade": "1901",
+     "shade_size": 16,
+     "shade_as_printed": null,
+     "shade_price": 25
+    }
+   ],
+   "design": null,
+   "description": "Oil Lamp, Greek model",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "309",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 10,
+     "ptr": 1220,
+     "as_printed": "Newel or Mantel Lamp; No. 100 Favrile Glass globes, $5 each; also carried with lights reversed",
+     "height": "17 in.",
+     "price": 40,
+     "complete": 55,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Newel or Mantel Lamp; No. 100 Favrile Glass globes, $5 each; also carried with lights reversed",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "318",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 12,
+     "ptr": 1222,
+     "as_printed": "Adjustable Reading Lamp (two shades)",
+     "height": "24 in.",
+     "price": 45,
+     "complete": 101,
+     "with_shade": "1410",
+     "shade_size": 12,
+     "shade_as_printed": null,
+     "shade_price": 28
+    }
+   ],
+   "design": null,
+   "description": "Adjustable Reading Lamp (two shades)",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "319",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 9,
+     "ptr": 1219,
+     "as_printed": "Decorative Lamp, three 8 candle-power lights, No. 104 iridescent Favrile Globes, $2 each",
+     "height": "13 in.",
+     "price": null,
+     "complete": 31,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Decorative Lamp, three 8 candle-power lights, No. 104 iridescent Favrile Globes, $2 each",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "337",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 21,
+     "ptr": 1231,
+     "as_printed": "Reading Lamp, three lights",
+     "height": "18 in.",
+     "price": 35,
+     "complete": 75,
+     "with_shade": "1424",
+     "shade_size": 14,
+     "shade_as_printed": "heavy ribs",
+     "shade_price": 40
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, three lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "366",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 11,
+     "ptr": 1221,
+     "as_printed": "Library Lamp, ornate base and stem",
+     "height": "25 in.",
+     "price": 75,
+     "complete": 165,
+     "with_shade": "1495",
+     "shade_size": 20,
+     "shade_as_printed": "Dragonfly design",
+     "shade_price": 90
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, ornate base and stem",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "368",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 20,
+     "ptr": 1230,
+     "as_printed": "Library Lamp, three lights",
+     "height": "27 in.",
+     "price": 65,
+     "complete": 130,
+     "with_shade": "1467",
+     "shade_size": 18,
+     "shade_as_printed": "Oak-leaf design",
+     "shade_price": 65
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, three lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "376",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 27,
+     "ptr": 1237,
+     "as_printed": "Floor Standard, foliated design, six lights",
+     "height": "6 ft.",
+     "price": 150,
+     "complete": 325,
+     "with_shade": "1574",
+     "shade_size": 24,
+     "shade_as_printed": "border of Peonies",
+     "shade_price": 175
+    }
+   ],
+   "design": null,
+   "description": "Floor Standard, foliated design, six lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "381",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 9,
+     "ptr": 1219,
+     "as_printed": "Decorative Lamp, Pond Lily base, ten lights, No. 104 Favrile Glass globes, iridescent, $2 each",
+     "height": "21 in.",
+     "price": null,
+     "complete": 90,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Decorative Lamp, Pond Lily base, ten lights, No. 104 Favrile Glass globes, iridescent, $2 each",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "382",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 9,
+     "ptr": 1219,
+     "as_printed": "Decorative Lamp, Pond Lily base, as No. 381 with twelve lights",
+     "height": null,
+     "price": null,
+     "complete": 100,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Decorative Lamp, Pond Lily base, as No. 381 with twelve lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "383",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 9,
+     "ptr": 1219,
+     "as_printed": "Decorative Lamp, Pond Lily base, as No. 381 with eighteen lights",
+     "height": null,
+     "price": null,
+     "complete": 130,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Decorative Lamp, Pond Lily base, as No. 381 with eighteen lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "385",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 9,
+     "ptr": 1219,
+     "as_printed": "Decorative Lamp, Pond Lily base, as No. 381 with seven lights",
+     "height": null,
+     "price": null,
+     "complete": 75,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Decorative Lamp, Pond Lily base, as No. 381 with seven lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "387",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 27,
+     "ptr": 1237,
+     "as_printed": "Floor Standard, plain",
+     "height": "5 ft. 3 in.",
+     "price": 60,
+     "complete": 235,
+     "with_shade": "1548",
+     "shade_size": 22,
+     "shade_as_printed": "Tulip design",
+     "shade_price": 175
+    }
+   ],
+   "design": null,
+   "description": "Floor Standard, plain",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "397",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 11,
+     "ptr": 1221,
+     "as_printed": "Library Standard, adjustable, six lights",
+     "height": "30 in.",
+     "price": 125,
+     "complete": 285,
+     "with_shade": "1915",
+     "shade_size": 26,
+     "shade_as_printed": "Rose design",
+     "shade_price": 160
+    }
+   ],
+   "design": null,
+   "description": "Library Standard, adjustable, six lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "403",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 10,
+     "ptr": 1220,
+     "as_printed": "Reading Lamp, natural Nautilus shell, adjustable, 16 C. P. light",
+     "height": "15 in.",
+     "price": null,
+     "complete": 35,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, natural Nautilus shell, adjustable, 16 C. P. light",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "413",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 21,
+     "ptr": 1231,
+     "as_printed": "Picture Reflector or Reading Lamp, adjustable",
+     "height": "9 in.",
+     "price": null,
+     "complete": 50,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Picture Reflector or Reading Lamp, adjustable",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "416",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 9,
+     "ptr": 1219,
+     "as_printed": "Balanced Lamp, adjustable (shade can be lowered below base line)",
+     "height": "15 in.",
+     "price": 30,
+     "complete": 37,
+     "with_shade": null,
+     "shade_size": 7,
+     "shade_as_printed": "iridescent Favrile Glass shade",
+     "shade_price": 7
+    }
+   ],
+   "design": null,
+   "description": "Balanced Lamp, adjustable (shade can be lowered below base line)",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "417",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 8,
+     "ptr": 1218,
+     "as_printed": "Balanced Lamp, well-sweep design, adjustable (shade can be lowered below base line)",
+     "height": "16 in.",
+     "price": 30,
+     "complete": 37,
+     "with_shade": null,
+     "shade_size": 7,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 7
+    }
+   ],
+   "design": null,
+   "description": "Balanced Lamp, well-sweep design, adjustable (shade can be lowered below base line)",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "418",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 6,
+     "ptr": 1216,
+     "as_printed": "Reading Lamp, adjustable shade",
+     "height": "12 in.",
+     "price": 20,
+     "complete": 40,
+     "with_shade": "1940-A",
+     "shade_size": 7,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 20
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, adjustable shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "419",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 6,
+     "ptr": 1216,
+     "as_printed": "Reading Lamp, bell form, adjustable shade",
+     "height": "13 in.",
+     "price": 23,
+     "complete": 30,
+     "with_shade": null,
+     "shade_size": 7,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 7
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, bell form, adjustable shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "420",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 4,
+     "ptr": 1214,
+     "as_printed": "Desk Lamp, leaf ornament",
+     "height": "14 in.",
+     "price": 18,
+     "complete": 25,
+     "with_shade": null,
+     "shade_size": 7,
+     "shade_as_printed": "iridescent Favrile Glass shade, green and opalescent",
+     "shade_price": 7
+    }
+   ],
+   "design": null,
+   "description": "Desk Lamp, leaf ornament",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "423",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 25,
+     "ptr": 1235,
+     "as_printed": "Portable Floor Lamp, adjustable shade",
+     "height": "55 in.",
+     "price": 45,
+     "complete": 57,
+     "with_shade": null,
+     "shade_size": 10,
+     "shade_as_printed": "iridescent Favrile Glass shade",
+     "shade_price": 12
+    }
+   ],
+   "design": null,
+   "description": "Portable Floor Lamp, adjustable shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "423-H",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 25,
+     "ptr": 1235,
+     "as_printed": "Portable Floor Lamp, adjustable top",
+     "height": "58 in.",
+     "price": 60,
+     "complete": 76,
+     "with_shade": null,
+     "shade_size": 12,
+     "shade_as_printed": "iridescent Favrile Glass shade, green and opalescent",
+     "shade_price": 16
+    }
+   ],
+   "design": null,
+   "description": "Portable Floor Lamp, adjustable top",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "424",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 6,
+     "ptr": 1216,
+     "as_printed": "Reading Lamp, bell form, adjustable shade, with longer stem (as No. 419)",
+     "height": null,
+     "price": null,
+     "complete": 32,
+     "with_shade": null,
+     "shade_size": 7,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, bell form, adjustable shade, with longer stem (as No. 419)",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "425",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 26,
+     "ptr": 1236,
+     "as_printed": "Floor Lamp, adjustable shade",
+     "height": "55 in.",
+     "price": 50,
+     "complete": 62,
+     "with_shade": null,
+     "shade_size": 10,
+     "shade_as_printed": "iridescent Favrile Glass shade",
+     "shade_price": 12
+    }
+   ],
+   "design": null,
+   "description": "Floor Lamp, adjustable shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "429-A",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 23,
+     "ptr": 1233,
+     "as_printed": "Light, adjustable Boudoir Lamp for floor, with 12 in. silk shade",
+     "height": null,
+     "price": null,
+     "complete": 40,
+     "with_shade": null,
+     "shade_size": 12,
+     "shade_as_printed": "silk shade",
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Light, adjustable Boudoir Lamp for floor, with 12 in. silk shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "443",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 18,
+     "ptr": 1228,
+     "as_printed": "Library Lamp, design of Lily stems",
+     "height": "26 in.",
+     "price": 55,
+     "complete": 155,
+     "with_shade": "1497",
+     "shade_size": 20,
+     "shade_as_printed": "Daffodil design",
+     "shade_price": 100
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, design of Lily stems",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "445",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 7,
+     "ptr": 1217,
+     "as_printed": "Desk Lamp, overlay ornament",
+     "height": "17 in.",
+     "price": 23,
+     "complete": 35,
+     "with_shade": null,
+     "shade_size": 10,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 12
+    },
+    {
+     "src": "T1910",
+     "page": 13,
+     "ptr": 1188,
+     "as_printed": "Etched Metal and Glass desk set: Lamp",
+     "price_text": "$35.00; gold $44.00",
+     "desk_set": "Etched Metal and Glass",
+     "with_shade": null,
+     "shade_as_printed": "10-inch Favrile Glass Shade",
+     "shade_price": 14.0
+    }
+   ],
+   "design": null,
+   "description": "Desk Lamp, overlay ornament",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "468",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 24,
+     "ptr": 1234,
+     "as_printed": "Floor Lamp, balanced adjustable shade, well-sweep design",
+     "height": "54 in.",
+     "price": 50,
+     "complete": 62,
+     "with_shade": null,
+     "shade_size": 10,
+     "shade_as_printed": "iridescent Favrile Glass shade",
+     "shade_price": 12
+    }
+   ],
+   "design": null,
+   "description": "Floor Lamp, balanced adjustable shade, well-sweep design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "515",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1910",
+     "page": 21,
+     "ptr": 1196,
+     "as_printed": "Ninth Century desk set: Lamp and Shade, gold only",
+     "price_text": "$250.00",
+     "desk_set": "Ninth Century",
+     "with_shade": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    },
+    {
+     "src": "T1910",
+     "page": 23,
+     "ptr": 1198,
+     "as_printed": "Venetian desk set: Lamp and Shade, gold only",
+     "price_text": "$250.00",
+     "desk_set": "Venetian",
+     "with_shade": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Ninth Century desk set: Lamp and Shade, gold only",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "528",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 15,
+     "ptr": 1225,
+     "as_printed": "Library Lamp, Fifteenth Century design",
+     "height": "25 in.",
+     "price": 30,
+     "complete": 100,
+     "with_shade": "1916",
+     "shade_size": 20,
+     "shade_as_printed": "Grecian Band",
+     "shade_price": 70
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, Fifteenth Century design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "529",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 22,
+     "ptr": 1232,
+     "as_printed": "Library Lamp, Roman design, six lights",
+     "height": "30 in.",
+     "price": 60,
+     "complete": 135,
+     "with_shade": "1564",
+     "shade_size": 24,
+     "shade_as_printed": null,
+     "shade_price": 75
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, Roman design, six lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "531",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 19,
+     "ptr": 1229,
+     "as_printed": "Library Lamp",
+     "height": "27 in.",
+     "price": 35,
+     "complete": 75,
+     "with_shade": "1493",
+     "shade_size": 20,
+     "shade_as_printed": "Plain design",
+     "shade_price": 40
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "532",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 19,
+     "ptr": 1229,
+     "as_printed": "Library Lamp",
+     "height": "27 in.",
+     "price": 35,
+     "complete": 185,
+     "with_shade": "1917",
+     "shade_size": 20,
+     "shade_as_printed": "Daffodil and Narcissus design",
+     "shade_price": 150
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "533",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 13,
+     "ptr": 1223,
+     "as_printed": "Library Lamp",
+     "height": "22 in.",
+     "price": 25,
+     "complete": 100,
+     "with_shade": "1461",
+     "shade_size": 16,
+     "shade_as_printed": "Poppy design",
+     "shade_price": 75
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "534",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 16,
+     "ptr": 1226,
+     "as_printed": "Library Lamp",
+     "height": "22 in.",
+     "price": 25,
+     "complete": 50,
+     "with_shade": "1901",
+     "shade_size": 16,
+     "shade_as_printed": null,
+     "shade_price": 25
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "535",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 21,
+     "ptr": 1231,
+     "as_printed": "Chinese Desk Lamp, two lights",
+     "height": "17 in.",
+     "price": 25,
+     "complete": 50,
+     "with_shade": "1588",
+     "shade_size": 11,
+     "shade_as_printed": "Chinese Shade, etched metal and glass (11 in. spread)",
+     "shade_price": null
+    },
+    {
+     "src": "T1910",
+     "page": 11,
+     "ptr": 1186,
+     "as_printed": "Chinese desk set: Lamp",
+     "price_text": "$45.00; gold $56.00",
+     "desk_set": "Chinese",
+     "with_shade": "1588",
+     "shade_as_printed": "Lamp Shade",
+     "shade_price": 35.0
+    }
+   ],
+   "design": null,
+   "description": "Chinese Desk Lamp, two lights",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "537",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1910",
+     "page": 25,
+     "ptr": 1200,
+     "as_printed": "Zodiac desk set: Lamp",
+     "price_text": "$30.00; gold $38.00",
+     "desk_set": "Zodiac",
+     "with_shade": "1587",
+     "shade_as_printed": "Shade",
+     "shade_price": 30.0
+    }
+   ],
+   "design": null,
+   "description": "Zodiac desk set: Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "538",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1910",
+     "page": 17,
+     "ptr": 1192,
+     "as_printed": "Louis XVI desk set: Lamp, shade extra",
+     "price_text": "$50.00",
+     "desk_set": "Louis XVI",
+     "with_shade": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Louis XVI desk set: Lamp, shade extra",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "539",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 14,
+     "ptr": 1224,
+     "as_printed": "Adam Lamp and Shade",
+     "height": "18 in.",
+     "price": 28,
+     "complete": 58,
+     "with_shade": "1412",
+     "shade_size": null,
+     "shade_as_printed": "Etched Metal over Glass",
+     "shade_price": 30
+    },
+    {
+     "src": "T1910",
+     "page": 5,
+     "ptr": 1180,
+     "as_printed": "Adam desk set: Lamp, gold only",
+     "price_text": "$50.00",
+     "desk_set": "Adam",
+     "with_shade": "1412",
+     "shade_as_printed": "Shade, metal and glass",
+     "shade_price": 35.0
+    }
+   ],
+   "design": null,
+   "description": "Adam Lamp and Shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "549",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 13,
+     "ptr": 1223,
+     "as_printed": "Library Lamp",
+     "height": "32 in.",
+     "price": 125,
+     "complete": 275,
+     "with_shade": "1918",
+     "shade_size": 20,
+     "shade_as_printed": "Azalea design",
+     "shade_price": 150
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "550",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 17,
+     "ptr": 1227,
+     "as_printed": "Library Lamp, Louis XIV design",
+     "height": "32 in.",
+     "price": 125,
+     "complete": 275,
+     "with_shade": "1507",
+     "shade_size": 22,
+     "shade_as_printed": "Dragonfly design",
+     "shade_price": 150
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, Louis XIV design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "552",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 7,
+     "ptr": 1217,
+     "as_printed": "Miniature adjustable lamp of Etched Metal and Glass, pine needle or grape vine design",
+     "height": "9 in.",
+     "price": null,
+     "complete": 25,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": null,
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Miniature adjustable lamp of Etched Metal and Glass, pine needle or grape vine design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "553",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 12,
+     "ptr": 1222,
+     "as_printed": "Library Lamp, Tree design",
+     "height": "33 in.",
+     "price": 65,
+     "complete": 290,
+     "with_shade": "1537",
+     "shade_size": 24,
+     "shade_as_printed": "Laburnum design",
+     "shade_price": 225
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, Tree design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "557",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 16,
+     "ptr": 1226,
+     "as_printed": "Library Lamp, Early English design",
+     "height": "27 in.",
+     "price": 55,
+     "complete": 155,
+     "with_shade": "1914",
+     "shade_size": 22,
+     "shade_as_printed": "Early English design",
+     "shade_price": 100
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp, Early English design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "558",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1910",
+     "page": 15,
+     "ptr": 1190,
+     "as_printed": "Graduate desk set: Lamp",
+     "price_text": "$45; gold $56.00",
+     "desk_set": "Graduate",
+     "with_shade": "1948",
+     "shade_as_printed": "Favrile Fabrique Glass Shade",
+     "shade_price": 40.0
+    }
+   ],
+   "design": null,
+   "description": "Graduate desk set: Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "560",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 15,
+     "ptr": 1225,
+     "as_printed": "Library Lamp",
+     "height": "28 in.",
+     "price": 28,
+     "complete": 88,
+     "with_shade": "1952",
+     "shade_size": 20,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 60
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "569",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 6,
+     "ptr": 1216,
+     "as_printed": "Reading Lamp; shade can be raised and lowered and placed at any angle",
+     "height": "18 in. to 22 in.",
+     "price": 40,
+     "complete": 52,
+     "with_shade": null,
+     "shade_size": 10,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 12
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp; shade can be raised and lowered and placed at any angle",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "576",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 23,
+     "ptr": 1233,
+     "as_printed": "Bridge Lamp, with a 7 in. extension; adjustable silk shade",
+     "height": "55 in.",
+     "price": null,
+     "complete": 100,
+     "with_shade": null,
+     "shade_size": null,
+     "shade_as_printed": "silk shade",
+     "shade_price": null
+    }
+   ],
+   "design": null,
+   "description": "Bridge Lamp, with a 7 in. extension; adjustable silk shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "578",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 22,
+     "ptr": 1232,
+     "as_printed": "Floor Lamp, adjustable shade, with a 9-in. extension",
+     "height": "42 in.",
+     "price": 50,
+     "complete": 66,
+     "with_shade": null,
+     "shade_size": 12,
+     "shade_as_printed": "iridescent Favrile Glass shade",
+     "shade_price": 16
+    }
+   ],
+   "design": null,
+   "description": "Floor Lamp, adjustable shade, with a 9-in. extension",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "580",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 18,
+     "ptr": 1228,
+     "as_printed": "3-light Empire Lamp, decorated Favrile Glass Candles",
+     "height": "22 in.",
+     "price": 40,
+     "complete": 75,
+     "with_shade": "1924",
+     "shade_size": 14,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 35
+    }
+   ],
+   "design": null,
+   "description": "3-light Empire Lamp, decorated Favrile Glass Candles",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "582",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 26,
+     "ptr": 1236,
+     "as_printed": "Floor Standard, smoker’s attachments, adjustable shade",
+     "height": "56 in.",
+     "price": 63,
+     "complete": 75,
+     "with_shade": null,
+     "shade_size": 10,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 12
+    }
+   ],
+   "design": null,
+   "description": "Floor Standard, smoker’s attachments, adjustable shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "584",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 8,
+     "ptr": 1218,
+     "as_printed": "Library Lamp",
+     "height": "22 in.",
+     "price": 35,
+     "complete": 65,
+     "with_shade": "1594",
+     "shade_size": 16,
+     "shade_as_printed": null,
+     "shade_price": 30
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "587",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 14,
+     "ptr": 1224,
+     "as_printed": "Library Lamp",
+     "height": "24 in.",
+     "price": 50,
+     "complete": 115,
+     "with_shade": "1927",
+     "shade_size": 20,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 65
+    }
+   ],
+   "design": null,
+   "description": "Library Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "604",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 10,
+     "ptr": 1220,
+     "as_printed": "Reading Lamp, finished in gold and inlaid with Abalone pearl",
+     "height": "16 in.",
+     "price": 50,
+     "complete": 85,
+     "with_shade": "1939",
+     "shade_size": 10,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 35
+    },
+    {
+     "src": "T1910",
+     "page": 3,
+     "ptr": 1178,
+     "as_printed": "Abalone desk set: Lamp, gold only",
+     "price_text": "$75.00",
+     "desk_set": "Abalone",
+     "with_shade": "1928",
+     "shade_as_printed": "Shade",
+     "shade_price": 50.0
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, finished in gold and inlaid with Abalone pearl",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "606",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 7,
+     "ptr": 1217,
+     "as_printed": "Desk Lamp",
+     "height": "17 in. over all",
+     "price": 16,
+     "complete": 23,
+     "with_shade": null,
+     "shade_size": 7,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 7
+    }
+   ],
+   "design": null,
+   "description": "Desk Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "608",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 5,
+     "ptr": 1215,
+     "as_printed": "Desk Lamp",
+     "height": "15 in.",
+     "price": 20,
+     "complete": 30,
+     "with_shade": null,
+     "shade_size": 8,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 10
+    }
+   ],
+   "design": null,
+   "description": "Desk Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "612",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1910",
+     "page": 19,
+     "ptr": 1194,
+     "as_printed": "Nautical desk set: Lamp",
+     "price_text": "$38.00",
+     "desk_set": "Nautical",
+     "with_shade": null,
+     "shade_as_printed": "Favrile Glass Shade 12 in. diameter",
+     "shade_price": 19.0
+    }
+   ],
+   "design": null,
+   "description": "Nautical desk set: Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "613",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 5,
+     "ptr": 1215,
+     "as_printed": "Reading Lamp with adjustable shade",
+     "height": "18 in.",
+     "price": 25,
+     "complete": 50,
+     "with_shade": "1938",
+     "shade_size": 8,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 25
+    },
+    {
+     "src": "T1910",
+     "page": 9,
+     "ptr": 1184,
+     "as_printed": "Bookmark desk set: Lamp, gold",
+     "price_text": "$56.00",
+     "desk_set": "Bookmark",
+     "with_shade": null,
+     "shade_as_printed": "8-inch Favrile Glass Shade",
+     "shade_price": 11.5
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp with adjustable shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "614",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 5,
+     "ptr": 1215,
+     "as_printed": "Reading Lamp with adjustable shade",
+     "height": "13 in.",
+     "price": 25,
+     "complete": 37,
+     "with_shade": "1942-D",
+     "shade_size": 5,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 12
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp with adjustable shade",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "615",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 20,
+     "ptr": 1230,
+     "as_printed": "Reading Lamp, Greek design",
+     "height": "18 in.",
+     "price": 25,
+     "complete": 60,
+     "with_shade": "1924",
+     "shade_size": 14,
+     "shade_as_printed": "Favrilefabrique Glass",
+     "shade_price": 35
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, Greek design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "617",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 17,
+     "ptr": 1227,
+     "as_printed": "Reading Lamp, Greek design",
+     "height": "17 in.",
+     "price": 25,
+     "complete": 41,
+     "with_shade": null,
+     "shade_size": 12,
+     "shade_as_printed": "Iridescent Favrile Glass shade",
+     "shade_price": 16
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp, Greek design",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "618",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 14,
+     "ptr": 1224,
+     "as_printed": "Reading Lamp",
+     "height": "17 in.",
+     "price": 23,
+     "complete": 43,
+     "with_shade": "1587",
+     "shade_size": 11,
+     "shade_as_printed": "glass panels",
+     "shade_price": 20
+    }
+   ],
+   "design": null,
+   "description": "Reading Lamp",
+   "size": null,
+   "shape": null
+  },
+  {
+   "no": "653",
+   "kind": "base",
+   "entries": [
+    {
+     "src": "T1915",
+     "page": 24,
+     "ptr": 1234,
+     "as_printed": "Decorative Lamp for floor; bronze with Favrile Glass candles; four shades No. 1942-D",
+     "height": "5 ft. 6 in.",
+     "price": null,
+     "complete": 208,
+     "with_shade": "1942-D",
+     "shade_size": 5,
+     "shade_as_printed": "Favrilefabrique Glass, each $12",
+     "shade_price": 12
+    }
+   ],
+   "design": null,
+   "description": "Decorative Lamp for floor; bronze with Favrile Glass candles; four shades No. 1942-D",
+   "size": null,
+   "shape": null
+  }
+ ],
+ "museum": [
+  {
+   "id": "aic-1967-478-479",
+   "museum": "Art Institute of Chicago",
+   "accession": "1967.478-479",
+   "title": "Pair of Lampshades",
+   "kind": "shade",
+   "pattern": null,
+   "date": "c. 1920",
+   "medium": "Glass",
+   "dimensions": "Ea: 12.3 × 9.5 cm (4 7/8 × 3 1/4 in.); 478: 12.5 × 9.5 × 9.5 cm (4 15/16 × 3 3/4 × 3 3/4 in.); 12.6 × 10 × 10.1 cm (5 × 3 15/16 × 4 in.)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/27856",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "aic-1967-480-481",
+   "museum": "Art Institute of Chicago",
+   "accession": "1967.480-481",
+   "title": "Pair of Lampshades",
+   "kind": "shade",
+   "pattern": null,
+   "date": "c. 1920",
+   "medium": "Glass",
+   "dimensions": "12.7 × 9.5 cm (5 × 3 3/4 in.)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/27859",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "aic-1973-343b",
+   "museum": "Art Institute of Chicago",
+   "accession": "1973.343b",
+   "title": "Lamp Shade",
+   "kind": "shade",
+   "pattern": null,
+   "date": "1899–1909",
+   "medium": "Leaded glass",
+   "dimensions": "16.5 × 35.6 cm (6 1/2 × 14 in.)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/197548",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/aic-1973-343b.jpg",
+   "thumb": "marks/img/tiffany/lamps/aic-1973-343b.jpg",
+   "credit": "Art Institute of Chicago, 1973.343b, open access (CC0)"
+  },
+  {
+   "id": "aic-1998-741",
+   "museum": "Art Institute of Chicago",
+   "accession": "1998.741",
+   "title": "Lily Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Lily",
+   "date": "1902–17",
+   "medium": "Favrile glass and bronze",
+   "dimensions": "53.3 × 23.5 × 24.1 cm (21 × 9 1/4 × 9 1/2 in.)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/152745",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "aic-2006-2",
+   "museum": "Art Institute of Chicago",
+   "accession": "2006.2",
+   "title": "Lamp with Hanging Head Dragonfly Shade and Mosaic and Turtleback Base",
+   "kind": "lamp with shade",
+   "pattern": "Hanging Head Dragonfly",
+   "date": "By 1906",
+   "medium": "Favrile glass and bronze",
+   "dimensions": "86.4 × 57.2 cm (34 × 22 1/2 in.)",
+   "marks": "Shade model 1507 stamped: TIFFANY STUDIOS NEW YORK 1507 / Base model 355 impressed: TIFFANY STUDIOS NEW YORK 5858 / TIFFANY STUDIOS NEW YORK",
+   "shade_no": "1507",
+   "base_no": "355",
+   "stamped": {
+    "shade": [
+     "1507"
+    ],
+    "base": [
+     "5858"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/185905",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/aic-2006-2.jpg",
+   "thumb": "marks/img/tiffany/lamps/aic-2006-2.jpg",
+   "credit": "Art Institute of Chicago, 2006.2, open access (CC0)"
+  },
+  {
+   "id": "aic-2022-590a-i",
+   "museum": "Art Institute of Chicago",
+   "accession": "2022.590a-i",
+   "title": "Turtleback Moorish Chandelier",
+   "kind": "chandelier",
+   "pattern": "Turtleback Moorish",
+   "date": "c. 1900",
+   "medium": "Favrile glass and bronze",
+   "dimensions": "96.6 × 42 × 42 cm (38 1/16 × 16 9/16 × 16 9/16 in.)",
+   "marks": "Engraved, each shade, lower-center-top",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/260451",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/aic-2022-590a-i.jpg",
+   "thumb": "marks/img/tiffany/lamps/aic-2022-590a-i.jpg",
+   "credit": "Art Institute of Chicago, 2022.590a-i, open access (CC0)"
+  },
+  {
+   "id": "aic-2022-591a-b",
+   "museum": "Art Institute of Chicago",
+   "accession": "2022.591a-b",
+   "title": "Lamp with Nasturtium Shade and Bamboo Base",
+   "kind": "lamp with shade",
+   "pattern": "Nasturtium",
+   "date": "c. 1910",
+   "medium": "Favrile glass and bronze",
+   "dimensions": "78.8 × 55.9 × 55.9 cm (31 × 22 × 22 in.)",
+   "marks": "Struck, on shade interior, bottom rim: TIFFANY STUDIOS NEW YORK / struck, on shade interior, bottom rim: 1506-12 / Struck, on base bottom, middle: TIFFANY STUDIOS / NEW YORK / 474 / struck, on base bottom, bottom-center: S1841",
+   "shade_no": "1506-12",
+   "base_no": "474",
+   "stamped": {
+    "shade": [
+     "1506-12"
+    ],
+    "base": [
+     "474",
+     "S1841"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/260452",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/aic-2022-591a-b.jpg",
+   "thumb": "marks/img/tiffany/lamps/aic-2022-591a-b.jpg",
+   "credit": "Art Institute of Chicago, 2022.591a-b, open access (CC0)"
+  },
+  {
+   "id": "aic-2022-616a-c",
+   "museum": "Art Institute of Chicago",
+   "accession": "2022.616a-c",
+   "title": "Lamp with Heavy Ribs Shade and Bat Base",
+   "kind": "lamp with shade",
+   "pattern": "Heavy Ribs",
+   "date": "c. 1905",
+   "medium": "Favrile glass, leaded glass, and bronze",
+   "dimensions": "48.9 × 38.1 × 38.1 cm (19 1/4 × 15 × 15 in.)",
+   "marks": "Struck, on base bottom, middle: TIFFANY STUDIOS / NEW YORK / 353 / struck, on shade interior, bottom rim: TIFFANY STUDIOS NEW YORK",
+   "shade_no": null,
+   "base_no": "353",
+   "stamped": {
+    "shade": [],
+    "base": [
+     "353"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://www.artic.edu/artworks/261151",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/aic-2022-616a-c.jpg",
+   "thumb": "marks/img/tiffany/lamps/aic-2022-616a-c.jpg",
+   "credit": "Art Institute of Chicago, 2022.616a-c, open access (CC0)"
+  },
+  {
+   "id": "cma-1960-103",
+   "museum": "Cleveland Museum of Art",
+   "accession": "1960.103",
+   "title": "Pair of Floor Lamps",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "c. 1915",
+   "medium": "bronze and shell",
+   "dimensions": "Overall: 145.5 x 39.4 cm (57 5/16 x 15 1/2 in.)",
+   "marks": "Stamped on the underside of one foot on each lamp: \"Tiffany Studios/ New York\"",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/1960.103",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "cma-1960-103-1",
+   "museum": "Cleveland Museum of Art",
+   "accession": "1960.103.1",
+   "title": "Floor Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "c. 1915",
+   "medium": "bronze with capiz shell",
+   "dimensions": "Overall: 145.5 x 39.4 cm (57 5/16 x 15 1/2 in.)",
+   "marks": "Stamped on the underside of one foot: \"Tiffany Studios/ New York\"",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/1960.103.1",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "cma-1960-103-2",
+   "museum": "Cleveland Museum of Art",
+   "accession": "1960.103.2",
+   "title": "Floor Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "c. 1915",
+   "medium": "bronze and capiz shell",
+   "dimensions": "Overall: 147.3 x 40.7 cm (58 x 16 in.)",
+   "marks": "Stamped on the underside of one foot: \"Tiffany Studios/ New York\"",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/1960.103.2",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "cma-1990-43",
+   "museum": "Cleveland Museum of Art",
+   "accession": "1990.43",
+   "title": "Reading Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "c. 1910–20",
+   "medium": "gilt metal",
+   "dimensions": "Overall: 23.2 x 27.8 x 12.7 cm (9 1/8 x 10 15/16 x 5 in.)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/1990.43",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "cma-1997-298",
+   "museum": "Cleveland Museum of Art",
+   "accession": "1997.298",
+   "title": "Nautilus Reading Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Nautilus",
+   "date": "c. 1899–1902",
+   "medium": "bronze, leaded glass",
+   "dimensions": "Overall: 34.5 x 21.3 x 13.4 cm (13 9/16 x 8 3/8 x 5 1/4 in.)",
+   "marks": "stamped on underside: Tiffany Studios/New York/25891/TDGCo",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": [
+     "25891"
+    ]
+   },
+   "tgdco": true,
+   "url": "https://clevelandart.org/art/1997.298",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-1997-298.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-1997-298.jpg",
+   "credit": "Cleveland Museum of Art, 1997.298, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-260",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.260",
+   "title": "Peony Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Peony",
+   "date": "c. 1902–10",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "height: 80 cm (31 1/2 in.); Shade diameter: 55 cm (21 5/8 in.)",
+   "marks": "Shade impressed: TIFFANY STUDIOS NEW YORK 355 / Base impressed: TIFFANY STUDIOS/NEW YORK/542/ 2574 [scratched]",
+   "shade_no": "355",
+   "base_no": "542",
+   "stamped": {
+    "shade": [
+     "355"
+    ],
+    "base": [
+     "542"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.260",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-260.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-260.jpg",
+   "credit": "Cleveland Museum of Art, 2018.260, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-261",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.261",
+   "title": "\"Pony\" Wisteria Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Pony Wisteria",
+   "date": "c. 1902–10",
+   "medium": "leaded glass, bronze",
+   "dimensions": "Overall: 43.2 cm (17 in.); Diameter: 26.7 cm (10 1/2 in.)",
+   "marks": "Base impressed: TIFFANY STUDIOS/NEW YORK/7002",
+   "shade_no": null,
+   "base_no": "7002",
+   "stamped": {
+    "shade": [],
+    "base": [
+     "7002"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.261",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-261.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-261.jpg",
+   "credit": "Cleveland Museum of Art, 2018.261, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-262",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.262",
+   "title": "Oriental Poppy Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Oriental Poppy",
+   "date": "c. 1902–10",
+   "medium": "Leaded glass, gilt bronze",
+   "dimensions": "Overall: 59.7 cm (23 1/2 in.); Diameter: 45.7 cm (18 in.)",
+   "marks": "TIFFANY STUDIOS NEW YORK 1583 / TIFFANY STUDIOS/NEW YORK/669",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.262",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-262.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-262.jpg",
+   "credit": "Cleveland Museum of Art, 2018.262, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-263",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.263",
+   "title": "Daffodil Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Daffodil",
+   "date": "c. 1910–13",
+   "medium": "Leaded glass, blown glass, bronze",
+   "dimensions": "Shade: 23.2 x 49.3 x 49.3 cm (9 1/8 x 19 7/16 x 19 7/16 in.)",
+   "marks": "TIFFANY STUDIOS NEW YORK 3171 / TIFFANY STUDIOS/NEW YORK/25922",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.263",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-263.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-263.jpg",
+   "credit": "Cleveland Museum of Art, 2018.263, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-264",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.264",
+   "title": "Empire Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Empire",
+   "date": "c. 1902–10",
+   "medium": "Leaded glass, gilt bronze",
+   "dimensions": "Overall: 66 x 56.5 cm (26 x 22 1/4 in.)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.264",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-264.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-264.jpg",
+   "credit": "Cleveland Museum of Art, 2018.264, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-265",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.265",
+   "title": "Bamboo Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Bamboo",
+   "date": "c. 1902–10",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "Overall: 59.7 cm (23 1/2 in.); Shade diameter: 40.6 cm (16 in.)",
+   "marks": "Shade impressed: TIFFANY STUDIOS NEW YORK 1443-14 / Base impressed: TIFFANY STUDIOS/NEW YORK/480",
+   "shade_no": "1443-14",
+   "base_no": "480",
+   "stamped": {
+    "shade": [
+     "1443-14"
+    ],
+    "base": [
+     "480"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.265",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-265.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-265.jpg",
+   "credit": "Cleveland Museum of Art, 2018.265, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-266",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.266",
+   "title": "Pansy Border Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Pansy Border",
+   "date": "c. 1902–10",
+   "medium": "Leaded glass, blown glass, bronze",
+   "dimensions": "Overall: 40.6 cm (16 in.); Diameter: 40.6 cm (16 in.)",
+   "marks": "mark underside oil reservoir: Tiffany Studios/New York/TGDCo/219 / inside bottom rim of shade: Tiffany Studios New York",
+   "shade_no": null,
+   "base_no": "219",
+   "stamped": {
+    "shade": [],
+    "base": [
+     "219"
+    ]
+   },
+   "tgdco": true,
+   "url": "https://clevelandart.org/art/2018.266",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-266.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-266.jpg",
+   "credit": "Cleveland Museum of Art, 2018.266, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-267",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.267",
+   "title": "Peony Floor Lamp with a Bamboo Base",
+   "kind": "lamp with shade",
+   "pattern": "Peony",
+   "date": "c. 1905–10",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "157.5 cm (62 in.); Shade diameter: 55.9 cm (22 in.)",
+   "marks": "TIFFANY STUDIOS NEW YORK 505-17 / TIFFANY STUDIOS/NEW YORK/10933",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.267",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-267.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-267.jpg",
+   "credit": "Cleveland Museum of Art, 2018.267, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-268",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.268",
+   "title": "Tulip Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Tulip",
+   "date": "c. 1900–1906",
+   "medium": "Leaded glass, blown glass, bronze",
+   "dimensions": "61 cm (24 in.); Diameter: 23 cm (9 1/16 in.)",
+   "marks": "Shade impressed: TIFFANY STUDIOS NEW YORK / Base impressed: TGDCo/TIFFANY STUDIOS/NEW YORK/21667",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": [
+     "21667"
+    ]
+   },
+   "tgdco": true,
+   "url": "https://clevelandart.org/art/2018.268",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-268.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-268.jpg",
+   "credit": "Cleveland Museum of Art, 2018.268, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-269",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.269",
+   "title": "Peony Border Floor Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Peony Border",
+   "date": "c. 1905–10",
+   "medium": "leaded glass, bronze",
+   "dimensions": "200.7 cm (79 in.); Diameter: 61 cm (24 in.)",
+   "marks": "Shade impressed: TIFFANY STUDIOS NEW YORK 1574 / Base impressed: TIFFANY STUDIOS/NEW YORK/376",
+   "shade_no": "1574",
+   "base_no": "376",
+   "stamped": {
+    "shade": [
+     "1574"
+    ],
+    "base": [
+     "376"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.269",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-269.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-269.jpg",
+   "credit": "Cleveland Museum of Art, 2018.269, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-270",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.270",
+   "title": "Grape Trellis Hanging Shade",
+   "kind": "hanging shade",
+   "pattern": "Grape Trellis",
+   "date": "c. 1905–10",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "Diameter: 76.2 cm (30 in.)",
+   "marks": "TIFFANY STUDIOS/NEW YORK",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.270",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-270.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-270.jpg",
+   "credit": "Cleveland Museum of Art, 2018.270, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-274",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.274",
+   "title": "Peony Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Peony",
+   "date": "c. 1905–15",
+   "medium": "Leaded glass, bronze, ceramic",
+   "dimensions": "Overall: 61 cm (24 in.); Diameter of base: 9.5 cm (3 3/4 in.); width of shade: 45.7 cm (18 in.); with shade: 61 cm (24 in.)",
+   "marks": "Shade impressed: TIFFANY STUDIOS NEW YORK 1475 / Based scratched: BP250 L.C. Tiffany Bronze Pottery Favrile",
+   "shade_no": "1475",
+   "base_no": null,
+   "stamped": {
+    "shade": [
+     "1475"
+    ],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.274",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-274.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-274.jpg",
+   "credit": "Cleveland Museum of Art, 2018.274, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-275",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.275",
+   "title": "Poppy Filigree Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Poppy Filigree",
+   "date": "c.1902–10",
+   "medium": "Leaded glass, blown glass, brass, bronze",
+   "dimensions": "height: 58.5 x 42 cm (23 1/16 x 16 9/16 in.); Shade diameter: 42 cm (16 9/16 in.)",
+   "marks": "Shade impressed: TIFFANY STUDIOS/NEW YORK/1431 / Base impressed: TIFFANY STUDIOS/NEW YORK/28610",
+   "shade_no": "1431",
+   "base_no": null,
+   "stamped": {
+    "shade": [
+     "1431"
+    ],
+    "base": [
+     "28610"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.275",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-275.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-275.jpg",
+   "credit": "Cleveland Museum of Art, 2018.275, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-276",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.276",
+   "title": "Indian Basket Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Indian Basket",
+   "date": "c. 1902–10",
+   "medium": "Leaded glass, gilt bronze",
+   "dimensions": "Diameter: 31.6 cm (12 7/16 in.); Overall: 43.5 cm (17 1/8 in.)",
+   "marks": "inside bottom rim of shade: Tiffany Studios New York 1586 / stamped on underside of base: Tiffany Studios/New York/536",
+   "shade_no": "1586",
+   "base_no": "536",
+   "stamped": {
+    "shade": [
+     "1586"
+    ],
+    "base": [
+     "536"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.276",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-276.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-276.jpg",
+   "credit": "Cleveland Museum of Art, 2018.276, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-277",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.277",
+   "title": "Spider and Web Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Spider and Web",
+   "date": "c. 1902–20",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "Diameter: 38.2 cm (15 1/16 in.); Overall: 45 cm (17 11/16 in.)",
+   "marks": "Shade impressed: TIFFANY STUDIOS NEW YORK 1424 / Base impressed: TIFFANY STUDIOS/NEW YORK/337/ 2844 [scratched]",
+   "shade_no": "1424",
+   "base_no": "337",
+   "stamped": {
+    "shade": [
+     "1424"
+    ],
+    "base": [
+     "337"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.277",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-277.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-277.jpg",
+   "credit": "Cleveland Museum of Art, 2018.277, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-281",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.281",
+   "title": "Peacock Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Peacock",
+   "date": "c. 1902",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "Diameter: 48 cm (18 7/8 in.); Overall: 65 cm (25 9/16 in.)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.281",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-281.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-281.jpg",
+   "credit": "Cleveland Museum of Art, 2018.281, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-282",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.282",
+   "title": "Autumn Leaf Globe Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Autumn Leaf Globe",
+   "date": "c. 1905–10",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "Diameter: 27.7 cm (10 7/8 in.); Overall: 79.4 cm (31 1/4 in.)",
+   "marks": "Base impressed: TIFFANY STUDIOS/NEW YORK/438/S1339/666 [scratched]",
+   "shade_no": null,
+   "base_no": "438",
+   "stamped": {
+    "shade": [],
+    "base": [
+     "438",
+     "S1339"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.282",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-282.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-282.jpg",
+   "credit": "Cleveland Museum of Art, 2018.282, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-283",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.283",
+   "title": "Woodbine Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Woodbine",
+   "date": "c. 1900",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "height: 55.5 cm (21 7/8 in.); Shade diameter: 40.5 cm (15 15/16 in.)",
+   "marks": "Base impressed: TIFFANY STUDIOS/NEW YORK/D805/TGDCo",
+   "shade_no": null,
+   "base_no": "D805",
+   "stamped": {
+    "shade": [],
+    "base": [
+     "D805"
+    ]
+   },
+   "tgdco": true,
+   "url": "https://clevelandart.org/art/2018.283",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-283.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-283.jpg",
+   "credit": "Cleveland Museum of Art, 2018.283, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-284",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.284",
+   "title": "Apple Blossom Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Apple Blossom",
+   "date": "c. 1908–15",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "Overall: 43.2 cm (17 in.); width of shade: 25.4 cm (10 in.)",
+   "marks": "Shade: TIFFANY STUDIOS/NEW YORK / Base: TIFFANY STUDIOS/NEW YORK/883",
+   "shade_no": null,
+   "base_no": "883",
+   "stamped": {
+    "shade": [],
+    "base": [
+     "883"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.284",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "cma-2018-285",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.285",
+   "title": "Pond Lily Table Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Pond Lily",
+   "date": "c. 1902–10",
+   "medium": "Favrile glass, bronze",
+   "dimensions": "Overall: 53.3 cm (21 in.); Diameter of base: 53.3 x 23.5 cm (21 x 9 1/4 in.); Width at top: 53.3 x 35.6 cm (21 x 14 in.)",
+   "marks": "Shades etched: L.C.T. / stamped on bottom: Tiffany Studios/New York/3(?)8",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": [
+     "3(?)8"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.285",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-285.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-285.jpg",
+   "credit": "Cleveland Museum of Art, 2018.285, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-286",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.286",
+   "title": "Linen Fold Reading Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Linen Fold",
+   "date": "c. 1910–15",
+   "medium": "favrile glass, bronze",
+   "dimensions": "Overall: 34.3 cm (13 1/2 in.); Diameter of base: 34.3 x 14 cm (13 1/2 x 5 1/2 in.)",
+   "marks": "TIFFANY STUDIOS/NEW YORK/614",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.286",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "cma-2018-287",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.287",
+   "title": "Turtleback Reading Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Turtleback",
+   "date": "c. 1895–1902",
+   "medium": "Favrile glass, bronze",
+   "dimensions": "Overall: 35.6 cm (14 in.); Diameter of top: 35.6 x 21.6 cm (14 x 8 1/2 in.); Diameter of base: 35.6 x 15.2 cm (14 x 6 in.)",
+   "marks": "stamped on underside: TGD Co/Tiffany Studios/New York/D545",
+   "shade_no": null,
+   "base_no": "D545",
+   "stamped": {
+    "shade": [],
+    "base": [
+     "D545"
+    ]
+   },
+   "tgdco": true,
+   "url": "https://clevelandart.org/art/2018.287",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-287.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-287.jpg",
+   "credit": "Cleveland Museum of Art, 2018.287, open access (CC0)"
+  },
+  {
+   "id": "cma-2018-288",
+   "museum": "Cleveland Museum of Art",
+   "accession": "2018.288",
+   "title": "Mushroom Night Lamp",
+   "kind": "lamp with shade",
+   "pattern": "Mushroom",
+   "date": "c. 1896–1902",
+   "medium": "Favrile glass",
+   "dimensions": "Overall: 32.4 cm (12 3/4 in.); Diameter of base: 17 cm (6 11/16 in.)",
+   "marks": "TIFFANY STUDIOS/NEW YORK/14943",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://clevelandart.org/art/2018.288",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/cma-2018-288.jpg",
+   "thumb": "marks/img/tiffany/lamps/cma-2018-288.jpg",
+   "credit": "Cleveland Museum of Art, 2018.288, open access (CC0)"
+  },
+  {
+   "id": "met-1974-214-15a-b",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.15a, b",
+   "title": "Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "1904–15",
+   "medium": "Leaded Favrile glass and bronze",
+   "dimensions": "Base: H. 26 1/2 in. (67.3 cm); Diam. 14 5/8 in. (37.1 cm)\r\nShade: H. 14 5/8 in. (37.1 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/4715",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-17",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.17",
+   "title": "Glass Shade",
+   "kind": "shade",
+   "pattern": null,
+   "date": "ca. 1900",
+   "medium": "Glass",
+   "dimensions": "H. 5 in. (12.7 cm); Diam. 2 1/8 in. (5.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/4014",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-18",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.18",
+   "title": "Glass Shade",
+   "kind": "shade",
+   "pattern": null,
+   "date": "ca. 1900",
+   "medium": "Glass",
+   "dimensions": "H. 5 in. (12.7 cm); Diam. 2 1/8 in. (5.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/4015",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-19",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.19",
+   "title": "Glass Shade",
+   "kind": "shade",
+   "pattern": null,
+   "date": "ca. 1900",
+   "medium": "Glass",
+   "dimensions": "H. 5 in. (12.7 cm); Diam. 2 1/8 in. (5.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/4016",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-1a-ii",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.1a–ii",
+   "title": "Chandelier",
+   "kind": "chandelier",
+   "pattern": null,
+   "date": "ca. 1900–1910",
+   "medium": "Leaded opalescent glass, metal",
+   "dimensions": "H. 19 1/8 in. (48.6 cm); Diam. 20 1/2 in. (52.1 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/1973",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-2",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.2",
+   "title": "Wall Sconce",
+   "kind": "other lighting",
+   "pattern": null,
+   "date": "ca. 1910",
+   "medium": "Glass, bronze",
+   "dimensions": "H. 19 1/8 in. (48.6 cm); Diam. 4 7/8 in. (12.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/9644",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-3",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.3",
+   "title": "Wall Sconce",
+   "kind": "other lighting",
+   "pattern": null,
+   "date": "ca. 1910",
+   "medium": "Glass, bronze",
+   "dimensions": "H. 19 1/8 in. (48.6 cm); Diam. 4 7/8 in. (12.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/9645",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-4",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.4",
+   "title": "Wall Sconce",
+   "kind": "other lighting",
+   "pattern": null,
+   "date": "ca. 1910",
+   "medium": "Glass, bronze",
+   "dimensions": "H. 19 1/8 in. (48.6 cm); Diam. 4 7/8 in. (12.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/9646",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-5",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.5",
+   "title": "Wall Sconce",
+   "kind": "other lighting",
+   "pattern": null,
+   "date": "ca. 1910",
+   "medium": "Glass, bronze",
+   "dimensions": "H. 19 1/8 in. (48.6 cm); Diam. 4 7/8 in. (12.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/9647",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-8",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.8",
+   "title": "Electric Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "ca. 1902–12",
+   "medium": "Glass and bronze",
+   "dimensions": "H. 13 1/2 in. (34.3 cm); Diam. 5 3/4 in. (14.6 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/3525",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1974-214-9",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1974.214.9",
+   "title": "Electric Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "ca. 1902–12",
+   "medium": "Glass and bronze",
+   "dimensions": "H. 10 1/16 in. (25.6 cm); Diam. 4 7/8 in. (12.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/3526",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1986-81-1a-c",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1986.81.1a–c",
+   "title": "Floor Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "1904–15",
+   "medium": "Leaded glass and bronze",
+   "dimensions": "H. 63 in. (160 cm); Diam. 22 in. (55.9 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/3757",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-1990-314-11a-c",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "1990.314.11a–c",
+   "title": "Candle Shade and Support",
+   "kind": "candle lamp",
+   "pattern": null,
+   "date": "ca. 1905–20",
+   "medium": "Bronze, silk, glass",
+   "dimensions": "3 3/8 x 6 1/4 x 5/8 in. (8.6 x 15.9 x 1.6 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/13514",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-2007-49-98a-b",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "2007.49.98a, b",
+   "title": "Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "ca. 1902–18",
+   "medium": "Lead and glass",
+   "dimensions": "26 3/4 × 20 1/2 in., 22 lb. (67.9 × 52.1 cm, 10 kg)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/19433",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-2011-99-1",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "2011.99.1",
+   "title": "\"Lotus, Pagoda\" lamp",
+   "kind": "lamp with shade",
+   "pattern": "Lotus, Pagoda",
+   "date": "ca. 1900–15",
+   "medium": "Leaded Favrile glass and patinated bronze",
+   "dimensions": "31 1/2 in. (80 cm)\r\nBody diameter: 26 3/8 in. (67 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/20634",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-2011-99-2",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "2011.99.2",
+   "title": "Table lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "ca. 1895–98",
+   "medium": "Leaded Favrile glass and patinated bronze",
+   "dimensions": "21 1/8 in. (53.7 cm)\r\nBody diameter: 18 1/4 in. (46.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/20633",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/met-2011-99-2.jpg",
+   "thumb": "marks/img/tiffany/lamps/met-2011-99-2.jpg",
+   "credit": "The Metropolitan Museum of Art, 2011.99.2, open access (CC0)"
+  },
+  {
+   "id": "met-2011-99-3",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "2011.99.3",
+   "title": "\"Tulip\" lamp",
+   "kind": "lamp with shade",
+   "pattern": "Tulip",
+   "date": "1907–12",
+   "medium": "Leaded Favrile glass and patinated bronze with a reticulated blown glass base",
+   "dimensions": "Body diameter: 14 in. (35.6 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/20631",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-2018-579a-c",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "2018.579a–c",
+   "title": "\"Daffodil\" lamp",
+   "kind": "lamp with shade",
+   "pattern": "Daffodil",
+   "date": "ca. 1904–10",
+   "medium": "Leaded opalescent glass and gilt bronze",
+   "dimensions": "Height: 26 3/4 in. (67.9 cm)\r\nDiameter of shade: 20 1/4 in. (51.4 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/811029",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-69-150",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "69.150",
+   "title": "Chandelier",
+   "kind": "chandelier",
+   "pattern": null,
+   "date": "ca. 1899",
+   "medium": "Blown glass",
+   "dimensions": "H. 14 7/8 in. (37.8 cm); Diam. 26 1/4 in. (66.7 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/1974",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "met-96-17-56a-b",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": "96.17.56a, b",
+   "title": "Lamp Shade (?)",
+   "kind": "shade",
+   "pattern": null,
+   "date": "1893–96",
+   "medium": "Favrile glass",
+   "dimensions": "H. 14 1/4 in. (36.2 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://www.metmuseum.org/art/collection/search/4732",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/met-96-17-56a-b.jpg",
+   "thumb": "marks/img/tiffany/lamps/met-96-17-56a-b.jpg",
+   "credit": "The Metropolitan Museum of Art, 96.17.56a, b, open access (CC0)"
+  },
+  {
+   "id": "mia-68-39",
+   "museum": "Minneapolis Institute of Art",
+   "accession": "68.39",
+   "title": "Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "19th century",
+   "medium": "Gilt bronze",
+   "dimensions": "34 x 20 x 20 in. (86.36 x 50.8 x 50.8 cm) (including shade)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://collections.artsmia.org/art/19329",
+   "licence": "CC0",
+   "image": null,
+   "thumb": null,
+   "credit": null
+  },
+  {
+   "id": "mia-76-9a-b",
+   "museum": "Minneapolis Institute of Art",
+   "accession": "76.9a, b",
+   "title": "Lamp",
+   "kind": "lamp with shade",
+   "pattern": null,
+   "date": "late 19th–early 20th century",
+   "medium": "Opalescent glass",
+   "dimensions": "12 in. (30.48 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://collections.artsmia.org/art/2480",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/mia-76-9a-b.jpg",
+   "thumb": "marks/img/tiffany/lamps/mia-76-9a-b.jpg",
+   "credit": "Minneapolis Institute of Art, 76.9a, b, open access (CC0)"
+  },
+  {
+   "id": "mia-98-276-28a-c",
+   "museum": "Minneapolis Institute of Art",
+   "accession": "98.276.28a-c",
+   "title": "Mandarin (Lotus Leaf) lamp",
+   "kind": "lamp with shade",
+   "pattern": "Mandarin (Lotus Leaf)",
+   "date": "c. 1900–1905",
+   "medium": "Leaded glass, bronze",
+   "dimensions": "31 1/2 x 24 1/2 x 24 1/2 in. (80.01 x 62.23 x 62.23 cm) (at shade)",
+   "marks": "Tag (small and bronze) on the shade: Tiffany Studios New York / Mark, impressed on the underside of the base: (early cross-key monogram) / Impressed on the underside of the base: Tiffany Studios New York 28749",
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": [
+     "28749"
+    ]
+   },
+   "tgdco": false,
+   "url": "https://collections.artsmia.org/art/40443",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/mia-98-276-28a-c.jpg",
+   "thumb": "marks/img/tiffany/lamps/mia-98-276-28a-c.jpg",
+   "credit": "Minneapolis Institute of Art, 98.276.28a-c, open access (CC0)"
+  },
+  {
+   "id": "mia-99-219",
+   "museum": "Minneapolis Institute of Art",
+   "accession": "99.219",
+   "title": "Lily pad lamp",
+   "kind": "lamp with shade",
+   "pattern": "Lily pad",
+   "date": "c. 1905–1910",
+   "medium": "Bronze with favrille glass shades",
+   "dimensions": "19 1/8 x 19 1/8 x 17 in. (48.58 x 48.58 x 43.18 cm)",
+   "marks": null,
+   "shade_no": null,
+   "base_no": null,
+   "stamped": {
+    "shade": [],
+    "base": []
+   },
+   "tgdco": false,
+   "url": "https://collections.artsmia.org/art/5937",
+   "licence": "CC0",
+   "image": "marks/img/tiffany/lamps/mia-99-219.jpg",
+   "thumb": "marks/img/tiffany/lamps/mia-99-219.jpg",
+   "credit": "Minneapolis Institute of Art, 99.219, open access (CC0)"
+  }
+ ]
+}

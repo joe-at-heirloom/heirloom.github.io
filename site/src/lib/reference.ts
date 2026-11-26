@@ -341,13 +341,16 @@ function build(): Area[] {
     {
       key: 'glass', label: 'Art glass', short: 'Art glass', href: '/marks/tiffany-windows/', scope: 'marks',
       families: ['tiffany-windows'],
-      lede: 'Where Tiffany’s windows and mosaics were installed, from the firm’s own lists of 1893, 1897 and 1910, church by church and town by town.',
-      cue: 'A leaded or opalescent glass window, a panel or a mosaic',
+      lede: 'Where Tiffany’s windows and mosaics were installed, from the firm’s own lists, and Tiffany’s lamps and shades by the numbers its catalogues gave them.',
+      cue: 'A leaded glass window, a mosaic, or a leaded glass lamp',
       groups: [
         { label: 'Tiffany windows', links: [
           { href: '/marks/tiffany-windows/', label: 'Tiffany windows', note: 'Every building Tiffany listed, 1893 to 1910' },
         ] },
-        { label: 'By state, most buildings first', fold: true, links: [...tiffanyPlaces()].sort((a, b) => (a.slug === 'outside-the-united-states' ? 1 : b.slug === 'outside-the-united-states' ? -1 : b.sites.length - a.sites.length)).map((p) => ({ href: p.path, label: p.name, note: `${p.sites.length.toLocaleString('en-US')} ${p.sites.length === 1 ? 'building' : 'buildings'}` })) },
+        { label: 'Tiffany lamps', links: [
+          { href: '/marks/tiffany-lamps', label: 'Tiffany lamps and shades', note: 'Every shade and base number in Tiffany’s catalogues' },
+        ] },
+        { label: 'Windows by state', fold: true, links: [...tiffanyPlaces()].sort((a, b) => (a.slug === 'outside-the-united-states' ? 1 : b.slug === 'outside-the-united-states' ? -1 : b.sites.length - a.sites.length)).map((p) => ({ href: p.path, label: p.name, note: `${p.sites.length.toLocaleString('en-US')} ${p.sites.length === 1 ? 'building' : 'buildings'}` })) },
       ],
     },
     {
