@@ -1681,6 +1681,16 @@
      "credit": "Tiffany Bronze Lamps (ca. 1915), page 14; Met Libraries, public domain",
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1910/zodiac-537.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Zodiac",
+     "lamp": "537",
+     "credit": "Desk Sets and Useful Articles (1910), page 24; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1199"
     }
    ],
    "example": null,
@@ -2734,7 +2744,18 @@
    "description": null,
    "size": null,
    "shape": null,
-   "photos": [],
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1910/abalone-604.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Abalone",
+     "lamp": "604",
+     "credit": "Desk Sets and Useful Articles (1910), page 2; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1177"
+    }
+   ],
    "example": null,
    "see_at": [
     {
@@ -2745,7 +2766,7 @@
      "exact": true,
      "sold": "2012",
      "holder_kind": "auction",
-     "blur": "marks/img/tiffany/lamps/blur/shade-1928-426f3dbf.jpg"
+     "blur": null
     },
     {
      "kind": "mark",
@@ -2928,20 +2949,19 @@
    "description": null,
    "size": null,
    "shape": null,
-   "photos": [],
-   "example": {
-    "file": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tiffany_studios%2C_lampada_tappezzeria_piegata%2C_1910-15_ca.jpg/960px-Tiffany_studios%2C_lampada_tappezzeria_piegata%2C_1910-15_ca.jpg",
-    "kind": "example",
-    "exact": false,
-    "design": "Linenfold / Favrile-fabrique",
-    "inferred": true,
-    "title": "Tiffany studios, lampada tappezzeria piegata, 1910-15 ca.jpg",
-    "museum": "Cleveland Museum of Art",
-    "credit": "Sailko, CC BY 3.0, via Wikimedia Commons",
-    "licence": "CC BY 3.0",
-    "licence_url": "https://creativecommons.org/licenses/by/3.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Tiffany_studios,_lampada_tappezzeria_piegata,_1910-15_ca.jpg"
-   },
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1910/graduate-558.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Graduate",
+     "lamp": "558",
+     "credit": "Desk Sets and Useful Articles (1910), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1189"
+    }
+   ],
+   "example": null,
    "see_at": []
   },
   {
@@ -4104,7 +4124,28 @@
    "description": "Ninth Century desk set: Lamp and Shade, gold only",
    "size": null,
    "shape": null,
-   "photos": [],
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1910/ninth-century-515.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Ninth Century",
+     "lamp": "515",
+     "credit": "Desk Sets and Useful Articles (1910), page 20; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1195"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1910/venetian-515.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Venetian",
+     "lamp": "515",
+     "credit": "Desk Sets and Useful Articles (1910), page 22; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1197"
+    }
+   ],
    "see_at": [
     {
      "kind": "mark",
@@ -4114,7 +4155,7 @@
      "exact": true,
      "sold": "2022",
      "holder_kind": "auction",
-     "blur": "marks/img/tiffany/lamps/blur/base-515-72846dc1.jpg"
+     "blur": null
     },
     {
      "kind": "mark",
@@ -4397,7 +4438,18 @@
    "description": "Zodiac desk set: Lamp",
    "size": null,
    "shape": null,
-   "photos": [],
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1910/zodiac-537.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Zodiac",
+     "lamp": "537",
+     "credit": "Desk Sets and Useful Articles (1910), page 24; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1199"
+    }
+   ],
    "see_at": [
     {
      "kind": "mark",
@@ -4407,7 +4459,7 @@
      "exact": true,
      "sold": null,
      "holder_kind": "auction",
-     "blur": "marks/img/tiffany/lamps/blur/base-537-e25504bd.jpg"
+     "blur": null
     },
     {
      "kind": "mark",
@@ -4441,7 +4493,18 @@
    "description": "Louis XVI desk set: Lamp, shade extra",
    "size": null,
    "shape": null,
-   "photos": [],
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1910/louis-xvi-538.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Louis XVI",
+     "lamp": "538",
+     "credit": "Desk Sets and Useful Articles (1910), page 16; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1191"
+    }
+   ],
    "see_at": []
   },
   {
@@ -4679,7 +4742,18 @@
    "description": "Graduate desk set: Lamp",
    "size": null,
    "shape": null,
-   "photos": [],
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1910/graduate-558.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Graduate",
+     "lamp": "558",
+     "credit": "Desk Sets and Useful Articles (1910), page 14; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1189"
+    }
+   ],
    "see_at": []
   },
   {
@@ -4995,6 +5069,16 @@
      "credit": "Tiffany Bronze Lamps (ca. 1915), page 10; Met Libraries, public domain",
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
+    },
+    {
+     "file": "marks/img/tiffany/lamps/1910/abalone-604.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Abalone",
+     "lamp": "604",
+     "credit": "Desk Sets and Useful Articles (1910), page 2; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1177"
     }
    ],
    "see_at": []
@@ -5087,7 +5171,18 @@
    "description": "Nautical desk set: Lamp",
    "size": null,
    "shape": null,
-   "photos": [],
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/1910/nautical-612.jpg",
+     "kind": "catalogue",
+     "year": 1910,
+     "set": "Nautical",
+     "lamp": "612",
+     "credit": "Desk Sets and Useful Articles (1910), page 18; Met Libraries, public domain",
+     "licence": "public domain",
+     "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1193"
+    }
+   ],
    "see_at": []
   },
   {

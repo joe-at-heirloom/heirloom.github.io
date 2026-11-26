@@ -11,7 +11,7 @@ export type Entry = {
   height?: string | null; complete?: number | null; on_base?: string | null; with_shade?: string | null; shade_size?: number | null;
   shade_as_printed?: string | null; shade_price?: number | null; shape?: string | null; desk_set?: string | null; base_as_printed?: string | null;
 };
-export type Photo = { file: string; kind: 'catalogue' | 'museum' | 'example'; credit: string | null; licence: string | null; licence_url?: string | null; url: string | null; lamp?: string; title?: string; museum?: string | null; design?: string; exact?: boolean; sibling?: string; inferred?: boolean };
+export type Photo = { file: string; kind: 'catalogue' | 'museum' | 'example'; credit: string | null; licence: string | null; licence_url?: string | null; url: string | null; lamp?: string; title?: string; museum?: string | null; design?: string; exact?: boolean; sibling?: string; inferred?: boolean; year?: number; set?: string };
 /** A page elsewhere that shows this number (exact) or its design: linked, never copied. `blur` is a 10-pixel tile of its photo. */
 export type SeeOn = { kind: 'mark' | 'item'; url: string; holder: string; what: string; exact: boolean; sold: string | null; holder_kind: string | null; blur: string | null };
 export type Model = { id: string; no: string; kind: 'shade' | 'base'; anchor: string; entries: Entry[]; design: string | null; size: number | null; shape: string | null; museum: string[]; pic: string | null; photos: Photo[]; example: Photo | null; seeOn: SeeOn[] };
@@ -70,7 +70,11 @@ export function cardPhoto(m: Model): { file: string; caption: string; credit: st
   const p = m.photos[0];
   if (p?.kind === 'museum') return { file: p.file, caption: `This number at the ${p.museum}`, credit: null, url: p.url };
   if (p?.kind === 'example') return { file: p.file, caption: `This number${p.museum ? `, ${p.museum}` : ''}`, credit: p.credit, url: p.url };
-  if (p?.kind === 'catalogue') return { file: p.file, caption: m.kind === 'shade' ? `As pictured in 1915, on lamp No. ${p.lamp}` : 'As pictured in 1915', credit: null, url: p.url };
+  // the 1915 catalogue (lamps one by one) or the 1910 Desk Sets (each set's lamp, cut from the set's photograph)
+  if (p?.kind === 'catalogue') {
+    const where = p.year === 1910 ? `As pictured in 1910, in the ${p.set} desk set` : 'As pictured in 1915';
+    return { file: p.file, caption: m.kind === 'shade' ? `${where}, on lamp No. ${p.lamp}` : where, credit: null, url: p.url };
+  }
   const e = m.example;
   if (e?.sibling) return { file: e.file, caption: `Not this number: No. ${e.sibling}, the same design, as pictured in 1915`, credit: null, url: e.url };
   if (e?.inferred) return { file: e.file, caption: `Not this number: a Tiffany shade of this kind${e.museum ? `, ${e.museum}` : ''}`, credit: /Wikimedia Commons/.test(e.credit ?? '') ? e.credit : null, url: e.url };
