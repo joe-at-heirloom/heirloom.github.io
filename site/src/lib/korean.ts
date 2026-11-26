@@ -9,7 +9,7 @@ import { collection, type Rec } from './portal';
 import { soften } from './site';
 import koreanTable from '../data/app/korean.json';
 
-export type Photo = { file: string; label: string; caption: string; credit: string; url: string | null; view: string | null; visible: string | null };
+export type Photo = { file: string; label: string; caption: string; credit: string; url: string | null; view: string | null; visible: string | null; status: string };
 export type Fact = { text: string; sources: string[]; single: boolean };
 export type Insc = {
   id: string; slug: string; group: string; kind: string; chars: string; variants: string[]; hangul: string | null; rr: string; mr: string | null;
@@ -62,7 +62,7 @@ export function inscriptions(): Insc[] {
         .filter((k) => k.image_id && img.has(k.image_id))
         .map((k) => {
           const i = img.get(k.image_id!)!;
-          return { file: i.file, label: k.name, caption: soften(k.summary ?? ''), credit: i.credit ?? '', url: i.source_url ?? null, view: k.attributes.view ?? null, visible: k.attributes.inscription_visible ?? null };
+          return { file: i.file, label: k.name, caption: soften(k.summary ?? ''), credit: i.credit ?? '', url: i.source_url ?? null, view: k.attributes.view ?? null, visible: k.attributes.inscription_visible ?? null, status: i.status ?? 'photo' };
         })
         .sort((x, y) => (x.visible === 'yes' ? 0 : 1) - (y.visible === 'yes' ? 0 : 1));
       const chars = String(a.chars ?? '');

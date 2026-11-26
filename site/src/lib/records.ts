@@ -332,7 +332,7 @@ export function koSheet(m: Insc): Sheet {
       ['What it tells you', clean(m.tells)],
     ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ: [], caution: clean(m.cautions),
-    pics: [...shows, ...rest].map((p) => ({ file: media(p.file), status: 'photo', credit: p.credit, url: p.url, alt: p.caption || p.label })), seeAt: seeAtOf(m.id),
+    pics: [...shows, ...rest].map((p) => ({ file: media(p.file), status: p.status ?? 'photo', credit: p.credit, url: p.url, alt: p.caption || p.label })), seeAt: seeAtOf(m.id),
     sources: m.sources.map((s) => ({ citation: s.citation, url: s.url, where: null })), single: m.singleSource,
     keys: keysOf(m.keys, m.chars, m.variants, m.hangul, m.rr, m.mr, m.meaning, m.maker, m.place),
   };
