@@ -70558,14 +70558,14 @@
      "name": "Medallion and corners",
      "kind": "layout",
      "other_names": [
-      "Medallion",
-      "Central medallion",
-      "Medallion-and-corner design",
-      "Lachak-toranj",
-      "Toranj",
-      "Corner pieces",
-      "Spandrels",
-      "Lachakturunj (Azerbaijani museum spelling)"
+      "medallion",
+      "central medallion",
+      "medallion-and-corner design",
+      "lachak-toranj",
+      "toranj",
+      "corner pieces",
+      "spandrels",
+      "Lachakturunj"
      ],
      "native": [
       {
@@ -70583,7 +70583,7 @@
       {
        "lang": "fa",
        "text": "لچک",
-       "translit": "lachak (the corner piece)",
+       "translit": "lachak",
        "source": "goljaam_206"
       },
       {
@@ -70792,11 +70792,11 @@
      "name": "Pole medallion and medallion rows",
      "kind": "layout",
      "other_names": [
-      "Pole medallion",
-      "Medallion row",
-      "Multiple medallions",
-      "Chain medallion",
-      "Column of medallions"
+      "pole medallion",
+      "medallion row",
+      "multiple medallions",
+      "chain medallion",
+      "column of medallions"
      ],
      "native": [],
      "literal": null,
@@ -70887,26 +70887,26 @@
      "name": "Prayer niche (mihrab)",
      "kind": "layout",
      "other_names": [
-      "Prayer niche",
-      "Mihrab",
-      "Niche",
-      "Prayer arch",
-      "Prayer rug design",
-      "Stepped mihrab",
-      "Double niche",
-      "Triple arch",
-      "Cross panel",
-      "Lamp",
-      "Mosque lamp",
-      "Namazlık",
-      "Seccade",
-      "Jaynamaz"
+      "prayer niche",
+      "mihrab",
+      "niche",
+      "prayer arch",
+      "prayer rug design",
+      "stepped mihrab",
+      "double niche",
+      "triple arch",
+      "cross panel",
+      "lamp",
+      "mosque lamp",
+      "namazlık",
+      "seccade",
+      "jaynamaz"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "محرابی",
-       "translit": "mehrabi (the niche design)",
+       "translit": "mehrabi",
        "source": "egharloo_zavieh_2020"
       },
       {
@@ -70918,6 +70918,7 @@
       {
        "lang": "tr",
        "text": "namazlık / seccade",
+       "translit": null,
        "source": "stone_2013"
       },
       {
@@ -71086,11 +71087,11 @@
      "name": "Saff (row of niches)",
      "kind": "layout",
      "other_names": [
-      "Saff",
-      "Saph",
-      "Family prayer rug",
-      "Multiple-niche prayer rug",
-      "Multi-niche rug"
+      "saff",
+      "saph",
+      "family prayer rug",
+      "multiple-niche prayer rug",
+      "multi-niche rug"
      ],
      "native": [
       {
@@ -71102,6 +71103,7 @@
       {
        "lang": "tr",
        "text": "saf seccade",
+       "translit": null,
        "source": "oyman_2019"
       }
      ],
@@ -71170,14 +71172,14 @@
      "name": "Lattice (trellis)",
      "kind": "field design",
      "other_names": [
-      "Lattice",
-      "Trellis",
-      "Diaper",
-      "Honeycomb",
-      "Lozenge lattice",
-      "Mirror design",
-      "Network",
-      "Bandi"
+      "lattice",
+      "trellis",
+      "diaper",
+      "honeycomb",
+      "lozenge lattice",
+      "mirror design",
+      "network",
+      "bandi"
      ],
      "native": [],
      "literal": null,
@@ -71274,13 +71276,13 @@
      "name": "Garden panel (kheshti)",
      "kind": "field design",
      "other_names": [
-      "Kheshti",
-      "Khesti",
-      "Khishti",
-      "Garden panel",
-      "Panel design",
-      "Compartment design",
-      "Brick design"
+      "kheshti",
+      "khesti",
+      "khishti",
+      "garden panel",
+      "panel design",
+      "compartment design",
+      "brick design"
      ],
      "native": [
       {
@@ -71357,12 +71359,11 @@
      "name": "Garden carpet",
      "kind": "layout",
      "other_names": [
-      "Garden carpet",
-      "Garden design",
-      "Chahar bagh",
-      "Garden compartments",
-      "Water channels",
-      "Baghi"
+      "garden design",
+      "chahar bagh",
+      "garden compartments",
+      "water channels",
+      "baghi"
      ],
      "native": [
       {
@@ -71447,10 +71448,10 @@
      "name": "Open (plain) field",
      "kind": "field design",
      "other_names": [
-      "Open field",
-      "Plain field",
-      "Empty field",
-      "Mirror carpet"
+      "open field",
+      "plain field",
+      "empty field",
+      "mirror carpet"
      ],
      "native": [
       {
@@ -71525,12 +71526,11 @@
      "name": "Stripes",
      "kind": "field design",
      "other_names": [
-      "Stripes",
-      "Stripe",
-      "Diagonal stripes",
-      "Banded design",
-      "Moharramat",
-      "Moharrami"
+      "stripe",
+      "diagonal stripes",
+      "banded design",
+      "moharramat",
+      "moharrami"
      ],
      "native": [
       {
@@ -71617,13 +71617,13 @@
      "name": "Pictorial designs",
      "kind": "field design",
      "other_names": [
-      "Pictorial",
-      "Picture rug",
-      "Figures",
-      "Portrait rug",
+      "pictorial",
+      "picture rug",
+      "figures",
+      "portrait rug",
       "Persepolis design",
-      "Zirkhaki",
-      "Landscape"
+      "zirkhaki",
+      "landscape"
      ],
      "native": [
       {
@@ -71699,13 +71699,13 @@
      "name": "Animals and hunting scenes",
      "kind": "field design",
      "other_names": [
-      "Animal carpet",
-      "Hunting carpet",
-      "Hunting scene",
-      "Animals",
-      "Shekargah",
-      "Animals in combat",
-      "Lion"
+      "animal carpet",
+      "hunting carpet",
+      "hunting scene",
+      "animals",
+      "shekargah",
+      "animals in combat",
+      "lion"
      ],
      "native": [
       {
@@ -71827,11 +71827,11 @@
      "name": "Sampler (vagireh)",
      "kind": "layout",
      "other_names": [
-      "Sampler",
-      "Vagireh",
-      "Wagireh",
-      "Vagiereh",
-      "Vāgīra"
+      "sampler",
+      "vagireh",
+      "wagireh",
+      "vagiereh",
+      "vāgīra"
      ],
      "native": [
       {
@@ -71892,13 +71892,13 @@
      "name": "War rug imagery",
      "kind": "field design",
      "other_names": [
-      "War rug",
-      "War imagery",
-      "Tank",
-      "Helicopter",
+      "war rug",
+      "war imagery",
+      "tank",
+      "helicopter",
       "Kalashnikov",
-      "Map",
-      "War aksi"
+      "map",
+      "war aksi"
      ],
      "native": [],
      "literal": null,
@@ -71941,13 +71941,12 @@
      "name": "Herati",
      "kind": "field design",
      "other_names": [
-      "Herati",
       "Herati pattern",
-      "Fish pattern",
-      "Mahi",
-      "Mahi-dar-ham",
+      "fish pattern",
+      "mahi",
+      "mahi-dar-ham",
       "Feraghan design",
-      "Twin fish",
+      "twin fish",
       "Herati border"
      ],
      "native": [
@@ -71972,7 +71971,7 @@
       {
        "lang": "az",
        "text": "Balıq",
-       "translit": "'fish', a Karabakh composition name in the Azerbaijan National Carpet Museum",
+       "translit": "fish', a Karabakh composition name in the Azerbaijan National Carpet Museum",
        "source": "azcarpetmuseum_api"
       }
      ],
@@ -72107,10 +72106,9 @@
      "name": "Mina khani",
      "kind": "field design",
      "other_names": [
-      "Mina khani",
-      "Minakhani",
+      "minakhani",
       "Mina Khani design",
-      "Mina-khani"
+      "mina-khani"
      ],
      "native": [
       {
@@ -72204,9 +72202,8 @@
      "name": "Afshan",
      "kind": "field design",
      "other_names": [
-      "Afshan",
-      "Avshan",
-      "Efshan",
+      "avshan",
+      "efshan",
       "Khila-afshan"
      ],
      "native": [
@@ -72284,18 +72281,18 @@
      "name": "Boteh (paisley)",
      "kind": "field motif",
      "other_names": [
-      "Boteh",
-      "Buta",
-      "Bota",
-      "Botah",
-      "Paisley",
-      "Pear",
-      "Cone",
-      "Palm",
-      "Almond",
-      "Badem",
-      "Mir-i-boteh",
-      "Comet motif",
+      "boteh",
+      "buta",
+      "bota",
+      "botah",
+      "paisley",
+      "pear",
+      "cone",
+      "palm",
+      "almond",
+      "badem",
+      "mir-i-boteh",
+      "comet motif",
       "Khila-buta"
      ],
      "native": [
@@ -72308,18 +72305,19 @@
       {
        "lang": "az",
        "text": "buta",
+       "translit": null,
        "source": "azcarpetmuseum_api"
       },
       {
        "lang": "tr",
        "text": "badem",
-       "translit": "'almond' (Stone's Turkish name)",
+       "translit": "almond",
        "source": "stone_2013"
       },
       {
        "lang": "fa",
        "text": "بته‌ای",
-       "translit": "boteh'i (the boteh design family)",
+       "translit": "boteh'i",
        "source": "egharloo_zavieh_2020"
       }
      ],
@@ -72488,19 +72486,19 @@
     },
     {
      "id": "shah-abbasi",
-     "name": "Shah abbasi (palmette) design",
+     "name": "Shah Abbasi (palmette) design",
      "kind": "field motif",
      "other_names": [
-      "Shah abbasi",
+      "shah abbasi",
       "Shah Abbas design",
-      "Palmette",
-      "Palmettes",
-      "Khatai",
-      "Hatayi",
-      "Gol-e eslimi",
-      "Palmette border",
-      "Angular palmettes",
-      "Dented-quadrilateral 'palmettes'"
+      "palmette",
+      "palmettes",
+      "khatai",
+      "hatayi",
+      "gol-e eslimi",
+      "palmette border",
+      "angular palmettes",
+      "dented-quadrilateral palmettes"
      ],
      "native": [
       {
@@ -72512,7 +72510,7 @@
       {
        "lang": "fa",
        "text": "گل اسلیمی",
-       "translit": "gol-e eslimi (palmette)",
+       "translit": "gol-e eslimi",
        "source": "iranica_carpets_iv"
       },
       {
@@ -72524,6 +72522,7 @@
       {
        "lang": "tr",
        "text": "hatayi",
+       "translit": null,
        "source": "stone_2013"
       },
       {
@@ -72626,11 +72625,11 @@
      "name": "Arabesque (eslimi)",
      "kind": "field motif",
      "other_names": [
-      "Arabesque",
-      "Eslimi",
-      "Islimi",
-      "Rumi",
-      "Split-leaf arabesque",
+      "arabesque",
+      "eslimi",
+      "islimi",
+      "rumi",
+      "split-leaf arabesque",
       "Garrus design",
       "Lotto pattern"
      ],
@@ -72650,6 +72649,7 @@
       {
        "lang": "tr",
        "text": "rumi",
+       "translit": null,
        "source": "stone_2013"
       }
      ],
@@ -72742,12 +72742,12 @@
      "name": "Harshang (crab design)",
      "kind": "field motif",
      "other_names": [
-      "Harshang",
-      "Kharchang",
-      "Crab design",
-      "Flaming palmette",
-      "Crab border",
-      "Kharchangi"
+      "harshang",
+      "kharchang",
+      "crab design",
+      "flaming palmette",
+      "crab border",
+      "kharchangi"
      ],
      "native": [
       {
@@ -72759,7 +72759,7 @@
       {
        "lang": "fa",
        "text": "خرچنگی",
-       "translit": "kharchangi (the design family)",
+       "translit": "kharchangi",
        "source": "egharloo_zavieh_2020"
       }
      ],
@@ -72859,11 +72859,11 @@
      "name": "Gol hennai (henna flower)",
      "kind": "field design",
      "other_names": [
-      "Gol hennai",
-      "Guli hinnai",
-      "Gul hennae",
-      "Gol henna",
-      "Henna flower"
+      "gol hennai",
+      "guli hinnai",
+      "gul hennae",
+      "gol henna",
+      "henna flower"
      ],
      "native": [
       {
@@ -72929,11 +72929,11 @@
      "name": "Gol farang (European rose)",
      "kind": "field design",
      "other_names": [
-      "Gol farang",
-      "Gul farang",
-      "Farangi gul",
-      "Cabbage rose",
-      "Rose",
+      "gol farang",
+      "gul farang",
+      "farangi gul",
+      "cabbage rose",
+      "rose",
       "European rose",
       "Mejidian style",
       "French bouquet",
@@ -73022,16 +73022,16 @@
     },
     {
      "id": "vase",
-     "name": "Vase design (goldani) and zel-e soltan",
+     "name": "Vase design (goldani) and Zel-e Soltan",
      "kind": "field design",
      "other_names": [
-      "Vase",
-      "Vase design",
-      "Vase of flowers",
-      "Goldani",
-      "Zel-e soltan",
-      "Zill-i sultan",
-      "Zil-es-sultan",
+      "vase",
+      "vase design",
+      "vase of flowers",
+      "goldani",
+      "zel-e soltan",
+      "zill-i sultan",
+      "zil-es-sultan",
       "Zell-i Sultan"
      ],
      "native": [
@@ -73136,13 +73136,13 @@
      "name": "Floral sprays and small flowering plants",
      "kind": "field design",
      "other_names": [
-      "Floral spray",
-      "Floral sprays",
-      "Sprig",
-      "Sprigs",
-      "Millefleurs",
-      "Flowering plant rows",
-      "Shrub design",
+      "floral spray",
+      "floral sprays",
+      "sprig",
+      "sprigs",
+      "millefleurs",
+      "flowering plant rows",
+      "shrub design",
       "Sarouk design",
       "American Sarouk design"
      ],
@@ -73247,19 +73247,18 @@
      "name": "Tree of life",
      "kind": "field motif",
      "other_names": [
-      "Tree of life",
-      "Tree",
-      "Trees",
-      "Branch",
-      "Dallı",
-      "Derakhti",
-      "Tree design"
+      "tree",
+      "trees",
+      "branch",
+      "dallı",
+      "derakhti",
+      "tree design"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "درختی",
-       "translit": "derakhti (tree design)",
+       "translit": "derakhti",
        "source": "egharloo_zavieh_2020"
       },
       {
@@ -73271,6 +73270,7 @@
       {
        "lang": "tr",
        "text": "hayat ağacı",
+       "translit": null,
        "source": "oyman_2019"
       }
      ],
@@ -73397,9 +73397,8 @@
      "name": "Cypress",
      "kind": "field motif",
      "other_names": [
-      "Cypress",
-      "Cypress tree",
-      "Conical tree"
+      "cypress tree",
+      "conical tree"
      ],
      "native": [],
      "literal": null,
@@ -73474,11 +73473,11 @@
      "name": "Weeping willow (bid majnun)",
      "kind": "field design",
      "other_names": [
-      "Weeping willow",
-      "Willow",
-      "Bid majnun",
-      "Willow and cypress",
-      "Tereh asshur"
+      "weeping willow",
+      "willow",
+      "bid majnun",
+      "willow and cypress",
+      "tereh asshur"
      ],
      "native": [
       {
@@ -73535,10 +73534,9 @@
      "name": "Pomegranate",
      "kind": "field motif",
      "other_names": [
-      "Pomegranate",
-      "Pomegranate tree",
-      "Pomegranate design",
-      "Liuka baiza"
+      "pomegranate tree",
+      "pomegranate design",
+      "liuka baiza"
      ],
      "native": [
       {
@@ -73633,12 +73631,12 @@
      "name": "Sickle leaf (saz leaf)",
      "kind": "field motif",
      "other_names": [
-      "Sickle leaf",
-      "Lanceolate leaf",
-      "Saz leaf",
-      "Saz",
-      "Large leaf",
-      "Serrated leaf"
+      "sickle leaf",
+      "lanceolate leaf",
+      "saz leaf",
+      "saz",
+      "large leaf",
+      "serrated leaf"
      ],
      "native": [
       {
@@ -73724,10 +73722,9 @@
      "name": "Rosette",
      "kind": "minor motif",
      "other_names": [
-      "Rosette",
-      "Floret",
-      "Roundel",
-      "Rosette border"
+      "floret",
+      "roundel",
+      "rosette border"
      ],
      "native": [],
      "literal": null,
@@ -73801,14 +73798,14 @@
      "name": "Tulip, carnation and other Turkish flowers",
      "kind": "field motif",
      "other_names": [
-      "Tulip",
-      "Carnation",
+      "tulip",
+      "carnation",
       "Rhodian lily",
-      "Carnation border",
+      "carnation border",
       "Ladik tulip",
       "Laleh Abbasi",
-      "Lale",
-      "Vandyke"
+      "lale",
+      "vandyke"
      ],
      "native": [
       {
@@ -73820,7 +73817,7 @@
       {
        "lang": "fa",
        "text": "لاله عباسی",
-       "translit": "laleh abbasi ('Abbasi tulip', a border motif)",
+       "translit": "laleh abbasi",
        "source": "stone_2013"
       }
      ],
@@ -73906,13 +73903,12 @@
      "name": "Birds",
      "kind": "field motif",
      "other_names": [
-      "Bird",
-      "Birds",
-      "Chickens",
-      "Hen design",
-      "Murgi",
-      "Peacock",
-      "Cock"
+      "bird",
+      "chickens",
+      "hen design",
+      "murgi",
+      "peacock",
+      "cock"
      ],
      "native": [
       {
@@ -73924,6 +73920,7 @@
       {
        "lang": "tr",
        "text": "kuş",
+       "translit": null,
        "source": "oyman_2019"
       }
      ],
@@ -74026,21 +74023,20 @@
      "name": "Cloud band",
      "kind": "field motif",
      "other_names": [
-      "Cloud band",
-      "Cloudband",
+      "cloudband",
       "Chinese cloud band",
-      "Tchi",
-      "Chi",
-      "Cloud",
-      "Cloud collar",
-      "Ruyi cloud",
-      "Bulud"
+      "tchi",
+      "chi",
+      "cloud",
+      "cloud collar",
+      "ruyi cloud",
+      "bulud"
      ],
      "native": [
       {
        "lang": "az",
        "text": "Bulud",
-       "translit": "'cloud', a Shusha composition name",
+       "translit": "cloud', a Shusha composition name",
        "source": "azcarpetmuseum_api"
       }
      ],
@@ -74130,35 +74126,35 @@
      "name": "Curvilinear and rectilinear drawing",
      "kind": "field design",
      "other_names": [
-      "Floral",
-      "Geometric",
-      "Curvilinear",
-      "Rectilinear",
-      "Angular floral",
-      "Geometric floral",
-      "Geometric flowers",
-      "Tribal geometric",
-      "Stepped",
-      "Gardan",
-      "Shekasteh"
+      "floral",
+      "geometric",
+      "curvilinear",
+      "rectilinear",
+      "angular floral",
+      "geometric floral",
+      "geometric flowers",
+      "tribal geometric",
+      "stepped",
+      "gardan",
+      "shekasteh"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "گردان",
-       "translit": "gardan ('turning', curvilinear)",
+       "translit": "gardan",
        "source": "egharloo_zavieh_2020"
       },
       {
        "lang": "fa",
        "text": "شکسته",
-       "translit": "shekasteh ('broken', angular)",
+       "translit": "shekasteh",
        "source": "goljaam_206"
       },
       {
        "lang": "fa",
        "text": "هندسی",
-       "translit": "hendesi ('geometric')",
+       "translit": "hendesi",
        "source": "egharloo_zavieh_2020"
       }
      ],
@@ -74300,24 +74296,26 @@
      "name": "Mazarlik (landscape or 'cemetery' design)",
      "kind": "field design",
      "other_names": [
-      "Mazarlik",
-      "Mezarlık",
-      "Cemetery carpet",
-      "Graveyard rug",
-      "Landscape carpet",
-      "Türbelik",
-      "Turbehlik",
-      "Ship carpet"
+      "mazarlik",
+      "mezarlık",
+      "cemetery carpet",
+      "graveyard rug",
+      "landscape carpet",
+      "türbelik",
+      "turbehlik",
+      "ship carpet"
      ],
      "native": [
       {
        "lang": "tr",
        "text": "mezarlık",
+       "translit": null,
        "source": "stone_2013"
       },
       {
        "lang": "tr",
        "text": "türbelik",
+       "translit": null,
        "source": "mumford_1902"
       }
      ],
@@ -74371,10 +74369,9 @@
      "name": "Memling gul",
      "kind": "medallion",
      "other_names": [
-      "Memling gul",
       "Memling göl",
       "Memling motif",
-      "Hooked lozenge (some writers)"
+      "hooked lozenge"
      ],
      "native": [],
      "literal": "Named in the West after the painter Hans Memling, whose paintings show rugs with the motif.",
@@ -74429,14 +74426,14 @@
      "name": "Octagon and other polygons",
      "kind": "medallion",
      "other_names": [
-      "Octagon",
-      "Octagon medallion",
-      "Hexagon",
-      "Hooked hexagon",
-      "Hooked hexagon medallion",
+      "octagon",
+      "octagon medallion",
+      "hexagon",
+      "hooked hexagon",
+      "hooked hexagon medallion",
       "Holbein octagon",
-      "Interlace",
-      "Compartment design (Mamluk)"
+      "interlace",
+      "compartment design"
      ],
      "native": [],
      "literal": null,
@@ -74572,13 +74569,13 @@
      "name": "Diamond (lozenge) medallion",
      "kind": "medallion",
      "other_names": [
-      "Diamond",
-      "Lozenge",
-      "Rhomb",
-      "Diamond medallion",
-      "Hooked diamond",
-      "Latch-hook diamond",
-      "Hooked lozenge",
+      "diamond",
+      "lozenge",
+      "rhomb",
+      "diamond medallion",
+      "hooked diamond",
+      "latch-hook diamond",
+      "hooked lozenge",
       "Qashqai medallion",
       "Joshaghan lozenge"
      ],
@@ -74692,8 +74689,8 @@
      "name": "Sunburst (eagle) medallion",
      "kind": "medallion",
      "other_names": [
-      "Sunburst",
-      "Eagle medallion",
+      "sunburst",
+      "eagle medallion",
       "Eagle Kazak",
       "Sunburst Kazak",
       "Adler Kazak",
@@ -74796,7 +74793,6 @@
      "name": "Lenkoran medallion",
      "kind": "medallion",
      "other_names": [
-      "Lenkoran medallion",
       "Lankaran",
       "Lənkəran"
      ],
@@ -74852,7 +74848,7 @@
      "other_names": [
       "Lori Pambak",
       "Lori-Pambak medallion",
-      "Calyx medallion",
+      "calyx medallion",
       "Kars medallion"
      ],
      "native": [],
@@ -74891,9 +74887,9 @@
      "name": "Shield medallion (Sewan Kazak)",
      "kind": "medallion",
      "other_names": [
-      "Shield",
-      "Shield medallion",
-      "Cruciform medallion",
+      "shield",
+      "shield medallion",
+      "cruciform medallion",
       "Sewan Kazak",
       "Shield Kazak"
      ],
@@ -74955,17 +74951,16 @@
      "name": "Latch hook",
      "kind": "minor motif",
      "other_names": [
-      "Latch hook",
-      "Running latch hook",
-      "Angular hook",
-      "Hook",
-      "Çengel"
+      "running latch hook",
+      "angular hook",
+      "hook",
+      "çengel"
      ],
      "native": [
       {
        "lang": "tr",
        "text": "çengel",
-       "translit": "'hook'",
+       "translit": "hook",
        "source": "balkanal_2019"
       }
      ],
@@ -75087,13 +75082,13 @@
      "name": "Star (eight-pointed star)",
      "kind": "field motif",
      "other_names": [
-      "Star",
-      "Eight-pointed star",
-      "Octagram",
+      "star",
+      "eight-pointed star",
+      "octagram",
       "Star Kazak",
       "Star Ushak",
-      "Rayed star",
-      "Yıldız",
+      "rayed star",
+      "yıldız",
       "Solomon's seal",
       "Mühr-ü Süleyman"
      ],
@@ -75101,13 +75096,13 @@
       {
        "lang": "tr",
        "text": "yıldız",
-       "translit": "'star'",
+       "translit": "star",
        "source": "balkanal_2019"
       },
       {
        "lang": "tr",
        "text": "Mühr-ü Süleyman",
-       "translit": "'seal of Solomon' (a six-pointed star)",
+       "translit": "seal of Solomon",
        "source": "balkanal_2019"
       }
      ],
@@ -75230,7 +75225,6 @@
      "name": "Lesghi star",
      "kind": "field motif",
      "other_names": [
-      "Lesghi star",
       "Lezgi star",
       "Lesghian star"
      ],
@@ -75284,24 +75278,23 @@
      "kind": "minor motif",
      "other_names": [
       "S-motif",
-      "S motif",
       "S-form",
       "Z motif",
       "S-border",
-      "Ajdaha",
+      "ajdaha",
       "S-stem"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "اژدها",
-       "translit": "ajdaha ('dragon')",
+       "translit": "ajdaha",
        "source": "stone_2013"
       },
       {
        "lang": "fa",
        "text": "شاخهٔ مواج",
-       "translit": "shakheh-ye mavvaj ('wavy branch', the floral S-stem)",
+       "translit": "shakheh-ye mavvaj",
        "source": "iranica_carpets_iv"
       }
      ],
@@ -75404,32 +75397,32 @@
      "name": "Ram's horn",
      "kind": "field motif",
      "other_names": [
-      "Ram's horn",
-      "Kochak",
-      "Koçboynuzu",
-      "Koç boynuzu",
-      "Vurma",
-      "Buynuz",
-      "Kochkor muyuz",
-      "Kochanak",
-      "Horn motif"
+      "kochak",
+      "koçboynuzu",
+      "koç boynuzu",
+      "vurma",
+      "buynuz",
+      "kochkor muyuz",
+      "kochanak",
+      "horn motif"
      ],
      "native": [
       {
        "lang": "tr",
        "text": "koçboynuzu",
-       "translit": "'ram's horn'",
+       "translit": "ram's horn",
        "source": "balkanal_2019"
       },
       {
        "lang": "az",
        "text": "buynuz",
-       "translit": "'horn', a Karabakh composition name",
+       "translit": "horn', a Karabakh composition name",
        "source": "azcarpetmuseum_api"
       },
       {
        "lang": "tr",
        "text": "koçak / kochak",
+       "translit": null,
        "source": "stone_2013"
       }
      ],
@@ -75522,9 +75515,8 @@
      "name": "Tarantula",
      "kind": "minor motif",
      "other_names": [
-      "Tarantula",
-      "Tarantula border",
-      "Spider"
+      "tarantula border",
+      "spider"
      ],
      "native": [],
      "literal": null,
@@ -75595,28 +75587,28 @@
      "name": "Scorpion (akrep)",
      "kind": "field motif",
      "other_names": [
-      "Scorpion",
-      "Akrep",
-      "Toplu çengel",
-      "Akrepli"
+      "scorpion",
+      "akrep",
+      "toplu çengel",
+      "akrepli"
      ],
      "native": [
       {
        "lang": "tr",
        "text": "akrep",
-       "translit": "'scorpion'",
+       "translit": "scorpion",
        "source": "balkanal_2019"
       },
       {
        "lang": "tr",
        "text": "toplu çengel",
-       "translit": "'ball with hooks' (Stone)",
+       "translit": "ball with hooks",
        "source": "stone_2013"
       },
       {
        "lang": "tr",
        "text": "akrepli halı",
-       "translit": "'scorpion rug', a Döşemealtı design name",
+       "translit": "scorpion rug', a Döşemealtı design name",
        "source": "balkanal_2019"
       }
      ],
@@ -75685,30 +75677,31 @@
      "name": "Elibelinde (hands on hips)",
      "kind": "field motif",
      "other_names": [
-      "Elibelinde",
-      "Eli belinde",
-      "El bel",
-      "Hands on hips",
-      "Gelin kız",
-      "Ana kız",
-      "Mother goddess motif"
+      "elibelinde",
+      "eli belinde",
+      "el bel",
+      "hands on hips",
+      "gelin kız",
+      "ana kız",
+      "mother goddess motif"
      ],
      "native": [
       {
        "lang": "tr",
        "text": "elibelinde",
-       "translit": "'hands on hips'",
+       "translit": "hands on hips",
        "source": "stone_2013"
       },
       {
        "lang": "tr",
        "text": "eli belinde",
+       "translit": null,
        "source": "balkanal_2019"
       },
       {
        "lang": "tr",
        "text": "gelin kız / ana kız",
-       "translit": "'bride' / 'mother-daughter' (other names)",
+       "translit": "bride' / 'mother-daughter",
        "source": "balkanal_2019"
       }
      ],
@@ -75793,19 +75786,19 @@
      "name": "Swastika (wan)",
      "kind": "minor motif",
      "other_names": [
-      "Swastika",
-      "Wan",
-      "Fylfot",
-      "Pech",
-      "Swastika fret",
-      "Swastika border",
-      "Pinwheel"
+      "swastika",
+      "wan",
+      "fylfot",
+      "pech",
+      "swastika fret",
+      "swastika border",
+      "pinwheel"
      ],
      "native": [
       {
        "lang": "zh",
        "text": "卍字纹",
-       "translit": "wanzi wen ('卍-character pattern')",
+       "translit": "wanzi wen",
        "source": "dpm_ningxia_entries"
       },
       {
@@ -75817,7 +75810,7 @@
       {
        "lang": "tr",
        "text": "pech",
-       "translit": "(Turkish, from Persian; Stone)",
+       "translit": null,
        "source": "stone_2013"
       }
      ],
@@ -75914,20 +75907,20 @@
      "name": "Fret (key pattern)",
      "kind": "border",
      "other_names": [
-      "Fret",
-      "Key fret",
+      "fret",
+      "key fret",
       "Greek key",
-      "Meander",
+      "meander",
       "T-fret",
-      "Thunder pattern",
-      "Leiwen",
+      "thunder pattern",
+      "leiwen",
       "Chinese feet"
      ],
      "native": [
       {
        "lang": "zh",
        "text": "雷纹",
-       "translit": "leiwen ('thunder pattern', Stone)",
+       "translit": "leiwen",
        "source": "stone_2013"
       }
      ],
@@ -76013,16 +76006,15 @@
      "name": "Bat",
      "kind": "minor motif",
      "other_names": [
-      "Bat",
-      "Bats",
-      "Five bats",
-      "Wufu"
+      "bats",
+      "five bats",
+      "wufu"
      ],
      "native": [
       {
        "lang": "zh",
        "text": "五福",
-       "translit": "wufu ('five blessings'; Stone)",
+       "translit": "wufu",
        "source": "stone_2013"
       }
      ],
@@ -76096,10 +76088,10 @@
      "name": "Shou (longevity character)",
      "kind": "medallion",
      "other_names": [
-      "Shou",
-      "Shou character",
-      "Longevity character",
-      "Fu-shou"
+      "shou",
+      "shou character",
+      "longevity character",
+      "fu-shou"
      ],
      "native": [
       {
@@ -76111,7 +76103,7 @@
       {
        "lang": "zh",
        "text": "福寿字",
-       "translit": "fu-shou zi ('fortune and longevity characters')",
+       "translit": "fu-shou zi",
        "source": "sina_panjin_2017"
       }
      ],
@@ -76159,14 +76151,13 @@
      "name": "Dragon",
      "kind": "field motif",
      "other_names": [
-      "Dragon",
-      "Lung",
-      "Long",
-      "Kuilong",
-      "Archaic dragon",
-      "Dragon and phoenix",
+      "lung",
+      "long",
+      "kuilong",
+      "archaic dragon",
+      "dragon and phoenix",
       "Caucasian dragon carpet",
-      "Ajdaha",
+      "ajdaha",
       "Əjdahalı"
      ],
      "native": [
@@ -76179,13 +76170,13 @@
       {
        "lang": "zh",
        "text": "双龙戏珠",
-       "translit": "shuanglong xi zhu ('two dragons playing with a pearl')",
+       "translit": "shuanglong xi zhu",
        "source": "dpm_tukan_2010"
       },
       {
        "lang": "az",
        "text": "Əjdahalı",
-       "translit": "'with dragons', the museum's 17th-century Karabakh carpet",
+       "translit": "with dragons', the museum's 17th-century Karabakh carpet",
        "source": "azcarpetmuseum_api"
       },
       {
@@ -76299,23 +76290,22 @@
      "name": "Lotus",
      "kind": "field motif",
      "other_names": [
-      "Lotus",
-      "Scrolling lotus",
-      "Lotus scroll",
-      "Chanzhi lian",
-      "Goulian"
+      "scrolling lotus",
+      "lotus scroll",
+      "chanzhi lian",
+      "goulian"
      ],
      "native": [
       {
        "lang": "zh",
        "text": "勾莲",
-       "translit": "goulian ('hooked lotus': single flowers joined by hooked lines; Palace Museum glossary)",
+       "translit": "goulian",
        "source": "dpm_ningxia_entries"
       },
       {
        "lang": "zh",
        "text": "串枝莲",
-       "translit": "chuanzhi lian ('lotus on a linked stem')",
+       "translit": "chuanzhi lian",
        "source": "dpm_ningxia_entries"
       }
      ],
@@ -76388,10 +76378,9 @@
      "name": "Peony",
      "kind": "field motif",
      "other_names": [
-      "Peony",
-      "Mudan",
-      "Kani-botan",
-      "Crab peony"
+      "mudan",
+      "kani-botan",
+      "crab peony"
      ],
      "native": [
       {
@@ -76403,7 +76392,7 @@
       {
        "lang": "ja",
        "text": "蟹牡丹",
-       "translit": "kani-botan ('crab peony')",
+       "translit": "kani-botan",
        "source": "kotobank_nichigai"
       }
      ],
@@ -76483,32 +76472,32 @@
      "name": "Scrolling vine",
      "kind": "minor motif",
      "other_names": [
-      "Vine",
-      "Scroll",
-      "Floral scroll",
-      "Scrolling stem",
-      "Meandering vine",
-      "Karakusa",
-      "Chanzhi",
-      "Tak"
+      "vine",
+      "scroll",
+      "floral scroll",
+      "scrolling stem",
+      "meandering vine",
+      "karakusa",
+      "chanzhi",
+      "tak"
      ],
      "native": [
       {
        "lang": "zh",
        "text": "串枝",
-       "translit": "chuanzhi ('linked branches')",
+       "translit": "chuanzhi",
        "source": "dpm_ningxia_entries"
       },
       {
        "lang": "ja",
        "text": "唐草",
-       "translit": "karakusa ('Tang grass')",
+       "translit": "karakusa",
        "source": "kotobank_nichigai"
       },
       {
        "lang": "fa",
        "text": "تاک",
-       "translit": "tak ('vine')",
+       "translit": "tak",
        "source": "iranica_carpets_iv"
       }
      ],
@@ -76600,12 +76589,12 @@
      "name": "Sea waves and mountains",
      "kind": "border",
      "other_names": [
-      "Waves",
-      "Sea waves",
-      "Wave border",
-      "Sacred mountain",
-      "Standing water",
-      "Water motive"
+      "waves",
+      "sea waves",
+      "wave border",
+      "sacred mountain",
+      "standing water",
+      "water motive"
      ],
      "native": [],
      "literal": null,
@@ -76669,34 +76658,34 @@
      "other_names": [
       "Buddhist emblems",
       "Buddhist symbols",
-      "Eight auspicious symbols",
-      "Eight treasures",
-      "Babao",
-      "Endless knot",
-      "Knot of destiny",
-      "Dorje",
-      "Vajra",
-      "Hundred antiques",
-      "Bogu",
-      "Po ku"
+      "eight auspicious symbols",
+      "eight treasures",
+      "babao",
+      "endless knot",
+      "knot of destiny",
+      "dorje",
+      "vajra",
+      "hundred antiques",
+      "bogu",
+      "po ku"
      ],
      "native": [
       {
        "lang": "zh",
        "text": "八宝",
-       "translit": "babao ('eight treasures')",
+       "translit": "babao",
        "source": "dpm_new00060939"
       },
       {
        "lang": "zh",
        "text": "博古",
-       "translit": "bogu ('hundred antiques')",
+       "translit": "bogu",
        "source": "ifeng_wuda_ditan_2021"
       },
       {
        "lang": "bo",
        "text": "rdo rje",
-       "translit": "dorje (Tibetan)",
+       "translit": "dorje",
        "source": "stone_2013"
       }
      ],
@@ -76793,10 +76782,9 @@
      "name": "Tiger stripe",
      "kind": "field design",
      "other_names": [
-      "Tiger stripe",
-      "Tiger pelt",
-      "Tiger skin",
-      "Tiger rug"
+      "tiger pelt",
+      "tiger skin",
+      "tiger rug"
      ],
      "native": [],
      "literal": null,
@@ -76837,10 +76825,9 @@
      "name": "Checkerboard",
      "kind": "field design",
      "other_names": [
-      "Checkerboard",
-      "Checker board",
-      "Chequerboard",
-      "Check border"
+      "checker board",
+      "chequerboard",
+      "check border"
      ],
      "native": [],
      "literal": null,
@@ -76880,10 +76867,10 @@
      "name": "Kufesque border",
      "kind": "border",
      "other_names": [
-      "Kufesque",
-      "Kufic border",
-      "Pseudo-kufic",
-      "Lam-alif border"
+      "kufesque",
+      "kufic border",
+      "pseudo-kufic",
+      "lam-alif border"
      ],
      "native": [],
      "literal": "Kufesque: 'like Kufic', the angular early Arabic script.",
@@ -76963,9 +76950,9 @@
      "name": "Turtle (samovar) border",
      "kind": "border",
      "other_names": [
-      "Turtle border",
-      "Tortoise border",
-      "Samovar border",
+      "turtle border",
+      "tortoise border",
+      "samovar border",
       "Herati border"
      ],
      "native": [],
@@ -77019,11 +77006,11 @@
      "name": "Wine-glass (leaf and calyx) border",
      "kind": "border",
      "other_names": [
-      "Wine-glass border",
-      "Wineglass border",
-      "Leaf and calyx",
-      "Leaf and goblet",
-      "Serrated leaf and wine cup"
+      "wine-glass border",
+      "wineglass border",
+      "leaf and calyx",
+      "leaf and goblet",
+      "serrated leaf and wine cup"
      ],
      "native": [],
      "literal": null,
@@ -77086,25 +77073,25 @@
      "name": "Reciprocal trefoil (laleh abbasi)",
      "kind": "border",
      "other_names": [
-      "Reciprocal trefoil",
-      "Reciprocating trefoil",
-      "Laleh abbasi",
-      "Medakhel",
-      "Madakhel",
-      "Scepter head",
-      "Doorways"
+      "reciprocal trefoil",
+      "reciprocating trefoil",
+      "laleh abbasi",
+      "medakhel",
+      "madakhel",
+      "scepter head",
+      "doorways"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "مداخل",
-       "translit": "madakhel ('doorways')",
+       "translit": "madakhel",
        "source": "iranica_carpets_iv"
       },
       {
        "lang": "fa",
        "text": "لاله عباسی",
-       "translit": "laleh abbasi ('Abbasi tulip')",
+       "translit": "laleh abbasi",
        "source": "stone_2013"
       }
      ],
@@ -77170,9 +77157,9 @@
      "name": "Running dog (wave) border",
      "kind": "border",
      "other_names": [
-      "Running dog",
-      "Running-dog border",
-      "Wave border",
+      "running dog",
+      "running-dog border",
+      "wave border",
       "Seichur border",
       "Seishour border",
       "Vitruvian scroll"
@@ -77225,7 +77212,6 @@
      "name": "Chichi border",
      "kind": "border",
      "other_names": [
-      "Chichi border",
       "Tchichi",
       "Tchetchen border",
       "Sirt Chichi"
@@ -77295,11 +77281,10 @@
      "name": "Barber-pole stripe",
      "kind": "border",
      "other_names": [
-      "Barber-pole stripe",
-      "Barberpole",
-      "Barber pole border",
-      "Diagonal stripe border",
-      "Gyak"
+      "barberpole",
+      "barber pole border",
+      "diagonal stripe border",
+      "gyak"
      ],
      "native": [],
      "literal": null,
@@ -77362,17 +77347,16 @@
      "name": "Cartouche",
      "kind": "border",
      "other_names": [
-      "Cartouche",
-      "Cartouche border",
-      "Ghabi",
-      "Qabi",
-      "Compartment"
+      "cartouche border",
+      "ghabi",
+      "qabi",
+      "compartment"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "قابی",
-       "translit": "ghabi ('framed', the compartment design family)",
+       "translit": "ghabi",
        "source": "egharloo_zavieh_2020"
       }
      ],
@@ -77448,9 +77432,8 @@
      "name": "Broken border",
      "kind": "border",
      "other_names": [
-      "Broken border",
-      "Interrupted border",
-      "Overlapping border"
+      "interrupted border",
+      "overlapping border"
      ],
      "native": [],
      "literal": null,
@@ -78160,8 +78143,8 @@
       "Teke gul",
       "Tekke göl",
       "Teke-göl",
-      "Octagon of the 'Royal Bokhara' (trade)",
-      "'Bokhara' gul (trade)"
+      "octagon of the Royal Bokhara",
+      "Bokhara gul"
      ],
      "native": [
       {
@@ -78366,8 +78349,8 @@
       "Salor göl",
       "Salor gol",
       "Salor gul",
-      "Rose of Salor (old books; also used for the turret gul)",
-      "Salor-gyol"
+      "Rose of Salor",
+      "salor-gyol"
      ],
      "native": [
       {
@@ -78568,9 +78551,9 @@
       "Salor chuval gul",
       "Rose of Salor",
       "Salor gul",
-      "Mar-gol",
-      "Mary gul (Merv gul)",
-      "Keyhole gul"
+      "mar-gol",
+      "mary gul",
+      "keyhole gul"
      ],
      "native": [
       {
@@ -78758,7 +78741,7 @@
      "name": "Saryk gul",
      "other_names": [
       "Sariq gul",
-      "Sary-gyol",
+      "sary-gyol",
       "Saryk göl"
      ],
      "native": [
@@ -78860,11 +78843,11 @@
      "id": "temirchin-gul",
      "name": "Temirchin gul",
      "other_names": [
-      "Temirjin gul",
-      "Temerchin gul",
-      "Temirdzhin gol",
-      "Temirchen gul",
-      "Onurga"
+      "temirjin gul",
+      "temerchin gul",
+      "temirdzhin gol",
+      "temirchen gul",
+      "onurga"
      ],
      "native": [
       {
@@ -78981,13 +78964,13 @@
      "id": "gulli-gul",
      "name": "Gulli gul",
      "other_names": [
-      "Gülli göl",
-      "Gulli gol",
+      "gülli göl",
+      "gulli gol",
       "Ersari gul",
-      "Elephant's foot",
-      "Fil-pai",
-      "Fil-pay",
-      "Afghan gul (trade)"
+      "elephant's foot",
+      "fil-pai",
+      "fil-pay",
+      "Afghan gul"
      ],
      "native": [
       {
@@ -79175,8 +79158,8 @@
      "id": "keyik-gul",
      "name": "Keyik gul",
      "other_names": [
-      "Keyik göl",
-      "Gazelle gul"
+      "keyik göl",
+      "gazelle gul"
      ],
      "native": [
       {
@@ -79232,8 +79215,8 @@
      "id": "kepse-gul",
      "name": "Kepse gul",
      "other_names": [
-      "Kepche gul",
-      "Kepse göl"
+      "kepche gul",
+      "kepse göl"
      ],
      "native": [
       {
@@ -79318,10 +79301,10 @@
      "id": "dyrnak-gul",
      "name": "Dyrnak gul",
      "other_names": [
-      "Dirnak gul",
-      "Claw gul",
-      "Comb gul",
-      "Dyrnak göl"
+      "dirnak gul",
+      "claw gul",
+      "comb gul",
+      "dyrnak göl"
      ],
      "native": [
       {
@@ -79472,13 +79455,13 @@
      "id": "tauk-noska-gul",
      "name": "Tauk noska gul",
      "other_names": [
-      "Tauk nuska",
-      "Tauk nauska",
-      "Tauk-nuska",
-      "Chicken gul",
-      "Hen gul",
+      "tauk nuska",
+      "tauk nauska",
+      "tauk-nuska",
+      "chicken gul",
+      "hen gul",
       "H gul",
-      "Tavak (Tsareva's preferred reading)"
+      "tavak"
      ],
      "native": [
       {
@@ -79682,7 +79665,7 @@
      "id": "c-gul",
      "name": "C gul",
      "other_names": [
-      "Crescent gul"
+      "crescent gul"
      ],
      "native": [],
      "meaning": null,
@@ -79748,11 +79731,11 @@
      "id": "ertmen-gul",
      "name": "Ertmen gul",
      "other_names": [
-      "Ertman gul",
+      "ertman gul",
       "Chodor gul",
-      "Chodor-gyol",
+      "chodor-gyol",
       "Chowdur gul",
-      "Kushly (Amu Darya Chodor name for the composition)"
+      "kushly"
      ],
      "native": [
       {
@@ -79901,9 +79884,9 @@
      "id": "eagle-gul",
      "name": "Eagle gul",
      "other_names": [
-      "Igl-gyol",
-      "Eagle-group gul",
-      "Imreli gul (disputed)"
+      "igl-gyol",
+      "eagle-group gul",
+      "Imreli gul"
      ],
      "native": [
       {
@@ -80023,9 +80006,9 @@
      "id": "gushly-gul",
      "name": "Gushly gul",
      "other_names": [
-      "Guşly göl",
-      "Gush",
-      "Bird gul"
+      "guşly göl",
+      "gush",
+      "bird gul"
      ],
      "native": [
       {
@@ -80083,7 +80066,7 @@
      "id": "yomut-anchor-gul",
      "name": "Yomut gul with anchor figures",
      "other_names": [
-      "Anchor gul (descriptive)"
+      "anchor gul"
      ],
      "native": [
       {
@@ -80166,8 +80149,8 @@
      "id": "chuval-gul",
      "name": "Chuval gul",
      "other_names": [
-      "Chuval göl",
-      "Small chuval guls",
+      "chuval göl",
+      "small chuval guls",
       "Yomut chuval gul"
      ],
      "native": [
@@ -80319,7 +80302,7 @@
      "id": "erre-gul",
      "name": "Erre gul",
      "other_names": [
-      "Erre göl"
+      "erre göl"
      ],
      "native": [],
      "meaning": null,
@@ -80392,9 +80375,9 @@
      "id": "chemche-gul",
      "name": "Chemche gul",
      "other_names": [
-      "Chemche göl",
-      "Ak bashly chemche gul",
-      "Spoon gul"
+      "chemche göl",
+      "ak bashly chemche gul",
+      "spoon gul"
      ],
      "native": [
       {
@@ -80495,10 +80478,10 @@
      "id": "gurbaga-gul",
      "name": "Gurbaga gul",
      "other_names": [
-      "Kurbage gul",
-      "Gorbaghe gul",
-      "Gurbaghe gul",
-      "Frog gul"
+      "kurbage gul",
+      "gorbaghe gul",
+      "gurbaghe gul",
+      "frog gul"
      ],
      "native": [
       {
@@ -80574,8 +80557,8 @@
      "id": "chakmak-gul",
      "name": "Chakmak gul",
      "other_names": [
-      "Çakmak göl",
-      "Flint-steel gul"
+      "çakmak göl",
+      "flint-steel gul"
      ],
      "native": [
       {
@@ -80631,9 +80614,9 @@
      "id": "sagdak",
      "name": "Sagdak",
      "other_names": [
-      "Sagdaq",
-      "Sagdak gul",
-      "Quiver"
+      "sagdaq",
+      "sagdak gul",
+      "quiver"
      ],
      "native": [
       {
@@ -80683,10 +80666,10 @@
      "id": "aina-gul",
      "name": "Aina gul",
      "other_names": [
-      "Mirror gul",
-      "Compartment gul",
-      "Aina gochak",
-      "Aýna göçak"
+      "mirror gul",
+      "compartment gul",
+      "aina gochak",
+      "aýna göçak"
      ],
      "native": [
       {
@@ -80789,8 +80772,8 @@
      "id": "dagdan",
      "name": "Dagdan",
      "other_names": [
-      "Dagdan border",
-      "Dagdan amulet"
+      "dagdan border",
+      "dagdan amulet"
      ],
      "native": [
       {
@@ -80869,8 +80852,8 @@
      "id": "ashik",
      "name": "Ashik design",
      "other_names": [
-      "Ashik gul",
-      "Asmalyk lattice"
+      "ashik gul",
+      "asmalyk lattice"
      ],
      "native": [
       {
@@ -80955,9 +80938,9 @@
      "id": "bird-asmalyk",
      "name": "Bird asmalyk design",
      "other_names": [
-      "Bird asmalyk",
-      "Running birds",
-      "Bustard asmalyk"
+      "bird asmalyk",
+      "running birds",
+      "bustard asmalyk"
      ],
      "native": [
       {
@@ -81047,8 +81030,8 @@
      "id": "darvaza",
      "name": "Darvaza design",
      "other_names": [
-      "Darvaza medallion",
-      "Gate design"
+      "darvaza medallion",
+      "gate design"
      ],
      "native": [
       {
@@ -81145,8 +81128,8 @@
      "id": "kejebelik",
      "name": "Kejebelik (wedding-caravan) design",
      "other_names": [
-      "Kejebe design",
-      "Wedding caravan asmalyk"
+      "kejebe design",
+      "wedding caravan asmalyk"
      ],
      "native": [
       {
@@ -81202,7 +81185,7 @@
      "id": "torba-designs",
      "name": "Torba designs",
      "other_names": [
-      "Bag designs"
+      "bag designs"
      ],
      "native": [
       {
@@ -81288,17 +81271,17 @@
      "id": "ensi-layout",
      "name": "Ensi (hatchli) layout",
      "other_names": [
-      "Hatchli",
-      "Khatchli",
-      "Katchli",
-      "Hatchlu",
+      "hatchli",
+      "khatchli",
+      "katchli",
+      "hatchlu",
       "Khatchlie Bokhara",
       "Hardjli",
-      "Princess Bokhara (trade)",
-      "Engsi",
-      "Purdah",
-      "Pardeh",
-      "Pende khatchli (Saryk variant)"
+      "Princess Bokhara",
+      "engsi",
+      "purdah",
+      "pardeh",
+      "Pende khatchli"
      ],
      "native": [
       {
@@ -82678,35 +82661,35 @@
       "Turkish knot",
       "Ghiordes knot",
       "Gördes knot",
-      "Turkbaff / torkībāf (Persian trade term; Stone, Iranica)",
-      "'double' knot (Leitch's term for the knot as used in China; Turkish 'çift düğüm')",
-      "Closed knot (Turkish 'kapalı düğüm')",
-      "Complete knot (English term cited by Öztürk)",
-      "Symmetrical knot (Kendrick & Tattersall 1922, the earliest use Öztürk found)"
+      "Turkbaff / torkībāf",
+      "double knot",
+      "closed knot",
+      "complete knot",
+      "symmetrical knot"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "گره ترکی",
-       "translit": "gereh-ye torki ('Turkish knot')",
+       "translit": "gereh-ye torki",
        "source": "goljaam_332"
       },
       {
        "lang": "fa",
        "text": "گره متقارن",
-       "translit": "gereh-ye motaqāren ('symmetric knot')",
+       "translit": "gereh-ye motaqāren",
        "source": "daneshnameh_azad_gereh"
       },
       {
        "lang": "fa",
        "text": "ترکی‌باف",
-       "translit": "torki-bāf ('Turkish-woven'; Iranica: torkībāf)",
+       "translit": "torki-bāf",
        "source": "daneshnameh_azad_gereh; iranica_carpets_iii"
       },
       {
        "lang": "tr",
        "text": "Türk düğümü",
-       "translit": "Türk düğümü ('Turkish knot')",
+       "translit": "Türk düğümü",
        "source": "ozturk_2025; turkpatent_ci_canakkale"
       },
       {
@@ -82718,7 +82701,7 @@
       {
        "lang": "tr",
        "text": "çift düğüm / çift bağlama düğüm",
-       "translit": "çift düğüm ('double knot') / çift bağlama düğüm ('double-tie knot')",
+       "translit": "çift düğüm",
        "source": "ozturk_2025; turkpatent_ci_canakkale"
       },
       {
@@ -82730,15 +82713,14 @@
       {
        "lang": "tr",
        "text": "kapalı düğüm",
-       "translit": "kapalı düğüm ('closed knot'; Turkish literature after 1990)",
+       "translit": "kapalı düğüm",
        "source": "ozturk_2025"
       },
       {
        "lang": "ru",
        "text": "двойной узел",
-       "translit": "dvoynoy uzel ('double knot')",
-       "source": "turkmenhaly_2009",
-       "note": "Türkmenhaly names two knots, 'двойной и полуторный' (double and one-and-a-half), and separately codes 'SY' (symmetric) and 'AS' (asymmetric) knots without pairing the words with the codes. 'Double' = symmetric is our reading, by analogy with Cordwell 1979 as cited by Öztürk ('double knot' for the symmetric knot, 'one and a half knot' for the asymmetric)."
+       "translit": "dvoynoy uzel",
+       "source": "turkmenhaly_2009"
       }
      ],
      "how_made": [
@@ -83035,48 +83017,47 @@
      "name": "Asymmetric knot, open to the left",
      "other_names": [
       "Persian knot",
-      "Sehna / Senneh / Senna / Sena knot (Hawley, Lewis, May, Jacobsen; Stone calls the name incorrect)",
-      "Farsibaff / fārsībāf (Persian trade term)",
-      "'single' knot (Leitch, for the knot as used in China)",
-      "'right-hand Sehna knot' in Kendrick & Tattersall's sense (encircled warp on the right as seen by the weaver), which under Heirloom's convention is this knot",
-      "'asimetrik düğüm sol' (Turkish, some publications cited by Öztürk)",
-      "'one and a half knot' (English term cited by Öztürk)"
+      "Sehna / Senneh / Senna / Sena knot",
+      "farsibaff / fārsībāf",
+      "single knot",
+      "asimetrik düğüm sol",
+      "one and a half knot"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "گره فارسی",
-       "translit": "gereh-ye fārsi ('Persian knot')",
+       "translit": "gereh-ye fārsi",
        "source": "goljaam_332"
       },
       {
        "lang": "fa",
        "text": "گره نامتقارن",
-       "translit": "gereh-ye nāmotaqāren ('asymmetric knot')",
+       "translit": "gereh-ye nāmotaqāren",
        "source": "daneshnameh_azad_gereh; babajamali_2020"
       },
       {
        "lang": "fa",
        "text": "فارسی‌باف",
-       "translit": "fārsi-bāf ('Persian-woven'; Iranica: fārsībāf)",
+       "translit": "fārsi-bāf",
        "source": "daneshnameh_azad_gereh; iranica_carpets_iii"
       },
       {
        "lang": "fa",
        "text": "گره تکی",
-       "translit": "gereh-ye taki ('single knot', i.e. tied on two warps, not jufti)",
+       "translit": "gereh-ye taki",
        "source": "babajamali_2020"
       },
       {
        "lang": "tr",
        "text": "İran düğümü",
-       "translit": "İran düğümü ('Persian knot')",
+       "translit": "İran düğümü",
        "source": "ozturk_2025"
       },
       {
        "lang": "tr",
        "text": "Sine düğümü",
-       "translit": "Sine düğümü ('Senneh knot'; Öztürk calls the name wrong)",
+       "translit": "Sine düğümü",
        "source": "ozturk_2025"
       },
       {
@@ -83088,15 +83069,14 @@
       {
        "lang": "tr",
        "text": "tek düğüm / tek bağlama düğüm",
-       "translit": "tek düğüm ('single knot') / tek bağlama düğüm ('single-tie knot')",
+       "translit": "tek düğüm",
        "source": "ozturk_2025"
       },
       {
        "lang": "ru",
        "text": "полуторный узел",
-       "translit": "polutornyy uzel ('one-and-a-half knot')",
-       "source": "turkmenhaly_2009",
-       "note": "Mapping to the asymmetric knot is our reading (see symmetric-knot, Russian note)."
+       "translit": "polutornyy uzel",
+       "source": "turkmenhaly_2009"
       }
      ],
      "how_made": [
@@ -83348,40 +83328,38 @@
      "kind": "pile knot",
      "name": "Asymmetric knot, open to the right",
      "other_names": [
-      "Persian / Sehna / Senneh knot (see asymmetric-knot-open-left)",
-      "'left-hand Sehna knot' in Kendrick & Tattersall's sense (encircled warp on the left as seen by the weaver)",
-      "'right-hand' knot in Hawley's and Leitch's wording, IF they described the front (unsettled)",
-      "'asimetrik düğüm sağ' (Turkish, publications cited by Öztürk)"
+      "Persian / Sehna / Senneh knot",
+      "asimetrik düğüm sağ"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "گره فارسی",
-       "translit": "gereh-ye fārsi ('Persian knot')",
+       "translit": "gereh-ye fārsi",
        "source": "goljaam_332"
       },
       {
        "lang": "fa",
        "text": "گره نامتقارن",
-       "translit": "gereh-ye nāmotaqāren ('asymmetric knot')",
+       "translit": "gereh-ye nāmotaqāren",
        "source": "daneshnameh_azad_gereh; babajamali_2020"
       },
       {
        "lang": "fa",
        "text": "فارسی‌باف",
-       "translit": "fārsi-bāf ('Persian-woven'; Iranica: fārsībāf)",
+       "translit": "fārsi-bāf",
        "source": "daneshnameh_azad_gereh; iranica_carpets_iii"
       },
       {
        "lang": "tr",
        "text": "İran düğümü",
-       "translit": "İran düğümü ('Persian knot')",
+       "translit": "İran düğümü",
        "source": "ozturk_2025"
       },
       {
        "lang": "tr",
        "text": "Sine düğümü",
-       "translit": "Sine düğümü ('Senneh knot'; Öztürk calls the name wrong)",
+       "translit": "Sine düğümü",
        "source": "ozturk_2025"
       },
       {
@@ -83533,22 +83511,22 @@
      "name": "Jufti knot, symmetric form (symmetric knot on four warps)",
      "other_names": [
       "Turkish jufti",
-      "False knot",
-      "Double knot (Stone; not to be confused with 'double knot' = symmetric knot)",
-      "Doutakapi, Langari knot",
-      "Jofti / joftī (Persian, 'paired, doubled')"
+      "false knot",
+      "double knot",
+      "doutakapi, Langari knot",
+      "jofti / joftī"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "جفتی",
-       "translit": "joftī ('paired, doubled')",
+       "translit": "joftī",
        "source": "iranica_carpets_iii; daneshnameh_azad_gereh; babajamali_2020"
       },
       {
        "lang": "fa",
        "text": "جفتی‌بافی",
-       "translit": "joftī-bāfī ('jofti weaving')",
+       "translit": "joftī-bāfī",
        "source": "babajamali_2020"
       }
      ],
@@ -83733,9 +83711,9 @@
      "name": "Jufti knot, asymmetric form (asymmetric knot on four warps)",
      "other_names": [
       "Persian jufti",
-      "False knot",
-      "Jofti (Persian)",
-      "Khurasan jufti (Stone: asymmetric and open to the left)"
+      "false knot",
+      "jofti",
+      "Khurasan jufti"
      ],
      "native": [
       {
@@ -83815,23 +83793,22 @@
      "name": "Single-warp knot (Spanish knot)",
      "other_names": [
       "Spanish knot",
-      "Single-warp knot",
-      "İspanyol düğümü / tek çözgüye düğüm (Turkish)",
-      "Single-warp symmetrical knot (Commons caption)"
+      "single-warp knot",
+      "İspanyol düğümü / tek çözgüye düğüm",
+      "single-warp symmetrical knot"
      ],
      "native": [
       {
        "lang": "tr",
        "text": "İspanyol düğümü / tek çözgüye düğüm",
-       "translit": "İspanyol düğümü ('Spanish knot') / tek çözgüye düğüm ('knot on a single warp')",
+       "translit": "İspanyol düğümü",
        "source": "ozturk_2025"
       },
       {
        "lang": "fa",
        "text": "گره تک‌تاری",
-       "translit": "gereh-ye tak-tāri ('single-warp knot')",
-       "source": "daneshnameh_azad_gereh",
-       "note": "Seen only in a search-result summary of the page, not verbatim; treat as unconfirmed."
+       "translit": "gereh-ye tak-tāri",
+       "source": "daneshnameh_azad_gereh"
       }
      ],
      "how_made": [
@@ -83930,29 +83907,28 @@
      "name": "Tibetan technique (yarn looped over a rod and cut)",
      "other_names": [
       "Tibetan knot",
-      "Tibetan loop (rugs_current.json value)",
-      "Rod-knot technique (Chinese 穿杆结扣)",
-      "Weft wrapping with cut loops"
+      "Tibetan loop",
+      "rod-knot technique",
+      "weft wrapping with cut loops"
      ],
      "native": [
       {
        "lang": "zh",
        "text": "穿杆式连环八字扣",
-       "translit": "chuāngān shì liánhuán bāzì kòu ('rod-threaded linked figure-8 knot')",
+       "translit": "chuāngān shì liánhuán bāzì kòu",
        "source": "xinhua_2025_gyantse"
       },
       {
        "lang": "zh",
        "text": "卡垫",
-       "translit": "kǎdiàn (the rug: Chinese rendering of Tibetan khaden)",
+       "translit": "kǎdiàn",
        "source": "xinhua_2025_gyantse"
       },
       {
        "lang": "bo",
        "text": "ཁ་གདན་",
-       "translit": "kha gdan (khaden)",
-       "source": "stone_2013",
-       "note": "Tibetan script for the rug name as recorded in rugs_current.json (tibetan-khaden row); no Tibetan-language name for the knotting technique was found."
+       "translit": "kha gdan",
+       "source": "stone_2013"
       }
      ],
      "how_made": [
@@ -84037,10 +84013,10 @@
      "kind": "pile knot",
      "name": "Offset knots (knots shifted by one warp in alternate rows)",
      "other_names": [
-      "Staggered knots",
-      "Diagonal knotting",
-      "Half-brick knotting (after Kendrick)",
-      "Packing knots (Stone, when no weft separates the rows)"
+      "staggered knots",
+      "diagonal knotting",
+      "half-brick knotting",
+      "packing knots"
      ],
      "native": [],
      "how_made": [
@@ -84190,10 +84166,9 @@
      "kind": "tufted",
      "name": "Hand-tufted pile (tufting gun, latex and backing cloth)",
      "other_names": [
-      "Tufted rug",
-      "Gun-tufted",
-      "Machine-tufted (the factory form, with rows of needles)",
-      "NOTE: before about the 1920s 'hand-tufted' was also used in English for hand-KNOTTED carpets"
+      "tufted rug",
+      "gun-tufted",
+      "machine-tufted"
      ],
      "native": [],
      "how_made": [
@@ -84271,8 +84246,8 @@
      "kind": "tufted",
      "name": "Hooked rug (loops pulled through a cloth)",
      "other_names": [
-      "Rag rug",
-      "Draw-in rug",
+      "rag rug",
+      "draw-in rug",
       "New England hooked rug"
      ],
      "native": [],
@@ -84348,9 +84323,9 @@
      "name": "Wilton and Brussels (power-loomed, pile yarns as extra warps over wires)",
      "other_names": [
       "Wilton",
-      "Brussels (uncut loops)",
-      "Worsted Wilton",
-      "Woollen Wilton",
+      "Brussels",
+      "worsted Wilton",
+      "woollen Wilton",
       "Jacquard Wilton"
      ],
      "native": [],
@@ -84421,12 +84396,11 @@
      "kind": "machine pile",
      "name": "Axminster (power-loomed, tufts inserted row by row)",
      "other_names": [
-      "Spool Axminster",
-      "Gripper Axminster",
-      "Seamless Axminster",
-      "Moquette",
-      "Royal / Imperial Axminster (British qualities, Brinton)",
-      "(historic) hand-knotted Axminster carpets of Axminster and Wilton, England"
+      "spool Axminster",
+      "gripper Axminster",
+      "seamless Axminster",
+      "moquette",
+      "Royal / Imperial Axminster"
      ],
      "native": [],
      "how_made": [
@@ -84480,8 +84454,8 @@
      "kind": "machine pile",
      "name": "Chenille Axminster (pile woven in as ready-made 'fur' wefts)",
      "other_names": [
-      "Chenille carpet",
-      "Chenille rug"
+      "chenille carpet",
+      "chenille rug"
      ],
      "native": [],
      "how_made": [
@@ -84524,9 +84498,9 @@
      "kind": "machine pile",
      "name": "Tapestry carpet (pile yarn printed before weaving)",
      "other_names": [
-      "Tapestry Brussels",
-      "Printed-warp carpet",
-      "Velvet (cut version)"
+      "tapestry Brussels",
+      "printed-warp carpet",
+      "velvet"
      ],
      "native": [],
      "how_made": [
@@ -84564,10 +84538,10 @@
      "kind": "machine pile",
      "name": "Modern power-loomed 'oriental design' rug",
      "other_names": [
-      "Machine-made rug",
+      "machine-made rug",
       "Belgian rug",
-      "'Oriental design' rug (US trade)",
-      "Heat-set polypropylene (olefin) rug"
+      "Oriental design rug",
+      "heat-set polypropylene rug"
      ],
      "native": [],
      "how_made": [
@@ -84621,11 +84595,11 @@
      "kind": "flatweave",
      "name": "Slit tapestry (slit-woven kilim)",
      "other_names": [
-      "Kilim",
-      "Gelim",
-      "Slit weave",
-      "Slit kilim",
-      "Ilikli kilim (Turkish)"
+      "kilim",
+      "gelim",
+      "slit weave",
+      "slit kilim",
+      "ilikli kilim"
      ],
      "native": [
       {
@@ -84643,14 +84617,13 @@
       {
        "lang": "az",
        "text": "kilim / palaz",
-       "translit": "kilim; palaz (Azerbaijani word for flat-woven floor covers in general)",
-       "source": "selcuk_2015",
-       "note": "Given by Selçuk in Turkish spelling."
+       "translit": "kilim; palaz",
+       "source": "selcuk_2015"
       },
       {
        "lang": "tr",
        "text": "ilikli kilim; ilik",
-       "translit": "ilikli kilim ('kilim with slits'); ilik (the slit)",
+       "translit": "ilikli kilim",
        "source": "selcuk_2015"
       }
      ],
@@ -84761,9 +84734,9 @@
      "kind": "flatweave",
      "name": "Dovetailed tapestry (shared warp)",
      "other_names": [
-      "Warp sharing",
-      "Dovetailing",
-      "Shared-warp tapestry"
+      "warp sharing",
+      "dovetailing",
+      "shared-warp tapestry"
      ],
      "native": [
       {
@@ -84839,9 +84812,9 @@
      "kind": "flatweave",
      "name": "Interlocked tapestry (single and double interlocking)",
      "other_names": [
-      "Interlocking wefts",
-      "Single interlock",
-      "Double interlock"
+      "interlocking wefts",
+      "single interlock",
+      "double interlock"
      ],
      "native": [
       {
@@ -84917,10 +84890,10 @@
      "kind": "flatweave",
      "name": "Weft-faced plain weave (plain kilim)",
      "other_names": [
-      "Plain kilim",
-      "Kilim band (at the ends of pile rugs)",
-      "Atkı yüzlü dokuma (Turkish)",
-      "Web"
+      "plain kilim",
+      "kilim band",
+      "atkı yüzlü dokuma",
+      "web"
      ],
      "native": [
       {
@@ -84932,7 +84905,7 @@
       {
        "lang": "tr",
        "text": "atkı yüzlü dokuma",
-       "translit": "atkı yüzlü dokuma ('weft-faced weave')",
+       "translit": "atkı yüzlü dokuma",
        "source": "yildirim_zili"
       }
      ],
@@ -85089,12 +85062,12 @@
      "kind": "flatweave",
      "name": "Soumak, plain (weft wrapping, not countered)",
      "other_names": [
-      "Sumak",
-      "Soumac",
-      "Plain weft wrapping",
-      "Plain sumak",
-      "'Kashmir' (old US trade name for Caucasian soumaks)",
-      "Flat stitch"
+      "sumak",
+      "soumac",
+      "plain weft wrapping",
+      "plain sumak",
+      "Kashmir",
+      "flat stitch"
      ],
      "native": [
       {
@@ -85107,15 +85080,13 @@
        "lang": "az",
        "text": "sumak (Azerbaijani 'sumax')",
        "translit": "sumak",
-       "source": "selcuk_2015",
-       "note": "Selçuk gives the Turkish spelling; the table's soumak row has 'Sumaq / Сумах'."
+       "source": "selcuk_2015"
       },
       {
        "lang": "fa",
        "text": "گلیم‌پیچ",
-       "translit": "gelīm-pīč ('wrapped gelim')",
-       "source": "iran_textbook_arzyabi_bazaryabi",
-       "note": "The textbook lists 'گلیم پیچ' beside 'گلیم کرباس' (plain gelim) in a yarn table; that gelīm-pīč means weft wrapping (soumak) is our reading, not stated there."
+       "translit": "gelīm-pīč",
+       "source": "iran_textbook_arzyabi_bazaryabi"
       }
      ],
      "how_made": [
@@ -85233,10 +85204,10 @@
      "kind": "flatweave",
      "name": "Soumak, countered (herringbone)",
      "other_names": [
-      "Countered weft wrapping",
-      "Countered sumak",
-      "Herringbone soumak",
-      "Balıksırtı sumak (Turkish; seen only in a search summary)"
+      "countered weft wrapping",
+      "countered sumak",
+      "herringbone soumak",
+      "balıksırtı sumak"
      ],
      "native": [
       {
@@ -85249,8 +85220,7 @@
        "lang": "az",
        "text": "sumak (Azerbaijani 'sumax')",
        "translit": "sumak",
-       "source": "selcuk_2015",
-       "note": "Selçuk gives the Turkish spelling; the table's soumak row has 'Sumaq / Сумах'."
+       "source": "selcuk_2015"
       }
      ],
      "how_made": [
@@ -85307,11 +85277,11 @@
      "kind": "flatweave",
      "name": "Cicim (supplementary-weft brocading, overlay-underlay)",
      "other_names": [
-      "Jijim / djidjim (in some usages)",
-      "Brocade",
-      "Overlay-underlay brocading",
-      "Supplementary weft-float patterning",
-      "Cecim (Azerbaijani, per Selçuk)"
+      "jijim / djidjim",
+      "brocade",
+      "overlay-underlay brocading",
+      "supplementary weft-float patterning",
+      "cecim"
      ],
      "native": [
       {
@@ -85323,7 +85293,7 @@
       {
        "lang": "az",
        "text": "cecim",
-       "translit": "cecim (Selçuk's spelling)",
+       "translit": "cecim",
        "source": "selcuk_2015"
       }
      ],
@@ -85420,10 +85390,10 @@
      "kind": "flatweave",
      "name": "Zili / sileh (supplementary-weft float brocade with regular skips)",
      "other_names": [
-      "Sileh, sili, zili",
-      "Zili (Turkish, Azerbaijani)",
-      "Fitilli (Antalya, Turkish)",
-      "Verneh (some usages)"
+      "sileh, sili, zili",
+      "zili",
+      "fitilli",
+      "verneh"
      ],
      "native": [
       {
@@ -85515,22 +85485,21 @@
      "kind": "flatweave",
      "name": "Jajim (warp-faced plain weave)",
      "other_names": [
-      "Jijim, djidjim, dezhidzhim",
-      "Warp-faced plain weave",
-      "Çözgü yüzlü dokuma (Turkish)"
+      "jijim, djidjim, dezhidzhim",
+      "warp-faced plain weave",
+      "çözgü yüzlü dokuma"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "جاجیم",
        "translit": "jājīm",
-       "source": "iranica_carpets_v",
-       "note": "Iranica gives the transliteration jājīm; the Persian script is the standard spelling of that word."
+       "source": "iranica_carpets_v"
       },
       {
        "lang": "tr",
        "text": "çözgü yüzlü dokuma",
-       "translit": "çözgü yüzlü dokuma ('warp-faced weave')",
+       "translit": "çözgü yüzlü dokuma",
        "source": "yildirim_zili"
       }
      ],
@@ -85596,29 +85565,28 @@
      "kind": "foundation",
      "name": "Level warps (both warps of each knot side by side)",
      "other_names": [
-      "Warps on one level",
-      "Flat warps",
-      "No warp offset",
-      "Taḵt (Persian, Iranica)"
+      "warps on one level",
+      "flat warps",
+      "no warp offset",
+      "taḵt"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "تخت",
-       "translit": "taḵt ('flat, level')",
-       "source": "iranica_carpets_iii",
-       "note": "Iranica gives the transliteration; Persian script is the standard spelling."
+       "translit": "taḵt",
+       "source": "iranica_carpets_iii"
       },
       {
        "lang": "fa",
        "text": "تار / چله",
-       "translit": "tār / čella (warp)",
+       "translit": "tār / čella",
        "source": "iranica_carpets_iii; stone_2013"
       },
       {
        "lang": "fa",
        "text": "پود",
-       "translit": "pūd (weft)",
+       "translit": "pūd",
        "source": "iranica_carpets_iii; stone_2013"
       }
      ],
@@ -85775,20 +85743,19 @@
      "kind": "foundation",
      "name": "Partly offset warps (slightly offset, half depressed)",
      "other_names": [
-      "Slightly offset",
-      "Half depressed",
-      "Semi-offset",
-      "Depressed",
+      "slightly offset",
+      "half depressed",
+      "semi-offset",
+      "depressed",
       "45-degree offset",
-      "Nim-lool (Persian, Stone)"
+      "nim-lool"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "نیم‌لول",
-       "translit": "nim-lul ('half offset')",
-       "source": "stone_2013",
-       "note": "Stone gives the transliteration 'nim-lool' (p. 204); the script is the standard spelling."
+       "translit": "nim-lul",
+       "source": "stone_2013"
       }
      ],
      "how_made": [
@@ -85904,24 +85871,24 @@
      "kind": "foundation",
      "name": "Deeply depressed warps (one warp of each knot hidden)",
      "other_names": [
-      "Fully offset",
-      "Completely offset",
-      "Doubled under",
-      "Buried",
-      "Lool, lule; lool-baft (Persian, Stone)",
-      "Closed back (Chinese trade usage, Stone)"
+      "fully offset",
+      "completely offset",
+      "doubled under",
+      "buried",
+      "lool, lule; lool-baft",
+      "closed back"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "لول",
-       "translit": "lul ('offset'; Stone: lool, lule)",
+       "translit": "lul",
        "source": "stone_2013"
       },
       {
        "lang": "fa",
        "text": "لول‌باف",
-       "translit": "lul-bāf ('completely offset'; Stone: lool-baft)",
+       "translit": "lul-bāf",
        "source": "stone_2013"
       }
      ],
@@ -86054,9 +86021,9 @@
      "kind": "foundation",
      "name": "One weft between rows of knots (single-wefted)",
      "other_names": [
-      "Single-wefted",
-      "One shoot",
-      "'crosses once'"
+      "single-wefted",
+      "one shoot",
+      "crosses once"
      ],
      "native": [],
      "how_made": [
@@ -86150,18 +86117,17 @@
      "kind": "foundation",
      "name": "Two wefts between rows of knots (double-wefted)",
      "other_names": [
-      "Double-wefted",
-      "Two shoots",
-      "'crosses twice'",
-      "Across and back once"
+      "double-wefted",
+      "two shoots",
+      "crosses twice",
+      "across and back once"
      ],
      "native": [
       {
        "lang": "tr",
        "text": "süzme atkı, basma atkı",
-       "translit": "süzme ('strained', the slack weft) and basma ('pressed') weft",
-       "source": "turkpatent_ci_dosemealti",
-       "note": "The Döşemealtı registration names the two wefts put in after each knot row; which is taut and which slack is our reading of the names."
+       "translit": "süzme",
+       "source": "turkpatent_ci_dosemealti"
       }
      ],
      "how_made": [
@@ -86351,9 +86317,9 @@
      "kind": "foundation",
      "name": "Three (or more) wefts between rows of knots",
      "other_names": [
-      "Triple-wefted",
-      "'crosses three times'",
-      "Vase technique (for one Safavid structure)"
+      "triple-wefted",
+      "crosses three times",
+      "vase technique"
      ],
      "native": [],
      "how_made": [
@@ -86458,23 +86424,22 @@
      "kind": "side",
      "name": "Overcast side (single cord wrapped by the weft)",
      "other_names": [
-      "Weft overcasting",
-      "Overcast edge",
-      "Whip stitch (Stone's drawing label)",
-      "Shirazeh (Persian: the wrapped edge; see shirazeh)"
+      "weft overcasting",
+      "overcast edge",
+      "whip stitch",
+      "shirazeh"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "سردوزی",
-       "translit": "sar-dūzī ('overcasting')",
-       "source": "iranica_carpets_iii",
-       "note": "Iranica transliteration; standard script."
+       "translit": "sar-dūzī",
+       "source": "iranica_carpets_iii"
       },
       {
        "lang": "fa",
        "text": "شیرازه",
-       "translit": "šīrāze (the wrapped side edge)",
+       "translit": "šīrāze",
        "source": "goljaam_332; egharloo_zavieh_2020"
       }
      ],
@@ -86586,21 +86551,20 @@
      "kind": "side",
      "name": "Double overcast side (extra yarn wound over the cord)",
      "other_names": [
-      "Double overcasting",
-      "Attached double overcasting (figure-eight to the adjacent warps)"
+      "double overcasting",
+      "attached double overcasting"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "سردوزی",
-       "translit": "sar-dūzī ('overcasting')",
-       "source": "iranica_carpets_iii",
-       "note": "Iranica transliteration; standard script."
+       "translit": "sar-dūzī",
+       "source": "iranica_carpets_iii"
       },
       {
        "lang": "fa",
        "text": "شیرازه",
-       "translit": "šīrāze (the wrapped side edge)",
+       "translit": "šīrāze",
        "source": "goljaam_332; egharloo_zavieh_2020"
       }
      ],
@@ -86685,26 +86649,24 @@
      "kind": "side",
      "name": "Weft selvage (two or more cords wrapped figure-eight)",
      "other_names": [
-      "Selvage, selvedge",
-      "Flat selvage",
-      "Kenārapīč (Persian, Iranica)",
-      "Band-e kenāreh (heavy selvage warps, Stone)",
-      "Multi-cord selvage"
+      "selvage, selvedge",
+      "flat selvage",
+      "kenārapīč",
+      "band-e kenāreh",
+      "multi-cord selvage"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "کناره‌پیچ",
-       "translit": "kenārapīč ('edge wrapping')",
-       "source": "iranica_carpets_iii",
-       "note": "Iranica transliteration; standard script."
+       "translit": "kenārapīč",
+       "source": "iranica_carpets_iii"
       },
       {
        "lang": "fa",
        "text": "بند کناره",
-       "translit": "band-e kenāre (heavy selvage warps)",
-       "source": "stone_2013",
-       "note": "Stone p. 42 transliteration; standard script."
+       "translit": "band-e kenāre",
+       "source": "stone_2013"
       }
      ],
      "how_made": [
@@ -86829,9 +86791,9 @@
      "kind": "side",
      "name": "Double and added selvage",
      "other_names": [
-      "Double selvage",
-      "Added selvage",
-      "Mixed selvage"
+      "double selvage",
+      "added selvage",
+      "mixed selvage"
      ],
      "native": [],
      "how_made": [
@@ -86904,8 +86866,8 @@
      "kind": "side",
      "name": "Shirazeh (Persian name for the wrapped side edge)",
      "other_names": [
-      "Shirazeh, shirazi (trade spellings)",
-      "Side binding"
+      "shirazeh, shirazi",
+      "side binding"
      ],
      "native": [
       {
@@ -86953,9 +86915,9 @@
      "kind": "side",
      "name": "Machine-serged, taped or false selvage",
      "other_names": [
-      "Serging",
-      "False selvage",
-      "Binding tape"
+      "serging",
+      "false selvage",
+      "binding tape"
      ],
      "native": [],
      "how_made": [
@@ -87006,16 +86968,16 @@
      "kind": "end",
      "name": "Kilim band (plain-woven web) at the end",
      "other_names": [
-      "Web",
-      "Kilim end",
-      "Skirt, elem (Turkmen, when patterned or piled)",
-      "Gelīm (Persian)"
+      "web",
+      "kilim end",
+      "skirt, elem",
+      "gelīm"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "گلیم",
-       "translit": "gelīm (the protective plain-woven strip at the start and end)",
+       "translit": "gelīm",
        "source": "iranica_carpets_iii"
       }
      ],
@@ -87162,23 +87124,23 @@
      "kind": "end",
      "name": "Knotted, braided or netted fringe",
      "other_names": [
-      "Fringe",
-      "Knotted warps",
-      "Braided (plaited) fringe",
-      "Netted fringe",
-      "Macrame end"
+      "fringe",
+      "knotted warps",
+      "braided fringe",
+      "netted fringe",
+      "macrame end"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "ریشه",
-       "translit": "rīše ('fringe'; Iranica: rīša)",
+       "translit": "rīše",
        "source": "iranica_carpets_iii; egharloo_zavieh_2020"
       },
       {
        "lang": "fa",
        "text": "گره‌زدن",
-       "translit": "gereh zadan ('to knot into fringes', Stone)",
+       "translit": "gereh zadan",
        "source": "stone_2013"
       },
       {
@@ -87281,8 +87243,8 @@
      "kind": "end",
      "name": "Looped warps (uncut loops at one end)",
      "other_names": [
-      "Warp loops",
-      "Loop end"
+      "warp loops",
+      "loop end"
      ],
      "native": [],
      "how_made": [
@@ -87361,15 +87323,15 @@
      "kind": "end",
      "name": "Chained or twined end (weft chaining, zanjireh)",
      "other_names": [
-      "Weft chaining",
-      "Weft twining at the ends",
-      "Zanjireh (Persian 'chain')"
+      "weft chaining",
+      "weft twining at the ends",
+      "zanjireh"
      ],
      "native": [
       {
        "lang": "fa",
        "text": "زنجیره",
-       "translit": "zanjīre ('chain')",
+       "translit": "zanjīre",
        "source": "iran_textbook_arzyabi_bazaryabi"
       }
      ],
@@ -87409,8 +87371,8 @@
      "kind": "end",
      "name": "Sewn-on fringe",
      "other_names": [
-      "Artificial fringe",
-      "Added fringe"
+      "artificial fringe",
+      "added fringe"
      ],
      "native": [],
      "how_made": [
