@@ -7,7 +7,7 @@
 // search bar filters every card as you type; design buttons narrow by pattern.
 import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
-import { lamps, shadeLine, baseLine, prices, cardPhoto, designFamilies, famsOf, modelText, SOURCES, LAMPS, type Model, type MuseumLamp } from '../../lib/tiffany-lamps';
+import { lamps, shadeLine, baseLine, prices, cardPhoto, seeThisNumber, designFamilies, famsOf, modelText, SOURCES, LAMPS, type Model, type MuseumLamp } from '../../lib/tiffany-lamps';
 import { articleLd } from '../../lib/site';
 import { media } from '../../lib/media';
 import '../../styles/tiffany.css';
@@ -29,6 +29,8 @@ const keysOf = (m: Model) => [m.no, m.kind, m.kind === 'shade' ? shadeLine(m) : 
 const musText = (x: MuseumLamp) => `${x.title} ${x.pattern ?? ''}`;
 const families = designFamilies([...shades.map(modelText), ...bases.map(modelText), ...museum.map(musText)]);
 const famAttr = (t: string) => famsOf(t).join(' ');
+const musNos = (m: MuseumLamp) => [...new Set([m.shade_no, m.base_no, ...m.stamped].filter(Boolean))].join(' ').toLowerCase();
+const musKeys = (m: MuseumLamp) => `${m.title} ${m.pattern ?? ''} ${m.museum} ${m.marks ?? ''} ${m.shade_no ?? ''} ${m.base_no ?? ''} museum`.toLowerCase();
 // numbers stamped on museum lamps but not in the catalogues: found by the search too
 const catNos = new Set([...shades, ...bases].map((m) => `${m.kind}:${m.no}`));
 const museumOnly = museum.flatMap((m) => [
@@ -64,13 +66,15 @@ const museumOnly = museum.flatMap((m) => [
 
     <section class="lampsec" aria-labelledby="shades" data-sec>
       <h2 id="shades">Shades <span class="num" data-count>{shades.length}</span></h2>
-      <p class="read">Leaded shades are numbered from 1400 up, glass and Favrile-fabrique shades mostly in the 1900s. Where the catalogue only lists a shade, the photograph is of another shade of the same design, and says so.</p>
+      <p class="read">Leaded shades are numbered from 1400 up, glass and Favrile-fabrique shades mostly in the 1900s. Where the catalogue only lists a shade, the photograph is of another shade of the same design. Where the only photographs belong to an auction house or a museum that doesn’t let them be copied, the card shows a blur of one and links to it. Each card says which.</p>
       <ul class="lampgrid">
         {shades.map((m) => {
           const ph = cardPhoto(m); const ob = onBases(m); const ex = examples(m);
           return (
             <li id={m.anchor} class="lampcard" data-card data-no={m.no.toLowerCase()} data-fams={famAttr(modelText(m))} data-keys={keysOf(m)}>
-              {ph ? (
+              {ph?.blurred ? (
+                <a class="lampcard__pic lampcard__pic--blur" href={ph.url ?? undefined} rel="nofollow noopener"><img src={media(ph.file)} alt="" loading="lazy" decoding="async" /><span class="lampcard__see">See on {ph.blurred}</span></a>
+              ) : ph ? (
                 <a class="lampcard__pic" href={ph.url ?? undefined} rel="noopener"><img src={media(ph.file)} alt={`Tiffany Studios shade No. ${m.no}, ${shadeLine(m)}`} loading="lazy" decoding="async" /></a>
               ) : <span class="lampcard__pic lampcard__pic--none">No photograph yet</span>}
               <span class="lampcard__no">Shade No. <strong class="num">{m.no}</strong></span>
@@ -81,6 +85,7 @@ const museumOnly = museum.flatMap((m) => [
                 {ex.length > 0 && <>{ex.length} in museums{' · '}</>}
                 {pageLink(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="noopener">{l.y}, p. {l.p}</a></>)}
               </span>
+              {ph && !ph.blurred && seeThisNumber(m).length > 0 && <span class="lampcard__m">This number on {seeThisNumber(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="nofollow noopener">{l.holder}</a></>)}</span>}
               {ph && <span class="lampcard__cap">{ph.caption}{ph.credit && <span class="lampcard__credit">{ph.credit}</span>}</span>}
             </li>
           );
@@ -97,7 +102,9 @@ const museumOnly = museum.flatMap((m) => [
           const pr = prices(m).length ? prices(m) : prices(m, 'complete').map((p) => `${p} complete`);
           return (
             <li id={m.anchor} class="lampcard" data-card data-no={m.no.toLowerCase()} data-fams={famAttr(modelText(m))} data-keys={keysOf(m)}>
-              {ph ? (
+              {ph?.blurred ? (
+                <a class="lampcard__pic lampcard__pic--blur" href={ph.url ?? undefined} rel="nofollow noopener"><img src={media(ph.file)} alt="" loading="lazy" decoding="async" /><span class="lampcard__see">See on {ph.blurred}</span></a>
+              ) : ph ? (
                 <a class="lampcard__pic" href={ph.url ?? undefined} rel="noopener"><img src={media(ph.file)} alt={`Tiffany Studios lamp No. ${m.no}, ${baseLine(m)}`} loading="lazy" decoding="async" /></a>
               ) : <span class="lampcard__pic lampcard__pic--none">No photograph yet</span>}
               <span class="lampcard__no">Lamp No. <strong class="num">{m.no}</strong></span>
@@ -108,6 +115,7 @@ const museumOnly = museum.flatMap((m) => [
                 {ex.length > 0 && <>{ex.length} in museums{' · '}</>}
                 {pageLink(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="noopener">{l.y}, p. {l.p}</a></>)}
               </span>
+              {ph && !ph.blurred && seeThisNumber(m).length > 0 && <span class="lampcard__m">This number on {seeThisNumber(m).map((l, i) => <>{i > 0 && ', '}<a href={l.url} rel="nofollow noopener">{l.holder}</a></>)}</span>}
               {ph && <span class="lampcard__cap">{ph.caption}{ph.credit && <span class="lampcard__credit">{ph.credit}</span>}</span>}
             </li>
           );
@@ -119,10 +127,9 @@ const museumOnly = museum.flatMap((m) => [
       <h2 id="museums">Tiffany lamps in museums <span class="num" data-count>{museum.length}</span></h2>
       <p class="read">Lamps in museum collections, with the museums’ open-access photographs and the marks each museum records. Some bases carry a second, longer number as well as the model’s; the museums record what is stamped, not what each number means.</p>
       <ul class="lampgrid">
-        {museum.map((m) => (
-          <li id={m.anchor} class="lampcard" data-card data-no={[...new Set([m.shade_no, m.base_no, ...m.stamped].filter(Boolean))].join(' ').toLowerCase()} data-fams={famAttr(musText(m))} data-keys={`${m.title} ${m.pattern ?? ''} ${m.museum} ${m.marks ?? ''} ${m.shade_no ?? ''} ${m.base_no ?? ''} museum`.toLowerCase()}>
-            {m.pic ? <a class="lampcard__pic" href={m.url} rel="noopener"><img src={media(m.pic.file)} alt={`${m.title}, Tiffany Studios, ${m.museum}`} loading="lazy" decoding="async" /></a>
-              : <span class="lampcard__pic lampcard__pic--none">No open photograph</span>}
+        {museum.filter((m) => m.pic).map((m) => (
+          <li id={m.anchor} class="lampcard" data-card data-no={musNos(m)} data-fams={famAttr(musText(m))} data-keys={musKeys(m)}>
+            <a class="lampcard__pic" href={m.url} rel="noopener"><img src={media(m.pic!.file)} alt={`${m.title}, Tiffany Studios, ${m.museum}`} loading="lazy" decoding="async" /></a>
             <span class="lampcard__t"><a href={m.url} rel="noopener">{m.title}</a></span>
             <span class="lampcard__m">{[m.date, m.museum].filter(Boolean).join(', ')}</span>
             {(m.shade_no || m.base_no) && <span class="lampcard__m">{[m.shade_no && `Shade No. ${m.shade_no}`, m.base_no && `lamp No. ${m.base_no}`].filter(Boolean).join(', ')}</span>}
@@ -130,6 +137,20 @@ const museumOnly = museum.flatMap((m) => [
           </li>
         ))}
       </ul>
+      {museum.some((m) => !m.pic) && (
+        <>
+          <h3 class="lampsec__sub">Also in museums, with no photograph online</h3>
+          <ul class="lampmus">
+            {museum.filter((m) => !m.pic).map((m) => (
+              <li id={m.anchor} data-card data-no={musNos(m)} data-fams={famAttr(musText(m))} data-keys={musKeys(m)}>
+                <a href={m.url} rel="noopener">{m.title}</a>
+                <span class="lampcard__m"> · {[m.date, m.museum, (m.shade_no || m.base_no) && [m.shade_no && `shade No. ${m.shade_no}`, m.base_no && `lamp No. ${m.base_no}`].filter(Boolean).join(', ')].filter(Boolean).join(' · ')}</span>
+                {m.marks && <span class="twmus__mk">{m.marks}</span>}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </section>
     <script type="application/json" data-museumonly set:html={JSON.stringify(museumOnly.map((x) => ({ n: x.n.toLowerCase(), k: x.k })))} />
   </div>

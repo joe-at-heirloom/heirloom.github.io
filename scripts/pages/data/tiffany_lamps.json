@@ -34,7 +34,29 @@
    "size": 10,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "item",
+     "url": "https://www.sothebys.com/en/buy/auction/2022/design-2/tiffany-studios-red-acorns",
+     "holder": "Sotheby's",
+     "what": "Vine Border table lamp with red acorns, 10 in. shade (number not given)",
+     "exact": false,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1400-ca393ed3.jpg"
+    },
+    {
+     "kind": "item",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2018/luxe-decorative-arts-n09845/lot.1364.html",
+     "holder": "Sotheby's",
+     "what": "Vine Border table lamp, 10 in. shade impressed 1410",
+     "exact": false,
+     "sold": "2018",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1410",
@@ -66,7 +88,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1411",
@@ -99,7 +122,8 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1412",
@@ -140,7 +164,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1420",
@@ -161,7 +186,29 @@
    "size": 14,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2024/louis-comfort-tiffany-artistry-in-glass-the-seymour-and-evelyn-holtzman-collection/vine-border-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Vine Border table lamp on Tree base, 14 in. shade impressed 1420",
+     "exact": true,
+     "sold": "2024",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1420-3cbe95e2.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2020/eclectic-new-york/tiffany-studios-vine-border-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Vine Border table lamp, shade impressed 1420-77",
+     "exact": true,
+     "sold": "2020",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1421",
@@ -194,7 +241,8 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1424",
@@ -236,7 +284,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1426",
@@ -269,7 +318,19 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.263"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2012/so-geyer-n08910/lot.252.html",
+     "holder": "Sotheby's",
+     "what": "Daffodil table lamp on small Tree base, shade impressed 1426",
+     "exact": true,
+     "sold": "2012",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1435",
@@ -290,7 +351,29 @@
    "size": 16,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.waddingtons.ca/auction/decorative-arts-auction-jun-19-2013/gallery/lot/204/",
+     "holder": "Waddington's",
+     "what": "Vine Border (Acorn) table lamp, 16 in. shade impressed 1435",
+     "exact": true,
+     "sold": "2013",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1435-fa79722d.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2015/important-20th-c-design-n09315/lot.10.html",
+     "holder": "Sotheby's",
+     "what": "Vine Border table lamp, shade impressed 1435-142",
+     "exact": true,
+     "sold": "2015",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1436",
@@ -323,7 +406,8 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1443",
@@ -356,7 +440,8 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.265"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1457",
@@ -377,7 +462,29 @@
    "size": 16,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2017/important-design-n09650/lot.24.html",
+     "holder": "Sotheby's",
+     "what": "Pomegranate table lamp, shade impressed 1457-49",
+     "exact": true,
+     "sold": "2017",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1457-1d48c09c.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2014/20th-c-design-n09127/lot.10.html",
+     "holder": "Sotheby's",
+     "what": "Pomegranate table lamp on Turtle-Back Tile base, shade impressed 1457-91",
+     "exact": true,
+     "sold": "2014",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1461",
@@ -409,7 +516,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1462",
@@ -442,7 +550,19 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "url": "https://commons.wikimedia.org/wiki/File:Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_(Clara_Pierce_Wolcott_Driscoll,_1899).jpg"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2020/design/tiffany-studios-dragonfly-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Dragonfly table lamp, 17 in. shade impressed 1462",
+     "exact": true,
+     "sold": "2020",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1467",
@@ -474,7 +594,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1469",
@@ -507,7 +628,19 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2022/important-design-2/geometric-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Geometric table lamp, 18 1/4 in. shade impressed 1469",
+     "exact": true,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1470",
@@ -528,7 +661,29 @@
    "size": 18,
    "shape": "low dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://archive.ragoarts.com/auctions/2011/02/04/early-20th-c/384",
+     "holder": "Rago",
+     "what": "Lemon leaf (Vine Border) table lamp on papyrus base, 18 in. shade numbered 1470",
+     "exact": true,
+     "sold": "2011",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1470-132fe21d.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.ragoarts.com/auctions/2023/10/art-nouveau-art-deco-glass-lighting/127",
+     "holder": "Rago",
+     "what": "Vine Border (Lemon Leaf) hanging fixture, 18 in. shade tagged 1470-33",
+     "exact": true,
+     "sold": "2023",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1475",
@@ -560,7 +715,8 @@
      "url": "https://clevelandart.org/art/2018.274"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1482",
@@ -593,7 +749,8 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.287"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1486",
@@ -614,7 +771,29 @@
    "size": 18,
    "shape": "dish",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2023/the-cycad-collection-masterworks-by-tiffany-studios-and-prewar-design/gentian-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Gentian table lamp on Indian Hookah base, 17 5/8 in. shade impressed 1486-1",
+     "exact": true,
+     "sold": "2023",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1486-e767ffa6.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2025/design/a-rare-gentian-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Gentian table lamp, 16 3/4 in. shade impressed 1486",
+     "exact": true,
+     "sold": "2025",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1488",
@@ -635,7 +814,19 @@
    "size": 18,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.ragoarts.com/auctions/2022/01/early-20th-century-design/310",
+     "holder": "Rago",
+     "what": "Vine Border table lamp on Library Standard base, 18 in. shade impressed 1488",
+     "exact": true,
+     "sold": null,
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1510-79b60212.jpg"
+    }
+   ]
   },
   {
    "no": "1491",
@@ -668,7 +859,29 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "url": "https://commons.wikimedia.org/wiki/File:Dogwood_Shade_with_Chased_Pod_Floor_Base_-_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.ragoarts.com/auctions/2021/05/early-20th-century-design/277",
+     "holder": "Rago",
+     "what": "Dogwood Band table lamp, 20 1/2 in. shade tagged 1491",
+     "exact": true,
+     "sold": "2021",
+     "holder_kind": "auction",
+     "blur": null
+    },
+    {
+     "kind": "mark",
+     "url": "https://auctions.morphyauctions.com/lot-495681.aspx",
+     "holder": "Morphy",
+     "what": "Banded Dogwood table lamp, shade signed 1491-7",
+     "exact": true,
+     "sold": "2020",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1493",
@@ -700,7 +913,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1495",
@@ -732,7 +946,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1497",
@@ -764,7 +979,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1228"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1498",
@@ -785,7 +1001,29 @@
    "size": 20,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "item",
+     "url": "https://www.bonhams.com/auction/28167/lot/40/tiffany-studios-vineacorn-table-lamp-new-york-new-york-shade-with-stamped-mark-tiffany-studios-new-york-dia-20-base-with-four-sockets-with-bryant-paddle-switches-impressed-tiffany-studios-new-york-and-numbered-531-total-ht-30-inprovenance-property-of-the-collection-of-charles-cawley-camden-maineliterature-alastair-duncan-tiffany-lamps-and-metalware-new-edition-p-171/",
+     "holder": "Bonhams Skinner",
+     "what": "Vine/Acorn (Vine Border) table lamp, 20 in. shade, number not given",
+     "exact": false,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1510-da1b57bf.jpg"
+    },
+    {
+     "kind": "item",
+     "url": "https://www.ragoarts.com/auctions/2022/01/early-20th-century-design/310",
+     "holder": "Rago",
+     "what": "Vine Border table lamp, 18 in. shade impressed 1488",
+     "exact": false,
+     "sold": null,
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1501",
@@ -818,7 +1056,8 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1505",
@@ -851,7 +1090,29 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.274"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.ragoarts.com/auctions/2024/07/art-nouveau-art-deco-glass-lighting/119",
+     "holder": "Rago",
+     "what": "Peony table lamp, 22 in. shade tagged 1505-21",
+     "exact": true,
+     "sold": "2024",
+     "holder_kind": "auction",
+     "blur": null
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2025/masterpieces-by-louis-comfort-tiffany-featuring-the-ann-and-robert-fromer-collection/peony-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Peony table lamp, 22 1/4 in. shade impressed 1505-6",
+     "exact": true,
+     "sold": "2025",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1507",
@@ -893,7 +1154,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1227"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1509",
@@ -926,7 +1188,19 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.265"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2021/dreaming-in-glass-masterworks-by-tiffany-studios/bamboo-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Bamboo table lamp, 22 1/4 in. shade impressed 1509-5",
+     "exact": true,
+     "sold": "2021",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1510",
@@ -947,7 +1221,29 @@
    "size": 24,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "item",
+     "url": "https://www.bonhams.com/auction/28167/lot/40/tiffany-studios-vineacorn-table-lamp-new-york-new-york-shade-with-stamped-mark-tiffany-studios-new-york-dia-20-base-with-four-sockets-with-bryant-paddle-switches-impressed-tiffany-studios-new-york-and-numbered-531-total-ht-30-inprovenance-property-of-the-collection-of-charles-cawley-camden-maineliterature-alastair-duncan-tiffany-lamps-and-metalware-new-edition-p-171/",
+     "holder": "Bonhams Skinner",
+     "what": "Vine/Acorn (Vine Border) table lamp, 20 in. shade",
+     "exact": false,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1510-da1b57bf.jpg"
+    },
+    {
+     "kind": "item",
+     "url": "https://www.ragoarts.com/auctions/2022/01/early-20th-century-design/310",
+     "holder": "Rago",
+     "what": "Vine Border table lamp, 18 in. shade impressed 1488",
+     "exact": false,
+     "sold": null,
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1515",
@@ -980,7 +1276,8 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Chandelier_MET_DT280723.jpg"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1528",
@@ -1013,7 +1310,8 @@
     "licence": "Public domain",
     "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
     "url": "https://commons.wikimedia.org/wiki/File:Lamp_shade_(poinsettia_pattern),_Louis_Comfort_Tiffany,_Tiffany_Studios,_1914,_leaded_glass_-_Currier_Museum_of_Art_-_Manchester,_NH_-_DSC07547.jpg"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1531",
@@ -1033,20 +1331,32 @@
    "description": null,
    "size": 20,
    "shape": "cone",
-   "photos": [],
-   "example": {
-    "file": "https://openaccess-cdn.clevelandart.org/2018.275/2018.275_web.jpg",
-    "kind": "example",
-    "exact": false,
-    "design": "Poppy",
-    "inferred": false,
-    "title": "Poppy Filigree Table Lamp",
-    "museum": "Cleveland Museum of Art",
-    "credit": "Cleveland Museum of Art, CC0",
-    "licence": "CC0",
-    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "url": "https://clevelandart.org/art/2018.275"
-   }
+   "photos": [
+    {
+     "file": "marks/img/tiffany/lamps/open/shade-1531.jpg",
+     "kind": "example",
+     "exact": true,
+     "design": "Poppy design",
+     "title": "Lamp (Clara Driscoll design), 20 1/8 in. shade impressed 1531",
+     "museum": "Brooklyn Museum",
+     "credit": "Brooklyn Museum, CC BY 3.0",
+     "licence": "CC BY 3.0",
+     "url": "https://www.brooklynmuseum.org/objects/1306"
+    }
+   ],
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.bonhams.com/auction/28167/lot/32/tiffany-studios-poppy-table-lamp-new-york-new-york-shade-with-stamped-mark-tiffany-studios-ny-1531-dia-20-base-with-artichoke-riser-three-sockets-with-bryant-paddle-switches-fluted-column-set-on-cushion-base-with-feet-stamped-mark-tiffany-studios-new-york-363-total-ht-24-inprovenance-property-of-the-collection-of-charles-cawley-camden-maineliterature-alastair-duncan-tiffany-lamps-and-metalware-new-edition-shade-p-58-base-pp-84-and-193/",
+     "holder": "Bonhams Skinner",
+     "what": "Poppy table lamp, 20 in. shade stamped 1531",
+     "exact": true,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1537",
@@ -1078,7 +1388,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1539",
@@ -1111,7 +1422,29 @@
     "licence": "CC BY 3.0",
     "licence_url": "https://creativecommons.org/licenses/by/3.0",
     "url": "https://commons.wikimedia.org/wiki/File:Clara_driscoll_per_tiffany_studios,_lampada_laburnum,_1910_ca._02.jpg"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2024/louis-comfort-tiffany-artistry-in-glass-the-seymour-and-evelyn-holtzman-collection/a-unique-wisteria-laburnum-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Wisteria-Laburnum table lamp, 22 in. shade impressed 1539",
+     "exact": true,
+     "sold": "2024",
+     "holder_kind": "auction",
+     "blur": null
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2014/tiffany-n09242/lot.212.html",
+     "holder": "Sotheby's",
+     "what": "Table lamp, 22 in. shade impressed 1539-9",
+     "exact": true,
+     "sold": "2014",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1548",
@@ -1143,7 +1476,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1564",
@@ -1175,7 +1509,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1232"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1568",
@@ -1208,7 +1543,8 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1574",
@@ -1250,7 +1586,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1585",
@@ -1283,7 +1620,29 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "url": "https://commons.wikimedia.org/wiki/File:Corning_Museum_of_Glass_-_20220412_-_36_-_%22Dragonflies_and_Water_Flowers%22_reading_lamp_(Clara_Pierce_Wolcott_Driscoll,_1899).jpg"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.ragoarts.com/auctions/2022/01/early-20th-century-design/302",
+     "holder": "Rago",
+     "what": "Dragonfly table lamp on Mushroom base, 14 in. shade impressed 1585",
+     "exact": true,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": null
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.bonhams.com/auction/29534/lot/8/tiffany-studios-1899-1930-dragonfly-table-lampcirca-1910with-mushroom-base-patinated-bronze-leaded-glass-shade-stamped-tiffany-studios-new-york-1585-underside-of-base-stamped-tiffany-studios-new-york-337height-18in-457cm-diameter-of-shade-14in-355cm/",
+     "holder": "Bonhams",
+     "what": "Dragonfly table lamp on mushroom base, 14 in. shade stamped 1585",
+     "exact": true,
+     "sold": "2024",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1587",
@@ -1324,7 +1683,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1588",
@@ -1365,7 +1725,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1592",
@@ -1386,7 +1747,8 @@
    "size": 24,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1593",
@@ -1407,7 +1769,29 @@
    "size": 16,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://jamesdjulia.com/item/1284-395/",
+     "holder": "James D. Julia",
+     "what": "Colonial jeweled band table lamp, shade signed 1593",
+     "exact": true,
+     "sold": "2016",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1593-35935b7a.jpg"
+    },
+    {
+     "kind": "item",
+     "url": "https://auctions.morphyauctions.com/TIFFANY_STUDIOS_COLONIAL_TABLE_LAMP_-LOT483465.aspx",
+     "holder": "Morphy",
+     "what": "Colonial pattern table lamp, 16 in. shade (number not given)",
+     "exact": false,
+     "sold": "2020",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1594",
@@ -1439,7 +1823,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1218"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1596",
@@ -1472,7 +1857,8 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.268"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1597",
@@ -1505,7 +1891,19 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.275"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2014/tiffany-n09242/lot.217.html",
+     "holder": "Sotheby's",
+     "what": "Poppy floor lamp, 26 1/2 in. shade impressed 1597",
+     "exact": true,
+     "sold": "2014",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1598",
@@ -1538,7 +1936,19 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.275"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.bonhams.com/auction/25459/lot/17/tiffany-studios-1899-1930-oriental-poppy-table-lampcirca-1925leaded-glass-patinated-bronze-shade-with-tag-stamped-tiffany-studios-ny-1598-base-stamped-tiffany-studios-new-york-395height-26in-66cm-diameter-of-shade-18in-46cm/",
+     "holder": "Bonhams",
+     "what": "Oriental Poppy table lamp, 18 in. shade tagged 1598",
+     "exact": true,
+     "sold": null,
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1599",
@@ -1571,7 +1981,19 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "url": "https://commons.wikimedia.org/wiki/File:Magnolia_Shade_%E2%80%93_Tiffany_Lamp_-_www.joyofmuseums.com_-_New-York_Historical_Society.jpg"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2017/masterworks-by-tiffany-studios-the-william-a-richardson-collection-n09765/lot.334.html",
+     "holder": "Sotheby's",
+     "what": "Magnolia floor lamp, shade impressed 1599",
+     "exact": true,
+     "sold": "2017",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1900",
@@ -1592,7 +2014,19 @@
    "size": 16,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.bonhams.com/auction/29498/lot/9/tiffany-studios-1899-1930-colonial-table-lampcirca-1910leaded-glass-patinated-bronze-shade-stamped-tiffany-studios-1900-underside-of-base-stamped-tiffany-studios-new-york-533height-21-12in-546cm-diameter-of-shade-16-12in-419cm/",
+     "holder": "Bonhams",
+     "what": "Table lamp (catalogued as Colonial), 16 1/2 in. shade stamped 1900",
+     "exact": true,
+     "sold": "2024",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1900-fc422cb2.jpg"
+    }
+   ]
   },
   {
    "no": "1901",
@@ -1643,7 +2077,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1902",
@@ -1676,7 +2111,19 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.262"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2021/dreaming-in-glass-masterworks-by-tiffany-studios/oriental-poppy-floor-lamp",
+     "holder": "Sotheby's",
+     "what": "Oriental Poppy floor lamp, 26 1/2 in. shade impressed 1902",
+     "exact": true,
+     "sold": "2021",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1903",
@@ -1709,7 +2156,29 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.274"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2018/important-design-n09880/lot.311.html",
+     "holder": "Sotheby's",
+     "what": "Elaborate Peony table lamp, shade impressed 1903",
+     "exact": true,
+     "sold": "2018",
+     "holder_kind": "auction",
+     "blur": null
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2019/dreaming-in-glass-masterworks-by-tiffany-studios-n10084/lot.211.html",
+     "holder": "Sotheby's",
+     "what": "Elaborate Peony floor lamp, shade impressed 1903",
+     "exact": true,
+     "sold": "2019",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1904",
@@ -1741,7 +2210,8 @@
     "design": "Rose design",
     "sibling": "1915",
     "title": "Shade No. 1915 on lamp No. 397"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1906",
@@ -1774,7 +2244,8 @@
     "licence": "CC0",
     "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "url": "https://clevelandart.org/art/2018.268"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1907",
@@ -1795,7 +2266,29 @@
    "size": 22,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.ragoarts.com/auctions/2023/10/art-nouveau-art-deco-glass-lighting/125",
+     "holder": "Rago",
+     "what": "Greek Key table lamp on Library Standard base, 22 in. shade impressed 1907",
+     "exact": true,
+     "sold": "2023",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1907-d07650f7.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.christies.com/en/lot/lot-6568102",
+     "holder": "Christie's",
+     "what": "Greek Key table lamp, 22 in. shade impressed 1907",
+     "exact": true,
+     "sold": "2025",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1908",
@@ -1816,7 +2309,29 @@
    "size": 22,
    "shape": "cone",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2008/important-tiffany-n08492/lot.21.html",
+     "holder": "Sotheby's",
+     "what": "Zodiac table lamp, shade stamped 1908",
+     "exact": true,
+     "sold": "2008",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1908-194315c2.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.christies.com/en/lot/lot-6320853",
+     "holder": "Christie's",
+     "what": "Zodiac table lamp, 22 1/4 in. shade impressed 1908",
+     "exact": true,
+     "sold": "2021",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1910",
@@ -1837,7 +2352,29 @@
    "size": 20,
    "shape": "cone",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2024/important-design/russian-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Russian table lamp on Old English base, 20 1/8 in. shade impressed 1910",
+     "exact": true,
+     "sold": "2024",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1910-fe110137.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/buy/c8529466-44eb-499d-a720-c6fec8718f83/lots/91cfe2da-ef7a-4e62-a83f-774aecfd1387",
+     "holder": "Sotheby's",
+     "what": "Russian table lamp on Old English base, shade impressed 1910",
+     "exact": true,
+     "sold": "2023",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1911",
@@ -1870,7 +2407,19 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2011/important-20th-century-design-n08754/lot.22.html",
+     "holder": "Sotheby's",
+     "what": "Table lamp on Twisted Vine base, shade impressed 1911",
+     "exact": true,
+     "sold": "2011",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1913",
@@ -1903,7 +2452,19 @@
     "licence": "CC0",
     "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Table_Lamp,_Tiffany_Studios,_1902-1919_-_Nelson-Atkins_Museum_of_Art_-_DSC09186.JPG"
-   }
+   },
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.bonhams.com/auction/28167/lot/35/tiffany-studios-plain-squares-table-lamp-new-york-new-york-early-20th-century-glass-shade-stamped-tiffany-studios-new-york-1913-dia-18-patinated-bronze-base-faintly-stamped-tiffany-studios-new-york-and-numbered-533-three-sockets-with-perkins-paddle-switches-total-ht-22-12-inprovenance-property-of-the-collection-of-charles-cawley-camden-maineliterature-alistair-duncan-tiffany-lamps-and-metalware-new-edition-p-206/",
+     "holder": "Bonhams Skinner",
+     "what": "Plain Squares table lamp, 18 in. shade stamped 1913",
+     "exact": true,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1914",
@@ -1935,7 +2496,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1915",
@@ -1967,7 +2529,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1916",
@@ -1999,7 +2562,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1917",
@@ -2031,7 +2595,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1918",
@@ -2063,7 +2628,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1924",
@@ -2114,7 +2680,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1927",
@@ -2146,7 +2713,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1928",
@@ -2167,7 +2735,29 @@
    "size": null,
    "shape": null,
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2012/so-geyer-n08910/lot.250.html",
+     "holder": "Sotheby's",
+     "what": "Abalone pattern Favrile Fabrique (linenfold) desk lamp, shade impressed 1928",
+     "exact": true,
+     "sold": "2012",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1928-426f3dbf.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.christies.com/en/lot/lot-5859099",
+     "holder": "Christie's",
+     "what": "Linenfold desk lamp in the Abalone pattern, shade stamped 1928",
+     "exact": true,
+     "sold": "2014",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "1938",
@@ -2199,7 +2789,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1939",
@@ -2231,7 +2822,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1940-A",
@@ -2263,7 +2855,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1942-D",
@@ -2314,7 +2907,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1234"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1948",
@@ -2347,7 +2941,8 @@
     "licence": "CC BY 3.0",
     "licence_url": "https://creativecommons.org/licenses/by/3.0",
     "url": "https://commons.wikimedia.org/wiki/File:Tiffany_studios,_lampada_tappezzeria_piegata,_1910-15_ca.jpg"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1952",
@@ -2379,7 +2974,8 @@
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
     }
    ],
-   "example": null
+   "example": null,
+   "see_at": []
   },
   {
    "no": "1998",
@@ -2412,7 +3008,8 @@
     "licence": "Public domain",
     "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
     "url": "https://commons.wikimedia.org/wiki/File:Lamp_shade_(poinsettia_pattern),_Louis_Comfort_Tiffany,_Tiffany_Studios,_1914,_leaded_glass_-_Currier_Museum_of_Art_-_Manchester,_NH_-_DSC07547.jpg"
-   }
+   },
+   "see_at": []
   },
   {
    "no": "1999",
@@ -2433,7 +3030,29 @@
    "size": 22,
    "shape": "dome",
    "photos": [],
-   "example": null
+   "example": null,
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2022/important-design-6/maple-leaf-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Maple Leaf table lamp on Tree base, 22 1/2 in. shade impressed 1999",
+     "exact": true,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/shade-1999-4e9bbfaf.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/auctions/ecatalogue/2008/important-tiffany-n08492/lot.37.html",
+     "holder": "Sotheby's",
+     "what": "Maple Leaf table lamp, shade stamped 1999",
+     "exact": true,
+     "sold": "2008",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   }
  ],
  "bases": [
@@ -2468,7 +3087,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1214"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "309",
@@ -2501,7 +3121,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "318",
@@ -2534,7 +3155,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "319",
@@ -2567,7 +3189,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "337",
@@ -2610,7 +3233,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "366",
@@ -2643,7 +3267,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "368",
@@ -2676,7 +3301,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "376",
@@ -2719,7 +3345,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "381",
@@ -2752,7 +3379,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "382",
@@ -2785,7 +3413,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "383",
@@ -2818,7 +3447,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "385",
@@ -2851,7 +3481,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "387",
@@ -2884,7 +3515,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1237"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "397",
@@ -2917,7 +3549,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1221"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "403",
@@ -2950,7 +3583,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "413",
@@ -2983,7 +3617,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "416",
@@ -3016,7 +3651,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1219"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "417",
@@ -3049,7 +3685,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1218"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "418",
@@ -3082,7 +3719,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "419",
@@ -3115,7 +3753,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "420",
@@ -3148,7 +3787,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1214"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "423",
@@ -3181,7 +3821,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1235"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "423-H",
@@ -3214,7 +3855,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1235"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "424",
@@ -3247,7 +3889,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "425",
@@ -3280,7 +3923,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1236"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "429-A",
@@ -3313,7 +3957,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1233"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "443",
@@ -3346,7 +3991,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1228"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "445",
@@ -3390,7 +4036,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1217"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "468",
@@ -3423,7 +4070,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1234"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "515",
@@ -3456,7 +4104,29 @@
    "description": "Ninth Century desk set: Lamp and Shade, gold only",
    "size": null,
    "shape": null,
-   "photos": []
+   "photos": [],
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://www.sothebys.com/en/buy/auction/2022/important-design-2/venetian-table-lamp",
+     "holder": "Sotheby's",
+     "what": "Venetian gilt-bronze lamp and jeweled shade, base and shade both impressed 515",
+     "exact": true,
+     "sold": "2022",
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/base-515-72846dc1.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://www.christies.com/en/lot/lot-1523306",
+     "holder": "Christie's",
+     "what": "Venetian leaded glass and gilt-bronze lamp, base and shade stamped 515",
+     "exact": true,
+     "sold": "1999",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "528",
@@ -3489,7 +4159,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "529",
@@ -3522,7 +4193,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1232"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "531",
@@ -3555,7 +4227,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "532",
@@ -3588,7 +4261,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1229"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "533",
@@ -3621,7 +4295,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "534",
@@ -3654,7 +4329,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "535",
@@ -3698,7 +4374,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1231"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "537",
@@ -3720,7 +4397,29 @@
    "description": "Zodiac desk set: Lamp",
    "size": null,
    "shape": null,
-   "photos": []
+   "photos": [],
+   "see_at": [
+    {
+     "kind": "mark",
+     "url": "https://jamesdjulia.com/item/lot-2363-tiffany-studios-zodiac-desk-lamp-67024/",
+     "holder": "James D. Julia",
+     "what": "Zodiac desk lamp, base signed 537 with shade signed 1587",
+     "exact": true,
+     "sold": null,
+     "holder_kind": "auction",
+     "blur": "marks/img/tiffany/lamps/blur/base-537-e25504bd.jpg"
+    },
+    {
+     "kind": "mark",
+     "url": "https://jamesdjulia.com/item/lot-2646-tiffany-studios-zodiac-desk-lamp-69012/",
+     "holder": "James D. Julia",
+     "what": "Zodiac desk lamp, base signed 537 (later shade 897)",
+     "exact": true,
+     "sold": "2008",
+     "holder_kind": "auction",
+     "blur": null
+    }
+   ]
   },
   {
    "no": "538",
@@ -3742,7 +4441,8 @@
    "description": "Louis XVI desk set: Lamp, shade extra",
    "size": null,
    "shape": null,
-   "photos": []
+   "photos": [],
+   "see_at": []
   },
   {
    "no": "539",
@@ -3786,7 +4486,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "549",
@@ -3819,7 +4520,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1223"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "550",
@@ -3852,7 +4554,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1227"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "552",
@@ -3885,7 +4588,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1217"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "553",
@@ -3918,7 +4622,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1222"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "557",
@@ -3951,7 +4656,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1226"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "558",
@@ -3973,7 +4679,8 @@
    "description": "Graduate desk set: Lamp",
    "size": null,
    "shape": null,
-   "photos": []
+   "photos": [],
+   "see_at": []
   },
   {
    "no": "560",
@@ -4006,7 +4713,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1225"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "569",
@@ -4039,7 +4747,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1216"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "576",
@@ -4072,7 +4781,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1233"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "578",
@@ -4105,7 +4815,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1232"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "580",
@@ -4138,7 +4849,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1228"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "582",
@@ -4171,7 +4883,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1236"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "584",
@@ -4204,7 +4917,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1218"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "587",
@@ -4237,7 +4951,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "604",
@@ -4281,7 +4996,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1220"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "606",
@@ -4314,7 +5030,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1217"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "608",
@@ -4347,7 +5064,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "612",
@@ -4369,7 +5087,8 @@
    "description": "Nautical desk set: Lamp",
    "size": null,
    "shape": null,
-   "photos": []
+   "photos": [],
+   "see_at": []
   },
   {
    "no": "613",
@@ -4413,7 +5132,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "614",
@@ -4446,7 +5166,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1215"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "615",
@@ -4479,7 +5200,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1230"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "617",
@@ -4512,7 +5234,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1227"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "618",
@@ -4545,7 +5268,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1224"
     }
-   ]
+   ],
+   "see_at": []
   },
   {
    "no": "653",
@@ -4578,7 +5302,8 @@
      "licence": "public domain",
      "url": "https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1234"
     }
-   ]
+   ],
+   "see_at": []
   }
  ],
  "museum": [
