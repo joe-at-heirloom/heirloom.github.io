@@ -1,22 +1,32 @@
 ---
 // One header for every page. The site is part app, part reference: the app
 // comes first, then the reference (marks, signatures and serial numbers, by
-// what you are holding: lib/reference.ts), then guides. Each door opens a
-// panel with everything behind it; search, sign in and Get Heirloom sit at
-// the right. On a phone the same order fills a sheet.
+// what you are holding: lib/reference.ts), then guides. Each door is a link to
+// its section's own page, and the arrow beside it (or hovering either) opens a
+// panel with everything behind it; search, sign in and Get Heirloom sit at the
+// right. On a phone the same order fills a sheet, each section's name a link.
 import { app, guides, APP_STORE, WEB_APP } from '../lib/nav';
 import { AREAS, order } from '../lib/reference';
 const { path } = Astro.props as { path: string };
+// Which door a page sits behind, by the start of its address. The script
+// below reads the same lists again after each page swap, since the header
+// persists from page to page.
+const match = {
+  app: ['/app', '/home-inventory-app', '/antique-identifier-app'],
+  ref: ['/marks', '/signatures'],
+  guides: ['/guides', '/home-inventory-checklist', '/silver-hallmarks', '/family-heirlooms'],
+};
 const on = {
-  app: path.startsWith('/app') || ['/home-inventory-app', '/antique-identifier-app'].some((h) => path.startsWith(h)),
-  ref: path.startsWith('/marks') || path.startsWith('/signatures'),
-  guides: ['/guides', '/home-inventory-checklist', '/silver-hallmarks', '/family-heirlooms'].some((h) => path.startsWith(h)),
+  app: match.app.some((h) => path.startsWith(h)),
+  ref: match.ref.some((h) => path.startsWith(h)),
+  guides: match.guides.some((h) => path.startsWith(h)),
 };
 const doors = [
-  { id: 'p-app', label: 'The app', current: on.app },
-  { id: 'p-ref', label: 'Reference', current: on.ref },
-  { id: 'p-guides', label: 'Guides', current: on.guides },
+  { id: 'p-app', label: 'The app', href: '/app', current: on.app, match: match.app },
+  { id: 'p-ref', label: 'Reference', href: '/marks/', current: on.ref, match: match.ref },
+  { id: 'p-guides', label: 'Guides', href: '/guides', current: on.guides, match: match.guides },
 ];
+const here = (href: string) => path.replace(/\/$/, '') === href.replace(/\/$/, '');
 // Each area with its first pages (its own, not those it lists from elsewhere).
 const areas = AREAS().map((a) => ({ ...a, top: order(a).filter((l) => l.href !== a.href).slice(0, 3) }));
 const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>';
@@ -28,9 +38,12 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
     </a>
     <nav class="hdr__nav" aria-label="Main">
       {doors.map((d) => (
-        <button type="button" class="hdr__door" aria-expanded="false" aria-controls={d.id} data-door={d.id} aria-current={d.current ? 'page' : undefined}>
-          {d.label} <Fragment set:html={arrow} />
-        </button>
+        <div class="hdr__item" data-item={d.id} data-match={d.match.join(' ')} data-current={d.current ? '' : undefined}>
+          <a class="hdr__door" href={d.href} aria-current={here(d.href) ? 'page' : d.current ? 'true' : undefined}>{d.label}</a>
+          <button type="button" class="hdr__caret" aria-expanded="false" aria-controls={d.id} data-door={d.id} aria-label={`Show what is in ${d.label === 'The app' ? 'the app' : d.label.toLowerCase()}`}>
+            <Fragment set:html={arrow} />
+          </button>
+        </div>
       ))}
     </nav>
     <div class="hdr__end">
@@ -56,8 +69,9 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
     <div class="wrap hp__in">
       <div class="hp__lead">
         <p class="eyebrow">The app</p>
-        <p class="hp__t">Your home’s inventory, room by room.</p>
+        <a class="hp__t" href="/app">Your home’s inventory, room by room.</a>
         <p class="hp__d">The photos, the stories, and what each item’s marks say, ready for your insurer or your family.</p>
+        <a class="hp__all" href="/app">Everything the app does →</a>
         <div class="hp__cta">
           <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
           <a class="btn" href={WEB_APP}>Sign in on the web</a>
@@ -77,8 +91,8 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
     <div class="wrap hp__in">
       <div class="hp__lead">
         <p class="eyebrow">Reference</p>
-        <p class="hp__t">Read the marks on what you own.</p>
-        <p class="hp__d">Hallmarks, makers’ marks, reign marks, signatures and serial numbers, each with its sources. Start from what you are holding.</p>
+        <a class="hp__t" href="/marks/">Read the marks on what you own.</a>
+        <p class="hp__d">Hallmarks, makers’ marks, reign marks, signatures and serial numbers, each with its sources. Free to use: one of the ways we give back to the art world.</p>
         <a class="hp__all" href="/marks/">The whole reference →</a>
         <p class="hp__search"><a href="/marks/">Search marks</a> · <a href="/signatures">Search signatures</a></p>
       </div>
@@ -98,7 +112,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
     <div class="wrap hp__in">
       <div class="hp__lead">
         <p class="eyebrow">Guides</p>
-        <p class="hp__t">How to do it yourself.</p>
+        <a class="hp__t" href="/guides">How to do it yourself.</a>
         <p class="hp__d">Making a home inventory, reading hallmarks, and keeping the story with the things that have one.</p>
       </div>
       <ul class="hp__grid">
@@ -111,7 +125,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   <div class="hs" id="sheet" hidden>
     <div class="wrap hs__in">
       <section>
-        <p class="eyebrow">The app</p>
+        <a class="hs__big" href="/app">The app <span aria-hidden="true">→</span></a>
         {app.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong><span>{r.note}</span></a>)}
         <div class="hs__end">
           <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
@@ -119,7 +133,7 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
         </div>
       </section>
       <section>
-        <p class="eyebrow">Reference</p>
+        <a class="hs__big" href="/marks/">Reference <span aria-hidden="true">→</span></a>
         <form class="hs__search" action="/marks/" method="get" role="search">
           <label class="visually-hidden" for="sheet-q">Search the marks</label>
           <input class="field" id="sheet-q" name="q" type="search" placeholder="A mark, a maker, a serial…" autocomplete="off" />
@@ -127,8 +141,8 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
         {areas.map((a) => <a class="hs__link" href={a.href}><strong>{a.short}</strong><span>{a.cue}</span></a>)}
       </section>
       <section>
-        <p class="eyebrow">Guides</p>
-        {guides.map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong>{r.note && <span>{r.note}</span>}</a>)}
+        <a class="hs__big" href="/guides">Guides <span aria-hidden="true">→</span></a>
+        {guides.filter((r) => r.href !== '/guides').map((r) => <a class="hs__link" href={r.href}><strong>{r.label}</strong>{r.note && <span>{r.note}</span>}</a>)}
       </section>
     </div>
   </div>
@@ -136,7 +150,21 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
 </header>
 
 <script>
+  // The door of the page now showing: the header persists across page swaps.
+  function mark() {
+    const p = location.pathname;
+    const bare = (h: string) => h.replace(/\/$/, '');
+    document.querySelectorAll<HTMLElement>('.hdr__item').forEach((item) => {
+      const on = (item.dataset.match ?? '').split(' ').some((h) => h && p.startsWith(h));
+      item.toggleAttribute('data-current', on);
+      const a = item.querySelector<HTMLAnchorElement>('.hdr__door');
+      if (!a) return;
+      const cur = bare(p) === bare(a.getAttribute('href') ?? '') ? 'page' : on ? 'true' : null;
+      if (cur) a.setAttribute('aria-current', cur); else a.removeAttribute('aria-current');
+    });
+  }
   function wire() {
+    mark();
     document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((b) => {
       b.onclick = () => {
         const root = document.documentElement;
@@ -160,9 +188,10 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
     const canHover = matchMedia('(hover: hover) and (pointer: fine)').matches;
     doors.forEach((d) => {
       d.onclick = () => show(d.getAttribute('aria-expanded') === 'true' ? null : d.dataset.door!);
-      if (canHover) {
-        d.onmouseenter = () => { clearTimeout(timer); timer = window.setTimeout(() => show(d.dataset.door!), 90); };
-        d.onmouseleave = () => { clearTimeout(timer); };
+      const item = d.closest<HTMLElement>('.hdr__item');
+      if (canHover && item) {
+        item.onmouseenter = () => { clearTimeout(timer); timer = window.setTimeout(() => show(d.dataset.door!), 90); };
+        item.onmouseleave = () => { clearTimeout(timer); };
       }
     });
     document.querySelectorAll<HTMLElement>('.hdr .hp').forEach((p) => {
@@ -206,13 +235,19 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   .hdr__in { display: flex; align-items: center; gap: 32px; height: 68px; }
   .logo { display: block; flex: none; }
   .logo img { height: 22px; width: auto; }
-  .hdr__nav { display: flex; gap: 6px; }
-  .hdr__door { position: relative; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); font: 500 15px/1 var(--text); cursor: pointer; }
-  .hdr__door svg { width: 12px; height: 12px; stroke: currentColor; stroke-width: 1.6; fill: none; transition: transform 0.2s var(--ease); }
-  .hdr__door:hover, .hdr__door[aria-expanded='true'] { color: var(--accent-ink); background: var(--accent-wash); }
-  .hdr__door[aria-expanded='true'] svg { transform: rotate(180deg); }
-  .hdr__door[aria-current='page'] { color: var(--ink); }
-  .hdr__door[aria-current='page']::after { content: ''; position: absolute; left: 12px; right: 12px; bottom: -14px; height: 2px; background: var(--accent); }
+  .hdr__nav { display: flex; gap: 4px; }
+  /* A door: the section's link and, beside it, the arrow that opens its panel. They read as one. */
+  .hdr__item { position: relative; display: inline-flex; align-items: center; height: 40px; border-radius: var(--r-sm); }
+  .hdr__door { white-space: nowrap; display: inline-flex; align-items: center; height: 40px; padding: 0 2px 0 12px; color: var(--ink-2); font: 500 15px/1 var(--text); text-decoration: none; border-radius: var(--r-sm) 0 0 var(--r-sm); }
+  .hdr__caret { display: inline-grid; place-items: center; width: 28px; height: 40px; padding: 0 6px 0 2px; border: 0; border-radius: 0 var(--r-sm) var(--r-sm) 0; background: transparent; color: var(--ink-2); cursor: pointer; }
+  .hdr__caret svg { width: 12px; height: 12px; stroke: currentColor; stroke-width: 1.6; fill: none; transition: transform 0.2s var(--ease); }
+  .hdr__item:hover, .hdr__item:has([aria-expanded='true']) { background: var(--accent-wash); }
+  .hdr__item:hover .hdr__door, .hdr__item:hover .hdr__caret, .hdr__caret[aria-expanded='true'], .hdr__item:has([aria-expanded='true']) .hdr__door { color: var(--accent-ink); }
+  .hdr__door:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  .hdr__caret[aria-expanded='true'] svg { transform: rotate(180deg); }
+  .hdr__door:focus-visible, .hdr__caret:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .hdr__item[data-current] .hdr__door { color: var(--ink); }
+  .hdr__item[data-current]::after { content: ''; position: absolute; left: 12px; right: 10px; bottom: -14px; height: 2px; background: var(--accent); }
   .hdr__end { margin-left: auto; display: flex; align-items: center; gap: 14px; }
   .hdr__search { position: relative; display: flex; align-items: center; }
   .hdr__search svg { position: absolute; left: 11px; width: 16px; height: 16px; stroke: var(--ink-3); stroke-width: 1.6; fill: none; pointer-events: none; }
@@ -231,10 +266,13 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   .hp { position: absolute; left: 0; right: 0; top: 100%; z-index: 2; background: var(--paper); border-top: 2px solid var(--accent); border-bottom: 1px solid var(--rule); box-shadow: 0 24px 48px -24px rgb(31 33 36 / 0.25); }
   .hp__in { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr); gap: 48px; padding-block: 32px 36px; }
   .hp__lead { border-right: 1px solid var(--rule); padding-right: 32px; }
-  .hp__t { font: 680 26px/1.12 var(--display); font-stretch: 112%; letter-spacing: -0.015em; margin: 10px 0 10px; }
+  .hp__t { display: block; font: 680 26px/1.12 var(--display); font-stretch: 112%; letter-spacing: -0.015em; margin: 10px 0 10px; color: var(--ink); text-decoration: none; }
+  .hp__t:hover { color: var(--accent-ink); }
+  .hp__d + .hp__all { display: inline-block; margin-bottom: 18px; }
   .hp__d { color: var(--ink-2); font-size: 15px; margin: 0 0 18px; }
   .hp__all { font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent); }
-  .hp__cta { display: grid; gap: 8px; justify-items: start; }
+  .hp__cta { display: grid; gap: 8px; }
+  .hp__cta .btn { justify-content: center; }
   .hp__cols { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 40px; }
   .hp__cols--app { grid-template-columns: minmax(0, 1fr) 180px; align-items: start; }
   .hp__grid { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; }
@@ -266,18 +304,20 @@ const arrow = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5
   .hs__in { display: grid; gap: 28px; padding-block: 16px calc(32px + env(safe-area-inset-bottom, 0px)); }
   .hs section { display: grid; }
   .hs .eyebrow { margin: 0 0 4px; }
-  .hs__big { font: 680 24px/1.15 var(--display); font-stretch: 112%; text-decoration: none; padding: 10px 0 12px; border-bottom: 1px solid var(--rule); }
+  .hs__big { display: flex; justify-content: space-between; align-items: baseline; font: 680 24px/1.15 var(--display); font-stretch: 112%; color: var(--ink); text-decoration: none; padding: 6px 0 12px; border-bottom: 2px solid var(--accent); }
+  .hs__big span { color: var(--accent-ink); font-weight: 500; }
   .hs__link { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
   .hs__link strong { font-weight: 600; font-size: 16.5px; }
   .hs__link span { font-size: 14px; color: var(--ink-2); }
   .hs__end { display: grid; gap: 10px; margin-top: 14px; }
   .hs__search { margin: 4px 0 6px; }
   .hs__end .btn { justify-content: center; min-height: 50px; }
-  :global(html.menu-open) { overflow: hidden; }
+  /* Lock the body, not the root: body has overflow-x: hidden, so a locked root would make body its own scroll box and the sticky header would scroll away with the page. */
+  :global(html.menu-open body) { overflow: hidden; }
 
   @media (max-width: 1280px) { .hdr__search input { width: 180px; } }
   @media (max-width: 1180px) { .hdr__search { display: none; } }
-  @media (max-width: 1040px) { .hdr__in { gap: 18px; } .hdr__door { padding: 0 9px; } }
+  @media (max-width: 1040px) { .hdr__in { gap: 18px; } .hdr__door { padding: 0 1px 0 9px; } }
   @media (max-width: 900px) {
     .hdr__in { height: 60px; gap: 12px; }
     .hdr__nav, .hdr__cta, .hdr__signin, .hp, .hdr__scrim { display: none !important; }

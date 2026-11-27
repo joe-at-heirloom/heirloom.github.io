@@ -42,6 +42,11 @@ const graph = [
       <p class="rhead__lede">A reference to what is struck, painted, printed or signed on the things people own: {n(marks)} marks, date letters, reigns and makers, and {n(seals)} seals and signatures. Each record names its sources. Search, or start from what you see.</p>
     </header>
 
+    <aside class="rwhy" aria-label="Why Heirloom builds this reference">
+      <p class="rwhy__t">One of the ways we give back to the art world.</p>
+      <p>Auction houses, dealers, museums, collectors and families all lean on mark references, and most of them still live in out-of-print books, photocopied tables and forum threads. They are a utility that was never modernized. This is ours, brought up to date: free to use, searchable in one place, readable on a phone, and with each record naming its sources. <a href="/app">Heirloom, the app</a> reads the same records.</p>
+    </aside>
+
     <div class="rhome__search">
       <Portal client:load scope="marks" families={fams} perRecord={[...PER_RECORD]} sealCount={0} placeholder="A letter, a year, 925, 大明成化年製, Gorham, Meissen…" searchLabel="Search every mark, date letter, reign and maker" />
     </div>
@@ -131,3 +136,9 @@ const graph = [
     <AppBox text="Photograph the mark. The Advisor reads it, names what it claims (a maker, a reign, an assay office and year), and keeps the reading with the photo it came from." />
   </div>
 </Reference>
+
+<style>
+  .rwhy { margin: 4px 0 28px; padding: 18px 22px; border-left: 3px solid var(--accent); background: var(--paper-2); border-radius: 0 var(--r-lg) var(--r-lg) 0; max-width: 92ch; }
+  .rwhy p { margin: 0; color: var(--ink-2); font-size: 15.5px; line-height: 1.55; }
+  .rwhy .rwhy__t { margin-bottom: 6px; font: 650 18px/1.3 var(--display); font-stretch: 106%; color: var(--ink); }
+</style>

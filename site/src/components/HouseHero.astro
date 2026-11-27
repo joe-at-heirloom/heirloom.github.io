@@ -4,6 +4,7 @@
 // and card are ordinary HTML; without WebGL or script the list further down
 // the page carries the same items.
 import data from '../data/home/house.json';
+import { APP_STORE } from '../lib/nav';
 const priced = data.items.filter((i) => !i.unknown);
 ---
 <section class="hh" id="house" aria-label="An ordinary house">
@@ -25,6 +26,10 @@ const priced = data.items.filter((i) => !i.unknown);
       <h1>Know what you own.</h1>
       <p class="hh__sub" id="hh-sub">Move the glass over the house. Under it, the items worth a look show their color. Rest it on one to see what it is, what its marks say, and what similar ones have sold for.</p>
     </div>
+    <p class="hh__app">
+      <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
+      <a class="hh__see" href="#app">Do this for your own home ↓</a>
+    </p>
     <div class="hh__count" aria-live="polite">
       <p class="label">Found so far, at least{data.draft && <span class="hh__draft">draft figures</span>}</p>
       <p class="hh__amt"><span id="hh-amt">$0</span><span class="hh__unk" id="hh-unk"></span></p>
@@ -234,6 +239,12 @@ const priced = data.items.filter((i) => !i.unknown);
   @media (pointer: coarse) { .hh__gl canvas { cursor: auto; } }
   .hh__lead { position: absolute; top: 44px; bottom: 24px; left: max(var(--gutter), calc((100% - var(--wide)) / 2)); width: min(34vw, 440px); display: flex; flex-direction: column; gap: 28px; pointer-events: none; }
   .hh__copy, .hh__count { position: relative; z-index: 0; }
+  /* Above the canvas (z-index 1) and the loupe (3), so both links take a click. */
+  .hh__app { position: relative; z-index: 4; pointer-events: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 0; }
+  .hh__app .btn { min-height: 46px; }
+  .hh__see { font-weight: 600; font-size: 15px; text-decoration: none; border-bottom: 1px solid var(--accent); color: var(--ink); }
+  .hh__see:hover { color: var(--accent-ink); }
+  @media (max-height: 820px) and (min-width: 761px) { .hh__fig { display: none; } .hh__lead { gap: 18px; } }
   .hh__fig { margin: 0 0 14px; }
   .hh h1 { font-size: clamp(2.6rem, 1.4rem + 3.6vw, 4.4rem); margin: 0 0 16px; }
   .hh__sub { margin: 0; font-size: 17px; color: var(--ink-2); max-width: 36ch; }
@@ -296,6 +307,7 @@ const priced = data.items.filter((i) => !i.unknown);
     .hh__gl { top: 206px; }
     .hh__lead { display: contents; }
     .hh__copy { position: absolute; z-index: 2; left: var(--gutter); right: var(--gutter); top: 24px; }
+    .hh__app { display: none; }
     .hh__fig { display: none; }
     .hh h1 { font-size: min(34px, 7.4vw); margin-bottom: 8px; white-space: nowrap; }
     .hh__sub, .hh--explored .hh__sub { display: block; font-size: 14.5px; line-height: 1.45; }

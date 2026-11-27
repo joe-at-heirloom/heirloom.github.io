@@ -1,28 +1,17 @@
 ---
-// The app, in a page or two: what the old home page said in 2,000 words,
-// kept to what a person needs to decide. Same qualifications as the home page.
+// The app, in full: what it is, each thing it does beside the screen that
+// does it (lib/app.ts, the store's own screenshots), how a record comes
+// together, and the two ways in. Same qualifications as the home page.
 import Base from '../layouts/Base.astro';
-const shots = [
-  { f: '01-rooms', c: 'Your home, room by room', alt: 'Heirloom’s Home screen on iPhone: five rooms, each showing how many of its items are documented, the collection, and the market-estimate and insured-value lines.' },
-  { f: '03-insurance-pdf', c: 'A PDF your insurer can read', alt: 'The insurance inventory PDF Heirloom prepares, open on iPhone: a summary of the owner’s items, a list by room, and each item with its photos.' },
-  { f: '04-whats-missing', c: 'See what isn’t documented yet', alt: 'Home on iPhone answering “What isn’t documented yet?”: three items still missing details, listed by name.' },
-  { f: '06-value', c: 'A value only with its source', alt: 'A silver cake basket’s record on iPhone: no estimate yet, and an insurance figure shown with who made it and when.' },
-  { f: '07-search', c: 'Find things in your own words', alt: 'Search on iPhone for “my mother’s things”: two of eight items found, each matched on its description and the owner’s notes.' },
-  { f: '08-family', c: 'Your family sees what you choose', alt: 'The “Who can see this” screen on iPhone: the owner, and a relative invited as a Commenter.' },
-];
+import { FEATURES, ALSO, SHOTS } from '../lib/app';
+import { APP_STORE, WEB_APP } from '../lib/nav';
 const steps = [
   { t: 'Photograph it, or write it down', d: 'A few photos, or what you already know. Either is a real start, and you can add the other later.' },
   { t: 'Learn what is known', d: 'Maker, period and materials where the evidence shows them, an estimate when there is evidence for one, and a plain note of what cannot be told from the photos.' },
   { t: 'Keep its story', d: 'Who it came from and what it meant, in your own words. Relatives you invite can add their accounts beside yours.' },
   { t: 'Use the record', d: 'Prepare it for an insurance conversation or for your family, and note who each item is meant for. The list grants no one access.' },
 ];
-const parts = [
-  { t: 'The Advisor', d: 'Reads what your photos show (marks, labels, materials, condition) and says plainly what it cannot tell. It never decides whether an item is genuine; that belongs to a specialist you choose.' },
-  { t: 'An overview that adds up', d: 'What you own and what you are counting, split into figures backed by recorded sales and figures you entered yourself. Items with no established value count as unknown, never as zero.' },
-  { t: 'Research, when you want it', d: 'Sales of similar items with their source, date and whether they sold or were only listed, so you can keep them or set them aside, and a research chat for maker histories.' },
-  { t: 'Specialist help, if you ask', d: 'Ask for an introduction to an independent appraiser or dealer, for an identification, a valuation or a written appraisal from an independent professional. You see exactly what will be shared first.' },
-  { t: 'Private by design', d: 'Your collection is yours: shared only with people you invite, and yours to export.' },
-];
+const lead = [SHOTS.rooms, SHOTS.pdf];
 ---
 <Base
   title="The Heirloom app: your home’s inventory, room by room"
@@ -30,24 +19,51 @@ const parts = [
   path="/app"
 >
   <section class="wrap ap">
-    <p class="eyebrow">The app</p>
-    <h1>Your home’s inventory, room by room.</h1>
-    <p class="lede">The photos, the stories, and what each item’s marks say, ready for your insurer or your family. Photograph one, or write down what you already know.</p>
-    <div class="ap__cta">
-      <a class="btn btn--primary" href="https://apps.apple.com/us/app/id6754576251">Get Heirloom for iPhone</a>
-      <a class="btn" href="https://web.heirloomapp.io">Use it on the web</a>
+    <div class="ap__copy">
+      <p class="eyebrow">The app</p>
+      <h1>Your home’s inventory, room by room.</h1>
+      <p class="lede">The photos, the stories, and what each item’s marks say, ready for your insurer or your family. Photograph one, or write down what you already know.</p>
+      <div class="ap__cta">
+        <a class="ap__badge" href={APP_STORE}><img src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52" /></a>
+        <a class="btn" href={WEB_APP}>Use it on the web</a>
+      </div>
+      <p class="muted ap__us">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
+      <nav class="ap__jump" aria-label="On this page">
+        {FEATURES.map((f) => <a href={`#${f.key}`}>{f.kicker}</a>)}
+      </nav>
     </div>
-    <p class="muted ap__us">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
+    <div class="ap__phones">
+      {lead.map((s, i) => <img class={`ap__p ap__p--${i}`} src={`/screens/${s.f}-440.webp`} srcset={`/screens/${s.f}-440.webp 440w, /screens/${s.f}.webp 660w`} sizes="280px" alt={s.alt} width="440" height="956" loading="eager" decoding="async" />)}
+    </div>
   </section>
 
-  <section class="shots" aria-label="The app on iPhone">
-    <ul class="wrap shots__row">
-      {shots.map((s) => (
-        <li>
-          <img src={`/screens/${s.f}-440.webp`} srcset={`/screens/${s.f}-440.webp 440w, /screens/${s.f}.webp 660w`} sizes="220px" alt={s.alt} width="220" height="476" loading="lazy" />
-          <p class="label">{s.c}</p>
-        </li>
-      ))}
+  <section class="tour" aria-label="What Heirloom does">
+    {FEATURES.map((f, i) => (
+      <article class:list={['wrap', 'tr', { 'tr--flip': i % 2 === 1 }]} id={f.key}>
+        <div class="tr__media">
+          {f.shot && <img class="tr__screen" src={`/screens/${f.shot.f}-440.webp`} srcset={`/screens/${f.shot.f}-440.webp 440w, /screens/${f.shot.f}.webp 660w`} sizes="300px" alt={f.shot.alt} width="440" height="956" loading="lazy" decoding="async" />}
+          {f.photo && (
+            <figure class="tr__photo">
+              <span class="tr__ph"><img src={f.photo.src} alt={f.photo.alt} loading="lazy" decoding="async" /></span>
+              <span class="tr__mk"><img src={f.photo.mark} alt="The basket’s hallmarks, close up." loading="lazy" decoding="async" /></span>
+              <figcaption>{f.photo.caption} <span class="label">Photograph: {f.photo.credit}</span></figcaption>
+            </figure>
+          )}
+        </div>
+        <div class="tr__text">
+          <p class="eyebrow">{f.kicker}</p>
+          <h2>{f.title}</h2>
+          <p class="tr__body">{f.body}</p>
+          {f.points && <ul class="tr__points">{f.points.map((p) => <li>{p}</li>)}</ul>}
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="wrap ap2">
+    <h2>And the rest</h2>
+    <ul class="also">
+      {ALSO.map((a) => <li><strong>{a.t}</strong><span>{a.d}</span></li>)}
     </ul>
   </section>
 
@@ -71,44 +87,79 @@ const parts = [
         <p>You’re the collector and you did the research years ago. Catalogue it yourself: maker, provenance, condition, your own valuation. Your words and your estimates are never overwritten.</p>
       </div>
     </div>
-  </section>
-
-  <section class="wrap ap2">
-    <h2>What it does</h2>
-    <dl class="parts">
-      {parts.map((p) => <div><dt>{p.t}</dt><dd>{p.d}</dd></div>)}
-    </dl>
     <p class="muted ap__fine">Estimates are labeled as estimates and are not professional appraisals. Heirloom lists nothing, and nothing is put up for sale. No money for a sale changes hands through Heirloom. Specialists, sale conversations, sold prices and Heirloom’s price estimates are offered in the United States only for now.</p>
+    <div class="ap__end">
+      <a class="btn btn--primary" href={APP_STORE}>Get Heirloom for iPhone</a>
+      <a class="btn" href={WEB_APP}>Use it on the web</a>
+    </div>
   </section>
 </Base>
 
 <style>
-  .ap { padding-block: 72px 40px; }
-  .ap h1 { margin: 12px 0 18px; max-width: 16ch; }
-  .ap__cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 14px; }
+  .ap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: 32px 56px; align-items: center; padding-block: 72px 48px; }
+  .ap h1 { margin: 12px 0 18px; max-width: 14ch; }
+  .ap__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 26px 0 14px; }
+  .ap__badge img { height: 52px; width: auto; display: block; }
+  .ap__cta .btn { min-height: 52px; }
   .ap__us { font-size: 14.5px; }
-  .shots { background: var(--paper-2); border-block: 1px solid var(--rule); overflow-x: auto; }
-  .shots__row { list-style: none; display: flex; gap: 22px; padding-block: 40px; margin: 0 auto; }
-  .shots li { flex: none; width: 220px; }
-  .shots img { width: 220px; height: auto; border-radius: 22px; box-shadow: var(--shadow-lift); }
-  .shots p { margin: 12px 0 0; }
+  .ap__jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .ap__jump a { flex: 1 1 22%; text-align: center; padding: 8px 14px; border: 1px solid var(--rule); border-radius: 99px; font-size: 14px; color: var(--ink-2); text-decoration: none; background: var(--paper); }
+  .ap__jump a:hover { border-color: var(--accent); color: var(--accent-ink); }
+  .ap__phones { position: relative; height: clamp(480px, 46vw, 640px); }
+  .ap__p { position: absolute; top: 50%; height: auto; border-radius: 30px; border: 1px solid var(--rule); box-shadow: var(--shadow-lift); }
+  .ap__p--0 { z-index: 2; width: clamp(220px, 20vw, 280px); left: 8%; transform: translateY(-50%); }
+  .ap__p--1 { z-index: 1; width: clamp(200px, 18vw, 250px); right: 4%; transform: translateY(-44%) rotate(5deg); }
+
+  .tour { border-top: 1px solid var(--rule); }
+  .tr { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr); gap: 40px 72px; align-items: center; padding-block: clamp(56px, 7vw, 96px); border-bottom: 1px solid var(--rule); }
+  .tr--flip .tr__media { order: 2; }
+  .tr__media { display: flex; justify-content: center; }
+  .tr__screen { width: min(300px, 70vw); height: auto; border-radius: 30px; border: 1px solid var(--rule); box-shadow: var(--shadow-lift); }
+  .tr__photo { margin: 0; position: relative; width: min(440px, 100%); display: grid; gap: 12px; }
+  .tr__ph { display: block; aspect-ratio: 4 / 5; border-radius: 16px; overflow: hidden; background: #111; box-shadow: var(--shadow-lift); }
+  .tr__ph img { width: 100%; height: 100%; object-fit: cover; }
+  .tr__mk { position: absolute; right: -14px; top: 40%; width: 132px; height: 132px; border-radius: 50%; overflow: hidden; border: 4px solid var(--paper); box-shadow: 0 6px 22px rgb(0 0 0 / 0.35); }
+  .tr__mk img { width: 100%; height: 100%; object-fit: cover; }
+  .tr__photo figcaption { font-size: 14px; color: var(--ink-2); }
+  .tr__photo figcaption .label { display: block; margin-top: 4px; font-size: 12px; }
+  .tr__text h2 { margin: 10px 0 14px; max-width: 18ch; }
+  .tr__body { font-size: 17px; line-height: 1.6; color: var(--ink-2); max-width: 52ch; margin: 0; }
+  .tr__points { list-style: none; margin: 20px 0 0; padding: 0; max-width: 52ch; }
+  .tr__points li { position: relative; padding: 10px 0 10px 22px; border-top: 1px solid var(--rule); font-size: 15px; color: var(--ink-2); }
+  .tr__points li::before { content: ''; position: absolute; left: 2px; top: 18px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+
   .ap2 { padding-top: 72px; }
   .ap2 h2 { margin-bottom: 10px; }
   .ap2 > p { max-width: 62ch; }
+  .also { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; }
+  .also li { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--ink-2); }
+  .also strong { color: var(--ink); font-weight: 600; }
   .steps { list-style: none; counter-reset: s; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
   .steps li { counter-increment: s; border-top: 2px solid var(--accent); padding-top: 12px; display: grid; gap: 6px; color: var(--ink-2); font-size: 15px; }
   .steps li::before { content: counter(s); font: 500 13px var(--mono); color: var(--accent-ink); }
   .steps strong { color: var(--ink); font-weight: 600; font-size: 16px; }
   .ways { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px; margin-top: 18px; }
   .ways p:not(.label) { color: var(--ink-2); }
-  .parts { margin: 18px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
-  .parts div { padding: 16px 0; border-bottom: 1px solid var(--rule); }
-  .parts dt { font-weight: 600; margin-bottom: 4px; }
-  .parts dd { margin: 0; color: var(--ink-2); font-size: 15.5px; }
   .ap__fine { margin-top: 28px; font-size: 14.5px; max-width: 70ch; }
-  @media (max-width: 860px) {
+  .ap__end { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 28px; }
+  .ap__end .btn { justify-content: center; min-height: 52px; }
+  @media (max-width: 900px) {
+    .ap { grid-template-columns: minmax(0, 1fr); }
+    .ap__phones { height: clamp(420px, 100vw, 560px); }
+    .ap__p--0 { width: min(250px, 50vw); left: 6%; }
+    .ap__p--1 { width: min(220px, 44vw); right: 2%; }
+    .tr { grid-template-columns: minmax(0, 1fr); }
+    .tr--flip .tr__media { order: 0; }
+    .tr__mk { right: 10px; width: 104px; height: 104px; }
     .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .ways, .parts { grid-template-columns: minmax(0, 1fr); }
+    .also { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ways { grid-template-columns: minmax(0, 1fr); }
   }
-  @media (max-width: 520px) { .steps { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 560px) {
+    .ap__cta { display: grid; grid-template-columns: auto minmax(0, 1fr); }
+    .ap__badge img { height: 50px; }
+    .ap__jump { display: none; }
+    .ap__cta .btn { width: 100%; min-height: 50px; justify-content: center; padding-inline: 12px; }
+    .steps, .also, .ap__end { grid-template-columns: minmax(0, 1fr); }
+  }
 </style>

@@ -1,0 +1,78 @@
+---
+// The home page's tour of the app: one card a feature, each with the store
+// screenshot it is about (cropped to the top of the screen) or, for the marks,
+// the museum photograph and its mark. Three columns, two cards wide where a
+// feature leads a row; two columns on a tablet, one on a phone.
+import { FEATURES, type Feature } from '../lib/app';
+const { keys } = Astro.props as { keys?: string[] };
+const list: Feature[] = keys ? keys.map((k) => FEATURES.find((f) => f.key === k)!).filter(Boolean) : FEATURES;
+const wide = new Set(['rooms', 'family']);
+---
+<ul class="fg">
+  {list.map((f) => (
+    <li class:list={['fg__card', `fg__card--${f.key}`, { 'fg__card--wide': wide.has(f.key) }]}>
+      <div class="fg__text">
+        <p class="eyebrow">{f.kicker}</p>
+        <h3>{f.title}</h3>
+        <p>{f.body}</p>
+      </div>
+      {f.shot && (
+        <div class:list={['fg__screen', { 'fg__screen--end': f.shot.crop === 'bottom' }]}>
+          <img src={`/screens/${f.shot.f}-440.webp`} srcset={`/screens/${f.shot.f}-440.webp 440w, /screens/${f.shot.f}.webp 660w`} sizes="280px" alt={f.shot.alt} width="440" height="956" loading="lazy" decoding="async" />
+        </div>
+      )}
+      {f.photo && (
+        <figure class="fg__photo">
+          <span class="fg__ph"><img src={f.photo.src} alt={f.photo.alt} loading="lazy" decoding="async" /></span>
+          <span class="fg__mk"><img src={f.photo.mark} alt="The basket’s hallmarks, close up." loading="lazy" decoding="async" /></span>
+          <figcaption>{f.photo.caption} <span class="label">Photograph: {f.photo.credit}</span></figcaption>
+        </figure>
+      )}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .fg { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .fg__card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: var(--paper-2); border: 1px solid var(--rule); border-radius: 16px; padding: 28px 28px 0; }
+  .fg__card--wide { grid-column: span 2; display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 32px; align-items: end; padding-right: 40px; }
+  .fg__card--wide .fg__text { align-self: center; padding-bottom: 28px; }
+  .fg__text p:not(.eyebrow) { margin: 0; color: var(--ink-2); font-size: 15.5px; line-height: 1.55; max-width: 46ch; }
+  .fg__text .eyebrow { margin: 0 0 8px; }
+  .fg__text h3 { font-size: clamp(1.25rem, 1.1rem + 0.4vw, 1.5rem); font-stretch: 110%; margin: 0 0 10px; }
+  .fg__screen { margin-top: auto; padding-top: 28px; display: flex; justify-content: center; height: 360px; overflow: hidden; }
+  /* A wide card is as tall as its row: its screen hangs from the top and the card's edge crops it. */
+  .fg__card--wide { align-items: stretch; }
+  .fg__card--wide .fg__screen { position: relative; height: auto; min-height: 420px; padding-top: 0; margin-top: 0; }
+  .fg__card--wide .fg__screen img { position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+  .fg__screen img { width: 250px; height: auto; align-self: flex-start; border-radius: 26px 26px 0 0; border: 1px solid var(--rule); border-bottom: 0; box-shadow: var(--shadow-lift); }
+  .fg__card--wide .fg__screen img { width: 280px; }
+  /* The part of the screen that matters sits at its foot: show the foot, cut the top. */
+  .fg__screen--end { align-items: flex-end; padding-bottom: 28px; }
+  .fg__screen--end img { align-self: flex-end; border-radius: 26px; border-bottom: 1px solid var(--rule); }
+  .fg__photo { margin: auto 0 0; padding: 28px 0 24px; display: grid; gap: 12px; position: relative; }
+  .fg__ph { display: block; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; background: #111; }
+  .fg__ph img { width: 100%; height: 100%; object-fit: cover; }
+  .fg__mk { position: absolute; right: 14px; top: calc(28px + 14px); width: 96px; height: 96px; border-radius: 50%; overflow: hidden; border: 3px solid var(--paper); box-shadow: 0 4px 16px rgb(0 0 0 / 0.35); }
+  .fg__mk img { width: 100%; height: 100%; object-fit: cover; }
+  .fg__photo figcaption { font-size: 14px; color: var(--ink-2); line-height: 1.45; }
+  .fg__photo figcaption .label { display: block; margin-top: 4px; font-size: 12px; }
+  @media (max-width: 1040px) {
+    .fg { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .fg__card--wide { grid-template-columns: minmax(0, 1fr) 240px; padding-right: 28px; gap: 24px; }
+    .fg__card--wide .fg__screen img { width: 240px; }
+    /* Two columns: only the first card stays wide, so the last row has no gap. */
+    .fg__card--wide:not(.fg__card--rooms) { grid-column: auto; display: flex; padding-right: 28px; }
+    .fg__card--wide:not(.fg__card--rooms) .fg__text { padding-bottom: 0; }
+    .fg__card--wide:not(.fg__card--rooms) .fg__screen { position: static; height: 360px; min-height: 0; margin-top: auto; padding-top: 28px; }
+    .fg__card--wide:not(.fg__card--rooms) .fg__screen img { position: static; transform: none; width: 250px; }
+  }
+  @media (max-width: 680px) {
+    .fg { grid-template-columns: minmax(0, 1fr); }
+    .fg__card, .fg__card--wide { grid-column: auto; display: flex; padding: 24px 20px 0; }
+    .fg__card--wide .fg__text { padding-bottom: 0; }
+    .fg__screen, .fg__card--wide .fg__screen, .fg__card--wide:not(.fg__card--rooms) .fg__screen { position: static; height: 320px; min-height: 0; margin-top: auto; padding-top: 24px; }
+    .fg__screen img, .fg__card--wide .fg__screen img, .fg__card--wide:not(.fg__card--rooms) .fg__screen img { position: static; transform: none; width: 240px; }
+    .fg__screen--end { height: 340px; padding-bottom: 24px; }
+  }
+</style>

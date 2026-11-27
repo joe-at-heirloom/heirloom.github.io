@@ -1,11 +1,19 @@
 ---
-// heirloomapp.io: an ordinary house under a loupe, the same items as a list,
-// the way into the reference, and the app in a few lines. The sentences in
-// the app band are the ones scripts/check-copy.mjs requires on the home page.
+// heirloomapp.io: an ordinary house under a loupe; then the app, first and
+// largest (its own screens, what it does); the same items as the house as a
+// list; the reference, as one of the ways Heirloom gives back; and the app
+// again with its qualifications. scripts/check-copy.mjs reads this page: the
+// sentences it requires are spread through the app sections and the last band.
 import Base from '../layouts/Base.astro';
 import HouseHero from '../components/HouseHero.astro';
+import AppGrid from '../components/AppGrid.astro';
+import { ALSO, SHOTS } from '../lib/app';
+import { APP_STORE, WEB_APP } from '../lib/nav';
+import { collection, SEAL_KINDS, inScope } from '../lib/portal';
+import { AREAS } from '../lib/reference';
 import data from '../data/home/house.json';
 const fmt = (n: number) => '$' + n.toLocaleString('en-US');
+const n = (x: number) => x.toLocaleString('en-US');
 const families = [
   { href: '/marks/london-date-letters', t: 'British date letters', d: 'London, Birmingham, Sheffield and Chester, by year' },
   { href: '/marks/silver-marks', t: 'Silver marks', d: 'Sterling, coin, plate and the world’s standards' },
@@ -13,6 +21,18 @@ const families = [
   { href: '/marks/chinese-reign-marks', t: 'Chinese reign marks', d: 'Match the six characters on the base' },
   { href: '/signatures', t: 'Artists’ signatures', d: 'Dated examples from museum collections' },
   { href: '/marks/singer-serial-numbers', t: 'Serial numbers', d: 'Singer, Leica, Rolex, Omega and pocket watches' },
+];
+const c = collection();
+const refStats = [
+  { v: n(c.records.filter((r) => !SEAL_KINDS.has(r.kind) && inScope(r.family, 'marks')).length), t: 'marks, date letters, reigns and makers' },
+  { v: n(c.records.filter((r) => SEAL_KINDS.has(r.kind) || r.kind === 'signature example').length), t: 'seals and signatures' },
+  { v: n(c.sources.length), t: 'sources cited, from old handbooks to museum records' },
+  { v: n(AREAS().length), t: 'areas, from British silver to Korean celadon' },
+];
+const phones = [
+  { s: SHOTS.pdf, cls: 'l' },
+  { s: SHOTS.rooms, cls: 'c' },
+  { s: SHOTS.value, cls: 'r' },
 ];
 const jsonld = [{
   '@type': 'MobileApplication', name: 'Heirloom: Know What You Own', operatingSystem: 'iOS', applicationCategory: 'LifestyleApplication',
@@ -27,10 +47,42 @@ const jsonld = [{
 >
   <HouseHero />
 
+  <section class="apx" id="app" aria-labelledby="app-t">
+    <div class="wrap apx__in">
+      <div class="apx__copy">
+        <p class="eyebrow">The Heirloom app</p>
+        <h2 id="app-t">Your home’s inventory, room by room.</h2>
+        <p class="lede">The photos, the stories, and what each item’s marks say, ready for your insurer or your family. Photograph an item, or write it down: either is a real start, and your words are the record.</p>
+        <div class="apx__cta">
+          <a class="apx__badge" href={APP_STORE}><img src="/app-store-badge.svg" alt="Download Heirloom on the App Store" width="156" height="52" /></a>
+          <a class="btn" href={WEB_APP}>Use it on the web</a>
+        </div>
+        <p class="muted apx__us">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
+      </div>
+      <div class="apx__phones">
+        {phones.map((p) => (
+          <img class={`apx__p apx__p--${p.cls}`} src={`/screens/${p.s.f}-440.webp`} srcset={`/screens/${p.s.f}-440.webp 440w, /screens/${p.s.f}.webp 660w`} sizes="300px" alt={p.s.alt} width="440" height="956" loading={p.cls === 'c' ? 'eager' : 'lazy'} decoding="async" />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap feats" aria-labelledby="does">
+    <div class="sechead">
+      <h2 id="does">What it does</h2>
+      <p class="muted">Take it one room at a time, or one item at a time, and stop whenever you like. A record is complete when you say it is.</p>
+    </div>
+    <AppGrid />
+    <ul class="also">
+      {ALSO.map((a) => <li><strong>{a.t}</strong><span>{a.d}</span></li>)}
+    </ul>
+    <a class="btn btn--ink feats__more" href="/app">See how Heirloom works</a>
+  </section>
+
   <section class="wrap hs" aria-labelledby="in-house">
-    <div class="hs__head">
+    <div class="sechead">
       <h2 id="in-house">In this house</h2>
-      <p class="muted">Eleven items an ordinary house might hold. Some are worth more than people expect, some much less, and two have no price: one because no sale can price it, one because no sale of it has been recorded. The figures are sales of similar items, not appraisals of yours.</p>
+      <p class="muted">The house at the top of the page holds eleven items an ordinary house might hold. Some are worth more than people expect, some much less, and two have no price: one because no sale can price it, one because no sale of it has been recorded. The figures are sales of similar items, not appraisals of yours.</p>
     </div>
     <div class="rooms">
       {data.rooms.map((room) => (
@@ -56,19 +108,36 @@ const jsonld = [{
   </section>
 
   <section class="band" aria-labelledby="look-up">
-    <div class="wrap band__in">
-      <div>
-        <h2 id="look-up">Look something up</h2>
-        <p class="muted">Type what you can see on the item: a letter, a year, a maker, a number, or the characters on a base.</p>
-        <form class="look" action="/marks/" method="get" role="search">
-          <label class="visually-hidden" for="q">Search the marks reference</label>
-          <input class="field" id="q" name="q" type="search" placeholder="A letter, a year, 925, Gorham, 大明成化年製…" autocomplete="off" />
-          <button class="btn btn--primary" type="submit">Search</button>
-        </form>
+    <div class="wrap">
+      <div class="give">
+        <div>
+          <p class="eyebrow">Giving back</p>
+          <h2 id="look-up">Mark references, brought up to date</h2>
+        </div>
+        <div class="give__text">
+          <p class="give__lede">The reference library is one of the ways we want to contribute to the art world.</p>
+          <p>Auction houses, dealers, museums, collectors and families all lean on the same references to read a hallmark, date a pot or place a signature. Most of them still live in out-of-print books, photocopied tables and forum threads. They are a utility that was never modernized, and we are modernizing it: free to use, searchable in one place, readable on a phone, and with each record naming its sources.</p>
+          <p class="muted">It is the same reference the Advisor reads, so a mark read in your photo links back to the record it matched.</p>
+        </div>
       </div>
-      <ul class="fams">
-        {families.map((f) => <li><a href={f.href}><strong>{f.t}</strong><span>{f.d}</span></a></li>)}
+      <ul class="give__stats">
+        {refStats.map((s) => <li><strong class="num">{s.v}</strong><span>{s.t}</span></li>)}
       </ul>
+      <div class="band__in">
+        <div>
+          <h3>Look something up</h3>
+          <p class="muted">Type what you can see on the item: a letter, a year, a maker, a number, or the characters on a base.</p>
+          <form class="look" action="/marks/" method="get" role="search">
+            <label class="visually-hidden" for="q">Search the marks reference</label>
+            <input class="field" id="q" name="q" type="search" placeholder="A letter, a year, 925, Gorham, 大明成化年製…" autocomplete="off" />
+            <button class="btn btn--primary" type="submit">Search</button>
+          </form>
+          <a class="give__all" href="/marks/">The whole reference →</a>
+        </div>
+        <ul class="fams">
+          {families.map((f) => <li><a href={f.href}><strong>{f.t}</strong><span>{f.d}</span></a></li>)}
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -84,7 +153,6 @@ const jsonld = [{
       <p class="muted app__us">The iPhone app is in the US App Store for now. Heirloom on the web works everywhere, at <a href="https://web.heirloomapp.io">web.heirloomapp.io</a>.</p>
     </div>
     <ul class="app__points">
-      <li><strong>Photograph it, or write it down.</strong> Either is a real start, and your words are the record.</li>
       <li><strong>The Advisor reads the evidence.</strong> It reads the marks, labels and details in your photos and says plainly what it cannot tell.</li>
       <li><strong>An estimate only with evidence.</strong> One appears when there is evidence for one, with its sources. Many keepsakes have no market value, and that is fine. Estimates are not professional appraisals.</li>
       <li><strong>Who it’s meant for.</strong> Note who each item is meant for; the list grants no one access.</li>
@@ -96,9 +164,31 @@ const jsonld = [{
 </Base>
 
 <style>
-  .hs { padding-block: 72px 24px; }
-  .hs__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px 48px; align-items: end; margin-bottom: 28px; }
-  .hs__head p { margin: 0; max-width: 60ch; }
+  .sechead { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px 48px; align-items: end; margin-bottom: 28px; }
+  .sechead p { margin: 0; max-width: 60ch; }
+
+  /* The app, first after the house: its words on the left, three of its screens fanned on the right. */
+  .apx { overflow: hidden; }
+  .apx__in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 32px 56px; align-items: center; padding-block: clamp(64px, 8vw, 112px) clamp(40px, 5vw, 72px); }
+  .apx h2 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.4rem); font-stretch: 114%; letter-spacing: -0.022em; line-height: 1.02; margin: 12px 0 18px; max-width: 14ch; }
+  .apx__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 26px 0 14px; }
+  .apx__badge img { height: 52px; width: auto; display: block; }
+  .apx__cta .btn { min-height: 52px; }
+  .apx__us { font-size: 14.5px; max-width: 52ch; }
+  .apx__phones { position: relative; height: clamp(460px, 44vw, 620px); }
+  .apx__p { position: absolute; top: 50%; left: 50%; height: auto; border-radius: 30px; border: 1px solid var(--rule); box-shadow: var(--shadow-lift); background: var(--paper); }
+  .apx__p--c { z-index: 2; width: clamp(220px, 21vw, 290px); transform: translate(-50%, -50%); }
+  .apx__p--l, .apx__p--r { z-index: 1; width: clamp(180px, 17vw, 240px); opacity: 0.97; }
+  .apx__p--l { transform: translate(-112%, -46%) rotate(-7deg); }
+  .apx__p--r { transform: translate(12%, -46%) rotate(7deg); }
+
+  .feats { padding-top: clamp(32px, 4vw, 56px); }
+  .also { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; }
+  .also li { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--ink-2); }
+  .also strong { color: var(--ink); font-weight: 600; }
+  .feats__more { width: 100%; justify-content: center; min-height: 52px; margin-top: 28px; }
+
+  .hs { padding-block: 96px 24px; }
   .rooms { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
   .room { border-top: 2px solid var(--accent); padding-top: 12px; min-width: 0; }
   .room ul { list-style: none; margin: 8px 0 0; padding: 0; }
@@ -110,17 +200,31 @@ const jsonld = [{
   .room__v a { color: var(--ink-2); }
   .room li.is-found .room__v span { color: var(--accent-ink); font-weight: 600; }
   .hs__credit { margin-top: 20px; }
-  .band { background: var(--paper-2); border-block: 1px solid var(--rule); margin-top: 64px; }
-  .band__in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 40px 56px; padding-block: 64px; align-items: start; }
-  .band h2 { margin-bottom: 10px; }
+
+  /* The reference: one of the ways Heirloom gives back. */
+  .band { background: var(--paper-2); border-block: 1px solid var(--rule); margin-top: 80px; padding-block: 72px 64px; }
+  .give { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px 48px; align-items: start; }
+  .give h2 { margin-top: 10px; max-width: 16ch; }
+  .give__text p { margin: 0 0 14px; max-width: 62ch; color: var(--ink-2); }
+  .give__lede { font: 600 clamp(1.15rem, 1rem + 0.5vw, 1.4rem)/1.35 var(--display); font-stretch: 106%; color: var(--ink) !important; }
+  .give__stats { list-style: none; margin: 36px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule); }
+  .give__stats li { display: grid; gap: 4px; padding: 18px 20px 18px 0; border-bottom: 1px solid var(--rule); }
+  .give__stats li + li { padding-left: 20px; border-left: 1px solid var(--rule); }
+  .give__stats strong { font: 500 clamp(26px, 2.6vw, 36px)/1.1 var(--mono); letter-spacing: -0.03em; color: var(--accent-ink); }
+  .give__stats span { font-size: 14px; color: var(--ink-2); }
+  .band__in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 40px 56px; padding-top: 48px; align-items: start; }
+  .band h3 { font-size: 1.35rem; margin-bottom: 8px; }
   .look { display: flex; gap: 10px; margin-top: 18px; }
+  .look .field { flex: 1; min-width: 0; }
   .look .btn { min-height: 52px; }
+  .give__all { display: inline-block; margin-top: 16px; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent); }
   .fams { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
   .fams a { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--rule); text-decoration: none; }
   .fams a:hover strong { color: var(--accent-ink); }
   .fams span { font-size: 14px; color: var(--ink-2); }
+
   /* The app band: the logo's orange, a shade deeper so white text reads (4.6:1). */
-  .appband { --band: #d63c12; background: var(--band); color: #fff; margin-top: 80px; }
+  .appband { --band: #d63c12; background: var(--band); color: #fff; margin-top: 0; }
   .appband .lede, .appband .muted, .appband .app__points li, .appband .label { color: rgb(255 255 255 / 0.86); }
   .appband a:not(.btn) { color: #fff; text-decoration-color: rgb(255 255 255 / 0.6); }
   .appband .app__points li { border-bottom-color: rgb(255 255 255 / 0.25); }
@@ -137,8 +241,30 @@ const jsonld = [{
   .app__points li { padding: 14px 0; border-bottom: 1px solid var(--rule); color: var(--ink-2); }
   .app__points strong { display: block; color: var(--ink); font-weight: 600; }
   .app__fine { grid-column: 1 / -1; margin: 0; }
+
+  @media (max-width: 960px) {
+    .apx__in { grid-template-columns: minmax(0, 1fr); }
+    .apx h2 { max-width: 18ch; }
+    .apx__phones { height: clamp(420px, 92vw, 600px); }
+    .apx__p--c { width: min(270px, 52vw); }
+    .apx__p--l, .apx__p--r { width: min(220px, 42vw); }
+    .give__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .give__stats li:nth-child(3) { padding-left: 0; border-left: 0; }
+    .also { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
   @media (max-width: 860px) {
-    .hs__head, .band__in, .app { grid-template-columns: minmax(0, 1fr); }
+    .sechead, .give, .band__in, .app { grid-template-columns: minmax(0, 1fr); }
     .fams { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .also { grid-template-columns: minmax(0, 1fr); }
+    .apx__cta { display: grid; grid-template-columns: auto minmax(0, 1fr); }
+    .apx__badge img { height: 50px; }
+    .apx__cta .btn { width: 100%; min-height: 50px; justify-content: center; padding-inline: 12px; }
+    .apx__p--l { transform: translate(-96%, -44%) rotate(-7deg); }
+    .apx__p--r { transform: translate(-4%, -44%) rotate(7deg); }
+    .give__stats li { padding-right: 12px; }
+    .give__stats li + li { padding-left: 12px; }
+    .look .btn { padding-inline: 16px; }
   }
 </style>
