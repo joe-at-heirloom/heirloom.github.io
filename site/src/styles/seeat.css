@@ -6,3 +6,5 @@
 .seeat li { margin: 4px 0; }
 .seeat a { overflow-wrap: anywhere; }
 .seeat .muted { color: var(--ink-3); }
+/* In a record sheet the aside lays pictures out in a grid on phones: the links take its whole width. */
+.sheet2__aside > .seeat { grid-column: 1 / -1; margin: 0; }

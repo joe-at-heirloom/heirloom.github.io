@@ -118,7 +118,7 @@ function index() {
 export const childrenOf = (id: string) => index().kids.get(id) ?? [];
 // A record's links to where its mark can be seen (attributes.see_at), by the collection's id.
 let byId: Map<string, Rec> | null = null;
-const seeAtOf = (id: string) => (byId ??= new Map(collection().records.map((r) => [r.id, r]))).get(id)?.attributes?.see_at;
+export const seeAtOf = (id: string) => (byId ??= new Map(collection().records.map((r) => [r.id, r]))).get(id)?.attributes?.see_at;
 
 function picOf(r: Rec): Pic | null {
   const i = r.image_id ? index().img.get(r.image_id) : undefined;

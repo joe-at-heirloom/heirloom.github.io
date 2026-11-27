@@ -7,6 +7,8 @@ import Reference from '../../../layouts/Reference.astro';
 import AppBox from '../../../components/AppBox.astro';
 import Faq from '../../../components/Faq.astro';
 import PwPhotos from '../../../components/ref/PwPhotos.astro';
+import { SeeAt } from '../../../components/SeeAt';
+import { seeAtOf } from '../../../lib/records';
 import { PW, glazes, wares, making, reading, GLAZE_FAMILIES, numbering, clean, yearsOf, chosen, pieceItem, photos, photoItem } from '../../../lib/pewabic';
 import { articleLd, faqLd } from '../../../lib/site';
 import '../../../styles/pewabic.css';
@@ -76,6 +78,7 @@ const graph = [articleLd(path, 'Pewabic glazes and wares', description, '2026-11
                   </details>
                 )}
                 {g.single && <p class="onesrc">One source so far.</p>}
+                <SeeAt links={seeAtOf(`pewabic-glaze-${g.id}`)} pictured={false} />
               </div>
               <div class="pwglaze__side">
                 <div><strong>{yrs ?? 'Undated'}</strong>{g.to == null && g.from != null ? 'and still made' : ''}</div>
@@ -103,6 +106,7 @@ const graph = [articleLd(path, 'Pewabic glazes and wares', description, '2026-11
               {clean(w.what) && <p>{clean(w.what)}</p>}
               {clean(w.recognize) && <p><span class="label">How to recognize it. </span>{clean(w.recognize)}</p>}
               {w.single && <p class="onesrc">One source so far.</p>}
+              <SeeAt links={seeAtOf(`pewabic-ware-${w.id}`)} pictured={false} />
             </div>
           );
         })}
