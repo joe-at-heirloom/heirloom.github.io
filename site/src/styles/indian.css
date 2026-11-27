@@ -113,3 +113,21 @@
 
 /* Bhojak's Patan inscriptions by century: four even columns. */
 .ipatan .itable__row { grid-template-columns: repeat(4, minmax(4.5em, 1fr)); min-width: 0; }
+
+/* The siyaq reader (islands/SiyaqReader): the sum above, the key as buttons. */
+.sq__sum { display: grid; gap: 8px; padding: 12px 14px; margin: 10px 0 8px; border: 1px solid var(--rule); border-radius: var(--r); background: var(--paper-2); }
+.sq__hint { margin: 0; font-size: 15px; color: var(--ink-2); }
+.sq__written { margin: 0; text-align: right; overflow-x: auto; overflow-y: hidden; }
+.sq__written .siyaq { display: inline-block; font-size: 2rem; line-height: 1.5; padding: 0 .75em; }
+.sq__total { margin: 0; font-size: 15px; }
+.sq__total strong { font-size: 1.6rem; color: var(--ink); margin-right: 4px; }
+.sq__actions { display: flex; gap: 8px; }
+.sq__btn { flex: 1 1 0; min-height: 44px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); color: var(--ink); font: 500 14.5px/1.2 var(--sans); cursor: pointer; }
+.sq__btn:hover:not(:disabled) { border-color: var(--ink-3); }
+.sq__btn:disabled { opacity: .4; cursor: default; }
+.isiyaq__slot { padding: 0 !important; display: grid; }
+button.isiyaq__cell { border: 0; background: none; color: inherit; cursor: pointer; padding: 8px 6px; border-radius: calc(var(--r) - 2px); font: inherit; }
+button.isiyaq__cell:hover { background: var(--paper-2); }
+button.isiyaq__cell:active { background: var(--accent-wash); }
+button.isiyaq__cell:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.isiyaq__cell--still { padding: 8px 6px; }

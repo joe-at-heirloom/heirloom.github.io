@@ -8,6 +8,7 @@ import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
 import IndianDateReader, { type ReaderEra, type Keypad } from '../../islands/IndianDateReader';
+import SiyaqReader from '../../islands/SiyaqReader';
 import { dateTables, indicChars, ojhaDigits } from '../../lib/indian';
 import { media } from '../../lib/media';
 import { SCRIPTS, indicFace } from '../../lib/scripts';
@@ -155,31 +156,8 @@ const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written])
     {siyaq && (
       <section class="block" aria-labelledby="siyaq">
         <h2 id="siyaq">Siyaq: the accountants’ figures</h2>
-        <p class="muted">{siyaq.intro} Find the shape in its row; the number under it is its value. An amount is read by adding up its signs.</p>
-        <div class="isiyaq" role="table" aria-label="Siyaq figures">
-          {siyaq.rows.map((r: any) => (
-            <div class="isiyaq__row" role="row">
-              <span role="rowheader">{orderLabel[r.order] ?? r.order}</span>
-              {r.cells.map((c: any) => (
-                <span role="cell" class="isiyaq__cell" title={c.word ? `${c.value.toLocaleString('en-US')}, from ${c.word}` : c.value.toLocaleString('en-US')}>
-                  <span class="siyaq" lang="fa" dir="rtl">{c.char}</span>
-                  <small>{c.value.toLocaleString('en-US')}</small>
-                </span>
-              ))}
-            </div>
-          ))}
-          {(siyaq.large ?? []).length > 0 && (
-            <div class="isiyaq__row isiyaq__row--large" role="row">
-              <span role="rowheader">Larger</span>
-              {siyaq.large.map((x: any) => (
-                <span role="cell" class="isiyaq__cell isiyaq__cell--wide">
-                  <span class="siyaq" lang="fa" dir="rtl">{x.char}</span>
-                  <small>{x.label}{x.value ? ` (${x.value.toLocaleString('en-US')})` : ''}</small>
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
+        <p class="muted">{siyaq.intro} Find the shape in its row; the number under it is its value. An amount is the sum of its signs: tap them below and the page adds them up.</p>
+        <SiyaqReader client:visible rows={siyaq.rows} large={siyaq.large} labels={orderLabel} />
         <ul class="isiyaq__facts">
           {siyaq.facts.map((f: any) => <li>{f.text} <span class="muted">({siyaqSrc(f.sources).join('; ')}{f.pages ? `, pp. ${f.pages}` : ''})</span></li>)}
         </ul>
