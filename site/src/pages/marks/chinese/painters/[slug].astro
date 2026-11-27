@@ -167,7 +167,7 @@ const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${
                 )}
                 {r.date_problem && <p class="cn-rec__note cn-doubt">Date check: {r.date_problem}.</p>}
                 {r.note_en ? (
-                  <p class="cn-rec__note">{r.opinions.length ? 'Lao’s note' : 'Lao’s note (the expert is not named)'}: <span class="tr">{r.note_en}</span> <span class="han faint">按：{r.note}</span>{r.note_doubt && <span class="cn-doubt"> Translator’s note: {voice(r.note_doubt)}</span>}</p>
+                  <p class="cn-rec__note">{r.opinions.length ? 'Lao’s note' : 'Lao’s note (the specialist is not named)'}: <span class="tr">{r.note_en}</span> <span class="han faint">按：{r.note}</span>{r.note_doubt && <span class="cn-doubt"> Translator’s note: {voice(r.note_doubt)}</span>}</p>
                 ) : r.note ? <p class="cn-rec__note han">按：{r.note}</p> : null}
                 {r.opinions.length > 0 && (
                   <ul class="cn-rec__ops">
