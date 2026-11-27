@@ -1,0 +1,764 @@
+{
+ "source": "Gaurishankar Hirachand Ojha, Bhāratīya Prācīna Lipimālā (The Palaeography of India), 2nd ed., Ajmer, 1918: plates 77–81 (the scripts in use in 1918) and plate 84 (the origin of the Nagari digits). Cut from the Munshiram Manoharlal facsimile reprint (PDF pages 303–307, 310; 600 dpi, 1-bit). Public domain (1918; Ojha died 1947).",
+ "scripts": {
+  "sharada": {
+   "plate": 77,
+   "pdf_page": 303,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/sharada-1.png",
+     "w": 35,
+     "h": 66
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/sharada-2.png",
+     "w": 36,
+     "h": 66
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/sharada-3.png",
+     "w": 46,
+     "h": 66
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/sharada-4.png",
+     "w": 46,
+     "h": 66
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/sharada-5.png",
+     "w": 48,
+     "h": 66
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/sharada-6.png",
+     "w": 58,
+     "h": 66
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/sharada-7.png",
+     "w": 26,
+     "h": 66
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/sharada-8.png",
+     "w": 34,
+     "h": 66
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/sharada-9.png",
+     "w": 52,
+     "h": 66
+    },
+    "0": {
+     "file": "marks/img/indian/ojha/sharada-0.png",
+     "w": 30,
+     "h": 66
+    }
+   }
+  },
+  "takri": {
+   "plate": 77,
+   "pdf_page": 303,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/takri-1.png",
+     "w": 38,
+     "h": 51
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/takri-2.png",
+     "w": 36,
+     "h": 51
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/takri-3.png",
+     "w": 44,
+     "h": 51
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/takri-4.png",
+     "w": 34,
+     "h": 51
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/takri-5.png",
+     "w": 43,
+     "h": 51
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/takri-6.png",
+     "w": 43,
+     "h": 51
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/takri-7.png",
+     "w": 30,
+     "h": 51
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/takri-8.png",
+     "w": 40,
+     "h": 51
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/takri-9.png",
+     "w": 35,
+     "h": 51
+    },
+    "0": {
+     "file": "marks/img/indian/ojha/takri-0.png",
+     "w": 30,
+     "h": 51
+    }
+   }
+  },
+  "gurmukhi": {
+   "plate": 77,
+   "pdf_page": 303,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/gurmukhi-1.png",
+     "w": 31,
+     "h": 85
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/gurmukhi-2.png",
+     "w": 32,
+     "h": 85
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/gurmukhi-3.png",
+     "w": 30,
+     "h": 85
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/gurmukhi-4.png",
+     "w": 33,
+     "h": 85
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/gurmukhi-5.png",
+     "w": 36,
+     "h": 85
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/gurmukhi-6.png",
+     "w": 32,
+     "h": 85
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/gurmukhi-7.png",
+     "w": 35,
+     "h": 85
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/gurmukhi-8.png",
+     "w": 38,
+     "h": 85
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/gurmukhi-9.png",
+     "w": 50,
+     "h": 85
+    },
+    "0": {
+     "file": "marks/img/indian/ojha/gurmukhi-0.png",
+     "w": 40,
+     "h": 85
+    }
+   }
+  },
+  "kaithi": {
+   "plate": 78,
+   "pdf_page": 304,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/kaithi-1.png",
+     "w": 31,
+     "h": 67
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/kaithi-2.png",
+     "w": 38,
+     "h": 67
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/kaithi-3.png",
+     "w": 39,
+     "h": 67
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/kaithi-4.png",
+     "w": 38,
+     "h": 67
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/kaithi-5.png",
+     "w": 32,
+     "h": 67
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/kaithi-6.png",
+     "w": 45,
+     "h": 67
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/kaithi-7.png",
+     "w": 56,
+     "h": 67
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/kaithi-8.png",
+     "w": 58,
+     "h": 67
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/kaithi-9.png",
+     "w": 55,
+     "h": 67
+    }
+   }
+  },
+  "bengali": {
+   "plate": 78,
+   "pdf_page": 304,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/bengali-1.png",
+     "w": 30,
+     "h": 66
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/bengali-2.png",
+     "w": 44,
+     "h": 66
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/bengali-3.png",
+     "w": 62,
+     "h": 66
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/bengali-4.png",
+     "w": 34,
+     "h": 66
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/bengali-5.png",
+     "w": 40,
+     "h": 66
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/bengali-6.png",
+     "w": 50,
+     "h": 66
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/bengali-7.png",
+     "w": 30,
+     "h": 66
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/bengali-8.png",
+     "w": 56,
+     "h": 66
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/bengali-9.png",
+     "w": 40,
+     "h": 66
+    },
+    "0": {
+     "file": "marks/img/indian/ojha/bengali-0.png",
+     "w": 32,
+     "h": 66
+    }
+   }
+  },
+  "maithili": {
+   "plate": 78,
+   "pdf_page": 304,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/maithili-1.png",
+     "w": 20,
+     "h": 71
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/maithili-2.png",
+     "w": 40,
+     "h": 71
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/maithili-3.png",
+     "w": 39,
+     "h": 71
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/maithili-4.png",
+     "w": 41,
+     "h": 71
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/maithili-5.png",
+     "w": 72,
+     "h": 71
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/maithili-6.png",
+     "w": 38,
+     "h": 71
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/maithili-7.png",
+     "w": 56,
+     "h": 71
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/maithili-8.png",
+     "w": 54,
+     "h": 71
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/maithili-9.png",
+     "w": 45,
+     "h": 71
+    }
+   }
+  },
+  "odia": {
+   "plate": 79,
+   "pdf_page": 305,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/odia-1.png",
+     "w": 36,
+     "h": 63
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/odia-2.png",
+     "w": 39,
+     "h": 63
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/odia-3.png",
+     "w": 55,
+     "h": 63
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/odia-4.png",
+     "w": 44,
+     "h": 63
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/odia-5.png",
+     "w": 53,
+     "h": 63
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/odia-6.png",
+     "w": 48,
+     "h": 63
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/odia-7.png",
+     "w": 40,
+     "h": 63
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/odia-8.png",
+     "w": 46,
+     "h": 63
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/odia-9.png",
+     "w": 42,
+     "h": 63
+    }
+   }
+  },
+  "gujarati": {
+   "plate": 79,
+   "pdf_page": 305,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/gujarati-1.png",
+     "w": 30,
+     "h": 56
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/gujarati-2.png",
+     "w": 44,
+     "h": 56
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/gujarati-3.png",
+     "w": 34,
+     "h": 56
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/gujarati-4.png",
+     "w": 52,
+     "h": 56
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/gujarati-5.png",
+     "w": 43,
+     "h": 56
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/gujarati-6.png",
+     "w": 35,
+     "h": 56
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/gujarati-7.png",
+     "w": 42,
+     "h": 56
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/gujarati-8.png",
+     "w": 32,
+     "h": 56
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/gujarati-9.png",
+     "w": 39,
+     "h": 56
+    }
+   }
+  },
+  "modi": {
+   "plate": 79,
+   "pdf_page": 305,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/modi-1.png",
+     "w": 21,
+     "h": 63
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/modi-2.png",
+     "w": 46,
+     "h": 63
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/modi-3.png",
+     "w": 30,
+     "h": 63
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/modi-4.png",
+     "w": 53,
+     "h": 63
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/modi-5.png",
+     "w": 55,
+     "h": 63
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/modi-6.png",
+     "w": 46,
+     "h": 63
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/modi-7.png",
+     "w": 45,
+     "h": 63
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/modi-8.png",
+     "w": 47,
+     "h": 63
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/modi-9.png",
+     "w": 54,
+     "h": 63
+    }
+   }
+  },
+  "telugu": {
+   "plate": 80,
+   "pdf_page": 306,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/telugu-1.png",
+     "w": 32,
+     "h": 51
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/telugu-2.png",
+     "w": 37,
+     "h": 51
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/telugu-3.png",
+     "w": 31,
+     "h": 51
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/telugu-4.png",
+     "w": 34,
+     "h": 51
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/telugu-5.png",
+     "w": 42,
+     "h": 51
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/telugu-6.png",
+     "w": 42,
+     "h": 51
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/telugu-7.png",
+     "w": 34,
+     "h": 51
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/telugu-8.png",
+     "w": 56,
+     "h": 51
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/telugu-9.png",
+     "w": 44,
+     "h": 51
+    },
+    "0": {
+     "file": "marks/img/indian/ojha/telugu-0.png",
+     "w": 31,
+     "h": 51
+    }
+   }
+  },
+  "kannada": {
+   "plate": 80,
+   "pdf_page": 306,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/kannada-1.png",
+     "w": 38,
+     "h": 56
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/kannada-2.png",
+     "w": 46,
+     "h": 56
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/kannada-3.png",
+     "w": 39,
+     "h": 56
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/kannada-4.png",
+     "w": 29,
+     "h": 56
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/kannada-5.png",
+     "w": 44,
+     "h": 56
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/kannada-6.png",
+     "w": 50,
+     "h": 56
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/kannada-7.png",
+     "w": 45,
+     "h": 56
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/kannada-8.png",
+     "w": 53,
+     "h": 56
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/kannada-9.png",
+     "w": 48,
+     "h": 56
+    },
+    "0": {
+     "file": "marks/img/indian/ojha/kannada-0.png",
+     "w": 29,
+     "h": 56
+    }
+   }
+  },
+  "grantha": {
+   "plate": 80,
+   "pdf_page": 306,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/grantha-1.png",
+     "w": 51,
+     "h": 56
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/grantha-2.png",
+     "w": 48,
+     "h": 56
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/grantha-3.png",
+     "w": 58,
+     "h": 56
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/grantha-4.png",
+     "w": 49,
+     "h": 56
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/grantha-5.png",
+     "w": 56,
+     "h": 56
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/grantha-6.png",
+     "w": 57,
+     "h": 56
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/grantha-7.png",
+     "w": 57,
+     "h": 56
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/grantha-8.png",
+     "w": 48,
+     "h": 56
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/grantha-9.png",
+     "w": 67,
+     "h": 56
+    }
+   }
+  },
+  "malayalam": {
+   "plate": 81,
+   "pdf_page": 307,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/malayalam-1.png",
+     "w": 37,
+     "h": 55
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/malayalam-2.png",
+     "w": 47,
+     "h": 55
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/malayalam-3.png",
+     "w": 62,
+     "h": 55
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/malayalam-4.png",
+     "w": 44,
+     "h": 55
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/malayalam-5.png",
+     "w": 48,
+     "h": 55
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/malayalam-6.png",
+     "w": 46,
+     "h": 55
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/malayalam-7.png",
+     "w": 34,
+     "h": 55
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/malayalam-8.png",
+     "w": 47,
+     "h": 55
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/malayalam-9.png",
+     "w": 54,
+     "h": 55
+    }
+   }
+  },
+  "tamil": {
+   "plate": 81,
+   "pdf_page": 307,
+   "digits": {
+    "1": {
+     "file": "marks/img/indian/ojha/tamil-1.png",
+     "w": 50,
+     "h": 47
+    },
+    "2": {
+     "file": "marks/img/indian/ojha/tamil-2.png",
+     "w": 52,
+     "h": 47
+    },
+    "3": {
+     "file": "marks/img/indian/ojha/tamil-3.png",
+     "w": 62,
+     "h": 47
+    },
+    "4": {
+     "file": "marks/img/indian/ojha/tamil-4.png",
+     "w": 56,
+     "h": 47
+    },
+    "5": {
+     "file": "marks/img/indian/ojha/tamil-5.png",
+     "w": 64,
+     "h": 75
+    },
+    "6": {
+     "file": "marks/img/indian/ojha/tamil-6.png",
+     "w": 70,
+     "h": 75
+    },
+    "7": {
+     "file": "marks/img/indian/ojha/tamil-7.png",
+     "w": 59,
+     "h": 75
+    },
+    "8": {
+     "file": "marks/img/indian/ojha/tamil-8.png",
+     "w": 60,
+     "h": 75
+    },
+    "9": {
+     "file": "marks/img/indian/ojha/tamil-9.png",
+     "w": 76,
+     "h": 75
+    },
+    "10": {
+     "file": "marks/img/indian/ojha/tamil-10.png",
+     "w": 44,
+     "h": 75
+    },
+    "100": {
+     "file": "marks/img/indian/ojha/tamil-100.png",
+     "w": 64,
+     "h": 75
+    },
+    "1000": {
+     "file": "marks/img/indian/ojha/tamil-1000.png",
+     "w": 52,
+     "h": 75
+    }
+   }
+  }
+ }
+}

@@ -203,3 +203,18 @@ export function techCloseUps(): Record<string, { file: string; title: string | n
   const idx = JSON.parse(readFileSync(file, 'utf8')) as Record<string, any>;
   return Object.fromEntries(Object.entries(idx).map(([k, v]) => [k, { file: String(v.file), title: v.title ?? null, credit: v.credit ?? null }]));
 }
+
+/** One digit as Ojha drew it in 1918: the picture (alpha = ink) and its size. */
+export type OldDigit = { file: string; w: number; h: number };
+/**
+ * The digits Ojha drew on his 1918 plates 77–81 (marks/img/indian/ojha, cut by
+ * hallmark-sources/indian/images/ojha/ojha_digits.py), by picture set (the
+ * `ojha.pictures` of a numerals row) and value: '0'–'9', and '10', '100',
+ * '1000' for Tamil's signs. File paths are relative; pass them through media().
+ */
+export function ojhaDigits(): Record<string, Record<string, OldDigit>> {
+  const file = join(process.cwd(), '..', 'marks', 'img', 'indian', 'ojha', 'index.json');
+  if (!existsSync(file)) return {};
+  const idx = JSON.parse(readFileSync(file, 'utf8')) as { scripts: Record<string, { digits: Record<string, OldDigit> }> };
+  return Object.fromEntries(Object.entries(idx.scripts ?? {}).map(([k, v]) => [k, v.digits]));
+}

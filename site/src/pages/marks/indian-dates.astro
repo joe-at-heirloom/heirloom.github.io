@@ -8,7 +8,8 @@ import Reference from '../../layouts/Reference.astro';
 import AppBox from '../../components/AppBox.astro';
 import Faq from '../../components/Faq.astro';
 import IndianDateReader, { type ReaderEra, type Keypad } from '../../islands/IndianDateReader';
-import { dateTables, indicChars } from '../../lib/indian';
+import { dateTables, indicChars, ojhaDigits } from '../../lib/indian';
+import { media } from '../../lib/media';
 import { SCRIPTS, indicFace } from '../../lib/scripts';
 import { clean } from '../../lib/records';
 import { articleLd, faqLd, crumbsLd, soften } from '../../lib/site';
@@ -54,6 +55,16 @@ const shownEras = eras.filter((e) => e.id !== 'christian-era');
 const western = eras.find((e) => e.id === 'christian-era');
 const museumExamples: any[] = (d.examples ?? []).filter((x: any) => x.url && x.years?.length);
 const eraLabel = (id: string) => eras.find((e) => e.id === id)?.label ?? id;
+// The digits as Ojha drew them in 1918 (plates 77–81), shown under the modern
+// ones: each picture's alpha is the ink, so it takes the text colour (a mask).
+const old = ojhaDigits();
+const oldOf = (n: any) => (n?.ojha?.pictures ? old[n.ojha.pictures] : undefined);
+const glyph = (g: { file: string; w: number; h: number } | undefined, label: string) =>
+  g ? { style: `--g:url("${media(g.file)}");aspect-ratio:${g.w}/${g.h}`, label } : null;
+const more: any[] = (d.numerals_more ?? []).filter((n: any) => oldOf(n));
+const ojhaSrc = src.get('ojha_1918_plates');
+const tamilOld = old.tamil ?? {};
+
 const yearsText = (ys: number[]) => (ys.length > 1 ? `${ys[0]} or ${ys[ys.length - 1]}` : String(ys[0]));
 
 const title = 'Indian Dates on Art and Antiques: Samvat, Shaka, Hijri, Regnal Years | Heirloom';
@@ -100,17 +111,36 @@ const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written])
 
     <section class="block" aria-labelledby="digits">
       <h2 id="digits">Digits in every script</h2>
-      <p class="muted">The same ten digits, 0 to 9, as each script writes them. Find the shapes on your item in a row, and read the number across. Some look alike across scripts: Bengali ৪ (4) looks like an 8, and Persian ۰ (0) is a dot.</p>
+      <p class="muted">The same ten digits, 0 to 9, as each script writes them, and under most scripts the same digits as they were written in 1918. Find the shapes on your item in a row, and read the number across. Some look alike across scripts: Bengali ৪ (4) looks like an 8, and Persian ۰ (0) is a dot.</p>
       <div class="idigits" role="table" aria-label="Digits by script">
         <div class="idigits__row idigits__head" role="row"><span role="columnheader">Script</span>{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => <span role="columnheader" class="num">{i}</span>)}</div>
-        {(d.numerals ?? []).filter((n: any) => Array.isArray(n.digits) && n.digits.length === 10).map((n: any) => { const f = indicFace(n.digits.join('')); return (
-          <div class="idigits__row" role="row">
-            <span role="rowheader">{scriptName(String(n.script))}</span>
+        {(d.numerals ?? []).filter((n: any) => Array.isArray(n.digits) && n.digits.length === 10).map((n: any) => { const f = indicFace(n.digits.join('')); const o = oldOf(n); const name = scriptName(String(n.script)); return (<>
+          <div class={`idigits__row${o ? ' idigits__row--has-old' : ''}`} role="row">
+            <span role="rowheader">{name}</span>
             {n.digits.map((g: string) => <span role="cell" class={f?.cls} lang={f?.lang}>{g}</span>)}
           </div>
-        ); })}
+          {o && (
+            <div class="idigits__row idigits__row--old" role="row">
+              <span role="rowheader">{name} <small>in 1918</small></span>
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => { const x = glyph(o[String(i)], `${i}, ${name}, as Ojha drew it in 1918`); return <span role="cell">{x ? <span class="odig" style={x.style} role="img" aria-label={x.label} /> : <span class="odig__none" aria-label={`Ojha gives no ${i}`}>–</span>}</span>; })}
+            </div>
+          )}
+        </>); })}
       </div>
-      <p class="muted">Tamil and old Malayalam also wrote numbers with signs for ten (௰), a hundred (௱) and a thousand (௲): ௲௮௱௯௰௮ is 1000 + 8 × 100 + 9 × 10 + 8 = 1898. The reader reads them.</p>
+      {more.length > 0 && <>
+        <p class="muted">Ojha draws the digits of six more scripts. The reader does not type these, but you can match the shapes here and read the number across.</p>
+        <div class="idigits idigits--more" role="table" aria-label="More scripts' digits, as Ojha drew them in 1918">
+          <div class="idigits__row idigits__head" role="row"><span role="columnheader">Script</span>{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => <span role="columnheader" class="num">{i}</span>)}</div>
+          {more.map((n: any) => { const o = oldOf(n)!; const name = String(n.script); return (
+            <div class="idigits__row idigits__row--old" role="row">
+              <span role="rowheader">{name}{n.used_for && <small>{n.used_for}</small>}</span>
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => { const x = glyph(o[String(i)], `${i}, ${name}, as Ojha drew it in 1918`); return <span role="cell">{x ? <span class="odig" style={x.style} role="img" aria-label={x.label} /> : <span class="odig__none" aria-label={`Ojha gives no ${i}`}>–</span>}</span>; })}
+            </div>
+          ); })}
+        </div>
+      </>}
+      <p class="muted">Tamil and old Malayalam also wrote numbers with signs for ten (௰), a hundred (௱) and a thousand (௲): ௲௮௱௯௰௮ is 1000 + 8 × 100 + 9 × 10 + 8 = 1898. The reader reads them.{tamilOld['10'] && tamilOld['100'] && tamilOld['1000'] && <> Ojha drew the three signs so in 1918: {(['10', '100', '1000'] as const).map((k, i) => { const x = glyph(tamilOld[k], `${k} in Tamil, as Ojha drew it in 1918`)!; return <>{i > 0 && ', '}<span class="odig odig--inline" style={x.style} role="img" aria-label={x.label} /> ({k})</>; })}. He writes 11 as ten-one and 20 as two-ten, as the reader does.</>}</p>
+      {ojhaSrc && <p class="muted idigits__credit">The rows marked 1918 are cut from Gaurishankar Hirachand Ojha, <a href={ojhaSrc.url?.replace(/#.*$/, '')}><cite>Bhāratīya Prācīna Lipimālā</cite></a> (Ajmer, 1918), plates 77 to 81, which draw each script as it was written in his day: closer to the hand on an old item than a modern font. A dash means Ojha gives no such digit; several scripts then had no zero.</p>}
     </section>
 
     <section class="block" aria-labelledby="rulers">
