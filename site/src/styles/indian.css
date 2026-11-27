@@ -95,3 +95,18 @@
 .odig--inline { height: 1.4em; vertical-align: -0.35em; }
 .odig__none { color: var(--ink-3); font-size: 14px; }
 .idigits__credit { font-size: 13.5px; }
+
+/* Siyaq, the accountants' figures (Unicode Indic Siyaq Numbers in Noto):
+   a row per order, each sign over its value. */
+.siyaq { font-family: 'Noto Sans Indic Siyaq Numbers', serif; font-weight: 400; letter-spacing: 0; unicode-bidi: isolate; }
+.isiyaq { display: grid; gap: 0; overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--r); margin: 10px 0 14px; }
+.isiyaq__row { display: grid; grid-template-columns: minmax(96px, 1.2fr) repeat(9, minmax(76px, 1fr)); align-items: end; border-top: 1px solid var(--rule); min-width: 780px; }
+.isiyaq__row:first-child { border-top: 0; }
+.isiyaq__row > span { padding: 8px 6px; text-align: center; }
+.isiyaq__row > span:first-child { text-align: left; font-size: 14px; color: var(--ink-2); align-self: center; }
+.isiyaq__cell { display: grid; justify-items: center; gap: 2px; }
+.isiyaq__cell .siyaq { font-size: 1.75rem; line-height: 1.5; }
+.isiyaq__cell small { font: 12px/1.2 var(--mono); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.isiyaq__row--large { grid-template-columns: minmax(96px, 1.2fr) repeat(3, minmax(120px, 1fr)); }
+.isiyaq__facts { margin: 0 0 10px; padding-left: 1.2em; display: grid; gap: 6px; }
+.isiyaq__facts li { line-height: 1.5; }

@@ -34,7 +34,7 @@ const readerRulers = rulers.filter((r) => r.reader !== false && r.accession).map
 const wordsIn = (name: string) => {
   const s = SCRIPTS.find((x) => x.name === name);
   if (!s) return [];
-  const re = new RegExp(`[${s.range}]`);
+  const re = new RegExp(`[${s.range}]`, 'u');
   return [...new Set(readerEras.flatMap((e) => [...e.words, ...(e.after_words ?? [])]).filter((w) => re.test(w)))].slice(0, 12);
 };
 const scriptName = (n: string) => (/Persian|Urdu/.test(n) ? 'Persian/Urdu' : /Burmese|Myanmar/.test(n) ? 'Burmese' : n.split(' ')[0]);
@@ -64,6 +64,11 @@ const glyph = (g: { file: string; w: number; h: number } | undefined, label: str
 const more: any[] = (d.numerals_more ?? []).filter((n: any) => oldOf(n));
 const ojhaSrc = src.get('ojha_1918_plates');
 const tamilOld = old.tamil ?? {};
+// The siyaq figures (indian.json dates.siyaq): one row per order, the large numbers, the facts.
+const siyaq: any = d.siyaq ?? null;
+const siyaqChars = siyaq ? [...siyaq.rows.flatMap((r: any) => r.cells.map((c: any) => c.char)), ...(siyaq.large ?? []).map((x: any) => x.char)].join('') : '';
+const siyaqSrc = (ids: string[] = []) => cite(ids).map((s: any) => s.name.split(',')[0].replace(/^Muḥammad Ẓiyāʾ al-Dīn Aḥmad Shakeb.*$/, 'Shakeb').replace(/^Nand Rām.*$/, 'Nand Rām').replace(/^The Unicode Standard.*$/, 'Unicode'));
+const orderLabel: Record<string, string> = { units: 'Units', tens: 'Tens', hundreds: 'Hundreds', thousands: 'Thousands', 'ten thousands': 'Ten thousands' };
 
 const yearsText = (ys: number[]) => (ys.length > 1 ? `${ys[0]} or ${ys[ys.length - 1]}` : String(ys[0]));
 
@@ -81,7 +86,7 @@ const graph = [
   faqLd(path, faqs),
   crumbsLd(path, h1, ['/marks/indian/', 'Indian marks']),
 ];
-const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written]), d.numerals, rulers.map((r) => r.native), examples, keypads.map((k) => [k.digits, k.words]), museumExamples.map((x) => x.written_date));
+const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written]), d.numerals, rulers.map((r) => r.native), examples, keypads.map((k) => [k.digits, k.words]), museumExamples.map((x) => x.written_date), siyaqChars);
 ---
 <Reference {title} {description} {path} jsonld={graph} {indic}>
   <div>
@@ -142,6 +147,41 @@ const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written])
       <p class="muted">Tamil and old Malayalam also wrote numbers with signs for ten (௰), a hundred (௱) and a thousand (௲): ௲௮௱௯௰௮ is 1000 + 8 × 100 + 9 × 10 + 8 = 1898. The reader reads them.{tamilOld['10'] && tamilOld['100'] && tamilOld['1000'] && <> Ojha drew the three signs so in 1918: {(['10', '100', '1000'] as const).map((k, i) => { const x = glyph(tamilOld[k], `${k} in Tamil, as Ojha drew it in 1918`)!; return <>{i > 0 && ', '}<span class="odig odig--inline" style={x.style} role="img" aria-label={x.label} /> ({k})</>; })}. He writes 11 as ten-one and 20 as two-ten, as the reader does.</>}</p>
       {ojhaSrc && <p class="muted idigits__credit">The rows marked 1918 are cut from Gaurishankar Hirachand Ojha, <a href={ojhaSrc.url?.replace(/#.*$/, '')}><cite>Bhāratīya Prācīna Lipimālā</cite></a> (Ajmer, 1918), plates 77 to 81, which draw each script as it was written in his day: closer to the hand on an old item than a modern font. A dash means Ojha gives no such digit; several scripts then had no zero.</p>}
     </section>
+
+    {siyaq && (
+      <section class="block" aria-labelledby="siyaq">
+        <h2 id="siyaq">Siyaq: the accountants’ figures</h2>
+        <p class="muted">{siyaq.intro} Find the shape in its row; the number under it is its value. An amount is read by adding up its signs.</p>
+        <div class="isiyaq" role="table" aria-label="Siyaq figures">
+          {siyaq.rows.map((r: any) => (
+            <div class="isiyaq__row" role="row">
+              <span role="rowheader">{orderLabel[r.order] ?? r.order}</span>
+              {r.cells.map((c: any) => (
+                <span role="cell" class="isiyaq__cell" title={c.word ? `${c.value.toLocaleString('en-US')}, from ${c.word}` : c.value.toLocaleString('en-US')}>
+                  <span class="siyaq" lang="fa" dir="rtl">{c.char}</span>
+                  <small>{c.value.toLocaleString('en-US')}</small>
+                </span>
+              ))}
+            </div>
+          ))}
+          {(siyaq.large ?? []).length > 0 && (
+            <div class="isiyaq__row isiyaq__row--large" role="row">
+              <span role="rowheader">Larger</span>
+              {siyaq.large.map((x: any) => (
+                <span role="cell" class="isiyaq__cell isiyaq__cell--wide">
+                  <span class="siyaq" lang="fa" dir="rtl">{x.char}</span>
+                  <small>{x.label}{x.value ? ` (${x.value.toLocaleString('en-US')})` : ''}</small>
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+        <ul class="isiyaq__facts">
+          {siyaq.facts.map((f: any) => <li>{f.text} <span class="muted">({siyaqSrc(f.sources).join('; ')}{f.pages ? `, pp. ${f.pages}` : ''})</span></li>)}
+        </ul>
+        <p class="muted idigits__credit">The units and tens are each an Arabic number word cut short (hover a sign for its word). Sources: {cite(siyaq.sources).map((s: any, i: number) => <>{i > 0 && '; '}{s.url ? <a href={s.url}>{s.name}</a> : s.name}</>)}.</p>
+      </section>
+    )}
 
     <section class="block" aria-labelledby="rulers">
       <h2 id="rulers">The Mughal emperors and their regnal years</h2>

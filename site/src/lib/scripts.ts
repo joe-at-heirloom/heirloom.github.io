@@ -27,10 +27,12 @@ export const SCRIPTS: IndicScript[] = [
   { name: 'Sinhala', range: '\\u0D80-\\u0DFF', family: 'Noto Serif Sinhala', lang: 'si' },
   { name: 'Burmese', range: '\\u1000-\\u109F', family: 'Noto Serif Myanmar', lang: 'my' },
   { name: 'Persian/Urdu', range: '\\u0600-\\u06FF\\u0750-\\u077F\\uFB50-\\uFDFF\\uFE70-\\uFEFF', family: 'Noto Nastaliq Urdu', lang: 'fa', rtl: true },
+  // The accountants' siyaq figures (Unicode Indic Siyaq Numbers), set with class .siyaq.
+  { name: 'Siyaq', range: '\\u{1EC70}-\\u{1ECBF}', family: 'Noto Sans Indic Siyaq Numbers', lang: 'fa', rtl: true },
 ];
-const RE = SCRIPTS.map((s) => ({ s, re: new RegExp(`[${s.range}]`) }));
+const RE = SCRIPTS.map((s) => ({ s, re: new RegExp(`[${s.range}]`, 'u') }));
 /** Any character of these scripts. */
-export const INDIC = new RegExp(`[${SCRIPTS.map((s) => s.range).join('')}]`);
+export const INDIC = new RegExp(`[${SCRIPTS.map((s) => s.range).join('')}]`, 'u');
 
 /** The script of a run of text (its first such character's), or null. */
 export function scriptOf(text: string): IndicScript | null {
@@ -50,7 +52,7 @@ export function indicFontUrl(chars: string | undefined): string | null {
   if (!chars) return null;
   const used = [...new Set([...chars].filter((c) => INDIC.test(c)))].join('');
   if (!used) return null;
-  const families = SCRIPTS.filter((s) => new RegExp(`[${s.range}]`).test(used)).map((s) => `family=${s.family.replace(/ /g, '+')}`);
+  const families = SCRIPTS.filter((s) => new RegExp(`[${s.range}]`, 'u').test(used)).map((s) => `family=${s.family.replace(/ /g, '+')}`);
   // Digits and the danda the faces share are part of the subset too.
   return `https://fonts.googleapis.com/css2?${families.join('&')}&display=swap&text=${encodeURIComponent(used + '0123456789.।॥')}`;
 }
