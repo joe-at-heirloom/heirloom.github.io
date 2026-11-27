@@ -1,5 +1,5 @@
 // Tiffany lamps and shades: the shades and bases Tiffany's own catalogues
-// number (Tiffany Bronze Lamps, ca. 1915; Desk Sets, 1910), and museum lamps
+// number (Tiffany Bronze Lamps, undated, about 1913; Desk Sets, 1910), and museum lamps
 // whose recorded marks give a number. From the reference collection (family
 // tiffany-lamps, built by the app's collect.ts from the website's
 // scripts/pages/data/tiffany_lamps.json; research in hallmark-sources/tiffany/lamps).
@@ -20,7 +20,8 @@ export type MuseumLamp = {
   medium: string | null; dimensions: string | null; marks: string | null; shade_no: string | null; base_no: string | null; stamped: string[]; url: string; pic: { file: string; credit: string | null; licence: string | null } | null;
 };
 export const SOURCES: Record<string, { year: number; title: string; url: string; page: (ptr: number) => string }> = {
-  T1915: { year: 1915, title: 'Tiffany Bronze Lamps (ca. 1915)', url: 'https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1240', page: (p) => `https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/${p}` },
+  // T1915 is an id kept from the Met's 'ca. 1915': the booklet matches Tiffany's October 1913 price list (hallmark-sources/tiffany/lamps/catalogues.py)
+  T1915: { year: 1913, title: 'Tiffany Bronze Lamps (about 1913)', url: 'https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1240', page: (p) => `https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/${p}` },
   T1910: { year: 1910, title: 'Desk Sets and Useful Articles (1910)', url: 'https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/1209', page: (p) => `https://libmma.contentdm.oclc.org/digital/collection/p16028coll5/id/${p}` },
 };
 
@@ -61,7 +62,7 @@ export function baseLine(m: Model) {
   const e = m.entries[0];
   return [e?.as_printed, e?.height].filter(Boolean).join(', ');
 }
-/** "$90 (1915)" for each catalogue that prices it. */
+/** "$90 (1913)" for each catalogue that prices it. */
 export const prices = (m: Model, field: 'price' | 'complete' = 'price') =>
   m.entries.map((e) => (e[field] != null ? `$${e[field]} (${SOURCES[e.src].year})` : e.price_text ? `${e.price_text} (${SOURCES[e.src].year})` : null)).filter(Boolean) as string[];
 
@@ -70,13 +71,13 @@ export function cardPhoto(m: Model): { file: string; caption: string; credit: st
   const p = m.photos[0];
   if (p?.kind === 'museum') return { file: p.file, caption: `This number at the ${p.museum}`, credit: null, url: p.url };
   if (p?.kind === 'example') return { file: p.file, caption: `This number${p.museum ? `, ${p.museum}` : ''}`, credit: p.credit, url: p.url };
-  // the 1915 catalogue (lamps one by one) or the 1910 Desk Sets (each set's lamp, cut from the set's photograph)
+  // the Bronze Lamps catalogue (lamps one by one) or the 1910 Desk Sets (each set's lamp, cut from the set's photograph)
   if (p?.kind === 'catalogue') {
-    const where = p.year === 1910 ? `As pictured in 1910, in the ${p.set} desk set` : 'As pictured in 1915';
+    const where = p.year === 1910 ? `As pictured in 1910, in the ${p.set} desk set` : `As pictured in about ${SOURCES.T1915.year}`;
     return { file: p.file, caption: m.kind === 'shade' ? `${where}, on lamp No. ${p.lamp}` : where, credit: null, url: p.url };
   }
   const e = m.example;
-  if (e?.sibling) return { file: e.file, caption: `Not this number: No. ${e.sibling}, the same design, as pictured in 1915`, credit: null, url: e.url };
+  if (e?.sibling) return { file: e.file, caption: `Not this number: No. ${e.sibling}, the same design, as pictured in about ${SOURCES.T1915.year}`, credit: null, url: e.url };
   if (e?.inferred) return { file: e.file, caption: `Not this number: a Tiffany shade of this kind${e.museum ? `, ${e.museum}` : ''}`, credit: /Wikimedia Commons/.test(e.credit ?? '') ? e.credit : null, url: e.url };
   if (e) return { file: e.file, caption: `Not this number: another ${e.design ? `${e.design.replace(/ design$/i, '')} ` : ''}shade${e.museum ? `, ${e.museum}` : ''}`, credit: /Wikimedia Commons/.test(e.credit ?? '') ? e.credit : null, url: e.url };
   // Nothing we may show: a blurred colour tile of the photo on the page we link to
