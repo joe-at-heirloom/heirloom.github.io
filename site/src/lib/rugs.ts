@@ -121,6 +121,11 @@ export function rugSheet(t: RugType): Sheet {
     ['In the trade', t.trade],
     ['What it tells you', t.tells],
   ];
+  // The sources' facts that no field above already says, as on the motif and gul sheets (p2Sheet).
+  const said = facts.map(([, v]) => String(v ?? '')).join(' ').toLowerCase();
+  const extra = t.facts.filter((f) => f.text && !said.includes(f.text.toLowerCase().slice(0, 60))).map((f) => f.text);
+  // One fact to a line, the label on the first only.
+  extra.forEach((x, i) => facts.push([i ? '' : 'What sources say', x]));
   const differ: Differ[] = t.differ.filter((d) => d.says.length > 1).map((d) => ({
     label: d.about.replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase()),
     values: d.says.map((s) => ({ text: s.text, refs: SOURCES.has(s.source) ? [num(s.source)] : [] })),
