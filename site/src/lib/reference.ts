@@ -149,6 +149,8 @@ function staffsLinks(): RefLink[] {
   return staffsFirms().map((f) => ({ href: f.page, label: f.title, note: f.where }));
 }
 function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' | 'german-porcelain' | 'british-pottery' = 'american-dinnerware'): RefLink[] {
+  // British potters' pages are letters: the label carries the span of surnames ("B, Baggaley to Burslem").
+  if (set === 'british-pottery') return dinnerFirms(set).map((f) => ({ href: f.page, label: `${f.title}, ${f.where}` })).sort((a, b) => a.label.localeCompare(b.label));
   return dinnerFirms(set).map((f) => ({ href: f.page, label: f.title, note: f.where })).sort((a, b) => a.label.localeCompare(b.label));
 }
 function artistLinks(): RefLink[] {
