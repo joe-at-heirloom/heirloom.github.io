@@ -276,6 +276,7 @@ function build(): Area[] {
           { href: '/marks/chinese-hall-marks', label: 'Hall marks', note: 'Halls, studios and palace buildings' },
           { href: '/marks/chinese/dating', label: 'Reading a Chinese date', note: 'Era names, the sixty-year cycle, taboo characters' },
           { href: '/marks/chinese/other-marks', label: 'Other marks', note: 'Symbols, good wishes, makers and export marks' },
+          { href: '/marks/chinese/modern-marks', label: 'Republic and modern', note: 'Jingdezhen factories, painters and export marks after 1900' },
           { href: '/marks/chinese/export-porcelain', label: 'Export porcelain', note: 'Rose Medallion, Canton, Nanking, Fitzhugh and their dates' },
         ] },
         { label: 'Other wares', links: [
