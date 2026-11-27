@@ -20,7 +20,9 @@ const noritake = f.key === 'noritake';
 const book = noritake
   ? { short: 'Van Patten (1984)', title: 'The Collector’s Encyclopedia of Noritake', place: 'Paducah, Ky., 1984', wrote: 1984 }
   : { short: 'Van Patten (1997)', title: 'The Collector’s Encyclopedia of Nippon Porcelain, Fourth Series', place: 'Paducah, Ky., 1997', wrote: 1997 };
-const key = bars(f);
+// On the Nippon page most marks carry only the era's years; the line shows the marks with dates of their own.
+const ownDate = new Set(f.marks.filter((m) => m.attributes?.date_basis !== 'rule').map((m) => m.id));
+const key = bars(f).filter((b) => noritake || ownDate.has(b.id));
 const A = Math.max(1870, Math.floor(((key[0]?.from ?? 1890) - 5) / 10) * 10), B = 2000;
 const pct = (y: number) => `${(((Math.min(Math.max(y, A), B) - A) / (B - A)) * 100).toFixed(2)}%`;
 const ticks: number[] = []; for (let y = Math.ceil(A / 10) * 10; y <= B; y += 10) ticks.push(y);
@@ -75,7 +77,7 @@ const graph = [articleLd(path, `${f.title}`, description, '2026-11-27', { about:
   {key.length > 1 && (
     <section class="st-section" aria-labelledby="key">
       <h2 id="key">The dated marks</h2>
-      <p>Each bar runs over the years the book gives for a mark{noritake ? '' : ', or the Nippon era where it gives none'}. A bar fading at its right end was still in use when the book was written ({book.wrote}). Tap a mark to read it in full.</p>
+      <p>Each bar runs over the years the book gives for a mark{noritake ? '' : '; the other marks on this page carry the Nippon era’s years, 1891 to 1921'}. A bar fading at its right end was still in use when the book was written ({book.wrote}). Tap a mark to read it in full.</p>
       <div class="stkey" role="list">
         <div class="stkey__axis" aria-hidden="true">
           <span>Mark</span>
