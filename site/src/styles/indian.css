@@ -110,3 +110,6 @@
 .isiyaq__row--large { grid-template-columns: minmax(96px, 1.2fr) repeat(3, minmax(120px, 1fr)); }
 .isiyaq__facts { margin: 0 0 10px; padding-left: 1.2em; display: grid; gap: 6px; }
 .isiyaq__facts li { line-height: 1.5; }
+
+/* Bhojak's Patan inscriptions by century: four even columns. */
+.ipatan .itable__row { grid-template-columns: repeat(4, minmax(4.5em, 1fr)); min-width: 0; }

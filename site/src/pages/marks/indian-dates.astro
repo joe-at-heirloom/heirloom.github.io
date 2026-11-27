@@ -45,7 +45,7 @@ const keypads: Keypad[] = (d.numerals ?? [])
     const s = SCRIPTS.find((x) => x.name === name);
     return { script: name, lang: s?.lang ?? 'und', rtl: !!s?.rtl, digits: n.digits, words: wordsIn(name) };
   });
-const examples = ['सं० १९५५', 'शके १८२०', '۱۳۱۵ھ', 'সন ১৩০৫ সাল', 'A.H. 1126', 'Samvat 1806'];
+const examples = ['सं० १९५५', 'शके १८२०', '۱۳۱۵ھ', 'সন ১৩০৫ সাল', 'वीर सं. २५०६ वि. सं. २०३६', 'A.H. 1126', 'Samvat 1806'];
 
 const rule = (e: any) => e.rule === 'hijri' ? 'The Hijri year is lunar, 354 or 355 days: each one runs across two Western years (rarely it falls inside one).'
   : e.rule === 'regnal' ? 'Counted from the emperor’s accession: the year of the reign needs the emperor’s name.'
@@ -53,7 +53,11 @@ const rule = (e: any) => e.rule === 'hijri' ? 'The Hijri year is lunar, 354 or 3
 const written = (e: any) => [...new Set((e.as_written ?? []).map((w: any) => String(w.native ?? '').trim()).filter((w: string) => w && !/…/.test(w)))].slice(0, 10) as string[];
 const shownEras = eras.filter((e) => e.id !== 'christian-era');
 const western = eras.find((e) => e.id === 'christian-era');
-const museumExamples: any[] = (d.examples ?? []).filter((x: any) => x.url && x.years?.length);
+const museumExamples: any[] = (d.examples ?? []).filter((x: any) => x.url && x.years?.length && x.group !== 'patan');
+// Bhojak's Patan Jain metal-image inscriptions (indian.json dates.patan and the examples in group 'patan').
+const patan: any = d.patan ?? null;
+const patanExamples: any[] = (d.examples ?? []).filter((x: any) => x.group === 'patan' && x.years?.length);
+const patanTotal = patan ? patan.by_century.reduce((n: number, c: any) => n + c.count, 0) : 0;
 const eraLabel = (id: string) => eras.find((e) => e.id === id)?.label ?? id;
 // The digits as Ojha drew them in 1918 (plates 77–81), shown under the modern
 // ones: each picture's alpha is the ink, so it takes the text colour (a mask).
@@ -86,7 +90,7 @@ const graph = [
   faqLd(path, faqs),
   crumbsLd(path, h1, ['/marks/indian/', 'Indian marks']),
 ];
-const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written]), d.numerals, rulers.map((r) => r.native), examples, keypads.map((k) => [k.digits, k.words]), museumExamples.map((x) => x.written_date), siyaqChars);
+const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written]), d.numerals, rulers.map((r) => r.native), examples, keypads.map((k) => [k.digits, k.words]), museumExamples.map((x) => x.written_date), patanExamples.map((x) => x.written_date), siyaqChars);
 ---
 <Reference {title} {description} {path} jsonld={graph} {indic}>
   <div>
@@ -214,6 +218,34 @@ const indic = indicChars(eras.map((e) => [e.words, e.after_words, e.as_written])
             </li>
           ))}
         </ul>
+      </section>
+    )}
+
+    {patan && patanExamples.length > 0 && (
+      <section class="block" aria-labelledby="patan">
+        <h2 id="patan">Dated Jain images at Patan, worked through</h2>
+        {(patan.facts ?? []).map((f: any) => <p class="muted">{f.text}</p>)}
+        <div class="itable ipatan" role="table" aria-label="Dated inscriptions at Patan by century">
+          <div class="itable__row itable__head" role="row"><span role="columnheader">Samvat</span><span role="columnheader">About</span><span role="columnheader">Count</span><span role="columnheader">Share</span></div>
+          {patan.by_century.map((c: any) => (
+            <div class="itable__row" role="row">
+              <span class="num">{c.from}s</span>
+              <span class="num">{c.from - 57}–{c.from + 42}</span>
+              <span class="num">{c.count.toLocaleString('en-US')}</span>
+              <span class="num">{(100 * c.count) / patanTotal < 1 ? 'under 1%' : `${Math.round((100 * c.count) / patanTotal)}%`}</span>
+            </div>
+          ))}
+        </div>
+        <ul class="iex">
+          {patanExamples.map((x) => (
+            <li>
+              <a href={x.url} rel="nofollow noopener">{soften(String(x.object ?? 'Image'))}</a>, <span class="muted">{x.accession}</span>
+              <br /><span class="iex__date" dir="auto">{String(x.written_date)}</span>
+              <br />{eraLabel(x.era)}: <strong class="num">{yearsText(x.years)}</strong> <span class="muted">· {clean(String(x.method ?? ''))}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="faint">From {cite([patan.source]).map((s: any) => s.url ? <a href={s.url}>{s.name}</a> : s.name)}. The counts are Heirloom’s, over the inscriptions whose year the published text gives cleanly. A written date says when an image was installed; a later copy can carry an older date.</p>
       </section>
     )}
 

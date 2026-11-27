@@ -253,6 +253,7 @@ function wordsAt(t: string, at: number, end: number, eras: readonly IndianEra[],
   return { word: best.word, span, ids: [...best.ids] };
 }
 
+const NEXT_NUMBER = new RegExp(`^${SEP}\\p{Nd}`, 'u');
 const inRange = (e: IndianEra, n: number) => (e.min == null || n >= e.min) && (e.max == null || n <= e.max);
 const parseDate = (s: string) => { const [y, m, d] = s.split('-').map(Number); return gregorianToJd(y, m || 1, d || 1); };
 
@@ -278,7 +279,10 @@ export function readIndianDates(text: string, eras: readonly IndianEra[], rulers
   const byId = new Map(eras.map((e) => [e.id, e]));
   for (const num of numbersIn(t)) {
     const before = wordsAt(t, num.at, num.end, eras, 'before');
-    const after = wordsAt(t, num.at, num.end, eras, 'after');
+    let after = wordsAt(t, num.at, num.end, eras, 'after');
+    // A word after this number that runs straight into another number is that number's era word, not this one's
+    // (वीर सं. २५०६ वि. सं. २०३६: the Jain year, then the Vikram year).
+    if (after && NEXT_NUMBER.test(t.slice(after.span[1]))) after = null;
     if (!before && !after) continue;
     // The word after a number is the more specific (सन् … ई. is a Western year): keep the eras both name, else the one after.
     let ids = before && after ? before.ids.filter((id) => after.ids.includes(id)) : (before ?? after)!.ids;
