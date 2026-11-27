@@ -24,7 +24,7 @@ const graph = [articleLd(path, `${f.title}: German porcelain marks`, description
 <Reference {title} {description} {path} jsonld={graph}>
   <header class="rhead">
     <h1>{f.title}</h1>
-    <p class="rhead__lede">German, Bohemian and Austrian porcelain marks that show {e?.place ? e.place.replace(/\.$/, '').replace(/^A /, 'a ').replace(/^An /, 'an ') : f.title.toLowerCase()}. Open a mark for its maker, town and years.</p>
+    <p class="rhead__lede">German, Bohemian and Austrian porcelain marks that show {e?.place ? e.place.replace(/\.$/, '').replace(/^./, (c) => c.toLowerCase()) : f.title.toLowerCase()}. Open a mark for its maker, town and years.</p>
     <ul class="rhead__meta">
       <li><strong class="num">{f.marks.length}</strong> marks</li>
       <li><strong class="num">{makers}</strong> makers</li>
