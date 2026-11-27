@@ -162,8 +162,12 @@ const cite = (c: Person['shiqu'][number]['cite']) => (c.juan ? `${c.juan}, f. ${
                     r.inscription ? <>inscribed {r.inscription_en && <span class="tr">{r.inscription_en} </span>}<span class={`han${r.inscription_en ? ' faint' : ''}`}>{r.inscription}</span></> : null,
                   ].filter(Boolean).map((x, i) => <>{i > 0 && ' · '}{x}</>)}
                 </p>
+                {r.part_verdicts && Object.keys(r.part_verdicts).length > 0 && (
+                  <p class="cn-rec__note">Judged part by part: {Object.entries(r.part_verdicts).map(([k, v]) => `${k} ${v}`).join(', ')}.</p>
+                )}
+                {r.date_problem && <p class="cn-rec__note cn-doubt">Date check: {r.date_problem}.</p>}
                 {r.note_en ? (
-                  <p class="cn-rec__note">Lao’s note: <span class="tr">{r.note_en}</span> <span class="han faint">按：{r.note}</span>{r.note_doubt && <span class="cn-doubt"> Translator’s note: {voice(r.note_doubt)}</span>}</p>
+                  <p class="cn-rec__note">{r.opinions.length ? 'Lao’s note' : 'Lao’s note (the expert is not named)'}: <span class="tr">{r.note_en}</span> <span class="han faint">按：{r.note}</span>{r.note_doubt && <span class="cn-doubt"> Translator’s note: {voice(r.note_doubt)}</span>}</p>
                 ) : r.note ? <p class="cn-rec__note han">按：{r.note}</p> : null}
                 {r.opinions.length > 0 && (
                   <ul class="cn-rec__ops">

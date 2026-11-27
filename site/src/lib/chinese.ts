@@ -34,6 +34,7 @@ export type SurveyRec = {
   museum: string | null; museum_en?: string | null; page: string; verdict: string; title: string; title_en?: string | null;
   medium: string | null; medium_en?: string; inscription: string | null; inscription_en?: string | null;
   note: string | null; note_en?: string | null; note_doubt?: string; opinions: Opinion[]; match: string;
+  part_verdicts?: Record<string, string>; date_problem?: string; note_attribution?: string;
 };
 export type SealItem = {
   n: number; reading: string; source: string; source_en?: string; date_text: string; collector_seal: boolean; rephotographed: boolean;
@@ -211,7 +212,7 @@ export function wikidataLine(p: Person): { text: string; qid?: string } {
   return { text: 'No matching entry was found in Wikidata, so the dates rest on the book alone.' };
 }
 
-export const VERDICT: Record<string, [string, string]> = { genuine: ['真迹', 'genuine'], forgery: ['僞迹', 'a forgery'], reference: ['資料', 'for reference only'] };
+export const VERDICT: Record<string, [string, string]> = { genuine: ['真迹', 'genuine'], forgery: ['僞迹', 'a forgery'], reference: ['資料', 'kept as material: not accepted as this artist’s own work'] };
 export const EXPERT_EN: Record<string, string> = {
   徐邦達: 'Xu Bangda', 謝稚柳: 'Xie Zhiliu', 啟功: 'Qi Gong', 啓功: 'Qi Gong', 劉九庵: 'Liu Jiu’an', 劉九菴: 'Liu Jiu’an',
   楊仁愷: 'Yang Renkai', 傅熹年: 'Fu Xinian', 謝辰生: 'Xie Chensheng',
