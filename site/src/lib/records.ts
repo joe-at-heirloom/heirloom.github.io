@@ -672,7 +672,12 @@ export function exportSilverSheet(r: Rec): Sheet {
       ['Notes', ((a.notes ?? []) as EsFact[]).map(one).join(' · ')],
     ].map(([label, text]) => [label, clean(text)]).filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
     differ, caution: clean(a.caution),
-    pics: [picOf(r)].filter((p): p is Pic => !!p),
+    // The record's image first, then every other photograph or book plate of the marks.
+    pics: ((main) => [main, ...((a.photos ?? []) as any[]).filter((p) => !main || media(p.file) !== main.file).map((p): Pic => ({
+      file: media(p.file), status: p.book ? 'facsimile' : 'photo',
+      credit: p.book ? `${p.title}, ${p.object_number}` : [p.institution, p.object_number].filter(Boolean).join(', '),
+      url: p.object_page ?? null, alt: clean(p.shows) ?? r.name,
+    }))].filter((p): p is Pic => !!p))(picOf(r)),
     sources: list, single: r.single_source,
     keys: keysOf(r.keys, r.name, city, (a.marks ?? []).map((m: EsFact) => m.v)),
   };
