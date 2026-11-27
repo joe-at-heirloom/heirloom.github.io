@@ -1,6 +1,6 @@
 {
  "generated": "2026-11-24",
- "scope": "Ming imperial-kiln (Jingdezhen Zhushan) excavated vs Palace Museum transmitted wares; per-reign dating evidence. Only free, legitimate sources; the catalogues themselves were NOT consulted.",
+ "scope": "Ming imperial-kiln (Jingdezhen Zhushan) excavated vs Palace Museum transmitted wares; per-reign dating evidence. Only free, legitimate sources; the Palace Museum comparison catalogues are now read too (from scans, page-cited).",
  "sources": [
   {
    "id": "S01",
@@ -288,6 +288,18 @@
    "url": "https://www.mct.gov.cn/whzx/zsdw/ggbwy/202009/t20200921_875254.html",
    "retrieved": "2026-11-24",
    "notes": "raw/mct_20200921.html"
+  },
+  {
+   "id": "CAT-HY",
+   "name": "明代洪武永乐御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（Imperial Porcelains from the Reigns of Hongwu and Yongle in the Ming Dynasty: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and the Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编 (chief editors 王光尧、江建新; adviser 耿宝昌), 故宫出版社, 2015, ISBN 978-7-5134-0747-2",
+   "url": null,
+   "notes": "Read from scans Joe supplied (OCR); facts cite printed pages. Same institution as the Palace Museum web pages."
+  },
+  {
+   "id": "CAT-XD",
+   "name": "明代宣德御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（Imperial Porcelains from the Reign of Xuande in the Ming Dynasty: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and the Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编, 故宫出版社, 2015, ISBN 978-7-5134-0748-9",
+   "url": null,
+   "notes": "Read from scans Joe supplied (OCR); facts cite printed pages. Same institution as the Palace Museum web pages."
   }
  ],
  "catalogues": [
@@ -496,9 +508,15 @@
    "quote_zh": "[S32] 虽然早在洪武二年（1369年）朝廷即在景德镇珠山设陶厂（建文四年更名为“御器厂”，清代更名“御窑厂”）专门烧造宫廷用瓷,但迄今为止，尚未发现署正规年款的洪武朝御窑瓷器。 ／ [S27] 从款式制度上看，洪武时不写年款，永乐才出现刻、印“永乐年制”篆书款，且仅见靶盏一类的制品。",
    "source_ids": [
     "S32",
-    "S27"
+    "S27",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 20,
+    "CAT-XD": 350
+   }
   },
   {
    "id": "F002",
@@ -508,10 +526,14 @@
    "quote_zh": "[S06] 景德镇是闻名于世的瓷都，自明代洪武二年（1369年）开始，朝廷即在景德镇珠山设陶厂（建文四年更名为“御器厂”、清代更名“御窑厂”）专门烧造宫廷用瓷，直至清代最后一朝宣统止，几乎历朝都沿袭这种制度。 ／ [S24] 于是有关洪武官窑设置之年，学界便根据有关文献持有洪武二年和洪武三十五年(建文四年) 两说，从近年珠山出土洪武官窑纪年遗物及相关考证来看，洪武二年建厂说似较为可靠；",
    "source_ids": [
     "S06",
-    "S24"
+    "S24",
+    "CAT-HY"
    ],
    "single_source": false,
-   "note": "Contested: see next fact (PKU 2014 excavation argues for late Hongwu)."
+   "note": "Contested: see next fact (PKU 2014 excavation argues for late Hongwu).",
+   "pages": {
+    "CAT-HY": 319
+   }
   },
   {
    "id": "F003",
@@ -521,10 +543,16 @@
    "quote_zh": "[S29] 本次发掘揭露的元末明初地层和以往的其他发掘资料表明，从元末到洪武时期， 在今御窑厂范围内并未建立官方经营的御器厂。 ／ [S30] 发掘中清理的元代和明初的地层，证明了明御器厂的始建年代当在洪武末期，了解了御器厂创建以前这一区域的窑业基础；",
    "source_ids": [
     "S29",
-    "S30"
+    "S30",
+    "CAT-HY",
+    "CAT-XD"
    ],
    "single_source": false,
-   "note": "S29 and S30 come from the same PKU team, so they are not independent of each other, but both are published by the excavators."
+   "note": "S29 and S30 come from the same PKU team, so they are not independent of each other, but both are published by the excavators.",
+   "pages": {
+    "CAT-HY": 332,
+    "CAT-XD": 351
+   }
   },
   {
    "id": "F004",
@@ -534,10 +562,14 @@
    "quote_zh": "[S24] 1964年南京明故宫玉带河发现一批洪武瓷片，1984年北京第四中学基建工地也出土了数千片洪武瓷片，随着为数不少的洪武纪年墓瓷器出土和日本学者对传世172件洪武瓷器的统计研究，尤其是1995年珠山明御厂故址洪武官窑瓷器的大量出土，人们对洪武器的认识便日愈清晰了。 ／ [S28] 在御窑厂遗址的考古发掘过程中，我们考古团队已经相继发掘了洪武官窑，永乐官窑、宣德官窑以及成化官窑的非常完整的遗物，而且都是成系列的，在全世界做了很多的展览。",
    "source_ids": [
     "S24",
-    "S28"
+    "S28",
+    "CAT-XD"
    ],
-   "single_source": true,
-   "note": "Both quotes are from Jiang Jianxin (one author)."
+   "single_source": false,
+   "note": "Both quotes are from Jiang Jianxin (one author).",
+   "pages": {
+    "CAT-XD": 336
+   }
   },
   {
    "id": "F005",
@@ -546,9 +578,13 @@
    "text": "A white roof tile from a Hongwu stratum (1990, east foot of Zhushan) bears a brushed iron inscription naming workmen and supervisors, including a Fuliang county assistant magistrate. This is a production inscription, not a reign mark.",
    "quote_zh": "[S24] (1) 1990年景德镇明御厂故址珠山东麓洪武地层出土一批白瓷板瓦，据考，该瓦是为洪武十年南京故宫建社稷坛而烧造的。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-HY"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 319
+   }
   },
   {
    "id": "F006",
@@ -557,9 +593,15 @@
    "text": "Hongwu cobalt blue comes in two tones, a dark blue with blurring close to Yuan but greyer, and a dull grey. Copper-red glaze is thin and slightly yellowish, and underglaze red runs greyish. Jiang reports Shanghai Institute of Ceramics tests showing the same high-iron, low-manganese imported cobalt as Yuan.",
    "quote_zh": "[S24] (二)产品主要特征1、关于青花料，洪武青花色泽总体上看不如元青花浓艳凝重，传世与出土的洪武青花有二种明显的色泽：一种近似元青花，色泽深蓝，有晕散感，但比元青花偏灰；一种呈暗灰色，显一点淡蓝色。 ／ [S24] 洪武釉里红总体来看均偏灰，既不如元代的红色纯正，也没有永乐后期色釉鲜艳，红中偏灰是洪武釉里红的时代特征。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 68,
+    "CAT-XD": 337
+   }
   },
   {
    "id": "F007",
@@ -568,9 +610,15 @@
    "text": "Forms Jiang singles out as Hongwu: very large straight-walled bowls about 40 cm across with broad shallow feet and unglazed sand bases, and ewers with three metalwork-style rivets at the lower handle join.",
    "quote_zh": "[S24] 一为直壁大碗，口径约40厘米左右，圈足大而浅，砂底，此类大碗为洪武时特有。 ／ [S24] 壶身为玉壶春瓶形，弯流细长与壶口平高，足底有釉，流与颈部有一云板饰件相连，有趣的是壶柄下端接头有三个仿金属器皿的铆钉，此为洪武执壶所独有的装饰。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 90,
+    "CAT-XD": 336
+   }
   },
   {
    "id": "F008",
@@ -579,9 +627,13 @@
    "text": "Hongwu patterns, per Jiang: lotus panels share borders, key-fret runs in paired opposing units, and the base centre of white and red wares is incised with one or 'pin'-arranged folded-ribbon clouds, a motif Yongle carried on.",
    "quote_zh": "[S24] 根据对洪武时代纹饰排比观察可见：第一，莲瓣纹每瓣的边框相互借用连接，大莲瓣内绘小朵宝相团花或如意纹为洪武首创；第二，回纹多数已成正反二回一组的结构，与元代同向回纹相异；",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-XD": 337
+   }
   },
   {
    "id": "F009",
@@ -591,9 +643,13 @@
    "quote_zh": "[S32] 永乐朝虽开明代御窑瓷器署帝王“年号款”之先河，但永乐朝御窑瓷器中的绝大多数并不署年款，少数带年款者其款字内容仅见有“永乐年制”四字，不见有“大明永乐年制”六字。 ／ [S32] 目前所见署“大明永乐年制”六字款的陶瓷器，从各方面特征看均为后仿品。 ／ [S27] 从款式制度上看，洪武时不写年款，永乐才出现刻、印“永乐年制”篆书款，且仅见靶盏一类的制品。",
    "source_ids": [
     "S32",
-    "S27"
+    "S27",
+    "CAT-HY"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 302
+   }
   },
   {
    "id": "F010",
@@ -603,9 +659,13 @@
    "quote_zh": "[S32] 按署款方式不同，“永乐年制”四字可分为以青花料书写款、锥拱款和模印款三种。 ／ [S32] 锥拱款和模印款主要见于永乐甜白釉、鲜红釉等单色釉瓷器上，位置多在碗、盘、高足碗等器物的内底中心或内壁，款字均作两行排列于葵花心或单线圈内。 ／ [S31] 第4层为淡红土夹沙层，厚约5~45厘米，其中杂有少量的白瓷残片和青花盘残片，几个高足杯底心印有“永乐年制”四字篆文款；",
    "source_ids": [
     "S32",
-    "S31"
+    "S31",
+    "CAT-HY"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 248
+   }
   },
   {
    "id": "F011",
@@ -614,9 +674,13 @@
    "text": "A red-glazed stem bowl with a moulded Yongle mark was excavated at the northern foot of Zhushan in 2003. On fully red-glazed pieces the moulded mark is usually illegible.",
    "quote_zh": "[S32] 图五：明代永乐款鲜红釉模印云龙纹高足碗，2003年出土于景德镇市珠山北麓景德镇市陶瓷考古研究所藏 ／ [S32] 其中内、外施鲜红釉者所署年款除了极个别的字迹较清晰外（图五，1、2、3），其余均模糊不清。",
    "source_ids": [
-    "S32"
+    "S32",
+    "CAT-HY"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 302
+   }
   },
   {
    "id": "F012",
@@ -625,9 +689,13 @@
    "text": "Underglaze-red sherds inscribed with the dates Yongle 1 and Yongle 4 were found at Zhushan. Jiang uses them to show the official kiln was firing from Yongle 1 and to separate early Yongle red (greyish, Hongwu-like) from later pure red.",
    "quote_zh": "[S24] 有关永乐官窑始烧之年，根据《江西大志·陶书》:“洪武三十五年开始烧造”(永乐执政尚未改元的特定年代)与珠山发现的一块书“永乐元年”铭 釉里红残片来看，永乐元年已有官窑烧造了。 ／ [S24] 如早期据“永乐元年”与“永乐肆年”铭釉里红标本来看，色调还保留洪武时代红里泛灰的特点； 而后期则色调纯正，如珠山出土的红釉地白龙纹靶盏，釉里红三鱼靶杯等色调均纯正艳丽。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-XD": 338
+   }
   },
   {
    "id": "F013",
@@ -649,10 +717,14 @@
    "source_ids": [
     "S28",
     "S09",
-    "S10"
+    "S10",
+    "CAT-HY"
    ],
    "single_source": false,
-   "note": "S09/S10 give the censer match; the Geng Baochang redating rests on S28 only."
+   "note": "S09/S10 give the censer match; the Geng Baochang redating rests on S28 only.",
+   "pages": {
+    "CAT-HY": 96
+   }
   },
   {
    "id": "F015",
@@ -662,9 +734,13 @@
    "quote_zh": "[S12] 比如３件永乐年间的八方烛台就是模仿伊斯兰风格的黄铜嵌金、银制品烧造而成，另两件用于装水的青花如意耳扁壶，也是永乐时期对同样造型的伊斯兰嵌金、银壶造型的模仿。 ／ [S12] 以一个永乐甜白釉大花瓶为例，他说，如果不发掘出土这件大花瓶，人们永远不可能知道永乐时期的御窑厂还烧造如此高大的器皿。 ／ [S24] 另有双耳三足大香炉、八棱烛台、梵文大杓、笔盒、带盖瓷豆、深腹平底洗、花浇和筒形器座(又称无档尊)等，均为永乐罕见的创新之作。",
    "source_ids": [
     "S12",
-    "S24"
+    "S24",
+    "CAT-HY"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 240
+   }
   },
   {
    "id": "F016",
@@ -673,9 +749,15 @@
    "text": "Yongle copper red is purer than Hongwu's and shows a white 'lamp-wick' rim at mouth and foot. Kingfisher-green (翠青) glaze is a Yongle invention. Low-temperature glazes and overglaze enamels, unknown among transmitted Yongle pieces, have been found in Yongle strata.",
    "quote_zh": "[S24] 永乐红釉一改洪武器微泛黄的特点，红色调较为纯正，尤其是口足一圈白而肥润的“灯草边”使红釉更显深厚夺目。 ／ [S24] 4、低温釉及釉上彩器无论是低温釉彩；还是釉上彩瓷，过去均不见有传世品，近年珠山明御厂永乐地层有发现。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 294,
+    "CAT-XD": 110
+   }
   },
   {
    "id": "F017",
@@ -684,9 +766,15 @@
    "text": "Yongle blue-and-white is deep blue with blurring. Decoration is sparer than Hongwu's, and Yongle first painted the inside of bowl bases.",
    "quote_zh": "[S24] 永乐青花纹饰一改洪武那种繁缛茂密的元青花遗风而更趋疏朗清丽。 ／ [S24] 永乐首开青花装饰碗底先例，纹饰有龙、凤、菊和龟锦纹(实为唐金银器上的忍冬花结纹)。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 100,
+    "CAT-XD": 339
+   }
   },
   {
    "id": "F018",
@@ -696,9 +784,13 @@
    "quote_zh": "[S24] c、关于款识从出土与传世的宣德瓷器来看，其时的制品绝大多数都有年款，并有固定的形式。 ／ [S24] 书体有楷书和篆书二种，从工艺与装饰形式上看有：刻款、青花款、铁绘款与釉上矾红款；字数有四字、六字；排列形式有单行(横 排、竖排)、双行、三行排列；有加双圈、单圈或长方单框之类。 ／ [S32] 从字数来看，可分为“大明宣德年制”和“宣德年制”两种；从书写方式来看，可分为以青花料书写款、以铁红釉书写款、以矾红彩书写款以及锥拱款和模印款等；",
    "source_ids": [
     "S24",
-    "S32"
+    "S32",
+    "CAT-XD"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-XD": 246
+   }
   },
   {
    "id": "F019",
@@ -708,9 +800,15 @@
    "quote_zh": "[S24] 宣德碗盘底多施釉，款识流行书于器底，大盘则书于外壁口沿处，瓶罐类则多书于器物之肩部，还有在同一器物上书写二个年款的(如蟋蟀罐和笔盒)故前人有 “宣德款识满器身”之说。 ／ [S32] 其中以青花楷书六字双行排列外围双线圆圈款最为常见。 ／ [S32] 宣德御窑开创的在御窑瓷器上署楷体六字双行外围双圈的款式，成为后来御窑瓷器上使用最多、延续时间最长的款式。",
    "source_ids": [
     "S24",
-    "S32"
+    "S32",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 319,
+    "CAT-XD": 47
+   }
   },
   {
    "id": "F020",
@@ -720,9 +818,13 @@
    "quote_zh": "[S32] “大明宣德年制”六字款均为楷体，“宣德年制”四字款既有楷体也有篆体。 ／ [S32] 青花篆书四字年款极罕见，迄今为止，传世品中未见一例，景德镇市珠山明代御器厂遗址曾出土宣德仿汝釉高足碗和青花高足碗残片标本，其内底中心署青花篆体四字年款，四字分双行排列，外围青花双线圈（图十四）。 ／ [S25] 天青釉把盏：有四字宜德篆款和无款两种，有款的高11.7厘米，盏心书青花双行双圈四字篆款。",
    "source_ids": [
     "S32",
-    "S25"
+    "S25",
+    "CAT-XD"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-XD": 256
+   }
   },
   {
    "id": "F021",
@@ -743,9 +845,15 @@
    "quote_zh": "[S25] 盖中心有一小孔，似作盖纽之用，盖底施白釉，书“大明宜德年制”六字竖款，罐底书“大明宜德年制”六字横款。 ／ [S32] 坐盖式蟋蟀罐的盖内和外底均署青花楷体六字年款，盖内自右向左横写一排、外底竖写一行（图十六，1、2）。",
    "source_ids": [
     "S25",
-    "S32"
+    "S32",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 321,
+    "CAT-XD": 284
+   }
   },
   {
    "id": "F023",
@@ -754,9 +862,15 @@
    "text": "Rare mark media found at the site: overglaze alum-red six-character double-ring marks in the centre of red-decorated stem cups, and an iron-red 大明宣德年制 double-ring mark on an iron-red glazed bowl. Jiang says red marks disappear after Xuande and return from Jiajing.",
    "quote_zh": "[S25] 矾红款为宜德稀有款，宣德之后一度消失，嘉靖以后又出现，如“典膳所用”双圈款回，一直到清雍正后才流行。 ／ [S25] 铁红釉铁红六字款碗：口径15厘米，釉呈赤褐色，底书铁红“大明宜德年制”双圈双行款，为独一无二的宜德款。",
    "source_ids": [
-    "S25"
+    "S25",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 326,
+    "CAT-XD": 82
+   }
   },
   {
    "id": "F024",
@@ -777,9 +891,15 @@
    "quote_zh": "[S20] 1984 年在西藏萨迦寺发现宣德款斗彩鸳鸯莲池纹靶杯后，1985年、1988年又先后在景德镇御窑遗址宣德地层发现了斗彩鸳鸯莲池纹碗的半成品（未填釉上彩）及同类题材的盘。 ／ [S20] ”盘心绘红莲三组，并以芦苇、 红蓼、 慈姑、 浮萍等穿插其间，鸳鸯以青料勾勒，再以红、紫、黄三色画羽毛，外壁绘红莲四组并饰以红蓼、慈姑、鸳鸯两对穿插其间，足底双圈内青料书“大明宣德年制”六字楷书款。 ／ [S10] 展品中景德镇市陶瓷考古研究所藏的宣德斗彩鸳鸯莲池纹盘以及永乐红釉点彩碗就是比较典型的例子，这两种器物在传世品中均未曾见到与之相同的。",
    "source_ids": [
     "S20",
-    "S10"
+    "S10",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 328,
+    "CAT-XD": 38
+   }
   },
   {
    "id": "F026",
@@ -788,9 +908,13 @@
    "text": "Jiang reads the Xuande blue as both Yongle-deep and Chenghua-soft. A trial dish from a Xuande stratum inscribed 乐一号 and 乐三号 suggests Leping (domestic) cobalt was being tested.",
    "quote_zh": "[S24] 这一结论与近年在珠山明御厂宣德地层出土的一块青花书“乐一号”、“乐三号”铭青花试料盘可相印证，该盘青花色调淡雅，所谓“乐一号”、“乐三号”很可能就是乐平青料(即文献记载的所谓陂塘青或平等青)。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-XD": 330
+   }
   },
   {
    "id": "F027",
@@ -799,9 +923,15 @@
    "text": "Sky-blue (天青) cobalt glaze was long thought a Qing invention. A sky-blue stem cup with a seal-script 宣德年制 mark in the centre, from a 1993 Xuande stratum, shows it already existed under Xuande.",
    "quote_zh": "[S24] 天青釉是以钴为作色剂的高温色釉，过去一直以为天青釉创烧于清初官窑，1993年珠山明御厂宣德地层出土一盏心书“宣德年制”篆款天青釉靶盏，证实早在宣德时天青釉已经发明，并成功地用于装饰瓷器。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 321,
+    "CAT-XD": 256
+   }
   },
   {
    "id": "F028",
@@ -810,9 +940,15 @@
    "text": "Xuande mostly kept Yongle forms, and unmarked Xuande blue-and-white can be hard to tell from Yongle. On the same form, Yongle tends to be refined, delicate and thin, Xuande large, thick and heavy.",
    "quote_zh": "[S24] 譬如，一些无款宣德青化瓷与永乐青花瓷便难于区分开来。 ／ [S24] 相同的器型永乐有秀、巧、薄的特点，宣德的则有大、厚、拙的特点。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-HY",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HY": 122,
+    "CAT-XD": 222
+   }
   },
   {
    "id": "F029",
@@ -821,9 +957,13 @@
    "text": "Xuande dragons are more ferocious than Yongle's, with upright, loose or forward-swept manes. Xuande also first combines flowers and fruit of different seasons on one piece, and figure scenes with garden pavilions become common.",
    "quote_zh": "[S24] b、器型与纹饰：宣德与永乐官窑瓷器， 其胎、釉制作和纹饰没有多少区别，宣德器型也多沿用永乐形制，但也存在差异：宣德官窑器上的龙纹比永乐的画得更为精彩，有竖发、披发及前披发式，均显得较为凶猛。",
    "source_ids": [
-    "S24"
+    "S24",
+    "CAT-XD"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-XD": 341
+   }
   },
   {
    "id": "F030",
@@ -1450,6 +1590,776 @@
    "source_ids": [
     "S32"
    ],
+   "single_source": true
+  },
+  {
+   "id": "C001",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "Many excavated Hongwu, Yongle and Xuande pieces match transmitted ones, but 'identical' pieces are only broadly the same: the decoration always varies in detail, which Lü reads as deliberate.",
+   "quote_zh": "仔细比对可以发现，所谓造型、纹饰相同的作品，其实纹饰并不是百分之百完全一致，只能说是大致相同，其细部总会有变化。这或许是当时有意为之",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 320
+   },
+   "single_source": true
+  },
+  {
+   "id": "C002",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "Xuande kiln-site types not known among transmitted pieces include a bright-red meiping with hidden sea-and-dragon decoration, bright-red oval narcissus basins, a bright-red peach-shaped ewer, a brown-glazed oval narcissus basin and a sacrificial-blue monk's-cap ewer.",
+   "quote_zh": "宣德鲜红釉暗花海水云龙纹梅瓶、宣德鲜红釉椭圆水仙盆、宣德鲜红釉桃形执壶、宣德酱釉椭圆水仙盆、宣德祭蓝釉僧帽壶",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 320
+   },
+   "single_source": true
+  },
+  {
+   "id": "C003",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "Some transmitted pieces have no excavated counterpart, for example the Yongle blue-and-white lotus 'press-hand' cup in the Palace Museum. Lü puts this down mostly to the limits of excavation. (This disagrees with another source: see F013.)",
+   "quote_zh": "在传世和出土的明代永乐、宣德、成化御窑瓷器中，就有在御器厂遗址已发掘出土品中所不见者，如永乐青花缠枝莲纹压手杯、宣德青花蓝查体梵文出戟法轮盖罐、成化斗彩蔓草纹瓶等。这可能是因为当时根本就没有废品，但更大可能是考古发掘的局限性所致。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 322
+   },
+   "single_source": true
+  },
+  {
+   "id": "C004",
+   "reign": "Hongwu",
+   "topic": "decoration",
+   "text": "Hongwu overglaze red-and-green wares are rare. One accepted example, a yuhuchun vase, has a short neck and full belly typical of early Ming, and its double-ribbed banana leaves at the neck are a Hongwu blue-and-white trait.",
+   "quote_zh": "该器造型短颈硕腹，为明初典型特征，与1994年珠山明御厂出土洪武玉壶春瓶残片相似；而颈部绘双筋蕉叶纹为洪武青花特有画法。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 324
+   },
+   "single_source": true
+  },
+  {
+   "id": "C005",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "A Hongwu red-and-green dish sherd with an iron-red five-clawed dragon and yellow and green clouds came from an early-Ming layer at the northern foot of Zhushan in 2003. A group of Hongwu blue-and-white stem cups with dancing figures came from a Hongwu layer at the southeast foot in August 1990.",
+   "quote_zh": "2003年景德镇明御窑厂遗址北麓考古发掘在明初地层出土一块洪武红绿彩云龙纹盘残片，该器以矾红绘五爪龙纹，以黄、绿彩饰云纹……1990年8月珠山明御厂东南麓洪武地层出土的一组青花舞蹈人物纹高足杯",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 324
+   },
+   "single_source": true
+  },
+  {
+   "id": "C006",
+   "reign": "Yongle",
+   "topic": "decoration",
+   "text": "Yongle 'gold' decoration on excavated bowls and dishes is applied gold leaf, not painted gold; where it has flaked, traces of the adhesive remain.",
+   "quote_zh": "上述金彩器图案不是描画成的，而是用黄金箔贴出，金彩脱落处留有粘金彩花纹的痕迹",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 326
+   },
+   "single_source": true
+  },
+  {
+   "id": "C007",
+   "reign": "Xuande",
+   "topic": "decoration",
+   "text": "Xuande overglaze purple is opaque and of one tone, while Chenghua purple is translucent in two shades, so Xuande enamels look darker and heavier.",
+   "quote_zh": "宣德紫不透明……成化紫透明（可能渗入石末粉）；宣德紫仅一种色调，而成化紫有两种色阶，即茄花紫和丁香紫。因此宣德紫看起来就比成化紫色调显得沉暗凝重。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 329
+   },
+   "single_source": true
+  },
+  {
+   "id": "C008",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "Wang Guangyao's stratigraphy of northern Zhushan, from bottom to top: Yongle kilns and workshops, Yongle pits of smashed sherds, Xuande sherd heaps and kiln waste, then interregnum, Chenghua, Hongzhi, Zhengde and Jiajing waste layers.",
+   "quote_zh": "自下而上即由早及晚依次是永乐时期的窑炉群及作坊、永乐时期的瓷片埋藏坑、宣德时期的瓷片堆积堆和窑业垃圾层、空白期地层与瓷片堆积、成化时期包括碎瓷片的窑业垃圾层、弘治时期……",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 332
+   },
+   "single_source": true
+  },
+  {
+   "id": "C009",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "Hongwu reject pits lie southeast of Zhushan at Dongmentou (the east gate), but no Hongwu kiln has been found. Since Zhushan did not yet exist before Yongle, Wang says the record that the factory was set up 'at Zhushan in Hongwu 2' needs rethinking. (This disagrees with another source: see F002.)",
+   "quote_zh": "洪武时期的落选品埋藏坑在珠山东南即今东门头区域……但是洪武时期的窑炉在何处，至今尚未能从考古发现中找到任何线索。由于永乐以前并没有珠山，所以《景德镇陶录》等书所载“洪武二年就镇之珠山设御窑厂”便值得重新思考。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 332
+   },
+   "single_source": true
+  },
+  {
+   "id": "C010",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "Waste dumped over the abandoned Yongle kilns yielded a red bowl and a white jue altar vessel marked 宣德年制, so those kilns went out of use before the ninth month of Hongxi 1 (1425).",
+   "quote_zh": "从叠压在永乐窑炉之上的堆积中出土有“宣德年制”款红釉碗、仿哥釉罐等及叠压在永乐时期作坊墙体之上的堆积中出土的“宣德年制”款白瓷爵祭器来看，此处堆积的出现时间最早也在洪熙元年九月以后",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 332
+   },
+   "single_source": true
+  },
+  {
+   "id": "C011",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "Rejects were destroyed differently by period: smashed and buried in pits under Hongwu and Yongle, tipped against walls and into gullies under Xuande, and thrown out with kiln waste under Chenghua and Hongzhi.",
+   "quote_zh": "或如洪武、永乐时期打碎后成坑掩埋，或如宣德时期倾倒于墙根、小沟处，或如成化、弘治时期打碎后随窑业垃圾倒掉。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 334
+   },
+   "single_source": true
+  },
+  {
+   "id": "C012",
+   "reign": "Hongwu",
+   "topic": "body",
+   "text": "Hongwu imperial porcelain keeps the plain, heavy Yuan shufu manner: the body is thick, its quality uneven because the clay was unevenly refined, and the glaze mostly bluish-white, as on Yuan wares.",
+   "quote_zh": "明代洪武时期瓷器还多保留有元代枢府瓷古朴浑厚的遗风，胎体厚重，因胎土淘炼粗细之差，胎质表现不一。此时瓷器釉面多呈青白色，为元、明两代瓷的共同点。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 18
+   },
+   "single_source": true
+  },
+  {
+   "id": "C013",
+   "reign": "Hongwu",
+   "topic": "forms",
+   "text": "The small-footed Hongwu bowl type began in Yuan and was still made under Yongle, but Yongle examples have thinner walls.",
+   "quote_zh": "此类小足碗造型始于元代，永乐亦有烧造，但器壁较薄。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 62
+   },
+   "single_source": true
+  },
+  {
+   "id": "C014",
+   "reign": "Hongwu",
+   "topic": "glaze",
+   "text": "Transmitted Hongwu monochrome red is extremely rare. A Palace Museum red dish with moulded dragons is singled out because its red is even and the moulding sharp.",
+   "quote_zh": "洪武时期红釉瓷器传世极少，此盘通体红釉纯然一色，且印花清晰，是明初洪武红釉瓷器中难得的佳作。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 64
+   },
+   "single_source": true
+  },
+  {
+   "id": "C015",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "Sweet-white ribbon-handled gourd flasks come in two stages. Early examples have no foot and only the two edges of the base wiped free of glaze; later ones have carved Arabesque decoration.",
+   "quote_zh": "该类扁瓶在做法及风格上有早、晚期之分：早期器物无足，仅瓶底两棱边去釉露胎；晚期则在瓶面雕刻阿拉伯式花纹。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 158
+   },
+   "single_source": true
+  },
+  {
+   "id": "C016",
+   "reign": "Yongle",
+   "topic": "apocryphal",
+   "text": "Yongle blue-and-white ribbon-handled gourd flasks and ruyi-handled flasks were copied at the Qing imperial factory under Yongzheng, though not in large numbers.",
+   "quote_zh": "这种葫芦扁瓶在清代雍正年间景德镇御窑厂也有仿烧，但数量不是很多。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 150
+   },
+   "single_source": true
+  },
+  {
+   "id": "C017",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "The yuhuchun vase changes by reign: Hongwu necks are slightly thick with round full bellies, while Yongle necks are slender and long and the belly slightly drawn in.",
+   "quote_zh": "明洪武时颈部略粗，腹部浑圆饱满。至明永乐，瓶颈部变得细长，腹部略敛，而颈腹部的变化也更为柔和、协调。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 212
+   },
+   "single_source": true
+  },
+  {
+   "id": "C018",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "Yongle and Xuande creel-shaped (鱼篓) jars differ. Yongle has a straight mouth, sloping shoulder, drum belly and round base; Xuande has a flared mouth, slanting shoulder, belly narrowing below and a footring.",
+   "quote_zh": "明永乐器特征为直口，溜肩，鼓式腹，圜底；宣德时期器形为敞口，斜肩，圆腹下收，圈足。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 116
+   },
+   "single_source": true
+  },
+  {
+   "id": "C019",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "Many Yongle white and blue-and-white kendis were made as ritual gifts for Tibetan lamas, so their forms differ from earlier kendis; a sweet-white kendi was excavated with white monk's-cap ewers.",
+   "quote_zh": "永乐官窑的白釉、青花军持不少是作为赐藏法器生产的，因此造型与前代有较大差异。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 208
+   },
+   "single_source": true
+  },
+  {
+   "id": "C020",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "The monk's-cap ewer as an imperial porcelain form probably began under Yongle, made for Tibetan religious use. Early Yongle examples are plain or incised, and incised ones come with or without Tibetan script.",
+   "quote_zh": "在中国古代官窑瓷器生产中，僧帽壶的制作可能始于永乐。……永乐前期僧帽壶有素面、锥花之别，锥花器中又可分为有藏文、无藏文两种",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 262
+   },
+   "single_source": true
+  },
+  {
+   "id": "C021",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "An excavated white square-spouted ewer has a rectangular spout opening, closer to the Islamic metal model than the gourd-shaped spout hole on transmitted blue-and-white examples, so the catalogue dates it earlier than they are.",
+   "quote_zh": "传世的同类青花器流口作一葫芦形小洞，而此器流口为长方形，与阿拉伯地区原器更为接近，故其年代当早于传世的同类青花器。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 266
+   },
+   "single_source": true
+  },
+  {
+   "id": "C022",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "Ming stem bowls were made under Yongle and Xuande with a taller bowl and shorter stem than Yuan ones.",
+   "quote_zh": "明永乐、宣德时继续承烧而造型较元代有所变化，碗身加高，足变矮。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 290
+   },
+   "single_source": true
+  },
+  {
+   "id": "C023",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "A black-glazed tripod censer from Zhushan (1999) has an incised inscription dated Yongle 21 (1423, guimao year) recording a votive gift. It is a dated piece, not a reign mark.",
+   "quote_zh": "腹刻白书“永乐贰拾壹年岁次癸卯吉日喜舍湖坑大桥求”。……从形制与刻书内容来看，此炉应为供奉用器。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 314
+   },
+   "single_source": true
+  },
+  {
+   "id": "C024",
+   "reign": "Yongle",
+   "topic": "excavation",
+   "text": "Kiln-site trial pieces survive that transmitted collections lack, for example a 2003 bowl with random copper-red dots under white glaze, which the catalogue reads as a test of copper-red pigment.",
+   "quote_zh": "内施红釉，外壁以铜红料作无规律点彩，再罩以白釉，圈足外壁也有彩点。……此碗应为试铜红料之器。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 308
+   },
+   "single_source": true
+  },
+  {
+   "id": "C025",
+   "reign": "Yongle",
+   "topic": "body",
+   "text": "Under Yongle and Xuande, potting moved away from the heavy, full Hongwu manner to a lighter, more graceful style.",
+   "quote_zh": "明永乐、宣德时期，瓷器制作发生了显著变化，造型工艺一改前朝厚重饱满的特点，而转变为清新隽秀的风格。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 186
+   },
+   "single_source": true
+  },
+  {
+   "id": "C026",
+   "reign": "Yongle",
+   "topic": "forms",
+   "text": "Yongle shapes that are new rather than inherited include the pear-shaped ewer (from Yuan, made under Yongle, Xuande and Jiajing), the creel-shaped jar, and the square-spouted heart-shaped flask, rare before Yongle. Jiajing blue-and-white versions of the flask look very different.",
+   "quote_zh": "此壶系模制黏结而成，造型仿自金属器皿，永乐以前似不多见，嘉靖时期有青花制品，但造型与此器相去甚远。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 280
+   },
+   "single_source": true
+  },
+  {
+   "id": "C027",
+   "reign": "Yongle",
+   "topic": "apocryphal",
+   "text": "The Yongle bamboo, rock and banana-plant garden design with balustrade lasted into the Qing and was still painted as late as Xuantong, so the motif alone does not date a piece to Yongle.",
+   "quote_zh": "竹石、芭蕉及庭院栏杆三者结合的装饰图案保留至清代，烧至宣统时期。",
+   "source_ids": [
+    "CAT-HY"
+   ],
+   "pages": {
+    "CAT-HY": 222
+   },
+   "single_source": true
+  },
+  {
+   "id": "C028",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Jiang repeats the attribution of Xuande mark calligraphy to the early-Ming calligrapher Shen Du: he wrote the model, which factory potters copied onto the porcelain.",
+   "quote_zh": "据考证，宣德器上的年款，均出自明初著名书法家沈度之手（即由沈度书写粉本后，由御厂工匠临摹于瓷器上）。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 341
+   },
+   "single_source": true
+  },
+  {
+   "id": "C029",
+   "reign": "Xuande",
+   "topic": "decoration",
+   "text": "In Xuande borders the common upright and pendant lotus panels usually have filled-in centres, unlike earlier ones. One design may also appear in several techniques, such as a day-lily dish in white on blue, blue on white and yellow-ground blue.",
+   "quote_zh": "辅助纹饰中最常见的仰、覆莲瓣纹，瓣心多填色，与前代式样有较大不同。尤其有趣的是，相同的纹饰却采用不同装饰来表现，如相同萱草纹盘则有蓝（祭蓝釉）地白花、白地蓝花和黄地青花三种",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 341
+   },
+   "single_source": true
+  },
+  {
+   "id": "C030",
+   "reign": "Xuande",
+   "topic": "glaze",
+   "text": "The volume's EDXRF study summarises other research differently: Hongwu and Yongle used mainly imported cobalt, while Xuande and Chenghua may have used imported, domestic or mixed cobalt. (This disagrees with another source: see F026.)",
+   "quote_zh": "诸多研究表明明代青花色料可以分为三个阶段，其中洪武、永乐时期主要使用进口色料；宣德和成化时期可能既使用进口料，也使用了国产料，还有混合使用的情况",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 347
+   },
+   "single_source": true
+  },
+  {
+   "id": "C031",
+   "reign": "Xuande",
+   "topic": "body",
+   "text": "EDXRF of sherds from Hongwu to Chenghua finds a porcelain-stone plus kaolin body, with alumina mostly above 20% and rising slightly from Hongwu through Yongle and Xuande to Chenghua.",
+   "quote_zh": "根据氧化铝含量可以推测胎体采用的是瓷石加高岭土的二元配方，且从洪武、永乐、宣德到成化时期胎体中氧化铝含量呈略微升高趋势。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 348
+   },
+   "single_source": true
+  },
+  {
+   "id": "C032",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "Wang notes that large quantities of early-Hongwu official-style wares have been looted from the Luomaqiao site in Jingdezhen. Zhushan was therefore not the only kiln making court porcelain under Hongwu, and an official-style Hongwu piece is not necessarily from the Zhushan factory.",
+   "quote_zh": "从景德镇落马桥遗址出土有大量的洪武早期的官样瓷器看，当时承担为宫廷烧造瓷器任务的窑场仅在景德镇城内就绝非只有珠山一处，这也可证珠山御窑遗址所代表的洪武时期的遗存并不是专供御用的唯一窑厂。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 351
+   },
+   "single_source": true
+  },
+  {
+   "id": "C033",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "Wang argues the 'imperial porcelain factory' (御器厂) was founded only at the start of Xuande, as an office at Poyang under eunuch supervision. The Hongwu–Yongle Zhushan kiln was a traditional official kiln, a different thing from the factory that kilns, marks and reject handling show from Xuande on. (This disagrees with another source: see F002.)",
+   "quote_zh": "据此可以肯定御器厂始建于宣德初年，其官衙在饶州府治所在的鄱阳县城内月波门外，该厂是每年进贡瓷器时太监检验所贡瓷器合格与否场所。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 351
+   },
+   "single_source": true
+  },
+  {
+   "id": "C034",
+   "reign": "Hongwu",
+   "topic": "forms",
+   "text": "Hongwu flat-rimmed dishes have thicker bases than Yuan ones, with unglazed bases fired flint-red. Hongwu cup stands have sand bases and large shallow feet, whereas Yongle stands have smaller glazed feet and Yongle cups have footrings.",
+   "quote_zh": "此类盘比元代大盘底厚，足底无釉呈火石红。……此类器物永乐时亦有烧造，差异是永乐盏有圈足，盏托圈足较小，底有釉。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 336
+   },
+   "single_source": true
+  },
+  {
+   "id": "C035",
+   "reign": "Hongwu",
+   "topic": "decoration",
+   "text": "Hongwu blue-and-white and underglaze red drop Yuan figure stories, fish and weeds, auspicious beasts and mandarin-duck ponds, and are mainly floral. Hongwu has few animal motifs and no figure subjects.",
+   "quote_zh": "纹饰题材亦大量减少，如元代流行的人物故事、鱼藻、瑞兽、鸳鸯莲池等均不见，而以花卉为主",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 337
+   },
+   "single_source": true
+  },
+  {
+   "id": "C036",
+   "reign": "Yongle",
+   "topic": "decoration",
+   "text": "On Yongle borders the midribs of banana leaves are mostly left unshaded, key-fret runs continuously, and waves contrast crests with spaced ripples.",
+   "quote_zh": "蕉叶纹叶片中茎多不渲染；回纹多环绕连续；海水纹潮头与水波疏密对比鲜明",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 339
+   },
+   "single_source": true
+  },
+  {
+   "id": "C037",
+   "reign": "Hongwu",
+   "topic": "excavation",
+   "text": "Wang's kiln phases: Hongwu–Yongle used long-chambered gourd kilns in northeast Zhushan; Xuande used gourd kilns of the same plan in the southwest; after Xuande, mantou kilns. Kiln layout, mark practice and reject handling all change at Xuande.",
+   "quote_zh": "洪武至永乐时期，流行后室较长的葫芦窑，分布在珠山东北部；宣德时期，仍然是葫芦窑，窑室平面形态和前一个时期相同，分布在珠山西南部；宣德以后，一直流行馒头窑",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 351
+   },
+   "single_source": true
+  },
+  {
+   "id": "C038",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "A kiln-site stem bowl with a four-character regular-script 宣德年制 under the foot, its form and decoration copied from Yongle, is described as a very rare mark. The bowl appears semi-finished, with reserves probably meant for gilding.",
+   "quote_zh": "足底书青花“宣德年制”四字楷书款，其款识十分罕见。……此器造型、纹饰与永乐制品相似，系仿自永乐器",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 88
+   },
+   "single_source": true
+  },
+  {
+   "id": "C039",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "Only one transmitted Xuande monochrome cricket jar is known, a Ge-type example in the Palace Museum. The excavated jars greatly widen the known range.",
+   "quote_zh": "从目前资料来看，传世宣德单色釉蟋蟀罐仅此一件，因此越发珍贵。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 280
+   },
+   "single_source": true
+  },
+  {
+   "id": "C040",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Yellow-ground blue-and-white began under Xuande. It is either yellow all over or has a white reserve panel left for the mark, here a six-character horizontal mark below the outer rim.",
+   "quote_zh": "黄地青花创烧于宣德时期，是在白釉上填以黄釉，再经低温二次烧成。有通体填黄及在书款处留白框两种形式，此盘属后者。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 42
+   },
+   "single_source": true
+  },
+  {
+   "id": "C041",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "On celadon-glazed Xuande dishes the blue mark is written under the green glaze in the inside centre. One catalogue entry calls the mark calligraphy the early-Ming 'cabinet' (台阁体) style.",
+   "quote_zh": "款识书风规整，为明初宣德时期台阁体书法风格。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 262
+   },
+   "single_source": true
+  },
+  {
+   "id": "C042",
+   "reign": "Xuande",
+   "topic": "mark",
+   "text": "Not every Xuande imperial piece is marked. A Qing-palace bright-red monk's-cap ewer is described as having white glaze inside the foot and no mark.",
+   "quote_zh": "通体施鲜红釉，足内白釉无款。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 230
+   },
+   "single_source": true
+  },
+  {
+   "id": "C043",
+   "reign": "Xuande",
+   "topic": "body",
+   "text": "Ming stem bowls can be told from Yuan ones by how the stem is joined. Yuan stems are luted with clay, leaving a lump of squeezed-out clay inside the stem. Ming stems are joined with glaze, leaving a coarse intermediate layer at the join and a glazed nipple inside the stem.",
+   "quote_zh": "元代高足碗的足与碗身是用胎泥黏结的，足内有一团黏合时挤出的瓷泥；明代高足碗的足与碗身是用釉来黏结的，足与碗身的交接处有一粗的中间层，足内底有一带釉的乳突。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 36
+   },
+   "single_source": true
+  },
+  {
+   "id": "C044",
+   "reign": "Xuande",
+   "topic": "body",
+   "text": "Xuande octagonal candlesticks have a 6.7 cm unglazed ring on the white-glazed base, left by a columnar support used in firing to stop the heavy socket sagging. The catalogue calls this more advanced than Yongle practice and a way to tell Xuande candlesticks from Yongle ones.",
+   "quote_zh": "此器足内施白釉，底有一直径6.7厘米涩圈，乃装烧时垫有柱状支垫所致，以防焙烧时因颈部的插座太重而下塌。其装烧工艺比永乐同类器先进，此痕迹可以作为区别永乐、宣德烛台的标志。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 196
+   },
+   "single_source": true
+  },
+  {
+   "id": "C045",
+   "reign": "Xuande",
+   "topic": "body",
+   "text": "Eggshell-thin (脱胎) ware began under Yongle, but there only the rim was very thin and the base stayed thick. An excavated Xuande white cup is thin at the foot too.",
+   "quote_zh": "脱胎器创烧于永乐，但仅口沿极薄，底部还是偏厚，而此器底足亦很薄，体现出了工艺水平的提高。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 250
+   },
+   "single_source": true
+  },
+  {
+   "id": "C046",
+   "reign": "Xuande",
+   "topic": "glaze",
+   "text": "Kiln-site finds date several glazes earlier than once thought. Cucumber-green (瓜皮绿) was believed mid-to-late Ming but is shown to be Xuande. Yellow glaze on porcelain began at the Xuande imperial kiln. Red with painted gold also begins under Xuande.",
+   "quote_zh": "过去认为该釉出现于明中晚期，此器的出土证实瓜皮绿釉早在宣德时期已经出现。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 156
+   },
+   "single_source": true
+  },
+  {
+   "id": "C047",
+   "reign": "Xuande",
+   "topic": "glaze",
+   "text": "Sprinkled blue (洒蓝, 'snowflake blue'), cobalt with small white flecks, was created under Xuande. An excavated incised-dragon example has a double-ring six-character mark in the base centre.",
+   "quote_zh": "洒蓝以钴为着色剂，蓝中夹以白色小斑块，分布自然，有如雪片挥洒在蓝釉上，又名“雪花蓝”。创烧于宣德时期。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 132
+   },
+   "single_source": true
+  },
+  {
+   "id": "C048",
+   "reign": "Xuande",
+   "topic": "glaze",
+   "text": "The earliest Ming imitations of Ge ware are Xuande imperial pieces, mostly marked in blue. Their glaze is less glossy and oily like true Ge, but shows Xuande orange peel; the crackle is faintly black or red, without Ge's 'gold thread and iron wire' or 'purple mouth, iron foot'.",
+   "quote_zh": "明代仿哥窑瓷器的传世品迄今所见最早为宣德时景德镇御窑制品……多书有青花宣德年款。这些器物的釉面光洁度偏低，有油腻感，与传世哥窑器的釉面相似，但也有橘皮纹这一宣德官窑器的典型特征。其釉色有青灰或月白等，开片纹的纹路微微闪黑闪红，没有传世哥釉器“金丝铁线”和“紫口铁足”的效果。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 278
+   },
+   "single_source": true
+  },
+  {
+   "id": "C049",
+   "reign": "Xuande",
+   "topic": "glaze",
+   "text": "The catalogue says imported high-iron, low-manganese cobalt blurs in firing so Xuande designs are often unclear; a Palace Museum fish dish with pale, clear blue is praised as unusual. (This disagrees with another source: see F026.)",
+   "quote_zh": "明宣德青花使用进口青料，此种高铁低锰料在烧成过程中易晕散，故所绘纹饰不够清晰。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 28
+   },
+   "single_source": true
+  },
+  {
+   "id": "C050",
+   "reign": "Xuande",
+   "topic": "apocryphal",
+   "text": "The Xuande underglaze-red three-fish stem bowl was copied under Wanli, Tianqi, Kangxi and Yongzheng. Kangxi copies are the most deceptive but have a less rich glaze, a less full lower belly and a stiffer stem profile.",
+   "quote_zh": "这一品种明万历、天启及清代的康熙、雍正朝都有仿制，其中康熙仿品最为乱真，但釉面不及真品肥腴明亮，垂腹欠丰满，柄足造型线条生硬。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 90
+   },
+   "single_source": true
+  },
+  {
+   "id": "C051",
+   "reign": "Xuande",
+   "topic": "apocryphal",
+   "text": "Other Xuande forms the catalogue says were copied later: a foliate blue-and-white bowl copied by the Kangxi and Yongzheng imperial kilns, and the Islamic-style watering pot, also copied under Qianlong.",
+   "quote_zh": "是宣德官窑流行碗式之一，清代康熙、雍正时期的官窑亦多有仿制。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 136
+   },
+   "single_source": true
+  },
+  {
+   "id": "C052",
+   "reign": "Xuande",
+   "topic": "forms",
+   "text": "Forms the catalogue calls new under Xuande include the six-lobed pomegranate-shaped zun, covered bowls (合碗, found excavated in underglaze red, blue with underglaze red, blue with iron red and red-glazed versions), the peach-shaped red ewer, and large numbers and kinds of bird feeders.",
+   "quote_zh": "造型模仿石榴的形象，构思巧妙，为宣德官窑新创造型。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 140
+   },
+   "single_source": true
+  },
+  {
+   "id": "C053",
+   "reign": "Xuande",
+   "topic": "forms",
+   "text": "Blue-and-white bird feeders first appear at Jingdezhen in Yuan, but appear in large numbers and many forms under Xuande, including geometric and naturalistic shapes. The excavated ones are mostly marked horizontally at the mouth.",
+   "quote_zh": "景德镇窑青花鸟食罐始见于元，到宣德时大量出现，品类较之前大为丰富，除各式几何形之外，还有像生器及鸟笼花瓶等",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 320
+   },
+   "single_source": true
+  },
+  {
+   "id": "C054",
+   "reign": "Xuande",
+   "topic": "forms",
+   "text": "Ming meiping are generally squatter than Song and Yuan ones, with raised shoulders and straight-tapering lower bodies. Xuande red-glazed wares are mostly small, and large red pieces are rare.",
+   "quote_zh": "明代梅瓶器体一般偏矮，肩部向上抬起，线条饱满有力，腹部之下呈斜直状，显得雄健敦厚。……宣德时期红釉多小件器物，少见大器",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 154
+   },
+   "single_source": true
+  },
+  {
+   "id": "C055",
+   "reign": "Xuande",
+   "topic": "excavation",
+   "text": "An iron-red three-fruit stem bowl excavated in 1993 has no recorded or transmitted counterpart; transmitted Xuande three-fruit stem bowls are in underglaze red.",
+   "quote_zh": "传世品中宣德红釉三果纹高足碗较常见，但以铁红釉绘三果纹者仅见此器。此类铁红釉器不见文献记载，亦不见传世品。",
+   "source_ids": [
+    "CAT-XD"
+   ],
+   "pages": {
+    "CAT-XD": 98
+   },
    "single_source": true
   }
  ]
