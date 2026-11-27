@@ -13,7 +13,7 @@ import { articleLd } from '../../../../lib/site';
 export function getStaticPaths() {
   const by = new Map<string, any[]>();
   for (const r of collection().records) {
-    if (r.family !== 'chinese-silver-shops') continue;
+    if (r.family !== 'chinese-silver-shops' || !String(r.page_path).startsWith('/marks/chinese/silver-shops/')) continue;
     const slug = String(r.page_path).split('/').pop()!;
     if (!by.has(slug)) by.set(slug, []);
     by.get(slug)!.push(r);
