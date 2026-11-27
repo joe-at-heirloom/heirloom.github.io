@@ -108,7 +108,7 @@ const graph = [
     {r.facts.length > 0 && (
       <section class="cn-block rfactsx" aria-labelledby="dating">
         <h2 id="dating">How specialists date {r.pinyin} wares</h2>
-        <ul>{r.facts.map((f) => <li><strong>{f.topic}.</strong> {f.text} {f.sources.length > 0 && <span class="faint">({f.sources.join('; ')})</span>}</li>)}</ul>
+        <ul>{r.facts.map((f) => <li><strong>{f.topic}.</strong> {f.text} {f.sources.length > 0 && <><!--copy-check:skip--><span class="faint">(<span class="proper-name">{f.sources.join('; ')}</span>)</span><!--/copy-check:skip--></>}</li>)}</ul>
       </section>
     )}
 
@@ -124,7 +124,7 @@ const graph = [
     <section class="cn-block" aria-labelledby="sources">
       <h2 id="sources">Sources</h2>
       <!--copy-check:skip-->
-      <ol class="cn-sources">{r.sources.map((s) => <li>{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}</li>)}</ol>
+      <ol class="cn-sources">{/* a citation names someone else's work: its title is theirs, not house wording */}{r.sources.map((s) => <li><span class="proper-name">{s.url ? <a href={s.url} rel="nofollow noopener">{s.citation}</a> : s.citation}</span></li>)}</ol>
       <!--/copy-check:skip-->
     </section>
 
