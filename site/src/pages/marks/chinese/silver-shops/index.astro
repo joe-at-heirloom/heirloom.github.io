@@ -1,0 +1,64 @@
+---
+// /marks/chinese/silver-shops: the silver shops (银楼) of China from Chen Zhigao's 中国银楼与银器
+// (2015), province by province. Each province has its own page ([province].astro).
+import Reference from '../../../../layouts/Reference.astro';
+import AppBox from '../../../../components/AppBox.astro';
+import { collection } from '../../../../lib/portal';
+import { media } from '../../../../lib/media';
+import { articleLd } from '../../../../lib/site';
+import '../../../../styles/staffordshire.css';
+
+const recs = collection().records.filter((r) => r.family === 'chinese-silver-shops');
+const by = new Map<string, any[]>();
+for (const r of recs) { const k = String(r.page_path); if (!by.has(k)) by.set(k, []); by.get(k)!.push(r); }
+const provs = [...by].map(([page, rs]) => ({
+  page, en: rs[0].attributes.province_en as string, zh: rs[0].attributes.province as string, shops: rs.length,
+  marks: rs.reduce((n, r) => n + (r.attributes.marks?.length ?? 0), 0),
+  thumb: (rs.find((r) => r.attributes.marks?.length)?.attributes.marks?.[0] as string | undefined) ?? null,
+  cities: [...new Set(rs.map((r) => r.attributes.place_py).filter(Boolean))].length,
+})).sort((a, b) => b.shops - a.shops);
+const marks = provs.reduce((n, p) => n + p.marks, 0);
+const western = recs.filter((r) => r.attributes.western_style).length;
+const path = '/marks/chinese/silver-shops';
+const title = `Chinese Silver Shop Marks (银楼): ${(Math.floor(recs.length / 100) * 100).toLocaleString('en-US')} Shops by Province | Heirloom`;
+const description = `${recs.length.toLocaleString('en-US')} Chinese silver shops (银楼) in ${provs.length} provinces, with their names in characters and pinyin, addresses, dates and ${marks.toLocaleString('en-US')} marks photographed on their silver, from Chen Zhigao’s 中国银楼与银器.`;
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, 'Chinese silver shop marks', description, '2026-11-27')]} han="银楼中国与器陈志高足纹">
+  <header class="rhead">
+    <h1>Chinese silver shops <span class="han" lang="zh">银楼</span></h1>
+    <p class="rhead__lede">Most Chinese silver of the Qing and Republican years, the hairpins, lock pendants, bowls and boxes made for Chinese buyers, carries the stamp of the silver shop (银楼 yinlou) that made or sold it, in characters. Find the shop by its name and its town: each province below lists its shops with their streets and dates, and the marks of the shops Chen Zhigao photographed.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{recs.length.toLocaleString('en-US')}</strong> shops</li>
+      <li><strong class="num">{marks.toLocaleString('en-US')}</strong> marks pictured</li>
+      <li><strong class="num">{provs.length}</strong> provinces</li>
+    </ul>
+  </header>
+
+  <section class="st-section st-groups" aria-labelledby="provinces">
+    <h2 id="provinces">By province</h2>
+    <ul class="st-firms">
+      {provs.map((p) => (
+        <li>
+          <a class="st-firm" href={p.page}>
+            <span class="st-firm__pic">{p.thumb ? <img src={media(p.thumb)} alt="" loading="lazy" decoding="async" /> : null}</span>
+            <span>
+              <span class="st-firm__name">{p.en} <span class="han" lang="zh">{p.zh}</span></span>
+              <span class="st-firm__meta">{p.shops} shops in {p.cities} {p.cities === 1 ? 'city' : 'towns and cities'}</span>
+              <span class="st-firm__meta">{p.marks} marks pictured</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section" aria-labelledby="read">
+    <h2 id="read">Reading a shop mark</h2>
+    <p>The stamp is usually the shop’s name, two to four characters in a rectangle, often with its town before it and sometimes a fineness word such as 足纹 or 纹银 after it. Many shops shared lucky names (宝成, 天宝, 老凤祥 and their branches), so the town matters as much as the name. Shops opened, closed and were copied, and a shop mark does not by itself date a piece or prove it old.</p>
+    <p>{western > 0 ? `Chen marks ${western} Shanghai shops as Western-style (洋装), the Cantonese firms that made silver in Western forms. ` : ''}For export silver marked in English letters, see <a href="/marks/chinese/export-silver">Chinese export silver</a>.</p>
+  </section>
+
+  <AppBox text="Photograph the mark on your piece. The Advisor reads the characters and finds the shop in this list." />
+
+  <p class="st-credit">Shops, addresses, managers, dates and mark photographs from Chen Zhigao 陈志高, <cite>中国银楼与银器</cite> (Beijing: Tsinghua University Press, 2015), the regional volumes, credited page by page. Chen compiled each shop from trade directories, gazetteers, chamber of commerce lists and pieces he saw; each sheet names the sources he gives where they can be read. Every shop rests on Chen until a second source is matched.</p>
+</Reference>

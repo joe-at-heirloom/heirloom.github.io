@@ -1,0 +1,62 @@
+---
+// /marks/chinese/silver-shops/<province>: one province's silver shops (银楼) from Chen Zhigao's
+// 中国银楼与银器 (2015), grouped by city, each opening into its sheet with the marks Chen
+// photographed. A catalogue over the collection's records (family chinese-silver-shops,
+// ids cn-silver-shop-<province>-*); the records already name this page.
+import Reference from '../../../../layouts/Reference.astro';
+import Catalogue from '../../../../components/ref/Catalogue.astro';
+import AppBox from '../../../../components/AppBox.astro';
+import { collection } from '../../../../lib/portal';
+import { silverShopSheet, CJK } from '../../../../lib/records';
+import { articleLd } from '../../../../lib/site';
+
+export function getStaticPaths() {
+  const by = new Map<string, any[]>();
+  for (const r of collection().records) {
+    if (r.family !== 'chinese-silver-shops') continue;
+    const slug = String(r.page_path).split('/').pop()!;
+    if (!by.has(slug)) by.set(slug, []);
+    by.get(slug)!.push(r);
+  }
+  return [...by].map(([province, recs]) => ({ params: { province }, props: { recs } }));
+}
+const { recs } = Astro.props as { recs: any[] };
+const a0 = recs[0].attributes;
+const en = a0.province_en as string, zh = a0.province as string;
+const path = `/marks/chinese/silver-shops/${Astro.params.province}`;
+const sheets = recs.map(silverShopSheet);
+const places = new Map<string, { label: string; n: number }>();
+for (const r of recs) {
+  const k = r.attributes.place ?? 'unplaced';
+  const p = places.get(k) ?? { label: r.attributes.place ? `${r.attributes.place_py} ${r.attributes.place}` : 'Place not given', n: 0 };
+  p.n++; places.set(k, p);
+}
+const groups = [...places].sort((x, y) => y[1].n - x[1].n).map(([key, p]) => ({ key, label: p.label, blurb: null, sheets: sheets.filter((s) => s.group === key).sort((x, y) => x.reading.localeCompare(y.reading)) }));
+const marks = recs.reduce((n, r) => n + (r.attributes.marks?.length ?? 0), 0);
+const withMarks = recs.filter((r) => r.attributes.marks?.length).length;
+const western = recs.filter((r) => r.attributes.western_style).length;
+const title = `Chinese Silver Shop Marks: ${en} (${zh}) | Heirloom`;
+const description = `${recs.length} silver shops (银楼) of ${en}, with their names in characters and pinyin, addresses, dates and ${marks} marks photographed on their silver, from Chen Zhigao’s 中国银楼与银器.`;
+const han = [...new Set([...JSON.stringify(groups)].filter((ch) => CJK.test(ch)))].join('');
+---
+<Reference {title} {description} {path} jsonld={[articleLd(path, `Silver shops of ${en}`, description, '2026-11-27')]} {han}>
+  <header class="rhead">
+    <h1>Silver shops of {en} <span class="han" lang="zh">{zh}</span></h1>
+    <p class="rhead__lede">The silver shops (银楼 yinlou) of {en} that made and sold silver, gold and jewellery in the Qing and Republican years, as Chen Zhigao lists them: the shop’s name as it is stamped on the silver, its street, its manager and when it is first recorded. Where Chen photographed a shop’s mark on a piece, the sheet shows it.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{recs.length}</strong> shops</li>
+      <li><strong class="num">{withMarks}</strong> with their marks pictured</li>
+      {western > 0 && <li><strong class="num">{western}</strong> Western-style (洋装) shops</li>}
+    </ul>
+  </header>
+
+  <Catalogue {groups} noun={['shop', 'shops']} placeholder="Characters on the mark, or pinyin: 老凤祥, Lao Feng Xiang, 宝成" label="Characters on the mark, or pinyin" />
+
+  <section class="ahome__block read" aria-labelledby="rely">
+    <h2 id="rely">Reading a shop mark</h2>
+    <p>A shop mark gives the shop’s name and often its town, and sometimes the fineness (足纹, 纹银) or a maker’s chop. Popular names such as 宝成, 天宝 and 老凤祥 were used by many unrelated shops in many towns, so match the town as well as the name. The names here were read from the book by machine: if a character differs from the mark in the picture, trust the picture.</p>
+    <p>For silver made for Western buyers, with English letters, see <a href="/marks/chinese/export-silver">Chinese export silver</a>.</p>
+  </section>
+
+  <AppBox text="Photograph the mark on your piece. The Advisor reads the characters and finds the shop in this same list." />
+</Reference>

@@ -670,7 +670,9 @@ export function exportSilverSheet(r: Rec): Sheet {
       ['What the marks say about date', ((a.dating_hints ?? []) as { hint: string }[]).map((h) => h.hint).join('; ')],
       ['Same letters as', (a.possible_attributions ?? []).length ? `a mark of ${a.possible_attributions.join(', ')}; the sources of this mark do not say it is theirs` : null],
       ['Notes', ((a.notes ?? []) as EsFact[]).map(one).join(' · ')],
+      ['A shop of this name in Chen’s lists', ((a.chen_shops ?? []) as any[]).map((c) => [c.name, c.place, c.address, c.opened && (/前/.test(c.opened) ? `recorded by ${c.opened.replace(/前/, '')}` : c.opened), c.note].filter(Boolean).join(', ')).join('; ') || null],
     ].map(([label, text]) => [label, clean(text)]).filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    links: ((a.chen_shops ?? []) as any[]).length ? ((a.chen_shops ?? []) as any[]).map((c) => ({ label: `${c.name}, ${c.place}: Chen’s record (possibly the same firm)`, href: String(c.href) })) : undefined,
     differ, caution: clean(a.caution),
     // The record's image first, then every other photograph or book plate of the marks.
     pics: ((main) => [main, ...((a.photos ?? []) as any[]).filter((p) => !main || media(p.file) !== main.file).map((p): Pic => ({
@@ -680,6 +682,34 @@ export function exportSilverSheet(r: Rec): Sheet {
     }))].filter((p): p is Pic => !!p))(picOf(r)),
     sources: list, single: r.single_source,
     keys: keysOf(r.keys, r.name, city, (a.marks ?? []).map((m: EsFact) => m.v)),
+  };
+}
+
+/** A Chinese silver shop (银楼) from Chen Zhigao's province lists: its name in characters, where and
+ *  when it traded, and the marks Chen photographed. Grouped on its province's page by city. */
+export function silverShopSheet(r: Rec): Sheet {
+  const a = r.attributes as any;
+  const { list } = numbered(r);
+  const opened = a.opened ? (/前/.test(a.opened) ? `Recorded by ${a.opened.replace(/前/, '')} (the earliest record Chen found, not the opening)` : /后/.test(a.opened) ? `Recorded after ${a.opened.replace(/后/, '')}` : a.opened) : null;
+  const credit = (r.sources[0] as any)?.where ?? '';
+  return {
+    id: r.id, anchor: r.anchor ?? r.id, url: urlOf(r), kind: 'Silver shop', group: a.place ?? 'unplaced',
+    glyphs: a.chinese, typeset: true, lang: 'zh', reading: a.pinyin, means: clean([a.place_py, a.province_en].filter((x: string, i: number, l: string[]) => x && l.indexOf(x) === i).join(', ')),
+    years: r.date_from ? (/前/.test(a.opened ?? '') ? `by ${r.date_from}` : /后/.test(a.opened ?? '') ? `after ${r.date_from}` : String(r.date_from)) : null,
+    facts: [
+      ['Where', [a.place ? `${a.place_py} ${a.place}` : null, a.address].filter(Boolean).join(', ')],
+      ['Opened', opened],
+      ['Manager', a.manager],
+      ['Western-style shop', a.western_style ? 'Chen lists it as 洋装, a shop making silver and jewellery in Western forms' : null],
+      ['Chen notes', a.western_style ? (a.note ?? '').replace(/洋装[，,、\s]*/, '') || null : a.note],
+      ['Marks', a.marks?.length ? `${a.marks.length === 1 ? 'One mark' : `${a.marks.length} marks`} photographed by Chen on pieces from the shop` : a.object_seen ? 'Chen saw a piece with its mark' : null],
+      ['Name read by', 'Machine, from the book; check the characters against the mark'],
+    ].map(([label, text]) => [label, clean(text)]).filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ: [], caution: clean(a.caution),
+    pics: ((a.marks ?? []) as string[]).map((f, i) => ({ file: media(f), status: 'facsimile', credit: `Chen Zhigao, ${credit}`, url: null, alt: `${i ? 'Another mark' : 'Mark'} of ${a.chinese} ${a.pinyin}` })),
+    links: a.export_maker ? [{ label: 'Possibly the export silver firm of this name', href: `/marks/chinese/export-silver#${String(a.export_maker).replace(/^cn-export-silver-/, '')}` }] : undefined,
+    sources: list, single: r.single_source,
+    keys: keysOf(r.keys, r.name, a.place, a.place_py, a.address, a.pinyin),
   };
 }
 

@@ -195,6 +195,7 @@ function build(): Area[] {
           { href: '/marks/german-silver-marks', label: 'Germany', note: 'The crescent and crown' },
           { href: '/marks/russian-silver-marks', label: 'Russia', note: 'Zolotnik standards and town marks' },
           { href: '/marks/chinese/export-silver', label: 'China', note: 'Export silver of Canton, Hong Kong and Shanghai' },
+          { href: '/marks/chinese/silver-shops', label: 'Chinese silver shops', note: 'Shop marks in characters, province by province' },
           { href: '/marks/mexican-silver-marks', label: 'Mexico', note: 'The eagle and Taxco' },
           { href: '/marks/indian/', label: 'India, Burma and Ceylon', note: 'Calcutta, Madras, Kutch and Rangoon makers', away: 'india' },
           { href: '/marks/indian-hallmarks', label: 'Indian hallmarks', note: 'The BIS mark, 916 and HUID', away: 'india' },
@@ -259,7 +260,7 @@ function build(): Area[] {
     },
     {
       key: 'china', label: 'Chinese marks and seals', short: 'China', href: '/marks/chinese/', scope: 'marks', script: 'han',
-      families: ['chinese-marks', 'chinese-dating', 'chinese-people', 'chinese-export-silver'],
+      families: ['chinese-marks', 'chinese-dating', 'chinese-people', 'chinese-export-silver', 'chinese-silver-shops'],
       lede: 'Reign and hall marks on Chinese porcelain, how a Chinese date is written, and the seals of painters, calligraphers and collectors, with sources in Chinese and English.',
       cue: 'Chinese characters in a square or a ring',
       groups: [
@@ -272,6 +273,7 @@ function build(): Area[] {
         ] },
         { label: 'Silver', links: [
           { href: '/marks/chinese/export-silver', label: 'Export silver', note: 'Makers, marks and chops of Canton, Hong Kong and Shanghai' },
+          { href: '/marks/chinese/silver-shops', label: 'Silver shops', note: 'Shop marks (银楼) of every province, with their towns and dates' },
         ] },
         { label: 'Every reign', fold: true, links: reignLinks() },
         { label: 'Seals', links: [
