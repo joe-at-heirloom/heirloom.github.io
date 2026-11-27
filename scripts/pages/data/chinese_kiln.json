@@ -290,6 +290,18 @@
    "notes": "raw/mct_20200921.html"
   },
   {
+   "id": "CAT-CH1",
+   "name": "明代成化御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（上）（Imperial Porcelains from the Reign of Chenghua in the Ming Dynasty I: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编（主编 吕成龙、江建新）, 故宫出版社, 2016, ISBN 978-7-5134-0907-0",
+   "url": null,
+   "notes": "Read from scans Joe supplied (OCR); facts cite printed pages. Same institution as the Palace Museum web pages."
+  },
+  {
+   "id": "CAT-CH2",
+   "name": "明代成化御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（下）（Imperial Porcelains from the Reign of Chenghua in the Ming Dynasty II: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编（主编 吕成龙、江建新）, 故宫出版社, 2016, ISBN 978-7-5134-0907-0",
+   "url": null,
+   "notes": "Read from scans Joe supplied (OCR); facts cite printed pages. Same institution as the Palace Museum web pages."
+  },
+  {
    "id": "CAT-HY",
    "name": "明代洪武永乐御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（Imperial Porcelains from the Reigns of Hongwu and Yongle in the Ming Dynasty: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and the Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编 (chief editors 王光尧、江建新; adviser 耿宝昌), 故宫出版社, 2015, ISBN 978-7-5134-0747-2",
    "url": null,
@@ -541,7 +553,7 @@
     "S24",
     "CAT-HY"
    ],
-   "single_source": false,
+   "single_source": true,
    "note": "Contested: see next fact (PKU 2014 excavation argues for late Hongwu).",
    "pages": {
     "CAT-HY": 319
@@ -593,7 +605,7 @@
     "S24",
     "CAT-HY"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 319
    }
@@ -609,7 +621,7 @@
     "CAT-HY",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 68,
     "CAT-XD": 337
@@ -626,7 +638,7 @@
     "CAT-HY",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 90,
     "CAT-XD": 336
@@ -642,7 +654,7 @@
     "S24",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-XD": 337
    }
@@ -706,7 +718,7 @@
     "S24",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-XD": 338
    }
@@ -751,7 +763,7 @@
     "S24",
     "CAT-HY"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 240
    }
@@ -767,7 +779,7 @@
     "CAT-HY",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 294,
     "CAT-XD": 110
@@ -784,7 +796,7 @@
     "CAT-HY",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 100,
     "CAT-XD": 339
@@ -799,10 +811,12 @@
    "source_ids": [
     "S24",
     "S32",
+    "CAT-CH2",
     "CAT-XD"
    ],
    "single_source": false,
    "pages": {
+    "CAT-CH2": 710,
     "CAT-XD": 246
    }
   },
@@ -815,11 +829,13 @@
    "source_ids": [
     "S24",
     "S32",
+    "CAT-CH2",
     "CAT-HY",
     "CAT-XD"
    ],
    "single_source": false,
    "pages": {
+    "CAT-CH2": 710,
     "CAT-HY": 319,
     "CAT-XD": 47
    }
@@ -862,11 +878,13 @@
    "source_ids": [
     "S25",
     "S32",
+    "CAT-CH2",
     "CAT-HY",
     "CAT-XD"
    ],
    "single_source": false,
    "pages": {
+    "CAT-CH2": 710,
     "CAT-HY": 321,
     "CAT-XD": 284
    }
@@ -908,11 +926,13 @@
    "source_ids": [
     "S20",
     "S10",
+    "CAT-CH2",
     "CAT-HY",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
+    "CAT-CH2": 711,
     "CAT-HY": 328,
     "CAT-XD": 38
    }
@@ -927,7 +947,7 @@
     "S24",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-XD": 330
    }
@@ -943,7 +963,7 @@
     "CAT-HY",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 321,
     "CAT-XD": 256
@@ -960,7 +980,7 @@
     "CAT-HY",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HY": 122,
     "CAT-XD": 222
@@ -976,7 +996,7 @@
     "S24",
     "CAT-XD"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-XD": 341
    }
@@ -1040,9 +1060,13 @@
    "source_ids": [
     "S15",
     "S27",
-    "S34"
+    "S34",
+    "CAT-CH2"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-CH2": 358
+   }
   },
   {
    "id": "F035",
@@ -1067,7 +1091,7 @@
     "S15",
     "S06"
    ],
-   "single_source": false
+   "single_source": true
   },
   {
    "id": "F037",
@@ -1079,7 +1103,7 @@
     "S24",
     "S27"
    ],
-   "single_source": true,
+   "single_source": false,
    "note": "Both quotes by Jiang Jianxin."
   },
   {
@@ -1114,7 +1138,7 @@
     "S16",
     "S04"
    ],
-   "single_source": false,
+   "single_source": true,
    "note": "The bowl is a tomb find, not a kiln find."
   },
   {
@@ -1136,9 +1160,15 @@
    "quote_zh": "[S26] 御窑出土的成化官款多以青花书双圈或双框“大明成化年製”六字楷书款，其款识大多在器底，少量横书于口沿下方。 ／ [S26] 款外围圆圈或框字都紧束款字，所画线条粗细不等，发色浓淡不一。 ／ [S32] 成化御窑瓷器年款的主要体式为青花楷体“大明成化年制”六字双行外围青花双圆圈或双方框，也有极个别无边栏者。",
    "source_ids": [
     "S26",
-    "S32"
+    "S32",
+    "CAT-CH2",
+    "CAT-CH1"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-CH2": 546,
+    "CAT-CH1": 232
+   }
   },
   {
    "id": "F043",
@@ -1149,11 +1179,13 @@
    "source_ids": [
     "S32",
     "S26",
+    "CAT-CH2",
     "CAT-HZ2"
    ],
    "single_source": false,
    "note": "'No four-character mark' rests on S32 only; double-frame use at the site has two sources.",
    "pages": {
+    "CAT-CH2": 706,
     "CAT-HZ2": 710
    }
   },
@@ -1164,9 +1196,13 @@
    "text": "Placement exceptions: on stem cups the six characters run clockwise around the inside of the foot (a Chenghua innovation). On dishes with unglazed 'burnt-rice' bases the mark is written in one horizontal line at the rim. A rare single-line mark in a double rectangle occurs on a kiln-site bowl base.",
    "quote_zh": "[S32] 另见有以青花料自右向左横写楷体六字一排年款，落在盘的口边，高足杯则在足内边沿按顺时针方向绕足书写青花楷体六字年款。 ／ [S32] 图二十一：明代成化青花碗（残片）外底署款，景德镇市珠山明代御窑遗址出土景德镇市陶瓷考古研究所藏图二十二：明代成化青花折枝莲托杂宝纹高足杯成化御窑青花、斗彩瓷器上均署青花款；单色釉瓷除署青花款外，还有少量锥拱款。",
    "source_ids": [
-    "S32"
+    "S32",
+    "CAT-CH1"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-CH1": 92
+   }
   },
   {
    "id": "F045",
@@ -1176,10 +1212,16 @@
    "quote_zh": "[S32] 即：凡是以龙（包括海水云龙、应龙、香草龙、瓜地行龙等）、天马（图三十，1、2）、海怪、缠枝莲托八吉祥、缠枝莲纹等主题纹饰装饰的斗彩罐，其外底必署“天”字款；而凡绘其他纹饰者，则必署六字年款（图三十一，1、2）。 ／ [S22] 2002－2004年，珠山御窑联合考古队在珠山御窑遗址成化地层中，发掘出土了许多青花瓷片，其中不‹1›少为青料勾双线留白的残片，经修复所得器形有鸡缸杯〔图一〕、天字罐〔图三〕、缠枝莲纹小靶盏〔图五〕等。",
    "source_ids": [
     "S32",
-    "S22"
+    "S22",
+    "CAT-CH2",
+    "CAT-CH1"
    ],
    "single_source": false,
-   "note": "The jar-motif rule rests on S32; the kiln-site 天-jar semi-finished pieces on S22."
+   "note": "The jar-motif rule rests on S32; the kiln-site 天-jar semi-finished pieces on S22.",
+   "pages": {
+    "CAT-CH2": 706,
+    "CAT-CH1": 326
+   }
   },
   {
    "id": "F046",
@@ -1188,9 +1230,13 @@
    "text": "On Chenghua blue-ground reserved-white wares, a kiln-site bowl carries its mark in raised white slip, six characters in a white-slip double ring, written on the blue-glazed base. This mark type is unique to Chenghua.",
    "quote_zh": "[S32] 值得一提的是成化祭蓝釉白花瓷所署款识很特别，即在外底祭蓝釉地上以白色泥料书写楷体六字双行外围白泥双圈款（图二十三，1、2），款字笔道凸起，这种蓝釉白泥款为成化朝瓷器上所独有[13]。",
    "source_ids": [
-    "S32"
+    "S32",
+    "CAT-CH2"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-CH2": 496
+   }
   },
   {
    "id": "F047",
@@ -1210,9 +1256,13 @@
    "text": "In 1987 large Chenghua kiln deposits were cleared northeast of Longzhuge. Liu Xinyuan divided them into early, middle and late phases by find-spot and stratum. In Chenghua strata, doucai semi-finished and finished pieces are the largest category.",
    "quote_zh": "[S22] 1987年景德镇市陶瓷考古研究所为配合龙珠阁的建设，在龙珠阁东北侧发现清理出大量成化时期的窑业堆积，根据出土时间、区域、地层的不同，刘新园先生结合文献，把这些出土的遗物分为早、中、晚三期，‹1›第三期共计出土300余件器物，其中青花斗彩器物约200余件。 ／ [S22] 综合以上两次在珠山的较大规模的考古发掘，成化地层出土数量最多的为斗彩半成品和斗彩成品。",
    "source_ids": [
-    "S22"
+    "S22",
+    "CAT-CH1"
    ],
-   "single_source": true
+   "single_source": true,
+   "pages": {
+    "CAT-CH1": 8
+   }
   },
   {
    "id": "F049",
@@ -1221,9 +1271,15 @@
    "text": "Chenghua doucai drops the Xuande method of incising reserves in the leather-hard body for enamel. Areas to be enamelled are outlined in cobalt instead. Early-Chenghua iron red follows Xuande practice, shaded first and then outlined. Late Chenghua strata show flat, unshaded iron red.",
    "quote_zh": "[S22] 经与同品类器物〔图二，图四，图六〕比较得知，这些青花勾线器物都为斗彩半成品，且成化斗彩瓷器制作没有沿用宣德斗彩瓷器在泥坯上暗刻留白填彩的工艺，而是在需要填彩的部位以青料勾画外轮廓线，并按照构图需要局部用画笔或点、或绘单线条，以增加层次感。 ／ [S22] 五结论宣德时期和成化早期矾红彩绘均为渲染后再勾画局部，但到了成化朝后期，由于斗彩瓷器烧造量变大，御器厂工匠开始大量采用平涂无渲染的工艺制作斗彩瓷器。",
    "source_ids": [
-    "S22"
+    "S22",
+    "CAT-CH2",
+    "CAT-CH1"
    ],
-   "single_source": true
+   "single_source": true,
+   "pages": {
+    "CAT-CH2": 712,
+    "CAT-CH1": 326
+   }
   },
   {
    "id": "F050",
@@ -1233,10 +1289,14 @@
    "quote_zh": "[S08] 而展出的青花云龙凤纹盘则非常有趣，其内底龙的一足画成六爪、外壁龙的一足画成四爪，不知工匠有意画错还是无意为之，此盘可能即因此而落选。 ／ [S13] 只因为内底所绘本应为五爪龙的一足被粗心的匠人画成了六爪，而外壁所绘龙纹的一足又少一爪，画成了四爪，不细心看不容易发现。 ／ [S13] 但仔细看，会发现当年被砸碎的杯子颜色不及故宫藏品鲜艳，红色发乌，因此惨遭淘汰。",
    "source_ids": [
     "S08",
-    "S13"
+    "S13",
+    "CAT-CH1"
    ],
-   "single_source": false,
-   "note": "The six-claw dish has two sources; the dark-red doucai cup rests on S13 only."
+   "single_source": true,
+   "note": "The six-claw dish has two sources; the dark-red doucai cup rests on S13 only.",
+   "pages": {
+    "CAT-CH1": 76
+   }
   },
   {
    "id": "F051",
@@ -1246,10 +1306,16 @@
    "quote_zh": "[S08] 成化御窑瓷器素以胎质洁白细腻、釉质平整油光、装饰题材丰富、构图疏密有致、设色清丽典雅、绘画技艺精湛而闻名于世。 ／ [S13] 成化御窑瓷器素以胎质洁白细腻、釉质平整油光、装饰题材丰富、构图疏密有致、设色清丽典雅、绘画技艺精湛而闻名于世。",
    "source_ids": [
     "S08",
-    "S13"
+    "S13",
+    "CAT-CH1",
+    "CAT-CH2"
    ],
    "single_source": true,
-   "note": "S13 repeats the Palace press text verbatim, so this is effectively one source."
+   "note": "S13 repeats the Palace press text verbatim, so this is effectively one source.",
+   "pages": {
+    "CAT-CH1": 11,
+    "CAT-CH2": 698
+   }
   },
   {
    "id": "F052",
@@ -1258,9 +1324,15 @@
    "text": "Excavated Chenghua types not matched by any transmitted piece include a blue-and-white crane-neck vase with dragons among flowers, red- and blue-ground bowls with reserved white dragons or phoenixes, a peacock-green lobed flowerpot, red-ground and white-ground green-enamelled tripod censers, and a sancai duck-shaped incense burner.",
    "quote_zh": "[S08] 不见于传世品的青花龙穿花纹鹤颈瓶、祭红地抜白云龙纹碗、祭蓝地抜白云凤纹碗、孔雀绿釉菱花口折沿花盆、矾红地绿彩缠枝灵芝纹双耳三足炉、白釉绿彩缠枝灵芝纹双耳三足炉、素三彩鸭形香薰等，则给人耳目一新之感。",
    "source_ids": [
-    "S08"
+    "S08",
+    "CAT-CH1",
+    "CAT-CH2"
    ],
-   "single_source": true
+   "single_source": true,
+   "pages": {
+    "CAT-CH1": 10,
+    "CAT-CH2": 701
+   }
   },
   {
    "id": "F053",
@@ -1270,10 +1342,16 @@
    "quote_zh": "[S33] 从现存的成化官窑瓷器看，成化早期官窑多以模仿宣德官窑制式为主。 ／ [S33] 如英国戴维德基金会收藏成化官窑青花龙纹碗(见图1)，造型、纹饰皆与宣德官窑青花龙纹碗(见图2)相仿，在瓷器设计上二者唯独款识有异，承宣德官窑署款遗制，更之为“大明成化年制”。 ／ [S22] 1、熟褐：颜色失透无光泽，仅见于成化仿宣德莲池鸳鸯纹盘。",
    "source_ids": [
     "S33",
-    "S22"
+    "S22",
+    "CAT-CH1",
+    "CAT-CH2"
    ],
-   "single_source": true,
-   "note": "S33 discusses transmitted pieces (e.g. a David Foundation bowl), not stratified finds; S22 gives the kiln-site Chenghua copy of the Xuande dish. Different points, each single-sourced. No free source was found reporting Xuande-MARKED sherds in Chenghua strata."
+   "single_source": false,
+   "note": "S33 discusses transmitted pieces (e.g. a David Foundation bowl), not stratified finds; S22 gives the kiln-site Chenghua copy of the Xuande dish. Different points, each single-sourced. No free source was found reporting Xuande-MARKED sherds in Chenghua strata.",
+   "pages": {
+    "CAT-CH1": 10,
+    "CAT-CH2": 713
+   }
   },
   {
    "id": "F054",
@@ -1314,11 +1392,13 @@
    "source_ids": [
     "S14",
     "S03",
+    "CAT-CH2",
     "CAT-HZ1",
     "CAT-HZ2"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
+    "CAT-CH2": 702,
     "CAT-HZ1": 270,
     "CAT-HZ2": 710
    }
@@ -1334,7 +1414,7 @@
     "CAT-HZ1",
     "CAT-HZ2"
    ],
-   "single_source": false,
+   "single_source": true,
    "pages": {
     "CAT-HZ1": 32,
     "CAT-HZ2": 704
@@ -1349,12 +1429,14 @@
    "source_ids": [
     "S03",
     "S14",
+    "CAT-CH2",
     "CAT-HZ1",
     "CAT-HZ2"
    ],
    "single_source": true,
    "note": "S14 reprints the Palace text; effectively one source.",
    "pages": {
+    "CAT-CH2": 698,
     "CAT-HZ1": 126,
     "CAT-HZ2": 710
    }
@@ -1387,7 +1469,7 @@
     "CAT-HZ1",
     "CAT-HZ2"
    ],
-   "single_source": false,
+   "single_source": true,
    "note": "Single source (Palace show text as reported by The Paper). Not stated to be a kiln-site find.",
    "pages": {
     "CAT-HZ1": 14,
@@ -1515,10 +1597,14 @@
    "text": "Typical Jiajing imperial blue mixes imported 'Huiqing' (回青) cobalt with domestic 'stone' blue (石子青), giving a vivid purplish blue. Melon-skin green is purest under Jiajing.",
    "quote_zh": "[S05] 典型嘉靖御窑青花瓷器以进口“回青”料混以国产“石子青”料描绘纹饰，呈现蓝中泛紫的鲜艳色调，开创了明代御窑青花瓷器发展的新境界。 ／ [S05] 瓜皮绿釉是一种以氧化铜为呈色剂、以氧化铅为主要助熔剂的低温色釉，明代景德镇御器厂自永乐朝开始烧造，以后各朝亦多有烧造，其中以嘉靖朝产品发色最为纯正，本次展出的故宫博物院藏嘉靖瓜皮绿釉锥拱云凤纹尊堪称代表性作品。",
    "source_ids": [
-    "S05"
+    "S05",
+    "CAT-CH2"
    ],
    "single_source": true,
-   "note": "China Daily (S17) repeats the melon-green point from the same show."
+   "note": "China Daily (S17) repeats the melon-green point from the same show.",
+   "pages": {
+    "CAT-CH2": 560
+   }
   },
   {
    "id": "F069",
@@ -1647,7 +1733,7 @@
     "S06",
     "S12"
    ],
-   "single_source": false
+   "single_source": true
   },
   {
    "id": "F080",
@@ -1678,6 +1764,734 @@
   },
   {
    "id": "C001",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Geng Baochang: Chenghua imperial marks are upright and forceful, as if all written by one hand. Later copies never catch their spirit, so on a piece with a Chenghua mark the calligraphy alone usually settles the date.",
+   "quote_zh": "成化御窑瓷器所署款识字体均挺拔有力，似乎出自一人之手笔。……应当特别指出的是，成化御窑瓷器上的款识字体风格突出，而所有后仿者均未能得其神髓。因此，对于署有成化年款的瓷器，若能善于观察款字，即可定其大概矣。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 11
+   },
+   "single_source": true
+  },
+  {
+   "id": "C002",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Sun Yingzhou's 1950s rhyme for the six-character mark, as glossed by Lü Chenglong. 大: the tip of the second (left-falling) stroke is pointed-round and not set high. 成: the fifth stroke (the left-falling stroke) is straight and stiff. Its third stroke either drops straight down or bends over to the left. 化: the tops of 亻 and 七 are level, or the right side is slightly higher. 製: the horizontal of 衣 usually does not run past the knife radical 刂 on the right, and the character is mostly full at the top and narrower below. 明: the 日 is narrow at the top and wide below, or of even width, and the tops of 日 and 月 are about level. 成: the final dot may sit above the horizontal (head), level with it (shoulder) or below it (waist).",
+   "quote_zh": "第一句是说款识中“大”字之第二笔“撇”画的出头尖圆，但并不太高。第二句是说“成”字第五笔的“撇”画直而生硬，第三笔则有直立向下者，……也有向左方弯倒者，……第三句是说“化”字左边的“亻”和右边“七”上端基本持平，或右边略高，但高低差别不大。第四句是说“製”字下半部“衣”字之“横”画一般不越过右方之立刀，“製”字大多上丰下敛。第五句是说“明”字左边的“日”多是上窄下宽或上下宽窄相同，与一般习惯写法不太一样。“日”“月”头部则基本持平，高、低差别不大。第六句是说“成”字末笔点，有点在“横”画以上的（正常写法，即头部），有点在与“横”画持平部位（即肩部），有点在“横”画以下（即腰部）。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 706
+   },
+   "single_source": true
+  },
+  {
+   "id": "C003",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Worked example of the rhyme: on a Kangxi copy of the doucai chicken cup, the 大 of the Chenghua mark ends its upward stroke with a pressed (blunt) end rather than a pointed-round one, and the left-falling stroke of 成 is soft and weak rather than straight and stiff.",
+   "quote_zh": "利用该歌诀仔细审视上述康熙朝仿成化斗彩鸡缸杯所署青花楷体“大明成化年制”六字双行款，可以看出其中的“大”字出头不是尖圆，而是顿笔；“成”字第五笔“撇”画不够硬直，而是显得软而无力。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 706
+   },
+   "single_source": true
+  },
+  {
+   "id": "C004",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Plate 63 (Palace Museum bowl): the Chenghua mark is written with a centred brush, its tips hidden, its strokes vigorous and upright, 'unique in the Ming'. Only Wanli-period mark calligraphy comes close.",
+   "quote_zh": "款字以中锋运笔，藏锋写出，笔画遒劲挺拔，在明代堪称一绝，仅万历时期的款识书体与之相近。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 166
+   },
+   "single_source": true
+  },
+  {
+   "id": "C005",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "A Chenghua kiln-site bowl carries a Xuande mark. The blue-and-white bowl with seven lions playing with a ball (Jingdezhen institute) follows a Xuande design and is marked 大明宣德年制 in six characters in a double ring. The catalogue calls it the earliest known Ming case of a later reign copying an earlier reign's mark. It was rejected for a warped mouth. (This disagrees with another source: see F053.)",
+   "quote_zh": "外底署青花楷体“大明宣德年制”六字双行款，外围青花双圈。此碗纹饰承袭宣德样式，所署仿款为目前所见明代后朝瓷器上仿写前朝年款的最早实例。此碗因碗口变形而落选。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 156
+   },
+   "single_source": true
+  },
+  {
+   "id": "C006",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "A matched pair of Chenghua kiln-site bowls with the same scrolling flower design: one is marked 大明成化年制 in a double ring, the other with the four-character 宣德年制 in a double ring. The calligraphy of the two marks is similar. The Xuande-marked bowl has a larger central medallion. Both were rejected for poor blue and warping. (This disagrees with another source: see F053.)",
+   "quote_zh": "一件碗外底署青花楷体“大明成化年制”六字双行款，外围青花双圈；另一件碗外底署青花楷体“宣德年制”四字双行款，外围青花双圈。款识字体相似，署仿宣德年款者，内底所绘纹饰较大。此对碗因青花发色欠佳和变形而落选。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 176
+   },
+   "single_source": true
+  },
+  {
+   "id": "C007",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Jiang Jianxin passes on the suggestion (from Liu Xinyuan's 1993 study) that the childlike, awkward six-character marks on Chenghua official ware may come from the young emperor's own hand, echoing Xuande marks said to be modelled on the calligrapher Shen Du.",
+   "quote_zh": "在款识书写方面似乎也受宣德帝影响，其成化官窑器上稚拙的六字年款可能出自少年皇帝之手（图14）。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 713
+   },
+   "single_source": true
+  },
+  {
+   "id": "C008",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Rule stated by the catalogue for doucai cups: one Palace Museum doucai cup has had its base glaze and mark ground away, and 'from the marking rule of Chenghua doucai' it should have carried a six-character mark in a double square. Counts bear this out: all 26 Chenghua doucai cups in the catalogue whose mark is described have the six-character mark in a double square (kiln-site and Palace Museum alike). So do 12 of the 16 doucai bowls and dishes. The 9 doucai stem cups are marked around the inside of the foot, and the 10 doucai 天 jars carry 天.",
+   "quote_zh": "外底釉和款字均被打磨掉。从成化斗彩瓷器署款规律推测，此杯原应署有青花楷体“大明成化年制”六字双行款，外围青花双方框。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 428
+   },
+   "single_source": true
+  },
+  {
+   "id": "C009",
+   "reign": "Chenghua",
+   "topic": "mark",
+   "text": "Kiln-site blue-and-white wares with Chenghua marks are mostly dishes, bowls, cups and stem cups. Censers, vases and jars with reign marks are rare. The excavated crane-necked vases are a Chenghua form, and some carry the reign mark written horizontally on the neck.",
+   "quote_zh": "传世和出土的署有成化年款的御窑青花瓷器以盘、碗、杯、高足杯等较为多见，炉、瓶、罐类较为少见。／珠山出土的同类瓶有饰凤凰穿花者，也有在颈部横书成化年款者，",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 58
+   },
+   "single_source": true
+  },
+  {
+   "id": "C010",
+   "reign": "Chenghua",
+   "topic": "excavation",
+   "text": "Geng Baochang: Chenghua quality control was strict and substandard pieces were all destroyed. As a result, transmitted Chenghua imperial pieces of every type rarely show kiln faults such as warped or flattened bodies or crawled glaze.",
+   "quote_zh": "从传世品和景德镇市珠山明代御器厂遗址出土物可看出，成化瓷器极注重制作质量，不合格者均被毁弃，因而传世各品种器物均少见夹扁、缩釉等窑艺弊病。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 10
+   },
+   "single_source": true
+  },
+  {
+   "id": "C011",
+   "reign": "Chenghua",
+   "topic": "excavation",
+   "text": "Small cups from the late-Chenghua deposits at Zhushan come in dozens of types. Tea cups are the second most numerous, after wine cups. A kiln-site recumbent-foot cup with a wide, shallow mouth and a slightly thicker body is identified as a tea cup.",
+   "quote_zh": "其胎稍厚，端拿不烫手，口坦而浅，便于散热。景德镇市珠山明代成化御窑晚期窑业遗存出土小杯达数十种之多，其中茶杯数量仅次于酒杯。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 260
+   },
+   "single_source": true
+  },
+  {
+   "id": "C012",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "Geng Baochang: Chenghua imperial kilns made few large pieces (private kilns made more). Common forms are stem cups, wine cups, dishes, bowls and jars. Drinking and tea were in fashion, so wine and tea cups are especially common, all small and refined. Among jars the 天 jar is the most prized. The most celebrated forms, all light and delicate, are the doucai bird-and-flower stem cup, the chicken cup, the scholars cup, the 'three autumns' cup and the 天 jar.",
+   "quote_zh": "成化御窑瓷器少见大器（民窑产品则大器较多），常见器物以高足杯、酒杯、盘、碗、罐等为主。由于此时饮酒品茗之风盛行，致使酒杯、茶杯类器较为多见。各种杯的造型均小巧俊美，为世人所珍视。罐类当中以“天”字罐尤为名贵。／成化瓷器造型唯重纤巧，如最享盛名的斗彩花鸟图高足杯、鸡缸杯、高士图杯、三秋杯、“天”字罐等，都是轻秀异常的代表作。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 10
+   },
+   "single_source": true
+  },
+  {
+   "id": "C013",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "Jiang Jianxin's inventory of Chenghua official forms (transmitted and excavated), in four groups and 23 shapes, about 200 varieties counting glaze and decoration. (1) Daily use: bowls, dishes, saucers, stem bowls, stem cups (mouth 4.8–8 cm), small cups (mouth under 8 cm), tea cups (mouth about 10 cm), small cups with stands, and covered 天 jars. (2) Desk and garden: paint boxes, water pots, flowerpots with stands, rectangular flowerpots, begonia-shaped narcissus basins and bird feeders. (3) Display: long-necked vases, crane-necked vases, censers with scroll handles, li-shaped censers, cylindrical incense burners and duck-shaped incense burners. (4) Ritual: gui-shaped censers and gu vases.",
+   "quote_zh": "1. 日常生活类：碗、盘、碟、靶盏、高足杯（口径4.8～8厘米）、小杯（口径8厘米以内）、茶盅（口径10厘米左右）、劝盘小杯及“天”字盖罐等。2. 文房与花园器：各式调色盒、水盂、带托花盆、长方形花盆、海棠形水仙盆、鸟食罐等。3. 陈设实用器：长颈瓶、鹤颈瓶、卷耳香炉、鬲式炉、桶形香熏、鸭形香熏等。4. 祭器类：簋式炉、觚等。这4类23种不同形制的瓷器如再按其不同釉色和纹饰细分，则成化官窑瓷器约有200余品。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 712
+   },
+   "single_source": true
+  },
+  {
+   "id": "C014",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "The doucai grape stem cup (flared mouth, flattened belly) is a Chenghua imperial innovation, called in Ming texts the 'five-colour grape flared-mouth flat-bellied stem cup'. The late-Ming Bowu yaolan ranks it above Xuande stem cups.",
+   "quote_zh": "此种式样的高足杯属于明代成化御窑首创，明代人称之为“五彩葡萄撇口扁肚把杯”。……明末谷泰撰《博物要览》曰：“成窑上品无过五彩葡萄撇口扁肚把杯，式较宣杯妙甚。”说的就是这种高足杯。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 430
+   },
+   "single_source": true
+  },
+  {
+   "id": "C015",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "Doucai vases are rare among both transmitted and excavated Chenghua doucai. Chenghua doucai jars come in two forms, a tall jar and a squat jar.",
+   "quote_zh": "不管是从传世还是出土的成化斗彩瓷器来看，瓶类器罕见。／从传世和出土的成化斗彩瓷罐来看，其造型主要有两种：一种是高体罐；另一种是矮体罐。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 302
+   },
+   "single_source": true
+  },
+  {
+   "id": "C016",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "Jiang Jianxin's rule of thumb for the same form in the two reigns: Xuande is large, thick and heavy, Chenghua elegant, thin and delicate.",
+   "quote_zh": "相同的器形宣德有大、厚、拙的特点，而成化器则显得秀、薄、巧。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 710
+   },
+   "single_source": true
+  },
+  {
+   "id": "C017",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "Blue-and-white stem bowls (高足碗) in the catalogue are unmarked, unlike the stem cups. Of five, three Palace Museum ones are described as unmarked and the fourth's entry mentions no mark. The kiln-site lion bowl is unmarked except for a single cobalt 一 on the base.",
+   "quote_zh": "无款。外底以青料书写“一”字。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 210
+   },
+   "single_source": true
+  },
+  {
+   "id": "C018",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "The catalogue has no finished Chenghua chicken cup. The reign is represented by a kiln-site semi-finished cup, painted in pale cobalt only, with a six-character mark in a double square, rejected for poor blue and warping. The later Kangxi (two) and Yongzheng (one) copies are compared with it. Late-Ming and Qing texts quoted by Lü Chenglong place the chicken cup at the top of Chenghua wares.",
+   "quote_zh": "杯呈缸形。口微撇，弧腹，卧足。杯内光素。外壁绘青花月季湖石、萱草湖石各一组。……外底署青花楷体“大明成化年制”六字双行款，外围青花双方框。此杯因青花发色欠佳和变形而落选。／其最者，斗鸡可口，谓之鸡缸。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 232
+   },
+   "single_source": true
+  },
+  {
+   "id": "C019",
+   "reign": "Chenghua",
+   "topic": "forms",
+   "text": "Jiang Jianxin: Chenghua official kilns kept up the Xuande habit of imitating famous Song wares. There are many imitations of Song Guan, qingbai and Ge ware, among them censers, vases, gu, flowerpots and stands, conical bowls, octagonal stem cups and begonia-shaped narcissus basins.",
+   "quote_zh": "成化官窑也有仿宋名窑之作，有大量仿宋官窑、宋青白釉、哥釉器的制品（图15至图23），当为宣德仿宋元之风的遗续。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 713
+   },
+   "single_source": true
+  },
+  {
+   "id": "C020",
+   "reign": "Chenghua",
+   "topic": "body",
+   "text": "Geng Baochang's 'double-line' foot test: Chenghua foot rings are generally thin and deep. Where the foot carries two cobalt bands, they are neat and set tight against the bottom of the foot. The lower band, nearest the unglazed foot edge, is darker and the upper one paler. Geng finds this in eight or nine of every ten Chenghua pieces and recommends it especially for unmarked pieces.",
+   "quote_zh": "成化瓷器圈足一般都较薄且深，凡饰有青花边线者，圈足高低虽不同，但却有同一种现象，即青花双边线都很规矩，紧靠圈足底部，且靠近足跟无釉处的那条弦线，颜色较深重，上边的一条弦线则显清淡。发现器物圈足上“双边线特征”虽属偶得，但在所见成化瓷器中，十之八九大抵如此。对于此时不署款识的器物，尤宜将这一特点用做鉴定时的参考依据。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 11
+   },
+   "single_source": true
+  },
+  {
+   "id": "C021",
+   "reign": "Chenghua",
+   "topic": "body",
+   "text": "Chenghua bodies were made from finely processed clay. Bowls and cups are 'thin as paper', so held to the light the outside decoration shows through and can be seen from inside.",
+   "quote_zh": "成化朝制坯的瓷土均经过精细加工，可塑性强，易于修坯，致使器物其胎体洁白细腻。碗、杯之类，胎薄如纸，器外壁纹饰可光照透影，在器内亦清晰可见。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 174
+   },
+   "single_source": true
+  },
+  {
+   "id": "C022",
+   "reign": "Chenghua",
+   "topic": "glaze",
+   "text": "Typical Chenghua blue-and-white uses domestic Pingdeng (Leping, Jiangxi) cobalt, low in iron and high in manganese. It gives a soft, pale, clear blue and basically none of the iron-crystal spots of Yongle–Xuande imported Sumali cobalt. Painting is outline-and-wash: fine, unblurred lines filled with a pale wash.",
+   "quote_zh": "从文献记载来看，典型成化御窑青花瓷器所用青料是产于今江西省乐平县的“平等青”，亦称“陂塘青”。由于这种青料中氧化铁（Fe2O3）含量较低、氧化锰（MnO2）含量较高，致使图案纹饰中基本不再呈现明初永乐、宣德御窑典型青花瓷器因使用进口“苏麻离青”料（高铁低锰）描绘纹饰所呈现的氧化铁结晶斑，而是呈现柔和、淡雅、清爽的蓝色，……成化御窑青花瓷器的绘画工艺多采用勾勒渲染法。线条不晕不散，宛如婉转游动的丝线，纤巧爽利，线条内染以淡淡的青料，",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 699
+   },
+   "single_source": true
+  },
+  {
+   "id": "C023",
+   "reign": "Chenghua",
+   "topic": "glaze",
+   "text": "Early versus typical Chenghua blue: early Chenghua blue-and-white resembles Xuande, painted in imported high-iron, low-manganese Sumali cobalt with a dense, bright blue and iron-crystal spots. It was made only briefly and is rare among transmitted pieces. Typical Chenghua blue-and-white uses low-iron, high-manganese Pingdeng cobalt and is pale, with basically no iron spots.",
+   "quote_zh": "成化御窑青花瓷器可分为早期青花瓷和典型青花瓷两种，早期青花瓷器的风格与宣德御窑青花瓷器相似，使用进口高铁低锰“苏麻离青”料绘画，图案发色浓艳，泛有氧化铁结晶斑点。但这种青花瓷的烧造时间不长，故传世品较为少见。典型成化御窑青花瓷器由于采用产于江西省乐平县的低铁高锰“平等青”料绘画，致使图案发色淡雅，基本无氧化铁结晶斑点，",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 94
+   },
+   "single_source": true
+  },
+  {
+   "id": "C024",
+   "reign": "Chenghua",
+   "topic": "glaze",
+   "text": "Jiang Jianxin dates the two kinds of Chenghua blue by excavation. The kind 'still using Sumali cobalt, with black spots' is early-to-middle Chenghua (years 1–16, 1465–1480) and shows Xuande influence. The pale kind is late Chenghua (years 17–23, 1481–1487), and is what 'Chenghua style' means. He follows Liu Xinyuan's 1993 study for this.",
+   "quote_zh": "中国硅酸盐学会编《中国陶瓷史》，曾根据传世品将成化青花瓷分为两类：即“沿用苏泥麻青而带有黑斑”一类和“青色淡雅而称著”一类。根据近年考古发掘资料证实：前一类青花为成化早中期（成化元年至十六年）的制品，其风格受宣德影响；后一类青花则为成化后期（成化十七年至二十三年）的制品，所谓成化风格便是指该期烧造的别具一格的瓷器。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 712
+   },
+   "single_source": true
+  },
+  {
+   "id": "C025",
+   "reign": "Chenghua",
+   "topic": "glaze",
+   "text": "Geng Baochang: the thick glaze over pale cobalt often makes Chenghua blue look hazy, 'veiled by cloud and mist', and this shows most in the cobalt base marks. Darker-toned Chenghua blue-and-white resembles late Xuande.",
+   "quote_zh": "但往往因釉层肥厚、青花色淡，而产生云遮雾障、若隐若现现象。器物外底青花款字色调表现得尤其突出。青花瓷器中色调浓重者近似于宣德晚期青花瓷器。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 11
+   },
+   "single_source": true
+  },
+  {
+   "id": "C026",
+   "reign": "Chenghua",
+   "topic": "glaze",
+   "text": "Imitation Ge ware was popular at the Chenghua kiln: large quantities of sherds have been excavated, but the reject rate was high. Chenghua imitation Ge has crackle and brown-washed rims and feet that copy Song Ge 'purple mouth, iron foot', though the colour is painted on. Its glaze is glossier than Song Ge and lacks its buttery softness.",
+   "quote_zh": "景德镇珠山成化御器厂遗址已出土大量仿哥釉瓷器残片，说明当时很盛行这一品种，但烧成时废品率很高。／这件仿哥釉八方高足杯较好地模仿了宋代哥窑瓷器的“金丝铁线”和“紫口铁足”特征，只是釉面光泽度稍强，缺乏宋代哥窑瓷器“润泽如酥”之感。口、足颜色亦系人为涂抹酱褐色釉所致，",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 702
+   },
+   "single_source": true
+  },
+  {
+   "id": "C027",
+   "reign": "Chenghua",
+   "topic": "glaze",
+   "text": "Chenghua underglaze red continues Xuande techniques in two ways. One is line-drawn copper red, as on excavated cloud-dragon bowls and dishes. The other is copper red applied in patches (宝烧), as on the three-fish bowls in Stockholm and the Taipei Palace Museum; sherds of the same bowl were found at the Chenghua factory site. After Xuande, underglaze red was made only rarely because it was so hard to fire.",
+   "quote_zh": "从传世品和出土物看，成化御窑釉里红瓷器主要延续宣德时期的装饰技法。大致可分为两种：一是以铜红彩描绘图案纹饰的所谓“线绘釉里红”；二是鲜红釉的局部使用，被称为“宝烧”。所见成化御窑线绘釉里红瓷器有景德镇御窑厂遗址出土的云龙纹碗、盘等，鲜红釉局部使用的釉里红瓷器见有瑞典斯德哥尔摩东方博物馆和台北故宫博物院各收藏一件釉里红三鱼纹碗（图4），景德镇明代成化御器厂遗址也出土了当时落选被打碎的这种碗的残片。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 699
+   },
+   "single_source": true
+  },
+  {
+   "id": "C028",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "How to tell doucai from blue-and-white wucai (Lü Chenglong). In doucai the underglaze blue forms the whole framework of the design, so a semi-finished doucai piece (before enamelling) is a complete pale blue-and-white picture. In blue-and-white wucai the blue is used only as one colour and to place the overglaze painting, so the semi-finished piece is an incomplete blue-and-white design. Ming texts called both 五彩.",
+   "quote_zh": "在斗彩瓷器上，釉下青花起主导或骨架作用，青花已构成整个图案框架，或者说是白描样稿；斗彩瓷器半成品（未施釉上彩）是一件图案完整的淡描青花器；而在青花五彩瓷器上，釉下青花只是被作为一种颜色使用，同时为釉上绘画定好位置，青花五彩瓷器的半成品（未施釉上彩）是一件图案不完整的青花器。／应引起注意的是，明代文献将今人所称的五彩和斗彩统称作“五彩”。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 701
+   },
+   "single_source": true
+  },
+  {
+   "id": "C029",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "The 'brilliant purple' (姹紫) is called the hallmark of Chenghua doucai. Sun Yingzhou's mnemonic for the Chenghua palette runs: 'bright red lightly brushed, green flashing yellow; brilliant purple thick but without lustre'. A catalogue entry adds that this dense, matt purple appears on only a few Chenghua doucai pieces.",
+   "quote_zh": "彩色中的“姹紫”一色，更是独具特色，可谓成化御窑斗彩瓷器的标志。／对于成化斗彩瓷器的各种色彩，孙瀛洲先生曾有“鲜红淡抹绿闪黄，姹紫浓厚却无光”的鉴定要诀。／紫彩即所谓“姹紫”，色浓而无光，仅见于少数成化斗彩瓷器上。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 10
+   },
+   "single_source": true
+  },
+  {
+   "id": "C030",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Sun Yingzhou's fuller description of Chenghua doucai colours, quoted in the catalogue. Bright red is like blood. Apricot yellow has a faint red flash. The water, leaf and mountain greens are all transparent. Brilliant purple is dense and matt. Peacock blue is deep, and peacock green is pale, kingfisher-like and transparent. Ochre purple is dark. Grape purple is like ripe grapes and transparent. 'Oil red' is heavy and glossy. Ginger yellow is dense with weak lustre.",
+   "quote_zh": "“鲜红艳如血，杏黄闪微红。水绿、叶子绿、山子绿等皆透明。姹紫色浓而无光。孔雀蓝色沉，孔雀绿浅翠透明。赭紫色暗，葡萄紫色如熟葡萄而透明。油红色重艳而有光。姜黄色浓光弱。”",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 336
+   },
+   "single_source": true
+  },
+  {
+   "id": "C031",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Chenghua doucai uses colours flexibly: one or two on some pieces, up to five or six on others, most often three or four.",
+   "quote_zh": "成化斗彩瓷器在彩色运用方面灵活多变，按照器形和纹饰风格，或用一两种，或选用三四种，多者选用达五六种。用三、四种彩绘的较多。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 304
+   },
+   "single_source": true
+  },
+  {
+   "id": "C032",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Chenghua dragons are mild-looking: eyes wide open, but soft in manner. Types include dragons among flowers, lotus-pond dragons and sea dragons. Most common is the kui (or 'fragrant-grass') dragon holding a lotus in its mouth, whose popularity the catalogue links to the emperor's Tibetan Buddhist faith. The kui dragon starts under Xuande and is at its height under Chenghua.",
+   "quote_zh": "成化时期龙的形象较为祥和，虽双目圆睁，却颇具柔态。成化时期的龙纹可分为穿花龙、莲池龙、海水龙等，最为多见的是口衔莲花的夔龙，又称香草龙。夔龙为佛经中记载的神兽，其形象在这一时期瓷器上的盛行与成化皇帝信奉藏传／明代瓷器上的夔龙纹始自宣德朝，盛行于成化朝，与当时皇室崇信佛教有关，",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 206
+   },
+   "single_source": true
+  },
+  {
+   "id": "C033",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Jiang Jianxin: Xuande often rendered the same pattern in different techniques, for example the same day-lily dish in blue-ground white, blue on white and blue with yellow fill. This is very rare on Chenghua official ware.",
+   "quote_zh": "尤其有趣的是，相同的纹饰却采用不同装饰来表现，如相同的萱草纹盘则有蓝（祭蓝釉）地白花、白地蓝花和青花填黄三种；相同的牡丹纹盘亦见有铁绘、青花与青花填黄三种。而成化官窑器中这类花纹却非常罕见。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 710
+   },
+   "single_source": true
+  },
+  {
+   "id": "C034",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Dragon and phoenix decoration was restricted to court use under Chenghua. In Chenghua 13 (1477) the official Fang Xian was banished to guard the Liaodong frontier, partly for keeping dragon-and-phoenix porcelain at home (Xianzong shilu).",
+   "quote_zh": "从文献记载看，成化时期饰有龙凤纹的御窑瓷器仅限于宫廷使用，禁止他人使用和私藏。成化十三年（1477年），一位叫方贤的馆员因私藏龙凤纹瓷器，事发而被贬官流放到辽东充军守边。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 698
+   },
+   "single_source": true
+  },
+  {
+   "id": "C035",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Sanskrit and Tibetan inscriptions are a common Chenghua decoration, which the catalogue connects with the emperor's patronage of Buddhism.",
+   "quote_zh": "成化御窑瓷器上常见以梵文装饰，当与成化皇帝崇尚佛教、大兴佛事有关。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 428
+   },
+   "single_source": true
+  },
+  {
+   "id": "C036",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "A kiln-site Chenghua doucai mandarin-duck lotus-pond dish follows the design of a Zhengtong doucai bowl excavated at Zhushan and was 'drawn from the old Zhengtong pattern'. Almost all of its design is outlined in cobalt with a double line, which the catalogue calls the key difference from Xuande overglaze-enamelled ware. (This disagrees with another source: see F053.)",
+   "quote_zh": "此盘上的纹饰与景德镇珠山明代御器厂遗址出土正统御窑斗彩碗上的纹饰相似，当据正统旧稿描绘而成，其纹饰已绝大部分使用青料双钩轮廓，此为与宣德五彩瓷器的重要区别。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 342
+   },
+   "single_source": true
+  },
+  {
+   "id": "C037",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "A kiln-site blue-and-white covered jar with sparse cloud decoration and large reserves is read as semi-finished, meant to receive iron red or gilt flying cranes. It was rejected at the blue stage for poor colour.",
+   "quote_zh": "此罐青花纹饰布局疏朗，留白过大，故推测其属于半成品，应填绘矾红或贴金飞鹤装饰，但在半成品阶段便因青花发色欠佳而落选。",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 36
+   },
+   "single_source": true
+  },
+  {
+   "id": "C038",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Chenghua wucai is scarce, among transmitted pieces and at the kiln site. There are two kinds. Pure overglaze wucai includes transmitted pieces such as the scrolling-camellia jar, the lion-and-ball yuhuchun vase, the mandarin-duck fish-lotus dish and the scholar-on-horseback bowl. Blue-and-white wucai is typified by the mandarin-duck lotus dish with a Tibetan inscription, known both transmitted and excavated. Doucai, by contrast, was made in large quantity and was highly esteemed.",
+   "quote_zh": "成化御窑五彩瓷器产量较低，传世不多，可分为纯釉上五彩和青花五彩两类。纯釉上五彩瓷器见有传世五彩缠枝茶花纹罐（图5）、五彩玉壶春狮球纹瓶、五彩鸳鸯鱼莲纹盘、五彩高士骑马图碗等。青花五彩瓷器典型器见有传世和出土五彩满池娇图藏文盘（图6）。／成化御窑斗彩瓷器产量较大，而且声誉极重。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 700
+   },
+   "single_source": true
+  },
+  {
+   "id": "C039",
+   "reign": "Chenghua",
+   "topic": "decoration",
+   "text": "Doucai with a single enamel colour: some Chenghua doucai is filled with only one green inside the cobalt outlines. Examples are a kiln-site very thin cup with five-clawed dragons and a Palace Museum straight-necked vase with scrolling tendrils in pale green. The catalogue calls such green-only pieces 'special doucai'.",
+   "quote_zh": "此杯属于只填涂单一绿彩的特殊斗彩器。／通体以釉下青花双钩蔓草纹，釉上再按青花轮廓线填以淡绿彩。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 456
+   },
+   "single_source": true
+  },
+  {
+   "id": "C040",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "On a Yongzheng copy of the doucai sea-monster 天 jar, the 天 gives itself away: the gap between its two horizontals is too wide, and the left-falling stroke and the horizontals are not spread out enough.",
+   "quote_zh": "利用该歌诀仔细审视上述清雍正仿成化斗彩海怪图天字罐外底所署青花楷体“天”字，可以看出“天”字两横间距离过大，“撇”“横”写得不够舒展。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 706
+   },
+   "single_source": true
+  },
+  {
+   "id": "C041",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Lids on transmitted Chenghua jars are often not original. The catalogue identifies the lid of a Palace Museum doucai dragon 天 jar as a Yongzheng-period replacement. The lids of two other doucai jars (chrysanthemum-butterfly and lotus medallion) were made by Tang Ying on Qianlong's order in the intercalary 7th month of Qianlong 13 (1748), per the palace workshop archives. Few transmitted Chenghua doucai jars keep their original lid.",
+   "quote_zh": "罐盖与罐体的色彩和纹样略有区别，结合内务府造办处档案记载可知，盖为清雍正时期所配。／此罐之盖当为乾隆十三年闰七月初二日乾隆皇帝旨令督陶官唐英（1682～1756年）所配。／传世成化斗彩罐中能保留原盖者，寥寥无几，",
+   "source_ids": [
+    "CAT-CH1"
+   ],
+   "pages": {
+    "CAT-CH1": 304
+   },
+   "single_source": true
+  },
+  {
+   "id": "C042",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Lü Chenglong: under Kangxi, Yongzheng and Qianlong, both the imperial factory and private kilns at Jingdezhen copied Chenghua ware in quantity and to a high standard. Some copies of form, decoration and mark together, such as the Kangxi chicken cup, the Yongzheng sea-monster 天 jar and the Yongzheng doucai lotus-medallion covered jar, are 'hard to tell from the real thing'. Look for flaws in form (copies are often slightly swollen and less elegant), drawing (too regular and stiff, less lively), the mark, and the finishing of the base and foot.",
+   "quote_zh": "清代康熙、雍正、乾隆三朝，景德镇盛行仿成化御窑瓷器，御窑厂和民间窑场均有仿制。……如康熙朝仿成化斗彩鸡缸杯（图15、图16）、雍正朝仿成化斗彩海兽纹“天”字罐（图17、图18）、雍正朝仿成化斗彩团莲纹盖罐（图19、图20）等，无论造型、胎釉、纹饰、设色、款识等，均达到使人难辨真赝的水平。鉴别这类仿品主要还是应从造型、纹饰画法、款字特点和器物底足处理工艺等方面仔细观察，寻其破绽。比如说在造型方面，仿品往往略显臃肿，不如真品俊秀，……在纹饰画法方面，仿品往往画得过于规整、拘谨，纹饰不如真品上的灵动。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 705
+   },
+   "single_source": true
+  },
+  {
+   "id": "C043",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Collecting drove copying. From the late Ming, praise by literati and collectors made Chenghua imperial ware sought after and expensive, and copying for profit began and has never stopped. The chicken cup, grape stem cup, scholars cup, 'three autumns' cup, flower-and-butterfly box and jars were famous from the late Ming. Shen Defu (Wanli yehuo bian) ranks Chenghua above Xuande. Late-Ming texts record a pair of Chenghua cups at the Wanli emperor's table valued at 100,000 cash.",
+   "quote_zh": "明代晚期以来，随着文人品评和收藏古玩之风的盛行，成化御窑瓷器遂成为收藏者竞相猎取的目标，致使其价格骤增，一些利欲熏心的人则趁机进行仿制，以牟取暴利，此风至今经久不衰。成化御窑斗彩鸡缸杯、斗彩葡萄纹高足杯、斗彩高士图杯、斗彩三秋杯、斗彩花蝶图盒和各式罐等，早在明代晚期即受到文人雅士和收藏家的青睐，博得极高评价，／如宣窑品最贵，近日又贵成窑，出宣窑之上。／神宗时尚食，御前成杯一双已值钱十万，",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 704
+   },
+   "single_source": true
+  },
+  {
+   "id": "C044",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Wanli 'homage' marks: late-Ming Jingdezhen commonly wrote 大明宣德年制 and 大明成化年制 on its wares out of admiration (寄托款, 'homage mark'). On a Wanli blue-and-white bowl the Chenghua mark's calligraphy differs from genuine Chenghua marks, and the body, glaze and blue place it in Wanli. All nine Wanli pieces in the catalogue carry an apocryphal double-ring Chenghua mark, except a doucai bowl copying a Chenghua design, which has its own Wanli mark in a double square.",
+   "quote_zh": "此碗所署“大明成化年制”款的字体，写法与成化御窑瓷器所署年款不同。从胎、釉特征和青花发色看，这件碗的年代应为明万历时期，所署年款为仿成化款的寄托款。／此碗所署成化年款属于寄托款，鉴于明代宣德、成化御窑瓷器烧造所取得的高度艺术成就，明代晚期人们对宣德、成化御窑瓷器非常推崇，致使当时景德镇所产瓷器上非常流行书写“大明宣德年制”“大明成化年制”等年款。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 566
+   },
+   "single_source": true
+  },
+  {
+   "id": "C045",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Kangxi doucai chicken cup copy (Palace Museum): it is slightly larger than the original, both the blue and the enamels are too bright, and the mark strokes are thin and weak. The Palace Museum has more than ten Kangxi chicken cup copies. Their marks are the copied Chenghua mark, the Kangxi reign mark, or 外膳房 or 自怡堂玩. The iron-red 外膳房 mark is thought to be a Republic-period addition. The catalogue calls the Kangxi Lang kiln copies the best, almost indistinguishable.",
+   "quote_zh": "此杯造型及纹饰均仿自成化斗彩鸡缸杯（参见本书图版93），但尺寸略大，无论青花还是釉上色彩，都过于艳丽，款识字体笔画也显得纤细无力，／故宫博物院藏有10余件康熙朝仿成化斗彩鸡缸杯，所署款识除了书写“大明成化年制”仿款外，尚有书写“大清康熙年制”本朝款和“外膳房”“自怡堂玩”等款识者。其中矾红彩“外膳房”款，被认为是民国时期后加款。／其中以康熙时期“郎窑”所仿水平最高，几能乱真。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 634
+   },
+   "single_source": true
+  },
+  {
+   "id": "C046",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "天 jar copies by reign. A Kangxi doucai lotus-scroll 天 jar differs widely from the Chenghua original in form, drawing and mark and 'only copies the general idea'. A Qianlong one likewise only approximates. The Yongzheng sea-monster 天 jar is the most exact, with precise enamel filling, oily red and bright green, 'almost passing for genuine'. The catalogue says the Kangxi, Yongzheng and Qianlong imperial factory all made 天 jars, the Yongzheng ones finest. One Yongzheng doucai winged-dragon 天 jar has its 天 inside a cobalt double ring and a crackled outer glaze.",
+   "quote_zh": "此罐系按成化斗彩缠枝莲纹罐仿造而成（参见本书图版136、137），但造型、画法、款字等均与成化原作相差较远，只是摹其大概。／清代康熙、雍正、乾隆时期景德镇御窑厂均有仿烧，其中尤以雍正朝仿品最为精致。这件盖罐即属于雍正朝仿古之作，其做工精细，填彩准确，所施红彩油润、绿彩莹亮明澈。从造型、纹饰到款识，均作纯粹模仿，几可乱真。／外底署青花楷体“天”字款，外围青花双圈。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 612
+   },
+   "single_source": true
+  },
+  {
+   "id": "C047",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Kangxi mark details that betray copies: a Kangxi Guanyin vase carries 大明成化年制 in three lines. The catalogue says this copies only the wording, since no Chenghua imperial piece has a six-character mark in three lines. Other Kangxi copies in the catalogue carry the Chenghua mark incised under yellow glaze, or within an incised double ring.",
+   "quote_zh": "所仿成化年款只是对成化御窑瓷器年款内容进行模仿，款字排列方式则不符合，因成化御窑瓷器上未见有六字三行排列。／外底暗刻楷体“大明成化年制”六字双行仿款，外围暗刻双圈。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 580
+   },
+   "single_source": true
+  },
+  {
+   "id": "C048",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Kangxi doucai often combines filled enamels with overlaid washes (覆彩) on one piece, a practice described as common in Kangxi doucai. The catalogue says the Kangxi and Yongzheng copies of Chenghua doucai are the best of the later imitations.",
+   "quote_zh": "明代成化斗彩瓷器名噪一时，极其珍贵，明代晚期以来多有仿烧，其中以清代康熙、雍正两朝仿品水平最高。……此种填彩与覆彩施于一器的做法系康熙时期斗彩器常见的施彩技法",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 624
+   },
+   "single_source": true
+  },
+  {
+   "id": "C049",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Yongzheng copies, per the catalogue entries. They are finer and more carefully drawn than the Chenghua originals, with richer colours (lotus-medallion and chrysanthemum-butterfly jars, 'ganoderma-cloud' cups). On a copy of the flower-and-butterfly jar, the enamels follow the cobalt outlines strictly, the red is rouge-pink (胭脂红) and the colours are lighter than Chenghua doucai. One chrysanthemum-butterfly jar copy carries the Yongzheng reign mark instead of a Chenghua one.",
+   "quote_zh": "此罐系按成化斗彩花蝶图罐（参见本书图版138）仿烧而成。造型饱满，胎釉精细，严格按青花轮廓线填涂釉上彩，红彩为胭脂红，黄彩明亮，较成化斗彩瓷器上的色彩轻淡。／外底署青花楷体“大清雍正年制”六字双行款，外围青花双圈。此罐造型、纹饰均仿自明代成化作品（参见本书图版140），但与成化原作品相比，绘画笔触更显精细，色彩亦更加丰富。／与成化作品相比，画工更显精细。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 670
+   },
+   "single_source": true
+  },
+  {
+   "id": "C050",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "A Qianlong doucai vase with an apocryphal Chenghua mark is painted with the dense, regular 'foreign colour' (洋彩) technique, wholly unlike Ming and early-Qing doucai painting.",
+   "quote_zh": "此瓶外壁所饰图案规整、繁缛，使用洋彩绘画技法，完全脱离了明代和清代前期斗彩画法，符合乾隆时期洋彩瓷器的绘画工艺特点。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 690
+   },
+   "single_source": true
+  },
+  {
+   "id": "C051",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Catalogue count of later pieces with Chenghua marks (plates 244–310, 67 pieces, all Palace Museum): Jiajing 1, Wanli 9, Kangxi 38, Yongzheng 16, Qianlong 2, Daoguang 1. 58 carry an apocryphal six-character Chenghua mark (catalogued as 仿款), 4 a 天 mark and 3 their own reign mark (Jiajing, Wanli, Yongzheng); 2 entries do not describe the mark. Of the 58 apocryphal Chenghua marks, 34 are in a cobalt double ring and 13 in a double square (almost all on Kangxi–Yongzheng copies of doucai cups and bowls). 3 are in three lines (Kangxi), 2 incised, 1 circular around the base (Yongzheng) and 5 without a stated frame.",
+   "quote_zh": "外底署青花楷体“大明成化年制”六字双行仿款，外围青花双圈。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 562
+   },
+   "single_source": true
+  },
+  {
+   "id": "C052",
+   "reign": "Chenghua",
+   "topic": "apocryphal",
+   "text": "Jiang Jianxin: early Chenghua production largely imitated the Xuande official kiln in form, decoration and mark style, to the point that some Chenghua official pieces bear Xuande marks. (This disagrees with another source: see F053.)",
+   "quote_zh": "成化前期产品多模仿宣德官窑，在器形、纹饰、款式方面多有模仿，甚至出现有成化官窑书写宣德年款的制品（图12至图13）。",
+   "source_ids": [
+    "CAT-CH2"
+   ],
+   "pages": {
+    "CAT-CH2": 713
+   },
+   "single_source": true
+  },
+  {
+   "id": "C053",
    "reign": "Xuande",
    "topic": "excavation",
    "text": "Many excavated Hongwu, Yongle and Xuande pieces match transmitted ones, but 'identical' pieces are only broadly the same: the decoration always varies in detail, which Lü reads as deliberate.",
@@ -1691,7 +2505,7 @@
    "single_source": true
   },
   {
-   "id": "C002",
+   "id": "C054",
    "reign": "Xuande",
    "topic": "excavation",
    "text": "Xuande kiln-site types not known among transmitted pieces include a bright-red meiping with hidden sea-and-dragon decoration, bright-red oval narcissus basins, a bright-red peach-shaped ewer, a brown-glazed oval narcissus basin and a sacrificial-blue monk's-cap ewer.",
@@ -1705,7 +2519,7 @@
    "single_source": true
   },
   {
-   "id": "C003",
+   "id": "C055",
    "reign": "Yongle",
    "topic": "excavation",
    "text": "Some transmitted pieces have no excavated counterpart, for example the Yongle blue-and-white lotus 'press-hand' cup in the Palace Museum. Lü puts this down mostly to the limits of excavation. (This disagrees with another source: see F013.)",
@@ -1719,7 +2533,7 @@
    "single_source": true
   },
   {
-   "id": "C004",
+   "id": "C056",
    "reign": "Hongwu",
    "topic": "decoration",
    "text": "Hongwu overglaze red-and-green wares are rare. One accepted example, a yuhuchun vase, has a short neck and full belly typical of early Ming, and its double-ribbed banana leaves at the neck are a Hongwu blue-and-white trait.",
@@ -1733,7 +2547,7 @@
    "single_source": true
   },
   {
-   "id": "C005",
+   "id": "C057",
    "reign": "Hongwu",
    "topic": "excavation",
    "text": "A Hongwu red-and-green dish sherd with an iron-red five-clawed dragon and yellow and green clouds came from an early-Ming layer at the northern foot of Zhushan in 2003. A group of Hongwu blue-and-white stem cups with dancing figures came from a Hongwu layer at the southeast foot in August 1990.",
@@ -1747,7 +2561,7 @@
    "single_source": true
   },
   {
-   "id": "C006",
+   "id": "C058",
    "reign": "Yongle",
    "topic": "decoration",
    "text": "Yongle 'gold' decoration on excavated bowls and dishes is applied gold leaf, not painted gold; where it has flaked, traces of the adhesive remain.",
@@ -1761,7 +2575,7 @@
    "single_source": true
   },
   {
-   "id": "C007",
+   "id": "C059",
    "reign": "Xuande",
    "topic": "decoration",
    "text": "Xuande overglaze purple is opaque and of one tone, while Chenghua purple is translucent in two shades, so Xuande enamels look darker and heavier.",
@@ -1775,7 +2589,7 @@
    "single_source": true
   },
   {
-   "id": "C008",
+   "id": "C060",
    "reign": "Yongle",
    "topic": "excavation",
    "text": "Wang Guangyao's stratigraphy of northern Zhushan, from bottom to top: Yongle kilns and workshops, Yongle pits of smashed sherds, Xuande sherd heaps and kiln waste, then interregnum, Chenghua, Hongzhi, Zhengde and Jiajing waste layers.",
@@ -1789,7 +2603,7 @@
    "single_source": true
   },
   {
-   "id": "C009",
+   "id": "C061",
    "reign": "Hongwu",
    "topic": "excavation",
    "text": "Hongwu reject pits lie southeast of Zhushan at Dongmentou (the east gate), but no Hongwu kiln has been found. Since Zhushan did not yet exist before Yongle, Wang says the record that the factory was set up 'at Zhushan in Hongwu 2' needs rethinking. (This disagrees with another source: see F002.)",
@@ -1803,7 +2617,7 @@
    "single_source": true
   },
   {
-   "id": "C010",
+   "id": "C062",
    "reign": "Xuande",
    "topic": "excavation",
    "text": "Waste dumped over the abandoned Yongle kilns yielded a red bowl and a white jue altar vessel marked 宣德年制, so those kilns went out of use before the ninth month of Hongxi 1 (1425).",
@@ -1817,7 +2631,7 @@
    "single_source": true
   },
   {
-   "id": "C011",
+   "id": "C063",
    "reign": "Xuande",
    "topic": "excavation",
    "text": "Rejects were destroyed differently by period: smashed and buried in pits under Hongwu and Yongle, tipped against walls and into gullies under Xuande, and thrown out with kiln waste under Chenghua and Hongzhi.",
@@ -1831,7 +2645,7 @@
    "single_source": true
   },
   {
-   "id": "C012",
+   "id": "C064",
    "reign": "Hongwu",
    "topic": "body",
    "text": "Hongwu imperial porcelain keeps the plain, heavy Yuan shufu manner: the body is thick, its quality uneven because the clay was unevenly refined, and the glaze mostly bluish-white, as on Yuan wares.",
@@ -1845,7 +2659,7 @@
    "single_source": true
   },
   {
-   "id": "C013",
+   "id": "C065",
    "reign": "Hongwu",
    "topic": "forms",
    "text": "The small-footed Hongwu bowl type began in Yuan and was still made under Yongle, but Yongle examples have thinner walls.",
@@ -1859,7 +2673,7 @@
    "single_source": true
   },
   {
-   "id": "C014",
+   "id": "C066",
    "reign": "Hongwu",
    "topic": "glaze",
    "text": "Transmitted Hongwu monochrome red is extremely rare. A Palace Museum red dish with moulded dragons is singled out because its red is even and the moulding sharp.",
@@ -1873,7 +2687,7 @@
    "single_source": true
   },
   {
-   "id": "C015",
+   "id": "C067",
    "reign": "Yongle",
    "topic": "forms",
    "text": "Sweet-white ribbon-handled gourd flasks come in two stages. Early examples have no foot and only the two edges of the base wiped free of glaze; later ones have carved Arabesque decoration.",
@@ -1887,7 +2701,7 @@
    "single_source": true
   },
   {
-   "id": "C016",
+   "id": "C068",
    "reign": "Yongle",
    "topic": "apocryphal",
    "text": "Yongle blue-and-white ribbon-handled gourd flasks and ruyi-handled flasks were copied at the Qing imperial factory under Yongzheng, though not in large numbers.",
@@ -1901,7 +2715,7 @@
    "single_source": true
   },
   {
-   "id": "C017",
+   "id": "C069",
    "reign": "Yongle",
    "topic": "forms",
    "text": "The yuhuchun vase changes by reign: Hongwu necks are slightly thick with round full bellies, while Yongle necks are slender and long and the belly slightly drawn in.",
@@ -1915,7 +2729,7 @@
    "single_source": true
   },
   {
-   "id": "C018",
+   "id": "C070",
    "reign": "Yongle",
    "topic": "forms",
    "text": "Yongle and Xuande creel-shaped (鱼篓) jars differ. Yongle has a straight mouth, sloping shoulder, drum belly and round base; Xuande has a flared mouth, slanting shoulder, belly narrowing below and a footring.",
@@ -1929,7 +2743,7 @@
    "single_source": true
   },
   {
-   "id": "C019",
+   "id": "C071",
    "reign": "Yongle",
    "topic": "forms",
    "text": "Many Yongle white and blue-and-white kendis were made as ritual gifts for Tibetan lamas, so their forms differ from earlier kendis; a sweet-white kendi was excavated with white monk's-cap ewers.",
@@ -1943,7 +2757,7 @@
    "single_source": true
   },
   {
-   "id": "C020",
+   "id": "C072",
    "reign": "Yongle",
    "topic": "forms",
    "text": "The monk's-cap ewer as an imperial porcelain form probably began under Yongle, made for Tibetan religious use. Early Yongle examples are plain or incised, and incised ones come with or without Tibetan script.",
@@ -1957,7 +2771,7 @@
    "single_source": true
   },
   {
-   "id": "C021",
+   "id": "C073",
    "reign": "Yongle",
    "topic": "forms",
    "text": "An excavated white square-spouted ewer has a rectangular spout opening, closer to the Islamic metal model than the gourd-shaped spout hole on transmitted blue-and-white examples, so the catalogue dates it earlier than they are.",
@@ -1971,7 +2785,7 @@
    "single_source": true
   },
   {
-   "id": "C022",
+   "id": "C074",
    "reign": "Yongle",
    "topic": "forms",
    "text": "Ming stem bowls were made under Yongle and Xuande with a taller bowl and shorter stem than Yuan ones.",
@@ -1985,7 +2799,7 @@
    "single_source": true
   },
   {
-   "id": "C023",
+   "id": "C075",
    "reign": "Yongle",
    "topic": "excavation",
    "text": "A black-glazed tripod censer from Zhushan (1999) has an incised inscription dated Yongle 21 (1423, guimao year) recording a votive gift. It is a dated piece, not a reign mark.",
@@ -1999,7 +2813,7 @@
    "single_source": true
   },
   {
-   "id": "C024",
+   "id": "C076",
    "reign": "Yongle",
    "topic": "excavation",
    "text": "Kiln-site trial pieces survive that transmitted collections lack, for example a 2003 bowl with random copper-red dots under white glaze, which the catalogue reads as a test of copper-red pigment.",
@@ -2013,7 +2827,7 @@
    "single_source": true
   },
   {
-   "id": "C025",
+   "id": "C077",
    "reign": "Yongle",
    "topic": "body",
    "text": "Under Yongle and Xuande, potting moved away from the heavy, full Hongwu manner to a lighter, more graceful style.",
@@ -2027,7 +2841,7 @@
    "single_source": true
   },
   {
-   "id": "C026",
+   "id": "C078",
    "reign": "Yongle",
    "topic": "forms",
    "text": "Yongle shapes that are new rather than inherited include the pear-shaped ewer (from Yuan, made under Yongle, Xuande and Jiajing), the creel-shaped jar, and the square-spouted heart-shaped flask, rare before Yongle. Jiajing blue-and-white versions of the flask look very different.",
@@ -2041,7 +2855,7 @@
    "single_source": true
   },
   {
-   "id": "C027",
+   "id": "C079",
    "reign": "Yongle",
    "topic": "apocryphal",
    "text": "The Yongle bamboo, rock and banana-plant garden design with balustrade lasted into the Qing and was still painted as late as Xuantong, so the motif alone does not date a piece to Yongle.",
@@ -2055,7 +2869,7 @@
    "single_source": true
   },
   {
-   "id": "C028",
+   "id": "C080",
    "reign": "Xuande",
    "topic": "mark",
    "text": "Jiang repeats the attribution of Xuande mark calligraphy to the early-Ming calligrapher Shen Du: he wrote the model, which factory potters copied onto the porcelain.",
@@ -2069,7 +2883,7 @@
    "single_source": true
   },
   {
-   "id": "C029",
+   "id": "C081",
    "reign": "Xuande",
    "topic": "decoration",
    "text": "In Xuande borders the common upright and pendant lotus panels usually have filled-in centres, unlike earlier ones. One design may also appear in several techniques, such as a day-lily dish in white on blue, blue on white and yellow-ground blue.",
@@ -2083,7 +2897,7 @@
    "single_source": true
   },
   {
-   "id": "C030",
+   "id": "C082",
    "reign": "Xuande",
    "topic": "glaze",
    "text": "The volume's EDXRF study summarises other research differently: Hongwu and Yongle used mainly imported cobalt, while Xuande and Chenghua may have used imported, domestic or mixed cobalt. (This disagrees with another source: see F026.)",
@@ -2097,7 +2911,7 @@
    "single_source": true
   },
   {
-   "id": "C031",
+   "id": "C083",
    "reign": "Xuande",
    "topic": "body",
    "text": "EDXRF of sherds from Hongwu to Chenghua finds a porcelain-stone plus kaolin body, with alumina mostly above 20% and rising slightly from Hongwu through Yongle and Xuande to Chenghua.",
@@ -2111,7 +2925,7 @@
    "single_source": true
   },
   {
-   "id": "C032",
+   "id": "C084",
    "reign": "Hongwu",
    "topic": "excavation",
    "text": "Wang notes that large quantities of early-Hongwu official-style wares have been looted from the Luomaqiao site in Jingdezhen. Zhushan was therefore not the only kiln making court porcelain under Hongwu, and an official-style Hongwu piece is not necessarily from the Zhushan factory.",
@@ -2125,7 +2939,7 @@
    "single_source": true
   },
   {
-   "id": "C033",
+   "id": "C085",
    "reign": "Xuande",
    "topic": "excavation",
    "text": "Wang argues the 'imperial porcelain factory' (御器厂) was founded only at the start of Xuande, as an office at Poyang under eunuch supervision. The Hongwu–Yongle Zhushan kiln was a traditional official kiln, a different thing from the factory that kilns, marks and reject handling show from Xuande on. (This disagrees with another source: see F002.)",
@@ -2139,7 +2953,7 @@
    "single_source": true
   },
   {
-   "id": "C034",
+   "id": "C086",
    "reign": "Hongwu",
    "topic": "forms",
    "text": "Hongwu flat-rimmed dishes have thicker bases than Yuan ones, with unglazed bases fired flint-red. Hongwu cup stands have sand bases and large shallow feet, whereas Yongle stands have smaller glazed feet and Yongle cups have footrings.",
@@ -2153,7 +2967,7 @@
    "single_source": true
   },
   {
-   "id": "C035",
+   "id": "C087",
    "reign": "Hongwu",
    "topic": "decoration",
    "text": "Hongwu blue-and-white and underglaze red drop Yuan figure stories, fish and weeds, auspicious beasts and mandarin-duck ponds, and are mainly floral. Hongwu has few animal motifs and no figure subjects.",
@@ -2167,7 +2981,7 @@
    "single_source": true
   },
   {
-   "id": "C036",
+   "id": "C088",
    "reign": "Yongle",
    "topic": "decoration",
    "text": "On Yongle borders the midribs of banana leaves are mostly left unshaded, key-fret runs continuously, and waves contrast crests with spaced ripples.",
@@ -2181,7 +2995,7 @@
    "single_source": true
   },
   {
-   "id": "C037",
+   "id": "C089",
    "reign": "Hongwu",
    "topic": "excavation",
    "text": "Wang's kiln phases: Hongwu–Yongle used long-chambered gourd kilns in northeast Zhushan; Xuande used gourd kilns of the same plan in the southwest; after Xuande, mantou kilns. Kiln layout, mark practice and reject handling all change at Xuande.",
@@ -2195,7 +3009,7 @@
    "single_source": true
   },
   {
-   "id": "C038",
+   "id": "C090",
    "reign": "Xuande",
    "topic": "mark",
    "text": "A kiln-site stem bowl with a four-character regular-script 宣德年制 under the foot, its form and decoration copied from Yongle, is described as a very rare mark. The bowl appears semi-finished, with reserves probably meant for gilding.",
@@ -2209,7 +3023,7 @@
    "single_source": true
   },
   {
-   "id": "C039",
+   "id": "C091",
    "reign": "Xuande",
    "topic": "excavation",
    "text": "Only one transmitted Xuande monochrome cricket jar is known, a Ge-type example in the Palace Museum. The excavated jars greatly widen the known range.",
@@ -2223,7 +3037,7 @@
    "single_source": true
   },
   {
-   "id": "C040",
+   "id": "C092",
    "reign": "Xuande",
    "topic": "mark",
    "text": "Yellow-ground blue-and-white began under Xuande. It is either yellow all over or has a white reserve panel left for the mark, here a six-character horizontal mark below the outer rim.",
@@ -2237,7 +3051,7 @@
    "single_source": true
   },
   {
-   "id": "C041",
+   "id": "C093",
    "reign": "Xuande",
    "topic": "mark",
    "text": "On celadon-glazed Xuande dishes the blue mark is written under the green glaze in the inside centre. One catalogue entry calls the mark calligraphy the early-Ming 'cabinet' (台阁体) style.",
@@ -2251,7 +3065,7 @@
    "single_source": true
   },
   {
-   "id": "C042",
+   "id": "C094",
    "reign": "Xuande",
    "topic": "mark",
    "text": "Not every Xuande imperial piece is marked. A Qing-palace bright-red monk's-cap ewer is described as having white glaze inside the foot and no mark.",
@@ -2265,7 +3079,7 @@
    "single_source": true
   },
   {
-   "id": "C043",
+   "id": "C095",
    "reign": "Xuande",
    "topic": "body",
    "text": "Ming stem bowls can be told from Yuan ones by how the stem is joined. Yuan stems are luted with clay, leaving a lump of squeezed-out clay inside the stem. Ming stems are joined with glaze, leaving a coarse intermediate layer at the join and a glazed nipple inside the stem.",
@@ -2279,7 +3093,7 @@
    "single_source": true
   },
   {
-   "id": "C044",
+   "id": "C096",
    "reign": "Xuande",
    "topic": "body",
    "text": "Xuande octagonal candlesticks have a 6.7 cm unglazed ring on the white-glazed base, left by a columnar support used in firing to stop the heavy socket sagging. The catalogue calls this more advanced than Yongle practice and a way to tell Xuande candlesticks from Yongle ones.",
@@ -2293,7 +3107,7 @@
    "single_source": true
   },
   {
-   "id": "C045",
+   "id": "C097",
    "reign": "Xuande",
    "topic": "body",
    "text": "Eggshell-thin (脱胎) ware began under Yongle, but there only the rim was very thin and the base stayed thick. An excavated Xuande white cup is thin at the foot too.",
@@ -2307,7 +3121,7 @@
    "single_source": true
   },
   {
-   "id": "C046",
+   "id": "C098",
    "reign": "Xuande",
    "topic": "glaze",
    "text": "Kiln-site finds date several glazes earlier than once thought. Cucumber-green (瓜皮绿) was believed mid-to-late Ming but is shown to be Xuande. Yellow glaze on porcelain began at the Xuande imperial kiln. Red with painted gold also begins under Xuande.",
@@ -2321,7 +3135,7 @@
    "single_source": true
   },
   {
-   "id": "C047",
+   "id": "C099",
    "reign": "Xuande",
    "topic": "glaze",
    "text": "Sprinkled blue (洒蓝, 'snowflake blue'), cobalt with small white flecks, was created under Xuande. An excavated incised-dragon example has a double-ring six-character mark in the base centre.",
@@ -2335,7 +3149,7 @@
    "single_source": true
   },
   {
-   "id": "C048",
+   "id": "C100",
    "reign": "Xuande",
    "topic": "glaze",
    "text": "The earliest Ming imitations of Ge ware are Xuande imperial pieces, mostly marked in blue. Their glaze is less glossy and oily like true Ge, but shows Xuande orange peel; the crackle is faintly black or red, without Ge's 'gold thread and iron wire' or 'purple mouth, iron foot'.",
@@ -2349,7 +3163,7 @@
    "single_source": true
   },
   {
-   "id": "C049",
+   "id": "C101",
    "reign": "Xuande",
    "topic": "glaze",
    "text": "The catalogue says imported high-iron, low-manganese cobalt blurs in firing so Xuande designs are often unclear; a Palace Museum fish dish with pale, clear blue is praised as unusual. (This disagrees with another source: see F026.)",
@@ -2363,7 +3177,7 @@
    "single_source": true
   },
   {
-   "id": "C050",
+   "id": "C102",
    "reign": "Xuande",
    "topic": "apocryphal",
    "text": "The Xuande underglaze-red three-fish stem bowl was copied under Wanli, Tianqi, Kangxi and Yongzheng. Kangxi copies are the most deceptive but have a less rich glaze, a less full lower belly and a stiffer stem profile.",
@@ -2377,7 +3191,7 @@
    "single_source": true
   },
   {
-   "id": "C051",
+   "id": "C103",
    "reign": "Xuande",
    "topic": "apocryphal",
    "text": "Other Xuande forms the catalogue says were copied later: a foliate blue-and-white bowl copied by the Kangxi and Yongzheng imperial kilns, and the Islamic-style watering pot, also copied under Qianlong.",
@@ -2391,7 +3205,7 @@
    "single_source": true
   },
   {
-   "id": "C052",
+   "id": "C104",
    "reign": "Xuande",
    "topic": "forms",
    "text": "Forms the catalogue calls new under Xuande include the six-lobed pomegranate-shaped zun, covered bowls (合碗, found excavated in underglaze red, blue with underglaze red, blue with iron red and red-glazed versions), the peach-shaped red ewer, and large numbers and kinds of bird feeders.",
@@ -2405,7 +3219,7 @@
    "single_source": true
   },
   {
-   "id": "C053",
+   "id": "C105",
    "reign": "Xuande",
    "topic": "forms",
    "text": "Blue-and-white bird feeders first appear at Jingdezhen in Yuan, but appear in large numbers and many forms under Xuande, including geometric and naturalistic shapes. The excavated ones are mostly marked horizontally at the mouth.",
@@ -2419,7 +3233,7 @@
    "single_source": true
   },
   {
-   "id": "C054",
+   "id": "C106",
    "reign": "Xuande",
    "topic": "forms",
    "text": "Ming meiping are generally squatter than Song and Yuan ones, with raised shoulders and straight-tapering lower bodies. Xuande red-glazed wares are mostly small, and large red pieces are rare.",
@@ -2433,7 +3247,7 @@
    "single_source": true
   },
   {
-   "id": "C055",
+   "id": "C107",
    "reign": "Xuande",
    "topic": "excavation",
    "text": "An iron-red three-fruit stem bowl excavated in 1993 has no recorded or transmitted counterpart; transmitted Xuande three-fruit stem bowls are in underglaze red.",
@@ -2447,7 +3261,7 @@
    "single_source": true
   },
   {
-   "id": "C056",
+   "id": "C108",
    "reign": "Hongzhi",
    "topic": "mark",
    "text": "On genuine Hongzhi marks the three-dot water radical of 治 is in most cases set lower than the 台 on its right. On later copies the radical and 台 are roughly level.",
@@ -2461,7 +3275,7 @@
    "single_source": true
   },
   {
-   "id": "C057",
+   "id": "C109",
    "reign": "Hongzhi",
    "topic": "mark",
    "text": "Dated pieces used as period standards, all from private (not imperial) kilns: a blue-and-white bowl inscribed 弘治三年 (1490), a pine-and-crane bowl marked 壬子年造 (Hongzhi 5, 1492) in a double square, blue-and-white from a Hongzhi 11 (1498) tomb in Chengdu, and the David Foundation vase dated Hongzhi 9 (1496), whose coarse decoration and dark blue show what some Hongzhi private-kiln wares look like.",
@@ -2475,7 +3289,7 @@
    "single_source": true
   },
   {
-   "id": "C058",
+   "id": "C110",
    "reign": "Hongzhi",
    "topic": "mark",
    "text": "A sancai Buddha-image base in the Palace Museum carries an incised regular-script inscription dated 弘治六年 (1493). The entry notes the Hongzhi imperial factory was known for blue-and-white and yellow wares and that sancai is rare, so the dated piece is an important reference.",
@@ -2489,7 +3303,7 @@
    "single_source": true
   },
   {
-   "id": "C059",
+   "id": "C111",
    "reign": "Hongzhi",
    "topic": "excavation",
    "text": "In the 上 volume the Hongzhi kiln-site pieces come from earlier digs at the imperial kiln site: 1987 (1), 2000 (7) and 2004 (9), plus one with no year. A further 28 pieces were handed over by the Jingdezhen Public Security Bureau. None of the Hongzhi pieces is listed as coming from the 2014 excavation.",
@@ -2503,7 +3317,7 @@
    "single_source": true
   },
   {
-   "id": "C060",
+   "id": "C112",
    "reign": "Hongzhi",
    "topic": "body",
    "text": "Geng's Hongzhi points: potting is neat and delicate, as under Chenghua. Dishes show a sagging base: the whole base sinks, so the ring where the foot supports it shows slightly inside. This began under Chenghua but is most marked under Hongzhi.",
@@ -2517,7 +3331,7 @@
    "single_source": true
   },
   {
-   "id": "C061",
+   "id": "C113",
    "reign": "Hongzhi",
    "topic": "body",
    "text": "Geng's Hongzhi points on the foot: smooth and rounded, the foot wall slightly lower than Chenghua's, the inner wall vertical and of varying depth. Imperial blue-and-white dishes and bowls, like Chenghua ones, have a double cobalt line around the outside of the foot.",
@@ -2531,7 +3345,7 @@
    "single_source": true
   },
   {
-   "id": "C062",
+   "id": "C114",
    "reign": "Hongzhi",
    "topic": "body",
    "text": "A sagging base is a period feature of Hongzhi dishes; later copies usually have flatter bases.",
@@ -2545,7 +3359,7 @@
    "single_source": true
   },
   {
-   "id": "C063",
+   "id": "C115",
    "reign": "Hongzhi",
    "topic": "forms",
    "text": "A wide-mouthed ritual zun with short neck, sloping shoulders and tapering body, with animal-head, strap or no handles, was created at the imperial factory under Hongzhi. It comes in poured yellow (often with gilt string lines), sacrificial blue (with a gilt ox) and aubergine, and is unmarked with a biscuit base. The blue ones were for the Altar of Heaven and the yellow for the Altar of Earth.",
@@ -2559,7 +3373,7 @@
    "single_source": true
   },
   {
-   "id": "C064",
+   "id": "C116",
    "reign": "Hongzhi",
    "topic": "decoration",
    "text": "Gilt string lines or gilt oxen on large yellow, blue and aubergine pieces (zun, jue, dishes) are a typical Hongzhi imperial decoration. Large unmarked yellow broad-rim dishes with gilt lines and biscuit bases are among the palace-held Hongzhi pieces.",
@@ -2573,7 +3387,7 @@
    "single_source": true
   },
   {
-   "id": "C065",
+   "id": "C117",
    "reign": "Hongzhi",
    "topic": "decoration",
    "text": "The lotus-pond dragon motif on Ming imperial porcelain first appears under Xuande and is popular under Hongzhi. A Palace Museum example has fine, freely drawn dragon lines and soft pale blue, typical of the period.",
@@ -2587,7 +3401,7 @@
    "single_source": true
   },
   {
-   "id": "C066",
+   "id": "C118",
    "reign": "Hongzhi",
    "topic": "apocryphal",
    "text": "Later copies with Hongzhi marks in the catalogue: one Wanli blue-and-white bowl with a sloppily written 大明弘治年制, and several Kangxi pieces (Jingdezhen private-kiln blue-and-white, white incised or moulded dragon bowls and dishes, green-dragon dishes, poured-yellow bowls, a celadon olive vase), plus a Yongzheng iron-red gilt dish. Some Kangxi copies have the mark incised rather than in cobalt.",
@@ -2601,7 +3415,7 @@
    "single_source": true
   },
   {
-   "id": "C067",
+   "id": "C119",
    "reign": "Hongzhi",
    "topic": "apocryphal",
    "text": "Some Palace Museum 'Hongzhi' enamelled dishes are genuine Hongzhi white-glazed blanks with a genuine mark, enamelled in the Republican period: yellow dragons, iron-red dragons and red-and-green fish. They give themselves away by overbright colour and stiff, lifeless dragons, unlike Hongzhi dragons.",
@@ -2615,7 +3429,7 @@
    "single_source": true
   },
   {
-   "id": "C068",
+   "id": "C120",
    "reign": "Hongzhi",
    "topic": "apocryphal",
    "text": "Copies of Hongzhi imperial ware are either full copies of shape, decoration and mark, or pieces in their own period's style that only borrow the Hongzhi mark. Copying ran from the late Ming into the Qing. Under Kangxi and Yongzheng both the imperial and private kilns at Jingdezhen copied blue-and-white, green on white, white and poured yellow, and a few copies are good enough to pass as genuine.",
@@ -2629,7 +3443,7 @@
    "single_source": true
   },
   {
-   "id": "C069",
+   "id": "C121",
    "reign": "Zhengde",
    "topic": "body",
    "text": "Geng's Zhengde points on the foot: the exposed foot is usually trimmed flat, sometimes rounded. Shallow feet turn inward, with chatter marks and a sagging base. Some base centres rise in a nipple shape, like early-Ming 'navel' bases, especially on private-kiln wares. Feet of round wares often keep cut angles or scraping marks.",
@@ -2643,7 +3457,7 @@
    "single_source": true
   },
   {
-   "id": "C070",
+   "id": "C122",
    "reign": "Zhengde",
    "topic": "glaze",
    "text": "Geng's Zhengde points: the glaze is white with a bluish flash, and the glaze on the base is typically bluish-white or bright bluish.",
@@ -2657,7 +3471,7 @@
    "single_source": true
   },
   {
-   "id": "C071",
+   "id": "C123",
    "reign": "Zhengde",
    "topic": "glaze",
    "text": "Geng: Zhengde blue-and-white has the clear elegance of Chenghua–Hongzhi but also a grey, blurred tone with 'iron-rust spots', like Xuande private-kiln ware. Later in the reign the purplish tone of Jiajing appears. Overall, Zhengde colours stay pale like Chenghua–Hongzhi but move slowly towards the heavy, intense Jiajing–Wanli palette.",
@@ -2671,7 +3485,7 @@
    "single_source": true
   },
   {
-   "id": "C072",
+   "id": "C124",
    "reign": "Zhengde",
    "topic": "decoration",
    "text": "Geng: blue-and-white and yellow wares are the most common Zhengde types. Zhengde, like Hongzhi, used yellow wares for the court. White-ground wucai and blue-and-white with enamels became popular, laying the ground for Jiajing–Wanli wucai.",
@@ -2685,7 +3499,7 @@
    "single_source": true
   },
   {
-   "id": "C073",
+   "id": "C125",
    "reign": "Hongzhi",
    "topic": "mark",
    "text": "Lü's reading of a genuine Hongzhi mark: 弘 and 治 carry the period character. In 弘 the right-hand 厶 is clearly shorter than the left-hand 弓 and sits high. In 治 the water radical sits clearly lower than 台, and the last horizontal stroke of 口 usually overshoots on the right.",
@@ -2699,7 +3513,7 @@
    "single_source": true
   },
   {
-   "id": "C074",
+   "id": "C126",
    "reign": "Hongzhi",
    "topic": "excavation",
    "text": "Jiang: in decades of work at the factory site few Hongzhi–Zhengde official deposits have been found, which fits the texts. There are few large Hongzhi–Zhengde deposits, the material is usually mixed with other periods' official wares, and besides scattered finds there have been only four important discoveries.",
@@ -2713,7 +3527,7 @@
    "single_source": true
   },
   {
-   "id": "C075",
+   "id": "C127",
    "reign": "Zhengde",
    "topic": "mark",
    "text": "Sun Yingzhou's mnemonic for the six-character 大明正德年制, quoted by Lü. 大: short horizontal, head not high. 明: tops of 日 and 月 level, slight waist. 正: wider at the bottom, three horizontals parallel. 德: 心 wide, 十 small. 年: top horizontal the shortest. 制 (製): few of the 衣 strokes pass under the 刂 above.",
@@ -2727,7 +3541,7 @@
    "single_source": true
   },
   {
-   "id": "C076",
+   "id": "C128",
    "reign": "Zhengde",
    "topic": "mark",
    "text": "Lü: some Zhengde wares carry a cobalt four-character 'Phags-pa mark in two lines within a cobalt double ring on the base, unique in Ming imperial porcelain. He translates the four 'Phags-pa characters as 至正年制 and ties the mark to the emperor's devotion to Tibetan Buddhism. (This disagrees with another source: see F061.)",
@@ -2741,7 +3555,7 @@
    "single_source": true
   },
   {
-   "id": "C077",
+   "id": "C129",
    "reign": "Zhengde",
    "topic": "mark",
    "text": "Jiang: 'Phags-pa marks appear mainly on the bases of bowls and dishes and read 至正年制, a mark type found in Ming official ware only under Zhengde. Among kiln-site Zhengde blue-and-white dragon bowls and dishes of the same form, some carry 大明正德年制 in regular script and others the 'Phags-pa 至正年制. Jiang suggests the use of 'Phags-pa may relate to the emperor's 'battle of Yingzhou'. (This disagrees with another source: see F061.)",
@@ -2755,7 +3569,7 @@
    "single_source": true
   },
   {
-   "id": "C078",
+   "id": "C130",
    "reign": "Zhengde",
    "topic": "mark",
    "text": "Catalogue entry for a 1987 kiln-site 'Phags-pa-marked sea-dragon bowl: 'Phags-pa script was created by 'Phags-pa, Imperial Preceptor to Khubilai, and fell out of use after the Yuan. Ming emperors kept close ties with Mongol and Tibetan clergy, but a reign mark written in 'Phags-pa is found only on Zhengde imperial porcelain. (This disagrees with another source: see F061.)",
@@ -2769,7 +3583,7 @@
    "single_source": true
   },
   {
-   "id": "C079",
+   "id": "C131",
    "reign": "Zhengde",
    "topic": "excavation",
    "text": "Documentary chronology (Lü): on accession in Hongzhi 18 (1505) the Zhengde emperor halted the factory for two years, but production resumed in Zhengde 1 (1506). A halt was granted in Zhengde 6 (1511) because of disasters in Jiangxi. In Zhengde 11 (1516) the emperor sent a supervisor despite objections, and again in Zhengde 15 (1520). Lü concludes that Zhengde imperial porcelain was made mainly between Zhengde 11 and 16 (1516–1521).",
@@ -2783,7 +3597,7 @@
    "single_source": true
   },
   {
-   "id": "C080",
+   "id": "C132",
    "reign": "Hongzhi",
    "topic": "decoration",
    "text": "Jiang: the most prominent Hongzhi decoration is green on biscuit. Incised green dragon dishes are common among Hongzhi kiln-site finds. The glaze is scraped off to leave a biscuit dragon, details are incised, and after high firing the dragon is filled with green and refired low. Jiang says green on biscuit first appears under Hongzhi, is popular in Hongzhi–Zhengde, and is rare on later official ware. Lü (p.697) instead dates the white-ground incised green-dragon bowl and dish to Chenghua and rates Hongzhi examples the best.",
@@ -2797,7 +3611,7 @@
    "single_source": true
   },
   {
-   "id": "C081",
+   "id": "C133",
    "reign": "Hongzhi",
    "topic": "decoration",
    "text": "Lü on Hongzhi green-on-white: the glaze inside the dragon outline is scraped away, details are incised with an iron point, the piece is high-fired, and green is filled in at a low firing. The unfilled biscuit dragons fired a flint-red colour that was liked, so some were deliberately left unfilled as a type of their own: 'white-glazed biscuit incised cloud-dragon' bowls and dishes. Ming green-on-white is best under Hongzhi.",
@@ -2811,7 +3625,7 @@
    "single_source": true
   },
   {
-   "id": "C082",
+   "id": "C134",
    "reign": "Hongzhi",
    "topic": "forms",
    "text": "Lü: the wide-mouthed zun with animal-mask, strap or no handles was first created under Hongzhi as a ritual vessel, in poured yellow, sacrificial blue and aubergine. An unmarked yellow zun is attributed to Hongzhi because its 'chicken-fat' yellow matches that of yellow dishes and bowls with the Hongzhi mark.",
@@ -2825,7 +3639,7 @@
    "single_source": true
   },
   {
-   "id": "C083",
+   "id": "C135",
    "reign": "Zhengde",
    "topic": "decoration",
    "text": "Jiang: a yellow-ground green-dragon dish from the site, with iron red filled on the yellow ground, is the rare 'red on yellow' (黄上红) type, a pun on 'blessing the emperor', used in the palace at New Year's Eve. A kiln-site blue-and-white ruyi-head candlestick matches the Palace Museum's Arabic candlestick in form, and its blank areas suggest it was meant for further overglaze decoration.",
@@ -2839,7 +3653,7 @@
    "single_source": true
   },
   {
-   "id": "C084",
+   "id": "C136",
    "reign": "Zhengde",
    "topic": "glaze",
    "text": "Zhengde underglaze-red wares are very rare. The known example is a three-fish bowl with fish in copper red, its colour not successful.",
@@ -2853,7 +3667,7 @@
    "single_source": true
   },
   {
-   "id": "C085",
+   "id": "C137",
    "reign": "Zhengde",
    "topic": "glaze",
    "text": "Ming green-on-white is commonest from the Hongzhi and Zhengde reigns. Its glaze is white with a bluish flash, and the green has a yellowish tinge, soft in tone.",
@@ -2867,7 +3681,7 @@
    "single_source": true
   },
   {
-   "id": "C086",
+   "id": "C138",
    "reign": "Zhengde",
    "topic": "mark",
    "text": "Not every mark in the Zhengde section is a reign mark. A thin white dish in the Palace Museum carries a cobalt four-character 杨氏燕器 in a double ring, explained as a banqueting ware ordered by a Yang family.",
@@ -2881,7 +3695,7 @@
    "single_source": true
   },
   {
-   "id": "C087",
+   "id": "C139",
    "reign": "Zhengde",
    "topic": "apocryphal",
    "text": "Copies of Zhengde imperial ware are either full copies of shape, decoration and mark, or period-style pieces with only a Zhengde mark. Under Kangxi and Yongzheng both the imperial and private kilns copied Zhengde blue-and-white, doucai, iron red on white, green on yellow, white and poured yellow, some very convincingly.",
@@ -2895,7 +3709,7 @@
    "single_source": true
   },
   {
-   "id": "C088",
+   "id": "C140",
    "reign": "Zhengde",
    "topic": "apocryphal",
    "text": "Later pieces with Zhengde marks in the catalogue: a Wanli blue-and-white bowl marked 正德年造 (with 造, not 制); Kangxi and Yongzheng copies, including a Kangxi lobed blue-and-white bowl whose 大明正德年制 is 'clearly in the style of Kangxi private-kiln marks'; an iron-red 正德年制 mark on a Kangxi piece; and a Yongzheng mark written horizontally. The English caption of the Wanli bowl wrongly says Zhengde.",
