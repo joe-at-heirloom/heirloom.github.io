@@ -10,11 +10,14 @@
 //           itself, so the words don't promise it);
 //   entry:  the page of the record's own source that records it, in a book or
 //           list anyone can read online; it may give the item in words only.
-//           Shown only when there is nothing above.
+//           Shown only when there is nothing above; `account` when the page
+//           needs a free account (said beside the link).
 // Used in the record panels (Portal, MetalExplorer, PotteryExplorer) and the
 // catalogue sheets (ref/RecordSheet.astro); the guide cards use seeAtHtml below.
 import '../styles/seeat.css';
-export type SeeAtLink = { kind: 'mark' | 'item' | 'object' | 'entry'; url: string; holder: string; what: string };
+export type SeeAtLink = { kind: 'mark' | 'item' | 'object' | 'entry'; url: string; holder: string; what: string; account?: boolean };
+// A page that asks for a free account: a book the Internet Archive lends, the Edinburgh register archive.
+const account = (l: SeeAtLink) => (l.account ? (/archive\.org\//.test(l.url) ? ' (borrow it free with an account)' : ' (free account needed)') : '');
 
 const clip = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s);
 // "Backstamp charts…" reads on after a colon as "backstamp charts…".
@@ -54,7 +57,7 @@ export function SeeAt({ links, pictured }: { links: unknown; pictured: boolean }
       {entries.length > 0 && (
         <p>
           No picture here yet. Read the entry that records it:{' '}
-          {entries.slice(0, 3).map((l, i) => <>{i > 0 && '; '}<a href={l.url} rel="nofollow noopener">{clip(l.what || l.holder, 160)}</a>{!names(l.what, l.holder) && <span class="muted"> · {l.holder}</span>}</>)}.
+          {entries.slice(0, 3).map((l, i) => <>{i > 0 && '; '}<a href={l.url} rel="nofollow noopener">{clip(l.what || l.holder, 160)}</a>{(!names(l.what, l.holder) || l.account) && <span class="muted">{!names(l.what, l.holder) && ` · ${l.holder}`}{account(l)}</span>}</>)}.
         </p>
       )}
     </aside>
@@ -69,6 +72,6 @@ export function seeAtHtml(links: unknown, pictured: boolean): string {
   if (marks.length) return ` ${pictured ? 'Also shown at' : 'See it at'} ${marks.map(a).join(', ')}.`;
   if (items.length) return ` See one of this design at ${items.map(a).join(', ')}.`;
   if (objects.length) return ` See one at ${objects.slice(0, 2).map(a).join(', ')}.`;
-  if (entries.length) return ` The entry that records it: ${entries.slice(0, 1).map((l) => `<a href="${esc(l.url)}" rel="nofollow noopener">${esc(clip(l.what || l.holder, 90))}</a>`).join('')}.`;
+  if (entries.length) return ` The entry that records it: ${entries.slice(0, 1).map((l) => `<a href="${esc(l.url)}" rel="nofollow noopener">${esc(clip(l.what || l.holder, 90))}</a>${esc(account(l))}`).join('')}.`;
   return '';
 }
