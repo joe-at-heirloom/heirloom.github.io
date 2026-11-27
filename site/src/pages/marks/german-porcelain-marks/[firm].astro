@@ -1,0 +1,39 @@
+---
+// /marks/german-porcelain-marks/<group>: one of Röntgen's groups of German,
+// Bohemian and Austrian porcelain marks (lib/american-dinnerware.ts, set
+// german-porcelain): what the group holds, and its marks, each opening into
+// its sheet with the maker, the town and the years.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { firms, markGroups, GP_HUB, type Firm } from '../../../lib/american-dinnerware';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+export function getStaticPaths() {
+  return firms('german-porcelain').map((f) => ({ params: { firm: f.slug }, props: { f } }));
+}
+const { f } = Astro.props as { f: Firm };
+const path = f.page;
+const groups = markGroups(f);
+const e = f.entries[0];
+const makers = new Set(f.marks.map((m) => m.maker).filter((x) => x && x !== 'Unidentified')).size;
+const title = `${f.title}: German Porcelain Marks | Heirloom`;
+const description = `${f.marks.length} German, Bohemian and Austrian porcelain marks showing ${f.title.toLowerCase()}, of ${makers} makers, each with its town and the years it was used. From Röntgen (1981).`;
+const graph = [articleLd(path, `${f.title}: German porcelain marks`, description, '2026-11-27')];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>{f.title}</h1>
+    <p class="rhead__lede">German, Bohemian and Austrian porcelain marks that show {e?.place ? e.place.replace(/\.$/, '').replace(/^A /, 'a ').replace(/^An /, 'an ') : f.title.toLowerCase()} Open a mark for its maker, town and years.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{f.marks.length}</strong> marks</li>
+      <li><strong class="num">{makers}</strong> makers</li>
+      <li>{f.where}</li>
+      <li><a href={`${GP_HUB}#firms`}>Every group</a></li>
+    </ul>
+  </header>
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="A maker, a town, a year" label="Maker, town or year" />
+
+  <p class="st-credit">Marks, makers and dates from Robert E. Röntgen, <cite>Marks on German, Bohemian and Austrian Porcelain, 1710 to the Present</cite> (Exton, Pa., 1981), Part I; the pictures of marks are reproduced from it, credited page by page. A year in brackets in Röntgen is the year he first saw the mark: it may be a few years older. <a href={GP_HUB}>German porcelain marks</a></p>
+</Reference>

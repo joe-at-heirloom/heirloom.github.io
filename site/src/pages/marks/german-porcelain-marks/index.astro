@@ -1,0 +1,82 @@
+---
+// /marks/german-porcelain-marks: German, Bohemian and Austrian porcelain marks,
+// Part I of Röntgen (1981), grouped as he groups them, by what a mark shows
+// (lib/american-dinnerware.ts, set german-porcelain; the app's
+// marks/german-porcelain.json, built by the website repo's
+// hallmark-sources/european-porcelain). The words that date a German or
+// Central European mark, then each group with its own page.
+import Reference from '../../../layouts/Reference.astro';
+import { firms, thumbUrl } from '../../../lib/american-dinnerware';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+const path = '/marks/german-porcelain-marks/';
+const all = firms('german-porcelain');
+const marks = all.reduce((n, f) => n + f.marks.length, 0);
+const pictured = all.reduce((n, f) => n + f.pictured, 0);
+const makers = new Set(all.flatMap((f) => f.marks.map((m) => m.maker).filter((x) => x && x !== 'Unidentified'))).size;
+const RULES: { mark: string; says: string; why: string; cite: string }[] = [
+  { mark: 'GERMANY', says: 'Usually made in or after 1891, if made for the United States', why: 'The McKinley Tariff Act of 1891 required the country where a piece was made to be marked on it. Some German marks carried the word earlier: the Kovels saw it first in 1885.', cite: 'Kovels’ New Dictionary of Marks (1986), p. 229; Van Patten, Nippon Porcelain, Fourth Series (1997), p. 63' },
+  { mark: 'CZECHOSLOVAKIA', says: 'Made in or after 1918', why: 'Czechoslovakia was formed in 1918. Bohemian marks from before then can say Austria instead: Oscar & Edgar Gutherz of Altrohlau marked ROYAL AUSTRIA from 1899 to 1918 (Röntgen no. 558).', cite: 'Kovels’ New Dictionary of Marks (1986), p. 229; Röntgen (1981), p. 96' },
+  { mark: 'U.S. ZONE, US ZONE GERMANY', says: 'Made 1945 to 1949', why: 'After the Second World War Germany was divided into occupation zones; wares from the American zone were marked US Zone until the Federal Republic was founded in 1949.', cite: 'Kovels’ New Dictionary of Marks (1986), p. 234' },
+  { mark: 'WEST GERMANY, WESTERN GERMANY', says: 'Made 1949 to 1990', why: 'The American, British and French zones became the Federal Republic of Germany in 1949; Germany was reunified in 1990.', cite: 'Kovels’ New Dictionary of Marks (1986, a printing after 1990), p. 234' },
+  { mark: 'EAST GERMANY, GDR, DDR, VEB', says: 'Made 1949 to 1990', why: 'The Soviet zone became the German Democratic Republic in 1949. Its porcelain works were state enterprises, VEB (Volkseigener Betrieb), and Röntgen’s VEB marks all begin in or after 1949.', cite: 'Kovels’ New Dictionary of Marks (1986, a printing after 1990), p. 231; Röntgen (1981), the VEB marks' },
+];
+const faqs: [string, string][] = [
+  ['How do I find a German porcelain mark?', '<p>Look at what the mark shows: a crown, crossed swords, a lion, a shield, letters, a name. Röntgen files every mark under the first thing on his list that it contains (a figure before an animal, a crown before a shield, a shape before letters), so a mark with a crown over a shield is with the crowns. Open that group below and look through it: similar marks sit together.</p>'],
+  ['My mark has crossed swords. Is it Meissen?', '<p>Not necessarily. Meissen’s crossed swords were imitated by many factories in Thuringia, Saxony and Bohemia, with a dot, a star, lines or letters added; Röntgen gives well over a hundred crossed-sword marks of other makers. Compare yours with the crossed-swords group mark by mark.</p>'],
+];
+const title = 'German Porcelain Marks: Bavaria, Bohemia, Austria, Meissen | Heirloom';
+const description = `${marks.toLocaleString('en-US')} marks of ${makers.toLocaleString('en-US')} German, Bohemian and Austrian porcelain makers, decorators and importers, from Meissen and Rosenthal to the Bavarian and Thuringian factories, each with the years it was used, grouped by what the mark shows.`;
+const graph = [articleLd(path, 'German, Bohemian and Austrian porcelain marks', description, '2026-11-27'), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>German, Bohemian and Austrian porcelain marks</h1>
+    <p class="rhead__lede">The marks of the porcelain factories, decorating shops and importers of Germany, Bohemia and Austria, from the eighteenth century to 1980, as Robert Röntgen catalogued them. Find your mark by what it shows; its years date the piece.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{marks.toLocaleString('en-US')}</strong> marks</li>
+      <li><strong class="num">{makers.toLocaleString('en-US')}</strong> makers</li>
+      <li><strong class="num">{pictured.toLocaleString('en-US')}</strong> pictured</li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="rules">
+    <h2 id="rules">What the words on the base tell you</h2>
+    <ul class="st-rules">
+      {RULES.map((r) => (
+        <li class="st-rule">
+          <span class="st-rule__mark">{r.mark}</span>
+          <span class="st-rule__says">{r.says}</span>
+          <p class="st-rule__why">{r.why}</p>
+          <p class="st-credit">{r.cite}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section st-groups" aria-labelledby="firms">
+    <h2 id="firms">The marks, by what they show</h2>
+    <p>Röntgen files a mark under the first of these that it contains. A crown over a shield is with the crowns; a name inside a circle is with the circles.</p>
+    <ul class="st-firms">
+      {all.map((f) => (
+        <li>
+          <a class="st-firm" href={f.page}>
+            <span class="st-firm__pic">{f.thumb ? <img src={thumbUrl(f.thumb)!} alt="" loading="lazy" decoding="async" /> : null}</span>
+            <span>
+              <span class="st-firm__name">{f.title}</span>
+              <span class="st-firm__meta">{`${f.marks.length} marks`}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {faqs.map(([q, a]) => (<><h3>{q}</h3><Fragment set:html={a} /></>))}
+  </section>
+
+  <p class="st-credit">Marks, makers and dates from Robert E. Röntgen, <cite>Marks on German, Bohemian and Austrian Porcelain, 1710 to the Present</cite> (Exton, Pa., 1981), Part I; the pictures of marks are reproduced from it, credited page by page. A year Röntgen puts in brackets is the year he first saw the mark: it may have been used a few years earlier. Each mark rests on Röntgen alone until a second source is matched. Marks found only on dolls are left out.</p>
+</Reference>

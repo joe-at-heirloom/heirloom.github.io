@@ -90,6 +90,8 @@ export function astroRoutes(): Set<string> {
   for (const f of dinnerFirms('american-art-pottery')) out.add(norm(f.page));
   // Japanese export porcelain, a page per maker or set of marks (pages/marks/japanese-export-porcelain-marks/[firm].astro).
   for (const f of dinnerFirms('japanese-export')) out.add(norm(f.page));
+  // German, Bohemian and Austrian porcelain, a page per group of marks (pages/marks/german-porcelain-marks/[firm].astro).
+  for (const f of dinnerFirms('german-porcelain')) out.add(norm(f.page));
   // Tiffany windows, a page per state (pages/marks/tiffany-windows/[place].astro).
   for (const p of tiffanyPlaces()) out.add(p.path);
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
@@ -144,7 +146,7 @@ function makerLinks(): RefLink[] {
 function staffsLinks(): RefLink[] {
   return staffsFirms().map((f) => ({ href: f.page, label: f.title, note: f.where }));
 }
-function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' = 'american-dinnerware'): RefLink[] {
+function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' | 'german-porcelain' = 'american-dinnerware'): RefLink[] {
   return dinnerFirms(set).map((f) => ({ href: f.page, label: f.title, note: f.where })).sort((a, b) => a.label.localeCompare(b.label));
 }
 function artistLinks(): RefLink[] {
@@ -244,6 +246,9 @@ function build(): Area[] {
           { href: '/marks/american-art-pottery-marks/', label: 'American art pottery marks', note: 'Marks and decorators’ monograms, pottery by pottery' },
           ...dinnerLinks('american-art-pottery'),
         ], fold: true },
+        { label: 'German, Bohemian and Austrian porcelain', links: [
+          { href: '/marks/german-porcelain-marks/', label: 'German, Bohemian and Austrian porcelain marks', note: 'Over 3,000 marks, grouped by what they show' },
+        ] },
         { label: 'Pewabic Pottery, Detroit', links: [
           { href: '/marks/pewabic-pottery/', label: 'Pewabic Pottery', note: 'Detroit, 1903 to today' },
           { href: '/marks/pewabic-pottery-marks', label: 'Pewabic marks', note: 'Dating a piece by its mark' },

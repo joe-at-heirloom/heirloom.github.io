@@ -12,13 +12,15 @@ import { media } from './media';
 export const HUB = '/marks/american-dinnerware-marks/';
 export const ART_HUB = '/marks/american-art-pottery-marks/';
 export const JX_HUB = '/marks/japanese-export-porcelain-marks/';
+export const GP_HUB = '/marks/german-porcelain-marks/';
 /** The sets: their firm records are maker-<set>-<key>, their marks <prefix><key>-<no>; `wrote` is the year
  * the book was written, where a bar for a mark still in use ends; `book` names the book's number for a mark. */
-export type SetId = 'american-dinnerware' | 'american-art-pottery' | 'japanese-export';
+export type SetId = 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' | 'german-porcelain';
 const SETS: Record<SetId, { hub: string; marks: string; wrote: number; book: string }> = {
   'american-dinnerware': { hub: HUB, marks: 'amd-', wrote: 1988, book: 'Lehner' },
   'american-art-pottery': { hub: ART_HUB, marks: 'aap-', wrote: 1988, book: 'Lehner' },
   'japanese-export': { hub: JX_HUB, marks: 'jxp-', wrote: 1997, book: 'Van Patten' },
+  'german-porcelain': { hub: GP_HUB, marks: 'gpm-', wrote: 1980, book: 'Röntgen' },
 };
 
 export type DatingRule = { what: string; text: string; page: string | null };
