@@ -3,7 +3,7 @@
 // each a row that opens into its sheet (components/ref/Catalogue): names in
 // every spelling, where and by whom it was woven, its structure (knot, knots
 // per inch, warps, wefts, pile, sides, ends), designs, look-alikes, where the
-// sources differ, and museum photographs. From the app's table
+// sources differ, and photographs (museums', and auction houses' cited). From the app's table
 // (backend/src/data/mark-tables/rugs.json, `types`). #<slug> opens one.
 import Reference from '../../../layouts/Reference.astro';
 import AppBox from '../../../components/AppBox.astro';
@@ -21,7 +21,7 @@ const groups = GROUPS.map((g) => ({ key: g.id, label: g.name, blurb: g.blurb ?? 
 const pictured = rows.filter((r) => r.photos.length).length;
 const count = (g: string) => rows.filter((r) => r.group === g).length;
 const title = 'Oriental Rug Types: Persian, Caucasian, Turkish, Turkmen, Chinese and Indian Rugs | Heirloom';
-const description = `${rows.length} types of oriental rug, from Heriz, Kashan and Kazak to Tekke, Ningxia and Agra: where each was woven, its knot, knot count, warps, wefts, sides and ends, its designs, what it is mistaken for, and museum photographs, with sources.`;
+const description = `${rows.length} types of oriental rug, from Heriz, Kashan and Kazak to Tekke, Ningxia and Agra: where each was woven, its knot, knot count, warps, wefts, sides and ends, its designs, what it is mistaken for, and photographs, with sources.`;
 const h1 = 'Oriental rug types';
 const faqs: [string, string][] = [
   ['How do I find out what kind of oriental rug I have?', '<p>Start from the back. The knot, the number of knots to the inch, what the warps and wefts are made of and how many wefts run between each row of knots narrow it down more than the pattern does, because patterns were copied everywhere. The <a href="/marks/rugs/identify">turn it over</a> reader takes what you see and lists the types that fit. Then read the sheets here: each says what the type is mistaken for and how to tell them apart.</p>'],
@@ -42,7 +42,7 @@ const notes = caveats();
       <p class="rhead__lede">Where each kind of rug was woven, by whom, and how it is made: {GROUPS.filter((g) => count(g.id)).map((g, i, a) => <>{i > 0 && (i === a.length - 1 ? ' and ' : ', ')}{count(g.id)} {g.name}</>)}. Type a name in any spelling, a town or a design. A type names where rugs with these features were made; the same names are woven elsewhere.</p>
       <ul class="rhead__meta">
         <li><strong class="num">{rows.length}</strong> types</li>
-        {pictured > 0 && <li><strong class="num">{pictured}</strong> with a museum photograph</li>}
+        {pictured > 0 && <li><strong class="num">{pictured}</strong> with a photograph</li>}
       </ul>
     </header>
 
