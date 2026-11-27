@@ -202,6 +202,8 @@
 .rec > summary .spec { width: 64px; }
 .rec__id { display: grid; gap: 2px; min-width: 0; }
 .rec__name { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; font-weight: 600; font-size: 16.5px; }
+/* A mark read as one long run of capitals (a retailer's name punched without spaces) breaks rather than pushing a phone page wide. */
+.rec__name, .rec__name > span { min-width: 0; overflow-wrap: anywhere; }
 .rec__name .han, .rec__name .ja, .rec__name .hangul { font-weight: 400; font-size: 1.3rem; }
 .rec__means { font-size: 15px; color: var(--ink-2); overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .rec__y { font-size: 14px; color: var(--ink-3); text-align: right; white-space: nowrap; display: flex; align-items: center; gap: 12px; }
@@ -251,6 +253,8 @@
 .sheet2__src ol { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; font-size: 14px; color: var(--ink-2); }
 .sheet2__src li::marker { color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .sheet2__src .where { color: var(--ink-3); }
+/* A long address in a citation (an archive record's URL) breaks rather than pushing the page wide on a phone. */
+.sheet2__src li { overflow-wrap: anywhere; min-width: 0; }
 .onesrc { margin: 14px 0 0; font-size: 14px; color: var(--ink-3); }
 .sheet2__link { margin: 16px 0 0; font-size: 14px; }
 .sheet2__link a { color: var(--ink-3); }
