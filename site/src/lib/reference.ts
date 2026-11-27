@@ -86,6 +86,8 @@ export function astroRoutes(): Set<string> {
   for (const f of staffsFirms()) out.add(norm(f.page));
   // American dinnerware and pottery firms, a page per firm (pages/marks/american-dinnerware-marks/[firm].astro).
   for (const f of dinnerFirms()) out.add(norm(f.page));
+  // American art potteries, a page per pottery (pages/marks/american-art-pottery-marks/[firm].astro).
+  for (const f of dinnerFirms('american-art-pottery')) out.add(norm(f.page));
   // Tiffany windows, a page per state (pages/marks/tiffany-windows/[place].astro).
   for (const p of tiffanyPlaces()) out.add(p.path);
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
@@ -140,8 +142,8 @@ function makerLinks(): RefLink[] {
 function staffsLinks(): RefLink[] {
   return staffsFirms().map((f) => ({ href: f.page, label: f.title, note: f.where }));
 }
-function dinnerLinks(): RefLink[] {
-  return dinnerFirms().map((f) => ({ href: f.page, label: f.title, note: f.where })).sort((a, b) => a.label.localeCompare(b.label));
+function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' = 'american-dinnerware'): RefLink[] {
+  return dinnerFirms(set).map((f) => ({ href: f.page, label: f.title, note: f.where })).sort((a, b) => a.label.localeCompare(b.label));
 }
 function artistLinks(): RefLink[] {
   return artists()
@@ -235,6 +237,10 @@ function build(): Area[] {
         { label: 'American dinnerware and pottery', links: [
           { href: '/marks/american-dinnerware-marks/', label: 'American dinnerware marks', note: 'Dating an American backstamp, firm by firm' },
           ...dinnerLinks(),
+        ], fold: true },
+        { label: 'American art pottery', links: [
+          { href: '/marks/american-art-pottery-marks/', label: 'American art pottery marks', note: 'Marks and decorators’ monograms, pottery by pottery' },
+          ...dinnerLinks('american-art-pottery'),
         ], fold: true },
         { label: 'Pewabic Pottery, Detroit', links: [
           { href: '/marks/pewabic-pottery/', label: 'Pewabic Pottery', note: 'Detroit, 1903 to today' },

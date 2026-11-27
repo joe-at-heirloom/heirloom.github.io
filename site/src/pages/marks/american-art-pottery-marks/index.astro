@@ -1,0 +1,115 @@
+---
+// /marks/american-art-pottery-marks: American art pottery marks and
+// decorators' monograms. The rules that date any American mark, then every
+// pottery with its own page of marks (lib/american-dinnerware.ts, set
+// american-art-pottery; the app's marks/american-art-pottery.json, read from
+// Lehner 1988), and the art potteries that have pages of their own elsewhere.
+import Reference from '../../../layouts/Reference.astro';
+import { firms, isArtist, RULES, thumbUrl, HUB } from '../../../lib/american-dinnerware';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+const path = '/marks/american-art-pottery-marks/';
+const all = firms('american-art-pottery');
+const marks = all.reduce((n, f) => n + f.marks.filter((m) => !isArtist(m)).length, 0);
+const decorators = all.reduce((n, f) => n + f.marks.filter(isArtist).length, 0);
+const pictured = all.reduce((n, f) => n + f.pictured, 0);
+const GROUPS: { label: string; blurb: string; keys: string[] }[] = [
+  { label: 'Ohio and the Midwest', blurb: 'Cincinnati and Zanesville in Ohio, and potteries in Illinois, Indiana and North Dakota.', keys: ['rookwood', 'owens', 'peters-and-reed', 'cowan', 'teco', 'overbeck', 'muncie', 'north-dakota'] },
+  { label: 'New England and New Jersey', blurb: 'Boston and its towns, Keene in New Hampshire, and Flemington in New Jersey.', keys: ['grueby', 'chelsea-keramic', 'dedham', 'marblehead', 'paul-revere', 'hampshire', 'fulper'] },
+  { label: 'The South', blurb: 'New Orleans, the North Carolina mountains and Piedmont, the Mississippi coast and Arkansas.', keys: ['newcomb', 'jugtown', 'pisgah-forest', 'shearwater', 'niloak', 'camark'] },
+  { label: 'The West', blurb: 'Colorado and California.', keys: ['van-briggle', 'arequipa', 'catalina'] },
+];
+const byKey = new Map(all.map((f) => [f.key, f]));
+const listed = new Set(GROUPS.flatMap((g) => g.keys));
+const rest = all.filter((f) => !listed.has(f.key));
+const groups = [
+  ...GROUPS.map((g) => ({ ...g, firms: g.keys.map((k) => byKey.get(k)).filter((f): f is NonNullable<typeof f> => !!f) })),
+  ...(rest.length ? [{ label: 'More potteries', blurb: '', keys: [], firms: rest }] : []),
+].filter((g) => g.firms.length);
+const years = (f: { from: number | null; to: number | null }) => (f.from ? `${f.from}${f.to ? `–${f.to}` : ' on'}` : '');
+// Art and commercial potteries with pages of their own (the maker pages and Pewabic's).
+const ELSEWHERE: { href: string; label: string; note: string }[] = [
+  { href: '/marks/roseville-pottery-marks', label: 'Roseville', note: 'Zanesville, Ohio' },
+  { href: '/marks/weller-pottery-marks', label: 'Weller', note: 'Zanesville, Ohio' },
+  { href: '/marks/mccoy-pottery-marks', label: 'McCoy', note: 'Roseville, Ohio' },
+  { href: '/marks/hull-pottery-marks', label: 'Hull', note: 'Crooksville, Ohio' },
+  { href: '/marks/pewabic-pottery-marks', label: 'Pewabic', note: 'Detroit, Michigan' },
+  { href: '/marks/rookwood-pottery-marks', label: 'Rookwood’s date codes', note: 'The flames and Roman numerals, year by year' },
+  { href: HUB, label: 'American dinnerware marks', note: 'Homer Laughlin, Hall, Red Wing, Frankoma and 35 more' },
+];
+
+const title = 'American Art Pottery Marks and Decorators’ Monograms | Heirloom';
+const description = `${marks.toLocaleString('en-US')} marks of ${all.length} American art potteries, from Rookwood, Grueby and Newcomb to Van Briggle, Teco and Fulper, and ${decorators.toLocaleString('en-US')} decorators’ monograms, each with the years it was used, and how to date any American mark.`;
+const faqs: [string, string][] = [
+  ['How do I identify American art pottery by its mark?', '<p>Look on the base: the marks below were impressed or incised in the clay, stamped, painted, or printed on a paper label. Find the pottery below and match the mark: the years each mark was used date the piece. Then read what is marked with it: shape numbers, size letters and, at Rookwood, the date flames.</p>'],
+  ['Whose initials are on the base of my vase?', '<p>On a hand-decorated piece, initials or a monogram beside the factory mark are often the decorator’s. Rookwood, Newcomb, Owens and other potteries had their decorators mark their work; each pottery’s page lists the decorators’ marks Lehner gives, with their years at the pottery where she has them.</p>'],
+];
+const graph = [articleLd(path, 'American art pottery marks', description, '2026-11-26'), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>American art pottery marks</h1>
+    <p class="rhead__lede">The marks of American art potteries and the monograms of their decorators. A pottery’s mark and the years it was used date a piece; on a hand-decorated piece, the decorator’s initials beside it say who painted it. First, the words that date any American mark; then each pottery and every mark it used.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{all.length}</strong> potteries</li>
+      <li><strong class="num">{marks.toLocaleString('en-US')}</strong> marks</li>
+      <li><strong class="num">{decorators.toLocaleString('en-US')}</strong> decorators</li>
+      <li><strong class="num">{pictured.toLocaleString('en-US')}</strong> pictured</li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="rules">
+    <h2 id="rules">What the words on the base tell you</h2>
+    <p>Each of these gives a year the piece is no older than. Read them together with the pottery’s own marks below.</p>
+    <ul class="st-rules">
+      {RULES.map((r) => (
+        <li class="st-rule">
+          <span class="st-rule__mark">{r.mark}</span>
+          <span class="st-rule__says">{r.says}</span>
+          <p class="st-rule__why">{r.why}</p>
+          <p class="st-credit">{r.cite}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section st-groups" aria-labelledby="firms">
+    <h2 id="firms">The potteries</h2>
+    <p>Each page lists the pottery’s marks, with a picture where the book shows the mark, the years each mark was used, its decorators’ monograms, and what the numbers and letters marked with them mean.</p>
+    {groups.map((g) => (
+      <>
+        <h3>{g.label}</h3>
+        {g.blurb && <p>{g.blurb}</p>}
+        <ul class="st-firms">
+          {g.firms.map((f) => (
+            <li>
+              <a class="st-firm" href={f.page}>
+                <span class="st-firm__pic">{f.thumb ? <img src={thumbUrl(f.thumb)!} alt="" loading="lazy" decoding="async" /> : null}</span>
+                <span>
+                  <span class="st-firm__name">{f.title}</span>
+                  <span class="st-firm__meta">{[f.where, years(f)].filter(Boolean).join(' · ')}</span>
+                  <span class="st-firm__meta">{[`${f.marks.filter((m) => !isArtist(m)).length} marks`, f.marks.some(isArtist) ? `${f.marks.filter(isArtist).length} decorators` : ''].filter(Boolean).join(' · ')}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+    <h3>More American potteries</h3>
+    <p>Potteries with pages of their own in the reference.</p>
+    <ul class="st-firms">
+      {ELSEWHERE.map((l) => (
+        <li><a class="st-firm" href={l.href}><span class="st-firm__pic"></span><span><span class="st-firm__name">{l.label}</span><span class="st-firm__meta">{l.note}</span></span></a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {faqs.map(([q, a]) => (<><h3>{q}</h3><Fragment set:html={a} /></>))}
+  </section>
+
+  <p class="st-credit">Potteries, marks, decorators and dates from Lois Lehner, <cite>Lehner’s Encyclopedia of U.S. Marks on Pottery, Porcelain &amp; Clay</cite> (Paducah, Ky., 1988), the standard reference; the pictures of marks are reproduced from it, credited page by page. Rookwood’s decorators’ names and years are from Herbert Peck, <cite>The Book of Rookwood Pottery</cite> (New York, 1968); the other marks rest on Lehner alone until a second source is matched.</p>
+</Reference>

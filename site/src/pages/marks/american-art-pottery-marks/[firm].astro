@@ -1,0 +1,114 @@
+---
+// /marks/american-art-pottery-marks/<firm>: one American art pottery's marks
+// (lib/american-dinnerware.ts, set american-art-pottery): the pottery under each
+// name Lehner gives it, its marking systems, its marks on one time line, its
+// decorators by their years, and the catalogue of marks and monograms, each
+// opening into its sheet. Same template as the dinnerware firms' pages.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { firms, markGroups, bars, isArtist, thumbUrl, ART_HUB, WROTE, type Firm } from '../../../lib/american-dinnerware';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+export function getStaticPaths() {
+  return firms('american-art-pottery').map((f) => ({ params: { firm: f.slug }, props: { f } }));
+}
+const { f } = Astro.props as { f: Firm };
+const path = f.page;
+const groups = markGroups(f);
+const own = f.marks.filter((m) => !isArtist(m)), decorators = f.marks.filter(isArtist);
+// Rookwood's decorators carry Peck (1968) as their second source, with his years at the pottery.
+const PECK = 'peck-book-of-rookwood-1968';
+const peck = decorators.some((m) => m.sources.some((x) => x.id === PECK));
+const lines = [
+  { id: 'key', title: 'The marks by date', blurb: `Each bar runs over the years Lehner gives for the mark. A bar fading at its right end was still in use when she wrote (${WROTE}). Tap a mark to read it in full.`, rows: bars(f) },
+  { id: 'decorators-key', title: 'The decorators by their years', blurb: `Each bar runs over the decorator’s years at the pottery, as ${peck ? 'Herbert Peck gives them in The Book of Rookwood Pottery (1968)' : 'Lehner gives them'}: a piece with that monogram was decorated in those years. Tap a monogram to read it in full.`, rows: bars(f, true) },
+].filter((l) => l.rows.length > 1);
+const allRows = lines.flatMap((l) => l.rows);
+const A = Math.max(1840, Math.floor(((Math.min(...allRows.map((b) => b.from), 1880)) - 5) / 10) * 10), B = 1990;
+const pct = (y: number) => `${(((Math.min(Math.max(y, A), B) - A) / (B - A)) * 100).toFixed(2)}%`;
+const step = B - A > 100 ? 20 : 10;
+const ticks: number[] = []; for (let y = Math.ceil(A / step) * step; y <= B; y += step) ticks.push(y);
+const span = (b: { from: number; to: number; open: boolean; circa: boolean }) => `${b.circa ? 'c. ' : ''}${b.open ? `${b.from} on` : b.from === b.to ? `${b.from}` : `${b.from}–${b.to}`}`;
+const names = f.entries.map((e) => e.name);
+const short = f.title.replace(/ \(.*\)$/, '');
+const title = decorators.length ? `${short} Marks and Decorators’ Monograms | Heirloom` : `${short} Marks: Dating ${short} Pottery | Heirloom`;
+const description = `${own.length} marks of ${names.slice(0, 2).join(' and ')}${names.length > 2 ? ' and related firms' : ''} (${f.where})${decorators.length ? ` and ${decorators.length} decorators’ monograms` : ''}, with the years each was used${f.pictured ? `, ${f.pictured} pictured` : ''}${f.rules.length ? ', and how to read the numbers and letters stamped with them' : ''}. From Lehner’s Encyclopedia of U.S. Marks.`;
+const graph = [articleLd(path, `${f.title} marks`, description, '2026-11-26', { about: { '@type': 'Organization', name: names[0] ?? f.title, location: f.where } })];
+// Rookwood's date flames have a page of their own; its firm page points there.
+const codesPage = f.key === 'rookwood' ? '/marks/rookwood-pottery-marks' : null;
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>{f.title} marks</h1>
+    <p class="rhead__lede">{f.entries.length > 1 ? `The marks of ${names.join('; ')}, ${f.where}.` : `The marks of ${names[0]}, ${f.where}.`} Find the mark on your piece below: the years it was used date the piece{decorators.length ? ', and a decorator’s monogram beside it names who painted it and narrows the years' : ''}.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{own.length}</strong> marks</li>
+      {decorators.length > 0 && <li><strong class="num">{decorators.length}</strong> decorators</li>}
+      <li><strong class="num">{f.pictured}</strong> pictured</li>
+      {f.rules.length > 0 && <li><a href="#codes">Numbers and letters</a></li>}
+      {codesPage && <li><a href={codesPage}>Reading the date flames</a></li>}
+      <li><a href={`${ART_HUB}#rules`}>Dating any American mark</a></li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="firm">
+    <h2 id="firm">{f.entries.length > 1 ? 'The potteries' : 'The pottery'}</h2>
+    <ul class="st-entries">
+      {f.entries.map((e) => (
+        <li class="st-entry">
+          <h3>{e.name} {e.dates && <span class="y">{e.dates}</span>}</h3>
+          {e.place && <p>{e.place}</p>}
+          {e.wares && <p>{e.wares}</p>}
+          {e.history && <p>{e.history}</p>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {f.rules.length > 0 && (
+    <section class="st-section" aria-labelledby="codes">
+      <h2 id="codes">Numbers and letters with the mark</h2>
+      <p>What the numbers, letters and symbols marked with {short}’s marks mean, as Lehner gives them.{codesPage && <> The date flames and Roman numerals, year by year, are on <a href={codesPage}>Rookwood’s date codes</a> page.</>}</p>
+      <ul class="st-entries">
+        {f.rules.map((r) => (
+          <li class="st-entry">
+            <h3>{r.what}</h3>
+            <p>{r.text}</p>
+            {r.page && <p class="st-credit">Lehner (1988), p. {r.page}.</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {lines.map((l) => (
+    <section class="st-section" aria-labelledby={l.id}>
+      <h2 id={l.id}>{l.title}</h2>
+      <p>{l.blurb}</p>
+      <div class="stkey" role="list">
+        <div class="stkey__axis" aria-hidden="true">
+          <span>{l.id === 'key' ? 'Mark' : 'Decorator'}</span>
+          <div class="stkey__ticks">{ticks.map((t) => <span style={`left:${pct(t)}`}>{t}</span>)}</div>
+        </div>
+        {l.rows.map((b) => (
+          <a class="stkey__row" href={`#${b.id}`} role="listitem" data-open={b.id}>
+            <span class="stkey__label">
+              {b.img ? <span class="stkey__thumb"><img src={thumbUrl(b.img)!} alt="" loading="lazy" decoding="async" /></span> : <span class="stkey__thumb stkey__thumb--none" aria-hidden="true"></span>}
+              <span class="stkey__name">{b.name}</span>
+            </span>
+            <span class="stkey__track" style={`--a:${pct(b.from)};--b:${pct(b.to)}`}>
+              <span class:list={['stkey__bar', { 'stkey__bar--open': b.open }]}></span>
+              <span class:list={['stkey__years', { 'stkey__years--end': b.from > B - 20 }]}>{span(b)}</span>
+            </span>
+          </a>
+        ))}
+        <p class="stkey__note">“c.” means about. {l.id === 'key' ? 'Marks' : 'Decorators'} Lehner gives no date for are in the catalogue below, not on this line.</p>
+      </div>
+    </section>
+  ))}
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="Letters or words in the mark: a monogram, a name, a number" label="Letters or words in the mark" />
+
+  <p class="st-credit">Potteries, marks, decorators and dates from Lois Lehner, <cite>Lehner’s Encyclopedia of U.S. Marks on Pottery, Porcelain &amp; Clay</cite> (Paducah, Ky., 1988); the pictures of marks are reproduced from it, credited page by page. Marks Lehner gives only in words are given in words. {peck ? <>The decorators’ names and their years at Rookwood are from Herbert Peck, <cite>The Book of Rookwood Pottery</cite> (New York, 1968), matched to Lehner’s list name by name; the other marks rest on Lehner alone until a second source is matched.</> : 'Each mark rests on Lehner alone until a second source is matched.'} <a href={ART_HUB}>Every pottery</a></p>
+</Reference>
