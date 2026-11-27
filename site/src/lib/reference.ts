@@ -276,6 +276,10 @@ function build(): Area[] {
           { href: '/marks/chinese-hall-marks', label: 'Hall marks', note: 'Halls, studios and palace buildings' },
           { href: '/marks/chinese/dating', label: 'Reading a Chinese date', note: 'Era names, the sixty-year cycle, taboo characters' },
           { href: '/marks/chinese/other-marks', label: 'Other marks', note: 'Symbols, good wishes, makers and export marks' },
+          { href: '/marks/chinese/export-porcelain', label: 'Export porcelain', note: 'Rose Medallion, Canton, Nanking, Fitzhugh and their dates' },
+        ] },
+        { label: 'Other wares', links: [
+          { href: '/marks/chinese/works-of-art', label: 'Works of art', note: 'Cloisonné, bronze, jade, snuff bottles and lacquer' },
         ] },
         { label: 'Silver', links: [
           { href: '/marks/chinese/export-silver', label: 'Export silver', note: 'Makers, marks and chops of Canton, Hong Kong and Shanghai' },

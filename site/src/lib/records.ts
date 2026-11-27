@@ -613,6 +613,68 @@ export function otherMarkSheet(r: Rec): Sheet {
   };
 }
 
+// ── Chinese sections in the other-marks shape: modern porcelain, export porcelain, Yixing, works of art ──
+export const MODERN_MARK_GROUPS: [string, string, string][] = [
+  ['factory', 'Jingdezhen factories', 'The state porcelain factories of the People’s Republic and their marks, decade by decade.'],
+  ['export', 'Export marks', 'Marks in English or in Chinese for porcelain sold abroad, from the Republic to the 1990s.'],
+  ['painter', 'Porcelain painters', 'The late Qing qianjiang painters and the Republic’s Zhushan Eight Friends: their names, studio names and seals as they appear on porcelain.'],
+  ['kiln', 'Kilns and companies', 'Republic porcelain companies and kilns outside the state factories, such as Liling.'],
+  ['shop', 'Shops and decorators', 'Jingdezhen shops and the Hong Kong and Macau workshops that decorated porcelain for export.'],
+  ['hall-copy', 'Hall marks copied later', 'Qing hall marks put on Republic and later porcelain, and how to tell them apart.'],
+];
+export const EXPORT_PORCELAIN_GROUPS: [string, string, string][] = [
+  ['pattern', 'Patterns', 'The named patterns of porcelain made for the West, how to recognize each and what dates a piece within its run.'],
+  ['type', 'Wares and palettes', 'The broader kinds of export porcelain: kraak, Imari, famille rose, armorial and the others.'],
+  ['cargo', 'Shipwreck cargoes', 'Cargoes lost at a known date, which fix when the porcelain aboard was made.'],
+];
+export const YIXING_GROUPS: [string, string, string][] = [
+  ['convention', 'How Yixing pieces are marked', 'Where the seals go, what they claim, and why most famous names on teapots are later.'],
+  ['potter', 'Potters', 'Yixing potters from the Ming to the masters of the 1950s factory, with the seals that appear on their work.'],
+  ['factory', 'Factory marks', 'The marks of the Yixing purple clay factory and its export stamps.'],
+  ['shop', 'Shops and workshops', 'Republic shops and workshops whose names appear on pieces.'],
+  ['market', 'Wares for other markets', 'Yixing made for Europe, Japan and Thailand.'],
+];
+export const WORKS_OF_ART_GROUPS: [string, string, string][] = [
+  ['cloisonne', 'Cloisonné and enamel', 'Reign marks on enamels, and the Beijing workshops and companies that signed their cloisonné.'],
+  ['bronze', 'Bronze', 'Xuande marks on incense burners, named makers, and inscriptions on archaistic bronzes.'],
+  ['jade', 'Jade and hardstone', 'Qianlong marks and poems on jade, and the names, such as Lu Zigang, that were added later.'],
+  ['snuff-bottle', 'Snuff bottles', 'The inside painters and their signatures, and the reign marks on glass and porcelain bottles.'],
+  ['lacquer', 'Lacquer', 'Ming and Qing reign marks on carved lacquer, and the Fuzhou and Yangzhou lacquer makers.'],
+];
+/** A record from one of the sections above; `groups` is the section's group list. */
+export function sectionMarkSheet(r: Rec, groups: [string, string, string][]): Sheet {
+  const a = r.attributes;
+  const { list } = numbered(r);
+  const chars = a.chars && CJK.test(String(a.chars)) ? String(a.chars) : null;
+  const periods = (Array.isArray(a.periods) ? a.periods : [])
+    .map((p: any) => [p.label, p.start ? (p.end && p.end !== p.start ? `${p.start}–${p.end}` : `from ${p.start}`) : null].filter(Boolean).join(', ')).filter(Boolean);
+  const differs = (Array.isArray(a.conflicts) ? a.conflicts : []).map((c: any) => clean(typeof c === 'string' ? c : `${c.topic}: ${(c.positions ?? []).join(' / ')}${c.resolution ? ` ${c.resolution}` : ''}`)).filter(Boolean);
+  const group = groups.some(([k]) => k === a.category) ? String(a.category) : groups[0][0];
+  const seals = (Array.isArray(a.seals) ? a.seals : []).filter((v: string) => v && v !== a.chars);
+  return {
+    id: r.id, anchor: r.anchor ?? r.id, url: urlOf(r), kind: r.kind.charAt(0).toUpperCase() + r.kind.slice(1), group,
+    glyphs: chars, typeset: !!chars, lang: chars ? 'zh' : null,
+    reading: a.pinyin ? tidyReading(String(a.pinyin)) : String(a.english ?? r.name), means: a.pinyin ? clean(a.english) : null, meansTr: !!chars && !['potter', 'painter'].includes(String(a.category)),
+    years: yearsOf(r.date_from, r.date_to),
+    facts: [
+      ['What it is', clean(a.dating_value && r.summary ? r.summary.replace(String(a.dating_value), '').trim() : r.summary)],
+      ['What it looks like', clean(r.looks_like)],
+      ['Seals and signatures', seals.join(', ')],
+      ['When', periods.join('; ')],
+      ['What it says about date', clean(a.dating_value)],
+      ['Later copies', clean(a.later_copies)],
+      ['Also written', (Array.isArray(a.variants) ? a.variants : []).filter((v: string) => v && v !== a.chars).join(', ')],
+      ['Related', clean(a.overlap)],
+      ['Where sources differ', differs.join(' ')],
+      ['Notes', clean(a.notes)],
+    ].filter(([, v]) => v).map(([label, text]) => ({ label: label as string, text: text as string })),
+    differ: [], caution: null,
+    pics: [picOf(r)].filter((p): p is Pic => !!p), seeAt: r.attributes?.see_at,
+    sources: list, single: r.single_source,
+    keys: keysOf(r.keys, a.chars, a.pinyin, a.english, a.chinese_name, a.variants, a.seals),
+  };
+}
+
 // ── Chinese export silver: makers, workshop chops, unidentified marks, dating rules ──
 export const EXPORT_SILVER_GROUPS: [string, string, string][] = [
   ['rules', 'Dating a piece', 'What the marks, the address and the style say about when a piece was made. Each rule lists its sources; one flagged as resting on one source is the weakest.'],

@@ -1,0 +1,36 @@
+---
+// One Chinese reference section in the other-marks shape (modern porcelain, export porcelain,
+// Yixing, works of art): a catalogue over the collection's records whose ids start with
+// `prefix`, grouped by category, with the section's own introduction and caution.
+import Reference from '../../layouts/Reference.astro';
+import Catalogue from './Catalogue.astro';
+import AppBox from '../AppBox.astro';
+import { collection } from '../../lib/portal';
+import { sectionMarkSheet, CJK } from '../../lib/records';
+import { articleLd } from '../../lib/site';
+interface Props { path: string; title: string; description: string; h1: string; lede: string; prefix: string; groups: [string, string, string][]; placeholder: string; noun: [string, string]; app: string; date: string }
+const { path, title, description, h1, lede, prefix, groups, placeholder, noun, app, date } = Astro.props;
+const sheets = collection().records.filter((r) => r.id.startsWith(`${prefix}-`)).map((r) => sectionMarkSheet(r, groups));
+const grouped = groups.map(([key, label, blurb]) => ({ key, label, blurb, sheets: sheets.filter((s) => s.group === key).sort((x, y) => (x.years ?? '9999').localeCompare(y.years ?? '9999') || x.reading.localeCompare(y.reading)) })).filter((g) => g.sheets.length);
+const pictured = sheets.filter((s) => s.pics.length).length;
+const two = sheets.filter((s) => !s.single).length;
+const han = [...new Set([...JSON.stringify(grouped)].filter((ch) => CJK.test(ch)))].join('');
+const desc = description.replace('{n}', String(sheets.length));
+---
+<Reference title={title.replace('{n}', String(sheets.length))} description={desc} {path} jsonld={[articleLd(path, h1, desc, date)]} {han}>
+  <header class="rhead">
+    <h1>{h1}</h1>
+    <p class="rhead__lede" set:html={lede} />
+    <ul class="rhead__meta">
+      <li><strong class="num">{sheets.length}</strong> {sheets.length === 1 ? noun[0] : noun[1]}</li>
+      <li><strong class="num">{pictured}</strong> photographed</li>
+      <li><strong class="num">{two}</strong> confirmed by two independent sources</li>
+    </ul>
+  </header>
+  <Catalogue groups={grouped} {noun} {placeholder} label={placeholder.split(':')[0]} />
+  <section class="ahome__block read" aria-labelledby="rely">
+    <h2 id="rely">Before you rely on it</h2>
+    <slot />
+  </section>
+  <AppBox text={app} />
+</Reference>

@@ -1,0 +1,15 @@
+---
+// /marks/chinese/export-porcelain: the named patterns and kinds of Chinese porcelain made for the
+// West, mostly unmarked, so the pattern and its details date the piece; shipwreck cargoes as fixed dates.
+import MarkSection from '../../../components/ref/MarkSection.astro';
+import { EXPORT_PORCELAIN_GROUPS } from '../../../lib/records';
+---
+<MarkSection path="/marks/chinese/export-porcelain" prefix="cnexp" groups={EXPORT_PORCELAIN_GROUPS} date="2026-11-27"
+  title="Chinese Export Porcelain Patterns: Rose Medallion, Canton, Nanking, Fitzhugh and More | Heirloom"
+  description="{n} patterns, wares and dated shipwreck cargoes of Chinese export porcelain, from kraak to Rose Medallion, with how to recognize each and what dates a piece."
+  h1="Chinese export porcelain"
+  lede="Porcelain made in China for Europe and America rarely carries a mark. The pattern, the palette, the gilding and the shape do the dating instead. Each pattern below says how to recognize it, when it was made, and how to tell an early piece from a late one."
+  placeholder="A pattern or a word: Rose Medallion, Canton, Fitzhugh, kraak" noun={['entry', 'entries']}
+  app="Photograph the piece and its base. The Advisor names the pattern from this same reference and says what its details tell you about the date.">
+  <p>Popular patterns were made for a century or more and are still made, so the pattern alone gives a range. The details narrow it: the quality of the enamels and gilding, the foot and the base, and an English mark, <span lang="en">CHINA</span> from 1891 or <span lang="en">Made in China</span> later. For those marks, see <a href="/marks/chinese/other-marks">other marks</a>.</p>
+</MarkSection>
