@@ -57,6 +57,8 @@ const facts = s.facts.filter((f) => !same(s.means, f.text) && !same(s.reading, f
           {more.slice(0, 6).map((p) => <a href={p.url ?? p.file} title={`${statusWord(p.status)}. ${p.credit}`} rel="nofollow noopener"><Spec pic={p} px={80} /></a>)}
         </div>
       )}
+      {/* A rug type pictured from an auction or a dealer keeps its museum links ("Also shown at"). */}
+      {s.seeAtOne && seeAt != null && <SeeAt links={seeAt} pictured={true} one={s.seeAtOne} />}
     </div>
   )}
   {s.pics.length === 0 && seeAt != null && <div class="sheet2__aside"><SeeAt links={seeAt} pictured={false} one={s.seeAtOne} /></div>}
