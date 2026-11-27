@@ -1,0 +1,102 @@
+[
+ {
+  "file": "books/numata-1926-p454-kuroda-fuji-tomoe.webp",
+  "row_id": "kuroda-fuji-tomoe",
+  "holder": "National Diet Library Digital Collections (scan of a public-domain book)",
+  "accession": "DOI 10.11501/1879378, コマ 273",
+  "title": "沼田頼輔『日本紋章学』 (Numata Raisuke, Nihon monshōgaku)",
+  "date": "1926",
+  "object_url": "https://dl.ndl.go.jp/pid/1879378/1/273",
+  "image_url": "https://dl.ndl.go.jp/api/iiif/1879378/R0000273/full/full/0/default.jpg (cropped)",
+  "licence": "Public domain (NDL marks the scan PDM; book published 1926)",
+  "credit": "沼田頼輔『日本紋章学』(明治書院, 1926), p. 454, 三頭藤巴; scan: 国立国会図書館デジタルコレクション (DOI 10.11501/1879378); public domain",
+  "view": "detail",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "The three-headed wisteria tomoe (三頭藤巴), the form the Kuroda kept as the main family's crest; the book draws it among wisteria roundels from picture scrolls.",
+  "pixels": [
+   550,
+   520
+  ],
+  "book": "沼田頼輔『日本紋章学』",
+  "edition": "1926",
+  "page": 454,
+  "figure": "三頭藤巴",
+  "url": "https://dl.ndl.go.jp/pid/1879378/1/273"
+ },
+ {
+  "file": "books/numata-1926-p804-asano-takanoha.webp",
+  "row_id": "asano-takanoha",
+  "holder": "National Diet Library Digital Collections (scan of a public-domain book)",
+  "accession": "DOI 10.11501/1879378, コマ 451",
+  "title": "沼田頼輔『日本紋章学』 (Numata Raisuke, Nihon monshōgaku)",
+  "date": "1926",
+  "object_url": "https://dl.ndl.go.jp/pid/1879378/1/451",
+  "image_url": "https://dl.ndl.go.jp/api/iiif/1879378/R0000451/full/full/0/default.jpg (cropped)",
+  "licence": "Public domain (NDL marks the scan PDM; book published 1926)",
+  "credit": "沼田頼輔『日本紋章学』(明治書院, 1926), p. 804, 同上 (淺野), crossed hawk feathers; scan: 国立国会図書館デジタルコレクション (DOI 10.11501/1879378); public domain",
+  "view": "detail",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Crossed hawk feathers with swirls on the vanes, labelled 'Asano' (淺野) in the book.",
+  "pixels": [
+   480,
+   540
+  ],
+  "book": "沼田頼輔『日本紋章学』",
+  "edition": "1926",
+  "page": 804,
+  "figure": "同上 (淺野), crossed hawk feathers",
+  "url": "https://dl.ndl.go.jp/pid/1879378/1/451"
+ },
+ {
+  "file": "books/numata-1926-p590-tosa-kashiwa.webp",
+  "row_id": "tosa-kashiwa",
+  "holder": "National Diet Library Digital Collections (scan of a public-domain book)",
+  "accession": "DOI 10.11501/1879378, コマ 342",
+  "title": "沼田頼輔『日本紋章学』 (Numata Raisuke, Nihon monshōgaku)",
+  "date": "1926",
+  "object_url": "https://dl.ndl.go.jp/pid/1879378/1/342",
+  "image_url": "https://dl.ndl.go.jp/api/iiif/1879378/R0000342/full/full/0/default.jpg (cropped)",
+  "licence": "Public domain (NDL marks the scan PDM; book published 1926)",
+  "credit": "沼田頼輔『日本紋章学』(明治書院, 1926), p. 590, 三柏 (土佐柏); scan: 国立国会図書館デジタルコレクション (DOI 10.11501/1879378); public domain",
+  "view": "detail",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "Three oak leaves on stalks meeting at a small ring, captioned 三柏 (土佐柏), the Tosa form.",
+  "pixels": [
+   540,
+   560
+  ],
+  "book": "沼田頼輔『日本紋章学』",
+  "edition": "1926",
+  "page": 590,
+  "figure": "三柏 (土佐柏)",
+  "url": "https://dl.ndl.go.jp/pid/1879378/1/342"
+ },
+ {
+  "file": "books/numata-1926-p843-ikeda-chosei.webp",
+  "row_id": "ikeda-mitsu-cho",
+  "holder": "National Diet Library Digital Collections (scan of a public-domain book)",
+  "accession": "DOI 10.11501/1879378, コマ 470",
+  "title": "沼田頼輔『日本紋章学』 (Numata Raisuke, Nihon monshōgaku)",
+  "date": "1926",
+  "object_url": "https://dl.ndl.go.jp/pid/1879378/1/470",
+  "image_url": "https://dl.ndl.go.jp/api/iiif/1879378/R0000470/full/full/0/default.jpg (cropped)",
+  "licence": "Public domain (NDL marks the scan PDM; book published 1926)",
+  "credit": "沼田頼輔『日本紋章学』(明治書院, 1926), p. 843, 蝶星 (御召御紋帳所載); scan: 国立国会図書館デジタルコレクション (DOI 10.11501/1879378); public domain",
+  "view": "detail",
+  "inscription_visible": "yes",
+  "crop_of": null,
+  "caption": "The 蝶星, the Bizen Ikeda's later alternate crest: spots from a butterfly's wings, as printed from the 御召御紋帳.",
+  "pixels": [
+   470,
+   490
+  ],
+  "book": "沼田頼輔『日本紋章学』",
+  "edition": "1926",
+  "page": 843,
+  "figure": "蝶星 (御召御紋帳所載)",
+  "url": "https://dl.ndl.go.jp/pid/1879378/1/470"
+ }
+]
