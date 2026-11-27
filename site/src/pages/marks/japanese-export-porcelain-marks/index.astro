@@ -1,0 +1,94 @@
+---
+// /marks/japanese-export-porcelain-marks: the marks on Japanese porcelain made
+// for export, read from Van Patten (lib/american-dinnerware.ts, set
+// japanese-export; the app's marks/japanese-export.json, built by the website
+// repo's hallmark-sources/japanese-export). The words that date any Japanese
+// export mark, then each set of marks with its own page.
+import Reference from '../../../layouts/Reference.astro';
+import { firms, thumbUrl } from '../../../lib/american-dinnerware';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+const path = '/marks/japanese-export-porcelain-marks/';
+const all = firms('japanese-export');
+const marks = all.reduce((n, f) => n + f.marks.length, 0);
+const pictured = all.reduce((n, f) => n + f.pictured, 0);
+const years = (f: { from: number | null; to: number | null }) => (f.from ? `${f.from}${f.to ? `–${f.to}` : ' on'}` : '');
+// What the country's name on the base says, each rule with its sources.
+const RULES: { mark: string; says: string; why: string; cite: string }[] = [
+  { mark: 'NIPPON', says: 'Made 1891 to 1921, for export', why: 'The McKinley Tariff Act required goods imported into the United States from March 1, 1891 to be marked with their country of origin in English. Japanese makers used Nippon, the country’s own name for itself. The U.S. Treasury ruled that from October 1, 1921 Nippon would no longer do, and wares had to say Japan.', cite: 'Van Patten, Nippon Porcelain, Fourth Series (1997), p. 63; Kovels’ New Dictionary of Marks (1986), p. 25' },
+  { mark: 'JAPAN, MADE IN JAPAN', says: 'Usually made after 1921, if made for the United States', why: 'From October 1, 1921 the Treasury required Japan, not Nippon, on Japanese wares coming into the country.', cite: 'Van Patten, Nippon Porcelain, Fourth Series (1997), p. 63' },
+  { mark: 'MADE IN OCCUPIED JAPAN, OCCUPIED JAPAN', says: 'Made 1945 to 1952', why: 'From the start of the American occupation after the Second World War until it ended on April 28, 1952, wares made in Japan for the United States had to be marked Japan, Made in Japan, Occupied Japan or Made in Occupied Japan. So only some of the wares of those years say Occupied.', cite: 'Florence, Occupied Japan Collectibles, Fifth Series (1992), p. 3; Van Patten, Noritake (1984), p. 90' },
+  { mark: 'NIPPON on a new-looking piece', says: 'A Nippon backstamp can be fake', why: 'New porcelain from Japan and China has been sold with a Nippon backstamp under the glaze. It comes into the country legally with a paper label naming its real country, and the label comes off. Van Patten counted over 30 patterns. Body, painting and wear date a piece; the mark alone does not.', cite: 'Van Patten, Nippon Porcelain, Fourth Series (1997), p. 63' },
+];
+const ELSEWHERE: { href: string; label: string; note: string }[] = [
+  { href: '/marks/japanese/', label: 'Japanese kiln marks and seals', note: 'Hizen, Satsuma, Kyoto, Kutani, and potters’ seals' },
+  { href: '/marks/japanese-dates', label: 'Reading a Japanese date', note: 'Era names and years written in characters' },
+  { href: '/marks/nippon-marks', label: 'Nippon, in brief', note: 'The handful of Nippon marks most often met, from several books' },
+  { href: '/marks/noritake-marks', label: 'Noritake, in brief', note: 'The main Noritake marks, from several books' },
+];
+
+const title = 'Nippon and Noritake Marks: Dating Japanese Export Porcelain | Heirloom';
+const description = `${marks.toLocaleString('en-US')} marks on Japanese porcelain made for export: every Nippon-era mark and Noritake backstamp Van Patten pictures, ${pictured.toLocaleString('en-US')} with the book’s picture, and what Nippon, Japan and Occupied Japan on a base tell you.`;
+const faqs: [string, string][] = [
+  ['What does Nippon on the bottom of china mean?', '<p>Nippon is Japan’s name for itself. From 1891 the United States required imports to name their country of origin, and Japanese porcelain made for America was marked Nippon until the Treasury ruled, from October 1, 1921, that it must say Japan. So a genuine Nippon mark dates a piece to 1891 to 1921. Beware of new porcelain with fake Nippon marks.</p>'],
+  ['How do I tell how old my Noritake is?', '<p>Find the backstamp among the Noritake marks below: each has the years the Noritake Company and Van Patten could give. Nippon in the mark means before 1921, Occupied Japan 1945 to 1952, and an N in place of the M means 1953 or later.</p>'],
+];
+const graph = [articleLd(path, 'Japanese export porcelain marks', description, '2026-11-27'), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>Japanese export porcelain marks</h1>
+    <p class="rhead__lede">The marks on the porcelain Japan made for the American market: the Nippon-era marks of makers, decorators and importers, and the backstamps of the Noritake Company. The country’s name on the base dates a piece to within a few decades; the mark’s own years narrow it.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{marks.toLocaleString('en-US')}</strong> marks</li>
+      <li><strong class="num">{pictured.toLocaleString('en-US')}</strong> pictured</li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="rules">
+    <h2 id="rules">What the country’s name on the base tells you</h2>
+    <p>Read the word for Japan first: it gives the years. Then find the mark itself below.</p>
+    <ul class="st-rules">
+      {RULES.map((r) => (
+        <li class="st-rule">
+          <span class="st-rule__mark">{r.mark}</span>
+          <span class="st-rule__says">{r.says}</span>
+          <p class="st-rule__why">{r.why}</p>
+          <p class="st-credit">{r.cite}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section st-groups" aria-labelledby="firms">
+    <h2 id="firms">The marks</h2>
+    <ul class="st-firms">
+      {all.map((f) => (
+        <li>
+          <a class="st-firm" href={f.page}>
+            <span class="st-firm__pic">{f.thumb ? <img src={thumbUrl(f.thumb)!} alt="" loading="lazy" decoding="async" /> : null}</span>
+            <span>
+              <span class="st-firm__name">{f.title}</span>
+              <span class="st-firm__meta">{[f.where, years(f)].filter(Boolean).join(' · ')}</span>
+              <span class="st-firm__meta">{`${f.marks.length} marks`}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <h3>More Japanese marks</h3>
+    <ul class="st-firms">
+      {ELSEWHERE.map((l) => (
+        <li><a class="st-firm" href={l.href}><span class="st-firm__pic"></span><span><span class="st-firm__name">{l.label}</span><span class="st-firm__meta">{l.note}</span></span></a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {faqs.map(([q, a]) => (<><h3>{q}</h3><Fragment set:html={a} /></>))}
+  </section>
+
+  <p class="st-credit">Marks, captions and dates from Joan F. Van Patten, <cite>The Collector’s Encyclopedia of Nippon Porcelain, Fourth Series</cite> (Paducah, Ky., 1997) and <cite>The Collector’s Encyclopedia of Noritake</cite> (Paducah, Ky., 1984); the pictures of marks are reproduced from them, credited page by page. The Nippon years also rest on Ralph and Terry Kovel, <cite>Kovels’ New Dictionary of Marks</cite> (New York, 1986), and the Occupied Japan years on Gene Florence, <cite>The Collector’s Encyclopedia of Occupied Japan Collectibles, Fifth Series</cite> (Paducah, Ky., 1992). Marks found only on dolls are left out.</p>
+</Reference>

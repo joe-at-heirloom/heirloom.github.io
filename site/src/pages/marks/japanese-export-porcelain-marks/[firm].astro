@@ -1,0 +1,104 @@
+---
+// /marks/japanese-export-porcelain-marks/<firm>: one set of Japanese export
+// marks (lib/american-dinnerware.ts, set japanese-export): the Nippon-era marks
+// or the Noritake Company's backstamps as Van Patten pictures them, their
+// dating rules, the dated marks on one time line, and the catalogue, each mark
+// opening into its sheet. Same template as the American firms' pages.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { firms, markGroups, bars, thumbUrl, JX_HUB, type Firm } from '../../../lib/american-dinnerware';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+export function getStaticPaths() {
+  return firms('japanese-export').map((f) => ({ params: { firm: f.slug }, props: { f } }));
+}
+const { f } = Astro.props as { f: Firm };
+const path = f.page;
+const groups = markGroups(f);
+const noritake = f.key === 'noritake';
+const book = noritake
+  ? { short: 'Van Patten (1984)', cite: <>Joan F. Van Patten, <cite>The Collector’s Encyclopedia of Noritake</cite> (Paducah, Ky., 1984)</>, wrote: 1984 }
+  : { short: 'Van Patten (1997)', cite: <>Joan F. Van Patten, <cite>The Collector’s Encyclopedia of Nippon Porcelain, Fourth Series</cite> (Paducah, Ky., 1997)</>, wrote: 1997 };
+const key = bars(f);
+const A = Math.max(1870, Math.floor(((key[0]?.from ?? 1890) - 5) / 10) * 10), B = 2000;
+const pct = (y: number) => `${(((Math.min(Math.max(y, A), B) - A) / (B - A)) * 100).toFixed(2)}%`;
+const ticks: number[] = []; for (let y = Math.ceil(A / 10) * 10; y <= B; y += 10) ticks.push(y);
+const span = (b: { from: number; to: number; open: boolean; circa: boolean }) => `${b.circa ? 'c. ' : ''}${b.open ? `${b.from} on` : b.from === b.to ? `${b.from}` : `${b.from}–${b.to}`}`;
+const title = noritake ? 'Noritake Backstamps: Dating Noritake China by Its Mark | Heirloom' : 'Nippon Marks: Every Nippon-Era Backstamp, Pictured | Heirloom';
+const description = `${f.marks.length} ${noritake ? 'Noritake backstamps' : 'Nippon-era marks'}${f.pictured ? `, ${f.pictured} pictured` : ''}, with the years each was used where the book gives them${f.rules.length ? ' and the rules that date the rest' : ''}. From ${book.short}.`;
+const graph = [articleLd(path, `${f.title}`, description, '2026-11-27', { about: { '@type': 'Organization', name: f.title, location: f.where } })];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>{f.title}</h1>
+    <p class="rhead__lede">{noritake
+      ? 'The backstamps of the Noritake Company of Nagoya and the Morimura Brothers before it, as Van Patten pictures them, with the years the company and her research could give. Find the backstamp on your piece below.'
+      : 'The marks found on Japanese porcelain of the Nippon era, 1891 to 1921: makers’, decorators’ and importers’ marks, each with the book’s picture. Find the mark on your piece below.'}</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{f.marks.length}</strong> marks</li>
+      <li><strong class="num">{f.pictured}</strong> pictured</li>
+      {f.rules.length > 0 && <li><a href="#codes">Dating rules</a></li>}
+      <li><a href={`${JX_HUB}#rules`}>Nippon, Japan and Occupied Japan</a></li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="firm">
+    <h2 id="firm">{noritake ? 'The company' : 'The Nippon era'}</h2>
+    <ul class="st-entries">
+      {f.entries.map((e) => (
+        <li class="st-entry">
+          <h3>{e.name} {e.dates && <span class="y">{e.dates}</span>}</h3>
+          {e.place && <p>{e.place}</p>}
+          {e.wares && <p>{e.wares}</p>}
+          {e.history && <p>{e.history}</p>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {f.rules.length > 0 && (
+    <section class="st-section" aria-labelledby="codes">
+      <h2 id="codes">Dating rules</h2>
+      <ul class="st-entries">
+        {f.rules.map((r) => (
+          <li class="st-entry">
+            <h3>{r.what}</h3>
+            <p>{r.text}</p>
+            {r.page && <p class="st-credit">{r.page}</p>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {key.length > 1 && (
+    <section class="st-section" aria-labelledby="key">
+      <h2 id="key">The dated marks</h2>
+      <p>Each bar runs over the years the book gives for a mark{noritake ? '' : ', or the Nippon era where it gives none'}. A bar fading at its right end was still in use when the book was written ({book.wrote}). Tap a mark to read it in full.</p>
+      <div class="stkey" role="list">
+        <div class="stkey__axis" aria-hidden="true">
+          <span>Mark</span>
+          <div class="stkey__ticks">{ticks.map((t) => <span style={`left:${pct(t)}`}>{t}</span>)}</div>
+        </div>
+        {key.map((b) => (
+          <a class="stkey__row" href={`#${b.id}`} role="listitem" data-open={b.id}>
+            <span class="stkey__label">
+              {b.img ? <span class="stkey__thumb"><img src={thumbUrl(b.img)!} alt="" loading="lazy" decoding="async" /></span> : <span class="stkey__thumb stkey__thumb--none" aria-hidden="true"></span>}
+              <span class="stkey__name">{b.name}</span>
+            </span>
+            <span class="stkey__track" style={`--a:${pct(b.from)};--b:${pct(b.to)}`}>
+              <span class:list={['stkey__bar', { 'stkey__bar--open': b.open }]}></span>
+              <span class:list={['stkey__years', { 'stkey__years--end': b.from > B - 15 }]}>{span(b)}</span>
+            </span>
+          </a>
+        ))}
+        <p class="stkey__note">“c.” means about. Marks the book gives no date for are in the catalogue below, not on this line.</p>
+      </div>
+    </section>
+  )}
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="Words or letters in the mark: Royal, M, RC, a pattern name" label="Words or letters in the mark" />
+
+  <p class="st-credit">Marks, captions and dates from {book.cite}; the pictures of marks are reproduced from it, credited page by page.{noritake ? ' The rules for Occupied Japan and the N also rest on the Nippon and Occupied Japan books named on the hub.' : ' The Nippon years rest on Van Patten and on Kovels’ New Dictionary of Marks (1986). Marks found only on dolls are left out.'} Each mark rests on Van Patten alone until a second source is matched. <a href={JX_HUB}>All Japanese export marks</a></p>
+</Reference>

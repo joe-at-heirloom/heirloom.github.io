@@ -88,6 +88,8 @@ export function astroRoutes(): Set<string> {
   for (const f of dinnerFirms()) out.add(norm(f.page));
   // American art potteries, a page per pottery (pages/marks/american-art-pottery-marks/[firm].astro).
   for (const f of dinnerFirms('american-art-pottery')) out.add(norm(f.page));
+  // Japanese export porcelain, a page per maker or set of marks (pages/marks/japanese-export-porcelain-marks/[firm].astro).
+  for (const f of dinnerFirms('japanese-export')) out.add(norm(f.page));
   // Tiffany windows, a page per state (pages/marks/tiffany-windows/[place].astro).
   for (const p of tiffanyPlaces()) out.add(p.path);
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
@@ -142,7 +144,7 @@ function makerLinks(): RefLink[] {
 function staffsLinks(): RefLink[] {
   return staffsFirms().map((f) => ({ href: f.page, label: f.title, note: f.where }));
 }
-function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' = 'american-dinnerware'): RefLink[] {
+function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' = 'american-dinnerware'): RefLink[] {
   return dinnerFirms(set).map((f) => ({ href: f.page, label: f.title, note: f.where })).sort((a, b) => a.label.localeCompare(b.label));
 }
 function artistLinks(): RefLink[] {
@@ -307,8 +309,10 @@ function build(): Area[] {
           { href: '/marks/japanese-print-seals', label: 'Dating a print by its seals', note: 'Censor and date seals' },
         ] },
         { label: 'Export porcelain makers', links: [
-          { href: '/marks/nippon-marks', label: 'Nippon', away: 'pottery' },
-          { href: '/marks/noritake-marks', label: 'Noritake', away: 'pottery' },
+          { href: '/marks/japanese-export-porcelain-marks/', label: 'Japanese export porcelain marks', note: 'Every Nippon-era mark and Noritake backstamp Van Patten pictures' },
+          ...dinnerLinks('japanese-export'),
+          { href: '/marks/nippon-marks', label: 'Nippon, in brief', away: 'pottery' },
+          { href: '/marks/noritake-marks', label: 'Noritake, in brief', away: 'pottery' },
         ] },
         { label: 'Print artists’ signatures', links: [
           { href: '/marks/katsushika-hokusai-signature', label: 'Katsushika Hokusai', away: 'signatures' },

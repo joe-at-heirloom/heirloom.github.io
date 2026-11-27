@@ -11,11 +11,14 @@ import { media } from './media';
 
 export const HUB = '/marks/american-dinnerware-marks/';
 export const ART_HUB = '/marks/american-art-pottery-marks/';
-/** The two sets: their firm records are maker-<set>-<key>, their marks <prefix><key>-<no>. */
-export type SetId = 'american-dinnerware' | 'american-art-pottery';
-const SETS: Record<SetId, { hub: string; marks: string }> = {
-  'american-dinnerware': { hub: HUB, marks: 'amd-' },
-  'american-art-pottery': { hub: ART_HUB, marks: 'aap-' },
+export const JX_HUB = '/marks/japanese-export-porcelain-marks/';
+/** The sets: their firm records are maker-<set>-<key>, their marks <prefix><key>-<no>; `wrote` is the year
+ * the book was written, where a bar for a mark still in use ends; `book` names the book's number for a mark. */
+export type SetId = 'american-dinnerware' | 'american-art-pottery' | 'japanese-export';
+const SETS: Record<SetId, { hub: string; marks: string; wrote: number; book: string }> = {
+  'american-dinnerware': { hub: HUB, marks: 'amd-', wrote: 1988, book: 'Lehner' },
+  'american-art-pottery': { hub: ART_HUB, marks: 'aap-', wrote: 1988, book: 'Lehner' },
+  'japanese-export': { hub: JX_HUB, marks: 'jxp-', wrote: 1997, book: 'Van Patten' },
 };
 
 export type DatingRule = { what: string; text: string; page: string | null };
@@ -50,7 +53,7 @@ export function firms(set: SetId = 'american-dinnerware'): Firm[] {
   cache.set(set, out);
   return out;
 }
-const num = (r: Rec) => Number(String(r.attributes?.lehner_no ?? '').replace(/\D.*$/, '')) || 0;
+const num = (r: Rec) => Number(String(r.attributes?.lehner_no ?? r.attributes?.book_no ?? '').replace(/\D.*$/, '')) || 0;
 export const firmBySlug = (slug: string, set: SetId = 'american-dinnerware') => firms(set).find((f) => f.slug === slug) ?? null;
 /** A decorator's or artist's mark (art pottery), not the pottery's own. */
 export const isArtist = (r: Rec) => !!r.attributes?.artist;
@@ -82,6 +85,7 @@ export function markSheet(r: Rec, group: string): Sheet {
     ...(a.made_for ? [{ label: 'Made for', text: String(a.made_for) }] : []),
     ...s.facts.filter((x) => x.label !== 'Place'),
     ...(a.lehner_no ? [{ label: 'Lehner number', text: `${a.lehner_no} in the firm's entry` }] : []),
+    ...(a.book_no ? [{ label: `${a.book_name ?? 'Book'} number`, text: String(a.book_no) }] : []),
   ];
   s.keys = [s.keys, String(a.artist ?? '').toLowerCase(), String(a.reads ?? '').toLowerCase(), String(a.line ?? '').toLowerCase(), String(a.made_for ?? '').toLowerCase()].join(' ');
   return s;
@@ -93,7 +97,7 @@ export const WROTE = 1988;
 export function bars(f: Firm, artists = false) {
   const c = collection(); const img = new Map(c.images.map((i) => [i.id, i.file]));
   return f.marks.filter((r) => r.date_from != null && isArtist(r) === artists).map((r) => ({
-    id: r.id, name: r.name, from: r.date_from as number, to: r.date_to ?? (r.attributes?.and_later || r.date_to == null ? WROTE : r.date_from as number),
+    id: r.id, name: r.name, from: r.date_from as number, to: r.date_to ?? (r.attributes?.and_later || r.date_to == null ? SETS[f.set].wrote : r.date_from as number),
     open: r.date_to == null, circa: !!r.attributes?.circa, img: r.image_id ? img.get(r.image_id) ?? null : null,
   })).sort((a, b) => a.from - b.from || a.to - b.to);
 }
