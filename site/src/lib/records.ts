@@ -42,6 +42,8 @@ export type Sheet = {
   links?: { label: string; href: string }[];
   /** Where to see the mark when its pictures aren't free to copy (components/SeeAt.tsx). */
   seeAt?: unknown;
+  /** The record is a kind (a rug type), so its links show one of them: "See one at". */
+  seeAtOne?: boolean;
   group: string;
   /** Everything a reader might type to find it, lower-cased. */
   keys: string;

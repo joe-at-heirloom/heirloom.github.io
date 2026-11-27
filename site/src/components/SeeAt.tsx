@@ -37,14 +37,14 @@ function pick(links: unknown, pictured: boolean) {
   return { marks, items, objects, entries };
 }
 
-/** The links for a record; `pictured` when the record shows a picture of its own. */
-export function SeeAt({ links, pictured }: { links: unknown; pictured: boolean }) {
+/** The links for a record; `pictured` when the record shows a picture of its own; `one` when the record is a kind (a rug type), so each checked page shows one of them. */
+export function SeeAt({ links, pictured, one = false }: { links: unknown; pictured: boolean; one?: boolean }) {
   const { marks, items, objects, entries } = pick(links, pictured);
   if (!marks.length && !items.length && !objects.length && !entries.length) return null;
   const list = (ls: SeeAtLink[]) => <>{ls.map((l, i) => <>{i > 0 && '; '}<a href={l.url} rel="nofollow noopener">{l.holder}</a>{l.what && <span class="muted">: {clip(after(l.what), 140)}</span>}</>)}</>;
   return (
     <aside class="seeat">
-      {marks.length > 0 && <p>{pictured ? 'Also shown at ' : 'No picture here: the ones we found aren’t free to copy. See it at '}{list(marks)}.</p>}
+      {marks.length > 0 && <p>{pictured ? 'Also shown at ' : one ? 'No photo here: the ones we found aren’t free to copy. See one at ' : 'No picture here: the ones we found aren’t free to copy. See it at '}{list(marks)}.</p>}
       {items.length > 0 && <p>{marks.length ? 'Of this design: ' : 'No picture here. See one of this design at '}{list(items)}.</p>}
       {objects.length > 0 && (
         <>

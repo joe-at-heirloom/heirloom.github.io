@@ -142,7 +142,8 @@ export function rugSheet(t: RugType): Sheet {
     differ, caution: clean(t.cautions),
     pics,
     sources: ids.map((i) => { const s = SOURCES.get(i)!; return { citation: s.name, url: s.url, where: null }; }),
-    single: t.single, links,
+    // Where to see one when it has no photo: its record's links (attributes.see_at: the link round's checked museum pages, then the generic ones), shown by RecordSheet.
+    single: t.single, links, seeAtOne: true,
     keys: [...new Set(keys)].join(' '),
   };
 }
