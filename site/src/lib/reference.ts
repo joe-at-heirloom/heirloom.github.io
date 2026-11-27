@@ -92,6 +92,8 @@ export function astroRoutes(): Set<string> {
   for (const f of dinnerFirms('japanese-export')) out.add(norm(f.page));
   // German, Bohemian and Austrian porcelain, a page per group of marks (pages/marks/german-porcelain-marks/[firm].astro).
   for (const f of dinnerFirms('german-porcelain')) out.add(norm(f.page));
+  // British potters A to Z (Godden 1964, round 2), a page per letter (pages/marks/british-pottery-marks/[firm].astro).
+  for (const f of dinnerFirms('british-pottery')) out.add(norm(f.page));
   // Tiffany windows, a page per state (pages/marks/tiffany-windows/[place].astro).
   for (const p of tiffanyPlaces()) out.add(p.path);
   // The guide pages (pages/marks/[...guide].astro, src/content/guides/*.json).
@@ -146,7 +148,7 @@ function makerLinks(): RefLink[] {
 function staffsLinks(): RefLink[] {
   return staffsFirms().map((f) => ({ href: f.page, label: f.title, note: f.where }));
 }
-function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' | 'german-porcelain' = 'american-dinnerware'): RefLink[] {
+function dinnerLinks(set: 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' | 'german-porcelain' | 'british-pottery' = 'american-dinnerware'): RefLink[] {
   return dinnerFirms(set).map((f) => ({ href: f.page, label: f.title, note: f.where })).sort((a, b) => a.label.localeCompare(b.label));
 }
 function artistLinks(): RefLink[] {
@@ -237,6 +239,10 @@ function build(): Area[] {
           { href: '/marks/staffordshire-pottery-marks/', label: 'Staffordshire pottery marks', note: 'Dating an English backstamp, firm by firm' },
           { href: '/marks/british-registration-marks', label: 'British registration marks', note: 'Read an Rd number or a diamond mark' },
           ...staffsLinks(),
+        ], fold: true },
+        { label: 'British potters, A to Z', links: [
+          { href: '/marks/british-pottery-marks/', label: 'British pottery marks, A to Z', note: 'Potters by surname, from Godden' },
+          ...dinnerLinks('british-pottery'),
         ], fold: true },
         { label: 'American dinnerware and pottery', links: [
           { href: '/marks/american-dinnerware-marks/', label: 'American dinnerware marks', note: 'Dating an American backstamp, firm by firm' },

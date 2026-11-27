@@ -1,0 +1,37 @@
+---
+// /marks/british-pottery-marks/<letter>: the British potters whose surnames
+// begin with one letter, from Godden (1964), round 2 (lib/american-dinnerware.ts,
+// set british-pottery): each potter with its works, years and wares, and its
+// marks, each opening into its sheet.
+import Reference from '../../../layouts/Reference.astro';
+import Catalogue from '../../../components/ref/Catalogue.astro';
+import { firms, markGroups, BP_HUB, type Firm } from '../../../lib/american-dinnerware';
+import { articleLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+export function getStaticPaths() {
+  return firms('british-pottery').map((f) => ({ params: { firm: f.slug }, props: { f } }));
+}
+const { f } = Astro.props as { f: Firm };
+const path = f.page;
+const groups = markGroups(f);
+const potters = f.entries.filter((e) => e.marks.length).length;
+const title = `British Pottery Marks: Potters ${f.where} (${f.title}) | Heirloom`;
+const description = `${f.marks.length} marks of ${potters} British potters whose names begin with ${f.title}, from ${f.where}, each with its works and the years it was used. From Godden (1964).`;
+const graph = [articleLd(path, `British pottery marks: ${f.title}`, description, '2026-11-27')];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>British potters: {f.title}</h1>
+    <p class="rhead__lede">The marks of British potters whose surnames begin with {f.title}, {f.where}, as Godden recorded them. Open a mark for its potter, works and years.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{f.marks.length}</strong> marks</li>
+      <li><strong class="num">{potters}</strong> potters</li>
+      <li><a href={`${BP_HUB}#firms`}>Every letter</a></li>
+    </ul>
+  </header>
+
+  <Catalogue {groups} noun={['mark', 'marks']} placeholder="A potter, a town, a year" label="Potter, town or year" />
+
+  <p class="st-credit">Potters, marks and dates from Geoffrey A. Godden, <cite>Encyclopaedia of British Pottery and Porcelain Marks</cite> (London, 1964); the drawings are reproduced from it, credited page by page, and marks set in type are given as the words they read. Read from the book by machine and checked against its text; check the page cited if a date matters. The largest Staffordshire firms are on the <a href="/marks/staffordshire-pottery-marks/">Staffordshire pottery marks</a> page. <a href={BP_HUB}>British pottery marks, A to Z</a></p>
+</Reference>

@@ -13,14 +13,16 @@ export const HUB = '/marks/american-dinnerware-marks/';
 export const ART_HUB = '/marks/american-art-pottery-marks/';
 export const JX_HUB = '/marks/japanese-export-porcelain-marks/';
 export const GP_HUB = '/marks/german-porcelain-marks/';
+export const BP_HUB = '/marks/british-pottery-marks/';
 /** The sets: their firm records are maker-<set>-<key>, their marks <prefix><key>-<no>; `wrote` is the year
  * the book was written, where a bar for a mark still in use ends; `book` names the book's number for a mark. */
-export type SetId = 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' | 'german-porcelain';
+export type SetId = 'american-dinnerware' | 'american-art-pottery' | 'japanese-export' | 'german-porcelain' | 'british-pottery';
 const SETS: Record<SetId, { hub: string; marks: string; wrote: number; book: string }> = {
   'american-dinnerware': { hub: HUB, marks: 'amd-', wrote: 1988, book: 'Lehner' },
   'american-art-pottery': { hub: ART_HUB, marks: 'aap-', wrote: 1988, book: 'Lehner' },
   'japanese-export': { hub: JX_HUB, marks: 'jxp-', wrote: 1997, book: 'Van Patten' },
   'german-porcelain': { hub: GP_HUB, marks: 'gpm-', wrote: 1980, book: 'Röntgen' },
+  'british-pottery': { hub: BP_HUB, marks: 'gbm-', wrote: 1964, book: 'Godden' },
 };
 
 export type DatingRule = { what: string; text: string; page: string | null };

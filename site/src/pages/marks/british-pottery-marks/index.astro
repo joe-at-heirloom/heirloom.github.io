@@ -1,0 +1,92 @@
+---
+// /marks/british-pottery-marks: British potters' marks, A to Z, from Godden's
+// Encyclopaedia of British Pottery and Porcelain Marks (1964), round 2: every
+// firm the Staffordshire pages (round 1) do not already cover
+// (lib/american-dinnerware.ts, set british-pottery; the app's
+// marks/british-pottery.json, built by the website repo's
+// hallmark-sources/staffordshire/build_round2.py). The words that date an
+// English mark, Godden's own general rules, then a page per letter.
+import Reference from '../../../layouts/Reference.astro';
+import { firms, thumbUrl } from '../../../lib/american-dinnerware';
+import { articleLd, faqLd } from '../../../lib/site';
+import '../../../styles/staffordshire.css';
+
+const path = '/marks/british-pottery-marks/';
+const all = firms('british-pottery');
+const marks = all.reduce((n, f) => n + f.marks.length, 0);
+const pictured = all.reduce((n, f) => n + f.pictured, 0);
+const makers = all.reduce((n, f) => n + f.entries.filter((e) => e.marks.length).length, 0);
+const G11 = 'Godden, Encyclopaedia of British Pottery and Porcelain Marks (1964), p. 11';
+const G12 = 'Godden (1964), p. 12';
+const RULES: { mark: string; says: string; why: string; cite: string }[] = [
+  { mark: 'ENGLAND', says: 'Usually made in or after 1891', why: 'The American McKinley Tariff Act of 1891 required the country where a piece was made to be marked on it, and English potters added “England” from then. A few marks carried it earlier.', cite: `${G11}; Kovels’ New Dictionary of Marks (1986), p. 229` },
+  { mark: 'MADE IN ENGLAND', says: 'Twentieth century', why: 'Godden: “Made in England” signifies a 20th-century date. The Kovels note that English law required imported wares to say “Made in” and the country from 1887.', cite: `${G11}; Kovels (1986), p. 231` },
+  { mark: 'LTD., LD., LIMITED', says: 'After 1861, and generally from the 1880s', why: 'The word means a limited company. Godden dates it after 1860 (the Old Hall Earthenware Company of Hanley was the first Staffordshire pottery to become one, in March 1861) and finds it in marks generally from the 1880s; the Kovels say after 1861.', cite: `${G11}; Kovels (1986), p. 231` },
+  { mark: 'TRADE MARK', says: 'After 1862, usually after 1875', why: 'The words follow the Trade Mark Act of 1862 and normally denote a date after 1875.', cite: `${G11}; Kovels (1986), p. 233` },
+  { mark: 'RD. NO. and a number', says: 'After 1884', why: 'Registered design numbers replaced the diamond mark in 1884; a number above 360,000 means after 1900. The registration page reads the year from the number.', cite: `${G11}; Kovels (1986), p. 233` },
+  { mark: 'The diamond registration mark', says: 'Registered 1842 to 1883', why: 'The diamond’s letters and figures give the day the design was registered, which the registration page decodes. Godden puts its start at 1843.', cite: `Kovels (1986), p. 233; ${G12}` },
+  { mark: 'ROYAL in the name', says: 'Usually after about 1850', why: 'Royal Worcester (1862), Royal Crown Derby (1876) and Royal Doulton (1902) are examples of the word joining a firm’s title or trade name.', cite: `${G11}; Kovels (1986), p. 233` },
+  { mark: 'BONE CHINA, ENGLISH BONE CHINA', says: 'Twentieth century', why: 'Godden finds these words in marks only from the 20th century.', cite: G11 },
+  { mark: 'The royal arms', says: 'Nineteenth century or later; without the small central shield, after 1837', why: 'Printed marks with the royal arms are 19th-century or later. Clear arms that show the four quarters without the small shield in the centre date from after 1837.', cite: G11 },
+  { mark: 'A pattern name', says: 'After about 1810', why: 'A printed mark that includes the name of the pattern can be taken as later than 1810.', cite: G11 },
+  { mark: 'EST. or ESTD. and a year', says: 'Not the year the piece was made', why: 'A date in a printed mark is usually the year the firm claims it was founded, not when the piece was made.', cite: G12 },
+  { mark: 'Initials with a B, C, F, H, L or T', says: 'The town in the Staffordshire Potteries', why: 'Firms’ initials often stand in a triangle or line with the town’s letter under or after them: Burslem (B), Cobridge (C), Fenton (F), Hanley (H), Longton (L), Tunstall (T).', cite: G12 },
+];
+const faqs: [string, string][] = [
+  ['How do I find a British pottery mark?', '<p>Find the potter’s name or initials in the mark, then open the letter the surname begins with: Godden lists potters by surname, so “Thomas Godwin” is under G. Initials alone can belong to several firms in different years, so compare the picture and the dates.</p>'],
+  ['Why is my firm not here?', '<p>The largest Staffordshire firms (Adams, Wedgwood, Spode, Minton, Johnson Bros., Meakin and others) have pages of their own on the <a href="/marks/staffordshire-pottery-marks/">Staffordshire pottery marks</a> page. This part holds the rest of Godden’s book that could be read with confidence; marks whose reading was uncertain are held back until they are checked.</p>'],
+];
+const title = 'British Pottery Marks A to Z: English, Scottish and Welsh Potters | Heirloom';
+const description = `${marks.toLocaleString('en-US')} marks of ${makers.toLocaleString('en-US')} British potters, from Godden's Encyclopaedia of British Pottery and Porcelain Marks, each with the years it was used, and the words that date an English mark.`;
+const graph = [articleLd(path, 'British pottery marks, A to Z', description, '2026-11-27'), faqLd(path, faqs)];
+---
+<Reference {title} {description} {path} jsonld={graph}>
+  <header class="rhead">
+    <h1>British pottery marks, A to Z</h1>
+    <p class="rhead__lede">The marks of English, Scottish, Welsh and Irish potters, from country potteries and the Staffordshire firms to the studio potters of the 1950s, as Geoffrey Godden recorded them in 1964. Find your potter by surname; the mark’s years date the piece.</p>
+    <ul class="rhead__meta">
+      <li><strong class="num">{marks.toLocaleString('en-US')}</strong> marks</li>
+      <li><strong class="num">{makers.toLocaleString('en-US')}</strong> potters</li>
+      <li><strong class="num">{pictured.toLocaleString('en-US')}</strong> pictured</li>
+    </ul>
+  </header>
+
+  <section class="st-section" aria-labelledby="rules">
+    <h2 id="rules">What the words on the base tell you</h2>
+    <ul class="st-rules">
+      {RULES.map((r) => (
+        <li class="st-rule">
+          <span class="st-rule__mark">{r.mark}</span>
+          <span class="st-rule__says">{r.says}</span>
+          <p class="st-rule__why">{r.why}</p>
+          <p class="st-credit">{r.cite}</p>
+        </li>
+      ))}
+    </ul>
+    <p>Read a registration number or a diamond on the <a href="/marks/british-registration-marks">British registration marks</a> page.</p>
+  </section>
+
+  <section class="st-section st-groups" aria-labelledby="firms">
+    <h2 id="firms">Potters by surname</h2>
+    <ul class="st-firms">
+      {all.map((f) => (
+        <li>
+          <a class="st-firm" href={f.page}>
+            <span class="st-firm__pic">{f.thumb ? <img src={thumbUrl(f.thumb)!} alt="" loading="lazy" decoding="async" /> : null}</span>
+            <span>
+              <span class="st-firm__name">{f.title}</span>
+              <span class="st-firm__meta">{`${f.entries.filter((e) => e.marks.length).length} potters, ${f.marks.length} marks`}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="st-section" aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {faqs.map(([q, a]) => (<><h3>{q}</h3><Fragment set:html={a} /></>))}
+  </section>
+
+  <p class="st-credit">Potters, marks and dates from Geoffrey A. Godden, <cite>Encyclopaedia of British Pottery and Porcelain Marks</cite> (London, 1964); the drawings of marks are reproduced from it, credited page by page, and marks Godden sets in type are given as the words they read. The descriptions were read from the book by machine and kept only where the reading passed checks against the book’s own text; check the page cited if a date matters. Each mark rests on Godden alone until a second source is matched.</p>
+</Reference>
