@@ -279,6 +279,7 @@ function build(): Area[] {
           { href: '/marks/chinese/export-porcelain', label: 'Export porcelain', note: 'Rose Medallion, Canton, Nanking, Fitzhugh and their dates' },
         ] },
         { label: 'Other wares', links: [
+          { href: '/marks/chinese/yixing', label: 'Yixing', note: 'Teapot potters and their seals' },
           { href: '/marks/chinese/works-of-art', label: 'Works of art', note: 'Cloisonné, bronze, jade, snuff bottles and lacquer' },
         ] },
         { label: 'Silver', links: [
