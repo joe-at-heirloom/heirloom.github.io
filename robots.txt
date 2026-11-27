@@ -1,29 +1,41 @@
-# Search engines and AI assistants are welcome to read and cite this site.
-User-agent: *
+# heirloomapp.io
+#
+# The reference library (everything under /marks) is open to search engines'
+# indexing crawlers only. Every other crawler, AI crawlers and AI assistants
+# included, is asked to stay out of it. The rest of the site is open to all.
+
+# Search engines: the whole site.
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: YandexBot
+User-agent: Baiduspider
+User-agent: Yeti
+User-agent: Daumoa
 Allow: /
 
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
+# Using what search engines collect to train or ground AI: not the reference library.
 User-agent: Google-Extended
+User-agent: Applebot-Extended
+Disallow: /marks
+
+# AI crawlers and assistants: welcome on the site, not in the reference library.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Disallow: /marks
 Allow: /
 
-User-agent: Applebot-Extended
+# Every other bot: the same.
+User-agent: *
+Disallow: /marks
 Allow: /
 
 Sitemap: https://heirloomapp.io/sitemap.xml
