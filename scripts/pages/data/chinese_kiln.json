@@ -300,6 +300,18 @@
    "name": "明代宣德御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（Imperial Porcelains from the Reign of Xuande in the Ming Dynasty: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and the Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编, 故宫出版社, 2015, ISBN 978-7-5134-0748-9",
    "url": null,
    "notes": "Read from scans Joe supplied (OCR); facts cite printed pages. Same institution as the Palace Museum web pages."
+  },
+  {
+   "id": "CAT-HZ1",
+   "name": "明代弘治正德御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（上）（Imperial Porcelains from the Reign of Hongzhi and Zhengde in the Ming Dynasty, Vol. I: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编, 故宫出版社, 2017, ISBN 978-7-5134-1019-9",
+   "url": null,
+   "notes": "Read from scans Joe supplied (OCR); facts cite printed pages. Same institution as the Palace Museum web pages."
+  },
+  {
+   "id": "CAT-HZ2",
+   "name": "明代弘治正德御窑瓷器：景德镇御窑遗址出土与故宫博物院藏传世瓷器对比（下）（Imperial Porcelains from the Reign of Hongzhi and Zhengde in the Ming Dynasty, Vol. II: A Comparison of Porcelains from the Imperial Kiln Site at Jingdezhen and Imperial Collection of the Palace Museum）, 故宫博物院、景德镇市陶瓷考古研究所 编, 故宫出版社, 2017, ISBN 978-7-5134-1019-9",
+   "url": null,
+   "notes": "Read from scans Joe supplied (OCR); facts cite printed pages. Same institution as the Palace Museum web pages."
   }
  ],
  "catalogues": [
@@ -644,11 +656,13 @@
    "source_ids": [
     "S32",
     "S27",
-    "CAT-HY"
+    "CAT-HY",
+    "CAT-HZ1"
    ],
    "single_source": false,
    "pages": {
-    "CAT-HY": 302
+    "CAT-HY": 302,
+    "CAT-HZ1": 166
    }
   },
   {
@@ -819,11 +833,13 @@
    "source_ids": [
     "S32",
     "S25",
-    "CAT-XD"
+    "CAT-XD",
+    "CAT-HZ1"
    ],
    "single_source": false,
    "pages": {
-    "CAT-XD": 256
+    "CAT-XD": 256,
+    "CAT-HZ1": 166
    }
   },
   {
@@ -1132,10 +1148,14 @@
    "quote_zh": "[S32] 一是均为“大明成化年制”六字款（图十八，1、2），不见“成化年制”四字款； ／ [S32] 二是新创一种六字双行排列外围双方框的款式（图十九，1、2、3），为以前所未见； ／ [S26] [1]图1 青花双框双行“大明成化年製”六字楷书款御窑出土的成化官款多以青花书双圈或双框“大明成化年製”六字楷书款，其款识大多在器底，少量横书于口沿下方。",
    "source_ids": [
     "S32",
-    "S26"
+    "S26",
+    "CAT-HZ2"
    ],
    "single_source": false,
-   "note": "'No four-character mark' rests on S32 only; double-frame use at the site has two sources."
+   "note": "'No four-character mark' rests on S32 only; double-frame use at the site has two sources.",
+   "pages": {
+    "CAT-HZ2": 710
+   }
   },
   {
    "id": "F044",
@@ -1275,9 +1295,15 @@
    "source_ids": [
     "S14",
     "S06",
-    "S29"
+    "S29",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HZ1": 334,
+    "CAT-HZ2": 708
+   }
   },
   {
    "id": "F056",
@@ -1287,9 +1313,15 @@
    "quote_zh": "[S14] 其白釉瓷器色白中略泛灰或青，玉质感很强。 ／ [S14] 弘冶朝浇黄釉瓷器不但产置大，而且质置高，堪称明、清两代浇黄釉瓷器之冠，深茄皮紫釉瓷器则为弘治朝首创。 ／ [S03] 尤其是浇黄釉瓷器，温润如鸡油，色泽娇嫩，博得“娇黄”之美称。",
    "source_ids": [
     "S14",
-    "S03"
+    "S03",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HZ1": 270,
+    "CAT-HZ2": 710
+   }
   },
   {
    "id": "F057",
@@ -1298,9 +1330,15 @@
    "text": "Hongzhi blue-and-white continues the Chenghua style in finer, more delicate drawing, with soft pale blue from domestic Pingdeng cobalt (Leping, Jiangxi), which is low in iron and high in manganese. Doucai was no longer made under Hongzhi.",
    "quote_zh": "[S14] 弘治朝御窑青花瓷继承了成化时期的特点，只是纹饰更加纤巧细致、舒展流畅，所用青料仍为产于今江西乐平县的“平等青”，这种颜料中氧化铁含量低，氧化锰含量高，致使图案纹饰呈现出柔和、淡雅、清爽的蓝色。 ／ [S14] 成化朝盛极一时的斗彩瓷器在弘治朝已停止烧造。",
    "source_ids": [
-    "S14"
+    "S14",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HZ1": 32,
+    "CAT-HZ2": 704
+   }
   },
   {
    "id": "F058",
@@ -1310,10 +1348,16 @@
    "quote_zh": "[S03] 目前统计弘治朝景德镇御器厂所烧造瓷器品种大约有16 种，几乎只有前朝成化所烧造约29 个品种的一半。 ／ [S14] 目前统计弘治朝景德镇御器厂所烧造瓷器品种大约有16个，几乎只有前朝成化所烧造约29个品种的一半。",
    "source_ids": [
     "S03",
-    "S14"
+    "S14",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
    "single_source": true,
-   "note": "S14 reprints the Palace text; effectively one source."
+   "note": "S14 reprints the Palace text; effectively one source.",
+   "pages": {
+    "CAT-HZ1": 126,
+    "CAT-HZ2": 710
+   }
   },
   {
    "id": "F059",
@@ -1324,9 +1368,13 @@
    "source_ids": [
     "S29",
     "S21",
-    "S14"
+    "S14",
+    "CAT-HZ2"
    ],
-   "single_source": false
+   "single_source": false,
+   "pages": {
+    "CAT-HZ2": 474
+   }
   },
   {
    "id": "F060",
@@ -1335,10 +1383,16 @@
    "text": "Zhengde imperial production includes pieces with an apocryphal 大明宣德年制 mark, for example a wucai fish-and-water-weed dish with a Xuande mark shown as Zhengde.",
    "quote_zh": "[S14] 所署年款既有青花楷体 “大明正德年制”六字款，也有“正德年制”四字款和“大明宣德年制”仿款，更有稀见的八思巴文款。 ／ [S14] 仿宣德款五彩鱼藻纹盘",
    "source_ids": [
-    "S14"
+    "S14",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
-   "single_source": true,
-   "note": "Single source (Palace show text as reported by The Paper). Not stated to be a kiln-site find."
+   "single_source": false,
+   "note": "Single source (Palace show text as reported by The Paper). Not stated to be a kiln-site find.",
+   "pages": {
+    "CAT-HZ1": 14,
+    "CAT-HZ2": 496
+   }
   },
   {
    "id": "F061",
@@ -1349,10 +1403,16 @@
    "source_ids": [
     "S03",
     "S29",
-    "S06"
+    "S06",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
    "single_source": false,
-   "note": "Reading conflict: The Paper (S14) glosses the 'Phags-pa mark as 至正年制; the excavators (S29) read it as 正德年制. Treat S14's gloss as an error unless confirmed."
+   "note": "Reading conflict: The Paper (S14) glosses the 'Phags-pa mark as 至正年制; the excavators (S29) read it as 正德年制. Treat S14's gloss as an error unless confirmed.",
+   "pages": {
+    "CAT-HZ1": 7,
+    "CAT-HZ2": 360
+   }
   },
   {
    "id": "F062",
@@ -1361,9 +1421,13 @@
    "text": "A new mark type appears in late-Zhengde strata: underglaze-cobalt characters inside an overglaze iron-red double ring in place of the usual cobalt ring, a combined over- and underglaze mark found on doucai.",
    "quote_zh": "[S29] 另还出现了釉上釉下结合的款识[31]，常见的青花双圈被红彩双圈所取代（图一四），形成了釉上双圈和釉下文字的复合彩款识；",
    "source_ids": [
-    "S29"
+    "S29",
+    "CAT-HZ2"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HZ2": 551
+   }
   },
   {
    "id": "F063",
@@ -1373,10 +1437,14 @@
    "quote_zh": "[S29] 本次发掘的一个重要收获是通过地层的叠压关系，将正德时期分为前后两段。 ／ [S08] 2014年，在御窑厂西侧、龙珠阁以南的发掘区域，出土了明代正德釉上彩瓷器半成品，包括花盆，渣斗，成摞的碗、盘等。",
    "source_ids": [
     "S29",
-    "S08"
+    "S08",
+    "CAT-HZ2"
    ],
    "single_source": false,
-   "note": "Early/late split is S29 only; the semi-finished overglaze finds have two sources (S08, S21)."
+   "note": "Early/late split is S29 only; the semi-finished overglaze finds have two sources (S08, S21).",
+   "pages": {
+    "CAT-HZ2": 712
+   }
   },
   {
    "id": "F064",
@@ -1386,10 +1454,16 @@
    "quote_zh": "[S03] 正德朝是明代景德镇御窑瓷器发展史上一个承上启下的转折点，主要表现在逐渐摆脱了成化、弘治朝御窑瓷器胎体轻薄、造型较少、装饰疏朗等特点，器物胎体趋于厚重、造型逐渐增多、装饰偏向繁缛等。 ／ [S14] 正德朝是明代景德镇御窑瓷器发展史上一个承上启下的转折点，主要表现在逐渐摆脱了成化、弘治朝御窑瓷器胎体轻薄、造型较少、装饰疏朗等特点，而变得器物胎体趋于厚重、造型逐渐增多、装饰偏向繁缛等。",
    "source_ids": [
     "S03",
-    "S14"
+    "S14",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
    "single_source": true,
-   "note": "S14 reprints the Palace text; effectively one source."
+   "note": "S14 reprints the Palace text; effectively one source.",
+   "pages": {
+    "CAT-HZ1": 7,
+    "CAT-HZ2": 703
+   }
   },
   {
    "id": "F065",
@@ -1398,9 +1472,15 @@
    "text": "The most distinctive Zhengde decoration is the heavy use of Arabic and Persian script.",
    "quote_zh": "[S03] 正德御窑瓷器在装饰上的最显著特点是大量使用阿拉伯文、波斯文作为装饰。",
    "source_ids": [
-    "S03"
+    "S03",
+    "CAT-HZ1",
+    "CAT-HZ2"
    ],
-   "single_source": true
+   "single_source": true,
+   "pages": {
+    "CAT-HZ1": 7,
+    "CAT-HZ2": 705
+   }
   },
   {
    "id": "F066",
@@ -1588,9 +1668,13 @@
    "text": "A traditional summary of Ming mark character, quoted as broadly true to the objects: 'Yongle marks few, Xuande marks many, Chenghua marks plump, Hongzhi marks elegant, Zhengde marks respectful, Jiajing marks mixed.'",
    "quote_zh": "[S32] 而且随着时代发展，明代各朝御窑瓷器上所署年款也呈现各自特色，前人有“永乐款少，宣德款多，成化款肥，弘治款秀，正德款恭，嘉靖款杂”[1]的评价，从实物看，基本符合事实。",
    "source_ids": [
-    "S32"
+    "S32",
+    "CAT-HZ2"
    ],
-   "single_source": true
+   "single_source": false,
+   "pages": {
+    "CAT-HZ2": 703
+   }
   },
   {
    "id": "C001",
@@ -2359,6 +2443,468 @@
    ],
    "pages": {
     "CAT-XD": 98
+   },
+   "single_source": true
+  },
+  {
+   "id": "C056",
+   "reign": "Hongzhi",
+   "topic": "mark",
+   "text": "On genuine Hongzhi marks the three-dot water radical of 治 is in most cases set lower than the 台 on its right. On later copies the radical and 台 are roughly level.",
+   "quote_zh": "弘治御窑瓷器上所署年款，“治”字左边三点水绝大多数均低于右边“台”字，后仿者则三点水和“台”字基本齐平。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 42
+   },
+   "single_source": true
+  },
+  {
+   "id": "C057",
+   "reign": "Hongzhi",
+   "topic": "mark",
+   "text": "Dated pieces used as period standards, all from private (not imperial) kilns: a blue-and-white bowl inscribed 弘治三年 (1490), a pine-and-crane bowl marked 壬子年造 (Hongzhi 5, 1492) in a double square, blue-and-white from a Hongzhi 11 (1498) tomb in Chengdu, and the David Foundation vase dated Hongzhi 9 (1496), whose coarse decoration and dark blue show what some Hongzhi private-kiln wares look like.",
+   "quote_zh": "在弘治民窑瓷器中，发现有署“弘治三年”款的青花缠枝莲纹碗和外底画青花双方栏内署“壬子年造”四字双行楷书款的青花松鹤碗，“壬子年”即弘治五年。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 12
+   },
+   "single_source": true
+  },
+  {
+   "id": "C058",
+   "reign": "Hongzhi",
+   "topic": "mark",
+   "text": "A sancai Buddha-image base in the Palace Museum carries an incised regular-script inscription dated 弘治六年 (1493). The entry notes the Hongzhi imperial factory was known for blue-and-white and yellow wares and that sancai is rare, so the dated piece is an important reference.",
+   "quote_zh": "座中部刻有楷体铭文“弘治六年岁在癸丑中秋月吉日喜拾（捨）专保男许弘清寿命延长福有所归者”。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 172
+   },
+   "single_source": true
+  },
+  {
+   "id": "C059",
+   "reign": "Hongzhi",
+   "topic": "excavation",
+   "text": "In the 上 volume the Hongzhi kiln-site pieces come from earlier digs at the imperial kiln site: 1987 (1), 2000 (7) and 2004 (9), plus one with no year. A further 28 pieces were handed over by the Jingdezhen Public Security Bureau. None of the Hongzhi pieces is listed as coming from the 2014 excavation.",
+   "quote_zh": "2000年江西省景德镇市御窑遗址出土，景德镇御窑博物馆藏",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 40
+   },
+   "single_source": true
+  },
+  {
+   "id": "C060",
+   "reign": "Hongzhi",
+   "topic": "body",
+   "text": "Geng's Hongzhi points: potting is neat and delicate, as under Chenghua. Dishes show a sagging base: the whole base sinks, so the ring where the foot supports it shows slightly inside. This began under Chenghua but is most marked under Hongzhi.",
+   "quote_zh": "弘治瓷器胎体处理规整纤巧，与成化时期相同。……器形更加规整、柔美。盘有塌底现象。由于器底整个收缩下凹，致使器里圈足承托处微显凸露；此特点虽在成化时已露端倪，但弘治时最为显著。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 13
+   },
+   "single_source": true
+  },
+  {
+   "id": "C061",
+   "reign": "Hongzhi",
+   "topic": "body",
+   "text": "Geng's Hongzhi points on the foot: smooth and rounded, the foot wall slightly lower than Chenghua's, the inner wall vertical and of varying depth. Imperial blue-and-white dishes and bowls, like Chenghua ones, have a double cobalt line around the outside of the foot.",
+   "quote_zh": "圈足处理光滑圆润，足墙比成化时略矮，内墙直立，深浅不一。御窑青花盘、碗之类和成化时基本一样，亦有“圈足外画青花双弦线”的特征。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 13
+   },
+   "single_source": true
+  },
+  {
+   "id": "C062",
+   "reign": "Hongzhi",
+   "topic": "body",
+   "text": "A sagging base is a period feature of Hongzhi dishes; later copies usually have flatter bases.",
+   "quote_zh": "此盘底部下塌，颇具时代特征，而后仿者底部往往较平坦。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 88
+   },
+   "single_source": true
+  },
+  {
+   "id": "C063",
+   "reign": "Hongzhi",
+   "topic": "forms",
+   "text": "A wide-mouthed ritual zun with short neck, sloping shoulders and tapering body, with animal-head, strap or no handles, was created at the imperial factory under Hongzhi. It comes in poured yellow (often with gilt string lines), sacrificial blue (with a gilt ox) and aubergine, and is unmarked with a biscuit base. The blue ones were for the Altar of Heaven and the yellow for the Altar of Earth.",
+   "quote_zh": "弘治朝景德镇御器厂创烧的这种尊，清宫旧藏较多，属于高等级的明代宫廷祭祀用器。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 204
+   },
+   "single_source": true
+  },
+  {
+   "id": "C064",
+   "reign": "Hongzhi",
+   "topic": "decoration",
+   "text": "Gilt string lines or gilt oxen on large yellow, blue and aubergine pieces (zun, jue, dishes) are a typical Hongzhi imperial decoration. Large unmarked yellow broad-rim dishes with gilt lines and biscuit bases are among the palace-held Hongzhi pieces.",
+   "quote_zh": "弘治朝御窑瓷器常在黄釉、蓝釉、茄皮紫釉大器上描画金彩弦线或绘牛纹，包括尊、爵、盘等，尤其以黄釉饰金彩更显富丽堂皇。这种折沿盘形体较大，在黄釉上以金彩描画弦线，属于弘治朝御窑瓷器上典型的装饰手法。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 312
+   },
+   "single_source": true
+  },
+  {
+   "id": "C065",
+   "reign": "Hongzhi",
+   "topic": "decoration",
+   "text": "The lotus-pond dragon motif on Ming imperial porcelain first appears under Xuande and is popular under Hongzhi. A Palace Museum example has fine, freely drawn dragon lines and soft pale blue, typical of the period.",
+   "quote_zh": "明代景德镇御窑瓷器上的莲池游龙纹始见于宣德朝御窑瓷器，流行于弘治朝御窑瓷器。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 50
+   },
+   "single_source": true
+  },
+  {
+   "id": "C066",
+   "reign": "Hongzhi",
+   "topic": "apocryphal",
+   "text": "Later copies with Hongzhi marks in the catalogue: one Wanli blue-and-white bowl with a sloppily written 大明弘治年制, and several Kangxi pieces (Jingdezhen private-kiln blue-and-white, white incised or moulded dragon bowls and dishes, green-dragon dishes, poured-yellow bowls, a celadon olive vase), plus a Yongzheng iron-red gilt dish. Some Kangxi copies have the mark incised rather than in cobalt.",
+   "quote_zh": "外底署青花楷体“大明弘治年制”六字双行仿款，字体潦草。从各方面特征看，这是一件万历时期烧造的仿弘治年款青花瓷。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 328
+   },
+   "single_source": true
+  },
+  {
+   "id": "C067",
+   "reign": "Hongzhi",
+   "topic": "apocryphal",
+   "text": "Some Palace Museum 'Hongzhi' enamelled dishes are genuine Hongzhi white-glazed blanks with a genuine mark, enamelled in the Republican period: yellow dragons, iron-red dragons and red-and-green fish. They give themselves away by overbright colour and stiff, lifeless dragons, unlike Hongzhi dragons.",
+   "quote_zh": "此盘做工精致，黄彩明艳，从色彩与画法上看，黄彩过于鲜艳、龙纹描画不够生动，缺乏力度，不具有明弘治朝御窑瓷上龙纹特征。结合胎、釉特征分析，此盘应是民国时期利用弘治白釉盘加绘黄彩而成",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 164
+   },
+   "single_source": true
+  },
+  {
+   "id": "C068",
+   "reign": "Hongzhi",
+   "topic": "apocryphal",
+   "text": "Copies of Hongzhi imperial ware are either full copies of shape, decoration and mark, or pieces in their own period's style that only borrow the Hongzhi mark. Copying ran from the late Ming into the Qing. Under Kangxi and Yongzheng both the imperial and private kilns at Jingdezhen copied blue-and-white, green on white, white and poured yellow, and a few copies are good enough to pass as genuine.",
+   "quote_zh": "后仿弘治朝御窑瓷器一般系指造型、纹饰、年款等均模仿原作一类仿品。除此之外，还有一类只署弘治年款，但造型和纹饰则为当朝风格的瓷器，显示出后人对弘治朝御窑瓷器的推崇。……所见仿弘治朝御窑瓷器品种有青花、白地绿彩、白釉、浇黄釉瓷等。个别仿品水平较高，几能乱真。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 326
+   },
+   "single_source": true
+  },
+  {
+   "id": "C069",
+   "reign": "Zhengde",
+   "topic": "body",
+   "text": "Geng's Zhengde points on the foot: the exposed foot is usually trimmed flat, sometimes rounded. Shallow feet turn inward, with chatter marks and a sagging base. Some base centres rise in a nipple shape, like early-Ming 'navel' bases, especially on private-kiln wares. Feet of round wares often keep cut angles or scraping marks.",
+   "quote_zh": "器足露胎处一般修切平齐，也时有滚圆状出现；较浅的器足多向里收敛，有跳刀旋痕和塌底现象；有的足心似乳状突起，与明初的肚脐状底足相似，民窑器尤其如此。圆器足脊多留有切削的棱角或刮削痕。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 14
+   },
+   "single_source": true
+  },
+  {
+   "id": "C070",
+   "reign": "Zhengde",
+   "topic": "glaze",
+   "text": "Geng's Zhengde points: the glaze is white with a bluish flash, and the glaze on the base is typically bluish-white or bright bluish.",
+   "quote_zh": "釉面有白中闪青的特点。器底釉面呈典型的青白色或亮青色。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 14
+   },
+   "single_source": true
+  },
+  {
+   "id": "C071",
+   "reign": "Zhengde",
+   "topic": "glaze",
+   "text": "Geng: Zhengde blue-and-white has the clear elegance of Chenghua–Hongzhi but also a grey, blurred tone with 'iron-rust spots', like Xuande private-kiln ware. Later in the reign the purplish tone of Jiajing appears. Overall, Zhengde colours stay pale like Chenghua–Hongzhi but move slowly towards the heavy, intense Jiajing–Wanli palette.",
+   "quote_zh": "正德青花器，既有成化、弘治时期的清雅风格，又有类似宣德民窑的那种灰暗晕散色调和“铁锈斑”，后期还出现嘉靖时那种泛紫的色泽",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 14
+   },
+   "single_source": true
+  },
+  {
+   "id": "C072",
+   "reign": "Zhengde",
+   "topic": "decoration",
+   "text": "Geng: blue-and-white and yellow wares are the most common Zhengde types. Zhengde, like Hongzhi, used yellow wares for the court. White-ground wucai and blue-and-white with enamels became popular, laying the ground for Jiajing–Wanli wucai.",
+   "quote_zh": "常见器物以青花、黄釉品种为多。正德时与弘治时一样，专门以黄釉器作宫廷用品并影响到以后几朝的典制。同时，白釉五彩和青花加彩器也大为盛行，为著名的嘉靖、万历五彩品种的发展奠定了基础。",
+   "source_ids": [
+    "CAT-HZ1"
+   ],
+   "pages": {
+    "CAT-HZ1": 14
+   },
+   "single_source": true
+  },
+  {
+   "id": "C073",
+   "reign": "Hongzhi",
+   "topic": "mark",
+   "text": "Lü's reading of a genuine Hongzhi mark: 弘 and 治 carry the period character. In 弘 the right-hand 厶 is clearly shorter than the left-hand 弓 and sits high. In 治 the water radical sits clearly lower than 台, and the last horizontal stroke of 口 usually overshoots on the right.",
+   "quote_zh": "仔细观察“大明弘治年制”六字，以“弘”字和“治”字的写法最具时代特征，即“弘”字右边的“厶”明显比左边的“弓”短，而且写的位置靠上；“治”字左边的“氵”一般都明显低于左边的“台”字，而且“口”字最后一笔“横”一般都右出头",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 699
+   },
+   "single_source": true
+  },
+  {
+   "id": "C074",
+   "reign": "Hongzhi",
+   "topic": "excavation",
+   "text": "Jiang: in decades of work at the factory site few Hongzhi–Zhengde official deposits have been found, which fits the texts. There are few large Hongzhi–Zhengde deposits, the material is usually mixed with other periods' official wares, and besides scattered finds there have been only four important discoveries.",
+   "quote_zh": "根据近几十年来御器厂遗址考古调查与清理发掘情况看，弘治、正德官窑遗存发现不多，似与文献记载吻合。从考古发掘资料可知，其弘治、正德官窑遗物大规模的堆积比较少，且遗物一般多与其他时代官窑遗物堆积在一起，数量和品种不多。据统计，有关弘治、正德官窑瓷器出土遗物，除个别零星出土有几件之外，比较重要的发现只有四次。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 708
+   },
+   "single_source": true
+  },
+  {
+   "id": "C075",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "Sun Yingzhou's mnemonic for the six-character 大明正德年制, quoted by Lü. 大: short horizontal, head not high. 明: tops of 日 and 月 level, slight waist. 正: wider at the bottom, three horizontals parallel. 德: 心 wide, 十 small. 年: top horizontal the shortest. 制 (製): few of the 衣 strokes pass under the 刂 above.",
+   "quote_zh": "大字横短头非高，明字日月平微腰。正字底丰三横平，德字心宽十字小。年字横画上最短，制字衣横少越刀。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 704
+   },
+   "single_source": true
+  },
+  {
+   "id": "C076",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "Lü: some Zhengde wares carry a cobalt four-character 'Phags-pa mark in two lines within a cobalt double ring on the base, unique in Ming imperial porcelain. He translates the four 'Phags-pa characters as 至正年制 and ties the mark to the emperor's devotion to Tibetan Buddhism. (This disagrees with another source: see F061.)",
+   "quote_zh": "正德御窑瓷器有在外底署青花四字双行八思巴文款、外围青花双圈者（图32），这在明代御窑瓷器中堪称独一无二。四个八思巴文字译成汉语是“至正年制”，这与正德皇帝崇信藏传佛教有密切关系。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 705
+   },
+   "single_source": true
+  },
+  {
+   "id": "C077",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "Jiang: 'Phags-pa marks appear mainly on the bases of bowls and dishes and read 至正年制, a mark type found in Ming official ware only under Zhengde. Among kiln-site Zhengde blue-and-white dragon bowls and dishes of the same form, some carry 大明正德年制 in regular script and others the 'Phags-pa 至正年制. Jiang suggests the use of 'Phags-pa may relate to the emperor's 'battle of Yingzhou'. (This disagrees with another source: see F061.)",
+   "quote_zh": "八思巴文主要出现在碗、盘底部，为八思巴文“至正年制”款，这类款式明官窑瓷器中只见于正德官窑器中。御窑厂遗址出土的正德瓷器中，如青花龙纹碗、盘，在相同器形的器物中，有楷书“大明正德年制”款，也有书八思巴文“至正年制”款。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 710
+   },
+   "single_source": true
+  },
+  {
+   "id": "C078",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "Catalogue entry for a 1987 kiln-site 'Phags-pa-marked sea-dragon bowl: 'Phags-pa script was created by 'Phags-pa, Imperial Preceptor to Khubilai, and fell out of use after the Yuan. Ming emperors kept close ties with Mongol and Tibetan clergy, but a reign mark written in 'Phags-pa is found only on Zhengde imperial porcelain. (This disagrees with another source: see F061.)",
+   "quote_zh": "外底署青花八思巴文四字双行外围双圈款，汉译为“至正年制”。……但以“八思巴文”书年号款仅见于正德朝御窑瓷器上。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 430
+   },
+   "single_source": true
+  },
+  {
+   "id": "C079",
+   "reign": "Zhengde",
+   "topic": "excavation",
+   "text": "Documentary chronology (Lü): on accession in Hongzhi 18 (1505) the Zhengde emperor halted the factory for two years, but production resumed in Zhengde 1 (1506). A halt was granted in Zhengde 6 (1511) because of disasters in Jiangxi. In Zhengde 11 (1516) the emperor sent a supervisor despite objections, and again in Zhengde 15 (1520). Lü concludes that Zhengde imperial porcelain was made mainly between Zhengde 11 and 16 (1516–1521).",
+   "quote_zh": "上述情况表明，正德皇帝对御用瓷器烧造也很感兴趣，而且正德朝御用瓷器应主要烧造于正德十一年至十六年。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 705
+   },
+   "single_source": true
+  },
+  {
+   "id": "C080",
+   "reign": "Hongzhi",
+   "topic": "decoration",
+   "text": "Jiang: the most prominent Hongzhi decoration is green on biscuit. Incised green dragon dishes are common among Hongzhi kiln-site finds. The glaze is scraped off to leave a biscuit dragon, details are incised, and after high firing the dragon is filled with green and refired low. Jiang says green on biscuit first appears under Hongzhi, is popular in Hongzhi–Zhengde, and is rare on later official ware. Lü (p.697) instead dates the white-ground incised green-dragon bowl and dish to Chenghua and rates Hongzhi examples the best.",
+   "quote_zh": "其中最为突出的是弘治绿彩装饰，在整个弘治官窑出土瓷器中，绿彩锥拱龙纹盘较多，该类装饰较为特殊。……在涩胎上使用绿彩装饰首见于弘治，流行于弘治、正德间，之后的官窑瓷器鲜见。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 710
+   },
+   "single_source": true
+  },
+  {
+   "id": "C081",
+   "reign": "Hongzhi",
+   "topic": "decoration",
+   "text": "Lü on Hongzhi green-on-white: the glaze inside the dragon outline is scraped away, details are incised with an iron point, the piece is high-fired, and green is filled in at a low firing. The unfilled biscuit dragons fired a flint-red colour that was liked, so some were deliberately left unfilled as a type of their own: 'white-glazed biscuit incised cloud-dragon' bowls and dishes. Ming green-on-white is best under Hongzhi.",
+   "quote_zh": "有时人们感觉其半成品露胎云龙纹处泛“火石红”色亦颇显雅致，遂故意不施绿彩，而是将其作为一个品种保留下来，称之为“白釉露胎锥拱云龙纹碗”或“白釉露胎锥拱云龙纹盘”。明代白地绿彩瓷器以弘治朝产品质量最好，受到的评价亦最高。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 697
+   },
+   "single_source": true
+  },
+  {
+   "id": "C082",
+   "reign": "Hongzhi",
+   "topic": "forms",
+   "text": "Lü: the wide-mouthed zun with animal-mask, strap or no handles was first created under Hongzhi as a ritual vessel, in poured yellow, sacrificial blue and aubergine. An unmarked yellow zun is attributed to Hongzhi because its 'chicken-fat' yellow matches that of yellow dishes and bowls with the Hongzhi mark.",
+   "quote_zh": "此尊虽然未署年款，但其如鸡油般娇嫩的黄釉与署有弘治年款的黄釉盘、碗上的黄釉一致，惟弘治朝莫属。按照明代祭祀制度，浇黄釉瓷器可被用作祭祀地坛之祭器。尤其这种造型的尊，系弘治朝首创，其肩部有置牺耳者、有置条带形耳者，亦有不置耳者。除浇黄釉品种外，尚见有祭蓝釉（图8）、茄皮紫釉品种。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 698
+   },
+   "single_source": true
+  },
+  {
+   "id": "C083",
+   "reign": "Zhengde",
+   "topic": "decoration",
+   "text": "Jiang: a yellow-ground green-dragon dish from the site, with iron red filled on the yellow ground, is the rare 'red on yellow' (黄上红) type, a pun on 'blessing the emperor', used in the palace at New Year's Eve. A kiln-site blue-and-white ruyi-head candlestick matches the Palace Museum's Arabic candlestick in form, and its blank areas suggest it was meant for further overglaze decoration.",
+   "quote_zh": "出土的正德瓷器中以黄地绿龙纹盘罕见（图12），该盘黄地上填以矾红，即所谓的“黄上红”器，黄与皇、红与洪谐音，宫里在除夕使用时，有皇上洪福齐天之意。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 710
+   },
+   "single_source": true
+  },
+  {
+   "id": "C084",
+   "reign": "Zhengde",
+   "topic": "glaze",
+   "text": "Zhengde underglaze-red wares are very rare. The known example is a three-fish bowl with fish in copper red, its colour not successful.",
+   "quote_zh": "正德御窑釉里红瓷器非常罕见，所见使用鲜红釉局部装饰的三鱼纹碗，釉里红发色虽不成功，但在肥腴的白釉衬托下，三鱼若隐若现",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 360
+   },
+   "single_source": true
+  },
+  {
+   "id": "C085",
+   "reign": "Zhengde",
+   "topic": "glaze",
+   "text": "Ming green-on-white is commonest from the Hongzhi and Zhengde reigns. Its glaze is white with a bluish flash, and the green has a yellowish tinge, soft in tone.",
+   "quote_zh": "明代白地绿彩瓷器以弘治、正德朝产品最为多见，其釉色白中闪青，绿彩闪黄，色调柔和。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 576
+   },
+   "single_source": true
+  },
+  {
+   "id": "C086",
+   "reign": "Zhengde",
+   "topic": "mark",
+   "text": "Not every mark in the Zhengde section is a reign mark. A thin white dish in the Palace Museum carries a cobalt four-character 杨氏燕器 in a double ring, explained as a banqueting ware ordered by a Yang family.",
+   "quote_zh": "外底署青花楷体“杨氏燕器”四字双行外围双圈款。“燕”通“宴”字。“燕器”可能指宴饮时使用的器具。“杨氏”二字说明此盘为杨氏家族所定烧。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 637
+   },
+   "single_source": true
+  },
+  {
+   "id": "C087",
+   "reign": "Zhengde",
+   "topic": "apocryphal",
+   "text": "Copies of Zhengde imperial ware are either full copies of shape, decoration and mark, or period-style pieces with only a Zhengde mark. Under Kangxi and Yongzheng both the imperial and private kilns copied Zhengde blue-and-white, doucai, iron red on white, green on yellow, white and poured yellow, some very convincingly.",
+   "quote_zh": "清代康熙、雍正时期，景德镇盛行仿明代各朝御窑瓷器，御窑厂和民间窑场均有仿烧。所见仿正德朝御窑瓷器品种有青花、斗彩、白地矾红彩、黄地绿彩（图27、图28）、白釉、浇黄釉瓷等。个别仿品水平较高，几能乱真。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 703
+   },
+   "single_source": true
+  },
+  {
+   "id": "C088",
+   "reign": "Zhengde",
+   "topic": "apocryphal",
+   "text": "Later pieces with Zhengde marks in the catalogue: a Wanli blue-and-white bowl marked 正德年造 (with 造, not 制); Kangxi and Yongzheng copies, including a Kangxi lobed blue-and-white bowl whose 大明正德年制 is 'clearly in the style of Kangxi private-kiln marks'; an iron-red 正德年制 mark on a Kangxi piece; and a Yongzheng mark written horizontally. The English caption of the Wanli bowl wrongly says Zhengde.",
+   "quote_zh": "外底署青花楷体“大明正德年制”六字双行外围双圈仿款。款识字体明显具有康熙民窑署款风格。",
+   "source_ids": [
+    "CAT-HZ2"
+   ],
+   "pages": {
+    "CAT-HZ2": 674
    },
    "single_source": true
   }
