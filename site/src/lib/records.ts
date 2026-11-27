@@ -690,12 +690,25 @@ export function exportSilverSheet(r: Rec): Sheet {
 export function silverShopSheet(r: Rec): Sheet {
   const a = r.attributes as any;
   const { list } = numbered(r);
-  const opened = a.opened ? (/前/.test(a.opened) ? `Recorded by ${a.opened.replace(/前/, '')} (the earliest record Chen found, not the opening)` : /后/.test(a.opened) ? `Recorded after ${a.opened.replace(/后/, '')}` : a.opened) : null;
+  // Chen's dates: 1911前 (first recorded by), 1936后 (recorded after), 约1800 (about), or a period.
+  const ERA: [RegExp, string][] = [[/清代|清朝|清末/, 'Qing dynasty'], [/民国初/, 'early Republic (1910s)'], [/民国/, 'Republican period (1912–1949)'], [/道光/, 'Daoguang reign (1821–1850)'],
+    [/咸丰/, 'Xianfeng reign (1851–1861)'], [/同治/, 'Tongzhi reign (1862–1874)'], [/光绪/, 'Guangxu reign (1875–1908)'], [/宣统/, 'Xuantong reign (1909–1911)'], [/乾隆/, 'Qianlong reign (1736–1795)'], [/嘉庆/, 'Jiaqing reign (1796–1820)'], [/康熙/, 'Kangxi reign (1662–1722)']];
+  const when = (t: string | null) => {
+    if (!t) return null;
+    const y = /(\d{4})/.exec(t)?.[1];
+    const era = ERA.find(([re]) => re.test(t))?.[1];
+    const base = y ?? era ?? t;
+    if (/前/.test(t)) return `Recorded by ${base} (the earliest record Chen found, not the opening)`;
+    if (/后/.test(t)) return `Recorded after ${base}`;
+    if (/约/.test(t)) return `About ${base}`;
+    return y ? (era ? `${y} (${era})` : y) : era ?? t;
+  };
+  const opened = when(a.opened);
   const credit = (r.sources[0] as any)?.where ?? '';
   return {
     id: r.id, anchor: r.anchor ?? r.id, url: urlOf(r), kind: 'Silver shop', group: a.place ?? 'unplaced',
     glyphs: a.chinese, typeset: true, lang: 'zh', reading: a.pinyin, means: clean([a.place_py, a.province_en].filter((x: string, i: number, l: string[]) => x && l.indexOf(x) === i).join(', ')),
-    years: r.date_from ? (/前/.test(a.opened ?? '') ? `by ${r.date_from}` : /后/.test(a.opened ?? '') ? `after ${r.date_from}` : String(r.date_from)) : null,
+    years: r.date_from ? (/前/.test(a.opened ?? '') ? `by ${r.date_from}` : /后/.test(a.opened ?? '') ? `after ${r.date_from}` : /约/.test(a.opened ?? '') ? `c.${r.date_from}` : String(r.date_from)) : null,
     facts: [
       ['Where', [a.place ? `${a.place_py} ${a.place}` : null, a.address].filter(Boolean).join(', ')],
       ['Opened', opened],
