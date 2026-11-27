@@ -40,9 +40,37 @@ echo "== $(date '+%Y-%m-%d %H:%M:%S')"
 notify() { /usr/bin/osascript -e "display notification \"$1\" with title \"heirloomapp.io\"" >/dev/null 2>&1 || true; }
 fail() { echo "FAILED: $1; the live site is unchanged"; notify "Not deployed: $1. The live site is unchanged. See ~/Library/Logs/Heirloom/site-deploy.log"; exit 1; }
 
-if [ -d "$LOCK" ] && [ -n "$(find "$LOCK" -maxdepth 0 -mmin +45 2>/dev/null)" ]; then rmdir "$LOCK"; fi
-if ! mkdir "$LOCK" 2>/dev/null; then echo "another run is deploying; skipped"; exit 0; fi
-trap 'rmdir "$LOCK" 2>/dev/null; [ -n "${HEIRLOOM_DEPLOY_COPY:-}" ] && rm -f "$HEIRLOOM_DEPLOY_COPY"' EXIT
+# One run at a time. The lock holds the number of the run that took it and is
+# taken back only once that run is gone, however long a build under load
+# takes. (An age limit of 45 minutes let a second run start in this same
+# checkout on 2026-11-26; the older build finished last and put the live site
+# back behind a newer one.) A run still going after two hours puts up one
+# notification, so a hung run is seen rather than overtaken.
+lock_holder() { cat "$LOCK/pid" 2>/dev/null; }
+lock_alive() {
+  local pid; pid=$(lock_holder)
+  # No number yet: a run between taking the lock and writing it, or a lock from
+  # before the number was kept. Held for three hours, as no run takes longer.
+  if [ -z "$pid" ]; then [ -z "$(find "$LOCK" -maxdepth 0 -mmin +180 2>/dev/null)" ]; return; fi
+  kill -0 "$pid" 2>/dev/null && ps -p "$pid" -o command= 2>/dev/null | grep -q -e 'heirloom-site-deploy' -e 'auto-deploy\.sh'
+}
+take_lock() {
+  if mkdir "$LOCK" 2>/dev/null; then echo $$ > "$LOCK/pid"; return 0; fi
+  lock_alive && return 1
+  echo "the lock of run $(lock_holder || true) was left behind; taken back"
+  rm -rf "$LOCK"
+  mkdir "$LOCK" 2>/dev/null && echo $$ > "$LOCK/pid"
+}
+release_lock() { [ "$(lock_holder)" = "$$" ] && rm -rf "$LOCK"; return 0; }
+if ! take_lock; then
+  HOLDER=$(lock_holder)
+  echo "another run${HOLDER:+ (pid $HOLDER)} is deploying; skipped"
+  if [ -n "$(find "$LOCK/pid" -maxdepth 0 -mmin +120 2>/dev/null)" ] && mkdir "$LOCK/warned" 2>/dev/null; then
+    notify "A deploy has been running for over two hours (pid $HOLDER). See ~/Library/Logs/Heirloom/site-deploy.log"
+  fi
+  exit 0
+fi
+trap 'release_lock; [ -n "${HEIRLOOM_DEPLOY_COPY:-}" ] && rm -f "$HEIRLOOM_DEPLOY_COPY"' EXIT
 
 if ! git -C "$SITE" fetch -q origin main || ! git -C "$APP" fetch -q origin main; then echo "could not fetch (offline?); skipped"; exit 0; fi
 if [ ! -d "$KEPT" ]; then git -C "$SITE" worktree add -q --detach "$KEPT" origin/main || fail "the deploy checkout could not be made"; fi
@@ -53,6 +81,7 @@ COMMIT=$(git rev-parse --short=8 HEAD)
 
 # The rebuilt pages' facts, from the app's main (not committed here: derived data).
 APP_REPO="$APP" APP_REF=origin/main node site/scripts/sync-data.mjs >/dev/null || fail "the app's tables could not be synced"
+APP_COMMIT=$(node -p "require('./site/src/data/app/SOURCE.json').commit" 2>/dev/null || true)
 DATA=$(find site/src/data -type f ! -name SOURCE.json -print0 | sort -z | xargs -0 shasum | shasum | cut -c1-16)
 WANT="$COMMIT $DATA"
 LAST=$(cut -d' ' -f1,2 "$STATE" 2>/dev/null || true)
@@ -94,6 +123,21 @@ for p in / /marks/ /marks/london-date-letters /marks/chenghua-mark /guides /priv
 done
 [ "$(curl -s -o /dev/null -m 30 -w '%{http_code}' "$PREVIEW/no-such-page")" = 404 ] || fail "version $VERSION does not answer 404 for a missing page"
 
+# Never switch back past what is live. The state file names the website and
+# app commits of the last deploy; if either is newer than this build's (a
+# person deployed, or another run got there first), this build stays unused.
+newer_live() {  # newer_live <state> <site repo> <website commit> <app repo> <app commit>
+  [ -f "$1" ] || return 1
+  local live_site live_app
+  read -r live_site _ _ live_app < "$1"
+  if [ -n "$live_site" ] && [ "$live_site" != "$3" ] && git -C "$2" merge-base --is-ancestor "$3" "$live_site" 2>/dev/null; then echo "website $live_site"; return 0; fi
+  if [ -n "${live_app:-}" ] && [ -n "$5" ] && [ "$live_app" != "$5" ] && git -C "$4" merge-base --is-ancestor "$5" "$live_app" 2>/dev/null; then echo "app data $live_app"; return 0; fi
+  return 1
+}
+if NEWER=$(newer_live "$STATE" "$KEPT" "$COMMIT" "$APP" "$APP_COMMIT"); then
+  echo "not switched: $NEWER is already live, newer than this build (website $COMMIT, app $APP_COMMIT); version $VERSION left unused"
+  exit 0
+fi
 $WR versions deploy "$VERSION@100" --config wrangler.jsonc -y --message "auto-deploy $COMMIT" >/dev/null 2>&1 || fail "the switch to version $VERSION failed"
-echo "$WANT $PAGES" > "$STATE"
+echo "$WANT $PAGES $APP_COMMIT" > "$STATE"
 echo "live: version $VERSION (website $COMMIT, data $DATA, $PAGES pages)"

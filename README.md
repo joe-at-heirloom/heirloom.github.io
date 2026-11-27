@@ -45,6 +45,9 @@ heirloomapp.io is a Cloudflare Worker (`heirloom-site`, `wrangler.jsonc`) servin
   build, refuses a build that lost more than a tenth of its pages, uploads a
   version that takes no traffic, smoke-tests it, and only then switches
   heirloomapp.io. Push to `main` and it is live within about 15 minutes.
+  One run at a time: a run skips while another is still going, however long
+  that one's build takes, and a build never replaces a newer website or newer
+  app data than its own (the state file names the commits that are live).
 - **Review** with `npm --prefix site run deploy:preview` (`heirloom-site-next`,
   noindex). **Roll back** with `wrangler rollback`.
 
