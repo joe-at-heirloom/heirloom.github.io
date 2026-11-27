@@ -248,7 +248,8 @@ function build(): Area[] {
         ], fold: true },
         { label: 'German, Bohemian and Austrian porcelain', links: [
           { href: '/marks/german-porcelain-marks/', label: 'German, Bohemian and Austrian porcelain marks', note: 'Over 3,000 marks, grouped by what they show' },
-        ] },
+          ...dinnerLinks('german-porcelain'),
+        ], fold: true },
         { label: 'Pewabic Pottery, Detroit', links: [
           { href: '/marks/pewabic-pottery/', label: 'Pewabic Pottery', note: 'Detroit, 1903 to today' },
           { href: '/marks/pewabic-pottery-marks', label: 'Pewabic marks', note: 'Dating a piece by its mark' },
